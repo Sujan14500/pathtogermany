@@ -43,9 +43,13 @@ Brief them per `docs/03-content.md`, and give each a validator to pass. Build th
 - FSRS study page: cards with gender colours, plurals, audio, and recognition plus production cards.
 - Speech: de-DE voice picking, the no-voice note, and a voice/rate setting.
 - Gender trainer (`#/gender`) with ending rules.
+- Learning science (`docs/07-learning-science.md`), P1: new cards among the reviews (L1), typed production
+  cards (L2), Cover the English (L3), say it aloud (L4), sleep on it (L5), minutes for today (L6). P2 if time:
+  tricky words with memory hooks (L8), this week (L9), my study plan (L10).
 - **Done when:**
   - every A1 word has an article (for nouns), an English meaning and an example
-  - a 15-card session works by keyboard
+  - a 15-card session works by keyboard, including typing on production cards
+  - `test.html` asserts `checkAnswer` (right, close, typo, wrong) as listed under L2
   - the no-voice note appears when no German voice is present
 
 ## Phase 3: grammar and trainers
@@ -57,19 +61,23 @@ Brief them per `docs/03-content.md`, and give each a validator to pass. Build th
 - Cases and endings (`#/cases`): the case table, preposition drills, the two-way preposition animation, and the
   adjective-ending decision diagram.
 - Form-choice questions (`gq-*.json`), one or more per grammar point, written by agents and validated.
+- Guess first (L7): one form-choice question before each new grammar point's explanation.
 - **Done when:**
-  - every grammar point renders with examples and a quiz
+  - every grammar point renders with examples and a quiz, and a Guess-first question while unstudied
   - the trainers show no wrong forms on a sample of 50 verbs, checked against Wiktionary tables
 
 ## Phase 4: reading
 - One original text per station in Goethe Lesen formats (agents, validated).
 - The reader with tap-to-translate, glossary highlighting, evidence highlighting, read-aloud and reading speed.
+- Known words in the text (L11), predict first (L12), and a timed re-read (L13).
 - **Done when:** every station has a text and questions, and there are 3 screenshots of different text types.
+  Each text shows its known-word share, and is at 90% or more for a learner who knows its station's words.
 
 ## Phase 5: listening
 - Original items per station in Goethe Hören formats (agents, validated).
 - Multi-voice speech playback, a transcript with English after answering, and a slower speed.
 - A book-audio player if the user provides the audio.
+- Shadowing per line (L14), and "hear it again, faster" after answering (L13).
 - **Done when:** every level has at least 40 listening items across all its formats, and playback order and
   voices are correct.
 
@@ -78,6 +86,7 @@ Brief them per `docs/03-content.md`, and give each a validator to pass. Build th
   answer and a rubric.
 - Speaking tasks with timers, MediaRecorder record and playback, a SpeechRecognition transcript where
   available, a TTS partner and model answers.
+- Shadowing (L14) on the speaking model answers too.
 - **Done when:** every exam part at each level has at least 4 tasks, and recording works in Brave and Edge, or
   degrades with a clear message.
 
@@ -94,12 +103,16 @@ Brief them per `docs/03-content.md`, and give each a validator to pass. Build th
 - Mock exams per level, in the module structure and timing of `docs/03-content.md`, full and short, scored the
   Goethe way. Afterwards: a result stamp, then a review of the wrong answers with explanations and links back.
 - A "More practice" section linking the official Goethe Übungssätze.
+- Revisit stops 1, 7 and 21 days after a station test pass (L15), station tests that mix in the six stations
+  before (L16), and spaced mock exams (L17).
 - **Done when:**
   - every module and level opens a test
+  - a passed station test shows up as a revisit stop on the plan rail the next day
   - the full mock papers have the real part counts
   - the smoke test passes over all routes
 
 ## Phase 9: polish
 - Tips page, pronunciation guide and minimal pairs, the drifting-words background, PWA files, settings.
+- The tips follow `docs/07-learning-science.md` (L18). Build L8–L10 here if Phase 2 didn't.
 - Final pass on contrast, focus, reduced motion and phone width. Update the README with sources and licences.
 - **Done when:** the user can study a full day, from cards to a station test, without hitting a rough edge.

@@ -11,7 +11,8 @@ Read these before doing anything, in this order:
 4. `docs/04-design.md`: the visual identity, layout and motion
 5. `docs/05-build-plan.md`: the phases, each with its acceptance checks
 6. `docs/06-lessons-learned.md`: pitfalls already hit on the sister project; avoid them
-7. `docs/PROGRESS.md`: which phases are done (you keep this file up to date)
+7. `docs/07-learning-science.md`: the memory research behind the features, and the specs L1–L18 that carry it
+8. `docs/PROGRESS.md`: which phases are done (you keep this file up to date)
 
 When the user says **"start building"** (or pastes `prompts/01-start.md`), begin at Phase 0 of
 `docs/05-build-plan.md`. When they say **"continue"**, pick up the first unfinished phase in `docs/PROGRESS.md`.

@@ -39,6 +39,9 @@ shows the current stop.
 
 ## Features in detail
 
+`docs/07-learning-science.md` adds research-backed features to these sections (typed production cards, Cover the
+English, Guess first, tricky-word hooks, revisit stops, shadowing and more). Build them with their phase.
+
 ### Words (Wortschatz)
 - Every noun is shown with its article, colour-coded by gender, and its plural, e.g. *der Tisch, die Tische*.
   Use the same colours everywhere in the app.
