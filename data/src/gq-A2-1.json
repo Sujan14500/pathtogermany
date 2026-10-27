@@ -1,0 +1,1874 @@
+[
+ {
+  "g": "a2-perfekt-review",
+  "q": "Priya ___ letztes Jahr nach Berlin geflogen.",
+  "opts": [
+   "hat",
+   "ist",
+   "bist",
+   "sind"
+  ],
+  "a": 1,
+  "why": "fliegen is a movement from A to B, so its Perfekt uses sein, and ist goes with Priya.",
+  "en": "Priya flew to Berlin last year."
+ },
+ {
+  "g": "a2-perfekt-review",
+  "q": "Wie lange ___ du in Indien gewohnt?",
+  "opts": [
+   "hast",
+   "bist",
+   "hat",
+   "habt"
+  ],
+  "a": 0,
+  "why": "wohnen is not a movement, so it takes haben; with du the form is hast.",
+  "en": "How long did you live in India?"
+ },
+ {
+  "g": "a2-perfekt-review",
+  "q": "Wir ___ am Wochenende zu Hause geblieben.",
+  "opts": [
+   "sind",
+   "haben",
+   "ist",
+   "hat"
+  ],
+  "a": 0,
+  "why": "bleiben always takes sein in the Perfekt, even though nobody moves; with wir the form is sind.",
+  "en": "We stayed at home at the weekend."
+ },
+ {
+  "g": "a2-perfekt-review",
+  "q": "Lena hat in Leipzig Musik ___.",
+  "opts": [
+   "gestudiert",
+   "studieren",
+   "studierte",
+   "studiert"
+  ],
+  "a": 3,
+  "why": "Verbs ending in -ieren make the Partizip II without ge-: studieren → studiert.",
+  "en": "Lena studied music in Leipzig."
+ },
+ {
+  "g": "a2-werden",
+  "q": "Du ___ bestimmt eine gute Ärztin.",
+  "opts": [
+   "wirst",
+   "wird",
+   "werdest",
+   "werdet"
+  ],
+  "a": 0,
+  "why": "werden is irregular: du wirst, er/sie wird. Here it means \"become\".",
+  "en": "You're sure to become a good doctor."
+ },
+ {
+  "g": "a2-werden",
+  "q": "Im Winter ___ es schon um fünf Uhr dunkel.",
+  "opts": [
+   "wird",
+   "werden",
+   "wirst",
+   "werdet"
+  ],
+  "a": 0,
+  "why": "es takes the er/sie/es form: es wird. Es wird dunkel = it gets dark.",
+  "en": "In winter it gets dark at five o'clock."
+ },
+ {
+  "g": "a2-werden",
+  "q": "Priya möchte in Deutschland Ärztin ___.",
+  "opts": [
+   "wird",
+   "geworden",
+   "werden",
+   "wirst"
+  ],
+  "a": 2,
+  "why": "After möchte the second verb goes to the end in the infinitive (the dictionary form): werden.",
+  "en": "Priya would like to become a doctor in Germany."
+ },
+ {
+  "g": "a2-werden",
+  "q": "Ich bin letztes Jahr Vater ___.",
+  "opts": [
+   "geworden",
+   "gewordet",
+   "werden",
+   "wird"
+  ],
+  "a": 0,
+  "why": "The Perfekt of werden is bin/ist geworden: sein in position 2 and geworden at the end.",
+  "en": "I became a father last year."
+ },
+ {
+  "g": "a2-denn-aber",
+  "q": "Ich trinke keinen Tee, ___ Kaffee.",
+  "opts": [
+   "aber",
+   "denn",
+   "oder",
+   "sondern"
+  ],
+  "a": 3,
+  "why": "After a negative (keinen Tee) use sondern to give the correct thing: not tea, but coffee.",
+  "en": "I don't drink tea, I drink coffee."
+ },
+ {
+  "g": "a2-denn-aber",
+  "q": "Jonas bleibt heute zu Hause, denn ___.",
+  "opts": [
+   "er krank ist",
+   "ist er krank",
+   "krank er ist",
+   "er ist krank"
+  ],
+  "a": 3,
+  "why": "denn does not change the word order: the subject comes first, then the verb in position 2.",
+  "en": "Jonas is staying at home today because he is ill."
+ },
+ {
+  "g": "a2-denn-aber",
+  "q": "Das Zimmer ist klein, ___ es ist sehr hell.",
+  "opts": [
+   "sondern",
+   "denn",
+   "oder",
+   "aber"
+  ],
+  "a": 3,
+  "why": "aber (but) shows a contrast. sondern is only used after nicht or kein.",
+  "en": "The room is small, but it is very bright."
+ },
+ {
+  "g": "a2-denn-aber",
+  "q": "Fahren wir mit dem Bus, ___ gehen wir zu Fuß?",
+  "opts": [
+   "und",
+   "denn",
+   "oder",
+   "sondern"
+  ],
+  "a": 2,
+  "why": "oder (or) gives a choice between two options.",
+  "en": "Are we taking the bus or are we walking?"
+ },
+ {
+  "g": "a2-two-way",
+  "q": "Jonas wartet vor ___ Kino.",
+  "opts": [
+   "das",
+   "den",
+   "der",
+   "dem"
+  ],
+  "a": 3,
+  "why": "Waiting is not a movement to a new place: Wo? → dative. das Kino becomes dem Kino.",
+  "en": "Jonas is waiting in front of the cinema."
+ },
+ {
+  "g": "a2-two-way",
+  "q": "Priya geht heute Abend ___ Kino.",
+  "opts": [
+   "im",
+   "in den",
+   "ins",
+   "in der"
+  ],
+  "a": 2,
+  "why": "She goes to a new place (Wohin?), so accusative: in das Kino → ins Kino.",
+  "en": "Priya is going to the cinema this evening."
+ },
+ {
+  "g": "a2-two-way",
+  "q": "Die Kinder spielen in ___ Küche.",
+  "opts": [
+   "der",
+   "die",
+   "den",
+   "dem"
+  ],
+  "a": 0,
+  "why": "Where are they playing? (Wo?) → dative. die Küche becomes der Küche.",
+  "en": "The children are playing in the kitchen."
+ },
+ {
+  "g": "a2-two-way",
+  "q": "Lena geht in ___ Garten.",
+  "opts": [
+   "dem",
+   "der",
+   "den",
+   "das"
+  ],
+  "a": 2,
+  "why": "She moves into the garden (Wohin?), so accusative: der Garten → in den Garten.",
+  "en": "Lena goes into the garden."
+ },
+ {
+  "g": "a2-stellen-stehen",
+  "q": "Das Handy ___ auf dem Sofa.",
+  "opts": [
+   "liegt",
+   "legt",
+   "gelegt",
+   "liegen"
+  ],
+  "a": 0,
+  "why": "The phone is already there (Wo? + dative), so use the position verb liegen: es liegt.",
+  "en": "The phone is lying on the sofa."
+ },
+ {
+  "g": "a2-stellen-stehen",
+  "q": "Kannst du die Flaschen in den Kühlschrank ___?",
+  "opts": [
+   "stellen",
+   "stehen",
+   "gestellt",
+   "stellst"
+  ],
+  "a": 0,
+  "why": "You move the bottles (Wohin? + accusative), so use the action verb stellen, as an infinitive after kannst.",
+  "en": "Can you put the bottles in the fridge?"
+ },
+ {
+  "g": "a2-stellen-stehen",
+  "q": "Der Mantel hängt an ___ Tür.",
+  "opts": [
+   "die",
+   "den",
+   "der",
+   "dem"
+  ],
+  "a": 2,
+  "why": "Here hängen says where the coat is (Wo?), so dative: die Tür → an der Tür.",
+  "en": "The coat is hanging on the door."
+ },
+ {
+  "g": "a2-stellen-stehen",
+  "q": "Ich habe die Teller auf den Tisch ___.",
+  "opts": [
+   "gestanden",
+   "gestellen",
+   "gestellt",
+   "stehen"
+  ],
+  "a": 2,
+  "why": "auf den Tisch (accusative) shows an action, so stellen; its Partizip II is regular: gestellt.",
+  "en": "I put the plates on the table."
+ },
+ {
+  "g": "a2-dative-articles",
+  "q": "Ich fahre jeden Tag mit ___ Bus.",
+  "opts": [
+   "den",
+   "der",
+   "das",
+   "dem"
+  ],
+  "a": 3,
+  "why": "mit always takes the dative; der Bus becomes dem Bus.",
+  "en": "I go by bus every day."
+ },
+ {
+  "g": "a2-dative-articles",
+  "q": "Lena wohnt noch bei ___ Eltern.",
+  "opts": [
+   "ihre",
+   "ihren",
+   "ihrer",
+   "ihrem"
+  ],
+  "a": 1,
+  "why": "bei takes the dative; in the plural ihre becomes ihren.",
+  "en": "Lena still lives with her parents."
+ },
+ {
+  "g": "a2-dative-articles",
+  "q": "Malte kommt gerade aus ___ Küche.",
+  "opts": [
+   "die",
+   "dem",
+   "der",
+   "den"
+  ],
+  "a": 2,
+  "why": "aus takes the dative; die Küche becomes der Küche.",
+  "en": "Malte is just coming out of the kitchen."
+ },
+ {
+  "g": "a2-dative-articles",
+  "q": "Ich gehe mit meinen ___ ins Kino.",
+  "opts": [
+   "Freunden",
+   "Freunde",
+   "Freund",
+   "Freundes"
+  ],
+  "a": 0,
+  "why": "In the dative plural the noun adds -n: die Freunde → mit meinen Freunden.",
+  "en": "I'm going to the cinema with my friends."
+ },
+ {
+  "g": "a2-weil",
+  "q": "Lena ist glücklich, weil ___.",
+  "opts": [
+   "sie eine neue Stelle hat",
+   "sie hat eine neue Stelle",
+   "hat sie eine neue Stelle",
+   "eine neue Stelle sie hat"
+  ],
+  "a": 0,
+  "why": "weil sends the conjugated verb to the end: the subject comes first and the verb (hat) last.",
+  "en": "Lena is happy because she has a new job."
+ },
+ {
+  "g": "a2-weil",
+  "q": "Ich kann heute nicht kommen, weil ich arbeiten ___.",
+  "opts": [
+   "muss",
+   "musst",
+   "müssen",
+   "gemusst"
+  ],
+  "a": 0,
+  "why": "In a weil-clause the modal verb goes last and agrees with ich: … weil ich arbeiten muss.",
+  "en": "I can't come today because I have to work."
+ },
+ {
+  "g": "a2-weil",
+  "q": "Jonas ist oft müde, weil er jeden Tag früh ___.",
+  "opts": [
+   "steht auf",
+   "aufsteht",
+   "aufstehen",
+   "auf steht"
+  ],
+  "a": 1,
+  "why": "At the end of a weil-clause a separable verb joins up again: aufstehen → … weil er früh aufsteht.",
+  "en": "Jonas is often tired because he gets up early every day."
+ },
+ {
+  "g": "a2-weil",
+  "q": "Warum lernst du Deutsch? – ___ ich in Berlin studieren möchte.",
+  "opts": [
+   "Denn",
+   "Deshalb",
+   "Weil",
+   "Aber"
+  ],
+  "a": 2,
+  "why": "The verb (möchte) is at the end, so you need weil. You can answer a Warum? question with a weil-clause alone.",
+  "en": "Why are you learning German? – Because I'd like to study in Berlin."
+ },
+ {
+  "g": "a2-dass",
+  "q": "Ich weiß, dass ___.",
+  "opts": [
+   "Lena hat morgen Geburtstag",
+   "hat Lena morgen Geburtstag",
+   "Lena morgen hat Geburtstag",
+   "Lena morgen Geburtstag hat"
+  ],
+  "a": 3,
+  "why": "dass sends the conjugated verb to the very end: … dass Lena morgen Geburtstag hat.",
+  "en": "I know that it's Lena's birthday tomorrow."
+ },
+ {
+  "g": "a2-dass",
+  "q": "Malte sagt, ___ er heute länger arbeiten muss.",
+  "opts": [
+   "das",
+   "weil",
+   "dass",
+   "denn"
+  ],
+  "a": 2,
+  "why": "After sagen, dass introduces what is said and sends the verb to the end. das with one s is an article or pronoun.",
+  "en": "Malte says that he has to work later today."
+ },
+ {
+  "g": "a2-dass",
+  "q": "Es ist schön, dass du ___.",
+  "opts": [
+   "bist gekommen",
+   "gekommen bist",
+   "gekommen hast",
+   "bist gekommt"
+  ],
+  "a": 1,
+  "why": "In a dass-clause the Partizip II comes first and haben/sein is the very last word; kommen takes sein.",
+  "en": "It's nice that you've come."
+ },
+ {
+  "g": "a2-dass",
+  "q": "Ich finde es toll, dass ihr uns ___.",
+  "opts": [
+   "besuchen",
+   "besuchst",
+   "besucht",
+   "besuche"
+  ],
+  "a": 2,
+  "why": "The verb at the end still agrees with its subject: ihr besucht.",
+  "en": "I think it's great that you're visiting us."
+ },
+ {
+  "g": "a2-deshalb",
+  "q": "Ich habe heute keine Zeit, deshalb ___ nicht mitkommen.",
+  "opts": [
+   "kann ich",
+   "ich kann",
+   "können ich",
+   "ich können"
+  ],
+  "a": 0,
+  "why": "After deshalb the verb comes first, then the subject: deshalb kann ich.",
+  "en": "I don't have time today, so I can't come along."
+ },
+ {
+  "g": "a2-deshalb",
+  "q": "Der Zug hat Verspätung, ___ komme ich zu spät.",
+  "opts": [
+   "weil",
+   "denn",
+   "deshalb",
+   "aber"
+  ],
+  "a": 2,
+  "why": "The verb (komme) follows the gap directly, so you need deshalb. After weil the verb goes to the end, after denn and aber the subject comes first.",
+  "en": "The train is delayed, so I'll be late."
+ },
+ {
+  "g": "a2-deshalb",
+  "q": "Lena hat eine neue Stelle in München. Deshalb ___ im Mai um.",
+  "opts": [
+   "sie zieht",
+   "zieht sie",
+   "sie ziehen",
+   "ziehen sie"
+  ],
+  "a": 1,
+  "why": "Deshalb is in position 1, so the verb comes next and agrees with sie (Lena): Deshalb zieht sie um.",
+  "en": "Lena has a new job in Munich. That's why she's moving in May."
+ },
+ {
+  "g": "a2-deshalb",
+  "q": "Malte arbeitet sehr viel. ___ ist er oft müde.",
+  "opts": [
+   "Deshalb",
+   "Weil",
+   "Denn",
+   "Dass"
+  ],
+  "a": 0,
+  "why": "The verb (ist) comes right after the gap, which works only with deshalb; weil and dass send the verb to the end.",
+  "en": "Malte works a lot. That's why he's often tired."
+ },
+ {
+  "g": "a2-reflexive",
+  "q": "Ich freue ___ auf deinen Besuch.",
+  "opts": [
+   "mir",
+   "mich",
+   "dich",
+   "sich"
+  ],
+  "a": 1,
+  "why": "With ich the reflexive pronoun is mich.",
+  "en": "I'm looking forward to your visit."
+ },
+ {
+  "g": "a2-reflexive",
+  "q": "Wann treffen wir ___?",
+  "opts": [
+   "sich",
+   "uns",
+   "euch",
+   "wir"
+  ],
+  "a": 1,
+  "why": "With wir the reflexive pronoun is uns; here it means \"each other\".",
+  "en": "When are we meeting?"
+ },
+ {
+  "g": "a2-reflexive",
+  "q": "Frau Yilmaz ärgert ___ über die laute Musik.",
+  "opts": [
+   "ihr",
+   "sie",
+   "ihn",
+   "sich"
+  ],
+  "a": 3,
+  "why": "er, sie, es (and Sie) always take sich as the reflexive pronoun.",
+  "en": "Frau Yilmaz is annoyed about the loud music."
+ },
+ {
+  "g": "a2-reflexive",
+  "q": "Habt ihr ___ schon für den Kurs angemeldet?",
+  "opts": [
+   "uns",
+   "sich",
+   "ihr",
+   "euch"
+  ],
+  "a": 3,
+  "why": "With ihr the reflexive pronoun is euch: ihr meldet euch an.",
+  "en": "Have you already signed up for the course?"
+ },
+ {
+  "g": "a2-verb-preps",
+  "q": "Wir warten ___ den Zug.",
+  "opts": [
+   "für",
+   "an",
+   "auf",
+   "mit"
+  ],
+  "a": 2,
+  "why": "warten always goes with auf + accusative. für is the English \"for\" sneaking in.",
+  "en": "We're waiting for the train."
+ },
+ {
+  "g": "a2-verb-preps",
+  "q": "Lena interessiert sich ___ Kunst.",
+  "opts": [
+   "an",
+   "in",
+   "auf",
+   "für"
+  ],
+  "a": 3,
+  "why": "sich interessieren goes with für + accusative, even though English says \"interested in\".",
+  "en": "Lena is interested in art."
+ },
+ {
+  "g": "a2-verb-preps",
+  "q": "Priya hat Angst vor ___ Hund.",
+  "opts": [
+   "dem",
+   "den",
+   "der",
+   "das"
+  ],
+  "a": 0,
+  "why": "Angst haben vor takes the dative: der Hund → vor dem Hund.",
+  "en": "Priya is afraid of the dog."
+ },
+ {
+  "g": "a2-verb-preps",
+  "q": "Ich freue mich schon ___ die Ferien im Sommer.",
+  "opts": [
+   "über",
+   "auf",
+   "für",
+   "an"
+  ],
+  "a": 1,
+  "why": "The holidays are still to come, so sich freuen auf. über is for something that is already here.",
+  "en": "I'm already looking forward to the summer holidays."
+ },
+ {
+  "g": "a2-da-wo",
+  "q": "___ wartest du? – Auf den Bus.",
+  "opts": [
+   "Worauf",
+   "Woauf",
+   "Darauf",
+   "Auf wen"
+  ],
+  "a": 0,
+  "why": "A bus is a thing, so ask with wo + auf, adding -r- before the vowel: worauf. Auf wen is for people.",
+  "en": "What are you waiting for? – For the bus."
+ },
+ {
+  "g": "a2-da-wo",
+  "q": "Ich habe ein neues Handy. Ich freue mich sehr ___.",
+  "opts": [
+   "worüber",
+   "über es",
+   "darüber",
+   "dafür"
+  ],
+  "a": 2,
+  "why": "To refer back to a thing, use da(r) + preposition: über das Handy → darüber. über es is not possible.",
+  "en": "I've got a new phone. I'm really happy about it."
+ },
+ {
+  "g": "a2-da-wo",
+  "q": "___ hast du gesprochen? – Mit Herrn Weber.",
+  "opts": [
+   "Womit",
+   "Mit wem",
+   "Mit was",
+   "Damit"
+  ],
+  "a": 1,
+  "why": "Herr Weber is a person, so keep the preposition and use wem: Mit wem? Womit is only for things.",
+  "en": "Who did you talk to? – To Mr Weber."
+ },
+ {
+  "g": "a2-da-wo",
+  "q": "Interessierst du dich für Sport? – Nein, ___ interessiere ich mich nicht.",
+  "opts": [
+   "dazu",
+   "für es",
+   "dafür",
+   "wofür"
+  ],
+  "a": 2,
+  "why": "Sport is a thing, and the verb goes with für, so the pronoun is dafür.",
+  "en": "Are you interested in sport? – No, I'm not interested in it."
+ },
+ {
+  "g": "a2-adj-der",
+  "q": "Wie findest du den ___ Pullover?",
+  "opts": [
+   "gelbe",
+   "gelber",
+   "gelben",
+   "gelbes"
+  ],
+  "a": 2,
+  "why": "den shows a masculine accusative, and after den the adjective ends in -en.",
+  "en": "What do you think of the yellow jumper?"
+ },
+ {
+  "g": "a2-adj-der",
+  "q": "Die ___ Hose ist zu klein.",
+  "opts": [
+   "grünen",
+   "grüner",
+   "grünes",
+   "grüne"
+  ],
+  "a": 3,
+  "why": "die Hose is the subject (nominative, feminine), so after die the adjective ends in -e.",
+  "en": "The green trousers are too small."
+ },
+ {
+  "g": "a2-adj-der",
+  "q": "Was machst du mit dem ___ Fernseher?",
+  "opts": [
+   "alte",
+   "alter",
+   "altes",
+   "alten"
+  ],
+  "a": 3,
+  "why": "mit takes the dative, and in the dative the adjective after the article always ends in -en.",
+  "en": "What are you doing with the old TV?"
+ },
+ {
+  "g": "a2-adj-der",
+  "q": "Die ___ Schuhe sind im Angebot.",
+  "opts": [
+   "braunen",
+   "braune",
+   "brauner",
+   "braunes"
+  ],
+  "a": 0,
+  "why": "In the plural the adjective after die ends in -en.",
+  "en": "The brown shoes are on offer."
+ },
+ {
+  "g": "a2-adj-ein",
+  "q": "Das ist ein ___ Rock.",
+  "opts": [
+   "kurze",
+   "kurzer",
+   "kurzen",
+   "kurzes"
+  ],
+  "a": 1,
+  "why": "der Rock is masculine and ein has no ending here, so the adjective shows it: ein kurzer Rock.",
+  "en": "That is a short skirt."
+ },
+ {
+  "g": "a2-adj-ein",
+  "q": "Ich suche ein ___ Hemd.",
+  "opts": [
+   "weißes",
+   "weiße",
+   "weißen",
+   "weißer"
+  ],
+  "a": 0,
+  "why": "das Hemd is neuter and ein has no ending, so the adjective takes -es: ein weißes Hemd.",
+  "en": "I'm looking for a white shirt."
+ },
+ {
+  "g": "a2-adj-ein",
+  "q": "Lena hat einen ___ Pullover gekauft.",
+  "opts": [
+   "warmen",
+   "warmer",
+   "warme",
+   "warmes"
+  ],
+  "a": 0,
+  "why": "einen already shows masculine accusative, so the adjective ends in -en.",
+  "en": "Lena bought a warm jumper."
+ },
+ {
+  "g": "a2-adj-ein",
+  "q": "Malte kommt mit seiner ___ Freundin.",
+  "opts": [
+   "neue",
+   "neuer",
+   "neuen",
+   "neues"
+  ],
+  "a": 2,
+  "why": "mit takes the dative (seiner Freundin), and in the dative the adjective ends in -en.",
+  "en": "Malte is coming with his new girlfriend."
+ },
+ {
+  "g": "a2-adj-none",
+  "q": "Ich esse gern ___ Brot.",
+  "opts": [
+   "frische",
+   "frisches",
+   "frischer",
+   "frischen"
+  ],
+  "a": 1,
+  "why": "No article, and das Brot is neuter, so the adjective takes the ending of das: frisches.",
+  "en": "I like eating fresh bread."
+ },
+ {
+  "g": "a2-adj-none",
+  "q": "___ Grüße aus Berlin!",
+  "opts": [
+   "Lieber",
+   "Liebes",
+   "Liebe",
+   "Lieben"
+  ],
+  "a": 2,
+  "why": "Grüße is plural with no article, so the adjective takes the plural ending -e (like die).",
+  "en": "Best wishes from Berlin!"
+ },
+ {
+  "g": "a2-adj-none",
+  "q": "Malte sucht eine Wohnung mit ___ Balkon.",
+  "opts": [
+   "großem",
+   "großen",
+   "großer",
+   "großes"
+  ],
+  "a": 0,
+  "why": "mit takes the dative and there is no article, so the adjective takes the ending of dem: großem.",
+  "en": "Malte is looking for a flat with a big balcony."
+ },
+ {
+  "g": "a2-adj-none",
+  "q": "Im Winter trage ich ___ Stiefel.",
+  "opts": [
+   "warmen",
+   "warme",
+   "warmer",
+   "warmes"
+  ],
+  "a": 1,
+  "why": "Stiefel is plural here (accusative) with no article, so the adjective ends in -e, like die.",
+  "en": "In winter I wear warm boots."
+ },
+ {
+  "g": "a2-wenn",
+  "q": "Wenn ich Kopfschmerzen habe, ___ eine Tablette.",
+  "opts": [
+   "ich nehme",
+   "nehmen ich",
+   "nehme ich",
+   "ich nehmen"
+  ],
+  "a": 2,
+  "why": "The wenn-clause is position 1, so the main clause starts with the verb: …, nehme ich eine Tablette.",
+  "en": "When I have a headache, I take a tablet."
+ },
+ {
+  "g": "a2-wenn",
+  "q": "Ruf mich an, wenn du Hilfe ___.",
+  "opts": [
+   "brauchst",
+   "brauchen",
+   "braucht",
+   "gebraucht"
+  ],
+  "a": 0,
+  "why": "wenn sends the verb to the end, and it still agrees with du: wenn du Hilfe brauchst.",
+  "en": "Call me if you need help."
+ },
+ {
+  "g": "a2-wenn",
+  "q": "___ hast du morgen Zeit? – Am Nachmittag.",
+  "opts": [
+   "Wenn",
+   "Wann",
+   "Ob",
+   "Als"
+  ],
+  "a": 1,
+  "why": "This is a question about time, so you need the question word wann (when?). wenn is not a question word.",
+  "en": "When do you have time tomorrow? – In the afternoon."
+ },
+ {
+  "g": "a2-wenn",
+  "q": "Ich gehe zum Arzt, wenn es mir morgen nicht besser ___.",
+  "opts": [
+   "gehe",
+   "gehen",
+   "ging",
+   "geht"
+  ],
+  "a": 3,
+  "why": "In the wenn-clause the verb is last and agrees with es: wenn es mir nicht besser geht.",
+  "en": "I'll go to the doctor if I don't feel better tomorrow."
+ },
+ {
+  "g": "a2-sollte",
+  "q": "Du ___ nicht so viel Kaffee trinken.",
+  "opts": [
+   "sollte",
+   "solltest",
+   "sollten",
+   "solltet"
+  ],
+  "a": 1,
+  "why": "With du the advice form is solltest; the infinitive trinken goes to the end.",
+  "en": "You shouldn't drink so much coffee."
+ },
+ {
+  "g": "a2-sollte",
+  "q": "An deiner Stelle ___ ich mehr schlafen.",
+  "opts": [
+   "werde",
+   "würde",
+   "würdest",
+   "wurde"
+  ],
+  "a": 1,
+  "why": "An deiner Stelle (if I were you) needs the would-form: ich würde. wurde without the umlaut is the past tense.",
+  "en": "If I were you, I'd sleep more."
+ },
+ {
+  "g": "a2-sollte",
+  "q": "Frau Yilmaz, Sie sollten mehr spazieren ___.",
+  "opts": [
+   "geht",
+   "gegangen",
+   "gehen",
+   "zu gehen"
+  ],
+  "a": 2,
+  "why": "After sollten the second verb goes to the end as a plain infinitive, without zu.",
+  "en": "Frau Yilmaz, you should go for more walks."
+ },
+ {
+  "g": "a2-sollte",
+  "q": "Ihr ___ eure Hausaufgaben machen.",
+  "opts": [
+   "solltest",
+   "solltet",
+   "sollte",
+   "sollten"
+  ],
+  "a": 1,
+  "why": "With ihr the form is solltet.",
+  "en": "You should do your homework."
+ },
+ {
+  "g": "a2-dative-pronouns",
+  "q": "Wie geht es ___? – Danke, gut.",
+  "opts": [
+   "dich",
+   "du",
+   "deiner",
+   "dir"
+  ],
+  "a": 3,
+  "why": "Wie geht es …? always takes the dative: Wie geht es dir?",
+  "en": "How are you? – Fine, thanks."
+ },
+ {
+  "g": "a2-dative-pronouns",
+  "q": "Jonas ist krank. Ich bringe ___ eine Suppe.",
+  "opts": [
+   "ihn",
+   "ihr",
+   "er",
+   "ihm"
+  ],
+  "a": 3,
+  "why": "Jonas receives the soup, so he is in the dative: er → ihm. ihn is the accusative.",
+  "en": "Jonas is ill. I'm bringing him some soup."
+ },
+ {
+  "g": "a2-dative-pronouns",
+  "q": "Priya hat Halsschmerzen. Der Hals tut ___ weh.",
+  "opts": [
+   "ihr",
+   "sie",
+   "ihm",
+   "ihnen"
+  ],
+  "a": 0,
+  "why": "With wehtun the person is in the dative: sie (Priya) → ihr.",
+  "en": "Priya has a sore throat. Her throat hurts."
+ },
+ {
+  "g": "a2-dative-pronouns",
+  "q": "Können Sie ___ bitte helfen?",
+  "opts": [
+   "uns",
+   "unser",
+   "wir",
+   "unsere"
+  ],
+  "a": 0,
+  "why": "helfen takes the dative, and the dative of wir is uns.",
+  "en": "Could you help us, please?"
+ },
+ {
+  "g": "a2-praeteritum-sein-haben",
+  "q": "Wo ___ ihr im Urlaub?",
+  "opts": [
+   "waren",
+   "warst",
+   "wart",
+   "war"
+  ],
+  "a": 2,
+  "why": "With ihr the Präteritum of sein is wart.",
+  "en": "Where were you on holiday?"
+ },
+ {
+  "g": "a2-praeteritum-sein-haben",
+  "q": "Gestern ___ ich keine Zeit.",
+  "opts": [
+   "hattest",
+   "hat",
+   "hatten",
+   "hatte"
+  ],
+  "a": 3,
+  "why": "Gestern puts it in the past, and with ich the Präteritum of haben is hatte.",
+  "en": "I didn't have any time yesterday."
+ },
+ {
+  "g": "a2-praeteritum-sein-haben",
+  "q": "Die Fahrt ___ sehr lang, aber schön.",
+  "opts": [
+   "wart",
+   "waren",
+   "war",
+   "warst"
+  ],
+  "a": 2,
+  "why": "die Fahrt is singular (like sie), so the form is war.",
+  "en": "The journey was very long, but nice."
+ },
+ {
+  "g": "a2-praeteritum-sein-haben",
+  "q": "___ du eine gute Reise?",
+  "opts": [
+   "Hattest",
+   "Hatte",
+   "Hattet",
+   "Hast gehabt"
+  ],
+  "a": 0,
+  "why": "With du the Präteritum of haben is hattest. In a yes/no question it comes first.",
+  "en": "Did you have a good trip?"
+ },
+ {
+  "g": "a2-praeteritum-modals",
+  "q": "Gestern ___ ich lange arbeiten.",
+  "opts": [
+   "müsste",
+   "musste",
+   "musstet",
+   "muss"
+  ],
+  "a": 1,
+  "why": "For the past, müssen drops the umlaut and adds -te: ich musste. müsste with an umlaut means \"would have to\".",
+  "en": "Yesterday I had to work late."
+ },
+ {
+  "g": "a2-praeteritum-modals",
+  "q": "Als Kind ___ Jonas keine Milch trinken.",
+  "opts": [
+   "wollte",
+   "willte",
+   "wolltet",
+   "will"
+  ],
+  "a": 0,
+  "why": "The past of wollen is built on the infinitive stem woll- + -te: er wollte.",
+  "en": "As a child, Jonas didn't want to drink milk."
+ },
+ {
+  "g": "a2-praeteritum-modals",
+  "q": "Wir ___ das Hotel gestern Abend nicht finden.",
+  "opts": [
+   "könnten",
+   "konnte",
+   "konntet",
+   "konnten"
+  ],
+  "a": 3,
+  "why": "Past of können with wir: konnten, without the umlaut. könnten means \"could\" as in \"would be able to\".",
+  "en": "We couldn't find the hotel last night."
+ },
+ {
+  "g": "a2-praeteritum-modals",
+  "q": "Die Kinder ___ gestern lange fernsehen.",
+  "opts": [
+   "dürften",
+   "durften",
+   "durfte",
+   "darften"
+  ],
+  "a": 1,
+  "why": "Past of dürfen: drop the umlaut and add -te; with sie (plural) it is durften.",
+  "en": "The children were allowed to watch TV for a long time yesterday."
+ },
+ {
+  "g": "a2-local-preps",
+  "q": "Im Urlaub fahren wir ___ Meer.",
+  "opts": [
+   "am",
+   "ins",
+   "im",
+   "ans"
+  ],
+  "a": 3,
+  "why": "The sea takes an, and you go there (Wohin?), so accusative: an das Meer → ans Meer.",
+  "en": "On holiday we go to the seaside."
+ },
+ {
+  "g": "a2-local-preps",
+  "q": "Im Winter fahren Lena und Jonas in ___ Berge.",
+  "opts": [
+   "den",
+   "der",
+   "die",
+   "dem"
+  ],
+  "a": 2,
+  "why": "They go there (Wohin?), so accusative plural: in die Berge. in den Bergen is for being there.",
+  "en": "In winter Lena and Jonas go to the mountains."
+ },
+ {
+  "g": "a2-local-preps",
+  "q": "Malte macht Urlaub ___ dem Land.",
+  "opts": [
+   "auf",
+   "an",
+   "in",
+   "nach"
+  ],
+  "a": 0,
+  "why": "The countryside takes auf: auf dem Land (Wo?), aufs Land (Wohin?).",
+  "en": "Malte is spending his holiday in the countryside."
+ },
+ {
+  "g": "a2-local-preps",
+  "q": "Nächste Woche fliegen wir ___ Türkei.",
+  "opts": [
+   "nach",
+   "in die",
+   "nach der",
+   "in der"
+  ],
+  "a": 1,
+  "why": "Countries with an article (die Türkei, die Schweiz) take in + accusative for \"to\", not nach.",
+  "en": "Next week we're flying to Turkey."
+ },
+ {
+  "g": "a2-indirect-questions",
+  "q": "Können Sie mir sagen, ___?",
+  "opts": [
+   "wo ist die Post",
+   "ist die Post wo",
+   "wo die Post ist",
+   "wo die Post sind"
+  ],
+  "a": 2,
+  "why": "In an indirect question the verb goes to the end: Wo ist die Post? → …, wo die Post ist?",
+  "en": "Can you tell me where the post office is?"
+ },
+ {
+  "g": "a2-indirect-questions",
+  "q": "Weißt du, wann Malte heute ___?",
+  "opts": [
+   "kommt zurück",
+   "zurückkommen",
+   "zurück kommt",
+   "zurückkommt"
+  ],
+  "a": 3,
+  "why": "The verb goes to the end, and a separable verb joins up again there: … wann er zurückkommt.",
+  "en": "Do you know when Malte is coming back today?"
+ },
+ {
+  "g": "a2-indirect-questions",
+  "q": "Wissen Sie, ___ das Spiel beginnt? – Um acht Uhr.",
+  "opts": [
+   "wann",
+   "wenn",
+   "ob",
+   "dass"
+  ],
+  "a": 0,
+  "why": "The answer is a time, so the question word is wann (when?). wenn is not a question word, and ob is for yes/no questions.",
+  "en": "Do you know when the game starts? – At eight o'clock."
+ },
+ {
+  "g": "a2-indirect-questions",
+  "q": "Kannst du mir zeigen, wie ich ein Foto schicken ___?",
+  "opts": [
+   "kannst",
+   "kann",
+   "können",
+   "gekonnt"
+  ],
+  "a": 1,
+  "why": "The modal verb goes last and agrees with ich: … wie ich ein Foto schicken kann.",
+  "en": "Can you show me how I can send a photo?"
+ },
+ {
+  "g": "a2-ob",
+  "q": "Kommst du morgen? – Ich weiß noch nicht, ___ ich Zeit habe.",
+  "opts": [
+   "wenn",
+   "ob",
+   "dass",
+   "denn"
+  ],
+  "a": 1,
+  "why": "It is a yes/no question (Habe ich Zeit?), so the indirect form uses ob (whether). wenn is only for conditions.",
+  "en": "Are you coming tomorrow? – I don't know yet whether I'll have time."
+ },
+ {
+  "g": "a2-ob",
+  "q": "Kannst du Malte fragen, ob er heute ___?",
+  "opts": [
+   "kommt mit",
+   "mitkommen",
+   "mitkommt",
+   "mit kommt"
+  ],
+  "a": 2,
+  "why": "ob sends the verb to the end, so the separable verb joins up: mitkommen → ob er mitkommt.",
+  "en": "Can you ask Malte if he's coming along today?"
+ },
+ {
+  "g": "a2-ob",
+  "q": "Weißt du, ___?",
+  "opts": [
+   "ob ist der Supermarkt sonntags offen",
+   "ob der Supermarkt sonntags offen ist",
+   "ist der Supermarkt sonntags offen ob",
+   "ob der Supermarkt ist sonntags offen"
+  ],
+  "a": 1,
+  "why": "ob comes first, then the subject, and the verb (ist) goes to the very end.",
+  "en": "Do you know if the supermarket is open on Sundays?"
+ },
+ {
+  "g": "a2-ob",
+  "q": "Frau Yilmaz fragt, ob wir ihr ___ können.",
+  "opts": [
+   "helft",
+   "hilft",
+   "geholfen",
+   "helfen"
+  ],
+  "a": 3,
+  "why": "In an ob-clause the modal (können) is last and the infinitive helfen comes just before it.",
+  "en": "Frau Yilmaz is asking if we can help her."
+ },
+ {
+  "g": "a2-trotzdem",
+  "q": "Ich habe den Film schon gesehen, trotzdem ___ ihn noch einmal.",
+  "opts": [
+   "sehe ich",
+   "ich sehe",
+   "sehen ich",
+   "ich sehen"
+  ],
+  "a": 0,
+  "why": "trotzdem takes position 1, so the verb comes next and then the subject: trotzdem sehe ich.",
+  "en": "I've already seen the film, but I'm watching it again anyway."
+ },
+ {
+  "g": "a2-trotzdem",
+  "q": "Das Wetter ist schlecht, ___ fahren wir an den See.",
+  "opts": [
+   "deshalb",
+   "weil",
+   "trotzdem",
+   "denn"
+  ],
+  "a": 2,
+  "why": "Bad weather, yet a trip to the lake: an unexpected result, so trotzdem. After weil and denn the verb can't come next.",
+  "en": "The weather is bad, but we're still going to the lake."
+ },
+ {
+  "g": "a2-trotzdem",
+  "q": "Der Fernseher ist kaputt. Trotzdem ___.",
+  "opts": [
+   "Jonas ist zufrieden",
+   "ist Jonas zufrieden",
+   "Jonas zufrieden ist",
+   "zufrieden Jonas ist"
+  ],
+  "a": 1,
+  "why": "After Trotzdem the verb comes first, then the subject: Trotzdem ist Jonas zufrieden.",
+  "en": "The TV is broken. Still, Jonas is happy."
+ },
+ {
+  "g": "a2-trotzdem",
+  "q": "Ich habe wenig Geld. Ich kaufe ___ ein neues Handy.",
+  "opts": [
+   "deshalb",
+   "trotzdem",
+   "weil",
+   "denn"
+  ],
+  "a": 1,
+  "why": "Little money, but a new phone: that is unexpected, so trotzdem. It can also stand after the verb.",
+  "en": "I don't have much money. I'm buying a new phone anyway."
+ },
+ {
+  "g": "a2-dative-verbs",
+  "q": "Kannst du ___ beim Kochen helfen?",
+  "opts": [
+   "mich",
+   "mir",
+   "ich",
+   "meiner"
+  ],
+  "a": 1,
+  "why": "helfen takes the dative, and the dative of ich is mir.",
+  "en": "Can you help me with the cooking?"
+ },
+ {
+  "g": "a2-dative-verbs",
+  "q": "Der Kuchen schmeckt ___ Kindern sehr gut.",
+  "opts": [
+   "die",
+   "den",
+   "der",
+   "dem"
+  ],
+  "a": 1,
+  "why": "schmecken takes the person in the dative; the dative plural article is den, and the noun adds -n (Kindern).",
+  "en": "The children really like the cake."
+ },
+ {
+  "g": "a2-dative-verbs",
+  "q": "Wem gehört der Schlüssel? – Er gehört ___ Vater.",
+  "opts": [
+   "meinem",
+   "meinen",
+   "mein",
+   "meiner"
+  ],
+  "a": 0,
+  "why": "gehören takes the dative: der Vater → meinem Vater.",
+  "en": "Who does the key belong to? – It belongs to my father."
+ },
+ {
+  "g": "a2-dative-verbs",
+  "q": "Wir danken ___ für die Einladung, Frau Yilmaz.",
+  "opts": [
+   "Sie",
+   "Ihnen",
+   "Ihre",
+   "Ihren"
+  ],
+  "a": 1,
+  "why": "danken takes the dative, and the polite Sie becomes Ihnen in the dative.",
+  "en": "Thank you for the invitation, Frau Yilmaz."
+ },
+ {
+  "g": "a2-two-objects",
+  "q": "Was schenkst du ___ zur Hochzeit?",
+  "opts": [
+   "deiner Schwester",
+   "deine Schwester",
+   "deinen Schwester",
+   "deinem Schwester"
+  ],
+  "a": 0,
+  "why": "The person who gets the present is in the dative: die Schwester → deiner Schwester.",
+  "en": "What are you giving your sister for her wedding?"
+ },
+ {
+  "g": "a2-two-objects",
+  "q": "Gibst du mir bitte das Salz? – Ja, ich gebe ___.",
+  "opts": [
+   "es dir",
+   "dir es",
+   "es dich",
+   "dich es"
+  ],
+  "a": 0,
+  "why": "When the thing is a pronoun (es), it comes before the person: es dir. The person is dative: dir.",
+  "en": "Will you pass me the salt, please? – Yes, I'll pass it to you."
+ },
+ {
+  "g": "a2-two-objects",
+  "q": "Jonas zeigt ___ seine neue Wohnung.",
+  "opts": [
+   "wir",
+   "unser",
+   "unsere",
+   "uns"
+  ],
+  "a": 3,
+  "why": "The people who are shown the flat are in the dative: wir → uns.",
+  "en": "Jonas is showing us his new flat."
+ },
+ {
+  "g": "a2-two-objects",
+  "q": "Hast du Lena das Buch gegeben? – Ja, ich habe ___ gestern gegeben.",
+  "opts": [
+   "ihr es",
+   "es ihr",
+   "sie es",
+   "es sie"
+  ],
+  "a": 1,
+  "why": "Both objects are pronouns, so the thing (es) comes first, then the person in the dative (ihr).",
+  "en": "Did you give Lena the book? – Yes, I gave it to her yesterday."
+ },
+ {
+  "g": "a2-genitive-names",
+  "q": "Heute ist ___ Hochzeit.",
+  "opts": [
+   "Malte's",
+   "Maltes",
+   "Maltes'",
+   "Malte"
+  ],
+  "a": 1,
+  "why": "Add -s to the name with no apostrophe: Maltes Hochzeit.",
+  "en": "Today is Malte's wedding."
+ },
+ {
+  "g": "a2-genitive-names",
+  "q": "Wir sind zu ___ Party eingeladen.",
+  "opts": [
+   "Jonass",
+   "Jonas's",
+   "Jonas'",
+   "Jonases"
+  ],
+  "a": 2,
+  "why": "Jonas already ends in -s, so German adds only an apostrophe: Jonas' Party.",
+  "en": "We're invited to Jonas's party."
+ },
+ {
+  "g": "a2-genitive-names",
+  "q": "Frau ___ Kinder spielen oft im Garten.",
+  "opts": [
+   "Yilmazs",
+   "Yilmazes",
+   "Yilmaz's",
+   "Yilmaz'"
+  ],
+  "a": 3,
+  "why": "Yilmaz ends in -z, so it takes only an apostrophe: Frau Yilmaz' Kinder.",
+  "en": "Frau Yilmaz's children often play in the garden."
+ },
+ {
+  "g": "a2-genitive-names",
+  "q": "Das ist das Auto ___ Malte.",
+  "opts": [
+   "zu",
+   "aus",
+   "bei",
+   "von"
+  ],
+  "a": 3,
+  "why": "In everyday speech you can say whose something is with von + the name: das Auto von Malte = Maltes Auto.",
+  "en": "That's Malte's car."
+ },
+ {
+  "g": "a2-comparative",
+  "q": "Der Zug ist schneller ___ der Bus.",
+  "opts": [
+   "wie",
+   "dann",
+   "als",
+   "so"
+  ],
+  "a": 2,
+  "why": "After a comparative (schneller) \"than\" is als.",
+  "en": "The train is faster than the bus."
+ },
+ {
+  "g": "a2-comparative",
+  "q": "Jonas ist so groß ___ sein Vater.",
+  "opts": [
+   "als",
+   "so",
+   "wenn",
+   "wie"
+  ],
+  "a": 3,
+  "why": "For two equal things use so … wie (as … as).",
+  "en": "Jonas is as tall as his father."
+ },
+ {
+  "g": "a2-comparative",
+  "q": "Heute ist das Wetter ___ als gestern.",
+  "opts": [
+   "guter",
+   "mehr gut",
+   "besser",
+   "gutter"
+  ],
+  "a": 2,
+  "why": "gut is irregular: gut → besser → am besten.",
+  "en": "The weather is better today than yesterday."
+ },
+ {
+  "g": "a2-comparative",
+  "q": "Meine Schwester ist drei Jahre ___ als ich.",
+  "opts": [
+   "jünger",
+   "junger",
+   "jüngerer",
+   "mehr jung"
+  ],
+  "a": 0,
+  "why": "Short adjectives often take an umlaut in the comparative: jung → jünger. After sein it has no extra ending.",
+  "en": "My sister is three years younger than me."
+ },
+ {
+  "g": "a2-superlative",
+  "q": "Welche Stadt ist ___? Berlin, Hamburg oder München?",
+  "opts": [
+   "am größten",
+   "am größesten",
+   "die größten",
+   "am großsten"
+  ],
+  "a": 0,
+  "why": "After the verb use am …sten; groß is an exception and takes only -ten: am größten.",
+  "en": "Which city is the biggest? Berlin, Hamburg or Munich?"
+ },
+ {
+  "g": "a2-superlative",
+  "q": "Herr Weber ist der ___ Lehrer an unserer Schule.",
+  "opts": [
+   "besten",
+   "beste",
+   "gutste",
+   "am besten"
+  ],
+  "a": 1,
+  "why": "Before a noun use der + …ste with the normal ending: der beste Lehrer (nominative, -e).",
+  "en": "Mr Weber is the best teacher at our school."
+ },
+ {
+  "g": "a2-superlative",
+  "q": "Was isst du am ___? – Pizza!",
+  "opts": [
+   "gernsten",
+   "liebsten",
+   "lieberen",
+   "liebesten"
+  ],
+  "a": 1,
+  "why": "gern is irregular: gern → lieber → am liebsten.",
+  "en": "What do you like eating most? – Pizza!"
+ },
+ {
+  "g": "a2-superlative",
+  "q": "Im Dezember sind die Tage am ___.",
+  "opts": [
+   "kürzesten",
+   "kürzsten",
+   "kurzesten",
+   "kürzeren"
+  ],
+  "a": 0,
+  "why": "kurz ends in -z, so it adds -esten, and it takes an umlaut: am kürzesten.",
+  "en": "In December the days are the shortest."
+ },
+ {
+  "g": "a2-praeteritum-review",
+  "q": "Als Kind ___ ich keine Lust auf Hausaufgaben.",
+  "opts": [
+   "hattest",
+   "hatten",
+   "hat",
+   "hatte"
+  ],
+  "a": 3,
+  "why": "haben normally goes into the Präteritum for the past: ich hatte.",
+  "en": "As a child I didn't feel like doing homework."
+ },
+ {
+  "g": "a2-praeteritum-review",
+  "q": "Mit sechs Jahren ___ ich in die Schule gekommen.",
+  "opts": [
+   "habe",
+   "ist",
+   "hat",
+   "bin"
+  ],
+  "a": 3,
+  "why": "kommen is a movement, so its Perfekt uses sein: ich bin gekommen.",
+  "en": "I started school when I was six."
+ },
+ {
+  "g": "a2-praeteritum-review",
+  "q": "Letzte Woche ___ Jonas nicht zur Arbeit gehen, weil er krank war.",
+  "opts": [
+   "kann",
+   "könnte",
+   "konnte",
+   "konnten"
+  ],
+  "a": 2,
+  "why": "Modal verbs go into the Präteritum for the past: er konnte (he couldn't). könnte means \"could\" as in \"would be able to\".",
+  "en": "Last week Jonas couldn't go to work because he was ill."
+ },
+ {
+  "g": "a2-praeteritum-review",
+  "q": "Früher ___ es in unserer Schule keine Computer.",
+  "opts": [
+   "gibt",
+   "gebt",
+   "gegeben",
+   "gab"
+  ],
+  "a": 3,
+  "why": "Früher points to the past, and es gibt becomes es gab in the Präteritum.",
+  "en": "In the past there were no computers at our school."
+ },
+ {
+  "g": "a2-konj-polite",
+  "q": "___ Sie mir bitte die Rechnung schicken?",
+  "opts": [
+   "Konnten",
+   "Könntest",
+   "Kannst",
+   "Könnten"
+  ],
+  "a": 3,
+  "why": "Polite Sie takes könnten, with the umlaut. Konnten without it is the past tense.",
+  "en": "Could you send me the bill, please?"
+ },
+ {
+  "g": "a2-konj-polite",
+  "q": "Würden Sie bitte das Fenster ___?",
+  "opts": [
+   "aufmacht",
+   "machen auf",
+   "aufgemacht",
+   "aufmachen"
+  ],
+  "a": 3,
+  "why": "After würden the second verb goes to the end as an infinitive; a separable verb stays in one piece: aufmachen.",
+  "en": "Would you open the window, please?"
+ },
+ {
+  "g": "a2-konj-polite",
+  "q": "___ du mir kurz dein Handy geben?",
+  "opts": [
+   "Könnten",
+   "Könntest",
+   "Könntet",
+   "Konntest"
+  ],
+  "a": 1,
+  "why": "With du the polite form is könntest.",
+  "en": "Could you give me your phone for a moment?"
+ },
+ {
+  "g": "a2-konj-polite",
+  "q": "Entschuldigung, ___ Sie mir sagen, wie spät es ist?",
+  "opts": [
+   "könntest",
+   "könnten",
+   "konnten",
+   "könnt"
+  ],
+  "a": 1,
+  "why": "With Sie the polite form is könnten.",
+  "en": "Excuse me, could you tell me what time it is?"
+ },
+ {
+  "g": "a2-haette-gern",
+  "q": "Guten Tag, ich ___ gern ein Brot.",
+  "opts": [
+   "hatte",
+   "hätte",
+   "habe",
+   "hättest"
+  ],
+  "a": 1,
+  "why": "Ich hätte gern … is the polite way to order. hatte is the past, and ich habe … gern means \"I like …\".",
+  "en": "Hello, I'd like a loaf of bread."
+ },
+ {
+  "g": "a2-haette-gern",
+  "q": "Ich hätte gern ___ Kaffee mit Milch.",
+  "opts": [
+   "ein",
+   "eine",
+   "einem",
+   "einen"
+  ],
+  "a": 3,
+  "why": "What you want is in the accusative: der Kaffee → einen Kaffee.",
+  "en": "I'd like a coffee with milk."
+ },
+ {
+  "g": "a2-haette-gern",
+  "q": "___ ihr gern noch ein Stück Torte?",
+  "opts": [
+   "Hätten",
+   "Hattet",
+   "Hättest",
+   "Hättet"
+  ],
+  "a": 3,
+  "why": "With ihr the form is hättet. Hattet without the umlaut is the past tense.",
+  "en": "Would you like another piece of cake?"
+ },
+ {
+  "g": "a2-haette-gern",
+  "q": "Priya ___ ein Paket abholen.",
+  "opts": [
+   "hätte gern",
+   "hat gern",
+   "möchte",
+   "mag"
+  ],
+  "a": 2,
+  "why": "With a second verb (abholen) use möchte. hätte gern only takes a thing: Ich hätte gern ein Paket.",
+  "en": "Priya would like to pick up a parcel."
+ },
+ {
+  "g": "a2-lassen",
+  "q": "Jonas ___ sein Handy reparieren.",
+  "opts": [
+   "lasst",
+   "lassen",
+   "lässt",
+   "lasse"
+  ],
+  "a": 2,
+  "why": "lassen changes its vowel with er/sie/es: er lässt.",
+  "en": "Jonas is having his phone repaired."
+ },
+ {
+  "g": "a2-lassen",
+  "q": "Wir lassen das Auto ___.",
+  "opts": [
+   "gewaschen",
+   "waschen",
+   "wäscht",
+   "zu waschen"
+  ],
+  "a": 1,
+  "why": "After lassen the second verb is a plain infinitive at the end: not a participle, and no zu.",
+  "en": "We're having the car washed."
+ },
+ {
+  "g": "a2-lassen",
+  "q": "Ich repariere die Heizung nicht selbst, ich ___ sie reparieren.",
+  "opts": [
+   "mache",
+   "habe",
+   "werde",
+   "lasse"
+  ],
+  "a": 3,
+  "why": "To get someone else to do a job, German uses lassen, not machen or haben.",
+  "en": "I'm not repairing the heating myself, I'm having it repaired."
+ },
+ {
+  "g": "a2-lassen",
+  "q": "___ ihr die Fotos drucken?",
+  "opts": [
+   "Lässt",
+   "Lassen",
+   "Lasse",
+   "Lasst"
+  ],
+  "a": 3,
+  "why": "With ihr the form is lasst, without an umlaut.",
+  "en": "Are you having the photos printed?"
+ },
+ {
+  "g": "a2-zu-infinitive",
+  "q": "Ich habe vergessen, Brot ___.",
+  "opts": [
+   "kaufen",
+   "zu gekauft",
+   "gekauft zu",
+   "zu kaufen"
+  ],
+  "a": 3,
+  "why": "After vergessen the second verb goes to the end with zu: zu kaufen.",
+  "en": "I forgot to buy bread."
+ },
+ {
+  "g": "a2-zu-infinitive",
+  "q": "Es ist nicht leicht, früh ___.",
+  "opts": [
+   "zu aufstehen",
+   "aufstehen",
+   "aufgestanden",
+   "aufzustehen"
+  ],
+  "a": 3,
+  "why": "With a separable verb, zu goes between the prefix and the verb: auf-zu-stehen.",
+  "en": "It isn't easy to get up early."
+ },
+ {
+  "g": "a2-zu-infinitive",
+  "q": "Wir sollten öfter mit dem Fahrrad ___.",
+  "opts": [
+   "fahren",
+   "zu fahren",
+   "gefahren",
+   "fährt"
+  ],
+  "a": 0,
+  "why": "After modal verbs like sollten there is no zu, just the infinitive.",
+  "en": "We should go by bike more often."
+ },
+ {
+  "g": "a2-zu-infinitive",
+  "q": "Jonas versucht, weniger Fleisch ___.",
+  "opts": [
+   "zu essen",
+   "essen",
+   "zu isst",
+   "gegessen"
+  ],
+  "a": 0,
+  "why": "After versuchen use zu + infinitive at the end; the verb after zu never takes a personal ending.",
+  "en": "Jonas is trying to eat less meat."
+ },
+ {
+  "g": "a2-deshalb-trotzdem",
+  "q": "Der Bus ist schon weg, ___ gehe ich zu Fuß.",
+  "opts": [
+   "trotzdem",
+   "weil",
+   "deshalb",
+   "denn"
+  ],
+  "a": 2,
+  "why": "The bus has gone, so walking is the expected result: deshalb. weil and denn can't be followed by the verb.",
+  "en": "The bus has already gone, so I'm walking."
+ },
+ {
+  "g": "a2-deshalb-trotzdem",
+  "q": "Ich habe wenig Zeit, ___ helfe ich dir.",
+  "opts": [
+   "deshalb",
+   "weil",
+   "trotzdem",
+   "aber"
+  ],
+  "a": 2,
+  "why": "Little time, yet I help: an unexpected result, so trotzdem. After aber the subject would come first.",
+  "en": "I don't have much time, but I'll help you anyway."
+ },
+ {
+  "g": "a2-deshalb-trotzdem",
+  "q": "Das Wetter war schlecht. ___ sind wir zu Hause geblieben.",
+  "opts": [
+   "Trotzdem",
+   "Weil",
+   "Denn",
+   "Deshalb"
+  ],
+  "a": 3,
+  "why": "Bad weather, so staying at home is the expected result: Deshalb.",
+  "en": "The weather was bad. That's why we stayed at home."
+ },
+ {
+  "g": "a2-deshalb-trotzdem",
+  "q": "Es schneit, trotzdem ___ draußen.",
+  "opts": [
+   "die Kinder spielen",
+   "spielen die Kinder",
+   "spielt die Kinder",
+   "die Kinder spielt"
+  ],
+  "a": 1,
+  "why": "After trotzdem the verb comes first, then the subject, and the verb agrees with die Kinder (plural): spielen.",
+  "en": "It's snowing, but the children are still playing outside."
+ },
+ {
+  "g": "a2-man",
+  "q": "Wo ___ man hier Fahrkarten?",
+  "opts": [
+   "kaufen",
+   "kaufst",
+   "kauft",
+   "kaufe"
+  ],
+  "a": 2,
+  "why": "man takes the er/sie/es form of the verb: man kauft.",
+  "en": "Where do you buy tickets here?"
+ },
+ {
+  "g": "a2-man",
+  "q": "In der Bibliothek ___ man leise sein.",
+  "opts": [
+   "müssen",
+   "musst",
+   "muss",
+   "müsst"
+  ],
+  "a": 2,
+  "why": "man takes the er/sie/es form: man muss.",
+  "en": "You have to be quiet in the library."
+ },
+ {
+  "g": "a2-man",
+  "q": "___ sollte das Licht ausmachen, wenn man aus dem Zimmer geht.",
+  "opts": [
+   "Mann",
+   "Wir",
+   "Man",
+   "Leute"
+  ],
+  "a": 2,
+  "why": "man (people, you) has one n; der Mann means \"the man\". Wir and Leute would need sollten.",
+  "en": "You should turn off the light when you leave the room."
+ },
+ {
+  "g": "a2-man",
+  "q": "Kann man hier mit Karte ___?",
+  "opts": [
+   "bezahlen",
+   "bezahlt",
+   "bezahlst",
+   "zu bezahlen"
+  ],
+  "a": 0,
+  "why": "After kann the second verb goes to the end as a plain infinitive, without zu.",
+  "en": "Can you pay by card here?"
+ }
+]

@@ -30,6 +30,16 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
 - [ ] Phase 8: practice tests and mock exams
 - [ ] Phase 9: polish
 
+## Learning science (docs/07-learning-science.md)
+- Done: L1 new cards spread among reviews (`spreadNew`) · L2 typed production cards (`checkAnswer`, `diffChars`,
+  suggested grade, no shortcuts while typing) · L3 Cover the English · L4 say it aloud · L5 sleep on it ·
+  L6 minutes for today · L7 Guess first · L8 tricky words and memory hooks · L9 this week · L10 study plan ·
+  L18 tips, built early as the in-app page "How you learn here" (`#/tips/<i>`), which also lists the deferred items
+  with the phase that brings them.
+- Deferred: L11 known words in a text, L12 predict first, L13 fluency re-read → Phase 4 (reading);
+  L13 hear it again faster, L14 shadowing → Phase 5 (and L14 for the Speak model answers in Phase 6);
+  L15 revisit stops, L16 cumulative station tests, L17 spaced mock exams → Phase 8.
+
 ## Notes for the next session
 - Screenshots and smoke tests: `scripts/shot.py` (see README). In Git Bash set `MSYS_NO_PATHCONV=1`, or the
   route `/` turns into a Windows path. Headless Chrome follows the Windows dark theme unless told otherwise;

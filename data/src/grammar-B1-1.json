@@ -1,0 +1,6581 @@
+[
+ {
+  "id": "b1-relative-nom-acc",
+  "pattern": "noun, + der / die / das / den (relative pronoun) + … + verb (at the end)",
+  "explain": "A relative clause describes a noun, like English 'who', 'which' or 'that'. It starts with a relative pronoun: its gender and number come from the noun it describes, but its case comes from its job inside the clause. As the subject it is nominative (der, die, das, die); as the object it is accusative, and only the masculine changes: der → den. A comma opens the clause and the conjugated verb goes to the end.",
+  "compare_en": "English chooses between who and whom, or leaves the pronoun out ('the man I know'). German never drops it: der Mann, den ich kenne.",
+  "table": [
+   [
+    "",
+    "masculine",
+    "feminine",
+    "neuter",
+    "plural"
+   ],
+   [
+    "nominative (subject)",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "accusative (object)",
+    "den",
+    "die",
+    "das",
+    "die"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Das",
+     "ist",
+     "der Nachbar,",
+     "der",
+     "jeden Abend Gitarre",
+     "spielt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the neighbour"
+     ],
+     [
+      [
+       3
+      ],
+      "who"
+     ],
+     [
+      [
+       5
+      ],
+      "plays"
+     ],
+     [
+      [
+       4
+      ],
+      "the guitar every evening."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Der Kuchen,",
+     "den",
+     "Frau Yilmaz",
+     "gebacken",
+     "hat,",
+     "ist",
+     "sehr lecker."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The cake"
+     ],
+     [
+      [
+       1
+      ],
+      "that"
+     ],
+     [
+      [
+       2
+      ],
+      "Frau Yilmaz"
+     ],
+     [
+      [
+       3,
+       4
+      ],
+      "baked"
+     ],
+     [
+      [
+       5
+      ],
+      "is"
+     ],
+     [
+      [
+       6
+      ],
+      "very tasty."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "sucht",
+     "ein Zimmer,",
+     "das",
+     "nicht zu teuer",
+     "ist."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is looking for"
+     ],
+     [
+      [
+       2
+      ],
+      "a room"
+     ],
+     [
+      [
+       3
+      ],
+      "that"
+     ],
+     [
+      [
+       5
+      ],
+      "is"
+     ],
+     [
+      [
+       4
+      ],
+      "not too expensive."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-relative-dat",
+  "pattern": "noun, + dem / der / denen (dative relative pronoun) + … + verb (at the end)",
+  "explain": "When the noun has a dative job inside the relative clause, the relative pronoun is dative: dem (masculine and neuter), der (feminine), denen (plural). This happens after verbs that take the dative, such as helfen, gefallen, gehören, schmecken and danken, and for the person you give or explain something to. Watch the plural: denen, which is longer than the article den. The verb still goes to the end.",
+  "compare_en": "English uses whom or 'to whom' here, or moves 'to' to the end: die Frau, der ich helfe = the woman (whom) I help; der Kollege, dem das Auto gehört = the colleague the car belongs to.",
+  "table": [
+   [
+    "",
+    "masculine",
+    "feminine",
+    "neuter",
+    "plural"
+   ],
+   [
+    "nominative (subject)",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "accusative (object)",
+    "den",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "dative",
+    "dem",
+    "der",
+    "dem",
+    "denen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Frau Yilmaz",
+     "ist",
+     "die Nachbarin,",
+     "der",
+     "ich",
+     "oft beim Einkaufen",
+     "helfe."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Frau Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the neighbour"
+     ],
+     [
+      [
+       3
+      ],
+      "whom"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       5
+      ],
+      "often"
+     ],
+     [
+      [
+       6
+      ],
+      "help"
+     ],
+     [
+      [
+       5
+      ],
+      "with the shopping."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Der Kollege,",
+     "dem",
+     "das Auto",
+     "gehört,",
+     "heißt",
+     "Malte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The colleague"
+     ],
+     [
+      [
+       2
+      ],
+      "the car"
+     ],
+     [
+      [
+       3
+      ],
+      "belongs"
+     ],
+     [
+      [
+       1
+      ],
+      "to"
+     ],
+     [
+      [
+       4
+      ],
+      "is called"
+     ],
+     [
+      [
+       5
+      ],
+      "Malte."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Die Gäste,",
+     "denen",
+     "das Essen",
+     "nicht geschmeckt",
+     "hat,",
+     "sind",
+     "früh gegangen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The guests"
+     ],
+     [
+      [
+       1
+      ],
+      "who"
+     ],
+     [
+      [
+       3,
+       4
+      ],
+      "didn't like"
+     ],
+     [
+      [
+       2
+      ],
+      "the food"
+     ],
+     [
+      [
+       5,
+       6
+      ],
+      "left early."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     5,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-relative-preps",
+  "pattern": "noun, + preposition + relative pronoun (case set by the preposition) + … + verb (at the end)",
+  "explain": "If the verb in the relative clause needs a preposition (sprechen mit, sich freuen auf, suchen nach), the preposition comes first, straight after the comma, and the relative pronoun follows it. The preposition decides the case: mit and nach take the dative (mit dem, mit der, mit denen); für takes the accusative, and so does auf in sich freuen auf (für den, auf die). Gender and number still come from the noun.",
+  "compare_en": "English usually moves the preposition to the end: 'the friend I live with'. German never does: der Freund, mit dem ich wohne. The preposition stays in front of the pronoun.",
+  "examples": [
+   {
+    "de": [
+     "Das",
+     "ist",
+     "die Mitbewohnerin,",
+     "mit der",
+     "ich",
+     "die Küche",
+     "teile."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the flatmate"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       6
+      ],
+      "share"
+     ],
+     [
+      [
+       5
+      ],
+      "the kitchen"
+     ],
+     [
+      [
+       3
+      ],
+      "with."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Die Party,",
+     "auf die",
+     "ich mich",
+     "gefreut",
+     "habe,",
+     "ist",
+     "leider",
+     "ausgefallen."
+    ],
+    "en": [
+     [
+      [
+       6
+      ],
+      "Unfortunately,"
+     ],
+     [
+      [
+       0
+      ],
+      "the party"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       4
+      ],
+      "was"
+     ],
+     [
+      [
+       3
+      ],
+      "looking forward"
+     ],
+     [
+      [
+       1
+      ],
+      "to"
+     ],
+     [
+      [
+       5
+      ],
+      "has been"
+     ],
+     [
+      [
+       7
+      ],
+      "cancelled."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     5,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Wo",
+     "ist",
+     "der Schlüssel,",
+     "nach dem",
+     "du",
+     "gesucht",
+     "hast?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the key"
+     ],
+     [
+      [
+       4
+      ],
+      "you"
+     ],
+     [
+      [
+       6
+      ],
+      "were"
+     ],
+     [
+      [
+       5
+      ],
+      "looking"
+     ],
+     [
+      [
+       3
+      ],
+      "for?"
+     ]
+    ],
+    "v": [
+     1,
+     5,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-passive-present",
+  "pattern": "subject + werden (conjugated) + … + Partizip II (at the end)",
+  "explain": "The passive puts the action in focus, not the person doing it: what happens to something. Form it with werden (wird, werden …) plus the Partizip II (the past participle, e.g. geliefert) at the end of the clause. To say who does it, add von + dative: von der Chefin. It is common for processes at work, rules and instructions.",
+  "compare_en": "English builds the passive with 'be' (is delivered); German uses werden (wird geliefert). Careful: Das Paket ist geliefert describes a finished state (it has been delivered), not the action.",
+  "table": [
+   [
+    "",
+    "werden"
+   ],
+   [
+    "ich",
+    "werde"
+   ],
+   [
+    "du",
+    "wirst"
+   ],
+   [
+    "er / sie / es",
+    "wird"
+   ],
+   [
+    "wir",
+    "werden"
+   ],
+   [
+    "ihr",
+    "werdet"
+   ],
+   [
+    "sie / Sie",
+    "werden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Das Paket",
+     "wird",
+     "morgen",
+     "geliefert."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The parcel"
+     ],
+     [
+      [
+       1
+      ],
+      "will be"
+     ],
+     [
+      [
+       3
+      ],
+      "delivered"
+     ],
+     [
+      [
+       2
+      ],
+      "tomorrow."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "In unserer Firma",
+     "werden",
+     "alle Rechnungen",
+     "online bezahlt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In our company"
+     ],
+     [
+      [
+       2
+      ],
+      "all invoices"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       3
+      ],
+      "paid online."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Die neuen Kollegen",
+     "werden",
+     "von Malte",
+     "begrüßt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The new colleagues"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       3
+      ],
+      "welcomed"
+     ],
+     [
+      [
+       2
+      ],
+      "by Malte."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-passive-past",
+  "pattern": "subject + wurde / wurden + … + Partizip II (at the end)",
+  "explain": "To say what was done in the past, put werden into the Präteritum (simple past): wurde (singular), wurden (plural), with the Partizip II at the end. This is the usual past passive in reports and texts. In the Perfekt it is ist … worden: Das Haus ist 1990 gebaut worden (worden, not geworden).",
+  "compare_en": "English 'was built' = German wurde gebaut. Don't mix up wurde (was, past passive) with würde (would): the umlaut changes the meaning.",
+  "table": [
+   [
+    "",
+    "werden (Präteritum)"
+   ],
+   [
+    "ich",
+    "wurde"
+   ],
+   [
+    "du",
+    "wurdest"
+   ],
+   [
+    "er / sie / es",
+    "wurde"
+   ],
+   [
+    "wir",
+    "wurden"
+   ],
+   [
+    "ihr",
+    "wurdet"
+   ],
+   [
+    "sie / Sie",
+    "wurden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Unser Haus",
+     "wurde",
+     "1965",
+     "gebaut."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Our house"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       3
+      ],
+      "built"
+     ],
+     [
+      [
+       2
+      ],
+      "in 1965."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Gestern",
+     "wurden",
+     "zwei neue Kollegen",
+     "eingestellt."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "Two new colleagues"
+     ],
+     [
+      [
+       1
+      ],
+      "were"
+     ],
+     [
+      [
+       3
+      ],
+      "hired"
+     ],
+     [
+      [
+       0
+      ],
+      "yesterday."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Die Fabrik",
+     "ist",
+     "letztes Jahr",
+     "geschlossen",
+     "worden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The factory"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "was"
+     ],
+     [
+      [
+       3
+      ],
+      "closed"
+     ],
+     [
+      [
+       2
+      ],
+      "last year."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-passive-modal",
+  "pattern": "subject + modal verb (conjugated) + … + Partizip II + werden (at the end)",
+  "explain": "To say what must, can or should be done, combine a modal verb with the passive. The modal (muss, kann, soll, darf) takes position 2, and the end of the clause holds the Partizip II followed by werden: muss gemacht werden. In a subordinate clause (one starting with dass, weil …) the modal moves to the very end: …, dass der Bericht heute geschrieben werden muss.",
+  "compare_en": "It matches English 'must be done': modal + be + participle. German puts the last two in the opposite order: gemacht werden = be done.",
+  "examples": [
+   {
+    "de": [
+     "Der Bericht",
+     "muss",
+     "bis Freitag",
+     "geschrieben",
+     "werden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The report"
+     ],
+     [
+      [
+       1
+      ],
+      "must"
+     ],
+     [
+      [
+       4
+      ],
+      "be"
+     ],
+     [
+      [
+       3
+      ],
+      "written"
+     ],
+     [
+      [
+       2
+      ],
+      "by Friday."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Kann",
+     "die Heizung",
+     "heute noch",
+     "repariert",
+     "werden?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Can"
+     ],
+     [
+      [
+       1
+      ],
+      "the heating"
+     ],
+     [
+      [
+       2
+      ],
+      "still"
+     ],
+     [
+      [
+       4
+      ],
+      "be"
+     ],
+     [
+      [
+       3
+      ],
+      "repaired"
+     ],
+     [
+      [
+       2
+      ],
+      "today?"
+     ]
+    ],
+    "v": [
+     0,
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "sagt,",
+     "dass",
+     "die Formulare",
+     "unterschrieben",
+     "werden",
+     "müssen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "says"
+     ],
+     [
+      [
+       2
+      ],
+      "that"
+     ],
+     [
+      [
+       3
+      ],
+      "the forms"
+     ],
+     [
+      [
+       6
+      ],
+      "must"
+     ],
+     [
+      [
+       5
+      ],
+      "be"
+     ],
+     [
+      [
+       4
+      ],
+      "signed."
+     ]
+    ],
+    "v": [
+     1,
+     4,
+     5,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-praeteritum",
+  "pattern": "regular: stem + -te (lernte) · irregular: new stem (ging, kam, fand) + endings · ich and er/sie/es: no ending",
+  "explain": "The Präteritum (simple past) is the past tense of written German: stories, reports, CVs and the news. In speech Germans mostly use the Perfekt, except with sein, haben and the modal verbs. Regular verbs add -te to the stem (lernen → lernte). Irregular verbs change their vowel (gehen → ging, finden → fand) and must be learned. The ich and er/sie/es forms have no ending: ich ging, sie ging.",
+  "compare_en": "It works like English: regular verbs add an ending (learned = lernte), irregular ones change the vowel (go → went, find → found = gehen → ging, finden → fand). Many verbs are irregular in both languages.",
+  "table": [
+   [
+    "",
+    "lernen (regular)",
+    "gehen (irregular)",
+    "finden (irregular)"
+   ],
+   [
+    "ich",
+    "lernte",
+    "ging",
+    "fand"
+   ],
+   [
+    "du",
+    "lerntest",
+    "gingst",
+    "fandest"
+   ],
+   [
+    "er / sie / es",
+    "lernte",
+    "ging",
+    "fand"
+   ],
+   [
+    "wir",
+    "lernten",
+    "gingen",
+    "fanden"
+   ],
+   [
+    "ihr",
+    "lerntet",
+    "gingt",
+    "fandet"
+   ],
+   [
+    "sie / Sie",
+    "lernten",
+    "gingen",
+    "fanden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "lernte",
+     "drei Jahre lang",
+     "Französisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "learned"
+     ],
+     [
+      [
+       3
+      ],
+      "French"
+     ],
+     [
+      [
+       2
+      ],
+      "for three years."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Als Kind",
+     "ging",
+     "Priya",
+     "in Mumbai zur Schule."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "As a child"
+     ],
+     [
+      [
+       2
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "went"
+     ],
+     [
+      [
+       3
+      ],
+      "to school in Mumbai."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Nach dem Abitur",
+     "fand",
+     "Jonas",
+     "schnell",
+     "einen Ausbildungsplatz."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "After his Abitur,"
+     ],
+     [
+      [
+       2
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       3
+      ],
+      "quickly"
+     ],
+     [
+      [
+       1
+      ],
+      "found"
+     ],
+     [
+      [
+       4
+      ],
+      "an apprenticeship."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "kam",
+     "ins Klassenzimmer",
+     "und",
+     "schrieb",
+     "das Datum",
+     "an die Tafel."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Herr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "came"
+     ],
+     [
+      [
+       2
+      ],
+      "into the classroom"
+     ],
+     [
+      [
+       3
+      ],
+      "and"
+     ],
+     [
+      [
+       4
+      ],
+      "wrote"
+     ],
+     [
+      [
+       5
+      ],
+      "the date"
+     ],
+     [
+      [
+       6
+      ],
+      "on the board."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-praeteritum-mixed",
+  "pattern": "mixed verbs: new stem + regular -te endings (denken → dachte, bringen → brachte, wissen → wusste)",
+  "explain": "A small group of 'mixed' verbs changes its stem like irregular verbs but takes the regular -te endings. The important ones: denken → dachte, bringen → brachte, wissen → wusste, kennen → kannte, nennen → nannte, rennen → rannte. Their Partizip II is mixed too: gedacht, gebracht, gewusst, gekannt. Never say denkte or bringte.",
+  "compare_en": "English has the same type of verb: think → thought, bring → brought. They match closely: dachte = thought, brachte = brought.",
+  "table": [
+   [
+    "infinitive",
+    "Präteritum",
+    "Partizip II",
+    "English"
+   ],
+   [
+    "denken",
+    "dachte",
+    "gedacht",
+    "think"
+   ],
+   [
+    "bringen",
+    "brachte",
+    "gebracht",
+    "bring"
+   ],
+   [
+    "wissen",
+    "wusste",
+    "gewusst",
+    "know (a fact)"
+   ],
+   [
+    "kennen",
+    "kannte",
+    "gekannt",
+    "know (a person, a place)"
+   ],
+   [
+    "nennen",
+    "nannte",
+    "genannt",
+    "call, name"
+   ],
+   [
+    "rennen",
+    "rannte",
+    "ist gerannt",
+    "run"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "dachte,",
+     "der Kurs",
+     "beginnt",
+     "um neun."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "thought"
+     ],
+     [
+      [
+       2
+      ],
+      "the course"
+     ],
+     [
+      [
+       3
+      ],
+      "started"
+     ],
+     [
+      [
+       4
+      ],
+      "at nine."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "brachte",
+     "jeden Freitag Kuchen",
+     "mit."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Herr Weber"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "brought"
+     ],
+     [
+      [
+       2
+      ],
+      "cake"
+     ],
+     [
+      [
+       3
+      ],
+      "along"
+     ],
+     [
+      [
+       2
+      ],
+      "every Friday."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "wusste",
+     "nicht,",
+     "wo",
+     "die Mensa",
+     "ist."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "didn't know"
+     ],
+     [
+      [
+       3
+      ],
+      "where"
+     ],
+     [
+      [
+       4
+      ],
+      "the canteen"
+     ],
+     [
+      [
+       5
+      ],
+      "was."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-seit-bis",
+  "pattern": "main clause, + seit(dem) / bis + subject + … + verb (at the end)",
+  "explain": "seit (or seitdem) and bis can also join two clauses, and then they send the verb to the end. seit(dem) = since: something started in the past and is still true, so German uses the present tense. bis = until: something lasts up to a point. You know both as prepositions (seit einem Jahr, bis Montag); as conjunctions they are followed by a whole clause with its own verb.",
+  "compare_en": "English since and until work the same way, but where English says 'Since I have lived here', German uses the present: Seit ich hier wohne …",
+  "examples": [
+   {
+    "de": [
+     "Seit",
+     "Priya",
+     "in Berlin",
+     "wohnt,",
+     "lernt",
+     "sie",
+     "jeden Tag Deutsch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Since"
+     ],
+     [
+      [
+       1
+      ],
+      "Priya"
+     ],
+     [
+      [
+       3
+      ],
+      "has been living"
+     ],
+     [
+      [
+       2
+      ],
+      "in Berlin,"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4
+      ],
+      "has been learning"
+     ],
+     [
+      [
+       6
+      ],
+      "German every day."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "warte",
+     "hier,",
+     "bis",
+     "der Unterricht",
+     "zu Ende",
+     "ist."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "will wait"
+     ],
+     [
+      [
+       2
+      ],
+      "here"
+     ],
+     [
+      [
+       3
+      ],
+      "until"
+     ],
+     [
+      [
+       4
+      ],
+      "the lesson"
+     ],
+     [
+      [
+       6
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "over."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Seitdem",
+     "Jonas",
+     "einen Nachhilfelehrer",
+     "hat,",
+     "sind",
+     "seine Noten",
+     "besser."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Since"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       3
+      ],
+      "has had"
+     ],
+     [
+      [
+       2
+      ],
+      "a tutor,"
+     ],
+     [
+      [
+       5
+      ],
+      "his marks"
+     ],
+     [
+      [
+       4
+      ],
+      "have been"
+     ],
+     [
+      [
+       6
+      ],
+      "better."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-konj-wish",
+  "pattern": "Ich wäre / hätte / würde gern … · Wenn + subject + doch / nur + … + wäre / hätte (at the end)!",
+  "explain": "To say what you would like, use the Konjunktiv II, the 'would' form of the verb: Ich wäre gern fitter (would be), Ich hätte gern mehr Zeit (would have). With most other verbs use würde + infinitive: Ich würde gern Tennis spielen. A strong wish about something that isn't true starts with Wenn, adds doch or nur, and puts the verb at the end: Wenn ich doch gesund wäre!",
+  "compare_en": "English says 'I'd like to be …' or 'If only I had …'. German: Ich wäre gern … and Wenn ich nur … hätte! wäre = would be, hätte = would have, würde = would.",
+  "table": [
+   [
+    "",
+    "sein",
+    "haben",
+    "werden"
+   ],
+   [
+    "ich",
+    "wäre",
+    "hätte",
+    "würde"
+   ],
+   [
+    "du",
+    "wärst",
+    "hättest",
+    "würdest"
+   ],
+   [
+    "er / sie / es",
+    "wäre",
+    "hätte",
+    "würde"
+   ],
+   [
+    "wir",
+    "wären",
+    "hätten",
+    "würden"
+   ],
+   [
+    "ihr",
+    "wärt",
+    "hättet",
+    "würdet"
+   ],
+   [
+    "sie / Sie",
+    "wären",
+    "hätten",
+    "würden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "wäre",
+     "gern",
+     "so sportlich wie Lena."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "would like to be"
+     ],
+     [
+      [
+       3
+      ],
+      "as sporty as Lena."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "hätte",
+     "gern",
+     "mehr Zeit für Sport."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "would like to have"
+     ],
+     [
+      [
+       3
+      ],
+      "more time for sport."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wenn",
+     "ich",
+     "doch nur",
+     "keine Erkältung",
+     "hätte!"
+    ],
+    "en": [
+     [
+      [
+       0,
+       2
+      ],
+      "If only"
+     ],
+     [
+      [
+       1
+      ],
+      "I"
+     ],
+     [
+      [
+       3,
+       4
+      ],
+      "didn't have"
+     ],
+     [
+      [
+       3
+      ],
+      "a cold!"
+     ]
+    ],
+    "v": [
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "würde",
+     "so gern",
+     "wieder Fußball",
+     "spielen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "would"
+     ],
+     [
+      [
+       2
+      ],
+      "really love to"
+     ],
+     [
+      [
+       4
+      ],
+      "play"
+     ],
+     [
+      [
+       3
+      ],
+      "football again."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-konj-unreal",
+  "pattern": "Wenn + subject + … + Konjunktiv II (at the end), + würde / wäre / hätte + subject + … (+ infinitive)",
+  "explain": "To talk about something that is only imagined, not real now, use the Konjunktiv II in both parts. In the wenn clause the verb goes to the end: Wenn ich mehr Zeit hätte, … The main clause then starts with its verb: … würde ich jeden Tag joggen. Use wäre, hätte, könnte and müsste for sein, haben, können and müssen, and würde + infinitive for most other verbs.",
+  "compare_en": "English uses the past in the if-part and 'would' in the other: If I had time, I would go. German uses the Konjunktiv II in both parts: Wenn ich Zeit hätte, würde ich gehen.",
+  "table": [
+   [
+    "infinitive",
+    "Konjunktiv II (ich / er / sie)",
+    "English"
+   ],
+   [
+    "sein",
+    "wäre",
+    "would be"
+   ],
+   [
+    "haben",
+    "hätte",
+    "would have"
+   ],
+   [
+    "können",
+    "könnte",
+    "could"
+   ],
+   [
+    "müssen",
+    "müsste",
+    "would have to"
+   ],
+   [
+    "most other verbs",
+    "würde + infinitive",
+    "would …"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wenn",
+     "Lena",
+     "mehr Zeit",
+     "hätte,",
+     "würde",
+     "sie",
+     "öfter schwimmen",
+     "gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If"
+     ],
+     [
+      [
+       1
+      ],
+      "Lena"
+     ],
+     [
+      [
+       3
+      ],
+      "had"
+     ],
+     [
+      [
+       2
+      ],
+      "more time,"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4
+      ],
+      "would"
+     ],
+     [
+      [
+       7
+      ],
+      "go"
+     ],
+     [
+      [
+       6
+      ],
+      "swimming more often."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     6,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Wenn",
+     "Jonas",
+     "nicht krank",
+     "wäre,",
+     "könnte",
+     "er",
+     "mitspielen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       3
+      ],
+      "were"
+     ],
+     [
+      [
+       2
+      ],
+      "not ill,"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4
+      ],
+      "could"
+     ],
+     [
+      [
+       6
+      ],
+      "play too."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "würde",
+     "mehr Obst",
+     "essen,",
+     "wenn",
+     "es",
+     "nicht so teuer",
+     "wäre."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "would"
+     ],
+     [
+      [
+       3
+      ],
+      "eat"
+     ],
+     [
+      [
+       2
+      ],
+      "more fruit"
+     ],
+     [
+      [
+       4
+      ],
+      "if"
+     ],
+     [
+      [
+       5
+      ],
+      "it"
+     ],
+     [
+      [
+       7
+      ],
+      "were"
+     ],
+     [
+      [
+       6
+      ],
+      "not so expensive."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     7
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-konj-past",
+  "pattern": "hätte / wäre + … + Partizip II (at the end)",
+  "explain": "To talk about how the past could have been (but wasn't), use hätte or wäre plus the Partizip II. Choose them as in the Perfekt: verbs that take haben use hätte (hätte gelernt), verbs of movement or change that take sein use wäre (wäre gegangen). It is the form for regrets and missed chances: Wenn ich mich aufgewärmt hätte, hätte ich mich nicht verletzt.",
+  "compare_en": "This is English 'would have done' and 'if I had done': hätte gemacht = would have done / had done, wäre gekommen = would have come / had come.",
+  "table": [
+   [
+    "Perfekt (real)",
+    "Konjunktiv II past (not real)",
+    "English"
+   ],
+   [
+    "ich habe trainiert",
+    "ich hätte trainiert",
+    "I would have trained / had trained"
+   ],
+   [
+    "ich bin gelaufen",
+    "ich wäre gelaufen",
+    "I would have run / had run"
+   ],
+   [
+    "er hat Glück gehabt",
+    "er hätte Glück gehabt",
+    "he would have been lucky"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wenn ich",
+     "früher ins Bett",
+     "gegangen",
+     "wäre,",
+     "hätte ich",
+     "besser",
+     "geschlafen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If I"
+     ],
+     [
+      [
+       3
+      ],
+      "had"
+     ],
+     [
+      [
+       2
+      ],
+      "gone"
+     ],
+     [
+      [
+       1
+      ],
+      "to bed earlier,"
+     ],
+     [
+      [
+       4
+      ],
+      "I would have"
+     ],
+     [
+      [
+       6
+      ],
+      "slept"
+     ],
+     [
+      [
+       5
+      ],
+      "better."
+     ]
+    ],
+    "v": [
+     2,
+     3,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Mit dem Rad",
+     "wären",
+     "wir",
+     "schneller",
+     "gewesen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "By bike"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "would have"
+     ],
+     [
+      [
+       4
+      ],
+      "been"
+     ],
+     [
+      [
+       3
+      ],
+      "faster."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hätte",
+     "gern beim Marathon",
+     "mitgemacht,",
+     "aber",
+     "sie",
+     "war",
+     "krank."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "would have"
+     ],
+     [
+      [
+       2
+      ],
+      "liked to"
+     ],
+     [
+      [
+       3
+      ],
+      "take part"
+     ],
+     [
+      [
+       2
+      ],
+      "in the marathon,"
+     ],
+     [
+      [
+       4
+      ],
+      "but"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       6
+      ],
+      "was"
+     ],
+     [
+      [
+       7
+      ],
+      "ill."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-obwohl",
+  "pattern": "main clause, + obwohl + subject + … + verb (at the end)",
+  "explain": "obwohl means although: it adds a fact that you would expect to stop the main action, but it doesn't. obwohl is a subordinating conjunction (a joining word that starts a side clause), so the conjugated verb goes to the very end of its clause. If the obwohl clause comes first, the main clause starts with its verb: Obwohl es spät war, sah Jonas noch fern.",
+  "compare_en": "obwohl = although / even though, used in the same way. Only the word order differs: the verb waits until the end.",
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "schaut",
+     "die Nachrichten,",
+     "obwohl",
+     "sie",
+     "müde",
+     "ist."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "watches"
+     ],
+     [
+      [
+       2
+      ],
+      "the news"
+     ],
+     [
+      [
+       3
+      ],
+      "although"
+     ],
+     [
+      [
+       4
+      ],
+      "she"
+     ],
+     [
+      [
+       6
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "tired."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Obwohl",
+     "Malte",
+     "kein Smartphone",
+     "hat,",
+     "ist",
+     "er",
+     "immer gut informiert."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Although"
+     ],
+     [
+      [
+       1
+      ],
+      "Malte"
+     ],
+     [
+      [
+       3
+      ],
+      "doesn't have"
+     ],
+     [
+      [
+       2
+      ],
+      "a smartphone,"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4
+      ],
+      "is"
+     ],
+     [
+      [
+       6
+      ],
+      "always well informed."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "den Artikel",
+     "gelesen,",
+     "obwohl",
+     "er",
+     "sehr lang",
+     "war."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "read"
+     ],
+     [
+      [
+       2
+      ],
+      "the article"
+     ],
+     [
+      [
+       4
+      ],
+      "although"
+     ],
+     [
+      [
+       5
+      ],
+      "it"
+     ],
+     [
+      [
+       7
+      ],
+      "was"
+     ],
+     [
+      [
+       6
+      ],
+      "very long."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     7
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-trotzdem-obwohl",
+  "pattern": "…, obwohl + … + verb (at the end) · …. Trotzdem + verb + subject + …",
+  "explain": "Both express a contrast, but they work differently. obwohl starts a side clause and sends the verb to the end: Ich gehe, obwohl ich müde bin. trotzdem is an adverb meaning 'anyway, still': it points back to the sentence before, and when it takes position 1 the verb comes straight after it: Ich bin müde. Trotzdem gehe ich. obwohl goes with the reason against; trotzdem goes with what happens anyway.",
+  "compare_en": "obwohl = although; trotzdem = anyway / still / nevertheless. 'I'm tired, but I'm going anyway' = Ich bin müde, aber ich gehe trotzdem.",
+  "table": [
+   [
+    "",
+    "obwohl",
+    "trotzdem"
+   ],
+   [
+    "kind of word",
+    "conjunction (starts a side clause)",
+    "adverb"
+   ],
+   [
+    "verb",
+    "at the end of its clause",
+    "straight after it in position 1"
+   ],
+   [
+    "example",
+    "…, obwohl es regnet.",
+    "Es regnet. Trotzdem gehen wir."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Das Handy",
+     "ist",
+     "kaputt,",
+     "aber",
+     "Jonas",
+     "benutzt",
+     "es trotzdem."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The phone"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "broken,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       5
+      ],
+      "uses"
+     ],
+     [
+      [
+       6
+      ],
+      "it anyway."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "war",
+     "schon spät,",
+     "trotzdem",
+     "rief",
+     "Lena",
+     "ihre Mutter",
+     "an."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "already late;"
+     ],
+     [
+      [
+       3
+      ],
+      "nevertheless"
+     ],
+     [
+      [
+       5
+      ],
+      "Lena"
+     ],
+     [
+      [
+       4,
+       7
+      ],
+      "called"
+     ],
+     [
+      [
+       6
+      ],
+      "her mother."
+     ]
+    ],
+    "v": [
+     1,
+     4,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "rief",
+     "ihre Mutter",
+     "an,",
+     "obwohl",
+     "es",
+     "schon spät",
+     "war."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "called"
+     ],
+     [
+      [
+       2
+      ],
+      "her mother"
+     ],
+     [
+      [
+       4
+      ],
+      "although"
+     ],
+     [
+      [
+       5
+      ],
+      "it"
+     ],
+     [
+      [
+       7
+      ],
+      "was"
+     ],
+     [
+      [
+       6
+      ],
+      "already late."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     7
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-indirect-speech",
+  "pattern": "Er sagt, er sei / habe / komme … (Konjunktiv I: stem + -e for er / sie / es)",
+  "explain": "News reports use the Konjunktiv I to repeat what someone said without confirming it: Der Minister sagt, er sei zufrieden. At B1 you only need to recognise it. The forms you will meet are er/sie/es + stem + -e: sei (is), habe (has), komme (comes), müsse (must), könne (can), werde (will). In everyday speech people use dass or the normal present instead: Er sagt, dass er krank ist.",
+  "compare_en": "English has no special form; it simply reports: 'He says he is ill.' In German news, sei and habe signal 'this is what he said', a reported claim, not a fact the writer confirms.",
+  "table": [
+   [
+    "infinitive",
+    "Konjunktiv I (er / sie / es)",
+    "normal present",
+    "English"
+   ],
+   [
+    "sein",
+    "sei",
+    "ist",
+    "is"
+   ],
+   [
+    "haben",
+    "habe",
+    "hat",
+    "has"
+   ],
+   [
+    "kommen",
+    "komme",
+    "kommt",
+    "comes"
+   ],
+   [
+    "müssen",
+    "müsse",
+    "muss",
+    "must"
+   ],
+   [
+    "können",
+    "könne",
+    "kann",
+    "can"
+   ],
+   [
+    "werden",
+    "werde",
+    "wird",
+    "will"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Der Sprecher",
+     "sagt,",
+     "die Firma",
+     "sei",
+     "in einer Krise."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The spokesperson"
+     ],
+     [
+      [
+       1
+      ],
+      "says"
+     ],
+     [
+      [
+       2
+      ],
+      "the company"
+     ],
+     [
+      [
+       3
+      ],
+      "is"
+     ],
+     [
+      [
+       4
+      ],
+      "in a crisis."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "schreibt,",
+     "er",
+     "komme",
+     "heute später",
+     "ins Büro."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "writes"
+     ],
+     [
+      [],
+      "that"
+     ],
+     [
+      [
+       2
+      ],
+      "he"
+     ],
+     [
+      [
+       3
+      ],
+      "is coming"
+     ],
+     [
+      [
+       5
+      ],
+      "to the office"
+     ],
+     [
+      [
+       4
+      ],
+      "later today."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "In der Zeitung",
+     "steht,",
+     "die Regierung",
+     "habe",
+     "einen neuen Plan."
+    ],
+    "en": [
+     [
+      [
+       1
+      ],
+      "It says"
+     ],
+     [
+      [
+       0
+      ],
+      "in the newspaper"
+     ],
+     [
+      [],
+      "that"
+     ],
+     [
+      [
+       2
+      ],
+      "the government"
+     ],
+     [
+      [
+       3
+      ],
+      "has"
+     ],
+     [
+      [
+       4
+      ],
+      "a new plan."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-genitive",
+  "pattern": "noun + des / eines …(e)s (masculine, neuter) · der / einer … (feminine, plural)",
+  "explain": "The genitive shows that something belongs to someone or something: das Auto des Lehrers, the teacher's car. It comes after the noun it describes. Masculine and neuter use des / eines and add -s or -es to the noun (des Mannes, des Geschäfts); feminine and plural use der / einer and the noun doesn't change. In speech people often say von + dative instead, but you need the genitive for reading and writing.",
+  "compare_en": "It works like English 's or 'of': der Preis des Handys = the price of the phone. Like 'of', it follows the noun; only names go in front: Lenas Fahrrad = Lena's bike.",
+  "table": [
+   [
+    "",
+    "masculine",
+    "feminine",
+    "neuter",
+    "plural"
+   ],
+   [
+    "definite",
+    "des Mannes",
+    "der Frau",
+    "des Kindes",
+    "der Kunden"
+   ],
+   [
+    "indefinite",
+    "eines Mannes",
+    "einer Frau",
+    "eines Kindes",
+    "—"
+   ],
+   [
+    "possessive",
+    "meines Mannes",
+    "meiner Frau",
+    "meines Kindes",
+    "meiner Kinder"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Der Preis",
+     "des Mantels",
+     "war",
+     "zu hoch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The price"
+     ],
+     [
+      [
+       1
+      ],
+      "of the coat"
+     ],
+     [
+      [
+       2
+      ],
+      "was"
+     ],
+     [
+      [
+       3
+      ],
+      "too high."
+     ]
+    ],
+    "v": [
+     2
+    ]
+   },
+   {
+    "de": [
+     "Das",
+     "ist",
+     "die Tasche",
+     "meiner Schwester."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "my sister's"
+     ],
+     [
+      [
+       2
+      ],
+      "bag."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Qualität",
+     "der Produkte",
+     "hat sich",
+     "verbessert."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The quality"
+     ],
+     [
+      [
+       1
+      ],
+      "of the products"
+     ],
+     [
+      [
+       2
+      ],
+      "has"
+     ],
+     [
+      [
+       3
+      ],
+      "improved."
+     ]
+    ],
+    "v": [
+     2,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-genitive-preps",
+  "pattern": "wegen / trotz / während + genitive (des …(e)s / der …)",
+  "explain": "A few prepositions take the genitive. The most common are wegen (because of), trotz (despite) and während (during). They give a reason, a contrast or a time in one short phrase instead of a whole clause: wegen des Regens = weil es regnet. In speech you will often hear wegen dem Regen (dative), but in writing and in the exam use the genitive.",
+  "compare_en": "wegen = because of, trotz = despite / in spite of, während = during. The clause versions are weil (because), obwohl (although) and während (while).",
+  "table": [
+   [
+    "preposition",
+    "English",
+    "example"
+   ],
+   [
+    "wegen",
+    "because of",
+    "wegen des Wetters"
+   ],
+   [
+    "trotz",
+    "despite",
+    "trotz der hohen Preise"
+   ],
+   [
+    "während",
+    "during",
+    "während des Urlaubs"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wegen des Streiks",
+     "fahren",
+     "heute",
+     "keine Busse."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Because of the strike"
+     ],
+     [
+      [],
+      "there are"
+     ],
+     [
+      [
+       3
+      ],
+      "no buses"
+     ],
+     [
+      [
+       1
+      ],
+      "running"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Trotz des Rabatts",
+     "war",
+     "die Jacke",
+     "noch teuer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Despite the discount"
+     ],
+     [
+      [
+       2
+      ],
+      "the jacket"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       3
+      ],
+      "still expensive."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Während der Öffnungszeiten",
+     "können",
+     "Sie",
+     "die Ware",
+     "umtauschen."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "can"
+     ],
+     [
+      [
+       4
+      ],
+      "exchange"
+     ],
+     [
+      [
+       3
+      ],
+      "the goods"
+     ],
+     [
+      [
+       0
+      ],
+      "during opening hours."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-adj-genitive",
+  "pattern": "des / der / eines / einer + adjective-en + noun (the ending is -en)",
+  "explain": "In the genitive, an adjective after an article or a possessive (mein, unser …) always ends in -en: des neuen Handys, der alten Kundin, eines guten Freundes, meiner neuen Schuhe. Masculine and neuter nouns still add their -s. Only with no article at all do feminine and plural adjectives take -er (trotz großer Mühe), which is rare at B1.",
+  "compare_en": "English adjectives never change. In the German genitive the rule is simple: after an article the adjective ends in -en.",
+  "table": [
+   [
+    "",
+    "masculine",
+    "feminine",
+    "neuter",
+    "plural"
+   ],
+   [
+    "with der / des",
+    "des neuen Mantels",
+    "der neuen Jacke",
+    "des neuen Hemdes",
+    "der neuen Schuhe"
+   ],
+   [
+    "with ein / mein",
+    "eines neuen Mantels",
+    "einer neuen Jacke",
+    "eines neuen Hemdes",
+    "meiner neuen Schuhe"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Der Akku",
+     "des neuen Handys",
+     "hält",
+     "nicht lange."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The battery"
+     ],
+     [
+      [
+       1
+      ],
+      "of the new phone"
+     ],
+     [
+      [
+       3
+      ],
+      "doesn't"
+     ],
+     [
+      [
+       2
+      ],
+      "last"
+     ],
+     [
+      [
+       3
+      ],
+      "long."
+     ]
+    ],
+    "v": [
+     2
+    ]
+   },
+   {
+    "de": [
+     "Wegen des schlechten Services",
+     "hat sich",
+     "Jonas",
+     "beschwert."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "complained"
+     ],
+     [
+      [
+       0
+      ],
+      "because of the bad service."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Das",
+     "ist",
+     "das Auto",
+     "einer guten Freundin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "a good friend's"
+     ],
+     [
+      [
+       2
+      ],
+      "car."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-plusquamperfekt",
+  "pattern": "hatte / war (Präteritum) + … + Partizip II (at the end)",
+  "explain": "The Plusquamperfekt (past perfect) shows that one past event happened before another past event. Form it like the Perfekt, but put haben or sein into the Präteritum: hatte gebucht, war gefahren. Verbs that take sein in the Perfekt (movement, change of state) take war; all others take hatte. It often appears together with nachdem.",
+  "compare_en": "It is the English past perfect: hatte gebucht = had booked, war abgefahren = had left. English uses 'had' for both; German chooses hatte or war.",
+  "table": [
+   [
+    "",
+    "buchen (with haben)",
+    "fahren (with sein)"
+   ],
+   [
+    "ich",
+    "hatte gebucht",
+    "war gefahren"
+   ],
+   [
+    "du",
+    "hattest gebucht",
+    "warst gefahren"
+   ],
+   [
+    "er / sie / es",
+    "hatte gebucht",
+    "war gefahren"
+   ],
+   [
+    "wir",
+    "hatten gebucht",
+    "waren gefahren"
+   ],
+   [
+    "ihr",
+    "hattet gebucht",
+    "wart gefahren"
+   ],
+   [
+    "sie / Sie",
+    "hatten gebucht",
+    "waren gefahren"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Als",
+     "wir",
+     "am Bahnhof",
+     "ankamen,",
+     "war",
+     "der Zug",
+     "schon abgefahren."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [
+       1
+      ],
+      "we"
+     ],
+     [
+      [
+       3
+      ],
+      "arrived"
+     ],
+     [
+      [
+       2
+      ],
+      "at the station,"
+     ],
+     [
+      [
+       5
+      ],
+      "the train"
+     ],
+     [
+      [
+       4
+      ],
+      "had"
+     ],
+     [
+      [
+       6
+      ],
+      "already left."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "hatte",
+     "das Hotel",
+     "schon im Januar",
+     "gebucht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "already"
+     ],
+     [
+      [
+       4
+      ],
+      "booked"
+     ],
+     [
+      [
+       2
+      ],
+      "the hotel"
+     ],
+     [
+      [
+       3
+      ],
+      "in January."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "war",
+     "noch nie",
+     "geflogen,",
+     "deshalb",
+     "hatte",
+     "er",
+     "Angst."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       2
+      ],
+      "never"
+     ],
+     [
+      [
+       3
+      ],
+      "flown before,"
+     ],
+     [
+      [
+       4
+      ],
+      "so"
+     ],
+     [
+      [
+       6
+      ],
+      "he"
+     ],
+     [
+      [
+       5
+      ],
+      "was"
+     ],
+     [
+      [
+       7
+      ],
+      "scared."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-nachdem",
+  "pattern": "Nachdem + subject + … + Partizip II + hatte / war (at the end), + verb + subject + …",
+  "explain": "nachdem means after (+ a clause): first one thing happened, then another. It starts a side clause, so its verb goes to the end. The nachdem clause is one tense earlier than the main clause: Plusquamperfekt (hatte/war + Partizip II) when the main clause is in the past, Perfekt when the main clause is in the present.",
+  "compare_en": "Like English 'after' + clause, with the past perfect for the earlier action: Nachdem ich gegessen hatte … = After I had eaten …. Before a noun German uses nach instead: nach dem Essen.",
+  "table": [
+   [
+    "main clause",
+    "nachdem clause"
+   ],
+   [
+    "past: fuhren wir los",
+    "Plusquamperfekt: nachdem wir gefrühstückt hatten"
+   ],
+   [
+    "present: fahren wir los",
+    "Perfekt: nachdem wir gefrühstückt haben"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Nachdem",
+     "Priya",
+     "ihren Pass",
+     "abgeholt",
+     "hatte,",
+     "buchte",
+     "sie",
+     "den Flug."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "After"
+     ],
+     [
+      [
+       1
+      ],
+      "Priya"
+     ],
+     [
+      [
+       4
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "picked up"
+     ],
+     [
+      [
+       2
+      ],
+      "her passport,"
+     ],
+     [
+      [
+       6
+      ],
+      "she"
+     ],
+     [
+      [
+       5
+      ],
+      "booked"
+     ],
+     [
+      [
+       7
+      ],
+      "the flight."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "fuhren",
+     "erst",
+     "los,",
+     "nachdem",
+     "der Regen",
+     "aufgehört",
+     "hatte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       2
+      ],
+      "only"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "set off"
+     ],
+     [
+      [
+       4
+      ],
+      "after"
+     ],
+     [
+      [
+       5
+      ],
+      "the rain"
+     ],
+     [
+      [
+       7
+      ],
+      "had"
+     ],
+     [
+      [
+       6
+      ],
+      "stopped."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     6,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Nachdem",
+     "Lena",
+     "angekommen",
+     "ist,",
+     "ruft",
+     "sie",
+     "ihre Eltern",
+     "an."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "After"
+     ],
+     [
+      [
+       1
+      ],
+      "Lena"
+     ],
+     [
+      [
+       3
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "arrived,"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4,
+       7
+      ],
+      "calls"
+     ],
+     [
+      [
+       6
+      ],
+      "her parents."
+     ]
+    ],
+    "v": [
+     2,
+     3,
+     4,
+     7
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-bevor",
+  "pattern": "Bevor + subject + … + verb (at the end), + verb + subject + …",
+  "explain": "bevor means before (+ a clause): the main clause happens first, and the bevor clause names what comes later. It sends the verb to the end. Unlike nachdem, both clauses normally use the same tense. Before a noun use the preposition vor + dative instead: vor der Reise, not bevor der Reise.",
+  "compare_en": "bevor = before + clause: Bevor wir fahren, … = Before we leave, …. English can say 'before leaving'; German needs a full clause with a subject (bevor wir fahren) or vor + noun (vor der Abfahrt).",
+  "examples": [
+   {
+    "de": [
+     "Bevor",
+     "Jonas",
+     "in Urlaub",
+     "fährt,",
+     "bringt",
+     "er",
+     "den Schlüssel zu Frau Yilmaz."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Before"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       3
+      ],
+      "goes"
+     ],
+     [
+      [
+       2
+      ],
+      "on holiday,"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4
+      ],
+      "takes"
+     ],
+     [
+      [
+       6
+      ],
+      "the key to Frau Yilmaz."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "kaufe",
+     "immer",
+     "eine Fahrkarte,",
+     "bevor",
+     "ich",
+     "in den Zug",
+     "steige."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "always"
+     ],
+     [
+      [
+       1
+      ],
+      "buy"
+     ],
+     [
+      [
+       3
+      ],
+      "a ticket"
+     ],
+     [
+      [
+       4
+      ],
+      "before"
+     ],
+     [
+      [
+       5
+      ],
+      "I"
+     ],
+     [
+      [
+       7
+      ],
+      "get"
+     ],
+     [
+      [
+       6
+      ],
+      "on the train."
+     ]
+    ],
+    "v": [
+     1,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Lies",
+     "die Bewertungen,",
+     "bevor",
+     "du",
+     "ein Hotel",
+     "buchst!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Read"
+     ],
+     [
+      [
+       1
+      ],
+      "the reviews"
+     ],
+     [
+      [
+       2
+      ],
+      "before"
+     ],
+     [
+      [
+       3
+      ],
+      "you"
+     ],
+     [
+      [
+       5
+      ],
+      "book"
+     ],
+     [
+      [
+       4
+      ],
+      "a hotel!"
+     ]
+    ],
+    "v": [
+     0,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-um-zu",
+  "pattern": "main clause, + um + … + zu + infinitive (at the end)",
+  "explain": "um … zu + infinitive says why someone does something: its purpose (in order to). Use it when the person doing both actions is the same. um starts the phrase and zu + infinitive go at the end; there is no subject and no conjugated verb. With separable verbs zu goes in the middle: um die Flaschen zurückzubringen.",
+  "compare_en": "It matches English 'in order to' or just 'to': Ich fahre Rad, um Geld zu sparen = I cycle to save money. But German can't leave out um here.",
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "fährt",
+     "mit dem Fahrrad,",
+     "um",
+     "die Umwelt",
+     "zu schützen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "goes"
+     ],
+     [
+      [
+       2
+      ],
+      "by bike"
+     ],
+     [
+      [
+       3
+      ],
+      "in order"
+     ],
+     [
+      [
+       5
+      ],
+      "to protect"
+     ],
+     [
+      [
+       4
+      ],
+      "the environment."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Um",
+     "Strom",
+     "zu sparen,",
+     "schalten",
+     "wir",
+     "das Licht",
+     "aus."
+    ],
+    "en": [
+     [
+      [
+       0,
+       2
+      ],
+      "To save"
+     ],
+     [
+      [
+       1
+      ],
+      "electricity,"
+     ],
+     [
+      [
+       4
+      ],
+      "we"
+     ],
+     [
+      [
+       3
+      ],
+      "switch"
+     ],
+     [
+      [
+       5
+      ],
+      "the light"
+     ],
+     [
+      [
+       6
+      ],
+      "off."
+     ]
+    ],
+    "v": [
+     2,
+     3,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "geht",
+     "zum Supermarkt,",
+     "um",
+     "die leeren Flaschen",
+     "zurückzubringen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "goes"
+     ],
+     [
+      [
+       2
+      ],
+      "to the supermarket"
+     ],
+     [
+      [
+       3,
+       5
+      ],
+      "to return"
+     ],
+     [
+      [
+       4
+      ],
+      "the empty bottles."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-damit",
+  "pattern": "main clause, + damit + new subject + … + verb (at the end)",
+  "explain": "damit also gives a purpose (so that), but it starts a full side clause with its own subject, and its verb goes to the end. Use damit when the two parts have different subjects: Ich erkläre es, damit du es verstehst. When both parts have the same subject, um … zu is shorter and sounds better.",
+  "compare_en": "damit = so that. English 'I'll explain it so that you understand' has the same shape; German just puts the verb at the end: …, damit du es verstehst.",
+  "table": [
+   [
+    "same subject: um … zu",
+    "new subject: damit"
+   ],
+   [
+    "Ich fahre Rad, um fit zu bleiben.",
+    "Ich fahre Rad, damit die Luft sauberer wird."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Herr Weber",
+     "spricht",
+     "langsam,",
+     "damit",
+     "Priya",
+     "alles",
+     "versteht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Herr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "speaks"
+     ],
+     [
+      [
+       2
+      ],
+      "slowly"
+     ],
+     [
+      [
+       3
+      ],
+      "so that"
+     ],
+     [
+      [
+       4
+      ],
+      "Priya"
+     ],
+     [
+      [
+       6
+      ],
+      "understands"
+     ],
+     [
+      [
+       5
+      ],
+      "everything."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "pflanzen",
+     "Bäume,",
+     "damit",
+     "die Stadt",
+     "grüner",
+     "wird."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "plant"
+     ],
+     [
+      [
+       2
+      ],
+      "trees"
+     ],
+     [
+      [
+       3
+      ],
+      "so that"
+     ],
+     [
+      [
+       4
+      ],
+      "the city"
+     ],
+     [
+      [
+       6
+      ],
+      "becomes"
+     ],
+     [
+      [
+       5
+      ],
+      "greener."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Damit",
+     "weniger Müll",
+     "entsteht,",
+     "kaufe",
+     "ich",
+     "ohne Verpackung",
+     "ein."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "So that"
+     ],
+     [
+      [
+       1
+      ],
+      "less waste"
+     ],
+     [
+      [
+       2
+      ],
+      "is produced,"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       3,
+       6
+      ],
+      "shop"
+     ],
+     [
+      [
+       5
+      ],
+      "without packaging."
+     ]
+    ],
+    "v": [
+     2,
+     3,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-zu-infinitive",
+  "pattern": "Es ist wichtig / Ich habe vor / Ich versuche, + … + zu + infinitive (at the end)",
+  "explain": "After many adjectives (wichtig, schwer, leicht), nouns (Lust, Zeit, Angst) and verbs (versuchen, vorhaben, anfangen, aufhören, vergessen) the next verb comes as zu + infinitive at the end of the phrase: Es ist wichtig, Wasser zu sparen. The zu part has no subject of its own and is usually separated by a comma. Modal verbs (können, müssen, wollen …) never take zu.",
+  "compare_en": "English uses 'to' in the same places: It's important to save water = Es ist wichtig, Wasser zu sparen. The difference: German puts zu + verb at the very end.",
+  "examples": [
+   {
+    "de": [
+     "Es",
+     "ist",
+     "wichtig,",
+     "weniger Plastik",
+     "zu benutzen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "important"
+     ],
+     [
+      [
+       4
+      ],
+      "to use"
+     ],
+     [
+      [
+       3
+      ],
+      "less plastic."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "hat",
+     "vor,",
+     "ein Elektroauto",
+     "zu kaufen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "is planning"
+     ],
+     [
+      [
+       4
+      ],
+      "to buy"
+     ],
+     [
+      [
+       3
+      ],
+      "an electric car."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "vergessen,",
+     "das Licht",
+     "auszuschalten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "forgot"
+     ],
+     [
+      [
+       4
+      ],
+      "to switch off"
+     ],
+     [
+      [
+       3
+      ],
+      "the light."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-sowohl",
+  "pattern": "sowohl A als auch B · nicht nur A, sondern auch B",
+  "explain": "These two-part connectors join two things that are both true. sowohl … als auch = both … and; nicht nur … sondern auch = not only … but also, which stresses that the second part is extra or surprising. They can join nouns, adjectives or verb phrases and don't change the word order. Put a comma before sondern.",
+  "compare_en": "They match English closely: both … and = sowohl … als auch, not only … but also = nicht nur … sondern auch. Careful: 'but' here is sondern, never aber.",
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "mag",
+     "sowohl Jazz",
+     "als auch",
+     "klassische Musik."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "likes"
+     ],
+     [
+      [
+       2
+      ],
+      "both jazz"
+     ],
+     [
+      [
+       3
+      ],
+      "and"
+     ],
+     [
+      [
+       4
+      ],
+      "classical music."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der Film",
+     "war",
+     "nicht nur",
+     "spannend,",
+     "sondern auch",
+     "lustig."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The film"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "not only"
+     ],
+     [
+      [
+       3
+      ],
+      "exciting"
+     ],
+     [
+      [
+       4
+      ],
+      "but also"
+     ],
+     [
+      [
+       5
+      ],
+      "funny."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "spielt",
+     "nicht nur",
+     "Gitarre,",
+     "sondern",
+     "singt",
+     "auch im Chor."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       2
+      ],
+      "not only"
+     ],
+     [
+      [
+       1
+      ],
+      "plays"
+     ],
+     [
+      [
+       3
+      ],
+      "the guitar"
+     ],
+     [
+      [
+       4
+      ],
+      "but"
+     ],
+     [
+      [
+       6
+      ],
+      "also"
+     ],
+     [
+      [
+       5
+      ],
+      "sings"
+     ],
+     [
+      [
+       6
+      ],
+      "in a choir."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-weder",
+  "pattern": "weder A noch B (neither … nor) · entweder A oder B (either … or)",
+  "explain": "weder … noch says that neither of two things is true. It is already negative, so never add nicht or kein: Ich habe weder Zeit noch Geld. entweder … oder offers exactly two choices, one or the other: Wir gehen entweder ins Kino oder ins Theater. Like sowohl … als auch, both pairs can join nouns, adjectives or verbs.",
+  "compare_en": "weder … noch = neither … nor; entweder … oder = either … or. As in English, don't add a second negative: 'neither … nor' never takes 'not'.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "den Film",
+     "weder im Kino",
+     "noch im Fernsehen",
+     "gesehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "have"
+     ],
+     [
+      [
+       5
+      ],
+      "seen"
+     ],
+     [
+      [
+       2
+      ],
+      "the film"
+     ],
+     [
+      [
+       3
+      ],
+      "neither at the cinema"
+     ],
+     [
+      [
+       4
+      ],
+      "nor on TV."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "mag",
+     "weder Opern",
+     "noch Musicals."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "likes"
+     ],
+     [
+      [
+       2
+      ],
+      "neither operas"
+     ],
+     [
+      [
+       3
+      ],
+      "nor musicals."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "gehen",
+     "entweder ins Theater",
+     "oder ins Konzert."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "are going"
+     ],
+     [
+      [
+       2
+      ],
+      "either to the theatre"
+     ],
+     [
+      [
+       3
+      ],
+      "or to a concert."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-je-desto",
+  "pattern": "Je + comparative + subject + … + verb (at the end), desto / umso + comparative + verb + subject + …",
+  "explain": "je … desto links two things that change together: the more of one, the more of the other. Both parts start with a comparative (mehr, besser, länger). The je part is a side clause, so its verb goes to the end; in the desto part the verb comes straight after desto + comparative. umso means the same as desto.",
+  "compare_en": "It's English 'the … the …': Je länger ich übe, desto besser spiele ich = The longer I practise, the better I play. German uses two different words, je and desto, with a different word order in each part.",
+  "examples": [
+   {
+    "de": [
+     "Je öfter",
+     "Jonas",
+     "übt,",
+     "desto besser",
+     "spielt",
+     "er",
+     "Klavier."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The more often"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       2
+      ],
+      "practises,"
+     ],
+     [
+      [
+       3
+      ],
+      "the better"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4
+      ],
+      "plays"
+     ],
+     [
+      [
+       6
+      ],
+      "the piano."
+     ]
+    ],
+    "v": [
+     2,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Je spannender",
+     "ein Buch",
+     "ist,",
+     "desto schneller",
+     "lese",
+     "ich es."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The more exciting"
+     ],
+     [
+      [
+       1
+      ],
+      "a book"
+     ],
+     [
+      [
+       2
+      ],
+      "is,"
+     ],
+     [
+      [
+       3
+      ],
+      "the faster"
+     ],
+     [
+      [
+       5
+      ],
+      "I"
+     ],
+     [
+      [
+       4
+      ],
+      "read"
+     ],
+     [
+      [
+       5
+      ],
+      "it."
+     ]
+    ],
+    "v": [
+     2,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Je mehr Leute",
+     "kommen,",
+     "umso schöner",
+     "wird",
+     "das Fest."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The more people"
+     ],
+     [
+      [
+       1
+      ],
+      "come,"
+     ],
+     [
+      [
+       2
+      ],
+      "the nicer"
+     ],
+     [
+      [
+       4
+      ],
+      "the party"
+     ],
+     [
+      [
+       3
+      ],
+      "will be."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-n-declension",
+  "pattern": "masculine 'n-nouns': der Kollege → den / dem / des Kollegen (-n or -en everywhere except the nominative)",
+  "explain": "A group of masculine nouns adds -n or -en in every case except the nominative singular. They are mostly male people and animals ending in -e (der Kollege, der Kunde, der Junge), words from other languages ending in -ent, -ist, -at (der Student, der Journalist, der Kandidat) and a few others (der Mensch, der Nachbar, der Herr). der Herr takes -n in the singular (dem Herrn) and -en in the plural (die Herren).",
+  "compare_en": "English has nothing like this. Just remember: with den, dem or des these nouns need their -n: Ich frage den Kollegen, not den Kollege.",
+  "table": [
+   [
+    "",
+    "der Kollege",
+    "der Student",
+    "der Herr"
+   ],
+   [
+    "nominative",
+    "der Kollege",
+    "der Student",
+    "der Herr"
+   ],
+   [
+    "accusative",
+    "den Kollegen",
+    "den Studenten",
+    "den Herrn"
+   ],
+   [
+    "dative",
+    "dem Kollegen",
+    "dem Studenten",
+    "dem Herrn"
+   ],
+   [
+    "genitive",
+    "des Kollegen",
+    "des Studenten",
+    "des Herrn"
+   ],
+   [
+    "plural",
+    "die Kollegen",
+    "die Studenten",
+    "die Herren"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Malte",
+     "hilft",
+     "dem neuen Kollegen",
+     "bei der Arbeit."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "helps"
+     ],
+     [
+      [
+       2
+      ],
+      "the new colleague"
+     ],
+     [
+      [
+       3
+      ],
+      "with his work."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Kennst",
+     "du",
+     "den Kandidaten",
+     "von der grünen Partei?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "know"
+     ],
+     [
+      [
+       2
+      ],
+      "the candidate"
+     ],
+     [
+      [
+       3
+      ],
+      "from the Green Party?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "dem Herrn",
+     "den Weg zum Rathaus",
+     "erklärt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "explained"
+     ],
+     [
+      [
+       3
+      ],
+      "the way to the town hall"
+     ],
+     [
+      [
+       2
+      ],
+      "to the gentleman."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-futur",
+  "pattern": "subject + werden (conjugated) + … + infinitive (at the end)",
+  "explain": "The Futur I is werden + infinitive at the end: Ich werde wählen. When a time word makes the future clear, Germans often just use the present (Morgen fahre ich nach Berlin). Futur I is used for promises, firm plans and predictions (Die Preise werden steigen), and with wohl for a guess about now: Er wird wohl krank sein (he's probably ill).",
+  "compare_en": "werden + infinitive = will + verb: Ich werde helfen = I will help. Careful: German ich will means 'I want', not 'I will'.",
+  "table": [
+   [
+    "",
+    "werden"
+   ],
+   [
+    "ich",
+    "werde"
+   ],
+   [
+    "du",
+    "wirst"
+   ],
+   [
+    "er / sie / es",
+    "wird"
+   ],
+   [
+    "wir",
+    "werden"
+   ],
+   [
+    "ihr",
+    "werdet"
+   ],
+   [
+    "sie / Sie",
+    "werden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Die Regierung",
+     "wird",
+     "die Steuern nicht",
+     "erhöhen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The government"
+     ],
+     [
+      [
+       1
+      ],
+      "will"
+     ],
+     [
+      [
+       2
+      ],
+      "not"
+     ],
+     [
+      [
+       3
+      ],
+      "raise"
+     ],
+     [
+      [
+       2
+      ],
+      "taxes."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "In zehn Jahren",
+     "werden",
+     "mehr Menschen in Städten",
+     "leben."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In ten years"
+     ],
+     [
+      [
+       2
+      ],
+      "more people"
+     ],
+     [
+      [
+       1
+      ],
+      "will"
+     ],
+     [
+      [
+       3
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in cities."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "werde",
+     "morgen auf jeden Fall",
+     "wählen gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "will"
+     ],
+     [
+      [
+       2
+      ],
+      "definitely"
+     ],
+     [
+      [
+       3
+      ],
+      "go and vote"
+     ],
+     [
+      [
+       2
+      ],
+      "tomorrow."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-participle-adj",
+  "pattern": "article + Partizip II / Partizip I + adjective ending + noun: das gekochte Ei, das spielende Kind",
+  "explain": "Participles can stand in front of a noun like adjectives, with the normal adjective endings. A Partizip II (gekocht, gewählt) shows something that has been done to the noun: das gekochte Ei = the egg that has been boiled. A Partizip I (infinitive + d: spielend, steigend) shows something the noun is doing right now: das spielende Kind = the child who is playing. At B1 you only need to recognise them, mostly in newspaper texts.",
+  "compare_en": "English does the same: the boiled egg, the playing child. German ge-…-t / ge-…-en matches English -ed (done), and -end matches -ing (doing).",
+  "table": [
+   [
+    "form",
+    "example",
+    "meaning"
+   ],
+   [
+    "Partizip II + ending",
+    "die reparierte Straße",
+    "the repaired street (it has been repaired)"
+   ],
+   [
+    "Partizip I + ending",
+    "die steigenden Preise",
+    "the rising prices (they are rising)"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Die",
+     "gewählte",
+     "Kandidatin",
+     "hält",
+     "heute eine Rede."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The"
+     ],
+     [
+      [
+       1
+      ],
+      "elected"
+     ],
+     [
+      [
+       2
+      ],
+      "candidate"
+     ],
+     [
+      [
+       3
+      ],
+      "is giving"
+     ],
+     [
+      [
+       4
+      ],
+      "a speech today."
+     ]
+    ],
+    "v": [
+     3
+    ]
+   },
+   {
+    "de": [
+     "Wegen der",
+     "steigenden",
+     "Mieten",
+     "protestieren",
+     "viele Bürger."
+    ],
+    "en": [
+     [
+      [
+       4
+      ],
+      "Many citizens"
+     ],
+     [
+      [
+       3
+      ],
+      "are protesting"
+     ],
+     [
+      [
+       0
+      ],
+      "because of"
+     ],
+     [
+      [
+       1
+      ],
+      "rising"
+     ],
+     [
+      [
+       2
+      ],
+      "rents."
+     ]
+    ],
+    "v": [
+     3
+    ]
+   },
+   {
+    "de": [
+     "Das",
+     "neu gebaute",
+     "Rathaus",
+     "ist",
+     "sehr modern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The"
+     ],
+     [
+      [
+       1
+      ],
+      "newly built"
+     ],
+     [
+      [
+       2
+      ],
+      "town hall"
+     ],
+     [
+      [
+       3
+      ],
+      "is"
+     ],
+     [
+      [
+       4
+      ],
+      "very modern."
+     ]
+    ],
+    "v": [
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-als-wenn",
+  "pattern": "als = one event or period in the past · wenn = present / future, or again and again (every time)",
+  "explain": "Both mean when and send the verb to the end, but they are used differently. Use als for one single event or one period in the past: Als ich 18 war, … Use wenn for the present and the future (Wenn ich fertig bin, …) and for things that happened again and again in the past (Immer wenn wir Oma besuchten, …). wenn can also mean if.",
+  "compare_en": "English has one word, when. Ask: is it in the past and did it happen only once? Then als; otherwise wenn. Don't confuse either with wann, the question word: Wann kommst du?",
+  "table": [
+   [
+    "",
+    "once",
+    "again and again"
+   ],
+   [
+    "past",
+    "als",
+    "(immer) wenn"
+   ],
+   [
+    "present / future",
+    "wenn",
+    "wenn"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Als",
+     "Priya",
+     "nach Deutschland",
+     "kam,",
+     "sprach",
+     "sie",
+     "kein Wort Deutsch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [
+       1
+      ],
+      "Priya"
+     ],
+     [
+      [
+       3
+      ],
+      "came"
+     ],
+     [
+      [
+       2
+      ],
+      "to Germany,"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4
+      ],
+      "didn't speak"
+     ],
+     [
+      [
+       6
+      ],
+      "a word of German."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Wenn",
+     "Lena",
+     "die Prüfung",
+     "besteht,",
+     "macht",
+     "sie",
+     "eine Party."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [
+       1
+      ],
+      "Lena"
+     ],
+     [
+      [
+       3
+      ],
+      "passes"
+     ],
+     [
+      [
+       2
+      ],
+      "the exam,"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4
+      ],
+      "will have"
+     ],
+     [
+      [
+       6
+      ],
+      "a party."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Immer wenn",
+     "Jonas",
+     "bei Oma",
+     "war,",
+     "bekam",
+     "er",
+     "Kuchen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Whenever"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       3
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "at his grandma's,"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4
+      ],
+      "got"
+     ],
+     [
+      [
+       6
+      ],
+      "cake."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-waehrend",
+  "pattern": "main clause, + während + subject + … + verb (at the end)",
+  "explain": "As a conjunction, während means while: two things happen at the same time. It starts a side clause, so the verb goes to the end. It can also show a contrast, like English whereas: Lena liebt Sport, während Jonas lieber liest. Don't mix it up with the preposition während + genitive: während des Essens (during the meal).",
+  "compare_en": "während = while, in both senses (at the same time, and whereas). English 'during' + noun is also während, but then a noun in the genitive follows, not a clause.",
+  "examples": [
+   {
+    "de": [
+     "Während",
+     "Jonas",
+     "kocht,",
+     "deckt",
+     "Lena",
+     "den Tisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "While"
+     ],
+     [
+      [
+       1
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       2
+      ],
+      "is cooking,"
+     ],
+     [
+      [
+       4
+      ],
+      "Lena"
+     ],
+     [
+      [
+       3
+      ],
+      "lays"
+     ],
+     [
+      [
+       5
+      ],
+      "the table."
+     ]
+    ],
+    "v": [
+     2,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "höre",
+     "oft Podcasts,",
+     "während",
+     "ich",
+     "mit dem Bus",
+     "fahre."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "often"
+     ],
+     [
+      [
+       1
+      ],
+      "listen to"
+     ],
+     [
+      [
+       2
+      ],
+      "podcasts"
+     ],
+     [
+      [
+       3
+      ],
+      "while"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       6
+      ],
+      "travel"
+     ],
+     [
+      [
+       5
+      ],
+      "by bus."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "möchte",
+     "in Berlin",
+     "leben,",
+     "während",
+     "Priya",
+     "aufs Land",
+     "ziehen will."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "would like"
+     ],
+     [
+      [
+       3
+      ],
+      "to live"
+     ],
+     [
+      [
+       2
+      ],
+      "in Berlin,"
+     ],
+     [
+      [
+       4
+      ],
+      "whereas"
+     ],
+     [
+      [
+       5
+      ],
+      "Priya"
+     ],
+     [
+      [
+       7
+      ],
+      "wants to move"
+     ],
+     [
+      [
+       6
+      ],
+      "to the countryside."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     7
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-verb-preps-review",
+  "pattern": "verb + fixed preposition + case: sich bewerben um + accusative, träumen von + dative",
+  "explain": "Many verbs come with a fixed preposition that you learn together with the verb, because it rarely matches English: sich bewerben um (apply for), träumen von (dream of), sich interessieren für (be interested in), warten auf (wait for). The preposition decides the case. To ask about a thing, use wo(r) + preposition: Wovon träumst du? For a person, use preposition + wen / wem: Von wem träumst du?",
+  "compare_en": "English verbs have fixed prepositions too, but they seldom match: apply for = sich bewerben um, dream of = träumen von, be interested in = sich interessieren für. Learn each verb with its preposition and case.",
+  "table": [
+   [
+    "verb",
+    "preposition + case",
+    "English"
+   ],
+   [
+    "sich bewerben",
+    "um + accusative",
+    "apply for"
+   ],
+   [
+    "träumen",
+    "von + dative",
+    "dream of"
+   ],
+   [
+    "sich freuen",
+    "auf + accusative",
+    "look forward to"
+   ],
+   [
+    "sich interessieren",
+    "für + accusative",
+    "be interested in"
+   ],
+   [
+    "teilnehmen",
+    "an + dative",
+    "take part in"
+   ],
+   [
+    "sich kümmern",
+    "um + accusative",
+    "take care of"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Priya",
+     "bewirbt sich",
+     "um eine Stelle",
+     "als Programmiererin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is applying"
+     ],
+     [
+      [
+       2
+      ],
+      "for a job"
+     ],
+     [
+      [
+       3
+      ],
+      "as a programmer."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "träumt",
+     "von einem eigenen Café."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "dreams"
+     ],
+     [
+      [
+       2
+      ],
+      "of having his own café."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wofür",
+     "interessierst",
+     "du",
+     "dich?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "What"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "interested"
+     ],
+     [
+      [
+       0
+      ],
+      "in?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-connectors-review",
+  "pattern": "main clause, + weil / obwohl / damit / nachdem + subject + … + verb (at the end)",
+  "explain": "These connectors start a side clause and send the conjugated verb to the end. Choose by meaning: weil = reason (because), obwohl = contrast (although), damit = purpose with a new subject (so that), nachdem = one action after another (after). By contrast, deshalb, trotzdem and danach are adverbs: they take position 1 and the verb follows directly. In the exam, a good mix of connectors helps your writing score.",
+  "compare_en": "The meanings match English because / although / so that / after. The difference is word order: after these German words the verb waits until the end of the clause.",
+  "table": [
+   [
+    "meaning",
+    "side clause (verb at the end)",
+    "adverb (verb right after it)"
+   ],
+   [
+    "reason",
+    "weil",
+    "deshalb (= so)"
+   ],
+   [
+    "contrast",
+    "obwohl",
+    "trotzdem (= still)"
+   ],
+   [
+    "purpose",
+    "damit",
+    "—"
+   ],
+   [
+    "time",
+    "nachdem",
+    "danach (= afterwards)"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "lerne",
+     "jeden Tag,",
+     "weil",
+     "ich",
+     "die Prüfung",
+     "bestehen will."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "study"
+     ],
+     [
+      [
+       2
+      ],
+      "every day"
+     ],
+     [
+      [
+       3
+      ],
+      "because"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       6
+      ],
+      "want to pass"
+     ],
+     [
+      [
+       5
+      ],
+      "the exam."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Nachdem",
+     "Lena",
+     "den Brief",
+     "geschrieben",
+     "hatte,",
+     "las",
+     "Jonas",
+     "ihn durch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "After"
+     ],
+     [
+      [
+       1
+      ],
+      "Lena"
+     ],
+     [
+      [
+       4
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "written"
+     ],
+     [
+      [
+       2
+      ],
+      "the letter,"
+     ],
+     [
+      [
+       6
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       5
+      ],
+      "read"
+     ],
+     [
+      [
+       7
+      ],
+      "it through."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     5,
+     7
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "gibt",
+     "uns Tipps,",
+     "damit",
+     "wir uns",
+     "besser",
+     "vorbereiten können."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Herr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "gives"
+     ],
+     [
+      [
+       2
+      ],
+      "us tips"
+     ],
+     [
+      [
+       3
+      ],
+      "so that"
+     ],
+     [
+      [
+       4
+      ],
+      "we"
+     ],
+     [
+      [
+       6
+      ],
+      "can prepare"
+     ],
+     [
+      [
+       5
+      ],
+      "better."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-word-order-review",
+  "pattern": "subject + verb + Te (when) + Ka (why) + Mo (how) + Lo (where) + … (verb part at the end)",
+  "explain": "In the middle of a German sentence, extra information usually follows the order TeKaMoLo: Temporal (when?), Kausal (why?), Modal (how?), Lokal (where?). So: Ich fahre morgen wegen der Prüfung mit dem Zug nach Berlin. You rarely need all four, but keep the order of those you use. One of them can move to position 1 for emphasis; the verb still stays in position 2.",
+  "compare_en": "English usually goes the other way round, with place before time: I'm going to Berlin by train tomorrow. German puts time early and place late: Ich fahre morgen mit dem Zug nach Berlin.",
+  "table": [
+   [
+    "Te: when?",
+    "Ka: why?",
+    "Mo: how?",
+    "Lo: where?"
+   ],
+   [
+    "morgen",
+    "wegen der Prüfung",
+    "mit dem Zug",
+    "nach Berlin"
+   ],
+   [
+    "am Abend",
+    "zur Erholung",
+    "allein",
+    "in die Berge"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "fahre",
+     "morgen",
+     "mit dem Zug",
+     "nach Berlin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am going"
+     ],
+     [
+      [
+       4
+      ],
+      "to Berlin"
+     ],
+     [
+      [
+       3
+      ],
+      "by train"
+     ],
+     [
+      [
+       2
+      ],
+      "tomorrow."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "ist",
+     "gestern",
+     "wegen eines Termins",
+     "schnell",
+     "nach Hause",
+     "gegangen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1,
+       6
+      ],
+      "went"
+     ],
+     [
+      [
+       5
+      ],
+      "home"
+     ],
+     [
+      [
+       4
+      ],
+      "quickly"
+     ],
+     [
+      [
+       2
+      ],
+      "yesterday"
+     ],
+     [
+      [
+       3
+      ],
+      "because of an appointment."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Am Wochenende",
+     "fährt",
+     "Lena",
+     "zur Erholung",
+     "allein",
+     "in die Berge."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "At the weekend"
+     ],
+     [
+      [
+       2
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is going"
+     ],
+     [
+      [
+       5
+      ],
+      "to the mountains"
+     ],
+     [
+      [
+       4
+      ],
+      "alone"
+     ],
+     [
+      [
+       3
+      ],
+      "to relax."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b1-redemittel",
+  "pattern": "Ich bin der Meinung, dass … · Meiner Meinung nach + verb … · Ich finde, … · Einerseits …, andererseits …",
+  "explain": "In Schreiben and Sprechen you must give your opinion and back it up. Learn a few fixed phrases with their word order. Ich bin der Meinung, dass … and Ich glaube, dass … send the verb to the end. Meiner Meinung nach takes position 1, so the verb follows straight away: Meiner Meinung nach ist das … Ich finde, … is followed by a normal main clause. To weigh both sides, use einerseits …, andererseits ….",
+  "compare_en": "Meiner Meinung nach = in my opinion; ich bin der Meinung = I'm of the opinion; einerseits … andererseits = on the one hand … on the other hand. Note: it is ich bin der Meinung, with sein, never ich habe die Meinung.",
+  "table": [
+   [
+    "phrase",
+    "word order after it"
+   ],
+   [
+    "Ich bin der Meinung, dass …",
+    "verb at the end"
+   ],
+   [
+    "Ich glaube / denke, dass …",
+    "verb at the end"
+   ],
+   [
+    "Ich finde, …",
+    "normal: subject + verb"
+   ],
+   [
+    "Meiner Meinung nach …",
+    "verb right after: Meiner Meinung nach ist …"
+   ],
+   [
+    "Einerseits …, andererseits …",
+    "verb right after each: andererseits gibt es …"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Meiner Meinung nach",
+     "ist",
+     "Fahrradfahren",
+     "in der Stadt",
+     "besser."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In my opinion"
+     ],
+     [
+      [
+       2
+      ],
+      "cycling"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       4
+      ],
+      "better"
+     ],
+     [
+      [
+       3
+      ],
+      "in the city."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich bin",
+     "der Meinung,",
+     "dass",
+     "Kinder",
+     "weniger Zeit am Handy",
+     "verbringen",
+     "sollten."
+    ],
+    "en": [
+     [
+      [
+       0,
+       1
+      ],
+      "I'm of the opinion"
+     ],
+     [
+      [
+       2
+      ],
+      "that"
+     ],
+     [
+      [
+       3
+      ],
+      "children"
+     ],
+     [
+      [
+       6
+      ],
+      "should"
+     ],
+     [
+      [
+       5
+      ],
+      "spend"
+     ],
+     [
+      [
+       4
+      ],
+      "less time on their phones."
+     ]
+    ],
+    "v": [
+     0,
+     5,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Einerseits",
+     "ist",
+     "das Leben in der Stadt",
+     "teuer,",
+     "andererseits",
+     "gibt es",
+     "viele Angebote."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "On the one hand,"
+     ],
+     [
+      [
+       2
+      ],
+      "life in the city"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "expensive;"
+     ],
+     [
+      [
+       4
+      ],
+      "on the other hand,"
+     ],
+     [
+      [
+       5
+      ],
+      "there is"
+     ],
+     [
+      [
+       6
+      ],
+      "a lot on offer."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ }
+]

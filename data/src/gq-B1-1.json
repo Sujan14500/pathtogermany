@@ -1,0 +1,1874 @@
+[
+ {
+  "g": "b1-relative-nom-acc",
+  "q": "Kennst du den Mann, ___ dort an der Haltestelle wartet?",
+  "opts": [
+   "den",
+   "dem",
+   "der",
+   "die"
+  ],
+  "a": 2,
+  "why": "The man is the subject of the relative clause (he is waiting), so masculine nominative: der.",
+  "en": "Do you know the man who is waiting at the bus stop over there?"
+ },
+ {
+  "g": "b1-relative-nom-acc",
+  "q": "Der Schrank, ___ Jonas gestern gekauft hat, passt nicht in sein Zimmer.",
+  "opts": [
+   "den",
+   "der",
+   "das",
+   "dem"
+  ],
+  "a": 0,
+  "why": "Jonas is the subject; the wardrobe is the object of gekauft hat, so masculine accusative: den.",
+  "en": "The wardrobe that Jonas bought yesterday doesn't fit in his room."
+ },
+ {
+  "g": "b1-relative-nom-acc",
+  "q": "Die Nachbarn, ___ unter uns wohnen, sind sehr nett.",
+  "opts": [
+   "der",
+   "die",
+   "den",
+   "denen"
+  ],
+  "a": 1,
+  "why": "die Nachbarn is plural and is the subject of wohnen, so plural nominative: die.",
+  "en": "The neighbours who live below us are very nice."
+ },
+ {
+  "g": "b1-relative-nom-acc",
+  "q": "Das ist das Fahrrad, ___ Lena mir geliehen hat.",
+  "opts": [
+   "den",
+   "der",
+   "dass",
+   "das"
+  ],
+  "a": 3,
+  "why": "Fahrrad is neuter, and the neuter accusative is still das. dass with ss is a conjunction, not a relative pronoun.",
+  "en": "That is the bike that Lena lent me."
+ },
+ {
+  "g": "b1-relative-dat",
+  "q": "Wie heißt die Kollegin, ___ du gestern geholfen hast?",
+  "opts": [
+   "der",
+   "die",
+   "dem",
+   "denen"
+  ],
+  "a": 0,
+  "why": "helfen takes the dative, and Kollegin is feminine, so the relative pronoun is der.",
+  "en": "What's the name of the colleague you helped yesterday?"
+ },
+ {
+  "g": "b1-relative-dat",
+  "q": "Die Nachbarn, ___ der Garten gehört, sind im Urlaub.",
+  "opts": [
+   "den",
+   "die",
+   "denen",
+   "dem"
+  ],
+  "a": 2,
+  "why": "gehören takes the dative; the plural dative relative pronoun is denen, not den.",
+  "en": "The neighbours who own the garden are on holiday."
+ },
+ {
+  "g": "b1-relative-dat",
+  "q": "Ist das der Freund, ___ du das Buch geschenkt hast?",
+  "opts": [
+   "den",
+   "der",
+   "denen",
+   "dem"
+  ],
+  "a": 3,
+  "why": "You give the book to the friend: the receiver is dative, masculine dem.",
+  "en": "Is that the friend you gave the book to?"
+ },
+ {
+  "g": "b1-relative-dat",
+  "q": "Das Mädchen, ___ Priya den Weg erklärt hat, war sehr dankbar.",
+  "opts": [
+   "das",
+   "dem",
+   "der",
+   "den"
+  ],
+  "a": 1,
+  "why": "You explain something to someone (dative). Mädchen is neuter, so dem, not das.",
+  "en": "The girl Priya explained the way to was very grateful."
+ },
+ {
+  "g": "b1-relative-preps",
+  "q": "Der Kollege, mit ___ ich das Büro teile, ist sehr ordentlich.",
+  "opts": [
+   "den",
+   "der",
+   "denen",
+   "dem"
+  ],
+  "a": 3,
+  "why": "mit always takes the dative; Kollege is masculine, so mit dem.",
+  "en": "The colleague I share the office with is very tidy."
+ },
+ {
+  "g": "b1-relative-preps",
+  "q": "Die Prüfung, ___ ich so viel gelernt habe, war gar nicht schwer.",
+  "opts": [
+   "für die",
+   "die",
+   "für der",
+   "mit die"
+  ],
+  "a": 0,
+  "why": "lernen für: the preposition comes first, and für takes the accusative, feminine die.",
+  "en": "The exam I studied so much for wasn't difficult at all."
+ },
+ {
+  "g": "b1-relative-preps",
+  "q": "Das sind die Freunde, auf ___ ich mich immer verlassen kann.",
+  "opts": [
+   "denen",
+   "die",
+   "den",
+   "der"
+  ],
+  "a": 1,
+  "why": "sich verlassen auf + accusative; the plural accusative is die (denen would be dative).",
+  "en": "These are the friends I can always rely on."
+ },
+ {
+  "g": "b1-relative-preps",
+  "q": "Wie heißt das Hotel, in ___ ihr letzten Sommer gewohnt habt?",
+  "opts": [
+   "das",
+   "den",
+   "dem",
+   "der"
+  ],
+  "a": 2,
+  "why": "wohnen in answers 'where?', so in takes the dative; Hotel is neuter, so in dem.",
+  "en": "What's the name of the hotel you stayed in last summer?"
+ },
+ {
+  "g": "b1-passive-present",
+  "q": "Der Müll ___ jeden Dienstag abgeholt.",
+  "opts": [
+   "werden",
+   "ist",
+   "hat",
+   "wird"
+  ],
+  "a": 3,
+  "why": "Passive present = werden + Partizip II; der Müll is singular, so wird.",
+  "en": "The rubbish is collected every Tuesday."
+ },
+ {
+  "g": "b1-passive-present",
+  "q": "Die Rechnungen werden von Malte ___.",
+  "opts": [
+   "kontrolliert",
+   "kontrollieren",
+   "gekontrolliert",
+   "kontrollierte"
+  ],
+  "a": 0,
+  "why": "The passive needs the Partizip II at the end. Verbs ending in -ieren form it without ge-: kontrolliert.",
+  "en": "The invoices are checked by Malte."
+ },
+ {
+  "g": "b1-passive-present",
+  "q": "Die Gäste werden von ___ Chefin begrüßt.",
+  "opts": [
+   "die",
+   "dem",
+   "der",
+   "den"
+  ],
+  "a": 2,
+  "why": "The person doing the action is added with von, which takes the dative: feminine der.",
+  "en": "The guests are welcomed by the boss."
+ },
+ {
+  "g": "b1-passive-present",
+  "q": "In dieser Firma ___ viele Produkte ins Ausland verkauft.",
+  "opts": [
+   "wird",
+   "werden",
+   "sind",
+   "haben"
+  ],
+  "a": 1,
+  "why": "viele Produkte is plural, so the passive uses werden + Partizip II.",
+  "en": "In this company many products are sold abroad."
+ },
+ {
+  "g": "b1-passive-past",
+  "q": "Der Brief ___ gestern abgeschickt.",
+  "opts": [
+   "würde",
+   "wurde",
+   "wird",
+   "hat"
+  ],
+  "a": 1,
+  "why": "gestern means past: past passive = wurde + Partizip II. würde means would.",
+  "en": "The letter was sent yesterday."
+ },
+ {
+  "g": "b1-passive-past",
+  "q": "Die Fenster ___ letzte Woche geputzt.",
+  "opts": [
+   "wurde",
+   "würden",
+   "wurden",
+   "haben"
+  ],
+  "a": 2,
+  "why": "die Fenster is plural, so the past passive is wurden + Partizip II.",
+  "en": "The windows were cleaned last week."
+ },
+ {
+  "g": "b1-passive-past",
+  "q": "Das Problem ist schon gelöst ___.",
+  "opts": [
+   "worden",
+   "geworden",
+   "werden",
+   "wurde"
+  ],
+  "a": 0,
+  "why": "In the Perfekt passive the participle of werden is worden, without ge-. geworden means 'become'.",
+  "en": "The problem has already been solved."
+ },
+ {
+  "g": "b1-passive-past",
+  "q": "Wann ___ das alte Rathaus gebaut? – Im Jahr 1850.",
+  "opts": [
+   "wurden",
+   "würde",
+   "hat",
+   "wurde"
+  ],
+  "a": 3,
+  "why": "A question about the past with one subject (das Rathaus): wurde … gebaut.",
+  "en": "When was the old town hall built? – In 1850."
+ },
+ {
+  "g": "b1-passive-modal",
+  "q": "Die Rechnung muss bis Ende des Monats ___.",
+  "opts": [
+   "werden bezahlt",
+   "bezahlen werden",
+   "bezahlt wird",
+   "bezahlt werden"
+  ],
+  "a": 3,
+  "why": "Modal + passive: the Partizip II comes first, then the infinitive werden at the very end.",
+  "en": "The bill must be paid by the end of the month."
+ },
+ {
+  "g": "b1-passive-modal",
+  "q": "In diesem Raum ___ nicht telefoniert werden.",
+  "opts": [
+   "dürfen",
+   "darf",
+   "darfst",
+   "werden"
+  ],
+  "a": 1,
+  "why": "The modal takes position 2. With no subject, the passive uses the singular form: darf … telefoniert werden.",
+  "en": "Phone calls are not allowed in this room."
+ },
+ {
+  "g": "b1-passive-modal",
+  "q": "Ich glaube, dass das Problem schnell ___.",
+  "opts": [
+   "gelöst werden kann",
+   "kann gelöst werden",
+   "gelöst werden können",
+   "gelöst kann werden"
+  ],
+  "a": 0,
+  "why": "After dass the conjugated modal goes to the very end, after Partizip II + werden; das Problem is singular, so kann.",
+  "en": "I think the problem can be solved quickly."
+ },
+ {
+  "g": "b1-passive-modal",
+  "q": "Die Zimmer sollen jeden Tag ___ werden.",
+  "opts": [
+   "aufräumen",
+   "geaufräumt",
+   "aufgeräumt",
+   "aufgeräumte"
+  ],
+  "a": 2,
+  "why": "Before werden you need the Partizip II. In a separable verb ge- goes in the middle: auf-ge-räumt.",
+  "en": "The rooms are supposed to be tidied every day."
+ },
+ {
+  "g": "b1-praeteritum",
+  "q": "Früher ___ ich jeden Tag mit dem Fahrrad zur Schule.",
+  "opts": [
+   "fahrte",
+   "fuhr",
+   "fährt",
+   "fuhrt"
+  ],
+  "a": 1,
+  "why": "fahren is irregular: Präteritum fuhr. The ich form has no ending.",
+  "en": "I used to cycle to school every day."
+ },
+ {
+  "g": "b1-praeteritum",
+  "q": "Vor zehn Jahren ___ Priya in Bangalore Informatik.",
+  "opts": [
+   "studiert",
+   "studierten",
+   "studierte",
+   "gestudiert"
+  ],
+  "a": 2,
+  "why": "studieren is regular: stem + -te. With one person (Priya) there's no extra ending: studierte.",
+  "en": "Ten years ago Priya studied computer science in Bangalore."
+ },
+ {
+  "g": "b1-praeteritum",
+  "q": "Als Schüler ___ Jonas oft Probleme mit Mathe.",
+  "opts": [
+   "hat",
+   "habte",
+   "hätte",
+   "hatte"
+  ],
+  "a": 3,
+  "why": "haben in the Präteritum is hatte (used in speech too). hätte with an umlaut means would have.",
+  "en": "As a pupil Jonas often had problems with maths."
+ },
+ {
+  "g": "b1-praeteritum",
+  "q": "Gestern ___ wir erst um Mitternacht in Berlin an.",
+  "opts": [
+   "kamen",
+   "kommten",
+   "kam",
+   "kämen"
+  ],
+  "a": 0,
+  "why": "ankommen is irregular: kam, and with wir add -en: kamen. The prefix an goes to the end.",
+  "en": "Yesterday we didn't arrive in Berlin until midnight."
+ },
+ {
+  "g": "b1-praeteritum-mixed",
+  "q": "Ich ___ nicht, dass du schon so gut Deutsch sprichst.",
+  "opts": [
+   "wisste",
+   "wusstest",
+   "wusste",
+   "wissete"
+  ],
+  "a": 2,
+  "why": "wissen is a mixed verb: new stem wuss- + -te. The ich form has no extra ending: wusste.",
+  "en": "I didn't know that you already speak German so well."
+ },
+ {
+  "g": "b1-praeteritum-mixed",
+  "q": "Malte ___ mir gestern die Unterlagen ins Büro.",
+  "opts": [
+   "brachte",
+   "bringte",
+   "brang",
+   "brachten"
+  ],
+  "a": 0,
+  "why": "bringen is mixed: brachte, like English brought. bringte is a common mistake.",
+  "en": "Malte brought the documents to my office yesterday."
+ },
+ {
+  "g": "b1-praeteritum-mixed",
+  "q": "Wir ___ lange über das Angebot nach.",
+  "opts": [
+   "denkten",
+   "dachten",
+   "dächten",
+   "dachtet"
+  ],
+  "a": 1,
+  "why": "nachdenken is mixed: dachte, and with wir dachten. denkten doesn't exist.",
+  "en": "We thought about the offer for a long time."
+ },
+ {
+  "g": "b1-praeteritum-mixed",
+  "q": "Früher ___ ich alle Nachbarn im Haus.",
+  "opts": [
+   "kennte",
+   "wusste",
+   "kennt",
+   "kannte"
+  ],
+  "a": 3,
+  "why": "kennen (to know a person) is mixed: kannte. wissen/wusste is for facts, not for people.",
+  "en": "I used to know all the neighbours in the building."
+ },
+ {
+  "g": "b1-seit-bis",
+  "q": "Wir bleiben im Café, ___ der Regen aufhört.",
+  "opts": [
+   "seit",
+   "als",
+   "weil",
+   "bis"
+  ],
+  "a": 3,
+  "why": "bis = until: we stay up to the moment the rain stops. The verb goes to the end.",
+  "en": "We'll stay in the café until the rain stops."
+ },
+ {
+  "g": "b1-seit-bis",
+  "q": "___ ich den Sprachkurs mache, verstehe ich viel mehr.",
+  "opts": [
+   "Bis",
+   "Seit",
+   "Als",
+   "Seid"
+  ],
+  "a": 1,
+  "why": "seit = since: it started and is still going on, so the present tense. Seid with d is a form of sein.",
+  "en": "Since I've been doing the language course, I understand a lot more."
+ },
+ {
+  "g": "b1-seit-bis",
+  "q": "Seit Lena an der Uni studiert, ___ kaum Zeit.",
+  "opts": [
+   "sie hat",
+   "hatte sie",
+   "hat sie",
+   "sie hatte"
+  ],
+  "a": 2,
+  "why": "After a side clause the main clause starts with its verb. seit + something still going on → present: hat sie.",
+  "en": "Since Lena has been at university, she has hardly any time."
+ },
+ {
+  "g": "b1-seit-bis",
+  "q": "Ich bleibe im Büro, bis Malte ___.",
+  "opts": [
+   "zurückkommt",
+   "kommt zurück",
+   "zurück kommt",
+   "zurückkommen"
+  ],
+  "a": 0,
+  "why": "bis sends the verb to the end, where a separable verb joins up into one word: zurückkommt.",
+  "en": "I'll stay in the office until Malte comes back."
+ },
+ {
+  "g": "b1-konj-wish",
+  "q": "Ich ___ gern ein bisschen größer.",
+  "opts": [
+   "würde",
+   "wäre",
+   "hätte",
+   "war"
+  ],
+  "a": 1,
+  "why": "With an adjective (größer) you need sein: Ich wäre gern … = I'd like to be …",
+  "en": "I'd like to be a bit taller."
+ },
+ {
+  "g": "b1-konj-wish",
+  "q": "Wenn ich doch nur mehr Geduld ___!",
+  "opts": [
+   "habe",
+   "wäre",
+   "hätte",
+   "würde"
+  ],
+  "a": 2,
+  "why": "A wish that isn't true now uses the Konjunktiv II at the end: Geduld haben → hätte.",
+  "en": "If only I had more patience!"
+ },
+ {
+  "g": "b1-konj-wish",
+  "q": "Lena ___ gern einen Marathon laufen.",
+  "opts": [
+   "würde",
+   "wäre",
+   "hätte",
+   "wurde"
+  ],
+  "a": 0,
+  "why": "With most verbs a wish is würde + infinitive. wurde without an umlaut is the past of werden.",
+  "en": "Lena would like to run a marathon."
+ },
+ {
+  "g": "b1-konj-wish",
+  "q": "Wenn ich doch nur nicht so müde ___!",
+  "opts": [
+   "hätte",
+   "bin",
+   "würde",
+   "wäre"
+  ],
+  "a": 3,
+  "why": "müde sein → Konjunktiv II wäre at the end of the wenn clause. bin is the real present, not a wish.",
+  "en": "If only I weren't so tired!"
+ },
+ {
+  "g": "b1-konj-unreal",
+  "q": "Wenn ich du ___, würde ich zum Arzt gehen.",
+  "opts": [
+   "bin",
+   "wäre",
+   "würde",
+   "hätte"
+  ],
+  "a": 1,
+  "why": "'If I were you' is unreal: Konjunktiv II of sein, wäre, at the end of the wenn clause.",
+  "en": "If I were you, I would go to the doctor."
+ },
+ {
+  "g": "b1-konj-unreal",
+  "q": "Wenn Priya ein Fahrrad hätte, ___ sie zur Arbeit fahren.",
+  "opts": [
+   "wurde",
+   "wird",
+   "würde",
+   "hätte"
+  ],
+  "a": 2,
+  "why": "The main clause of an unreal condition uses würde + infinitive. wurde without an umlaut is the past.",
+  "en": "If Priya had a bike, she would cycle to work."
+ },
+ {
+  "g": "b1-konj-unreal",
+  "q": "Wenn wir mehr Geld hätten, ___ wir eine größere Wohnung mieten.",
+  "opts": [
+   "können",
+   "konnten",
+   "kannten",
+   "könnten"
+  ],
+  "a": 3,
+  "why": "können → Konjunktiv II könnten, with an umlaut. konnten without an umlaut is the past: 'were able to'.",
+  "en": "If we had more money, we could rent a bigger flat."
+ },
+ {
+  "g": "b1-konj-unreal",
+  "q": "Ich würde jeden Tag joggen, wenn ich nicht so viel arbeiten ___.",
+  "opts": [
+   "müsste",
+   "musste",
+   "muss",
+   "müssen"
+  ],
+  "a": 0,
+  "why": "müssen → Konjunktiv II müsste, with an umlaut. musste is the past tense; muss is the real present.",
+  "en": "I would go jogging every day if I didn't have to work so much."
+ },
+ {
+  "g": "b1-konj-past",
+  "q": "Ich hätte dir gern ___, aber ich hatte keine Zeit.",
+  "opts": [
+   "helfen",
+   "geholft",
+   "geholfen",
+   "hilft"
+  ],
+  "a": 2,
+  "why": "hätte + Partizip II. helfen is irregular, so its participle is geholfen.",
+  "en": "I would have liked to help you, but I didn't have time."
+ },
+ {
+  "g": "b1-konj-past",
+  "q": "Wenn du mir nicht geholfen hättest, ___ ich die Prüfung nicht bestanden.",
+  "opts": [
+   "wäre",
+   "würde",
+   "hatte",
+   "hätte"
+  ],
+  "a": 3,
+  "why": "bestehen takes haben in the Perfekt, so the unreal past is hätte bestanden. würde can't go with a Partizip II.",
+  "en": "If you hadn't helped me, I wouldn't have passed the exam."
+ },
+ {
+  "g": "b1-konj-past",
+  "q": "Wenn es nicht geregnet hätte, ___ wir in die Berge gefahren.",
+  "opts": [
+   "wären",
+   "hätten",
+   "würden",
+   "sind"
+  ],
+  "a": 0,
+  "why": "fahren (movement) takes sein in the Perfekt, so the unreal past is wären gefahren.",
+  "en": "If it hadn't rained, we would have gone to the mountains."
+ },
+ {
+  "g": "b1-konj-past",
+  "q": "Wenn du früher gekommen ___, hättest du Herrn Weber noch getroffen.",
+  "opts": [
+   "hättest",
+   "wärst",
+   "würdest",
+   "bist"
+  ],
+  "a": 1,
+  "why": "kommen takes sein in the Perfekt → wärst gekommen, at the end of the wenn clause.",
+  "en": "If you had come earlier, you would still have met Herr Weber."
+ },
+ {
+  "g": "b1-obwohl",
+  "q": "Priya geht zur Arbeit, ___ sie Kopfschmerzen hat.",
+  "opts": [
+   "weil",
+   "obwohl",
+   "trotzdem",
+   "deshalb"
+  ],
+  "a": 1,
+  "why": "A headache is a reason not to go, but she goes anyway: obwohl. trotzdem and deshalb can't start a clause with the verb at the end.",
+  "en": "Priya goes to work although she has a headache."
+ },
+ {
+  "g": "b1-obwohl",
+  "q": "Obwohl das Wetter schlecht war, ___ spazieren.",
+  "opts": [
+   "wir gingen",
+   "wir sind",
+   "sind wir",
+   "gingen wir"
+  ],
+  "a": 3,
+  "why": "The obwohl clause fills position 1, so the main clause starts with its verb: gingen wir.",
+  "en": "Although the weather was bad, we went for a walk."
+ },
+ {
+  "g": "b1-obwohl",
+  "q": "Ich lese jeden Tag Zeitung, obwohl ___.",
+  "opts": [
+   "ich nicht viel Zeit habe",
+   "ich habe nicht viel Zeit",
+   "habe ich nicht viel Zeit",
+   "ich nicht habe viel Zeit"
+  ],
+  "a": 0,
+  "why": "obwohl sends the conjugated verb (habe) to the very end of its clause.",
+  "en": "I read the newspaper every day, although I don't have much time."
+ },
+ {
+  "g": "b1-obwohl",
+  "q": "___ der Film sehr gute Kritiken bekommen hat, hat er Lena nicht gefallen.",
+  "opts": [
+   "Weil",
+   "Trotzdem",
+   "Obwohl",
+   "Damit"
+  ],
+  "a": 2,
+  "why": "Good reviews would make you expect she liked it, but she didn't: a contrast, so obwohl.",
+  "en": "Although the film got very good reviews, Lena didn't like it."
+ },
+ {
+  "g": "b1-trotzdem-obwohl",
+  "q": "Der Film war langweilig. ___ haben wir ihn bis zum Ende gesehen.",
+  "opts": [
+   "Obwohl",
+   "Weil",
+   "Trotzdem",
+   "Deshalb"
+  ],
+  "a": 2,
+  "why": "Position 1 followed directly by the verb (haben) means an adverb: trotzdem = still. obwohl would send the verb to the end.",
+  "en": "The film was boring. We still watched it to the end."
+ },
+ {
+  "g": "b1-trotzdem-obwohl",
+  "q": "Ich gehe joggen, ___ es draußen sehr kalt ist.",
+  "opts": [
+   "obwohl",
+   "trotzdem",
+   "aber",
+   "deshalb"
+  ],
+  "a": 0,
+  "why": "The verb ist is at the end, so you need a conjunction that starts a side clause: obwohl.",
+  "en": "I go jogging although it's very cold outside."
+ },
+ {
+  "g": "b1-trotzdem-obwohl",
+  "q": "Malte hat wenig Zeit, aber er liest ___ jeden Morgen die Zeitung.",
+  "opts": [
+   "obwohl",
+   "deshalb",
+   "weil",
+   "trotzdem"
+  ],
+  "a": 3,
+  "why": "trotzdem can also stand after the verb in a main clause. obwohl and weil can only start a side clause.",
+  "en": "Malte has little time, but he still reads the newspaper every morning."
+ },
+ {
+  "g": "b1-trotzdem-obwohl",
+  "q": "Lena hatte kein Geld mehr. Trotzdem ___.",
+  "opts": [
+   "sie kaufte sich ein neues Handy",
+   "kaufte sie sich ein neues Handy",
+   "sie sich ein neues Handy kaufte",
+   "kaufte sich sie ein neues Handy"
+  ],
+  "a": 1,
+  "why": "trotzdem fills position 1, so the verb comes next, then the subject pronoun, then sich.",
+  "en": "Lena had no money left. Still, she bought herself a new phone."
+ },
+ {
+  "g": "b1-indirect-speech",
+  "q": "Im Radio hieß es, der Zug ___ wegen eines Unfalls Verspätung.",
+  "opts": [
+   "haben",
+   "habest",
+   "habt",
+   "habe"
+  ],
+  "a": 3,
+  "why": "Reported speech in the news uses the Konjunktiv I. For er/sie/es it is stem + e: habe (= has).",
+  "en": "The radio said the train was delayed because of an accident."
+ },
+ {
+  "g": "b1-indirect-speech",
+  "q": "Der Trainer sagt, das Team sei gut vorbereitet. = The coach says the team ___ well prepared.",
+  "opts": [
+   "is",
+   "would be",
+   "was",
+   "should be"
+  ],
+  "a": 0,
+  "why": "sei is the Konjunktiv I of sein. It reports what someone said and simply means 'is' (would be = wäre, was = war).",
+  "en": "The coach says the team is well prepared."
+ },
+ {
+  "g": "b1-indirect-speech",
+  "q": "Die Polizei berichtet, der Fahrer ___ zu schnell gefahren.",
+  "opts": [
+   "seien",
+   "sei",
+   "sein",
+   "seid"
+  ],
+  "a": 1,
+  "why": "Konjunktiv I of sein for one person: sei. sei gefahren reports ist gefahren.",
+  "en": "The police report that the driver was going too fast."
+ },
+ {
+  "g": "b1-indirect-speech",
+  "q": "Die Nachbarin erzählt, ihr Sohn habe eine neue Stelle. = The neighbour says her son ___ a new job.",
+  "opts": [
+   "had",
+   "would have",
+   "has",
+   "must have"
+  ],
+  "a": 2,
+  "why": "habe is the Konjunktiv I of haben: it just reports hat (has). 'would have' would be hätte.",
+  "en": "The neighbour says her son has a new job."
+ },
+ {
+  "g": "b1-genitive",
+  "q": "Die Farbe ___ gefällt mir nicht.",
+  "opts": [
+   "dem Sofa",
+   "des Sofas",
+   "das Sofa",
+   "des Sofa"
+  ],
+  "a": 1,
+  "why": "Sofa is neuter: genitive des, and the noun adds -s: des Sofas.",
+  "en": "I don't like the colour of the sofa."
+ },
+ {
+  "g": "b1-genitive",
+  "q": "Das Büro ___ ist im dritten Stock.",
+  "opts": [
+   "des Chefin",
+   "die Chefin",
+   "der Chefins",
+   "der Chefin"
+  ],
+  "a": 3,
+  "why": "Feminine nouns take der in the genitive and no ending: der Chefin.",
+  "en": "The boss's office is on the third floor."
+ },
+ {
+  "g": "b1-genitive",
+  "q": "Der Besitzer ___ hat neue Öffnungszeiten.",
+  "opts": [
+   "der Geschäft",
+   "des Geschäft",
+   "des Geschäfts",
+   "dem Geschäft"
+  ],
+  "a": 2,
+  "why": "Geschäft is neuter: des + -s on the noun (des Geschäfts or des Geschäftes).",
+  "en": "The owner of the shop has new opening hours."
+ },
+ {
+  "g": "b1-genitive",
+  "q": "Die Meinung ___ ist für uns sehr wichtig.",
+  "opts": [
+   "unserer Kunden",
+   "unseren Kunden",
+   "unsere Kunden",
+   "unserer Kundens"
+  ],
+  "a": 0,
+  "why": "Plural genitive: unserer (like der). The plural noun gets no extra -s.",
+  "en": "Our customers' opinion is very important to us."
+ },
+ {
+  "g": "b1-genitive-preps",
+  "q": "___ des Sonderangebots war der Laden fast leer.",
+  "opts": [
+   "Wegen",
+   "Obwohl",
+   "Trotz",
+   "Trotzdem"
+  ],
+  "a": 2,
+  "why": "You'd expect a special offer to bring customers, so it's a contrast: trotz + genitive. obwohl and trotzdem can't stand before a noun on its own.",
+  "en": "Despite the special offer, the shop was almost empty."
+ },
+ {
+  "g": "b1-genitive-preps",
+  "q": "Wegen ___ bleibt das Geschäft heute geschlossen.",
+  "opts": [
+   "dem Feiertag",
+   "des Feiertags",
+   "der Feiertag",
+   "den Feiertag"
+  ],
+  "a": 1,
+  "why": "wegen takes the genitive in written German: masculine des + -s. wegen dem is heard in speech but isn't standard.",
+  "en": "Because of the public holiday the shop is closed today."
+ },
+ {
+  "g": "b1-genitive-preps",
+  "q": "Während ___ darf man im Kino nicht telefonieren.",
+  "opts": [
+   "des Films",
+   "dem Film",
+   "den Film",
+   "der Film"
+  ],
+  "a": 0,
+  "why": "während takes the genitive: masculine des + -s: des Films.",
+  "en": "You mustn't make phone calls during the film at the cinema."
+ },
+ {
+  "g": "b1-genitive-preps",
+  "q": "Die Kundin hat sich ___ des kaputten Geräts beschwert.",
+  "opts": [
+   "trotz",
+   "während",
+   "weil",
+   "wegen"
+  ],
+  "a": 3,
+  "why": "The broken device is the reason for the complaint: wegen + genitive. weil would need a whole clause.",
+  "en": "The customer complained because of the broken device."
+ },
+ {
+  "g": "b1-adj-genitive",
+  "q": "Trotz des ___ Wetters war der Markt voll.",
+  "opts": [
+   "schlechte",
+   "schlechten",
+   "schlechtes",
+   "schlechter"
+  ],
+  "a": 1,
+  "why": "After des in the genitive the adjective ends in -en: des schlechten Wetters.",
+  "en": "Despite the bad weather the market was full."
+ },
+ {
+  "g": "b1-adj-genitive",
+  "q": "Die Verkäuferin erklärt mir die Vorteile einer ___ Waschmaschine.",
+  "opts": [
+   "moderne",
+   "modernes",
+   "modernen",
+   "moderner"
+  ],
+  "a": 2,
+  "why": "Genitive after einer: the adjective ends in -en: einer modernen Waschmaschine.",
+  "en": "The saleswoman explains the advantages of a modern washing machine to me."
+ },
+ {
+  "g": "b1-adj-genitive",
+  "q": "Ich habe mir den Laptop eines ___ Kollegen ausgeliehen.",
+  "opts": [
+   "netten",
+   "nette",
+   "netter",
+   "nettes"
+  ],
+  "a": 0,
+  "why": "Genitive after eines: the adjective ends in -en (and Kollege takes -n): eines netten Kollegen.",
+  "en": "I borrowed a nice colleague's laptop."
+ },
+ {
+  "g": "b1-adj-genitive",
+  "q": "Die Preise der ___ Geräte sind stark gestiegen.",
+  "opts": [
+   "elektrische",
+   "elektrischer",
+   "elektrisches",
+   "elektrischen"
+  ],
+  "a": 3,
+  "why": "Plural genitive with der: the adjective ends in -en: der elektrischen Geräte.",
+  "en": "The prices of electrical appliances have risen sharply."
+ },
+ {
+  "g": "b1-plusquamperfekt",
+  "q": "Als ich ins Kino kam, ___ der Film schon begonnen.",
+  "opts": [
+   "war",
+   "hatte",
+   "hat",
+   "wurde"
+  ],
+  "a": 1,
+  "why": "The film started before I arrived. beginnen takes haben, so Plusquamperfekt = hatte begonnen.",
+  "en": "When I got to the cinema, the film had already started."
+ },
+ {
+  "g": "b1-plusquamperfekt",
+  "q": "Lena war müde, weil sie den ganzen Tag gewandert ___.",
+  "opts": [
+   "hatte",
+   "ist",
+   "war",
+   "wurde"
+  ],
+  "a": 2,
+  "why": "wandern is a movement verb that takes sein, so its Plusquamperfekt is war gewandert.",
+  "en": "Lena was tired because she had been hiking all day."
+ },
+ {
+  "g": "b1-plusquamperfekt",
+  "q": "Nachdem wir die Koffer ___ hatten, fuhren wir los.",
+  "opts": [
+   "packten",
+   "packen",
+   "gepackten",
+   "gepackt"
+  ],
+  "a": 3,
+  "why": "Plusquamperfekt = hatte + Partizip II: gepackt.",
+  "en": "After we had packed the suitcases, we set off."
+ },
+ {
+  "g": "b1-plusquamperfekt",
+  "q": "Malte konnte nicht ins Haus, weil er seinen Schlüssel ___.",
+  "opts": [
+   "vergessen hatte",
+   "hatte vergessen",
+   "vergessen war",
+   "vergessen wurde"
+  ],
+  "a": 0,
+  "why": "Forgetting happened first, so Plusquamperfekt with haben; weil sends hatte to the very end.",
+  "en": "Malte couldn't get into the house because he had forgotten his key."
+ },
+ {
+  "g": "b1-nachdem",
+  "q": "___ ich die Fahrkarte gekauft hatte, ging ich zum Gleis.",
+  "opts": [
+   "Nachdem",
+   "Nach",
+   "Bevor",
+   "Nach dem"
+  ],
+  "a": 0,
+  "why": "A clause with the verb at the end, and buying came first: nachdem. nach (dem) is a preposition and needs a noun.",
+  "en": "After I had bought the ticket, I went to the platform."
+ },
+ {
+  "g": "b1-nachdem",
+  "q": "Nachdem das Flugzeug gelandet ___, stiegen alle Passagiere aus.",
+  "opts": [
+   "hatte",
+   "war",
+   "ist",
+   "wurde"
+  ],
+  "a": 1,
+  "why": "landen takes sein, and the main clause is in the past, so the nachdem clause is Plusquamperfekt: war gelandet.",
+  "en": "After the plane had landed, all the passengers got off."
+ },
+ {
+  "g": "b1-nachdem",
+  "q": "Nachdem wir das Hotel gefunden hatten, ___ wir etwas essen.",
+  "opts": [
+   "gehen",
+   "gegangen",
+   "gingen",
+   "ging"
+  ],
+  "a": 2,
+  "why": "Plusquamperfekt in the nachdem clause → a past tense in the main clause: gingen, verb first.",
+  "en": "After we had found the hotel, we went to get something to eat."
+ },
+ {
+  "g": "b1-nachdem",
+  "q": "Wir besichtigen die Stadt, nachdem wir die Koffer ins Hotel ___.",
+  "opts": [
+   "gebracht hatten",
+   "haben gebracht",
+   "bringen",
+   "gebracht haben"
+  ],
+  "a": 3,
+  "why": "Main clause in the present → nachdem clause in the Perfekt, with haben at the end.",
+  "en": "We'll look around the town after we've taken the suitcases to the hotel."
+ },
+ {
+  "g": "b1-bevor",
+  "q": "___ der Reise muss ich noch Geld wechseln.",
+  "opts": [
+   "Vor",
+   "Bevor",
+   "Vorher",
+   "Davor"
+  ],
+  "a": 0,
+  "why": "Before a noun use the preposition vor + dative: vor der Reise. bevor needs a whole clause with a verb.",
+  "en": "Before the trip I still have to change money."
+ },
+ {
+  "g": "b1-bevor",
+  "q": "Ruf mich an, ___ du losfährst.",
+  "opts": [
+   "vor",
+   "bevor",
+   "nachdem",
+   "bis"
+  ],
+  "a": 1,
+  "why": "A whole clause follows (du losfährst, verb at the end), so you need the conjunction bevor, not vor.",
+  "en": "Call me before you set off."
+ },
+ {
+  "g": "b1-bevor",
+  "q": "Bevor wir ins Flugzeug steigen, ___ durch die Sicherheitskontrolle.",
+  "opts": [
+   "wir gehen",
+   "gingen wir",
+   "gehen wir",
+   "wir gingen"
+  ],
+  "a": 2,
+  "why": "The bevor clause is in position 1, so the main clause starts with its verb. Both clauses share the same tense.",
+  "en": "Before we board the plane, we go through security."
+ },
+ {
+  "g": "b1-bevor",
+  "q": "Herr Weber liest den Text noch einmal, bevor er ihn ___.",
+  "opts": [
+   "korrigierte",
+   "korrigieren",
+   "zu korrigieren",
+   "korrigiert"
+  ],
+  "a": 3,
+  "why": "bevor sends the verb to the end, and both clauses use the same tense: present korrigiert.",
+  "en": "Herr Weber reads the text once more before he corrects it."
+ },
+ {
+  "g": "b1-um-zu",
+  "q": "Ich nehme eine Tasche mit, ___ keine Plastiktüte kaufen zu müssen.",
+  "opts": [
+   "damit",
+   "für",
+   "um",
+   "zu"
+  ],
+  "a": 2,
+  "why": "Same subject (ich) and zu + infinitive at the end: um … zu. damit would need a new clause with a subject.",
+  "en": "I take a bag with me so that I don't have to buy a plastic bag."
+ },
+ {
+  "g": "b1-um-zu",
+  "q": "Wir trennen den Müll, um die Natur ___.",
+  "opts": [
+   "schützen",
+   "zu schützen",
+   "zu schützt",
+   "schützen zu"
+  ],
+  "a": 1,
+  "why": "um … zu: zu + infinitive come together at the very end.",
+  "en": "We separate our rubbish to protect nature."
+ },
+ {
+  "g": "b1-um-zu",
+  "q": "Ich gehe zum Wertstoffhof, um meinen alten Fernseher ___.",
+  "opts": [
+   "zu abgeben",
+   "abgeben zu",
+   "abgeben",
+   "abzugeben"
+  ],
+  "a": 3,
+  "why": "With a separable verb (abgeben), zu goes between prefix and verb, all in one word: abzugeben.",
+  "en": "I'm going to the recycling centre to hand in my old TV."
+ },
+ {
+  "g": "b1-um-zu",
+  "q": "___ weniger Wasser zu verbrauchen, duscht Lena nur fünf Minuten.",
+  "opts": [
+   "Um",
+   "Damit",
+   "Für",
+   "Weil"
+  ],
+  "a": 0,
+  "why": "um … zu can also come first; then the main clause starts with its verb: duscht Lena.",
+  "en": "To use less water, Lena only showers for five minutes."
+ },
+ {
+  "g": "b1-damit",
+  "q": "Ich mache das Fenster zu, ___ die Wärme nicht verloren geht.",
+  "opts": [
+   "um",
+   "damit",
+   "dass",
+   "weil"
+  ],
+  "a": 1,
+  "why": "New subject (die Wärme) and the verb at the end: damit. um … zu only works without a new subject.",
+  "en": "I close the window so that the heat doesn't escape."
+ },
+ {
+  "g": "b1-damit",
+  "q": "Frau Yilmaz stellt Kisten in den Flur, damit die Nachbarn dort ihr Altpapier ___.",
+  "opts": [
+   "können sammeln",
+   "sammeln zu können",
+   "zu sammeln",
+   "sammeln können"
+  ],
+  "a": 3,
+  "why": "In a damit clause the conjugated verb (können) goes to the very end, after the infinitive.",
+  "en": "Frau Yilmaz puts boxes in the hallway so that the neighbours can collect their waste paper there."
+ },
+ {
+  "g": "b1-damit",
+  "q": "Wir fahren mit dem Zug, ___ weniger CO2 zu produzieren.",
+  "opts": [
+   "um",
+   "damit",
+   "dass",
+   "für"
+  ],
+  "a": 0,
+  "why": "Same subject (wir) and zu + infinitive at the end: um … zu, not damit.",
+  "en": "We travel by train to produce less CO2."
+ },
+ {
+  "g": "b1-damit",
+  "q": "Malte erklärt den Kindern das Recycling, ___ sie den Müll richtig trennen.",
+  "opts": [
+   "um",
+   "denn",
+   "damit",
+   "für"
+  ],
+  "a": 2,
+  "why": "The children are a new subject and trennen is at the end: damit. um needs zu + infinitive; denn needs normal word order.",
+  "en": "Malte explains recycling to the children so that they separate the rubbish correctly."
+ },
+ {
+  "g": "b1-zu-infinitive",
+  "q": "Es ist nicht leicht, jeden Tag mit dem Rad ___.",
+  "opts": [
+   "fahren",
+   "zu fahren",
+   "zu fährt",
+   "fährt"
+  ],
+  "a": 1,
+  "why": "After an adjective like leicht the verb comes as zu + infinitive at the end.",
+  "en": "It's not easy to cycle every day."
+ },
+ {
+  "g": "b1-zu-infinitive",
+  "q": "Hast du Lust, am Samstag beim Aufräumen im Park ___?",
+  "opts": [
+   "zu mithelfen",
+   "mithelfen",
+   "mit zu helfen",
+   "mitzuhelfen"
+  ],
+  "a": 3,
+  "why": "Lust haben + zu-infinitive. mithelfen is separable, so zu goes in the middle, in one word: mitzuhelfen.",
+  "en": "Do you feel like helping with the clean-up in the park on Saturday?"
+ },
+ {
+  "g": "b1-zu-infinitive",
+  "q": "Wir müssen mehr Energie ___.",
+  "opts": [
+   "zu sparen",
+   "sparen zu",
+   "sparen",
+   "gespart"
+  ],
+  "a": 2,
+  "why": "Modal verbs (müssen, können, wollen …) never take zu: just the infinitive.",
+  "en": "We must save more energy."
+ },
+ {
+  "g": "b1-zu-infinitive",
+  "q": "Lena hat aufgehört, Fleisch ___.",
+  "opts": [
+   "zu essen",
+   "essen",
+   "zu isst",
+   "gegessen"
+  ],
+  "a": 0,
+  "why": "aufhören is followed by zu + infinitive: …, Fleisch zu essen.",
+  "en": "Lena has stopped eating meat."
+ },
+ {
+  "g": "b1-sowohl",
+  "q": "Das Festival ist sowohl für Kinder ___ für Erwachsene interessant.",
+  "opts": [
+   "sondern auch",
+   "als auch",
+   "und auch",
+   "oder auch"
+  ],
+  "a": 1,
+  "why": "sowohl always pairs with als auch: sowohl A als auch B = both A and B.",
+  "en": "The festival is interesting for both children and adults."
+ },
+ {
+  "g": "b1-sowohl",
+  "q": "Malte hat nicht nur das Buch gelesen, ___ auch den Film gesehen.",
+  "opts": [
+   "aber",
+   "als",
+   "oder",
+   "sondern"
+  ],
+  "a": 3,
+  "why": "nicht nur pairs with sondern auch. After a negative like nicht, 'but' is sondern, not aber.",
+  "en": "Malte has not only read the book but also seen the film."
+ },
+ {
+  "g": "b1-sowohl",
+  "q": "Im Museum gibt es ___ Bilder als auch Skulpturen.",
+  "opts": [
+   "nicht nur",
+   "weder",
+   "sowohl",
+   "entweder"
+  ],
+  "a": 2,
+  "why": "als auch belongs to sowohl.",
+  "en": "In the museum there are both paintings and sculptures."
+ },
+ {
+  "g": "b1-sowohl",
+  "q": "Herr Weber spricht ___ Englisch, sondern auch Spanisch.",
+  "opts": [
+   "nicht nur",
+   "sowohl",
+   "nur",
+   "weder"
+  ],
+  "a": 0,
+  "why": "sondern auch needs nicht nur in the first part.",
+  "en": "Herr Weber speaks not only English but also Spanish."
+ },
+ {
+  "g": "b1-weder",
+  "q": "Leider hatte Priya ___ Zeit noch Lust, auf die Party zu gehen.",
+  "opts": [
+   "entweder",
+   "weder",
+   "nicht",
+   "keine"
+  ],
+  "a": 1,
+  "why": "noch pairs with weder: weder … noch = neither … nor.",
+  "en": "Unfortunately Priya had neither the time nor the wish to go to the party."
+ },
+ {
+  "g": "b1-weder",
+  "q": "Am Wochenende gehen wir entweder ins Museum ___ in den Zoo.",
+  "opts": [
+   "oder",
+   "noch",
+   "und",
+   "als"
+  ],
+  "a": 0,
+  "why": "entweder pairs with oder: either … or.",
+  "en": "At the weekend we're going either to the museum or to the zoo."
+ },
+ {
+  "g": "b1-weder",
+  "q": "Lena kann weder tanzen ___ singen.",
+  "opts": [
+   "oder",
+   "nicht",
+   "noch",
+   "und"
+  ],
+  "a": 2,
+  "why": "The second part of weder is noch (nor), not oder or nicht.",
+  "en": "Lena can neither dance nor sing."
+ },
+ {
+  "g": "b1-weder",
+  "q": "Das Konzert war ___ zu laut noch zu lang.",
+  "opts": [
+   "entweder",
+   "sowohl",
+   "nicht nur",
+   "weder"
+  ],
+  "a": 3,
+  "why": "Neither one nor the other was true: weder … noch. It's already negative, so no nicht.",
+  "en": "The concert was neither too loud nor too long."
+ },
+ {
+  "g": "b1-je-desto",
+  "q": "Je länger der Film dauert, ___ müder werde ich.",
+  "opts": [
+   "dann",
+   "desto",
+   "als",
+   "mehr"
+  ],
+  "a": 1,
+  "why": "je in the first part pairs with desto (or umso) in the second.",
+  "en": "The longer the film goes on, the more tired I get."
+ },
+ {
+  "g": "b1-je-desto",
+  "q": "Je mehr ich über Kunst lese, desto ___.",
+  "opts": [
+   "interessanter finde ich sie",
+   "ich finde sie interessanter",
+   "interessanter ich finde sie",
+   "interessanter ich sie finde"
+  ],
+  "a": 0,
+  "why": "After desto + comparative comes the verb, then the subject: desto interessanter finde ich sie.",
+  "en": "The more I read about art, the more interesting I find it."
+ },
+ {
+  "g": "b1-je-desto",
+  "q": "Je ___ die Musik ist, desto lieber tanzt Lena.",
+  "opts": [
+   "laut",
+   "lauteste",
+   "lauter",
+   "am lautesten"
+  ],
+  "a": 2,
+  "why": "je … desto needs a comparative in both parts: laut → lauter.",
+  "en": "The louder the music is, the more Lena likes dancing."
+ },
+ {
+  "g": "b1-je-desto",
+  "q": "Je ___, desto besser verstehe ich Deutsch.",
+  "opts": [
+   "mehr lese ich",
+   "ich mehr lese",
+   "lese ich mehr",
+   "mehr ich lese"
+  ],
+  "a": 3,
+  "why": "The je part is a side clause: je + comparative first, then the subject, and the verb at the end.",
+  "en": "The more I read, the better I understand German."
+ },
+ {
+  "g": "b1-n-declension",
+  "q": "Die Journalistin interviewt heute den ___.",
+  "opts": [
+   "Präsident",
+   "Präsidente",
+   "Präsidenten",
+   "Präsidents"
+  ],
+  "a": 2,
+  "why": "Präsident is an n-noun: in the accusative it adds -en: den Präsidenten.",
+  "en": "The journalist is interviewing the president today."
+ },
+ {
+  "g": "b1-n-declension",
+  "q": "Ich habe gestern mit einem ___ über die Wahl gesprochen.",
+  "opts": [
+   "Student",
+   "Studente",
+   "Studentes",
+   "Studenten"
+  ],
+  "a": 3,
+  "why": "mit takes the dative, and Student is an n-noun, so it adds -en: einem Studenten.",
+  "en": "Yesterday I talked to a student about the election."
+ },
+ {
+  "g": "b1-n-declension",
+  "q": "Sehr geehrte Damen und ___,",
+  "opts": [
+   "Herren",
+   "Herrn",
+   "Herr",
+   "Herrens"
+  ],
+  "a": 0,
+  "why": "The plural of Herr is Herren. Herrn is the singular form in the accusative, dative and genitive.",
+  "en": "Dear Sir or Madam,"
+ },
+ {
+  "g": "b1-n-declension",
+  "q": "Das Büro des ___ ist im ersten Stock.",
+  "opts": [
+   "Kolleges",
+   "Kollegen",
+   "Kollege",
+   "Kollegens"
+  ],
+  "a": 1,
+  "why": "n-nouns take -n in the genitive too, with no extra -s: des Kollegen.",
+  "en": "The colleague's office is on the first floor."
+ },
+ {
+  "g": "b1-futur",
+  "q": "Nächstes Jahr ___ ich an einem Integrationskurs teilnehmen.",
+  "opts": [
+   "werde",
+   "wird",
+   "werden",
+   "wirst"
+  ],
+  "a": 0,
+  "why": "Futur I = werden + infinitive at the end. With ich: werde.",
+  "en": "Next year I will take part in an integration course."
+ },
+ {
+  "g": "b1-futur",
+  "q": "Die Partei ___ nach der Wahl viele Reformen durchführen.",
+  "opts": [
+   "werden",
+   "wird",
+   "wurde",
+   "werdet"
+  ],
+  "a": 1,
+  "why": "Futur I with a singular subject (die Partei): wird + infinitive at the end.",
+  "en": "The party will carry out many reforms after the election."
+ },
+ {
+  "g": "b1-futur",
+  "q": "Wir werden euch bei der Organisation ___.",
+  "opts": [
+   "geholfen",
+   "zu helfen",
+   "helft",
+   "helfen"
+  ],
+  "a": 3,
+  "why": "Futur I: werden + plain infinitive at the end, without zu.",
+  "en": "We will help you with the organisation."
+ },
+ {
+  "g": "b1-futur",
+  "q": "Malte ist heute nicht im Büro. Er ___ wohl krank sein.",
+  "opts": [
+   "will",
+   "wurde",
+   "wird",
+   "ist"
+  ],
+  "a": 2,
+  "why": "werden + wohl + infinitive is a guess about now: he's probably ill. will means wants.",
+  "en": "Malte isn't in the office today. He's probably ill."
+ },
+ {
+  "g": "b1-participle-adj",
+  "q": "die reparierte Brücke = the bridge that ___",
+  "opts": [
+   "is repairing",
+   "repairs",
+   "has been repaired",
+   "will repair"
+  ],
+  "a": 2,
+  "why": "repariert is a Partizip II: something has been done to the bridge (passive, finished).",
+  "en": "the repaired bridge"
+ },
+ {
+  "g": "b1-participle-adj",
+  "q": "Ich esse zum Frühstück gern ein ___ Ei.",
+  "opts": [
+   "gekochtes",
+   "kochendes",
+   "gekocht",
+   "kochen"
+  ],
+  "a": 0,
+  "why": "The egg has been boiled (passive, finished): Partizip II, with the ending -es after ein: ein gekochtes Ei.",
+  "en": "I like eating a boiled egg for breakfast."
+ },
+ {
+  "g": "b1-participle-adj",
+  "q": "die wartenden Fahrgäste = the passengers who ___",
+  "opts": [
+   "have been waited for",
+   "are waiting",
+   "waited",
+   "will wait"
+  ],
+  "a": 1,
+  "why": "wartend is a Partizip I (infinitive + d): the passengers are doing it right now: waiting.",
+  "en": "the waiting passengers"
+ },
+ {
+  "g": "b1-participle-adj",
+  "q": "Die Polizei hat das ___ Auto gefunden.",
+  "opts": [
+   "stehlende",
+   "gestohlen",
+   "gestohlenen",
+   "gestohlene"
+  ],
+  "a": 3,
+  "why": "The car has been stolen: Partizip II. After das (accusative, neuter) the ending is -e: das gestohlene Auto.",
+  "en": "The police have found the stolen car."
+ },
+ {
+  "g": "b1-als-wenn",
+  "q": "___ ich zehn Jahre alt war, bekam ich mein erstes Fahrrad.",
+  "opts": [
+   "Wenn",
+   "Als",
+   "Wann",
+   "Ob"
+  ],
+  "a": 1,
+  "why": "One single event in the past: als.",
+  "en": "When I was ten, I got my first bike."
+ },
+ {
+  "g": "b1-als-wenn",
+  "q": "___ du morgen Zeit hast, können wir zusammen kochen.",
+  "opts": [
+   "Wenn",
+   "Als",
+   "Wann",
+   "Ob"
+  ],
+  "a": 0,
+  "why": "Future (morgen): wenn. als is only for the past.",
+  "en": "If you have time tomorrow, we can cook together."
+ },
+ {
+  "g": "b1-als-wenn",
+  "q": "Immer ___ es regnete, spielten wir im Keller.",
+  "opts": [
+   "als",
+   "wann",
+   "ob",
+   "wenn"
+  ],
+  "a": 3,
+  "why": "Again and again in the past (immer): wenn, not als.",
+  "en": "Whenever it rained, we played in the basement."
+ },
+ {
+  "g": "b1-als-wenn",
+  "q": "Lena war sehr glücklich, ___ sie die Zusage für den Studienplatz bekam.",
+  "opts": [
+   "wenn",
+   "wann",
+   "als",
+   "ob"
+  ],
+  "a": 2,
+  "why": "One single event in the past (she got the offer once): als.",
+  "en": "Lena was very happy when she got the offer of a university place."
+ },
+ {
+  "g": "b1-waehrend",
+  "q": "___ ich auf den Bus warte, lese ich die Nachrichten.",
+  "opts": [
+   "Während",
+   "Wegen",
+   "Trotz",
+   "Dabei"
+  ],
+  "a": 0,
+  "why": "Two things at the same time, in a clause with the verb at the end: während. wegen and trotz are prepositions and need a noun.",
+  "en": "While I wait for the bus, I read the news."
+ },
+ {
+  "g": "b1-waehrend",
+  "q": "Während ___ habe ich viele neue Leute kennengelernt.",
+  "opts": [
+   "dem Studium",
+   "das Studium",
+   "des Studiums",
+   "der Studium"
+  ],
+  "a": 2,
+  "why": "Here während is a preposition (during) before a noun, so it takes the genitive: neuter des Studiums.",
+  "en": "During my studies I met lots of new people."
+ },
+ {
+  "g": "b1-waehrend",
+  "q": "Lena arbeitet am Computer, während ___.",
+  "opts": [
+   "hört sie Musik",
+   "sie hört Musik",
+   "Musik sie hört",
+   "sie Musik hört"
+  ],
+  "a": 3,
+  "why": "während starts a side clause: subject first, verb at the end.",
+  "en": "Lena works on the computer while she listens to music."
+ },
+ {
+  "g": "b1-waehrend",
+  "q": "Jonas spart sein Geld für eine Reise, ___ sein Bruder alles für Kleidung ausgibt.",
+  "opts": [
+   "trotzdem",
+   "während",
+   "sondern",
+   "wegen"
+  ],
+  "a": 1,
+  "why": "während can also mean whereas: it contrasts two people, and the verb goes to the end.",
+  "en": "Jonas saves his money for a trip, whereas his brother spends everything on clothes."
+ },
+ {
+  "g": "b1-verb-preps-review",
+  "q": "Malte hat sich ___ eine neue Stelle in Hamburg beworben.",
+  "opts": [
+   "um",
+   "für",
+   "an",
+   "nach"
+  ],
+  "a": 0,
+  "why": "sich bewerben um + accusative = apply for. für is a typical mistake from English 'for'.",
+  "en": "Malte has applied for a new job in Hamburg."
+ },
+ {
+  "g": "b1-verb-preps-review",
+  "q": "Lena träumt ___ einer Reise um die Welt.",
+  "opts": [
+   "über",
+   "von",
+   "an",
+   "auf"
+  ],
+  "a": 1,
+  "why": "träumen von + dative = dream of.",
+  "en": "Lena dreams of a trip around the world."
+ },
+ {
+  "g": "b1-verb-preps-review",
+  "q": "Ich interessiere mich sehr ___ Politik.",
+  "opts": [
+   "an",
+   "in",
+   "über",
+   "für"
+  ],
+  "a": 3,
+  "why": "sich interessieren für + accusative. (The noun Interesse takes an: Interesse an Politik.)",
+  "en": "I'm very interested in politics."
+ },
+ {
+  "g": "b1-verb-preps-review",
+  "q": "___ wartest du? – Auf den Bus.",
+  "opts": [
+   "Wofür",
+   "Wovon",
+   "Worauf",
+   "Woran"
+  ],
+  "a": 2,
+  "why": "warten auf → ask with wo + auf, adding r before a vowel: Worauf?",
+  "en": "What are you waiting for? – For the bus."
+ },
+ {
+  "g": "b1-connectors-review",
+  "q": "Ich bin heute zu Hause geblieben, ___ ich Fieber hatte.",
+  "opts": [
+   "obwohl",
+   "damit",
+   "deshalb",
+   "weil"
+  ],
+  "a": 3,
+  "why": "The fever is the reason: weil. deshalb would need the verb right after it.",
+  "en": "I stayed at home today because I had a temperature."
+ },
+ {
+  "g": "b1-connectors-review",
+  "q": "Priya geht zum Deutschkurs, ___ sie wenig Zeit hat.",
+  "opts": [
+   "obwohl",
+   "weil",
+   "damit",
+   "nachdem"
+  ],
+  "a": 0,
+  "why": "Little time is a reason against going, but she goes anyway: obwohl.",
+  "en": "Priya goes to the German course although she has little time."
+ },
+ {
+  "g": "b1-connectors-review",
+  "q": "Ich schreibe dir die Adresse auf, ___ du den Weg findest.",
+  "opts": [
+   "um",
+   "damit",
+   "weil",
+   "obwohl"
+  ],
+  "a": 1,
+  "why": "Purpose with a new subject (du), verb at the end: damit.",
+  "en": "I'll write the address down for you so that you can find the way."
+ },
+ {
+  "g": "b1-connectors-review",
+  "q": "___ wir gegessen hatten, gingen wir spazieren.",
+  "opts": [
+   "Nach",
+   "Bevor",
+   "Nachdem",
+   "Damit"
+  ],
+  "a": 2,
+  "why": "First the meal, then the walk, with the Plusquamperfekt in the first part: nachdem. nach needs a noun.",
+  "en": "After we had eaten, we went for a walk."
+ },
+ {
+  "g": "b1-word-order-review",
+  "q": "Wir fahren ___.",
+  "opts": [
+   "zum See mit dem Bus am Samstag",
+   "mit dem Bus zum See am Samstag",
+   "zum See am Samstag mit dem Bus",
+   "am Samstag mit dem Bus zum See"
+  ],
+  "a": 3,
+  "why": "TeKaMoLo: time (am Samstag), then manner (mit dem Bus), then place (zum See).",
+  "en": "We're going to the lake by bus on Saturday."
+ },
+ {
+  "g": "b1-word-order-review",
+  "q": "Am Montag ___ wegen meiner Rückenschmerzen zum Arzt.",
+  "opts": [
+   "gehe ich",
+   "ich gehe",
+   "ich bin",
+   "gehen"
+  ],
+  "a": 0,
+  "why": "Any element can take position 1, but the verb stays in position 2, so the subject follows it.",
+  "en": "On Monday I'm going to the doctor because of my back pain."
+ },
+ {
+  "g": "b1-word-order-review",
+  "q": "Lena ist ___ nach Hause gefahren.",
+  "opts": [
+   "mit dem Taxi wegen des Regens gestern",
+   "wegen des Regens mit dem Taxi gestern",
+   "gestern wegen des Regens mit dem Taxi",
+   "mit dem Taxi gestern wegen des Regens"
+  ],
+  "a": 2,
+  "why": "TeKaMoLo: when (gestern), why (wegen des Regens), how (mit dem Taxi); the place (nach Hause) comes last.",
+  "en": "Yesterday Lena went home by taxi because of the rain."
+ },
+ {
+  "g": "b1-word-order-review",
+  "q": "Herr Weber erklärt die Grammatik ___.",
+  "opts": [
+   "im Kurs sehr geduldig heute",
+   "heute sehr geduldig im Kurs",
+   "sehr geduldig im Kurs heute",
+   "im Kurs heute sehr geduldig"
+  ],
+  "a": 1,
+  "why": "Time (heute) before manner (sehr geduldig), and the place (im Kurs) last.",
+  "en": "Herr Weber is explaining the grammar very patiently in class today."
+ },
+ {
+  "g": "b1-redemittel",
+  "q": "Meiner Meinung nach ___ in Großstädten zu hoch.",
+  "opts": [
+   "die Mieten sind",
+   "ist die Mieten",
+   "die Mieten",
+   "sind die Mieten"
+  ],
+  "a": 3,
+  "why": "Meiner Meinung nach fills position 1, so the verb comes straight after it, then the subject (plural: sind).",
+  "en": "In my opinion rents in big cities are too high."
+ },
+ {
+  "g": "b1-redemittel",
+  "q": "Ich ___ der Meinung, dass man mehr Sport machen sollte.",
+  "opts": [
+   "habe",
+   "denke",
+   "bin",
+   "finde"
+  ],
+  "a": 2,
+  "why": "The fixed phrase is ich bin der Meinung ('I am of the opinion'), with sein, not haben.",
+  "en": "I am of the opinion that people should do more sport."
+ },
+ {
+  "g": "b1-redemittel",
+  "q": "Ich glaube, dass soziale Medien für Jugendliche gefährlich ___.",
+  "opts": [
+   "sein können",
+   "können sein",
+   "sind können",
+   "können"
+  ],
+  "a": 0,
+  "why": "After dass the conjugated verb (können) goes to the very end, after the infinitive sein.",
+  "en": "I think that social media can be dangerous for teenagers."
+ },
+ {
+  "g": "b1-redemittel",
+  "q": "Einerseits spart man mit dem Auto Zeit, ___ ist es schlecht für die Umwelt.",
+  "opts": [
+   "aber",
+   "andererseits",
+   "sondern",
+   "oder"
+  ],
+  "a": 1,
+  "why": "einerseits is answered by andererseits, which takes position 1, so the verb comes next: andererseits ist es …",
+  "en": "On the one hand you save time with a car; on the other hand it's bad for the environment."
+ }
+]

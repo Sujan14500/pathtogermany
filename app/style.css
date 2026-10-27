@@ -185,7 +185,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 32px 32px 72px; }
 }
 .plan li.done::before, .plan li.part::before, .plan li.now::before { background: var(--line); }
 .plan li:first-child::before { display: none; }
-.plan a { position: relative; display: grid; justify-items: center; gap: 4px; text-align: center; text-decoration: none; padding-bottom: 4px; }
+.plan a { position: relative; z-index: 1; display: grid; justify-items: center; gap: 4px; text-align: center; text-decoration: none; padding-bottom: 4px; }
 .plan a:hover b { text-decoration: underline; }
 .pdot {
   width: 29px; height: 29px; border-radius: 50%; border: 4px solid var(--rule);
@@ -430,11 +430,47 @@ button:disabled { cursor: default; }
 .typed-diff s { color: var(--die); }
 .typed small { color: var(--muted); }
 .new-tag.tricky { color: var(--die); border-color: var(--die); }
-.hook { margin-top: 12px; display: grid; gap: 4px; }
+.hook { margin: 4px 28px 0; padding-bottom: 18px; display: grid; gap: 4px; text-align: left; }
 .hook label { font-weight: 700; }
 .hook textarea { font: inherit; padding: .5rem .7rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); resize: vertical; }
 .words-tools { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .words-tools .check { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; cursor: pointer; }
+.toggle { gap: 10px; }
+.toggle-knob { position: relative; width: 34px; height: 20px; border-radius: 999px; background: var(--rule); transition: background .2s; flex: none; }
+.toggle-knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--panel); transition: transform .2s var(--arrive); }
+.toggle.on .toggle-knob { background: var(--line-deep); }
+.toggle.on .toggle-knob::after { transform: translateX(14px); }
+
+/* ---- how you learn here ---- */
+.tips { max-width: 1100px; }
+.tip-line { overflow-x: auto; scrollbar-width: none; margin-bottom: 18px; }
+.tip-line ol { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(96px, 1fr); list-style: none; margin: 0; padding: 4px 0 6px; }
+.tip-line li { position: relative; }
+.tip-line li::before { content: ""; position: absolute; top: 16px; left: -50%; width: 100%; height: 5px; background: var(--rule); }
+.tip-line li:first-child::before { display: none; }
+.tip-line li.past::before, .tip-line li.on::before { background: var(--line); }
+.tip-line a { position: relative; z-index: 1; display: grid; justify-items: center; gap: 4px; text-decoration: none; text-align: center; padding: 0 4px; }
+.tdot { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 3px solid var(--rule); background: var(--panel); font: 700 .95rem var(--display); color: var(--muted); }
+.past .tdot { border-color: var(--line); color: var(--ink); }
+.on .tdot { border-color: var(--ink); background: var(--ink); color: var(--platform); box-shadow: 0 0 0 4px var(--platform), 0 0 0 6px var(--line); }
+.tname { font: 500 .88rem/1.15 var(--display); color: var(--muted); }
+.on .tname { color: var(--ink); font-weight: 700; }
+.tip { display: grid; grid-template-columns: auto 1fr; gap: 6px 24px; padding: 26px 30px; background: var(--panel); border-radius: 6px;
+  border-top: 6px solid var(--line); animation: rise .35s var(--arrive) both; }
+.tip-icon { color: var(--line-deep); margin-top: 6px; }
+.tip h2 { margin: 0; font-size: 2.2rem; }
+.tip-says { margin: 8px 0 0; font-size: 1.2rem; line-height: 1.5; max-width: 60ch; }
+.tip h3 { margin: 18px 0 6px; font-size: 1.1rem; color: var(--muted); }
+.tip-here { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.tip-here li { display: flex; gap: 8px; align-items: baseline; padding-left: 18px; position: relative; }
+.tip-here li::before { content: ""; position: absolute; left: 0; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
+.tip-here a { font-weight: 600; }
+.tip-here li.later { color: var(--muted); }
+.tip-here li.later::before { background: none; border: 2px solid var(--rule); width: 9px; height: 9px; }
+.tip-here small { font: 600 .75rem var(--body); border: 1.5px solid var(--rule); border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+.tip-ev { margin: 16px 0 0; font-size: .88rem; color: var(--muted); }
+.tip .after { margin-top: 18px; }
+
 .wlist.cover > li:not(.open) .wen { filter: blur(5px); transition: filter .2s; }
 .wlist.cover > li:not(.open):hover .wen { filter: blur(3px); }
 .guess { margin: 14px 0 0; padding: 14px 18px; border: 2px dashed var(--line); border-radius: 6px; }
@@ -580,7 +616,7 @@ button:disabled { cursor: default; }
 .g-explain { margin: 0; font-size: 1.08rem; }
 .g-compare { margin: 14px 0 0; padding: 10px 14px; background: var(--guide); border-radius: 6px; }
 .g-en { display: inline-block; margin-right: 8px; font: 700 .8rem var(--display); color: var(--muted); border: 1.5px solid var(--rule); border-radius: 4px; padding: 0 6px; }
-.g-table { margin-top: 14px; border-collapse: collapse; font-size: 1rem; }
+.g-table { margin-top: 14px; border-collapse: collapse; font-size: 1rem; display: block; max-width: 100%; overflow-x: auto; }   /* a wide table scrolls on its own */
 .g-table th, .g-table td { padding: 5px 12px; border-bottom: 1px solid var(--rule); text-align: left; }
 .g-table thead th { font: 600 .85rem var(--display); color: var(--muted); border-bottom: 2px solid var(--rule); }
 .g-table tbody th { color: var(--muted); font-weight: 600; }
@@ -643,7 +679,7 @@ button:disabled { cursor: default; }
 
 @media (max-width: 1099px) {
   .hero { grid-template-columns: 1fr; }
-  .g-body { grid-template-columns: 1fr; }
+  .g-body { grid-template-columns: minmax(0, 1fr); }
   .tw, .ad { grid-template-columns: 1fr; }
   .scard-parts { grid-template-columns: repeat(4, 1fr); }
 }
@@ -691,6 +727,10 @@ button:disabled { cursor: default; }
   .wlist { columns: 1; }
   .wrow { grid-template-columns: 1fr; }
   .opts { grid-template-columns: 1fr; }
+  .tip { grid-template-columns: 1fr; padding: 18px; }
+  .tip h2 { font-size: 1.7rem; }
+  .tip-says { font-size: 1.08rem; }
+  .tip-line ol { grid-auto-columns: 84px; }
   .ctable { font-size: 1rem; border-spacing: 3px; }
   .ctable th, .ctable td { padding: 6px 6px; }
   .cases-sec { padding: 16px; }

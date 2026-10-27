@@ -1,0 +1,6098 @@
+[
+ {
+  "id": "a2-perfekt-review",
+  "pattern": "subject + haben/sein (position 2) + … + Partizip II (at the end)",
+  "explain": "The Perfekt is the usual way to talk about the past when you speak. haben or sein stands in position 2, and the Partizip II (past participle: gewohnt, gefahren) goes to the end. Most verbs take haben. Take sein for movement from A to B (fahren, fliegen, umziehen), for a change of state (aufwachen, werden), and for sein and bleiben.",
+  "compare_en": "English always uses \"have\" (I have gone), but German says ich bin gegangen for movement. German also uses the Perfekt where English uses the simple past: Ich habe in Köln gewohnt = I lived in Cologne.",
+  "table": [
+   [
+    "haben (most verbs)",
+    "sein (A → B, change, sein, bleiben)"
+   ],
+   [
+    "gewohnt (wohnen)",
+    "gefahren (fahren)"
+   ],
+   [
+    "gearbeitet (arbeiten)",
+    "umgezogen (umziehen)"
+   ],
+   [
+    "studiert (studieren)",
+    "geworden (werden)"
+   ],
+   [
+    "gegessen (essen)",
+    "geblieben (bleiben)"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Priya",
+     "ist",
+     "vor zwei Jahren",
+     "nach Deutschland",
+     "gekommen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "came"
+     ],
+     [
+      [
+       3
+      ],
+      "to Germany"
+     ],
+     [
+      [
+       2
+      ],
+      "two years ago."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "drei Jahre in Köln",
+     "gewohnt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "lived"
+     ],
+     [
+      [
+       2
+      ],
+      "in Cologne for three years."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Nach dem Studium",
+     "ist",
+     "Malte",
+     "nach Hamburg",
+     "umgezogen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "After his studies"
+     ],
+     [
+      [
+       2
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "moved"
+     ],
+     [
+      [
+       3
+      ],
+      "to Hamburg."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hat",
+     "in einem Hotel",
+     "gearbeitet."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "worked"
+     ],
+     [
+      [
+       2
+      ],
+      "in a hotel."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-werden",
+  "pattern": "subject + werden + job / adjective / age",
+  "explain": "werden means \"to become\" or \"to get\". Use it for jobs (Ich werde Ärztin, with no article before the job), for changes (Es wird kalt) and for birthdays (Lena wird 30). It is irregular: du wirst, er/sie wird. In the Perfekt it takes sein: Er ist Arzt geworden.",
+  "compare_en": "English uses \"become\", \"get\" or \"turn\": it's getting cold = es wird kalt, she turns 30 = sie wird 30. False friend: bekommen means \"to get, to receive\", never \"to become\".",
+  "table": [
+   [
+    "",
+    "werden"
+   ],
+   [
+    "ich",
+    "werde"
+   ],
+   [
+    "du",
+    "wirst"
+   ],
+   [
+    "er/sie/es",
+    "wird"
+   ],
+   [
+    "wir",
+    "werden"
+   ],
+   [
+    "ihr",
+    "werdet"
+   ],
+   [
+    "sie/Sie",
+    "werden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Jonas",
+     "will",
+     "Arzt",
+     "werden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "wants"
+     ],
+     [
+      [
+       3
+      ],
+      "to become"
+     ],
+     [
+      [
+       2
+      ],
+      "a doctor."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Im Herbst",
+     "wird",
+     "es",
+     "früh",
+     "dunkel."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In autumn"
+     ],
+     [
+      [
+       2
+      ],
+      "it"
+     ],
+     [
+      [
+       1
+      ],
+      "gets"
+     ],
+     [
+      [
+       4
+      ],
+      "dark"
+     ],
+     [
+      [
+       3
+      ],
+      "early."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "wird",
+     "am Samstag",
+     "30."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "turns"
+     ],
+     [
+      [
+       3
+      ],
+      "30"
+     ],
+     [
+      [
+       2
+      ],
+      "on Saturday."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Mein Bruder",
+     "ist",
+     "Verkäufer",
+     "geworden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "My brother"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "became"
+     ],
+     [
+      [
+       2
+      ],
+      "a shop assistant."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-denn-aber",
+  "pattern": "main clause + , aber / denn / sondern + subject + VERB + … (normal order)",
+  "explain": "und (and), aber (but), oder (or), denn (because) and sondern (but rather) join two main clauses without changing the word order. They sit in \"position 0\", so the subject and the verb follow as usual. Use sondern only after a negative (nicht, kein) to give the correct thing. Put a comma before aber, denn and sondern.",
+  "compare_en": "English uses \"but\" for both aber and sondern; German keeps sondern for correcting a negative: nicht Tee, sondern Kaffee = not tea but coffee. denn means \"because\" and keeps the normal word order.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "lerne",
+     "Deutsch,",
+     "denn",
+     "ich",
+     "arbeite",
+     "in Berlin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am learning"
+     ],
+     [
+      [
+       2
+      ],
+      "German"
+     ],
+     [
+      [
+       3
+      ],
+      "because"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       5
+      ],
+      "work"
+     ],
+     [
+      [
+       6
+      ],
+      "in Berlin."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "kommt",
+     "nicht aus Delhi,",
+     "sondern",
+     "aus Mumbai."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "doesn't come from Delhi"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "from Mumbai."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "wohnt",
+     "in Köln,",
+     "aber",
+     "sie",
+     "arbeitet",
+     "in Bonn."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "lives"
+     ],
+     [
+      [
+       2
+      ],
+      "in Cologne,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "she"
+     ],
+     [
+      [
+       5
+      ],
+      "works"
+     ],
+     [
+      [
+       6
+      ],
+      "in Bonn."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-two-way",
+  "pattern": "Wo? → in / an / auf … + dative · Wohin? → in / an / auf … + accusative",
+  "explain": "Nine prepositions can take two cases: in, an, auf, über, unter, vor, hinter, neben, zwischen. If you say where something is (Wo?), use the dative (dem, der, dem, den). If something moves to a new place (Wohin?), use the accusative (den, die, das, die). Short forms: in dem → im, an dem → am, in das → ins, an das → ans.",
+  "compare_en": "English sometimes shows this with \"in\" and \"into\" or \"on\" and \"onto\". German shows it with the article: im Garten (in the garden), in den Garten (into the garden).",
+  "table": [
+   [
+    "",
+    "Wo? → dative",
+    "Wohin? → accusative"
+   ],
+   [
+    "masc. (der Tisch)",
+    "auf dem Tisch",
+    "auf den Tisch"
+   ],
+   [
+    "fem. (die Küche)",
+    "in der Küche",
+    "in die Küche"
+   ],
+   [
+    "neut. (das Bad)",
+    "im Bad",
+    "ins Bad"
+   ],
+   [
+    "plural (die Zimmer)",
+    "in den Zimmern",
+    "in die Zimmer"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Die Katze",
+     "liegt",
+     "unter dem Bett."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The cat"
+     ],
+     [
+      [
+       1
+      ],
+      "is lying"
+     ],
+     [
+      [
+       2
+      ],
+      "under the bed."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Katze",
+     "läuft",
+     "unter das Bett."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The cat"
+     ],
+     [
+      [
+       1
+      ],
+      "runs"
+     ],
+     [
+      [
+       2
+      ],
+      "under the bed."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "fährt",
+     "am Wochenende",
+     "in die Stadt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is going"
+     ],
+     [
+      [
+       3
+      ],
+      "into town"
+     ],
+     [
+      [
+       2
+      ],
+      "at the weekend."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Kinder",
+     "spielen",
+     "im Garten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The children"
+     ],
+     [
+      [
+       1
+      ],
+      "are playing"
+     ],
+     [
+      [
+       2
+      ],
+      "in the garden."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-stellen-stehen",
+  "pattern": "stellen / legen / hängen + Wohin? + accusative · stehen / liegen / hängen + Wo? + dative",
+  "explain": "These verbs come in pairs. stellen (put upright), legen (lay down) and hängen (hang up) are actions: you move something, so the place takes the accusative (Wohin?). stehen (stand), liegen (lie) and hängen (be hanging) say where something is, so the place takes the dative (Wo?). Perfekt: hat gestellt, hat gelegt, but hat gestanden, hat gelegen.",
+  "compare_en": "English often just says \"put\" and \"is\". German picks the verb by position: upright things stand (die Flasche steht), flat things lie (das Handy liegt). Plates and shoes usually \"stand\" in German.",
+  "table": [
+   [
+    "action → accusative (Wohin?)",
+    "position → dative (Wo?)"
+   ],
+   [
+    "stellen: put upright",
+    "stehen: stand"
+   ],
+   [
+    "legen: lay down",
+    "liegen: lie"
+   ],
+   [
+    "hängen: hang up",
+    "hängen: be hanging"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "stelle",
+     "die Lampe",
+     "neben das Sofa."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "put"
+     ],
+     [
+      [
+       2
+      ],
+      "the lamp"
+     ],
+     [
+      [
+       3
+      ],
+      "next to the sofa."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jetzt",
+     "steht",
+     "die Lampe",
+     "neben dem Sofa."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Now"
+     ],
+     [
+      [
+       2
+      ],
+      "the lamp"
+     ],
+     [
+      [
+       1
+      ],
+      "is standing"
+     ],
+     [
+      [
+       3
+      ],
+      "next to the sofa."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hängt",
+     "das Bild",
+     "über das Sofa."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "hangs"
+     ],
+     [
+      [
+       2
+      ],
+      "the picture"
+     ],
+     [
+      [
+       3
+      ],
+      "above the sofa."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Dein Handy",
+     "liegt",
+     "auf dem Tisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Your phone"
+     ],
+     [
+      [
+       1
+      ],
+      "is lying"
+     ],
+     [
+      [
+       2
+      ],
+      "on the table."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-dative-articles",
+  "pattern": "dem (masc. / neut.) · der (fem.) · den + noun-n (plural)",
+  "explain": "The dative is the case for the person who receives something and for the noun after mit, bei, von, zu, aus, nach and seit. The articles change: der and das → dem, die → der, plural die → den, and the plural noun adds -n (den Kindern). ein, kein and mein follow the same pattern: einem, einer, meinen.",
+  "compare_en": "English shows this only in pronouns (he → him); German shows it on the article too: der Mann → mit dem Mann (with the man).",
+  "table": [
+   [
+    "",
+    "masc.",
+    "fem.",
+    "neut.",
+    "plural"
+   ],
+   [
+    "nominative (subject)",
+    "der / ein",
+    "die / eine",
+    "das / ein",
+    "die / meine"
+   ],
+   [
+    "dative",
+    "dem / einem",
+    "der / einer",
+    "dem / einem",
+    "den / meinen + noun-n"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "wohne",
+     "bei meiner Oma."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "with my grandma."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "fährt",
+     "mit dem Fahrrad",
+     "zur Arbeit."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "goes"
+     ],
+     [
+      [
+       3
+      ],
+      "to work"
+     ],
+     [
+      [
+       2
+      ],
+      "by bike."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "spricht",
+     "mit den Kindern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "is talking"
+     ],
+     [
+      [
+       2
+      ],
+      "to the children."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-weil",
+  "pattern": "main clause + , weil + subject + … + VERB (at the end)",
+  "explain": "weil means \"because\". It starts a subordinate clause (a part of a sentence that can't stand alone), and the conjugated verb (the one with the personal ending) goes to the very end. A separable verb joins up again: …, weil ich früh aufstehe. With a modal verb, the modal comes last: …, weil ich arbeiten muss. Put a comma before weil.",
+  "compare_en": "In English the word order after \"because\" stays the same; in German the verb jumps to the end: because I am ill = weil ich krank bin.",
+  "examples": [
+   {
+    "de": [
+     "Malte",
+     "kommt",
+     "heute später,",
+     "weil",
+     "sein Zug",
+     "Verspätung",
+     "hat."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "is coming later today"
+     ],
+     [
+      [
+       3
+      ],
+      "because"
+     ],
+     [
+      [
+       4
+      ],
+      "his train"
+     ],
+     [
+      [
+       6
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "delayed."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "lernt Deutsch,",
+     "weil",
+     "sie",
+     "in Deutschland",
+     "arbeiten",
+     "möchte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is learning German"
+     ],
+     [
+      [
+       2
+      ],
+      "because"
+     ],
+     [
+      [
+       3
+      ],
+      "she"
+     ],
+     [
+      [
+       6
+      ],
+      "would like"
+     ],
+     [
+      [
+       5
+      ],
+      "to work"
+     ],
+     [
+      [
+       4
+      ],
+      "in Germany."
+     ]
+    ],
+    "v": [
+     1,
+     5,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "bin",
+     "müde,",
+     "weil",
+     "ich",
+     "um fünf Uhr",
+     "aufstehe."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am"
+     ],
+     [
+      [
+       2
+      ],
+      "tired"
+     ],
+     [
+      [
+       3
+      ],
+      "because"
+     ],
+     [
+      [
+       4
+      ],
+      "I"
+     ],
+     [
+      [
+       6
+      ],
+      "get up"
+     ],
+     [
+      [
+       5
+      ],
+      "at five o'clock."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-dass",
+  "pattern": "Ich glaube / weiß / finde / hoffe, + dass + subject + … + VERB (at the end)",
+  "explain": "dass means \"that\". It introduces what someone thinks, knows, says or hopes, after verbs like glauben, denken, wissen, finden, hoffen and sagen. Like weil, it starts a subordinate clause, so the conjugated verb goes to the end. Put a comma before dass.",
+  "compare_en": "English can drop \"that\" (I think he's right); German keeps dass, or drops it and uses normal order: Ich glaube, er hat recht. Don't mix up dass (that, joining two clauses) and das (the / that thing).",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "glaube,",
+     "dass",
+     "Malte",
+     "heute",
+     "im Büro",
+     "ist."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "think"
+     ],
+     [
+      [
+       2
+      ],
+      "that"
+     ],
+     [
+      [
+       3
+      ],
+      "Malte"
+     ],
+     [
+      [
+       6
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "in the office"
+     ],
+     [
+      [
+       4
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "sagt,",
+     "dass",
+     "wir",
+     "mehr",
+     "lesen",
+     "sollen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "says"
+     ],
+     [
+      [
+       2
+      ],
+      "that"
+     ],
+     [
+      [
+       3
+      ],
+      "we"
+     ],
+     [
+      [
+       6
+      ],
+      "should"
+     ],
+     [
+      [
+       5
+      ],
+      "read"
+     ],
+     [
+      [
+       4
+      ],
+      "more."
+     ]
+    ],
+    "v": [
+     1,
+     5,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "hofft,",
+     "dass",
+     "sie",
+     "die Stelle",
+     "bekommt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "hopes"
+     ],
+     [
+      [
+       2
+      ],
+      "that"
+     ],
+     [
+      [
+       3
+      ],
+      "she"
+     ],
+     [
+      [
+       5
+      ],
+      "gets"
+     ],
+     [
+      [
+       4
+      ],
+      "the job."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-deshalb",
+  "pattern": "sentence 1 + , deshalb + VERB + subject + …",
+  "explain": "deshalb means \"that's why\" or \"so\": it introduces the result of what came before. deshalb takes position 1, like the time word in Am Montag arbeite ich, so the verb comes straight after it and the subject follows. darum and deswegen mean the same and work the same way.",
+  "compare_en": "In English the subject comes right after \"so\" (so I'm staying at home); in German the verb comes first: deshalb bleibe ich zu Hause. weil gives the reason, deshalb gives the result.",
+  "examples": [
+   {
+    "de": [
+     "Malte",
+     "ist",
+     "krank,",
+     "deshalb",
+     "arbeitet",
+     "er",
+     "heute nicht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "ill,"
+     ],
+     [
+      [
+       3
+      ],
+      "so"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       4,
+       6
+      ],
+      "isn't working today."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Der Bus",
+     "ist",
+     "nicht gekommen,",
+     "deshalb",
+     "bin",
+     "ich",
+     "zu Fuß gegangen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The bus"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "didn't come,"
+     ],
+     [
+      [
+       3
+      ],
+      "so"
+     ],
+     [
+      [
+       5
+      ],
+      "I"
+     ],
+     [
+      [
+       4,
+       6
+      ],
+      "walked."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "möchte",
+     "in Deutschland arbeiten,",
+     "deshalb",
+     "macht",
+     "sie",
+     "einen Kurs."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "would like"
+     ],
+     [
+      [
+       2
+      ],
+      "to work in Germany,"
+     ],
+     [
+      [
+       3
+      ],
+      "that's why"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       4
+      ],
+      "is doing"
+     ],
+     [
+      [
+       6
+      ],
+      "a course."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-reflexive",
+  "pattern": "subject + verb + reflexive pronoun (mich, dich, sich, uns, euch) + …",
+  "explain": "Reflexive verbs come with a reflexive pronoun, a small word that points back to the subject: ich freue mich, du freust dich. The pronoun is part of the verb, even when English has nothing there. The forms are like mich, dich, uns, euch, but er, sie, es and Sie all take sich. In the plural it can mean \"each other\": Wir treffen uns.",
+  "compare_en": "English sometimes says -self (I wash myself) but often nothing: I'm looking forward = ich freue mich, we meet = wir treffen uns, I'm getting dressed = ich ziehe mich an.",
+  "table": [
+   [
+    "",
+    "sich freuen"
+   ],
+   [
+    "ich",
+    "freue mich"
+   ],
+   [
+    "du",
+    "freust dich"
+   ],
+   [
+    "er/sie/es",
+    "freut sich"
+   ],
+   [
+    "wir",
+    "freuen uns"
+   ],
+   [
+    "ihr",
+    "freut euch"
+   ],
+   [
+    "sie/Sie",
+    "freuen sich"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wir",
+     "treffen",
+     "uns",
+     "am Samstag",
+     "im Park."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "are meeting"
+     ],
+     [
+      [
+       4
+      ],
+      "in the park"
+     ],
+     [
+      [
+       3
+      ],
+      "on Saturday."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "zieht",
+     "sich",
+     "schnell",
+     "an."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       2,
+       4
+      ],
+      "gets dressed"
+     ],
+     [
+      [
+       3
+      ],
+      "quickly."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Freust",
+     "du",
+     "dich",
+     "auf den Urlaub?"
+    ],
+    "en": [
+     [
+      [
+       0,
+       1
+      ],
+      "Are you"
+     ],
+     [
+      [
+       0,
+       2
+      ],
+      "looking forward"
+     ],
+     [
+      [
+       3
+      ],
+      "to the holiday?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-verb-preps",
+  "pattern": "verb + fixed preposition + case: warten auf + accusative",
+  "explain": "Many verbs go with a fixed preposition, and the preposition decides the case. You can't work it out from English, so learn the verb, the preposition and the case together: warten auf (+ acc.), sich interessieren für (+ acc.), sich freuen auf (+ acc.) for something coming and über (+ acc.) for something already here, denken an (+ acc.), sprechen mit (+ dat.), Angst haben vor (+ dat.).",
+  "compare_en": "English has fixed prepositions too, but they rarely match: warten auf = wait for (not \"on\"), sich interessieren für = be interested in, Angst vor = afraid of.",
+  "table": [
+   [
+    "verb",
+    "preposition + case",
+    "English"
+   ],
+   [
+    "warten",
+    "auf + acc.",
+    "wait for"
+   ],
+   [
+    "sich interessieren",
+    "für + acc.",
+    "be interested in"
+   ],
+   [
+    "sich freuen",
+    "auf + acc.",
+    "look forward to"
+   ],
+   [
+    "sich freuen",
+    "über + acc.",
+    "be happy about"
+   ],
+   [
+    "denken",
+    "an + acc.",
+    "think of"
+   ],
+   [
+    "sprechen",
+    "mit + dat.",
+    "talk to"
+   ],
+   [
+    "Angst haben",
+    "vor + dat.",
+    "be afraid of"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "warte",
+     "seit zehn Minuten",
+     "auf den Bus."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "have been waiting"
+     ],
+     [
+      [
+       3
+      ],
+      "for the bus"
+     ],
+     [
+      [
+       2
+      ],
+      "for ten minutes."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "interessiert",
+     "sich",
+     "sehr",
+     "für Musik."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "very"
+     ],
+     [
+      [
+       1
+      ],
+      "interested"
+     ],
+     [
+      [
+       4
+      ],
+      "in music."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "freut sich",
+     "über das Geschenk."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is happy"
+     ],
+     [
+      [
+       2
+      ],
+      "about the present."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-da-wo",
+  "pattern": "wo(r) + preposition? → question · da(r) + preposition → \"it / that\"",
+  "explain": "With verbs that take a preposition, ask about a thing with wo + preposition (Worauf wartest du?) and refer back to a thing with da + preposition (Ich warte darauf). Add -r- if the preposition starts with a vowel: wo-r-über, da-r-auf. For people, keep the preposition with wen/wem or a pronoun: Auf wen wartest du? – Auf ihn.",
+  "compare_en": "English leaves the preposition at the end or adds \"it\": What are you waiting for? – I'm waiting for it. German joins the preposition to wo- or da-: Worauf? – Darauf.",
+  "table": [
+   [
+    "preposition",
+    "question (thing)",
+    "answer (thing)",
+    "person"
+   ],
+   [
+    "auf",
+    "worauf?",
+    "darauf",
+    "auf wen? – auf ihn"
+   ],
+   [
+    "für",
+    "wofür?",
+    "dafür",
+    "für wen? – für sie"
+   ],
+   [
+    "mit",
+    "womit?",
+    "damit",
+    "mit wem? – mit ihm"
+   ],
+   [
+    "über",
+    "worüber?",
+    "darüber",
+    "über wen? – über ihn"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Worüber",
+     "sprecht",
+     "ihr",
+     "gerade?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "What"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "are you talking"
+     ],
+     [
+      [
+       0
+      ],
+      "about"
+     ],
+     [
+      [
+       3
+      ],
+      "right now?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Frau Yilmaz",
+     "hat",
+     "einen neuen Hund",
+     "und",
+     "freut sich",
+     "sehr darüber."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Frau Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "a new dog"
+     ],
+     [
+      [
+       3
+      ],
+      "and"
+     ],
+     [
+      [
+       4
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "very"
+     ],
+     [
+      [
+       4
+      ],
+      "happy"
+     ],
+     [
+      [
+       5
+      ],
+      "about it."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Auf wen",
+     "wartet",
+     "ihr?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Who"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "are you waiting"
+     ],
+     [
+      [
+       0
+      ],
+      "for?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-adj-der",
+  "pattern": "der / die / das + adjective-e or -en + noun",
+  "explain": "Before a noun, an adjective takes an ending. After der, die, das (and dieser, welcher, jeder) the article already shows the case, so the adjective only needs -e or -en. It's -e after der, die, das in the nominative (the subject) and after die, das in the accusative (the object). Everywhere else it's -en: den (masc. accusative), the whole dative and all plurals.",
+  "compare_en": "English adjectives never change (the red jacket, with the red jacket); German adjectives before a noun always take an ending. After sein there is no ending: Die Jacke ist rot.",
+  "table": [
+   [
+    "",
+    "masc.",
+    "fem.",
+    "neut.",
+    "plural"
+   ],
+   [
+    "nominative",
+    "der rote Rock",
+    "die rote Jacke",
+    "das rote Hemd",
+    "die roten Schuhe"
+   ],
+   [
+    "accusative",
+    "den roten Rock",
+    "die rote Jacke",
+    "das rote Hemd",
+    "die roten Schuhe"
+   ],
+   [
+    "dative",
+    "dem roten Rock",
+    "der roten Jacke",
+    "dem roten Hemd",
+    "den roten Schuhen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Die blaue Jacke",
+     "gefällt",
+     "mir",
+     "sehr."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       3
+      ],
+      "really"
+     ],
+     [
+      [
+       1
+      ],
+      "like"
+     ],
+     [
+      [
+       0
+      ],
+      "the blue jacket."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "nehme",
+     "den schwarzen Mantel."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I'll"
+     ],
+     [
+      [
+       1
+      ],
+      "take"
+     ],
+     [
+      [
+       2
+      ],
+      "the black coat."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der graue Pullover",
+     "passt",
+     "mir",
+     "nicht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The grey jumper"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "doesn't fit"
+     ],
+     [
+      [
+       2
+      ],
+      "me."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "spricht",
+     "mit der netten Verkäuferin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is talking"
+     ],
+     [
+      [
+       2
+      ],
+      "to the friendly shop assistant."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-adj-ein",
+  "pattern": "ein / kein / mein + adjective-er, -e, -es or -en + noun",
+  "explain": "ein has no ending in three places: masculine nominative (ein Mantel) and neuter nominative and accusative (ein Kleid). There the adjective shows the gender instead: ein neuer Mantel, ein neues Kleid. Everywhere else the endings are the same as after der, die, das: eine neue Jacke, einen neuen Mantel, mit einem neuen Kleid, meine neuen Schuhe.",
+  "compare_en": "In English it is always \"a new coat, my new coat\". In German the adjective carries the gender that ein can't show: ein neuer Rock (der), ein neues Hemd (das).",
+  "table": [
+   [
+    "",
+    "masc.",
+    "fem.",
+    "neut.",
+    "plural"
+   ],
+   [
+    "nominative",
+    "ein neuer Rock",
+    "eine neue Jacke",
+    "ein neues Hemd",
+    "meine neuen Schuhe"
+   ],
+   [
+    "accusative",
+    "einen neuen Rock",
+    "eine neue Jacke",
+    "ein neues Hemd",
+    "meine neuen Schuhe"
+   ],
+   [
+    "dative",
+    "einem neuen Rock",
+    "einer neuen Jacke",
+    "einem neuen Hemd",
+    "meinen neuen Schuhen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Priya",
+     "sucht",
+     "einen warmen Mantel",
+     "für den Winter."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is looking for"
+     ],
+     [
+      [
+       2
+      ],
+      "a warm coat"
+     ],
+     [
+      [
+       3
+      ],
+      "for the winter."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Das",
+     "ist",
+     "ein schönes Kleid!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "a beautiful dress!"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "trägt heute",
+     "seine neue Brille."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "is wearing"
+     ],
+     [
+      [
+       2
+      ],
+      "his new glasses"
+     ],
+     [
+      [
+       1
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-adj-none",
+  "pattern": "adjective + the article's ending (-er, -e, -es, -em, -en) + noun",
+  "explain": "With no article in front, the adjective does the article's job and takes its ending: der → -er, die → -e, das → -es, dem → -em, den → -en. You meet this with plurals (bunte T-Shirts), things you don't count (frisches Brot, kalte Milch) and set phrases (Liebe Grüße, Mit freundlichen Grüßen).",
+  "compare_en": "English just drops the article (fresh bread, cold milk). In German the article's ending moves onto the adjective: frisches Brot (das Brot), kalte Milch (die Milch).",
+  "table": [
+   [
+    "",
+    "masc.",
+    "fem.",
+    "neut.",
+    "plural"
+   ],
+   [
+    "nominative",
+    "kalter Kaffee",
+    "kalte Milch",
+    "kaltes Wasser",
+    "kalte Getränke"
+   ],
+   [
+    "accusative",
+    "kalten Kaffee",
+    "kalte Milch",
+    "kaltes Wasser",
+    "kalte Getränke"
+   ],
+   [
+    "dative",
+    "mit kaltem Kaffee",
+    "mit kalter Milch",
+    "mit kaltem Wasser",
+    "mit kalten Getränken"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Im Sommer",
+     "trinke",
+     "ich",
+     "gern",
+     "kaltes Wasser."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In summer"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       3
+      ],
+      "like"
+     ],
+     [
+      [
+       1
+      ],
+      "drinking"
+     ],
+     [
+      [
+       4
+      ],
+      "cold water."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hier",
+     "gibt es",
+     "günstige Kleidung."
+    ],
+    "en": [
+     [
+      [
+       1
+      ],
+      "There are"
+     ],
+     [
+      [
+       2
+      ],
+      "cheap clothes"
+     ],
+     [
+      [
+       0
+      ],
+      "here."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "trinke",
+     "Tee",
+     "mit warmer Milch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "drink"
+     ],
+     [
+      [
+       2
+      ],
+      "tea"
+     ],
+     [
+      [
+       3
+      ],
+      "with warm milk."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "trägt",
+     "gern",
+     "bunte T-Shirts."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       2
+      ],
+      "likes"
+     ],
+     [
+      [
+       1
+      ],
+      "wearing"
+     ],
+     [
+      [
+       3
+      ],
+      "colourful T-shirts."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-wenn",
+  "pattern": "Wenn + subject + … + VERB, + VERB + subject + …",
+  "explain": "wenn means \"if\" (a condition) and also \"when\" or \"whenever\" (every time something happens). It starts a subordinate clause, so its verb goes to the end. If the wenn-clause comes first, it counts as position 1, so the main clause starts with its verb: Wenn ich Zeit habe, komme ich. The two verbs meet at the comma.",
+  "compare_en": "English keeps subject + verb in both halves: If I have time, I'll come. German puts the two verbs side by side: … Zeit habe, komme ich. Don't confuse wenn with wann, the question word \"when?\".",
+  "examples": [
+   {
+    "de": [
+     "Wenn",
+     "du",
+     "Fieber",
+     "hast,",
+     "musst",
+     "du",
+     "im Bett bleiben."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "a temperature,"
+     ],
+     [
+      [
+       5
+      ],
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "must"
+     ],
+     [
+      [
+       6
+      ],
+      "stay in bed."
+     ]
+    ],
+    "v": [
+     3,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Ich trinke",
+     "immer Tee,",
+     "wenn",
+     "ich",
+     "krank",
+     "bin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "always"
+     ],
+     [
+      [
+       0
+      ],
+      "drink"
+     ],
+     [
+      [
+       1
+      ],
+      "tea"
+     ],
+     [
+      [
+       2
+      ],
+      "when"
+     ],
+     [
+      [
+       3
+      ],
+      "I"
+     ],
+     [
+      [
+       5
+      ],
+      "am"
+     ],
+     [
+      [
+       4
+      ],
+      "ill."
+     ]
+    ],
+    "v": [
+     0,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Wenn",
+     "es",
+     "morgen",
+     "regnet,",
+     "bleiben",
+     "wir",
+     "zu Hause."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If"
+     ],
+     [
+      [
+       1
+      ],
+      "it"
+     ],
+     [
+      [
+       3
+      ],
+      "rains"
+     ],
+     [
+      [
+       2
+      ],
+      "tomorrow,"
+     ],
+     [
+      [
+       5
+      ],
+      "we"
+     ],
+     [
+      [
+       4
+      ],
+      "'ll stay"
+     ],
+     [
+      [
+       6
+      ],
+      "at home."
+     ]
+    ],
+    "v": [
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-sollte",
+  "pattern": "subject + sollte(n) + … + infinitive · An deiner Stelle würde ich + … + infinitive",
+  "explain": "To give friendly advice, use sollte (a form of sollen) with an infinitive at the end: Du solltest mehr schlafen. It is softer than musst. Another way is An deiner Stelle würde ich … (If I were you, I would …), again with the infinitive at the end. Both are Konjunktiv II forms, the German \"would / should\" mood.",
+  "compare_en": "sollte = \"should\", würde = \"would\", and both send the second verb to the end: You should drink more water = Du solltest mehr Wasser trinken.",
+  "table": [
+   [
+    "",
+    "sollen → advice",
+    "werden → würde"
+   ],
+   [
+    "ich",
+    "sollte",
+    "würde"
+   ],
+   [
+    "du",
+    "solltest",
+    "würdest"
+   ],
+   [
+    "er/sie/es",
+    "sollte",
+    "würde"
+   ],
+   [
+    "wir",
+    "sollten",
+    "würden"
+   ],
+   [
+    "ihr",
+    "solltet",
+    "würdet"
+   ],
+   [
+    "sie/Sie",
+    "sollten",
+    "würden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Du",
+     "solltest",
+     "mehr Wasser",
+     "trinken."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "should"
+     ],
+     [
+      [
+       3
+      ],
+      "drink"
+     ],
+     [
+      [
+       2
+      ],
+      "more water."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Sie",
+     "sollten",
+     "heute",
+     "nicht",
+     "arbeiten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "shouldn't"
+     ],
+     [
+      [
+       4
+      ],
+      "work"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "An deiner Stelle",
+     "würde",
+     "ich",
+     "zum Arzt",
+     "gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "If I were you,"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "would"
+     ],
+     [
+      [
+       4
+      ],
+      "go"
+     ],
+     [
+      [
+       3
+      ],
+      "to the doctor."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-dative-pronouns",
+  "pattern": "mir, dir, ihm, ihr, ihm, uns, euch, ihnen / Ihnen (dative)",
+  "explain": "Dative pronouns answer \"to whom?\" or \"for whom?\". You need them after verbs like helfen, gefallen and schmecken, after dative prepositions (mit mir, bei dir), and in set phrases: Wie geht es dir? Mir ist kalt. Pain works the same way: Mir tut der Kopf weh (literally: to me the head hurts).",
+  "compare_en": "English uses one object form for both cases (me, him, her); German has a separate dative: Er sieht mich (he sees me), but Er hilft mir (he helps me).",
+  "table": [
+   [
+    "nominative",
+    "accusative",
+    "dative"
+   ],
+   [
+    "ich",
+    "mich",
+    "mir"
+   ],
+   [
+    "du",
+    "dich",
+    "dir"
+   ],
+   [
+    "er",
+    "ihn",
+    "ihm"
+   ],
+   [
+    "sie",
+    "sie",
+    "ihr"
+   ],
+   [
+    "es",
+    "es",
+    "ihm"
+   ],
+   [
+    "wir",
+    "uns",
+    "uns"
+   ],
+   [
+    "ihr",
+    "euch",
+    "euch"
+   ],
+   [
+    "sie / Sie",
+    "sie / Sie",
+    "ihnen / Ihnen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Mir",
+     "tut",
+     "der Rücken",
+     "weh."
+    ],
+    "en": [
+     [
+      [
+       0,
+       2
+      ],
+      "My back"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "hurts."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Wie",
+     "geht",
+     "es",
+     "Ihnen",
+     "heute?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "How"
+     ],
+     [
+      [
+       1,
+       2,
+       3
+      ],
+      "are you"
+     ],
+     [
+      [
+       4
+      ],
+      "today?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Kannst",
+     "du",
+     "mir",
+     "bitte",
+     "helfen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Can"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "help"
+     ],
+     [
+      [
+       2
+      ],
+      "me,"
+     ],
+     [
+      [
+       3
+      ],
+      "please?"
+     ]
+    ],
+    "v": [
+     0,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Der Arzt",
+     "gibt",
+     "ihm",
+     "ein Rezept."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The doctor"
+     ],
+     [
+      [
+       1
+      ],
+      "gives"
+     ],
+     [
+      [
+       2
+      ],
+      "him"
+     ],
+     [
+      [
+       3
+      ],
+      "a prescription."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-praeteritum-sein-haben",
+  "pattern": "ich war, du warst, er war … · ich hatte, du hattest, er hatte …",
+  "explain": "For sein and haben, Germans normally use the Präteritum (the simple past) instead of the Perfekt, even when speaking: Ich war in Wien sounds more natural than Ich bin in Wien gewesen. The ich and er/sie/es forms are the same (war, hatte), and the other endings look like the present: du warst, wir waren, ihr wart.",
+  "compare_en": "war = was / were, hatte = had. English uses the simple past here too (I was tired, we had no time), so this one feels familiar.",
+  "table": [
+   [
+    "",
+    "sein",
+    "haben"
+   ],
+   [
+    "ich",
+    "war",
+    "hatte"
+   ],
+   [
+    "du",
+    "warst",
+    "hattest"
+   ],
+   [
+    "er/sie/es",
+    "war",
+    "hatte"
+   ],
+   [
+    "wir",
+    "waren",
+    "hatten"
+   ],
+   [
+    "ihr",
+    "wart",
+    "hattet"
+   ],
+   [
+    "sie/Sie",
+    "waren",
+    "hatten"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Letzten Sommer",
+     "waren",
+     "wir",
+     "in Italien."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Last summer"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "were"
+     ],
+     [
+      [
+       3
+      ],
+      "in Italy."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der Zug",
+     "hatte",
+     "eine Stunde",
+     "Verspätung."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The train"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "an hour"
+     ],
+     [
+      [
+       3
+      ],
+      "late."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wie",
+     "war",
+     "die Reise?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "How"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "the trip?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "hatte",
+     "keine Fahrkarte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       2
+      ],
+      "no ticket."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-praeteritum-modals",
+  "pattern": "subject + konnte / musste / wollte / durfte + … + infinitive (at the end)",
+  "explain": "Modal verbs (können, müssen, wollen, dürfen, sollen) also use the Präteritum for the past. Drop the umlaut and add -te to the stem: können → konnte, müssen → musste, dürfen → durfte, wollen → wollte, sollen → sollte. The ich and er/sie forms are the same. The second verb stays at the end as an infinitive.",
+  "compare_en": "konnte = could / was able to, musste = had to, wollte = wanted to, durfte = was allowed to. Careful: ich will means \"I want to\", not \"I will\".",
+  "table": [
+   [
+    "",
+    "können",
+    "müssen",
+    "wollen",
+    "dürfen"
+   ],
+   [
+    "ich",
+    "konnte",
+    "musste",
+    "wollte",
+    "durfte"
+   ],
+   [
+    "du",
+    "konntest",
+    "musstest",
+    "wolltest",
+    "durftest"
+   ],
+   [
+    "er/sie/es",
+    "konnte",
+    "musste",
+    "wollte",
+    "durfte"
+   ],
+   [
+    "wir",
+    "konnten",
+    "mussten",
+    "wollten",
+    "durften"
+   ],
+   [
+    "ihr",
+    "konntet",
+    "musstet",
+    "wolltet",
+    "durftet"
+   ],
+   [
+    "sie/Sie",
+    "konnten",
+    "mussten",
+    "wollten",
+    "durften"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wir",
+     "mussten",
+     "zwei Stunden am Flughafen",
+     "warten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "to wait"
+     ],
+     [
+      [
+       2
+      ],
+      "at the airport for two hours."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "wollte",
+     "ans Meer fahren,",
+     "aber",
+     "es",
+     "war",
+     "zu teuer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "wanted"
+     ],
+     [
+      [
+       2
+      ],
+      "to go to the seaside,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "it"
+     ],
+     [
+      [
+       5
+      ],
+      "was"
+     ],
+     [
+      [
+       6
+      ],
+      "too expensive."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "konnte",
+     "leider",
+     "nicht",
+     "mitkommen."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "Unfortunately"
+     ],
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "couldn't"
+     ],
+     [
+      [
+       4
+      ],
+      "come along."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-local-preps",
+  "pattern": "Wo? in den Bergen / am Meer / auf dem Land · Wohin? in die Berge / ans Meer / aufs Land",
+  "explain": "Holiday places follow the two-way rule: dative for where you are (Wo?), accusative for where you go (Wohin?). Choose the preposition by the type of place: in for mountains and for countries with an article (in die Schweiz), an for the sea, a lake or the coast (am Meer, an die Ostsee), auf for islands and the countryside (auf dem Land). Cities: in Berlin, but nach Berlin.",
+  "compare_en": "English says \"at the seaside\", \"in the mountains\", \"to the coast\". German picks in, an or auf by the type of place, then the case by Wo? or Wohin?.",
+  "table": [
+   [
+    "place",
+    "Wo? (dative)",
+    "Wohin? (accusative)"
+   ],
+   [
+    "mountains",
+    "in den Bergen",
+    "in die Berge"
+   ],
+   [
+    "sea / lake",
+    "am Meer / am See",
+    "ans Meer / an den See"
+   ],
+   [
+    "the Baltic coast",
+    "an der Ostsee",
+    "an die Ostsee"
+   ],
+   [
+    "countryside",
+    "auf dem Land",
+    "aufs Land"
+   ],
+   [
+    "island",
+    "auf einer Insel",
+    "auf eine Insel"
+   ],
+   [
+    "city / most countries",
+    "in Berlin",
+    "nach Berlin"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Im Sommer",
+     "fahren",
+     "wir",
+     "ans Meer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In summer"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "go"
+     ],
+     [
+      [
+       3
+      ],
+      "to the seaside."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Frau Yilmaz",
+     "wohnt",
+     "jetzt",
+     "auf dem Land."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Frau Yilmaz"
+     ],
+     [
+      [
+       2
+      ],
+      "now"
+     ],
+     [
+      [
+       1
+      ],
+      "lives"
+     ],
+     [
+      [
+       3
+      ],
+      "in the countryside."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena und Jonas",
+     "wandern",
+     "gern",
+     "in den Bergen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena and Jonas"
+     ],
+     [
+      [
+       2
+      ],
+      "like"
+     ],
+     [
+      [
+       1
+      ],
+      "hiking"
+     ],
+     [
+      [
+       3
+      ],
+      "in the mountains."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "waren",
+     "eine Woche",
+     "an der Ostsee."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "spent"
+     ],
+     [
+      [
+       2
+      ],
+      "a week"
+     ],
+     [
+      [
+       3
+      ],
+      "on the Baltic coast."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-indirect-questions",
+  "pattern": "Wissen Sie / Können Sie mir sagen, + W-word + subject + … + VERB (at the end)?",
+  "explain": "To ask more politely, put a W-question (wo, wann, wie, was, warum …) inside a frame like Wissen Sie, …? or Können Sie mir sagen, …? The W-word then starts a subordinate clause, so the verb goes to the end: Wo ist der Bahnhof? → Wissen Sie, wo der Bahnhof ist? After Ich weiß nicht, … the sentence ends with a full stop.",
+  "compare_en": "English does the same: \"Where is the station?\" becomes \"Do you know where the station is?\". In German the verb goes all the way to the end.",
+  "examples": [
+   {
+    "de": [
+     "Wissen Sie,",
+     "wo",
+     "der Bahnhof",
+     "ist?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Do you know"
+     ],
+     [
+      [
+       1
+      ],
+      "where"
+     ],
+     [
+      [
+       2
+      ],
+      "the station"
+     ],
+     [
+      [
+       3
+      ],
+      "is?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Können Sie",
+     "mir",
+     "sagen,",
+     "wann",
+     "der Film",
+     "anfängt?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Can you"
+     ],
+     [
+      [
+       2
+      ],
+      "tell"
+     ],
+     [
+      [
+       1
+      ],
+      "me"
+     ],
+     [
+      [
+       3
+      ],
+      "when"
+     ],
+     [
+      [
+       4
+      ],
+      "the film"
+     ],
+     [
+      [
+       5
+      ],
+      "starts?"
+     ]
+    ],
+    "v": [
+     0,
+     2,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "weiß",
+     "nicht,",
+     "wie",
+     "das Programm",
+     "funktioniert."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "don't know"
+     ],
+     [
+      [
+       3
+      ],
+      "how"
+     ],
+     [
+      [
+       4
+      ],
+      "the program"
+     ],
+     [
+      [
+       5
+      ],
+      "works."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-ob",
+  "pattern": "Ich weiß nicht / Weißt du, + ob + subject + … + VERB (at the end)",
+  "explain": "ob means \"whether\" or \"if\". Use it to turn a yes/no question (one with no W-word) into an indirect question: Kommt er? → Ich weiß nicht, ob er kommt. Like dass and weil, ob sends the verb to the end. For a W-question, keep the W-word instead: Ich weiß nicht, wann er kommt.",
+  "compare_en": "English says \"if\" or \"whether\" here: I don't know if he's coming. In German, \"if\" as a condition is wenn, but \"if\" meaning \"whether\" is always ob.",
+  "examples": [
+   {
+    "de": [
+     "Weißt du,",
+     "ob",
+     "das Internet",
+     "wieder",
+     "funktioniert?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Do you know"
+     ],
+     [
+      [
+       1
+      ],
+      "if"
+     ],
+     [
+      [
+       2
+      ],
+      "the internet"
+     ],
+     [
+      [
+       4
+      ],
+      "is working"
+     ],
+     [
+      [
+       3
+      ],
+      "again?"
+     ]
+    ],
+    "v": [
+     0,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich frage",
+     "Herrn Weber,",
+     "ob",
+     "wir",
+     "morgen eine Prüfung",
+     "schreiben."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I'm asking"
+     ],
+     [
+      [
+       1
+      ],
+      "Mr Weber"
+     ],
+     [
+      [
+       2
+      ],
+      "whether"
+     ],
+     [
+      [
+       3
+      ],
+      "we"
+     ],
+     [
+      [
+       5
+      ],
+      "are writing"
+     ],
+     [
+      [
+       4
+      ],
+      "a test tomorrow."
+     ]
+    ],
+    "v": [
+     0,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "weiß",
+     "nicht,",
+     "ob",
+     "sie",
+     "den Film",
+     "schon gesehen hat."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "doesn't know"
+     ],
+     [
+      [
+       3
+      ],
+      "whether"
+     ],
+     [
+      [
+       4
+      ],
+      "she"
+     ],
+     [
+      [
+       6
+      ],
+      "has already seen"
+     ],
+     [
+      [
+       5
+      ],
+      "the film."
+     ]
+    ],
+    "v": [
+     1,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-trotzdem",
+  "pattern": "sentence 1 + , trotzdem + VERB + subject + …",
+  "explain": "trotzdem means \"still\", \"anyway\" or \"nevertheless\": something happens although you would expect the opposite. Like deshalb, it can take position 1, so the verb comes straight after it and then the subject. It can also stand after the verb: Ich gehe trotzdem.",
+  "compare_en": "English usually puts \"still\" or \"anyway\" in the middle or at the end (but I still went); German often starts with trotzdem and puts the verb straight after it: trotzdem bin ich gegangen.",
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "ist",
+     "müde,",
+     "trotzdem",
+     "sieht",
+     "sie",
+     "noch einen Film."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "tired,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       5
+      ],
+      "she"
+     ],
+     [
+      [
+       3
+      ],
+      "still"
+     ],
+     [
+      [
+       4
+      ],
+      "watches"
+     ],
+     [
+      [
+       6
+      ],
+      "another film."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "regnet,",
+     "trotzdem",
+     "gehen",
+     "wir",
+     "spazieren."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is raining,"
+     ],
+     [
+      [
+       2
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "we"
+     ],
+     [
+      [
+       3,
+       5
+      ],
+      "are going for a walk"
+     ],
+     [
+      [
+       2
+      ],
+      "anyway."
+     ]
+    ],
+    "v": [
+     1,
+     3,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "hat",
+     "wenig Zeit,",
+     "trotzdem",
+     "hilft",
+     "er",
+     "mir."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "little time,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       5
+      ],
+      "he"
+     ],
+     [
+      [
+       3
+      ],
+      "still"
+     ],
+     [
+      [
+       4
+      ],
+      "helps"
+     ],
+     [
+      [
+       6
+      ],
+      "me."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-dative-verbs",
+  "pattern": "subject + helfen / danken / gratulieren / gefallen / gehören / schmecken + dative",
+  "explain": "A few common verbs take a dative object instead of an accusative: helfen, danken, gratulieren, antworten, gefallen, gehören, schmecken, passen. Learn them as a group. With gefallen, gehören and schmecken the thing is the subject and the person is in the dative: Das Kleid gefällt mir (literally: the dress pleases me).",
+  "compare_en": "In English these verbs take a normal object (help him, thank you). In German it's the dative: ich helfe ihm, ich danke dir. \"I like the dress\" is turned around: Das Kleid gefällt mir.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "gratuliere",
+     "dir",
+     "zum Geburtstag!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "congratulate"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "on your birthday!"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Blumen",
+     "gefallen",
+     "ihr",
+     "sehr gut."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "She"
+     ],
+     [
+      [
+       3
+      ],
+      "really"
+     ],
+     [
+      [
+       1
+      ],
+      "likes"
+     ],
+     [
+      [
+       0
+      ],
+      "the flowers."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "hilft",
+     "seiner Mutter",
+     "in der Küche."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "is helping"
+     ],
+     [
+      [
+       2
+      ],
+      "his mother"
+     ],
+     [
+      [
+       3
+      ],
+      "in the kitchen."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Das Auto",
+     "gehört",
+     "meinem Bruder."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The car"
+     ],
+     [
+      [
+       1
+      ],
+      "belongs"
+     ],
+     [
+      [
+       2
+      ],
+      "to my brother."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-two-objects",
+  "pattern": "subject + verb + dative (person) + accusative (thing) · pronoun thing first: Ich gebe es dir.",
+  "explain": "Verbs like geben, schenken, schicken, zeigen, bringen and erklären can have two objects: a person in the dative (who gets it) and a thing in the accusative (what). The usual order is person before thing: Ich schenke meiner Mutter eine Tasche. But when the thing is a pronoun (es, ihn, sie), it comes first: Ich schenke sie ihr.",
+  "compare_en": "English uses the same order (I give my mother a bag) or adds \"to\" (I give it to her). German needs no \"to\": the dative does that job. With two pronouns, \"it\" comes first in both: Ich gebe es dir = I give it to you.",
+  "examples": [
+   {
+    "de": [
+     "Lena",
+     "schenkt",
+     "ihrem Bruder",
+     "eine Uhr."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is giving"
+     ],
+     [
+      [
+       2
+      ],
+      "her brother"
+     ],
+     [
+      [
+       3
+      ],
+      "a watch."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Kannst du",
+     "mir",
+     "das Foto",
+     "zeigen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Can you"
+     ],
+     [
+      [
+       3
+      ],
+      "show"
+     ],
+     [
+      [
+       1
+      ],
+      "me"
+     ],
+     [
+      [
+       2
+      ],
+      "the photo?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "schicke",
+     "es",
+     "dir",
+     "morgen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I'll"
+     ],
+     [
+      [
+       1
+      ],
+      "send"
+     ],
+     [
+      [
+       2
+      ],
+      "it"
+     ],
+     [
+      [
+       3
+      ],
+      "to you"
+     ],
+     [
+      [
+       4
+      ],
+      "tomorrow."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "erklärt",
+     "den Schülern",
+     "die Aufgabe."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "explains"
+     ],
+     [
+      [
+       3
+      ],
+      "the task"
+     ],
+     [
+      [
+       2
+      ],
+      "to the pupils."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-genitive-names",
+  "pattern": "name + -s + noun (no apostrophe): Lenas Geburtstag",
+  "explain": "To say whose something is, add -s to the name and put it in front of the noun: Lenas Geburtstag (Lena's birthday). Write no apostrophe and no article. Names that already end in -s, -ß, -x or -z get only an apostrophe: Jonas' Party. In everyday speech you can also use von: der Geburtstag von Lena.",
+  "compare_en": "It's just like English 's, but without the apostrophe: Priyas Familie = Priya's family. For names ending in -s, German writes only the apostrophe: Jonas' Freund.",
+  "examples": [
+   {
+    "de": [
+     "Am Samstag",
+     "feiern",
+     "wir",
+     "Lenas Geburtstag."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "On Saturday"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "are celebrating"
+     ],
+     [
+      [
+       3
+      ],
+      "Lena's birthday."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Maltes Frau",
+     "kommt",
+     "aus Polen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte's wife"
+     ],
+     [
+      [
+       1
+      ],
+      "comes"
+     ],
+     [
+      [
+       2
+      ],
+      "from Poland."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas' Party",
+     "war",
+     "super."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas's party"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "great."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "kenne",
+     "Priyas Eltern",
+     "noch nicht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "don't know"
+     ],
+     [
+      [
+       2
+      ],
+      "Priya's parents"
+     ],
+     [
+      [
+       3
+      ],
+      "yet."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-comparative",
+  "pattern": "adjective-er + als · so + adjective + wie",
+  "explain": "To compare two things, add -er to the adjective and use als (than): Berlin ist größer als Köln. Many short adjectives also get an umlaut: alt → älter, groß → größer, jung → jünger. A few are irregular: gut → besser, viel → mehr, gern → lieber. To say two things are equal, use so … wie: Lena ist so alt wie Jonas.",
+  "compare_en": "English adds -er or uses \"more\" (more interesting); German always adds -er, even to long words: interessanter. \"than\" is als (not dann), and \"as … as\" is so … wie.",
+  "table": [
+   [
+    "adjective",
+    "comparative"
+   ],
+   [
+    "klein",
+    "kleiner"
+   ],
+   [
+    "alt",
+    "älter"
+   ],
+   [
+    "groß",
+    "größer"
+   ],
+   [
+    "teuer",
+    "teurer"
+   ],
+   [
+    "gut",
+    "besser"
+   ],
+   [
+    "viel",
+    "mehr"
+   ],
+   [
+    "gern",
+    "lieber"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Für Priya",
+     "ist",
+     "Deutsch",
+     "schwerer",
+     "als Englisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "For Priya"
+     ],
+     [
+      [
+       2
+      ],
+      "German"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "harder"
+     ],
+     [
+      [
+       4
+      ],
+      "than English."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Mein Bruder",
+     "ist",
+     "zwei Jahre",
+     "älter",
+     "als ich."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "My brother"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "two years"
+     ],
+     [
+      [
+       3
+      ],
+      "older"
+     ],
+     [
+      [
+       4
+      ],
+      "than me."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die neue Schule",
+     "ist",
+     "nicht so groß",
+     "wie die alte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The new school"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "not as big"
+     ],
+     [
+      [
+       3
+      ],
+      "as the old one."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "lernt",
+     "lieber",
+     "mit dem Handy",
+     "als mit Büchern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       2
+      ],
+      "would rather"
+     ],
+     [
+      [
+       1
+      ],
+      "learn"
+     ],
+     [
+      [
+       3
+      ],
+      "with her phone"
+     ],
+     [
+      [
+       4
+      ],
+      "than with books."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-superlative",
+  "pattern": "am + adjective-sten (after a verb) · der / die / das + adjective-ste + noun",
+  "explain": "The superlative says something is \"the most\". After a verb use am …sten: Dieser Kurs ist am besten. Before a noun use the article + …ste with the normal ending: der beste Kurs, die schönste Stadt. After -t, -d, -s, -ß or -z you usually add -esten (am ältesten, am kürzesten), but groß → am größten. Irregular: gut → am besten, viel → am meisten, gern → am liebsten.",
+  "compare_en": "English uses -est or \"most\" (the most interesting); German always adds -st: am interessantesten. am …sten is simply \"the …est\" after a verb: Dieses Fach ist am schwersten = this subject is the hardest.",
+  "table": [
+   [
+    "adjective",
+    "comparative",
+    "superlative"
+   ],
+   [
+    "klein",
+    "kleiner",
+    "am kleinsten"
+   ],
+   [
+    "alt",
+    "älter",
+    "am ältesten"
+   ],
+   [
+    "groß",
+    "größer",
+    "am größten"
+   ],
+   [
+    "gut",
+    "besser",
+    "am besten"
+   ],
+   [
+    "viel",
+    "mehr",
+    "am meisten"
+   ],
+   [
+    "gern",
+    "lieber",
+    "am liebsten"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Welches Fach",
+     "findest",
+     "du",
+     "am schwersten?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Which subject"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "do you find"
+     ],
+     [
+      [
+       3
+      ],
+      "the hardest?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "ist",
+     "die beste Schülerin",
+     "in der Klasse."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the best pupil"
+     ],
+     [
+      [
+       3
+      ],
+      "in the class."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Am liebsten",
+     "lerne",
+     "ich",
+     "abends."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       0
+      ],
+      "like"
+     ],
+     [
+      [
+       1
+      ],
+      "studying"
+     ],
+     [
+      [
+       0
+      ],
+      "best"
+     ],
+     [
+      [
+       3
+      ],
+      "in the evening."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der Rhein",
+     "ist",
+     "der längste Fluss",
+     "in Deutschland."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The Rhine"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the longest river"
+     ],
+     [
+      [
+       3
+      ],
+      "in Germany."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-praeteritum-review",
+  "pattern": "Perfekt for most verbs · Präteritum for sein, haben, es gibt and the modal verbs",
+  "explain": "When you tell a story in speech, mix the two past tenses. Use the Perfekt for most verbs (Ich habe Englisch gelernt), but the Präteritum (simple past) for sein, haben and the modal verbs (Ich war zehn, ich hatte einen tollen Lehrer, ich musste viel lernen). es gibt also goes into the Präteritum: es gab (there was / there were).",
+  "compare_en": "English uses the simple past for everything (I was, I had, I learned). German speech uses the Perfekt for most verbs, so \"I learned\" becomes ich habe gelernt, but \"I was\" stays ich war.",
+  "examples": [
+   {
+    "de": [
+     "In der Schule",
+     "hatte",
+     "ich",
+     "viele Freunde."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "At school"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "lots of friends."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "mussten",
+     "jeden Tag Hausaufgaben",
+     "machen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "had"
+     ],
+     [
+      [
+       3
+      ],
+      "to do"
+     ],
+     [
+      [
+       2
+      ],
+      "homework every day."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Mit zehn",
+     "habe",
+     "ich",
+     "Englisch",
+     "gelernt."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "learned"
+     ],
+     [
+      [
+       3
+      ],
+      "English"
+     ],
+     [
+      [
+       0
+      ],
+      "at the age of ten."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Herr Weber",
+     "war",
+     "streng,",
+     "aber",
+     "wir",
+     "haben",
+     "viel gelernt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mr Weber"
+     ],
+     [
+      [
+       1
+      ],
+      "was"
+     ],
+     [
+      [
+       2
+      ],
+      "strict,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       4
+      ],
+      "we"
+     ],
+     [
+      [
+       5,
+       6
+      ],
+      "learned a lot."
+     ]
+    ],
+    "v": [
+     1,
+     5,
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-konj-polite",
+  "pattern": "Könnten / Würden Sie + … + infinitive (at the end)?",
+  "explain": "For polite requests, use könnten (could) or würden (would) instead of können: Könnten Sie mir helfen? sounds friendlier than Können Sie mir helfen? The second verb goes to the end as an infinitive, and bitte makes it even more polite. These are Konjunktiv II forms, the German \"could / would\" mood.",
+  "compare_en": "Just like English: \"Can you …?\" becomes \"Could you …?\" or \"Would you …?\". könnten = could, würden = would.",
+  "table": [
+   [
+    "",
+    "können → könnte",
+    "werden → würde"
+   ],
+   [
+    "ich",
+    "könnte",
+    "würde"
+   ],
+   [
+    "du",
+    "könntest",
+    "würdest"
+   ],
+   [
+    "er/sie/es",
+    "könnte",
+    "würde"
+   ],
+   [
+    "wir",
+    "könnten",
+    "würden"
+   ],
+   [
+    "ihr",
+    "könntet",
+    "würdet"
+   ],
+   [
+    "sie/Sie",
+    "könnten",
+    "würden"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Könnten Sie",
+     "mir",
+     "bitte",
+     "helfen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Could you"
+     ],
+     [
+      [
+       3
+      ],
+      "help"
+     ],
+     [
+      [
+       1
+      ],
+      "me,"
+     ],
+     [
+      [
+       2
+      ],
+      "please?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Würden Sie",
+     "hier",
+     "unterschreiben?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Would you"
+     ],
+     [
+      [
+       2
+      ],
+      "sign"
+     ],
+     [
+      [
+       1
+      ],
+      "here?"
+     ]
+    ],
+    "v": [
+     0,
+     2
+    ]
+   },
+   {
+    "de": [
+     "Könntest",
+     "du",
+     "das Paket",
+     "zur Post",
+     "bringen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Could"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "take"
+     ],
+     [
+      [
+       2
+      ],
+      "the parcel"
+     ],
+     [
+      [
+       3
+      ],
+      "to the post office?"
+     ]
+    ],
+    "v": [
+     0,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-haette-gern",
+  "pattern": "Ich hätte gern + accusative (a thing)",
+  "explain": "Ich hätte gern … (I'd like …) is the polite way to ask for something in a shop, café or office. hätte is the Konjunktiv II (would-form) of haben, and the thing you want is in the accusative: Ich hätte gern einen Termin. It is used like möchte, but only with a thing, never with a second verb.",
+  "compare_en": "It matches English \"I'd like …\" or \"I'll have …\". Avoid Ich will …: it sounds like \"I want\", which is too direct in a shop.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "hätte",
+     "gern",
+     "einen Termin",
+     "am Montag."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "'d like"
+     ],
+     [
+      [
+       3
+      ],
+      "an appointment"
+     ],
+     [
+      [
+       4
+      ],
+      "on Monday."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "hätten",
+     "gern",
+     "zwei Briefmarken."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "'d like"
+     ],
+     [
+      [
+       3
+      ],
+      "two stamps."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Was",
+     "hätten",
+     "Sie",
+     "gern?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "What"
+     ],
+     [
+      [
+       1
+      ],
+      "would"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "like?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-lassen",
+  "pattern": "subject + lassen + object + … + infinitive (at the end)",
+  "explain": "lassen + infinitive means you get someone else to do a job for you: Ich lasse mein Fahrrad reparieren (a mechanic repairs it). lassen is the conjugated verb in position 2, and the second verb goes to the end. Watch the vowel: du lässt, er/sie lässt, but ihr lasst.",
+  "compare_en": "English says \"have / get something done\" with a past participle: I'm having my bike repaired. German uses the infinitive instead: reparieren, not repariert.",
+  "table": [
+   [
+    "",
+    "lassen"
+   ],
+   [
+    "ich",
+    "lasse"
+   ],
+   [
+    "du",
+    "lässt"
+   ],
+   [
+    "er/sie/es",
+    "lässt"
+   ],
+   [
+    "wir",
+    "lassen"
+   ],
+   [
+    "ihr",
+    "lasst"
+   ],
+   [
+    "sie/Sie",
+    "lassen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "lasse",
+     "mein Fahrrad",
+     "reparieren."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am having"
+     ],
+     [
+      [
+       2
+      ],
+      "my bike"
+     ],
+     [
+      [
+       3
+      ],
+      "repaired."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "lässt",
+     "sich",
+     "die Haare",
+     "schneiden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is getting"
+     ],
+     [
+      [
+       2,
+       3
+      ],
+      "her hair"
+     ],
+     [
+      [
+       4
+      ],
+      "cut."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Lasst",
+     "ihr",
+     "das Auto",
+     "in der Werkstatt",
+     "reparieren?"
+    ],
+    "en": [
+     [
+      [
+       0,
+       1
+      ],
+      "Are you having"
+     ],
+     [
+      [
+       2
+      ],
+      "the car"
+     ],
+     [
+      [
+       4
+      ],
+      "repaired"
+     ],
+     [
+      [
+       3
+      ],
+      "at the garage?"
+     ]
+    ],
+    "v": [
+     0,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-zu-infinitive",
+  "pattern": "verb / expression + , + … + zu + infinitive (at the end)",
+  "explain": "After some verbs and expressions the second verb goes to the end with zu: versuchen, vergessen, anfangen, Lust haben, Zeit haben, es ist wichtig / schön. Put a comma before the zu-part. With separable verbs zu goes in the middle: auszumachen, aufzustehen. After modal verbs (können, müssen, sollen …) there is no zu.",
+  "compare_en": "zu + infinitive is like English \"to + verb\": I'm trying to drive less = Ich versuche, weniger Auto zu fahren, but the zu-part goes to the end. As in English, modal verbs take no \"to\": I must go = Ich muss gehen.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "versuche,",
+     "weniger Auto",
+     "zu fahren."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am trying"
+     ],
+     [
+      [
+       3
+      ],
+      "to drive"
+     ],
+     [
+      [
+       2
+      ],
+      "less."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Vergiss",
+     "nicht,",
+     "das Licht",
+     "auszumachen!"
+    ],
+    "en": [
+     [
+      [
+       0,
+       1
+      ],
+      "Don't forget"
+     ],
+     [
+      [
+       3
+      ],
+      "to turn off"
+     ],
+     [
+      [
+       2
+      ],
+      "the light!"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "ist",
+     "schön,",
+     "am See",
+     "spazieren zu gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "lovely"
+     ],
+     [
+      [
+       4
+      ],
+      "to go for a walk"
+     ],
+     [
+      [
+       3
+      ],
+      "by the lake."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Hast du",
+     "Lust,",
+     "am Wochenende",
+     "Fahrrad zu fahren?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Do you"
+     ],
+     [
+      [
+       1
+      ],
+      "feel like"
+     ],
+     [
+      [
+       3
+      ],
+      "cycling"
+     ],
+     [
+      [
+       2
+      ],
+      "at the weekend?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-deshalb-trotzdem",
+  "pattern": "reason → deshalb + VERB + subject … · obstacle → trotzdem + VERB + subject …",
+  "explain": "Both words take position 1, so the verb follows straight after them, then the subject. Choose by meaning: deshalb (so, that's why) brings the result you would expect; trotzdem (but … still, anyway) brings a result you would not expect. Es regnet, deshalb nehme ich den Bus. Es regnet, trotzdem fahre ich mit dem Fahrrad.",
+  "compare_en": "deshalb = so / that's why, trotzdem = but … still / anyway. In English the subject comes first after both; in German the verb does.",
+  "examples": [
+   {
+    "de": [
+     "Es",
+     "ist",
+     "sehr heiß,",
+     "deshalb",
+     "gehen",
+     "wir",
+     "schwimmen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "very hot,"
+     ],
+     [
+      [
+       3
+      ],
+      "so"
+     ],
+     [
+      [
+       5
+      ],
+      "we"
+     ],
+     [
+      [
+       4
+      ],
+      "are going"
+     ],
+     [
+      [
+       6
+      ],
+      "swimming."
+     ]
+    ],
+    "v": [
+     1,
+     4,
+     6
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "ist",
+     "kalt,",
+     "trotzdem",
+     "fährt",
+     "Malte",
+     "mit dem Fahrrad."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "cold,"
+     ],
+     [
+      [
+       3
+      ],
+      "but"
+     ],
+     [
+      [
+       5
+      ],
+      "Malte"
+     ],
+     [
+      [
+       3
+      ],
+      "still"
+     ],
+     [
+      [
+       4
+      ],
+      "goes"
+     ],
+     [
+      [
+       6
+      ],
+      "by bike."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "möchten",
+     "Wasser sparen,",
+     "deshalb",
+     "duschen",
+     "wir",
+     "nur kurz."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "want"
+     ],
+     [
+      [
+       2
+      ],
+      "to save water,"
+     ],
+     [
+      [
+       3
+      ],
+      "so"
+     ],
+     [
+      [
+       5
+      ],
+      "we"
+     ],
+     [
+      [
+       4,
+       6
+      ],
+      "only take short showers."
+     ]
+    ],
+    "v": [
+     1,
+     2,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a2-man",
+  "pattern": "man + verb in the er/sie/es form + …",
+  "explain": "man means \"people in general\", \"you\" or \"one\". It takes the same verb form as er/sie/es: man kann, man sollte, man fährt. Use it for rules, advice and what people usually do. man is always the subject and has one n; der Mann (the man) has two.",
+  "compare_en": "English uses \"you\", \"people\" or \"one\": How do you say that? = Wie sagt man das? In Germany people cycle a lot = In Deutschland fährt man viel Fahrrad.",
+  "examples": [
+   {
+    "de": [
+     "In Deutschland",
+     "fährt",
+     "man",
+     "viel Fahrrad."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In Germany"
+     ],
+     [
+      [
+       2
+      ],
+      "people"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "cycle a lot."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hier",
+     "darf",
+     "man",
+     "nicht",
+     "parken."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "You"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "aren't allowed to"
+     ],
+     [
+      [
+       4
+      ],
+      "park"
+     ],
+     [
+      [
+       0
+      ],
+      "here."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Wie",
+     "sagt",
+     "man",
+     "das",
+     "auf Deutsch?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "How"
+     ],
+     [
+      [
+       1,
+       2
+      ],
+      "do you say"
+     ],
+     [
+      [
+       3
+      ],
+      "that"
+     ],
+     [
+      [
+       4
+      ],
+      "in German?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Im Wald",
+     "kann",
+     "man",
+     "spazieren gehen."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "can"
+     ],
+     [
+      [
+       3
+      ],
+      "go for walks"
+     ],
+     [
+      [
+       0
+      ],
+      "in the forest."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ }
+]

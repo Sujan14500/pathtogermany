@@ -7,7 +7,7 @@
 <script type="module">
 // Self-check for helpers in main.js. Serve app/ (python -m http.server -d app) and open /test.html; it prints ok.
 import { route, findWord, genderRule, umlaut, pluralPattern, fmtInterval, present, preterite, imperative, verbMistakes, perfect,
-  interleave, checkAnswer, diffChars } from './main.js'
+  spreadNew, checkAnswer, diffChars } from './main.js'
 
 const fails = []
 const check = (ok, what) => { if (!ok) fails.push(what) }
@@ -44,9 +44,9 @@ check(pluralPattern('Tisch', 'Tische') === '-e' && pluralPattern('Haus', 'Häuse
 check(fmtInterval(30e3) === '1m' && fmtInterval(90 * 60e3) === '2h' && fmtInterval(3 * 864e5) === '3d', 'fmtInterval')
 
 // new cards spread among the reviews (L1)
-const mixed = interleave(Array.from({ length: 30 }, (_, i) => `r${i}`), Array.from({ length: 10 }, (_, i) => `n${i}`))
-check(mixed.length === 40 && mixed[0][0] === 'r' && mixed.every((x, i) => !(x[0] === 'n' && mixed[i + 1]?.[0] === 'n')), 'interleave: review first, no two new cards together')
-check(eq(interleave([], ['n0', 'n1']), ['n0', 'n1']) && eq(interleave(['r0'], []), ['r0']), 'interleave: only one kind')
+const mixed = spreadNew(Array.from({ length: 30 }, (_, i) => `r${i}`), Array.from({ length: 10 }, (_, i) => `n${i}`))
+check(mixed.length === 40 && mixed[0][0] === 'r' && mixed.every((x, i) => !(x[0] === 'n' && mixed[i + 1]?.[0] === 'n')), 'spreadNew: review first, no two new cards together')
+check(eq(spreadNew([], ['n0', 'n1']), ['n0', 'n1']) && eq(spreadNew(['r0'], []), ['r0']), 'spreadNew: only one kind')
 
 // typed answers (L2)
 const tisch = { w: 'Tisch', p: 'n', a: 'der' }
@@ -54,6 +54,10 @@ const v = (t, w = tisch) => checkAnswer(t, w).verdict
 check(v('der Tisch') === 'right' && v('Der tisch') === 'close' && v('die Tisch') === 'wrong' && v('Tisch') === 'wrong' && v('der Tish') === 'typo', 'checkAnswer: Tisch')
 check(v('das Maedchen', { w: 'Mädchen', p: 'n', a: 'das' }) === 'close' && v('die Strasse', { w: 'Straße', p: 'n', a: 'die' }) === 'close', 'checkAnswer: umlauts and ß typed out')
 check(v('freuen', { w: 'sich freuen', p: 'v' }) === 'close' && v('aufstehen', { w: 'aufstehen', p: 'v' }) === 'right', 'checkAnswer: sich and verbs')
+const auto = { w: 'Auto', p: 'n', a: 'das', en: 'car' }, wagen = { w: 'Wagen', p: 'n', a: 'der', en: 'car' }
+const syn = checkAnswer('der Wagen', auto, [auto, wagen])
+check(syn.verdict === 'close' && syn.notes[0] === 'Also right; this card wants das Auto.', 'checkAnswer: another word with the same English')
+check(checkAnswer('Der tisch', tisch).notes.length === 1 && checkAnswer('die Tisch', tisch).notes[0].startsWith('The article belongs'), 'checkAnswer: notes')
 check(diffChars('Tish', 'Tisch').map(([c, k]) => (k === 'same' ? c : `[${k[0]}${c}]`)).join('') === 'Tis[mc]h', 'diffChars: missing letter')
 
 // conjugation: every generated form must be one Wiktionary lists (app/test-verbs.json, from build_data.py --verb-fixture)
