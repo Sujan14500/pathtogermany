@@ -439,7 +439,7 @@ def label_box(o):
     return x - w / 2, y - h, x + w / 2, y
 
 
-def check_scenes(scenes, words=None):
+def check_scenes(scenes, level=None, words=None):
     import xml.etree.ElementTree as ET
     words = known_words() if words is None else words
     out, ids = [], set()
@@ -615,10 +615,10 @@ def test():
     words = {(f'Ding{i}', 'das') for i in range(20)}
     objs = [{'w': f'Ding{i}', 'a': 'das', 'at': [90 + (i % 5) * 190, 100 + (i // 5) * 120], 'tag': [0, -10], 'svg': '<circle r="10" fill="#c00"/>'} for i in range(16)]
     sc = {'id': 'test', 'de': 'Test', 'en': 'Test', 'sky': '#fff', 'back': '<rect width="1000" height="620"/>', 'stations': [1], 'objs': objs}
-    assert check_scenes([sc], words) == [], check_scenes([sc], words)
-    assert check_scenes([dict(sc, objs=objs[:14])], words), 'too few words'
-    assert check_scenes([dict(sc, objs=objs + [dict(objs[0], w='Ding17', at=[92, 101])])], words), 'overlapping labels'
-    assert check_scenes([dict(sc, back='<rect width="1000"')], words), 'broken SVG'
+    assert check_scenes([sc], words=words) == [], check_scenes([sc], words=words)
+    assert check_scenes([dict(sc, objs=objs[:14])], words=words), 'too few words'
+    assert check_scenes([dict(sc, objs=objs + [dict(objs[0], w="Ding17", at=[92, 101])])], words=words), 'overlapping labels'
+    assert check_scenes([dict(sc, back="<rect width=\"1000\"")], words=words), 'broken SVG'
     print('ok')
 
 
