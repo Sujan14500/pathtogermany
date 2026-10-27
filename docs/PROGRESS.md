@@ -18,10 +18,9 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
 - Devices: laptop only (user, 2026-10-28): no mobile UI or features; check screens at 1366 px and 1500 px, light and
   dark, instead of phone widths. Desktop install/offline (manifest + service worker) stays.
 - Welcome line on home: "Liebe Sneka, willkommen!" (Dear Sneka, welcome!), chosen by the user 2026-10-28.
-- GitHub remote: `origin` = https://github.com/Sujan14500/pathtogermany (user gave it 2026-10-28 and asked for pushes at
-  phase ends). On 2026-10-28 the API showed it PUBLIC (`private: false`), so nothing was pushed: CLAUDE.md requires a
-  private repo. Before each push run `curl -s -o /dev/null -w "%{http_code}" https://api.github.com/repos/Sujan14500/pathtogermany`;
-  push only on 404. Never create branches or PRs: commit and push straight to main.
+- GitHub remote: `origin` = https://github.com/Sujan14500/pathtogermany, PUBLIC by the user's explicit choice
+  (2026-10-28, overriding the private-repo rule). Commit and push straight to main at phase ends; no branches, no PRs,
+  no force-push.
 
 ## Phases
 - [x] Phase 0: confirm and plan
