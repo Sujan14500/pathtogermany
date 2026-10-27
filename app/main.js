@@ -260,6 +260,7 @@ function Home({ data }) {
     setTimeout(() => document.querySelector('.scard')?.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
   }
   return html`<main class="home">
+    <p class="welcome"><span lang="de">Liebe Sneka, willkommen!</span><small>Dear Sneka, welcome!</small></p>
     <section class=${`hero l${st.level}`} aria-label="Today">
       <${Board} data=${data} n=${st.n} home />
       <div class="go">

@@ -163,6 +163,10 @@ main { max-width: 1480px; margin: 0 auto; padding: 32px 32px 72px; }
 
 /* ---- home ---- */
 
+.welcome { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: -4px 0 18px; animation: rise .6s var(--arrive) both; }
+.welcome span { font: 700 clamp(1.6rem, 3vw, 2.2rem)/1.1 var(--display); }
+.welcome small { color: var(--muted); font-size: 1rem; }
+
 .hero { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 24px; }
 .hero .board { min-height: 330px; }
 .go {
@@ -2525,6 +2529,7 @@ function Home({ data }) {
     setTimeout(() => document.querySelector('.scard')?.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
   }
   return html`<main class="home">
+    <p class="welcome"><span lang="de">Liebe Sneka, willkommen!</span><small>Dear Sneka, welcome!</small></p>
     <section class=${`hero l${st.level}`} aria-label="Today">
       <${Board} data=${data} n=${st.n} home />
       <div class="go">
