@@ -1,0 +1,1722 @@
+[
+ {
+  "type": "context",
+  "w": "Ahnung",
+  "station": 1,
+  "q": "Wo ist Jonas? – Keine ___. Vielleicht ist er noch im Büro.",
+  "opts": [
+   "Ahnung",
+   "Idee",
+   "Meinung",
+   "Lust"
+  ],
+  "a": 0,
+  "why": "Keine Ahnung! = No idea, I don't know. \"Keine Idee\" is an English-style mistake; eine Idee is a plan or thought you have."
+ },
+ {
+  "type": "context",
+  "w": "fleißig",
+  "station": 1,
+  "q": "Priya lernt jeden Tag zwei Stunden Deutsch. Sie ist sehr ___.",
+  "opts": [
+   "faul",
+   "fleißig",
+   "nervös",
+   "komisch"
+  ],
+  "a": 1,
+  "why": "fleißig = hard-working: she studies every day. faul (lazy) is the opposite."
+ },
+ {
+  "type": "context",
+  "w": "sich erinnern",
+  "station": 1,
+  "q": "Kannst du dich noch an unseren ersten Deutschkurs ___?",
+  "opts": [
+   "vergessen",
+   "denken",
+   "erinnern",
+   "merken"
+  ],
+  "a": 2,
+  "why": "sich erinnern an + accusative = to remember: Ich erinnere mich an den Kurs. vergessen and denken an are used without dich."
+ },
+ {
+  "type": "context",
+  "w": "Lüge",
+  "station": 1,
+  "q": "Jonas sagt, er war krank. Aber er war im Kino! Das war eine ___.",
+  "opts": [
+   "Meinung",
+   "Sache",
+   "Situation",
+   "Lüge"
+  ],
+  "a": 3,
+  "why": "eine Lüge = a lie, something that isn't true (lügen = to lie). eine Meinung is an opinion."
+ },
+ {
+  "type": "synonym",
+  "w": "sympathisch",
+  "station": 1,
+  "q": "Die neue Nachbarin ist sehr sympathisch.",
+  "u": "sympathisch",
+  "opts": [
+   "nett",
+   "traurig",
+   "komisch",
+   "fleißig"
+  ],
+  "a": 0,
+  "why": "sympathisch = likeable, nice, like nett. False friend: it does not mean \"sympathetic\" (feeling sorry for someone)."
+ },
+ {
+  "type": "synonym",
+  "w": "witzig",
+  "station": 1,
+  "q": "Malte erzählt immer witzige Geschichten.",
+  "u": "witzige",
+  "opts": [
+   "traurige",
+   "lustige",
+   "lange",
+   "neue"
+  ],
+  "a": 1,
+  "why": "witzig = funny, witty; lustig means the same."
+ },
+ {
+  "type": "synonym",
+  "w": "egal",
+  "station": 1,
+  "q": "Kino oder Theater? Das ist mir egal.",
+  "u": "egal",
+  "opts": [
+   "wichtig",
+   "klar",
+   "gleich",
+   "neu"
+  ],
+  "a": 2,
+  "why": "Das ist mir egal = I don't mind, it's all the same to me; Das ist mir gleich means the same. Das ist mir klar means \"I understand that\"."
+ },
+ {
+  "type": "usage",
+  "w": "einverstanden",
+  "station": 1,
+  "q": "einverstanden",
+  "opts": [
+   "Ich bin über deinen Vorschlag einverstanden.",
+   "Ich habe mit deinem Vorschlag einverstanden.",
+   "Ich bin einverstanden mit dich.",
+   "Ich bin mit deinem Vorschlag einverstanden."
+  ],
+  "a": 3,
+  "why": "einverstanden sein mit + dative = to agree with, be OK with something. It is an adjective, so it goes with sein, and mit takes the dative (mit dir)."
+ },
+ {
+  "type": "usage",
+  "w": "sich beschweren",
+  "station": 1,
+  "q": "sich beschweren",
+  "opts": [
+   "Herr Weber beschwert sich über die laute Musik im Haus.",
+   "Herr Weber beschwert die Nachbarn über die laute Musik.",
+   "Herr Weber beschwert sich auf die laute Musik im Haus.",
+   "Herr Weber beschwert sich, weil die Musik so schön leise ist."
+  ],
+  "a": 0,
+  "why": "sich beschweren über + accusative = to complain about. It needs sich and über, and you complain about something bad."
+ },
+ {
+  "type": "usage",
+  "w": "sich verlieben",
+  "station": 1,
+  "q": "sich verlieben",
+  "opts": [
+   "Jonas hat Priya verliebt.",
+   "Jonas hat sich in Priya verliebt.",
+   "Jonas hat sich mit Priya verliebt.",
+   "Jonas verliebt sich für Priya."
+  ],
+  "a": 1,
+  "why": "sich verlieben in + accusative = to fall in love with someone. Not mit or für."
+ },
+ {
+  "type": "context",
+  "w": "Umzug",
+  "station": 2,
+  "q": "Nächste Woche ziehen wir nach Köln. Kannst du uns beim ___ helfen?",
+  "opts": [
+   "Urlaub",
+   "Unfall",
+   "Umzug",
+   "Vertrag"
+  ],
+  "a": 2,
+  "why": "der Umzug = the move to a new home (from umziehen). der Urlaub is a holiday."
+ },
+ {
+  "type": "context",
+  "w": "Erdgeschoss",
+  "station": 2,
+  "q": "Frau Yilmaz ist 85 Jahre alt. Treppen sind schwer für sie, deshalb wohnt sie im ___.",
+  "opts": [
+   "Stockwerk",
+   "Schlafzimmer",
+   "Zentrum",
+   "Erdgeschoss"
+  ],
+  "a": 3,
+  "why": "das Erdgeschoss = the ground floor, so no stairs. A Stockwerk is any floor: im dritten Stock(werk)."
+ },
+ {
+  "type": "context",
+  "w": "Müll",
+  "station": 2,
+  "q": "In der Küche riecht es nicht gut. Kannst du bitte den ___ nach unten bringen?",
+  "opts": [
+   "Müll",
+   "Rest",
+   "Topf",
+   "Teller"
+  ],
+  "a": 0,
+  "why": "der Müll = rubbish, garbage. When it smells, you take it down to the bins."
+ },
+ {
+  "type": "synonym",
+  "w": "putzen",
+  "station": 2,
+  "q": "Am Samstag putzen wir die ganze Wohnung.",
+  "u": "putzen",
+  "opts": [
+   "aufräumen",
+   "sauber machen",
+   "renovieren",
+   "mieten"
+  ],
+  "a": 1,
+  "why": "putzen = to clean (with water and a cloth); sauber machen means the same. aufräumen is to tidy up: putting things back in their place."
+ },
+ {
+  "type": "synonym",
+  "w": "nebenan",
+  "station": 2,
+  "q": "Unsere neue Nachbarin wohnt direkt nebenan.",
+  "u": "nebenan",
+  "opts": [
+   "gegenüber",
+   "über uns",
+   "in der Wohnung neben uns",
+   "im Keller"
+  ],
+  "a": 2,
+  "why": "nebenan = next door, in the flat or house beside yours. gegenüber means opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "drüben",
+  "station": 2,
+  "q": "Siehst du das gelbe Haus da drüben?",
+  "u": "da drüben",
+  "opts": [
+   "hier",
+   "drinnen",
+   "nebenan",
+   "dort"
+  ],
+  "a": 3,
+  "why": "da drüben = over there, a bit away from you; dort means the same. drinnen means inside."
+ },
+ {
+  "type": "synonym",
+  "w": "schmutzig",
+  "station": 2,
+  "q": "Deine Schuhe sind ganz schmutzig!",
+  "u": "schmutzig",
+  "opts": [
+   "nicht sauber",
+   "nicht neu",
+   "zu eng",
+   "kaputt"
+  ],
+  "a": 0,
+  "why": "schmutzig = dirty, the opposite of sauber."
+ },
+ {
+  "type": "usage",
+  "w": "hängen",
+  "station": 2,
+  "q": "hängen",
+  "opts": [
+   "Die Jacke hängt in den Schrank.",
+   "Ich hänge die Jacke in den Schrank.",
+   "Ich hänge die Jacke auf den Tisch.",
+   "Ich habe die Jacke in den Schrank gehangen."
+  ],
+  "a": 1,
+  "why": "Wohin? Ich hänge die Jacke in den Schrank (accusative); Perfekt: gehängt. Wo? Die Jacke hängt im Schrank (dative); Perfekt: gehangen. On a table you legen things."
+ },
+ {
+  "type": "usage",
+  "w": "leihen",
+  "station": 2,
+  "q": "leihen",
+  "opts": [
+   "Kann ich dir dein Fahrrad leihen?",
+   "Ich leihe dein Fahrrad von dir.",
+   "Kannst du mir dein Fahrrad leihen?",
+   "Er hat mir sein Auto geleiht."
+  ],
+  "a": 2,
+  "why": "jemandem etwas leihen = to lend someone something. To borrow is sich etwas leihen (Ich leihe mir dein Fahrrad); Perfekt: geliehen."
+ },
+ {
+  "type": "usage",
+  "w": "einziehen",
+  "station": 2,
+  "q": "einziehen",
+  "opts": [
+   "Am Montag einziehen wir in die neue Wohnung.",
+   "Am Montag ziehen wir die neue Wohnung ein.",
+   "Letzte Woche haben wir in die neue Wohnung eingezogen.",
+   "Am Montag ziehen wir in die neue Wohnung ein."
+  ],
+  "a": 3,
+  "why": "einziehen in + accusative = to move in. It is separable (wir ziehen … ein), and the Perfekt uses sein: Wir sind eingezogen."
+ },
+ {
+  "type": "context",
+  "w": "Bewerbung",
+  "station": 3,
+  "q": "Ich habe gestern eine ___ an die Firma geschickt. Hoffentlich bekomme ich die Stelle!",
+  "opts": [
+   "Bewerbung",
+   "Ausbildung",
+   "Erfahrung",
+   "Meinung"
+  ],
+  "a": 0,
+  "why": "die Bewerbung = a job application (from sich bewerben). die Ausbildung is vocational training."
+ },
+ {
+  "type": "context",
+  "w": "Gehalt",
+  "station": 3,
+  "q": "In der neuen Firma bekommt Priya ein höheres ___.",
+  "opts": [
+   "Ziel",
+   "Gehalt",
+   "Team",
+   "Büro"
+  ],
+  "a": 1,
+  "why": "das Gehalt = salary, the money you get every month for your job."
+ },
+ {
+  "type": "context",
+  "w": "kündigen",
+  "station": 3,
+  "q": "Die Arbeit macht Malte keinen Spaß mehr. Er will ___ und eine neue Stelle suchen.",
+  "opts": [
+   "verdienen",
+   "organisieren",
+   "kündigen",
+   "verschieben"
+  ],
+  "a": 2,
+  "why": "kündigen = to quit, hand in your notice. Then he can look for a new job."
+ },
+ {
+  "type": "synonym",
+  "w": "dringend",
+  "station": 3,
+  "q": "Ich muss dringend mit Herrn Weber sprechen.",
+  "u": "dringend",
+  "opts": [
+   "gern",
+   "später",
+   "manchmal",
+   "sofort"
+  ],
+  "a": 3,
+  "why": "dringend = urgently: it can't wait, so sofort (right away) is closest. später is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "deshalb",
+  "station": 3,
+  "q": "Ich hatte heute sehr viel Arbeit, deshalb komme ich später.",
+  "u": "deshalb",
+  "opts": [
+   "also",
+   "aber",
+   "sonst",
+   "außerdem"
+  ],
+  "a": 0,
+  "why": "deshalb = that's why, so; German also means the same (so, therefore). sonst means otherwise, außerdem means besides."
+ },
+ {
+  "type": "synonym",
+  "w": "herstellen",
+  "station": 3,
+  "q": "Die Firma von Herrn Weber will bald Fahrräder herstellen.",
+  "u": "herstellen",
+  "opts": [
+   "verkaufen",
+   "machen",
+   "kaufen",
+   "reparieren"
+  ],
+  "a": 1,
+  "why": "herstellen = to make, produce (in a factory); machen is the everyday word. verkaufen is to sell."
+ },
+ {
+  "type": "usage",
+  "w": "sich bewerben",
+  "station": 3,
+  "q": "sich bewerben",
+  "opts": [
+   "Priya bewirbt eine Stelle in München.",
+   "Priya bewirbt sich an einer Firma in München.",
+   "Priya bewirbt sich bei einer Firma in München.",
+   "Priya hat bei einer Firma in München beworben."
+  ],
+  "a": 2,
+  "why": "sich bewerben = to apply; it always needs sich: bei (a company), um (a job). Perfekt: Sie hat sich beworben."
+ },
+ {
+  "type": "usage",
+  "w": "erreichen",
+  "station": 3,
+  "q": "erreichen",
+  "opts": [
+   "Wir erreichen um neun Uhr in Berlin.",
+   "Ich erreiche dich morgen an.",
+   "Ich erreiche dir morgen eine E-Mail.",
+   "Ich habe Herrn Weber heute nicht erreicht. Er war nicht im Büro."
+  ],
+  "a": 3,
+  "why": "erreichen + accusative, with no preposition = to reach someone (by phone) or a place: Wir erreichen Berlin um neun."
+ },
+ {
+  "type": "usage",
+  "w": "teilen",
+  "station": 3,
+  "q": "teilen",
+  "opts": [
+   "Jonas und Malte teilen sich ein Büro.",
+   "Jonas und Malte teilen sich mit einem Büro.",
+   "Jonas teilt den Kuchen in zwei Teilen.",
+   "Jonas teilt das Büro bei Malte."
+  ],
+  "a": 0,
+  "why": "teilen = to share or divide: sich etwas teilen, etwas mit jemandem teilen, etwas in zwei Teile teilen (accusative)."
+ },
+ {
+  "type": "usage",
+  "w": "verschieben",
+  "station": 3,
+  "q": "verschieben",
+  "opts": [
+   "Der Chef hat das Gespräch auf Donnerstag verschiebt.",
+   "Der Chef hat das Gespräch auf Donnerstag verschoben.",
+   "Das Gespräch verschiebt auf Donnerstag.",
+   "Der Chef verschiebt auf das Gespräch am Donnerstag."
+  ],
+  "a": 1,
+  "why": "etwas auf (a later day) verschieben = to postpone something. Perfekt: verschoben."
+ },
+ {
+  "type": "context",
+  "w": "Lust",
+  "station": 4,
+  "q": "Ich habe heute keine ___ auf Sport. Ich bleibe lieber zu Hause.",
+  "opts": [
+   "Ahnung",
+   "Angst",
+   "Lust",
+   "Idee"
+  ],
+  "a": 2,
+  "why": "Lust haben auf + accusative = to feel like something. Angst haben goes with vor (to be afraid of)."
+ },
+ {
+  "type": "context",
+  "w": "sich kümmern",
+  "station": 4,
+  "q": "Kannst du dich am Wochenende um meine Katze ___?",
+  "opts": [
+   "aufpassen",
+   "interessieren",
+   "freuen",
+   "kümmern"
+  ],
+  "a": 3,
+  "why": "sich kümmern um + accusative = to look after. aufpassen also means that, but it takes auf and no sich: auf die Katze aufpassen."
+ },
+ {
+  "type": "context",
+  "w": "teilnehmen",
+  "station": 4,
+  "q": "Unsere Mannschaft möchte an dem großen Wettbewerb ___.",
+  "opts": [
+   "teilnehmen",
+   "besuchen",
+   "stattfinden",
+   "unternehmen"
+  ],
+  "a": 0,
+  "why": "teilnehmen an + dative = to take part in. besuchen takes a direct object, without an."
+ },
+ {
+  "type": "context",
+  "w": "Mannschaft",
+  "station": 4,
+  "q": "Beim Volleyball spielen in einer ___ sechs Leute.",
+  "opts": [
+   "Band",
+   "Mannschaft",
+   "Kultur",
+   "Ausstellung"
+  ],
+  "a": 1,
+  "why": "die Mannschaft = a team in sport. A Band plays music."
+ },
+ {
+  "type": "synonym",
+  "w": "meistens",
+  "station": 4,
+  "q": "Am Wochenende schlafe ich meistens lange.",
+  "u": "meistens",
+  "opts": [
+   "nie",
+   "manchmal",
+   "fast immer",
+   "wieder"
+  ],
+  "a": 2,
+  "why": "meistens = mostly, usually, so fast immer. manchmal (sometimes) is much less often."
+ },
+ {
+  "type": "synonym",
+  "w": "spannend",
+  "station": 4,
+  "q": "Das Fußballspiel war bis zur letzten Minute spannend.",
+  "u": "spannend",
+  "opts": [
+   "langweilig",
+   "lustig",
+   "schwer",
+   "aufregend"
+  ],
+  "a": 3,
+  "why": "spannend = exciting, gripping; aufregend means the same. langweilig is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "sich unterhalten",
+  "station": 4,
+  "q": "In der Pause unterhalten wir uns über Fußball.",
+  "u": "unterhalten wir uns",
+  "opts": [
+   "sprechen wir",
+   "streiten wir uns",
+   "spielen wir",
+   "lachen wir"
+  ],
+  "a": 0,
+  "why": "sich unterhalten = to talk, chat; sprechen über means the same. sich streiten is to argue."
+ },
+ {
+  "type": "usage",
+  "w": "sich beeilen",
+  "station": 4,
+  "q": "sich beeilen",
+  "opts": [
+   "Ich beeile den Bus, er fährt gleich ab.",
+   "Beeil dich, der Film fängt gleich an!",
+   "Er beeilt sehr, weil es schon spät ist.",
+   "Wir beeilen uns, weil wir noch viel Zeit haben."
+  ],
+  "a": 1,
+  "why": "sich beeilen = to hurry. It needs sich (Beeil dich! Wir beeilen uns), and you hurry because time is short."
+ },
+ {
+  "type": "usage",
+  "w": "stattfinden",
+  "station": 4,
+  "q": "stattfinden",
+  "opts": [
+   "Das Konzert stattfindet am Freitag im Park.",
+   "Wir finden am Freitag ein Konzert im Park statt.",
+   "Das Konzert findet am Freitag im Park statt.",
+   "Das Konzert ist am Freitag im Park stattgefunden."
+  ],
+  "a": 2,
+  "why": "stattfinden = to take place; the event is the subject. It is separable (findet … statt), and the Perfekt uses haben: hat stattgefunden."
+ },
+ {
+  "type": "usage",
+  "w": "freiwillig",
+  "station": 4,
+  "q": "freiwillig",
+  "opts": [
+   "Malte arbeitet freiwillig, deshalb verdient er sehr viel Geld.",
+   "Am Samstag habe ich freiwillig: keine Arbeit!",
+   "Ist dieser Platz noch freiwillig?",
+   "Priya hilft freiwillig im Sportverein. Sie bekommt dafür kein Geld."
+  ],
+  "a": 3,
+  "why": "freiwillig = voluntarily: because you want to, often without pay. A day off or a free seat is frei."
+ },
+ {
+  "type": "context",
+  "w": "passen",
+  "station": 5,
+  "q": "Die Hose ist zu eng. Sie ___ mir nicht.",
+  "opts": [
+   "passt",
+   "trägt",
+   "kauft",
+   "probiert"
+  ],
+  "a": 0,
+  "why": "passen + dative = to fit: Die Hose passt mir nicht. tragen (to wear) needs a person as the subject."
+ },
+ {
+  "type": "context",
+  "w": "ausgeben",
+  "station": 5,
+  "q": "Ich habe zu viel Geld für Kleidung ___. Jetzt ist mein Konto fast leer.",
+  "opts": [
+   "gespart",
+   "ausgegeben",
+   "verdient",
+   "bekommen"
+  ],
+  "a": 1,
+  "why": "Geld ausgeben (für) = to spend money (on). sparen, to save, is the opposite."
+ },
+ {
+  "type": "context",
+  "w": "preiswert",
+  "station": 5,
+  "q": "Der Mantel kostet nur 30 Euro. Das ist wirklich ___.",
+  "opts": [
+   "teuer",
+   "kostenlos",
+   "preiswert",
+   "voll"
+  ],
+  "a": 2,
+  "why": "preiswert = good value, inexpensive. kostenlos means free: you pay nothing at all."
+ },
+ {
+  "type": "synonym",
+  "w": "kostenlos",
+  "station": 5,
+  "q": "Am Sonntag ist der Eintritt ins Museum kostenlos.",
+  "u": "kostenlos",
+  "opts": [
+   "billig",
+   "teuer",
+   "geöffnet",
+   "frei"
+  ],
+  "a": 3,
+  "why": "kostenlos = free of charge; Eintritt frei means the same. billig is cheap, but you still pay something."
+ },
+ {
+  "type": "synonym",
+  "w": "probieren",
+  "station": 5,
+  "q": "Kann ich das Hemd mal probieren?",
+  "u": "probieren",
+  "opts": [
+   "anziehen",
+   "tragen",
+   "kaufen",
+   "waschen"
+  ],
+  "a": 0,
+  "why": "In a shop, (an)probieren = to try on, so you put it on: anziehen. tragen means to wear."
+ },
+ {
+  "type": "synonym",
+  "w": "sauer",
+  "station": 5,
+  "q": "Jonas ist sauer, weil Lena nicht gekommen ist.",
+  "u": "sauer",
+  "opts": [
+   "traurig",
+   "böse",
+   "müde",
+   "froh"
+  ],
+  "a": 1,
+  "why": "sauer means sour, but in spoken German also cross, annoyed, like böse. traurig is sad."
+ },
+ {
+  "type": "synonym",
+  "w": "nützlich",
+  "station": 5,
+  "q": "Im Herbst ist ein Regenschirm sehr nützlich.",
+  "u": "nützlich",
+  "opts": [
+   "modern",
+   "schädlich",
+   "praktisch",
+   "preiswert"
+  ],
+  "a": 2,
+  "why": "nützlich = useful; praktisch (handy) is very close. schädlich (harmful) is the opposite."
+ },
+ {
+  "type": "usage",
+  "w": "tragen",
+  "station": 5,
+  "q": "tragen",
+  "opts": [
+   "Herr Weber trägt heute einen grauen Anzug an.",
+   "Herr Weber trägt sich heute einen grauen Anzug.",
+   "Herr Weber hat gestern einen grauen Anzug geträgt.",
+   "Herr Weber trägt heute einen grauen Anzug."
+  ],
+  "a": 3,
+  "why": "tragen = to wear (or carry), with no an and no sich. Perfekt: getragen."
+ },
+ {
+  "type": "usage",
+  "w": "sparen",
+  "station": 5,
+  "q": "sparen",
+  "opts": [
+   "Malte spart für ein neues Fahrrad.",
+   "Malte hat 200 Euro auf sein Konto gespeichert.",
+   "Malte spart jeden Monat viel Geld für Kleidung aus.",
+   "Malte spart, deshalb kauft er jeden Tag neue Kleidung."
+  ],
+  "a": 0,
+  "why": "sparen (für) = to save money (for something). speichern is to save a file on a computer; spending is ausgeben."
+ },
+ {
+  "type": "usage",
+  "w": "backen",
+  "station": 5,
+  "q": "backen",
+  "opts": [
+   "Ich backe Wasser für den Tee.",
+   "Für Lenas Geburtstag backe ich eine Torte.",
+   "Gestern habe ich einen Kuchen gebackt.",
+   "Ich backe die Nudeln zehn Minuten im Wasser."
+  ],
+  "a": 1,
+  "why": "backen = to bake (cakes, bread) in the oven; Perfekt: gebacken. Water and pasta are gekocht."
+ },
+ {
+  "type": "context",
+  "w": "wehtun",
+  "station": 6,
+  "q": "Ich kann nicht gut laufen, mein Fuß tut ___.",
+  "opts": [
+   "leid",
+   "krank",
+   "weh",
+   "schlimm"
+  ],
+  "a": 2,
+  "why": "wehtun = to hurt: Mein Fuß tut (mir) weh. Es tut mir leid means \"I'm sorry\"."
+ },
+ {
+  "type": "context",
+  "w": "sich ausruhen",
+  "station": 6,
+  "q": "Du hast Fieber. Du musst im Bett bleiben und dich ___.",
+  "opts": [
+   "beeilen",
+   "ausziehen",
+   "verletzen",
+   "ausruhen"
+  ],
+  "a": 3,
+  "why": "sich ausruhen = to rest. sich beeilen (to hurry) is the opposite of what you need with a fever."
+ },
+ {
+  "type": "context",
+  "w": "Erlaubnis",
+  "station": 6,
+  "q": "Ohne die ___ vom Arzt darf Malte noch keinen Sport machen.",
+  "opts": [
+   "Erlaubnis",
+   "Krankheit",
+   "Grippe",
+   "Ruhe"
+  ],
+  "a": 0,
+  "why": "die Erlaubnis = permission (from erlauben): the doctor has to say yes first."
+ },
+ {
+  "type": "synonym",
+  "w": "untersuchen",
+  "station": 6,
+  "q": "Morgen untersucht die Ärztin meinen Rücken.",
+  "u": "untersucht",
+  "opts": [
+   "verletzt",
+   "kontrolliert",
+   "trainiert",
+   "wäscht"
+  ],
+  "a": 1,
+  "why": "untersuchen = to examine, as a doctor does: she looks at it and checks it (kontrolliert) carefully."
+ },
+ {
+  "type": "synonym",
+  "w": "stark",
+  "station": 6,
+  "q": "Seit gestern habe ich starke Kopfschmerzen.",
+  "u": "starke",
+  "opts": [
+   "schwache",
+   "kurze",
+   "schlimme",
+   "kleine"
+  ],
+  "a": 2,
+  "why": "With pain, stark means bad, heavy; schlimm means the same here. schwach (weak) is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "erlaubt",
+  "station": 6,
+  "q": "Im Krankenhaus ist Rauchen nicht erlaubt.",
+  "u": "nicht erlaubt",
+  "opts": [
+   "möglich",
+   "gesund",
+   "wichtig",
+   "verboten"
+  ],
+  "a": 3,
+  "why": "nicht erlaubt = not allowed, so verboten (forbidden). möglich means possible."
+ },
+ {
+  "type": "usage",
+  "w": "verletzen",
+  "station": 6,
+  "q": "verletzen",
+  "opts": [
+   "Jonas hat sich beim Fußball am Bein verletzt.",
+   "Jonas hat beim Fußball am Bein verletzt.",
+   "Mein Bein verletzt mir seit gestern.",
+   "Jonas hat sich beim Fußball verletzen."
+  ],
+  "a": 0,
+  "why": "sich verletzen = to hurt yourself: Er hat sich verletzt. For pain you feel, say: Das Bein tut mir weh."
+ },
+ {
+  "type": "usage",
+  "w": "Angst",
+  "station": 6,
+  "q": "Angst",
+  "opts": [
+   "Viele Kinder haben Angst für den Zahnarzt.",
+   "Viele Kinder haben Angst vor dem Zahnarzt.",
+   "Viele Kinder sind Angst vor dem Zahnarzt.",
+   "Viele Kinder haben Angst auf den Zahnarzt."
+  ],
+  "a": 1,
+  "why": "Angst haben vor + dative = to be afraid of. Use haben (not sein) and vor (not für or auf)."
+ },
+ {
+  "type": "usage",
+  "w": "Sorge",
+  "station": 6,
+  "q": "Sorge",
+  "opts": [
+   "Ich mache mich Sorgen um dich.",
+   "Mach dir keine Sorgen für mich.",
+   "Mach dir keine Sorgen, es ist nicht schlimm.",
+   "Meine Mutter macht Sorgen um mich."
+  ],
+  "a": 2,
+  "why": "sich (dative) Sorgen machen um + accusative = to worry about: Ich mache mir Sorgen um dich."
+ },
+ {
+  "type": "usage",
+  "w": "leidtun",
+  "station": 6,
+  "q": "leidtun",
+  "opts": [
+   "Es tut mich leid, dass ich zu spät komme.",
+   "Ich tue leid, dass ich zu spät komme.",
+   "Es leidtut mir, dass ich zu spät komme.",
+   "Es tut mir leid, dass ich zu spät komme."
+  ],
+  "a": 3,
+  "why": "Es tut mir leid = I'm sorry: es is the subject, the person is dative (mir, dir, ihm), and leid goes to the end."
+ },
+ {
+  "type": "context",
+  "w": "Verspätung",
+  "station": 7,
+  "q": "Der Zug hat 20 Minuten ___. Wir kommen zu spät zum Termin.",
+  "opts": [
+   "Verspätung",
+   "Abfahrt",
+   "Ankunft",
+   "Fahrkarte"
+  ],
+  "a": 0,
+  "why": "Verspätung haben = to be late (a train, bus or plane). die Abfahrt is the departure."
+ },
+ {
+  "type": "context",
+  "w": "umsteigen",
+  "station": 7,
+  "q": "Es gibt keinen direkten Zug nach Hamburg. Wir müssen in Hannover ___.",
+  "opts": [
+   "umziehen",
+   "umsteigen",
+   "verreisen",
+   "abschließen"
+  ],
+  "a": 1,
+  "why": "umsteigen = to change trains or buses. umziehen means to move house."
+ },
+ {
+  "type": "context",
+  "w": "verpassen",
+  "station": 7,
+  "q": "Ich bin zu spät aufgestanden und habe den Bus ___.",
+  "opts": [
+   "vergessen",
+   "verloren",
+   "verpasst",
+   "verschoben"
+  ],
+  "a": 2,
+  "why": "verpassen = to miss (a bus, a train). vergessen is to forget, verlieren to lose."
+ },
+ {
+  "type": "context",
+  "w": "Führerschein",
+  "station": 7,
+  "q": "Malte ist 18 und macht gerade den ___. Bald darf er Auto fahren.",
+  "opts": [
+   "Fahrplan",
+   "Stadtplan",
+   "Fahrer",
+   "Führerschein"
+  ],
+  "a": 3,
+  "why": "der Führerschein = driving licence; den Führerschein machen = to take driving lessons and the test."
+ },
+ {
+  "type": "synonym",
+  "w": "Zentrum",
+  "station": 7,
+  "q": "Unser Hotel liegt direkt im Zentrum.",
+  "u": "im Zentrum",
+  "opts": [
+   "in der Stadtmitte",
+   "am Bahnhof",
+   "außerhalb der Stadt",
+   "auf dem Land"
+  ],
+  "a": 0,
+  "why": "im Zentrum = in the town centre, in der Stadtmitte. außerhalb der Stadt means outside the town."
+ },
+ {
+  "type": "synonym",
+  "w": "reservieren",
+  "station": 7,
+  "q": "Wir haben ein Doppelzimmer im Hotel reserviert.",
+  "u": "reserviert",
+  "opts": [
+   "bezahlt",
+   "gebucht",
+   "gemietet",
+   "besichtigt"
+  ],
+  "a": 1,
+  "why": "reservieren = to reserve; for hotels and trips buchen means the same. mieten is for a flat or a car you rent."
+ },
+ {
+  "type": "synonym",
+  "w": "unterwegs",
+  "station": 7,
+  "q": "Ich bin gerade unterwegs. Ich rufe dich später an.",
+  "u": "unterwegs",
+  "opts": [
+   "zu Hause",
+   "krank",
+   "auf dem Weg",
+   "im Büro"
+  ],
+  "a": 2,
+  "why": "unterwegs = on the way, out and about; auf dem Weg means the same."
+ },
+ {
+  "type": "usage",
+  "w": "wegen",
+  "station": 7,
+  "q": "wegen",
+  "opts": [
+   "Wegen es regnet, fährt das Schiff heute nicht.",
+   "Das Schiff fährt heute nicht, wegen es so stark regnet.",
+   "Wegen den Regen fährt das Schiff heute nicht.",
+   "Wegen des Regens fährt das Schiff heute nicht."
+  ],
+  "a": 3,
+  "why": "wegen is a preposition + genitive (in speech also dative): wegen des Regens. Before a whole clause, use weil."
+ },
+ {
+  "type": "usage",
+  "w": "außer",
+  "station": 7,
+  "q": "außer",
+  "opts": [
+   "Alle fahren mit, außer Malte – er ist krank.",
+   "Wir wohnen außer der Stadt, auf dem Land.",
+   "Außer den Bahnhof gibt es im Dorf nichts.",
+   "Ich nehme den Koffer und außer den Rucksack mit."
+  ],
+  "a": 0,
+  "why": "außer + dative = except (for), apart from: alle außer Malte. Outside the town is außerhalb; \"and also\" is außerdem."
+ },
+ {
+  "type": "usage",
+  "w": "abschließen",
+  "station": 7,
+  "q": "abschließen",
+  "opts": [
+   "Vor der Reise abschließen wir die Wohnung gut.",
+   "Vor der Reise schließen wir die Wohnung gut ab.",
+   "Der Supermarkt schließt heute um 20 Uhr ab.",
+   "Ich habe die Tür schon abgeschließt."
+  ],
+  "a": 1,
+  "why": "abschließen = to lock (with a key). It is separable (wir schließen … ab); Perfekt: abgeschlossen. A shop simply schließt (closes)."
+ },
+ {
+  "type": "context",
+  "w": "herunterladen",
+  "station": 8,
+  "q": "Die Datei ist zu groß für eine E-Mail. Du kannst sie über diesen Link ___.",
+  "opts": [
+   "fotografieren",
+   "chatten",
+   "herunterladen",
+   "übersetzen"
+  ],
+  "a": 2,
+  "why": "herunterladen = to download from the internet, for example with a link."
+ },
+ {
+  "type": "context",
+  "w": "Passwort",
+  "station": 8,
+  "q": "Ich kann meine E-Mails nicht lesen, weil ich mein ___ vergessen habe.",
+  "opts": [
+   "Programm",
+   "Plakat",
+   "Interview",
+   "Passwort"
+  ],
+  "a": 3,
+  "why": "das Passwort = password. A Programm is a computer program or a TV channel."
+ },
+ {
+  "type": "context",
+  "w": "Sendung",
+  "station": 8,
+  "q": "Heute um 20 Uhr kommt im Fernsehen eine interessante ___ über Österreich.",
+  "opts": [
+   "Sendung",
+   "Zeitschrift",
+   "Seite",
+   "Datei"
+  ],
+  "a": 0,
+  "why": "die Sendung = a TV or radio programme. eine Zeitschrift is a magazine you read."
+ },
+ {
+  "type": "synonym",
+  "w": "aktuell",
+  "station": 8,
+  "q": "Hier findest du die aktuellen Nachrichten aus der Stadt.",
+  "u": "aktuellen",
+  "opts": [
+   "alten",
+   "neuesten",
+   "wichtigen",
+   "lustigen"
+  ],
+  "a": 1,
+  "why": "aktuell = current, up to date, so the newest. False friend: it does not mean \"actual\" (that is wirklich or eigentlich)."
+ },
+ {
+  "type": "synonym",
+  "w": "deutlich",
+  "station": 8,
+  "q": "Bitte sprechen Sie langsam und deutlich.",
+  "u": "deutlich",
+  "opts": [
+   "laut",
+   "leise",
+   "klar",
+   "schnell"
+  ],
+  "a": 2,
+  "why": "deutlich = clearly, so people understand every word; klar means the same here. laut is just loud."
+ },
+ {
+  "type": "synonym",
+  "w": "Webseite",
+  "station": 8,
+  "q": "Die Öffnungszeiten stehen auf unserer Webseite.",
+  "u": "Webseite",
+  "opts": [
+   "Zeitschrift",
+   "Postkarte",
+   "Tafel",
+   "Homepage"
+  ],
+  "a": 3,
+  "why": "die Webseite and die Homepage both mean a site on the internet."
+ },
+ {
+  "type": "synonym",
+  "w": "fotografieren",
+  "station": 8,
+  "q": "Im Urlaub fotografiert Priya sehr gern.",
+  "u": "fotografiert",
+  "opts": [
+   "macht Fotos",
+   "malt",
+   "zeichnet",
+   "sammelt"
+  ],
+  "a": 0,
+  "why": "fotografieren = to take photos (Fotos machen). malen and zeichnen are painting and drawing."
+ },
+ {
+  "type": "usage",
+  "w": "speichern",
+  "station": 8,
+  "q": "speichern",
+  "opts": [
+   "Ich speichere jeden Monat 100 Euro für den Urlaub.",
+   "Vergiss nicht, die Datei zu speichern!",
+   "Ich habe die Datei gestern gespeicht.",
+   "Ich habe die Datei auf dem Laptop gespart."
+  ],
+  "a": 1,
+  "why": "speichern = to save data (a file, a photo); Perfekt: gespeichert. Saving money is sparen."
+ },
+ {
+  "type": "usage",
+  "w": "übersetzen",
+  "station": 8,
+  "q": "übersetzen",
+  "opts": [
+   "Ich habe den Text gestern geübersetzt.",
+   "Ich übersetze den Brief zu Englisch.",
+   "Kannst du mir den Brief ins Englische übersetzen?",
+   "Ich übersetze mit dem Text ins Deutsche."
+  ],
+  "a": 2,
+  "why": "etwas ins Englische übersetzen = to translate something into English. It has no ge- in the Perfekt: übersetzt."
+ },
+ {
+  "type": "usage",
+  "w": "Nachricht",
+  "station": 8,
+  "q": "Nachricht",
+  "opts": [
+   "Ich sehe jeden Abend um acht die Nachricht im Fernsehen.",
+   "Ich habe dir gestern eine Nachricht angerufen.",
+   "Ich mache dir eine Nachricht, wenn ich da bin.",
+   "Ich habe dir eine Nachricht geschickt. Hast du sie gelesen?"
+  ],
+  "a": 3,
+  "why": "eine Nachricht = a message: you schicken or schreiben it. The TV news are die Nachrichten, plural."
+ },
+ {
+  "type": "context",
+  "w": "schenken",
+  "station": 9,
+  "q": "Was ___ wir Lena zum Geburtstag? Vielleicht ein Buch?",
+  "opts": [
+   "schenken",
+   "gratulieren",
+   "feiern",
+   "bekommen"
+  ],
+  "a": 0,
+  "why": "jemandem etwas schenken = to give someone something as a present. gratulieren goes with zu: Wir gratulieren Lena zum Geburtstag."
+ },
+ {
+  "type": "context",
+  "w": "vorbereiten",
+  "station": 9,
+  "q": "Die Party ist morgen. Heute müssen wir noch das Essen ___.",
+  "opts": [
+   "vorstellen",
+   "vorbereiten",
+   "verpassen",
+   "erinnern"
+  ],
+  "a": 1,
+  "why": "vorbereiten = to prepare. vorstellen is to introduce (yourself or someone)."
+ },
+ {
+  "type": "context",
+  "w": "Wunsch",
+  "station": 9,
+  "q": "Mein größter ___ ist eine Reise nach Australien.",
+  "opts": [
+   "Besuch",
+   "Witz",
+   "Wunsch",
+   "Gast"
+  ],
+  "a": 2,
+  "why": "der Wunsch = wish (from wünschen). der Besuch is a visit or visitors."
+ },
+ {
+  "type": "synonym",
+  "w": "damals",
+  "station": 9,
+  "q": "Damals, als ich ein Kind war, haben wir oft im Garten gefeiert.",
+  "u": "Damals",
+  "opts": [
+   "Später",
+   "Heute",
+   "Zuerst",
+   "Früher"
+  ],
+  "a": 3,
+  "why": "damals = back then, at that time; früher means the same. später means later."
+ },
+ {
+  "type": "synonym",
+  "w": "plötzlich",
+  "station": 9,
+  "q": "Plötzlich ging das Licht aus und alle haben gelacht.",
+  "u": "Plötzlich",
+  "opts": [
+   "Auf einmal",
+   "Endlich",
+   "Langsam",
+   "Zum Schluss"
+  ],
+  "a": 0,
+  "why": "plötzlich = suddenly; auf einmal means the same. endlich means \"at last\"."
+ },
+ {
+  "type": "synonym",
+  "w": "zuerst",
+  "station": 9,
+  "q": "Zuerst essen wir, dann tanzen wir.",
+  "u": "Zuerst",
+  "opts": [
+   "Zuletzt",
+   "Am Anfang",
+   "Später",
+   "Endlich"
+  ],
+  "a": 1,
+  "why": "zuerst = first; am Anfang (at the beginning) means the same here. zuletzt is the opposite."
+ },
+ {
+  "type": "usage",
+  "w": "dafür",
+  "station": 9,
+  "q": "dafür",
+  "opts": [
+   "Feiern wir im Garten? – Ich bin dafür, das ist eine ganz schlechte Idee.",
+   "Feiern wir im Garten? – Ich bin dafür die Party.",
+   "Feiern wir im Garten? – Ich bin dafür, das ist eine gute Idee.",
+   "Feiern wir im Garten? – Ich bin dagegen, das ist eine tolle Idee."
+  ],
+  "a": 2,
+  "why": "dafür sein = to be in favour of it: you say it when you like the idea. dagegen sein is to be against it."
+ },
+ {
+  "type": "usage",
+  "w": "wünschen",
+  "station": 9,
+  "q": "wünschen",
+  "opts": [
+   "Ich wünsche dich alles Gute zum Geburtstag!",
+   "Ich wünsche für dich viel Glück!",
+   "Lena wünscht ein neues Fahrrad zum Geburtstag.",
+   "Ich wünsche dir alles Gute zum Geburtstag!"
+  ],
+  "a": 3,
+  "why": "jemandem (dative) etwas wünschen = to wish someone something: Ich wünsche dir viel Glück. For things you want yourself: sich etwas wünschen."
+ },
+ {
+  "type": "usage",
+  "w": "raten",
+  "station": 9,
+  "q": "raten",
+  "opts": [
+   "Ich rate dir, früh zu kommen. Dann bekommst du noch einen Platz.",
+   "Ich rate dich, früh zu kommen.",
+   "Ich habe dir gestern geratet, früher zu gehen.",
+   "Ich rate auf dich, dass du kommst."
+  ],
+  "a": 0,
+  "why": "jemandem raten = to advise someone (dative: dir, ihm); Perfekt: geraten. raten also means to guess (Rate mal!)."
+ },
+ {
+  "type": "usage",
+  "w": "schade",
+  "station": 9,
+  "q": "schade",
+  "opts": [
+   "Es tut mir schade, dass du nicht kommen kannst.",
+   "Schade, dass du nicht zu meiner Feier kommen kannst!",
+   "Wie schade, dass du die Prüfung bestanden hast!",
+   "Ich bin sehr schade, dass du nicht kommst."
+  ],
+  "a": 1,
+  "why": "(Das ist) schade = it's a pity: you say it when something is disappointing. Don't mix it with Es tut mir leid."
+ },
+ {
+  "type": "context",
+  "w": "bestehen",
+  "station": 10,
+  "q": "Lena hat viel gelernt und die Prüfung mit einer guten Note ___.",
+  "opts": [
+   "gewonnen",
+   "verloren",
+   "bestanden",
+   "gelernt"
+  ],
+  "a": 2,
+  "why": "eine Prüfung bestehen = to pass an exam (Perfekt: bestanden). You gewinnen a game or a prize, not an exam."
+ },
+ {
+  "type": "context",
+  "w": "Unterschied",
+  "station": 10,
+  "q": "Was ist der ___ zwischen „lernen“ und „studieren“?",
+  "opts": [
+   "Satz",
+   "Titel",
+   "Artikel",
+   "Unterschied"
+  ],
+  "a": 3,
+  "why": "der Unterschied = the difference (zwischen A und B)."
+ },
+ {
+  "type": "context",
+  "w": "streng",
+  "station": 10,
+  "q": "Bei Frau Yilmaz dürfen wir im Unterricht kein Handy benutzen. Sie ist sehr ___.",
+  "opts": [
+   "streng",
+   "schwierig",
+   "fleißig",
+   "verschieden"
+  ],
+  "a": 0,
+  "why": "streng = strict: she has firm rules. schwierig (difficult) is for tasks and exams, not for people."
+ },
+ {
+  "type": "context",
+  "w": "vergleichen",
+  "station": 10,
+  "q": "Bitte ___ Sie Ihre Antworten mit der Lösung auf Seite 40.",
+  "opts": [
+   "beschreiben",
+   "vergleichen",
+   "vergessen",
+   "aussprechen"
+  ],
+  "a": 1,
+  "why": "etwas mit etwas vergleichen = to compare something with something: here, your answers with the key."
+ },
+ {
+  "type": "synonym",
+  "w": "schwierig",
+  "station": 10,
+  "q": "Die letzte Aufgabe in der Prüfung war sehr schwierig.",
+  "u": "schwierig",
+  "opts": [
+   "leicht",
+   "schnell",
+   "schwer",
+   "wichtig"
+  ],
+  "a": 2,
+  "why": "schwierig = difficult; schwer means the same here (it can also mean heavy). leicht is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "verschieden",
+  "station": 10,
+  "q": "In unserer Klasse sind Schüler aus verschiedenen Ländern.",
+  "u": "verschiedenen",
+  "opts": [
+   "gleichen",
+   "kleinen",
+   "reichen",
+   "vielen"
+  ],
+  "a": 3,
+  "why": "verschieden = different, various: the pupils come from many different countries. gleich (the same) is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "notieren",
+  "station": 10,
+  "q": "Notiert bitte die neuen Wörter in eurem Heft.",
+  "u": "Notiert",
+  "opts": [
+   "Schreibt",
+   "Lest",
+   "Markiert",
+   "Wiederholt"
+  ],
+  "a": 0,
+  "why": "notieren = to note down, write down; schreiben is the everyday word. markieren is to highlight."
+ },
+ {
+  "type": "usage",
+  "w": "aufpassen",
+  "station": 10,
+  "q": "aufpassen",
+  "opts": [
+   "Kannst du heute Nachmittag auf meinem Bruder aufpassen?",
+   "Kannst du heute Nachmittag auf meinen Bruder aufpassen?",
+   "Kannst du heute Nachmittag meinen Bruder aufpassen?",
+   "Kannst du dich heute Nachmittag um meinen Bruder aufpassen?"
+  ],
+  "a": 1,
+  "why": "aufpassen auf + accusative = to look after someone; on its own it means to pay attention (Pass auf!). No sich."
+ },
+ {
+  "type": "usage",
+  "w": "merken",
+  "station": 10,
+  "q": "sich merken",
+  "opts": [
+   "Dieses Wort kann ich mich einfach nicht merken.",
+   "Ich merke mich an dieses Wort.",
+   "Dieses Wort kann ich mir einfach nicht merken.",
+   "Merk dir bitte an den Termin!"
+  ],
+  "a": 2,
+  "why": "sich (dative) etwas merken = to remember something, keep it in your head: Ich merke mir das Wort. No an: that is sich erinnern an."
+ },
+ {
+  "type": "usage",
+  "w": "beantworten",
+  "station": 10,
+  "q": "beantworten",
+  "opts": [
+   "Ich habe auf Lenas E-Mail noch nicht beantwortet.",
+   "Ich beantworte dir morgen.",
+   "Lena hat mir noch nicht beantwortet.",
+   "Ich habe Lenas E-Mail noch nicht beantwortet."
+  ],
+  "a": 3,
+  "why": "beantworten + accusative = to answer something (a question, an e-mail), with no preposition. With auf or a person, use antworten: Ich antworte dir."
+ },
+ {
+  "type": "context",
+  "w": "Bescheid",
+  "station": 11,
+  "q": "Kannst du mir bitte ___ sagen, wann das Paket kommt?",
+  "opts": [
+   "Bescheid",
+   "Kontakt",
+   "Service",
+   "Vorschlag"
+  ],
+  "a": 0,
+  "why": "jemandem Bescheid sagen = to let someone know."
+ },
+ {
+  "type": "context",
+  "w": "Werkstatt",
+  "station": 11,
+  "q": "Mein Auto ist kaputt. Ich bringe es morgen in die ___.",
+  "opts": [
+   "Reinigung",
+   "Werkstatt",
+   "Bank",
+   "Apotheke"
+  ],
+  "a": 1,
+  "why": "die Werkstatt = a repair garage. Clothes go to die Reinigung (the dry cleaner's)."
+ },
+ {
+  "type": "context",
+  "w": "klappen",
+  "station": 11,
+  "q": "Hat es mit dem Termin bei der Bank ___? – Ja, alles gut!",
+  "opts": [
+   "gekündigt",
+   "geliefert",
+   "geklappt",
+   "gezeigt"
+  ],
+  "a": 2,
+  "why": "klappen (spoken) = to work out, go well: Es hat geklappt!"
+ },
+ {
+  "type": "synonym",
+  "w": "aufmachen",
+  "station": 11,
+  "q": "Kannst du bitte das Fenster aufmachen? Es ist so warm hier.",
+  "u": "aufmachen",
+  "opts": [
+   "zumachen",
+   "schließen",
+   "putzen",
+   "öffnen"
+  ],
+  "a": 3,
+  "why": "aufmachen = to open (spoken); öffnen means the same. zumachen and schließen are the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "vereinbaren",
+  "station": 11,
+  "q": "Ich möchte gern einen Termin vereinbaren.",
+  "u": "vereinbaren",
+  "opts": [
+   "machen",
+   "absagen",
+   "verschieben",
+   "vergessen"
+  ],
+  "a": 0,
+  "why": "einen Termin vereinbaren = to arrange an appointment; in everyday German, einen Termin machen. absagen is to cancel it."
+ },
+ {
+  "type": "synonym",
+  "w": "prüfen",
+  "station": 11,
+  "q": "In der Werkstatt prüfen sie auch die Reifen.",
+  "u": "prüfen",
+  "opts": [
+   "wechseln",
+   "kontrollieren",
+   "liefern",
+   "verkaufen"
+  ],
+  "a": 1,
+  "why": "prüfen = to check, test; kontrollieren means the same. wechseln is to change them."
+ },
+ {
+  "type": "synonym",
+  "w": "Ermäßigung",
+  "station": 11,
+  "q": "Gibt es für Studenten eine Ermäßigung?",
+  "u": "eine Ermäßigung",
+  "opts": [
+   "einen Termin",
+   "eine Rechnung",
+   "einen günstigeren Preis",
+   "einen Kredit"
+  ],
+  "a": 2,
+  "why": "eine Ermäßigung = a reduction, a discount, so you pay a lower (günstigeren) price."
+ },
+ {
+  "type": "usage",
+  "w": "lassen",
+  "station": 11,
+  "q": "lassen",
+  "opts": [
+   "Ich lasse mein Fahrrad zu reparieren.",
+   "Ich lasse mein Fahrrad repariert.",
+   "Ich lasse reparieren mein Fahrrad.",
+   "Ich lasse mein Fahrrad reparieren."
+  ],
+  "a": 3,
+  "why": "etwas machen lassen = to have something done by someone else: Ich lasse mein Fahrrad reparieren. The infinitive goes to the end, with no zu."
+ },
+ {
+  "type": "usage",
+  "w": "liefern",
+  "station": 11,
+  "q": "liefern",
+  "opts": [
+   "Das Geschäft liefert den neuen Kühlschrank am Freitag.",
+   "Das Geschäft liefert mich den neuen Kühlschrank am Freitag.",
+   "Kannst du mir dein Buch liefern? Ich gebe es dir morgen zurück.",
+   "Der neue Kühlschrank liefert am Freitag."
+  ],
+  "a": 0,
+  "why": "liefern = to deliver goods: the shop delivers something (to someone: mir, dative). To lend something is leihen."
+ },
+ {
+  "type": "usage",
+  "w": "passieren",
+  "station": 11,
+  "q": "passieren",
+  "opts": [
+   "Was hat dir passiert?",
+   "Was ist passiert? Du siehst so traurig aus.",
+   "Ich habe gestern einen Unfall passiert.",
+   "Wir passieren am Samstag ein Fest."
+  ],
+  "a": 1,
+  "why": "passieren = to happen: what happens is the subject, the person is dative, and the Perfekt uses sein: Was ist passiert? Mir ist etwas passiert."
+ },
+ {
+  "type": "context",
+  "w": "neblig",
+  "station": 12,
+  "q": "Heute Morgen konnte man nicht weit sehen, es war sehr ___.",
+  "opts": [
+   "windig",
+   "sonnig",
+   "neblig",
+   "trocken"
+  ],
+  "a": 2,
+  "why": "neblig = foggy: in fog you can't see far."
+ },
+ {
+  "type": "context",
+  "w": "Landschaft",
+  "station": 12,
+  "q": "Die ___ in Österreich ist wunderschön: hohe Berge, Wälder und Seen.",
+  "opts": [
+   "Umwelt",
+   "Pflanze",
+   "Hauptstadt",
+   "Landschaft"
+  ],
+  "a": 3,
+  "why": "die Landschaft = landscape, scenery: what you see around you. die Umwelt is the environment that we protect."
+ },
+ {
+  "type": "context",
+  "w": "Strand",
+  "station": 12,
+  "q": "Im Sommer liegen wir den ganzen Tag am ___ und baden im Meer.",
+  "opts": [
+   "Strand",
+   "Wald",
+   "Berg",
+   "Himmel"
+  ],
+  "a": 0,
+  "why": "der Strand = the beach, by the sea or a lake."
+ },
+ {
+  "type": "synonym",
+  "w": "heiß",
+  "station": 12,
+  "q": "Im Juli war es in Spanien sehr heiß.",
+  "u": "sehr heiß",
+  "opts": [
+   "sehr kühl",
+   "sehr warm",
+   "sehr nass",
+   "sehr windig"
+  ],
+  "a": 1,
+  "why": "heiß = hot, so very warm. kühl (cool) is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "kühl",
+  "station": 12,
+  "q": "Am Abend wird es in den Bergen kühl.",
+  "u": "kühl",
+  "opts": [
+   "sehr heiß",
+   "windig",
+   "ein bisschen kalt",
+   "warm"
+  ],
+  "a": 2,
+  "why": "kühl = cool, a bit cold: take a jacket!"
+ },
+ {
+  "type": "synonym",
+  "w": "gefährlich",
+  "station": 12,
+  "q": "Bei Gewitter ist es gefährlich, im See zu schwimmen.",
+  "u": "gefährlich",
+  "opts": [
+   "verboten",
+   "langweilig",
+   "gesund",
+   "nicht sicher"
+  ],
+  "a": 3,
+  "why": "gefährlich = dangerous, so nicht sicher (not safe). It is not always verboten (forbidden)."
+ },
+ {
+  "type": "usage",
+  "w": "Umwelt",
+  "station": 12,
+  "q": "Umwelt",
+  "opts": [
+   "Wir fahren mit dem Fahrrad, das ist gut für die Umwelt.",
+   "Ich wohne in der Umwelt von Berlin, nur 20 Minuten vom Zentrum.",
+   "Heute ist die Umwelt sonnig und warm.",
+   "In unserer Umwelt gibt es einen Park und viele Geschäfte."
+  ],
+  "a": 0,
+  "why": "die Umwelt = the environment: nature, air and water that we protect. The area around a place is die Umgebung."
+ },
+ {
+  "type": "usage",
+  "w": "schneien",
+  "station": 12,
+  "q": "schneien",
+  "opts": [
+   "Im Januar ist es in München viel geschneit.",
+   "Im Januar hat es in München viel geschneit.",
+   "Im Januar hat der Schnee in München viel geschneit.",
+   "Im Januar hat es in München viel geschnien."
+  ],
+  "a": 1,
+  "why": "schneien = to snow. Like regnen, the subject is es, and the Perfekt is es hat geschneit."
+ },
+ {
+  "type": "usage",
+  "w": "trocken",
+  "station": 12,
+  "q": "trocken",
+  "opts": [
+   "Die Wäsche ist noch trocken, sie muss noch eine Stunde hängen.",
+   "Nach dem Regen ist die Straße ganz trocken.",
+   "Die Wäsche ist schon trocken, du kannst sie in den Schrank legen.",
+   "Ich bin so trocken, ich möchte ein Glas Wasser."
+  ],
+  "a": 2,
+  "why": "trocken = dry, the opposite of nass: dry washing is ready, and after rain the street is nass. If you need water, you are durstig."
+ },
+ {
+  "type": "usage",
+  "w": "Schirm",
+  "station": 12,
+  "q": "Schirm",
+  "opts": [
+   "Es regnet. Zieh bitte deinen Schirm an!",
+   "Ich habe meinen Schirm im Bus vergessen, deshalb bin ich jetzt ganz trocken.",
+   "Mein Schirm ist ganz nass, weil es heute nicht geregnet hat.",
+   "Nimm einen Schirm mit, es regnet gleich!"
+  ],
+  "a": 3,
+  "why": "der Schirm (Regenschirm) = umbrella: you take it with you (mitnehmen) and open it, but you don't anziehen it. Without one, you get nass in the rain."
+ }
+]

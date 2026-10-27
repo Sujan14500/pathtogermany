@@ -1177,8 +1177,8 @@
       "Pizza-Express is looking for drivers with a driving licence and their own car."
      ],
      [
-      "Arbeitszeit: abends von 18 bis 23 Uhr, auch am Wochenende.",
-      "Working hours: evenings from 6 pm to 11 pm, weekends too."
+      "Arbeitszeit: Montag bis Freitag, abends von 18 bis 23 Uhr.",
+      "Working hours: Monday to Friday, evenings from 6 pm to 11 pm."
      ],
      [
       "Gutes Gehalt und Trinkgeld!",
@@ -2164,7 +2164,7 @@
   },
   "questions": [
    {
-    "q": "Lena hat eine neue Hose gekauft, aber sie ist ihr zu lang.",
+    "q": "Lena hat eine neue Hose gekauft. Sie gefällt ihr sehr, aber sie ist ein bisschen zu groß.",
     "format": "match",
     "opts": [
      "a",
@@ -2179,7 +2179,7 @@
      "b4.1",
      "b4.2"
     ],
-    "why": "The tailor's makes trousers that are too long fit."
+    "why": "The tailor's makes clothes that are too long or too loose fit."
    },
    {
     "q": "Frau Yilmaz hat viele alte Spielsachen und Kinderbücher im Keller und möchte sie verkaufen.",
@@ -2674,8 +2674,8 @@
     "t": "p",
     "s": [
      [
-      "seit gestern Abend bin ich wieder zu Hause in Köln.",
-      "since last night I have been back home in Cologne."
+      "seit gestern Abend bin ich wieder zu Hause in Leipzig.",
+      "since last night I have been back home in Leipzig."
      ],
      [
       "Die Woche auf Rügen war wunderschön: Ich war jeden Tag am Meer und hatte fast immer Sonne.",
@@ -2696,8 +2696,8 @@
       "My train was supposed to leave Stralsund at 10.15, but it was 50 minutes late."
      ],
      [
-      "Deshalb habe ich in Hamburg meinen Anschluss nach Köln verpasst.",
-      "So I missed my connection to Cologne in Hamburg."
+      "Deshalb habe ich in Berlin meinen Anschluss nach Leipzig verpasst.",
+      "So I missed my connection to Leipzig in Berlin."
      ],
      [
       "Der nächste Zug war sehr voll, und ich musste zwei Stunden zwischen den Wagen stehen.",
@@ -2708,8 +2708,8 @@
       "I couldn't even eat anything because the restaurant car was closed."
      ],
      [
-      "Am Ende war ich fast drei Stunden zu spät in Köln.",
-      "In the end I got to Cologne almost three hours late."
+      "Am Ende war ich fast drei Stunden zu spät in Leipzig.",
+      "In the end I got to Leipzig almost three hours late."
      ]
     ]
    },
@@ -2800,18 +2800,18 @@
     "q": "Wo hat Jonas Urlaub gemacht?",
     "format": "abc",
     "opts": [
-     "In Hamburg.",
+     "In Berlin.",
      "Auf Rügen.",
-     "In Köln."
+     "In Leipzig."
     ],
     "a": 1,
     "ev": [
      "b2.1"
     ],
-    "why": "He spent a week on Rügen; Cologne is his home and Hamburg was a change of trains."
+    "why": "He spent a week on Rügen; Leipzig is his home and Berlin was where he changed trains."
    },
    {
-    "q": "Jonas hat in Hamburg seinen Anschluss verpasst, weil …",
+    "q": "Jonas hat in Berlin seinen Anschluss verpasst, weil …",
     "format": "abc",
     "opts": [
      "sein erster Zug zu spät war.",
@@ -2860,7 +2860,7 @@
     "opts": [
      "Mit Lena an die Ostsee fahren.",
      "Mit dem Zug nach Rügen fahren.",
-     "Ein Hotel in Köln buchen."
+     "Ein Hotel auf Rügen buchen."
     ],
     "a": 0,
     "ev": [
@@ -2921,8 +2921,8 @@
       "Lift to Munich"
      ],
      [
-      "Ich fahre am Freitag, 14. Juni, um 16 Uhr mit dem Auto von Köln nach München.",
-      "On Friday, 14 June, at 4 pm I'm driving from Cologne to Munich."
+      "Ich fahre am Freitag, 14. Juni, um 16 Uhr mit dem Auto von Leipzig nach München.",
+      "On Friday, 14 June, at 4 pm I'm driving from Leipzig to Munich."
      ],
      [
       "Ich habe noch zwei Plätze frei, 35 Euro pro Person.",
@@ -2955,12 +2955,12 @@
     "t": "ad",
     "s": [
      [
-      "Mit dem Schiff auf dem Rhein",
-      "By boat on the Rhine"
+      "Mit dem Schiff auf der Elbe",
+      "By boat on the Elbe"
      ],
      [
-      "Von Köln nach Bonn und zurück, mit Musik und Mittagessen an Bord.",
-      "From Cologne to Bonn and back, with music and lunch on board."
+      "Von Dresden nach Meißen und zurück, mit Musik und Mittagessen an Bord.",
+      "From Dresden to Meissen and back, with music and lunch on board."
      ],
      [
       "Von Mai bis September jeden Sonntag, 10 bis 18 Uhr.",
@@ -3114,10 +3114,10 @@
      "b5.1",
      "b5.2"
     ],
-    "why": "The boat trip on the Rhine runs every Sunday."
+    "why": "The boat trip on the Elbe runs every Sunday."
    },
    {
-    "q": "Herr Weber und seine Frau möchten im Herbst ein paar Tage eine andere Hauptstadt besuchen.",
+    "q": "Herr Weber und seine Frau möchten im Herbst ein paar Tage eine Hauptstadt im Ausland besuchen.",
     "format": "match",
     "opts": [
      "a",
@@ -3575,8 +3575,8 @@
     "t": "p",
     "s": [
      [
-      "Wir möchten Jonas zusammen eine Konzertkarte schenken, denn seine Lieblingsband spielt im Januar in Köln.",
-      "We want to give Jonas a concert ticket together, because his favourite band is playing in Cologne in January."
+      "Wir möchten Jonas zusammen eine Konzertkarte schenken, denn seine Lieblingsband spielt im Januar in Berlin.",
+      "We want to give Jonas a concert ticket together, because his favourite band is playing in Berlin in January."
      ],
      [
       "Jeder gibt 15 Euro dafür.",
@@ -3711,7 +3711,7 @@
     "opts": [
      "Eine Torte.",
      "Eine Karte für ein Konzert.",
-     "Eine Reise nach Köln."
+     "Eine Reise nach Berlin."
     ],
     "a": 1,
     "ev": [
@@ -3876,6 +3876,10 @@
    {
     "w": "Schlager",
     "en": "German pop hits"
+   },
+   {
+    "w": "Kostümverleih",
+    "en": "costume hire"
    },
    {
     "w": "Kostüme",
@@ -4428,8 +4432,8 @@
       "For the citizens' office and the immigration office you need an appointment."
      ],
      [
-      "Einen Termin bekommen Sie im Internet oder unter der Telefonnummer 0341 123 4500.",
-      "You can get an appointment online or by phone on 0341 123 4500."
+      "Einen Termin bekommen Sie im Internet oder unter der Telefonnummer 4500-100.",
+      "You can get an appointment online or by phone on 4500-100."
      ]
     ]
    }

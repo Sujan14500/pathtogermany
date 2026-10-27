@@ -1025,6 +1025,336 @@ function Tips({ at }) {
   </main>`
 }
 
+// ---- many voices: lines spoken in turn, A a woman, B a man, N an announcer ----
+
+// With only one German voice installed, pitch tells the speakers apart.
+let lineQueue = null
+function speakLines(lines, { rate, onLine, onEnd } = {}) {
+  if (!('speechSynthesis' in window)) return noVoice()
+  if (speechSynthesis.getVoices().length && !deVoices().length) return noVoice()
+  speechSynthesis.cancel()
+  const token = {}
+  lineQueue = token
+  const vA = voiceFor('A'), vB = voiceFor('B')
+  const vN = deVoices().find(v => v !== vA && v !== vB) ?? vA
+  const one = !vA || !vB || vA === vB
+  let i = 0, started = false
+  const next = () => {
+    if (lineQueue !== token) return
+    if (i >= lines.length) { lineQueue = null; onLine?.(-1); onEnd?.(); return }
+    const [who, text] = lines[i]
+    const u = new SpeechSynthesisUtterance(text)
+    u.lang = 'de-DE'
+    u.voice = who === 'B' ? vB : who === 'N' ? vN : vA
+    u.rate = rate ?? S.settings.rate ?? 0.95
+    if (one || (who === 'N' && vN === vA)) u.pitch = who === 'B' ? .7 : who === 'N' ? 1 : 1.25
+    u.onstart = () => { started = true; onLine?.(i) }
+    u.onend = () => { i++; setTimeout(next, who === lines[i]?.[0] ? 150 : 420) }
+    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') noVoice() }
+    speechSynthesis.speak(u)
+  }
+  next()
+  setTimeout(() => { if (lineQueue === token && !started) noVoice() }, 2500)
+}
+const stopSpeech = () => { lineQueue = null; if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+
+// ---- reading: the station's texts in the Goethe Lesen formats ----
+
+const PART_NAME = { Lesen: 'Lesen', Hören: 'Hören' }
+const sentences = t => t.blocks.flatMap(b => b.s.map((p, k) => ({ id: `${b.id}.${k}`, de: p[0], en: p[1] })))
+const textWords = t => sentences(t).reduce((a, s) => a + s.de.split(/\s+/).length, 0)
+const tokens = s => s.match(/[\p{L}ß]+/gu) ?? []
+
+// Course words by their forms, to say how much of a text the learner already knows (L11).
+let formIndex = null
+function knownShare(t) {
+  if (!formIndex) {
+    formIndex = new Map()
+    for (const w of D.words) for (const f of wordForms(w)) if (!formIndex.has(f.toLowerCase())) formIndex.set(f.toLowerCase(), w)
+  }
+  let all = 0, known_ = 0
+  const unknown = new Set()
+  for (const s of sentences(t)) {
+    for (const tok of tokens(s.de)) {
+      all++
+      const w = formIndex.get(tok.toLowerCase())
+      if (w && known(w.id)) known_++
+      else if (w) unknown.add(tok.toLowerCase())
+    }
+  }
+  return { share: all ? known_ / all : 0, unknown }
+}
+
+// One question in an exam format: richtig/falsch, ja/nein, a/b/c or a letter from the texts.
+function ExamQuestion({ q, k, pick, onPick, done, onShow }) {
+  const right = done && pick === q.a
+  return html`<li class=${`eq${done ? (right ? ' right' : ' wrong') : ''}`}>
+    <p class="eq-q"><span class="eq-n">${k + 1}</span><span lang="de">${q.q}</span></p>
+    <div class=${`eq-opts ${q.format}`}>${q.opts.map((o, j) => html`<button type="button" lang="de" disabled=${done} aria-pressed=${pick === j}
+      class=${`${pick === j ? 'on' : ''}${done && j === q.a ? ' answer' : ''}`} onClick=${() => onPick(j)}>
+      ${q.format === 'abc' ? html`<b>${'abc'[j]}</b> ` : ''}${o}</button>`)}</div>
+    ${done ? html`<p class="eq-why">${right ? html`<b>Right.</b> ` : html`<b>The answer is ${q.format === 'abc' ? `${'abc'[q.a]}: ` : ''}<span lang="de">${q.opts[q.a]}</span>.</b> `}${q.why}
+      ${q.ev?.length ? html` <button type="button" class="linkish" onClick=${() => onShow(q.ev)}>Show it in the text</button>` : ''}</p>` : ''}
+  </li>`
+}
+
+// The reader. Help (tap a sentence for English, the glossary, known words) is off in exam mode (tests).
+function Reader({ t, exam, onDone }) {
+  const s = useStore()
+  const [predicted, setPredicted] = useState(exam || S.practice[`r:${t.id}`] !== undefined ? 'skip' : null)
+  const [open, setOpen] = useState(new Set())
+  const [gloss, setGloss] = useState(null)
+  const [picks, setPicks] = useState({})
+  const [done, setDone] = useState(false)
+  const [lit, setLit] = useState(new Set())
+  const [speakingAt, setSpeakingAt] = useState(null)
+  const [marks, setMarks] = useState(false)
+  const [timing, setTiming] = useState({ start: null, first: null, again: null, againStart: null })
+  const ref = useRef()
+  useEffect(() => () => stopSpeech(), [])
+  useEffect(() => { if (predicted && !timing.start) setTiming(x => ({ ...x, start: Date.now() })) }, [predicted])
+  const words = textWords(t)
+  const wpm = ms => Math.round(words / (ms / 60000))
+  const qs = t.questions
+  const all = qs.every((_, k) => picks[k] !== undefined)
+  const score = qs.filter((q, k) => picks[k] === q.a).length
+  const check = () => {
+    setDone(true)
+    const first = timing.first ?? Date.now() - timing.start
+    setTiming(x => ({ ...x, first }))
+    if (!exam) commit(x => { x.practice[`r:${t.id}`] = Math.max(x.practice[`r:${t.id}`] ?? 0, score / qs.length) })
+    onDone?.(score, qs.length)
+  }
+  const show = ev => {
+    setLit(new Set(ev))
+    setTimeout(() => ref.current?.querySelector('.sent.lit')?.scrollIntoView({ block: 'center', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
+  }
+  const readAloud = () => {
+    if (speakingAt !== null) { stopSpeech(); setSpeakingAt(null); return }
+    const ss = sentences(t)
+    speakLines(ss.map(x => ['N', x.de]), { onLine: i => setSpeakingAt(i < 0 ? null : ss[i].id) })
+  }
+  const known = useMemo(() => (exam ? null : knownShare(t)), [t, exam, s.cards])
+  const glossRe = gloss && new RegExp(`(?<!\\p{L})(${esc(gloss)}\\p{L}*)`, 'giu')
+  const Sentence = ({ x }) => {
+    const parts = glossRe ? x.de.split(glossRe) : [x.de]
+    const body = parts.map((p, k) => (k % 2 ? html`<mark class="gl">${p}</mark>` : marks ? p.split(/([\p{L}ß]+)/u).map((w, j) => (j % 2 && known.unknown.has(w.toLowerCase()) ? html`<u class="unk">${w}</u>` : w)) : p))
+    return html`<span class=${`sent${lit.has(x.id) ? ' lit' : ''}${speakingAt === x.id ? ' now' : ''}${open.has(x.id) ? ' open' : ''}`}
+      onClick=${exam ? null : () => setOpen(o => { const n = new Set(o); n.has(x.id) ? n.delete(x.id) : n.add(x.id); return n })}>
+      <span lang="de">${body}</span>${open.has(x.id) ? html`<small class="sent-en">${x.en}</small>` : ''} </span>`
+  }
+  const block = b => {
+    const ss = b.s.map((p, k) => ({ id: `${b.id}.${k}`, de: p[0], en: p[1] }))
+    const inner = ss.map(x => html`<${Sentence} x=${x} />`)
+    return b.t === 'h' ? html`<h3 class="rb-h">${inner}</h3>`
+      : b.t === 'ad' || b.t === 'sign' || b.t === 'comment' ? html`<div class=${`rb-${b.t}`}>${b.label ? html`<span class="rb-label">${b.label}</span>` : ''}<p>${inner}</p></div>`
+      : b.t === 'list' ? html`<ul class="rb-list">${ss.map(x => html`<li><${Sentence} x=${x} /></li>`)}</ul>`
+      : html`<p class="rb-p">${inner}</p>`
+  }
+  if (!predicted) {
+    return html`<section class="guess predict" aria-label="Predict first">
+      <h3>Before you read: ${t.title}</h3><p class="quiet">${t.intro} Guess first: it gets your mind ready for the text.</p>
+      <p class="quiz-q">${t.predict.q}</p>
+      <div class="guess-opts">${t.predict.opts.map((o, j) => html`<button type="button" onClick=${() => setPredicted(j === t.predict.a ? 'right' : 'wrong')}>${o}</button>`)}</div>
+    </section>`
+  }
+  return html`<div class=${`reader${exam ? ' exam' : ''}`} ref=${ref}>
+    <article class="r-text">
+      <header class="r-head">
+        <span class="lb">Lesen ${t.part}</span><span class="r-type">${t.type}</span>
+        ${predicted === 'right' || predicted === 'wrong' ? html`<span class="quiet">${predicted === 'right' ? 'Your guess was right.' : 'Now read and see what it is about.'}</span>` : ''}
+        ${exam ? '' : html`<button type="button" class="r-aloud" onClick=${readAloud}><${Speaker} /> ${speakingAt !== null ? 'Stop' : 'Read it to me'}</button>`}
+      </header>
+      ${t.intro ? html`<p class="r-intro">${t.intro}</p>` : ''}
+      <div class="r-body">${t.blocks.map(block)}</div>
+      ${exam ? '' : html`<footer class="r-help">
+        ${known ? html`<p class="r-known"><b>You know ${pct(known.share)} of the words here.</b>${known.unknown.size ? html` <button type="button" class="linkish" onClick=${() => setMarks(m => !m)}>${marks ? 'Hide the marks' : `Mark the ${plural(known.unknown.size, 'word')} not learned yet`}</button>` : ''}</p>` : ''}
+        ${t.glossary?.length ? html`<div class="r-gloss"><b>Glossary</b>${t.glossary.map(g => html`<button type="button" class=${gloss === g.w ? 'on' : ''}
+          onClick=${() => setGloss(gloss === g.w ? null : g.w)}><span lang="de">${g.w}</span> <small>${g.en}</small></button>`)}</div>` : ''}
+        <p class="quiet">Tap a sentence to see it in English.</p>
+      </footer>`}
+    </article>
+    <section class="r-qs" aria-label="Questions">
+      <h3>${qs.length} questions</h3>
+      <ol class="eqs">${qs.map((q, k) => html`<${ExamQuestion} q=${q} k=${k} pick=${picks[k]} done=${done} onShow=${show}
+        onPick=${j => setPicks(p => ({ ...p, [k]: j }))} />`)}</ol>
+      ${!done ? html`<button type="button" class="btn" disabled=${!all} onClick=${check}>${all ? 'Check my answers' : `Answer all ${qs.length} questions`}</button>`
+        : html`<div class="r-result">
+          <span class=${`stamp ${score / qs.length >= .6 ? 'pass' : 'fail'}`}>${score / qs.length >= .6 ? 'Bestanden' : 'Noch nicht'}</span>
+          <p><b>${score} of ${qs.length}</b> right.${!exam && timing.first ? ` You read at about ${wpm(timing.first)} words per minute.` : ''}</p>
+          ${!exam ? html`<p class="r-again">${timing.againStart && !timing.again ? html`<button type="button" class="btn" onClick=${() => setTiming(x => ({ ...x, again: Date.now() - x.againStart }))}>Done reading <${Arrow} /></button>`
+            : timing.again ? html`Second read: <b>${wpm(timing.again)} words per minute</b> (first: ${wpm(timing.first)}). ${wpm(timing.again) > wpm(timing.first) ? 'Faster: that is fluency growing.' : ''}`
+            : html`<button type="button" onClick=${() => { setTiming(x => ({ ...x, againStart: Date.now() })); ref.current?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth' }) }}>Read it again against the clock</button>`}</p>` : ''}
+        </div>`}
+    </section>
+  </div>`
+}
+
+function ReadTab({ data, n }) {
+  useStore()
+  const ts = data.readingBy[n] ?? []
+  const [i, setI] = useState(0)
+  if (!ts.length) return html`<p class="soon">This station's reading texts are being written now: Goethe Lesen formats, with tap-to-translate.</p>`
+  const t = ts[Math.min(i, ts.length - 1)]
+  return html`<div class="read-tab">
+    <div class="text-picks" role="tablist" aria-label="Texts">${ts.map((x, k) => {
+      const best = S.practice[`r:${x.id}`]
+      return html`<button type="button" role="tab" aria-selected=${k === i} class=${k === i ? 'on' : ''} onClick=${() => setI(k)}>
+        <span class="lb">Lesen ${x.part}</span><b lang="de">${x.title}</b><small>${best !== undefined ? `best ${pct(best)}` : x.type}</small></button>`
+    })}</div>
+    <${Reader} key=${t.id} t=${t} />
+  </div>`
+}
+
+// ---- recording: MediaRecorder, and the browser's German speech recognition where it has one ----
+
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition
+// Records the microphone; where SpeechRecognition (de-DE) exists, also writes down what it heard. Audio never leaves
+// the browser.
+function useRecorder() {
+  const [st, setSt] = useState({ state: 'idle', url: null, heard: '', error: null })
+  const rec = useRef(null)
+  const start = async () => {
+    if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+      setSt(x => ({ ...x, state: 'idle', error: 'This browser cannot record. Use Chrome or Edge on this laptop.' }))
+      return false
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+      const mr = new MediaRecorder(stream), chunks = []
+      mr.ondataavailable = e => chunks.push(e.data)
+      mr.onstop = () => {
+        stream.getTracks().forEach(tr => tr.stop())
+        setSt(x => ({ ...x, state: 'done', url: URL.createObjectURL(new Blob(chunks, { type: mr.mimeType })) }))
+      }
+      let sr = null
+      if (SpeechRec) {
+        try {
+          sr = new SpeechRec()
+          sr.lang = 'de-DE'; sr.interimResults = true; sr.continuous = true
+          sr.onresult = e => setSt(x => ({ ...x, heard: [...e.results].map(r => r[0].transcript).join(' ') }))
+          sr.onerror = () => {}
+          sr.start()
+        } catch { sr = null }
+      }
+      rec.current = { mr, sr }
+      mr.start()
+      setSt({ state: 'rec', url: null, heard: '', error: null })
+      return true
+    } catch (e) {
+      setSt(x => ({ ...x, state: 'idle', error: e.name === 'NotAllowedError' ? 'The microphone is blocked. Allow it in the address bar (the lock icon), then try again.'
+        : e.name === 'NotFoundError' ? 'No microphone found. Plug in a headset or check Windows sound settings.' : `Recording failed (${e.message}).` }))
+      return false
+    }
+  }
+  const stop = () => { const r = rec.current; if (!r) return; try { r.sr?.stop() } catch {} if (r.mr.state !== 'inactive') r.mr.stop(); rec.current = null }
+  useEffect(() => () => stop(), [])
+  return { ...st, start, stop }
+}
+
+// Words of the target the recogniser heard, for a quick "did it come out right" check.
+const heardWords = (target, heard) => {
+  const h = new Set(tokens(heard.toLowerCase()))
+  return tokens(target).map(w => [w, h.has(w.toLowerCase())])
+}
+
+// Shadowing (L14): hear a line, say it straight after, then hear the voice and yourself back to back.
+function Shadow({ who, de }) {
+  const r = useRecorder()
+  const [phase, setPhase] = useState('ready')
+  const audio = useRef()
+  const go = () => {
+    setPhase('listen')
+    speakLines([[who, de]], { onEnd: async () => {
+      if (!(await r.start())) { setPhase('ready'); return }
+      setPhase('say')
+      setTimeout(() => { r.stop(); setPhase('compare') }, 1500 + tokens(de).length * 650)
+    } })
+  }
+  useEffect(() => {
+    if (phase !== 'compare' || !r.url) return
+    speakLines([[who, de]], { onEnd: () => audio.current?.play() })
+  }, [phase, r.url])
+  return html`<span class="shadow">
+    <button type="button" class="mini" onClick=${go} disabled=${phase === 'listen' || phase === 'say'}>
+      ${phase === 'listen' ? 'Listen…' : phase === 'say' ? html`<span class="rec-dot"></span> Say it now` : 'Shadow'}</button>
+    ${r.url ? html`<audio ref=${audio} src=${r.url} controls class="mini-audio"></audio>` : ''}
+    ${r.heard ? html`<span class="heard" lang="de">${heardWords(de, r.heard).map(([w, ok]) => html`<span class=${ok ? 'ok' : 'miss'}>${w}</span> `)}</span>` : ''}
+    ${r.error ? html`<span class="rec-err">${r.error}</span>` : ''}
+  </span>`
+}
+
+// ---- listening: the station's recordings in the Goethe Hören formats, read by German voices ----
+
+const WHO = { A: 'Woman', B: 'Man', N: 'Announcer' }
+function ListenItem({ it, exam, onDone }) {
+  const [plays, setPlays] = useState(0)
+  const [at, setAt] = useState(null)
+  const [slow, setSlow] = useState(false)
+  const [picks, setPicks] = useState({})
+  const [done, setDone] = useState(false)
+  const [lit, setLit] = useState(new Set())
+  useEffect(() => () => stopSpeech(), [])
+  const limit = it.once ? 1 : 2
+  const play = rate => {
+    if (at !== null) { stopSpeech(); setAt(null); return }
+    setPlays(p => p + 1)
+    speakLines(it.lines.map(l => [l.who, l.de]), { rate: rate ?? (slow ? .75 : undefined), onLine: i => setAt(i < 0 ? null : i) })
+  }
+  const qs = it.questions
+  const all = qs.every((_, k) => picks[k] !== undefined)
+  const score = qs.filter((q, k) => picks[k] === q.a).length
+  const check = () => { setDone(true); stopSpeech(); setAt(null); if (!exam) commit(x => { x.practice[`h:${it.id}`] = Math.max(x.practice[`h:${it.id}`] ?? 0, score / qs.length) }); onDone?.(score, qs.length) }
+  const speakers = [...new Set(it.lines.map(l => l.who))]
+  return html`<div class=${`listen${exam ? ' exam' : ''}`}>
+    <div class="l-stage">
+      <p class="l-setup"><span class="lb">Hören ${it.part}</span> ${it.setup}</p>
+      <div class="l-people" aria-hidden="true">${speakers.map(w => html`<span class=${`person p-${w}${at !== null && it.lines[at]?.who === w ? ' talking' : ''}`}>
+        <svg viewBox="0 0 40 40" width="44" height="44"><circle cx="20" cy="14" r="8" fill="currentColor" /><path d="M5 38c1-9 7-14 15-14s14 5 15 14z" fill="currentColor" /></svg>
+        <small>${WHO[w]}</small></span>`)}
+        <span class=${`wave${at !== null ? ' on' : ''}`}>${[1, 2, 3, 4, 5].map(k => html`<i style=${`--k:${k}`}></i>`)}</span>
+      </div>
+      <div class="l-controls">
+        <button type="button" class="btn big" onClick=${() => play()} disabled=${exam && plays >= limit && at === null}>
+          ${at !== null ? 'Stop' : plays ? 'Play again' : 'Play'}</button>
+        <span class="quiet">${exam ? `${plays} of ${limit} plays` : `Played ${plural(plays, 'time')}; the exam plays it ${it.once ? 'once' : 'twice'}.`}</span>
+        ${exam ? '' : html`<label class="check"><input type="checkbox" checked=${slow} onChange=${e => setSlow(e.target.checked)} /> Slower</label>`}
+      </div>
+    </div>
+    <section class="l-qs">
+      <ol class="eqs">${qs.map((q, k) => html`<${ExamQuestion} q=${q} k=${k} pick=${picks[k]} done=${done} onShow=${ev => setLit(new Set(ev))}
+        onPick=${j => setPicks(p => ({ ...p, [k]: j }))} />`)}</ol>
+      ${!done ? html`<button type="button" class="btn" disabled=${!all || !plays} onClick=${check}>${!plays ? 'Listen first' : all ? 'Check my answers' : 'Answer every question'}</button>`
+        : html`<div class="r-result"><p><b>${score} of ${qs.length}</b> right.</p>
+          ${exam ? '' : html`<button type="button" onClick=${() => play(1.1)}>Hear it again, faster</button>`}</div>`}
+    </section>
+    ${done && !exam ? html`<section class="transcript" aria-label="Transcript">
+      <h3>What was said</h3>
+      <ol>${it.lines.map((l, i) => html`<li class=${`${lit.has(i) || qs.some(q => q.ev?.includes(i)) ? 'ev' : ''}${at === i ? ' now' : ''}`}>
+        <span class=${`who p-${l.who}`}>${WHO[l.who]}</span>
+        <span class="t-de" lang="de">${l.de}</span><${SayButton} text=${l.de} label="this line" />
+        <small class="t-en">${l.en}</small><${Shadow} who=${l.who} de=${l.de} />
+      </li>`)}</ol>
+    </section>` : ''}
+  </div>`
+}
+
+function ListenTab({ data, n }) {
+  useStore()
+  const items = data.listeningBy[n] ?? []
+  const [i, setI] = useState(0)
+  if (!items.length) return html`<p class="soon">This station's recordings are being written now: Goethe Hören formats, read by German voices.</p>`
+  const it = items[Math.min(i, items.length - 1)]
+  return html`<div class="listen-tab">
+    <div class="text-picks" role="tablist" aria-label="Recordings">${items.map((x, k) => {
+      const best = S.practice[`h:${x.id}`]
+      return html`<button type="button" role="tab" aria-selected=${k === i} class=${k === i ? 'on' : ''} onClick=${() => { stopSpeech(); setI(k) }}>
+        <span class="lb">Hören ${x.part}</span><b>${x.setup.split(':')[0]}</b><small>${best !== undefined ? `best ${pct(best)}` : x.once ? 'played once' : 'played twice'}</small></button>`
+    })}</div>
+    <${ListenItem} key=${it.id} it=${it} />
+  </div>`
+}
+
 // ---- station tab: words ----
 
 function WordsTab({ data, n }) {
@@ -1630,7 +1960,8 @@ function Station({ data, n, tab }) {
         : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
     </div>
     <section class="tab-body" aria-label=${TAB_NAME[t]}>
-      ${t === 'words' ? html`<${WordsTab} data=${data} n=${n} />` : t === 'grammar' && data.grammarBy[n].length ? html`<${GrammarTab} data=${data} n=${n} />` : html`
+      ${t === 'words' ? html`<${WordsTab} data=${data} n=${n} />` : t === 'grammar' && data.grammarBy[n].length ? html`<${GrammarTab} data=${data} n=${n} />`
+        : t === 'read' ? html`<${ReadTab} data=${data} n=${n} />` : html`
         ${t === 'grammar' ? html`<ol class="glist">${st.grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>` : ''}
         <p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
     </section>
@@ -1680,7 +2011,7 @@ function useHash() {
   return hash
 }
 
-function prepare(levels, words, grammar, drills) {
+function prepare(levels, words, grammar, drills, reading, listening, writing, speaking, scenes, sounds) {
   const stations = [null]                // stations[n], n = 1…36 across the levels
   levels.forEach(lv => stations.push(...lv.stations))
   words.sort((a, b) => a.n - b.n)        // stable: a station's words keep their written order
@@ -1689,7 +2020,8 @@ function prepare(levels, words, grammar, drills) {
   const gq = {}
   drills.gq.forEach(q => (gq[q.g] ??= []).push(q))
   D = { levels, level: Object.fromEntries(levels.map(lv => [lv.level, lv])), stations, words, wordsBy: by(words), verbSet,
-    grammar, grammarBy: by(grammar), gq }
+    grammar, grammarBy: by(grammar), gq, vq: drills.vq ?? [], reading, readingBy: by(reading), listening, listeningBy: by(listening),
+    writing, writingBy: by(writing), speaking, speakingBy: by(speaking), scenes, sounds }
   return D
 }
 
@@ -1705,7 +2037,8 @@ function App() {
   const [error, setError] = useState(null)
   const hash = useHash()
   useEffect(() => {
-    Promise.all([getJson('syllabus'), getJson('words', []), getJson('grammar', []), getJson('drills', { gq: [] })])
+    Promise.all([getJson('syllabus'), getJson('words', []), getJson('grammar', []), getJson('drills', { gq: [], vq: [] }), getJson('reading', []),
+      getJson('listening', []), getJson('writing', []), getJson('speaking', []), getJson('scenes', []), getJson('sounds', [])])
       .then(args => setData(prepare(...args))).catch(e => setError(e.message))
     navigator.storage?.persist?.()
   }, [])

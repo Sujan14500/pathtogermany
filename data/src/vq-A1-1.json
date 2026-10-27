@@ -1,0 +1,1722 @@
+[
+ {
+  "type": "context",
+  "w": "Frage",
+  "station": 1,
+  "q": "Ich habe eine ___: Was bedeutet das Wort „Gruß“?",
+  "opts": [
+   "Entschuldigung",
+   "Antwort",
+   "Lösung",
+   "Frage"
+  ],
+  "a": 3,
+  "why": "A question is eine Frage, and a question follows the colon. Die Antwort is what you give back."
+ },
+ {
+  "type": "context",
+  "w": "buchstabieren",
+  "station": 1,
+  "q": "Mein Name ist Yilmaz. Ich ___ ihn: Y – I – L – M – A – Z.",
+  "opts": [
+   "buchstabiere",
+   "kenne",
+   "frage",
+   "verstehe"
+  ],
+  "a": 0,
+  "why": "buchstabieren = to spell, saying a word letter by letter, as Frau Yilmaz does here."
+ },
+ {
+  "type": "context",
+  "w": "woher",
+  "station": 1,
+  "q": "___ kommst du? – Aus Mexiko.",
+  "opts": [
+   "Wann",
+   "Wohin",
+   "Woher",
+   "Wo"
+  ],
+  "a": 2,
+  "why": "'Aus Mexiko' answers 'where from?': woher. Wohin asks 'where to?', wo asks 'where?'."
+ },
+ {
+  "type": "context",
+  "w": "neunzehn",
+  "station": 1,
+  "q": "Zehn und neun sind ___.",
+  "opts": [
+   "achtzehn",
+   "neunzehn",
+   "neunundzwanzig",
+   "neunzig"
+  ],
+  "a": 1,
+  "why": "10 + 9 = 19: neunzehn (nine + -zehn). Neunzig is 90, because -zig marks the tens."
+ },
+ {
+  "type": "synonym",
+  "w": "heißen",
+  "station": 1,
+  "q": "Guten Tag! Wie heißen Sie?",
+  "u": "Wie heißen Sie?",
+  "opts": [
+   "Woher kommen Sie?",
+   "Wo wohnen Sie?",
+   "Wie geht es Ihnen?",
+   "Wie ist Ihr Name?"
+  ],
+  "a": 3,
+  "why": "heißen = to be called, so 'Wie heißen Sie?' asks for your name, like 'Wie ist Ihr Name?'. 'Wie geht es Ihnen?' asks how you are."
+ },
+ {
+  "type": "synonym",
+  "w": "tschüss",
+  "station": 1,
+  "q": "Tschüss, Jonas! Bis morgen!",
+  "u": "Tschüss",
+  "opts": [
+   "Hallo",
+   "Entschuldigung",
+   "Guten Tag",
+   "Auf Wiedersehen"
+  ],
+  "a": 3,
+  "why": "Tschüss is the informal goodbye and Auf Wiedersehen the polite one. Hallo and Guten Tag are for meeting someone."
+ },
+ {
+  "type": "synonym",
+  "w": "Dank",
+  "station": 1,
+  "q": "Vielen Dank für die E-Mail!",
+  "u": "Vielen Dank",
+  "opts": [
+   "Wie bitte",
+   "Danke schön",
+   "Bitte schön",
+   "Viele Grüße"
+  ],
+  "a": 1,
+  "why": "Vielen Dank = many thanks, the same as Danke schön. Bitte schön is the reply ('you're welcome'), and Viele Grüße ends a letter."
+ },
+ {
+  "type": "usage",
+  "w": "fragen",
+  "station": 1,
+  "q": "fragen",
+  "opts": [
+   "Lena fragt: „Ja, das ist richtig.“",
+   "Wir fragen im Kurs Deutsch.",
+   "Ich frage dir eine Antwort.",
+   "Entschuldigung, kann ich Sie etwas fragen?"
+  ],
+  "a": 3,
+  "why": "fragen = to ask, and it takes the accusative: Ich frage Sie/dich. A language you sprechen, and 'Ja, das ist richtig' is an answer, not a question."
+ },
+ {
+  "type": "usage",
+  "w": "sehr",
+  "station": 1,
+  "q": "sehr",
+  "opts": [
+   "Ich habe sehr Fragen.",
+   "Ich trinke sehr Kaffee.",
+   "Jonas arbeitet sehr.",
+   "Mein Deutsch ist noch nicht sehr gut."
+  ],
+  "a": 3,
+  "why": "sehr (very) goes with adjectives: sehr gut. For 'a lot (of)' German says viel/viele: viele Fragen, er arbeitet viel, viel Kaffee."
+ },
+ {
+  "type": "usage",
+  "w": "wann",
+  "station": 1,
+  "q": "wann",
+  "opts": [
+   "Wann beginnt der Kurs? – Um neun Uhr.",
+   "Wann heißt du? – Priya.",
+   "Wann wohnst du? – In Berlin.",
+   "Wann kommst du? – Aus Indien."
+  ],
+  "a": 0,
+  "why": "wann asks when, and the answer is a time. Where from is woher, where is wo, and a name is asked with wie."
+ },
+ {
+  "type": "context",
+  "w": "Formular",
+  "station": 2,
+  "q": "Bitte füllen Sie das ___ aus und unterschreiben Sie unten.",
+  "opts": [
+   "Foto",
+   "Formular",
+   "Alter",
+   "Buch"
+  ],
+  "a": 1,
+  "why": "You fill in (ausfüllen) and sign (unterschreiben) a form: das Formular."
+ },
+ {
+  "type": "context",
+  "w": "verheiratet",
+  "station": 2,
+  "q": "Herr und Frau Weber sind ___. Sie haben 1998 geheiratet.",
+  "opts": [
+   "ledig",
+   "verheiratet",
+   "allein",
+   "Geschwister"
+  ],
+  "a": 1,
+  "why": "After the wedding (heiraten) you are verheiratet, married. Ledig means single."
+ },
+ {
+  "type": "context",
+  "w": "Sprache",
+  "station": 2,
+  "q": "Priya spricht drei ___: Hindi, Englisch und Deutsch.",
+  "opts": [
+   "Länder",
+   "Namen",
+   "Sprachen",
+   "Wörter"
+  ],
+  "a": 2,
+  "why": "Hindi, English and German are languages: die Sprache, plural Sprachen. Länder are countries."
+ },
+ {
+  "type": "synonym",
+  "w": "wohnen",
+  "station": 2,
+  "q": "Frau Yilmaz wohnt in Köln.",
+  "u": "wohnt",
+  "opts": [
+   "arbeitet",
+   "lernt",
+   "kommt",
+   "lebt"
+  ],
+  "a": 3,
+  "why": "wohnen and leben both mean to live somewhere. 'Sie kommt aus Köln' would say where she is from."
+ },
+ {
+  "type": "synonym",
+  "w": "ledig",
+  "station": 2,
+  "q": "Malte ist 30 und ledig.",
+  "u": "ledig",
+  "opts": [
+   "nicht verheiratet",
+   "nicht allein",
+   "nicht da",
+   "verheiratet"
+  ],
+  "a": 0,
+  "why": "ledig = single, not married. You see it on forms under Familienstand."
+ },
+ {
+  "type": "synonym",
+  "w": "tot",
+  "station": 2,
+  "q": "Mein Großvater ist leider schon tot.",
+  "u": "tot",
+  "opts": [
+   "gestorben",
+   "alt",
+   "allein",
+   "krank"
+  ],
+  "a": 0,
+  "why": "tot = dead, and 'er ist gestorben' (he has died) says the same thing."
+ },
+ {
+  "type": "synonym",
+  "w": "da",
+  "station": 2,
+  "q": "Ist Herr Weber heute da?",
+  "u": "da",
+  "opts": [
+   "müde",
+   "weg",
+   "fertig",
+   "hier"
+  ],
+  "a": 3,
+  "why": "Here da means present, here: 'Is Mr Weber in today?'. Weg is the opposite: away, gone."
+ },
+ {
+  "type": "usage",
+  "w": "kennen",
+  "station": 2,
+  "q": "kennen",
+  "opts": [
+   "Ich kenne gut Deutsch sprechen.",
+   "Kennst du, wie spät es ist?",
+   "Kennst du Lena? Sie wohnt hier.",
+   "Ich kenne, wo der Kurs ist."
+  ],
+  "a": 2,
+  "why": "kennen = to know a person, place or thing, followed by a noun. A fact (wo, wie, wann …) you wissen, and an ability is können."
+ },
+ {
+  "type": "usage",
+  "w": "studieren",
+  "station": 2,
+  "q": "studieren",
+  "opts": [
+   "Mein Sohn ist sechs und studiert in der Schule.",
+   "Priya studiert in München.",
+   "Ich studiere heute Abend die Wörter für den Test.",
+   "Wir studieren im Kurs Deutsch."
+  ],
+  "a": 1,
+  "why": "studieren is for university. Learning words, school subjects or a language in a course is lernen."
+ },
+ {
+  "type": "usage",
+  "w": "sprechen",
+  "station": 2,
+  "q": "sprechen",
+  "opts": [
+   "Bitte sprechen Sie mir Ihren Namen.",
+   "Lena spricht eine E-Mail an Jonas.",
+   "Ich spreche dich: Wie alt bist du?",
+   "Sprechen Sie Englisch?"
+  ],
+  "a": 3,
+  "why": "sprechen = to speak (a language) or to talk. Telling someone your name is sagen, asking is fragen, and an email you schreiben."
+ },
+ {
+  "type": "context",
+  "w": "Geschwister",
+  "station": 3,
+  "q": "Ich habe einen Bruder und eine Schwester, also zwei ___.",
+  "opts": [
+   "Großeltern",
+   "Geschwister",
+   "Kinder",
+   "Eltern"
+  ],
+  "a": 1,
+  "why": "Brothers and sisters together are Geschwister (siblings). Eltern are your parents."
+ },
+ {
+  "type": "context",
+  "w": "Beruf",
+  "station": 3,
+  "q": "Herr Weber arbeitet als Verkäufer. Das ist sein ___.",
+  "opts": [
+   "Kunde",
+   "Partner",
+   "Chef",
+   "Beruf"
+  ],
+  "a": 3,
+  "why": "Der Beruf is your job or profession: Verkäufer, Arzt, Koch …"
+ },
+ {
+  "type": "context",
+  "w": "verdienen",
+  "station": 3,
+  "q": "Lena arbeitet viel, aber sie ___ nicht viel Geld.",
+  "opts": [
+   "gewinnt",
+   "kostet",
+   "verdient",
+   "bezahlt"
+  ],
+  "a": 2,
+  "why": "verdienen = to earn money for your work. Gewinnen is to win (a game, the lottery)."
+ },
+ {
+  "type": "synonym",
+  "w": "Oma",
+  "station": 3,
+  "q": "Meine Oma ist 80 Jahre alt.",
+  "u": "Oma",
+  "opts": [
+   "Tochter",
+   "Schwester",
+   "Großmutter",
+   "Mutter"
+  ],
+  "a": 2,
+  "why": "Oma is the everyday word for Großmutter (grandmother); Opa is Großvater."
+ },
+ {
+  "type": "synonym",
+  "w": "Ehemann",
+  "station": 3,
+  "q": "Frau Yilmaz kommt mit ihrem Ehemann.",
+  "u": "Ehemann",
+  "opts": [
+   "Mann",
+   "Sohn",
+   "Vater",
+   "Bruder"
+  ],
+  "a": 0,
+  "why": "Ehemann = husband. In everyday German you simply say ihr Mann (her husband)."
+ },
+ {
+  "type": "synonym",
+  "w": "Job",
+  "station": 3,
+  "q": "Jonas sucht einen neuen Job.",
+  "u": "einen neuen Job",
+  "opts": [
+   "einen neuen Kollegen",
+   "einen neuen Verein",
+   "eine neue Stelle",
+   "einen neuen Kunden"
+  ],
+  "a": 2,
+  "why": "Job, Stelle and Arbeit all mean a job or position. Ein Kollege is a person you work with."
+ },
+ {
+  "type": "usage",
+  "w": "Leute",
+  "station": 3,
+  "q": "Leute",
+  "opts": [
+   "Ich habe zwei Leute: einen Sohn und eine Tochter.",
+   "Auf der Party sind viele Leute.",
+   "Lena ist eine nette Leute.",
+   "Die Leute ist sehr nett."
+  ],
+  "a": 1,
+  "why": "Leute (people) is always plural: viele Leute, die Leute sind … One person is ein Mensch, and your sons and daughters are Kinder."
+ },
+ {
+  "type": "usage",
+  "w": "kein",
+  "station": 3,
+  "q": "kein",
+  "opts": [
+   "Jonas arbeitet heute kein.",
+   "Das ist kein mein Hund.",
+   "Frau Yilmaz hat keine Geschwister.",
+   "Meine Schwester ist kein verheiratet."
+  ],
+  "a": 2,
+  "why": "kein negates a noun: keine Geschwister = no siblings. Verbs, adjectives and words like mein take nicht: arbeitet nicht, nicht verheiratet, nicht mein Hund."
+ },
+ {
+  "type": "usage",
+  "w": "heiraten",
+  "station": 3,
+  "q": "heiraten",
+  "opts": [
+   "Meine Eltern heiraten seit 30 Jahren.",
+   "Malte ist nicht heiratet.",
+   "Lena und Jonas heiraten im Mai.",
+   "Lena heiratet mit Jonas."
+  ],
+  "a": 2,
+  "why": "heiraten = to get married, the event. You marry someone without 'mit' (Lena heiratet Jonas); the state is verheiratet."
+ },
+ {
+  "type": "usage",
+  "w": "machen",
+  "station": 3,
+  "q": "machen",
+  "opts": [
+   "Malte macht heute 30 Jahre.",
+   "Meine Mutter macht Hausfrau.",
+   "Ich mache eine Frage.",
+   "Was machst du am Wochenende?"
+  ],
+  "a": 3,
+  "why": "machen = to do or make: Was machst du? But you ask a question (fragen), turn 30 (wird 30) and are a homemaker (ist Hausfrau)."
+ },
+ {
+  "type": "context",
+  "w": "Speisekarte",
+  "station": 4,
+  "q": "Können wir bitte die ___ haben? Wir möchten bestellen.",
+  "opts": [
+   "Speisekarte",
+   "Flasche",
+   "Rechnung",
+   "Kasse"
+  ],
+  "a": 0,
+  "why": "Before you order you read the menu: die Speisekarte. Die Rechnung (the bill) comes at the end."
+ },
+ {
+  "type": "context",
+  "w": "Durst",
+  "station": 4,
+  "q": "Ich habe ___. Ich möchte ein Glas Wasser.",
+  "opts": [
+   "Salat",
+   "Appetit",
+   "Durst",
+   "Hunger"
+  ],
+  "a": 2,
+  "why": "Durst haben = to be thirsty, so you want water. Hunger haben = to be hungry."
+ },
+ {
+  "type": "context",
+  "w": "schmecken",
+  "station": 4,
+  "q": "Mmh, der Fisch ___ sehr gut!",
+  "opts": [
+   "kocht",
+   "isst",
+   "trinkt",
+   "schmeckt"
+  ],
+  "a": 3,
+  "why": "schmecken = to taste: Der Fisch schmeckt gut. The fish itself does not eat or cook."
+ },
+ {
+  "type": "context",
+  "w": "Frühstück",
+  "station": 4,
+  "q": "Um sieben Uhr gibt es ___: Brötchen mit Butter und Kaffee.",
+  "opts": [
+   "Obst",
+   "Frühstück",
+   "Fleisch",
+   "Gemüse"
+  ],
+  "a": 1,
+  "why": "Rolls with butter and coffee at seven in the morning: that is breakfast, das Frühstück."
+ },
+ {
+  "type": "synonym",
+  "w": "zahlen",
+  "station": 4,
+  "q": "Entschuldigung, wir möchten zahlen!",
+  "u": "zahlen",
+  "opts": [
+   "essen",
+   "bestellen",
+   "bezahlen",
+   "nehmen"
+  ],
+  "a": 2,
+  "why": "zahlen and bezahlen both mean to pay. 'Zahlen, bitte!' is how you ask for the bill."
+ },
+ {
+  "type": "synonym",
+  "w": "Lokal",
+  "station": 4,
+  "q": "Das Lokal an der Ecke ist sehr gut.",
+  "u": "Lokal",
+  "opts": [
+   "Restaurant",
+   "Essen",
+   "Getränk",
+   "Obst"
+  ],
+  "a": 0,
+  "why": "Ein Lokal is a place to eat and drink, a restaurant or pub. It does not mean 'local'."
+ },
+ {
+  "type": "synonym",
+  "w": "nehmen",
+  "station": 4,
+  "q": "Ich nehme einen Tee, bitte.",
+  "u": "nehme",
+  "opts": [
+   "bringe",
+   "koche",
+   "möchte",
+   "bezahle"
+  ],
+  "a": 2,
+  "why": "When you order, 'Ich nehme …' means 'I'll have …', just like 'Ich möchte …'."
+ },
+ {
+  "type": "usage",
+  "w": "gern",
+  "station": 4,
+  "q": "gern",
+  "opts": [
+   "Ich gerne Fisch.",
+   "Ich esse gern Fisch.",
+   "Fisch ist mir gern.",
+   "Ich gern esse Fisch."
+  ],
+  "a": 1,
+  "why": "gern comes after the verb: Ich esse gern … = I like eating … Without a verb, say Ich mag Fisch."
+ },
+ {
+  "type": "usage",
+  "w": "mögen",
+  "station": 4,
+  "q": "mögen",
+  "opts": [
+   "Ich mag keinen Kaffee.",
+   "Ich mag bitte ein Glas Wasser.",
+   "Der Tee mag sehr gut.",
+   "Ich mag Hunger."
+  ],
+  "a": 0,
+  "why": "mögen = to like: Ich mag (keinen) Kaffee. To order politely say Ich möchte; food schmeckt gut; and hunger you haben."
+ },
+ {
+  "type": "usage",
+  "w": "Hunger",
+  "station": 4,
+  "q": "Hunger",
+  "opts": [
+   "Guten Hunger! Das Essen ist fertig.",
+   "Ich habe Hunger, ich möchte ein Glas Wasser.",
+   "Ich habe Hunger. Gibt es noch Brot?",
+   "Ich bin Hunger."
+  ],
+  "a": 2,
+  "why": "German has hunger: Ich habe Hunger. Wanting water is Durst, and before a meal you say Guten Appetit!"
+ },
+ {
+  "type": "context",
+  "w": "Kühlschrank",
+  "station": 5,
+  "q": "Die Milch ist kalt, denn sie steht im ___.",
+  "opts": [
+   "Schrank",
+   "Kühlschrank",
+   "Garten",
+   "Herd"
+  ],
+  "a": 1,
+  "why": "Der Kühlschrank (fridge) keeps food cold: kühl = cool + Schrank = cupboard."
+ },
+ {
+  "type": "context",
+  "w": "Miete",
+  "station": 5,
+  "q": "Die ___ für die Wohnung ist hoch: 900 Euro im Monat.",
+  "opts": [
+   "Treppe",
+   "Küche",
+   "Miete",
+   "Dusche"
+  ],
+  "a": 2,
+  "why": "Die Miete is the rent you pay every month for a flat."
+ },
+ {
+  "type": "context",
+  "w": "Aufzug",
+  "station": 5,
+  "q": "Wir wohnen im vierten Stock, aber zum Glück gibt es einen ___.",
+  "opts": [
+   "Ausgang",
+   "Garten",
+   "Aufzug",
+   "Balkon"
+  ],
+  "a": 2,
+  "why": "On the fourth floor you are glad of a lift: der Aufzug."
+ },
+ {
+  "type": "synonym",
+  "w": "Zimmer",
+  "station": 5,
+  "q": "Die Wohnung hat drei Zimmer.",
+  "u": "Zimmer",
+  "opts": [
+   "Räume",
+   "Bäder",
+   "Stühle",
+   "Häuser"
+  ],
+  "a": 0,
+  "why": "Zimmer and Räume both mean rooms. Flat adverts count them: 3 Zimmer."
+ },
+ {
+  "type": "synonym",
+  "w": "leise",
+  "station": 5,
+  "q": "Bitte sei leise, das Baby schläft!",
+  "u": "leise",
+  "opts": [
+   "laut",
+   "ruhig",
+   "neu",
+   "hell"
+  ],
+  "a": 1,
+  "why": "leise = quiet, not loud, and 'Sei ruhig!' also means 'Be quiet!'. Laut is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "Apartment",
+  "station": 5,
+  "q": "Priya sucht ein kleines Apartment.",
+  "u": "ein kleines Apartment",
+  "opts": [
+   "einen kleinen Garten",
+   "ein kleines Sofa",
+   "ein kleines Bad",
+   "eine kleine Wohnung"
+  ],
+  "a": 3,
+  "why": "Ein Apartment is a small flat: eine kleine Wohnung."
+ },
+ {
+  "type": "synonym",
+  "w": "daneben",
+  "station": 5,
+  "q": "Hier ist die Küche, und daneben ist das Bad.",
+  "u": "daneben",
+  "opts": [
+   "über der Küche",
+   "neben der Küche",
+   "in der Küche",
+   "unter der Küche"
+  ],
+  "a": 1,
+  "why": "daneben = next to it. Here 'it' is the kitchen, so daneben = neben der Küche."
+ },
+ {
+  "type": "usage",
+  "w": "stellen",
+  "station": 5,
+  "q": "stellen",
+  "opts": [
+   "Ich stelle die Flasche auf den Tisch.",
+   "Das Buch stellt auf dem Tisch.",
+   "Ich stelle mich ins Bett.",
+   "Die Lampe stellt in der Ecke."
+  ],
+  "a": 0,
+  "why": "stellen = to put something somewhere upright. Where a thing already is, it steht or liegt, and into bed you lie down: sich legen."
+ },
+ {
+  "type": "usage",
+  "w": "vermieten",
+  "station": 5,
+  "q": "vermieten",
+  "opts": [
+   "Herr Weber vermietet seine Wohnung an Priya.",
+   "Malte sucht eine Wohnung. Er möchte eine Wohnung vermieten.",
+   "Priya vermietet die Wohnung von Herrn Weber und wohnt jetzt dort.",
+   "Jeden Monat vermietet Priya 600 Euro an Herrn Weber."
+  ],
+  "a": 0,
+  "why": "vermieten = to rent out; the landlord (der Vermieter) does it. The person who lives there mietet the flat and pays die Miete."
+ },
+ {
+  "type": "usage",
+  "w": "laut",
+  "station": 5,
+  "q": "laut",
+  "opts": [
+   "Die Straße ist sehr laut, ich kann nicht schlafen.",
+   "Bitte sprich laut, das Baby schläft.",
+   "Das Zimmer ist laut: Es hat viel Licht.",
+   "Die Wohnung ist laut: 1000 Euro im Monat!"
+  ],
+  "a": 0,
+  "why": "laut = loud, noisy. A room with lots of light is hell, near a sleeping baby you speak leise, and 1000 euros is teuer."
+ },
+ {
+  "type": "context",
+  "w": "aufstehen",
+  "station": 6,
+  "q": "Am Sonntag schlafe ich lange und ___ erst um zehn Uhr auf.",
+  "opts": [
+   "rufe",
+   "mache",
+   "höre",
+   "stehe"
+  ],
+  "a": 3,
+  "why": "aufstehen = to get up. In a separable verb the 'auf' goes to the end: ich stehe … auf."
+ },
+ {
+  "type": "context",
+  "w": "Termin",
+  "station": 6,
+  "q": "Ich habe morgen um neun Uhr einen ___ beim Arzt.",
+  "opts": [
+   "Anruf",
+   "Mittag",
+   "Termin",
+   "Moment"
+  ],
+  "a": 2,
+  "why": "Der Termin is an appointment at a set time, for example at the doctor's."
+ },
+ {
+  "type": "context",
+  "w": "halb",
+  "station": 6,
+  "q": "7:30 Uhr – das ist ___ acht.",
+  "opts": [
+   "halb",
+   "um",
+   "bis",
+   "seit"
+  ],
+  "a": 0,
+  "why": "German counts the half hour towards the next hour: 7:30 = halb acht. Careful, it is not 'half eight' (8:30)!"
+ },
+ {
+  "type": "synonym",
+  "w": "sofort",
+  "station": 6,
+  "q": "Moment, ich komme sofort!",
+  "u": "sofort",
+  "opts": [
+   "morgen",
+   "später",
+   "nie",
+   "gleich"
+  ],
+  "a": 3,
+  "why": "sofort = immediately, and gleich = right away, in a moment. Später means later."
+ },
+ {
+  "type": "synonym",
+  "w": "zurzeit",
+  "station": 6,
+  "q": "Zurzeit arbeite ich in einem Café.",
+  "u": "Zurzeit",
+  "opts": [
+   "Früher",
+   "Bald",
+   "Im Moment",
+   "Immer"
+  ],
+  "a": 2,
+  "why": "zurzeit = at the moment, currently, like im Moment. Früher means in the past."
+ },
+ {
+  "type": "synonym",
+  "w": "Schluss",
+  "station": 6,
+  "q": "Am Schluss machen wir einen Test.",
+  "u": "Schluss",
+  "opts": [
+   "Ende",
+   "Anfang",
+   "Mittag",
+   "Montag"
+  ],
+  "a": 0,
+  "why": "der Schluss = das Ende, the end. Am Anfang is the opposite: at the beginning."
+ },
+ {
+  "type": "usage",
+  "w": "dauern",
+  "station": 6,
+  "q": "dauern",
+  "opts": [
+   "Bitte dauern Sie einen Moment.",
+   "Der Kurs dauert um neun Uhr.",
+   "Der Kurs dauert zwei Stunden.",
+   "Ich dauere zwei Stunden für die Hausaufgabe."
+  ],
+  "a": 2,
+  "why": "dauern = to last: a course or a film dauert two hours. A person braucht time, a start time is beginnt um, and 'please wait' is Bitte warten Sie."
+ },
+ {
+  "type": "usage",
+  "w": "seit",
+  "station": 6,
+  "q": "seit",
+  "opts": [
+   "Lena ist seit zwei Jahren nach Köln gekommen.",
+   "Ich arbeite seit acht bis fünf Uhr.",
+   "Ich mache seit morgen Urlaub.",
+   "Priya wohnt seit zwei Jahren in Köln."
+  ],
+  "a": 3,
+  "why": "seit = since, for: it started in the past and is still going on, so the verb is in the present. The future takes ab, a time span von … bis, and a finished event vor."
+ },
+ {
+  "type": "usage",
+  "w": "morgen",
+  "station": 6,
+  "q": "morgen",
+  "opts": [
+   "Bis morgen! Wir sehen uns um neun.",
+   "Guten morgen, Frau Yilmaz!",
+   "Ich war morgen beim Arzt.",
+   "Ich stehe jeden morgen um sechs auf."
+  ],
+  "a": 0,
+  "why": "morgen (small m) = tomorrow, so it never goes with war. Der Morgen (capital M) is the morning: Guten Morgen, jeden Morgen."
+ },
+ {
+  "type": "usage",
+  "w": "abholen",
+  "station": 6,
+  "q": "abholen",
+  "opts": [
+   "Der Film holt um zehn Uhr ab.",
+   "Kannst du bitte das Licht abholen?",
+   "Ich hole morgen früh um sechs Uhr ab.",
+   "Ich hole dich um acht Uhr vom Bahnhof ab."
+  ],
+  "a": 3,
+  "why": "abholen = to pick someone or something up. A light you ausmachen, a film hört auf, and getting out of bed is aufstehen."
+ },
+ {
+  "type": "context",
+  "w": "Kino",
+  "station": 7,
+  "q": "Heute Abend gehen wir ins ___ und sehen einen Film.",
+  "opts": [
+   "Restaurant",
+   "Kino",
+   "Café",
+   "Schwimmbad"
+  ],
+  "a": 1,
+  "why": "Films are shown in das Kino, the cinema."
+ },
+ {
+  "type": "context",
+  "w": "schwimmen",
+  "station": 7,
+  "q": "Malte geht jeden Montag ins Schwimmbad, denn er ___ gern.",
+  "opts": [
+   "schwimmt",
+   "wandert",
+   "tanzt",
+   "liest"
+  ],
+  "a": 0,
+  "why": "Im Schwimmbad (swimming pool) you schwimmen."
+ },
+ {
+  "type": "context",
+  "w": "Ausflug",
+  "station": 7,
+  "q": "Am Sonntag machen wir einen ___ an den See.",
+  "opts": [
+   "Text",
+   "Ausflug",
+   "Termin",
+   "Kurs"
+  ],
+  "a": 1,
+  "why": "einen Ausflug machen = to go on a trip, an outing."
+ },
+ {
+  "type": "context",
+  "w": "leider",
+  "station": 7,
+  "q": "Ich möchte gern mitkommen, aber ich habe ___ keine Zeit. Ich muss arbeiten.",
+  "opts": [
+   "klar",
+   "leider",
+   "vielleicht",
+   "gern"
+  ],
+  "a": 1,
+  "why": "leider = unfortunately: you would like to come but can't. Vielleicht (maybe) doesn't fit, because she knows she has to work."
+ },
+ {
+  "type": "synonym",
+  "w": "bedeuten",
+  "station": 7,
+  "q": "Was bedeutet das Wort „Lied“?",
+  "u": "bedeutet",
+  "opts": [
+   "spielt",
+   "kostet",
+   "schreibt",
+   "heißt"
+  ],
+  "a": 3,
+  "why": "'Was bedeutet …?' and 'Was heißt …?' both ask what a word means. (Lied = song.)"
+ },
+ {
+  "type": "synonym",
+  "w": "Karte",
+  "station": 7,
+  "q": "Ich habe zwei Karten für das Kino.",
+  "u": "Karten",
+  "opts": [
+   "Bücher",
+   "Zeitungen",
+   "Tickets",
+   "Lieder"
+  ],
+  "a": 2,
+  "why": "Here Karten are tickets (Kinokarten). Karte can also mean a card or a map."
+ },
+ {
+  "type": "synonym",
+  "w": "glauben",
+  "station": 7,
+  "q": "Ich glaube, Lena kommt heute nicht.",
+  "u": "glaube",
+  "opts": [
+   "höre",
+   "denke",
+   "frage",
+   "weiß"
+  ],
+  "a": 1,
+  "why": "Ich glaube … = Ich denke … (I think …). Ich weiß means you are sure."
+ },
+ {
+  "type": "usage",
+  "w": "spielen",
+  "station": 7,
+  "q": "spielen",
+  "opts": [
+   "Ich spiele heute Abend fern.",
+   "Jonas spielt am Samstag Fußball.",
+   "Lena spielt im Bett ein Buch.",
+   "Wir spielen im Park Fahrrad."
+  ],
+  "a": 1,
+  "why": "spielen = to play (a game, a sport, music). TV is fernsehen, a bike you fahren, and a book you lesen."
+ },
+ {
+  "type": "usage",
+  "w": "treffen",
+  "station": 7,
+  "q": "treffen",
+  "opts": [
+   "Auf der Party treffe ich Priya kennen.",
+   "Ich treffe heute einen Film im Kino.",
+   "Malte trifft gern Musik.",
+   "Ich treffe Lena um acht vor dem Kino."
+  ],
+  "a": 3,
+  "why": "treffen = to meet someone. A film you sehen, music you hören, and meeting someone for the first time is kennenlernen."
+ },
+ {
+  "type": "usage",
+  "w": "lustig",
+  "station": 7,
+  "q": "lustig",
+  "opts": [
+   "Ich bin lustig auf Pizza.",
+   "Die Prüfung ist lustig: Ich verstehe nichts.",
+   "Ich habe lustig, ins Kino zu gehen.",
+   "Der Film ist sehr lustig, wir lachen viel."
+  ],
+  "a": 3,
+  "why": "lustig = funny. Don't mix it up with Lust: 'Lust haben (auf)' = to feel like. A test you don't understand is schwer."
+ },
+ {
+  "type": "context",
+  "w": "teuer",
+  "station": 8,
+  "q": "500 Euro für eine Jacke? Das ist zu ___!",
+  "opts": [
+   "teuer",
+   "kurz",
+   "günstig",
+   "billig"
+  ],
+  "a": 0,
+  "why": "teuer = expensive: 500 euros for a jacket is a lot. Billig and günstig mean cheap."
+ },
+ {
+  "type": "context",
+  "w": "Größe",
+  "station": 8,
+  "q": "Die Schuhe sind zu klein. Haben Sie eine andere ___?",
+  "opts": [
+   "Jacke",
+   "Größe",
+   "Tasche",
+   "Farbe"
+  ],
+  "a": 1,
+  "why": "Shoes that are too small need another size: die Größe. Farbe is colour."
+ },
+ {
+  "type": "context",
+  "w": "bar",
+  "station": 8,
+  "q": "Zahlen Sie mit Karte oder ___?",
+  "opts": [
+   "gleich",
+   "teuer",
+   "billig",
+   "bar"
+  ],
+  "a": 3,
+  "why": "bar = in cash. 'Mit Karte oder bar?' is the standard question at the till."
+ },
+ {
+  "type": "synonym",
+  "w": "günstig",
+  "station": 8,
+  "q": "Die Schuhe sind im Moment sehr günstig.",
+  "u": "günstig",
+  "opts": [
+   "schön",
+   "teuer",
+   "billig",
+   "kaputt"
+  ],
+  "a": 2,
+  "why": "günstig = good value, cheap, like billig. Teuer is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "kriegen",
+  "station": 8,
+  "q": "Du kriegst das Geld morgen.",
+  "u": "kriegst",
+  "opts": [
+   "verkaufst",
+   "bezahlst",
+   "suchst",
+   "bekommst"
+  ],
+  "a": 3,
+  "why": "kriegen is the informal word for bekommen: to get, to receive. Careful, bekommen does not mean 'become'."
+ },
+ {
+  "type": "synonym",
+  "w": "Laden",
+  "station": 8,
+  "q": "Im Laden an der Ecke gibt es gutes Brot.",
+  "u": "Laden",
+  "opts": [
+   "Geschäft",
+   "Prospekt",
+   "Kino",
+   "Konto"
+  ],
+  "a": 0,
+  "why": "der Laden = das Geschäft, the shop."
+ },
+ {
+  "type": "synonym",
+  "w": "gefallen",
+  "station": 8,
+  "q": "Die Hose gefällt mir.",
+  "u": "gefällt mir",
+  "opts": [
+   "kaufe ich",
+   "passt mir",
+   "finde ich schön",
+   "brauche ich"
+  ],
+  "a": 2,
+  "why": "Das gefällt mir = I like it (how it looks), like 'Ich finde sie schön'. 'Sie passt mir' means it fits."
+ },
+ {
+  "type": "usage",
+  "w": "brauchen",
+  "station": 8,
+  "q": "brauchen",
+  "opts": [
+   "Können Sie mir bitte die Rechnung brauchen?",
+   "Ich brauche eine neue Jacke, meine ist kaputt.",
+   "Ich brauche um acht Uhr nach Hause gehen.",
+   "Die Tasche braucht 20 Euro."
+  ],
+  "a": 1,
+  "why": "brauchen = to need + a thing: Ich brauche eine Jacke. 'I have to go' is Ich muss gehen, a price kostet, and 'give me' is geben."
+ },
+ {
+  "type": "usage",
+  "w": "holen",
+  "station": 8,
+  "q": "holen",
+  "opts": [
+   "Wir holen im Supermarkt, die Preise sind gut.",
+   "Ich hole dir morgen eine E-Mail.",
+   "Ich hole schnell Milch aus dem Kühlschrank.",
+   "Kannst du den Brief zur Post holen?"
+  ],
+  "a": 2,
+  "why": "holen = to go and get, to fetch something back here. Taking it there is bringen, an email you schicken, and shopping is einkaufen."
+ },
+ {
+  "type": "usage",
+  "w": "geschlossen",
+  "station": 8,
+  "q": "geschlossen",
+  "opts": [
+   "Bitte geschlossen Sie die Tür.",
+   "Das Geschäft ist von 9 bis 18 Uhr geschlossen. Kommen Sie gern!",
+   "Am Sonntag ist das Geschäft geschlossen.",
+   "Der Laden ist geschlossen, wir können jetzt einkaufen."
+  ],
+  "a": 2,
+  "why": "geschlossen = closed: it describes a shop or a door. An instruction uses the verb (Schließen Sie die Tür), and a closed shop is one you can't shop in."
+ },
+ {
+  "type": "context",
+  "w": "Haltestelle",
+  "station": 9,
+  "q": "Wo ist die nächste ___? Ich möchte mit dem Bus fahren.",
+  "opts": [
+   "Autobahn",
+   "Haltestelle",
+   "Kreuzung",
+   "Ampel"
+  ],
+  "a": 1,
+  "why": "Buses stop at die Haltestelle (bus stop). Die Ampel is the traffic lights."
+ },
+ {
+  "type": "context",
+  "w": "geradeaus",
+  "station": 9,
+  "q": "Gehen Sie bis zur Ampel ___ und dann links.",
+  "opts": [
+   "draußen",
+   "geradeaus",
+   "weg",
+   "oben"
+  ],
+  "a": 1,
+  "why": "geradeaus = straight on, the classic direction next to links and rechts."
+ },
+ {
+  "type": "context",
+  "w": "Briefmarke",
+  "station": 9,
+  "q": "Ich möchte einen Brief nach Indien schicken. Ich brauche eine ___.",
+  "opts": [
+   "Auskunft",
+   "Fahrkarte",
+   "Straßenbahn",
+   "Briefmarke"
+  ],
+  "a": 3,
+  "why": "A letter needs a stamp: die Briefmarke (Brief + Marke)."
+ },
+ {
+  "type": "synonym",
+  "w": "Bahn",
+  "station": 9,
+  "q": "Ich fahre mit der Bahn nach Hamburg.",
+  "u": "der Bahn",
+  "opts": [
+   "dem Auto",
+   "dem Zug",
+   "dem Fahrrad",
+   "dem Taxi"
+  ],
+  "a": 1,
+  "why": "die Bahn = the train, the railway: mit der Bahn fahren = to go by train."
+ },
+ {
+  "type": "synonym",
+  "w": "Auskunft",
+  "station": 9,
+  "q": "Wo ist hier die Auskunft?",
+  "u": "Auskunft",
+  "opts": [
+   "Post",
+   "Information",
+   "Kreuzung",
+   "Haltestelle"
+  ],
+  "a": 1,
+  "why": "die Auskunft = the information desk, also called die Information."
+ },
+ {
+  "type": "synonym",
+  "w": "weg",
+  "station": 9,
+  "q": "Oh nein, mein Fahrrad ist weg!",
+  "u": "weg",
+  "opts": [
+   "sehr alt",
+   "zu langsam",
+   "kaputt",
+   "nicht mehr da"
+  ],
+  "a": 3,
+  "why": "weg = gone, away: not there any more."
+ },
+ {
+  "type": "usage",
+  "w": "warten",
+  "station": 9,
+  "q": "warten",
+  "opts": [
+   "Ich warte den Bus.",
+   "Wir warten schon 20 Minuten auf den Bus.",
+   "Warten Sie bitte geradeaus und dann links.",
+   "Am Sonntag warte ich meine Oma in Bonn."
+  ],
+  "a": 1,
+  "why": "warten = to wait, and you wait for something with auf: auf den Bus. 'Go straight on' is Gehen Sie, and visiting grandma is besuchen."
+ },
+ {
+  "type": "usage",
+  "w": "zu",
+  "station": 9,
+  "q": "zu",
+  "opts": [
+   "Ich wohne zu meinen Eltern.",
+   "Ich fahre morgen zu Berlin.",
+   "Wie komme ich zum Bahnhof?",
+   "Ich gehe jetzt zu Hause."
+  ],
+  "a": 2,
+  "why": "zu = to a place or a person: zum Bahnhof. Towns take nach (nach Berlin), at someone's home is bei, and going home is nach Hause (zu Hause = at home)."
+ },
+ {
+  "type": "usage",
+  "w": "Vorsicht",
+  "station": 9,
+  "q": "Vorsicht",
+  "opts": [
+   "Fahr bitte Vorsicht!",
+   "Vorsicht! Das Auto fährt sehr schnell.",
+   "Ich habe Vorsicht vor dem Hund.",
+   "Vorsicht, wie komme ich zum Bahnhof?"
+  ],
+  "a": 1,
+  "why": "Vorsicht! = Careful! Watch out! It is a noun: 'drive carefully' is vorsichtig fahren, being scared is Angst haben, and a polite question starts with Entschuldigung."
+ },
+ {
+  "type": "usage",
+  "w": "halten",
+  "station": 9,
+  "q": "halten",
+  "opts": [
+   "Der Bus hält vor dem Bahnhof.",
+   "Ich halte hier auf dich, bis du kommst.",
+   "Der Zug hält um acht Uhr ab.",
+   "Halten Sie bitte die zweite Straße links."
+  ],
+  "a": 0,
+  "why": "halten = to stop (a bus, a train) or to hold. Waiting for someone is warten auf, a train leaving is abfahren, and a street you nehmen."
+ },
+ {
+  "type": "context",
+  "w": "Apotheke",
+  "station": 10,
+  "q": "Die Tabletten bekommst du in der ___.",
+  "opts": [
+   "Bäckerei",
+   "Apotheke",
+   "Post",
+   "Polizei"
+  ],
+  "a": 1,
+  "why": "Medicine and tablets are sold in die Apotheke, the pharmacy."
+ },
+ {
+  "type": "context",
+  "w": "Fieber",
+  "station": 10,
+  "q": "Mein Kind ist krank. Es hat 39 Grad ___.",
+  "opts": [
+   "Fieber",
+   "Durst",
+   "Hunger",
+   "Schmerzen"
+  ],
+  "a": 0,
+  "why": "39 Grad Fieber = a temperature of 39 °C. Fieber is fever."
+ },
+ {
+  "type": "context",
+  "w": "müde",
+  "station": 10,
+  "q": "Ich habe nur vier Stunden geschlafen. Ich bin sehr ___.",
+  "opts": [
+   "müde",
+   "gesund",
+   "böse",
+   "zufrieden"
+  ],
+  "a": 0,
+  "why": "After little sleep you are müde, tired."
+ },
+ {
+  "type": "context",
+  "w": "Zahn",
+  "station": 10,
+  "q": "Ich muss zum Zahnarzt, mein ___ tut weh.",
+  "opts": [
+   "Zahn",
+   "Fuß",
+   "Arm",
+   "Bauch"
+  ],
+  "a": 0,
+  "why": "der Zahn = tooth, so a Zahnarzt is a dentist."
+ },
+ {
+  "type": "synonym",
+  "w": "Doktor",
+  "station": 10,
+  "q": "Ich muss heute zum Doktor.",
+  "u": "Doktor",
+  "opts": [
+   "Kunden",
+   "Chef",
+   "Kiosk",
+   "Arzt"
+  ],
+  "a": 3,
+  "why": "der Doktor = der Arzt, the doctor: zum Arzt gehen = to go to the doctor."
+ },
+ {
+  "type": "synonym",
+  "w": "fehlen",
+  "station": 10,
+  "q": "Was fehlt Ihnen denn?",
+  "u": "Was fehlt Ihnen",
+  "opts": [
+   "Was haben Sie",
+   "Was brauchen Sie",
+   "Wie heißen Sie",
+   "Was möchten Sie"
+  ],
+  "a": 0,
+  "why": "At the doctor's, 'Was fehlt Ihnen?' means 'What's wrong with you?', just like 'Was haben Sie?'."
+ },
+ {
+  "type": "synonym",
+  "w": "Ordnung",
+  "station": 10,
+  "q": "Ist alles in Ordnung?",
+  "u": "in Ordnung",
+  "opts": [
+   "okay",
+   "falsch",
+   "kaputt",
+   "krank"
+  ],
+  "a": 0,
+  "why": "in Ordnung = all right, OK: 'Is everything all right?'"
+ },
+ {
+  "type": "usage",
+  "w": "dürfen",
+  "station": 10,
+  "q": "dürfen",
+  "opts": [
+   "Ich darf einen Tee, bitte.",
+   "Du bist sehr krank, du darfst zum Arzt gehen!",
+   "Hier darf man nicht rauchen.",
+   "Ich darf gut schwimmen."
+  ],
+  "a": 2,
+  "why": "dürfen = to be allowed to: Hier darf man nicht rauchen. 'Have to' is müssen, an ability is können, and to order say Ich möchte."
+ },
+ {
+  "type": "usage",
+  "w": "weh",
+  "station": 10,
+  "q": "weh",
+  "opts": [
+   "Ich habe weh.",
+   "Mein Kopf ist weh.",
+   "Mein Bauch tut weh.",
+   "Ich tue weh im Bauch."
+  ],
+  "a": 2,
+  "why": "The body part does the hurting: Mein Bauch tut weh. Or say Ich habe Bauchschmerzen."
+ },
+ {
+  "type": "usage",
+  "w": "gesund",
+  "station": 10,
+  "q": "gesund",
+  "opts": [
+   "Obst und Gemüse sind gesund.",
+   "Ich habe wieder gesund.",
+   "Mein Bein ist gesund, es tut sehr weh.",
+   "„Hatschi!“ – „Gesund!“"
+  ],
+  "a": 0,
+  "why": "gesund = healthy, well: food is gesund, and so are you (Ich bin gesund). After a sneeze you say Gesundheit!"
+ },
+ {
+  "type": "context",
+  "w": "Gleis",
+  "station": 11,
+  "q": "Der Zug nach München fährt heute von ___ 7 ab.",
+  "opts": [
+   "Stock",
+   "Flughafen",
+   "Gleis",
+   "Zimmer"
+  ],
+  "a": 2,
+  "why": "Trains leave from a numbered platform: Gleis 7."
+ },
+ {
+  "type": "context",
+  "w": "Koffer",
+  "station": 11,
+  "q": "Für den Urlaub packe ich meinen ___.",
+  "opts": [
+   "Koffer",
+   "Flughafen",
+   "Bahnsteig",
+   "See"
+  ],
+  "a": 0,
+  "why": "der Koffer = suitcase, which you pack for a trip."
+ },
+ {
+  "type": "context",
+  "w": "Einzelzimmer",
+  "station": 11,
+  "q": "Ich reise allein. Ich möchte ein ___ für zwei Nächte.",
+  "opts": [
+   "Doppelzimmer",
+   "Einzelzimmer",
+   "Gepäck",
+   "Flugzeug"
+  ],
+  "a": 1,
+  "why": "Travelling alone you take a single room: das Einzelzimmer. Das Doppelzimmer is for two."
+ },
+ {
+  "type": "synonym",
+  "w": "Ticket",
+  "station": 11,
+  "q": "Hast du schon ein Ticket für den Zug?",
+  "u": "ein Ticket",
+  "opts": [
+   "eine Ansage",
+   "einen Koffer",
+   "ein Hotel",
+   "eine Fahrkarte"
+  ],
+  "a": 3,
+  "why": "ein Ticket = eine Fahrkarte, a ticket for the train or bus."
+ },
+ {
+  "type": "synonym",
+  "w": "Durchsage",
+  "station": 11,
+  "q": "Hast du die Durchsage gehört? Der Zug kommt später.",
+  "u": "Durchsage",
+  "opts": [
+   "Ankunft",
+   "Abfahrt",
+   "Reise",
+   "Ansage"
+  ],
+  "a": 3,
+  "why": "Durchsage and Ansage both mean an announcement over a loudspeaker, for example at the station."
+ },
+ {
+  "type": "synonym",
+  "w": "reisen",
+  "station": 11,
+  "q": "Im Sommer reisen wir nach Italien.",
+  "u": "reisen",
+  "opts": [
+   "fahren",
+   "wohnen",
+   "bleiben",
+   "arbeiten"
+  ],
+  "a": 0,
+  "why": "reisen = to travel, and nach Italien fahren means going there too."
+ },
+ {
+  "type": "synonym",
+  "w": "Rezeption",
+  "station": 11,
+  "q": "Bitte holen Sie Ihren Schlüssel an der Rezeption.",
+  "u": "Rezeption",
+  "opts": [
+   "Halbpension",
+   "Abfahrt",
+   "Haltestelle",
+   "Anmeldung"
+  ],
+  "a": 3,
+  "why": "die Rezeption is the hotel reception desk, also called die Anmeldung."
+ },
+ {
+  "type": "usage",
+  "w": "besichtigen",
+  "station": 11,
+  "q": "besichtigen",
+  "opts": [
+   "In Berlin besichtigen wir den Dom.",
+   "Ich besichtige gern Filme.",
+   "Am Sonntag besichtige ich meine Oma.",
+   "Wir besichtigen zwei Nächte im Hotel."
+  ],
+  "a": 0,
+  "why": "besichtigen = to visit a sight, to look round a place. People you besuchen, films you sehen, and nights in a hotel you übernachten."
+ },
+ {
+  "type": "usage",
+  "w": "aussteigen",
+  "station": 11,
+  "q": "aussteigen",
+  "opts": [
+   "Ich steige um sieben Uhr aus dem Bett aus.",
+   "Der Zug steigt um neun Uhr aus.",
+   "Bitte steigen Sie jetzt in den Bus aus.",
+   "Am Bahnhof steigen wir aus."
+  ],
+  "a": 3,
+  "why": "aussteigen = to get off or out (of a bus, train, car). Getting in is einsteigen, out of bed is aufstehen, and a train leaving is abfahren."
+ },
+ {
+  "type": "usage",
+  "w": "bleiben",
+  "station": 11,
+  "q": "bleiben",
+  "opts": [
+   "Im Hotel bleiben wir ein Doppelzimmer.",
+   "Morgen bleiben wir nach Spanien.",
+   "Ich bin krank und bleibe heute zu Hause.",
+   "Ich bleibe meinen Koffer im Hotel."
+  ],
+  "a": 2,
+  "why": "bleiben = to stay somewhere, and it takes no object. Leaving a case is lassen, going to Spain is fahren, and a room you buchen."
+ },
+ {
+  "type": "context",
+  "w": "Geburtstag",
+  "station": 12,
+  "q": "Herzlichen Glückwunsch zum ___!",
+  "opts": [
+   "Regen",
+   "Frühling",
+   "Geburtstag",
+   "Kuchen"
+  ],
+  "a": 2,
+  "why": "'Herzlichen Glückwunsch zum Geburtstag!' = Happy birthday!"
+ },
+ {
+  "type": "context",
+  "w": "regnen",
+  "station": 12,
+  "q": "Nimm eine Jacke mit, heute ___ es.",
+  "opts": [
+   "regnet",
+   "wird",
+   "scheint",
+   "feiert"
+  ],
+  "a": 0,
+  "why": "Es regnet = it is raining, so you need a jacket. Scheinen goes with the sun: Die Sonne scheint."
+ },
+ {
+  "type": "context",
+  "w": "einladen",
+  "station": 12,
+  "q": "Am Samstag habe ich Geburtstag. Ich möchte dich zu meiner Party ___.",
+  "opts": [
+   "einladen",
+   "absagen",
+   "feiern",
+   "gratulieren"
+  ],
+  "a": 0,
+  "why": "einladen = to invite: Ich lade dich zu meiner Party ein."
+ },
+ {
+  "type": "synonym",
+  "w": "Feier",
+  "station": 12,
+  "q": "Kommst du am Samstag zu meiner Feier?",
+  "u": "Feier",
+  "opts": [
+   "Prüfung",
+   "Party",
+   "Arbeit",
+   "Reise"
+  ],
+  "a": 1,
+  "why": "die Feier = a celebration, a party: die Party."
+ },
+ {
+  "type": "synonym",
+  "w": "gratulieren",
+  "station": 12,
+  "q": "Ich gratuliere dir zum Geburtstag!",
+  "u": "Ich gratuliere dir",
+  "opts": [
+   "Ich lade dich ein",
+   "Herzlichen Glückwunsch",
+   "Ich freue mich",
+   "Ich danke dir"
+  ],
+  "a": 1,
+  "why": "gratulieren = to congratulate, the same as saying Herzlichen Glückwunsch!"
+ },
+ {
+  "type": "synonym",
+  "w": "zusagen",
+  "station": 12,
+  "q": "Ich lade Lena zur Party ein, und sie sagt zu.",
+  "u": "sagt zu",
+  "opts": [
+   "sagt nichts",
+   "sagt ab",
+   "sagt ja",
+   "sagt nein"
+  ],
+  "a": 2,
+  "why": "zusagen = to accept an invitation, to say yes. Absagen is the opposite."
+ },
+ {
+  "type": "usage",
+  "w": "wissen",
+  "station": 12,
+  "q": "wissen",
+  "opts": [
+   "Ich weiß gut Deutsch.",
+   "Weißt du Berlin? Die Stadt ist schön.",
+   "Ich weiß Lena schon lange.",
+   "Weißt du, wann die Party beginnt?"
+  ],
+  "a": 3,
+  "why": "wissen = to know a fact (wann, wo, dass …). People and places you kennen, and a language you können or sprechen."
+ },
+ {
+  "type": "usage",
+  "w": "werden",
+  "station": 12,
+  "q": "werden",
+  "opts": [
+   "Morgen wird es Regen.",
+   "Ich werde ein Geschenk von meiner Oma.",
+   "Im Winter wird es kalt.",
+   "Wir werden am Samstag Lenas Geburtstag."
+  ],
+  "a": 2,
+  "why": "werden = to become, to get (kalt, alt, 30). Careful: getting a present is bekommen, rain is Es regnet, and a birthday you feiern."
+ },
+ {
+  "type": "usage",
+  "w": "sich freuen",
+  "station": 12,
+  "q": "sich freuen",
+  "opts": [
+   "Wir freuen uns die Party.",
+   "Ich freue dich auf die Party.",
+   "Ich freue auf die Ferien.",
+   "Ich freue mich auf die Ferien."
+  ],
+  "a": 3,
+  "why": "sich freuen auf = to look forward to. It needs the matching mich, dich, uns … (Ich freue mich), plus auf for the thing to come."
+ },
+ {
+  "type": "usage",
+  "w": "absagen",
+  "station": 12,
+  "q": "absagen",
+  "opts": [
+   "Ich sage dir zum Geburtstag ab.",
+   "Ich bin krank und muss die Party leider absagen.",
+   "Lena sagt ab: „Ja, ich komme gern!“",
+   "Der Zug sagt um neun Uhr ab."
+  ],
+  "a": 1,
+  "why": "absagen = to cancel, to say no (to a party, a meeting). Saying yes is zusagen, a train abfahren, and on a birthday you gratulieren."
+ }
+]

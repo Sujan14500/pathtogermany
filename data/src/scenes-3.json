@@ -1,0 +1,383 @@
+[
+ {
+  "id": "kueche",
+  "de": "Küche und Tisch",
+  "en": "Kitchen and table",
+  "stations": [
+   4,
+   5,
+   14
+  ],
+  "sky": "#FFF6E8",
+  "back": "<rect y=\"440\" width=\"1000\" height=\"180\" fill=\"#E6C69C\"/><g stroke=\"#D3AE80\" stroke-width=\"2\"><path d=\"M0 478 H1000 M0 524 H1000 M0 578 H1000\"/><path d=\"M120 440 V478 M380 440 V478 M640 440 V478 M900 440 V478 M240 478 V524 M520 478 V524 M780 478 V524 M60 524 V578 M330 524 V578 M600 524 V578 M870 524 V578 M190 578 V620 M460 578 V620 M730 578 V620\"/></g><rect y=\"432\" width=\"1000\" height=\"9\" fill=\"#EADBC6\"/><rect x=\"150\" y=\"214\" width=\"292\" height=\"108\" fill=\"#DCEDEF\"/><g stroke=\"#C3DCDF\" stroke-width=\"2\"><path d=\"M150 241 H442 M150 268 H442 M150 295 H442\"/><path d=\"M186 214 V322 M222 214 V322 M258 214 V322 M294 214 V322 M330 214 V322 M366 214 V322 M402 214 V322\"/></g><rect x=\"320\" y=\"334\" width=\"122\" height=\"99\" fill=\"#8DBFAE\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M381 340 V427\" stroke=\"#4A3F3A\" stroke-width=\"2\"/><circle cx=\"372\" cy=\"384\" r=\"3.5\" fill=\"#4A3F3A\"/><circle cx=\"390\" cy=\"384\" r=\"3.5\" fill=\"#4A3F3A\"/><rect x=\"146\" y=\"321\" width=\"300\" height=\"14\" rx=\"3\" fill=\"#C99A68\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M612 165 L708 165 L800 420 L520 420 Z\" fill=\"#FFE6A0\" opacity=\".28\"/>",
+  "objs": [
+   {
+    "w": "Kühlschrank",
+    "a": "der",
+    "at": [
+     22,
+     96
+    ],
+    "svg": "<rect x=\"0\" y=\"0\" width=\"128\" height=\"340\" rx=\"12\" fill=\"#EEF3F6\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M0 112 H128\" stroke=\"#4A3F3A\" stroke-width=\"2.5\"/><rect x=\"12\" y=\"10\" width=\"8\" height=\"320\" rx=\"4\" fill=\"#FFFFFF\" opacity=\".8\"/><rect x=\"104\" y=\"58\" width=\"9\" height=\"40\" rx=\"4.5\" fill=\"#9AA8B3\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"104\" y=\"124\" width=\"9\" height=\"70\" rx=\"4.5\" fill=\"#9AA8B3\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g transform=\"rotate(-5 46 176)\"><rect x=\"28\" y=\"152\" width=\"40\" height=\"46\" fill=\"#FFE38A\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M35 166 H61 M35 175 H58 M35 184 H52\" stroke=\"#C9A445\" stroke-width=\"2\"/></g><circle cx=\"48\" cy=\"150\" r=\"5\" fill=\"#E2574C\"/><circle cx=\"84\" cy=\"230\" r=\"9\" fill=\"#5BA8DD\"/><circle cx=\"76\" cy=\"260\" r=\"7\" fill=\"#7BC47F\"/><rect x=\"8\" y=\"340\" width=\"14\" height=\"5\" fill=\"#4A3F3A\"/><rect x=\"106\" y=\"340\" width=\"14\" height=\"5\" fill=\"#4A3F3A\"/>",
+    "tag": [
+     74,
+     -8
+    ]
+   },
+   {
+    "w": "Schrank",
+    "a": "der",
+    "at": [
+     150,
+     48
+    ],
+    "svg": "<rect x=\"0\" y=\"0\" width=\"290\" height=\"140\" rx=\"6\" fill=\"#8DBFAE\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"8\" y=\"8\" width=\"88\" height=\"124\" rx=\"4\" fill=\"#9ECCBC\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"101\" y=\"8\" width=\"88\" height=\"124\" rx=\"4\" fill=\"#9ECCBC\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"194\" y=\"8\" width=\"88\" height=\"124\" rx=\"4\" fill=\"#9ECCBC\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"86\" cy=\"110\" r=\"4\" fill=\"#4A3F3A\"/><circle cx=\"115\" cy=\"110\" r=\"4\" fill=\"#4A3F3A\"/><circle cx=\"208\" cy=\"110\" r=\"4\" fill=\"#4A3F3A\"/>",
+    "tag": [
+     145,
+     -4
+    ]
+   },
+   {
+    "w": "Herd",
+    "a": "der",
+    "at": [
+     160,
+     322
+    ],
+    "svg": "<rect x=\"0\" y=\"0\" width=\"160\" height=\"10\" rx=\"2\" fill=\"#3E434B\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"0\" y=\"10\" width=\"160\" height=\"108\" fill=\"#F2F4F6\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"0\" y=\"10\" width=\"160\" height=\"22\" fill=\"#DDE2E7\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"24\" cy=\"21\" r=\"5.5\" fill=\"#4E5560\"/><circle cx=\"52\" cy=\"21\" r=\"5.5\" fill=\"#4E5560\"/><circle cx=\"108\" cy=\"21\" r=\"5.5\" fill=\"#4E5560\"/><circle cx=\"136\" cy=\"21\" r=\"5.5\" fill=\"#4E5560\"/><rect x=\"70\" y=\"16\" width=\"20\" height=\"10\" rx=\"2\" fill=\"#2C3E50\"/><rect x=\"73\" y=\"18\" width=\"14\" height=\"6\" fill=\"#62D29A\"/><rect x=\"14\" y=\"40\" width=\"132\" height=\"70\" rx=\"7\" fill=\"#3F4650\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"30\" y=\"56\" width=\"100\" height=\"44\" rx=\"5\" fill=\"#F0A35E\"/><rect x=\"30\" y=\"56\" width=\"100\" height=\"44\" rx=\"5\" fill=\"#FFD9A0\" opacity=\".35\"/><rect x=\"30\" y=\"44\" width=\"100\" height=\"7\" rx=\"3.5\" fill=\"#C7CDD3\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     80,
+     172
+    ],
+    "pin": [
+     80,
+     82
+    ]
+   },
+   {
+    "w": "Topf",
+    "a": "der",
+    "at": [
+     180,
+     322
+    ],
+    "svg": "<g class=\"steam\" fill=\"none\" stroke=\"#AFC0CC\" stroke-width=\"4\" stroke-linecap=\"round\"><path d=\"M20 -76 q-7 -12.0 0 -24 q7 -12.0 0 -24\"/><path d=\"M44 -76 q7 -12.0 0 -24 q-7 -12.0 0 -24\"/></g><rect x=\"-13\" y=\"-38\" width=\"14\" height=\"7\" rx=\"3\" fill=\"#A8443A\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"63\" y=\"-38\" width=\"14\" height=\"7\" rx=\"3\" fill=\"#A8443A\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M0 -46 H64 V-6 Q64 0 58 0 H6 Q0 0 0 -6 Z\" fill=\"#D9584A\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M6 -40 V-8\" stroke=\"#F08A7E\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M-4 -46 Q32 -66 68 -46 Z\" fill=\"#E36B5D\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"26\" y=\"-66\" width=\"12\" height=\"8\" rx=\"3\" fill=\"#4E5560\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     32,
+     -136
+    ]
+   },
+   {
+    "w": "Pfanne",
+    "a": "die",
+    "at": [
+     252,
+     322
+    ],
+    "svg": "<rect x=\"64\" y=\"-15\" width=\"62\" height=\"8\" rx=\"4\" fill=\"#2E3238\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-2 -16 H70 L62 0 H6 Z\" fill=\"#3D4148\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><ellipse cx=\"34\" cy=\"-16\" rx=\"36\" ry=\"7\" fill=\"#2A2D33\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M18 -17 Q22 -24 34 -22 Q46 -24 48 -17 Q34 -12 18 -17 Z\" fill=\"#FFFFFF\"/><ellipse cx=\"34\" cy=\"-19\" rx=\"5\" ry=\"3\" fill=\"#F5B623\"/>",
+    "tag": [
+     48,
+     -60
+    ],
+    "pin": [
+     40,
+     -14
+    ]
+   },
+   {
+    "w": "Obst",
+    "a": "das",
+    "at": [
+     386,
+     322
+    ],
+    "svg": "<path d=\"M-24 -26 Q-30 -48 -8 -50 Q-2 -40 -14 -26 Z\" fill=\"#F4C842\" stroke=\"#4A3F3A\" stroke-width=\"1.8\"/><circle cx=\"14\" cy=\"-34\" r=\"13\" fill=\"#E2453B\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M14 -46 V-52\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M-6 -30 Q-12 -46 -2 -50 Q8 -46 4 -30 Z\" fill=\"#9CCB4A\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"24\" cy=\"-26\" r=\"5\" fill=\"#8D5BB5\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"32\" cy=\"-28\" r=\"5\" fill=\"#8D5BB5\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"28\" cy=\"-20\" r=\"5\" fill=\"#8D5BB5\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"36\" cy=\"-21\" r=\"5\" fill=\"#8D5BB5\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-40 -24 H40 Q38 2 0 3 Q-38 2 -40 -24 Z\" fill=\"#5B8DB8\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-30 -14 Q0 -8 30 -14\" fill=\"none\" stroke=\"#8FB7DA\" stroke-width=\"3\"/>",
+    "tag": [
+     -2,
+     -100
+    ],
+    "pin": [
+     0,
+     -36
+    ]
+   },
+   {
+    "w": "Fenster",
+    "a": "das",
+    "at": [
+     470,
+     46
+    ],
+    "svg": "<path d=\"M-28 -6 Q-8 90 -22 206 H6 Q-2 100 6 -6 Z\" fill=\"#F08A6E\" opacity=\".9\"/><path d=\"M208 -6 Q188 90 202 206 H174 Q182 100 174 -6 Z\" fill=\"#F08A6E\" opacity=\".9\"/><rect x=\"0\" y=\"0\" width=\"180\" height=\"190\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"12\" y=\"12\" width=\"156\" height=\"166\" fill=\"#BFE3F5\"/><path d=\"M12 150 Q60 118 110 138 Q140 128 168 136 V178 H12 Z\" fill=\"#9CCB7B\"/><rect x=\"122\" y=\"96\" width=\"8\" height=\"44\" fill=\"#8C6239\"/><circle cx=\"126\" cy=\"88\" r=\"24\" fill=\"#6DB36A\"/><circle cx=\"112\" cy=\"100\" r=\"15\" fill=\"#6DB36A\"/><g fill=\"#FFFFFF\"><ellipse cx=\"50\" cy=\"44\" rx=\"22\" ry=\"9\"/><ellipse cx=\"62\" cy=\"38\" rx=\"14\" ry=\"10\"/></g><path d=\"M90 12 V178 M12 95 H168\" stroke=\"#FFFFFF\" stroke-width=\"8\"/><path d=\"M90 12 V178 M12 95 H168\" stroke=\"#4A3F3A\" stroke-width=\"1.5\" opacity=\".4\"/><rect x=\"-12\" y=\"188\" width=\"204\" height=\"12\" rx=\"3\" fill=\"#F3E7D6\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M150 188 L146 172 H166 L162 188 Z\" fill=\"#D9774E\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M156 172 Q150 158 140 156 M156 172 Q158 152 168 148\" fill=\"none\" stroke=\"#5DA05A\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+    "tag": [
+     90,
+     -6
+    ]
+   },
+   {
+    "w": "Lampe",
+    "a": "die",
+    "at": [
+     660,
+     0
+    ],
+    "svg": "<path d=\"M0 0 V112\" stroke=\"#4A3F3A\" stroke-width=\"2.5\"/><rect x=\"-8\" y=\"104\" width=\"16\" height=\"12\" rx=\"3\" fill=\"#4E5560\"/><ellipse cx=\"0\" cy=\"160\" rx=\"14\" ry=\"9\" fill=\"#FFF3C4\"/><path d=\"M-18 114 H18 L48 160 H-48 Z\" fill=\"#E9A93E\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-12 122 L-30 152\" stroke=\"#F6CB7A\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+    "tag": [
+     110,
+     152
+    ]
+   },
+   {
+    "w": "Uhr",
+    "a": "die",
+    "at": [
+     900,
+     130
+    ],
+    "svg": "<circle r=\"44\" fill=\"#F2B84B\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle r=\"37\" fill=\"#FFFFFF\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"9\" fill=\"#4A3F3A\" transform=\"rotate(0)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(30)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(60)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"9\" fill=\"#4A3F3A\" transform=\"rotate(90)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(120)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(150)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"9\" fill=\"#4A3F3A\" transform=\"rotate(180)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(210)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(240)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"9\" fill=\"#4A3F3A\" transform=\"rotate(270)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(300)\"/><rect x=\"-1.5\" y=\"-36\" width=\"3\" height=\"5\" fill=\"#4A3F3A\" transform=\"rotate(330)\"/><path d=\"M0 0 L-14 -12\" stroke=\"#4A3F3A\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><path d=\"M0 0 L0 -27\" stroke=\"#4A3F3A\" stroke-width=\"3\" stroke-linecap=\"round\"/><g class=\"spin\"><circle r=\"37\" fill=\"none\"/><path d=\"M0 6 V-31\" stroke=\"#E2453B\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></g><circle r=\"3.5\" fill=\"#4A3F3A\"/>",
+    "tag": [
+     0,
+     -52
+    ]
+   },
+   {
+    "w": "Stuhl",
+    "a": "der",
+    "at": [
+     318,
+     380
+    ],
+    "svg": "<rect x=\"24\" y=\"96\" width=\"7\" height=\"118\" fill=\"#9A6234\"/><rect x=\"88\" y=\"104\" width=\"7\" height=\"104\" fill=\"#9A6234\"/><path d=\"M0 116 L74 116 L100 102 L26 102 Z\" fill=\"#E26D5A\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M0 116 H74 V126 H0 Z\" fill=\"#B85445\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M74 116 L100 102 V112 L74 126 Z\" fill=\"#B85445\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"2\" y=\"126\" width=\"9\" height=\"104\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"63\" y=\"126\" width=\"9\" height=\"104\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M2 116 V-4 Q2 -12 10 -16 L26 -24 Q32 -26 32 -18 V102\" fill=\"none\" stroke=\"#4A3F3A\" stroke-width=\"12\" stroke-linejoin=\"round\"/><path d=\"M2 116 V-4 Q2 -12 10 -16 L26 -24 Q32 -26 32 -18 V102\" fill=\"none\" stroke=\"#B97B43\" stroke-width=\"7\" stroke-linejoin=\"round\"/><path d=\"M5 14 L29 2 V20 L5 32 Z M5 50 L29 38 V56 L5 68 Z\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     -48,
+     172
+    ],
+    "pin": [
+     36,
+     110
+    ]
+   },
+   {
+    "w": "Tisch",
+    "a": "der",
+    "at": [
+     420,
+     380
+    ],
+    "svg": "<rect x=\"54\" y=\"120\" width=\"12\" height=\"74\" fill=\"#9A6234\"/><rect x=\"374\" y=\"120\" width=\"12\" height=\"74\" fill=\"#9A6234\"/><path d=\"M40 0 H400 L440 110 H0 Z\" fill=\"#D9A066\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M150 0 H290 L306 110 H134 Z\" fill=\"#F6E7C8\"/><path d=\"M150 0 H290 L306 110 H134 Z\" fill=\"none\" stroke=\"#E0C99B\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><rect x=\"0\" y=\"110\" width=\"440\" height=\"16\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"12\" y=\"126\" width=\"16\" height=\"104\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"412\" y=\"126\" width=\"16\" height=\"104\" fill=\"#B97B43\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     0,
+     218
+    ],
+    "pin": [
+     20,
+     126
+    ]
+   },
+   {
+    "w": "Flasche",
+    "a": "die",
+    "at": [
+     480,
+     404
+    ],
+    "svg": "<path d=\"M-15 -56 Q-15 -64 -7 -70 V-84 H7 V-70 Q15 -64 15 -56 V-4 Q15 0 11 0 H-11 Q-15 0 -15 -4 Z\" fill=\"#BFE6F4\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-13 -40 H13 V-4 Q13 -2 11 -2 H-11 Q-13 -2 -13 -4 Z\" fill=\"#7CC6E8\"/><rect x=\"-15\" y=\"-40\" width=\"30\" height=\"18\" fill=\"#FFFFFF\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-9 -31 q4.5 -5 9 0 t9 0\" fill=\"none\" stroke=\"#3E8FCB\" stroke-width=\"2.4\"/><rect x=\"-8\" y=\"-92\" width=\"16\" height=\"10\" rx=\"2\" fill=\"#3E8FCB\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"-9\" y=\"-62\" width=\"4\" height=\"18\" rx=\"2\" fill=\"#FFFFFF\" opacity=\".8\"/>",
+    "tag": [
+     20,
+     -114
+    ],
+    "pin": [
+     0,
+     -60
+    ]
+   },
+   {
+    "w": "Brot",
+    "a": "das",
+    "at": [
+     566,
+     404
+    ],
+    "svg": "<rect x=\"-48\" y=\"-8\" width=\"96\" height=\"10\" rx=\"5\" fill=\"#B5814F\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-40 -8 Q-44 -40 -4 -42 Q38 -42 40 -8 Z\" fill=\"#D99448\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-24 -30 l8 -8 M-8 -34 l8 -8 M8 -32 l8 -8\" stroke=\"#A9692C\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><path d=\"M30 -8 Q30 -24 40 -24 Q48 -24 48 -8 Z\" fill=\"#F7E1B5\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     0,
+     -56
+    ],
+    "pin": [
+     -2,
+     -26
+    ]
+   },
+   {
+    "w": "Käse",
+    "a": "der",
+    "at": [
+     646,
+     404
+    ],
+    "svg": "<path d=\"M-24 0 H22 V-20 L-24 -20 Z\" fill=\"#F2C437\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-24 -20 L22 -20 L4 -34 Z\" fill=\"#F9DD6C\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"-12\" cy=\"-10\" r=\"4\" fill=\"#DDA51D\"/><circle cx=\"4\" cy=\"-7\" r=\"3\" fill=\"#DDA51D\"/><circle cx=\"12\" cy=\"-14\" r=\"3.5\" fill=\"#DDA51D\"/>",
+    "tag": [
+     4,
+     -114
+    ],
+    "pin": [
+     0,
+     -18
+    ]
+   },
+   {
+    "w": "Ei",
+    "a": "das",
+    "at": [
+     700,
+     406
+    ],
+    "svg": "<ellipse cx=\"0\" cy=\"-36\" rx=\"12\" ry=\"16\" fill=\"#FFF8EC\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><ellipse cx=\"-4\" cy=\"-42\" rx=\"3\" ry=\"5\" fill=\"#FFFFFF\"/><path d=\"M-14 -28 Q-14 -10 -5 -8 H5 Q14 -10 14 -28 Z\" fill=\"#4C8FD6\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-5 -8 L-10 0 H10 L5 -8 Z\" fill=\"#4C8FD6\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     2,
+     -64
+    ],
+    "pin": [
+     0,
+     -40
+    ]
+   },
+   {
+    "w": "Milch",
+    "a": "die",
+    "at": [
+     744,
+     408
+    ],
+    "svg": "<path d=\"M14 -52 L24 -58 V-6 L14 0 Z\" fill=\"#B8D8F0\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-14 -52 L0 -66 L10 -72 L24 -58 L14 -52 Z\" fill=\"#DDEBF6\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><rect x=\"-14\" y=\"-52\" width=\"28\" height=\"52\" fill=\"#FFFFFF\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-14 -20 H14 V0 H-14 Z\" fill=\"#4C8FD6\"/><path d=\"M-14 -20 q7 -6 14 0 t14 0\" fill=\"#4C8FD6\"/><circle cx=\"0\" cy=\"-36\" r=\"6\" fill=\"#4C8FD6\"/>",
+    "tag": [
+     40,
+     -112
+    ],
+    "pin": [
+     0,
+     -40
+    ]
+   },
+   {
+    "w": "Kanne",
+    "a": "die",
+    "at": [
+     800,
+     412
+    ],
+    "svg": "<path d=\"M22 -50 Q44 -48 40 -24 Q38 -14 26 -12\" fill=\"none\" stroke=\"#4A3F3A\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M22 -50 Q44 -48 40 -24 Q38 -14 26 -12\" fill=\"none\" stroke=\"#4C7FAE\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><path d=\"M-20 -48 L-38 -66 L-34 -70 L-14 -58 Z\" fill=\"#4C7FAE\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-16 -62 H16 L26 -4 Q26 0 22 0 H-22 Q-26 0 -26 -4 Z\" fill=\"#5B8FC0\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-22 -24 H24\" stroke=\"#FFFFFF\" stroke-width=\"5\"/><path d=\"M-18 -62 Q0 -76 18 -62 Z\" fill=\"#4C7FAE\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"0\" cy=\"-74\" r=\"5\" fill=\"#4C7FAE\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-14 -54 L-20 -8\" stroke=\"#8DB8DE\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+    "tag": [
+     80,
+     -62
+    ],
+    "pin": [
+     24,
+     -46
+    ]
+   },
+   {
+    "w": "Glas",
+    "a": "das",
+    "at": [
+     508,
+     476
+    ],
+    "svg": "<path d=\"M-15 -46 H15 L12 0 H-12 Z\" fill=\"#E6F6FC\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M-13.6 -28 H13.6 L11.6 -2 H-11.6 Z\" fill=\"#8FD0EE\"/><path d=\"M-8 -40 L-6 -8\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M-15 -46 H15 L12 0 H-12 Z\" fill=\"none\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     -28,
+     76
+    ],
+    "pin": [
+     0,
+     -12
+    ]
+   },
+   {
+    "w": "Gabel",
+    "a": "die",
+    "at": [
+     562,
+     452
+    ],
+    "svg": "<g fill=\"#B8C2CC\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><rect x=\"-7\" y=\"-36.0\" width=\"2.4\" height=\"16\" rx=\"1.2\"/><rect x=\"-3.2\" y=\"-36.0\" width=\"2.4\" height=\"16\" rx=\"1.2\"/><rect x=\"0.8\" y=\"-36.0\" width=\"2.4\" height=\"16\" rx=\"1.2\"/><rect x=\"4.6\" y=\"-36.0\" width=\"2.4\" height=\"16\" rx=\"1.2\"/><path d=\"M-7.5 -22.0 H7.5 Q7.5 -10.0 2.2 -6.0 L2.8 30.0 Q3 36.0 0 36.0 Q-3 36.0 -2.8 30.0 L-2.2 -6.0 Q-7.5 -10.0 -7.5 -22.0 Z\"/></g>",
+    "tag": [
+     -2,
+     146
+    ],
+    "pin": [
+     0,
+     30
+    ]
+   },
+   {
+    "w": "Teller",
+    "a": "der",
+    "at": [
+     640,
+     458
+    ],
+    "svg": "<ellipse cx=\"0\" cy=\"0\" rx=\"64\" ry=\"26\" fill=\"#FFFFFF\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><ellipse cx=\"0\" cy=\"1\" rx=\"45\" ry=\"17\" fill=\"#EEF2F5\"/><ellipse cx=\"0\" cy=\"0\" rx=\"56\" ry=\"22\" fill=\"none\" stroke=\"#7FB2DE\" stroke-width=\"2.5\"/>",
+    "tag": [
+     0,
+     94
+    ],
+    "pin": [
+     -30,
+     14
+    ]
+   },
+   {
+    "w": "Messer",
+    "a": "das",
+    "at": [
+     722,
+     452
+    ],
+    "svg": "<path d=\"M-3 -36.0 Q5 -32.0 5 -20.0 L4 6 H-3 Z\" fill=\"#D5DCE2\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"-4\" y=\"5\" width=\"8.5\" height=\"31.0\" rx=\"4\" fill=\"#4E5560\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>",
+    "tag": [
+     -12,
+     146
+    ],
+    "pin": [
+     0,
+     30
+    ]
+   },
+   {
+    "w": "Löffel",
+    "a": "der",
+    "at": [
+     744,
+     452
+    ],
+    "svg": "<g fill=\"#B8C2CC\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><path d=\"M-2 -14.0 L-2.6 31.0 Q-2.6 36.0 0 36.0 Q2.6 36.0 2.6 31.0 L2 -14.0 Z\"/><ellipse cx=\"0\" cy=\"-24.0\" rx=\"8.5\" ry=\"12.5\"/></g><ellipse cx=\"-2\" cy=\"-27.0\" rx=\"3\" ry=\"5\" fill=\"#E6EBEF\"/>",
+    "tag": [
+     46,
+     100
+    ],
+    "pin": [
+     0,
+     30
+    ]
+   },
+   {
+    "w": "Tasse",
+    "a": "die",
+    "at": [
+     808,
+     474
+    ],
+    "svg": "<g class=\"steam\" fill=\"none\" stroke=\"#C4B5A6\" stroke-width=\"4\" stroke-linecap=\"round\"><path d=\"M-8 -42 q-7 -9.0 0 -18 q7 -9.0 0 -18\"/><path d=\"M10 -42 q7 -9.0 0 -18 q-7 -9.0 0 -18\"/></g><ellipse cx=\"0\" cy=\"0\" rx=\"36\" ry=\"10\" fill=\"#FFFFFF\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M18 -30 Q36 -30 32 -16 Q28 -8 16 -10\" fill=\"none\" stroke=\"#4A3F3A\" stroke-width=\"8\"/><path d=\"M18 -30 Q36 -30 32 -16 Q28 -8 16 -10\" fill=\"none\" stroke=\"#E2574C\" stroke-width=\"3.5\"/><path d=\"M-22 -38 H22 L18 -6 Q0 2 -18 -6 Z\" fill=\"#E2574C\" stroke=\"#4A3F3A\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><ellipse cx=\"0\" cy=\"-38\" rx=\"22\" ry=\"6\" fill=\"#7A4A2A\" stroke=\"#4A3F3A\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M-16 -28 L-13 -10\" stroke=\"#F49B90\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+    "tag": [
+     92,
+     124
+    ],
+    "pin": [
+     16,
+     0
+    ]
+   }
+  ]
+ }
+]

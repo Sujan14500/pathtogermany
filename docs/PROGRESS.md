@@ -44,6 +44,26 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
   L13 hear it again faster, L14 shadowing → Phase 5 (and L14 for the Speak model answers in Phase 6);
   L15 revisit stops, L16 cumulative station tests, L17 spaced mock exams → Phase 8.
 
+## Status at the end of 2026-10-28 (resume here)
+- Content done and validated: 3,163 words; 109 grammar points + 436 form-choice questions; 360 vocabulary questions
+  (vq, 120 per level); reading A1 24 + A2 24 (B1 16 of 24 so far); listening A1 48 + A2 48 + B1 42; writing 36 and
+  speaking 36 tasks (12 per level); 12 pronunciation sounds; picture scenes 2 of 10 (writers were still drawing).
+- Code: Phases 0–3 done. Reader (Phase 4: tap-to-translate, glossary, evidence, read-aloud, wpm, L11–L13) and
+  listening (Phase 5: multi-voice playback, transcript, shadowing L14) are written in app/main.js and pass the
+  smoke test, but have not been screenshot-reviewed with real texts yet; the Listen tab is not routed yet.
+- Agents still running when the user stopped: B1 reading (texts 17–24), scenes ×3, a code restructure (split
+  app/main.js and style.css into app/src/*.js and app/styles/*.css fragments with PAGES/TAB_VIEWS registries so
+  feature builders can work in parallel), and two German proofreaders (A1+A2, B1 words and grammar). If the session
+  was closed, check `git status` / `ls app/src`: finish or redo the restructure first, then relaunch whatever is
+  missing (briefs are in this session's history; docs/08-exam-formats.md and scripts/check_content.py define every
+  format).
+- Next (orchestrated, one Agent call per message): after the restructure, five feature builders in parallel —
+  (1) reading + listening finish (Phases 4–5), (2) writing + speaking (Phase 6), (3) picture scenes engine + pages
+  (Phase 7, with scripts/scene_preview.py), (4) practice tests, mock exams, station tests, L15–L17 (Phase 8),
+  (5) pronunciation page, drifting-word background, settings, README sources and licences (Phase 9). Then a
+  continuity pass over character facts (Priya: Mumbai vs Pune, her job), a full QA pass at 1366/1500 px light and
+  dark, and the final push.
+
 ## Notes for the next session
 - Screenshots and smoke tests: `scripts/shot.py` (see README). In Git Bash set `MSYS_NO_PATHCONV=1`, or the
   route `/` turns into a Windows path. Headless Chrome follows the Windows dark theme unless told otherwise;

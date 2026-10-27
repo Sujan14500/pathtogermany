@@ -1,0 +1,20 @@
+/* ---- station page ---- */
+
+.station .board { min-height: 0; }
+.station .board-name { font-size: clamp(2.2rem, 4.6vw, 4rem); }
+.station-bar {
+  position: sticky; top: var(--top); z-index: 10; display: flex; align-items: center; gap: 16px;
+  margin-top: 20px; background: var(--platform); border-bottom: 2px solid var(--rule);
+}
+.tabs { display: flex; gap: 2px; flex: 1; min-width: 0; }
+.tabs a {
+  padding: .7rem 1rem; margin-bottom: -2px; white-space: nowrap; text-decoration: none; color: var(--muted); font-weight: 600;
+  border-bottom: 4px solid transparent;
+}
+.tabs a:hover { color: var(--ink); }
+.tabs a.on { color: var(--ink); border-bottom-color: var(--line); }
+.station-bar > button { flex: none; padding: .35rem .8rem; font-size: .9rem; }
+.station-bar > .you { flex: none; font-size: .9rem; }
+.tab-body { padding-top: 24px; }
+.soon { max-width: 70ch; padding: 20px 22px; background: var(--panel); border-radius: 6px; border-left: 6px solid var(--line); }
+.glist { margin: 0 0 16px; padding-left: 1.4em; font: 600 1.35rem/1.5 var(--display); }

@@ -1,0 +1,4418 @@
+[
+ {
+  "id": "b1-h-01-1",
+  "station": 1,
+  "part": "Teil 1",
+  "setup": "A voicemail from the caretaker of a block of flats to a tenant.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag, hier spricht Brandt, der Hausmeister. Ich rufe wegen Ihrer Klingel an, die seit letzter Woche nicht mehr funktioniert.",
+    "en": "Good afternoon, this is Brandt, the caretaker. I'm calling about your doorbell, which hasn't worked since last week."
+   },
+   {
+    "who": "B",
+    "de": "Ich habe mir das Problem gestern angesehen. Es liegt nicht an der Klingel selbst, sondern an einem Kabel im Treppenhaus.",
+    "en": "I looked at the problem yesterday. It isn't the bell itself, it's a cable in the stairwell."
+   },
+   {
+    "who": "B",
+    "de": "Das Ersatzteil, das ich dafür brauche, kommt leider erst am Donnerstag.",
+    "en": "Unfortunately the spare part I need for it won't arrive until Thursday."
+   },
+   {
+    "who": "B",
+    "de": "Ich würde dann am Freitagvormittag vorbeikommen, so gegen zehn Uhr.",
+    "en": "So I would come round on Friday morning, at about ten o'clock."
+   },
+   {
+    "who": "B",
+    "de": "Sie müssen dafür nicht zu Hause sein, weil ich nur im Treppenhaus arbeite.",
+    "en": "You don't need to be at home for it, because I'll only be working in the stairwell."
+   },
+   {
+    "who": "B",
+    "de": "Bis dahin sagen Sie Ihren Gästen am besten, dass sie Sie kurz anrufen sollen, wenn sie unten vor der Tür stehen. Auf Wiederhören!",
+    "en": "Until then, it's best to tell your guests to give you a quick call when they're standing at the front door downstairs. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Klingel selbst muss ausgetauscht werden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The caretaker says the problem is not the bell itself but a cable in the stairwell."
+   },
+   {
+    "q": "Was soll die Mieterin bis Freitag tun?",
+    "format": "abc",
+    "opts": [
+     "am Freitag zu Hause bleiben",
+     "ihren Gästen sagen, dass sie anrufen sollen",
+     "das Ersatzteil im Büro abholen"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "Until the repair he advises her to tell guests to call when they are at the door. She does not need to be at home, and he gets the spare part himself."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-01-2",
+  "station": 1,
+  "part": "Teil 1",
+  "setup": "A voicemail from Frau Yilmaz to her neighbour Jonas.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Jonas, hier ist Frau Yilmaz von nebenan.",
+    "en": "Hello Jonas, this is Frau Yilmaz from next door."
+   },
+   {
+    "who": "A",
+    "de": "Sie wissen ja, dass ich ab Samstag zwei Wochen bei meiner Tochter in Hamburg bin.",
+    "en": "As you know, from Saturday I'll be at my daughter's in Hamburg for two weeks."
+   },
+   {
+    "who": "A",
+    "de": "Würden Sie in der Zeit vielleicht meine Blumen gießen? Zweimal pro Woche reicht völlig.",
+    "en": "Would you perhaps water my flowers during that time? Twice a week is quite enough."
+   },
+   {
+    "who": "A",
+    "de": "Den Schlüssel, den Sie dafür brauchen, gebe ich Ihnen am Freitagabend, wenn Sie Zeit haben.",
+    "en": "I'll give you the key you need for it on Friday evening, if you have time."
+   },
+   {
+    "who": "A",
+    "de": "Um meine Post müssen Sie sich nicht kümmern, die holt meine Nichte ab.",
+    "en": "You don't have to worry about my post; my niece will collect it."
+   },
+   {
+    "who": "A",
+    "de": "Ach ja, und meine Katze nehme ich natürlich mit. Rufen Sie mich doch bitte kurz zurück. Danke!",
+    "en": "Oh yes, and of course I'm taking my cat with me. Please give me a quick call back. Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Frau Yilmaz ist zwei Wochen nicht zu Hause.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "She will be at her daughter's in Hamburg for two weeks from Saturday."
+   },
+   {
+    "q": "Was soll Jonas machen?",
+    "format": "abc",
+    "opts": [
+     "die Blumen gießen",
+     "die Post aus dem Briefkasten holen",
+     "die Katze füttern"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "She asks him to water her flowers twice a week. Her niece collects the post and she takes the cat with her."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-01-3",
+  "station": 1,
+  "part": "Teil 1",
+  "setup": "A weekend tip on a local radio station.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt noch ein Tipp für das Wochenende.",
+    "en": "And now one more tip for the weekend."
+   },
+   {
+    "who": "N",
+    "de": "Am Samstag feiert das Viertel rund um den Rosenplatz sein erstes Nachbarschaftsfest.",
+    "en": "On Saturday the neighbourhood around Rosenplatz is holding its first neighbourhood party."
+   },
+   {
+    "who": "N",
+    "de": "Die Idee kam von einer Gruppe von Mietern, die sich mehr Kontakt zu ihren Nachbarn wünschen.",
+    "en": "The idea came from a group of tenants who would like more contact with their neighbours."
+   },
+   {
+    "who": "N",
+    "de": "Ab vierzehn Uhr gibt es Musik, einen Flohmarkt und Spiele für Kinder auf dem Spielplatz.",
+    "en": "From two o'clock there will be music, a flea market and games for children in the playground."
+   },
+   {
+    "who": "N",
+    "de": "Wer möchte, kann etwas zu essen mitbringen, zum Beispiel einen Salat oder einen Kuchen. Getränke werden verkauft.",
+    "en": "Anyone who wants to can bring something to eat, for example a salad or a cake. Drinks will be sold."
+   },
+   {
+    "who": "N",
+    "de": "Bei Regen findet das Fest im Gemeindehaus statt, das direkt neben der Kirche liegt.",
+    "en": "If it rains, the party will take place in the community hall, which is right next to the church."
+   },
+   {
+    "who": "N",
+    "de": "Der Eintritt ist frei.",
+    "en": "Entry is free."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Stadt hatte die Idee für das Fest.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "The idea came from a group of tenants, not from the town."
+   },
+   {
+    "q": "Was passiert, wenn es regnet?",
+    "format": "abc",
+    "opts": [
+     "Das Fest fällt aus.",
+     "Das Fest wird auf Sonntag verschoben.",
+     "Das Fest findet in einem Gebäude statt."
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "why": "If it rains, the party moves into the community hall next to the church. It is neither cancelled nor moved to Sunday."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-01-4",
+  "station": 1,
+  "part": "Teil 3",
+  "setup": "Lena and Jonas meet in a café and talk about Jonas's new flat-share.",
+  "once": true,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Jonas! Na, wie ist die neue Wohnung? Du bist doch letzte Woche umgezogen, oder?",
+    "en": "Hi Jonas! So, how's the new flat? You moved last week, didn't you?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, genau, am Samstag. Ich wohne jetzt in einer Wohngemeinschaft mit zwei anderen Leuten, ganz in der Nähe vom Park.",
+    "en": "Yes, that's right, on Saturday. I'm now living in a flat-share with two other people, right near the park."
+   },
+   {
+    "who": "A",
+    "de": "Und? Wie sind deine Mitbewohner?",
+    "en": "And? What are your flatmates like?"
+   },
+   {
+    "who": "B",
+    "de": "Sehr nett. Mit Sara, die Medizin studiert, verstehe ich mich super. Der andere, Paul, ist fast nie da, weil er meistens bei seiner Freundin wohnt.",
+    "en": "Very nice. I get on really well with Sara, who studies medicine. The other one, Paul, is hardly ever there, because he mostly stays at his girlfriend's."
+   },
+   {
+    "who": "A",
+    "de": "Das klingt doch gut. Und wie ist dein Zimmer?",
+    "en": "That sounds good. And what's your room like?"
+   },
+   {
+    "who": "B",
+    "de": "Kleiner als mein altes, aber dafür hat es einen Balkon. Und ich zahle jetzt nur noch dreihundertachtzig Euro Miete, fast hundert Euro weniger als vorher.",
+    "en": "Smaller than my old one, but it has a balcony. And I only pay three hundred and eighty euros rent now, almost a hundred euros less than before."
+   },
+   {
+    "who": "A",
+    "de": "Wow, das ist wirklich günstig. Gibt es auch Probleme?",
+    "en": "Wow, that's really cheap. Are there any problems?"
+   },
+   {
+    "who": "B",
+    "de": "Na ja, ein bisschen. Die Nachbarin, die unter uns wohnt, hat sich schon zweimal beschwert, weil es ihr zu laut war.",
+    "en": "Well, a bit. The neighbour who lives below us has already complained twice because it was too loud for her."
+   },
+   {
+    "who": "A",
+    "de": "Schon nach einer Woche? Was habt ihr denn gemacht?",
+    "en": "After just one week? What did you do?"
+   },
+   {
+    "who": "B",
+    "de": "Am ersten Abend haben wir eine kleine Einzugsparty gefeiert, und um elf hat sie dann geklingelt. Das kann ich ja noch verstehen.",
+    "en": "On the first evening we had a little house-warming party, and at eleven she rang the bell. I can understand that."
+   },
+   {
+    "who": "A",
+    "de": "Und das zweite Mal?",
+    "en": "And the second time?"
+   },
+   {
+    "who": "B",
+    "de": "Da habe ich morgens um sieben geduscht, und das war ihr zu laut. Das finde ich ehrlich gesagt übertrieben.",
+    "en": "That time I had a shower at seven in the morning, and that was too loud for her. To be honest, I think that's over the top."
+   },
+   {
+    "who": "A",
+    "de": "Hm, in alten Häusern hört man eben alles. Vielleicht solltest du einfach mal mit ihr reden. Wenn man sich kennt, ist vieles leichter.",
+    "en": "Hm, in old buildings you just hear everything. Maybe you should simply talk to her. When people know each other, a lot of things are easier."
+   },
+   {
+    "who": "B",
+    "de": "Ja, das hat Sara auch gesagt. Wir wollen sie am Wochenende zum Kaffee einladen.",
+    "en": "Yes, Sara said that too. We want to invite her round for coffee at the weekend."
+   },
+   {
+    "who": "A",
+    "de": "Gute Idee! Und habt ihr auch einen Putzplan?",
+    "en": "Good idea! And do you have a cleaning rota as well?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, den hat Sara gemacht. Jeder ist eine Woche für die Küche und das Bad zuständig, und diese Woche bin ich dran.",
+    "en": "Yes, Sara made it. Everyone is responsible for the kitchen and bathroom for a week, and this week it's my turn."
+   },
+   {
+    "who": "A",
+    "de": "Oje. Dann viel Spaß beim Putzen!",
+    "en": "Oh dear. Have fun cleaning, then!"
+   },
+   {
+    "who": "B",
+    "de": "Danke. Aber sag mal, hilfst du mir am Samstag, ein Regal aufzubauen? Ich habe überhaupt kein Werkzeug.",
+    "en": "Thanks. But tell me, will you help me put up a shelf on Saturday? I don't have any tools at all."
+   },
+   {
+    "who": "A",
+    "de": "Klar, ich bringe meinen Werkzeugkasten mit.",
+    "en": "Sure, I'll bring my toolbox."
+   },
+   {
+    "who": "B",
+    "de": "Super, danke! Dann koche ich für uns.",
+    "en": "Great, thanks! Then I'll cook for us."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Jonas wohnt seit ungefähr einer Woche in der Wohngemeinschaft.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1,
+     8
+    ],
+    "why": "He moved in last Saturday, and Lena says 'Schon nach einer Woche?'."
+   },
+   {
+    "q": "Paul verbringt viel Zeit in der Wohnung.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Paul is hardly ever there, because he mostly stays at his girlfriend's."
+   },
+   {
+    "q": "Jonas bezahlt jetzt weniger Miete als vorher.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "He pays 380 euros now, almost a hundred euros less than before."
+   },
+   {
+    "q": "Jonas findet beide Beschwerden der Nachbarin berechtigt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     9,
+     11
+    ],
+    "why": "He understands the complaint about the party, but thinks the one about his morning shower is over the top."
+   },
+   {
+    "q": "Lena rät Jonas, mit der Nachbarin zu sprechen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     12
+    ],
+    "why": "She suggests he should simply talk to her."
+   },
+   {
+    "q": "Paul hat den Putzplan gemacht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     15
+    ],
+    "why": "Sara made the cleaning rota."
+   },
+   {
+    "q": "Lena hilft Jonas am Samstag, ein Möbelstück aufzubauen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     17,
+     18
+    ],
+    "why": "Jonas asks her to help put up a shelf on Saturday, and she agrees to bring her toolbox."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-02-1",
+  "station": 2,
+  "part": "Teil 1",
+  "setup": "A voicemail from Malte to his colleague Lena.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Lena, hier ist Malte. Ich bin gerade noch beim Kunden in Bremen, deshalb rufe ich nur kurz an.",
+    "en": "Hi Lena, it's Malte. I'm still at the client's in Bremen, so I'm just calling quickly."
+   },
+   {
+    "who": "B",
+    "de": "Die Besprechung, die morgen um neun stattfinden sollte, wird auf Donnerstag verschoben.",
+    "en": "The meeting that was supposed to take place tomorrow at nine is being moved to Thursday."
+   },
+   {
+    "who": "B",
+    "de": "Herr Fischer ist nämlich krank, und ohne ihn macht das keinen Sinn.",
+    "en": "You see, Herr Fischer is ill, and without him there's no point."
+   },
+   {
+    "who": "B",
+    "de": "Kannst du bitte einen Raum für Donnerstag um zehn reservieren? Der große Raum im zweiten Stock wäre am besten.",
+    "en": "Could you please book a room for Thursday at ten? The big room on the second floor would be best."
+   },
+   {
+    "who": "B",
+    "de": "Die Unterlagen schicke ich dir heute Abend per Mail. Die müssen bis Donnerstag noch kopiert werden.",
+    "en": "I'll send you the documents by email this evening. They still need to be copied by Thursday."
+   },
+   {
+    "who": "B",
+    "de": "Danke dir, bis morgen!",
+    "en": "Thanks, see you tomorrow!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Besprechung findet morgen statt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The meeting planned for tomorrow at nine is being moved to Thursday."
+   },
+   {
+    "q": "Was soll Lena tun?",
+    "format": "abc",
+    "opts": [
+     "einen Raum reservieren",
+     "Herrn Fischer anrufen",
+     "die Unterlagen per Mail schicken"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Malte asks her to book a room for Thursday at ten. Herr Fischer is only mentioned as ill, and Malte himself sends the documents."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-02-2",
+  "station": 2,
+  "part": "Teil 1",
+  "setup": "An announcement over the loudspeakers in a factory.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Kolleginnen und Kollegen, hier eine Information der Betriebsleitung.",
+    "en": "Dear colleagues, here is some information from the management."
+   },
+   {
+    "who": "N",
+    "de": "Ab nächstem Montag wird die Kantine renoviert und bleibt drei Wochen geschlossen.",
+    "en": "From next Monday the canteen is being renovated and will stay closed for three weeks."
+   },
+   {
+    "who": "N",
+    "de": "In dieser Zeit wird das Mittagessen in einem Zelt auf dem Parkplatz hinter Halle zwei ausgegeben.",
+    "en": "During this time lunch will be served in a tent in the car park behind Hall 2."
+   },
+   {
+    "who": "N",
+    "de": "Das Essen wird wie immer von zwölf bis vierzehn Uhr angeboten, es gibt aber nur zwei Gerichte zur Auswahl.",
+    "en": "Food will be served from twelve to two as usual, but there will only be two dishes to choose from."
+   },
+   {
+    "who": "N",
+    "de": "Kaffee und andere Getränke bekommen Sie in dieser Zeit am Automaten im Eingangsbereich.",
+    "en": "During this time you can get coffee and other drinks from the machine in the entrance area."
+   },
+   {
+    "who": "N",
+    "de": "Wir bitten um Ihr Verständnis.",
+    "en": "Thank you for your understanding."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Kantine ist drei Wochen lang zu.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "From next Monday the canteen is renovated and stays closed for three weeks."
+   },
+   {
+    "q": "Wo gibt es in dieser Zeit Mittagessen?",
+    "format": "abc",
+    "opts": [
+     "im Eingangsbereich",
+     "in Halle zwei",
+     "auf dem Parkplatz"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "why": "Lunch is served in a tent in the car park behind Hall 2. The entrance area only has the drinks machine."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-02-3",
+  "station": 2,
+  "part": "Teil 1",
+  "setup": "A voicemail from a company's HR department to a job applicant.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Novak, hier spricht Sandra Krüger von der Personalabteilung der Firma Hofmann Logistik.",
+    "en": "Good afternoon, Herr Novak, this is Sandra Krüger from the HR department of Hofmann Logistik."
+   },
+   {
+    "who": "A",
+    "de": "Vielen Dank für Ihre Bewerbung als Mitarbeiter in unserem Lager. Wir möchten Sie gern zu einem Vorstellungsgespräch einladen.",
+    "en": "Thank you for your application for a job in our warehouse. We would like to invite you to an interview."
+   },
+   {
+    "who": "A",
+    "de": "Wäre Ihnen Dienstag, der vierzehnte, um halb elf recht?",
+    "en": "Would Tuesday the fourteenth at half past ten suit you?"
+   },
+   {
+    "who": "A",
+    "de": "Das Gespräch dauert ungefähr eine Stunde. Danach zeigt Ihnen unser Lagerleiter noch den Betrieb.",
+    "en": "The interview takes about an hour. After that our warehouse manager will show you round the company."
+   },
+   {
+    "who": "A",
+    "de": "Bitte bringen Sie Ihre Zeugnisse im Original mit, die Kopien haben wir ja schon.",
+    "en": "Please bring the originals of your certificates; we already have the copies."
+   },
+   {
+    "who": "A",
+    "de": "Bitte rufen Sie mich bis sechzehn Uhr kurz zurück, ob der Termin passt.",
+    "en": "Please call me back briefly before four o'clock to say whether the appointment suits you."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Herr Novak soll Kopien seiner Zeugnisse mitbringen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "He should bring the originals; the company already has the copies."
+   },
+   {
+    "q": "Was passiert nach dem Gespräch?",
+    "format": "abc",
+    "opts": [
+     "Herr Novak bekommt den Arbeitsvertrag.",
+     "Herr Novak lernt den Betrieb kennen.",
+     "Herr Novak macht einen Test am Computer."
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "After the interview the warehouse manager shows him round the company. Nothing is said about a contract or a test."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-02-4",
+  "station": 2,
+  "part": "Teil 2",
+  "setup": "A guided tour of a large bakery, given by its production manager.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Morgen und herzlich willkommen bei der Großbäckerei Sonnenkorn, ich bin Peter Lorenz und leite hier die Produktion.",
+    "en": "Good morning and welcome to the Sonnenkorn bakery; I'm Peter Lorenz and I run production here."
+   },
+   {
+    "who": "N",
+    "de": "Unsere Führung dauert ungefähr eine Stunde, und am Ende dürfen Sie in unserem Laden natürlich auch probieren.",
+    "en": "Our tour takes about an hour, and at the end you can of course try things in our shop."
+   },
+   {
+    "who": "N",
+    "de": "Bevor wir in die Halle gehen, ziehen Sie bitte diese weißen Mäntel und Hauben an, das ist aus hygienischen Gründen Vorschrift.",
+    "en": "Before we go into the hall, please put on these white coats and caps; that's a rule for reasons of hygiene."
+   },
+   {
+    "who": "N",
+    "de": "Fotografieren Sie in der Produktion bitte nicht, denn unsere Rezepte sind ein kleines Geheimnis.",
+    "en": "Please don't take photos in the production area, because our recipes are a little secret."
+   },
+   {
+    "who": "N",
+    "de": "Die Firma wurde neunzehnhundertachtundfünfzig von meinem Großvater gegründet, damals als kleine Bäckerei mit drei Mitarbeitern.",
+    "en": "The company was founded in 1958 by my grandfather, back then as a small bakery with three employees."
+   },
+   {
+    "who": "N",
+    "de": "Heute arbeiten hier hundertvierzig Menschen, die meisten im Schichtdienst.",
+    "en": "Today a hundred and forty people work here, most of them in shifts."
+   },
+   {
+    "who": "N",
+    "de": "So, wir sind jetzt in der Produktionshalle, wo jede Nacht ab zweiundzwanzig Uhr der Teig gemacht wird.",
+    "en": "Right, we're now in the production hall, where the dough is made every night from ten o'clock."
+   },
+   {
+    "who": "N",
+    "de": "Das Mehl wird jeden Morgen von einer Mühle hier aus der Region geliefert.",
+    "en": "The flour is delivered every morning by a mill here in the region."
+   },
+   {
+    "who": "N",
+    "de": "Viele Arbeitsschritte werden heute von Maschinen erledigt, aber die Brezeln werden immer noch von Hand geformt.",
+    "en": "Many steps are done by machines today, but the pretzels are still shaped by hand."
+   },
+   {
+    "who": "N",
+    "de": "Dafür braucht man viel Erfahrung: Neue Kolleginnen und Kollegen brauchen ungefähr drei Monate, bis sie es richtig gut können.",
+    "en": "That takes a lot of experience: new colleagues need about three months until they can do it really well."
+   },
+   {
+    "who": "N",
+    "de": "Hier links sehen Sie unsere Öfen, in denen pro Nacht etwa zwanzigtausend Brötchen gebacken werden.",
+    "en": "Here on the left you can see our ovens, in which about twenty thousand bread rolls are baked every night."
+   },
+   {
+    "who": "N",
+    "de": "Um vier Uhr morgens werden die ersten Lieferwagen beladen, die die Ware in unsere dreißig Filialen bringen.",
+    "en": "At four in the morning the first vans are loaded, which take the goods to our thirty branches."
+   },
+   {
+    "who": "N",
+    "de": "Was am Abend in den Filialen übrig bleibt, werfen wir nicht weg.",
+    "en": "What is left over in the branches in the evening, we don't throw away."
+   },
+   {
+    "who": "N",
+    "de": "Wir geben es an die Tafel, die es an Menschen mit wenig Geld verteilt.",
+    "en": "We give it to the Tafel, a food bank that hands it out to people with little money."
+   },
+   {
+    "who": "N",
+    "de": "Übrigens suchen wir immer Auszubildende. Wer Interesse hat, kann sich nach der Führung gern bei mir melden.",
+    "en": "By the way, we are always looking for apprentices. Anyone who is interested is welcome to talk to me after the tour."
+   },
+   {
+    "who": "N",
+    "de": "Und jetzt gehen wir in unseren Laden, wo schon frischer Kaffee auf Sie wartet.",
+    "en": "And now let's go to our shop, where fresh coffee is already waiting for you."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum sollen die Besucher in der Halle keine Fotos machen?",
+    "format": "abc",
+    "opts": [
+     "Weil es aus hygienischen Gründen verboten ist.",
+     "Weil die Rezepte geheim sind.",
+     "Weil die Mitarbeiter das nicht möchten."
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "No photos, because the recipes are 'ein kleines Geheimnis', a little secret. Hygiene is the reason for the coats and caps."
+   },
+   {
+    "q": "Wer hat die Firma gegründet?",
+    "format": "abc",
+    "opts": [
+     "Herr Lorenz selbst",
+     "drei Bäcker aus der Region",
+     "der Großvater von Herrn Lorenz"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "It was founded in 1958 by his grandfather. The three were the first employees."
+   },
+   {
+    "q": "Was wird in der Bäckerei noch von Hand gemacht?",
+    "format": "abc",
+    "opts": [
+     "der Teig",
+     "die Brezeln",
+     "die Brötchen"
+    ],
+    "a": 1,
+    "ev": [
+     8
+    ],
+    "why": "Many steps are done by machines, but the pretzels are still shaped by hand."
+   },
+   {
+    "q": "Was passiert mit dem Brot, das abends übrig ist?",
+    "format": "abc",
+    "opts": [
+     "Es geht an eine Organisation für Menschen mit wenig Geld.",
+     "Es wird am nächsten Tag billiger verkauft.",
+     "Es wird an die Mitarbeiter verteilt."
+    ],
+    "a": 0,
+    "ev": [
+     12,
+     13
+    ],
+    "why": "Leftovers are not thrown away but given to the Tafel, which hands them out to people with little money."
+   },
+   {
+    "q": "Was sagt Herr Lorenz über Auszubildende?",
+    "format": "abc",
+    "opts": [
+     "Ihre Ausbildung dauert drei Monate.",
+     "Die Firma sucht im Moment keine.",
+     "Interessierte können ihn nach der Führung ansprechen."
+    ],
+    "a": 2,
+    "ev": [
+     14
+    ],
+    "why": "The company is always looking for apprentices, and anyone interested can talk to him after the tour. Three months is how long it takes to learn the pretzels."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-03-1",
+  "station": 3,
+  "part": "Teil 1",
+  "setup": "A voicemail from Herr Weber, a German teacher, to Priya.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Priya, hier ist Herr Weber von der Volkshochschule.",
+    "en": "Hello Priya, this is Herr Weber from the adult education centre."
+   },
+   {
+    "who": "B",
+    "de": "Sie haben heute im Kurs gefehlt, deshalb wollte ich Ihnen kurz sagen, was wir besprochen haben.",
+    "en": "You missed the class today, so I wanted to tell you briefly what we discussed."
+   },
+   {
+    "who": "B",
+    "de": "Nächsten Mittwoch schreiben wir einen Test über die Kapitel fünf bis sieben.",
+    "en": "Next Wednesday we're writing a test on chapters five to seven."
+   },
+   {
+    "who": "B",
+    "de": "Ihr Referat, das Sie eigentlich nächste Woche halten wollten, verschieben wir auf die Woche danach. Sonst wird es zu viel.",
+    "en": "Your presentation, which you were going to give next week, we'll move to the week after. Otherwise it will be too much."
+   },
+   {
+    "who": "B",
+    "de": "Die Arbeitsblätter von heute lege ich Ihnen ins Fach im Sekretariat.",
+    "en": "I'll put today's worksheets in your pigeonhole in the office."
+   },
+   {
+    "who": "B",
+    "de": "Wenn Sie Fragen haben, kommen Sie einfach zehn Minuten vor dem Unterricht. Bis Mittwoch!",
+    "en": "If you have questions, just come ten minutes before the lesson. See you on Wednesday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Priya soll ihr Referat nächste Woche halten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Her presentation is moved from next week to the week after."
+   },
+   {
+    "q": "Wo bekommt Priya die Arbeitsblätter?",
+    "format": "abc",
+    "opts": [
+     "im Kursraum",
+     "per E-Mail",
+     "im Sekretariat"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "Herr Weber puts today's worksheets in her pigeonhole in the office, the Sekretariat."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-03-2",
+  "station": 3,
+  "part": "Teil 1",
+  "setup": "A culture tip on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und hier noch ein Tipp für alle, die neugierig sind.",
+    "en": "And here's one more tip for everyone who is curious."
+   },
+   {
+    "who": "N",
+    "de": "Am Freitag öffnet die Universität zur Langen Nacht der Wissenschaft ihre Türen, und zwar von achtzehn Uhr bis Mitternacht.",
+    "en": "On Friday the university opens its doors for the Long Night of Science, from six in the evening until midnight."
+   },
+   {
+    "who": "N",
+    "de": "In über fünfzig Laboren und Hörsälen zeigen Wissenschaftlerinnen und Wissenschaftler, woran sie gerade forschen.",
+    "en": "In more than fifty labs and lecture halls, scientists show what they are currently researching."
+   },
+   {
+    "who": "N",
+    "de": "Besonders beliebt war letztes Jahr der Chemie-Workshop für Kinder. Er war schon nach einer Stunde ausgebucht.",
+    "en": "Last year the chemistry workshop for children was especially popular. It was fully booked after just one hour."
+   },
+   {
+    "who": "N",
+    "de": "Deshalb muss man sich für die Workshops diesmal vorher im Internet anmelden. Die Vorträge kann man ohne Anmeldung besuchen.",
+    "en": "That's why this time you have to register online in advance for the workshops. You can attend the talks without registering."
+   },
+   {
+    "who": "N",
+    "de": "Der Eintritt kostet fünf Euro, für Schülerinnen, Schüler und Studierende ist er kostenlos.",
+    "en": "Admission costs five euros; for school pupils and students it is free."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Für die Workshops muss man sich in diesem Jahr vorher anmelden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "This time you have to register online in advance for the workshops. Only the talks need no registration."
+   },
+   {
+    "q": "Was erfährt man über den Chemie-Workshop?",
+    "format": "abc",
+    "opts": [
+     "Er war im letzten Jahr sehr schnell voll.",
+     "Er ist nur für Studierende.",
+     "Er findet dieses Jahr nicht statt."
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Last year it was fully booked after one hour. It is a workshop for children, and nothing says it is cancelled."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-03-3",
+  "station": 3,
+  "part": "Teil 4",
+  "setup": "A radio discussion about homework. Host: Moderatorin; guests: Frau Lindner (A), a primary school teacher, and Herr Brückner (B), a father of two.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Abend und willkommen zu unserer Sendung Thema am Abend. Heute geht es um eine Frage, über die in vielen Familien diskutiert wird: Brauchen Kinder Hausaufgaben?",
+    "en": "Good evening and welcome to our programme 'Thema am Abend'. Today it's about a question that many families argue about: do children need homework?"
+   },
+   {
+    "who": "N",
+    "de": "Bei mir im Studio sind Frau Lindner, Lehrerin an einer Grundschule, und Herr Brückner, Vater von zwei Kindern. Frau Lindner, an Ihrer Schule gibt es seit zwei Jahren keine Hausaufgaben mehr. Wie kam es dazu?",
+    "en": "With me in the studio are Frau Lindner, a primary school teacher, and Herr Brückner, a father of two. Frau Lindner, at your school there has been no homework for two years. How did that come about?"
+   },
+   {
+    "who": "A",
+    "de": "Wir haben gemerkt, dass Hausaufgaben die Unterschiede zwischen den Kindern größer machen. Manche Kinder bekommen zu Hause viel Hilfe, andere gar keine.",
+    "en": "We noticed that homework makes the differences between children bigger. Some children get a lot of help at home, others none at all."
+   },
+   {
+    "who": "A",
+    "de": "Deshalb gibt es bei uns jetzt jeden Tag eine Übungszeit in der Schule. Da können alle Kinder in Ruhe üben, und eine Lehrerin hilft, wenn sie Fragen haben.",
+    "en": "So now we have a practice time at school every day. All the children can practise in peace, and a teacher helps when they have questions."
+   },
+   {
+    "who": "N",
+    "de": "Herr Brückner, Ihre Kinder gehen auf eine Schule mit Hausaufgaben. Wie erleben Sie das?",
+    "en": "Herr Brückner, your children go to a school with homework. How do you find it?"
+   },
+   {
+    "who": "B",
+    "de": "Ehrlich gesagt mit gemischten Gefühlen. Meine Tochter ist in der vierten Klasse und sitzt manchmal über eine Stunde an den Hausaufgaben. Das ist zu viel.",
+    "en": "To be honest, with mixed feelings. My daughter is in year four and sometimes sits over her homework for more than an hour. That's too much."
+   },
+   {
+    "who": "B",
+    "de": "Andererseits sehe ich durch die Hausaufgaben, was sie in der Schule gerade lernt. Sonst wüsste ich das gar nicht.",
+    "en": "On the other hand, through the homework I can see what she's learning at school right now. Otherwise I wouldn't know at all."
+   },
+   {
+    "who": "N",
+    "de": "Das ist ein wichtiger Punkt. Frau Lindner, erfahren die Eltern an Ihrer Schule denn noch, was ihre Kinder lernen?",
+    "en": "That's an important point. Frau Lindner, do parents at your school still find out what their children are learning?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, natürlich. Jedes Kind hat ein Heft, in das es jeden Freitag schreibt, was es in der Woche gelernt hat, und dieses Heft nimmt es mit nach Hause.",
+    "en": "Yes, of course. Every child has an exercise book in which they write every Friday what they have learned that week, and they take this book home."
+   },
+   {
+    "who": "A",
+    "de": "Außerdem laden wir die Eltern regelmäßig zu Gesprächen ein. Der Kontakt ist sogar enger als früher.",
+    "en": "We also invite parents for talks regularly. The contact is even closer than before."
+   },
+   {
+    "who": "B",
+    "de": "Das finde ich eine schöne Idee. Aber ich frage mich, ob die Kinder ohne Hausaufgaben genug lernen, um später auf dem Gymnasium zurechtzukommen.",
+    "en": "I think that's a nice idea. But I wonder whether the children learn enough without homework to cope at grammar school later."
+   },
+   {
+    "who": "A",
+    "de": "Diese Sorge höre ich oft. Aber unsere Ergebnisse bei den Vergleichstests sind nicht schlechter geworden, eher ein bisschen besser.",
+    "en": "I hear that worry a lot. But our results in the comparison tests haven't got worse; if anything, a little better."
+   },
+   {
+    "who": "N",
+    "de": "Ich muss gestehen, dass ich als Kind Hausaufgaben gehasst habe. Ich habe sie oft erst morgens im Bus gemacht.",
+    "en": "I have to confess that I hated homework as a child. I often only did it on the bus in the morning."
+   },
+   {
+    "who": "B",
+    "de": "Da sind Sie nicht allein! Mein Sohn macht das genauso. Und genau deshalb glaube ich, dass viele Hausaufgaben nichts bringen. Wenn ein Kind sie nur schnell abschreibt, lernt es nichts.",
+    "en": "You're not alone there! My son does exactly the same. And that's exactly why I think a lot of homework is pointless. If a child just quickly copies it, they learn nothing."
+   },
+   {
+    "who": "N",
+    "de": "Was müsste sich Ihrer Meinung nach ändern, Herr Brückner?",
+    "en": "What would have to change, in your opinion, Herr Brückner?"
+   },
+   {
+    "who": "B",
+    "de": "Ich wünsche mir weniger, aber dafür sinnvollere Hausaufgaben. Zum Beispiel ein Buch lesen oder in der Küche etwas messen und wiegen, statt zwanzig gleiche Rechenaufgaben zu machen.",
+    "en": "I'd like less homework, but more meaningful homework. For example reading a book, or measuring and weighing something in the kitchen, instead of doing twenty identical sums."
+   },
+   {
+    "who": "A",
+    "de": "Da stimme ich Ihnen völlig zu. Lesen sollten Kinder sowieso jeden Tag, auch ohne Hausaufgaben. Da sind die Eltern gefragt.",
+    "en": "I completely agree with you there. Children should read every day anyway, even without homework. That's where parents come in."
+   },
+   {
+    "who": "N",
+    "de": "Frau Lindner, gibt es auch Nachteile, wenn es keine Hausaufgaben gibt?",
+    "en": "Frau Lindner, are there also disadvantages when there's no homework?"
+   },
+   {
+    "who": "A",
+    "de": "Für uns Lehrerinnen und Lehrer bedeutet es mehr Arbeit, weil wir die Übungszeit gut planen müssen. Und der Schultag wird für die Kinder etwas länger.",
+    "en": "For us teachers it means more work, because we have to plan the practice time carefully. And the school day gets a bit longer for the children."
+   },
+   {
+    "who": "B",
+    "de": "Das wäre für uns kein Problem. Meine Frau und ich arbeiten beide, und die Kinder sind sowieso bis vier Uhr in der Schule.",
+    "en": "That wouldn't be a problem for us. My wife and I both work, and the children are at school until four anyway."
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank Ihnen beiden. Liebe Hörerinnen und Hörer, was meinen Sie? Rufen Sie uns an, wir sind gespannt auf Ihre Meinung.",
+    "en": "Thank you both very much. Dear listeners, what do you think? Give us a call; we look forward to hearing your opinion."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Hausaufgaben sind ungerecht, weil nicht alle Kinder zu Hause Unterstützung bekommen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Frau Lindner says homework makes differences bigger, because some children get a lot of help at home and others none."
+   },
+   {
+    "q": "Durch die Hausaufgaben erfahre ich, was mein Kind in der Schule lernt.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "why": "Herr Brückner says that through the homework he sees what his daughter is learning."
+   },
+   {
+    "q": "Die Kinder schreiben jede Woche auf, was sie gelernt haben.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 1,
+    "ev": [
+     8
+    ],
+    "why": "Frau Lindner explains that every child writes in a book every Friday what they learned that week."
+   },
+   {
+    "q": "Ich habe meine Hausaufgaben früher oft auf dem Schulweg gemacht.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 0,
+    "ev": [
+     12
+    ],
+    "why": "The host confesses she often did her homework on the bus in the morning."
+   },
+   {
+    "q": "Wer Hausaufgaben nur abschreibt, lernt nichts dabei.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 2,
+    "ev": [
+     13
+    ],
+    "why": "Herr Brückner: if a child just quickly copies the homework, they learn nothing."
+   },
+   {
+    "q": "Statt vieler gleicher Aufgaben sollte es abwechslungsreichere Hausaufgaben geben.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 2,
+    "ev": [
+     15
+    ],
+    "why": "Herr Brückner wants less but more meaningful homework, like reading or measuring in the kitchen, instead of twenty identical sums."
+   },
+   {
+    "q": "Kinder sollten jeden Tag lesen, auch wenn sie keine Hausaufgaben haben.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 1,
+    "ev": [
+     16
+    ],
+    "why": "Frau Lindner says children should read every day anyway, even without homework."
+   },
+   {
+    "q": "Ohne Hausaufgaben haben die Lehrkräfte mehr Arbeit.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Lindner",
+     "Herr Brückner"
+    ],
+    "a": 1,
+    "ev": [
+     18
+    ],
+    "why": "Frau Lindner says it means more work for teachers, who have to plan the practice time."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-04-1",
+  "station": 4,
+  "part": "Teil 1",
+  "setup": "A voicemail from a doctor's practice.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, hier ist die Praxis Doktor Lehmann. Diese Nachricht ist für Herrn Weber.",
+    "en": "Good afternoon, this is Dr Lehmann's practice. This message is for Herr Weber."
+   },
+   {
+    "who": "A",
+    "de": "Sie haben morgen um acht Uhr einen Termin für eine Blutuntersuchung bei uns.",
+    "en": "You have an appointment with us tomorrow at eight for a blood test."
+   },
+   {
+    "who": "A",
+    "de": "Bitte denken Sie daran: Sie dürfen vorher nichts essen. Wasser oder Tee ohne Zucker können Sie aber trinken.",
+    "en": "Please remember: you mustn't eat anything beforehand. But you can drink water or tea without sugar."
+   },
+   {
+    "who": "A",
+    "de": "Leider hat sich bei uns etwas geändert. Doktor Lehmann ist morgen nicht da, Sie werden von ihrer Kollegin, Doktor Arslan, untersucht.",
+    "en": "Unfortunately something has changed on our side. Dr Lehmann isn't in tomorrow; you'll be examined by her colleague, Dr Arslan."
+   },
+   {
+    "who": "A",
+    "de": "Wenn Ihnen das nicht recht ist, können wir den Termin auch auf nächste Woche verschieben.",
+    "en": "If that isn't all right with you, we can also move the appointment to next week."
+   },
+   {
+    "who": "A",
+    "de": "Bitte bringen Sie auf jeden Fall Ihre Karte von der Krankenkasse mit.",
+    "en": "Please be sure to bring your health insurance card."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Herr Weber darf vor dem Termin Tee trinken.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "He mustn't eat, but water or tea without sugar is allowed."
+   },
+   {
+    "q": "Was ist morgen anders als geplant?",
+    "format": "abc",
+    "opts": [
+     "Der Termin ist erst nächste Woche.",
+     "Eine andere Ärztin untersucht Herrn Weber.",
+     "Herr Weber muss früher kommen."
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Dr Lehmann is away, so her colleague Dr Arslan examines him. Next week is only offered as an option if he prefers."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-04-2",
+  "station": 4,
+  "part": "Teil 1",
+  "setup": "A sports tip on the local radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Sport am Sonntag: Der Stadtlauf findet in diesem Jahr zum zwanzigsten Mal statt.",
+    "en": "Sport on Sunday: this year the city run is taking place for the twentieth time."
+   },
+   {
+    "who": "N",
+    "de": "Wer mitmachen möchte, kann zwischen fünf und zehn Kilometern wählen. Für Kinder gibt es eine eigene Strecke von einem Kilometer.",
+    "en": "Anyone who wants to take part can choose between five and ten kilometres. There is a separate one-kilometre route for children."
+   },
+   {
+    "who": "N",
+    "de": "Anmelden kann man sich noch bis Freitag im Internet. Am Sonntag selbst ist keine Anmeldung mehr möglich.",
+    "en": "You can still register online until Friday. On the Sunday itself registration is no longer possible."
+   },
+   {
+    "who": "N",
+    "de": "Start und Ziel sind wie immer auf dem Marktplatz. Los geht es um neun Uhr.",
+    "en": "Start and finish are on the market square as always. It begins at nine o'clock."
+   },
+   {
+    "who": "N",
+    "de": "Achtung, Autofahrer: Zwischen acht und vierzehn Uhr sind mehrere Straßen in der Innenstadt gesperrt.",
+    "en": "Attention drivers: between eight and two o'clock several streets in the city centre will be closed."
+   },
+   {
+    "who": "N",
+    "de": "Die Veranstalter empfehlen deshalb allen Läufern und Zuschauern, mit dem Bus oder mit dem Fahrrad zu kommen.",
+    "en": "So the organisers recommend that all runners and spectators come by bus or by bike."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Man kann sich am Sonntag noch vor dem Start anmelden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Registration is online until Friday; on Sunday itself it is no longer possible."
+   },
+   {
+    "q": "Wie soll man zum Stadtlauf kommen?",
+    "format": "abc",
+    "opts": [
+     "mit dem Auto, aber vor acht Uhr",
+     "zu Fuß über den Marktplatz",
+     "mit dem Bus oder dem Fahrrad"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "why": "The organisers recommend coming by bus or bike, because streets are closed for cars."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-04-3",
+  "station": 4,
+  "part": "Teil 1",
+  "setup": "An announcement in an indoor swimming pool.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Badegäste, bitte beachten Sie: Heute schließt das Hallenbad bereits um achtzehn Uhr.",
+    "en": "Dear swimmers, please note: today the indoor pool closes at six o'clock already."
+   },
+   {
+    "who": "N",
+    "de": "Grund dafür ist ein Schwimmwettkampf der Schulen, der um achtzehn Uhr dreißig beginnt.",
+    "en": "The reason is a schools' swimming competition, which starts at half past six."
+   },
+   {
+    "who": "N",
+    "de": "Das große Becken ist schon ab siebzehn Uhr für den Wettkampf reserviert.",
+    "en": "The big pool is reserved for the competition from five o'clock."
+   },
+   {
+    "who": "N",
+    "de": "Bis achtzehn Uhr können Sie aber noch das kleine Becken und die Sauna benutzen.",
+    "en": "But you can still use the small pool and the sauna until six."
+   },
+   {
+    "who": "N",
+    "de": "Wer eine Karte für drei Stunden gekauft hat und deshalb nicht so lange bleiben kann, bekommt an der Kasse einen Gutschein.",
+    "en": "Anyone who bought a three-hour ticket and therefore can't stay that long will get a voucher at the ticket desk."
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank für Ihr Verständnis.",
+    "en": "Thank you for your understanding."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Bad schließt heute früher als sonst.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "why": "Today the pool closes at six o'clock already; 'bereits' shows this is earlier than normal, because of a competition."
+   },
+   {
+    "q": "Was bekommen manche Gäste an der Kasse?",
+    "format": "abc",
+    "opts": [
+     "einen Gutschein",
+     "ihr Geld zurück",
+     "eine Karte für den Wettkampf"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "Guests with a three-hour ticket who can't stay that long get a voucher. There is no refund and no competition ticket."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-04-4",
+  "station": 4,
+  "part": "Teil 3",
+  "setup": "Priya and her colleague Malte talk during their lunch break.",
+  "once": true,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Priya, du siehst müde aus. Alles in Ordnung?",
+    "en": "Priya, you look tired. Is everything OK?"
+   },
+   {
+    "who": "A",
+    "de": "Ach, ich schlafe in letzter Zeit schlecht. Und mein Rücken tut seit ein paar Wochen weh, wahrscheinlich vom vielen Sitzen.",
+    "en": "Oh, I haven't been sleeping well lately. And my back has been hurting for a few weeks, probably from all the sitting."
+   },
+   {
+    "who": "B",
+    "de": "Das kenne ich. Letztes Jahr hatte ich auch ständig Rückenschmerzen. Ich war deswegen sogar beim Arzt.",
+    "en": "I know that feeling. Last year I had back pain all the time too. I even went to the doctor about it."
+   },
+   {
+    "who": "A",
+    "de": "Und was hat der Arzt gesagt?",
+    "en": "And what did the doctor say?"
+   },
+   {
+    "who": "B",
+    "de": "Dass ich mich mehr bewegen muss. Er hat mir Krankengymnastik verschrieben, und danach bin ich in einen Sportverein gegangen.",
+    "en": "That I need to move more. He prescribed physiotherapy, and after that I joined a sports club."
+   },
+   {
+    "who": "A",
+    "de": "Was machst du denn da?",
+    "en": "What do you do there?"
+   },
+   {
+    "who": "B",
+    "de": "Ich spiele Volleyball, zweimal pro Woche. Am Anfang war ich total schlecht, aber die Leute sind super nett.",
+    "en": "I play volleyball, twice a week. At the beginning I was really bad, but the people are very nice."
+   },
+   {
+    "who": "A",
+    "de": "Ich würde auch gern mehr Sport machen, aber nach der Arbeit bin ich einfach zu müde. Und am Wochenende habe ich meinen Deutschkurs.",
+    "en": "I'd like to do more sport too, but after work I'm just too tired. And at the weekend I have my German course."
+   },
+   {
+    "who": "B",
+    "de": "Wie wäre es dann mit Sport in der Mittagspause? Die Firma bietet doch jeden Dienstag einen Yogakurs an.",
+    "en": "Then how about sport in the lunch break? The company offers a yoga class every Tuesday, you know."
+   },
+   {
+    "who": "A",
+    "de": "Wirklich? Das wusste ich gar nicht. Kostet das etwas?",
+    "en": "Really? I didn't know that at all. Does it cost anything?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, die Firma bezahlt den Kurs. Man muss sich nur bei Frau Krause in der Personalabteilung anmelden.",
+    "en": "No, the company pays for the class. You just have to sign up with Frau Krause in HR."
+   },
+   {
+    "who": "A",
+    "de": "Toll! Wenn ich das früher gewusst hätte, hätte ich schon längst mitgemacht.",
+    "en": "Great! If I'd known that earlier, I'd have joined in long ago."
+   },
+   {
+    "who": "B",
+    "de": "Und noch ein Tipp: Steh öfter mal auf! Ich gehe zum Beispiel beim Telefonieren immer ein bisschen herum.",
+    "en": "And another tip: get up more often! For example, I always walk around a bit when I'm on the phone."
+   },
+   {
+    "who": "A",
+    "de": "Gute Idee. Und gegen das schlechte Schlafen? Hast du da auch einen Tipp?",
+    "en": "Good idea. And what about the bad sleep? Do you have a tip for that too?"
+   },
+   {
+    "who": "B",
+    "de": "Ehrlich gesagt trinke ich abends keinen Kaffee mehr. Seitdem schlafe ich viel besser.",
+    "en": "To be honest, I don't drink coffee in the evening any more. Since then I've slept much better."
+   },
+   {
+    "who": "A",
+    "de": "Oh, ich trinke abends oft noch zwei Tassen. Das sollte ich vielleicht ändern.",
+    "en": "Oh, I often have two more cups in the evening. Maybe I should change that."
+   },
+   {
+    "who": "B",
+    "de": "Probier es doch mal mit Kräutertee. Meine Frau schwört darauf.",
+    "en": "Why not try herbal tea. My wife swears by it."
+   },
+   {
+    "who": "A",
+    "de": "Mache ich. Und am Dienstag gehe ich zum Yoga. Kommst du mit?",
+    "en": "I will. And on Tuesday I'm going to yoga. Are you coming too?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, Yoga ist nichts für mich. Ich bleibe lieber beim Volleyball.",
+    "en": "No, yoga isn't for me. I'd rather stick to volleyball."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Priya hat seit einiger Zeit Rückenschmerzen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "Her back has been hurting for a few weeks."
+   },
+   {
+    "q": "Der Arzt hat Malte Tabletten gegen die Schmerzen gegeben.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "The doctor told him to move more and prescribed physiotherapy, not tablets."
+   },
+   {
+    "q": "Malte war von Anfang an ein guter Volleyballspieler.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     6
+    ],
+    "why": "At the beginning he was really bad at it."
+   },
+   {
+    "q": "Priya hat am Wochenende wenig Zeit für Sport.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     7
+    ],
+    "why": "At the weekend she has her German course."
+   },
+   {
+    "q": "Für den Yogakurs müssen die Mitarbeiter selbst bezahlen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     10
+    ],
+    "why": "The company pays for the class."
+   },
+   {
+    "q": "Malte schläft besser, seit er abends keinen Kaffee mehr trinkt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     14
+    ],
+    "why": "He stopped drinking coffee in the evening and has slept much better since."
+   },
+   {
+    "q": "Malte geht am Dienstag mit Priya zum Yoga.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     18
+    ],
+    "why": "Yoga isn't for him; he prefers to stick to volleyball."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-05-1",
+  "station": 5,
+  "part": "Teil 1",
+  "setup": "A voicemail from Jonas to his friend Lena.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Lena, ich bin's, Jonas. Ich rufe vom Handy meiner Schwester an, weil mein Smartphone kaputt ist.",
+    "en": "Hi Lena, it's me, Jonas. I'm calling from my sister's mobile because my smartphone is broken."
+   },
+   {
+    "who": "B",
+    "de": "Es ist mir gestern runtergefallen, und jetzt bleibt der Bildschirm schwarz, obwohl der Akku voll ist.",
+    "en": "I dropped it yesterday, and now the screen stays black, although the battery is full."
+   },
+   {
+    "who": "B",
+    "de": "Deshalb habe ich deine Nachrichten von heute nicht gelesen. Falls du mir etwas Wichtiges geschrieben hast, schick es mir bitte per Mail.",
+    "en": "So I haven't read your messages from today. If you wrote me anything important, please send it to me by email."
+   },
+   {
+    "who": "B",
+    "de": "Am Laptop kann ich meine Mails nämlich noch lesen.",
+    "en": "Because I can still read my emails on my laptop."
+   },
+   {
+    "who": "B",
+    "de": "Wegen heute Abend: Ich komme trotzdem ins Kino, aber vielleicht ein paar Minuten später. Warte einfach am Eingang auf mich!",
+    "en": "About tonight: I'm still coming to the cinema, but maybe a few minutes late. Just wait for me at the entrance!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Smartphone von Jonas funktioniert nicht, weil der Akku leer ist.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The screen stays black although the battery is full; the phone was dropped."
+   },
+   {
+    "q": "Wie soll Lena Jonas wichtige Informationen schicken?",
+    "format": "abc",
+    "opts": [
+     "per E-Mail",
+     "als Nachricht auf sein Handy",
+     "über das Handy seiner Schwester"
+    ],
+    "a": 0,
+    "ev": [
+     2,
+     3
+    ],
+    "why": "He asks her to send anything important by email, which he can read on his laptop."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-05-2",
+  "station": 5,
+  "part": "Teil 1",
+  "setup": "A programme preview on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt ein Blick auf unser Programm heute Abend.",
+    "en": "And now a look at tonight's programme."
+   },
+   {
+    "who": "N",
+    "de": "Um zwanzig Uhr sprechen wir in unserer Sendung Netzwelt darüber, wie Kinder und Jugendliche soziale Medien nutzen.",
+    "en": "At eight o'clock, in our programme 'Netzwelt', we'll talk about how children and teenagers use social media."
+   },
+   {
+    "who": "N",
+    "de": "Eine Studie hat gezeigt, dass Zwölfjährige im Durchschnitt drei Stunden am Tag am Smartphone verbringen.",
+    "en": "A study has shown that twelve-year-olds spend three hours a day on their smartphones on average."
+   },
+   {
+    "who": "N",
+    "de": "Unser Gast im Studio ist die Medienpädagogin Karin Vogt. Sie sagt, Verbote seien nicht die Lösung. Eltern sollten mit ihren Kindern gemeinsam Regeln finden.",
+    "en": "Our guest in the studio is the media educator Karin Vogt. She says bans are not the solution. Parents should work out rules together with their children."
+   },
+   {
+    "who": "N",
+    "de": "Sie können mitdiskutieren: Rufen Sie uns an oder schreiben Sie uns über unsere App.",
+    "en": "You can join the discussion: call us or write to us via our app."
+   },
+   {
+    "who": "N",
+    "de": "Und wer die Sendung verpasst, kann sie ab morgen als Podcast hören.",
+    "en": "And anyone who misses the programme can listen to it as a podcast from tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Frau Vogt findet, dass Eltern das Smartphone verbieten sollten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "She says bans are not the solution; parents should find rules together with their children."
+   },
+   {
+    "q": "Was gilt für Hörer, die heute Abend keine Zeit haben?",
+    "format": "abc",
+    "opts": [
+     "Sie können die Sendung morgen im Fernsehen sehen.",
+     "Sie können die Sendung später hören.",
+     "Sie können Frau Vogt morgen anrufen."
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "Anyone who misses it can listen to it as a podcast from tomorrow. Calling in is only possible during the programme."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-05-3",
+  "station": 5,
+  "part": "Teil 4",
+  "setup": "A radio discussion about how people get their news. Host: Moderatorin; guests: Frau Petersen (A), a local newspaper journalist, and Herr Demir (B), a 24-year-old student.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Hallo und herzlich willkommen zu Radio Forum. Immer weniger Menschen kaufen eine Zeitung. Viele informieren sich nur noch über das Smartphone, zum Beispiel in sozialen Netzwerken.",
+    "en": "Hello and welcome to 'Radio Forum'. Fewer and fewer people buy a newspaper. Many only get their information on their smartphone, for example on social networks."
+   },
+   {
+    "who": "N",
+    "de": "Darüber spreche ich heute mit Frau Petersen, Journalistin bei einer Lokalzeitung, und mit Herrn Demir, der Informatik studiert und vierundzwanzig Jahre alt ist. Herr Demir, wie informieren Sie sich?",
+    "en": "I'm talking about this today with Frau Petersen, a journalist at a local paper, and with Herr Demir, who studies computer science and is twenty-four. Herr Demir, how do you keep informed?"
+   },
+   {
+    "who": "B",
+    "de": "Fast nur über mein Handy. Morgens im Bus lese ich Nachrichten in verschiedenen Apps, und viele Informationen bekomme ich über soziale Medien.",
+    "en": "Almost only on my phone. In the morning on the bus I read news in various apps, and I get a lot of information through social media."
+   },
+   {
+    "who": "B",
+    "de": "Eine Zeitung aus Papier habe ich ehrlich gesagt noch nie gekauft.",
+    "en": "To be honest, I've never bought a paper newspaper."
+   },
+   {
+    "who": "N",
+    "de": "Frau Petersen, das hören Sie als Zeitungsjournalistin wahrscheinlich nicht so gern.",
+    "en": "Frau Petersen, as a newspaper journalist you probably don't like hearing that."
+   },
+   {
+    "who": "A",
+    "de": "Doch, ich verstehe das gut. Meine eigenen Kinder lesen auch keine Zeitung aus Papier. Ob man auf Papier oder online liest, ist gar nicht das Problem. Unsere Artikel kann man ja auch im Internet lesen.",
+    "en": "No, I understand it well. My own children don't read a paper newspaper either. Whether you read on paper or online isn't the problem at all. You can read our articles on the internet too."
+   },
+   {
+    "who": "A",
+    "de": "Was mir Sorgen macht, ist etwas anderes: In sozialen Netzwerken weiß man oft nicht, woher eine Information kommt und ob sie stimmt.",
+    "en": "What worries me is something else: on social networks you often don't know where a piece of information comes from and whether it's true."
+   },
+   {
+    "who": "B",
+    "de": "Das stimmt, da gibt es viele Falschmeldungen. Aber ich bin vorsichtig. Wenn ich etwas Überraschendes lese, schaue ich nach, ob auch andere Medien darüber berichten.",
+    "en": "That's true, there's a lot of fake news. But I'm careful. When I read something surprising, I check whether other media are reporting it too."
+   },
+   {
+    "who": "N",
+    "de": "Machen das denn die meisten jungen Leute so?",
+    "en": "And do most young people do that?"
+   },
+   {
+    "who": "B",
+    "de": "Leider nicht. Viele meiner Freunde teilen Nachrichten, ohne sie richtig gelesen zu haben. Oft lesen sie nur die Überschrift.",
+    "en": "Unfortunately not. Many of my friends share news without having read it properly. Often they only read the headline."
+   },
+   {
+    "who": "A",
+    "de": "Und genau deshalb braucht man Journalisten, die Informationen prüfen. Das kostet Zeit und Geld.",
+    "en": "And that's exactly why you need journalists who check information. That costs time and money."
+   },
+   {
+    "who": "A",
+    "de": "Wenn niemand mehr für Nachrichten bezahlen will, können sich die Zeitungen keine guten Journalisten mehr leisten.",
+    "en": "If nobody wants to pay for news any more, newspapers can no longer afford good journalists."
+   },
+   {
+    "who": "N",
+    "de": "Ich muss zugeben, dass ich selbst auch kaum für Nachrichten im Internet bezahle. Herr Demir, wären Sie bereit, für gute Nachrichten Geld auszugeben?",
+    "en": "I have to admit that I hardly ever pay for news on the internet myself. Herr Demir, would you be prepared to spend money on good news?"
+   },
+   {
+    "who": "B",
+    "de": "Vielleicht, wenn es nicht zu teuer ist. Für Musik und Filme bezahle ich ja auch jeden Monat. Für Nachrichten habe ich das bisher nicht gemacht, weil es so viel kostenlos gibt.",
+    "en": "Maybe, if it's not too expensive. I pay for music and films every month, after all. I haven't done it for news so far because there's so much for free."
+   },
+   {
+    "who": "A",
+    "de": "Viele Zeitungen bieten inzwischen günstige Abos für Studierende an. Das wissen viele junge Leute gar nicht.",
+    "en": "Many newspapers now offer cheap subscriptions for students. A lot of young people don't know that."
+   },
+   {
+    "who": "N",
+    "de": "Frau Petersen, was bietet eine Lokalzeitung, was soziale Medien nicht bieten?",
+    "en": "Frau Petersen, what does a local newspaper offer that social media don't?"
+   },
+   {
+    "who": "A",
+    "de": "Wir berichten über das, was direkt vor der Haustür passiert: über den Gemeinderat, über die Schulen, über die Vereine. Darüber schreibt kein großes Nachrichtenportal.",
+    "en": "We report on what happens right on your doorstep: on the town council, the schools, the clubs. No big news site writes about that."
+   },
+   {
+    "who": "B",
+    "de": "Das ist ein gutes Argument. Als in unserem Viertel ein Einkaufszentrum gebaut werden sollte, habe ich die besten Informationen tatsächlich in der Lokalzeitung gefunden. Online natürlich.",
+    "en": "That's a good argument. When a shopping centre was going to be built in our neighbourhood, I actually found the best information in the local paper. Online, of course."
+   },
+   {
+    "who": "A",
+    "de": "Na, sehen Sie! Dann sind Sie ja doch einer unserer Leser.",
+    "en": "There you are! So you are one of our readers after all."
+   },
+   {
+    "who": "N",
+    "de": "Zum Schluss: Was wünschen Sie sich für die Zukunft? Herr Demir?",
+    "en": "Finally: what do you wish for the future? Herr Demir?"
+   },
+   {
+    "who": "B",
+    "de": "Ich wünsche mir, dass man in der Schule lernt, wie man Falschmeldungen erkennt. Das hatten wir damals überhaupt nicht.",
+    "en": "I wish that people learned at school how to recognise fake news. We didn't have that at all back then."
+   },
+   {
+    "who": "A",
+    "de": "Und ich wünsche mir, dass die Menschen wieder verstehen, dass gute Informationen einen Wert haben.",
+    "en": "And I wish that people would understand again that good information has value."
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank Ihnen beiden für das Gespräch.",
+    "en": "Thank you both for the conversation."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ich habe noch nie eine gedruckte Zeitung gekauft.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "Herr Demir says he has never bought a paper newspaper."
+   },
+   {
+    "q": "Ob man Nachrichten auf Papier oder online liest, ist nicht so wichtig.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "Frau Petersen says whether you read on paper or online isn't the problem."
+   },
+   {
+    "q": "Viele junge Leute teilen Nachrichten, die sie gar nicht richtig gelesen haben.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 2,
+    "ev": [
+     9
+    ],
+    "why": "Herr Demir says many of his friends share news without reading it properly, often only the headline."
+   },
+   {
+    "q": "Zeitungen brauchen das Geld der Leser, um gute Journalisten zu bezahlen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "Frau Petersen: if nobody pays for news, newspapers can't afford good journalists."
+   },
+   {
+    "q": "Ich bezahle selbst kaum für Nachrichten im Internet.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 0,
+    "ev": [
+     12
+    ],
+    "why": "The host admits that she hardly ever pays for news on the internet."
+   },
+   {
+    "q": "Für Studierende gibt es oft günstige Angebote.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 1,
+    "ev": [
+     14
+    ],
+    "why": "Frau Petersen mentions cheap student subscriptions that many young people don't know about."
+   },
+   {
+    "q": "Ich habe in der Lokalzeitung schon wichtige Informationen über mein Viertel gefunden.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 2,
+    "ev": [
+     17
+    ],
+    "why": "Herr Demir found the best information about the planned shopping centre in his area in the local paper."
+   },
+   {
+    "q": "In der Schule sollte man lernen, falsche Nachrichten zu erkennen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Petersen",
+     "Herr Demir"
+    ],
+    "a": 2,
+    "ev": [
+     20
+    ],
+    "why": "Herr Demir wishes that schools taught how to recognise fake news."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-06-1",
+  "station": 6,
+  "part": "Teil 1",
+  "setup": "An announcement in a supermarket.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Kundinnen und Kunden, herzlich willkommen bei Frischmarkt.",
+    "en": "Dear customers, welcome to Frischmarkt."
+   },
+   {
+    "who": "N",
+    "de": "Nur heute bis zwanzig Uhr: Obst und Gemüse aus der Region sind zwanzig Prozent günstiger.",
+    "en": "Today only, until eight o'clock: fruit and vegetables from the region are twenty percent cheaper."
+   },
+   {
+    "who": "N",
+    "de": "In unserer Backabteilung bekommen Sie ab achtzehn Uhr alle Brote zum halben Preis.",
+    "en": "In our bakery section you can get all bread at half price from six o'clock."
+   },
+   {
+    "who": "N",
+    "de": "Und denken Sie an unsere Kundenkarte: Damit sammeln Sie bei jedem Einkauf Punkte.",
+    "en": "And remember our loyalty card: with it you collect points every time you shop."
+   },
+   {
+    "who": "N",
+    "de": "Wegen eines technischen Problems kann an Kasse drei heute leider nicht mit Karte bezahlt werden. Dort ist nur Barzahlung möglich.",
+    "en": "Because of a technical problem, unfortunately you can't pay by card at till three today. Only cash payment is possible there."
+   },
+   {
+    "who": "N",
+    "de": "Wir wünschen Ihnen einen schönen Einkauf.",
+    "en": "We wish you a pleasant shopping trip."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Am Abend bekommt man Brot billiger.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "From six in the evening all bread is half price."
+   },
+   {
+    "q": "Was gilt heute für Kasse drei?",
+    "format": "abc",
+    "opts": [
+     "Sie ist heute geschlossen.",
+     "Dort bekommt man Punkte für die Kundenkarte.",
+     "Man kann dort nur bar bezahlen."
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "Because of a technical problem you can't pay by card at till three, only in cash. It is open, and points are collected at every till."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-06-2",
+  "station": 6,
+  "part": "Teil 1",
+  "setup": "A voicemail from an electrical shop to Frau Yilmaz.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag, Frau Yilmaz, hier ist Elektro Albers.",
+    "en": "Good afternoon, Frau Yilmaz, this is Albers Electricals."
+   },
+   {
+    "who": "B",
+    "de": "Es geht um Ihre Kaffeemaschine, die Sie uns letzte Woche zur Reparatur gebracht haben.",
+    "en": "It's about your coffee machine, which you brought to us for repair last week."
+   },
+   {
+    "who": "B",
+    "de": "Wir haben sie uns angesehen: Die Pumpe ist kaputt, und eine Reparatur würde ungefähr neunzig Euro kosten.",
+    "en": "We've looked at it: the pump is broken, and a repair would cost about ninety euros."
+   },
+   {
+    "who": "B",
+    "de": "Da das Gerät aber erst eineinhalb Jahre alt ist, haben Sie noch Garantie. Sie müssen also nichts bezahlen.",
+    "en": "But since the machine is only a year and a half old, you still have a guarantee. So you don't have to pay anything."
+   },
+   {
+    "who": "B",
+    "de": "Der Hersteller schickt Ihnen innerhalb von zwei Wochen ein neues Gerät direkt nach Hause.",
+    "en": "The manufacturer will send you a new machine directly to your home within two weeks."
+   },
+   {
+    "who": "B",
+    "de": "Die alte Maschine können wir bei uns entsorgen, wenn Sie einverstanden sind. Rufen Sie uns bitte kurz an.",
+    "en": "We can dispose of the old machine for you, if you agree. Please give us a quick call."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Frau Yilmaz muss für die Reparatur neunzig Euro bezahlen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2,
+     3
+    ],
+    "why": "A repair would cost about ninety euros, but the machine is still under guarantee, so she pays nothing."
+   },
+   {
+    "q": "Wie bekommt Frau Yilmaz wieder eine Kaffeemaschine, die funktioniert?",
+    "format": "abc",
+    "opts": [
+     "Sie holt die reparierte Maschine im Geschäft ab.",
+     "Sie bekommt ein neues Gerät nach Hause geschickt.",
+     "Sie kauft im Geschäft ein neues Gerät mit Rabatt."
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "The manufacturer sends her a new machine directly to her home within two weeks. The old one is not repaired."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-06-3",
+  "station": 6,
+  "part": "Teil 1",
+  "setup": "A consumer tip on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Zeit für unseren Verbrauchertipp. Heute geht es um das Umtauschen.",
+    "en": "Time for our consumer tip. Today it's about exchanging things."
+   },
+   {
+    "who": "N",
+    "de": "Viele Menschen glauben, dass man jede Ware im Geschäft zurückgeben kann. Das stimmt aber nicht.",
+    "en": "Many people think you can take any item back to the shop. But that isn't true."
+   },
+   {
+    "who": "N",
+    "de": "Wenn die Ware in Ordnung ist, muss ein Geschäft sie nicht zurücknehmen. Viele Läden machen es trotzdem freiwillig.",
+    "en": "If the item has nothing wrong with it, a shop doesn't have to take it back. Many shops do it anyway, voluntarily."
+   },
+   {
+    "who": "N",
+    "de": "Anders ist es beim Einkauf im Internet: Hier haben Sie vierzehn Tage Zeit, um die Ware ohne Grund zurückzuschicken.",
+    "en": "It's different when you shop online: here you have fourteen days to send the goods back without giving a reason."
+   },
+   {
+    "who": "N",
+    "de": "Unser Tipp: Heben Sie den Kassenbon immer auf, auch bei kleinen Einkäufen. Ohne Beleg wird es oft schwierig.",
+    "en": "Our tip: always keep the receipt, even for small purchases. Without proof of purchase things often get difficult."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Bei Einkäufen im Internet kann man Waren auch ohne Grund zurückschicken.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Online you have fourteen days to send goods back without a reason."
+   },
+   {
+    "q": "Was rät die Sendung?",
+    "format": "abc",
+    "opts": [
+     "den Kassenbon aufzuheben",
+     "nur im Internet einzukaufen",
+     "kaputte Waren sofort zurückzubringen"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "The tip is to always keep the receipt, even for small purchases."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-06-4",
+  "station": 6,
+  "part": "Teil 3",
+  "setup": "Frau Yilmaz meets her young neighbour Jonas in the stairwell.",
+  "once": true,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag, Frau Yilmaz! Oh, das ist aber ein großes Paket. Soll ich Ihnen helfen?",
+    "en": "Hello, Frau Yilmaz! Oh, that's a big parcel. Shall I help you?"
+   },
+   {
+    "who": "A",
+    "de": "Ach, Jonas, das ist nett. Das ist mein neuer Staubsauger, den ich im Internet bestellt habe. Leider muss er wieder zurück.",
+    "en": "Oh, Jonas, that's kind. This is my new vacuum cleaner, which I ordered online. Unfortunately it has to go back."
+   },
+   {
+    "who": "B",
+    "de": "Warum denn? Funktioniert er nicht?",
+    "en": "Why? Doesn't it work?"
+   },
+   {
+    "who": "A",
+    "de": "Doch, er funktioniert, aber er ist viel zu laut und zu schwer für mich. Auf dem Foto sah er viel kleiner aus.",
+    "en": "Yes, it works, but it's much too loud and too heavy for me. In the photo it looked much smaller."
+   },
+   {
+    "who": "B",
+    "de": "Das passiert mir auch oft. Aber das ist kein Problem, Sie können ihn innerhalb von vierzehn Tagen zurückschicken. Wann haben Sie ihn denn bekommen?",
+    "en": "That often happens to me too. But it's no problem; you can send it back within fourteen days. When did you get it?"
+   },
+   {
+    "who": "A",
+    "de": "Vor zehn Tagen. Aber ich weiß nicht, wie das mit dem Zurückschicken geht. Ich habe keinen Drucker für das Etikett.",
+    "en": "Ten days ago. But I don't know how sending it back works. I don't have a printer for the label."
+   },
+   {
+    "who": "B",
+    "de": "Das kann ich für Sie machen. Ich drucke es heute Abend aus und bringe es Ihnen vorbei.",
+    "en": "I can do that for you. I'll print it out this evening and bring it round to you."
+   },
+   {
+    "who": "A",
+    "de": "Das wäre wunderbar. Muss ich für die Rücksendung etwas bezahlen?",
+    "en": "That would be wonderful. Do I have to pay anything to send it back?"
+   },
+   {
+    "who": "B",
+    "de": "Das hängt vom Shop ab. Bei manchen ist es kostenlos, bei anderen kostet es ein paar Euro. Ich schaue heute Abend nach.",
+    "en": "That depends on the shop. With some it's free, with others it costs a few euros. I'll check this evening."
+   },
+   {
+    "who": "A",
+    "de": "Danke. Wissen Sie, eigentlich kaufe ich lieber im Geschäft. Da kann man alles anfassen und ausprobieren.",
+    "en": "Thank you. You know, actually I prefer buying in a shop. There you can touch everything and try it out."
+   },
+   {
+    "who": "B",
+    "de": "Da haben Sie recht. Warum haben Sie ihn dann online bestellt?",
+    "en": "You're right. So why did you order it online?"
+   },
+   {
+    "who": "A",
+    "de": "Weil er dort fünfzig Euro billiger war. Aber wegen des ganzen Ärgers kaufe ich das nächste Mal wieder im Laden.",
+    "en": "Because it was fifty euros cheaper there. But because of all the hassle, next time I'll buy in a shop again."
+   },
+   {
+    "who": "B",
+    "de": "Ich kaufe übrigens viele Sachen gebraucht, über eine App. Mein Fahrrad und mein Schreibtisch sind zum Beispiel auch gebraucht.",
+    "en": "By the way, I buy a lot of things second-hand, through an app. My bike and my desk are second-hand too, for example."
+   },
+   {
+    "who": "A",
+    "de": "Gebraucht? Ist das nicht riskant? Was ist, wenn etwas kaputt ist?",
+    "en": "Second-hand? Isn't that risky? What if something is broken?"
+   },
+   {
+    "who": "B",
+    "de": "Man muss natürlich vorsichtig sein. Ich schaue mir die Sachen immer genau an, bevor ich bezahle. Und es ist gut für die Umwelt.",
+    "en": "Of course you have to be careful. I always look at things closely before I pay. And it's good for the environment."
+   },
+   {
+    "who": "A",
+    "de": "Da haben Sie auch wieder recht. Mein Enkel macht das genauso.",
+    "en": "You're right there too. My grandson does exactly the same."
+   },
+   {
+    "who": "B",
+    "de": "Wenn Sie einen anderen Staubsauger suchen, kann ich gern mal in der App schauen.",
+    "en": "If you're looking for another vacuum cleaner, I'm happy to have a look in the app."
+   },
+   {
+    "who": "A",
+    "de": "Nein, danke. Ich gehe am Samstag mit meiner Tochter ins Elektrogeschäft, dann kann ich ihn vorher ausprobieren.",
+    "en": "No, thank you. I'm going to the electrical shop with my daughter on Saturday; then I can try it out first."
+   },
+   {
+    "who": "B",
+    "de": "Gute Idee. Dann bringe ich Ihnen das Etikett heute Abend vorbei, so gegen sieben.",
+    "en": "Good idea. Then I'll bring the label round this evening, at about seven."
+   },
+   {
+    "who": "A",
+    "de": "Prima, ich bin zu Hause. Und dann gibt es ein Stück Kuchen für Sie!",
+    "en": "Great, I'll be at home. And then there'll be a piece of cake for you!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Staubsauger von Frau Yilmaz ist kaputt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "It works; the problem is that it is too loud and too heavy for her."
+   },
+   {
+    "q": "Frau Yilmaz kann den Staubsauger noch zurückschicken.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     4,
+     5
+    ],
+    "why": "Returns are possible within fourteen days, and she got it ten days ago."
+   },
+   {
+    "q": "Jonas weiß schon, dass die Rücksendung kostenlos ist.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     8
+    ],
+    "why": "He says it depends on the shop and that he will check this evening."
+   },
+   {
+    "q": "Frau Yilmaz hat online bestellt, weil es dort günstiger war.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     11
+    ],
+    "why": "It was fifty euros cheaper online."
+   },
+   {
+    "q": "Jonas hat sein Fahrrad neu gekauft.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     12
+    ],
+    "why": "His bike, like his desk, is second-hand."
+   },
+   {
+    "q": "Jonas bezahlt gebrauchte Sachen erst, wenn er sie gesehen hat.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     14
+    ],
+    "why": "He always looks at things closely before he pays."
+   },
+   {
+    "q": "Jonas soll für Frau Yilmaz einen gebrauchten Staubsauger suchen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     16,
+     17
+    ],
+    "why": "He offers to look in the app, but she says no; she will buy one in a shop with her daughter."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-07-1",
+  "station": 7,
+  "part": "Teil 1",
+  "setup": "An announcement on a platform at a railway station.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Achtung an Gleis sieben: Der Intercity nach München, planmäßige Abfahrt zehn Uhr zwölf, hat heute etwa fünfundzwanzig Minuten Verspätung.",
+    "en": "Attention on platform seven: the Intercity to Munich, scheduled departure ten twelve, is running about twenty-five minutes late today."
+   },
+   {
+    "who": "N",
+    "de": "Grund dafür ist eine technische Störung an der Strecke.",
+    "en": "The reason is a technical fault on the line."
+   },
+   {
+    "who": "N",
+    "de": "Bitte beachten Sie: Der Zug fährt heute nicht von Gleis sieben, sondern von Gleis neun ab.",
+    "en": "Please note: today the train does not leave from platform seven but from platform nine."
+   },
+   {
+    "who": "N",
+    "de": "Reisende nach Nürnberg können auch den Regionalexpress um zehn Uhr zwanzig nehmen. Ihre Fahrkarte gilt auch in diesem Zug.",
+    "en": "Passengers to Nuremberg can also take the regional express at ten twenty. Their ticket is also valid on this train."
+   },
+   {
+    "who": "N",
+    "de": "Der Speisewagen ist heute leider geschlossen. Wir bitten um Entschuldigung.",
+    "en": "Unfortunately the restaurant car is closed today. We apologise."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Zug nach München fährt heute von einem anderen Gleis ab.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "Today the train leaves from platform nine instead of platform seven."
+   },
+   {
+    "q": "Was können Reisende nach Nürnberg tun?",
+    "format": "abc",
+    "opts": [
+     "im Speisewagen auf den Zug warten",
+     "mit ihrer Fahrkarte einen Regionalzug nehmen",
+     "am Automaten eine neue Fahrkarte kaufen"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "They can take the regional express at ten twenty, and their ticket is valid on it. The restaurant car is closed."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-07-2",
+  "station": 7,
+  "part": "Teil 1",
+  "setup": "Traffic news on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und nun die Verkehrsmeldungen.",
+    "en": "And now the traffic news."
+   },
+   {
+    "who": "N",
+    "de": "Auf der Autobahn sieben zwischen Kassel und Göttingen gibt es nach einem Unfall zwölf Kilometer Stau.",
+    "en": "On the A7 motorway between Kassel and Göttingen there is a twelve-kilometre traffic jam after an accident."
+   },
+   {
+    "who": "N",
+    "de": "Die Polizei bittet alle Autofahrer, den Bereich zu umfahren.",
+    "en": "The police are asking all drivers to avoid the area."
+   },
+   {
+    "who": "N",
+    "de": "In der Göttinger Innenstadt ist die Bahnhofstraße ab heute wegen Bauarbeiten gesperrt, und zwar bis Ende des Monats.",
+    "en": "In Göttingen city centre, Bahnhofstraße is closed from today because of building work, until the end of the month."
+   },
+   {
+    "who": "N",
+    "de": "Die Busse der Linien zwei und fünf fahren deshalb eine Umleitung über den Stadtring.",
+    "en": "So the buses on routes two and five are taking a diversion via the ring road."
+   },
+   {
+    "who": "N",
+    "de": "Im Norden ist es heute Morgen sehr neblig, teilweise sieht man nur fünfzig Meter weit. Fahren Sie bitte vorsichtig!",
+    "en": "In the north it is very foggy this morning; in places you can only see fifty metres. Please drive carefully!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Bahnhofstraße ist nur heute gesperrt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "It is closed from today until the end of the month."
+   },
+   {
+    "q": "Was gilt für die Busse der Linien zwei und fünf?",
+    "format": "abc",
+    "opts": [
+     "Sie fahren einen anderen Weg.",
+     "Sie fahren heute nicht.",
+     "Sie fahren nur bis zum Bahnhof."
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "The buses take a diversion via the ring road, so they still run, but on a different route."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-07-3",
+  "station": 7,
+  "part": "Teil 1",
+  "setup": "A voicemail from Lena to her friend Jonas.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Jonas, hier ist Lena, ich habe gerade mit dem Hotel in Wien telefoniert.",
+    "en": "Hi Jonas, it's Lena; I've just been on the phone to the hotel in Vienna."
+   },
+   {
+    "who": "A",
+    "de": "Bei unserer Reservierung ist etwas schiefgegangen: Das Hotel hatte uns erst ab Samstag eingetragen, nicht ab Freitag.",
+    "en": "Something went wrong with our booking: the hotel had put us down from Saturday, not from Friday."
+   },
+   {
+    "who": "A",
+    "de": "Für Freitag ist dort leider alles ausgebucht. Ich habe deshalb für die erste Nacht eine Jugendherberge gebucht.",
+    "en": "Unfortunately they're fully booked for Friday. So I've booked a youth hostel for the first night."
+   },
+   {
+    "who": "A",
+    "de": "Die ist sogar billiger, und vom Bahnhof aus kann man zu Fuß hingehen.",
+    "en": "It's even cheaper, and you can walk there from the station."
+   },
+   {
+    "who": "A",
+    "de": "Am Samstag ziehen wir dann ins Hotel um, und nachdem wir eingecheckt haben, können wir gleich in die Stadt fahren.",
+    "en": "On Saturday we'll move to the hotel, and after we've checked in we can go straight into town."
+   },
+   {
+    "who": "A",
+    "de": "Und kannst du bitte die Zugtickets ausdrucken? Mein Drucker ist kaputt.",
+    "en": "And could you please print out the train tickets? My printer is broken."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Lena hat für Freitag eine andere Unterkunft gefunden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "The hotel is full on Friday, so she booked a youth hostel for the first night."
+   },
+   {
+    "q": "Was soll Jonas tun?",
+    "format": "abc",
+    "opts": [
+     "das Hotel in Wien anrufen",
+     "eine Jugendherberge suchen",
+     "die Zugtickets ausdrucken"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "why": "Lena asks him to print the train tickets because her printer is broken. She has already called the hotel and booked the hostel herself."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-07-4",
+  "station": 7,
+  "part": "Teil 2",
+  "setup": "A guided walking tour of an old town by the sea.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Herzlich willkommen zu unserer Altstadtführung, ich bin Sabine und begleite Sie in den nächsten neunzig Minuten.",
+    "en": "Welcome to our old town tour; I'm Sabine and I'll be with you for the next ninety minutes."
+   },
+   {
+    "who": "N",
+    "de": "Unsere Tour endet nicht hier am Bahnhof, sondern am Hafen, aber von dort fahren alle zehn Minuten Busse zurück.",
+    "en": "Our tour doesn't end here at the station but at the harbour, but buses go back from there every ten minutes."
+   },
+   {
+    "who": "N",
+    "de": "Nach ungefähr der Hälfte machen wir eine kurze Pause am Marktplatz, dort gibt es auch Toiletten.",
+    "en": "About halfway through we'll take a short break at the market square; there are toilets there too."
+   },
+   {
+    "who": "N",
+    "de": "So, wir stehen jetzt vor dem Stadttor, dem letzten von früher vier Toren in der Stadtmauer.",
+    "en": "Right, we are now standing in front of the town gate, the last of what used to be four gates in the town wall."
+   },
+   {
+    "who": "N",
+    "de": "Die anderen drei wurden im neunzehnten Jahrhundert abgerissen, weil die Stadt mehr Platz brauchte.",
+    "en": "The other three were pulled down in the nineteenth century because the town needed more space."
+   },
+   {
+    "who": "N",
+    "de": "Jetzt gehen wir die Fischergasse entlang, wo früher vor allem Fischer und Bootsbauer wohnten.",
+    "en": "Now we're walking along Fischergasse, where mainly fishermen and boat builders used to live."
+   },
+   {
+    "who": "N",
+    "de": "Achten Sie auf die kleinen Zeichen über den Türen: Sie zeigen, welchen Beruf die Familie hatte, die dort lebte.",
+    "en": "Look out for the little signs above the doors: they show which trade the family who lived there had."
+   },
+   {
+    "who": "N",
+    "de": "Hier vorne sehen Sie das Rathaus.",
+    "en": "Here in front of you is the town hall."
+   },
+   {
+    "who": "N",
+    "de": "Nachdem das alte Rathaus im Jahr siebzehnhundertdreiundneunzig abgebrannt war, wurde dieses Gebäude gebaut.",
+    "en": "After the old town hall had burnt down in 1793, this building was built."
+   },
+   {
+    "who": "N",
+    "de": "Sein Turm ist sechsundfünfzig Meter hoch, und von oben hat man einen wunderbaren Blick bis zum Meer.",
+    "en": "Its tower is fifty-six metres high, and from the top you have a wonderful view as far as the sea."
+   },
+   {
+    "who": "N",
+    "de": "Einen Aufzug gibt es nicht, Sie müssen also zweihundertzwölf Stufen steigen.",
+    "en": "There is no lift, so you have to climb two hundred and twelve steps."
+   },
+   {
+    "who": "N",
+    "de": "Leider ist der Turm im Moment wegen Reparaturarbeiten geschlossen, erst ab nächstem Monat kann man ihn wieder besichtigen.",
+    "en": "Unfortunately the tower is closed at the moment for repairs; you can only visit it again from next month."
+   },
+   {
+    "who": "N",
+    "de": "Unsere letzte Station ist der Hafen, wo früher Schiffe aus ganz Europa ankamen.",
+    "en": "Our last stop is the harbour, where ships from all over Europe used to arrive."
+   },
+   {
+    "who": "N",
+    "de": "Heute legen hier vor allem Ausflugsboote an.",
+    "en": "Today it is mainly pleasure boats that moor here."
+   },
+   {
+    "who": "N",
+    "de": "Wer möchte, kann im Anschluss eine Hafenrundfahrt machen, und mit der Karte dieser Führung bekommen Sie zwei Euro Rabatt.",
+    "en": "Anyone who likes can take a harbour boat trip afterwards, and with the ticket for this tour you get two euros off."
+   },
+   {
+    "who": "N",
+    "de": "Und wenn Sie Hunger haben, kann ich Ihnen das Fischrestaurant direkt am Wasser sehr empfehlen.",
+    "en": "And if you're hungry, I can really recommend the fish restaurant right on the water."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo endet die Führung?",
+    "format": "abc",
+    "opts": [
+     "am Bahnhof",
+     "am Hafen",
+     "am Marktplatz"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The tour doesn't end at the station but at the harbour. The market square is only the break."
+   },
+   {
+    "q": "Warum gibt es heute nur noch ein Stadttor?",
+    "format": "abc",
+    "opts": [
+     "Die Stadt brauchte mehr Platz.",
+     "Die anderen Tore sind abgebrannt.",
+     "Die anderen Tore waren zu klein für den Verkehr."
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "The other three gates were pulled down because the town needed more space. It was the old town hall that burnt down."
+   },
+   {
+    "q": "Was zeigen die Zeichen über den Türen?",
+    "format": "abc",
+    "opts": [
+     "das Baujahr der Häuser",
+     "die Namen der Familien",
+     "den Beruf der früheren Bewohner"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "why": "The signs show which trade the family living there had."
+   },
+   {
+    "q": "Was erfährt man über den Rathausturm?",
+    "format": "abc",
+    "opts": [
+     "Man kann mit einem Aufzug hinauffahren.",
+     "Man kann ihn zurzeit nicht besichtigen.",
+     "Er ist das älteste Gebäude der Stadt."
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "The tower is closed for repairs until next month. There is no lift, and the town hall was only built after 1793."
+   },
+   {
+    "q": "Was bekommt man mit der Karte der Führung?",
+    "format": "abc",
+    "opts": [
+     "eine kostenlose Busfahrt zurück",
+     "eine günstigere Hafenrundfahrt",
+     "Rabatt im Fischrestaurant"
+    ],
+    "a": 1,
+    "ev": [
+     14
+    ],
+    "why": "With the tour ticket you get two euros off the harbour boat trip. The restaurant is only a recommendation."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-08-1",
+  "station": 8,
+  "part": "Teil 1",
+  "setup": "A voicemail from the town's waste advice service to Herr Weber.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Weber, hier spricht Haas von der Abfallberatung der Stadt.",
+    "en": "Good afternoon, Herr Weber, this is Haas from the town's waste advice service."
+   },
+   {
+    "who": "A",
+    "de": "Sie haben bei uns die Abholung von Sperrmüll angemeldet, also ein altes Sofa, einen Schrank und einen Kühlschrank.",
+    "en": "You have booked a bulky waste collection with us, that is an old sofa, a wardrobe and a fridge."
+   },
+   {
+    "who": "A",
+    "de": "Der Termin ist am Mittwoch, dem zwölften. Bitte stellen Sie die Sachen erst am Abend vorher an die Straße, nicht früher.",
+    "en": "The date is Wednesday the twelfth. Please don't put the things out on the street until the evening before, not earlier."
+   },
+   {
+    "who": "A",
+    "de": "Elektrogeräte wie den Kühlschrank nehmen wir an diesem Tag leider nicht mit.",
+    "en": "Unfortunately we won't take electrical appliances like the fridge on that day."
+   },
+   {
+    "who": "A",
+    "de": "Den können Sie aber kostenlos zum Wertstoffhof bringen. Der ist von Montag bis Samstag geöffnet.",
+    "en": "But you can take it to the recycling centre free of charge. It's open from Monday to Saturday."
+   },
+   {
+    "who": "A",
+    "de": "Bei Fragen erreichen Sie mich vormittags unter der Nummer im Abfallkalender.",
+    "en": "If you have questions, you can reach me in the mornings on the number in the waste collection calendar."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Herr Weber soll die Möbel schon einige Tage vor dem Termin an die Straße stellen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "He should put them out only on the evening before the collection, not earlier."
+   },
+   {
+    "q": "Was soll Herr Weber mit dem Kühlschrank machen?",
+    "format": "abc",
+    "opts": [
+     "ihn selbst zum Wertstoffhof bringen",
+     "ihn am Dienstagabend an die Straße stellen",
+     "für ihn einen neuen Termin vereinbaren"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "The fridge is not collected with the bulky waste, but he can take it to the recycling centre for free."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-08-2",
+  "station": 8,
+  "part": "Teil 1",
+  "setup": "A tip on the local radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Bevor Sie Ihren kaputten Toaster wegwerfen, haben wir einen Tipp für Sie.",
+    "en": "Before you throw away your broken toaster, we have a tip for you."
+   },
+   {
+    "who": "N",
+    "de": "Jeden ersten Samstag im Monat gibt es im Stadtteilzentrum Nord ein Reparatur-Café.",
+    "en": "On the first Saturday of every month there is a repair café in the Nord community centre."
+   },
+   {
+    "who": "N",
+    "de": "Dort helfen Ihnen Freiwillige dabei, Elektrogeräte, Kleidung oder Fahrräder selbst zu reparieren.",
+    "en": "There, volunteers help you repair electrical appliances, clothes or bikes yourself."
+   },
+   {
+    "who": "N",
+    "de": "Das Ziel ist, weniger Müll zu produzieren und Geld zu sparen.",
+    "en": "The aim is to produce less rubbish and to save money."
+   },
+   {
+    "who": "N",
+    "de": "Werkzeug ist vorhanden, und die Hilfe ist kostenlos. Nur Ersatzteile muss man selbst bezahlen.",
+    "en": "Tools are provided, and the help is free. You only have to pay for spare parts yourself."
+   },
+   {
+    "who": "N",
+    "de": "Bringen Sie etwas Zeit mit, denn an manchen Tagen ist es sehr voll.",
+    "en": "Allow yourself some time, because on some days it is very busy."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Reparatur-Café findet einmal im Monat statt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "It takes place on the first Saturday of every month."
+   },
+   {
+    "q": "Wofür muss man im Reparatur-Café selbst bezahlen?",
+    "format": "abc",
+    "opts": [
+     "für die Hilfe der Freiwilligen",
+     "für Ersatzteile",
+     "für das Werkzeug"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "Tools are there and the help is free; only spare parts must be paid for."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-08-3",
+  "station": 8,
+  "part": "Teil 1",
+  "setup": "The weather forecast on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt das Wetter für morgen, Donnerstag.",
+    "en": "And now the weather for tomorrow, Thursday."
+   },
+   {
+    "who": "N",
+    "de": "Am Vormittag scheint im ganzen Land noch die Sonne, bei Temperaturen bis vierunddreißig Grad.",
+    "en": "In the morning the sun will still be shining all over the country, with temperatures up to thirty-four degrees."
+   },
+   {
+    "who": "N",
+    "de": "Am Nachmittag kommen dann von Westen kräftige Gewitter. Dabei kann es auch hageln.",
+    "en": "In the afternoon strong thunderstorms will then come in from the west. There may also be hail."
+   },
+   {
+    "who": "N",
+    "de": "Der Wetterdienst warnt außerdem vor Sturm. Lassen Sie deshalb keine Gegenstände auf dem Balkon liegen, die der Wind wegtragen kann.",
+    "en": "The weather service is also warning of gales. So don't leave anything on your balcony that the wind could carry away."
+   },
+   {
+    "who": "N",
+    "de": "In der Nacht wird es deutlich kühler, am Freitag sind es nur noch zweiundzwanzig Grad.",
+    "en": "During the night it will get much cooler; on Friday it will only be twenty-two degrees."
+   },
+   {
+    "who": "N",
+    "de": "Am Wochenende bleibt es dann trocken und angenehm.",
+    "en": "At the weekend it will then stay dry and pleasant."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Gewitter kommen morgen schon am Vormittag.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "The morning is still sunny; the thunderstorms come in the afternoon."
+   },
+   {
+    "q": "Wovor warnt der Wetterdienst?",
+    "format": "abc",
+    "opts": [
+     "vor großer Hitze am Vormittag",
+     "vor Hagel am Wochenende",
+     "vor starkem Wind"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "The weather service warns of gales, Sturm. Heat and hail are mentioned, but there is no warning about them, and the weekend is dry."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-08-4",
+  "station": 8,
+  "part": "Teil 4",
+  "setup": "A radio discussion about a car-free old town. Host: Moderatorin; guests: Frau Hoffmann (A), who owns a shoe shop, and Herr Albrecht (B), a traffic planner.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Tag und willkommen zu unserer Diskussionsrunde. In vielen Städten wird darüber gestritten, ob Autos aus der Innenstadt verschwinden sollen. Auch bei uns plant die Stadt, die Altstadt ab nächstem Jahr für Autos zu sperren.",
+    "en": "Hello and welcome to our discussion. In many towns people are arguing about whether cars should disappear from the centre. Here too, the town is planning to close the old town to cars from next year."
+   },
+   {
+    "who": "N",
+    "de": "Bei mir sind Frau Hoffmann, die ein Schuhgeschäft in der Altstadt hat, und Herr Albrecht, Verkehrsplaner. Frau Hoffmann, was halten Sie von dem Plan?",
+    "en": "With me are Frau Hoffmann, who has a shoe shop in the old town, and Herr Albrecht, a traffic planner. Frau Hoffmann, what do you think of the plan?"
+   },
+   {
+    "who": "A",
+    "de": "Ich habe große Sorgen. Viele meiner Kunden kommen aus den Dörfern in der Umgebung, und zwar mit dem Auto. Wenn sie nicht mehr in der Nähe parken können, fahren sie lieber zum Einkaufszentrum am Stadtrand.",
+    "en": "I'm very worried. Many of my customers come from the villages around here, and they come by car. If they can't park nearby any more, they'll go to the shopping centre on the edge of town instead."
+   },
+   {
+    "who": "B",
+    "de": "Diese Sorge höre ich oft. Aber Erfahrungen aus anderen Städten zeigen: Wenn eine Straße autofrei wird, kommen meistens mehr Menschen und nicht weniger.",
+    "en": "I hear that worry a lot. But experience from other towns shows: when a street becomes car-free, usually more people come, not fewer."
+   },
+   {
+    "who": "B",
+    "de": "Die Leute bleiben länger, setzen sich in ein Café und kaufen dabei auch mehr ein.",
+    "en": "People stay longer, sit down in a café and buy more while they're there."
+   },
+   {
+    "who": "A",
+    "de": "Das mag in großen Städten so sein. Aber unsere Stadt ist klein, und am Wochenende fährt der Bus nur einmal pro Stunde.",
+    "en": "That may be true in big cities. But our town is small, and at the weekend the bus only runs once an hour."
+   },
+   {
+    "who": "N",
+    "de": "Dieses Problem kenne ich selbst. Ich wohne auf dem Land, und ohne Auto komme ich abends kaum nach Hause.",
+    "en": "I know that problem myself. I live in the countryside, and without a car I can hardly get home in the evening."
+   },
+   {
+    "who": "B",
+    "de": "Da haben Sie völlig recht. Man darf Autos nicht einfach verbieten, ohne gleichzeitig mehr Busse fahren zu lassen. Beides muss zusammen passieren.",
+    "en": "You're absolutely right. You can't simply ban cars without running more buses at the same time. Both have to happen together."
+   },
+   {
+    "who": "N",
+    "de": "Wie könnte das konkret aussehen, Herr Albrecht?",
+    "en": "What could that look like in practice, Herr Albrecht?"
+   },
+   {
+    "who": "B",
+    "de": "Zum Beispiel mit großen Parkplätzen am Stadtrand. Von dort fährt alle zehn Minuten ein kleiner Bus in die Altstadt, und zwar kostenlos.",
+    "en": "For example with big car parks on the edge of town. From there a small bus goes into the old town every ten minutes, free of charge."
+   },
+   {
+    "who": "A",
+    "de": "Das klingt zunächst gut. Aber denken Sie an ältere Menschen oder an Kunden mit schweren Einkäufen.",
+    "en": "That sounds good at first. But think of older people, or customers with heavy shopping."
+   },
+   {
+    "who": "A",
+    "de": "Wenn jemand bei mir drei Paar Schuhe kauft, möchte er die nicht durch die halbe Stadt tragen.",
+    "en": "If someone buys three pairs of shoes from me, they don't want to carry them halfway across town."
+   },
+   {
+    "who": "B",
+    "de": "Auch dafür gibt es Lösungen. In manchen Städten bringen Lastenräder die Einkäufe zum Parkplatz oder sogar nach Hause.",
+    "en": "There are solutions for that too. In some towns cargo bikes take people's shopping to the car park or even to their home."
+   },
+   {
+    "who": "N",
+    "de": "Und wie ist es mit den Lieferungen für die Geschäfte?",
+    "en": "And what about deliveries for the shops?"
+   },
+   {
+    "who": "B",
+    "de": "Lieferwagen dürften natürlich weiterhin kommen, aber nur am Morgen, zum Beispiel bis zehn Uhr.",
+    "en": "Delivery vans would of course still be allowed in, but only in the morning, for example until ten."
+   },
+   {
+    "who": "A",
+    "de": "Das wäre für mich in Ordnung. Meine Ware wird sowieso immer früh geliefert.",
+    "en": "That would be fine for me. My goods are always delivered early anyway."
+   },
+   {
+    "who": "N",
+    "de": "Ich gehe selbst gern in der Altstadt spazieren, aber im Moment ist es dort wirklich sehr laut. Frau Hoffmann, sehen Sie auch Vorteile?",
+    "en": "I like walking in the old town myself, but at the moment it's really very noisy there. Frau Hoffmann, do you see any advantages too?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, ehrlich gesagt schon. Meine Kunden beschweren sich oft über die schlechte Luft, und draußen vor den Cafés möchte kaum jemand sitzen.",
+    "en": "Yes, to be honest I do. My customers often complain about the bad air, and hardly anyone wants to sit outside the cafés."
+   },
+   {
+    "who": "A",
+    "de": "Wenn die Altstadt ruhiger und grüner wird, wäre das auch gut für mein Geschäft, aber nur, wenn die Kunden weiterhin gut zu uns kommen.",
+    "en": "If the old town becomes quieter and greener, that would be good for my shop too, but only if customers can still get to us easily."
+   },
+   {
+    "who": "B",
+    "de": "Genau deshalb sollte man die Geschäftsleute von Anfang an an der Planung beteiligen. Das ist bisher leider zu wenig passiert.",
+    "en": "That's exactly why shop owners should be involved in the planning from the start. Unfortunately that hasn't happened enough so far."
+   },
+   {
+    "who": "N",
+    "de": "Wie ich gehört habe, will die Stadt das Projekt erst einmal ein halbes Jahr testen.",
+    "en": "As I've heard, the town wants to test the project for six months first."
+   },
+   {
+    "who": "B",
+    "de": "Ja, und das finde ich klug. Nach dem Test sieht man, was funktioniert und was nicht.",
+    "en": "Yes, and I think that's wise. After the test you can see what works and what doesn't."
+   },
+   {
+    "who": "A",
+    "de": "Ein Test ist besser als nichts. Ich werde jedenfalls genau zählen, wie viele Kunden in dieser Zeit kommen.",
+    "en": "A test is better than nothing. In any case, I'll count exactly how many customers come during that time."
+   },
+   {
+    "who": "N",
+    "de": "Frau Hoffmann, Herr Albrecht, vielen Dank für das interessante Gespräch.",
+    "en": "Frau Hoffmann, Herr Albrecht, thank you very much for this interesting conversation."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Viele Kunden würden woanders einkaufen, wenn sie nicht mehr in der Nähe parken können.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Frau Hoffmann fears her customers from the villages would go to the shopping centre on the edge of town instead."
+   },
+   {
+    "q": "In autofreien Straßen kaufen die Menschen oft mehr ein.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "Herr Albrecht says people stay longer, sit in cafés and buy more."
+   },
+   {
+    "q": "Ohne Auto ist es für mich schwierig, abends nach Hause zu kommen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 0,
+    "ev": [
+     6
+    ],
+    "why": "The host lives in the countryside and can hardly get home in the evening without a car."
+   },
+   {
+    "q": "Man muss gleichzeitig das Angebot an Bussen verbessern.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 2,
+    "ev": [
+     7
+    ],
+    "why": "Herr Albrecht: you can't ban cars without running more buses at the same time."
+   },
+   {
+    "q": "Kunden möchten schwere Einkäufe nicht weit tragen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 1,
+    "ev": [
+     10,
+     11
+    ],
+    "why": "Frau Hoffmann mentions customers with heavy shopping who don't want to carry three pairs of shoes halfway across town."
+   },
+   {
+    "q": "Lieferungen nur am Vormittag sind für mich kein Problem.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 1,
+    "ev": [
+     15
+    ],
+    "why": "Frau Hoffmann says morning-only deliveries would be fine, because her goods always come early. Herr Albrecht only suggests the rule."
+   },
+   {
+    "q": "Spaziergänge in der Altstadt sind im Moment wegen des Lärms nicht so angenehm.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 0,
+    "ev": [
+     16
+    ],
+    "why": "The host likes walking in the old town but says it is very noisy there at the moment."
+   },
+   {
+    "q": "Die Geschäftsleute wurden bisher zu wenig in die Planung einbezogen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Hoffmann",
+     "Herr Albrecht"
+    ],
+    "a": 2,
+    "ev": [
+     19
+    ],
+    "why": "Herr Albrecht says shop owners should be involved from the start, and that this has happened too little so far."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-09-1",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "A voicemail from Lena to her friend Priya.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Priya, hier ist Lena, ich habe gute Neuigkeiten!",
+    "en": "Hi Priya, it's Lena, I've got good news!"
+   },
+   {
+    "who": "A",
+    "de": "Ich habe bei einem Gewinnspiel im Radio zwei Karten für das Konzert am Samstag im Stadtpark gewonnen.",
+    "en": "I've won two tickets for the concert in the city park on Saturday in a radio competition."
+   },
+   {
+    "who": "A",
+    "de": "Es spielt eine Band aus Köln, die sowohl Jazz als auch Pop macht. Die klingt wirklich toll.",
+    "en": "A band from Cologne is playing that does both jazz and pop. They sound really great."
+   },
+   {
+    "who": "A",
+    "de": "Das Konzert beginnt um zwanzig Uhr, aber man kann schon ab neunzehn Uhr rein.",
+    "en": "The concert starts at eight, but you can get in from seven."
+   },
+   {
+    "who": "A",
+    "de": "Ich würde vorschlagen, wir treffen uns um halb sieben am Haupteingang, dann bekommen wir noch gute Plätze.",
+    "en": "I'd suggest we meet at half past six at the main entrance; then we'll still get good spots."
+   },
+   {
+    "who": "A",
+    "de": "Nimm am besten eine Decke mit, wir sitzen nämlich auf der Wiese. Ruf mich an, ob du Zeit hast!",
+    "en": "Best bring a blanket, because we'll be sitting on the grass. Call me and tell me whether you're free!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Band spielt verschiedene Musikrichtungen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "The band plays both jazz and pop, 'sowohl Jazz als auch Pop'."
+   },
+   {
+    "q": "Wann möchte Lena sich mit Priya treffen?",
+    "format": "abc",
+    "opts": [
+     "um sieben",
+     "um acht",
+     "um halb sieben"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "She suggests meeting at half past six at the main entrance. Seven is when you can get in, eight is when the concert starts."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-09-2",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "A culture tip on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Kulturtipp der Woche: Ab Donnerstag zeigt das Kino Lichtblick zehn Tage lang Filme aus Indien.",
+    "en": "Culture tip of the week: from Thursday, the Lichtblick cinema is showing films from India for ten days."
+   },
+   {
+    "who": "N",
+    "de": "Zu sehen sind sowohl bekannte Bollywood-Filme als auch Dokumentarfilme, die in Deutschland noch nie gezeigt wurden.",
+    "en": "You can see both well-known Bollywood films and documentaries that have never been shown in Germany."
+   },
+   {
+    "who": "N",
+    "de": "Alle Filme laufen in der Originalsprache mit deutschen Untertiteln.",
+    "en": "All films are shown in the original language with German subtitles."
+   },
+   {
+    "who": "N",
+    "de": "Am Eröffnungsabend ist die Regisseurin des ersten Films zu Gast und beantwortet nach der Vorstellung Fragen aus dem Publikum.",
+    "en": "On the opening night the director of the first film is a guest and will answer questions from the audience after the screening."
+   },
+   {
+    "who": "N",
+    "de": "Eine Karte kostet acht Euro. Wer fünf Filme sehen möchte, bezahlt nur dreißig Euro.",
+    "en": "A ticket costs eight euros. Anyone who wants to see five films pays only thirty euros."
+   },
+   {
+    "who": "N",
+    "de": "Das ganze Programm finden Sie auf der Internetseite des Kinos.",
+    "en": "You'll find the full programme on the cinema's website."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Filme werden auf Deutsch gezeigt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "All films are shown in the original language, with German subtitles only."
+   },
+   {
+    "q": "Was ist am ersten Abend besonders?",
+    "format": "abc",
+    "opts": [
+     "Man kann der Regisseurin Fragen stellen.",
+     "Die Karten kosten nur dreißig Euro.",
+     "Der Film läuft ohne Untertitel."
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "On the opening night the director answers questions from the audience. Thirty euros is the price for five films."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-09-3",
+  "station": 9,
+  "part": "Teil 2",
+  "setup": "A guided tour of an exhibition in an art museum.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Tag, meine Damen und Herren, und herzlich willkommen im Kunstmuseum!",
+    "en": "Good afternoon, ladies and gentlemen, and welcome to the art museum!"
+   },
+   {
+    "who": "N",
+    "de": "Wir sehen uns heute die Ausstellung über die Malerin Clara Brandt an, die von achtzehnhundertneunzig bis neunzehnhundertsechzig lebte.",
+    "en": "Today we're looking at the exhibition about the painter Clara Brandt, who lived from 1890 to 1960."
+   },
+   {
+    "who": "N",
+    "de": "Heute ist sie nicht sehr bekannt, obwohl sie zu ihrer Zeit sehr erfolgreich war.",
+    "en": "Today she is not very well known, although she was very successful in her time."
+   },
+   {
+    "who": "N",
+    "de": "Als Frau durfte sie damals nicht an der Kunstakademie studieren, deshalb nahm sie privaten Unterricht bei einem Maler in Paris.",
+    "en": "As a woman she was not allowed to study at the art academy back then, so she took private lessons with a painter in Paris."
+   },
+   {
+    "who": "N",
+    "de": "Später kam sie nach Deutschland zurück und eröffnete in München eine Malschule nur für Frauen.",
+    "en": "Later she came back to Germany and opened a painting school just for women in Munich."
+   },
+   {
+    "who": "N",
+    "de": "Im ersten Saal sehen Sie ihre frühen Bilder, vor allem Landschaften und Szenen aus dem Leben auf dem Land.",
+    "en": "In the first room you can see her early pictures, mainly landscapes and scenes from country life."
+   },
+   {
+    "who": "N",
+    "de": "Je älter sie wurde, desto bunter wurden ihre Bilder, das sehen Sie sehr schön hier im zweiten Saal.",
+    "en": "The older she got, the more colourful her pictures became; you can see that very clearly here in the second room."
+   },
+   {
+    "who": "N",
+    "de": "Dieses große Bild hier ist ihr bekanntestes Werk. Es heißt Der Markt und zeigt Frauen, die Gemüse verkaufen.",
+    "en": "This large picture here is her best-known work. It's called 'The Market' and shows women selling vegetables."
+   },
+   {
+    "who": "N",
+    "de": "Es war lange verschwunden und wurde erst vor zehn Jahren auf einem Dachboden in Hamburg gefunden.",
+    "en": "It was missing for a long time and was only found ten years ago in an attic in Hamburg."
+   },
+   {
+    "who": "N",
+    "de": "Bitte gehen Sie nicht zu nah an die Bilder heran und fotografieren Sie ohne Blitz.",
+    "en": "Please don't go too close to the pictures, and take photos without flash."
+   },
+   {
+    "who": "N",
+    "de": "Im dritten Saal finden Sie nicht nur Bilder, sondern auch Briefe und Fotos aus ihrem Leben.",
+    "en": "In the third room you'll find not only pictures but also letters and photos from her life."
+   },
+   {
+    "who": "N",
+    "de": "Dort läuft auch ein kurzer Film, in dem ihre Enkelin von ihr erzählt.",
+    "en": "A short film is also shown there, in which her granddaughter talks about her."
+   },
+   {
+    "who": "N",
+    "de": "Nach der Führung können Sie gern im Museumsladen vorbeischauen, wo es den Katalog zur Ausstellung gibt, auch auf Englisch.",
+    "en": "After the tour you're welcome to drop into the museum shop, where you can get the exhibition catalogue, in English too."
+   },
+   {
+    "who": "N",
+    "de": "Die Ausstellung ist noch bis Ende Januar zu sehen, und donnerstags hat das Museum bis einundzwanzig Uhr geöffnet.",
+    "en": "The exhibition runs until the end of January, and on Thursdays the museum is open until nine in the evening."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum nahm Clara Brandt Unterricht in Paris?",
+    "format": "abc",
+    "opts": [
+     "Sie wollte dort eine Malschule eröffnen.",
+     "Sie durfte nicht an der Akademie studieren.",
+     "Ihre Familie lebte damals in Paris."
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "As a woman she wasn't allowed to study at the art academy, so she took private lessons in Paris. Her school was later in Munich."
+   },
+   {
+    "q": "Wie veränderten sich ihre Bilder mit der Zeit?",
+    "format": "abc",
+    "opts": [
+     "Sie zeigten nur noch Landschaften.",
+     "Sie wurden immer kleiner.",
+     "Sie wurden farbiger."
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "why": "'Je älter sie wurde, desto bunter wurden ihre Bilder': the older she got, the more colourful they became. Landscapes were her early work."
+   },
+   {
+    "q": "Was erfährt man über das Bild Der Markt?",
+    "format": "abc",
+    "opts": [
+     "Es war viele Jahre verschwunden.",
+     "Es wurde in Hamburg gemalt.",
+     "Es wurde vor zehn Jahren verkauft."
+    ],
+    "a": 0,
+    "ev": [
+     8
+    ],
+    "why": "It was missing for a long time and was found ten years ago in an attic in Hamburg."
+   },
+   {
+    "q": "Was kann man im dritten Saal sehen?",
+    "format": "abc",
+    "opts": [
+     "ihre frühen Landschaftsbilder",
+     "einen Film über die Malerin",
+     "den Katalog zur Ausstellung"
+    ],
+    "a": 1,
+    "ev": [
+     10,
+     11
+    ],
+    "why": "In the third room there are letters, photos and a short film with her granddaughter. The early pictures are in the first room, the catalogue is in the shop."
+   },
+   {
+    "q": "Was erfährt man über den Katalog zur Ausstellung?",
+    "format": "abc",
+    "opts": [
+     "Man bekommt ihn nach der Führung kostenlos.",
+     "Er ist erst ab Januar erhältlich.",
+     "Es gibt ihn auch auf Englisch."
+    ],
+    "a": 2,
+    "ev": [
+     12
+    ],
+    "why": "The catalogue is sold in the museum shop, also in English. January is when the exhibition ends."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-10-1",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "Regional news on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt Nachrichten aus der Region.",
+    "en": "And now news from the region."
+   },
+   {
+    "who": "N",
+    "de": "Die Stadt Lindenau will in den nächsten zwei Jahren zwanzig Kilometer neue Radwege bauen.",
+    "en": "The town of Lindenau wants to build twenty kilometres of new cycle paths over the next two years."
+   },
+   {
+    "who": "N",
+    "de": "Bevor der Gemeinderat entscheidet, sollen die Bürgerinnen und Bürger ihre Meinung sagen können.",
+    "en": "Before the town council decides, the citizens should be able to give their opinion."
+   },
+   {
+    "who": "N",
+    "de": "Dazu findet am Dienstag um neunzehn Uhr eine Bürgerversammlung im Rathaus statt.",
+    "en": "For this there is a public meeting in the town hall on Tuesday at seven in the evening."
+   },
+   {
+    "who": "N",
+    "de": "Wer nicht kommen kann, kann seine Vorschläge bis Ende des Monats auch online schicken.",
+    "en": "Anyone who can't come can also send their suggestions online until the end of the month."
+   },
+   {
+    "who": "N",
+    "de": "Die Bürgermeisterin hat versprochen, dass alle Vorschläge geprüft werden. Der Gemeinderat wird dann im Herbst entscheiden.",
+    "en": "The mayor has promised that all suggestions will be considered. The council will then decide in the autumn."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Bürger können ihre Ideen auch im Internet mitteilen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "Anyone who can't come to the meeting can send suggestions online until the end of the month."
+   },
+   {
+    "q": "Wann wird über die Radwege entschieden?",
+    "format": "abc",
+    "opts": [
+     "im Herbst",
+     "am Dienstag",
+     "am Ende des Monats"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "The council will decide in the autumn. Tuesday is the public meeting, the end of the month is the deadline for suggestions."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-10-2",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "A voicemail from a volunteer agency to Malte.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Malte, hier ist Anja Schulte von der Freiwilligenagentur.",
+    "en": "Hi Malte, this is Anja Schulte from the volunteer agency."
+   },
+   {
+    "who": "A",
+    "de": "Danke für deine Nachricht, ich habe zwei Angebote, die gut zu dir passen könnten.",
+    "en": "Thanks for your message; I have two openings that could suit you well."
+   },
+   {
+    "who": "A",
+    "de": "Das erste ist im Seniorenheim in der Gartenstraße. Dort sucht man jemanden, der einmal pro Woche mit den Bewohnern spazieren geht oder Karten spielt.",
+    "en": "The first is at the care home in Gartenstraße. They're looking for someone to go for walks or play cards with the residents once a week."
+   },
+   {
+    "who": "A",
+    "de": "Das zweite ist eine Hausaufgabenhilfe für Kinder. Dafür bräuchtest du aber an zwei Nachmittagen pro Woche Zeit.",
+    "en": "The second is homework help for children. But for that you would need to be free two afternoons a week."
+   },
+   {
+    "who": "A",
+    "de": "Du hattest ja gesagt, dass du nur am Wochenende kannst. Im Seniorenheim wäre auch der Samstag möglich.",
+    "en": "You said you can only do weekends. At the care home Saturday would also be possible."
+   },
+   {
+    "who": "A",
+    "de": "Komm doch am Donnerstag zu unserer Infostunde, dann besprechen wir alles Weitere.",
+    "en": "Why not come to our information hour on Thursday, and we'll discuss everything else then."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Malte kann unter der Woche nachmittags helfen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "Malte said he can only help at the weekend."
+   },
+   {
+    "q": "Welches Angebot passt laut Frau Schulte zu Maltes Zeit?",
+    "format": "abc",
+    "opts": [
+     "die Hausaufgabenhilfe",
+     "beide Angebote gleich gut",
+     "die Arbeit im Seniorenheim"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "Malte only has time at weekends, and the care home is also possible on Saturdays. Homework help needs two weekday afternoons."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-10-3",
+  "station": 10,
+  "part": "Teil 4",
+  "setup": "A radio discussion about volunteering. Host: Moderatorin; guests: Frau Krämer (A), a retired food-bank volunteer, and Herr Osei (B), who coaches a children's football team.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Willkommen bei Gesellschaft heute. In Deutschland engagieren sich viele Millionen Menschen ehrenamtlich, also freiwillig und ohne Bezahlung. Wir fragen heute: Warum machen Menschen das, und wie kann man mehr Leute dafür gewinnen?",
+    "en": "Welcome to 'Gesellschaft heute'. In Germany many millions of people do voluntary work, that is, of their own free will and without pay. Today we ask: why do people do it, and how can more people be won over?"
+   },
+   {
+    "who": "N",
+    "de": "Meine Gäste sind Frau Krämer, die als Rentnerin bei der Tafel mitarbeitet, und Herr Osei, der in seiner Freizeit eine Fußballmannschaft für Kinder trainiert. Frau Krämer, wie sind Sie zum Ehrenamt gekommen?",
+    "en": "My guests are Frau Krämer, a pensioner who helps at the Tafel food bank, and Herr Osei, who coaches a children's football team in his free time. Frau Krämer, how did you come to volunteering?"
+   },
+   {
+    "who": "A",
+    "de": "Als ich in Rente gegangen bin, ist mir zu Hause die Decke auf den Kopf gefallen. Eine Nachbarin hat mich dann einfach einmal zur Tafel mitgenommen.",
+    "en": "When I retired, I was going stir-crazy at home. Then a neighbour simply took me along to the Tafel one day."
+   },
+   {
+    "who": "A",
+    "de": "Heute bin ich dreimal pro Woche dort. Wir sortieren Lebensmittel, die die Supermärkte nicht mehr verkaufen können, und geben sie an Menschen mit wenig Geld weiter.",
+    "en": "Today I'm there three times a week. We sort food that the supermarkets can't sell any more and pass it on to people with little money."
+   },
+   {
+    "who": "N",
+    "de": "Herr Osei, Sie sind berufstätig. Wie schaffen Sie das neben der Arbeit?",
+    "en": "Herr Osei, you have a job. How do you manage it alongside work?"
+   },
+   {
+    "who": "B",
+    "de": "Manchmal ist es wirklich anstrengend. Ich arbeite Vollzeit, und das Training ist zweimal pro Woche um siebzehn Uhr. Zum Glück kann ich mir meine Arbeitszeit flexibel einteilen.",
+    "en": "Sometimes it's really tiring. I work full-time, and training is twice a week at five o'clock. Luckily I can organise my working hours flexibly."
+   },
+   {
+    "who": "B",
+    "de": "Aber wenn ich sehe, wie viel Spaß die Kinder haben, weiß ich, warum ich das mache. Ich habe als Kind selbst in diesem Verein gespielt.",
+    "en": "But when I see how much fun the children have, I know why I do it. I played in this club myself as a child."
+   },
+   {
+    "who": "N",
+    "de": "Viele Vereine sagen, dass sie immer schwerer Freiwillige finden. Woran liegt das, Herr Osei?",
+    "en": "Many clubs say it's getting harder and harder to find volunteers. Why is that, Herr Osei?"
+   },
+   {
+    "who": "B",
+    "de": "Ich glaube, viele junge Leute würden gern helfen, aber sie wollen sich nicht für Jahre festlegen. Das Leben ist heute einfach weniger planbar.",
+    "en": "I think many young people would like to help, but they don't want to commit themselves for years. Life is simply less predictable today."
+   },
+   {
+    "who": "A",
+    "de": "Bei uns ist es ein bisschen anders. Unser Problem ist eher, dass die meisten Helfer schon älter sind. Wenn wir nicht bald Jüngere finden, wird es schwierig.",
+    "en": "It's a bit different for us. Our problem is rather that most of our helpers are already older. If we don't find younger people soon, it will get difficult."
+   },
+   {
+    "who": "N",
+    "de": "Es gibt ja den Vorschlag, dass alle jungen Menschen nach der Schule ein Jahr lang einen sozialen Dienst machen müssen. Was halten Sie davon?",
+    "en": "There is the proposal that all young people should have to do a year of community service after school. What do you think of it?"
+   },
+   {
+    "who": "A",
+    "de": "Ich finde die Idee gut. Die jungen Leute lernen dabei Menschen kennen, die sie sonst nie treffen würden. Das ist gut für die ganze Gesellschaft.",
+    "en": "I think it's a good idea. The young people get to know people they would otherwise never meet. That's good for the whole of society."
+   },
+   {
+    "who": "B",
+    "de": "Da bin ich anderer Meinung. Freiwillige Arbeit lebt davon, dass man sie gern macht. Wer gezwungen wird, ist oft nicht motiviert.",
+    "en": "I see it differently. Voluntary work depends on people enjoying it. Anyone who is forced is often not motivated."
+   },
+   {
+    "who": "B",
+    "de": "Ich würde das Engagement lieber stärker belohnen, zum Beispiel mit Vorteilen bei der Bewerbung um einen Studienplatz.",
+    "en": "I'd rather reward volunteering more, for example with an advantage when applying for a university place."
+   },
+   {
+    "who": "A",
+    "de": "Aber mit Belohnungen erreicht man doch nur die, die sowieso schon motiviert sind.",
+    "en": "But with rewards you only reach the people who are already motivated anyway."
+   },
+   {
+    "who": "N",
+    "de": "Ich habe nach der Schule selbst ein freiwilliges Jahr in einem Krankenhaus gemacht. Das hat mir damals bei der Berufswahl sehr geholfen.",
+    "en": "After school I did a voluntary year in a hospital myself. Back then it helped me a lot in choosing a career."
+   },
+   {
+    "who": "A",
+    "de": "Sehen Sie! Genau solche Erfahrungen meine ich.",
+    "en": "You see! That's exactly the kind of experience I mean."
+   },
+   {
+    "who": "B",
+    "de": "Aber Sie haben es freiwillig gemacht, nicht weil Sie mussten. Das ist doch der Unterschied.",
+    "en": "But you did it voluntarily, not because you had to. That's the difference."
+   },
+   {
+    "who": "N",
+    "de": "Ein guter Punkt. Was könnten Vereine selbst tun, um mehr Helfer zu finden?",
+    "en": "A good point. What could clubs do themselves to find more helpers?"
+   },
+   {
+    "who": "B",
+    "de": "Sie sollten auch kurze Projekte anbieten, zum Beispiel einmal bei einem Fest helfen. Wer dabei gute Erfahrungen macht, kommt oft wieder.",
+    "en": "They should also offer short projects, for example helping out once at a festival. People who have a good experience often come back."
+   },
+   {
+    "who": "A",
+    "de": "Und man sollte im Internet zeigen, was man macht. Unsere Tafel hat seit letztem Jahr eine Internetseite, und seitdem melden sich mehr junge Leute.",
+    "en": "And you should show online what you do. Our Tafel has had a website since last year, and since then more young people have been getting in touch."
+   },
+   {
+    "who": "N",
+    "de": "Frau Krämer, Herr Osei, vielen Dank für dieses spannende Gespräch.",
+    "en": "Frau Krämer, Herr Osei, thank you very much for this fascinating conversation."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Nach dem Ende meines Berufslebens war mir zu Hause langweilig.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Frau Krämer says that when she retired 'ist mir die Decke auf den Kopf gefallen': she was bored and restless at home."
+   },
+   {
+    "q": "Ich war früher selbst Mitglied in dem Verein, für den ich mich jetzt engagiere.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "why": "Herr Osei played in the same club himself as a child."
+   },
+   {
+    "q": "Junge Menschen möchten sich oft nicht für lange Zeit verpflichten.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 2,
+    "ev": [
+     8
+    ],
+    "why": "Herr Osei thinks young people would like to help but don't want to commit for years."
+   },
+   {
+    "q": "In unserer Organisation sind die meisten Helfer schon älter.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 1,
+    "ev": [
+     9
+    ],
+    "why": "Frau Krämer says the Tafel's problem is that most helpers are already older."
+   },
+   {
+    "q": "Ein soziales Pflichtjahr bringt Menschen zusammen, die sich sonst nicht begegnen würden.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "Frau Krämer likes the idea because young people meet people they would otherwise never meet."
+   },
+   {
+    "q": "Wer zu einem Dienst gezwungen wird, hat oft keine Lust darauf.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 2,
+    "ev": [
+     12
+    ],
+    "why": "Herr Osei says anyone who is forced is often not motivated."
+   },
+   {
+    "q": "Ein freiwilliges Jahr hat mir geholfen, meinen Beruf zu wählen.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 0,
+    "ev": [
+     15
+    ],
+    "why": "The host did a voluntary year in a hospital, which helped her choose a career."
+   },
+   {
+    "q": "Seit wir im Internet zu finden sind, interessieren sich mehr junge Leute für uns.",
+    "format": "match",
+    "opts": [
+     "Moderatorin",
+     "Frau Krämer",
+     "Herr Osei"
+    ],
+    "a": 1,
+    "ev": [
+     20
+    ],
+    "why": "Frau Krämer says that since the Tafel has had a website, more young people get in touch."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-11-1",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "A voicemail from Jonas to his friend Priya.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Priya, hier ist Jonas. Stell dir vor, ich habe den Ausbildungsplatz in Leipzig bekommen!",
+    "en": "Hi Priya, it's Jonas. Guess what, I got the apprenticeship in Leipzig!"
+   },
+   {
+    "who": "B",
+    "de": "Ich hatte mich ja um eine Ausbildung als Mediengestalter beworben, und heute kam die Zusage.",
+    "en": "I had applied for training as a media designer, and today the acceptance came."
+   },
+   {
+    "who": "B",
+    "de": "Ich fange schon am ersten September an, also muss ich bald umziehen.",
+    "en": "I start on the first of September, so I'll have to move soon."
+   },
+   {
+    "who": "B",
+    "de": "Bevor ich gehe, möchte ich mit allen Freunden feiern, und zwar am Samstag, dem zwanzigsten August, bei mir im Garten.",
+    "en": "Before I go, I'd like to celebrate with all my friends, on Saturday the twentieth of August, in my garden."
+   },
+   {
+    "who": "B",
+    "de": "Du musst nichts mitbringen, aber vielleicht könntest du mir an einem Abend beim Packen helfen?",
+    "en": "You don't need to bring anything, but maybe you could help me pack one evening?"
+   },
+   {
+    "who": "B",
+    "de": "Melde dich einfach, ich freue mich!",
+    "en": "Just get in touch, I'm looking forward to it!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Jonas zieht wegen einer Ausbildung in eine andere Stadt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     1,
+     2
+    ],
+    "why": "He got an apprenticeship place in Leipzig and has to move soon."
+   },
+   {
+    "q": "Worum bittet Jonas Priya?",
+    "format": "abc",
+    "opts": [
+     "etwas zu essen mitzubringen",
+     "ihm beim Packen zu helfen",
+     "die Party bei ihr im Garten zu feiern"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "He asks her to help him pack one evening. She doesn't need to bring anything, and the party is in his own garden."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-11-2",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "An event tip on the radio.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Sie träumen davon, nach der Schule ein Jahr im Ausland zu verbringen? Dann sollten Sie am Wochenende in die Stadthalle kommen.",
+    "en": "Do you dream of spending a year abroad after school? Then you should come to the town hall this weekend."
+   },
+   {
+    "who": "N",
+    "de": "Dort findet die Messe Weltweit statt. Über sechzig Organisationen informieren über Au-pair, Freiwilligendienste und Sprachreisen.",
+    "en": "The 'Weltweit' fair is taking place there. More than sixty organisations give information about au pair jobs, volunteer services and language trips."
+   },
+   {
+    "who": "N",
+    "de": "Junge Leute, die schon im Ausland waren, erzählen in kurzen Vorträgen von ihren Erfahrungen.",
+    "en": "Young people who have already been abroad talk about their experiences in short talks."
+   },
+   {
+    "who": "N",
+    "de": "Neu ist in diesem Jahr eine Beratung für Eltern, die sich Sorgen machen, wenn ihre Kinder so weit weg sind.",
+    "en": "New this year is advice for parents who worry when their children are so far away."
+   },
+   {
+    "who": "N",
+    "de": "Die Messe ist am Samstag und am Sonntag von zehn bis siebzehn Uhr geöffnet. Der Eintritt ist frei.",
+    "en": "The fair is open on Saturday and Sunday from ten to five. Entry is free."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Für die Messe muss man Eintritt bezahlen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "Entry is free."
+   },
+   {
+    "q": "Was gibt es in diesem Jahr zum ersten Mal?",
+    "format": "abc",
+    "opts": [
+     "eine Beratung für Eltern",
+     "Vorträge von jungen Leuten",
+     "Informationen über Sprachreisen"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "New this year is advice for worried parents. The talks and the information on language trips are not described as new."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-11-3",
+  "station": 11,
+  "part": "Teil 2",
+  "setup": "A talk at an evening event about starting your own business.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Abend, ich bin Tobias Engel, und ich soll Ihnen heute erzählen, wie ich mir meinen Traum vom eigenen Café erfüllt habe.",
+    "en": "Good evening, I'm Tobias Engel, and I've been asked to tell you today how I made my dream of my own café come true."
+   },
+   {
+    "who": "N",
+    "de": "Als ich ein Kind war, wollte ich eigentlich Pilot werden, aber schon in der Schule habe ich am liebsten für meine Freunde gekocht.",
+    "en": "When I was a child I actually wanted to be a pilot, but even at school what I liked best was cooking for my friends."
+   },
+   {
+    "who": "N",
+    "de": "Nach dem Abitur habe ich trotzdem erst einmal Wirtschaft studiert, weil meine Eltern das wollten.",
+    "en": "After my A levels I still studied economics first, because my parents wanted me to."
+   },
+   {
+    "who": "N",
+    "de": "Während des Studiums habe ich in einem Café gejobbt, und da habe ich gemerkt: Das ist genau mein Ding.",
+    "en": "During my studies I had a part-time job in a café, and that's when I realised: this is exactly my thing."
+   },
+   {
+    "who": "N",
+    "de": "Danach habe ich fünf Jahre in einer Bank gearbeitet und jeden Monat Geld gespart.",
+    "en": "After that I worked in a bank for five years and saved money every month."
+   },
+   {
+    "who": "N",
+    "de": "Wenn Freunde mich gefragt haben, wann ich endlich mein Café eröffne, habe ich immer gesagt: nächstes Jahr.",
+    "en": "Whenever friends asked me when I was finally going to open my café, I always said: next year."
+   },
+   {
+    "who": "N",
+    "de": "Den Mut hatte ich erst, als die Bank Stellen abbauen musste und ich meinen Job verloren habe.",
+    "en": "I only found the courage when the bank had to cut jobs and I lost mine."
+   },
+   {
+    "who": "N",
+    "de": "Das war zuerst ein Schock, aber heute sehe ich es als meine große Chance.",
+    "en": "At first that was a shock, but today I see it as my big chance."
+   },
+   {
+    "who": "N",
+    "de": "Das Schwierigste war übrigens nicht das Geld, sondern einen passenden Raum zu finden: Ich habe fast ein Jahr gesucht.",
+    "en": "By the way, the hardest thing wasn't the money but finding suitable premises: I searched for almost a year."
+   },
+   {
+    "who": "N",
+    "de": "Am Ende habe ich eine alte Buchhandlung gefunden, und ein paar Regale mit Büchern habe ich behalten, weil die Gäste das lieben.",
+    "en": "In the end I found an old bookshop, and I kept a few shelves of books, because the guests love that."
+   },
+   {
+    "who": "N",
+    "de": "Mein wichtigster Tipp für Sie: Besuchen Sie vorher ein Seminar für Gründer, zum Beispiel bei der Industrie- und Handelskammer.",
+    "en": "My most important tip for you: attend a seminar for business founders first, for example at the Chamber of Commerce."
+   },
+   {
+    "who": "N",
+    "de": "Dort lernt man alles über Steuern und Versicherungen, und das spart später viel Ärger.",
+    "en": "There you learn everything about taxes and insurance, and that saves a lot of trouble later."
+   },
+   {
+    "who": "N",
+    "de": "Sprechen Sie außerdem mit Leuten, die schon ein Geschäft haben, denn aus ihren Fehlern kann man viel lernen.",
+    "en": "Also talk to people who already have a business, because you can learn a lot from their mistakes."
+   },
+   {
+    "who": "N",
+    "de": "Heute, nach drei Jahren, habe ich vier Angestellte, und ich habe es keinen Tag bereut.",
+    "en": "Today, after three years, I have four employees, and I haven't regretted it for a single day."
+   },
+   {
+    "who": "N",
+    "de": "Jetzt beantworte ich gern Ihre Fragen.",
+    "en": "Now I'm happy to answer your questions."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was wollte Herr Engel als Kind werden?",
+    "format": "abc",
+    "opts": [
+     "Pilot",
+     "Koch",
+     "Bankkaufmann"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "As a child he wanted to be a pilot. He liked cooking, and he later worked in a bank, but those weren't his childhood wish."
+   },
+   {
+    "q": "Wann hat er gemerkt, dass ihm die Arbeit in einem Café gefällt?",
+    "format": "abc",
+    "opts": [
+     "in der Schule",
+     "während seines Studiums",
+     "bei seiner Arbeit in der Bank"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "He realised it while working in a café during his studies."
+   },
+   {
+    "q": "Warum hat er sein Café schließlich eröffnet?",
+    "format": "abc",
+    "opts": [
+     "Seine Freunde hatten ihn dazu überredet.",
+     "Er hatte seine Stelle in der Bank verloren.",
+     "Er hatte endlich genug Geld gespart."
+    ],
+    "a": 1,
+    "ev": [
+     6
+    ],
+    "why": "He only found the courage when he lost his job at the bank. Friends asked, but he kept saying 'next year'."
+   },
+   {
+    "q": "Was war für ihn am schwierigsten?",
+    "format": "abc",
+    "opts": [
+     "das nötige Geld zu bekommen",
+     "gute Angestellte zu finden",
+     "passende Räume zu finden"
+    ],
+    "a": 2,
+    "ev": [
+     8
+    ],
+    "why": "The hardest thing was not the money but finding suitable premises; he searched for almost a year."
+   },
+   {
+    "q": "Was empfiehlt Herr Engel?",
+    "format": "abc",
+    "opts": [
+     "ein Seminar für Gründer zu besuchen",
+     "zuerst ein paar Jahre in einer Bank zu arbeiten",
+     "ein Café mit Büchern zu eröffnen"
+    ],
+    "a": 0,
+    "ev": [
+     10
+    ],
+    "why": "His most important tip is to attend a seminar for founders first."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-12-1",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "An announcement in an exam room before a B1 exam.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Morgen und herzlich willkommen zur Prüfung für das Niveau B1.",
+    "en": "Good morning and welcome to the B1 level exam."
+   },
+   {
+    "who": "N",
+    "de": "Bitte legen Sie Ihren Ausweis auf den Tisch, damit wir ihn kontrollieren können.",
+    "en": "Please put your ID on the desk so that we can check it."
+   },
+   {
+    "who": "N",
+    "de": "Handys und Smartwatches müssen ausgeschaltet in Ihrer Tasche bleiben. Die Taschen stellen Sie bitte vorne an die Wand.",
+    "en": "Mobile phones and smartwatches must stay switched off in your bag. Please put your bags at the front, against the wall."
+   },
+   {
+    "who": "N",
+    "de": "Wir beginnen mit dem Lesen. Danach haben Sie eine Pause von fünfzehn Minuten.",
+    "en": "We start with reading. After that you have a fifteen-minute break."
+   },
+   {
+    "who": "N",
+    "de": "In der Pause dürfen Sie den Raum verlassen, aber bitte seien Sie um zehn Uhr fünfzehn pünktlich wieder hier.",
+    "en": "During the break you may leave the room, but please be back here on time at quarter past ten."
+   },
+   {
+    "who": "N",
+    "de": "Wasser dürfen Sie auf dem Tisch haben, Essen leider nicht.",
+    "en": "You may have water on your desk, but unfortunately not food."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Teilnehmer dürfen ihr Handy auf den Tisch legen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Phones must stay switched off in the bags at the front. Only the ID goes on the desk."
+   },
+   {
+    "q": "Was gilt für die Pause?",
+    "format": "abc",
+    "opts": [
+     "Sie dauert eine halbe Stunde.",
+     "Sie beginnt um zehn Uhr fünfzehn.",
+     "Man darf den Raum verlassen."
+    ],
+    "a": 2,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "During the break you may leave the room. It lasts fifteen minutes, and quarter past ten is when it ends."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-12-2",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "A voicemail from Priya to her friend Lena.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Lena, hier ist Priya, es geht um unsere Lerngruppe.",
+    "en": "Hi Lena, it's Priya; it's about our study group."
+   },
+   {
+    "who": "A",
+    "de": "Wir wollten uns ja am Donnerstag in der Bibliothek treffen, aber der Gruppenraum ist leider schon besetzt.",
+    "en": "We were going to meet in the library on Thursday, but unfortunately the group room is already taken."
+   },
+   {
+    "who": "A",
+    "de": "Malte hat vorgeschlagen, dass wir zu ihm kommen. Er wohnt direkt am Bahnhof.",
+    "en": "Malte suggested that we come to his place. He lives right by the station."
+   },
+   {
+    "who": "A",
+    "de": "Ich finde die Idee gut, weil wir dort laut sprechen und das Sprechen üben können, was in der Bibliothek ja nicht geht.",
+    "en": "I think it's a good idea, because there we can talk out loud and practise speaking, which isn't possible in the library."
+   },
+   {
+    "who": "A",
+    "de": "Wir treffen uns also am Donnerstag um achtzehn Uhr bei Malte. Bring bitte deinen Laptop mit, dann können wir die Hörübungen machen.",
+    "en": "So we're meeting at Malte's on Thursday at six. Please bring your laptop, then we can do the listening exercises."
+   },
+   {
+    "who": "A",
+    "de": "Ich bringe etwas zu essen mit, bis Donnerstag!",
+    "en": "I'll bring something to eat; see you on Thursday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Lerngruppe trifft sich diesmal nicht in der Bibliothek.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1,
+     4
+    ],
+    "why": "The group room in the library is taken, so they meet at Malte's."
+   },
+   {
+    "q": "Warum findet Priya es gut, bei Malte zu lernen?",
+    "format": "abc",
+    "opts": [
+     "Weil man dort laut üben kann.",
+     "Weil Malte direkt am Bahnhof wohnt.",
+     "Weil es dort etwas zu essen gibt."
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "She likes the idea because they can speak out loud and practise speaking there. The station is only where he lives; Priya brings the food herself."
+   }
+  ]
+ },
+ {
+  "id": "b1-h-12-3",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "After class, Priya talks to her teacher Herr Weber about the B1 exam.",
+  "once": true,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Herr Weber, haben Sie kurz Zeit? Ich habe ein paar Fragen zur Prüfung.",
+    "en": "Herr Weber, do you have a moment? I have a few questions about the exam."
+   },
+   {
+    "who": "B",
+    "de": "Natürlich, Priya. Worum geht es?",
+    "en": "Of course, Priya. What's it about?"
+   },
+   {
+    "who": "A",
+    "de": "Ich möchte die Prüfung im März machen. Bis wann muss ich mich anmelden?",
+    "en": "I'd like to take the exam in March. When do I have to register by?"
+   },
+   {
+    "who": "B",
+    "de": "Die Anmeldung ist bis Ende Januar möglich. Aber die Plätze sind schnell weg, ich würde mich an Ihrer Stelle schon diese Woche anmelden.",
+    "en": "Registration is possible until the end of January. But the places go quickly; if I were you, I'd register this week."
+   },
+   {
+    "who": "A",
+    "de": "Okay, das mache ich. Ehrlich gesagt habe ich am meisten Angst vor dem Sprechen. Lesen und Hören gehen eigentlich.",
+    "en": "OK, I'll do that. To be honest, I'm most worried about the speaking. Reading and listening are actually fine."
+   },
+   {
+    "who": "B",
+    "de": "Das geht vielen so. Aber Ihr Sprechen ist viel besser geworden, seit Sie in Ihrer Firma jeden Tag Deutsch sprechen.",
+    "en": "A lot of people feel that way. But your speaking has got much better since you've been speaking German every day at your company."
+   },
+   {
+    "who": "A",
+    "de": "Danke. Aber in der Prüfung bin ich bestimmt nervös. Was kann ich da tun?",
+    "en": "Thank you. But I'm sure I'll be nervous in the exam. What can I do about that?"
+   },
+   {
+    "who": "B",
+    "de": "Üben Sie die Präsentation vorher mehrmals laut, am besten mit einer Uhr. Sie haben ungefähr drei bis vier Minuten Zeit.",
+    "en": "Practise the presentation out loud several times beforehand, ideally with a clock. You have about three to four minutes."
+   },
+   {
+    "who": "A",
+    "de": "Und darf ich in der Prüfung Notizen benutzen?",
+    "en": "And may I use notes in the exam?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, die Notizen, die Sie in der Vorbereitungszeit machen, dürfen Sie benutzen. Aber lesen Sie bitte keine ganzen Sätze vor.",
+    "en": "Yes, you may use the notes you make during the preparation time. But please don't read out whole sentences."
+   },
+   {
+    "who": "A",
+    "de": "Verstehe. Und was ist mit dem Schreiben? Da mache ich immer noch viele Fehler.",
+    "en": "I see. And what about the writing? I still make a lot of mistakes there."
+   },
+   {
+    "who": "B",
+    "de": "Kleine Fehler sind nicht so schlimm, solange man Sie versteht. Wichtiger ist, dass Sie zu allen Punkten der Aufgabe etwas schreiben.",
+    "en": "Small mistakes aren't so bad, as long as people understand you. It's more important that you write something on every point of the task."
+   },
+   {
+    "who": "A",
+    "de": "Ach so! Ich habe immer gedacht, jeder Fehler kostet Punkte.",
+    "en": "Oh, I see! I always thought every mistake costs points."
+   },
+   {
+    "who": "B",
+    "de": "Natürlich sollten Sie sorgfältig schreiben. Aber wenn ein Punkt fehlt, verlieren Sie mehr als durch ein paar kleine Fehler.",
+    "en": "Of course you should write carefully. But if a point is missing, you lose more than through a few small mistakes."
+   },
+   {
+    "who": "A",
+    "de": "Gibt es eigentlich einen Vorbereitungskurs?",
+    "en": "Is there a preparation course, by the way?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, im Februar biete ich einen Kurs an, samstags von neun bis dreizehn Uhr. Am Ende des Kurses machen wir eine komplette Probeprüfung.",
+    "en": "Yes, in February I'm running a course, on Saturdays from nine to one. At the end of the course we do a complete mock exam."
+   },
+   {
+    "who": "A",
+    "de": "Das klingt super. Kostet der Kurs extra?",
+    "en": "That sounds great. Does the course cost extra?"
+   },
+   {
+    "who": "B",
+    "de": "Für die Teilnehmer aus meinem Kurs ist er kostenlos. Sie müssen sich nur in die Liste an meiner Tür eintragen.",
+    "en": "For the people in my class it's free. You just have to put your name on the list on my door."
+   },
+   {
+    "who": "A",
+    "de": "Dann trage ich mich gleich ein. Vielen Dank, Herr Weber!",
+    "en": "Then I'll put my name down straight away. Thank you very much, Herr Weber!"
+   },
+   {
+    "who": "B",
+    "de": "Gern. Und machen Sie sich nicht zu viele Sorgen. Sie schaffen das!",
+    "en": "You're welcome. And don't worry too much. You can do it!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Priya kann sich noch bis Ende März anmelden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Registration is possible until the end of January; March is when she wants to take the exam."
+   },
+   {
+    "q": "Priya hat vor dem Sprechen mehr Angst als vor dem Lesen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "She is most worried about speaking; reading and listening are fine."
+   },
+   {
+    "q": "Herr Weber findet, dass Priyas Sprechen besser geworden ist.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "He says her speaking has got much better since she speaks German at work every day."
+   },
+   {
+    "q": "In der Prüfung darf Priya ihre Notizen aus der Vorbereitungszeit benutzen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     9
+    ],
+    "why": "She may use the notes she makes during the preparation time, but shouldn't read out whole sentences."
+   },
+   {
+    "q": "Beim Schreiben ist es laut Herrn Weber am wichtigsten, keine Fehler zu machen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     11,
+     13
+    ],
+    "why": "He says it is more important to cover every point of the task; a missing point costs more than a few small mistakes."
+   },
+   {
+    "q": "Im Vorbereitungskurs macht man auch eine ganze Prüfung zur Probe.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     15
+    ],
+    "why": "At the end of the course they do a complete mock exam."
+   },
+   {
+    "q": "Priya muss für den Vorbereitungskurs bezahlen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     17
+    ],
+    "why": "For people from his class the course is free."
+   }
+  ]
+ }
+]

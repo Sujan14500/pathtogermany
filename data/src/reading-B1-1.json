@@ -1,0 +1,4228 @@
+[
+ {
+  "id": "b1-r-01-1",
+  "station": 1,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Neue Nachbarn",
+  "intro": "Priya, who moved from India to Leipzig, writes on her blog about her first months in a block of flats.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Neues Zuhause, neue Nachbarn",
+      "New home, new neighbours"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Seit vier Monaten wohne ich jetzt in Leipzig, in einem alten Haus mit zehn Wohnungen.",
+      "I have been living in Leipzig for four months now, in an old building with ten flats."
+     ],
+     [
+      "Am Anfang kannte ich dort niemanden, und ehrlich gesagt hatte ich oft Heimweh.",
+      "At first I didn't know anyone there, and to be honest I was often homesick."
+     ],
+     [
+      "In Pune, wo ich aufgewachsen bin, kennt man alle Leute im Haus.",
+      "In Pune, where I grew up, you know everyone in your building."
+     ],
+     [
+      "Hier grüßt man sich im Treppenhaus, aber dann verschwindet jeder schnell in seiner Wohnung.",
+      "Here people say hello on the stairs, but then everyone quickly disappears into their flat."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Das hat sich im Oktober geändert, und zwar durch ein Paket.",
+      "That changed in October – because of a parcel."
+     ],
+     [
+      "Der Paketbote hatte es bei Frau Yilmaz abgegeben, der Nachbarin, die direkt unter mir wohnt.",
+      "The delivery man had left it with Frau Yilmaz, the neighbour who lives directly below me."
+     ],
+     [
+      "Als ich es abholen wollte, hat sie mich sofort zu einem Tee eingeladen.",
+      "When I went to collect it, she immediately invited me in for tea."
+     ],
+     [
+      "Wir haben fast zwei Stunden geredet, über ihre Enkel, über indisches Essen und über die Leute im Haus.",
+      "We talked for almost two hours, about her grandchildren, about Indian food and about the people in the building."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Von ihr habe ich auch erfahren, warum Herr Brandt, der neben mir wohnt, immer so unfreundlich zu mir war.",
+      "From her I also found out why Herr Brandt, who lives next door to me, was always so unfriendly to me."
+     ],
+     [
+      "Meine Waschmaschine steht direkt an der Wand zu seinem Schlafzimmer, und ich habe oft spät am Abend gewaschen, weil ich erst um neun von der Arbeit komme.",
+      "My washing machine stands right against the wall of his bedroom, and I often did my washing late in the evening because I only get home from work at nine."
+     ],
+     [
+      "In der Hausordnung steht aber, dass ab 22 Uhr Ruhe im Haus sein muss.",
+      "But the house rules say that the building must be quiet from 10 p.m."
+     ],
+     [
+      "Das wusste ich nicht, weil ich die Hausordnung nie genau gelesen hatte.",
+      "I didn't know that, because I had never read the house rules carefully."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Inzwischen habe ich mit Herrn Brandt gesprochen, und wir haben einen Kompromiss gefunden.",
+      "Since then I have talked to Herr Brandt, and we have found a compromise."
+     ],
+     [
+      "Ich wasche jetzt nur noch am Samstag, und zur Entschuldigung habe ich ihm einen Kuchen gebracht.",
+      "I now only do my washing on Saturdays, and to apologise I brought him a cake."
+     ],
+     [
+      "Seitdem grüßt er mich sogar mit einem Lächeln.",
+      "Since then he even greets me with a smile."
+     ],
+     [
+      "Langsam fühlt sich das Haus wie ein richtiges Zuhause an.",
+      "Slowly the building is starting to feel like a real home."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Heimweh",
+    "en": "homesickness"
+   },
+   {
+    "w": "Treppenhaus",
+    "en": "stairwell, the stairs of a block of flats"
+   },
+   {
+    "w": "Paketbote",
+    "en": "parcel delivery man"
+   },
+   {
+    "w": "Hausordnung",
+    "en": "house rules"
+   },
+   {
+    "w": "Kompromiss",
+    "en": "compromise"
+   },
+   {
+    "w": "Entschuldigung",
+    "en": "apology"
+   }
+  ],
+  "predict": {
+   "q": "What do you think Priya's post is mainly about?",
+   "opts": [
+    "getting to know the people in her building",
+    "looking for a cheaper flat",
+    "a trip back to India"
+   ],
+   "a": 0
+  },
+  "questions": [
+   {
+    "q": "Priya hat in der ersten Zeit in Leipzig ihre Heimat vermisst.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "She writes that she 'oft Heimweh' had – she was often homesick."
+   },
+   {
+    "q": "In Priyas Haus in Leipzig unterhalten sich die Nachbarn viel miteinander.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "People only say hello on the stairs and then quickly disappear into their flats."
+   },
+   {
+    "q": "Frau Yilmaz hat ein Paket für Priya angenommen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "The delivery man left the parcel with Frau Yilmaz."
+   },
+   {
+    "q": "Beim Tee haben Priya und Frau Yilmaz vor allem über Priyas Arbeit gesprochen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "They talked about the grandchildren, Indian food and the people in the building – not about work."
+   },
+   {
+    "q": "Herr Brandt hat sich über den Lärm von Priyas Waschmaschine geärgert.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "He was unfriendly because her machine is against his bedroom wall and she washed late at night."
+   },
+   {
+    "q": "Priya kannte die Regel zur Nachtruhe schon, bevor sie eingezogen ist.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "She didn't know the rule because she had never read the house rules carefully."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-01-2",
+  "station": 1,
+  "part": "Teil 5",
+  "type": "rules",
+  "title": "Hausordnung Lindenhof",
+  "intro": "You have just moved into a new flat. These are the house rules of the building.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Hausordnung für die Wohnanlage Lindenhof",
+      "House rules for the Lindenhof residential complex"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Damit sich alle Mieterinnen und Mieter wohlfühlen, bitten wir Sie, die folgenden Regeln zu beachten.",
+      "So that all tenants feel at home, we ask you to follow the rules below."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "1. Ruhezeiten",
+      "1. Quiet hours"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Von 22 bis 7 Uhr sowie an Sonn- und Feiertagen gilt im ganzen Haus Ruhe.",
+      "From 10 p.m. to 7 a.m. and on Sundays and public holidays the whole building must be quiet."
+     ],
+     [
+      "In dieser Zeit dürfen keine lauten Arbeiten wie Bohren oder Staubsaugen gemacht werden.",
+      "During this time no noisy work such as drilling or vacuuming may be done."
+     ],
+     [
+      "Wer eine Feier plant, informiert die Nachbarn bitte einige Tage vorher mit einem Zettel im Treppenhaus.",
+      "If you are planning a party, please let the neighbours know a few days beforehand with a note in the stairwell."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "2. Treppenhaus und Keller",
+      "2. Stairwell and cellar"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Das Treppenhaus muss frei bleiben, weil es im Notfall als Fluchtweg dient.",
+      "The stairwell must be kept clear because it serves as an escape route in an emergency."
+     ],
+     [
+      "Kinderwagen dürfen im Erdgeschoss unter der Treppe stehen, Fahrräder gehören in den Fahrradkeller.",
+      "Prams may be left under the stairs on the ground floor; bicycles belong in the bicycle cellar."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "3. Waschküche",
+      "3. Laundry room"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Die Waschküche im Untergeschoss kann montags bis samstags von 8 bis 20 Uhr benutzt werden.",
+      "The laundry room in the basement can be used Monday to Saturday from 8 a.m. to 8 p.m."
+     ],
+     [
+      "Bitte tragen Sie sich vorher in den Plan an der Tür ein.",
+      "Please put your name on the schedule on the door beforehand."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "4. Müll",
+      "4. Rubbish"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Papier, Verpackungen, Bio- und Restmüll werden getrennt und gehören in die Tonnen im Hof.",
+      "Paper, packaging, organic and general waste are separated and go in the bins in the courtyard."
+     ],
+     [
+      "Glas bringen Sie bitte zu den Containern an der Ecke Lindenstraße.",
+      "Please take glass to the containers at the corner of Lindenstraße."
+     ],
+     [
+      "Alte Möbel dürfen nicht neben die Tonnen gestellt werden; für die Abholung brauchen Sie einen Termin bei der Stadtreinigung.",
+      "Old furniture must not be put next to the bins; to have it collected you need an appointment with the city waste service."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "h",
+    "s": [
+     [
+      "5. Balkone",
+      "5. Balconies"
+     ]
+    ]
+   },
+   {
+    "id": "b12",
+    "t": "p",
+    "s": [
+     [
+      "Grillen mit Holzkohle ist auf den Balkonen verboten, ein Elektrogrill ist dagegen erlaubt.",
+      "Barbecuing with charcoal is forbidden on the balconies; an electric grill, on the other hand, is allowed."
+     ],
+     [
+      "Bei Fragen erreichen Sie die Hausverwaltung montags bis freitags von 9 bis 12 Uhr in ihrem Büro in Haus 2.",
+      "If you have questions, you can reach the property management Monday to Friday from 9 a.m. to 12 noon in its office in building 2."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Fluchtweg",
+    "en": "escape route"
+   },
+   {
+    "w": "Waschküche",
+    "en": "laundry room"
+   },
+   {
+    "w": "Untergeschoss",
+    "en": "basement"
+   },
+   {
+    "w": "Stadtreinigung",
+    "en": "city waste and cleaning service"
+   },
+   {
+    "w": "Holzkohle",
+    "en": "charcoal"
+   },
+   {
+    "w": "Hausverwaltung",
+    "en": "property management"
+   }
+  ],
+  "predict": {
+   "q": "These are house rules. Which topic will they most likely cover?",
+   "opts": [
+    "how much the rent is",
+    "when you must be quiet",
+    "how to find a flat"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Sie möchten am Samstagabend eine Party feiern. Was müssen Sie tun?",
+    "format": "abc",
+    "opts": [
+     "die Hausverwaltung um Erlaubnis bitten",
+     "einen Zettel an jede Wohnungstür kleben",
+     "rechtzeitig eine Nachricht für alle im Treppenhaus aufhängen"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Neighbours must be told a few days before with a note in the stairwell – not on each door, and no permission is needed."
+   },
+   {
+    "q": "Wo dürfen Sie Ihr Fahrrad abstellen?",
+    "format": "abc",
+    "opts": [
+     "im Fahrradkeller",
+     "unter der Treppe im Erdgeschoss",
+     "im Hof neben den Mülltonnen"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "Bicycles belong in the bicycle cellar; only prams may stand under the stairs."
+   },
+   {
+    "q": "Was gilt für die Waschküche?",
+    "format": "abc",
+    "opts": [
+     "Man kann sie jeden Tag bis 20 Uhr benutzen.",
+     "Man muss sich vorher in einen Plan eintragen.",
+     "Sie ist nur am Wochenende geöffnet."
+    ],
+    "a": 1,
+    "ev": [
+     "b8.0",
+     "b8.1"
+    ],
+    "why": "You must put your name on the schedule first; it is open Monday to Saturday, not every day."
+   },
+   {
+    "q": "Was machen Sie mit einem alten Sofa?",
+    "format": "abc",
+    "opts": [
+     "Sie vereinbaren einen Termin, damit es abgeholt wird.",
+     "Sie stellen es neben die Tonnen im Hof.",
+     "Sie bringen es zu den Containern an der Lindenstraße."
+    ],
+    "a": 0,
+    "ev": [
+     "b10.2"
+    ],
+    "why": "Old furniture may not go next to the bins; you need an appointment with the city waste service."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-02-1",
+  "station": 2,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Die Vier-Tage-Woche",
+  "intro": "A regional newspaper reports on a company that is trying out a four-day week.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Freitags frei: Ein Betrieb testet die Vier-Tage-Woche",
+      "Fridays off: a company tests the four-day week"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Seit Januar wird bei der Firma Hansen Metallbau in Kiel nur noch von Montag bis Donnerstag gearbeitet.",
+      "Since January, people at the firm Hansen Metallbau in Kiel have only worked from Monday to Thursday."
+     ],
+     [
+      "Die 45 Beschäftigten bekommen den gleichen Lohn wie vorher, arbeiten aber nur noch 34 statt 38 Stunden pro Woche.",
+      "The 45 employees get the same wage as before, but now work only 34 instead of 38 hours a week."
+     ],
+     [
+      "Die Firma stellt Treppen und Geländer aus Metall her.",
+      "The company makes stairs and railings out of metal."
+     ],
+     [
+      "Der Versuch soll zunächst ein Jahr dauern.",
+      "The trial is to last one year to begin with."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Die Idee kam nicht von der Geschäftsführung, sondern vom Betriebsrat.",
+      "The idea came not from the management but from the works council."
+     ],
+     [
+      "„Trotzdem waren wir schnell überzeugt, denn wir hatten große Probleme, neues Personal zu finden“, erklärt Chefin Maren Hansen.",
+      "'Still, we were quickly convinced, because we had big problems finding new staff,' explains the boss, Maren Hansen."
+     ],
+     [
+      "„Im letzten Jahr wurden drei Stellen ausgeschrieben, aber es kam keine einzige passende Bewerbung.“",
+      "'Last year three jobs were advertised, but not a single suitable application came in.'"
+     ],
+     [
+      "Seit der Einführung der Vier-Tage-Woche haben sich schon zwölf Fachleute beworben.",
+      "Since the four-day week was introduced, twelve skilled workers have already applied."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Damit die Arbeit trotzdem erledigt wird, musste einiges verändert werden.",
+      "So that the work still gets done, a number of things had to change."
+     ],
+     [
+      "Besprechungen dürfen jetzt höchstens 20 Minuten dauern, und die Pausen wurden neu geplant.",
+      "Meetings may now last 20 minutes at most, and the breaks were rescheduled."
+     ],
+     [
+      "Außerdem wurde eine neue Maschine gekauft, mit der Metallteile schneller geschnitten werden können.",
+      "A new machine was also bought, with which metal parts can be cut faster."
+     ],
+     [
+      "Die Kunden wurden informiert, dass freitags nur ein Notdienst erreichbar ist.",
+      "Customers were told that on Fridays only an emergency service can be reached."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Nicht alle sind begeistert.",
+      "Not everyone is enthusiastic."
+     ],
+     [
+      "Schweißer Tim Albers findet die längeren Arbeitstage anstrengend: „Abends bin ich total erschöpft.“",
+      "Welder Tim Albers finds the longer working days tiring: 'In the evening I'm completely exhausted.'"
+     ],
+     [
+      "Zurück zur Fünf-Tage-Woche möchte er aber nicht, weil er freitags Zeit für seine kleine Tochter hat.",
+      "But he doesn't want to go back to the five-day week, because on Fridays he has time for his little daughter."
+     ],
+     [
+      "Ob das Modell bleibt, wird im Dezember entschieden.",
+      "Whether the model stays will be decided in December."
+     ],
+     [
+      "Vorher sollen alle Beschäftigten in einer Umfrage ihre Meinung sagen.",
+      "Before that, all employees are to give their opinion in a survey."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Betrieb",
+    "en": "company, business"
+   },
+   {
+    "w": "Geschäftsführung",
+    "en": "management"
+   },
+   {
+    "w": "Betriebsrat",
+    "en": "works council (elected staff representatives)"
+   },
+   {
+    "w": "ausgeschrieben",
+    "en": "advertised (a job)"
+   },
+   {
+    "w": "Fachleute",
+    "en": "skilled workers, experts"
+   },
+   {
+    "w": "Schweißer",
+    "en": "welder"
+   }
+  ],
+  "predict": {
+   "q": "The headline says 'Fridays off'. What will the article probably report on?",
+   "opts": [
+    "a new public holiday",
+    "a strike in a factory",
+    "a company where people work only four days"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "In diesem Text geht es um eine Firma, …",
+    "format": "abc",
+    "opts": [
+     "in der man bei gleichem Lohn weniger arbeitet.",
+     "deren Mitarbeiter mehr Geld verlangen.",
+     "die seit Januar neue Maschinen produziert."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.1"
+    ],
+    "why": "Staff work Monday to Thursday, 34 instead of 38 hours, for the same wage."
+   },
+   {
+    "q": "Warum hat die Firma die Vier-Tage-Woche eingeführt?",
+    "format": "abc",
+    "opts": [
+     "Der Betriebsrat hatte mit einem Streik gedroht.",
+     "Es war schwer, neue Mitarbeiter zu bekommen.",
+     "Es gab nicht genug Aufträge für fünf Tage."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1",
+     "b3.2"
+    ],
+    "why": "The boss says they had big problems finding new staff; no one applied for three jobs."
+   },
+   {
+    "q": "Was sagt Tim Albers über die neue Arbeitszeit?",
+    "format": "abc",
+    "opts": [
+     "Er möchte wieder fünf Tage pro Woche arbeiten.",
+     "Er findet die Arbeitstage zu kurz.",
+     "Die Tage sind anstrengend, aber der freie Freitag ist ihm wichtig."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "He is exhausted in the evenings but doesn't want to go back, because Friday is time for his daughter."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-02-2",
+  "station": 2,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Stellen und Kurse",
+  "intro": "Seven people are looking for a job or a course. Find the right ad for each person – or x if there is none.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Kleinanzeigen: Arbeit und Weiterbildung",
+      "Classified ads: jobs and further training"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Bäckerei Krume sucht eine Aushilfe für den Verkauf, samstags und sonntags von 6 bis 13 Uhr.",
+      "Krume bakery is looking for a temporary sales assistant, Saturdays and Sundays from 6 a.m. to 1 p.m."
+     ],
+     [
+      "Gute Deutschkenntnisse sind wichtig, Erfahrung ist nicht nötig.",
+      "Good German is important; experience is not necessary."
+     ],
+     [
+      "Bitte bewerben Sie sich persönlich in unserer Filiale in der Hauptstraße 12.",
+      "Please apply in person at our branch at Hauptstraße 12."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Computerkurs für Einsteiger an der Volkshochschule: Lernen Sie an acht Abenden, wie man Briefe schreibt, Tabellen erstellt und sicher im Internet surft.",
+      "Computer course for beginners at the adult education centre: in eight evenings, learn how to write letters, create tables and use the internet safely."
+     ],
+     [
+      "Immer dienstags von 18 bis 20 Uhr, Kursgebühr 96 Euro.",
+      "Every Tuesday from 6 to 8 p.m., course fee 96 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Pflegedienst Sonnenschein sucht Pflegefachkräfte in Teilzeit (20 bis 30 Stunden pro Woche).",
+      "Sonnenschein home-care service is looking for qualified nurses part-time (20 to 30 hours a week)."
+     ],
+     [
+      "Ihre Arbeitszeiten können Sie flexibel planen – ideal für Eltern.",
+      "You can plan your working hours flexibly – ideal for parents."
+     ],
+     [
+      "Ein Firmenwagen wird gestellt.",
+      "A company car is provided."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Sie möchten sich selbstständig machen?",
+      "Would you like to become self-employed?"
+     ],
+     [
+      "Die Handwerkskammer bietet jeden ersten Montag im Monat eine kostenlose Beratung für Gründerinnen und Gründer an.",
+      "The chamber of crafts offers free advice for people starting a business on the first Monday of every month."
+     ],
+     [
+      "Anmeldung online.",
+      "Registration online."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Bewerbungstraining für junge Leute: Wir üben mit Ihnen das Vorstellungsgespräch und prüfen Ihren Lebenslauf.",
+      "Application training for young people: we practise the job interview with you and check your CV."
+     ],
+     [
+      "Zwei Samstage im Jugendzentrum Nord, kostenlos für alle unter 25.",
+      "Two Saturdays at the Nord youth centre, free for everyone under 25."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Logistikfirma sucht Lagerhelfer (m/w/d) für die Nachtschicht von 22 bis 6 Uhr.",
+      "Logistics company seeks warehouse assistants (m/f/d) for the night shift from 10 p.m. to 6 a.m."
+     ],
+     [
+      "Gute Bezahlung mit Nachtzuschlag, Führerschein nicht erforderlich.",
+      "Good pay with a night bonus; driving licence not required."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Ab 1. September bieten wir zwei Ausbildungsplätze zur Kauffrau oder zum Kaufmann für Büromanagement an.",
+      "From 1 September we are offering two apprenticeships as an office management clerk."
+     ],
+     [
+      "Sie haben einen guten Schulabschluss und arbeiten gern am Computer?",
+      "Do you have good school-leaving grades and enjoy working on a computer?"
+     ],
+     [
+      "Dann schicken Sie uns Ihre Bewerbung.",
+      "Then send us your application."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Deutsch für den Beruf (B1/B2): In diesem Kurs lernen Sie, E-Mails an Kunden zu schreiben und am Telefon sicher zu sprechen.",
+      "German for work (B1/B2): in this course you learn to write e-mails to customers and to speak confidently on the phone."
+     ],
+     [
+      "Abendkurs, montags und mittwochs.",
+      "Evening course, Mondays and Wednesdays."
+     ],
+     [
+      "Die Kosten können vom Arbeitgeber übernommen werden.",
+      "The costs can be covered by your employer."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Das Restaurant am See sucht ab Mai Kellnerinnen und Kellner für die Sommersaison.",
+      "The lakeside restaurant is looking for waiters and waitresses for the summer season from May."
+     ],
+     [
+      "Sie arbeiten vor allem abends und am Wochenende.",
+      "You will work mainly in the evenings and at weekends."
+     ],
+     [
+      "Ein Zimmer kann gestellt werden.",
+      "A room can be provided."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Übersetzungsbüro sucht freie Mitarbeiter für Englisch, Hindi und Türkisch.",
+      "Translation agency is looking for freelancers for English, Hindi and Turkish."
+     ],
+     [
+      "Sie arbeiten von zu Hause und bestimmen selbst, wie viele Aufträge Sie annehmen.",
+      "You work from home and decide for yourself how many jobs you take on."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Aushilfe",
+    "en": "temporary helper"
+   },
+   {
+    "w": "Filiale",
+    "en": "branch (of a shop or bank)"
+   },
+   {
+    "w": "Pflegefachkräfte",
+    "en": "qualified nurses"
+   },
+   {
+    "w": "Handwerkskammer",
+    "en": "chamber of crafts"
+   },
+   {
+    "w": "Nachtzuschlag",
+    "en": "extra pay for night work"
+   },
+   {
+    "w": "Ausbildungsplätze",
+    "en": "apprenticeships, training places"
+   }
+  ],
+  "predict": {
+   "q": "These are classified ads. What will most of them offer?",
+   "opts": [
+    "flats to rent",
+    "jobs and courses",
+    "used cars"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Priya möchte ihr Deutsch verbessern, damit sie bei der Arbeit sicherer mit Kunden telefonieren kann.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 7,
+    "ev": [
+     "b9.0"
+    ],
+    "why": "Ad h is a German-for-work course that practises speaking on the phone."
+   },
+   {
+    "q": "Jonas studiert und sucht einen Job, den er nur am Wochenende machen muss – am liebsten vormittags.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The bakery needs help on Saturday and Sunday mornings; the restaurant (i) is mainly evenings."
+   },
+   {
+    "q": "Der Enkel von Frau Yilmaz ist 19 und hat bald sein erstes Vorstellungsgespräch. Er ist sehr nervös.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.0",
+     "b6.1"
+    ],
+    "why": "Ad e practises job interviews with young people under 25, free of charge."
+   },
+   {
+    "q": "Ein Bekannter von Malte möchte den Lkw-Führerschein machen, um als Fahrer zu arbeiten.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "No ad offers driving lessons; ad f only says a licence is not needed."
+   },
+   {
+    "q": "Lenas Schwester ist Krankenschwester und hat zwei kleine Kinder. Sie möchte wieder arbeiten, aber nicht Vollzeit.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "The care service wants part-time nurses with flexible hours – ideal for parents."
+   },
+   {
+    "q": "Der Nachbar von Herrn Weber ist 60 und hat noch nie mit einem Computer gearbeitet. Jetzt möchte er es lernen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "Ad b is a computer course for complete beginners."
+   },
+   {
+    "q": "Ein Freund von Priya spricht Hindi und Englisch und sucht eine Arbeit, die er von zu Hause aus machen kann.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 9,
+    "ev": [
+     "b11.0",
+     "b11.1"
+    ],
+    "why": "The translation agency needs Hindi and English, and you work from home."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-03-1",
+  "station": 3,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Noch einmal Schülerin",
+  "intro": "Priya writes on her blog about her school days in India and her German course in Leipzig.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Noch einmal Schülerin – mit 29",
+      "A pupil again – at 29"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Als ich ein Kind war, ging ich in Pune auf eine große Schule mit über 2000 Schülern.",
+      "When I was a child, I went to a big school in Pune with over 2,000 pupils."
+     ],
+     [
+      "Wir trugen Uniformen und mussten sehr viel auswendig lernen.",
+      "We wore uniforms and had to learn a lot by heart."
+     ],
+     [
+      "Englisch lernte ich schon ab der ersten Klasse, denn viele Fächer wurden auf Englisch unterrichtet.",
+      "I learned English from the first year, because many subjects were taught in English."
+     ],
+     [
+      "Nach dem Abschluss studierte ich Informatik und arbeitete danach vier Jahre als Programmiererin.",
+      "After finishing school I studied computer science and then worked as a programmer for four years."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Als ich eine Stelle bei einer Softwarefirma in Leipzig bekam, dachte ich, dass ich mit Englisch gut zurechtkommen würde.",
+      "When I got a job at a software company in Leipzig, I thought I would manage well with English."
+     ],
+     [
+      "Bei der Arbeit stimmte das auch, denn in meinem Team sprechen alle Englisch.",
+      "At work that was true, because everyone in my team speaks English."
+     ],
+     [
+      "Aber beim Arzt oder auf dem Amt verstand ich fast nichts.",
+      "But at the doctor's or at the authorities I understood almost nothing."
+     ],
+     [
+      "Deshalb meldete ich mich an der Volkshochschule für einen Abendkurs an.",
+      "So I signed up for an evening course at the adult education centre."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Unser Lehrer, Herr Weber, unterrichtet ganz anders als meine Lehrer früher.",
+      "Our teacher, Herr Weber, teaches quite differently from my teachers back then."
+     ],
+     [
+      "Bei ihm sprechen wir viel in Gruppen, und Fehler sind kein Problem.",
+      "In his class we speak a lot in groups, and mistakes are no problem."
+     ],
+     [
+      "Am Anfang fand ich das seltsam, weil ich gewohnt war, still zuzuhören und mitzuschreiben.",
+      "At first I found that strange, because I was used to listening quietly and taking notes."
+     ],
+     [
+      "Inzwischen macht es mir richtig Spaß.",
+      "By now I really enjoy it."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Leicht ist es natürlich nicht immer.",
+      "Of course it isn't always easy."
+     ],
+     [
+      "Nach einem langen Arbeitstag bin ich oft müde, deshalb mache ich die Hausaufgaben meistens erst am Wochenende.",
+      "After a long day at work I'm often tired, so I usually only do the homework at the weekend."
+     ],
+     [
+      "Seit ich einen Tandempartner habe, mit dem ich mich jeden Mittwoch im Café treffe, spreche ich viel mutiger.",
+      "Since I've had a tandem partner whom I meet in a café every Wednesday, I speak much more confidently."
+     ],
+     [
+      "Er hilft mir mit Deutsch, und ich bringe ihm dafür ein bisschen Marathi bei.",
+      "He helps me with German, and in return I teach him a bit of Marathi."
+     ],
+     [
+      "Im Juni möchte ich die B1-Prüfung machen – drückt mir die Daumen!",
+      "In June I want to take the B1 exam – keep your fingers crossed for me!"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "auswendig",
+    "en": "by heart"
+   },
+   {
+    "w": "zurechtkommen",
+    "en": "to manage, to get by"
+   },
+   {
+    "w": "Volkshochschule",
+    "en": "adult education centre"
+   },
+   {
+    "w": "mitzuschreiben",
+    "en": "to take notes (mitschreiben)"
+   },
+   {
+    "w": "Tandempartner",
+    "en": "language-exchange partner"
+   },
+   {
+    "w": "drückt mir die Daumen",
+    "en": "keep your fingers crossed for me"
+   }
+  ],
+  "predict": {
+   "q": "The title is 'A pupil again – at 29'. What is Priya probably writing about?",
+   "opts": [
+    "going back to school as a teacher",
+    "learning German as an adult",
+    "her children's school"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "In Priyas Schule in Indien wurden manche Fächer auf Englisch unterrichtet.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "She says 'viele Fächer wurden auf Englisch unterrichtet'."
+   },
+   {
+    "q": "Priya hat vor ihrem Umzug als Lehrerin gearbeitet.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "She studied computer science and worked as a programmer."
+   },
+   {
+    "q": "Bei der Arbeit in Leipzig hatte Priya große Probleme mit der Sprache.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "At work English was enough, because everyone in her team speaks it."
+   },
+   {
+    "q": "Im Kurs von Herrn Weber sprechen die Teilnehmer viel miteinander.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "In his class they speak a lot in groups."
+   },
+   {
+    "q": "Priya macht ihre Hausaufgaben meistens direkt nach der Arbeit.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "She is tired after work and usually does them at the weekend."
+   },
+   {
+    "q": "Priya und ihr Tandempartner lernen voneinander.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "He helps her with German and she teaches him Marathi."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-03-2",
+  "station": 3,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Schule erst um neun?",
+  "intro": "In a newspaper forum, readers answer the question whether school should start later in the morning.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollte der Unterricht an Schulen erst um 9 Uhr beginnen?",
+      "Readers' forum: Should lessons at school only start at 9 o'clock?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "An vielen Schulen beginnt der Unterricht um 8 Uhr oder sogar früher.",
+      "At many schools lessons start at 8 o'clock or even earlier."
+     ],
+     [
+      "Ist das zu früh für Kinder und Jugendliche?",
+      "Is that too early for children and teenagers?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Sabine, 45, Hannover",
+    "s": [
+     [
+      "Meine Söhne sind 14 und 16, und morgens um sieben bekomme ich sie kaum aus dem Bett.",
+      "My sons are 14 and 16, and at seven in the morning I can hardly get them out of bed."
+     ],
+     [
+      "Beim Frühstück sagen sie kein Wort, und in der ersten Stunde sind sie bestimmt noch nicht richtig wach.",
+      "At breakfast they don't say a word, and in the first lesson they are surely not properly awake yet."
+     ],
+     [
+      "Das liegt nicht an Faulheit: Jugendliche werden abends einfach später müde.",
+      "It isn't laziness: teenagers simply get tired later in the evening."
+     ],
+     [
+      "Ich bin sicher, dass sie mehr lernen würden, wenn der Unterricht erst um neun anfangen würde.",
+      "I'm sure they would learn more if lessons only started at nine."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Markus, 52, Freiburg",
+    "s": [
+     [
+      "Als Lehrer verstehe ich das Argument, aber ich halte trotzdem nichts davon.",
+      "As a teacher I understand the argument, but I still don't think much of the idea."
+     ],
+     [
+      "Wenn die Schule später beginnt, endet sie auch später.",
+      "If school starts later, it also ends later."
+     ],
+     [
+      "Dann bleibt am Nachmittag weniger Zeit für Sport, Musik oder Hausaufgaben.",
+      "Then there is less time in the afternoon for sport, music or homework."
+     ],
+     [
+      "Außerdem würden viele Schüler abends einfach noch länger aufbleiben und morgens genauso müde sein wie jetzt.",
+      "Besides, many pupils would simply stay up even later and be just as tired in the morning as now."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Aylin, 17, Köln",
+    "s": [
+     [
+      "Ich habe dreimal pro Woche in der ersten Stunde Mathe, und um acht Uhr morgens verstehe ich ehrlich gesagt fast nichts.",
+      "I have maths in the first lesson three times a week, and at eight in the morning I honestly understand almost nothing."
+     ],
+     [
+      "Am Nachmittag kann ich mich viel besser konzentrieren.",
+      "In the afternoon I can concentrate much better."
+     ],
+     [
+      "Eine Schule in unserer Nachbarstadt beginnt schon um neun, und die Schüler dort sind begeistert.",
+      "A school in the next town already starts at nine, and the pupils there love it."
+     ],
+     [
+      "Ich wünsche mir, dass unsere Schule das wenigstens ein Jahr lang ausprobiert.",
+      "I wish our school would at least try it for a year."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Jürgen, 61, Rostock",
+    "s": [
+     [
+      "Früher sind wir um halb acht in die Schule gegangen, und keiner hat sich beschwert.",
+      "In my day we went to school at half past seven and nobody complained."
+     ],
+     [
+      "Im Berufsleben müssen junge Leute auch früh aufstehen, zum Beispiel in der Bäckerei, auf dem Bau oder im Krankenhaus.",
+      "In working life young people have to get up early too, for example in a bakery, on a building site or in a hospital."
+     ],
+     [
+      "Die Schule sollte sie darauf vorbereiten, statt ihnen alles leicht zu machen.",
+      "School should prepare them for that instead of making everything easy for them."
+     ],
+     [
+      "Ich sehe also keinen Grund, etwas zu ändern.",
+      "So I see no reason to change anything."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Nadine, 38, Dresden",
+    "s": [
+     [
+      "Die Idee klingt schön, aber für berufstätige Eltern wäre sie ein echtes Problem.",
+      "The idea sounds nice, but for working parents it would be a real problem."
+     ],
+     [
+      "Ich fange um halb acht im Krankenhaus an.",
+      "I start work at the hospital at half past seven."
+     ],
+     [
+      "Wer soll meine zehnjährige Tochter morgens betreuen, bis die Schule beginnt?",
+      "Who is supposed to look after my ten-year-old daughter in the morning until school starts?"
+     ],
+     [
+      "Solange es dafür keine Lösung gibt, sollte alles so bleiben, wie es ist.",
+      "As long as there is no solution for that, everything should stay as it is."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Paul, 16, Augsburg",
+    "s": [
+     [
+      "Viele Erwachsene denken, wir wollen nur länger schlafen.",
+      "Many adults think we just want to sleep longer."
+     ],
+     [
+      "Aber Ärzte sagen schon lange, dass Jugendliche einen anderen Schlafrhythmus haben als Erwachsene.",
+      "But doctors have been saying for a long time that teenagers have a different sleep rhythm from adults."
+     ],
+     [
+      "Bei uns beginnt der Unterricht um 7:45 Uhr, und weil mein Bus so früh fährt, muss ich um sechs aufstehen.",
+      "At our school lessons start at 7:45, and because my bus leaves so early, I have to get up at six."
+     ],
+     [
+      "Eine Stunde später würde für mich sehr viel ändern.",
+      "An hour later would change a lot for me."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Thomas, 41, Mainz",
+    "s": [
+     [
+      "Ich bin Busfahrer und weiß, wie voll die Busse morgens um sieben sind: Schüler, Pendler, alle gleichzeitig.",
+      "I'm a bus driver and I know how full the buses are at seven in the morning: pupils, commuters, everyone at the same time."
+     ],
+     [
+      "Wenn die Schulen eine Stunde später anfangen würden, wäre der Verkehr viel entspannter.",
+      "If schools started an hour later, the traffic would be much more relaxed."
+     ],
+     [
+      "Dass die Kinder dann ausgeschlafener wären, ist für mich nur ein zusätzlicher Vorteil.",
+      "That the children would then be better rested is just an extra advantage for me."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Faulheit",
+    "en": "laziness"
+   },
+   {
+    "w": "aufbleiben",
+    "en": "to stay up"
+   },
+   {
+    "w": "betreuen",
+    "en": "to look after"
+   },
+   {
+    "w": "Schlafrhythmus",
+    "en": "sleep rhythm"
+   },
+   {
+    "w": "Pendler",
+    "en": "commuters"
+   },
+   {
+    "w": "ausgeschlafener",
+    "en": "better rested"
+   }
+  ],
+  "predict": {
+   "q": "Readers discuss whether school should start at 9. Which argument do you expect to read?",
+   "opts": [
+    "classes are too big",
+    "teenagers are tired early in the morning",
+    "school holidays are too long"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Ist Sabine für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "She is sure her sons would learn more if school started at nine."
+   },
+   {
+    "q": "Ist Markus für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.0",
+     "b4.3"
+    ],
+    "why": "He 'hält nichts davon': less afternoon time, and pupils would just stay up later."
+   },
+   {
+    "q": "Ist Aylin für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "She wants her school to try it for a year."
+   },
+   {
+    "q": "Ist Jürgen für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.3"
+    ],
+    "why": "He sees no reason to change anything."
+   },
+   {
+    "q": "Ist Nadine für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.3"
+    ],
+    "why": "Working parents could not look after their children, so everything should stay as it is."
+   },
+   {
+    "q": "Ist Paul für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.3"
+    ],
+    "why": "An hour later would change a lot for him."
+   },
+   {
+    "q": "Ist Thomas für einen späteren Schulbeginn?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.1"
+    ],
+    "why": "Later school would make the morning traffic more relaxed – and children better rested."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-04-1",
+  "station": 4,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Gesund und fit",
+  "intro": "Seven people are looking for a sport or health offer. Find the right ad for each person – or x if there is none.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Gesund und fit – Angebote im Herbst",
+      "Healthy and fit – offers this autumn"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Rückenschule im Gesundheitszentrum: Sie sitzen den ganzen Tag am Schreibtisch und haben oft Rückenschmerzen?",
+      "Back school at the health centre: do you sit at a desk all day and often have back pain?"
+     ],
+     [
+      "In zehn Terminen lernen Sie einfache Übungen, die Sie auch zu Hause machen können.",
+      "In ten sessions you learn simple exercises that you can also do at home."
+     ],
+     [
+      "Viele Krankenkassen bezahlen einen Teil der Kosten.",
+      "Many health insurers pay part of the costs."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Schwimmkurs für Erwachsene: Sie haben als Kind nie schwimmen gelernt?",
+      "Swimming course for adults: you never learned to swim as a child?"
+     ],
+     [
+      "Kein Problem!",
+      "No problem!"
+     ],
+     [
+      "In kleinen Gruppen mit höchstens sechs Personen üben wir im Hallenbad Ost, immer donnerstags um 19 Uhr.",
+      "In small groups of at most six people we practise at the Ost indoor pool, every Thursday at 7 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Lauftreff „Morgenrunde“: Wir laufen jeden Samstag um 8 Uhr gemeinsam fünf Kilometer im Stadtpark.",
+      "'Morning Round' running group: every Saturday at 8 a.m. we run five kilometres together in the city park."
+     ],
+     [
+      "Die Teilnahme ist kostenlos, eine Anmeldung ist nicht nötig, und jedes Tempo ist willkommen.",
+      "Taking part is free, no registration is needed, and every pace is welcome."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Kochkurs „Gesund und schnell“: Lernen Sie, wie man in 20 Minuten ein gesundes Abendessen kocht.",
+      "Cooking course 'Healthy and quick': learn how to cook a healthy dinner in 20 minutes."
+     ],
+     [
+      "Ideal für Berufstätige!",
+      "Ideal for working people!"
+     ],
+     [
+      "Freitag von 18 bis 21 Uhr, 35 Euro inklusive Lebensmittel.",
+      "Friday from 6 to 9 p.m., 35 euros including food."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Kletterhalle Nordwand: Kinderkurse für 8- bis 12-Jährige jeden Mittwochnachmittag.",
+      "Nordwand climbing hall: children's courses for 8- to 12-year-olds every Wednesday afternoon."
+     ],
+     [
+      "Die Ausrüstung kann bei uns geliehen werden.",
+      "The equipment can be borrowed from us."
+     ],
+     [
+      "Für Erwachsene bieten wir am Wochenende Schnupperkurse an.",
+      "For adults we offer taster courses at the weekend."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Yoga für Schwangere: sanfte Übungen und Atemtechniken für werdende Mütter ab dem vierten Monat.",
+      "Yoga for pregnant women: gentle exercises and breathing techniques for mothers-to-be from the fourth month."
+     ],
+     [
+      "Montags um 10 Uhr in der Hebammenpraxis am Markt.",
+      "Mondays at 10 a.m. at the midwives' practice on the market square."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Ernährungsberatung: Sie möchten abnehmen oder sich gesünder ernähren?",
+      "Nutrition advice: would you like to lose weight or eat more healthily?"
+     ],
+     [
+      "Unsere Expertin erstellt mit Ihnen einen persönlichen Plan.",
+      "Our expert draws up a personal plan with you."
+     ],
+     [
+      "Einzeltermine sind auch abends und online möglich.",
+      "One-to-one appointments are also possible in the evening and online."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Fitnessstudio Kraftpaket: Im Herbst ohne Aufnahmegebühr!",
+      "Kraftpaket gym: no joining fee this autumn!"
+     ],
+     [
+      "Wir haben täglich von 6 bis 23 Uhr geöffnet, die Sauna ist inklusive.",
+      "We are open daily from 6 a.m. to 11 p.m., sauna included."
+     ],
+     [
+      "Studierende erhalten 20 Prozent Rabatt.",
+      "Students get a 20 per cent discount."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Tanzkurs für Paare: Walzer, Tango und Discofox – in sechs Abenden fit für die nächste Hochzeit!",
+      "Dance course for couples: waltz, tango and disco fox – ready for the next wedding in six evenings!"
+     ],
+     [
+      "Anmeldung nur zu zweit.",
+      "Registration only as a pair."
+     ],
+     [
+      "Tanzschule Lehmann, sonntags um 17 Uhr.",
+      "Lehmann dance school, Sundays at 5 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Endlich Nichtraucher!",
+      "Finally a non-smoker!"
+     ],
+     [
+      "Der Kurs der Volkshochschule wird von einer Ärztin und einem Psychologen geleitet.",
+      "The adult education centre's course is led by a doctor and a psychologist."
+     ],
+     [
+      "Fünf Treffen im Abstand von einer Woche, Beginn am 3. November.",
+      "Five meetings at weekly intervals, starting on 3 November."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Krankenkassen",
+    "en": "health insurers"
+   },
+   {
+    "w": "Hallenbad",
+    "en": "indoor swimming pool"
+   },
+   {
+    "w": "Ausrüstung",
+    "en": "equipment"
+   },
+   {
+    "w": "Hebammenpraxis",
+    "en": "midwives' practice"
+   },
+   {
+    "w": "Aufnahmegebühr",
+    "en": "joining fee"
+   },
+   {
+    "w": "Schnupperkurse",
+    "en": "taster courses"
+   }
+  ],
+  "predict": {
+   "q": "Look at the heading. What kind of offers will you find?",
+   "opts": [
+    "holiday trips",
+    "sport and health courses",
+    "jobs in hospitals"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Malte arbeitet im Büro und hat seit Monaten Schmerzen im Rücken.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.1"
+    ],
+    "why": "The back school is for people who sit at a desk and have back pain."
+   },
+   {
+    "q": "Eine Kollegin von Priya ist im fünften Monat schwanger und möchte sich trotzdem etwas bewegen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.0"
+    ],
+    "why": "Yoga for pregnant women, from the fourth month."
+   },
+   {
+    "q": "Jonas möchte regelmäßig joggen, aber nicht allein, und er hat wenig Geld.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "The running group meets every Saturday and is free."
+   },
+   {
+    "q": "Priya hatte als Kind keine Gelegenheit, schwimmen zu lernen. Das möchte sie jetzt nachholen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "A swimming course for adults who never learned as children."
+   },
+   {
+    "q": "Frau Yilmaz sucht für ihren zehnjährigen Enkel ein sportliches Hobby.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.0"
+    ],
+    "why": "The climbing hall has courses for 8- to 12-year-olds."
+   },
+   {
+    "q": "Herr Weber hat sich beim Fußball am Knie verletzt und sucht eine Physiotherapie.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "No ad offers physiotherapy for an injured knee; the back school (a) is for back pain."
+   },
+   {
+    "q": "Ein Kollege von Malte möchte zehn Kilo abnehmen und wünscht sich dafür eine persönliche Beratung.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0",
+     "b8.1"
+    ],
+    "why": "The nutrition expert makes a personal plan for losing weight; the cooking course (d) is not personal advice."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-04-2",
+  "station": 4,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Mit 67 zum Halbmarathon",
+  "intro": "A local newspaper writes about a pensioner who started running late in life.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "„Ich hätte früher anfangen sollen“: Rentnerin läuft ihren ersten Halbmarathon",
+      "'I should have started earlier': pensioner runs her first half marathon"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Als Gisela Martens vor drei Jahren in Rente ging, war Sport für sie ein Fremdwort.",
+      "When Gisela Martens retired three years ago, sport was a foreign word to her."
+     ],
+     [
+      "„Ich hatte 40 Jahre im Büro gesessen und war schon nach zwei Etagen außer Atem“, erzählt die 67-Jährige aus Münster.",
+      "'I had sat in an office for 40 years and was out of breath after just two floors,' says the 67-year-old from Münster."
+     ],
+     [
+      "Am Sonntag lief sie beim Stadtlauf ihren ersten Halbmarathon – 21 Kilometer in zwei Stunden und 38 Minuten.",
+      "On Sunday she ran her first half marathon at the city run – 21 kilometres in two hours and 38 minutes."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Angefangen hat alles mit einem Besuch beim Hausarzt.",
+      "It all started with a visit to her GP."
+     ],
+     [
+      "Er stellte fest, dass ihr Blutdruck zu hoch war, und riet ihr zu mehr Bewegung.",
+      "He found that her blood pressure was too high and advised her to get more exercise."
+     ],
+     [
+      "Bevor sie Tabletten nahm, wollte sie es lieber mit Sport versuchen.",
+      "Before taking pills, she preferred to try sport."
+     ],
+     [
+      "Eine Nachbarin nahm sie zu einer Walking-Gruppe mit, die sich zweimal pro Woche am Aasee trifft.",
+      "A neighbour took her along to a walking group that meets twice a week at the Aasee lake."
+     ],
+     [
+      "Die Gruppe besteht fast nur aus Frauen über 60.",
+      "The group is made up almost entirely of women over 60."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Nach einigen Monaten wurde aus dem schnellen Gehen langsames Laufen.",
+      "After a few months, brisk walking turned into slow running."
+     ],
+     [
+      "Zum Geburtstag schenkte ihr ihre Tochter richtige Laufschuhe.",
+      "For her birthday her daughter gave her proper running shoes."
+     ],
+     [
+      "„Am Anfang konnte ich keine fünf Minuten ohne Pause laufen“, sagt Martens.",
+      "'At first I couldn't run for five minutes without a break,' says Martens."
+     ],
+     [
+      "Heute trainiert sie viermal pro Woche und achtet auch mehr auf ihre Ernährung.",
+      "Today she trains four times a week and also pays more attention to her diet."
+     ],
+     [
+      "Ihr Blutdruck ist inzwischen wieder normal.",
+      "Her blood pressure is now back to normal."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Einen großen Wunsch hat sie noch: Wenn ihre Knie mitmachen, möchte sie mit 70 einen ganzen Marathon laufen.",
+      "She still has one big wish: if her knees hold up, she wants to run a full marathon at 70."
+     ],
+     [
+      "Und was rät sie Menschen in ihrem Alter?",
+      "And what does she advise people her age?"
+     ],
+     [
+      "„Fangt langsam an und sucht euch eine Gruppe.",
+      "'Start slowly and find yourselves a group."
+     ],
+     [
+      "Allein hätte ich bestimmt nach zwei Wochen aufgegeben.“",
+      "On my own I would certainly have given up after two weeks.'"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "in Rente",
+    "en": "retired (in Rente gehen: to retire)"
+   },
+   {
+    "w": "Fremdwort",
+    "en": "foreign word; here: something completely unknown"
+   },
+   {
+    "w": "außer Atem",
+    "en": "out of breath"
+   },
+   {
+    "w": "Blutdruck",
+    "en": "blood pressure"
+   },
+   {
+    "w": "Halbmarathon",
+    "en": "half marathon (21 km)"
+   },
+   {
+    "w": "mitmachen",
+    "en": "to join in; here: to hold up"
+   }
+  ],
+  "predict": {
+   "q": "A pensioner runs her first half marathon. What will the article probably explain?",
+   "opts": [
+    "why marathons are dangerous",
+    "how to buy running shoes",
+    "how she started running"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "Warum hat Frau Martens mit dem Sport angefangen?",
+    "format": "abc",
+    "opts": [
+     "Sie wollte unbedingt bei einem Marathon mitlaufen.",
+     "Ihr Arzt hatte ein gesundheitliches Problem gefunden.",
+     "Ihre Tabletten hatten nicht geholfen."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Her GP found that her blood pressure was too high and advised more exercise."
+   },
+   {
+    "q": "Wie hat sie mit dem Training begonnen?",
+    "format": "abc",
+    "opts": [
+     "Sie ist gleich fünf Kilometer gelaufen.",
+     "Sie hat in einem Fitnessstudio trainiert.",
+     "Sie ist mit einer Gruppe schnell gegangen."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.3",
+     "b4.0"
+    ],
+    "why": "A neighbour took her to a walking group; only later did walking become running."
+   },
+   {
+    "q": "Was empfiehlt Frau Martens anderen Rentnern?",
+    "format": "abc",
+    "opts": [
+     "nicht allein zu trainieren",
+     "vorher einen Arzt zu fragen",
+     "jeden Tag zu laufen"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2",
+     "b5.3"
+    ],
+    "why": "She says: find a group – alone she would have given up."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-05-1",
+  "station": 5,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Ein Smartphone für Kinder?",
+  "intro": "In a magazine forum, readers answer the question whether children under twelve should have their own smartphone.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollten Kinder unter zwölf Jahren ein eigenes Smartphone haben?",
+      "Readers' forum: Should children under twelve have their own smartphone?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "comment",
+    "label": "Katrin, 39, Bonn",
+    "s": [
+     [
+      "Meine Tochter ist zehn und fragt fast jeden Tag nach einem Smartphone, weil angeblich alle in ihrer Klasse eins haben.",
+      "My daughter is ten and asks for a smartphone almost every day, because supposedly everyone in her class has one."
+     ],
+     [
+      "Trotzdem bleibe ich bei meinem Nein.",
+      "Still, I'm sticking to my no."
+     ],
+     [
+      "Kinder in diesem Alter können noch nicht einschätzen, welche Videos und Nachrichten gefährlich sind.",
+      "Children of that age can't yet judge which videos and messages are dangerous."
+     ],
+     [
+      "Für Notfälle hat sie ein einfaches Handy, mit dem man nur telefonieren kann.",
+      "For emergencies she has a simple mobile that can only make calls."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Ali, 35, Bremen",
+    "s": [
+     [
+      "Ich bin Informatiker und finde, dass Kinder früh lernen sollten, mit digitalen Medien umzugehen.",
+      "I'm a computer scientist and I think children should learn early how to deal with digital media."
+     ],
+     [
+      "Verbote helfen nicht, denn dann benutzen sie das Smartphone eben heimlich bei Freunden.",
+      "Bans don't help, because then they just use a smartphone secretly at their friends' homes."
+     ],
+     [
+      "Unser Sohn hat mit neun Jahren ein eigenes Gerät bekommen.",
+      "Our son got his own device at the age of nine."
+     ],
+     [
+      "Wir haben aber feste Regeln: kein Handy beim Essen, und ab acht Uhr abends bleibt es in der Küche.",
+      "But we have fixed rules: no phone at meals, and from eight in the evening it stays in the kitchen."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Monika, 67, Ulm",
+    "s": [
+     [
+      "Ich sehe es bei meinen Enkeln: Sobald sie zu Besuch sind, schauen sie nur noch auf den Bildschirm.",
+      "I see it with my grandchildren: as soon as they visit, they only look at the screen."
+     ],
+     [
+      "Früher haben Kinder draußen gespielt und sich selbst Spiele ausgedacht.",
+      "In the past children played outside and made up their own games."
+     ],
+     [
+      "Ein eigenes Smartphone sollte es erst geben, wenn Kinder älter sind und verstehen, dass das echte Leben wichtiger ist.",
+      "Children should only get their own smartphone when they are older and understand that real life is more important."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Lukas, 15, Erfurt",
+    "s": [
+     [
+      "Ich habe mein erstes Smartphone mit elf bekommen, und das war genau richtig.",
+      "I got my first smartphone at eleven, and that was exactly right."
+     ],
+     [
+      "In der fünften Klasse wurden alle Termine und Infos zu den Hausaufgaben in einer Chatgruppe geteilt.",
+      "In year five all dates and information about homework were shared in a chat group."
+     ],
+     [
+      "Wer kein Handy hatte, wusste oft nicht Bescheid und war ein bisschen ausgeschlossen.",
+      "Anyone without a phone often didn't know what was going on and was a bit left out."
+     ],
+     [
+      "Natürlich sollten die Eltern trotzdem kontrollieren, welche Apps installiert werden.",
+      "Of course parents should still check which apps are installed."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Sandra, 42, Linz",
+    "s": [
+     [
+      "Mein Sohn hat mit elf ein Smartphone bekommen, und ich bereue es.",
+      "My son got a smartphone at eleven, and I regret it."
+     ],
+     [
+      "Er hat nur noch gespielt, und seine Noten wurden immer schlechter.",
+      "He did nothing but play games, and his marks got worse and worse."
+     ],
+     [
+      "Obwohl ich den Druck verstehe, den die Kinder spüren, würde ich heute bis zum dreizehnten Geburtstag warten.",
+      "Although I understand the pressure children feel, today I would wait until the thirteenth birthday."
+     ],
+     [
+      "Für die Schule reicht ein Familiencomputer im Wohnzimmer völlig aus.",
+      "For school, a family computer in the living room is quite enough."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Frank, 46, Hamburg",
+    "s": [
+     [
+      "Viele Eltern haben Angst vor dem Smartphone, und das verstehe ich gut.",
+      "Many parents are afraid of the smartphone, and I understand that well."
+     ],
+     [
+      "Ich bin aber froh, dass meine elfjährige Tochter eins hat.",
+      "But I'm glad that my eleven-year-old daughter has one."
+     ],
+     [
+      "Sie fährt jeden Tag allein mit dem Bus zur Schule, und ich kann sehen, wo sie gerade ist.",
+      "She takes the bus to school alone every day, and I can see where she is."
+     ],
+     [
+      "Wenn der Bus einmal ausfällt, kann sie mich sofort anrufen.",
+      "If the bus is ever cancelled, she can call me straight away."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Petra, 51, Kiel",
+    "s": [
+     [
+      "Als Grundschullehrerin erlebe ich jeden Tag, wie müde manche Kinder morgens sind, weil sie nachts heimlich Videos geschaut haben.",
+      "As a primary school teacher I see every day how tired some children are in the morning because they secretly watched videos at night."
+     ],
+     [
+      "Viele Streitigkeiten in der Klasse beginnen außerdem in Chatgruppen.",
+      "Many arguments in class also start in chat groups."
+     ],
+     [
+      "Ich wünsche mir, dass Eltern mit dem ersten Smartphone warten, bis ihre Kinder mindestens zwölf sind.",
+      "I wish parents would wait with the first smartphone until their children are at least twelve."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "angeblich",
+    "en": "supposedly"
+   },
+   {
+    "w": "einschätzen",
+    "en": "to judge, to assess"
+   },
+   {
+    "w": "heimlich",
+    "en": "secretly"
+   },
+   {
+    "w": "ausgeschlossen",
+    "en": "left out, excluded"
+   },
+   {
+    "w": "bereue",
+    "en": "regret (bereuen)"
+   },
+   {
+    "w": "Streitigkeiten",
+    "en": "arguments, quarrels"
+   }
+  ],
+  "predict": {
+   "q": "Readers discuss smartphones for children. Which worry do you expect to read?",
+   "opts": [
+    "the price of phone contracts",
+    "blurry photos",
+    "children seeing dangerous content"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "Ist Katrin für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "She sticks to her 'no': children that age can't judge what is dangerous."
+   },
+   {
+    "q": "Ist Ali für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0",
+     "b3.2"
+    ],
+    "why": "He wants children to learn early; his son got a phone at nine."
+   },
+   {
+    "q": "Ist Monika für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Children should only get one when they are older."
+   },
+   {
+    "q": "Ist Lukas für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "He got his at eleven and says it was 'genau richtig'."
+   },
+   {
+    "q": "Ist Sandra für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.0",
+     "b6.2"
+    ],
+    "why": "She regrets it and would now wait until thirteen."
+   },
+   {
+    "q": "Ist Frank für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.1"
+    ],
+    "why": "He is glad his eleven-year-old has one."
+   },
+   {
+    "q": "Ist Petra für ein eigenes Smartphone für Kinder unter zwölf?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.2"
+    ],
+    "why": "She wants parents to wait until children are at least twelve."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-05-2",
+  "station": 5,
+  "part": "Teil 5",
+  "type": "rules",
+  "title": "Forum „Unser Viertel“",
+  "intro": "You want to join an online forum for your neighbourhood. These are its terms of use.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Nutzungsregeln für das Nachbarschaftsforum „Unser Viertel“",
+      "Terms of use for the neighbourhood forum 'Our Quarter'"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Herzlich willkommen im Online-Forum der Südstadt!",
+      "A warm welcome to the Südstadt online forum!"
+     ],
+     [
+      "Hier können Sie Fragen stellen, Dinge verschenken oder Ihren Nachbarn Hilfe anbieten.",
+      "Here you can ask questions, give things away or offer help to your neighbours."
+     ],
+     [
+      "Damit das Forum für alle angenehm bleibt, gelten die folgenden Regeln.",
+      "So that the forum stays pleasant for everyone, the following rules apply."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Anmeldung: Um Beiträge zu schreiben, registrieren Sie sich mit Ihrem richtigen Namen und Ihrer Adresse.",
+      "Registration: to write posts, register with your real name and address."
+     ],
+     [
+      "Andere Mitglieder sehen nur Ihren Namen und Ihre Straße, nicht Ihre Hausnummer.",
+      "Other members see only your name and your street, not your house number."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Umgangston: Bleiben Sie bitte höflich, auch wenn Sie anderer Meinung sind.",
+      "Tone: please stay polite, even if you disagree."
+     ],
+     [
+      "Beleidigende Kommentare werden ohne Warnung gelöscht.",
+      "Insulting comments are deleted without warning."
+     ],
+     [
+      "Wer dreimal gegen die Regeln verstößt, wird für einen Monat gesperrt.",
+      "Anyone who breaks the rules three times is blocked for a month."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Verkaufen und Verschenken: Private Anzeigen sind kostenlos, aber jedes Mitglied darf höchstens drei Anzeigen pro Woche veröffentlichen.",
+      "Selling and giving away: private ads are free, but each member may post at most three ads a week."
+     ],
+     [
+      "Werbung von Geschäften ist nur in der Rubrik „Lokale Geschäfte“ erlaubt.",
+      "Advertising by businesses is only allowed in the 'Local businesses' section."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Fotos: Laden Sie nur Fotos hoch, die Sie selbst gemacht haben.",
+      "Photos: only upload photos you took yourself."
+     ],
+     [
+      "Wenn andere Personen auf einem Foto zu erkennen sind, brauchen Sie vorher ihre Erlaubnis.",
+      "If other people can be recognised in a photo, you need their permission first."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "p",
+    "s": [
+     [
+      "Notfälle: Das Forum wird nicht rund um die Uhr gelesen.",
+      "Emergencies: the forum is not read around the clock."
+     ],
+     [
+      "Bei Feuer, Unfällen oder Einbrüchen rufen Sie deshalb bitte sofort die 110 oder die 112 an.",
+      "So in case of fire, accidents or burglaries, please call 110 or 112 immediately."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Probleme melden: Wenn Sie einen Beitrag sehen, der gegen diese Regeln verstößt, klicken Sie bitte auf das Symbol mit der Fahne.",
+      "Reporting problems: if you see a post that breaks these rules, please click the flag symbol."
+     ],
+     [
+      "Unser Team aus ehrenamtlichen Moderatoren prüft jede Meldung innerhalb von 24 Stunden.",
+      "Our team of volunteer moderators checks every report within 24 hours."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Beiträge",
+    "en": "posts (in a forum)"
+   },
+   {
+    "w": "beleidigende",
+    "en": "insulting"
+   },
+   {
+    "w": "verstößt",
+    "en": "breaks (a rule) – verstoßen gegen"
+   },
+   {
+    "w": "gesperrt",
+    "en": "blocked, banned"
+   },
+   {
+    "w": "Rubrik",
+    "en": "section, category"
+   },
+   {
+    "w": "ehrenamtlichen",
+    "en": "volunteer, unpaid"
+   }
+  ],
+  "predict": {
+   "q": "These are the rules of an online forum. What will they probably say?",
+   "opts": [
+    "how to pay for the forum",
+    "how to stay polite and what you may post",
+    "how to become a moderator"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Was können andere Mitglieder über Sie sehen?",
+    "format": "abc",
+    "opts": [
+     "Ihren Namen und Ihre Straße",
+     "Ihre vollständige Adresse",
+     "nur Ihren Vornamen"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Others see your name and street, but not your house number."
+   },
+   {
+    "q": "Was passiert mit einem Kommentar, der andere beleidigt?",
+    "format": "abc",
+    "opts": [
+     "Der Schreiber bekommt zuerst eine Warnung.",
+     "Der Schreiber wird sofort für einen Monat gesperrt.",
+     "Der Kommentar wird entfernt."
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Insulting comments are deleted without warning; a ban only comes after three breaches."
+   },
+   {
+    "q": "Ein Café im Viertel möchte für seinen neuen Kuchen werben. Was gilt?",
+    "format": "abc",
+    "opts": [
+     "Das ist im Forum gar nicht erlaubt.",
+     "Das ist nur in einem bestimmten Bereich des Forums erlaubt.",
+     "Das Café darf jede Woche drei Anzeigen kostenlos veröffentlichen."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Business advertising is allowed only in the 'Lokale Geschäfte' section."
+   },
+   {
+    "q": "Sie sehen, wie jemand in die Wohnung Ihrer Nachbarn einbricht. Was sollen Sie tun?",
+    "format": "abc",
+    "opts": [
+     "einen Beitrag im Forum schreiben",
+     "auf das Symbol mit der Fahne klicken",
+     "sofort die Polizei anrufen"
+    ],
+    "a": 2,
+    "ev": [
+     "b7.0",
+     "b7.1"
+    ],
+    "why": "The forum is not read around the clock; for a burglary you call 110 (the police) at once."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-06-1",
+  "station": 6,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Ein Monat ohne Shopping",
+  "intro": "Jonas writes on his blog about a month in which he bought nothing new.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Mein Experiment: 30 Tage nichts Neues kaufen",
+      "My experiment: 30 days of buying nothing new"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Im Februar habe ich gemerkt, dass mein Schrank voller Sachen ist, die ich nie trage.",
+      "In February I noticed that my wardrobe is full of things I never wear."
+     ],
+     [
+      "Außerdem kamen fast jede Woche Pakete von Online-Shops, obwohl ich eigentlich nichts gebraucht habe.",
+      "Besides, parcels from online shops arrived almost every week, although I didn't actually need anything."
+     ],
+     [
+      "Deshalb habe ich mir vorgenommen, im März nichts Neues zu kaufen – außer Lebensmitteln und Medikamenten.",
+      "So I made up my mind to buy nothing new in March – except food and medicine."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Gleich am ersten Tag habe ich die Newsletter aller Online-Shops abbestellt.",
+      "On the very first day I unsubscribed from the newsletters of all the online shops."
+     ],
+     [
+      "Trotzdem war die erste Woche schwieriger, als ich gedacht hatte.",
+      "Still, the first week was harder than I had expected."
+     ],
+     [
+      "Während einer Mittagspause stand ich vor dem Schaufenster eines Sportgeschäfts und wollte unbedingt die Laufschuhe haben, die dort im Angebot waren.",
+      "During a lunch break I stood in front of the window of a sports shop and really wanted the running shoes that were on offer there."
+     ],
+     [
+      "Ich bin aber weitergegangen und habe abends meine alten Schuhe geputzt – sie sind noch völlig in Ordnung.",
+      "But I walked on, and in the evening I cleaned my old shoes – they're still perfectly fine."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "In der zweiten Woche ging mein Wasserkocher kaputt.",
+      "In the second week my kettle broke."
+     ],
+     [
+      "Früher hätte ich sofort einen neuen bestellt.",
+      "In the past I would have ordered a new one straight away."
+     ],
+     [
+      "Stattdessen bin ich mit Lena in ein Reparaturcafé gegangen, das jeden zweiten Samstag im Stadtteilzentrum stattfindet.",
+      "Instead I went with Lena to a repair café that takes place every other Saturday at the community centre."
+     ],
+     [
+      "Ein Elektriker, der schon in Rente ist, hat das Kabel in zwanzig Minuten repariert, und ich musste nur eine kleine Spende geben.",
+      "An electrician who is already retired repaired the cable in twenty minutes, and I only had to give a small donation."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Am Ende des Monats hatte ich fast 300 Euro mehr auf dem Konto als sonst.",
+      "At the end of the month I had almost 300 euros more in my account than usual."
+     ],
+     [
+      "Die Hälfte davon habe ich gespart, die andere Hälfte habe ich für ein Wochenende in Hamburg ausgegeben.",
+      "I saved half of it and spent the other half on a weekend in Hamburg."
+     ],
+     [
+      "Ganz ohne Einkaufen möchte ich nicht leben, aber vor jedem Kauf frage ich mich jetzt: Brauche ich das wirklich?",
+      "I don't want to live entirely without shopping, but now before every purchase I ask myself: do I really need this?"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "vorgenommen",
+    "en": "resolved, decided (sich etwas vornehmen)"
+   },
+   {
+    "w": "abbestellt",
+    "en": "unsubscribed, cancelled"
+   },
+   {
+    "w": "Schaufenster",
+    "en": "shop window"
+   },
+   {
+    "w": "Wasserkocher",
+    "en": "kettle"
+   },
+   {
+    "w": "Reparaturcafé",
+    "en": "repair café: volunteers repair things for free"
+   },
+   {
+    "w": "Spende",
+    "en": "donation"
+   }
+  ],
+  "predict": {
+   "q": "Jonas tries not to buy anything new for 30 days. What do you think happens?",
+   "opts": [
+    "He saves money.",
+    "He opens a shop.",
+    "He loses his job."
+   ],
+   "a": 0
+  },
+  "questions": [
+   {
+    "q": "Jonas wollte im März auch keine Lebensmittel kaufen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "Food and medicine were the exceptions – he could still buy them."
+   },
+   {
+    "q": "Jonas hat sich in der Mittagspause neue Laufschuhe gekauft.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2",
+     "b3.3"
+    ],
+    "why": "He wanted them, but walked on and cleaned his old shoes."
+   },
+   {
+    "q": "Zu Beginn des Experiments hat Jonas dafür gesorgt, dass er keine Werbung mehr per E-Mail bekommt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "On the first day he unsubscribed from all the shops’ newsletters."
+   },
+   {
+    "q": "Jonas’ Wasserkocher wurde im Reparaturcafé wieder in Ordnung gebracht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2",
+     "b4.3"
+    ],
+    "why": "A retired electrician at the repair café fixed the cable."
+   },
+   {
+    "q": "Für die Reparatur musste Jonas einen festen Preis bezahlen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "He only gave a small donation."
+   },
+   {
+    "q": "Jonas hat einen Teil des gesparten Geldes für eine Reise ausgegeben.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "He spent half of it on a weekend in Hamburg."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-06-2",
+  "station": 6,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Kaufen, tauschen, reparieren",
+  "intro": "Seven people need something bought, swapped or repaired. Find the right ad for each person – or x if there is none.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Kaufen, tauschen, reparieren – Anzeigen aus der Region",
+      "Buy, swap, repair – ads from the region"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Fahrradladen Speiche: gebrauchte Fahrräder mit sechs Monaten Garantie.",
+      "Speiche bike shop: used bicycles with a six-month guarantee."
+     ],
+     [
+      "Wir kaufen auch Ihr altes Rad, die Bewertung ist kostenlos.",
+      "We also buy your old bike; the valuation is free."
+     ],
+     [
+      "Montag bis Freitag von 10 bis 18 Uhr.",
+      "Monday to Friday from 10 a.m. to 6 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Kinderflohmarkt in der Turnhalle der Grundschule am Park: Kleidung, Spielzeug und Kinderwagen aus zweiter Hand.",
+      "Children's flea market in the gym of the primary school by the park: second-hand clothes, toys and prams."
+     ],
+     [
+      "Samstag von 9 bis 13 Uhr.",
+      "Saturday from 9 a.m. to 1 p.m."
+     ],
+     [
+      "Wer selbst verkaufen möchte, zahlt 5 Euro für einen Tisch.",
+      "Anyone who wants to sell pays 5 euros for a table."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Handy kaputt?",
+      "Phone broken?"
+     ],
+     [
+      "Wir reparieren Bildschirme und Akkus aller Marken, meistens noch am selben Tag.",
+      "We repair screens and batteries of all brands, usually on the same day."
+     ],
+     [
+      "Der Kostenvoranschlag ist gratis.",
+      "The cost estimate is free."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Verbraucherberatung: Sie haben Ärger mit einem Online-Shop oder mit Ihrem Handyvertrag?",
+      "Consumer advice: are you having trouble with an online shop or with your phone contract?"
+     ],
+     [
+      "Unsere Juristinnen helfen Ihnen weiter.",
+      "Our lawyers will help you."
+     ],
+     [
+      "Termine nach Vereinbarung, Gebühr 20 Euro.",
+      "Appointments by arrangement, fee 20 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Unverpackt-Laden „Volle Dose“: Nudeln, Reis, Öl und Waschmittel ohne Plastik.",
+      "'Volle Dose' zero-packaging shop: pasta, rice, oil and detergent without plastic."
+     ],
+     [
+      "Bringen Sie Ihre eigenen Behälter mit oder leihen Sie Gläser bei uns.",
+      "Bring your own containers or borrow jars from us."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Möbelhaus Wohnwelt: großer Räumungsverkauf!",
+      "Wohnwelt furniture store: big clearance sale!"
+     ],
+     [
+      "Sofas, Betten und Schränke sind bis zu 50 Prozent reduziert.",
+      "Sofas, beds and wardrobes are reduced by up to 50 per cent."
+     ],
+     [
+      "Lieferung und Aufbau sind innerhalb der Stadt gratis.",
+      "Delivery and assembly within the city are free."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Kleidertausch-Party im Café Mitte: Bringen Sie bis zu zehn gut erhaltene Kleidungsstücke mit und nehmen Sie dafür andere mit nach Hause.",
+      "Clothes-swap party at Café Mitte: bring up to ten items of clothing in good condition and take others home instead."
+     ],
+     [
+      "Der Eintritt ist frei, Getränke kosten 2 Euro.",
+      "Entry is free; drinks cost 2 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Schneiderei Kaya: Wir kürzen Hosen, ersetzen Reißverschlüsse und ändern Kleider.",
+      "Kaya tailoring: we shorten trousers, replace zips and alter dresses."
+     ],
+     [
+      "Schnell, günstig und zuverlässig – auch bei Lederjacken.",
+      "Fast, cheap and reliable – leather jackets too."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Werkzeugverleih: Sie brauchen eine Bohrmaschine, eine Leiter oder einen Rasenmäher nur für einen Tag?",
+      "Tool hire: do you need a drill, a ladder or a lawnmower for just one day?"
+     ],
+     [
+      "Bei uns leihen Sie Geräte schon ab 8 Euro pro Tag.",
+      "With us you can hire equipment from just 8 euros a day."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Gebrauchte Elektronik: geprüfte Laptops und Tablets zum halben Preis.",
+      "Used electronics: tested laptops and tablets at half price."
+     ],
+     [
+      "Mit Rechnung und zwölf Monaten Garantie.",
+      "With an invoice and a twelve-month guarantee."
+     ],
+     [
+      "Online bestellen oder im Laden abholen.",
+      "Order online or collect in the shop."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Kostenvoranschlag",
+    "en": "cost estimate, quote"
+   },
+   {
+    "w": "Verbraucherberatung",
+    "en": "consumer advice centre"
+   },
+   {
+    "w": "Behälter",
+    "en": "containers"
+   },
+   {
+    "w": "Räumungsverkauf",
+    "en": "clearance sale"
+   },
+   {
+    "w": "Reißverschlüsse",
+    "en": "zips"
+   },
+   {
+    "w": "Werkzeugverleih",
+    "en": "tool hire"
+   }
+  ],
+  "predict": {
+   "q": "The heading is 'Buy, swap, repair'. What kind of ads are these?",
+   "opts": [
+    "job offers",
+    "flats to rent",
+    "shops and services for things you need"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "Frau Yilmaz’ Lieblingshose ist zu lang. Wegwerfen möchte sie sie aber nicht.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 7,
+    "ev": [
+     "b9.0"
+    ],
+    "why": "The tailor shortens trousers."
+   },
+   {
+    "q": "Lena hat online eine Jacke bestellt, die kaputt angekommen ist. Der Shop antwortet nicht auf ihre E-Mails.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.0",
+     "b5.1"
+    ],
+    "why": "The consumer advice centre helps with trouble with online shops."
+   },
+   {
+    "q": "Jonas braucht für sein Studium einen günstigen Computer, möchte aber nicht auf eine Garantie verzichten.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 9,
+    "ev": [
+     "b11.0",
+     "b11.1"
+    ],
+    "why": "Tested laptops at half price with a twelve-month guarantee."
+   },
+   {
+    "q": "Malte möchte ein Regal an die Wand hängen, hat aber keine Bohrmaschine und will auch keine kaufen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.0",
+     "b10.1"
+    ],
+    "why": "You can hire a drill for a day."
+   },
+   {
+    "q": "Priya hat viele Kleider, die sie nicht mehr trägt. Sie möchte sie gegen andere tauschen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0"
+    ],
+    "why": "At the clothes-swap party you bring clothes and take others home."
+   },
+   {
+    "q": "Herr Weber sucht einen gebrauchten Kühlschrank für seine Küche.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "No ad sells used fridges: j has only laptops and tablets, f sells new furniture."
+   },
+   {
+    "q": "Eine Nachbarin von Lena hat ein Baby bekommen und sucht günstige Babysachen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "The children’s flea market sells second-hand clothes, toys and prams."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-07-1",
+  "station": 7,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Der Rufbus",
+  "intro": "A regional newspaper reports on a new bus service for villages in the countryside.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Ein Bus, der kommt, wenn man ihn ruft",
+      "A bus that comes when you call it"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Wer in den Dörfern rund um Hohenfeld wohnt, hatte lange ein Problem: Der Bus fuhr nur dreimal am Tag, am Wochenende fuhr er überhaupt nicht.",
+      "Anyone who lives in the villages around Hohenfeld had a problem for a long time: the bus ran only three times a day, and at weekends it didn't run at all."
+     ],
+     [
+      "Seit dem 1. April gibt es eine neue Lösung, über die in der ganzen Region gesprochen wird: den Rufbus.",
+      "Since 1 April there has been a new solution that people across the whole region are talking about: the on-call bus."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Das Prinzip ist einfach.",
+      "The principle is simple."
+     ],
+     [
+      "Fahrgäste melden ihre Fahrt spätestens eine Stunde vorher per App oder Telefon an und sagen, wohin sie möchten.",
+      "Passengers book their trip at least an hour in advance by app or phone and say where they want to go."
+     ],
+     [
+      "Ein Computer plant dann die Strecke so, dass mehrere Personen mit demselben Kleinbus fahren können.",
+      "A computer then plans the route so that several people can travel in the same minibus."
+     ],
+     [
+      "Eine Fahrt kostet genauso viel wie ein normales Busticket, und der Rufbus fährt täglich von 6 bis 23 Uhr.",
+      "A trip costs the same as a normal bus ticket, and the on-call bus runs every day from 6 a.m. to 11 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Die 72-jährige Hannelore Busch aus Wiesental ist begeistert.",
+      "72-year-old Hannelore Busch from Wiesental is delighted."
+     ],
+     [
+      "Nachdem ihr Mann gestorben war, hatte sie das Auto verkauft, weil sie nicht gern selbst fuhr.",
+      "After her husband had died, she had sold the car because she didn't like driving herself."
+     ],
+     [
+      "„Danach musste ich immer meine Kinder fragen, wenn ich zum Arzt oder zum Einkaufen wollte“, erzählt sie.",
+      "'After that I always had to ask my children when I wanted to go to the doctor or shopping,' she says."
+     ],
+     [
+      "Jetzt fährt sie zweimal pro Woche allein in die Stadt.",
+      "Now she goes into town on her own twice a week."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Auch Jugendliche nutzen das Angebot gern, vor allem am Samstagabend.",
+      "Young people also like using the service, especially on Saturday evenings."
+     ],
+     [
+      "Kritik kommt dagegen von Pendlern: Morgens sind die Busse oft voll, und wer sich zu spät anmeldet, muss manchmal eine halbe Stunde warten.",
+      "Criticism, however, comes from commuters: in the mornings the buses are often full, and anyone who books too late sometimes has to wait half an hour."
+     ],
+     [
+      "Der Landkreis will deshalb im Herbst zwei weitere Fahrzeuge kaufen.",
+      "The district therefore plans to buy two more vehicles in the autumn."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Rufbus",
+    "en": "on-call bus: it comes when you book it"
+   },
+   {
+    "w": "Fahrgäste",
+    "en": "passengers"
+   },
+   {
+    "w": "Strecke",
+    "en": "route"
+   },
+   {
+    "w": "Kleinbus",
+    "en": "minibus"
+   },
+   {
+    "w": "Pendlern",
+    "en": "commuters (der Pendler)"
+   },
+   {
+    "w": "Landkreis",
+    "en": "district (local government area)"
+   }
+  ],
+  "predict": {
+   "q": "The headline says: 'A bus that comes when you call it'. Where do you think this bus runs?",
+   "opts": [
+    "in the centre of a big city",
+    "in the countryside, where buses are rare",
+    "at an airport"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Wie funktioniert der Rufbus?",
+    "format": "abc",
+    "opts": [
+     "Er fährt nach einem festen Fahrplan.",
+     "Er bringt mehrere Fahrgäste gemeinsam ans Ziel.",
+     "Er kostet mehr als ein normaler Bus."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "A computer plans the route so that several people share the same minibus."
+   },
+   {
+    "q": "Warum ist Frau Busch froh über den Rufbus?",
+    "format": "abc",
+    "opts": [
+     "Sie muss ihre Kinder nicht mehr um Hilfe bitten.",
+     "Sie hat ihr Auto verkauft, weil es zu teuer war.",
+     "Sie kann jetzt am Wochenende ihre Kinder besuchen."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2",
+     "b4.3"
+    ],
+    "why": "Before, she always had to ask her children; now she goes into town on her own."
+   },
+   {
+    "q": "Was kritisieren manche Pendler?",
+    "format": "abc",
+    "opts": [
+     "Der Bus fährt abends nicht lange genug.",
+     "Die Anmeldung mit der App ist zu kompliziert.",
+     "Am Morgen gibt es nicht genug Plätze."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "In the mornings the buses are often full."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-07-2",
+  "station": 7,
+  "part": "Teil 5",
+  "type": "terms",
+  "title": "StadtAuto Carsharing",
+  "intro": "You want to use a car-sharing service in your city. These are its rules.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "StadtAuto Carsharing – die wichtigsten Regeln",
+      "StadtAuto car sharing – the most important rules"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Mit StadtAuto können Sie rund um die Uhr ein Auto mieten – für eine Stunde, einen Tag oder ein ganzes Wochenende.",
+      "With StadtAuto you can rent a car around the clock – for an hour, a day or a whole weekend."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Wer kann mitmachen? Sie müssen mindestens 21 Jahre alt sein und seit mindestens zwei Jahren einen Führerschein haben.",
+      "Who can join? You must be at least 21 years old and have had a driving licence for at least two years."
+     ],
+     [
+      "Zur Anmeldung kommen Sie bitte mit Ihrem Ausweis und Ihrem Führerschein in unser Büro am Hauptbahnhof.",
+      "To register, please come to our office at the main station with your ID and your driving licence."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Buchen: Die Autos werden über die App oder telefonisch gebucht.",
+      "Booking: the cars are booked via the app or by phone."
+     ],
+     [
+      "Bis eine Stunde vor Beginn können Sie kostenlos stornieren, danach berechnen wir die Hälfte des Preises.",
+      "You can cancel free of charge up to one hour before the start; after that we charge half the price."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Vor der Fahrt: Kontrollieren Sie das Auto auf Schäden.",
+      "Before the trip: check the car for damage."
+     ],
+     [
+      "Neue Schäden melden Sie bitte vor dem Losfahren in der App, sonst müssen Sie eventuell dafür bezahlen.",
+      "Please report new damage in the app before you set off, otherwise you may have to pay for it."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Tanken: Ist der Tank weniger als ein Viertel voll, tanken Sie bitte mit der Tankkarte, die im Handschuhfach liegt.",
+      "Refuelling: if the tank is less than a quarter full, please fill up with the fuel card that is in the glove compartment."
+     ],
+     [
+      "Die Kosten übernehmen wir, und Sie bekommen dafür zehn Freiminuten.",
+      "We pay the costs, and you get ten free minutes for doing it."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "p",
+    "s": [
+     [
+      "Rückgabe: Bringen Sie das Auto pünktlich zu seinem Parkplatz zurück.",
+      "Return: bring the car back to its parking space on time."
+     ],
+     [
+      "Wenn Sie sich verspäten, verlängern Sie die Buchung bitte in der App.",
+      "If you are running late, please extend the booking in the app."
+     ],
+     [
+      "Wer ohne Verlängerung zu spät kommt, zahlt 15 Euro für jede angefangene halbe Stunde.",
+      "Anyone who is late without an extension pays 15 euros for every half hour started."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Rauchen und Tiere: Im Auto darf nicht geraucht werden, und Hunde dürfen nur in einer Transportbox mitfahren.",
+      "Smoking and animals: smoking is not allowed in the car, and dogs may only travel in a pet carrier."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "stornieren",
+    "en": "to cancel (a booking)"
+   },
+   {
+    "w": "Schäden",
+    "en": "damage (der Schaden)"
+   },
+   {
+    "w": "Tankkarte",
+    "en": "fuel card"
+   },
+   {
+    "w": "Handschuhfach",
+    "en": "glove compartment"
+   },
+   {
+    "w": "Freiminuten",
+    "en": "free minutes"
+   },
+   {
+    "w": "Transportbox",
+    "en": "pet carrier"
+   }
+  ],
+  "predict": {
+   "q": "These are the rules of a car-sharing service. What will you probably find?",
+   "opts": [
+    "how to book and return a car",
+    "how to buy a car",
+    "how to pass your driving test"
+   ],
+   "a": 0
+  },
+  "questions": [
+   {
+    "q": "Wer darf bei StadtAuto mitmachen?",
+    "format": "abc",
+    "opts": [
+     "jeder, der einen Führerschein hat",
+     "nur Erwachsene ab 21, die schon etwas Fahrpraxis haben",
+     "nur Personen, die in der Nähe des Hauptbahnhofs wohnen"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "You must be 21 or older and have had your licence for at least two years."
+   },
+   {
+    "q": "Sie haben ein Auto für 14 Uhr gebucht und sagen die Fahrt um 11 Uhr ab. Was müssen Sie bezahlen?",
+    "format": "abc",
+    "opts": [
+     "nichts",
+     "den halben Preis",
+     "den ganzen Preis"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Cancelling up to one hour before is free – 11 o’clock is three hours before."
+   },
+   {
+    "q": "Der Tank ist fast leer. Was sollen Sie tun?",
+    "format": "abc",
+    "opts": [
+     "mit Ihrem eigenen Geld tanken und die Quittung schicken",
+     "das Auto stehen lassen und StadtAuto anrufen",
+     "mit der Karte tanken, die im Auto liegt"
+    ],
+    "a": 2,
+    "ev": [
+     "b6.0"
+    ],
+    "why": "You fill up with the fuel card from the glove compartment."
+   },
+   {
+    "q": "Was gilt, wenn Sie später zurückkommen als geplant?",
+    "format": "abc",
+    "opts": [
+     "Sie sollten die Buchung in der App verlängern.",
+     "Sie zahlen in jedem Fall 15 Euro extra.",
+     "Sie dürfen das Auto auf einem anderen Parkplatz abstellen."
+    ],
+    "a": 0,
+    "ev": [
+     "b7.1",
+     "b7.2"
+    ],
+    "why": "You extend the booking in the app; the 15 euros are only for being late without an extension."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-08-1",
+  "station": 8,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Urlaub ohne Flugzeug?",
+  "intro": "In a newspaper forum, readers answer the question whether people should stop flying on holiday to protect the environment.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollte man der Umwelt zuliebe im Urlaub auf das Fliegen verzichten?",
+      "Readers' forum: Should you give up flying on holiday for the sake of the environment?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "comment",
+    "label": "Johanna, 28, Münster",
+    "s": [
+     [
+      "Seit drei Jahren fahre ich nur noch mit dem Zug in den Urlaub, letzten Sommer sogar bis nach Italien.",
+      "For three years I've only gone on holiday by train – last summer even all the way to Italy."
+     ],
+     [
+      "Die Reise dauert zwar länger, aber für mich gehört sie schon zum Urlaub dazu: Ich lese, schaue aus dem Fenster und lerne Leute kennen.",
+      "The journey does take longer, but for me it's already part of the holiday: I read, look out of the window and meet people."
+     ],
+     [
+      "Ein Flug verursacht ein Vielfaches an CO2, und das muss einfach nicht sein.",
+      "A flight causes many times as much CO2, and that simply isn't necessary."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Bernd, 55, Stuttgart",
+    "s": [
+     [
+      "Ich arbeite das ganze Jahr hart und habe nur drei Wochen Urlaub.",
+      "I work hard all year and only have three weeks' holiday."
+     ],
+     [
+      "Da möchte ich nicht zwei Tage im Zug sitzen, um nach Spanien zu kommen.",
+      "So I don't want to sit on a train for two days to get to Spain."
+     ],
+     [
+      "Außerdem ist die Bahn oft viel teurer als ein Flug.",
+      "Besides, the train is often much more expensive than a flight."
+     ],
+     [
+      "Solange das so ist, kann man von normalen Familien nicht verlangen, auf das Flugzeug zu verzichten.",
+      "As long as that's the case, you can't ask ordinary families to give up flying."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Mei, 33, Frankfurt",
+    "s": [
+     [
+      "Meine Eltern leben in Taiwan, und wenn ich sie besuchen will, gibt es keine andere Möglichkeit als das Flugzeug.",
+      "My parents live in Taiwan, and when I want to visit them, there's no other option than the plane."
+     ],
+     [
+      "Ich fliege deshalb nur einmal im Jahr und bleibe dafür länger.",
+      "So I only fly once a year and stay longer instead."
+     ],
+     [
+      "Wer vom Fliegen ganz abrät, vergisst Menschen wie mich, deren Familien weit weg wohnen.",
+      "Anyone who advises against flying altogether forgets people like me whose families live far away."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Tobias, 41, Leipzig",
+    "s": [
+     [
+      "Für kurze Strecken finde ich Flüge wirklich unnötig.",
+      "For short distances I find flights really unnecessary."
+     ],
+     [
+      "Von Leipzig nach München braucht man mit dem Zug kaum länger, wenn man die Zeit am Flughafen mitrechnet.",
+      "From Leipzig to Munich the train hardly takes longer if you include the time at the airport."
+     ],
+     [
+      "Und Urlaub muss ja nicht immer am anderen Ende der Welt sein.",
+      "And a holiday doesn't always have to be at the other end of the world."
+     ],
+     [
+      "Wir verbringen unsere Ferien inzwischen an der Ostsee und vermissen nichts.",
+      "We now spend our holidays on the Baltic coast and don't miss anything."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Claudia, 47, Wien",
+    "s": [
+     [
+      "Ich finde, jeder sollte selbst entscheiden, wie er reist.",
+      "I think everyone should decide for themselves how they travel."
+     ],
+     [
+      "Ich trenne meinen Müll, fahre mit dem Fahrrad zur Arbeit und esse kaum Fleisch.",
+      "I separate my rubbish, cycle to work and hardly eat meat."
+     ],
+     [
+      "Dafür gönne ich mir einmal im Jahr einen Flug in die Sonne.",
+      "In return I treat myself to a flight to the sun once a year."
+     ],
+     [
+      "Es kann doch nicht sein, dass man im Urlaub ständig ein schlechtes Gewissen haben muss.",
+      "Surely you shouldn't have to feel guilty all the time on holiday."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Emre, 24, Hamburg",
+    "s": [
+     [
+      "Früher bin ich oft für ein Wochenende nach Barcelona geflogen, weil die Tickets so billig waren.",
+      "I used to fly to Barcelona for the weekend a lot because the tickets were so cheap."
+     ],
+     [
+      "Heute ärgere ich mich darüber.",
+      "Today that annoys me."
+     ],
+     [
+      "Nachdem ich an der Uni ein Seminar über den Klimawandel besucht hatte, habe ich beschlossen, im Urlaub nicht mehr zu fliegen.",
+      "After I had attended a seminar on climate change at university, I decided not to fly on holiday any more."
+     ],
+     [
+      "Wenn alle ein bisschen weniger fliegen würden, würde das schon viel helfen.",
+      "If everyone flew a bit less, that would already help a lot."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Renate, 63, Bochum",
+    "s": [
+     [
+      "Mein Mann und ich haben früher viele Fernreisen gemacht.",
+      "My husband and I used to take lots of long-haul trips."
+     ],
+     [
+      "Jetzt machen wir lieber Radtouren in Deutschland, damit auch unsere Enkel noch eine gesunde Umwelt haben.",
+      "Now we prefer cycling tours in Germany, so that our grandchildren will still have a healthy environment too."
+     ],
+     [
+      "Natürlich ist es hier nicht so warm wie in Thailand, aber wir haben wunderschöne Orte entdeckt, die wir vorher gar nicht kannten.",
+      "Of course it's not as warm here as in Thailand, but we've discovered beautiful places we didn't know before."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "zuliebe",
+    "en": "for the sake of"
+   },
+   {
+    "w": "Vielfaches",
+    "en": "many times as much"
+   },
+   {
+    "w": "abrät",
+    "en": "advises against (abraten)"
+   },
+   {
+    "w": "gönne",
+    "en": "treat (myself) – sich etwas gönnen"
+   },
+   {
+    "w": "schlechtes Gewissen",
+    "en": "guilty conscience"
+   },
+   {
+    "w": "Fernreisen",
+    "en": "long-haul trips"
+   }
+  ],
+  "predict": {
+   "q": "Readers discuss holidays without flying. What will many comments probably mention?",
+   "opts": [
+    "the price of hotels",
+    "the train as an alternative to the plane",
+    "learning foreign languages"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Ist Johanna dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.2"
+    ],
+    "why": "She only travels by train and says the extra CO2 of a flight is not necessary."
+   },
+   {
+    "q": "Ist Bernd dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "You cannot ask ordinary families to give up flying while trains cost more."
+   },
+   {
+    "q": "Ist Mei dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "People like her, whose families live far away, need to fly."
+   },
+   {
+    "q": "Ist Tobias dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2",
+     "b5.3"
+    ],
+    "why": "Holidays need not be far away; his family now goes to the Baltic Sea."
+   },
+   {
+    "q": "Ist Claudia dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.0",
+     "b6.2"
+    ],
+    "why": "Everyone should decide; she treats herself to one flight a year."
+   },
+   {
+    "q": "Ist Emre dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.2"
+    ],
+    "why": "He decided not to fly on holiday any more."
+   },
+   {
+    "q": "Ist Renate dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.1"
+    ],
+    "why": "She now takes cycling holidays in Germany for her grandchildren’s environment."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-08-2",
+  "station": 8,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Gemüse vom Dach",
+  "intro": "Lena writes on her blog about a garden project on top of a car park.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Mein Sommer im Dachgarten",
+      "My summer in the roof garden"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Im April hat mir Jonas einen Zettel gezeigt, der im Supermarkt hing: „Gärtnerinnen und Gärtner gesucht – mach mit beim Garten auf dem Parkhaus!“",
+      "In April Jonas showed me a note that was hanging in the supermarket: 'Gardeners wanted – join the garden on the car park!'"
+     ],
+     [
+      "Ich hatte vorher noch nie etwas gepflanzt, nicht einmal Kräuter auf dem Balkon.",
+      "I had never planted anything before, not even herbs on the balcony."
+     ],
+     [
+      "Trotzdem bin ich zum ersten Treffen gegangen, um mir das Projekt anzusehen.",
+      "Still, I went to the first meeting to have a look at the project."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Auf dem obersten Deck eines alten Parkhauses stehen seit drei Jahren über hundert Holzkisten mit Erde.",
+      "On the top deck of an old multi-storey car park there have been over a hundred wooden boxes of soil for three years."
+     ],
+     [
+      "Jede Gruppe kümmert sich um ihre eigenen Kisten, aber Wasser und Werkzeug teilen sich alle.",
+      "Each group looks after its own boxes, but everyone shares the water and the tools."
+     ],
+     [
+      "Das Wasser kommt übrigens aus großen Tanks, in denen Regenwasser gesammelt wird.",
+      "By the way, the water comes from large tanks in which rainwater is collected."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Ich habe zusammen mit Frau Yilmaz, die im Haus meiner Freundin Priya wohnt, zwei Kisten übernommen.",
+      "Together with Frau Yilmaz, who lives in my friend Priya's building, I took on two boxes."
+     ],
+     [
+      "Sie wusste genau, was zu tun war, denn sie hatte früher in der Türkei einen großen Garten.",
+      "She knew exactly what to do, because she used to have a big garden in Turkey."
+     ],
+     [
+      "Wir haben Tomaten, Zucchini, Salat und Kräuter gepflanzt.",
+      "We planted tomatoes, courgettes, lettuce and herbs."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Nicht alles hat funktioniert.",
+      "Not everything worked."
+     ],
+     [
+      "Im Juli war es so heiß, dass wir jeden Abend gießen mussten, und einmal hat ein Sturm die Hälfte der Tomaten kaputt gemacht.",
+      "In July it was so hot that we had to water every evening, and once a storm destroyed half of the tomatoes."
+     ],
+     [
+      "Die Zucchini sind dafür so gut gewachsen, dass wir sie an die Nachbarn verschenkt haben.",
+      "The courgettes, on the other hand, grew so well that we gave them away to the neighbours."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Für mich war der Garten mehr als ein Hobby.",
+      "For me the garden was more than a hobby."
+     ],
+     [
+      "Ich weiß jetzt, wie viel Arbeit in einem einzigen Salat steckt, und werfe viel weniger Lebensmittel weg als früher.",
+      "I now know how much work goes into a single lettuce, and I throw away much less food than before."
+     ],
+     [
+      "Nächstes Jahr mache ich auf jeden Fall wieder mit.",
+      "Next year I'll definitely take part again."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Parkhaus",
+    "en": "multi-storey car park"
+   },
+   {
+    "w": "Holzkisten",
+    "en": "wooden boxes"
+   },
+   {
+    "w": "Erde",
+    "en": "soil, earth"
+   },
+   {
+    "w": "Regenwasser",
+    "en": "rainwater"
+   },
+   {
+    "w": "gießen",
+    "en": "to water (plants)"
+   },
+   {
+    "w": "steckt",
+    "en": "goes into, is in (stecken)"
+   }
+  ],
+  "predict": {
+   "q": "Lena writes about a 'Dachgarten'. What is that?",
+   "opts": [
+    "a shop for garden tools",
+    "a park in the city centre",
+    "a garden on a roof"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "Lena hatte schon Erfahrung mit Pflanzen, bevor sie zum Dachgarten kam.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "She had never planted anything, not even herbs."
+   },
+   {
+    "q": "Im Dachgarten benutzen alle Gruppen dieselben Werkzeuge.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Everyone shares the water and the tools."
+   },
+   {
+    "q": "Das Wasser für den Garten kommt aus der Leitung im Parkhaus.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "It is rainwater collected in big tanks."
+   },
+   {
+    "q": "Frau Yilmaz kannte sich mit Gartenarbeit schon aus.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "She knew what to do because she used to have a big garden in Turkey."
+   },
+   {
+    "q": "Wegen des Wetters gab es im Sommer Probleme im Garten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The heat meant watering every evening, and a storm destroyed half the tomatoes."
+   },
+   {
+    "q": "Lena und Frau Yilmaz haben ihre Zucchini auf dem Markt verkauft.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "They gave them away to the neighbours."
+   }
+  ]
+ }
+]

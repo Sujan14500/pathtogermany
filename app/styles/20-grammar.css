@@ -1,0 +1,77 @@
+/* ---- grammar ---- */
+
+.g-index { display: flex; flex-wrap: wrap; gap: 8px; }
+.g-index button { font-weight: 600; text-align: left; }
+.g-tick { color: var(--das); }
+.g-howto { margin: 10px 0 0; }
+.g-num {
+  display: inline-grid; place-items: center; width: 1.7em; height: 1.7em; flex: none; border-radius: 4px;
+  background: var(--line); color: var(--on-line); font: 700 .9rem var(--display);
+}
+.gpoint { margin-top: 28px; padding: 22px 26px 26px; background: var(--panel); border-radius: 6px; scroll-margin-top: calc(var(--top) + 64px); }
+.g-head { display: flex; align-items: center; gap: 12px; }
+.g-head h2 { margin: 0; font-size: 1.6rem; }
+.g-seen { margin-left: auto; font: 600 .85rem var(--body); color: var(--das); border: 2px solid currentColor; border-radius: 999px; padding: 1px 10px; white-space: nowrap; }
+.g-pattern {
+  margin: 14px 0 0; padding: 10px 16px; border-radius: 4px; background: var(--board); color: #fff;
+  font: 600 1.25rem/1.35 var(--display); border-left: 8px solid var(--line);
+}
+.g-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 20px 36px; margin-top: 18px; align-items: start; }
+.g-explain { margin: 0; font-size: 1.08rem; }
+.g-compare { margin: 14px 0 0; padding: 10px 14px; background: var(--guide); border-radius: 6px; }
+.g-en { display: inline-block; margin-right: 8px; font: 700 .8rem var(--display); color: var(--muted); border: 1.5px solid var(--rule); border-radius: 4px; padding: 0 6px; }
+.g-table { margin-top: 14px; border-collapse: collapse; font-size: 1rem; display: block; max-width: 100%; overflow-x: auto; }   /* a wide table scrolls on its own */
+.g-table th, .g-table td { padding: 5px 12px; border-bottom: 1px solid var(--rule); text-align: left; }
+.g-table thead th { font: 600 .85rem var(--display); color: var(--muted); border-bottom: 2px solid var(--rule); }
+.g-table tbody th { color: var(--muted); font-weight: 600; }
+.g-table td { font-weight: 600; }
+.g-examples { display: grid; gap: 10px; }
+.g-ex { display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 4px; padding: 6px 4px 6px 12px; border-left: 3px solid var(--rule); }
+.aligned { position: relative; }
+.al-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.al-lines path { fill: none; stroke: color-mix(in srgb, var(--muted) 55%, transparent); stroke-width: 1.6; transition: stroke .2s, stroke-width .2s; }
+.al-lines path.lit { stroke: var(--line-deep); stroke-width: 2.6; }
+.al-de, .al-en { display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 0; }
+.al-de { margin-bottom: 40px; font-size: 1.2rem; font-weight: 600; }
+.al-en { color: var(--muted); }
+.aligned.wrapped .al-de { margin-bottom: 8px; }
+.al-de span, .al-en span { cursor: default; border-radius: 4px; padding: 0 3px; transition: background .2s; }
+.al-de span.v { color: var(--line-deep); text-decoration: underline 3px color-mix(in srgb, var(--line) 70%, transparent); text-underline-offset: .22em; }
+.al-de span.lit, .al-en span.lit { background: color-mix(in srgb, var(--line) 22%, transparent); color: var(--ink); }
+.al-en span.none { font-style: italic; opacity: .75; }
+.g-practice { margin-top: 22px; border-top: 2px solid var(--rule); padding-top: 4px; }
+.g-practice h3 { margin: 16px 0 10px; font-size: 1.2rem; }
+
+.builder { display: grid; gap: 12px; }
+.b-target { margin: 0; font-size: 1.15rem; font-weight: 600; }
+.b-answer { min-height: 54px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 8px; border: 2px dashed var(--rule); border-radius: 6px; }
+.builder.right .b-answer { border: 2px solid var(--das); background: color-mix(in srgb, var(--das) 8%, transparent); }
+.builder.wrong .b-answer { border-color: var(--die); border-style: solid; }
+.b-empty { color: var(--muted); font-size: .95rem; padding: 0 6px; }
+.b-pool { display: flex; flex-wrap: wrap; gap: 8px; }
+.b-pool:empty { display: none; }
+.chunk { font-size: 1.12rem; padding: .45rem .8rem; border-color: var(--rule); background: var(--panel); }
+.chunk:hover { border-color: var(--line); }
+.chunk.v { border-color: var(--line); background: color-mix(in srgb, var(--line) 16%, var(--panel)); }
+.chunk.off { border-color: var(--die); color: var(--die); }
+.builder.right .chunk.v, .builder.shown .chunk.v { animation: verb-pulse 1s var(--arrive) .35s 2; }
+@keyframes verb-pulse { 50% { box-shadow: 0 0 0 5px color-mix(in srgb, var(--line) 45%, transparent); } }
+.b-msg { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.b-msg.right b { color: var(--das); font-size: 1.15rem; }
+.b-msg.wrong { color: var(--ink); }
+.b-msg button { padding: .3rem .8rem; }
+.card-gtitle { margin: 26px 18px 0; color: var(--muted); font-weight: 600; }
+.card-g { text-align: left; padding-top: 14px; cursor: default; }
+.card-g .g-pattern { margin-top: 14px; }
+
+
+/* guess first (grammar points; reading uses it to predict) */
+.guess { margin: 14px 0 0; padding: 14px 18px; border: 2px dashed var(--line); border-radius: 6px; }
+.guess h3 { margin: 0; font-size: 1.15rem; }
+.guess .quiet { margin: 2px 0 8px; font-size: .92rem; }
+.guess .quiz-q { margin: 0 0 10px; font-size: 1.2rem; }
+.guess-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.guess-opts button.right { border-color: var(--das); background: color-mix(in srgb, var(--das) 14%, var(--panel)); }
+.guess-opts button.wrong { border-color: var(--die); background: color-mix(in srgb, var(--die) 12%, var(--panel)); }
+.guess-opts button.dim { opacity: .55; }
+.guess-after { margin: 10px 0 0; }

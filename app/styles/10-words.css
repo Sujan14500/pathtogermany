@@ -1,0 +1,32 @@
+/* ---- words: the station's word list ---- */
+
+.words-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; margin-bottom: 16px; }
+.words-head p { margin: 0; color: var(--muted); }
+.words-head b { color: var(--ink); }
+.wlist { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 32px; }
+.wlist > li {
+  display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0 4px;
+  border-bottom: 1px solid var(--rule); border-left: 4px solid transparent; padding: 4px 0 4px 6px; break-inside: avoid;
+}
+.wlist > li.learning { border-left-color: var(--rule); }
+.wlist > li.known { border-left-color: var(--line); }
+.wrow {
+  display: grid; grid-template-columns: minmax(10rem, 1fr) 1.2fr; gap: 2px 14px; align-items: baseline; text-align: left;
+  border: 0; background: none; padding: 6px 4px; font-weight: 400; border-radius: 4px;
+}
+.wrow:hover { background: var(--guide); }
+.wde { display: flex; flex-direction: column; }
+.wde .word { font-size: 1.15rem; }
+.wde small { color: var(--muted); font-size: .85rem; }
+.wen { color: var(--ink); }
+.wmore { grid-column: 2; padding: 0 4px 10px; }
+
+.words-tools { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.words-tools .check { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; cursor: pointer; }
+.toggle { gap: 10px; }
+.toggle-knob { position: relative; width: 34px; height: 20px; border-radius: 999px; background: var(--rule); transition: background .2s; flex: none; }
+.toggle-knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--panel); transition: transform .2s var(--arrive); }
+.toggle.on .toggle-knob { background: var(--line-deep); }
+.toggle.on .toggle-knob::after { transform: translateX(14px); }
+.wlist.cover > li:not(.open) .wen { filter: blur(5px); transition: filter .2s; }
+.wlist.cover > li:not(.open):hover .wen { filter: blur(3px); }
