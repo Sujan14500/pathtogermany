@@ -146,7 +146,9 @@ function GrammarPoint({ data, g, i }) {
 
 function GrammarTab({ data, n }) {
   const gs = data.grammarBy[n]
-  const go = id => document.getElementById(`g-${id}`)?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' })
+  if (!gs.length) return html`<ol class="glist">${data.stations[n].grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>
+    <p class="soon">${SOON.grammar} <span class="quiet">Being written now.</span></p>`
+  const go =id => document.getElementById(`g-${id}`)?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' })
   return html`<div class="grammar-tab">
     <nav class="g-index" aria-label="Grammar points">${gs.map((g, i) => html`<button type="button" onClick=${() => go(g.id)}>
       <span class="g-num">${i + 1}</span>${g.title}${S.practice[`g:${g.id}`] ? html` <span class="g-tick" aria-label="studied">✓</span>` : ''}</button>`)}</nav>

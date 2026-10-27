@@ -65,18 +65,14 @@ function App() {
   if (error) return html`<main class="empty"><p>The lessons didn't load (${error}). Run <code>python scripts/build_data.py</code>,
     then open <code>app/WegNachDeutschland.html</code>.</p></main>`
   if (!data) return html`<main class="empty"><p>Loading…</p></main>`
-  const { page, arg, sub } = route(hash)
-  const view = page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
-    : page === 'practice' ? html`<${PracticeHub} />`
-    : page === 'study' ? html`<${Study} data=${data} />`
+  const { page, arg, sub, sub2 } = route(hash)
+  const Page = Object.hasOwn(PAGES, page) && PAGES[page]   // registered by the page's own fragment (00-core.js)
+  const view = Page ? html`<${Page} data=${data} arg=${arg} sub=${sub} sub2=${sub2} hash=${hash} />`
+    : page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
     : page === 'tests' ? html`<${Soon} title="Practice tests" text="Numbered tests per level and module: Lesen, Hören, Schreiben, Sprechen, Wortschatz, Grammatik." />`
     : page === 'mock' ? html`<${Soon} title="Mock exam" text="A timed paper per level in the real Goethe structure, scored the Goethe way." />`
     : page === 'pictures' ? html`<${Soon} title="Picture scenes" text="Drawn scenes where every object is a word with its article." />`
-    : page === 'verbs' ? html`<${VerbsTrainer} data=${data} />`
-    : page === 'gender' ? html`<${GenderTrainer} data=${data} />`
-    : page === 'cases' ? html`<${CasesPage} data=${data} />`
     : page === 'sounds' ? html`<${Soon} title="Pronunciation" text="A sound guide for ü, ö, ä, ch and r, and minimal-pair listening." />`
-    : page === 'tips' ? html`<${Tips} at=${Number(arg) || 0} />`
     : html`<${Home} data=${data} />`
   return html`<${TopBar} data=${data} page=${page} />${view}<${LeaveExport} />`
 }

@@ -16,6 +16,7 @@ function Station({ data, n, tab }) {
   const st = data.stations[n]
   if (!st) return html`<main class="empty"><p>There is no station ${n}. <a href="#/">Back to today</a></p></main>`
   const t = TAB_NAME[tab] ? tab : 'words'
+  const View = TAB_VIEWS[t]   // registered by the tab's own fragment
   return html`<main class=${`station l${st.level}`}>
     <${Board} data=${data} n=${n} />
     <div class="station-bar">
@@ -25,10 +26,7 @@ function Station({ data, n, tab }) {
         : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
     </div>
     <section class="tab-body" aria-label=${TAB_NAME[t]}>
-      ${t === 'words' ? html`<${WordsTab} data=${data} n=${n} />` : t === 'grammar' && data.grammarBy[n].length ? html`<${GrammarTab} data=${data} n=${n} />`
-        : t === 'read' ? html`<${ReadTab} data=${data} n=${n} />` : html`
-        ${t === 'grammar' ? html`<ol class="glist">${st.grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>` : ''}
-        <p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
+      ${View ? html`<${View} data=${data} n=${n} />` : html`<p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
     </section>
   </main>`
 }

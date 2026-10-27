@@ -52,10 +52,10 @@ function tipsFor(s) {
   ]
 }
 
-function Tips({ at }) {
+function Tips({ arg }) {
   const s = useStore()
   const tips = tipsFor(s)
-  const i = Math.min(Math.max(at || 0, 0), tips.length - 1)
+  const i = Math.min(Math.max(Number(arg) || 0, 0), tips.length - 1)
   const t = tips[i]
   const go = t.here.find(([, href]) => href)
   const open = (e, href) => { if (href === '#/' && /Settings/.test(e.currentTarget.textContent)) { e.preventDefault(); location.hash = '#/'; setTimeout(openSettings, 300) } }
