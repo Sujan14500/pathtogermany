@@ -4224,5 +4224,2169 @@
     "why": "They gave them away to the neighbours."
    }
   ]
+ },
+ {
+  "id": "b1-r-09-1",
+  "station": 9,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Kulturkalender",
+  "intro": "Seven people are looking for something to do at the weekend. Find the right event for each person – or x if there is none.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Kulturkalender: Was ist los am Wochenende?",
+      "Culture calendar: what's on at the weekend?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Open-Air-Kino im Stadtpark: Am Freitag zeigen wir die Komödie „Ein Sommer in Rom“ im italienischen Original mit deutschen Untertiteln.",
+      "Open-air cinema in the city park: on Friday we're showing the comedy 'A Summer in Rome' in the original Italian with German subtitles."
+     ],
+     [
+      "Beginn bei Sonnenuntergang, bitte Decken mitbringen!",
+      "Starts at sunset – please bring blankets!"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Lesung in der Stadtbibliothek: Die Krimiautorin Anna Brink liest aus ihrem neuen Roman und beantwortet anschließend Fragen.",
+      "Reading at the city library: crime writer Anna Brink reads from her new novel and then answers questions."
+     ],
+     [
+      "Samstag um 19 Uhr, Eintritt 6 Euro.",
+      "Saturday at 7 p.m., admission 6 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Kindertheater „Der kleine Drache“: ein lustiges Stück für Kinder ab vier Jahren.",
+      "Children's theatre 'The Little Dragon': a funny play for children aged four and over."
+     ],
+     [
+      "Samstag und Sonntag, jeweils um 11 Uhr im Theater am Markt.",
+      "Saturday and Sunday, at 11 a.m. each day, at the Theater am Markt."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Museumsnacht: Am Samstag sind alle zwölf Museen der Stadt bis 1 Uhr nachts geöffnet.",
+      "Museum night: on Saturday all twelve museums in the city are open until 1 a.m."
+     ],
+     [
+      "Mit einem Ticket für 15 Euro können Sie alle besuchen, Shuttlebusse fahren zwischen den Museen.",
+      "With one ticket for 15 euros you can visit them all; shuttle buses run between the museums."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Jazz im Kellerclub: Das Trio „Blue Notes“ spielt Klassiker und eigene Stücke.",
+      "Jazz at the cellar club: the trio 'Blue Notes' plays classics and its own pieces."
+     ],
+     [
+      "Sonntag um 20 Uhr, Karten gibt es nur an der Abendkasse.",
+      "Sunday at 8 p.m.; tickets only at the box office on the night."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Fotoausstellung „Gesichter der Stadt“: Porträts von Menschen aus 40 Ländern, die in unserer Stadt leben.",
+      "Photo exhibition 'Faces of the City': portraits of people from 40 countries who live in our city."
+     ],
+     [
+      "Galerie Nord, dienstags bis sonntags von 11 bis 18 Uhr, Eintritt frei.",
+      "Galerie Nord, Tuesday to Sunday from 11 a.m. to 6 p.m., free admission."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Offenes Singen: Sie singen gern, möchten aber nicht in einen Chor eintreten?",
+      "Open singing: you like singing but don't want to join a choir?"
+     ],
+     [
+      "Jeden Sonntag um 17 Uhr singen wir im Gemeindehaus gemeinsam bekannte Lieder – ohne Noten und ohne Anmeldung.",
+      "Every Sunday at 5 p.m. we sing well-known songs together in the parish hall – no sheet music and no registration."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Stadtführung „Geschichte zu Fuß“: Erleben Sie in zwei Stunden 800 Jahre Stadtgeschichte.",
+      "City tour 'History on foot': experience 800 years of the city's history in two hours."
+     ],
+     [
+      "Treffpunkt ist das Rathaus, Samstag um 14 Uhr.",
+      "The meeting point is the town hall, Saturday at 2 p.m."
+     ],
+     [
+      "Die Führung gibt es auch auf Englisch.",
+      "The tour is also available in English."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Tanznachmittag für Seniorinnen und Senioren: Walzer, Foxtrott und Schlager bei Kaffee und Kuchen.",
+      "Dance afternoon for older people: waltz, foxtrot and German pop songs with coffee and cake."
+     ],
+     [
+      "Sonntag von 15 bis 18 Uhr im Seniorenzentrum, auch ohne Partner herzlich willkommen.",
+      "Sunday from 3 to 6 p.m. at the senior centre; you are very welcome without a partner, too."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Klassik für Kinder: Das Stadtorchester stellt seine Instrumente vor und spielt kurze Stücke zum Mitmachen.",
+      "Classical music for children: the city orchestra introduces its instruments and plays short pieces to join in with."
+     ],
+     [
+      "Sonntag um 16 Uhr im Konzerthaus, für Kinder von 6 bis 10 Jahren.",
+      "Sunday at 4 p.m. at the concert hall, for children aged 6 to 10."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Untertiteln",
+    "en": "subtitles (der Untertitel)"
+   },
+   {
+    "w": "Lesung",
+    "en": "reading (an author reads from a book)"
+   },
+   {
+    "w": "Abendkasse",
+    "en": "box office on the night"
+   },
+   {
+    "w": "Gemeindehaus",
+    "en": "parish hall, community hall"
+   },
+   {
+    "w": "Noten",
+    "en": "sheet music; also: school marks"
+   },
+   {
+    "w": "Treffpunkt",
+    "en": "meeting point"
+   }
+  ],
+  "predict": {
+   "q": "Look at the heading. What do these ads tell you about?",
+   "opts": [
+    "things to do at the weekend",
+    "TV programmes",
+    "school timetables"
+   ],
+   "a": 0
+  },
+  "questions": [
+   {
+    "q": "Priya bekommt Besuch von einer Freundin aus Indien, die kein Deutsch spricht. Am Samstag wollen sie etwas über die Geschichte der Stadt erfahren.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 7,
+    "ev": [
+     "b9.0",
+     "b9.2"
+    ],
+    "why": "The city history tour on Saturday is also offered in English."
+   },
+   {
+    "q": "Jonas liest gern Krimis und möchte einmal eine Autorin persönlich erleben.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "A crime writer reads from her novel and answers questions."
+   },
+   {
+    "q": "Lena möchte mit ihrem dreijährigen Neffen ins Theater gehen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The children’s play (c) is for children from four, the concert (j) from six – nothing fits a three-year-old."
+   },
+   {
+    "q": "Herr Weber singt gern, möchte sich aber nicht fest an einen Chor binden.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0",
+     "b8.1"
+    ],
+    "why": "Open singing for people who don’t want to join a choir, no registration."
+   },
+   {
+    "q": "Frau Yilmaz ist seit einem Jahr Witwe und würde gern wieder einmal tanzen gehen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.0",
+     "b10.1"
+    ],
+    "why": "The dance afternoon welcomes older people without a partner; the couples’ course needs two."
+   },
+   {
+    "q": "Malte interessiert sich für Fotografie, hat aber nur unter der Woche Zeit.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.0",
+     "b7.1"
+    ],
+    "why": "The photo exhibition is open from Tuesday, so also on weekdays."
+   },
+   {
+    "q": "Eine Kollegin von Lena möchte mit ihrem achtjährigen Sohn ein Konzert besuchen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 9,
+    "ev": [
+     "b11.0",
+     "b11.1"
+    ],
+    "why": "The orchestra concert is for children aged 6 to 10."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-09-2",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Kino im alten Bahnhof",
+  "intro": "A local newspaper reports on volunteers who reopened a small cinema.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Freiwillige retten das Kino im alten Bahnhof",
+      "Volunteers save the cinema in the old station"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Fast zehn Jahre lang war das kleine Kino im ehemaligen Bahnhof von Altenbach geschlossen.",
+      "For almost ten years the little cinema in Altenbach's former railway station was closed."
+     ],
+     [
+      "Seit Mai werden dort wieder Filme gezeigt – allerdings nicht von einer Firma, sondern von einem Verein mit über 60 Mitgliedern.",
+      "Since May films have been shown there again – not by a company, however, but by a club with over 60 members."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Die Idee hatte die Lehrerin Carla Neumann.",
+      "The idea came from teacher Carla Neumann."
+     ],
+     [
+      "„Je länger das Gebäude leer stand, desto trauriger wurde ich, wenn ich daran vorbeiging“, erzählt sie.",
+      "'The longer the building stood empty, the sadder I got when I walked past it,' she says."
+     ],
+     [
+      "Sie veröffentlichte einen Aufruf in der Lokalzeitung, und schon zum ersten Treffen kamen 25 Leute.",
+      "She published an appeal in the local paper, and 25 people came to the very first meeting."
+     ],
+     [
+      "Zwei Jahre lang wurde renoviert: Die Mitglieder strichen die Wände, reparierten die alten Sessel und sammelten Geld für einen modernen Projektor.",
+      "For two years there was renovation work: the members painted the walls, repaired the old seats and collected money for a modern projector."
+     ],
+     [
+      "Auch viele Handwerker aus dem Ort halfen kostenlos mit.",
+      "Many local tradespeople also helped for free."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Das Programm ist bewusst anders als in den großen Kinos.",
+      "The programme is deliberately different from the big cinemas."
+     ],
+     [
+      "Gezeigt werden sowohl alte Klassiker als auch Filme aus Ländern, deren Kino man in Deutschland selten sieht.",
+      "They show both old classics and films from countries whose cinema is rarely seen in Germany."
+     ],
+     [
+      "Jeden Mittwoch gibt es außerdem einen Filmabend mit Gast, bei dem die Zuschauer nach dem Film mit Regisseuren oder Fachleuten diskutieren können.",
+      "Every Wednesday there is also a film evening with a guest, where the audience can talk with directors or experts after the film."
+     ],
+     [
+      "Die Karten kosten sechs Euro, für Schüler und Rentner nur vier.",
+      "Tickets cost six euros, only four for pupils and pensioners."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Ganz ohne Probleme läuft es aber nicht.",
+      "But it isn't running entirely without problems."
+     ],
+     [
+      "Weil alle Helfer ehrenamtlich arbeiten, kann das Kino nur an vier Abenden pro Woche öffnen.",
+      "Because all the helpers work unpaid, the cinema can only open four evenings a week."
+     ],
+     [
+      "„Wir suchen dringend Leute, die an der Kasse helfen oder den Projektor bedienen können“, sagt Neumann.",
+      "'We urgently need people who can help at the box office or operate the projector,' says Neumann."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Verein",
+    "en": "club, association"
+   },
+   {
+    "w": "Aufruf",
+    "en": "appeal, call (for help)"
+   },
+   {
+    "w": "Sessel",
+    "en": "armchair; here: cinema seat"
+   },
+   {
+    "w": "bewusst",
+    "en": "deliberately"
+   },
+   {
+    "w": "Regisseuren",
+    "en": "film directors (der Regisseur)"
+   },
+   {
+    "w": "ehrenamtlich",
+    "en": "as a volunteer, unpaid"
+   }
+  ],
+  "predict": {
+   "q": "Volunteers save a cinema. What do you expect to read?",
+   "opts": [
+    "how a big company built a new cinema",
+    "how people from the town reopened an old cinema",
+    "why cinemas are closing everywhere"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Wer betreibt das Kino heute?",
+    "format": "abc",
+    "opts": [
+     "eine Kinofirma aus der Region",
+     "die Stadt Altenbach",
+     "ein Verein von Freiwilligen"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Films are shown not by a company but by a club with over 60 members."
+   },
+   {
+    "q": "Was erfährt man über das Programm?",
+    "format": "abc",
+    "opts": [
+     "Es werden vor allem neue Filme aus Deutschland gezeigt.",
+     "Einmal pro Woche kann man nach dem Film mit einem Gast sprechen.",
+     "Mittwochs ist der Eintritt für Schüler frei."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Every Wednesday the audience can discuss the film with a director or expert."
+   },
+   {
+    "q": "Welches Problem hat das Kino?",
+    "format": "abc",
+    "opts": [
+     "Es gibt nicht genug Helfer.",
+     "Die alten Sessel sind kaputt.",
+     "Die Karten sind zu teuer."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "It can only open four evenings a week and urgently needs more helpers."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-10-1",
+  "station": 10,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Wählen ab 16?",
+  "intro": "In a newspaper forum, readers answer the question whether young people should be allowed to vote from the age of 16.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollten Jugendliche schon ab 16 Jahren wählen dürfen?",
+      "Readers' forum: Should young people be allowed to vote from the age of 16?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "comment",
+    "label": "Leonie, 16, Hannover",
+    "s": [
+     [
+      "In Niedersachsen durfte ich bei der Kommunalwahl schon mit 16 wählen.",
+      "In Lower Saxony I was already allowed to vote in the local elections at 16."
+     ],
+     [
+      "Vorher habe ich mich mit Freunden über die Kandidaten informiert und sogar eine Diskussion an unserer Schule organisiert.",
+      "Beforehand I found out about the candidates with friends and even organised a debate at our school."
+     ],
+     [
+      "Viele Entscheidungen, zum Beispiel zum Klima oder zur Rente, betreffen unsere Generation am längsten.",
+      "Many decisions, for example on the climate or pensions, affect our generation the longest."
+     ],
+     [
+      "Deshalb sollten wir auch mitbestimmen dürfen.",
+      "That's why we should have a say too."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Wolfgang, 58, Passau",
+    "s": [
+     [
+      "Mit 16 darf man ohne die Eltern keinen Vertrag unterschreiben und kein Auto fahren.",
+      "At 16 you can't sign a contract without your parents or drive a car."
+     ],
+     [
+      "Warum sollte man dann über die Regierung entscheiden?",
+      "So why should you decide on the government?"
+     ],
+     [
+      "Ich glaube, dass sich viele Jugendliche in diesem Alter noch wenig für Politik interessieren und sich leicht beeinflussen lassen, zum Beispiel durch Videos im Internet.",
+      "I believe many young people at this age are still not very interested in politics and are easily influenced, for example by videos on the internet."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Fatma, 44, Essen",
+    "s": [
+     [
+      "Ich unterrichte Politik an einem Gymnasium und erlebe jedes Jahr, wie engagiert meine Schülerinnen und Schüler diskutieren.",
+      "I teach politics at a grammar school and see every year how keenly my pupils discuss things."
+     ],
+     [
+      "Natürlich weiß nicht jeder 16-Jährige alles über Politik, aber das gilt für Erwachsene genauso.",
+      "Of course not every 16-year-old knows everything about politics, but the same is true of adults."
+     ],
+     [
+      "Wenn junge Menschen früher wählen, lernen sie, dass ihre Stimme zählt.",
+      "If young people vote earlier, they learn that their vote counts."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Jan, 17, Rostock",
+    "s": [
+     [
+      "Viele denken, dass alle Jugendlichen wählen wollen, aber das stimmt nicht.",
+      "Many people think all young people want to vote, but that isn't true."
+     ],
+     [
+      "Ich selbst fühle mich noch nicht bereit dafür, weil wir in der Schule kaum über Parteien und Wahlprogramme gesprochen haben.",
+      "I myself don't feel ready for it yet, because we've hardly talked about parties and manifestos at school."
+     ],
+     [
+      "Bevor man das Wahlalter senkt, sollte erst der Politikunterricht besser werden.",
+      "Before the voting age is lowered, politics lessons should get better first."
+     ],
+     [
+      "Für mich ist 18 deshalb das richtige Alter.",
+      "So for me 18 is the right age."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Brigitte, 70, Kassel",
+    "s": [
+     [
+      "Wir Älteren entscheiden bei Wahlen über eine Zukunft mit, die wir selbst gar nicht mehr erleben werden.",
+      "We older people help decide in elections about a future that we won't live to see ourselves."
+     ],
+     [
+      "Das finde ich den Jungen gegenüber nicht ganz gerecht.",
+      "I don't think that's entirely fair to the young."
+     ],
+     [
+      "Meine Enkelin ist 16 und weiß über viele Themen besser Bescheid als ich.",
+      "My granddaughter is 16 and knows more about many topics than I do."
+     ],
+     [
+      "Ich würde mich freuen, wenn sie ihre Stimme abgeben dürfte.",
+      "I'd be glad if she were allowed to cast her vote."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Dennis, 35, Mainz",
+    "s": [
+     [
+      "Grundsätzlich finde ich es gut, wenn sich junge Leute politisch engagieren.",
+      "In principle I think it's good when young people get involved in politics."
+     ],
+     [
+      "Dafür gibt es aber schon viele Möglichkeiten, zum Beispiel in Vereinen oder Jugendparlamenten.",
+      "But there are already lots of ways to do that, for example in clubs or youth parliaments."
+     ],
+     [
+      "Das Wählen sollte trotzdem an die Volljährigkeit gebunden bleiben, denn mit 18 übernimmt man auch in anderen Bereichen die volle Verantwortung.",
+      "Voting should still stay tied to coming of age, because at 18 you also take on full responsibility in other areas."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Sophie, 22, Graz",
+    "s": [
+     [
+      "In Österreich darf man schon seit vielen Jahren ab 16 bei allen Wahlen wählen.",
+      "In Austria you have been able to vote in all elections from 16 for many years."
+     ],
+     [
+      "Ich habe das selbst erlebt und kann sagen: Es funktioniert.",
+      "I experienced it myself and can say: it works."
+     ],
+     [
+      "In meiner Klasse haben damals fast alle gewählt, weil wir vorher im Unterricht ausführlich darüber gesprochen hatten.",
+      "In my class almost everyone voted back then, because we had talked about it in detail in class beforehand."
+     ],
+     [
+      "Ich kann die Sorgen in Deutschland deshalb nicht ganz verstehen.",
+      "So I can't quite understand the worries in Germany."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Kommunalwahl",
+    "en": "local election"
+   },
+   {
+    "w": "mitbestimmen",
+    "en": "to have a say"
+   },
+   {
+    "w": "beeinflussen",
+    "en": "to influence"
+   },
+   {
+    "w": "Wahlprogramme",
+    "en": "parties' election manifestos"
+   },
+   {
+    "w": "Wahlalter",
+    "en": "voting age"
+   },
+   {
+    "w": "Volljährigkeit",
+    "en": "coming of age (18 in Germany)"
+   },
+   {
+    "w": "Stimme abgeben",
+    "en": "to cast a vote"
+   }
+  ],
+  "predict": {
+   "q": "Readers answer a question about elections. What is it probably about?",
+   "opts": [
+    "how to become a politician",
+    "whether young people should vote at 16",
+    "where the parliament meets"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Ist Leonie für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2",
+     "b2.3"
+    ],
+    "why": "Decisions affect her generation longest, so young people should have a say."
+   },
+   {
+    "q": "Ist Wolfgang für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1",
+     "b3.2"
+    ],
+    "why": "He asks why 16-year-olds should decide on the government and thinks they are easily influenced."
+   },
+   {
+    "q": "Ist Fatma für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Voting early teaches young people that their vote counts."
+   },
+   {
+    "q": "Ist Jan für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "For him 18 is the right age."
+   },
+   {
+    "q": "Ist Brigitte für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.3"
+    ],
+    "why": "She would be glad if her 16-year-old granddaughter could vote."
+   },
+   {
+    "q": "Ist Dennis für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.2"
+    ],
+    "why": "Voting should stay tied to the age of 18."
+   },
+   {
+    "q": "Ist Sophie für ein Wahlrecht ab 16?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.1",
+     "b8.3"
+    ],
+    "why": "In Austria it works, so she does not share the worries."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-10-2",
+  "station": 10,
+  "part": "Teil 5",
+  "type": "instructions",
+  "title": "Wohnung anmelden",
+  "intro": "You have moved to Neustadt. The citizens' office explains how to register your new address.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Bürgerbüro Neustadt: So melden Sie Ihre Wohnung an",
+      "Neustadt citizens' office: how to register your flat"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Wenn Sie in eine neue Wohnung ziehen, müssen Sie sich innerhalb von zwei Wochen nach dem Einzug im Bürgerbüro anmelden.",
+      "When you move into a new flat, you must register at the citizens' office within two weeks of moving in."
+     ],
+     [
+      "Das gilt auch, wenn Sie nur innerhalb von Neustadt umziehen.",
+      "This also applies if you are only moving within Neustadt."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Termin",
+      "Appointment"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Bitte vereinbaren Sie vorher einen Termin über unsere Internetseite oder telefonisch.",
+      "Please make an appointment in advance via our website or by phone."
+     ],
+     [
+      "Ohne Termin werden Sie nur donnerstags von 8 bis 12 Uhr bedient, und dann müssen Sie mit langen Wartezeiten rechnen.",
+      "Without an appointment you are only served on Thursdays from 8 a.m. to 12 noon, and then you must expect long waits."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Was Sie mitbringen müssen",
+      "What you need to bring"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Bringen Sie Ihren Personalausweis oder Reisepass mit.",
+      "Bring your identity card or passport."
+     ],
+     [
+      "Außerdem brauchen Sie die Wohnungsgeberbestätigung, die Ihr Vermieter ausfüllen und unterschreiben muss.",
+      "You also need the landlord's confirmation, which your landlord must fill in and sign."
+     ],
+     [
+      "Der Mietvertrag allein reicht nicht aus.",
+      "The rental contract alone is not enough."
+     ],
+     [
+      "Wenn Kinder mit Ihnen umziehen, bringen Sie bitte auch deren Ausweise oder Geburtsurkunden mit.",
+      "If children are moving with you, please also bring their ID cards or birth certificates."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Kosten",
+      "Costs"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Die Anmeldung ist kostenlos.",
+      "Registration is free of charge."
+     ],
+     [
+      "Sie erhalten sofort eine Meldebestätigung, die Sie zum Beispiel für die Bank oder Ihren Arbeitgeber brauchen.",
+      "You receive a registration certificate straight away, which you need for example for the bank or your employer."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "Wenn Sie nicht selbst kommen können",
+      "If you can't come yourself"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Wenn Sie krank oder beruflich verreist sind, kann eine andere Person die Anmeldung für Sie erledigen.",
+      "If you are ill or away on business, another person can do the registration for you."
+     ],
+     [
+      "Diese Person braucht eine schriftliche Vollmacht von Ihnen und Ihren Ausweis.",
+      "This person needs a written authorisation from you and your ID."
+     ],
+     [
+      "Wer sich zu spät oder gar nicht anmeldet, muss mit einem Bußgeld rechnen.",
+      "Anyone who registers late or not at all must expect a fine."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Einzug",
+    "en": "moving in"
+   },
+   {
+    "w": "Wohnungsgeberbestätigung",
+    "en": "landlord's confirmation that you moved in"
+   },
+   {
+    "w": "Geburtsurkunden",
+    "en": "birth certificates"
+   },
+   {
+    "w": "Meldebestätigung",
+    "en": "registration certificate"
+   },
+   {
+    "w": "Vollmacht",
+    "en": "written authorisation, power of attorney"
+   },
+   {
+    "w": "Bußgeld",
+    "en": "fine"
+   }
+  ],
+  "predict": {
+   "q": "This is information from a citizens' office. What will it explain?",
+   "opts": [
+    "how to find a flat",
+    "how to apply for a passport",
+    "how to register your new address"
+   ],
+   "a": 2
+  },
+  "questions": [
+   {
+    "q": "Bis wann müssen Sie sich anmelden?",
+    "format": "abc",
+    "opts": [
+     "innerhalb eines Monats nach dem Umzug",
+     "noch vor dem Einzug",
+     "spätestens zwei Wochen nach dem Einzug"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "You must register within two weeks of moving in."
+   },
+   {
+    "q": "Was müssen Sie mitbringen?",
+    "format": "abc",
+    "opts": [
+     "nur Ihren Mietvertrag",
+     "ein Formular, das Ihr Vermieter unterschrieben hat",
+     "eine Bestätigung von Ihrem Arbeitgeber"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1",
+     "b6.2"
+    ],
+    "why": "You need the landlord’s signed confirmation; the rental contract alone is not enough."
+   },
+   {
+    "q": "Sie haben keinen Termin bekommen. Was können Sie tun?",
+    "format": "abc",
+    "opts": [
+     "am Donnerstagvormittag ohne Termin kommen",
+     "die Anmeldung per E-Mail schicken",
+     "an jedem Wochentag ab 8 Uhr warten"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Without an appointment you are served on Thursdays from 8 to 12."
+   },
+   {
+    "q": "Ihre neue Mitbewohnerin liegt mit Fieber im Bett. Was gilt für ihre Anmeldung?",
+    "format": "abc",
+    "opts": [
+     "Sie muss warten, bis sie wieder gesund ist.",
+     "Sie können das für sie erledigen, wenn Sie eine Vollmacht und ihren Ausweis mitbringen.",
+     "Kranke Personen müssen sich erst nach einem Monat anmelden."
+    ],
+    "a": 1,
+    "ev": [
+     "b10.0",
+     "b10.1"
+    ],
+    "why": "Another person can register for someone who is ill, with a written authorisation and their ID."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-11-1",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Ein Jahr in Wien?",
+  "intro": "Lena writes on her blog about a job offer abroad and whether she should take it.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Große Pläne – oder lieber doch nicht?",
+      "Big plans – or maybe not?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Seit Wochen denke ich über eine Frage nach, die mein ganzes Leben verändern könnte.",
+      "For weeks I've been thinking about a question that could change my whole life."
+     ],
+     [
+      "Meine Firma hat mir angeboten, für ein Jahr in unser Büro nach Wien zu gehen.",
+      "My company has offered me the chance to go to our office in Vienna for a year."
+     ],
+     [
+      "Als meine Chefin mich gefragt hat, habe ich sofort Ja gesagt – zumindest in meinem Kopf.",
+      "When my boss asked me, I said yes at once – at least in my head."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Schon als Kind habe ich davon geträumt, einmal im Ausland zu leben.",
+      "Even as a child I dreamed of living abroad one day."
+     ],
+     [
+      "Wien kenne ich von einem Wochenende mit Freunden, und die Stadt hat mir damals sehr gefallen.",
+      "I know Vienna from a weekend with friends, and I liked the city a lot back then."
+     ],
+     [
+      "In der neuen Stelle hätte ich spannendere Aufgaben, und mein Gehalt wäre auch etwas höher.",
+      "In the new position I would have more interesting tasks, and my salary would be a bit higher too."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Andererseits gibt es einiges, was mich hier hält.",
+      "On the other hand, there are a few things keeping me here."
+     ],
+     [
+      "Mein Vater ist seit dem Frühling krank, und ich besuche ihn jedes Wochenende.",
+      "My father has been ill since the spring, and I visit him every weekend."
+     ],
+     [
+      "Außerdem habe ich erst letztes Jahr nach langer Suche eine Wohnung gefunden, die ich nicht verlieren möchte.",
+      "Also, only last year, after a long search, I found a flat that I don't want to lose."
+     ],
+     [
+      "Und natürlich würde ich meine Freunde vermissen, vor allem Jonas, den ich schon seit der Schulzeit kenne.",
+      "And of course I would miss my friends, especially Jonas, whom I've known since our school days."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Gestern habe ich mit meinem Vater darüber gesprochen.",
+      "Yesterday I talked to my father about it."
+     ],
+     [
+      "Ich dachte, er wäre traurig, aber er hat nur gelacht und gesagt: „Du musst diese Chance nutzen. Wien ist doch nicht am Ende der Welt!“",
+      "I thought he'd be sad, but he just laughed and said: 'You must take this chance. Vienna isn't at the end of the world!'"
+     ],
+     [
+      "Jonas meinte, ich könnte die Wohnung für ein Jahr untervermieten, und er würde sich in der Zeit um meine Pflanzen kümmern.",
+      "Jonas said I could sublet the flat for a year, and he would look after my plants during that time."
+     ],
+     [
+      "Bis Ende des Monats muss ich mich entscheiden.",
+      "I have to decide by the end of the month."
+     ],
+     [
+      "Was würdet ihr an meiner Stelle machen?",
+      "What would you do in my place?"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "zumindest",
+    "en": "at least"
+   },
+   {
+    "w": "im Ausland",
+    "en": "abroad"
+   },
+   {
+    "w": "Gehalt",
+    "en": "salary"
+   },
+   {
+    "w": "untervermieten",
+    "en": "to sublet"
+   },
+   {
+    "w": "an meiner Stelle",
+    "en": "in my place, if you were me"
+   }
+  ],
+  "predict": {
+   "q": "Lena's post is called 'Big plans – or maybe not?'. What is she probably thinking about?",
+   "opts": [
+    "a holiday in Vienna",
+    "whether to move abroad for work",
+    "how to decorate her new flat"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Lena hat von ihrer Firma das Angebot bekommen, im Ausland zu arbeiten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Her company offered her a year in its Vienna office."
+   },
+   {
+    "q": "Lena war noch nie in Wien.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "She knows Vienna from a weekend with friends."
+   },
+   {
+    "q": "In Wien würde Lena weniger verdienen als jetzt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "Her salary there would be a bit higher."
+   },
+   {
+    "q": "Lena sieht ihren Vater regelmäßig.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "She visits him every weekend."
+   },
+   {
+    "q": "Lenas Vater möchte nicht, dass sie nach Wien geht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "He laughed and told her to take the chance."
+   },
+   {
+    "q": "Jonas hat Lena seine Hilfe angeboten, falls sie nach Wien geht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "He would look after her plants while she is away."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-11-2",
+  "station": 11,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Neue Wege",
+  "intro": "Seven people are planning a new step in life. Find the right ad for each person – or x if there is none.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Neue Wege – Angebote für Ihre Zukunft",
+      "New paths – offers for your future"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Freiwilliges Soziales Jahr: Sie sind zwischen 16 und 26 Jahre alt und möchten nach der Schule etwas Sinnvolles tun?",
+      "Voluntary social year: are you between 16 and 26 and want to do something meaningful after school?"
+     ],
+     [
+      "Arbeiten Sie ein Jahr lang in einem Krankenhaus, einem Kindergarten oder einem Altenheim.",
+      "Work for a year in a hospital, a nursery or an old people's home."
+     ],
+     [
+      "Sie bekommen ein monatliches Taschengeld.",
+      "You receive monthly pocket money."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Hochzeitsmesse im Kongresszentrum: Über 80 Aussteller zeigen Kleider, Ringe, Torten und Ideen für Ihren großen Tag.",
+      "Wedding fair at the congress centre: over 80 exhibitors show dresses, rings, cakes and ideas for your big day."
+     ],
+     [
+      "Samstag und Sonntag von 10 bis 18 Uhr.",
+      "Saturday and Sunday from 10 a.m. to 6 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Gründungsberatung der Stadt: Sie haben eine Geschäftsidee und möchten sich selbstständig machen?",
+      "The city's start-up advice: do you have a business idea and want to become self-employed?"
+     ],
+     [
+      "Wir helfen Ihnen kostenlos beim Businessplan und bei der Suche nach Fördergeld.",
+      "We help you free of charge with your business plan and with finding funding."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Abendgymnasium: Holen Sie Ihr Abitur nach – neben dem Beruf!",
+      "Evening grammar school: get your Abitur later in life – alongside your job!"
+     ],
+     [
+      "Der Unterricht findet montags bis donnerstags ab 18 Uhr statt und dauert drei Jahre.",
+      "Lessons take place Monday to Thursday from 6 p.m. and the course lasts three years."
+     ],
+     [
+      "Außer den Büchern entstehen keine Kosten.",
+      "Apart from the books there are no costs."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Sprachreisen für Erwachsene: zwei Wochen Englisch in Dublin oder Spanisch in Valencia, mit Unterkunft in Gastfamilien.",
+      "Language trips for adults: two weeks of English in Dublin or Spanish in Valencia, staying with host families."
+     ],
+     [
+      "Für alle ab 30 Jahren.",
+      "For everyone aged 30 and over."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Ruhestand – und jetzt?",
+      "Retirement – what now?"
+     ],
+     [
+      "Ein Wochenendseminar für Menschen, die bald in Rente gehen: Wir sprechen über Finanzen, Ehrenamt und neue Hobbys.",
+      "A weekend seminar for people who will soon retire: we talk about money, volunteering and new hobbies."
+     ],
+     [
+      "Haus der Familie, 3. und 4. Mai.",
+      "Haus der Familie, 3 and 4 May."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Berufsberatung für Erwachsene: Sie sind in Ihrem Job unzufrieden und möchten etwas ganz anderes machen?",
+      "Career advice for adults: are you unhappy in your job and want to do something completely different?"
+     ],
+     [
+      "In drei Einzelgesprächen finden wir gemeinsam heraus, welcher Beruf zu Ihnen passt.",
+      "In three one-to-one sessions we work out together which job suits you."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Au-pair in den USA: Leben Sie ein Jahr in einer amerikanischen Familie und lernen Sie Land und Leute kennen.",
+      "Au pair in the USA: live with an American family for a year and get to know the country and its people."
+     ],
+     [
+      "Voraussetzungen: 18 bis 26 Jahre alt, Führerschein und Erfahrung mit Kindern.",
+      "Requirements: aged 18 to 26, a driving licence and experience with children."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Geburtsvorbereitungskurs für werdende Eltern: sechs Abende mit unserer Hebamme.",
+      "Antenatal course for parents-to-be: six evenings with our midwife."
+     ],
+     [
+      "Wir sprechen über die Geburt, die ersten Wochen mit dem Baby und das Elterngeld.",
+      "We talk about the birth, the first weeks with the baby and parental allowance."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Der Traum von den eigenen vier Wänden: Unsere Experten erklären, wie viel Eigenkapital Sie für eine Wohnung brauchen und welche Kredite es gibt.",
+      "The dream of your own four walls: our experts explain how much of your own money you need for a flat and what loans there are."
+     ],
+     [
+      "Jeden Dienstag um 17 Uhr in der Sparkasse am Markt.",
+      "Every Tuesday at 5 p.m. at the savings bank on the market square."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Taschengeld",
+    "en": "pocket money"
+   },
+   {
+    "w": "Aussteller",
+    "en": "exhibitors"
+   },
+   {
+    "w": "Fördergeld",
+    "en": "funding, grant money"
+   },
+   {
+    "w": "Abendgymnasium",
+    "en": "evening school where adults can take the Abitur"
+   },
+   {
+    "w": "Ruhestand",
+    "en": "retirement"
+   },
+   {
+    "w": "Hebamme",
+    "en": "midwife"
+   },
+   {
+    "w": "Eigenkapital",
+    "en": "your own money, deposit"
+   }
+  ],
+  "predict": {
+   "q": "The heading is 'New paths – offers for your future'. What will you find?",
+   "opts": [
+    "shops and restaurants",
+    "courses and advice for the next step in life",
+    "holiday flats"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Die Cousine von Jonas hat gerade das Abitur gemacht und möchte ein Jahr lang Menschen helfen, bevor sie studiert.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.1"
+    ],
+    "why": "The voluntary social year is for school leavers who want to work in hospitals or care homes."
+   },
+   {
+    "q": "Malte hat kein Abitur. Er möchte es nachholen, aber weiter in seiner Firma arbeiten.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.0",
+     "b5.1"
+    ],
+    "why": "The evening grammar school lets you take the Abitur alongside your job."
+   },
+   {
+    "q": "Eine Kollegin von Priya und ihr Mann erwarten im Frühling ihr erstes Kind.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.0",
+     "b10.1"
+    ],
+    "why": "An antenatal course for parents-to-be."
+   },
+   {
+    "q": "Herr Weber wird nächstes Jahr 65 und fragt sich, was er danach mit seiner Zeit machen soll.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.0",
+     "b7.1"
+    ],
+    "why": "The seminar is for people who will soon retire, including new hobbies."
+   },
+   {
+    "q": "Priya möchte ein kleines indisches Restaurant eröffnen und braucht Hilfe bei der Planung.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "The start-up advice helps with a business plan."
+   },
+   {
+    "q": "Die Tochter von Frau Yilmaz ist 35 und möchte ein Jahr im Ausland bei einer Familie leben und auf die Kinder aufpassen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The au-pair offer (h) is only for people aged 18 to 26, so nothing fits."
+   },
+   {
+    "q": "Ein Freund von Jonas arbeitet seit zehn Jahren in einer Bank, aber sein Beruf macht ihm keinen Spaß mehr.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0",
+     "b8.1"
+    ],
+    "why": "Career advice for adults who are unhappy in their job."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-12-1",
+  "station": 12,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Recht auf Homeoffice?",
+  "intro": "In a newspaper forum, readers answer the question whether all employees should have a right to work from home.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollten alle Beschäftigten ein Recht auf Homeoffice haben?",
+      "Readers' forum: Should all employees have a right to work from home?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "comment",
+    "label": "Sarah, 31, Berlin",
+    "s": [
+     [
+      "Seit ich zwei Tage pro Woche zu Hause arbeite, spare ich an diesen Tagen fast zwei Stunden Fahrzeit.",
+      "Since I've been working from home two days a week, I save almost two hours of travel time on those days."
+     ],
+     [
+      "Die Zeit nutze ich für Sport oder für meine Familie.",
+      "I use that time for sport or for my family."
+     ],
+     [
+      "Außerdem arbeite ich zu Hause konzentrierter, weil mich niemand ständig unterbricht.",
+      "I also concentrate better at home, because nobody keeps interrupting me."
+     ],
+     [
+      "Jeder, dessen Arbeit es erlaubt, sollte diese Möglichkeit bekommen.",
+      "Everyone whose work allows it should get this option."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Holger, 57, Dortmund",
+    "s": [
+     [
+      "Als Abteilungsleiter sehe ich vor allem die Nachteile.",
+      "As a head of department I mainly see the disadvantages."
+     ],
+     [
+      "Neue Kollegen lernen viel schneller, wenn erfahrene Leute neben ihnen sitzen.",
+      "New colleagues learn much faster when experienced people sit next to them."
+     ],
+     [
+      "Viele Probleme lassen sich in fünf Minuten an der Kaffeemaschine lösen statt mit zwanzig E-Mails.",
+      "Many problems can be solved in five minutes at the coffee machine instead of with twenty e-mails."
+     ],
+     [
+      "Einzelne Tage zu Hause sind in Ordnung, aber ein Recht darauf halte ich für falsch.",
+      "The odd day at home is fine, but I think a right to it is wrong."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Anja, 29, Nürnberg",
+    "s": [
+     [
+      "Am Anfang fand ich Homeoffice super, aber inzwischen fühle ich mich zu Hause oft einsam.",
+      "At first I thought working from home was great, but now I often feel lonely at home."
+     ],
+     [
+      "Weil Arbeit und Freizeit in derselben Wohnung stattfinden, kann ich abends außerdem schlecht abschalten.",
+      "Also, because work and free time happen in the same flat, I find it hard to switch off in the evening."
+     ],
+     [
+      "Ein Recht auf Homeoffice macht mir deshalb eher Angst: Viele Firmen würden dann Büroplätze sparen, und Leute wie ich hätten bald keinen eigenen Schreibtisch mehr.",
+      "So a right to work from home rather worries me: many companies would then cut office space, and people like me would soon have no desk of our own any more."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Kemal, 44, Köln",
+    "s": [
+     [
+      "Ich bin Krankenpfleger, für mich ist Homeoffice also gar nicht möglich, genauso wenig wie für Verkäuferinnen oder Busfahrer.",
+      "I'm a nurse, so working from home isn't possible at all for me – any more than for shop assistants or bus drivers."
+     ],
+     [
+      "Wenn nur Büroangestellte ein solches Recht bekommen, entsteht eine Gesellschaft mit zwei Klassen.",
+      "If only office workers get such a right, we end up with a two-class society."
+     ],
+     [
+      "Ich fände es fairer, allen Beschäftigten zum Beispiel mehr Urlaub zu geben.",
+      "I would find it fairer to give all employees more holiday, for example."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Julia, 38, Freiburg",
+    "s": [
+     [
+      "Als alleinerziehende Mutter wäre ich ohne Homeoffice ehrlich gesagt verloren.",
+      "As a single mother I'd honestly be lost without working from home."
+     ],
+     [
+      "Wenn mein Sohn krank ist, kann ich trotzdem arbeiten und muss nicht gleich Urlaub nehmen.",
+      "If my son is ill, I can still work and don't have to take holiday straight away."
+     ],
+     [
+      "Mein Chef war am Anfang skeptisch, aber meine Ergebnisse sind genauso gut wie früher.",
+      "My boss was sceptical at first, but my results are just as good as before."
+     ],
+     [
+      "So etwas Wichtiges sollte nicht von der Laune des Chefs abhängen, sondern gesetzlich geregelt sein.",
+      "Something so important shouldn't depend on the boss's mood – it should be set down in law."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Peter, 62, Regensburg",
+    "s": [
+     [
+      "Ich hätte nie gedacht, dass ich das einmal sage, denn ich war lange gegen Homeoffice.",
+      "I never thought I'd say this, because I was against working from home for a long time."
+     ],
+     [
+      "Aber in den letzten Jahren hat unsere Firma gezeigt, dass es gut funktioniert.",
+      "But in recent years our company has shown that it works well."
+     ],
+     [
+      "Es sind weniger Autos auf den Straßen, und die Firmen brauchen kleinere Büros.",
+      "There are fewer cars on the roads, and companies need smaller offices."
+     ],
+     [
+      "Davon profitieren am Ende alle, auch die Umwelt, deshalb sollte es für alle gelten.",
+      "In the end everyone benefits, the environment too, so it should apply to everyone."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Lisa, 26, Hamburg",
+    "s": [
+     [
+      "Viele junge Leute wählen ihren Arbeitgeber heute danach aus, ob man flexibel arbeiten kann.",
+      "Many young people today choose their employer by whether they can work flexibly."
+     ],
+     [
+      "Deshalb bieten die meisten Firmen Homeoffice längst freiwillig an.",
+      "That's why most companies have long offered working from home voluntarily."
+     ],
+     [
+      "Ein Gesetz brauchen wir dafür nicht: Jede Firma weiß selbst am besten, was für ihre Mitarbeiter funktioniert.",
+      "We don't need a law for that: every company knows best what works for its staff."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Abteilungsleiter",
+    "en": "head of department"
+   },
+   {
+    "w": "abschalten",
+    "en": "to switch off, to relax"
+   },
+   {
+    "w": "Büroplätze",
+    "en": "office desks, office space"
+   },
+   {
+    "w": "alleinerziehende",
+    "en": "single (parent)"
+   },
+   {
+    "w": "Laune",
+    "en": "mood"
+   },
+   {
+    "w": "gesetzlich",
+    "en": "by law"
+   },
+   {
+    "w": "freiwillig",
+    "en": "voluntarily"
+   }
+  ],
+  "predict": {
+   "q": "Readers discuss a question about work. Which topic is it?",
+   "opts": [
+    "company parties",
+    "working from home",
+    "learning a trade"
+   ],
+   "a": 1
+  },
+  "questions": [
+   {
+    "q": "Ist Sarah für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "Everyone whose work allows it should get the option."
+   },
+   {
+    "q": "Ist Holger für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "Some days at home are fine, but he thinks a right to it is wrong."
+   },
+   {
+    "q": "Ist Anja für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "A right worries her: firms would cut desks in the office."
+   },
+   {
+    "q": "Ist Kemal für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "It would create two classes of workers; he would rather give everyone more holiday."
+   },
+   {
+    "q": "Ist Julia für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.3"
+    ],
+    "why": "It should not depend on the boss but be set down in law."
+   },
+   {
+    "q": "Ist Peter für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.3"
+    ],
+    "why": "Everyone benefits, so it should apply to everyone."
+   },
+   {
+    "q": "Ist Lisa für ein Recht auf Homeoffice?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.2"
+    ],
+    "why": "She likes flexible work but says no law is needed."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-12-2",
+  "station": 12,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Schüler erklären das Smartphone",
+  "intro": "A local newspaper reports on pupils who help older people with their phones.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Schüler erklären, Senioren lernen: Smartphone-Kurs im Seniorenheim",
+      "Pupils explain, seniors learn: a smartphone course at a care home"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Jeden Dienstagnachmittag wird es im Gemeinschaftsraum des Seniorenheims „Am Rosengarten“ laut.",
+      "Every Tuesday afternoon it gets noisy in the common room of the 'Am Rosengarten' care home."
+     ],
+     [
+      "Dann kommen zwölf Jugendliche aus der neunten Klasse der Gesamtschule Nord und helfen den Bewohnerinnen und Bewohnern bei Fragen rund um Handy, Tablet und Internet.",
+      "Then twelve young people from year nine of the Nord comprehensive school come and help the residents with questions about mobile phones, tablets and the internet."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Das Projekt entstand vor zwei Jahren, als die Leiterin des Heims, Ingrid Fuchs, etwas bemerkte: Viele Bewohner besaßen zwar ein Smartphone, benutzten es aber kaum.",
+      "The project started two years ago when the head of the home, Ingrid Fuchs, noticed something: many residents owned a smartphone but hardly used it."
+     ],
+     [
+      "„Die meisten hatten das Gerät von ihren Kindern geschenkt bekommen, aber niemand hatte ihnen gezeigt, wie es funktioniert“, erklärt sie.",
+      "'Most of them had been given the device by their children, but nobody had shown them how it works,' she explains."
+     ],
+     [
+      "Deshalb fragte sie bei der Schule nebenan, ob Jugendliche helfen könnten.",
+      "So she asked at the school next door whether young people could help."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Die Wünsche der Senioren sind sehr unterschiedlich.",
+      "The seniors' wishes are very varied."
+     ],
+     [
+      "Der 84-jährige Heinz Krüger wollte lernen, wie man Fotos verschickt, damit er seiner Tochter in Kanada Bilder von seinem Garten schicken kann.",
+      "84-year-old Heinz Krüger wanted to learn how to send photos so that he can send his daughter in Canada pictures of his garden."
+     ],
+     [
+      "Inzwischen telefoniert er sogar jeden Sonntag per Video mit ihr.",
+      "Now he even video-calls her every Sunday."
+     ],
+     [
+      "Andere möchten Busfahrpläne lesen, Hörbücher hören oder Arzttermine online buchen.",
+      "Others want to read bus timetables, listen to audiobooks or book doctor's appointments online."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Aber nicht nur die Senioren lernen etwas.",
+      "But it isn't only the seniors who learn something."
+     ],
+     [
+      "„Am Anfang war ich ungeduldig, wenn ich etwas dreimal erklären musste“, gibt die 15-jährige Mia zu.",
+      "'At first I was impatient when I had to explain something three times,' admits 15-year-old Mia."
+     ],
+     [
+      "„Jetzt weiß ich, wie man schwierige Dinge einfach erklärt, und Herr Krüger erzählt mir immer spannende Geschichten von früher.“",
+      "'Now I know how to explain difficult things simply, and Herr Krüger always tells me exciting stories from the old days.'"
+     ],
+     [
+      "Geld bekommen die Schüler für ihre Arbeit nicht, aber eine Bescheinigung, die sie später ihren Bewerbungen beilegen können.",
+      "The pupils get no money for their work, but they do get a certificate they can later include with their job applications."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gemeinschaftsraum",
+    "en": "common room"
+   },
+   {
+    "w": "Gesamtschule",
+    "en": "comprehensive school"
+   },
+   {
+    "w": "Bewohnerinnen",
+    "en": "residents (female; Bewohner: male or mixed)"
+   },
+   {
+    "w": "ungeduldig",
+    "en": "impatient"
+   },
+   {
+    "w": "Bescheinigung",
+    "en": "certificate, written confirmation"
+   },
+   {
+    "w": "beilegen",
+    "en": "to enclose, to include"
+   }
+  ],
+  "predict": {
+   "q": "Pupils explain, seniors learn. What is the article probably about?",
+   "opts": [
+    "teenagers teaching older people to use phones",
+    "a new phone shop in town",
+    "older people teaching children to cook"
+   ],
+   "a": 0
+  },
+  "questions": [
+   {
+    "q": "Wie ist das Projekt entstanden?",
+    "format": "abc",
+    "opts": [
+     "Die Schüler wollten Geld für eine Klassenfahrt verdienen.",
+     "Die Kinder der Bewohner haben die Schule um Hilfe gebeten.",
+     "Die Leiterin des Heims hat bei der Schule nachgefragt."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.0",
+     "b3.2"
+    ],
+    "why": "Ingrid Fuchs noticed the problem and asked the school next door."
+   },
+   {
+    "q": "Was hat Herr Krüger gelernt?",
+    "format": "abc",
+    "opts": [
+     "mit seiner Tochter per Video zu telefonieren",
+     "Arzttermine im Internet zu buchen",
+     "Hörbücher auf dem Handy zu hören"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "He learned to send photos and now video-calls his daughter; the other things are what other residents want."
+   },
+   {
+    "q": "Was sagt Mia über das Projekt?",
+    "format": "abc",
+    "opts": [
+     "Es ist ihr zu langweilig, Dinge mehrmals zu erklären.",
+     "Sie hat dabei selbst etwas gelernt.",
+     "Sie bekommt dafür ein kleines Gehalt."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "She now knows how to explain difficult things simply."
+   }
+  ]
  }
 ]

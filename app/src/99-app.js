@@ -66,7 +66,7 @@ function App() {
     then open <code>app/WegNachDeutschland.html</code>.</p></main>`
   if (!data) return html`<main class="empty"><p>Loading…</p></main>`
   const { page, arg, sub, sub2 } = route(hash)
-  const Page = Object.hasOwn(PAGES, page) && PAGES[page]   // registered by the page's own fragment (00-core.js)
+  const Page = Object.hasOwn(PAGES, page) && PAGES[page]   // PAGES (00-core.js) is filled in by each page's own fragment
   const view = Page ? html`<${Page} data=${data} arg=${arg} sub=${sub} sub2=${sub2} hash=${hash} />`
     : page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
     : page === 'tests' ? html`<${Soon} title="Practice tests" text="Numbered tests per level and module: Lesen, Hören, Schreiben, Sprechen, Wortschatz, Grammatik." />`

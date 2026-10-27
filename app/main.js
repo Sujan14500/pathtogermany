@@ -1,5 +1,8 @@
+// Generated from app/src/*.js by scripts/build_data.py — edit those files
+// ==== src/00-core.js ====
 // Path to Germany: German from A1 to B1 for the Goethe-Zertifikat, taught through English.
-// No build step: one ES module with vendored Preact + htm. scripts/bundle.py makes the single-file version.
+// No bundler: app/src/*.js are joined in name order into one ES module, app/main.js, with vendored Preact + htm.
+// This fragment holds what every feature shares; scripts/bundle.py joins them and makes the single-file version.
 import { html, render, useState, useEffect, useLayoutEffect, useMemo, useRef } from './vendor/htm-preact-3.1.1.js'
 import { fsrs, createEmptyCard, Rating, State } from './vendor/ts-fsrs-5.4.2.js'
 
@@ -197,6 +200,48 @@ function noVoice() {
   setTimeout(() => p.remove(), 20000)
 }
 
+// ---- many voices: lines spoken in turn, A a woman, B a man, N an announcer ----
+
+// With only one German voice installed, pitch tells the speakers apart.
+let lineQueue = null
+function speakLines(lines, { rate, onLine, onEnd } = {}) {
+  if (!('speechSynthesis' in window)) return noVoice()
+  if (speechSynthesis.getVoices().length && !deVoices().length) return noVoice()
+  speechSynthesis.cancel()
+  const token = {}
+  lineQueue = token
+  const vA = voiceFor('A'), vB = voiceFor('B')
+  const vN = deVoices().find(v => v !== vA && v !== vB) ?? vA
+  const one = !vA || !vB || vA === vB
+  let i = 0, started = false
+  const next = () => {
+    if (lineQueue !== token) return
+    if (i >= lines.length) { lineQueue = null; onLine?.(-1); onEnd?.(); return }
+    const [who, text] = lines[i]
+    const u = new SpeechSynthesisUtterance(text)
+    u.lang = 'de-DE'
+    u.voice = who === 'B' ? vB : who === 'N' ? vN : vA
+    u.rate = rate ?? S.settings.rate ?? 0.95
+    if (one || (who === 'N' && vN === vA)) u.pitch = who === 'B' ? .7 : who === 'N' ? 1 : 1.25
+    u.onstart = () => { started = true; onLine?.(i) }
+    u.onend = () => { i++; setTimeout(next, who === lines[i]?.[0] ? 150 : 420) }
+    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') noVoice() }
+    speechSynthesis.speak(u)
+  }
+  next()
+  setTimeout(() => { if (lineQueue === token && !started) noVoice() }, 2500)
+}
+const stopSpeech = () => { lineQueue = null; if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+
+// ---- registries: each feature fragment adds itself, so it needs no edits elsewhere ----
+
+// PAGES: route name ('#/<name>/…') → component({ data, arg, sub, sub2, hash }); the router (99-app.js)
+// falls back to its own pages. TAB_VIEWS: station tab id (see TABS) → component({ data, n }); the station
+// page (90-station.js) falls back to "being written now". Register at a fragment's top level:
+// PAGES.pictures = PicturesPage, TAB_VIEWS.listen = ListenTab.
+const PAGES = {}
+const TAB_VIEWS = {}
+
 // ---- stations and how far each one is done ----
 
 const TABS = [['words', 'Words'], ['grammar', 'Grammar'], ['read', 'Read'], ['listen', 'Listen'], ['write', 'Write'],
@@ -215,31 +260,6 @@ function partDone(n, part) {
 const stationDone = n => PARTS.reduce((a, p) => a + partDone(n, p), 0) / PARTS.length
 const levelDone = lv => lv.stations.reduce((a, st) => a + stationDone(st.n), 0) / lv.stations.length
 const here = data => data.stations[S.lesson] ?? data.stations[1]
-
-// What to do at a part, said once for the plan rail and once for the next-step sentence.
-const STEP = {
-  cards: [(st, q) => {
-    const reviews = q.filter(c => S.cards[c.id]).length, fresh = q.length - reviews
-    return reviews ? html`Start with the <b>${plural(reviews, 'review')}</b> due today${fresh ? html`, then learn <b>${plural(fresh, 'new card')}</b>` : ''}.`
-      : html`Learn <b>${plural(fresh, 'new word')}</b> from <span lang="de">${st.de}</span>${st.k > 1 || st.level !== 'A1' ? ' and earlier stations.' : /[.!?]$/.test(st.de) ? '' : '.'}`
-  }, "Start today's cards"],
-  words: [() => 'Look through the words of this station, each noun with its article, plural and sound, and test yourself.', 'Open the words'],
-  grammar: [st => html`Now the grammar, starting with <b>${st.grammar[0][1]}</b>.`, 'Open the grammar'],
-  read: [() => 'Read a short text and answer questions in the Lesen format.', 'Start reading'],
-  listen: [() => 'Listen to everyday dialogues and announcements, as in the Hören module.', 'Start listening'],
-  write: [() => 'Write a short exam task and check it against the rubric.', 'Start writing'],
-  speak: [() => 'Speak an exam task out loud, with a timer and a recording.', 'Start speaking'],
-  test: [() => 'Take the station test. 60% passes.', 'Take the test'],
-}
-
-// Today at this stop: the day's cards first, then each part of the station in order.
-function todayPlan(st, q) {
-  const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
-  return [...cards, ...PARTS.map(part => {
-    const p = partDone(st.n, part)
-    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
-  })]
-}
 
 // ---- words: the gender colour goes wherever a noun appears ----
 
@@ -285,43 +305,6 @@ function Example({ w }) {
   const at = findWord(w.de, w)
   return html`<p class="ex"><span lang="de">${at ? html`${w.de.slice(0, at[0])}<mark class=${w.a ? `g-${w.a}` : ''}>${w.de.slice(at[0], at[1])}</mark>${w.de.slice(at[1])}` : w.de}</span>
     <${SayButton} text=${w.de} label="the example" /><small>${w.ee}</small></p>`
-}
-
-// der/die/das from the ending, most reliable rules first. Taught after every answer in the gender trainer.
-const GENDER_RULES = [
-  [/(chen|lein)$/, 'das', '-chen and -lein (small things) are always das'],
-  [/(ung|heit|keit|schaft|ion|tät)$/, 'die', '-ung, -heit, -keit, -schaft, -ion and -tät are always die'],
-  [/(ling|ismus)$/, 'der', '-ling and -ismus are always der'],
-  [/^(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag|Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember|Frühling|Sommer|Herbst|Winter|Norden|Süden|Osten|Westen|Regen|Schnee|Wind|Nebel)$/,
-    'der', 'days, months, seasons, compass points and weather are der'],
-  [/(ment|um)$/, 'das', '-ment and -um are usually das'],
-  [/(ist|or|ig|ich|eur|ant|ent)$/, 'der', '-ist, -or, -ig, -ich, -eur, -ant and -ent are usually der'],
-  [/(ik|ur|enz|anz|ei|ie|age|ade)$/, 'die', '-ik, -ur, -enz, -anz, -ei, -ie and -age are usually die'],
-  [/in$/, 'die', '-in for women and female animals is die (die Lehrerin)'],
-  [/o$/, 'das', 'short foreign words in -o are usually das (das Auto, das Kino)'],
-  [/e$/, 'die', 'most nouns ending in -e are die'],
-]
-export function genderRule(w, verbs = new Set()) {
-  if (/en$/.test(w.w) && verbs.has(w.w.toLowerCase())) return { art: 'das', text: 'verbs used as nouns are das (das Essen)' }
-  const r = GENDER_RULES.find(([re]) => re.test(w.w))
-  return r && { art: r[1], text: r[2] }
-}
-
-// Plurals: the patterns German uses, so the wrong options are mistakes a learner really makes.
-export const umlaut = s => s.replace(/(Au|au|A|a|O|o|U|u)([^aeiouäöüAEIOUÄÖÜ]*(?:e[rln])?)$/,
-  (_, v, rest) => ({ Au: 'Äu', au: 'äu', A: 'Ä', a: 'ä', O: 'Ö', o: 'ö', U: 'Ü', u: 'ü' })[v] + rest)
-function pluralChoices(w) {
-  const x = w.w, u = umlaut(x), soft = /(e|e[rln])$/.test(x)
-  const c = new Set([/e$/.test(x) || /e[rl]$/.test(x) ? `${x}n` : /en$/.test(x) ? '' : `${x}en`,
-    !soft && `${x}e`, !soft && u !== x && `${u}e`, !soft && `${u}er`, `${x}s`, /e[rln]$/.test(x) && x,
-    /e[rln]$/.test(x) && u !== x && u].filter(Boolean))
-  c.delete(w.pl)
-  return shuffle([w.pl, ...shuffle([...c]).slice(0, 3)])
-}
-export function pluralPattern(sg, pl) {
-  const u = umlaut(sg) !== sg && pl.startsWith(umlaut(sg)) && !pl.startsWith(sg) ? 'umlaut + ' : ''
-  const end = pl.slice((u ? umlaut(sg) : sg).length)
-  return pl === sg ? 'no change' : u && !end ? 'umlaut only' : `${u}-${end}`
 }
 
 // ---- a short quiz: one question at a time, the answer explained right away ----
@@ -371,6 +354,46 @@ function Quiz({ qs, onDone, again }) {
   </div>`
 }
 
+// ---- small drawn pieces ----
+
+const Train = () => html`<svg class="train" viewBox="0 0 40 20" aria-hidden="true">
+  <path d="M2 16V7a4 4 0 0 1 4-4h20c6 0 11 5 12 11v2z" fill="var(--ink)" />
+  <path d="M8 6h6v4H8zM17 6h6v4h-6z" fill="var(--panel)" /><path d="M27 6c3 .5 6 2.5 7.5 5H27z" fill="var(--panel)" />
+  <path d="M2 13h36" stroke="var(--line)" stroke-width="2" />
+</svg>`
+
+const Arrow = () => html`<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>`
+
+// ---- the station name board: the chapter's name, big, on the line's coloured band ----
+
+function Board({ data, n, home }) {
+  const st = data.stations[n]
+  const lv = data.level[st.level]
+  const prev = data.stations[n - 1], next = data.stations[n + 1]
+  const name = html`<span lang="de">${st.de}</span>`
+  return html`<section class=${`board l${st.level}`} aria-label=${`Station ${st.k} of ${st.level}: ${st.en}`}>
+    <div class="board-body">
+      <div class="board-top">
+        <span class="gleis" aria-hidden="true">${st.k}</span><span class="gleis-l">Station<b>${st.k} of ${lv.stations.length}</b></span>
+        <span class="lb">${st.level}</span>
+      </div>
+      <div>
+        <h1 class="board-name">${home ? html`<a href=${`#/station/${n}`}>${name}</a>` : name}</h1>
+        <p class="board-sub">${st.en} · ${st.can}</p>
+      </div>
+    </div>
+    <nav class="band" aria-label="Neighbouring stations">
+      ${prev ? html`<a class="band-prev" href=${`#/station/${prev.n}`}>← <span lang="de">${prev.de}</span></a>` : html`<span></span>`}
+      <ol class="band-dots">${lv.stations.map(x => html`<li class=${x.n === n ? 'on' : x.n < n ? 'past' : ''}>
+        <a href=${`#/station/${x.n}`} aria-label=${`Station ${x.k}: ${x.de}`} title=${x.de}></a></li>`)}</ol>
+      ${next ? html`<a class="band-next" href=${`#/station/${next.n}`}><span lang="de">${next.de}</span> →</a>` : html`<span></span>`}
+    </nav>
+  </section>`
+}
+
+// ==== src/10-words.js ====
+// ---- station tab: words ----
+
 // Ten questions on a station's words: meaning both ways, der/die/das, and the word that fills a gap.
 function wordQuestions(ws, pool) {
   const others = (w, key) => shuffle(pool.filter(x => x !== w && x.p === w.p && x[key] !== w[key]))
@@ -400,6 +423,237 @@ function wordQuestions(ws, pool) {
   return shuffle(ws).slice(0, 10).map(make).filter(q => q.opts.length >= 2)
 }
 
+function WordsTab({ data, n }) {
+  useStore()
+  const ws = data.wordsBy[n] ?? []
+  const [open, setOpen] = useState(null)
+  const [quiz, setQuiz] = useState(null)
+  const pool = useMemo(() => data.words.filter(w => w.n <= Math.max(n, 12)), [data, n])
+  const start = () => setQuiz(wordQuestions(ws, pool))
+  if (!ws.length) return html`<p class="soon">This station's words are being written now: each noun with its article and plural, audio and a quick quiz.</p>`
+  const learned = ws.filter(w => known(w.id)).length
+  const cover = S.settings.cover
+  return html`<div class="words-tab">
+    <div class="words-head">
+      <p><b>${ws.length} words</b> · ${learned} learned as cards. Tap a word for its example. New cards for this station come in${' '}
+        <a href="#/study">today's cards</a> once it is your current stop.</p>
+      <div class="words-tools">
+        <button type="button" class=${`toggle${cover ? ' on' : ''}`} aria-pressed=${!!cover} title="Try to recall each meaning first, then tap the word to check"
+          onClick=${() => commit(x => { x.settings = { ...x.settings, cover: !cover } })}><span class="toggle-knob"></span>Cover the English</button>
+        <button type="button" class="btn" onClick=${start}>Test yourself <${Arrow} /></button>
+      </div>
+    </div>
+    ${quiz ? html`<section class="quiz-box" aria-label="Test yourself"><${Quiz} key=${quiz} qs=${quiz} again=${start} /></section>` : ''}
+    <ul class=${`wlist${cover ? ' cover' : ''}`}>${ws.map(w => html`<li key=${w.id} class=${`${status(w)}${open === w.id ? ' open' : ''}`}>
+      <${SayButton} text=${said(w)} />
+      <button type="button" class="wrow" aria-expanded=${open === w.id} onClick=${() => setOpen(open === w.id ? null : w.id)}>
+        <span class="wde"><${Word} w=${w} /><small lang="de">${formsNote(w)}</small></span>
+        <span class="wen">${w.en}</span>
+      </button>
+      ${open === w.id ? html`<div class="wmore">${w.ipa ? html`<p class="ipa">${w.ipa}</p>` : ''}<${Example} w=${w} /></div>` : ''}
+    </li>`)}</ul>
+  </div>`
+}
+TAB_VIEWS.words = WordsTab
+
+// ==== src/15-study.js ====
+// ---- typed answers: lenient about capitals and umlaut spellings, strict about the article ----
+
+const fold = t => t.normalize('NFC').trim().replace(/\s+/g, ' ')
+const loose = t => fold(t).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/^sich /, '')
+function lev(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)])
+  for (let j = 1; j <= b.length; j++) d[0][j] = j
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1))
+  }
+  return d[a.length][b.length]
+}
+// Order matters: another word with the same English counts before the article is judged ("der Wagen" for das Auto).
+export function checkAnswer(typed, w, words = []) {
+  const t = fold(typed), want = said(w)
+  if (t === want) return { verdict: 'right', notes: [] }
+  const other = words.find(x => x !== w && x.en === w.en && loose(said(x)) === loose(t))
+  if (other) return { verdict: 'close', notes: [`Also right; this card wants ${want}.`] }
+  if (w.a && w.a !== 'pl') {
+    const [first, ...rest] = t.split(' ')
+    const hasArt = ['der', 'die', 'das'].includes(first.toLowerCase())
+    const body = hasArt ? rest.join(' ') : t
+    const near = loose(body) === loose(w.w) || (w.w.length >= 5 && lev(loose(body), loose(w.w)) === 1)
+    if (near && (!hasArt || first.toLowerCase() !== ART[w.a])) return { verdict: 'wrong', notes: [`The article belongs to the word: ${want}.`] }
+  }
+  if (loose(t) === loose(want)) {
+    const notes = []
+    const bare = x => x.replace(/^sich /i, '')
+    if (/^sich /.test(want) && !/^sich /i.test(t)) notes.push(`It is reflexive: ${want}.`)
+    if (/[äöü]/i.test(want) && /(ae|oe|ue)/i.test(bare(t)) && !/(ae|oe|ue)/i.test(bare(want))) notes.push(`ae, oe and ue stand in for ä, ö and ü: ${want}.`)
+    if (/ß/.test(want) && /ss/.test(t) && !/ss/.test(want)) notes.push(`ss stands in for ß: ${want}.`)
+    const caps = x => bare(x).split(' ').map(p => p[0] === p[0]?.toUpperCase())
+    if (caps(t).join() !== caps(want).join()) notes.push(w.p === 'n' ? `Nouns start with a capital: ${want}.` : `Mind the capitals: ${want}.`)
+    return { verdict: 'close', notes }
+  }
+  if (w.w.replace(/^sich /, '').length >= 5 && lev(loose(t), loose(want)) === 1) return { verdict: 'typo', notes: [] }
+  return { verdict: 'wrong', notes: [] }
+}
+
+// Letter diff of what was typed against the answer: [[char, 'same' | 'miss' (left out) | 'extra' (typed in)]].
+export function diffChars(a, b) {
+  const L = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0))
+  for (let i = a.length - 1; i >= 0; i--) {
+    for (let j = b.length - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1])
+  }
+  const out = []
+  let i = 0, j = 0
+  while (i < a.length || j < b.length) {
+    if (i < a.length && j < b.length && a[i] === b[j]) { out.push([a[i], 'same']); i++; j++ }
+    else if (j < b.length && (i === a.length || L[i][j + 1] >= L[i + 1][j])) out.push([b[j++], 'miss'])
+    else out.push([a[i++], 'extra'])
+  }
+  return out
+}
+
+// A word missed four times or more gets a memory hook of the learner's own, shown on both its cards.
+function HookBox({ w }) {
+  const s = useStore()
+  const [text, setText] = useState(s.hooks?.[w.id] ?? '')
+  const save = () => commit(x => { x.hooks = { ...x.hooks, [w.id]: text.trim() || undefined } })
+  const hint = w.p === 'n' ? 'Picture it in its gender: der things frozen in blue ice, die things on fire, das things overgrown with green leaves. Then link the sound to the meaning.'
+    : 'Link the sound to the meaning with a picture or a story of your own.'
+  return html`<div class="hook" onClick=${e => e.stopPropagation()}>
+    <label for="hook-in">Your memory hook</label>
+    <textarea id="hook-in" rows="2" placeholder=${hint} value=${text} onInput=${e => setText(e.target.value)} onBlur=${save}></textarea>
+  </div>`
+}
+
+// ---- study session: each card is a station sign ----
+
+function Study({ data }) {
+  const s = useStore()
+  const [revealed, setRevealed] = useState(false)
+  const [leaving, setLeaving] = useState(0)
+  const [done, setDone] = useState(0)
+  const [prev, setPrev] = useState(null)
+  const [typed, setTyped] = useState('')
+  const [check, setCheck] = useState(null)       // checkAnswer() of a typed production card
+  const q = queue()
+  const c = q[0]
+  // a grammar card rotates through its point's examples, one per review
+  const ex = c?.kind === 'g' && c.g.examples[(s.cards[c.id]?.reps ?? 0) % c.g.examples.length]
+  const sayIt = () => speak(ex ? sentence(ex) : said(c.w))
+
+  const reveal = () => {
+    if (!c || revealed) return
+    setRevealed(true)
+    if (s.autoplay && !ex) sayIt()
+  }
+  const rate = grade => {
+    if (!revealed || leaving) return
+    setLeaving(grade)
+    setTimeout(() => {
+      answer(c, grade)
+      setPrev(c); setDone(d => d + 1); setRevealed(false); setLeaving(0); setTyped(''); setCheck(null)
+    }, reducedMotion() ? 0 : 240)
+  }
+  useEffect(() => {
+    const onKey = e => {
+      if (e.target.closest?.('input, textarea, select')) return     // typing an answer or a memory hook
+      const onControl = e.target.closest?.('button, a, summary')
+      if ((e.key === ' ' || e.key === 'Enter') && !onControl) { e.preventDefault(); revealed ? rate(Rating.Good) : reveal() }
+      else if (/^[1-4]$/.test(e.key)) rate(+e.key)
+      else if (e.key === 's' && c) sayIt()
+      else if (e.key === 'Escape') location.hash = '#/'
+    }
+    addEventListener('keydown', onKey)
+    return () => removeEventListener('keydown', onKey)
+  })
+
+  // the grade a typed answer suggests gets the focus, so a second Enter accepts it
+  const suggest = (check && { wrong: Rating.Again, typo: Rating.Hard }[check.verdict]) || Rating.Good
+  useEffect(() => { if (revealed && check) document.querySelector(`.grades .g${suggest}`)?.focus() }, [revealed, check])
+
+  if (!c) return html`<${Arrived} data=${data} done=${done} />`
+  const submit = e => { e.preventDefault(); if (typed.trim()) setCheck(checkAnswer(typed, c.w, data.words)); reveal() }
+  const tricky = s.cards[c.id]?.lapses >= 4
+  const hook = c.w && s.hooks?.[c.w.id]
+  const total = done + q.length
+  const now = new Date()
+  const preview = revealed ? scheduler.repeat(s.cards[c.id] ?? createEmptyCard(now), now) : null
+  const st = data.stations[(c.w ?? c.g).n]
+  const w = c.w
+  return html`<main class=${`study l${st.level}`}>
+    <header class="trip">
+      <a class="back" href="#/">Stop</a>
+      <div class="track" role="progressbar" aria-label="Session progress" aria-valuemin="0" aria-valuemax=${total} aria-valuenow=${done}>
+        <span class="rail"></span><span class="ride" style=${`--p:${total ? done / total : 0}`}><${Train} /></span>
+      </div>
+      <span class="count">${q.length} left</span>
+    </header>
+    <article key=${c.id} class=${`card${revealed ? ' open' : ''}${leaving ? ` leave g${leaving}` : ''}`} onClick=${reveal} aria-live="polite">
+      <div class="card-top">
+        <span class="lb">${st.level} · ${st.k}</span>
+        <span class="card-kind">${c.kind === 'g' ? 'Build it in German' : c.kind === 'r' ? 'Say the German aloud. What does it mean?'
+          : w.p === 'n' ? 'Say it in German, out loud, with article and plural' : 'Say it in German, out loud'}</span>
+        ${!s.cards[c.id] ? html`<span class="new-tag">New</span>` : tricky ? html`<span class="new-tag tricky">Tricky word</span>` : ''}
+      </div>
+      ${c.kind === 'g'
+        ? html`<p class="card-gtitle">${c.g.title}</p>
+            <div class="card-back card-g" onClick=${e => e.stopPropagation()}><${Builder} key=${c.id} ex=${ex} onDone=${reveal} />
+              ${revealed ? html`<p class="g-pattern" lang="de">${c.g.pattern}</p>` : ''}</div>`
+        : c.kind === 'r'
+        ? html`<h2 class="card-term"><${Word} w=${w} /></h2>
+            <p class="card-forms" lang="de">${formsNote(w)}</p>
+            <div class="card-back">${revealed ? html`<p class="card-en">${w.en}</p><p class="card-meta">${POS_NAME[w.p]}${w.ipa ? html` · <span class="ipa">${w.ipa}</span>` : ''}</p><${Example} w=${w} />` : ''}</div>`
+        : html`<h2 class="card-term en">${w.en}</h2>
+            <p class="card-forms">${POS_NAME[w.p]}</p>
+            <div class="card-back">${revealed ? html`<p class="card-de"><${Word} w=${w} /> <${SayButton} text=${said(w)} /></p>
+              ${check ? html`<p class=${`typed ${check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
+                ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
+                ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>` : ''}
+              <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />`
+              : html`<form class="type-it" onSubmit=${submit} onClick=${e => e.stopPropagation()}>
+                  <input lang="de" autocomplete="off" autocapitalize="off" spellcheck="false" value=${typed} onInput=${e => setTyped(e.target.value)}
+                    placeholder=${w.a && w.a !== 'pl' ? 'der/die/das + word' : 'Type the German'} aria-label="Your answer in German" />
+                  <button type="submit" class="btn">Check <kbd>Enter</kbd></button>
+                </form>`}</div>`}
+      ${revealed && c.w && (tricky || hook) ? html`<${HookBox} w=${c.w} />` : ''}
+      <div class="band card-band">
+        <span>${prev ? html`← <span lang="de">${prev.w ? said(prev.w) : prev.g.title}</span>` : ''}</span>
+        <span lang="de">${st.de}</span>
+      </div>
+    </article>
+    ${revealed
+      ? html`<div class="grades" role="group" aria-label="How well did you know it?">
+          ${GRADES.map(([g, label]) => html`<button type="button" class=${`g${g}`} onClick=${() => rate(g)}>
+            ${label}<small>${fmtInterval(preview[g].card.due - now)}</small><kbd>${g}</kbd></button>`)}
+        </div>`
+      : html`<button type="button" class="show" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
+  </main>`
+}
+
+function Arrived({ data, done }) {
+  const s = useStore()
+  const nextDue = Object.values(s.cards).map(c => +new Date(c.due)).filter(t => t > Date.now()).sort((a, b) => a - b)[0]
+  const unseen = data.words.some(w => !s.cards[w.id] && w.n <= s.lesson)
+  const st = here(data)
+  const next = data.stations[st.n + 1]
+  return html`<main class=${`study arrived l${st.level}`}>
+    <article class="card open">
+      <h2 class="card-term" lang="de">Angekommen!</h2>
+      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : data.words.length ? 'Nothing to study right now.' : 'The word cards are being written now.'}
+        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}
+        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}</p>
+      <div class="band card-band"><span></span><span lang="de">${st.de}</span></div>
+    </article>
+    <div class="after">
+      ${unseen ? html`<button type="button" onClick=${() => commit(x => { x.newToday = { date: today(), n: (x.newToday.date === today() ? x.newToday.n : 0) - 10 } })}>Learn 10 more new words</button>`
+        : next ? html`<button type="button" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span></button>` : ''}
+      <a class="btn" href=${`#/station/${st.n}/grammar`}>Go on with the station <${Arrow} /></a>
+    </div>
+  </main>`
+}
+PAGES.study = Study
+
+// ==== src/20-grammar.js ====
 // ---- grammar: the pattern, a plain explanation, English beside it, aligned examples and a sentence builder ----
 
 const sentence = ex => ex.de.join(' ')
@@ -548,6 +802,8 @@ function GrammarPoint({ data, g, i }) {
 
 function GrammarTab({ data, n }) {
   const gs = data.grammarBy[n]
+  if (!gs.length) return html`<ol class="glist">${data.stations[n].grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>
+    <p class="soon">${SOON.grammar} <span class="quiet">Being written now.</span></p>`
   const go = id => document.getElementById(`g-${id}`)?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' })
   return html`<div class="grammar-tab">
     <nav class="g-index" aria-label="Grammar points">${gs.map((g, i) => html`<button type="button" onClick=${() => go(g.id)}>
@@ -556,7 +812,9 @@ function GrammarTab({ data, n }) {
     ${gs.map((g, i) => html`<${GrammarPoint} key=${g.id} data=${data} g=${g} i=${i} />`)}
   </div>`
 }
+TAB_VIEWS.grammar = GrammarTab
 
+// ==== src/30-trainers.js ====
 // ---- verb forms: generated from the infinitive and the three key forms (fährt, fuhr, ist gefahren) ----
 
 export const PERSONS = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie']
@@ -788,6 +1046,7 @@ function VerbsTrainer({ data }) {
     </article>
   </main>`
 }
+PAGES.verbs = VerbsTrainer
 
 // ---- cases and endings ----
 
@@ -937,127 +1196,113 @@ function CasesPage({ data }) {
     </section>
   </main>`
 }
+PAGES.cases = CasesPage
 
-// ---- how you learn here: the research behind the app (docs/07-learning-science.md), each tip linked to its feature ----
+// ---- der/die/das trainer: a noun appears, tap its article; the ending rule is taught after each answer ----
 
-const TIP_ICONS = {
-  test: html`<rect x="9" y="6" width="30" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="3" />
-    <path d="M19 19a5 5 0 1 1 7 4.6c-1.4.7-2 1.6-2 3.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /><circle cx="24" cy="33" r="2" fill="currentColor" />`,
-  often: html`<rect x="6" y="10" width="36" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="3" /><path d="M6 18H42M15 6v8M33 6v8" stroke="currentColor" stroke-width="3" />
-    ${[14, 24, 34].map(x => html`<circle cx=${x} cy="30" r="3" fill="currentColor" />`)}`,
-  aloud: html`<path d="M8 19v10h7l9 7V12l-9 7H8z" fill="currentColor" /><path d="M30 17a9 9 0 0 1 0 14M35 12a16 16 0 0 1 0 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />`,
-  sleep: html`<path d="M30 8a16 16 0 1 0 10 26A13 13 0 0 1 30 8z" fill="currentColor" /><path d="M33 12h7l-7 8h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />`,
-  twice: html`<circle cx="15" cy="24" r="9" fill="currentColor" /><circle cx="35" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="4 3" />`,
-  mix: html`<path d="M6 14h9c6 0 9 20 15 20h10M6 34h9c6 0 9-20 15-20h10" fill="none" stroke="currentColor" stroke-width="3" />
-    <path d="M36 9l5 5-5 5M36 29l5 5-5 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />`,
-  guess: html`<path d="M8 10h32a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H22l-8 7v-7H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="3" />
-    <path d="M20 18a4 4 0 1 1 5.5 3.7c-1 .5-1.5 1.2-1.5 2.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /><circle cx="24" cy="29" r="1.8" fill="currentColor" />`,
-  hook: html`<path d="M24 5v24a8 8 0 1 1-16 0" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" /><path d="M8 29l-3-6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
-    <circle cx="24" cy="5" r="3" fill="currentColor" />`,
-}
-// Each tip: what to do, why (one or two sentences), the evidence, and where the app does it.
-// A "here" entry is [label, href] when it's built, or [label, null, 'with Reading'] for what comes in a later phase.
-function tipsFor(s) {
-  const st = `#/station/${s.lesson}`
-  return [
-    { icon: 'test', title: "Test, don't reread", says: 'Pulling a word out of memory makes it stronger; reading it again barely does. So every step here ends in a question, a typed answer or something you say.',
-      ev: 'Retrieval practice: Karpicke & Roediger 2008; Dunlosky et al. 2013 (strong evidence).',
-      here: [["Today's cards", '#/study'], ['Cover the English in a word list', `${st}/words`], ['Test yourself on a station', `${st}/words`],
-        ['Known words in a text: how much of it you already know', null, 'with Reading']] },
-    { icon: 'often', title: 'Little and often', says: 'Spread your study over the days. Each card comes back just before you would forget it, so fifteen minutes a day beats two hours on a Sunday.',
-      ev: 'Spacing: Cepeda et al. 2008 (strong). The cards use FSRS, aiming at 90% recall.',
-      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', null, 'with the tests'],
-        ['Station tests that mix in the six stations before', null, 'with the tests'], ['Mock exams spaced at least three days apart', null, 'with the tests']] },
-    { icon: 'aloud', title: 'Say it aloud', says: 'Words you say out loud stick better than words you read silently. Every card asks you to say it, and the voice says it back.',
-      ev: 'The production effect: MacLeod et al. 2010; Fawcett 2013. Shadowing helps most at lower levels (Hamada).',
-      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', null, 'with Listening'],
-        ['Read it again against the clock; hear it again, faster', null, 'with Reading and Listening']] },
-    { icon: 'sleep', title: 'Sleep on it', says: 'Sleep between two sessions halves the work of relearning. Do your cards in the evening and again the next morning.',
-      ev: 'Mazza et al. 2016.', here: [["Today's cards", '#/study']] },
-    { icon: 'twice', title: 'Never miss twice', says: 'A habit takes about two months to form, and one missed day does not break it; two in a row might. Decide when and where you study, in one sentence.',
-      ev: 'Habits: Lally et al. 2010. If-then plans: Gollwitzer & Sheeran 2006 (d = 0.65).',
-      here: [['Your week on the home page', '#/'], ['Your study plan (Settings)', '#/']] },
-    { icon: 'mix', title: 'Mix it up', says: 'Once you have met things one at a time, mix them: new words among old ones, all verb forms in one drill. Telling similar things apart is what the exam asks.',
-      ev: 'Interleaving: Brunmair & Richter 2019 (g = 0.42).',
-      here: [['New cards among the reviews', '#/study'], ['Verb forms', '#/verbs'], ['der, die, das', '#/gender'], ['Cases and endings', '#/cases']] },
-    { icon: 'guess', title: 'Guess first', says: 'A guess before the lesson, even a wrong one, makes the lesson stick. Each grammar point starts with one question.',
-      ev: 'Pretesting: Kornell, Hays & Bjork 2009; Richland, Kornell & Kao 2009.',
-      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', null, 'with Reading']] },
-    { icon: 'hook', title: 'Hooks for tricky words only', says: 'Most words stick through repetition. For the few that keep slipping, make a picture: der words frozen in blue ice, die words on fire, das words overgrown with leaves.',
-      ev: 'The keyword method: Atkinson & Raugh 1975; mixed evidence on its own, so only for words missed four times.',
-      here: [['Tricky words get a memory hook in your cards', '#/study']] },
-    { icon: 'test', title: 'The exam day', says: 'Know the format before the day: sit at least two full mock exams under time. Read the questions before the text, answer every question (a wrong answer costs nothing), and tick off every point of a writing task.',
-      ev: 'Goethe-Zertifikat: 60% passes; at B1 each module is passed on its own.',
-      here: [['Practice tests in every module', null, 'with the tests'], ['Timed mock exams', null, 'with the tests']] },
-  ]
+// der/die/das from the ending, most reliable rules first. Taught after every answer in the gender trainer.
+const GENDER_RULES = [
+  [/(chen|lein)$/, 'das', '-chen and -lein (small things) are always das'],
+  [/(ung|heit|keit|schaft|ion|tät)$/, 'die', '-ung, -heit, -keit, -schaft, -ion and -tät are always die'],
+  [/(ling|ismus)$/, 'der', '-ling and -ismus are always der'],
+  [/^(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag|Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember|Frühling|Sommer|Herbst|Winter|Norden|Süden|Osten|Westen|Regen|Schnee|Wind|Nebel)$/,
+    'der', 'days, months, seasons, compass points and weather are der'],
+  [/(ment|um)$/, 'das', '-ment and -um are usually das'],
+  [/(ist|or|ig|ich|eur|ant|ent)$/, 'der', '-ist, -or, -ig, -ich, -eur, -ant and -ent are usually der'],
+  [/(ik|ur|enz|anz|ei|ie|age|ade)$/, 'die', '-ik, -ur, -enz, -anz, -ei, -ie and -age are usually die'],
+  [/in$/, 'die', '-in for women and female animals is die (die Lehrerin)'],
+  [/o$/, 'das', 'short foreign words in -o are usually das (das Auto, das Kino)'],
+  [/e$/, 'die', 'most nouns ending in -e are die'],
+]
+export function genderRule(w, verbs = new Set()) {
+  if (/en$/.test(w.w) && verbs.has(w.w.toLowerCase())) return { art: 'das', text: 'verbs used as nouns are das (das Essen)' }
+  const r = GENDER_RULES.find(([re]) => re.test(w.w))
+  return r && { art: r[1], text: r[2] }
 }
 
-function Tips({ at }) {
-  const s = useStore()
-  const tips = tipsFor(s)
-  const i = Math.min(Math.max(at || 0, 0), tips.length - 1)
-  const t = tips[i]
-  const go = t.here.find(([, href]) => href)
-  const open = (e, href) => { if (href === '#/' && /Settings/.test(e.currentTarget.textContent)) { e.preventDefault(); location.hash = '#/'; setTimeout(openSettings, 300) } }
-  return html`<main class="page tips">
-    <header class="masthead"><h1>How you learn here</h1>
-      <p>Nine findings from memory research, and where this app puts each one to work.</p></header>
-    <nav class="tip-line" aria-label="Tips">
-      <ol>${tips.map((x, k) => html`<li class=${k === i ? 'on' : k < i ? 'past' : ''}><a href=${`#/tips/${k}`} aria-current=${k === i ? 'step' : null}>
-        <span class="tdot">${k + 1}</span><span class="tname">${x.title}</span></a></li>`)}</ol>
-    </nav>
-    <article class="tip" key=${i}>
-      <svg class="tip-icon" viewBox="0 0 48 48" width="56" height="56" aria-hidden="true">${TIP_ICONS[t.icon]}</svg>
-      <div class="tip-body">
-        <h2>${t.title}</h2>
-        <p class="tip-says">${t.says}</p>
-        <h3>In this app</h3>
-        <ul class="tip-here">${t.here.map(([label, href, when]) => html`<li class=${href ? '' : 'later'}>
-          ${href ? html`<a href=${href} onClick=${e => open(e, href)}>${label}</a>` : html`<span>${label}</span> <small>${when}</small>`}</li>`)}</ul>
-        <p class="tip-ev">${t.ev}</p>
-        <div class="after">
-          ${go ? html`<a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>` : ''}
-          ${i > 0 ? html`<a class="button" href=${`#/tips/${i - 1}`}>← Previous</a>` : ''}
-          ${i < tips.length - 1 ? html`<a class="button" href=${`#/tips/${i + 1}`}>Next: ${tips[i + 1].title} →</a>` : ''}
-        </div>
-      </div>
+// Plurals: the patterns German uses, so the wrong options are mistakes a learner really makes.
+export const umlaut = s => s.replace(/(Au|au|A|a|O|o|U|u)([^aeiouäöüAEIOUÄÖÜ]*(?:e[rln])?)$/,
+  (_, v, rest) => ({ Au: 'Äu', au: 'äu', A: 'Ä', a: 'ä', O: 'Ö', o: 'ö', U: 'Ü', u: 'ü' })[v] + rest)
+function pluralChoices(w) {
+  const x = w.w, u = umlaut(x), soft = /(e|e[rln])$/.test(x)
+  const c = new Set([/e$/.test(x) || /e[rl]$/.test(x) ? `${x}n` : /en$/.test(x) ? '' : `${x}en`,
+    !soft && `${x}e`, !soft && u !== x && `${u}e`, !soft && `${u}er`, `${x}s`, /e[rln]$/.test(x) && x,
+    /e[rln]$/.test(x) && u !== x && u].filter(Boolean))
+  c.delete(w.pl)
+  return shuffle([w.pl, ...shuffle([...c]).slice(0, 3)])
+}
+export function pluralPattern(sg, pl) {
+  const u = umlaut(sg) !== sg && pl.startsWith(umlaut(sg)) && !pl.startsWith(sg) ? 'umlaut + ' : ''
+  const end = pl.slice((u ? umlaut(sg) : sg).length)
+  return pl === sg ? 'no change' : u && !end ? 'umlaut only' : `${u}-${end}`
+}
+
+function GenderTrainer({ data }) {
+  useStore()
+  const [mode, setMode] = useState('gender')
+  const nouns = useMemo(() => {
+    const all = data.words.filter(w => w.p === 'n' && (mode === 'gender' ? w.a !== 'pl' : w.pl && w.pl !== '-'))
+    const mine = all.filter(w => w.n <= S.lesson)
+    return shuffle(mine.length >= 30 ? mine : all.slice(0, Math.max(60, mine.length)))
+  }, [data, mode])
+  const [i, setI] = useState(0)
+  const [picked, setPicked] = useState(null)
+  const [score, setScore] = useState({ right: 0, total: 0, streak: 0 })
+  const w = nouns[i % Math.max(nouns.length, 1)]
+  const choices = useMemo(() => (w && mode === 'plural' ? pluralChoices(w) : ['der', 'die', 'das']), [w, mode])
+  const correct = w && (mode === 'gender' ? w.a : w.pl)
+  const choose = k => {
+    if (picked !== null || !w) return
+    setPicked(k)
+    const ok = choices[k] === correct
+    setScore(x => ({ right: x.right + ok, total: x.total + 1, streak: ok ? x.streak + 1 : 0 }))
+    speak(mode === 'gender' ? said(w) : `die ${w.pl}`)
+  }
+  const next = () => { setPicked(null); setI(x => x + 1) }
+  useEffect(() => {
+    const onKey = e => {
+      if (/^[1-4]$/.test(e.key) && +e.key <= choices.length) choose(+e.key - 1)
+      else if ((e.key === 'Enter' || e.key === ' ') && picked !== null && !e.target.closest?.('button, a')) { e.preventDefault(); next() }
+    }
+    addEventListener('keydown', onKey)
+    return () => removeEventListener('keydown', onKey)
+  })
+  const switchTo = m => { setMode(m); setI(0); setPicked(null) }
+  if (!w) return html`<main class="page"><header class="masthead"><h1>der, die, das</h1><p>The nouns are being written now.</p></header></main>`
+  const rule = mode === 'gender' && genderRule(w, data.verbSet)
+  const ok = picked !== null && choices[picked] === correct
+  return html`<main class="page trainer">
+    <header class="masthead"><h1>${mode === 'gender' ? 'der, die, das' : 'Plurals'}</h1>
+      <p>${mode === 'gender' ? 'Tap the article. After each answer you see the ending rule that decides it, or that the noun is one to learn by heart.'
+        : 'Pick the plural. German has a handful of plural patterns; the ending of the noun and its gender predict most of them.'}</p></header>
+    <div class="modes" role="group" aria-label="Drill">
+      <button type="button" class=${mode === 'gender' ? 'on' : ''} aria-pressed=${mode === 'gender'} onClick=${() => switchTo('gender')}>Gender</button>
+      <button type="button" class=${mode === 'plural' ? 'on' : ''} aria-pressed=${mode === 'plural'} onClick=${() => switchTo('plural')}>Plural</button>
+      <span class="score">${score.right} of ${score.total} right${score.streak > 2 ? html` · <b>${score.streak} in a row</b>` : ''}</span>
+    </div>
+    <article key=${w.id + mode} class=${`drill${picked === null ? '' : ok ? ' right' : ' wrong'}${picked !== null && mode === 'gender' ? ` g-${w.a}` : ''}`}>
+      <p class="drill-word" lang="de">${mode === 'gender'
+        ? html`<span class="drill-art">${picked === null ? '___' : ART[w.a]}</span> ${w.w}`
+        : html`<${Word} w=${w} /> → die <span class="drill-art">${picked === null ? '___' : w.pl}</span>`}</p>
+      <p class="drill-en">${w.en}</p>
+      <ol class=${`drill-opts ${mode}`}>${choices.map((c, k) => html`<li><button type="button" disabled=${picked !== null} onClick=${() => choose(k)}
+        class=${`${mode === 'gender' ? `g-${c}` : ''}${picked === null ? '' : c === correct ? ' right' : k === picked ? ' wrong' : ' dim'}`}>
+        <kbd>${k + 1}</kbd><span lang="de">${c}</span></button></li>`)}</ol>
+      ${picked !== null ? html`<div class="drill-why">
+        <p>${ok ? html`<b>Right.</b> ` : html`<b>It's <span lang="de">${mode === 'gender' ? said(w) : `die ${w.pl}`}</span>.</b> `}
+          ${mode === 'gender'
+            ? rule ? rule.art === w.a ? html`Rule: ${rule.text}.` : html`An exception: ${rule.text}, but <span lang="de">${said(w)}</span> is not. Learn it by heart.`
+              : 'No ending rule here: learn it together with its article.'
+            : html`Pattern: <b>${pluralPattern(w.w, w.pl)}</b>.`}</p>
+        <${Example} w=${w} />
+        <button type="button" class="btn" onClick=${next}>Next word <kbd>Enter</kbd></button>
+      </div>` : ''}
     </article>
   </main>`
 }
+PAGES.gender = GenderTrainer
 
-// ---- many voices: lines spoken in turn, A a woman, B a man, N an announcer ----
-
-// With only one German voice installed, pitch tells the speakers apart.
-let lineQueue = null
-function speakLines(lines, { rate, onLine, onEnd } = {}) {
-  if (!('speechSynthesis' in window)) return noVoice()
-  if (speechSynthesis.getVoices().length && !deVoices().length) return noVoice()
-  speechSynthesis.cancel()
-  const token = {}
-  lineQueue = token
-  const vA = voiceFor('A'), vB = voiceFor('B')
-  const vN = deVoices().find(v => v !== vA && v !== vB) ?? vA
-  const one = !vA || !vB || vA === vB
-  let i = 0, started = false
-  const next = () => {
-    if (lineQueue !== token) return
-    if (i >= lines.length) { lineQueue = null; onLine?.(-1); onEnd?.(); return }
-    const [who, text] = lines[i]
-    const u = new SpeechSynthesisUtterance(text)
-    u.lang = 'de-DE'
-    u.voice = who === 'B' ? vB : who === 'N' ? vN : vA
-    u.rate = rate ?? S.settings.rate ?? 0.95
-    if (one || (who === 'N' && vN === vA)) u.pitch = who === 'B' ? .7 : who === 'N' ? 1 : 1.25
-    u.onstart = () => { started = true; onLine?.(i) }
-    u.onend = () => { i++; setTimeout(next, who === lines[i]?.[0] ? 150 : 420) }
-    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') noVoice() }
-    speechSynthesis.speak(u)
-  }
-  next()
-  setTimeout(() => { if (lineQueue === token && !started) noVoice() }, 2500)
-}
-const stopSpeech = () => { lineQueue = null; if ('speechSynthesis' in window) speechSynthesis.cancel(); }
-
+// ==== src/40-reading.js ====
 // ---- reading: the station's texts in the Goethe Lesen formats ----
 
 const PART_NAME = { Lesen: 'Lesen', Hören: 'Hören' }
@@ -1205,7 +1450,9 @@ function ReadTab({ data, n }) {
     <${Reader} key=${t.id} t=${t} />
   </div>`
 }
+TAB_VIEWS.read = ReadTab
 
+// ==== src/45-listening.js ====
 // ---- recording: MediaRecorder, and the browser's German speech recognition where it has one ----
 
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -1354,311 +1601,124 @@ function ListenTab({ data, n }) {
     <${ListenItem} key=${it.id} it=${it} />
   </div>`
 }
+TAB_VIEWS.listen = ListenTab
 
-// ---- station tab: words ----
+// ==== src/60-learn.js ====
+// ---- how you learn here: the research behind the app (docs/07-learning-science.md), each tip linked to its feature ----
 
-function WordsTab({ data, n }) {
-  useStore()
-  const ws = data.wordsBy[n] ?? []
-  const [open, setOpen] = useState(null)
-  const [quiz, setQuiz] = useState(null)
-  const pool = useMemo(() => data.words.filter(w => w.n <= Math.max(n, 12)), [data, n])
-  const start = () => setQuiz(wordQuestions(ws, pool))
-  if (!ws.length) return html`<p class="soon">This station's words are being written now: each noun with its article and plural, audio and a quick quiz.</p>`
-  const learned = ws.filter(w => known(w.id)).length
-  const cover = S.settings.cover
-  return html`<div class="words-tab">
-    <div class="words-head">
-      <p><b>${ws.length} words</b> · ${learned} learned as cards. Tap a word for its example. New cards for this station come in${' '}
-        <a href="#/study">today's cards</a> once it is your current stop.</p>
-      <div class="words-tools">
-        <button type="button" class=${`toggle${cover ? ' on' : ''}`} aria-pressed=${!!cover} title="Try to recall each meaning first, then tap the word to check"
-          onClick=${() => commit(x => { x.settings = { ...x.settings, cover: !cover } })}><span class="toggle-knob"></span>Cover the English</button>
-        <button type="button" class="btn" onClick=${start}>Test yourself <${Arrow} /></button>
-      </div>
-    </div>
-    ${quiz ? html`<section class="quiz-box" aria-label="Test yourself"><${Quiz} key=${quiz} qs=${quiz} again=${start} /></section>` : ''}
-    <ul class=${`wlist${cover ? ' cover' : ''}`}>${ws.map(w => html`<li key=${w.id} class=${`${status(w)}${open === w.id ? ' open' : ''}`}>
-      <${SayButton} text=${said(w)} />
-      <button type="button" class="wrow" aria-expanded=${open === w.id} onClick=${() => setOpen(open === w.id ? null : w.id)}>
-        <span class="wde"><${Word} w=${w} /><small lang="de">${formsNote(w)}</small></span>
-        <span class="wen">${w.en}</span>
-      </button>
-      ${open === w.id ? html`<div class="wmore">${w.ipa ? html`<p class="ipa">${w.ipa}</p>` : ''}<${Example} w=${w} /></div>` : ''}
-    </li>`)}</ul>
-  </div>`
+const TIP_ICONS = {
+  test: html`<rect x="9" y="6" width="30" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="3" />
+    <path d="M19 19a5 5 0 1 1 7 4.6c-1.4.7-2 1.6-2 3.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /><circle cx="24" cy="33" r="2" fill="currentColor" />`,
+  often: html`<rect x="6" y="10" width="36" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="3" /><path d="M6 18H42M15 6v8M33 6v8" stroke="currentColor" stroke-width="3" />
+    ${[14, 24, 34].map(x => html`<circle cx=${x} cy="30" r="3" fill="currentColor" />`)}`,
+  aloud: html`<path d="M8 19v10h7l9 7V12l-9 7H8z" fill="currentColor" /><path d="M30 17a9 9 0 0 1 0 14M35 12a16 16 0 0 1 0 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />`,
+  sleep: html`<path d="M30 8a16 16 0 1 0 10 26A13 13 0 0 1 30 8z" fill="currentColor" /><path d="M33 12h7l-7 8h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />`,
+  twice: html`<circle cx="15" cy="24" r="9" fill="currentColor" /><circle cx="35" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="4 3" />`,
+  mix: html`<path d="M6 14h9c6 0 9 20 15 20h10M6 34h9c6 0 9-20 15-20h10" fill="none" stroke="currentColor" stroke-width="3" />
+    <path d="M36 9l5 5-5 5M36 29l5 5-5 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />`,
+  guess: html`<path d="M8 10h32a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H22l-8 7v-7H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="3" />
+    <path d="M20 18a4 4 0 1 1 5.5 3.7c-1 .5-1.5 1.2-1.5 2.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /><circle cx="24" cy="29" r="1.8" fill="currentColor" />`,
+  hook: html`<path d="M24 5v24a8 8 0 1 1-16 0" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" /><path d="M8 29l-3-6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="24" cy="5" r="3" fill="currentColor" />`,
+}
+// Each tip: what to do, why (one or two sentences), the evidence, and where the app does it.
+// A "here" entry is [label, href] when it's built, or [label, null, 'with Reading'] for what comes in a later phase.
+function tipsFor(s) {
+  const st = `#/station/${s.lesson}`
+  return [
+    { icon: 'test', title: "Test, don't reread", says: 'Pulling a word out of memory makes it stronger; reading it again barely does. So every step here ends in a question, a typed answer or something you say.',
+      ev: 'Retrieval practice: Karpicke & Roediger 2008; Dunlosky et al. 2013 (strong evidence).',
+      here: [["Today's cards", '#/study'], ['Cover the English in a word list', `${st}/words`], ['Test yourself on a station', `${st}/words`],
+        ['Known words in a text: how much of it you already know', null, 'with Reading']] },
+    { icon: 'often', title: 'Little and often', says: 'Spread your study over the days. Each card comes back just before you would forget it, so fifteen minutes a day beats two hours on a Sunday.',
+      ev: 'Spacing: Cepeda et al. 2008 (strong). The cards use FSRS, aiming at 90% recall.',
+      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', null, 'with the tests'],
+        ['Station tests that mix in the six stations before', null, 'with the tests'], ['Mock exams spaced at least three days apart', null, 'with the tests']] },
+    { icon: 'aloud', title: 'Say it aloud', says: 'Words you say out loud stick better than words you read silently. Every card asks you to say it, and the voice says it back.',
+      ev: 'The production effect: MacLeod et al. 2010; Fawcett 2013. Shadowing helps most at lower levels (Hamada).',
+      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', null, 'with Listening'],
+        ['Read it again against the clock; hear it again, faster', null, 'with Reading and Listening']] },
+    { icon: 'sleep', title: 'Sleep on it', says: 'Sleep between two sessions halves the work of relearning. Do your cards in the evening and again the next morning.',
+      ev: 'Mazza et al. 2016.', here: [["Today's cards", '#/study']] },
+    { icon: 'twice', title: 'Never miss twice', says: 'A habit takes about two months to form, and one missed day does not break it; two in a row might. Decide when and where you study, in one sentence.',
+      ev: 'Habits: Lally et al. 2010. If-then plans: Gollwitzer & Sheeran 2006 (d = 0.65).',
+      here: [['Your week on the home page', '#/'], ['Your study plan (Settings)', '#/']] },
+    { icon: 'mix', title: 'Mix it up', says: 'Once you have met things one at a time, mix them: new words among old ones, all verb forms in one drill. Telling similar things apart is what the exam asks.',
+      ev: 'Interleaving: Brunmair & Richter 2019 (g = 0.42).',
+      here: [['New cards among the reviews', '#/study'], ['Verb forms', '#/verbs'], ['der, die, das', '#/gender'], ['Cases and endings', '#/cases']] },
+    { icon: 'guess', title: 'Guess first', says: 'A guess before the lesson, even a wrong one, makes the lesson stick. Each grammar point starts with one question.',
+      ev: 'Pretesting: Kornell, Hays & Bjork 2009; Richland, Kornell & Kao 2009.',
+      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', null, 'with Reading']] },
+    { icon: 'hook', title: 'Hooks for tricky words only', says: 'Most words stick through repetition. For the few that keep slipping, make a picture: der words frozen in blue ice, die words on fire, das words overgrown with leaves.',
+      ev: 'The keyword method: Atkinson & Raugh 1975; mixed evidence on its own, so only for words missed four times.',
+      here: [['Tricky words get a memory hook in your cards', '#/study']] },
+    { icon: 'test', title: 'The exam day', says: 'Know the format before the day: sit at least two full mock exams under time. Read the questions before the text, answer every question (a wrong answer costs nothing), and tick off every point of a writing task.',
+      ev: 'Goethe-Zertifikat: 60% passes; at B1 each module is passed on its own.',
+      here: [['Practice tests in every module', null, 'with the tests'], ['Timed mock exams', null, 'with the tests']] },
+  ]
 }
 
-// ---- typed answers: lenient about capitals and umlaut spellings, strict about the article ----
-
-const fold = t => t.normalize('NFC').trim().replace(/\s+/g, ' ')
-const loose = t => fold(t).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/^sich /, '')
-function lev(a, b) {
-  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)])
-  for (let j = 1; j <= b.length; j++) d[0][j] = j
-  for (let i = 1; i <= a.length; i++) {
-    for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1))
-  }
-  return d[a.length][b.length]
-}
-// Order matters: another word with the same English counts before the article is judged ("der Wagen" for das Auto).
-export function checkAnswer(typed, w, words = []) {
-  const t = fold(typed), want = said(w)
-  if (t === want) return { verdict: 'right', notes: [] }
-  const other = words.find(x => x !== w && x.en === w.en && loose(said(x)) === loose(t))
-  if (other) return { verdict: 'close', notes: [`Also right; this card wants ${want}.`] }
-  if (w.a && w.a !== 'pl') {
-    const [first, ...rest] = t.split(' ')
-    const hasArt = ['der', 'die', 'das'].includes(first.toLowerCase())
-    const body = hasArt ? rest.join(' ') : t
-    const near = loose(body) === loose(w.w) || (w.w.length >= 5 && lev(loose(body), loose(w.w)) === 1)
-    if (near && (!hasArt || first.toLowerCase() !== ART[w.a])) return { verdict: 'wrong', notes: [`The article belongs to the word: ${want}.`] }
-  }
-  if (loose(t) === loose(want)) {
-    const notes = []
-    const bare = x => x.replace(/^sich /i, '')
-    if (/^sich /.test(want) && !/^sich /i.test(t)) notes.push(`It is reflexive: ${want}.`)
-    if (/[äöü]/i.test(want) && /(ae|oe|ue)/i.test(bare(t)) && !/(ae|oe|ue)/i.test(bare(want))) notes.push(`ae, oe and ue stand in for ä, ö and ü: ${want}.`)
-    if (/ß/.test(want) && /ss/.test(t) && !/ss/.test(want)) notes.push(`ss stands in for ß: ${want}.`)
-    const caps = x => bare(x).split(' ').map(p => p[0] === p[0]?.toUpperCase())
-    if (caps(t).join() !== caps(want).join()) notes.push(w.p === 'n' ? `Nouns start with a capital: ${want}.` : `Mind the capitals: ${want}.`)
-    return { verdict: 'close', notes }
-  }
-  if (w.w.replace(/^sich /, '').length >= 5 && lev(loose(t), loose(want)) === 1) return { verdict: 'typo', notes: [] }
-  return { verdict: 'wrong', notes: [] }
-}
-
-// Letter diff of what was typed against the answer: [[char, 'same' | 'miss' (left out) | 'extra' (typed in)]].
-export function diffChars(a, b) {
-  const L = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0))
-  for (let i = a.length - 1; i >= 0; i--) {
-    for (let j = b.length - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1])
-  }
-  const out = []
-  let i = 0, j = 0
-  while (i < a.length || j < b.length) {
-    if (i < a.length && j < b.length && a[i] === b[j]) { out.push([a[i], 'same']); i++; j++ }
-    else if (j < b.length && (i === a.length || L[i][j + 1] >= L[i + 1][j])) out.push([b[j++], 'miss'])
-    else out.push([a[i++], 'extra'])
-  }
-  return out
-}
-
-// A word missed four times or more gets a memory hook of the learner's own, shown on both its cards.
-function HookBox({ w }) {
+function Tips({ arg }) {
   const s = useStore()
-  const [text, setText] = useState(s.hooks?.[w.id] ?? '')
-  const save = () => commit(x => { x.hooks = { ...x.hooks, [w.id]: text.trim() || undefined } })
-  const hint = w.p === 'n' ? 'Picture it in its gender: der things frozen in blue ice, die things on fire, das things overgrown with green leaves. Then link the sound to the meaning.'
-    : 'Link the sound to the meaning with a picture or a story of your own.'
-  return html`<div class="hook" onClick=${e => e.stopPropagation()}>
-    <label for="hook-in">Your memory hook</label>
-    <textarea id="hook-in" rows="2" placeholder=${hint} value=${text} onInput=${e => setText(e.target.value)} onBlur=${save}></textarea>
-  </div>`
-}
-
-// ---- study session: each card is a station sign ----
-
-function Study({ data }) {
-  const s = useStore()
-  const [revealed, setRevealed] = useState(false)
-  const [leaving, setLeaving] = useState(0)
-  const [done, setDone] = useState(0)
-  const [prev, setPrev] = useState(null)
-  const [typed, setTyped] = useState('')
-  const [check, setCheck] = useState(null)       // checkAnswer() of a typed production card
-  const q = queue()
-  const c = q[0]
-  // a grammar card rotates through its point's examples, one per review
-  const ex = c?.kind === 'g' && c.g.examples[(s.cards[c.id]?.reps ?? 0) % c.g.examples.length]
-  const sayIt = () => speak(ex ? sentence(ex) : said(c.w))
-
-  const reveal = () => {
-    if (!c || revealed) return
-    setRevealed(true)
-    if (s.autoplay && !ex) sayIt()
-  }
-  const rate = grade => {
-    if (!revealed || leaving) return
-    setLeaving(grade)
-    setTimeout(() => {
-      answer(c, grade)
-      setPrev(c); setDone(d => d + 1); setRevealed(false); setLeaving(0); setTyped(''); setCheck(null)
-    }, reducedMotion() ? 0 : 240)
-  }
-  useEffect(() => {
-    const onKey = e => {
-      if (e.target.closest?.('input, textarea, select')) return     // typing an answer or a memory hook
-      const onControl = e.target.closest?.('button, a, summary')
-      if ((e.key === ' ' || e.key === 'Enter') && !onControl) { e.preventDefault(); revealed ? rate(Rating.Good) : reveal() }
-      else if (/^[1-4]$/.test(e.key)) rate(+e.key)
-      else if (e.key === 's' && c) sayIt()
-      else if (e.key === 'Escape') location.hash = '#/'
-    }
-    addEventListener('keydown', onKey)
-    return () => removeEventListener('keydown', onKey)
-  })
-
-  // the grade a typed answer suggests gets the focus, so a second Enter accepts it
-  const suggest = (check && { wrong: Rating.Again, typo: Rating.Hard }[check.verdict]) || Rating.Good
-  useEffect(() => { if (revealed && check) document.querySelector(`.grades .g${suggest}`)?.focus() }, [revealed, check])
-
-  if (!c) return html`<${Arrived} data=${data} done=${done} />`
-  const submit = e => { e.preventDefault(); if (typed.trim()) setCheck(checkAnswer(typed, c.w, data.words)); reveal() }
-  const tricky = s.cards[c.id]?.lapses >= 4
-  const hook = c.w && s.hooks?.[c.w.id]
-  const total = done + q.length
-  const now = new Date()
-  const preview = revealed ? scheduler.repeat(s.cards[c.id] ?? createEmptyCard(now), now) : null
-  const st = data.stations[(c.w ?? c.g).n]
-  const w = c.w
-  return html`<main class=${`study l${st.level}`}>
-    <header class="trip">
-      <a class="back" href="#/">Stop</a>
-      <div class="track" role="progressbar" aria-label="Session progress" aria-valuemin="0" aria-valuemax=${total} aria-valuenow=${done}>
-        <span class="rail"></span><span class="ride" style=${`--p:${total ? done / total : 0}`}><${Train} /></span>
+  const tips = tipsFor(s)
+  const i = Math.min(Math.max(Number(arg) || 0, 0), tips.length - 1)
+  const t = tips[i]
+  const go = t.here.find(([, href]) => href)
+  const open = (e, href) => { if (href === '#/' && /Settings/.test(e.currentTarget.textContent)) { e.preventDefault(); location.hash = '#/'; setTimeout(openSettings, 300) } }
+  return html`<main class="page tips">
+    <header class="masthead"><h1>How you learn here</h1>
+      <p>Nine findings from memory research, and where this app puts each one to work.</p></header>
+    <nav class="tip-line" aria-label="Tips">
+      <ol>${tips.map((x, k) => html`<li class=${k === i ? 'on' : k < i ? 'past' : ''}><a href=${`#/tips/${k}`} aria-current=${k === i ? 'step' : null}>
+        <span class="tdot">${k + 1}</span><span class="tname">${x.title}</span></a></li>`)}</ol>
+    </nav>
+    <article class="tip" key=${i}>
+      <svg class="tip-icon" viewBox="0 0 48 48" width="56" height="56" aria-hidden="true">${TIP_ICONS[t.icon]}</svg>
+      <div class="tip-body">
+        <h2>${t.title}</h2>
+        <p class="tip-says">${t.says}</p>
+        <h3>In this app</h3>
+        <ul class="tip-here">${t.here.map(([label, href, when]) => html`<li class=${href ? '' : 'later'}>
+          ${href ? html`<a href=${href} onClick=${e => open(e, href)}>${label}</a>` : html`<span>${label}</span> <small>${when}</small>`}</li>`)}</ul>
+        <p class="tip-ev">${t.ev}</p>
+        <div class="after">
+          ${go ? html`<a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>` : ''}
+          ${i > 0 ? html`<a class="button" href=${`#/tips/${i - 1}`}>← Previous</a>` : ''}
+          ${i < tips.length - 1 ? html`<a class="button" href=${`#/tips/${i + 1}`}>Next: ${tips[i + 1].title} →</a>` : ''}
+        </div>
       </div>
-      <span class="count">${q.length} left</span>
-    </header>
-    <article key=${c.id} class=${`card${revealed ? ' open' : ''}${leaving ? ` leave g${leaving}` : ''}`} onClick=${reveal} aria-live="polite">
-      <div class="card-top">
-        <span class="lb">${st.level} · ${st.k}</span>
-        <span class="card-kind">${c.kind === 'g' ? 'Build it in German' : c.kind === 'r' ? 'Say the German aloud. What does it mean?'
-          : w.p === 'n' ? 'Say it in German, out loud, with article and plural' : 'Say it in German, out loud'}</span>
-        ${!s.cards[c.id] ? html`<span class="new-tag">New</span>` : tricky ? html`<span class="new-tag tricky">Tricky word</span>` : ''}
-      </div>
-      ${c.kind === 'g'
-        ? html`<p class="card-gtitle">${c.g.title}</p>
-            <div class="card-back card-g" onClick=${e => e.stopPropagation()}><${Builder} key=${c.id} ex=${ex} onDone=${reveal} />
-              ${revealed ? html`<p class="g-pattern" lang="de">${c.g.pattern}</p>` : ''}</div>`
-        : c.kind === 'r'
-        ? html`<h2 class="card-term"><${Word} w=${w} /></h2>
-            <p class="card-forms" lang="de">${formsNote(w)}</p>
-            <div class="card-back">${revealed ? html`<p class="card-en">${w.en}</p><p class="card-meta">${POS_NAME[w.p]}${w.ipa ? html` · <span class="ipa">${w.ipa}</span>` : ''}</p><${Example} w=${w} />` : ''}</div>`
-        : html`<h2 class="card-term en">${w.en}</h2>
-            <p class="card-forms">${POS_NAME[w.p]}</p>
-            <div class="card-back">${revealed ? html`<p class="card-de"><${Word} w=${w} /> <${SayButton} text=${said(w)} /></p>
-              ${check ? html`<p class=${`typed ${check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
-                ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
-                ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>` : ''}
-              <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />`
-              : html`<form class="type-it" onSubmit=${submit} onClick=${e => e.stopPropagation()}>
-                  <input lang="de" autocomplete="off" autocapitalize="off" spellcheck="false" value=${typed} onInput=${e => setTyped(e.target.value)}
-                    placeholder=${w.a && w.a !== 'pl' ? 'der/die/das + word' : 'Type the German'} aria-label="Your answer in German" />
-                  <button type="submit" class="btn">Check <kbd>Enter</kbd></button>
-                </form>`}</div>`}
-      ${revealed && c.w && (tricky || hook) ? html`<${HookBox} w=${c.w} />` : ''}
-      <div class="band card-band">
-        <span>${prev ? html`← <span lang="de">${prev.w ? said(prev.w) : prev.g.title}</span>` : ''}</span>
-        <span lang="de">${st.de}</span>
-      </div>
-    </article>
-    ${revealed
-      ? html`<div class="grades" role="group" aria-label="How well did you know it?">
-          ${GRADES.map(([g, label]) => html`<button type="button" class=${`g${g}`} onClick=${() => rate(g)}>
-            ${label}<small>${fmtInterval(preview[g].card.due - now)}</small><kbd>${g}</kbd></button>`)}
-        </div>`
-      : html`<button type="button" class="show" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
-  </main>`
-}
-
-function Arrived({ data, done }) {
-  const s = useStore()
-  const nextDue = Object.values(s.cards).map(c => +new Date(c.due)).filter(t => t > Date.now()).sort((a, b) => a - b)[0]
-  const unseen = data.words.some(w => !s.cards[w.id] && w.n <= s.lesson)
-  const st = here(data)
-  const next = data.stations[st.n + 1]
-  return html`<main class=${`study arrived l${st.level}`}>
-    <article class="card open">
-      <h2 class="card-term" lang="de">Angekommen!</h2>
-      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : data.words.length ? 'Nothing to study right now.' : 'The word cards are being written now.'}
-        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}
-        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}</p>
-      <div class="band card-band"><span></span><span lang="de">${st.de}</span></div>
-    </article>
-    <div class="after">
-      ${unseen ? html`<button type="button" onClick=${() => commit(x => { x.newToday = { date: today(), n: (x.newToday.date === today() ? x.newToday.n : 0) - 10 } })}>Learn 10 more new words</button>`
-        : next ? html`<button type="button" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span></button>` : ''}
-      <a class="btn" href=${`#/station/${st.n}/grammar`}>Go on with the station <${Arrow} /></a>
-    </div>
-  </main>`
-}
-
-// ---- der/die/das trainer: a noun appears, tap its article; the ending rule is taught after each answer ----
-
-function GenderTrainer({ data }) {
-  useStore()
-  const [mode, setMode] = useState('gender')
-  const nouns = useMemo(() => {
-    const all = data.words.filter(w => w.p === 'n' && (mode === 'gender' ? w.a !== 'pl' : w.pl && w.pl !== '-'))
-    const mine = all.filter(w => w.n <= S.lesson)
-    return shuffle(mine.length >= 30 ? mine : all.slice(0, Math.max(60, mine.length)))
-  }, [data, mode])
-  const [i, setI] = useState(0)
-  const [picked, setPicked] = useState(null)
-  const [score, setScore] = useState({ right: 0, total: 0, streak: 0 })
-  const w = nouns[i % Math.max(nouns.length, 1)]
-  const choices = useMemo(() => (w && mode === 'plural' ? pluralChoices(w) : ['der', 'die', 'das']), [w, mode])
-  const correct = w && (mode === 'gender' ? w.a : w.pl)
-  const choose = k => {
-    if (picked !== null || !w) return
-    setPicked(k)
-    const ok = choices[k] === correct
-    setScore(x => ({ right: x.right + ok, total: x.total + 1, streak: ok ? x.streak + 1 : 0 }))
-    speak(mode === 'gender' ? said(w) : `die ${w.pl}`)
-  }
-  const next = () => { setPicked(null); setI(x => x + 1) }
-  useEffect(() => {
-    const onKey = e => {
-      if (/^[1-4]$/.test(e.key) && +e.key <= choices.length) choose(+e.key - 1)
-      else if ((e.key === 'Enter' || e.key === ' ') && picked !== null && !e.target.closest?.('button, a')) { e.preventDefault(); next() }
-    }
-    addEventListener('keydown', onKey)
-    return () => removeEventListener('keydown', onKey)
-  })
-  const switchTo = m => { setMode(m); setI(0); setPicked(null) }
-  if (!w) return html`<main class="page"><header class="masthead"><h1>der, die, das</h1><p>The nouns are being written now.</p></header></main>`
-  const rule = mode === 'gender' && genderRule(w, data.verbSet)
-  const ok = picked !== null && choices[picked] === correct
-  return html`<main class="page trainer">
-    <header class="masthead"><h1>${mode === 'gender' ? 'der, die, das' : 'Plurals'}</h1>
-      <p>${mode === 'gender' ? 'Tap the article. After each answer you see the ending rule that decides it, or that the noun is one to learn by heart.'
-        : 'Pick the plural. German has a handful of plural patterns; the ending of the noun and its gender predict most of them.'}</p></header>
-    <div class="modes" role="group" aria-label="Drill">
-      <button type="button" class=${mode === 'gender' ? 'on' : ''} aria-pressed=${mode === 'gender'} onClick=${() => switchTo('gender')}>Gender</button>
-      <button type="button" class=${mode === 'plural' ? 'on' : ''} aria-pressed=${mode === 'plural'} onClick=${() => switchTo('plural')}>Plural</button>
-      <span class="score">${score.right} of ${score.total} right${score.streak > 2 ? html` · <b>${score.streak} in a row</b>` : ''}</span>
-    </div>
-    <article key=${w.id + mode} class=${`drill${picked === null ? '' : ok ? ' right' : ' wrong'}${picked !== null && mode === 'gender' ? ` g-${w.a}` : ''}`}>
-      <p class="drill-word" lang="de">${mode === 'gender'
-        ? html`<span class="drill-art">${picked === null ? '___' : ART[w.a]}</span> ${w.w}`
-        : html`<${Word} w=${w} /> → die <span class="drill-art">${picked === null ? '___' : w.pl}</span>`}</p>
-      <p class="drill-en">${w.en}</p>
-      <ol class=${`drill-opts ${mode}`}>${choices.map((c, k) => html`<li><button type="button" disabled=${picked !== null} onClick=${() => choose(k)}
-        class=${`${mode === 'gender' ? `g-${c}` : ''}${picked === null ? '' : c === correct ? ' right' : k === picked ? ' wrong' : ' dim'}`}>
-        <kbd>${k + 1}</kbd><span lang="de">${c}</span></button></li>`)}</ol>
-      ${picked !== null ? html`<div class="drill-why">
-        <p>${ok ? html`<b>Right.</b> ` : html`<b>It's <span lang="de">${mode === 'gender' ? said(w) : `die ${w.pl}`}</span>.</b> `}
-          ${mode === 'gender'
-            ? rule ? rule.art === w.a ? html`Rule: ${rule.text}.` : html`An exception: ${rule.text}, but <span lang="de">${said(w)}</span> is not. Learn it by heart.`
-              : 'No ending rule here: learn it together with its article.'
-            : html`Pattern: <b>${pluralPattern(w.w, w.pl)}</b>.`}</p>
-        <${Example} w=${w} />
-        <button type="button" class="btn" onClick=${next}>Next word <kbd>Enter</kbd></button>
-      </div>` : ''}
     </article>
   </main>`
 }
+PAGES.tips = Tips
 
-// ---- small drawn pieces ----
+// ==== src/80-home.js ====
+// ---- home: what to do next, the practice tiles, the route, the top bar and settings ----
 
-const Train = () => html`<svg class="train" viewBox="0 0 40 20" aria-hidden="true">
-  <path d="M2 16V7a4 4 0 0 1 4-4h20c6 0 11 5 12 11v2z" fill="var(--ink)" />
-  <path d="M8 6h6v4H8zM17 6h6v4h-6z" fill="var(--panel)" /><path d="M27 6c3 .5 6 2.5 7.5 5H27z" fill="var(--panel)" />
-  <path d="M2 13h36" stroke="var(--line)" stroke-width="2" />
-</svg>`
+// What to do at a part, said once for the plan rail and once for the next-step sentence.
+const STEP = {
+  cards: [(st, q) => {
+    const reviews = q.filter(c => S.cards[c.id]).length, fresh = q.length - reviews
+    return reviews ? html`Start with the <b>${plural(reviews, 'review')}</b> due today${fresh ? html`, then learn <b>${plural(fresh, 'new card')}</b>` : ''}.`
+      : html`Learn <b>${plural(fresh, 'new word')}</b> from <span lang="de">${st.de}</span>${st.k > 1 || st.level !== 'A1' ? ' and earlier stations.' : /[.!?]$/.test(st.de) ? '' : '.'}`
+  }, "Start today's cards"],
+  words: [() => 'Look through the words of this station, each noun with its article, plural and sound, and test yourself.', 'Open the words'],
+  grammar: [st => html`Now the grammar, starting with <b>${st.grammar[0][1]}</b>.`, 'Open the grammar'],
+  read: [() => 'Read a short text and answer questions in the Lesen format.', 'Start reading'],
+  listen: [() => 'Listen to everyday dialogues and announcements, as in the Hören module.', 'Start listening'],
+  write: [() => 'Write a short exam task and check it against the rubric.', 'Start writing'],
+  speak: [() => 'Speak an exam task out loud, with a timer and a recording.', 'Start speaking'],
+  test: [() => 'Take the station test. 60% passes.', 'Take the test'],
+}
 
-const Arrow = () => html`<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>`
+// Today at this stop: the day's cards first, then each part of the station in order.
+function todayPlan(st, q) {
+  const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
+  return [...cards, ...PARTS.map(part => {
+    const p = partDone(st.n, part)
+    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
+  })]
+}
 
 const Mark = () => html`<svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
   <rect width="40" height="40" rx="6" fill="var(--board)" />
@@ -1706,33 +1766,6 @@ const TOOLS = [
 const Tiles = () => html`<ul class="tiles">${TOOLS.map(t => html`<li>
   <a class="tile" href=${t.href}><svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">${ICONS[t.icon]}</svg>
     <b>${t.en}</b><small>${t.hint}</small></a></li>`)}</ul>`
-
-// ---- the station name board: the chapter's name, big, on the line's coloured band ----
-
-function Board({ data, n, home }) {
-  const st = data.stations[n]
-  const lv = data.level[st.level]
-  const prev = data.stations[n - 1], next = data.stations[n + 1]
-  const name = html`<span lang="de">${st.de}</span>`
-  return html`<section class=${`board l${st.level}`} aria-label=${`Station ${st.k} of ${st.level}: ${st.en}`}>
-    <div class="board-body">
-      <div class="board-top">
-        <span class="gleis" aria-hidden="true">${st.k}</span><span class="gleis-l">Station<b>${st.k} of ${lv.stations.length}</b></span>
-        <span class="lb">${st.level}</span>
-      </div>
-      <div>
-        <h1 class="board-name">${home ? html`<a href=${`#/station/${n}`}>${name}</a>` : name}</h1>
-        <p class="board-sub">${st.en} · ${st.can}</p>
-      </div>
-    </div>
-    <nav class="band" aria-label="Neighbouring stations">
-      ${prev ? html`<a class="band-prev" href=${`#/station/${prev.n}`}>← <span lang="de">${prev.de}</span></a>` : html`<span></span>`}
-      <ol class="band-dots">${lv.stations.map(x => html`<li class=${x.n === n ? 'on' : x.n < n ? 'past' : ''}>
-        <a href=${`#/station/${x.n}`} aria-label=${`Station ${x.k}: ${x.de}`} title=${x.de}></a></li>`)}</ol>
-      ${next ? html`<a class="band-next" href=${`#/station/${next.n}`}><span lang="de">${next.de}</span> →</a>` : html`<span></span>`}
-    </nav>
-  </section>`
-}
 
 // ---- the route: three lines (A1, A2, B1), twelve stations each, split into two halves ----
 
@@ -1933,6 +1966,13 @@ function Settings() {
   </details>`
 }
 
+const PracticeHub = () => html`<main class="page">
+  <header class="masthead"><h1>Practice</h1><p>Everything beyond the daily stations: exam papers, pictures and trainers.</p></header>
+  <${Tiles} />
+</main>`
+PAGES.practice = PracticeHub
+
+// ==== src/90-station.js ====
 // ---- station page: one tab per part, each tab its own address ----
 
 const SOON = {
@@ -1951,6 +1991,7 @@ function Station({ data, n, tab }) {
   const st = data.stations[n]
   if (!st) return html`<main class="empty"><p>There is no station ${n}. <a href="#/">Back to today</a></p></main>`
   const t = TAB_NAME[tab] ? tab : 'words'
+  const View = TAB_VIEWS[t]   // registered by the tab's own fragment
   return html`<main class=${`station l${st.level}`}>
     <${Board} data=${data} n=${n} />
     <div class="station-bar">
@@ -1960,10 +2001,7 @@ function Station({ data, n, tab }) {
         : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
     </div>
     <section class="tab-body" aria-label=${TAB_NAME[t]}>
-      ${t === 'words' ? html`<${WordsTab} data=${data} n=${n} />` : t === 'grammar' && data.grammarBy[n].length ? html`<${GrammarTab} data=${data} n=${n} />`
-        : t === 'read' ? html`<${ReadTab} data=${data} n=${n} />` : html`
-        ${t === 'grammar' ? html`<ol class="glist">${st.grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>` : ''}
-        <p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
+      ${View ? html`<${View} data=${data} n=${n} />` : html`<p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
     </section>
   </main>`
 }
@@ -1973,11 +2011,7 @@ function Soon({ title, text }) {
     <p class="soon">Being built now. <a href="#/">Back to today</a></p></main>`
 }
 
-const PracticeHub = () => html`<main class="page">
-  <header class="masthead"><h1>Practice</h1><p>Everything beyond the daily stations: exam papers, pictures and trainers.</p></header>
-  <${Tiles} />
-</main>`
-
+// ==== src/99-app.js ====
 // ---- app shell ----
 
 // '#/station/4/grammar' → { page: 'station', arg: '4', sub: 'grammar' }; '' or '#/' → home.
@@ -2045,18 +2079,14 @@ function App() {
   if (error) return html`<main class="empty"><p>The lessons didn't load (${error}). Run <code>python scripts/build_data.py</code>,
     then open <code>app/WegNachDeutschland.html</code>.</p></main>`
   if (!data) return html`<main class="empty"><p>Loading…</p></main>`
-  const { page, arg, sub } = route(hash)
-  const view = page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
-    : page === 'practice' ? html`<${PracticeHub} />`
-    : page === 'study' ? html`<${Study} data=${data} />`
+  const { page, arg, sub, sub2 } = route(hash)
+  const Page = Object.hasOwn(PAGES, page) && PAGES[page]   // PAGES (00-core.js) is filled in by each page's own fragment
+  const view = Page ? html`<${Page} data=${data} arg=${arg} sub=${sub} sub2=${sub2} hash=${hash} />`
+    : page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
     : page === 'tests' ? html`<${Soon} title="Practice tests" text="Numbered tests per level and module: Lesen, Hören, Schreiben, Sprechen, Wortschatz, Grammatik." />`
     : page === 'mock' ? html`<${Soon} title="Mock exam" text="A timed paper per level in the real Goethe structure, scored the Goethe way." />`
     : page === 'pictures' ? html`<${Soon} title="Picture scenes" text="Drawn scenes where every object is a word with its article." />`
-    : page === 'verbs' ? html`<${VerbsTrainer} data=${data} />`
-    : page === 'gender' ? html`<${GenderTrainer} data=${data} />`
-    : page === 'cases' ? html`<${CasesPage} data=${data} />`
     : page === 'sounds' ? html`<${Soon} title="Pronunciation" text="A sound guide for ü, ö, ä, ch and r, and minimal-pair listening." />`
-    : page === 'tips' ? html`<${Tips} at=${Number(arg) || 0} />`
     : html`<${Home} data=${data} />`
   return html`<${TopBar} data=${data} page=${page} />${view}<${LeaveExport} />`
 }

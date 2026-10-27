@@ -1,9 +1,10 @@
 """Bundle the app into one HTML file that opens straight from disk (no server).
 
 usage:  python scripts/bundle.py      (build_data.py also runs it at the end)
-writes: app/WegNachDeutschland.html
+writes: app/main.js (from app/src/*.js), app/style.css (from app/styles/*.css), app/WegNachDeutschland.html
 
-Browsers refuse ES module files and fetch() on file:// pages, so the vendored modules become plain
+The front end is written as feature fragments, joined in name order into one ES module and one stylesheet, so
+features can be built in separate files. Browsers refuse ES module files and fetch() on file:// pages, so the vendored modules become plain
 scripts, main.js's imports become references to them, and the JSON data is inlined as window.__DATA.
 The file sits in app/ so relative paths such as audio/… still resolve.
 """
@@ -47,7 +48,20 @@ def safe(js):
     return js.replace('</script', '<\\/script')
 
 
+def join(src, out, comment):
+    """app/src/*.js → app/main.js, app/styles/*.css → app/style.css: the fragments in name order, each marked."""
+    parts = sorted((APP / src).glob(f'*{out.suffix}'))
+    if not parts:
+        raise ValueError(f'no app/{src}/*{out.suffix} fragments')
+    text = '\n'.join([comment % f'Generated from app/{src}/*{out.suffix} by scripts/build_data.py — edit those files']
+                     + [comment % f'==== {src}/{p.name} ====' + '\n' + p.read_text(encoding='utf-8').rstrip('\n') + '\n' for p in parts])
+    if not out.exists() or out.read_text(encoding='utf-8') != text:   # rewrite only on a change
+        out.write_text(text, encoding='utf-8', newline='\n')
+
+
 def bundle():
+    join('src', APP / 'main.js', '// %s')
+    join('styles', APP / 'style.css', '/* %s */')
     html = (APP / 'index.html').read_text(encoding='utf-8')
     vendors = sorted(p.name for p in (APP / 'vendor').glob('*.js'))
     names = {v: f'__vendor{i}' for i, v in enumerate(vendors)}

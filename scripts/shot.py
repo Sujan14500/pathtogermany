@@ -3,12 +3,14 @@
 usage:  python scripts/shot.py OUT.png [ROUTE] [--w 1500] [--h 1000] [--dark|--light] [--click CSS]… [--eval JS]
         python scripts/shot.py --smoke [--w 400] [ROUTE …]  open each route (default: all) in turn; print errors
                                                             per route, a missing <main> and sideways overflow
-ROUTE is the part after '#', e.g. /station/4/grammar. The app runs in an iframe of app/_shot.html (deleted
-afterwards), so phone widths below Chrome's 500 px window minimum work and clicks can be scripted.
+ROUTE is the part after '#', e.g. /station/4/grammar. The app runs in an iframe of app/_shot-<random>.html (a new
+name each run, so several runs can go at once; deleted afterwards), so phone widths below Chrome's 500 px window
+minimum work and clicks can be scripted. Run scripts/bundle.py first: it shoots app/WegNachDeutschland.html.
 --eval runs JS in the app's window after the clicks and prints its JSON result.
 Exit code 1 when anything was logged as an error.
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -56,9 +58,10 @@ def all_routes():
 
 
 def run(out, route='/', w=1500, h=1000, dark=False, clicks=(), routes=(), probe=''):
-    harness = APP / '_shot.html'
-    harness.write_text(HARNESS % dict(w=w, h=h, route=route, clicks=json.dumps(list(clicks)), routes=json.dumps(list(routes)), probe=json.dumps(probe)),
-                       encoding='utf-8')
+    fd, harness = tempfile.mkstemp(prefix='_shot-', suffix='.html', dir=APP)   # .gitignore: app/_shot*.html
+    harness = Path(harness)
+    with os.fdopen(fd, 'w', encoding='utf-8') as f:
+        f.write(HARNESS % dict(w=w, h=h, route=route, clicks=json.dumps(list(clicks)), routes=json.dumps(list(routes)), probe=json.dumps(probe)))
     budget = 2500 + 700 * len(clicks) + 350 * len(routes) + (10000 if probe else 0)   # probes may wait on timers
     args = [CHROME, '--headless=new', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files',
             f'--user-data-dir={tempfile.mkdtemp(prefix="shot-")}', f'--window-size={max(w, 500)},{h}',
