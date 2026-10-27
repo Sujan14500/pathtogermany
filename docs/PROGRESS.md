@@ -21,7 +21,7 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
 ## Phases
 - [x] Phase 0: confirm and plan
 - [x] Phase 1: shell, store, router, single-file build
-- [ ] Phase 2: words and flashcards
+- [x] Phase 2: words and flashcards (3,163 words: A1 779, A2 588, B1 1,796)
 - [ ] Phase 3: grammar and trainers
 - [ ] Phase 4: reading
 - [ ] Phase 5: listening
@@ -36,4 +36,15 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
   shot.py forces light unless `--dark`. Under `--virtual-time-budget`, rAF and scroll events are very slow,
   so the router restores scroll with `setTimeout`, and probes dispatch `scroll` themselves.
 - Station numbers run 1–36 across the levels (A1 1–12, A2 13–24, B1 25–36); URLs use them.
-- Part progress lives in `S.practice["<station>/<part>"]` (0…1). Phase 2 adds word cards to it.
+- Part progress: words = learned recognition cards; grammar = points studied (`S.practice["g:<id>"]`, which also puts
+  the point into the SRS as a sentence-building card); other parts keep `S.practice["<station>/<part>"]` (0…1).
+- Word pipeline: `scripts/goethe_lists.py` (headword checklist from the Goethe PDFs in data/cache) →
+  `data/src/assign-<lv>.tsv` (station per word, agents) → `data/src/words-<lv>-*.tsv` (agents, validated by
+  `scripts/check_content.py`) → `build_data.py` (dedupe keeping the earliest station, IPA and checks from
+  Wiktionary; disagreements in data/cache/word-check.tsv, all 46 reviewed: homographs and accepted variants).
+- `python scripts/build_data.py --verb-fixture` writes app/test-verbs.json (Wiktionary tables); test.html checks the
+  conjugation helpers against it (59 verbs, all forms right).
+- Phase 3 code is in (grammar tab with aligned examples and builder, grammar SRS cards, #/verbs, #/cases); the
+  grammar content (grammar-*.json, gq-*.json) is being written by three agents.
+- Other sessions work in this repo too (learning-science spec in docs/07-learning-science.md, export-on-close).
+  Stage only your own paths.

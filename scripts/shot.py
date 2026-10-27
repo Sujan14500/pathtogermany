@@ -59,7 +59,7 @@ def run(out, route='/', w=1500, h=1000, dark=False, clicks=(), routes=(), probe=
     harness = APP / '_shot.html'
     harness.write_text(HARNESS % dict(w=w, h=h, route=route, clicks=json.dumps(list(clicks)), routes=json.dumps(list(routes)), probe=json.dumps(probe)),
                        encoding='utf-8')
-    budget = 2500 + 700 * len(clicks) + 350 * len(routes) + (4000 if probe else 0)   # probes may wait on timers
+    budget = 2500 + 700 * len(clicks) + 350 * len(routes) + (10000 if probe else 0)   # probes may wait on timers
     args = [CHROME, '--headless=new', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files',
             f'--user-data-dir={tempfile.mkdtemp(prefix="shot-")}', f'--window-size={max(w, 500)},{h}',
             f'--virtual-time-budget={budget}', '--enable-logging=stderr', '--v=0']

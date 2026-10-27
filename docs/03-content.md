@@ -133,8 +133,10 @@ Write `scripts/check_content.py` first. It detects the content kind from the fil
 - grammar ids match `grammar.json`
 
 Content kinds (one JSON array per file, `data/src/<kind>-<level><part>.json`):
-- `words-*.tsv`: lemma, article, plural, English, example_de, example_en, station.
-- `grammar-*.json`: `{id, station, title, pattern, explain, compare_en, examples:[{de:[chunks], en:[[chunkNums], text]…}]}`.
+- `words-*.tsv`: lemma, pos, article (der/die/das/pl), plural ('-' = none in use), forms (verbs: 'fährt, fuhr, ist
+  gefahren'), english, example_de, example_en, station (1–12 in the level). See `scripts/check_content.py`.
+- `grammar-*.json`: `{id, pattern, explain, compare_en, table?, examples:[{de:[chunks], en:[[[chunkNums], text]…], v:[verb
+  chunks]}]}`; station and title come from syllabus.json.
 - `reading-*.json`: `{station, type, title, blocks:[{t:'h'|'p'|'list'|'table', id, de, en}], glossary:[{w, en}],
   questions:[{q, format:'rf'|'abc'|'match', opts, a, ev:[ids], why}]}`.
 - `listen-*.json`: `{station, format, setup, lines:[{who:'A'|'B'|'N', de, en}], q, opts, a, why}`.

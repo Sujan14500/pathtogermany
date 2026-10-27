@@ -6,7 +6,7 @@
 <pre id="out">running…</pre>
 <script type="module">
 // Self-check for helpers in main.js. Serve app/ (python -m http.server -d app) and open /test.html; it prints ok.
-import { route } from './main.js'
+import { route, findWord, genderRule, umlaut, pluralPattern, fmtInterval, present, preterite, imperative, verbMistakes, perfect } from './main.js'
 
 const fails = []
 const check = (ok, what) => { if (!ok) fails.push(what) }
@@ -15,6 +15,49 @@ const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b)
 check(eq(route('#/station/4/grammar'), { page: 'station', arg: '4', sub: 'grammar' }), 'route: station tab')
 check(route('').page === '' && route('#/').page === '', 'route: home')
 check(eq(route('#/tests/A2/lesen/7'), { page: 'tests', arg: 'A2', sub: 'lesen', sub2: '7' }), 'route: numbered test')
+
+// word-boundary matcher: forms are found, compounds and look-alikes are not
+const haus = { w: 'Haus', p: 'n', a: 'das', pl: 'Häuser' }
+const at = (s, w) => { const r = findWord(s, w); return r && s.slice(...r) }
+check(at('Wir wohnen in einem Haus.', haus) === 'Haus', 'findWord: noun')
+check(at('Die Häuser sind alt.', haus) === 'Häuser', 'findWord: plural')
+check(at('Er liegt im Krankenhaus.', haus) === null, 'findWord: not inside Krankenhaus')
+check(at('Ich bin zu Hause.', haus) === 'Hause', 'findWord: dative -e')
+const um = { w: 'um', p: 'prep' }
+check(at('Die Umwelt ist wichtig.', um) === null && at('Wir essen um acht.', um) === 'um', 'findWord: um, not Umwelt')
+const fahren = { w: 'fahren', p: 'v', f: 'fährt, fuhr, ist gefahren' }
+check(at('Lena fährt nach Berlin.', fahren) === 'fährt' && at('Wir sind gefahren.', fahren) === 'gefahren' && at('Du fährst.', fahren) === 'fährst', 'findWord: verb forms')
+const aufstehen = { w: 'aufstehen', p: 'v', f: 'steht auf, stand auf, ist aufgestanden' }
+check(at('Ich stehe um sieben auf.', aufstehen) === 'stehe', 'findWord: separable verb')
+const alt = { w: 'alt', p: 'adj' }
+check(at('Das ist ein altes Haus.', alt) === 'altes' && at('Wir halten an.', alt) === null, 'findWord: adjective endings, not inside halten')
+
+// gender rules and plurals
+const rule = w => genderRule({ w })?.art
+check(rule('Zeitung') === 'die' && rule('Mädchen') === 'das' && rule('Frühling') === 'der' && rule('Museum') === 'das', 'genderRule: strong endings')
+check(rule('Lampe') === 'die' && rule('Montag') === 'der' && rule('Tisch') === undefined, 'genderRule: -e, days, no rule')
+check(genderRule({ w: 'Essen' }, new Set(['essen'])).art === 'das', 'genderRule: verb as noun')
+check(umlaut('Mutter') === 'Mütter' && umlaut('Haus') === 'Häus' && umlaut('Apfel') === 'Äpfel' && umlaut('Buch') === 'Büch' && umlaut('Tisch') === 'Tisch', 'umlaut')
+check(pluralPattern('Tisch', 'Tische') === '-e' && pluralPattern('Haus', 'Häuser') === 'umlaut + -er' && pluralPattern('Lehrer', 'Lehrer') === 'no change'
+  && pluralPattern('Mutter', 'Mütter') === 'umlaut only' && pluralPattern('Auto', 'Autos') === '-s' && pluralPattern('Lampe', 'Lampen') === '-n', 'pluralPattern')
+check(fmtInterval(30e3) === '1m' && fmtInterval(90 * 60e3) === '2h' && fmtInterval(3 * 864e5) === '3d', 'fmtInterval')
+
+// conjugation: every generated form must be one Wiktionary lists (app/test-verbs.json, from build_data.py --verb-fixture)
+const verbs = await (await fetch('test-verbs.json')).json()
+let forms = 0
+for (const t of verbs) {
+  const w = { w: t.w, p: 'v', f: t.f }
+  const mine = { present: present(w), preterite: preterite(w), imperative: imperative(w).slice(0, 2).map(x => x.replace(/!$/, '')) }
+  for (const tense of ['present', 'preterite', 'imperative']) {
+    t[tense].forEach((ok, i) => {
+      if (!ok.length) return
+      forms++
+      check(ok.includes(mine[tense][i]), `${t.w} ${tense} ${i}: made "${mine[tense][i]}", Wiktionary has ${ok.join(' / ')}`)
+    })
+  }
+  ;[0, 2, 3].forEach(i => check(!verbMistakes(w, 'perfect', i).includes(perfect(w, i)), `${t.w}: a mistake equals the right Perfekt`))
+}
+check(verbs.length >= 50 && forms > 600, `only ${verbs.length} verbs / ${forms} forms checked`)
 
 document.getElementById('out').textContent = fails.length ? `FAIL\n${fails.join('\n')}` : 'ok'
 document.title = fails.length ? 'FAIL' : 'ok'
