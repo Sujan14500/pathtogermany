@@ -1,0 +1,1722 @@
+[
+ {
+  "type": "context",
+  "w": "Rücksicht",
+  "station": 1,
+  "q": "Bitte nehmt nach 22 Uhr ___ auf die Nachbarn und macht die Musik leiser.",
+  "opts": [
+   "Ruhe",
+   "Respekt",
+   "Geduld",
+   "Rücksicht"
+  ],
+  "a": 3,
+  "why": "Rücksicht nehmen auf + acc. = to be considerate of someone. Respekt and Geduld don't go with \"nehmen auf\"."
+ },
+ {
+  "type": "context",
+  "w": "Lärm",
+  "station": 1,
+  "q": "Den ganzen Tag hört man den ___ von der Baustelle nebenan.",
+  "opts": [
+   "Lärm",
+   "Schmutz",
+   "Staub",
+   "Dreck"
+  ],
+  "a": 0,
+  "why": "der Lärm = noise, the only one of these you can hear. Staub, Schmutz and Dreck are dust and dirt."
+ },
+ {
+  "type": "context",
+  "w": "verzeihen",
+  "station": 1,
+  "q": "Es tut mir leid, dass ich deinen Geburtstag vergessen habe. Kannst du mir ___?",
+  "opts": [
+   "erzählen",
+   "vertrauen",
+   "verzeihen",
+   "versprechen"
+  ],
+  "a": 2,
+  "why": "jemandem verzeihen = to forgive someone, what you ask for after an apology. vertrauen = to trust."
+ },
+ {
+  "type": "synonym",
+  "w": "einsam",
+  "station": 1,
+  "q": "Seit ihr Mann gestorben ist, fühlt sich Frau Yilmaz oft einsam.",
+  "u": "einsam",
+  "opts": [
+   "gesund",
+   "allein",
+   "frei",
+   "ruhig"
+  ],
+  "a": 1,
+  "why": "einsam = lonely; sich allein fühlen means the same."
+ },
+ {
+  "type": "synonym",
+  "w": "Dreck",
+  "station": 1,
+  "q": "Nach der Party lag überall Dreck im Flur.",
+  "u": "Dreck",
+  "opts": [
+   "Wasser",
+   "Papier",
+   "Zeug",
+   "Schmutz"
+  ],
+  "a": 3,
+  "why": "der Dreck = dirt, filth (informal): der Schmutz. das Zeug = stuff, things."
+ },
+ {
+  "type": "synonym",
+  "w": "Abwart",
+  "station": 1,
+  "q": "Wenn die Heizung kaputt ist, ruft man den Abwart.",
+  "u": "den Abwart",
+  "opts": [
+   "den Mieter",
+   "den Vermieter",
+   "den Nachbarn",
+   "den Hausmeister"
+  ],
+  "a": 3,
+  "why": "der Abwart is Swiss German for der Hausmeister (caretaker). The Vermieter is the landlord."
+ },
+ {
+  "type": "synonym",
+  "w": "miteinander",
+  "station": 1,
+  "q": "Die Kinder spielen schön miteinander.",
+  "u": "miteinander",
+  "opts": [
+   "leise",
+   "zusammen",
+   "allein",
+   "draußen"
+  ],
+  "a": 1,
+  "why": "miteinander = with each other: zusammen."
+ },
+ {
+  "type": "usage",
+  "w": "vertrauen",
+  "station": 1,
+  "q": "vertrauen",
+  "opts": [
+   "Ich habe meiner Schwester vertrauen; sie verrät nie ein Geheimnis.",
+   "Ich vertraue bei meiner Schwester; sie verrät nie ein Geheimnis.",
+   "Ich vertraue meine Schwester; sie verrät nie ein Geheimnis.",
+   "Ich vertraue meiner Schwester; sie verrät nie ein Geheimnis."
+  ],
+  "a": 3,
+  "why": "vertrauen takes the dative with no preposition: jemandem vertrauen = to trust someone."
+ },
+ {
+  "type": "usage",
+  "w": "scheiden",
+  "station": 1,
+  "q": "scheiden",
+  "opts": [
+   "Maltes Eltern haben sich letztes Jahr gescheidet.",
+   "Maltes Eltern haben letztes Jahr sich scheiden.",
+   "Maltes Eltern sind letztes Jahr scheiden lassen.",
+   "Maltes Eltern haben sich letztes Jahr scheiden lassen."
+  ],
+  "a": 3,
+  "why": "sich scheiden lassen = to get divorced (with haben). The Partizip of scheiden is geschieden, not gescheidet."
+ },
+ {
+  "type": "usage",
+  "w": "duzen",
+  "station": 1,
+  "q": "duzen",
+  "opts": [
+   "Wollen wir uns duzen? Ich heiße Malte.",
+   "Wollen wir mit uns duzen? Ich heiße Malte.",
+   "Wollen wir uns geduzt? Ich heiße Malte.",
+   "Wollen wir duzen uns? Ich heiße Malte."
+  ],
+  "a": 0,
+  "why": "sich duzen = to say du to each other; after wollen the infinitive goes to the end. siezen is the formal opposite."
+ },
+ {
+  "type": "context",
+  "w": "zuständig",
+  "station": 2,
+  "q": "Für Urlaubsanträge ist Frau Yilmaz aus der Personalabteilung ___.",
+  "opts": [
+   "berufstätig",
+   "zuständig",
+   "beruflich",
+   "selbstständig"
+  ],
+  "a": 1,
+  "why": "zuständig für + acc. = responsible for, in charge of. berufstätig = in work; beruflich = work-related."
+ },
+ {
+  "type": "context",
+  "w": "Feierabend",
+  "station": 2,
+  "q": "Um 17 Uhr hat Malte ___ und fährt nach Hause.",
+  "opts": [
+   "Dienst",
+   "Feierabend",
+   "Teilzeit",
+   "Überstunden"
+  ],
+  "a": 1,
+  "why": "Feierabend haben = to finish work for the day. Dienst haben is the opposite: to be on duty."
+ },
+ {
+  "type": "context",
+  "w": "Frist",
+  "station": 2,
+  "q": "Die ___ für die Bewerbung endet am 30. Juni. Danach kann man sich nicht mehr bewerben.",
+  "opts": [
+   "Gebühr",
+   "Mahnung",
+   "Frist",
+   "Lieferung"
+  ],
+  "a": 2,
+  "why": "die Frist = deadline. die Gebühr = fee; die Mahnung = payment reminder."
+ },
+ {
+  "type": "synonym",
+  "w": "erledigen",
+  "station": 2,
+  "q": "Ich muss heute noch ein paar Sachen im Büro erledigen.",
+  "u": "erledigen",
+  "opts": [
+   "vergessen",
+   "suchen",
+   "verschieben",
+   "machen"
+  ],
+  "a": 3,
+  "why": "erledigen = to get something done: machen. verschieben = to postpone."
+ },
+ {
+  "type": "synonym",
+  "w": "einstellen",
+  "station": 2,
+  "q": "Die Firma will im Herbst zehn neue Leute einstellen.",
+  "u": "einstellen",
+  "opts": [
+   "anstellen",
+   "bezahlen",
+   "kennenlernen",
+   "entlassen"
+  ],
+  "a": 0,
+  "why": "einstellen = to hire, take on staff; anstellen means the same. entlassen is the opposite: to dismiss."
+ },
+ {
+  "type": "synonym",
+  "w": "halbtags",
+  "station": 2,
+  "q": "Seit der Geburt ihres Sohnes arbeitet Priya nur halbtags.",
+  "u": "halbtags",
+  "opts": [
+   "in Teilzeit",
+   "am Wochenende",
+   "nachts",
+   "in Vollzeit"
+  ],
+  "a": 0,
+  "why": "halbtags = half-days, part-time: in Teilzeit."
+ },
+ {
+  "type": "usage",
+  "w": "beantragen",
+  "station": 2,
+  "q": "beantragen",
+  "opts": [
+   "Priya hat ein Visum für Deutschland gebeantragt.",
+   "Priya hat um ein Visum für Deutschland beantragt.",
+   "Priya ist ein Visum für Deutschland beantragt.",
+   "Priya hat ein Visum für Deutschland beantragt."
+  ],
+  "a": 3,
+  "why": "etwas beantragen = to apply for something: a direct object, no preposition, Perfekt with haben. Verbs with be- have no ge- in the Partizip."
+ },
+ {
+  "type": "usage",
+  "w": "leisten",
+  "station": 2,
+  "q": "leisten",
+  "opts": [
+   "Ein neues Auto können wir uns im Moment nicht geleistet.",
+   "Für ein neues Auto können wir uns im Moment nicht leisten.",
+   "Ein neues Auto können wir uns im Moment nicht leisten.",
+   "Ein neues Auto können wir im Moment nicht leisten."
+  ],
+  "a": 2,
+  "why": "sich (dat.) etwas leisten können = to be able to afford something. You need the sich, and the thing is a direct object."
+ },
+ {
+  "type": "usage",
+  "w": "bearbeiten",
+  "station": 2,
+  "q": "bearbeiten",
+  "opts": [
+   "Ihr Antrag wird gerade bearbeiten; Sie bekommen bald eine Antwort.",
+   "Ihr Antrag wird gerade bearbeitet; Sie bekommen bald eine Antwort.",
+   "Ihr Antrag wird gerade gearbeitet; Sie bekommen bald eine Antwort.",
+   "Ihr Antrag hat gerade bearbeitet; Sie bekommen bald eine Antwort."
+  ],
+  "a": 1,
+  "why": "bearbeiten = to process, deal with. Passive: wird + Partizip (bearbeitet, no ge-)."
+ },
+ {
+  "type": "usage",
+  "w": "Anspruch",
+  "station": 2,
+  "q": "Anspruch",
+  "opts": [
+   "Jeder Arbeitnehmer hat Anspruch für bezahlten Urlaub.",
+   "Jeder Arbeitnehmer ist Anspruch auf bezahlten Urlaub.",
+   "Jeder Arbeitnehmer hat Anspruch von bezahltem Urlaub.",
+   "Jeder Arbeitnehmer hat Anspruch auf bezahlten Urlaub."
+  ],
+  "a": 3,
+  "why": "Anspruch haben auf + acc. = to be entitled to, have a right to."
+ },
+ {
+  "type": "context",
+  "w": "Mühe",
+  "station": 3,
+  "q": "Jonas hat sich viel ___ gegeben, und am Ende hat er die Prüfung bestanden.",
+  "opts": [
+   "Wissen",
+   "Mühe",
+   "Fortschritt",
+   "Arbeit"
+  ],
+  "a": 1,
+  "why": "sich Mühe geben = to make an effort, try hard. Arbeit goes with machen, not with sich geben."
+ },
+ {
+  "type": "context",
+  "w": "Fortschritt",
+  "station": 3,
+  "q": "Seit Priya jeden Tag übt, macht sie im Deutschen schnell ___.",
+  "opts": [
+   "Gewohnheiten",
+   "Gedanken",
+   "Erinnerungen",
+   "Fortschritte"
+  ],
+  "a": 3,
+  "why": "Fortschritte machen = to make progress. sich Gedanken machen needs sich and means to worry."
+ },
+ {
+  "type": "context",
+  "w": "nachschlagen",
+  "station": 3,
+  "q": "Wenn du ein Wort nicht kennst, kannst du es im Wörterbuch ___.",
+  "opts": [
+   "nachdenken",
+   "abschreiben",
+   "nachschlagen",
+   "unterrichten"
+  ],
+  "a": 2,
+  "why": "etwas nachschlagen = to look something up. nachdenken = to think about; abschreiben = to copy."
+ },
+ {
+  "type": "context",
+  "w": "Referat",
+  "station": 3,
+  "q": "Morgen muss ich im Seminar ein ___ über das Schulsystem in Finnland halten.",
+  "opts": [
+   "Kapitel",
+   "Lexikon",
+   "Referat",
+   "Gedicht"
+  ],
+  "a": 2,
+  "why": "ein Referat halten = to give a presentation at school or university."
+ },
+ {
+  "type": "synonym",
+  "w": "versäumen",
+  "station": 3,
+  "q": "Malte hat wegen einer Grippe zwei Wochen Unterricht versäumt.",
+  "u": "versäumt",
+  "opts": [
+   "verpasst",
+   "besucht",
+   "vorbereitet",
+   "wiederholt"
+  ],
+  "a": 0,
+  "why": "versäumen = to miss (a lesson, a deadline): verpassen."
+ },
+ {
+  "type": "synonym",
+  "w": "zunächst",
+  "station": 3,
+  "q": "Zunächst lesen wir den Text, dann sprechen wir darüber.",
+  "u": "Zunächst",
+  "opts": [
+   "Danach",
+   "Endlich",
+   "Zuerst",
+   "Zuletzt"
+  ],
+  "a": 2,
+  "why": "zunächst = first, at first: zuerst."
+ },
+ {
+  "type": "synonym",
+  "w": "neulich",
+  "station": 3,
+  "q": "Neulich habe ich Herrn Weber in der Bibliothek getroffen.",
+  "u": "Neulich",
+  "opts": [
+   "Selten",
+   "Kürzlich",
+   "Später",
+   "Manchmal"
+  ],
+  "a": 1,
+  "why": "neulich = recently, the other day: kürzlich."
+ },
+ {
+  "type": "usage",
+  "w": "sich gewöhnen",
+  "station": 3,
+  "q": "sich gewöhnen",
+  "opts": [
+   "Ich habe mich schnell an dem kalten Wetter gewöhnt.",
+   "Ich habe schnell an das kalte Wetter gewöhnt.",
+   "Ich habe mich schnell an das kalte Wetter gewöhnt.",
+   "Ich habe mich schnell zu dem kalten Wetter gewöhnt."
+  ],
+  "a": 2,
+  "why": "sich gewöhnen an + acc. = to get used to: you need sich, an and the accusative."
+ },
+ {
+  "type": "usage",
+  "w": "nachdenken",
+  "station": 3,
+  "q": "nachdenken",
+  "opts": [
+   "Ich muss noch dein Angebot nachdenken.",
+   "Ich muss noch über dein Angebot nachgedacht.",
+   "Ich muss noch über dein Angebot nachdenken.",
+   "Ich muss noch an dein Angebot nachdenken."
+  ],
+  "a": 2,
+  "why": "nachdenken über + acc. = to think about, consider. denken goes with an, nachdenken with über."
+ },
+ {
+  "type": "usage",
+  "w": "überreden",
+  "station": 3,
+  "q": "überreden",
+  "opts": [
+   "Lena hat mich überredet, mit ihr einen Sprachkurs machen.",
+   "Lena hat mich übergeredet, mit ihr einen Sprachkurs zu machen.",
+   "Lena hat mir überredet, mit ihr einen Sprachkurs zu machen.",
+   "Lena hat mich überredet, mit ihr einen Sprachkurs zu machen."
+  ],
+  "a": 3,
+  "why": "jemanden überreden, etwas zu tun = to talk someone into doing something: accusative, zu + infinitive, Partizip überredet."
+ },
+ {
+  "type": "context",
+  "w": "verschreiben",
+  "station": 4,
+  "q": "Die Ärztin hat mir ein Medikament gegen den Husten ___. Jetzt hole ich es in der Apotheke.",
+  "opts": [
+   "verschrieben",
+   "geschrieben",
+   "beschrieben",
+   "verschoben"
+  ],
+  "a": 0,
+  "why": "ein Medikament verschreiben = to prescribe a medicine. beschreiben = to describe; verschieben = to postpone."
+ },
+ {
+  "type": "context",
+  "w": "Laune",
+  "station": 4,
+  "q": "Heute scheint die Sonne, und alle haben gute ___.",
+  "opts": [
+   "Ernährung",
+   "Erholung",
+   "Laune",
+   "Besserung"
+  ],
+  "a": 2,
+  "why": "gute Laune haben = to be in a good mood. \"Gute Besserung!\" is what you say to someone who is ill."
+ },
+ {
+  "type": "context",
+  "w": "erschöpft",
+  "station": 4,
+  "q": "Nach der langen Wanderung war Jonas völlig ___ und ist sofort eingeschlafen.",
+  "opts": [
+   "neugierig",
+   "gespannt",
+   "peinlich",
+   "erschöpft"
+  ],
+  "a": 3,
+  "why": "erschöpft = exhausted. gespannt = eager to know; peinlich = embarrassing."
+ },
+ {
+  "type": "synonym",
+  "w": "abnehmen",
+  "station": 4,
+  "q": "Herr Weber möchte bis zum Sommer fünf Kilo abnehmen.",
+  "u": "abnehmen",
+  "opts": [
+   "wiegen",
+   "verlieren",
+   "essen",
+   "zunehmen"
+  ],
+  "a": 1,
+  "why": "abnehmen = to lose weight: fünf Kilo verlieren. zunehmen is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "faulenzen",
+  "station": 4,
+  "q": "Am Sonntag will ich nur auf dem Sofa liegen und faulenzen.",
+  "u": "faulenzen",
+  "opts": [
+   "aufräumen",
+   "trainieren",
+   "nichts tun",
+   "kochen"
+  ],
+  "a": 2,
+  "why": "faulenzen = to laze about: nichts tun."
+ },
+ {
+  "type": "synonym",
+  "w": "sich aufregen",
+  "station": 4,
+  "q": "Du musst dich nicht aufregen, der Bus kommt gleich.",
+  "u": "aufregen",
+  "opts": [
+   "ärgern",
+   "freuen",
+   "beeilen",
+   "ausruhen"
+  ],
+  "a": 0,
+  "why": "sich aufregen = to get worked up, upset: sich ärgern. sich beeilen = to hurry."
+ },
+ {
+  "type": "synonym",
+  "w": "Semmel",
+  "station": 4,
+  "q": "Zum Frühstück esse ich eine Semmel mit Butter.",
+  "u": "eine Semmel",
+  "opts": [
+   "eine Wurst",
+   "einen Kuchen",
+   "ein Brötchen",
+   "ein Ei"
+  ],
+  "a": 2,
+  "why": "die Semmel is the Austrian (and Bavarian) word for das Brötchen, a bread roll."
+ },
+ {
+  "type": "usage",
+  "w": "leiden",
+  "station": 4,
+  "q": "leiden",
+  "opts": [
+   "Frau Yilmaz leidet sich seit Jahren an Rückenschmerzen.",
+   "Frau Yilmaz leidet seit Jahren an Rückenschmerzen.",
+   "Frau Yilmaz leidet seit Jahren von Rückenschmerzen.",
+   "Frau Yilmaz leidet seit Jahren für Rückenschmerzen."
+  ],
+  "a": 1,
+  "why": "leiden an + dat. (or unter + dat.) = to suffer from. Not von, as the English \"from\" suggests, and not reflexive."
+ },
+ {
+  "type": "usage",
+  "w": "stolz",
+  "station": 4,
+  "q": "stolz",
+  "opts": [
+   "Die Eltern sind sehr stolz auf ihre Tochter.",
+   "Die Eltern sind sehr stolz von ihrer Tochter.",
+   "Die Eltern sind sehr stolz für ihre Tochter.",
+   "Die Eltern sind sehr stolz an ihre Tochter."
+  ],
+  "a": 0,
+  "why": "stolz auf + acc. = proud of. The English \"of\" tempts you to use von."
+ },
+ {
+  "type": "usage",
+  "w": "sich ernähren",
+  "station": 4,
+  "q": "sich ernähren",
+  "opts": [
+   "Malte ist sich sehr gesund ernährt: viel Gemüse und wenig Fleisch.",
+   "Malte ernährt sich viel Gemüse und wenig Fleisch.",
+   "Malte ernährt sich sehr gesund: viel Gemüse und wenig Fleisch.",
+   "Malte ernährt sehr gesund: viel Gemüse und wenig Fleisch."
+  ],
+  "a": 2,
+  "why": "sich gesund ernähren = to eat healthily. It needs sich; what you eat goes with von (sich von Gemüse ernähren)."
+ },
+ {
+  "type": "context",
+  "w": "trotzdem",
+  "station": 5,
+  "q": "Das Wetter war schlecht. ___ sind wir an den See gefahren.",
+  "opts": [
+   "Obwohl",
+   "Trotzdem",
+   "Sondern",
+   "Deshalb"
+  ],
+  "a": 1,
+  "why": "trotzdem = nevertheless; as an adverb it takes position 1 and the verb follows. obwohl would send the verb to the end; deshalb = that's why."
+ },
+ {
+  "type": "context",
+  "w": "ausrichten",
+  "station": 5,
+  "q": "Herr Weber ist gerade nicht da. Soll ich ihm etwas ___?",
+  "opts": [
+   "abonnieren",
+   "einschalten",
+   "ausrichten",
+   "ankündigen"
+  ],
+  "a": 2,
+  "why": "jemandem etwas ausrichten = to pass on a message. \"Soll ich ihm etwas ausrichten?\" = Can I take a message?"
+ },
+ {
+  "type": "context",
+  "w": "Umfrage",
+  "station": 5,
+  "q": "Laut einer ___ liest nur noch jeder fünfte junge Mensch eine Zeitung.",
+  "opts": [
+   "Aufforderung",
+   "Kritik",
+   "Umfrage",
+   "Werbung"
+  ],
+  "a": 2,
+  "why": "die Umfrage = survey, poll; laut einer Umfrage = according to a survey."
+ },
+ {
+  "type": "synonym",
+  "w": "allerdings",
+  "station": 5,
+  "q": "Das Hotel war schön, allerdings war das Essen nicht so gut.",
+  "u": "allerdings",
+  "opts": [
+   "jedoch",
+   "deshalb",
+   "also",
+   "außerdem"
+  ],
+  "a": 0,
+  "why": "allerdings = however, though: jedoch. aber would also mean this, but aber does not take position 1 before the verb."
+ },
+ {
+  "type": "synonym",
+  "w": "mitteilen",
+  "station": 5,
+  "q": "Wir möchten Ihnen mitteilen, dass der Kurs am Montag ausfällt.",
+  "u": "mitteilen",
+  "opts": [
+   "zeigen",
+   "sagen",
+   "beweisen",
+   "versprechen"
+  ],
+  "a": 1,
+  "why": "jemandem etwas mitteilen = to inform someone, let them know: sagen."
+ },
+ {
+  "type": "synonym",
+  "w": "Neuigkeit",
+  "station": 5,
+  "q": "Hast du schon die Neuigkeit gehört? Lena bekommt ein Baby!",
+  "u": "die Neuigkeit",
+  "opts": [
+   "die Meinung",
+   "die Frage",
+   "die Musik",
+   "die Nachricht"
+  ],
+  "a": 3,
+  "why": "die Neuigkeit = a piece of news: die Nachricht."
+ },
+ {
+  "type": "usage",
+  "w": "widersprechen",
+  "station": 5,
+  "q": "widersprechen",
+  "opts": [
+   "Da muss ich gegen Sie widersprechen: Das stimmt so nicht.",
+   "Da muss ich Ihnen widersprechen: Das stimmt so nicht.",
+   "Da muss ich mit Ihnen widersprechen: Das stimmt so nicht.",
+   "Da muss ich Sie widersprechen: Das stimmt so nicht."
+  ],
+  "a": 1,
+  "why": "jemandem widersprechen = to contradict someone: dative, no preposition."
+ },
+ {
+  "type": "usage",
+  "w": "obwohl",
+  "station": 5,
+  "q": "obwohl",
+  "opts": [
+   "Obwohl es regnet, gehen wir spazieren.",
+   "Obwohl es regnet, wir gehen spazieren.",
+   "Obwohl regnet es, gehen wir spazieren.",
+   "Es regnet, obwohl gehen wir spazieren."
+  ],
+  "a": 0,
+  "why": "obwohl = although. It sends its verb to the end, and the main clause after it starts with the verb."
+ },
+ {
+  "type": "usage",
+  "w": "abonnieren",
+  "station": 5,
+  "q": "abonnieren",
+  "opts": [
+   "Ich habe den Kanal abonniert, damit ich kein neues Video verpasse.",
+   "Ich bin den Kanal abonniert, damit ich kein neues Video verpasse.",
+   "Ich habe den Kanal geabonniert, damit ich kein neues Video verpasse.",
+   "Ich habe auf den Kanal abonniert, damit ich kein neues Video verpasse."
+  ],
+  "a": 0,
+  "why": "etwas abonnieren = to subscribe to something: direct object, no preposition. Verbs in -ieren have no ge- (abonniert)."
+ },
+ {
+  "type": "usage",
+  "w": "sondern",
+  "station": 5,
+  "q": "sondern",
+  "opts": [
+   "Lena kommt nicht aus Berlin, sondern aus Hamburg.",
+   "Lena kommt nicht aus Berlin, sondern kommt sie aus Hamburg.",
+   "Lena kommt aus Berlin, sondern aus Hamburg.",
+   "Lena wohnt in Berlin, sondern sie arbeitet in Hamburg."
+  ],
+  "a": 0,
+  "why": "sondern = but rather, only after a negative (nicht, kein). It does not change the word order. Without a negative you need aber."
+ },
+ {
+  "type": "context",
+  "w": "umtauschen",
+  "station": 6,
+  "q": "Die Hose ist mir zu klein. Kann ich sie ___?",
+  "opts": [
+   "abheben",
+   "umziehen",
+   "umsteigen",
+   "umtauschen"
+  ],
+  "a": 3,
+  "why": "etwas umtauschen = to exchange something in a shop. umsteigen = to change trains; umziehen = to move house."
+ },
+ {
+  "type": "context",
+  "w": "Quittung",
+  "station": 6,
+  "q": "Bitte heben Sie die ___ gut auf. Ohne sie können wir die Ware nicht zurücknehmen.",
+  "opts": [
+   "Marke",
+   "Hälfte",
+   "Quittung",
+   "Tüte"
+  ],
+  "a": 2,
+  "why": "die Quittung = receipt, the proof you bought something."
+ },
+ {
+  "type": "context",
+  "w": "verzichten",
+  "station": 6,
+  "q": "Um Geld zu sparen, ___ wir dieses Jahr auf den Urlaub.",
+  "opts": [
+   "verzichten",
+   "verbrauchen",
+   "verkaufen",
+   "verpacken"
+  ],
+  "a": 0,
+  "why": "verzichten auf + acc. = to do without, give up. Only verzichten goes with auf here."
+ },
+ {
+  "type": "context",
+  "w": "Rabatt",
+  "station": 6,
+  "q": "Weil die Jacke einen kleinen Fleck hat, bekomme ich 20 Prozent ___.",
+  "opts": [
+   "Gewinn",
+   "Trinkgeld",
+   "Mehrwertsteuer",
+   "Rabatt"
+  ],
+  "a": 3,
+  "why": "der Rabatt = discount. das Trinkgeld = tip; der Gewinn = profit."
+ },
+ {
+  "type": "synonym",
+  "w": "gratis",
+  "station": 6,
+  "q": "Für Kinder unter sechs Jahren ist der Eintritt gratis.",
+  "u": "gratis",
+  "opts": [
+   "billig",
+   "günstig",
+   "kostenlos",
+   "teuer"
+  ],
+  "a": 2,
+  "why": "gratis = free of charge: kostenlos. billig and günstig mean cheap, not free."
+ },
+ {
+  "type": "synonym",
+  "w": "besorgen",
+  "station": 6,
+  "q": "Kannst du auf dem Heimweg noch Brot besorgen?",
+  "u": "besorgen",
+  "opts": [
+   "kaufen",
+   "backen",
+   "bestellen",
+   "essen"
+  ],
+  "a": 0,
+  "why": "etwas besorgen = to get, buy something: kaufen."
+ },
+ {
+  "type": "synonym",
+  "w": "umsonst",
+  "station": 6,
+  "q": "Ich bin umsonst zur Post gegangen, sie war schon geschlossen.",
+  "u": "umsonst",
+  "opts": [
+   "gern",
+   "pünktlich",
+   "vergeblich",
+   "kostenlos"
+  ],
+  "a": 2,
+  "why": "umsonst has two meanings: free, or in vain. Here the post office was closed, so it means in vain: vergeblich. kostenlos is the other meaning."
+ },
+ {
+  "type": "usage",
+  "w": "trotz",
+  "station": 6,
+  "q": "trotz",
+  "opts": [
+   "Trotz des Regens wir sind einkaufen gegangen.",
+   "Trotz den Regen sind wir einkaufen gegangen.",
+   "Trotz es regnet, sind wir einkaufen gegangen.",
+   "Trotz des Regens sind wir einkaufen gegangen."
+  ],
+  "a": 3,
+  "why": "trotz is a preposition with the genitive (trotz des Regens), not a conjunction; for a clause use obwohl."
+ },
+ {
+  "type": "usage",
+  "w": "stehlen",
+  "station": 6,
+  "q": "stehlen",
+  "opts": [
+   "Gestern hat mir jemand im Bus das Portemonnaie gestohlen.",
+   "Gestern hat mir jemand im Bus das Portemonnaie gestahlen.",
+   "Gestern hat mir jemand im Bus das Portemonnaie gestehlt.",
+   "Gestern hat jemand mich im Bus das Portemonnaie gestohlen."
+  ],
+  "a": 0,
+  "why": "stehlen – stahl – gestohlen; jemandem (dat.) etwas stehlen = to steal something from someone."
+ },
+ {
+  "type": "usage",
+  "w": "ersetzen",
+  "station": 6,
+  "q": "ersetzen",
+  "opts": [
+   "Die Versicherung ersetzt für Ihnen den Schaden.",
+   "Die Versicherung ersetzt Sie den Schaden.",
+   "Die Versicherung ersetzt Ihnen von dem Schaden.",
+   "Die Versicherung ersetzt Ihnen den Schaden."
+  ],
+  "a": 3,
+  "why": "jemandem (dat.) den Schaden ersetzen = to pay someone for the damage."
+ },
+ {
+  "type": "context",
+  "w": "Stau",
+  "station": 7,
+  "q": "Auf der Autobahn war ein langer ___, deshalb sind wir zwei Stunden zu spät gekommen.",
+  "opts": [
+   "Abschied",
+   "Stau",
+   "Augenblick",
+   "Zufall"
+  ],
+  "a": 1,
+  "why": "der Stau = traffic jam. der Zufall = coincidence; der Augenblick = moment."
+ },
+ {
+  "type": "context",
+  "w": "abbiegen",
+  "station": 7,
+  "q": "An der Kreuzung müssen Sie nach links ___.",
+  "opts": [
+   "abbiegen",
+   "tanken",
+   "überqueren",
+   "landen"
+  ],
+  "a": 0,
+  "why": "abbiegen = to turn off: nach links/rechts abbiegen. überqueren = to cross, and needs an object (die Straße überqueren)."
+ },
+ {
+  "type": "context",
+  "w": "rechtzeitig",
+  "station": 7,
+  "q": "Wenn wir jetzt losfahren, sind wir ___ zum Abendessen da.",
+  "opts": [
+   "jemals",
+   "rechtzeitig",
+   "längst",
+   "vorhin"
+  ],
+  "a": 1,
+  "why": "rechtzeitig = in time. vorhin = a little while ago; längst = long ago; jemals = ever."
+ },
+ {
+  "type": "synonym",
+  "w": "ungefähr",
+  "station": 7,
+  "q": "Bis zum Bahnhof sind es ungefähr zehn Minuten zu Fuß.",
+  "u": "ungefähr",
+  "opts": [
+   "höchstens",
+   "etwa",
+   "genau",
+   "mindestens"
+  ],
+  "a": 1,
+  "why": "ungefähr = about, approximately: etwa."
+ },
+ {
+  "type": "synonym",
+  "w": "mittlerweile",
+  "station": 7,
+  "q": "Malte wohnt mittlerweile in Wien.",
+  "u": "mittlerweile",
+  "opts": [
+   "irgendwann",
+   "früher",
+   "manchmal",
+   "inzwischen"
+  ],
+  "a": 3,
+  "why": "mittlerweile = by now, meanwhile: inzwischen."
+ },
+ {
+  "type": "synonym",
+  "w": "Velo",
+  "station": 7,
+  "q": "Jonas fährt jeden Morgen mit dem Velo zur Arbeit.",
+  "u": "Velo",
+  "opts": [
+   "Auto",
+   "Taxi",
+   "Fahrrad",
+   "Motorrad"
+  ],
+  "a": 2,
+  "why": "das Velo is the Swiss word for das Fahrrad (bike)."
+ },
+ {
+  "type": "synonym",
+  "w": "vorhin",
+  "station": 7,
+  "q": "Vorhin hat deine Mutter angerufen.",
+  "u": "Vorhin",
+  "opts": [
+   "Oft",
+   "Gerade",
+   "Später",
+   "Gleich"
+  ],
+  "a": 1,
+  "why": "vorhin = a little while ago, just now: gerade. gleich = in a moment, in the future."
+ },
+ {
+  "type": "usage",
+  "w": "sich verabschieden",
+  "station": 7,
+  "q": "sich verabschieden",
+  "opts": [
+   "Bevor Priya nach Indien geflogen ist, hat sie sich an allen Freunden verabschiedet.",
+   "Bevor Priya nach Indien geflogen ist, hat sie sich von allen Freunden verabschiedet.",
+   "Bevor Priya nach Indien geflogen ist, ist sie sich von allen Freunden verabschiedet.",
+   "Bevor Priya nach Indien geflogen ist, hat sie von allen Freunden verabschiedet."
+  ],
+  "a": 1,
+  "why": "sich von jemandem verabschieden = to say goodbye to someone: reflexive, with von and haben."
+ },
+ {
+  "type": "usage",
+  "w": "nachdem",
+  "station": 7,
+  "q": "nachdem",
+  "opts": [
+   "Nachdem wir hatten gegessen, sind wir spazieren gegangen.",
+   "Nachdem dem Essen sind wir spazieren gegangen.",
+   "Nachdem wir gegessen hatten, wir sind spazieren gegangen.",
+   "Nachdem wir gegessen hatten, sind wir spazieren gegangen."
+  ],
+  "a": 3,
+  "why": "nachdem = after, a conjunction: its verb goes to the end (usually Plusquamperfekt), then the main clause starts with the verb. Before a noun use nach (nach dem Essen)."
+ },
+ {
+  "type": "usage",
+  "w": "sich verlaufen",
+  "station": 7,
+  "q": "sich verlaufen",
+  "opts": [
+   "In der Altstadt sind wir uns verlaufen und mussten nach dem Weg fragen.",
+   "In der Altstadt haben wir uns verlauft und mussten nach dem Weg fragen.",
+   "In der Altstadt haben wir verlaufen und mussten nach dem Weg fragen.",
+   "In der Altstadt haben wir uns verlaufen und mussten nach dem Weg fragen."
+  ],
+  "a": 3,
+  "why": "sich verlaufen = to get lost on foot: reflexive, Perfekt with haben, Partizip verlaufen."
+ },
+ {
+  "type": "context",
+  "w": "vermeiden",
+  "station": 8,
+  "q": "Ich nehme immer eine Stofftasche mit, um Plastik zu ___.",
+  "opts": [
+   "vermeiden",
+   "verbrauchen",
+   "verschmutzen",
+   "verursachen"
+  ],
+  "a": 0,
+  "why": "vermeiden = to avoid. verursachen = to cause; verbrauchen = to use up."
+ },
+ {
+  "type": "context",
+  "w": "Ursache",
+  "station": 8,
+  "q": "Autos und Fabriken sind eine wichtige ___ für die schlechte Luft in der Stadt.",
+  "opts": [
+   "Ausnahme",
+   "Ursache",
+   "Wirkung",
+   "Folge"
+  ],
+  "a": 1,
+  "why": "die Ursache = cause. die Folge and die Wirkung are what comes after: the consequence, the effect."
+ },
+ {
+  "type": "context",
+  "w": "damit",
+  "station": 8,
+  "q": "Wir fahren mit dem Rad, ___ die Luft sauberer bleibt.",
+  "opts": [
+   "ob",
+   "obwohl",
+   "indem",
+   "damit"
+  ],
+  "a": 3,
+  "why": "damit = so that (purpose). indem = by doing; obwohl = although; ob = whether."
+ },
+ {
+  "type": "synonym",
+  "w": "zumindest",
+  "station": 8,
+  "q": "Wir können nicht alles ändern, aber zumindest können wir weniger Fleisch essen.",
+  "u": "zumindest",
+  "opts": [
+   "sowieso",
+   "höchstens",
+   "wenigstens",
+   "deshalb"
+  ],
+  "a": 2,
+  "why": "zumindest = at least: wenigstens. höchstens = at most."
+ },
+ {
+  "type": "synonym",
+  "w": "weltweit",
+  "station": 8,
+  "q": "Plastik im Meer ist ein Problem, das es weltweit gibt.",
+  "u": "weltweit",
+  "opts": [
+   "nur in Europa",
+   "nur im Sommer",
+   "nur in Deutschland",
+   "auf der ganzen Welt"
+  ],
+  "a": 3,
+  "why": "weltweit = worldwide: auf der ganzen Welt."
+ },
+ {
+  "type": "synonym",
+  "w": "Wirklichkeit",
+  "station": 8,
+  "q": "In Wirklichkeit ist das Problem viel größer, als viele denken.",
+  "u": "In Wirklichkeit",
+  "opts": [
+   "Tatsächlich",
+   "Hoffentlich",
+   "Vielleicht",
+   "Normalerweise"
+  ],
+  "a": 0,
+  "why": "in Wirklichkeit = in reality, actually: tatsächlich."
+ },
+ {
+  "type": "usage",
+  "w": "schützen",
+  "station": 8,
+  "q": "schützen",
+  "opts": [
+   "Diese Creme schützt die Haut vor die Sonne.",
+   "Diese Creme schützt die Haut von der Sonne.",
+   "Diese Creme schützt die Haut vor der Sonne.",
+   "Diese Creme schützt der Haut vor der Sonne."
+  ],
+  "a": 2,
+  "why": "etwas schützen vor + dat. = to protect something from. Not von, as the English \"from\" suggests."
+ },
+ {
+  "type": "usage",
+  "w": "indem",
+  "station": 8,
+  "q": "indem",
+  "opts": [
+   "Man kann Energie sparen, damit man das Licht ausmacht.",
+   "Man kann Energie sparen, indem man das Licht ausmacht.",
+   "Man kann Energie sparen, indem man macht das Licht aus.",
+   "Man kann Energie sparen, indem das Licht ausmachen."
+  ],
+  "a": 1,
+  "why": "indem = by (doing): it says how, needs a subject and sends the verb to the end. damit means \"so that\"."
+ },
+ {
+  "type": "usage",
+  "w": "beeinflussen",
+  "station": 8,
+  "q": "beeinflussen",
+  "opts": [
+   "Das Wetter beeinflusst mit unserer Laune.",
+   "Das Wetter beeinflusst auf unsere Laune.",
+   "Das Wetter beeinflusst unsere Laune.",
+   "Das Wetter beeinflusst unserer Laune."
+  ],
+  "a": 2,
+  "why": "etwas beeinflussen = to influence something: direct accusative object. Only the noun goes with auf: Einfluss auf."
+ },
+ {
+  "type": "usage",
+  "w": "Ausnahme",
+  "station": 8,
+  "q": "Ausnahme",
+  "opts": [
+   "Normalerweise fahre ich mit dem Rad, aber heute nehme ich eine Ausnahme.",
+   "Normalerweise fahre ich mit dem Rad, aber heute habe ich eine Ausnahme.",
+   "Normalerweise fahre ich mit dem Rad, aber heute mache ich eine Ausnahme.",
+   "Normalerweise fahre ich mit dem Rad, aber heute gebe ich eine Ausnahme."
+  ],
+  "a": 2,
+  "why": "eine Ausnahme machen = to make an exception. German uses machen here, never nehmen or geben."
+ },
+ {
+  "type": "context",
+  "w": "Eindruck",
+  "station": 9,
+  "q": "Der Film hat einen starken ___ auf mich gemacht.",
+  "opts": [
+   "Sinn",
+   "Eindruck",
+   "Auftritt",
+   "Vergleich"
+  ],
+  "a": 1,
+  "why": "einen Eindruck auf jemanden machen = to make an impression on someone."
+ },
+ {
+  "type": "context",
+  "w": "verbringen",
+  "station": 9,
+  "q": "Wir haben den ganzen Abend im Theater ___.",
+  "opts": [
+   "verbraucht",
+   "verbracht",
+   "verboten",
+   "verbrannt"
+  ],
+  "a": 1,
+  "why": "Zeit verbringen = to spend time (verbracht). Careful: verbrauchen = to use up; Geld ausgeben = to spend money."
+ },
+ {
+  "type": "context",
+  "w": "Publikum",
+  "station": 9,
+  "q": "Das ___ war begeistert und wollte nach dem Konzert nicht nach Hause gehen.",
+  "opts": [
+   "Detail",
+   "Erlebnis",
+   "Wunder",
+   "Publikum"
+  ],
+  "a": 3,
+  "why": "das Publikum = audience, the people watching."
+ },
+ {
+  "type": "context",
+  "w": "sowohl",
+  "station": 9,
+  "q": "Priya spricht ___ Englisch als auch Deutsch.",
+  "opts": [
+   "entweder",
+   "sowohl",
+   "weder",
+   "zwar"
+  ],
+  "a": 1,
+  "why": "sowohl … als auch = both … and. weder goes with noch, entweder with oder, zwar with aber."
+ },
+ {
+  "type": "synonym",
+  "w": "seltsam",
+  "station": 9,
+  "q": "Das Ende des Films war ziemlich seltsam.",
+  "u": "seltsam",
+  "opts": [
+   "traurig",
+   "merkwürdig",
+   "spannend",
+   "lustig"
+  ],
+  "a": 1,
+  "why": "seltsam = strange, odd: merkwürdig."
+ },
+ {
+  "type": "synonym",
+  "w": "wahnsinnig",
+  "station": 9,
+  "q": "Das Konzert war wahnsinnig gut!",
+  "u": "wahnsinnig",
+  "opts": [
+   "kaum",
+   "fast",
+   "ziemlich",
+   "sehr"
+  ],
+  "a": 3,
+  "why": "Before an adjective, wahnsinnig (colloquial) just means very: sehr. ziemlich = fairly, which is weaker."
+ },
+ {
+  "type": "synonym",
+  "w": "gleichfalls",
+  "station": 9,
+  "q": "Schönen Abend noch! – Danke, gleichfalls!",
+  "u": "gleichfalls",
+  "opts": [
+   "nochmals",
+   "ebenfalls",
+   "sowieso",
+   "übrigens"
+  ],
+  "a": 1,
+  "why": "Danke, gleichfalls! = Thanks, you too! ebenfalls means the same."
+ },
+ {
+  "type": "usage",
+  "w": "begegnen",
+  "station": 9,
+  "q": "begegnen",
+  "opts": [
+   "Gestern bin ich im Kino meine Nachbarin begegnet.",
+   "Gestern habe ich im Kino meiner Nachbarin begegnet.",
+   "Gestern bin ich im Kino meiner Nachbarin begegnet.",
+   "Gestern bin ich im Kino mit meiner Nachbarin begegnet."
+  ],
+  "a": 2,
+  "why": "jemandem begegnen = to run into someone: dative, no preposition, Perfekt with sein."
+ },
+ {
+  "type": "usage",
+  "w": "reagieren",
+  "station": 9,
+  "q": "reagieren",
+  "opts": [
+   "Wie hat das Publikum den Witz reagiert?",
+   "Wie hat das Publikum auf den Witz reagiert?",
+   "Wie hat das Publikum zu dem Witz reagiert?",
+   "Wie ist das Publikum auf den Witz reagiert?"
+  ],
+  "a": 1,
+  "why": "reagieren auf + acc. = to react to. The English \"to\" tempts you to use zu."
+ },
+ {
+  "type": "usage",
+  "w": "je",
+  "station": 9,
+  "q": "je",
+  "opts": [
+   "Je länger ich das Bild ansehe, desto besser gefällt es mir.",
+   "Je länger ich das Bild ansehe, desto es gefällt mir besser.",
+   "Je länger ich sehe das Bild an, desto besser gefällt es mir.",
+   "Je länger ich das Bild ansehe, desto besser es gefällt mir."
+  ],
+  "a": 0,
+  "why": "je … desto = the … the. After je the verb goes to the end; desto + comparative is followed straight by the verb."
+ },
+ {
+  "type": "context",
+  "w": "Verantwortung",
+  "station": 10,
+  "q": "Eltern tragen die ___ für ihre Kinder.",
+  "opts": [
+   "Unterstützung",
+   "Verantwortung",
+   "Freiheit",
+   "Entscheidung"
+  ],
+  "a": 1,
+  "why": "die Verantwortung für etwas tragen = to be responsible for something."
+ },
+ {
+  "type": "context",
+  "w": "Entscheidung",
+  "station": 10,
+  "q": "Nach langem Nachdenken hat Malte eine ___ getroffen: Er zieht nach München.",
+  "opts": [
+   "Entscheidung",
+   "Regel",
+   "Mehrheit",
+   "Meinung"
+  ],
+  "a": 0,
+  "why": "eine Entscheidung treffen = to make a decision. You have (haben) a Meinung, you don't treffen it."
+ },
+ {
+  "type": "context",
+  "w": "warnen",
+  "station": 10,
+  "q": "Die Polizei ___ vor Dieben am Bahnhof.",
+  "opts": [
+   "warnt",
+   "zweifelt",
+   "protestiert",
+   "streikt"
+  ],
+  "a": 0,
+  "why": "warnen vor + dat. = to warn about. protestieren goes with gegen, zweifeln with an."
+ },
+ {
+  "type": "synonym",
+  "w": "nötig",
+  "station": 10,
+  "q": "Ist es wirklich nötig, dass wir alle zur Versammlung kommen?",
+  "u": "nötig",
+  "opts": [
+   "notwendig",
+   "verboten",
+   "möglich",
+   "erlaubt"
+  ],
+  "a": 0,
+  "why": "nötig = necessary: notwendig."
+ },
+ {
+  "type": "synonym",
+  "w": "Regel",
+  "station": 10,
+  "q": "In der Regel fährt der Bus alle zehn Minuten.",
+  "u": "In der Regel",
+  "opts": [
+   "Plötzlich",
+   "Manchmal",
+   "Selten",
+   "Normalerweise"
+  ],
+  "a": 3,
+  "why": "in der Regel = as a rule, usually: normalerweise."
+ },
+ {
+  "type": "synonym",
+  "w": "zustimmen",
+  "station": 10,
+  "q": "Da muss ich dir zustimmen: Das ist eine gute Idee.",
+  "u": "zustimmen",
+  "opts": [
+   "recht geben",
+   "danken",
+   "helfen",
+   "widersprechen"
+  ],
+  "a": 0,
+  "why": "jemandem zustimmen = to agree with someone: jemandem recht geben. widersprechen is the opposite."
+ },
+ {
+  "type": "synonym",
+  "w": "selten",
+  "station": 10,
+  "q": "Herr Weber geht selten ins Kino.",
+  "u": "selten",
+  "opts": [
+   "nicht oft",
+   "immer",
+   "oft",
+   "gern"
+  ],
+  "a": 0,
+  "why": "selten = rarely, seldom: nicht oft."
+ },
+ {
+  "type": "usage",
+  "w": "zweifeln",
+  "station": 10,
+  "q": "zweifeln",
+  "opts": [
+   "Ich zweifle davon, dass das neue Gesetz etwas ändert.",
+   "Ich zweifle darüber, dass das neue Gesetz etwas ändert.",
+   "Ich zweifle daran, dass das neue Gesetz etwas ändert.",
+   "Ich zweifle mich daran, dass das neue Gesetz etwas ändert."
+  ],
+  "a": 2,
+  "why": "zweifeln an + dat. = to doubt; before a dass-clause: daran zweifeln, dass … It is not reflexive."
+ },
+ {
+  "type": "usage",
+  "w": "abstimmen",
+  "station": 10,
+  "q": "abstimmen",
+  "opts": [
+   "Am Sonntag abstimmen die Bürger über das neue Schwimmbad.",
+   "Am Sonntag stimmen die Bürger zu dem neuen Schwimmbad ab.",
+   "Am Sonntag stimmen die Bürger über das neue Schwimmbad ab.",
+   "Am Sonntag stimmen die Bürger über dem neuen Schwimmbad ab."
+  ],
+  "a": 2,
+  "why": "abstimmen über + acc. = to vote on. It is separable: stimmen … ab."
+ },
+ {
+  "type": "usage",
+  "w": "verantwortlich",
+  "station": 10,
+  "q": "verantwortlich",
+  "opts": [
+   "Wer ist für die Organisation des Festes verantwortlich?",
+   "Wer ist von der Organisation des Festes verantwortlich?",
+   "Wer ist über die Organisation des Festes verantwortlich?",
+   "Wer ist an der Organisation des Festes verantwortlich?"
+  ],
+  "a": 0,
+  "why": "verantwortlich für + acc. = responsible for."
+ },
+ {
+  "type": "context",
+  "w": "vermissen",
+  "station": 11,
+  "q": "Seit Priya in Deutschland wohnt, ___ sie ihre Familie in Indien sehr.",
+  "opts": [
+   "versäumt",
+   "vergisst",
+   "vermisst",
+   "verpasst"
+  ],
+  "a": 2,
+  "why": "jemanden vermissen = to miss someone you are away from. verpassen and versäumen mean to miss a bus, a lesson or a chance."
+ },
+ {
+  "type": "context",
+  "w": "gelingen",
+  "station": 11,
+  "q": "Der erste Kuchen ist mir leider nicht ___.",
+  "opts": [
+   "gelungen",
+   "geschafft",
+   "gewonnen",
+   "gefallen"
+  ],
+  "a": 0,
+  "why": "etwas gelingt mir = I succeed at it, it turns out well; Perfekt with sein: ist mir gelungen. The others take haben here."
+ },
+ {
+  "type": "context",
+  "w": "falls",
+  "station": 11,
+  "q": "Nimm einen Regenschirm mit, ___ es später regnet.",
+  "opts": [
+   "ob",
+   "falls",
+   "obwohl",
+   "damit"
+  ],
+  "a": 1,
+  "why": "falls = in case, if. ob = whether (indirect questions); damit = so that."
+ },
+ {
+  "type": "synonym",
+  "w": "vermutlich",
+  "station": 11,
+  "q": "Der Zug hat vermutlich Verspätung.",
+  "u": "vermutlich",
+  "opts": [
+   "endlich",
+   "sicher",
+   "tatsächlich",
+   "wahrscheinlich"
+  ],
+  "a": 3,
+  "why": "vermutlich = presumably, probably: wahrscheinlich. sicher would mean certainly."
+ },
+ {
+  "type": "synonym",
+  "w": "häufig",
+  "station": 11,
+  "q": "Im Winter bin ich häufig erkältet.",
+  "u": "häufig",
+  "opts": [
+   "kaum",
+   "selten",
+   "nie",
+   "oft"
+  ],
+  "a": 3,
+  "why": "häufig = frequently, often: oft."
+ },
+ {
+  "type": "synonym",
+  "w": "beinahe",
+  "station": 11,
+  "q": "Ich habe beinahe den Bus verpasst.",
+  "u": "beinahe",
+  "opts": [
+   "fast",
+   "sofort",
+   "kaum",
+   "schon"
+  ],
+  "a": 0,
+  "why": "beinahe = almost, nearly: fast."
+ },
+ {
+  "type": "usage",
+  "w": "vorhaben",
+  "station": 11,
+  "q": "vorhaben",
+  "opts": [
+   "Was hast du dich am Wochenende vor?",
+   "Was vorhast du am Wochenende?",
+   "Was hast du am Wochenende vorhaben?",
+   "Was hast du am Wochenende vor?"
+  ],
+  "a": 3,
+  "why": "vorhaben = to plan, intend. It is separable: the prefix vor goes to the end (Was hast du vor?)."
+ },
+ {
+  "type": "usage",
+  "w": "entscheiden",
+  "station": 11,
+  "q": "entscheiden",
+  "opts": [
+   "Nach langem Überlegen hat sich Jonas für ein Studium in Leipzig entschieden.",
+   "Nach langem Überlegen hat sich Jonas auf ein Studium in Leipzig entschieden.",
+   "Nach langem Überlegen hat Jonas für ein Studium in Leipzig entschieden.",
+   "Nach langem Überlegen hat sich Jonas für ein Studium in Leipzig entscheidet."
+  ],
+  "a": 0,
+  "why": "sich entscheiden für + acc. = to decide on, choose. Partizip: entschieden."
+ },
+ {
+  "type": "usage",
+  "w": "erfüllen",
+  "station": 11,
+  "q": "erfüllen",
+  "opts": [
+   "Mit der Reise nach Japan hat sich Malte an einen großen Traum erfüllt.",
+   "Mit der Reise nach Japan ist Malte einen großen Traum erfüllt.",
+   "Mit der Reise nach Japan hat sich Malte einen großen Traum erfüllen.",
+   "Mit der Reise nach Japan hat sich Malte einen großen Traum erfüllt."
+  ],
+  "a": 3,
+  "why": "sich (dat.) einen Traum erfüllen = to make a dream come true. Perfekt: hat … erfüllt."
+ },
+ {
+  "type": "usage",
+  "w": "verwechseln",
+  "station": 11,
+  "q": "verwechseln",
+  "opts": [
+   "Entschuldigung, ich habe Sie für Ihre Schwester verwechselt.",
+   "Entschuldigung, ich habe Ihnen mit Ihrer Schwester verwechselt.",
+   "Entschuldigung, ich habe Sie mit Ihrer Schwester verwechselt.",
+   "Entschuldigung, ich habe Sie von Ihrer Schwester verwechselt."
+  ],
+  "a": 2,
+  "why": "jemanden mit jemandem verwechseln = to mix someone up with someone. \"für\" belongs to halten: Ich habe Sie für Ihre Schwester gehalten."
+ },
+ {
+  "type": "context",
+  "w": "abhängen",
+  "station": 12,
+  "q": "Ob wir morgen grillen, ___ vom Wetter ab.",
+  "opts": [
+   "hält",
+   "nimmt",
+   "hängt",
+   "fährt"
+  ],
+  "a": 2,
+  "why": "abhängen von + dat. = to depend on: Es hängt vom Wetter ab."
+ },
+ {
+  "type": "context",
+  "w": "ablehnen",
+  "station": 12,
+  "q": "Die Firma hat Maltes Vorschlag leider ___.",
+  "opts": [
+   "abgelehnt",
+   "abgegeben",
+   "abgesagt",
+   "abgeschlossen"
+  ],
+  "a": 0,
+  "why": "ablehnen = to reject, turn down. absagen is for cancelling an appointment or an event."
+ },
+ {
+  "type": "context",
+  "w": "Vorteil",
+  "station": 12,
+  "q": "Das Zimmer ist klein. Der große ___ ist aber, dass es sehr billig ist.",
+  "opts": [
+   "Vorteil",
+   "Nachteil",
+   "Rat",
+   "Einfall"
+  ],
+  "a": 0,
+  "why": "der Vorteil = advantage. \"aber\" shows a contrast with the small room, so it can't be der Nachteil (disadvantage)."
+ },
+ {
+  "type": "context",
+  "w": "zuverlässig",
+  "station": 12,
+  "q": "Herr Weber kommt immer pünktlich und macht seine Arbeit gründlich. Er ist sehr ___.",
+  "opts": [
+   "abwesend",
+   "zuverlässig",
+   "durcheinander",
+   "abhängig"
+  ],
+  "a": 1,
+  "why": "zuverlässig = reliable. abhängig = dependent; abwesend = absent."
+ },
+ {
+  "type": "synonym",
+  "w": "bereits",
+  "station": 12,
+  "q": "Als wir ankamen, hatte der Film bereits angefangen.",
+  "u": "bereits",
+  "opts": [
+   "noch",
+   "schon",
+   "nie",
+   "erst"
+  ],
+  "a": 1,
+  "why": "bereits = already: schon."
+ },
+ {
+  "type": "synonym",
+  "w": "daher",
+  "station": 12,
+  "q": "Ich war krank, daher konnte ich nicht kommen.",
+  "u": "daher",
+  "opts": [
+   "sonst",
+   "trotzdem",
+   "deshalb",
+   "außerdem"
+  ],
+  "a": 2,
+  "why": "daher = therefore, that's why: deshalb. trotzdem = nevertheless."
+ },
+ {
+  "type": "synonym",
+  "w": "bemerken",
+  "station": 12,
+  "q": "Hast du bemerkt, dass Lena eine neue Brille hat?",
+  "u": "bemerkt",
+  "opts": [
+   "gefragt",
+   "gehofft",
+   "vergessen",
+   "gemerkt"
+  ],
+  "a": 3,
+  "why": "bemerken = to notice: merken."
+ },
+ {
+  "type": "usage",
+  "w": "überzeugt",
+  "station": 12,
+  "q": "überzeugt",
+  "opts": [
+   "Ich bin dafür überzeugt, dass du die Prüfung bestehst.",
+   "Ich bin darüber überzeugt, dass du die Prüfung bestehst.",
+   "Ich bin davon überzeugt, dass du die Prüfung bestehst.",
+   "Ich habe davon überzeugt, dass du die Prüfung bestehst."
+  ],
+  "a": 2,
+  "why": "überzeugt sein von + dat. = to be convinced of; before a dass-clause: davon überzeugt sein, dass …"
+ },
+ {
+  "type": "usage",
+  "w": "achten",
+  "station": 12,
+  "q": "achten",
+  "opts": [
+   "In der Prüfung musst du gut für die Zeit achten.",
+   "In der Prüfung musst du gut an die Zeit achten.",
+   "In der Prüfung musst du gut auf der Zeit achten.",
+   "In der Prüfung musst du gut auf die Zeit achten."
+  ],
+  "a": 3,
+  "why": "achten auf + acc. = to pay attention to, keep an eye on."
+ },
+ {
+  "type": "usage",
+  "w": "vorschlagen",
+  "station": 12,
+  "q": "vorschlagen",
+  "opts": [
+   "Ich schlage dich vor, dass wir uns um acht am Bahnhof treffen.",
+   "Ich schlage vor, dass wir uns um acht am Bahnhof treffen.",
+   "Ich vorschlage, dass wir uns um acht am Bahnhof treffen.",
+   "Ich habe vorgeschlagt, dass wir uns um acht am Bahnhof treffen."
+  ],
+  "a": 1,
+  "why": "vorschlagen = to suggest. Separable (ich schlage … vor), strong (vorgeschlagen), and the person is dative (jemandem etwas vorschlagen)."
+ }
+]
