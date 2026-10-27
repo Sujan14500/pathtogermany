@@ -416,6 +416,48 @@ button:disabled { cursor: default; }
 .arrived .card { cursor: default; padding-bottom: 0; }
 .arrived .card-en { padding: 0 24px 26px; }
 
+/* typed answers, memory hooks, cover the English, guess first, the week, the plan */
+.type-it { display: flex; gap: 8px; justify-content: center; margin: 18px auto 0; max-width: 34rem; }
+.type-it input { flex: 1; min-width: 0; font: 600 1.3rem var(--display); padding: .5rem .8rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); }
+.type-it input:focus { border-color: var(--line); outline: none; }
+.typed { margin: 8px 0 0; display: grid; justify-items: center; gap: 2px; }
+.typed-v { font-weight: 700; }
+.typed.right .typed-v, .typed.close .typed-v { color: var(--das); }
+.typed.typo .typed-v { color: var(--hard, #9A6A00); }
+.typed.wrong .typed-v { color: var(--die); }
+.typed-diff { font: 600 1.2rem var(--display); letter-spacing: .02em; }
+.typed-diff u { text-decoration: underline 3px var(--das); color: var(--das); }
+.typed-diff s { color: var(--die); }
+.typed small { color: var(--muted); }
+.new-tag.tricky { color: var(--die); border-color: var(--die); }
+.hook { margin-top: 12px; display: grid; gap: 4px; }
+.hook label { font-weight: 700; }
+.hook textarea { font: inherit; padding: .5rem .7rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); resize: vertical; }
+.words-tools { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.words-tools .check { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; cursor: pointer; }
+.wlist.cover > li:not(.open) .wen { filter: blur(5px); transition: filter .2s; }
+.wlist.cover > li:not(.open):hover .wen { filter: blur(3px); }
+.guess { margin: 14px 0 0; padding: 14px 18px; border: 2px dashed var(--line); border-radius: 6px; }
+.guess h3 { margin: 0; font-size: 1.15rem; }
+.guess .quiet { margin: 2px 0 8px; font-size: .92rem; }
+.guess .quiz-q { margin: 0 0 10px; font-size: 1.2rem; }
+.guess-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.guess-opts button.right { border-color: var(--das); background: color-mix(in srgb, var(--das) 14%, var(--panel)); }
+.guess-opts button.wrong { border-color: var(--die); background: color-mix(in srgb, var(--die) 12%, var(--panel)); }
+.guess-opts button.dim { opacity: .55; }
+.guess-after { margin: 10px 0 0; }
+.plan-line { margin: -12px 0 16px; color: var(--muted); font-size: .95rem; }
+.plan-line a { color: var(--muted); }
+.plan-line b { color: var(--ink); }
+.plan-set input { flex: 1; padding: .4rem .6rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); min-width: 0; }
+.week { margin-top: 12px; }
+.week ol { display: flex; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.week li { display: grid; justify-items: center; gap: 2px; }
+.wk-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--rule); }
+.week li.on .wk-dot { background: var(--line); border-color: var(--line); }
+.week small { color: var(--muted); font-size: .75rem; }
+.week .quiet { margin: 6px 0 0; font-size: .85rem; }
+
 /* ---- der/die/das trainer ---- */
 
 .trainer { max-width: 820px; }

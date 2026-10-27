@@ -15,7 +15,7 @@ let D = null   // the loaded data (prepare()), set once at start
 // ---- progress: one JSON blob in localStorage, backed up by export/import ----
 
 const fresh = () => ({
-  cards: {}, log: [], lesson: 1, newPerDay: 15, autoplay: true, newToday: { date: today(), n: 0 },
+  cards: {}, log: [], lesson: 1, newPerDay: 15, autoplay: true, newToday: { date: today(), n: 0 }, hooks: {},
   tests: {}, practice: {}, drafts: {}, settings: {},
 })
 function load() {
@@ -106,7 +106,19 @@ function queue() {
   const byDue = (a, b) => new Date(S.cards[a.id].due) - new Date(S.cards[b.id].due)
   const news = [...fresh.g]
   for (let i = 0; i < Math.max(fresh.r.length, fresh.p.length); i++) news.push(...[fresh.p[i], fresh.r[i]].filter(Boolean))
-  return [...due.sort(byDue), ...news.slice(0, newLeft()), ...ahead.sort(byDue)]
+  return [...interleave(due.sort(byDue), news.slice(0, newLeft())), ...ahead.sort(byDue)]
+}
+
+// New cards spread among the reviews (a review first, as a warm-up), not left for the end when attention is low.
+export function interleave(reviews, news) {
+  const every = Math.max(1, Math.floor(reviews.length / Math.max(news.length, 1)))
+  const out = []
+  let r = 0, k = 0
+  while (r < reviews.length || k < news.length) {
+    for (let i = 0; i < every && r < reviews.length; i++) out.push(reviews[r++])
+    if (k < news.length) out.push(news[k++])
+  }
+  return out
 }
 
 function answer(card, grade) {
@@ -222,7 +234,7 @@ const STEP = {
 
 // Today at this stop: the day's cards first, then each part of the station in order.
 function todayPlan(st, q) {
-  const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} today` : 'done' }] : []
+  const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
   return [...cards, ...PARTS.map(part => {
     const p = partDone(st.n, part)
     return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
@@ -491,6 +503,18 @@ const gqQuiz = qs => shuffle(qs).map(q => ({
   opts: q.opts, a: q.a, why: html`${q.why} <span class="quiet">(${q.en})</span>`, say: q.q.replace('___', q.opts[q.a]),
 }))
 
+// Before the explanation: one question to guess. Getting it wrong first makes the rule stick when it comes.
+function GuessFirst({ q }) {
+  const [picked, setPicked] = useState(null)
+  return html`<section class="guess" aria-label="Guess first">
+    <h3>Guess first</h3><p class="quiet">A wrong guess is fine: it makes the explanation stick.</p>
+    <p class="quiz-q" lang="de">${q.q.split('___').map((part, k) => html`${k ? html`<span class="gap"></span>` : ''}${part}`)}</p>
+    <div class="guess-opts">${q.opts.map((o, k) => html`<button type="button" lang="de" disabled=${picked !== null} onClick=${() => setPicked(k)}
+      class=${picked === null ? '' : k === q.a ? 'right' : k === picked ? 'wrong' : 'dim'}>${o}</button>`)}</div>
+    ${picked !== null ? html`<p class="guess-after">${picked === q.a ? html`<b>Right.</b>` : html`<b>Not this one.</b>`} Read on to see why.</p>` : ''}
+  </section>`
+}
+
 function GrammarPoint({ data, g, i }) {
   useStore()
   const [quiz, setQuiz] = useState(null)
@@ -501,6 +525,7 @@ function GrammarPoint({ data, g, i }) {
   return html`<article class="gpoint" id=${`g-${g.id}`}>
     <header class="g-head"><span class="g-num">${i + 1}</span><h2>${g.title}</h2>
       ${seen ? html`<span class="g-seen">In your cards</span>` : ''}</header>
+    ${!seen && qs.length ? html`<${GuessFirst} q=${qs[0]} />` : ''}
     <p class="g-pattern" lang="de">${g.pattern}</p>
     <div class="g-body">
       <div class="g-text">
@@ -924,14 +949,19 @@ function WordsTab({ data, n }) {
   const start = () => setQuiz(wordQuestions(ws, pool))
   if (!ws.length) return html`<p class="soon">This station's words are being written now: each noun with its article and plural, audio and a quick quiz.</p>`
   const learned = ws.filter(w => known(w.id)).length
+  const cover = S.settings.cover
   return html`<div class="words-tab">
     <div class="words-head">
       <p><b>${ws.length} words</b> · ${learned} learned as cards. Tap a word for its example. New cards for this station come in${' '}
         <a href="#/study">today's cards</a> once it is your current stop.</p>
-      <button type="button" class="btn" onClick=${start}>Test yourself <${Arrow} /></button>
+      <div class="words-tools">
+        <label class="check"><input type="checkbox" checked=${cover} onChange=${e => commit(x => { x.settings = { ...x.settings, cover: e.target.checked } })} />
+          Cover the English</label>
+        <button type="button" class="btn" onClick=${start}>Test yourself <${Arrow} /></button>
+      </div>
     </div>
     ${quiz ? html`<section class="quiz-box" aria-label="Test yourself"><${Quiz} key=${quiz} qs=${quiz} again=${start} /></section>` : ''}
-    <ul class="wlist">${ws.map(w => html`<li key=${w.id} class=${`${status(w)}${open === w.id ? ' open' : ''}`}>
+    <ul class=${`wlist${cover ? ' cover' : ''}`}>${ws.map(w => html`<li key=${w.id} class=${`${status(w)}${open === w.id ? ' open' : ''}`}>
       <${SayButton} text=${said(w)} />
       <button type="button" class="wrow" aria-expanded=${open === w.id} onClick=${() => setOpen(open === w.id ? null : w.id)}>
         <span class="wde"><${Word} w=${w} /><small lang="de">${formsNote(w)}</small></span>
@@ -939,6 +969,64 @@ function WordsTab({ data, n }) {
       </button>
       ${open === w.id ? html`<div class="wmore">${w.ipa ? html`<p class="ipa">${w.ipa}</p>` : ''}<${Example} w=${w} /></div>` : ''}
     </li>`)}</ul>
+  </div>`
+}
+
+// ---- typed answers: lenient about capitals and umlaut spellings, strict about the article ----
+
+const fold = t => t.normalize('NFC').trim().replace(/\s+/g, ' ')
+const loose = t => fold(t).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/^sich /, '')
+function lev(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)])
+  for (let j = 1; j <= b.length; j++) d[0][j] = j
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1))
+  }
+  return d[a.length][b.length]
+}
+export function checkAnswer(typed, w, words = []) {
+  const t = fold(typed), want = said(w)
+  if (t === want) return { verdict: 'right' }
+  if (w.a && w.a !== 'pl') {
+    const [first, ...rest] = t.split(' ')
+    const hasArt = ['der', 'die', 'das'].includes(first.toLowerCase())
+    const body = hasArt ? rest.join(' ') : t
+    const near = loose(body) === loose(w.w) || (w.w.length >= 5 && lev(loose(body), loose(w.w)) === 1)
+    if (near && (!hasArt || first.toLowerCase() !== ART[w.a])) return { verdict: 'wrong', notes: `The article belongs to the word: ${want}.` }
+  }
+  if (loose(t) === loose(want)) return { verdict: 'close', notes: t.toLowerCase() === want.toLowerCase() ? 'Mind the capitals: nouns start with a capital.' : '' }
+  const other = words.find(x => x !== w && x.en === w.en && loose(said(x)) === loose(t))
+  if (other) return { verdict: 'close', notes: `Also right; this card wants ${want}.` }
+  if (w.w.replace(/^sich /, '').length >= 5 && lev(loose(t), loose(want)) === 1) return { verdict: 'typo' }
+  return { verdict: 'wrong' }
+}
+
+// Letter diff of what was typed against the answer: [[char, 'same' | 'miss' (left out) | 'extra' (typed in)]].
+export function diffChars(a, b) {
+  const L = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0))
+  for (let i = a.length - 1; i >= 0; i--) {
+    for (let j = b.length - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1])
+  }
+  const out = []
+  let i = 0, j = 0
+  while (i < a.length || j < b.length) {
+    if (i < a.length && j < b.length && a[i] === b[j]) { out.push([a[i], 'same']); i++; j++ }
+    else if (j < b.length && (i === a.length || L[i][j + 1] >= L[i + 1][j])) out.push([b[j++], 'miss'])
+    else out.push([a[i++], 'extra'])
+  }
+  return out
+}
+
+// A word missed four times or more gets a memory hook of the learner's own, shown on both its cards.
+function HookBox({ w }) {
+  const s = useStore()
+  const [text, setText] = useState(s.hooks?.[w.id] ?? '')
+  const save = () => commit(x => { x.hooks = { ...x.hooks, [w.id]: text.trim() || undefined } })
+  const hint = w.p === 'n' ? 'Picture it in its gender: der things frozen in blue ice, die things on fire, das things overgrown with green leaves. Then link the sound to the meaning.'
+    : 'Link the sound to the meaning with a picture or a story of your own.'
+  return html`<div class="hook" onClick=${e => e.stopPropagation()}>
+    <label for="hook-in">Your memory hook</label>
+    <textarea id="hook-in" rows="2" placeholder=${hint} value=${text} onInput=${e => setText(e.target.value)} onBlur=${save}></textarea>
   </div>`
 }
 
@@ -950,6 +1038,8 @@ function Study({ data }) {
   const [leaving, setLeaving] = useState(0)
   const [done, setDone] = useState(0)
   const [prev, setPrev] = useState(null)
+  const [typed, setTyped] = useState('')
+  const [check, setCheck] = useState(null)       // checkAnswer() of a typed production card
   const q = queue()
   const c = q[0]
   // a grammar card rotates through its point's examples, one per review
@@ -966,12 +1056,13 @@ function Study({ data }) {
     setLeaving(grade)
     setTimeout(() => {
       answer(c, grade)
-      setPrev(c); setDone(d => d + 1); setRevealed(false); setLeaving(0)
+      setPrev(c); setDone(d => d + 1); setRevealed(false); setLeaving(0); setTyped(''); setCheck(null)
     }, reducedMotion() ? 0 : 240)
   }
   useEffect(() => {
     const onKey = e => {
-      const onControl = e.target.closest?.('button, a, input, select, textarea, summary')
+      if (e.target.closest?.('input, textarea, select')) return     // typing an answer or a memory hook
+      const onControl = e.target.closest?.('button, a, summary')
       if ((e.key === ' ' || e.key === 'Enter') && !onControl) { e.preventDefault(); revealed ? rate(Rating.Good) : reveal() }
       else if (/^[1-4]$/.test(e.key)) rate(+e.key)
       else if (e.key === 's' && c) sayIt()
@@ -981,7 +1072,14 @@ function Study({ data }) {
     return () => removeEventListener('keydown', onKey)
   })
 
+  // the grade a typed answer suggests gets the focus, so a second Enter accepts it
+  const suggest = (check && { wrong: Rating.Again, typo: Rating.Hard }[check.verdict]) || Rating.Good
+  useEffect(() => { if (revealed && check) document.querySelector(`.grades .g${suggest}`)?.focus() }, [revealed, check])
+
   if (!c) return html`<${Arrived} data=${data} done=${done} />`
+  const submit = e => { e.preventDefault(); if (typed.trim()) setCheck(checkAnswer(typed, c.w, data.words)); reveal() }
+  const tricky = s.cards[c.id]?.lapses >= 4
+  const hook = c.w && s.hooks?.[c.w.id]
   const total = done + q.length
   const now = new Date()
   const preview = revealed ? scheduler.repeat(s.cards[c.id] ?? createEmptyCard(now), now) : null
@@ -998,8 +1096,9 @@ function Study({ data }) {
     <article key=${c.id} class=${`card${revealed ? ' open' : ''}${leaving ? ` leave g${leaving}` : ''}`} onClick=${reveal} aria-live="polite">
       <div class="card-top">
         <span class="lb">${st.level} · ${st.k}</span>
-        <span class="card-kind">${c.kind === 'g' ? 'Build it in German' : c.kind === 'r' ? 'What does it mean?' : w.p === 'n' ? 'Say it in German, with article and plural' : 'Say it in German'}</span>
-        ${!s.cards[c.id] ? html`<span class="new-tag">New</span>` : ''}
+        <span class="card-kind">${c.kind === 'g' ? 'Build it in German' : c.kind === 'r' ? 'Say the German aloud. What does it mean?'
+          : w.p === 'n' ? 'Say it in German, out loud, with article and plural' : 'Say it in German, out loud'}</span>
+        ${!s.cards[c.id] ? html`<span class="new-tag">New</span>` : tricky ? html`<span class="new-tag tricky">Tricky word</span>` : ''}
       </div>
       ${c.kind === 'g'
         ? html`<p class="card-gtitle">${c.g.title}</p>
@@ -1012,7 +1111,16 @@ function Study({ data }) {
         : html`<h2 class="card-term en">${w.en}</h2>
             <p class="card-forms">${POS_NAME[w.p]}</p>
             <div class="card-back">${revealed ? html`<p class="card-de"><${Word} w=${w} /> <${SayButton} text=${said(w)} /></p>
-              <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />` : ''}</div>`}
+              ${check ? html`<p class=${`typed ${check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
+                ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
+                ${check.notes ? html`<small>${check.notes}</small>` : ''}</p>` : ''}
+              <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />`
+              : html`<form class="type-it" onSubmit=${submit} onClick=${e => e.stopPropagation()}>
+                  <input lang="de" autocomplete="off" autocapitalize="off" spellcheck="false" value=${typed} onInput=${e => setTyped(e.target.value)}
+                    placeholder=${w.a && w.a !== 'pl' ? 'der/die/das + word' : 'Type the German'} aria-label="Your answer in German" />
+                  <button type="submit" class="btn">Check <kbd>Enter</kbd></button>
+                </form>`}</div>`}
+      ${revealed && c.w && (tricky || hook) ? html`<${HookBox} w=${c.w} />` : ''}
       <div class="band card-band">
         <span>${prev ? html`← <span lang="de">${prev.w ? said(prev.w) : prev.g.title}</span>` : ''}</span>
         <span lang="de">${st.de}</span>
@@ -1037,6 +1145,7 @@ function Arrived({ data, done }) {
     <article class="card open">
       <h2 class="card-term" lang="de">Angekommen!</h2>
       <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : data.words.length ? 'Nothing to study right now.' : 'The word cards are being written now.'}
+        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}
         ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}</p>
       <div class="band card-band"><span></span><span lang="de">${st.de}</span></div>
     </article>
@@ -1295,6 +1404,8 @@ function Home({ data }) {
   }
   return html`<main class="home">
     <p class="welcome"><span lang="de">Liebe Sneka, willkommen!</span><small>Dear Sneka, welcome!</small></p>
+    <p class="plan-line">${s.settings.plan ? html`<b>Your plan:</b> ${s.settings.plan}`
+      : html`<a href="#/" onClick=${e => { e.preventDefault(); openSettings() }}>Plan when and where you study (one sentence)</a>`}</p>
     <section class=${`hero l${st.level}`} aria-label="Today">
       <${Board} data=${data} n=${st.n} home />
       <div class="go">
@@ -1307,6 +1418,7 @@ function Home({ data }) {
             : html`<p class="next-text">Every station is done. Take the B1 mock exam until it passes every time.</p>
               <a class="btn big" href="#/mock/B1/full">Take the B1 mock exam <${Arrow} /></a>`}
           <p class="quiet">${plural(lv.stations.filter(x => stationDone(x.n) >= 1).length, 'station')} of ${lv.stations.length} done on the ${lv.level} line</p>
+          <${Week} />
         </div>
       </div>
       <ol class="plan" aria-label="Today's plan at this station">${plan.map(p => html`<li class=${`${p.state}${p === step ? ' now' : ''}`}>
@@ -1327,6 +1439,21 @@ function Home({ data }) {
 // Installing a German voice needs an administrator PowerShell; the app offers the command and never runs it.
 const VOICE_CMD = 'Add-WindowsCapability -Online -Name "Language.TextToSpeech~~~de-DE~0.0.1.0"'
 
+// The last seven days as dots, filled on days with any answer. No streak count: missing one day is fine, two is a habit lost.
+const DAYS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']
+function Week() {
+  const s = useStore()
+  const studied = new Set(s.log.map(([, , t]) => new Date(t).toLocaleDateString('en-CA')))
+  const days = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - 6 + k); return d })
+  const on = d => studied.has(d.toLocaleDateString('en-CA'))
+  const lapsed = s.log.length && !on(days[6]) && !on(days[5])
+  return html`<div class="week" aria-label="This week">
+    <ol>${days.map(d => html`<li class=${on(d) ? 'on' : ''}><span class="wk-dot"></span><small lang="de">${DAYS[d.getDay()]}</small></li>`)}</ol>
+    ${lapsed ? html`<p class="quiet">Never miss twice: five minutes of cards today keeps the habit.</p>` : ''}
+  </div>`
+}
+const openSettings = () => { const d = document.querySelector('.settings'); if (d) { d.open = true; d.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth' }); d.querySelector('input')?.focus() } }
+
 function Settings() {
   const s = useStore()
   const [, bump] = useState(0)
@@ -1343,6 +1470,10 @@ function Settings() {
     <label>New cards per day
       <input type="number" min="0" max="200" value=${s.newPerDay}
         onChange=${e => commit(x => { x.newPerDay = Math.max(0, Math.min(200, +e.target.value || 0)) })} />
+    </label>
+    <label class="plan-set">My study plan
+      <input type="text" value=${s.settings.plan ?? ''} placeholder="After breakfast, at my desk, I open today's cards."
+        onChange=${e => set('plan', e.target.value.trim() || undefined)} />
     </label>
     <label class="check"><input type="checkbox" checked=${s.autoplay} onChange=${e => commit(x => { x.autoplay = e.target.checked })} />
       Say each word aloud when its card turns over</label>
