@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero mock-up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap">
+<style>
+/* Proposed tokens. Station board = DB-style navy enamel sign; line colours = level; gender colours = article. */
+:root {
+  --platform: #E7EAEE; --panel: #FFFFFF; --ink: #121A26; --muted: #556171; --rule: #CBD2DA;
+  --board: #0E2452; --board-ink: #FFFFFF; --board-soft: #B9C6E4; --board-rim: #0E2452;
+  --der: #1D5BD6; --die: #C62F28; --das: #16804A; --pl: #636978;
+  --a1: #F2A20C; --a1-deep: #8F5C00; --a2: #12A3B4; --a2-deep: #0B6B78; --b1: #8A5CF5; --b1-deep: #5F35C4;
+  --display: "Barlow Semi Condensed", "Bahnschrift SemiCondensed", "Bahnschrift", "Arial Narrow", sans-serif;
+  --body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+  --arrive: cubic-bezier(.2, .8, .2, 1);
+  --line: var(--a1); --line-deep: var(--a1-deep);
+}
+:root[data-theme="dark"] {
+  --platform: #0F1216; --panel: #1A1F27; --ink: #EDF1F6; --muted: #9AA6B6; --rule: #2F3743;
+  --board: #17336F; --board-soft: #B4C4EA; --board-rim: #4565AC;
+  --der: #7EA8FF; --die: #FF7A70; --das: #55CF8A; --pl: #A9AEBC;
+  --a1: #F5B33A; --a1-deep: #F5B33A; --a2: #3CC4D3; --a2-deep: #3CC4D3; --b1: #A98BFF; --b1-deep: #A98BFF;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--platform); color: var(--ink); font: 400 17px/1.55 var(--body); }
+
+.topbar { position: sticky; top: 0; display: flex; align-items: center; gap: 32px; padding: 10px 32px; background: var(--panel);
+  border-bottom: 1px solid var(--rule); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+.brand b { font: 700 1.3rem/1 var(--display); letter-spacing: .01em; }
+.brand small { display: block; font-size: .75rem; color: var(--muted); }
+.topbar nav ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.topbar nav a { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 6px; text-decoration: none; color: var(--muted); font-weight: 600; }
+.topbar nav a.on { color: var(--ink); box-shadow: inset 0 -3px 0 var(--line); border-radius: 0; }
+.count { font: 700 .75rem/1 var(--body); background: var(--die); color: #fff; padding: 3px 6px; border-radius: 999px; }
+.here { margin-left: auto; display: flex; align-items: center; gap: 8px; font: 600 1.05rem var(--display); text-decoration: none; color: inherit; }
+.lb { display: inline-grid; place-items: center; min-width: 2.4em; padding: 2px 6px; border-radius: 4px; background: var(--line); color: #111;
+  font: 700 .85rem/1.2 var(--display); }
+
+main { max-width: 1480px; margin: 0 auto; padding: 32px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 24px; }
+
+/* the station name board */
+.board { position: relative; background: var(--board); color: var(--board-ink); border-radius: 6px; overflow: hidden;
+  box-shadow: 0 0 0 2px var(--board-rim), 0 24px 48px -30px rgb(10 20 40 / .7); display: grid; grid-template-rows: 1fr auto; min-height: 330px; }
+.board-body { padding: 28px 36px 24px; display: grid; align-content: space-between; gap: 24px; }
+.board-top { display: flex; align-items: center; gap: 12px; }
+.gleis { display: grid; place-items: center; width: 64px; height: 64px; background: #fff; color: var(--board); border-radius: 4px;
+  font: 700 2.4rem/1 var(--display); }
+.gleis-l { font: 500 .8rem/1.25 var(--body); color: var(--board-soft); }
+.gleis-l b { display: block; color: #fff; font: 600 1rem var(--display); }
+.board .lb { margin-left: auto; font-size: 1.1rem; padding: 4px 10px; }
+.name { margin: 0; font: 700 clamp(3rem, 6vw, 5.4rem)/.95 var(--display); letter-spacing: -.01em; }
+.sub { margin: 8px 0 0; color: var(--board-soft); font-size: 1.1rem; }
+.band { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; background: var(--line); color: #111;
+  font: 600 1.1rem var(--display); padding: 0 24px; height: 52px; }
+.band a { color: inherit; text-decoration: none; }
+.band .next { justify-self: end; }
+.band .mid { display: flex; align-items: center; gap: 0; }
+.band .mid i { width: 12px; height: 12px; border-radius: 50%; background: #111; opacity: .35; }
+.band .mid i.on { opacity: 1; width: 16px; height: 16px; box-shadow: 0 0 0 3px var(--line), 0 0 0 5px #111; }
+.band .mid s { width: 22px; height: 3px; background: #111; opacity: .35; }
+
+/* next step */
+.go-panel { background: var(--panel); border-radius: 6px; padding: 28px; display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center;
+  border-top: 6px solid var(--line); }
+.ring { width: 132px; }
+.ring circle { fill: none; stroke-width: 11; }
+.ring .track { stroke: var(--rule); }
+.ring .fill { stroke: var(--line); stroke-dasharray: .27 1; stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; }
+.ring text { fill: var(--ink); text-anchor: middle; }
+.ring .n { font: 700 28px var(--display); }
+.ring .l { font: 400 11px var(--body); fill: var(--muted); }
+.next-text { margin: 0 0 16px; font-size: 1.15rem; line-height: 1.45; }
+.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: var(--platform); text-decoration: none;
+  font: 700 1.15rem var(--body); padding: 14px 22px; border-radius: 6px; }
+.btn svg { width: 22px; }
+.quiet { color: var(--muted); font-size: .9rem; margin: 12px 0 0; }
+
+/* today's plan as a rail of stops */
+.plan { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); list-style: none; margin: 8px 0 0; padding: 22px 12px 4px;
+  background: var(--panel); border-radius: 6px; }
+.plan li { position: relative; display: grid; justify-items: center; text-align: center; gap: 6px; }
+.plan li::before { content: ""; position: absolute; top: 11px; left: -50%; width: 100%; height: 5px; background: var(--rule); }
+.plan li.done::before, .plan li.part::before { background: var(--line); }
+.plan li:first-child::before { display: none; }
+.dot { position: relative; width: 27px; height: 27px; border-radius: 50%; background: var(--panel); border: 4px solid var(--rule); }
+.done .dot { background: var(--line); border-color: var(--line); }
+.part .dot { border-color: var(--line); background: conic-gradient(var(--line) 50%, var(--panel) 0); }
+.now .dot { border-color: var(--ink); box-shadow: 0 0 0 4px var(--panel), 0 0 0 6px var(--ink); }
+.plan b { font: 600 1.05rem var(--display); }
+.plan small { color: var(--muted); font-size: .8rem; margin-top: -6px; }
+
+/* token sheet (mock-up only) */
+.tokens { margin-top: 32px; display: grid; grid-template-columns: 1.2fr 1fr 1.3fr; gap: 24px; }
+.tokens section { background: var(--panel); border-radius: 6px; padding: 18px 22px; }
+.tokens h2 { margin: 0 0 12px; font: 600 1.1rem var(--display); color: var(--muted); }
+.nouns { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; font-size: 1.2rem; }
+.art { font-weight: 700; }
+.der { color: var(--der); } .die { color: var(--die); } .das { color: var(--das); } .pl { color: var(--pl); }
+.nouns li { display: flex; gap: 10px; align-items: baseline; border-left: 5px solid currentColor; padding-left: 10px; }
+.nouns li span:last-child { color: var(--muted); font-size: .9rem; margin-left: auto; }
+.nouns .w { color: var(--ink); }
+.lines { display: grid; gap: 10px; }
+.lines div { display: flex; align-items: center; gap: 12px; }
+.lines .bar { flex: 1; height: 8px; border-radius: 4px; }
+.type p { margin: 0 0 6px; }
+.t-disp { font: 700 2.4rem/1 var(--display); }
+.t-body { font-size: 1.05rem; }
+</style>
+</head>
+<body>
+<script>if (location.search.includes('dark')) document.documentElement.dataset.theme = 'dark'</script>
+<header class="topbar">
+  <a class="brand" href="#">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+      <rect width="40" height="40" rx="6" fill="var(--board)" />
+      <path d="M8 28 L16 20 H24 L32 12" fill="none" stroke="var(--a1)" stroke-width="4" stroke-linecap="round" />
+      <circle cx="8" cy="28" r="3.5" fill="#fff" /><circle cx="20" cy="20" r="3.5" fill="#fff" /><circle cx="32" cy="12" r="3.5" fill="#fff" />
+    </svg>
+    <span><b lang="de">Weg nach Deutschland</b><small>Path to Germany</small></span>
+  </a>
+  <nav><ul>
+    <li><a class="on" href="#">Today</a></li><li><a href="#">Cards <span class="count">30</span></a></li><li><a href="#">Practice</a></li>
+    <li><a href="#">Tests</a></li><li><a href="#">Mock exam</a></li><li><a href="#">Pictures</a></li>
+  </ul></nav>
+  <a class="here" href="#"><span class="lb">A1</span> <span lang="de">04 Essen und Trinken</span></a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="board">
+      <div class="board-body">
+        <div class="board-top">
+          <span class="gleis">4</span><span class="gleis-l">Station<b>4 of 12</b></span>
+          <span class="lb">A1</span>
+        </div>
+        <div>
+          <h1 class="name" lang="de">Essen und Trinken</h1>
+          <p class="sub">Food and drink · 58 words · accusative, möchten, kein vs nicht</p>
+        </div>
+      </div>
+      <nav class="band">
+        <a href="#">← <span lang="de">Familie</span></a>
+        <span class="mid"><i></i><s></s><i></i><s></s><i></i><s></s><i class="on"></i><s></s><i></i><s></s><i></i></span>
+        <a class="next" href="#"><span lang="de">Wohnen</span> →</a>
+      </nav>
+    </div>
+
+    <div class="go-panel">
+      <svg class="ring" viewBox="0 0 120 120" role="img" aria-label="27% of A1 learned">
+        <circle class="track" cx="60" cy="60" r="50" /><circle class="fill" cx="60" cy="60" r="50" pathLength="1" />
+        <text class="n" x="60" y="64">27%</text><text class="l" x="60" y="84">of A1 learned</text>
+      </svg>
+      <div>
+        <p class="next-text">Start with the <b>18 reviews</b> due today, then learn <b>12 new words</b> from <span lang="de">Essen und Trinken</span>.</p>
+        <a class="btn" href="#">Start today's cards
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" /></svg></a>
+        <p class="quiet">About 15 minutes · then Grammar: the accusative</p>
+      </div>
+    </div>
+
+    <ol class="plan" aria-label="Today's plan">
+      <li class="part now"><span class="dot"></span><b>Cards</b><small>30 today</small></li>
+      <li class="part"><span class="dot"></span><b>Words</b><small>22 of 58</small></li>
+      <li><span class="dot"></span><b>Grammar</b><small>3 points</small></li>
+      <li><span class="dot"></span><b>Read</b><small>a menu</small></li>
+      <li><span class="dot"></span><b>Listen</b><small>4 dialogues</small></li>
+      <li><span class="dot"></span><b>Write</b><small>a short note</small></li>
+      <li><span class="dot"></span><b>Speak</b><small>ordering</small></li>
+      <li><span class="dot"></span><b>Test</b><small>station test</small></li>
+    </ol>
+  </section>
+
+  <div class="tokens">
+    <section>
+      <h2>Gender code (article always shown)</h2>
+      <ul class="nouns" lang="de">
+        <li class="der"><span class="art">der</span><span class="w">Tisch</span><span>die Tische</span></li>
+        <li class="die"><span class="art">die</span><span class="w">Lampe</span><span>die Lampen</span></li>
+        <li class="das"><span class="art">das</span><span class="w">Brot</span><span>die Brote</span></li>
+        <li class="pl"><span class="art">die</span><span class="w">Eltern</span><span>plural only</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Lines</h2>
+      <div class="lines">
+        <div><span class="lb" style="background:var(--a1)">A1</span><span class="bar" style="background:var(--a1)"></span></div>
+        <div><span class="lb" style="background:var(--a2)">A2</span><span class="bar" style="background:var(--a2)"></span></div>
+        <div><span class="lb" style="background:var(--b1);color:#fff">B1</span><span class="bar" style="background:var(--b1)"></span></div>
+      </div>
+    </section>
+    <section class="type">
+      <h2>Type</h2>
+      <p class="t-disp" lang="de">Hauptbahnhof · Größe</p>
+      <p class="t-body">Barlow Semi Condensed for boards (DIN spirit, Bahnschrift offline). Atkinson Hyperlegible Next for reading: ä ö ü ß, Il1.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+materials/
+app/audio/
+data/cache/
+__pycache__/
+node_modules/
+app/_shot*.html
+*.shot.png
