@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Path to Germany self-check</title></head>
+<body>
+<div id="app" hidden></div>
+<pre id="out">running…</pre>
+<script type="module">
+// Self-check for helpers in main.js. Serve app/ (python -m http.server -d app) and open /test.html; it prints ok.
+import { route } from './main.js'
+
+const fails = []
+const check = (ok, what) => { if (!ok) fails.push(what) }
+const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+
+check(eq(route('#/station/4/grammar'), { page: 'station', arg: '4', sub: 'grammar' }), 'route: station tab')
+check(route('').page === '' && route('#/').page === '', 'route: home')
+check(eq(route('#/tests/A2/lesen/7'), { page: 'tests', arg: 'A2', sub: 'lesen', sub2: '7' }), 'route: numbered test')
+
+document.getElementById('out').textContent = fails.length ? `FAIL\n${fails.join('\n')}` : 'ok'
+document.title = fails.length ? 'FAIL' : 'ok'
+</script>
+</body>
+</html>

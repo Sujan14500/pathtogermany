@@ -19,7 +19,7 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
 
 ## Phases
 - [x] Phase 0: confirm and plan
-- [ ] Phase 1: shell, store, router, single-file build
+- [x] Phase 1: shell, store, router, single-file build
 - [ ] Phase 2: words and flashcards
 - [ ] Phase 3: grammar and trainers
 - [ ] Phase 4: reading
@@ -30,4 +30,9 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
 - [ ] Phase 9: polish
 
 ## Notes for the next session
-_Anything the next session must know: open questions, half-finished work, agent files still being written._
+- Screenshots and smoke tests: `scripts/shot.py` (see README). In Git Bash set `MSYS_NO_PATHCONV=1`, or the
+  route `/` turns into a Windows path. Headless Chrome follows the Windows dark theme unless told otherwise;
+  shot.py forces light unless `--dark`. Under `--virtual-time-budget`, rAF and scroll events are very slow,
+  so the router restores scroll with `setTimeout`, and probes dispatch `scroll` themselves.
+- Station numbers run 1–36 across the levels (A1 1–12, A2 13–24, B1 25–36); URLs use them.
+- Part progress lives in `S.practice["<station>/<part>"]` (0…1). Phase 2 adds word cards to it.

@@ -1,0 +1,2697 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#E7EAEE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1216" media="(prefers-color-scheme: dark)">
+<title>Path to Germany</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap">
+<style>
+/* Path to Germany. German transit signage: concrete-grey platform, navy enamel station boards,
+   line colour = level (A1 amber, A2 teal, B1 violet), gender colour = article (der blue, die red, das green). */
+
+@property --p { syntax: '<number>'; inherits: true; initial-value: 0; }
+
+:root {
+  --platform: #E7EAEE;
+  --panel: #FFFFFF;
+  --ink: #121A26;
+  --muted: #556171;
+  --rule: #CBD2DA;
+  --guide: #EEF1F4;
+  --board: #0E2452; --board-ink: #FFFFFF; --board-soft: #B9C6E4; --board-rim: #0E2452;
+  --der: #1D5BD6; --die: #C62F28; --das: #16804A; --pl: #636978;
+  --a1: #F2A20C; --a1-deep: #8F5C00;
+  --a2: #12A3B4; --a2-deep: #0B6B78;
+  --b1: #8A5CF5; --b1-deep: #5F35C4;
+  --on-line: #111;                    /* text on a line-coloured band */
+  --display: "Barlow Semi Condensed", "Bahnschrift SemiCondensed", "Bahnschrift", "Arial Narrow", sans-serif;
+  --body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+  --arrive: cubic-bezier(.2, .8, .2, 1);
+  --top: 64px;                        /* top bar height: sticky bars below it offset by this */
+  --line: var(--a1); --line-deep: var(--a1-deep);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --platform: #0F1216;
+    --panel: #1A1F27;
+    --ink: #EDF1F6;
+    --muted: #9AA6B6;
+    --rule: #2F3743;
+    --guide: #232A34;
+    --board: #17336F; --board-soft: #B4C4EA; --board-rim: #4565AC;
+    --der: #7EA8FF; --die: #FF7A70; --das: #55CF8A; --pl: #A9AEBC;
+    --a1: #F5B33A; --a1-deep: #F5B33A;
+    --a2: #3CC4D3; --a2-deep: #3CC4D3;
+    --b1: #A98BFF; --b1-deep: #A98BFF;
+  }
+}
+.lA1 { --line: var(--a1); --line-deep: var(--a1-deep); --on-line: #111; }
+.lA2 { --line: var(--a2); --line-deep: var(--a2-deep); --on-line: #06262B; }
+.lB1 { --line: var(--b1); --line-deep: var(--b1-deep); --on-line: #fff; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh;
+  background: var(--platform); color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--body);
+}
+[lang="de"] { hyphens: auto; }
+a { color: inherit; text-underline-offset: .2em; }
+button, .button, input, textarea, select { font: inherit; color: inherit; }
+button, .button {
+  cursor: pointer; display: inline-flex; align-items: center; gap: .5rem;
+  border: 2px solid var(--rule); background: var(--panel); border-radius: 6px;
+  padding: .5rem 1rem; font-weight: 600;
+}
+button:hover, .button:hover { border-color: var(--line); }
+:focus-visible { outline: 3px solid var(--line-deep); outline-offset: 3px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.1; }
+code { font-size: .9em; }
+.quiet { color: var(--muted); }
+
+main { max-width: 1480px; margin: 0 auto; padding: 32px 32px 72px; }
+.empty { display: grid; place-items: center; min-height: 60vh; text-align: center; color: var(--muted); }
+
+/* line badge: A1 / A2 / B1 in the line's colour */
+.lb {
+  display: inline-grid; place-items: center; min-width: 2.4em; padding: 2px 7px; border-radius: 4px;
+  background: var(--line); color: var(--on-line); font: 700 .85rem/1.2 var(--display); white-space: nowrap;
+}
+.lb.big { font-size: 1.15rem; padding: 4px 10px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; border: 0; border-radius: 6px;
+  background: var(--ink); color: var(--platform); text-decoration: none; font-weight: 700; padding: .6rem 1.1rem;
+}
+.btn:hover { background: var(--line-deep); color: #fff; }
+.btn.big { font-size: 1.15rem; padding: 14px 22px; }
+.arrow { width: 1.25em; height: 1.25em; flex: none; transition: transform .2s var(--arrive); }
+.btn:hover .arrow { transform: translateX(3px); }
+
+.pbar { display: block; height: 6px; border-radius: 3px; background: var(--rule); overflow: hidden; }
+.pbar i { display: block; height: 100%; width: calc(var(--p) * 100%); background: var(--line); transition: width .8s var(--arrive); }
+
+/* ---- top bar ---- */
+
+.topbar {
+  position: sticky; top: 0; z-index: 20; min-height: var(--top);
+  display: flex; align-items: center; gap: 28px; padding: 8px 32px;
+  background: var(--panel); border-bottom: 1px solid var(--rule);
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
+.brand .mark { width: 40px; height: 40px; }
+.brand-name b { display: block; font: 700 1.3rem/1 var(--display); }
+.brand-name small { display: block; font-size: .75rem; color: var(--muted); }
+.topnav ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+.topnav a {
+  display: flex; align-items: center; gap: 6px; padding: 10px 12px; white-space: nowrap;
+  text-decoration: none; color: var(--muted); font-weight: 600;
+}
+.topnav a:hover { color: var(--ink); }
+.topnav a.on { color: var(--ink); box-shadow: inset 0 -3px 0 var(--line); }
+.count { font: 700 .75rem/1 var(--body); background: var(--die); color: #fff; padding: 3px 6px; border-radius: 999px; }
+.tb-stop {
+  margin-left: auto; display: flex; align-items: center; gap: 8px; min-width: 0;
+  font: 600 1.05rem/1.2 var(--display); text-decoration: none;
+}
+.tb-stop > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tb-stop-k { color: var(--muted); font-variant-numeric: tabular-nums; }
+.tb-stop:hover > span:last-child { text-decoration: underline; }
+
+/* ---- station board ---- */
+
+.board {
+  position: relative; display: grid; grid-template-rows: 1fr auto; overflow: hidden;
+  background: var(--board); color: var(--board-ink); border-radius: 6px;
+  box-shadow: 0 0 0 2px var(--board-rim), 0 24px 48px -30px rgb(10 20 40 / .7);
+}
+.board-body { display: grid; align-content: space-between; gap: 22px; padding: 26px 34px 22px; }
+.board-top { display: flex; align-items: center; gap: 12px; }
+.gleis {
+  display: grid; place-items: center; width: 60px; height: 60px; border-radius: 4px;
+  background: #fff; color: #0E2452; font: 700 2.3rem/1 var(--display);
+}
+.gleis-l { font-size: .8rem; line-height: 1.25; color: var(--board-soft); }
+.gleis-l b { display: block; color: #fff; font: 600 1rem var(--display); }
+.board-top .lb { margin-left: auto; font-size: 1.1rem; padding: 4px 10px; }
+.board-name { margin: 0; font-size: clamp(2.4rem, 5.4vw, 5.2rem); line-height: .98; letter-spacing: -.01em; overflow-wrap: break-word; }
+.board-name a { text-decoration: none; }
+.board-name a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: .12em; }
+.board-sub { margin: 10px 0 0; color: var(--board-soft); font-size: 1.08rem; }
+.band {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px;
+  min-height: 52px; padding: 0 22px; background: var(--line); color: var(--on-line);
+  font: 600 1.1rem var(--display);
+}
+.band > a { text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.band > a:hover { text-decoration: underline; }
+.band-next { justify-self: end; }
+.band-dots { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; }
+.band-dots li { display: flex; align-items: center; }
+.band-dots li + li::before { content: ""; width: 14px; height: 3px; background: currentColor; opacity: .35; }
+.band-dots a { display: block; width: 12px; height: 12px; border-radius: 50%; background: currentColor; opacity: .35; }
+.band-dots .past a { opacity: .7; }
+.band-dots .on a { opacity: 1; width: 16px; height: 16px; box-shadow: 0 0 0 3px var(--line), 0 0 0 5px currentColor; }
+.band-dots a:hover { opacity: 1; }
+
+/* ---- home ---- */
+
+.hero { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 24px; }
+.hero .board { min-height: 330px; }
+.go {
+  display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; padding: 28px;
+  background: var(--panel); border-radius: 6px; border-top: 6px solid var(--line);
+}
+.ring { width: 132px; }
+.ring circle { fill: none; stroke-width: 11; }
+.ring-track { stroke: var(--rule); }
+.ring-fill {
+  stroke: var(--line); stroke-linecap: round; stroke-dasharray: var(--p) 1;
+  transform: rotate(-90deg); transform-origin: center; animation: ring-in 1.1s var(--arrive) both;
+}
+@keyframes ring-in { from { stroke-dasharray: 0 1; } }
+.ring text { fill: var(--ink); text-anchor: middle; }
+.ring-n { font: 700 28px var(--display); }
+.ring-l { font-size: 11px; fill: var(--muted) !important; }
+.next-text { margin: 0 0 16px; font-size: 1.15rem; line-height: 1.45; }
+.go .quiet { margin: 12px 0 0; font-size: .9rem; }
+
+/* today's plan: the station's parts as stops on a rail */
+.plan {
+  grid-column: 1 / -1; display: grid; grid-template-columns: repeat(7, 1fr);
+  list-style: none; margin: 0; padding: 20px 12px 10px; background: var(--panel); border-radius: 6px;
+}
+.plan li { position: relative; }
+.plan li::before {
+  content: ""; position: absolute; top: 12px; left: -50%; width: 100%; height: 5px; background: var(--rule);
+}
+.plan li.done::before, .plan li.part::before, .plan li.now::before { background: var(--line); }
+.plan li:first-child::before { display: none; }
+.plan a { position: relative; display: grid; justify-items: center; gap: 4px; text-align: center; text-decoration: none; padding-bottom: 4px; }
+.plan a:hover b { text-decoration: underline; }
+.pdot {
+  width: 29px; height: 29px; border-radius: 50%; border: 4px solid var(--rule);
+  background: radial-gradient(var(--panel) 0 6px, transparent 7px), conic-gradient(var(--line) calc(var(--p) * 360deg), var(--panel) 0);
+}
+.done .pdot, .part .pdot { border-color: var(--line); }
+.done .pdot { background: var(--line); }
+.now .pdot { border-color: var(--ink); box-shadow: 0 0 0 4px var(--panel), 0 0 0 6px var(--ink); }
+.plan b { font: 600 1.1rem/1.2 var(--display); }
+.plan small { min-height: 1.2em; color: var(--muted); font-size: .8rem; }
+.now small { color: var(--ink); font-weight: 700; }
+
+.practice h2, .route-head h2 { margin: 40px 0 14px; font-size: 1.6rem; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+.tile {
+  display: grid; gap: 4px; height: 100%; padding: 16px; border-radius: 6px; text-decoration: none;
+  background: var(--panel); border-bottom: 4px solid transparent; transition: transform .2s var(--arrive), border-color .2s;
+}
+.tile svg { color: var(--ink); margin-bottom: 6px; transition: color .2s; }
+.tile b { font: 600 1.15rem/1.15 var(--display); }
+.tile small { color: var(--muted); font-size: .85rem; line-height: 1.35; }
+.tile:hover { transform: translateY(-2px); border-bottom-color: var(--line); }
+.tile:hover svg { color: var(--line-deep); }
+.icon-t { font: 700 13px var(--display); fill: currentColor; }
+.icon-t.inv { fill: var(--panel); }
+.icon-t.big { font-size: 30px; }
+
+/* ---- route map ---- */
+
+.route-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 20px; list-style: none; margin: 0; padding: 0; color: var(--muted); font-size: .9rem; }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.legend .train { width: 30px; }
+.rline { margin-top: 14px; padding: 18px 22px 20px; background: var(--panel); border-radius: 6px; border-left: 8px solid var(--line); }
+.rline-head { display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 16px; }
+.rline-title h3 { margin: 0; font-size: 1.3rem; }
+.rline-title p { margin: 0; color: var(--muted); font-size: .9rem; }
+.rline-title b { color: var(--ink); }
+.rline-head .pbar { max-width: 320px; justify-self: end; width: 100%; }
+.halves { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 8px; }
+.half { position: relative; }
+.half-name { display: block; font: 600 .85rem var(--display); color: var(--muted); margin: 6px 0 22px; }
+.rstations { display: grid; grid-template-columns: repeat(6, 1fr); list-style: none; margin: 0; padding: 0; }
+.rstn { position: relative; transition: --p .9s var(--arrive); }
+.rstn::before {   /* rail segment from the previous station */
+  content: ""; position: absolute; top: 12px; right: 50%; width: 100%; height: 6px; background: var(--line);
+}
+.rstn:first-child::before { display: none; }
+.rstn > button {
+  position: relative; z-index: 1; display: grid; justify-items: center; gap: 2px; width: 100%;
+  border: 0; background: none; padding: 0 2px 4px; font-weight: 400; border-radius: 6px;
+}
+.rdot {
+  display: block; width: 30px; height: 30px; border-radius: 50%; border: 3px solid var(--line);
+  background: radial-gradient(var(--panel) 0 9px, transparent 10px), conic-gradient(var(--line) calc(var(--p) * 360deg), var(--rule) 0);
+}
+.rdot.key { width: 18px; height: 18px; border-width: 3px; background: var(--panel); }
+.rdot.key.started { background: conic-gradient(var(--line) 50%, var(--panel) 0); }
+.rdot.key.done, .rstn.done .rdot { background: var(--line); }
+.rnum { font: 700 .95rem var(--display); color: var(--muted); font-variant-numeric: tabular-nums; }
+.rname { font: 500 .95rem/1.15 var(--display); text-align: center; overflow-wrap: anywhere; }
+.rstn > button:hover .rname { text-decoration: underline; }
+.rstn.at .rdot { box-shadow: 0 0 0 4px var(--panel), 0 0 0 7px var(--ink); }
+.rstn.at .rname, .rstn.at .rnum { color: var(--ink); font-weight: 700; }
+.rstn.picked > button { background: var(--guide); }
+.rstn .train { position: absolute; z-index: 2; top: -24px; left: calc(50% - 17px); width: 34px; animation: pull-in 1.1s var(--arrive) .2s both; }
+@keyframes pull-in { from { transform: translateX(-120px); opacity: 0; } }
+.legend .train, .train { display: block; }
+
+.scard { margin-top: 16px; padding: 18px 20px; border: 2px solid var(--line); border-radius: 6px; animation: rise .3s var(--arrive) both; }
+.scard-head { display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: start; }
+.scard-title h3 { margin: 0; font-size: 1.6rem; }
+.scard-title p { margin: 2px 0 0; color: var(--muted); }
+.scard-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; }
+.close { padding: .3rem .7rem; font-size: 1.2rem; line-height: 1; }
+.you { font-weight: 700; color: var(--line-deep); }
+.scard-parts { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; list-style: none; margin: 16px 0 0; padding: 0; }
+.scard-parts li { display: grid; gap: 6px; }
+.scard-parts a { font-weight: 600; }
+.scard-grammar { margin: 14px 0 0; color: var(--muted); font-size: .95rem; }
+.scard-grammar b { color: var(--ink); }
+@keyframes rise { from { transform: translateY(8px); opacity: 0; } }
+
+.settings { margin-top: 40px; border-top: 2px solid var(--rule); padding-top: 12px; max-width: 70ch; }
+.settings summary { cursor: pointer; font-weight: 700; padding: .4rem 0; }
+.settings label { display: flex; align-items: center; gap: .75rem; margin: .9rem 0; }
+.settings input[type="number"] { width: 5.5rem; padding: .4rem .5rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); }
+.settings-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.settings-row label.button { margin: 0; }
+
+/* ---- station page ---- */
+
+.station .board { min-height: 0; }
+.station .board-name { font-size: clamp(2.2rem, 4.6vw, 4rem); }
+.station-bar {
+  position: sticky; top: var(--top); z-index: 10; display: flex; align-items: center; gap: 16px;
+  margin-top: 20px; background: var(--platform); border-bottom: 2px solid var(--rule);
+}
+.tabs { display: flex; gap: 2px; flex: 1; min-width: 0; }
+.tabs a {
+  padding: .7rem 1rem; margin-bottom: -2px; white-space: nowrap; text-decoration: none; color: var(--muted); font-weight: 600;
+  border-bottom: 4px solid transparent;
+}
+.tabs a:hover { color: var(--ink); }
+.tabs a.on { color: var(--ink); border-bottom-color: var(--line); }
+.station-bar > button { flex: none; padding: .35rem .8rem; font-size: .9rem; }
+.station-bar > .you { flex: none; font-size: .9rem; }
+.tab-body { padding-top: 24px; }
+.soon { max-width: 70ch; padding: 20px 22px; background: var(--panel); border-radius: 6px; border-left: 6px solid var(--line); }
+.glist { margin: 0 0 16px; padding-left: 1.4em; font: 600 1.35rem/1.5 var(--display); }
+
+.masthead h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
+.masthead p { margin: .4rem 0 24px; color: var(--muted); max-width: 70ch; }
+
+/* ---- narrower screens ---- */
+
+@media (max-width: 1099px) {
+  .hero { grid-template-columns: 1fr; }
+  .scard-parts { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 899px) {
+  .topbar { flex-wrap: wrap; gap: 4px 16px; padding: 8px 16px 0; }
+  .topnav { order: 3; flex-basis: 100%; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 8px; }
+  .tb-stop { padding-bottom: 6px; }
+  .brand { padding-bottom: 6px; }
+  :root { --top: 106px; }
+}
+@media (max-width: 699px) {
+  main { padding: 16px 16px 56px; }
+  .brand-name small { display: none; }
+  .brand-name b { font-size: 1.1rem; }
+  .board-body { padding: 18px 18px 16px; gap: 16px; }
+  .gleis { width: 48px; height: 48px; font-size: 1.9rem; }
+  .board-name { font-size: clamp(2rem, 10vw, 2.8rem) !important; }
+  .band { grid-template-columns: 1fr 1fr; padding: 0 16px; font-size: 1rem; }
+  .band-dots { display: none; }
+  .go { grid-template-columns: 1fr; justify-items: start; padding: 20px; }
+  .ring { width: 108px; }
+  .btn.big { width: 100%; justify-content: center; }
+
+  /* rails turn vertical: stops stacked, names beside them */
+  .plan, .rstations { grid-template-columns: 1fr; padding: 12px 16px; }
+  .plan li::before, .rstn::before { top: -50%; left: 12px; width: 5px; height: 100%; right: auto; }
+  .rstn::before { left: 12.5px; }
+  .plan a, .rstn > button { grid-template-columns: auto auto 1fr; justify-items: start; align-items: center; gap: 12px; text-align: left; padding: 6px 0; }
+  .plan small { min-height: 0; }
+  .rstations { padding: 0; }
+  .rstn .train { top: 12px; left: auto; right: 6px; width: 30px; }
+  .rline { padding: 14px 14px 16px 28px; }
+  .rline-head { grid-template-columns: auto 1fr; }
+  .rline-head .pbar { grid-column: 1 / -1; max-width: none; }
+  .halves { grid-template-columns: 1fr; gap: 0; }
+  .half-name { margin: 8px 0 6px; }
+  .scard-head { grid-template-columns: 1fr; }
+  .scard-actions { justify-content: flex-start; }
+  .scard-parts { grid-template-columns: repeat(2, 1fr); }
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+  .station-bar { flex-wrap: wrap; margin-top: 16px; gap: 0 12px; }
+  .tabs { flex-basis: 100%; overflow-x: auto; scrollbar-width: none; }
+  .tabs a { padding: .6rem .7rem; }
+  .station-bar > button, .station-bar > .you { margin: 6px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript>Path to Germany needs JavaScript turned on.</noscript>
+<script>
+window.__DATA = {"syllabus":[{"level":"A1","title":"Start Deutsch 1","en":"Goethe-Zertifikat A1","stations":[{"de":"Hallo!","en":"Hello!","can":"Greet people, say your name, spell it and count to 100","grammar":[["a1-pronouns","Personal pronouns: ich, du, Sie"],["a1-present-regular","Present tense: ich heiße, du heißt"],["a1-w-questions","W-questions: wie, wer, wo, woher"]],"n":1,"k":1,"level":"A1"},{"de":"Ich und du","en":"Me and you","can":"Say where you come from, where you live and which languages you speak","grammar":[["a1-sein","sein: ich bin, du bist, er ist"],["a1-present-plural","Present tense: wir, ihr, sie"],["a1-yes-no","Yes/no questions: Kommst du aus Indien?"],["a1-v2","The verb in position 2"]],"n":2,"k":2,"level":"A1"},{"de":"Familie","en":"Family","can":"Talk about your family, ages and jobs","grammar":[["a1-haben","haben: ich habe, du hast"],["a1-articles","der, die, das and ein, eine"],["a1-possessive-nom","mein, dein, sein, ihr"]],"n":3,"k":3,"level":"A1"},{"de":"Essen und Trinken","en":"Food and drink","can":"Say what you like to eat, order in a café and shop for food","grammar":[["a1-accusative","Accusative: den, einen"],["a1-moechten","möchten: Ich möchte einen Kaffee"],["a1-kein-nicht","kein or nicht"]],"n":4,"k":4,"level":"A1"},{"de":"Wohnen","en":"Living","can":"Describe your flat, its rooms and furniture","grammar":[["a1-plurals","Noun plurals: -e, -en, -er, -s, umlaut"],["a1-es-gibt","es gibt + accusative"],["a1-adj-sein","Adjectives after sein: Das Zimmer ist groß"]],"n":5,"k":5,"level":"A1"},{"de":"Mein Tag","en":"My day","can":"Tell the time and describe your daily routine","grammar":[["a1-separable","Separable verbs: Ich stehe um 7 Uhr auf"],["a1-time-preps","Time: um, am, von … bis"],["a1-inversion","Inversion: Am Montag arbeite ich"]],"n":6,"k":6,"level":"A1"},{"de":"Freizeit","en":"Free time","can":"Talk about hobbies and make plans with friends","grammar":[["a1-stem-change","Stem-changing verbs: fahren → fährt, lesen → liest"],["a1-gern","gern, lieber, am liebsten"],["a1-koennen-wollen","können and wollen + infinitive at the end"]],"n":7,"k":7,"level":"A1"},{"de":"Einkaufen","en":"Shopping","can":"Ask for things in a shop, ask prices and pay","grammar":[["a1-acc-pronouns","Accusative pronouns: mich, dich, ihn, sie, es"],["a1-possessive-acc","Possessives in the accusative: meinen, deinen"],["a1-welch-dies","welcher? dieser"]],"n":8,"k":8,"level":"A1"},{"de":"In der Stadt","en":"In town","can":"Ask the way, understand directions and use public transport","grammar":[["a1-imperative","Imperative: Gehen Sie! Geh! Geht!"],["a1-dative-preps","mit, zu, von, aus, bei, nach + dative"],["a1-wo-wohin-basic","Wo? Woher? Wohin?"]],"n":9,"k":9,"level":"A1"},{"de":"Gesundheit","en":"Health","can":"Say what hurts, make a doctor's appointment and follow advice","grammar":[["a1-muessen","müssen"],["a1-duerfen","dürfen"],["a1-modal-sentence","Modal verb sentences: the verb bracket"]],"n":10,"k":10,"level":"A1"},{"de":"Reisen","en":"Travel","can":"Say what you did on a trip and buy a ticket","grammar":[["a1-perfekt-haben","Perfekt with haben: Ich habe gekauft"],["a1-perfekt-sein","Perfekt with sein: Ich bin gefahren"],["a1-partizip-irregular","Irregular Partizip II: gegessen, getrunken"]],"n":11,"k":11,"level":"A1"},{"de":"Feste und Wetter","en":"Holidays and weather","can":"Say dates, invite people, and talk about the weather and seasons","grammar":[["a1-dates","Dates: am ersten Mai, im Juli"],["a1-es-weather","es: Es regnet, es ist kalt"],["a1-perfekt-separable","Perfekt of separable verbs: eingekauft"]],"n":12,"k":12,"level":"A1"}]},{"level":"A2","title":"Goethe-Zertifikat A2","en":"Goethe-Zertifikat A2","stations":[{"de":"Kennenlernen","en":"Getting to know people","can":"Tell your story: where you grew up, studied and worked","grammar":[["a2-perfekt-review","Perfekt review: haben or sein?"],["a2-werden","werden as a full verb: Ich werde Ärztin"],["a2-denn-aber","und, aber, oder, denn, sondern"]],"n":13,"k":1,"level":"A2"},{"de":"Wohnen und Umziehen","en":"Living and moving","can":"Say where things are and where you put them","grammar":[["a2-two-way","Two-way prepositions: Wo? dative, Wohin? accusative"],["a2-stellen-stehen","stellen/stehen, legen/liegen, hängen"],["a2-dative-articles","Dative articles: dem, der, den"]],"n":14,"k":2,"level":"A2"},{"de":"Arbeit","en":"Work","can":"Talk about your job, applications and the working day","grammar":[["a2-weil","weil: the verb goes to the end"],["a2-dass","dass: Ich glaube, dass …"],["a2-deshalb","deshalb: the verb comes right after"]],"n":15,"k":3,"level":"A2"},{"de":"Freizeit und Vereine","en":"Free time and clubs","can":"Talk about clubs, interests and what you look forward to","grammar":[["a2-reflexive","Reflexive verbs: sich freuen, sich treffen"],["a2-verb-preps","Verbs with prepositions: warten auf, sich interessieren für"],["a2-da-wo","worauf? darauf: questions and pronouns"]],"n":16,"k":4,"level":"A2"},{"de":"Einkaufen und Kleidung","en":"Shopping and clothes","can":"Describe clothes, compare them and buy them","grammar":[["a2-adj-der","Adjective endings after der, die, das"],["a2-adj-ein","Adjective endings after ein, kein, mein"],["a2-adj-none","Adjective endings with no article"]],"n":17,"k":5,"level":"A2"},{"de":"Gesundheit","en":"Health","can":"Describe symptoms and give and take advice","grammar":[["a2-wenn","wenn: if and whenever"],["a2-sollte","Advice: Du solltest …, An deiner Stelle würde ich …"],["a2-dative-pronouns","Dative pronouns: mir, dir, ihm, ihr"]],"n":18,"k":6,"level":"A2"},{"de":"Reisen und Verkehr","en":"Travel and transport","can":"Tell a travel story and handle delays and tickets","grammar":[["a2-praeteritum-sein-haben","Präteritum: war, hatte"],["a2-praeteritum-modals","Präteritum of modals: konnte, musste, wollte"],["a2-local-preps","Places: in den Bergen, am Meer, an die Ostsee"]],"n":19,"k":7,"level":"A2"},{"de":"Medien","en":"Media","can":"Talk about phones, internet and TV and ask polite questions","grammar":[["a2-indirect-questions","Indirect questions: Wissen Sie, wo …?"],["a2-ob","ob: Ich weiß nicht, ob …"],["a2-trotzdem","trotzdem: still, nevertheless"]],"n":20,"k":8,"level":"A2"},{"de":"Feste","en":"Celebrations","can":"Plan a party, give presents and say thank you","grammar":[["a2-dative-verbs","Verbs with the dative: helfen, gefallen, gehören"],["a2-two-objects","Two objects: Ich schenke dir ein Buch"],["a2-genitive-names","Names with -s: Lenas Geburtstag"]],"n":21,"k":9,"level":"A2"},{"de":"Schule und Lernen","en":"School and learning","can":"Compare schools, subjects and ways of learning","grammar":[["a2-comparative","Comparative: größer als, so groß wie"],["a2-superlative","Superlative: am größten, der größte"],["a2-praeteritum-review","Talking about the past: war, hatte, konnte"]],"n":22,"k":10,"level":"A2"},{"de":"Dienstleistungen","en":"Services","can":"Make polite requests at the bank, post office or repair shop","grammar":[["a2-konj-polite","Polite requests: Könnten Sie …? Würden Sie …?"],["a2-haette-gern","Ich hätte gern …"],["a2-lassen","lassen: Ich lasse das Fahrrad reparieren"]],"n":23,"k":11,"level":"A2"},{"de":"Natur und Umwelt","en":"Nature and the environment","can":"Talk about the weather, nature and what you do for the environment","grammar":[["a2-zu-infinitive","zu + infinitive: Ich versuche, weniger zu fahren"],["a2-deshalb-trotzdem","deshalb or trotzdem?"],["a2-man","man: Man sollte Müll trennen"]],"n":24,"k":12,"level":"A2"}]},{"level":"B1","title":"Goethe-Zertifikat B1","en":"Goethe-Zertifikat B1","stations":[{"de":"Zusammenleben","en":"Living together","can":"Talk about neighbours, flat-shares and rules at home","grammar":[["b1-relative-nom-acc","Relative clauses: der Mann, der / den …"],["b1-relative-dat","Relative clauses in the dative: dem, der, denen"],["b1-relative-preps","Relative clauses with prepositions: mit dem, über die"]],"n":25,"k":1,"level":"B1"},{"de":"Arbeitswelt","en":"The world of work","can":"Describe processes at work and discuss working conditions","grammar":[["b1-passive-present","Passive: Das Paket wird geliefert"],["b1-passive-past","Passive in the past: wurde gebaut"],["b1-passive-modal","Passive with modals: muss gemacht werden"]],"n":26,"k":2,"level":"B1"},{"de":"Bildung","en":"Education","can":"Tell the story of your education and compare school systems","grammar":[["b1-praeteritum","Präteritum of all verbs: ging, kam, fand"],["b1-praeteritum-mixed","Mixed verbs: dachte, brachte, wusste"],["b1-seit-bis","seit and bis as conjunctions"]],"n":27,"k":3,"level":"B1"},{"de":"Gesundheit und Sport","en":"Health and sport","can":"Talk about wishes, healthy habits and what you would do","grammar":[["b1-konj-wish","Wishes: Ich wäre gern …, Wenn ich doch …"],["b1-konj-unreal","Unreal conditions: Wenn ich Zeit hätte, würde ich …"],["b1-konj-past","Konjunktiv II in the past: hätte gemacht"]],"n":28,"k":4,"level":"B1"},{"de":"Medien und Kommunikation","en":"Media and communication","can":"Give your opinion on media and report what others said","grammar":[["b1-obwohl","obwohl: although"],["b1-trotzdem-obwohl","obwohl or trotzdem?"],["b1-indirect-speech","Indirect speech: Er sagt, er sei krank (recognition)"]],"n":29,"k":5,"level":"B1"},{"de":"Konsum","en":"Consumption","can":"Complain about a purchase and discuss shopping habits","grammar":[["b1-genitive","The genitive: des Mannes, der Frau"],["b1-genitive-preps","wegen, trotz, während + genitive"],["b1-adj-genitive","Adjective endings in the genitive"]],"n":30,"k":6,"level":"B1"},{"de":"Reisen und Mobilität","en":"Travel and mobility","can":"Tell a story in the right order and plan a trip","grammar":[["b1-plusquamperfekt","Plusquamperfekt: hatte gemacht, war gefahren"],["b1-nachdem","nachdem"],["b1-bevor","bevor"]],"n":31,"k":7,"level":"B1"},{"de":"Umwelt","en":"The environment","can":"Discuss environmental problems and say what you do and why","grammar":[["b1-um-zu","um … zu: purpose"],["b1-damit","damit: purpose with a new subject"],["b1-zu-infinitive","Infinitive with zu: Es ist wichtig, … zu …"]],"n":32,"k":8,"level":"B1"},{"de":"Kultur","en":"Culture","can":"Talk about films, books, music and events","grammar":[["b1-sowohl","sowohl … als auch, nicht nur … sondern auch"],["b1-weder","weder … noch, entweder … oder"],["b1-je-desto","je … desto"]],"n":33,"k":9,"level":"B1"},{"de":"Politik und Gesellschaft","en":"Politics and society","can":"Talk about society, rules and plans for the future","grammar":[["b1-n-declension","n-declension: den Kollegen, dem Herrn"],["b1-futur","Futur I: Ich werde …"],["b1-participle-adj","Participles as adjectives: das gekochte Ei (recognition)"]],"n":34,"k":10,"level":"B1"},{"de":"Zukunft und Wünsche","en":"The future and wishes","can":"Talk about life events and plans","grammar":[["b1-als-wenn","als or wenn?"],["b1-waehrend","während: while"],["b1-verb-preps-review","Verbs with prepositions: sich bewerben um, träumen von"]],"n":35,"k":11,"level":"B1"},{"de":"Prüfungstraining","en":"Exam training","can":"Bring it all together for the B1 exam","grammar":[["b1-connectors-review","Connectors review: weil, obwohl, damit, nachdem"],["b1-word-order-review","Word order review: TeKaMoLo"],["b1-redemittel","Exam phrases: giving opinions and reasons"]],"n":36,"k":12,"level":"B1"}]}]};
+const __vendor0 = (() => {
+var e,n,_,t,o,r,u,l={},i=[],c=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;function s(e,n){for(var _ in n)e[_]=n[_];return e}function f(e){var n=e.parentNode;n&&n.removeChild(e)}function a(n,_,t){var o,r,u,l={};for(u in _)"key"==u?o=_[u]:"ref"==u?r=_[u]:l[u]=_[u];if(arguments.length>2&&(l.children=arguments.length>3?e.call(arguments,2):t),"function"==typeof n&&null!=n.defaultProps)for(u in n.defaultProps)void 0===l[u]&&(l[u]=n.defaultProps[u]);return p(n,l,o,r,null)}function p(e,t,o,r,u){var l={type:e,props:t,key:o,ref:r,__k:null,__:null,__b:0,__e:null,__d:void 0,__c:null,__h:null,constructor:void 0,__v:null==u?++_:u};return null!=n.vnode&&n.vnode(l),l}function h(e){return e.children}function d(e,n){this.props=e,this.context=n}function v(e,n){if(null==n)return e.__?v(e.__,e.__.__k.indexOf(e)+1):null;for(var _;n<e.__k.length;n++)if(null!=(_=e.__k[n])&&null!=_.__e)return _.__e;return"function"==typeof e.type?v(e):null}function y(e){var n,_;if(null!=(e=e.__)&&null!=e.__c){for(e.__e=e.__c.base=null,n=0;n<e.__k.length;n++)if(null!=(_=e.__k[n])&&null!=_.__e){e.__e=e.__c.base=_.__e;break}return y(e)}}function m(e){(!e.__d&&(e.__d=!0)&&t.push(e)&&!g.__r++||r!==n.debounceRendering)&&((r=n.debounceRendering)||o)(g)}function g(){for(var e;g.__r=t.length;)e=t.sort(function(e,n){return e.__v.__b-n.__v.__b}),t=[],e.some(function(e){var n,_,t,o,r,u;e.__d&&(r=(o=(n=e).__v).__e,(u=n.__P)&&(_=[],(t=s({},o)).__v=o.__v+1,P(u,o,t,n.__n,void 0!==u.ownerSVGElement,null!=o.__h?[r]:null,_,null==r?v(o):r,o.__h),D(_,o),o.__e!=r&&y(o)))})}function k(e,n,_,t,o,r,u,c,s,f){var a,d,y,m,g,k,x,H=t&&t.__k||i,E=H.length;for(_.__k=[],a=0;a<n.length;a++)if(null!=(m=_.__k[a]=null==(m=n[a])||"boolean"==typeof m?null:"string"==typeof m||"number"==typeof m||"bigint"==typeof m?p(null,m,null,null,m):Array.isArray(m)?p(h,{children:m},null,null,null):m.__b>0?p(m.type,m.props,m.key,null,m.__v):m)){if(m.__=_,m.__b=_.__b+1,null===(y=H[a])||y&&m.key==y.key&&m.type===y.type)H[a]=void 0;else for(d=0;d<E;d++){if((y=H[d])&&m.key==y.key&&m.type===y.type){H[d]=void 0;break}y=null}P(e,m,y=y||l,o,r,u,c,s,f),g=m.__e,(d=m.ref)&&y.ref!=d&&(x||(x=[]),y.ref&&x.push(y.ref,null,m),x.push(d,m.__c||g,m)),null!=g?(null==k&&(k=g),"function"==typeof m.type&&null!=m.__k&&m.__k===y.__k?m.__d=s=b(m,s,e):s=C(e,m,y,H,g,s),f||"option"!==_.type?"function"==typeof _.type&&(_.__d=s):e.value=""):s&&y.__e==s&&s.parentNode!=e&&(s=v(y))}for(_.__e=k,a=E;a--;)null!=H[a]&&("function"==typeof _.type&&null!=H[a].__e&&H[a].__e==_.__d&&(_.__d=v(t,a+1)),U(H[a],H[a]));if(x)for(a=0;a<x.length;a++)T(x[a],x[++a],x[++a])}function b(e,n,_){var t,o;for(t=0;t<e.__k.length;t++)(o=e.__k[t])&&(o.__=e,n="function"==typeof o.type?b(o,n,_):C(_,o,o,e.__k,o.__e,n));return n}function C(e,n,_,t,o,r){var u,l,i;if(void 0!==n.__d)u=n.__d,n.__d=void 0;else if(null==_||o!=r||null==o.parentNode)e:if(null==r||r.parentNode!==e)e.appendChild(o),u=null;else{for(l=r,i=0;(l=l.nextSibling)&&i<t.length;i+=2)if(l==o)break e;e.insertBefore(o,r),u=r}return void 0!==u?u:o.nextSibling}function x(e,n,_){"-"===n[0]?e.setProperty(n,_):e[n]=null==_?"":"number"!=typeof _||c.test(n)?_:_+"px"}function H(e,n,_,t,o){var r;e:if("style"===n)if("string"==typeof _)e.style.cssText=_;else{if("string"==typeof t&&(e.style.cssText=t=""),t)for(n in t)_&&n in _||x(e.style,n,"");if(_)for(n in _)t&&_[n]===t[n]||x(e.style,n,_[n])}else if("o"===n[0]&&"n"===n[1])r=n!==(n=n.replace(/Capture$/,"")),n=n.toLowerCase()in e?n.toLowerCase().slice(2):n.slice(2),e.l||(e.l={}),e.l[n+r]=_,_?t||e.addEventListener(n,r?S:E,r):e.removeEventListener(n,r?S:E,r);else if("dangerouslySetInnerHTML"!==n){if(o)n=n.replace(/xlink[H:h]/,"h").replace(/sName$/,"s");else if("href"!==n&&"list"!==n&&"form"!==n&&"tabIndex"!==n&&"download"!==n&&n in e)try{e[n]=null==_?"":_;break e}catch(e){}"function"==typeof _||(null!=_&&(!1!==_||"a"===n[0]&&"r"===n[1])?e.setAttribute(n,_):e.removeAttribute(n))}}function E(e){this.l[e.type+!1](n.event?n.event(e):e)}function S(e){this.l[e.type+!0](n.event?n.event(e):e)}function P(e,_,t,o,r,u,l,i,c){var f,a,p,v,y,m,g,b,C,x,H,E=_.type;if(void 0!==_.constructor)return null;null!=t.__h&&(c=t.__h,i=_.__e=t.__e,_.__h=null,u=[i]),(f=n.__b)&&f(_);try{e:if("function"==typeof E){if(b=_.props,C=(f=E.contextType)&&o[f.__c],x=f?C?C.props.value:f.__:o,t.__c?g=(a=_.__c=t.__c).__=a.__E:("prototype"in E&&E.prototype.render?_.__c=a=new E(b,x):(_.__c=a=new d(b,x),a.constructor=E,a.render=A),C&&C.sub(a),a.props=b,a.state||(a.state={}),a.context=x,a.__n=o,p=a.__d=!0,a.__h=[]),null==a.__s&&(a.__s=a.state),null!=E.getDerivedStateFromProps&&(a.__s==a.state&&(a.__s=s({},a.__s)),s(a.__s,E.getDerivedStateFromProps(b,a.__s))),v=a.props,y=a.state,p)null==E.getDerivedStateFromProps&&null!=a.componentWillMount&&a.componentWillMount(),null!=a.componentDidMount&&a.__h.push(a.componentDidMount);else{if(null==E.getDerivedStateFromProps&&b!==v&&null!=a.componentWillReceiveProps&&a.componentWillReceiveProps(b,x),!a.__e&&null!=a.shouldComponentUpdate&&!1===a.shouldComponentUpdate(b,a.__s,x)||_.__v===t.__v){a.props=b,a.state=a.__s,_.__v!==t.__v&&(a.__d=!1),a.__v=_,_.__e=t.__e,_.__k=t.__k,_.__k.forEach(function(e){e&&(e.__=_)}),a.__h.length&&l.push(a);break e}null!=a.componentWillUpdate&&a.componentWillUpdate(b,a.__s,x),null!=a.componentDidUpdate&&a.__h.push(function(){a.componentDidUpdate(v,y,m)})}a.context=x,a.props=b,a.state=a.__s,(f=n.__r)&&f(_),a.__d=!1,a.__v=_,a.__P=e,f=a.render(a.props,a.state,a.context),a.state=a.__s,null!=a.getChildContext&&(o=s(s({},o),a.getChildContext())),p||null==a.getSnapshotBeforeUpdate||(m=a.getSnapshotBeforeUpdate(v,y)),H=null!=f&&f.type===h&&null==f.key?f.props.children:f,k(e,Array.isArray(H)?H:[H],_,t,o,r,u,l,i,c),a.base=_.__e,_.__h=null,a.__h.length&&l.push(a),g&&(a.__E=a.__=null),a.__e=!1}else null==u&&_.__v===t.__v?(_.__k=t.__k,_.__e=t.__e):_.__e=w(t.__e,_,t,o,r,u,l,c);(f=n.diffed)&&f(_)}catch(e){_.__v=null,(c||null!=u)&&(_.__e=i,_.__h=!!c,u[u.indexOf(i)]=null),n.__e(e,_,t)}}function D(e,_){n.__c&&n.__c(_,e),e.some(function(_){try{e=_.__h,_.__h=[],e.some(function(e){e.call(_)})}catch(e){n.__e(e,_.__v)}})}function w(n,_,t,o,r,u,i,c){var s,a,p,h=t.props,d=_.props,y=_.type,m=0;if("svg"===y&&(r=!0),null!=u)for(;m<u.length;m++)if((s=u[m])&&(s===n||(y?s.localName==y:3==s.nodeType))){n=s,u[m]=null;break}if(null==n){if(null===y)return document.createTextNode(d);n=r?document.createElementNS("http://www.w3.org/2000/svg",y):document.createElement(y,d.is&&d),u=null,c=!1}if(null===y)h===d||c&&n.data===d||(n.data=d);else{if(u=u&&e.call(n.childNodes),a=(h=t.props||l).dangerouslySetInnerHTML,p=d.dangerouslySetInnerHTML,!c){if(null!=u)for(h={},m=0;m<n.attributes.length;m++)h[n.attributes[m].name]=n.attributes[m].value;(p||a)&&(p&&(a&&p.__html==a.__html||p.__html===n.innerHTML)||(n.innerHTML=p&&p.__html||""))}if(function(e,n,_,t,o){var r;for(r in _)"children"===r||"key"===r||r in n||H(e,r,null,_[r],t);for(r in n)o&&"function"!=typeof n[r]||"children"===r||"key"===r||"value"===r||"checked"===r||_[r]===n[r]||H(e,r,n[r],_[r],t)}(n,d,h,r,c),p)_.__k=[];else if(m=_.props.children,k(n,Array.isArray(m)?m:[m],_,t,o,r&&"foreignObject"!==y,u,i,u?u[0]:t.__k&&v(t,0),c),null!=u)for(m=u.length;m--;)null!=u[m]&&f(u[m]);c||("value"in d&&void 0!==(m=d.value)&&(m!==n.value||"progress"===y&&!m)&&H(n,"value",m,h.value,!1),"checked"in d&&void 0!==(m=d.checked)&&m!==n.checked&&H(n,"checked",m,h.checked,!1))}return n}function T(e,_,t){try{"function"==typeof e?e(_):e.current=_}catch(e){n.__e(e,t)}}function U(e,_,t){var o,r;if(n.unmount&&n.unmount(e),(o=e.ref)&&(o.current&&o.current!==e.__e||T(o,null,_)),null!=(o=e.__c)){if(o.componentWillUnmount)try{o.componentWillUnmount()}catch(e){n.__e(e,_)}o.base=o.__P=null}if(o=e.__k)for(r=0;r<o.length;r++)o[r]&&U(o[r],_,"function"!=typeof e.type);t||null==e.__e||f(e.__e),e.__e=e.__d=void 0}function A(e,n,_){return this.constructor(e,_)}function M(_,t,o){var r,u,i;n.__&&n.__(_,t),u=(r="function"==typeof o)?null:o&&o.__k||t.__k,i=[],P(t,_=(!r&&o||t).__k=a(h,null,[_]),u||l,l,void 0!==t.ownerSVGElement,!r&&o?[o]:u?null:t.firstChild?e.call(t.childNodes):null,i,!r&&o?o:u?u.__e:t.firstChild,r),D(i,_)}function F(e,n){var _={__c:n="__cC"+u++,__:e,Consumer:function(e,n){return e.children(n)},Provider:function(e){var _,t;return this.getChildContext||(_=[],(t={})[n]=this,this.getChildContext=function(){return t},this.shouldComponentUpdate=function(e){this.props.value!==e.value&&_.some(m)},this.sub=function(e){_.push(e);var n=e.componentWillUnmount;e.componentWillUnmount=function(){_.splice(_.indexOf(e),1),n&&n.call(e)}}),e.children}};return _.Provider.__=_.Consumer.contextType=_}e=i.slice,n={__e:function(e,n){for(var _,t,o;n=n.__;)if((_=n.__c)&&!_.__)try{if((t=_.constructor)&&null!=t.getDerivedStateFromError&&(_.setState(t.getDerivedStateFromError(e)),o=_.__d),null!=_.componentDidCatch&&(_.componentDidCatch(e),o=_.__d),o)return _.__E=_}catch(n){e=n}throw e}},_=0,d.prototype.setState=function(e,n){var _;_=null!=this.__s&&this.__s!==this.state?this.__s:this.__s=s({},this.state),"function"==typeof e&&(e=e(s({},_),this.props)),e&&s(_,e),null!=e&&this.__v&&(n&&this.__h.push(n),m(this))},d.prototype.forceUpdate=function(e){this.__v&&(this.__e=!0,e&&this.__h.push(e),m(this))},d.prototype.render=h,t=[],o="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,g.__r=0,u=0;var L,N,W,R=0,I=[],O=n.__b,V=n.__r,q=n.diffed,B=n.__c,$=n.unmount;function j(e,_){n.__h&&n.__h(N,e,R||_),R=0;var t=N.__H||(N.__H={__:[],__h:[]});return e>=t.__.length&&t.__.push({}),t.__[e]}function G(e){return R=1,z(ie,e)}function z(e,n,_){var t=j(L++,2);return t.t=e,t.__c||(t.__=[_?_(n):ie(void 0,n),function(e){var n=t.t(t.__[0],e);t.__[0]!==n&&(t.__=[n,t.__[1]],t.__c.setState({}))}],t.__c=N),t.__}function J(e,_){var t=j(L++,3);!n.__s&&le(t.__H,_)&&(t.__=e,t.__H=_,N.__H.__h.push(t))}function K(e,_){var t=j(L++,4);!n.__s&&le(t.__H,_)&&(t.__=e,t.__H=_,N.__h.push(t))}function Q(e){return R=5,Y(function(){return{current:e}},[])}function X(e,n,_){R=6,K(function(){"function"==typeof e?e(n()):e&&(e.current=n())},null==_?_:_.concat(e))}function Y(e,n){var _=j(L++,7);return le(_.__H,n)&&(_.__=e(),_.__H=n,_.__h=e),_.__}function Z(e,n){return R=8,Y(function(){return e},n)}function ee(e){var n=N.context[e.__c],_=j(L++,9);return _.c=e,n?(null==_.__&&(_.__=!0,n.sub(N)),n.props.value):e.__}function ne(e,_){n.useDebugValue&&n.useDebugValue(_?_(e):e)}function _e(e){var n=j(L++,10),_=G();return n.__=e,N.componentDidCatch||(N.componentDidCatch=function(e){n.__&&n.__(e),_[1](e)}),[_[0],function(){_[1](void 0)}]}function te(){I.forEach(function(e){if(e.__P)try{e.__H.__h.forEach(re),e.__H.__h.forEach(ue),e.__H.__h=[]}catch(_){e.__H.__h=[],n.__e(_,e.__v)}}),I=[]}n.__b=function(e){N=null,O&&O(e)},n.__r=function(e){V&&V(e),L=0;var n=(N=e.__c).__H;n&&(n.__h.forEach(re),n.__h.forEach(ue),n.__h=[])},n.diffed=function(e){q&&q(e);var _=e.__c;_&&_.__H&&_.__H.__h.length&&(1!==I.push(_)&&W===n.requestAnimationFrame||((W=n.requestAnimationFrame)||function(e){var n,_=function(){clearTimeout(t),oe&&cancelAnimationFrame(n),setTimeout(e)},t=setTimeout(_,100);oe&&(n=requestAnimationFrame(_))})(te)),N=void 0},n.__c=function(e,_){_.some(function(e){try{e.__h.forEach(re),e.__h=e.__h.filter(function(e){return!e.__||ue(e)})}catch(t){_.some(function(e){e.__h&&(e.__h=[])}),_=[],n.__e(t,e.__v)}}),B&&B(e,_)},n.unmount=function(e){$&&$(e);var _=e.__c;if(_&&_.__H)try{_.__H.__.forEach(re)}catch(e){n.__e(e,_.__v)}};var oe="function"==typeof requestAnimationFrame;function re(e){var n=N;"function"==typeof e.__c&&e.__c(),N=n}function ue(e){var n=N;e.__c=e.__(),N=n}function le(e,n){return!e||e.length!==n.length||n.some(function(n,_){return n!==e[_]})}function ie(e,n){return"function"==typeof n?n(e):n}var ce=function(e,n,_,t){var o;n[0]=0;for(var r=1;r<n.length;r++){var u=n[r++],l=n[r]?(n[0]|=u?1:2,_[n[r++]]):n[++r];3===u?t[0]=l:4===u?t[1]=Object.assign(t[1]||{},l):5===u?(t[1]=t[1]||{})[n[++r]]=l:6===u?t[1][n[++r]]+=l+"":u?(o=e.apply(l,ce(e,l,_,["",null])),t.push(o),l[0]?n[0]|=2:(n[r-2]=0,n[r]=o)):t.push(l)}return t},se=new Map,fe=function(e){var n=se.get(this);return n||(n=new Map,se.set(this,n)),(n=ce(this,n.get(e)||(n.set(e,n=function(e){for(var n,_,t=1,o="",r="",u=[0],l=function(e){1===t&&(e||(o=o.replace(/^\s*\n\s*|\s*\n\s*$/g,"")))?u.push(0,e,o):3===t&&(e||o)?(u.push(3,e,o),t=2):2===t&&"..."===o&&e?u.push(4,e,0):2===t&&o&&!e?u.push(5,0,!0,o):t>=5&&((o||!e&&5===t)&&(u.push(t,0,o,_),t=6),e&&(u.push(t,e,0,_),t=6)),o=""},i=0;i<e.length;i++){i&&(1===t&&l(),l(i));for(var c=0;c<e[i].length;c++)n=e[i][c],1===t?"<"===n?(l(),u=[u],t=3):o+=n:4===t?"--"===o&&">"===n?(t=1,o=""):o=n+o[0]:r?n===r?r="":o+=n:'"'===n||"'"===n?r=n:">"===n?(l(),t=1):t&&("="===n?(t=5,_=o,o=""):"/"===n&&(t<5||">"===e[i][c+1])?(l(),3===t&&(u=u[0]),t=u,(u=u[0]).push(2,0,t),t=0):" "===n||"\t"===n||"\n"===n||"\r"===n?(l(),t=2):o+=n),3===t&&"!--"===o&&(t=4,u=u[0])}return l(),u}(e)),n),arguments,[])).length>1?n:n[0]}.bind(a);
+return {h: a, html: fe, render: M, Component: d, createContext: F, useState: G, useReducer: z, useEffect: J, useLayoutEffect: K, useRef: Q, useImperativeHandle: X, useMemo: Y, useCallback: Z, useContext: ee, useDebugValue: ne, useErrorBoundary: _e}
+})();
+const __vendor1 = (() => {
+class FSRSError extends Error {
+  constructor(message = "FSRS Error") {
+    super(message);
+    this.name = "FSRSError";
+    Error.captureStackTrace?.(this, FSRSError);
+  }
+}
+class FSRSValidationError extends FSRSError {
+  constructor(message) {
+    super(message);
+    this.name = "FSRSValidationError";
+    Error.captureStackTrace?.(this, FSRSValidationError);
+  }
+}
+
+var State = /* @__PURE__ */ ((State2) => {
+  State2[State2["New"] = 0] = "New";
+  State2[State2["Learning"] = 1] = "Learning";
+  State2[State2["Review"] = 2] = "Review";
+  State2[State2["Relearning"] = 3] = "Relearning";
+  return State2;
+})(State || {});
+var Rating = /* @__PURE__ */ ((Rating2) => {
+  Rating2[Rating2["Manual"] = 0] = "Manual";
+  Rating2[Rating2["Again"] = 1] = "Again";
+  Rating2[Rating2["Hard"] = 2] = "Hard";
+  Rating2[Rating2["Good"] = 3] = "Good";
+  Rating2[Rating2["Easy"] = 4] = "Easy";
+  return Rating2;
+})(Rating || {});
+
+class TypeConvert {
+  static card(card) {
+    return {
+      ...card,
+      state: TypeConvert.state(card.state),
+      due: TypeConvert.time(card.due),
+      last_review: card.last_review ? TypeConvert.time(card.last_review) : void 0
+    };
+  }
+  static rating(value) {
+    if (typeof value === "string") {
+      const firstLetter = value.charAt(0).toUpperCase();
+      const restOfString = value.slice(1).toLowerCase();
+      const ret = Rating[`${firstLetter}${restOfString}`];
+      if (ret === void 0) {
+        throw new FSRSValidationError(`Invalid rating:[${value}]`);
+      }
+      return ret;
+    } else if (typeof value === "number") {
+      return value;
+    }
+    throw new FSRSValidationError(`Invalid rating:[${value}]`);
+  }
+  static state(value) {
+    if (typeof value === "string") {
+      const firstLetter = value.charAt(0).toUpperCase();
+      const restOfString = value.slice(1).toLowerCase();
+      const ret = State[`${firstLetter}${restOfString}`];
+      if (ret === void 0) {
+        throw new FSRSValidationError(`Invalid state:[${value}]`);
+      }
+      return ret;
+    } else if (typeof value === "number") {
+      return value;
+    }
+    throw new FSRSValidationError(`Invalid state:[${value}]`);
+  }
+  static time(value) {
+    if (value instanceof Date) {
+      return value;
+    }
+    const date = new Date(value);
+    if (typeof value === "object" && value !== null && !Number.isNaN(Date.parse(value) || +date)) {
+      return date;
+    } else if (typeof value === "string") {
+      const timestamp = Date.parse(value);
+      if (!Number.isNaN(timestamp)) {
+        return new Date(timestamp);
+      } else {
+        throw new FSRSValidationError(`Invalid date:[${value}]`);
+      }
+    } else if (typeof value === "number") {
+      return new Date(value);
+    }
+    throw new FSRSValidationError(`Invalid date:[${value}]`);
+  }
+  static review_log(log) {
+    return {
+      ...log,
+      due: TypeConvert.time(log.due),
+      rating: TypeConvert.rating(log.rating),
+      state: TypeConvert.state(log.state),
+      review: TypeConvert.time(log.review)
+    };
+  }
+}
+
+/* istanbul ignore next -- @preserve */
+Date.prototype.scheduler = function(t, isDay) {
+  return date_scheduler(this, t, isDay);
+};
+/* istanbul ignore next -- @preserve */
+Date.prototype.diff = function(pre, unit) {
+  return date_diff(this, pre, unit);
+};
+/* istanbul ignore next -- @preserve */
+Date.prototype.format = function() {
+  return formatDate(this);
+};
+/* istanbul ignore next -- @preserve */
+Date.prototype.dueFormat = function(last_review, unit, timeUnit) {
+  return show_diff_message(this, last_review, unit, timeUnit);
+};
+function date_scheduler(now, t, isDay) {
+  return new Date(
+    isDay ? TypeConvert.time(now).getTime() + t * 24 * 60 * 60 * 1e3 : TypeConvert.time(now).getTime() + t * 60 * 1e3
+  );
+}
+function date_diff(now, pre, unit) {
+  if (!now || !pre) {
+    throw new FSRSValidationError("Invalid date");
+  }
+  const diff = TypeConvert.time(now).getTime() - TypeConvert.time(pre).getTime();
+  let r = 0;
+  switch (unit) {
+    case "days":
+      r = Math.floor(diff / (24 * 60 * 60 * 1e3));
+      break;
+    case "minutes":
+      r = Math.floor(diff / (60 * 1e3));
+      break;
+  }
+  return r;
+}
+function formatDate(dateInput) {
+  const date = TypeConvert.time(dateInput);
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  return `${year}-${padZero(month)}-${padZero(day)} ${padZero(hours)}:${padZero(
+    minutes
+  )}:${padZero(seconds)}`;
+}
+function padZero(num) {
+  return num < 10 ? `0${num}` : `${num}`;
+}
+const TIMEUNIT = [60, 60, 24, 31, 12];
+const TIMEUNITFORMAT = ["second", "min", "hour", "day", "month", "year"];
+function show_diff_message(due, last_review, unit, timeUnit = TIMEUNITFORMAT) {
+  due = TypeConvert.time(due);
+  last_review = TypeConvert.time(last_review);
+  if (timeUnit.length !== TIMEUNITFORMAT.length) {
+    timeUnit = TIMEUNITFORMAT;
+  }
+  let diff = due.getTime() - last_review.getTime();
+  let i = 0;
+  diff /= 1e3;
+  for (i = 0; i < TIMEUNIT.length; i++) {
+    if (diff < TIMEUNIT[i]) {
+      break;
+    } else {
+      diff /= TIMEUNIT[i];
+    }
+  }
+  return `${Math.floor(diff)}${unit ? timeUnit[i] : ""}`;
+}
+/* istanbul ignore next -- @preserve */
+function fixDate(value) {
+  return TypeConvert.time(value);
+}
+/* istanbul ignore next -- @preserve */
+function fixState(value) {
+  return TypeConvert.state(value);
+}
+/* istanbul ignore next -- @preserve */
+function fixRating(value) {
+  return TypeConvert.rating(value);
+}
+const Grades = Object.freeze([
+  Rating.Again,
+  Rating.Hard,
+  Rating.Good,
+  Rating.Easy
+]);
+const FUZZ_RANGES = [
+  {
+    start: 2.5,
+    end: 7,
+    factor: 0.15
+  },
+  {
+    start: 7,
+    end: 20,
+    factor: 0.1
+  },
+  {
+    start: 20,
+    end: Infinity,
+    factor: 0.05
+  }
+];
+function get_fuzz_range(interval, elapsed_days, maximum_interval) {
+  let delta = 1;
+  for (const range of FUZZ_RANGES) {
+    delta += range.factor * Math.max(Math.min(interval, range.end) - range.start, 0);
+  }
+  interval = Math.min(interval, maximum_interval);
+  let min_ivl = Math.max(2, Math.round(interval - delta));
+  const max_ivl = Math.min(Math.round(interval + delta), maximum_interval);
+  if (interval > elapsed_days) {
+    min_ivl = Math.max(min_ivl, elapsed_days + 1);
+  }
+  min_ivl = Math.min(min_ivl, max_ivl);
+  return { min_ivl, max_ivl };
+}
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+function roundTo(num, decimals) {
+  const factor = 10 ** decimals;
+  return Math.round(num * factor) / factor;
+}
+function dateDiffInDays(last, cur) {
+  const utc1 = Date.UTC(
+    last.getUTCFullYear(),
+    last.getUTCMonth(),
+    last.getUTCDate()
+  );
+  const utc2 = Date.UTC(
+    cur.getUTCFullYear(),
+    cur.getUTCMonth(),
+    cur.getUTCDate()
+  );
+  return Math.floor(
+    (utc2 - utc1) / 864e5
+    /** 1000 * 60 * 60 * 24*/
+  );
+}
+
+const ConvertStepUnitToMinutes = (step) => {
+  const unit = step.slice(-1);
+  const value = parseInt(step.slice(0, -1), 10);
+  if (Number.isNaN(value) || !Number.isFinite(value) || value < 0) {
+    throw new FSRSValidationError(`Invalid step value: ${step}`);
+  }
+  switch (unit) {
+    case "m":
+      return value;
+    case "h":
+      return value * 60;
+    case "d":
+      return value * 1440;
+    default:
+      throw new FSRSValidationError(
+        `Invalid step unit: ${step}, expected m/h/d`
+      );
+  }
+};
+const BasicLearningStepsStrategy = (params, state, cur_step) => {
+  const learning_steps = state === State.Relearning || state === State.Review ? params.relearning_steps : params.learning_steps;
+  const steps_length = learning_steps.length;
+  if (steps_length === 0 || cur_step >= steps_length) return {};
+  const firstStep = learning_steps[0];
+  const toMinutes = ConvertStepUnitToMinutes;
+  const getAgainInterval = () => {
+    return toMinutes(firstStep);
+  };
+  const getHardInterval = () => {
+    if (steps_length === 1) return Math.round(toMinutes(firstStep) * 1.5);
+    const nextStep = learning_steps[1];
+    return Math.round((toMinutes(firstStep) + toMinutes(nextStep)) / 2);
+  };
+  const getStepInfo = (index) => {
+    if (index < 0 || index >= steps_length) {
+      return null;
+    } else {
+      return learning_steps[index];
+    }
+  };
+  const getGoodMinutes = (step) => {
+    return toMinutes(step);
+  };
+  const result = {};
+  const step_info = getStepInfo(Math.max(0, cur_step));
+  if (state === State.Review) {
+    result[Rating.Again] = {
+      scheduled_minutes: toMinutes(step_info),
+      next_step: 0
+    };
+    return result;
+  } else {
+    result[Rating.Again] = {
+      scheduled_minutes: getAgainInterval(),
+      next_step: 0
+    };
+    result[Rating.Hard] = {
+      scheduled_minutes: getHardInterval(),
+      next_step: cur_step
+    };
+    const next_info = getStepInfo(cur_step + 1);
+    if (next_info) {
+      const nextMin = getGoodMinutes(next_info);
+      if (nextMin) {
+        result[Rating.Good] = {
+          scheduled_minutes: Math.round(nextMin),
+          next_step: cur_step + 1
+        };
+      }
+    }
+  }
+  return result;
+};
+
+function DefaultInitSeedStrategy() {
+  const time = this.review_time.getTime();
+  const reps = this.current.reps;
+  const mul = this.current.difficulty * this.current.stability;
+  return `${time}_${reps}_${mul}`;
+}
+function GenSeedStrategyWithCardId(card_id_field) {
+  return function() {
+    const card_id = Reflect.get(this.current, card_id_field) ?? 0;
+    const reps = this.current.reps;
+    return String(card_id + reps || 0);
+  };
+}
+
+var StrategyMode = /* @__PURE__ */ ((StrategyMode2) => {
+  StrategyMode2["SCHEDULER"] = "Scheduler";
+  StrategyMode2["LEARNING_STEPS"] = "LearningSteps";
+  StrategyMode2["SEED"] = "Seed";
+  return StrategyMode2;
+})(StrategyMode || {});
+
+class AbstractScheduler {
+  last;
+  current;
+  review_time;
+  next = /* @__PURE__ */ new Map();
+  algorithm;
+  strategies;
+  elapsed_days = 0;
+  // init
+  constructor(card, now, algorithm, strategies) {
+    this.algorithm = algorithm;
+    this.last = TypeConvert.card(card);
+    this.current = TypeConvert.card(card);
+    this.review_time = TypeConvert.time(now);
+    this.strategies = strategies;
+    this.init();
+  }
+  checkGrade(grade) {
+    if (!Number.isFinite(grade) || grade < 1 || grade > 4) {
+      throw new FSRSValidationError(`Invalid grade "${grade}",expected 1-4`);
+    }
+  }
+  init() {
+    const { state, last_review } = this.current;
+    let interval = 0;
+    if (state !== State.New && last_review) {
+      interval = dateDiffInDays(last_review, this.review_time);
+    }
+    this.current.last_review = this.review_time;
+    this.elapsed_days = interval;
+    this.current.elapsed_days = interval;
+    this.current.reps += 1;
+    let seed_strategy = DefaultInitSeedStrategy;
+    if (this.strategies) {
+      const custom_strategy = this.strategies.get(StrategyMode.SEED);
+      if (custom_strategy) {
+        seed_strategy = custom_strategy;
+      }
+    }
+    this.algorithm.seed = seed_strategy.call(this);
+  }
+  preview() {
+    return {
+      [Rating.Again]: this.review(Rating.Again),
+      [Rating.Hard]: this.review(Rating.Hard),
+      [Rating.Good]: this.review(Rating.Good),
+      [Rating.Easy]: this.review(Rating.Easy),
+      [Symbol.iterator]: this.previewIterator.bind(this)
+    };
+  }
+  *previewIterator() {
+    for (const grade of Grades) {
+      yield this.review(grade);
+    }
+  }
+  review(grade) {
+    const { state } = this.last;
+    let item;
+    this.checkGrade(grade);
+    switch (state) {
+      case State.New:
+        item = this.newState(grade);
+        break;
+      case State.Learning:
+      case State.Relearning:
+        item = this.learningState(grade);
+        break;
+      case State.Review:
+        item = this.reviewState(grade);
+        break;
+    }
+    return item;
+  }
+  buildLog(rating) {
+    const { last_review, due, elapsed_days } = this.last;
+    return {
+      rating,
+      state: this.current.state,
+      due: last_review || due,
+      stability: this.current.stability,
+      difficulty: this.current.difficulty,
+      elapsed_days: this.elapsed_days,
+      last_elapsed_days: elapsed_days,
+      scheduled_days: this.current.scheduled_days,
+      learning_steps: this.current.learning_steps,
+      review: this.review_time
+    };
+  }
+}
+
+class Alea {
+  c;
+  s0;
+  s1;
+  s2;
+  constructor(seed) {
+    const mash = Mash();
+    this.c = 1;
+    this.s0 = mash(" ");
+    this.s1 = mash(" ");
+    this.s2 = mash(" ");
+    if (seed == null) seed = Date.now();
+    this.s0 -= mash(seed);
+    if (this.s0 < 0) this.s0 += 1;
+    this.s1 -= mash(seed);
+    if (this.s1 < 0) this.s1 += 1;
+    this.s2 -= mash(seed);
+    if (this.s2 < 0) this.s2 += 1;
+  }
+  next() {
+    const t = 2091639 * this.s0 + this.c * 23283064365386963e-26;
+    this.s0 = this.s1;
+    this.s1 = this.s2;
+    this.c = t | 0;
+    this.s2 = t - this.c;
+    return this.s2;
+  }
+  set state(state) {
+    this.c = state.c;
+    this.s0 = state.s0;
+    this.s1 = state.s1;
+    this.s2 = state.s2;
+  }
+  get state() {
+    return {
+      c: this.c,
+      s0: this.s0,
+      s1: this.s1,
+      s2: this.s2
+    };
+  }
+}
+function Mash() {
+  let n = 4022871197;
+  return function mash(data) {
+    data = String(data);
+    for (let i = 0; i < data.length; i++) {
+      n += data.charCodeAt(i);
+      let h = 0.02519603282416938 * n;
+      n = h >>> 0;
+      h -= n;
+      h *= n;
+      n = h >>> 0;
+      h -= n;
+      n += h * 4294967296;
+    }
+    return (n >>> 0) * 23283064365386963e-26;
+  };
+}
+function alea(seed) {
+  const xg = new Alea(seed);
+  const prng = () => xg.next();
+  prng.int32 = () => xg.next() * 4294967296 | 0;
+  prng.double = () => prng() + (prng() * 2097152 | 0) * 11102230246251565e-32;
+  prng.state = () => xg.state;
+  prng.importState = (state) => {
+    xg.state = state;
+    return prng;
+  };
+  return prng;
+}
+
+const version="5.4.2";
+
+const default_request_retention = 0.9;
+const default_maximum_interval = 36500;
+const default_enable_fuzz = false;
+const default_enable_short_term = true;
+const default_learning_steps = Object.freeze([
+  "1m",
+  "10m"
+]);
+const default_relearning_steps = Object.freeze([
+  "10m"
+]);
+const FSRSVersion = `v${version} using FSRS-6.0`;
+const S_MIN = 1e-3;
+const S_MAX = 36500;
+const INIT_S_MAX = 100;
+const FSRS5_DEFAULT_DECAY = 0.5;
+const FSRS6_DEFAULT_DECAY = 0.1542;
+const default_w = Object.freeze([
+  0.212,
+  1.2931,
+  2.3065,
+  8.2956,
+  6.4133,
+  0.8334,
+  3.0194,
+  1e-3,
+  1.8722,
+  0.1666,
+  0.796,
+  1.4835,
+  0.0614,
+  0.2629,
+  1.6483,
+  0.6014,
+  1.8729,
+  0.5425,
+  0.0912,
+  0.0658,
+  FSRS6_DEFAULT_DECAY
+]);
+const W17_W18_Ceiling = 2;
+const CLAMP_PARAMETERS = (w17_w18_ceiling, enable_short_term = default_enable_short_term) => [
+  [S_MIN, INIT_S_MAX],
+  [S_MIN, INIT_S_MAX],
+  [S_MIN, INIT_S_MAX],
+  [S_MIN, INIT_S_MAX],
+  [1, 10],
+  [1e-3, 4],
+  [1e-3, 4],
+  [1e-3, 0.75],
+  [0, 4.5],
+  [0, 0.8],
+  [1e-3, 3.5],
+  [1e-3, 5],
+  [1e-3, 0.25],
+  [1e-3, 0.9],
+  [0, 4],
+  [0, 1],
+  [1, 6],
+  [0, w17_w18_ceiling],
+  [0, w17_w18_ceiling],
+  [
+    enable_short_term ? 0.01 : 0,
+    0.8
+  ],
+  [0.1, 0.8]
+];
+
+const clipParameters = (parameters, numRelearningSteps, enableShortTerm = default_enable_short_term) => {
+  const clip = CLAMP_PARAMETERS(W17_W18_Ceiling, enableShortTerm).slice(
+    0,
+    parameters.length
+  );
+  if (Math.max(0, numRelearningSteps) > 1) {
+    const w11 = clamp(parameters[11] || 0, clip[11][0], clip[11][1]);
+    const w13 = clamp(parameters[13] || 0, clip[13][0], clip[13][1]);
+    const w14 = clamp(parameters[14] || 0, clip[14][0], clip[14][1]);
+    const value = -(Math.log(w11) + Math.log(Math.pow(2, w13) - 1) + w14 * 0.3) / numRelearningSteps;
+    const w17_w18_ceiling = clamp(
+      roundTo(Math.sqrt(Math.max(value, 0)), 8),
+      0.01,
+      W17_W18_Ceiling
+    );
+    if (clip[17]) clip[17] = [clip[17][0], w17_w18_ceiling];
+    if (clip[18]) clip[18] = [clip[18][0], w17_w18_ceiling];
+  }
+  return clip.map(
+    ([min, max], index) => clamp(parameters[index] || 0, min, max)
+  );
+};
+const checkParameters = (parameters) => {
+  const invalid = parameters.find((param) => !Number.isFinite(param));
+  if (invalid !== void 0) {
+    throw new FSRSValidationError(
+      `Non-finite or NaN value in parameters ${parameters}`
+    );
+  } else if (![17, 19, 21].includes(parameters.length)) {
+    throw new FSRSValidationError(
+      `Invalid parameter length: ${parameters.length}. Must be 17, 19 or 21 for FSRSv4, 5 and 6 respectively.`
+    );
+  }
+  return parameters;
+};
+const migrateParameters = (parameters, numRelearningSteps = 0, enableShortTerm = default_enable_short_term) => {
+  if (parameters === void 0) {
+    return [...default_w];
+  }
+  switch (parameters.length) {
+    case 21:
+      return clipParameters(
+        Array.from(parameters),
+        numRelearningSteps,
+        enableShortTerm
+      );
+    case 19:
+      console.debug("[FSRS-6]auto fill w from 19 to 21 length");
+      return clipParameters(
+        Array.from(parameters),
+        numRelearningSteps,
+        enableShortTerm
+      ).concat([0, FSRS5_DEFAULT_DECAY]);
+    case 17: {
+      const w = clipParameters(
+        Array.from(parameters),
+        numRelearningSteps,
+        enableShortTerm
+      );
+      w[4] = +(w[5] * 2 + w[4]).toFixed(8);
+      w[5] = +(Math.log(w[5] * 3 + 1) / 3).toFixed(8);
+      w[6] = +(w[6] + 0.5).toFixed(8);
+      console.debug("[FSRS-6]auto fill w from 17 to 21 length");
+      return w.concat([0, 0, 0, FSRS5_DEFAULT_DECAY]);
+    }
+    default:
+      console.warn("[FSRS]Invalid parameters length, using default parameters");
+      return [...default_w];
+  }
+};
+const generatorParameters = (props) => {
+  const learning_steps = Array.isArray(props?.learning_steps) ? props.learning_steps : default_learning_steps;
+  const relearning_steps = Array.isArray(props?.relearning_steps) ? props.relearning_steps : default_relearning_steps;
+  const enable_short_term = props?.enable_short_term ?? default_enable_short_term;
+  const w = migrateParameters(
+    props?.w,
+    relearning_steps.length,
+    enable_short_term
+  );
+  return {
+    request_retention: props?.request_retention || default_request_retention,
+    maximum_interval: props?.maximum_interval || default_maximum_interval,
+    w,
+    enable_fuzz: props?.enable_fuzz ?? default_enable_fuzz,
+    enable_short_term,
+    learning_steps,
+    relearning_steps
+  };
+};
+function createEmptyCard(now, afterHandler) {
+  const emptyCard = {
+    due: now ? TypeConvert.time(now) : /* @__PURE__ */ new Date(),
+    stability: 0,
+    difficulty: 0,
+    elapsed_days: 0,
+    scheduled_days: 0,
+    reps: 0,
+    lapses: 0,
+    learning_steps: 0,
+    state: State.New,
+    last_review: void 0
+  };
+  if (afterHandler && typeof afterHandler === "function") {
+    return afterHandler(emptyCard);
+  } else {
+    return emptyCard;
+  }
+}
+
+const computeDecayFactor = (decayOrParams) => {
+  const decay = typeof decayOrParams === "number" ? -decayOrParams : -decayOrParams[20];
+  const factor = Math.exp(Math.pow(decay, -1) * Math.log(0.9)) - 1;
+  return { decay, factor: roundTo(factor, 8) };
+};
+function forgetting_curve(decayOrParams, elapsed_days, stability) {
+  const { decay, factor } = computeDecayFactor(decayOrParams);
+  return roundTo(Math.pow(1 + factor * elapsed_days / stability, decay), 8);
+}
+class FSRSAlgorithm {
+  param;
+  intervalModifier;
+  _seed;
+  constructor(params) {
+    this.param = new Proxy(
+      this.prepare_parameters(params),
+      this.params_handler_proxy()
+    );
+    this.intervalModifier = this.calculate_interval_modifier(
+      this.param.request_retention
+    );
+    this.forgetting_curve = forgetting_curve.bind(this, this.param.w);
+  }
+  get interval_modifier() {
+    return this.intervalModifier;
+  }
+  set seed(seed) {
+    this._seed = seed;
+  }
+  /**
+   * @see https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Algorithm#fsrs-5
+   *
+   * The formula used is: $$I(r,s) = (r^{\frac{1}{DECAY}} - 1) / FACTOR \times s$$
+   * @param request_retention 0<request_retention<=1,Requested retention rate
+   * @throws {Error} Requested retention rate should be in the range (0,1]
+   */
+  calculate_interval_modifier(request_retention) {
+    if (request_retention <= 0 || request_retention > 1) {
+      throw new FSRSValidationError(
+        "Requested retention rate should be in the range (0,1]"
+      );
+    }
+    const { decay, factor } = computeDecayFactor(this.param.w);
+    return roundTo((Math.pow(request_retention, 1 / decay) - 1) / factor, 8);
+  }
+  /**
+   * Get the parameters of the algorithm.
+   */
+  get parameters() {
+    return this.param;
+  }
+  /**
+   * Set the parameters of the algorithm.
+   * @param params Partial<FSRSParameters>
+   */
+  set parameters(params) {
+    this.update_parameters(params);
+  }
+  params_handler_proxy() {
+    const _this = this;
+    return {
+      set: function(target, prop, value) {
+        if (prop === "request_retention" && Number.isFinite(value)) {
+          _this.intervalModifier = _this.calculate_interval_modifier(
+            Number(value)
+          );
+        } else if (prop === "w") {
+          value = migrateParameters(
+            value,
+            target.relearning_steps.length,
+            target.enable_short_term
+          );
+          value = clipParameters(
+            Array.from(value),
+            target.relearning_steps.length,
+            target.enable_short_term
+          );
+          _this.forgetting_curve = forgetting_curve.bind(this, value);
+          _this.intervalModifier = _this.calculate_interval_modifier(
+            Number(target.request_retention)
+          );
+        }
+        Reflect.set(target, prop, value);
+        return true;
+      }
+    };
+  }
+  update_parameters(params) {
+    const _params = this.prepare_parameters(params);
+    for (const key in _params) {
+      const paramKey = key;
+      this.param[paramKey] = _params[paramKey];
+    }
+  }
+  prepare_parameters = (params) => {
+    const generated = generatorParameters(params);
+    generated.w = clipParameters(
+      Array.from(generated.w),
+      generated.relearning_steps.length,
+      generated.enable_short_term
+    );
+    return generated;
+  };
+  /**
+     * The formula used is :
+     * $$ S_0(G) = w_{G-1}$$
+     * $$S_0 = \max \lbrace S_0,0.1\rbrace $$
+  
+     * @param g Grade (rating at Anki) [1.again,2.hard,3.good,4.easy]
+     * @return Stability (interval when R=90%)
+     */
+  init_stability(g) {
+    return Math.max(this.param.w[g - 1], 0.1);
+  }
+  /**
+   * The formula used is :
+   * $$D_0(G) = w_4 - e^{(G-1) \cdot w_5} + 1 $$
+   * $$D_0 = \min \lbrace \max \lbrace D_0(G),1 \rbrace,10 \rbrace$$
+   * where the $$D_0(1)=w_4$$ when the first rating is good.
+   *
+   * @param {Grade} g Grade (rating at Anki) [1.again,2.hard,3.good,4.easy]
+   * @return {number} Difficulty $$D \in [1,10]$$
+   */
+  init_difficulty(g) {
+    const w = this.param.w;
+    const d = w[4] - Math.exp((g - 1) * w[5]) + 1;
+    return roundTo(d, 8);
+  }
+  /**
+   * If fuzzing is disabled or ivl is less than 2.5, it returns the original interval.
+   * @param {number} ivl - The interval to be fuzzed.
+   * @param {number} elapsed_days t days since the last review
+   * @return {number} - The fuzzed interval.
+   **/
+  apply_fuzz(ivl, elapsed_days) {
+    if (!this.param.enable_fuzz || ivl < 2.5) return Math.round(ivl);
+    const generator = alea(this._seed);
+    const fuzz_factor = generator();
+    const { min_ivl, max_ivl } = get_fuzz_range(
+      ivl,
+      elapsed_days,
+      this.param.maximum_interval
+    );
+    return Math.floor(fuzz_factor * (max_ivl - min_ivl + 1) + min_ivl);
+  }
+  /**
+   *   @see The formula used is : {@link FSRSAlgorithm.calculate_interval_modifier}
+   *   @param {number} s - Stability (interval when R=90%)
+   *   @param {number} elapsed_days t days since the last review
+   */
+  next_interval(s, elapsed_days) {
+    const newInterval = Math.min(
+      Math.max(1, Math.round(s * this.intervalModifier)),
+      this.param.maximum_interval
+    );
+    return this.apply_fuzz(newInterval, elapsed_days);
+  }
+  /**
+   * @see https://github.com/open-spaced-repetition/fsrs4anki/issues/697
+   */
+  linear_damping(delta_d, old_d) {
+    return roundTo(delta_d * (10 - old_d) / 9, 8);
+  }
+  /**
+   * The formula used is :
+   * $$\text{delta}_d = -w_6 \cdot (g - 3)$$
+   * $$\text{next}_d = D + \text{linear damping}(\text{delta}_d , D)$$
+   * $$D^\prime(D,R) = w_7 \cdot D_0(4) +(1 - w_7) \cdot \text{next}_d$$
+   * @param {number} d Difficulty $$D \in [1,10]$$
+   * @param {Grade} g Grade (rating at Anki) [1.again,2.hard,3.good,4.easy]
+   * @return {number} $$\text{next}_D$$
+   */
+  next_difficulty(d, g) {
+    const delta_d = -this.param.w[6] * (g - 3);
+    const next_d = d + this.linear_damping(delta_d, d);
+    return clamp(
+      this.mean_reversion(this.init_difficulty(Rating.Easy), next_d),
+      1,
+      10
+    );
+  }
+  /**
+   * The formula used is :
+   * $$w_7 \cdot \text{init} +(1 - w_7) \cdot \text{current}$$
+   * @param {number} init $$w_2 : D_0(3) = w_2 + (R-2) \cdot w_3= w_2$$
+   * @param {number} current $$D - w_6 \cdot (R - 2)$$
+   * @return {number} difficulty
+   */
+  mean_reversion(init, current) {
+    const w = this.param.w;
+    return roundTo(w[7] * init + (1 - w[7]) * current, 8);
+  }
+  /**
+   * The formula used is :
+   * $$S^\prime_r(D,S,R,G) = S\cdot(e^{w_8}\cdot (11-D)\cdot S^{-w_9}\cdot(e^{w_{10}\cdot(1-R)}-1)\cdot w_{15}(\text{if} G=2) \cdot w_{16}(\text{if} G=4)+1)$$
+   * @param {number} d Difficulty D \in [1,10]
+   * @param {number} s Stability (interval when R=90%)
+   * @param {number} r Retrievability (probability of recall)
+   * @param {Grade} g Grade (Rating[0.again,1.hard,2.good,3.easy])
+   * @return {number} S^\prime_r new stability after recall
+   */
+  next_recall_stability(d, s, r, g) {
+    const w = this.param.w;
+    const hard_penalty = Rating.Hard === g ? w[15] : 1;
+    const easy_bound = Rating.Easy === g ? w[16] : 1;
+    return roundTo(
+      clamp(
+        s * (1 + Math.exp(w[8]) * (11 - d) * Math.pow(s, -w[9]) * (Math.exp((1 - r) * w[10]) - 1) * hard_penalty * easy_bound),
+        S_MIN,
+        36500
+      ),
+      8
+    );
+  }
+  /**
+   * The formula used is :
+   * $$S^\prime_f(D,S,R) = w_{11}\cdot D^{-w_{12}}\cdot ((S+1)^{w_{13}}-1) \cdot e^{w_{14}\cdot(1-R)}$$
+   * enable_short_term = true : $$S^\prime_f \in \min \lbrace \max \lbrace S^\prime_f,0.01\rbrace, \frac{S}{e^{w_{17} \cdot w_{18}}} \rbrace$$
+   * enable_short_term = false : $$S^\prime_f \in \min \lbrace \max \lbrace S^\prime_f,0.01\rbrace, S \rbrace$$
+   * @param {number} d Difficulty D \in [1,10]
+   * @param {number} s Stability (interval when R=90%)
+   * @param {number} r Retrievability (probability of recall)
+   * @return {number} S^\prime_f new stability after forgetting
+   */
+  next_forget_stability(d, s, r) {
+    const w = this.param.w;
+    return roundTo(
+      clamp(
+        w[11] * Math.pow(d, -w[12]) * (Math.pow(s + 1, w[13]) - 1) * Math.exp((1 - r) * w[14]),
+        S_MIN,
+        36500
+      ),
+      8
+    );
+  }
+  /**
+   * The formula used is :
+   * $$S^\prime_s(S,G) = S \cdot e^{w_{17} \cdot (G-3+w_{18})}$$
+   * @param {number} s Stability (interval when R=90%)
+   * @param {Grade} g Grade (Rating[0.again,1.hard,2.good,3.easy])
+   */
+  next_short_term_stability(s, g) {
+    const w = this.param.w;
+    const sinc = Math.pow(s, -w[19]) * Math.exp(w[17] * (g - 3 + w[18]));
+    const maskedSinc = g >= Rating.Hard ? Math.max(sinc, 1) : sinc;
+    return roundTo(clamp(s * maskedSinc, S_MIN, 36500), 8);
+  }
+  /**
+   * The formula used is :
+   * $$R(t,S) = (1 + \text{FACTOR} \times \frac{t}{9 \cdot S})^{\text{DECAY}}$$
+   * @param {number} elapsed_days t days since the last review
+   * @param {number} stability Stability (interval when R=90%)
+   * @return {number} r Retrievability (probability of recall)
+   */
+  forgetting_curve;
+  /**
+   * Calculates the next state of memory based on the current state, time elapsed, and grade.
+   *
+   * @param memory_state - The current state of memory, which can be null.
+   * @param t - The time elapsed since the last review.
+   * @param {Rating} g Grade (Rating[0.Manual,1.Again,2.Hard,3.Good,4.Easy])
+   * @param r - Optional retrievability value. If not provided, it will be calculated.
+   * @returns The next state of memory with updated difficulty and stability.
+   */
+  next_state(memory_state, t, g, r) {
+    const { difficulty: d, stability: s } = memory_state ?? {
+      difficulty: 0,
+      stability: 0
+    };
+    if (t < 0) {
+      throw new FSRSValidationError(`Invalid delta_t "${t}"`);
+    }
+    if (g < 0 || g > 4) {
+      throw new FSRSValidationError(`Invalid grade "${g}"`);
+    }
+    if (d === 0 && s === 0) {
+      return {
+        difficulty: clamp(this.init_difficulty(g), 1, 10),
+        stability: this.init_stability(g)
+      };
+    }
+    if (g === 0) {
+      return {
+        difficulty: d,
+        stability: s
+      };
+    }
+    if (d < 1 || s < S_MIN) {
+      throw new FSRSValidationError(
+        `Invalid memory state { difficulty: ${d}, stability: ${s} }`
+      );
+    }
+    const w = this.param.w;
+    r = typeof r === "number" ? r : this.forgetting_curve(t, s);
+    let new_s;
+    if (t === 0 && this.param.enable_short_term) {
+      new_s = this.next_short_term_stability(s, g);
+    } else if (g === 1) {
+      const s_after_fail = this.next_forget_stability(d, s, r);
+      let [w_17, w_18] = [0, 0];
+      if (this.param.enable_short_term) {
+        w_17 = w[17];
+        w_18 = w[18];
+      }
+      const next_s_min = s / Math.exp(w_17 * w_18);
+      new_s = clamp(roundTo(next_s_min, 8), S_MIN, s_after_fail);
+    } else {
+      new_s = this.next_recall_stability(d, s, r, g);
+    }
+    const new_d = this.next_difficulty(d, g);
+    return { difficulty: new_d, stability: new_s };
+  }
+}
+
+class BasicScheduler extends AbstractScheduler {
+  learningStepsStrategy;
+  constructor(card, now, algorithm, strategies) {
+    super(card, now, algorithm, strategies);
+    let learningStepStrategy = BasicLearningStepsStrategy;
+    if (this.strategies) {
+      const custom_strategy = this.strategies.get(StrategyMode.LEARNING_STEPS);
+      if (custom_strategy) {
+        learningStepStrategy = custom_strategy;
+      }
+    }
+    this.learningStepsStrategy = learningStepStrategy;
+  }
+  getLearningInfo(card, grade) {
+    const parameters = this.algorithm.parameters;
+    card.learning_steps = card.learning_steps || 0;
+    const steps_strategy = this.learningStepsStrategy(
+      parameters,
+      card.state,
+      card.learning_steps
+    );
+    const scheduled_minutes = Math.max(
+      0,
+      steps_strategy[grade]?.scheduled_minutes ?? 0
+    );
+    const next_steps = Math.max(0, steps_strategy[grade]?.next_step ?? 0);
+    return {
+      scheduled_minutes,
+      next_steps
+    };
+  }
+  /**
+   * @description This function applies the learning steps based on the current card's state and grade.
+   */
+  applyLearningSteps(nextCard, grade, to_state) {
+    const { scheduled_minutes, next_steps } = this.getLearningInfo(
+      this.current,
+      grade
+    );
+    if (scheduled_minutes > 0 && scheduled_minutes < 1440) {
+      nextCard.learning_steps = next_steps;
+      nextCard.scheduled_days = 0;
+      nextCard.state = to_state;
+      nextCard.due = date_scheduler(
+        this.review_time,
+        Math.round(scheduled_minutes),
+        false
+        /** true:days false: minute */
+      );
+    } else {
+      nextCard.state = State.Review;
+      if (scheduled_minutes >= 1440) {
+        nextCard.learning_steps = next_steps;
+        nextCard.due = date_scheduler(
+          this.review_time,
+          Math.round(scheduled_minutes),
+          false
+          /** true:days false: minute */
+        );
+        nextCard.scheduled_days = Math.floor(scheduled_minutes / 1440);
+      } else {
+        nextCard.learning_steps = 0;
+        const interval = this.algorithm.next_interval(
+          nextCard.stability,
+          this.elapsed_days
+        );
+        nextCard.scheduled_days = interval;
+        nextCard.due = date_scheduler(this.review_time, interval, true);
+      }
+    }
+  }
+  newState(grade) {
+    const exist = this.next.get(grade);
+    if (exist) {
+      return exist;
+    }
+    const next = this.next_ds(this.elapsed_days, grade);
+    this.applyLearningSteps(next, grade, State.Learning);
+    const item = {
+      card: next,
+      log: this.buildLog(grade)
+    };
+    this.next.set(grade, item);
+    return item;
+  }
+  learningState(grade) {
+    const exist = this.next.get(grade);
+    if (exist) {
+      return exist;
+    }
+    const next = this.next_ds(this.elapsed_days, grade);
+    this.applyLearningSteps(
+      next,
+      grade,
+      this.last.state
+      /** Learning or Relearning */
+    );
+    const item = {
+      card: next,
+      log: this.buildLog(grade)
+    };
+    this.next.set(grade, item);
+    return item;
+  }
+  reviewState(grade) {
+    const exist = this.next.get(grade);
+    if (exist) {
+      return exist;
+    }
+    const interval = this.elapsed_days;
+    const retrievability = this.algorithm.forgetting_curve(
+      interval,
+      this.current.stability
+    );
+    const next_again = this.next_ds(interval, Rating.Again, retrievability);
+    const next_hard = this.next_ds(interval, Rating.Hard, retrievability);
+    const next_good = this.next_ds(interval, Rating.Good, retrievability);
+    const next_easy = this.next_ds(interval, Rating.Easy, retrievability);
+    this.next_interval(next_hard, next_good, next_easy, interval);
+    this.next_state(next_hard, next_good, next_easy);
+    this.applyLearningSteps(next_again, Rating.Again, State.Relearning);
+    next_again.lapses += 1;
+    const item_again = {
+      card: next_again,
+      log: this.buildLog(Rating.Again)
+    };
+    const item_hard = {
+      card: next_hard,
+      log: super.buildLog(Rating.Hard)
+    };
+    const item_good = {
+      card: next_good,
+      log: super.buildLog(Rating.Good)
+    };
+    const item_easy = {
+      card: next_easy,
+      log: super.buildLog(Rating.Easy)
+    };
+    this.next.set(Rating.Again, item_again);
+    this.next.set(Rating.Hard, item_hard);
+    this.next.set(Rating.Good, item_good);
+    this.next.set(Rating.Easy, item_easy);
+    return this.next.get(grade);
+  }
+  /**
+   * Review next_ds
+   */
+  next_ds(t, g, r) {
+    const next_state = this.algorithm.next_state(
+      {
+        difficulty: this.current.difficulty,
+        stability: this.current.stability
+      },
+      t,
+      g,
+      r
+    );
+    const card = TypeConvert.card(this.current);
+    card.difficulty = next_state.difficulty;
+    card.stability = next_state.stability;
+    return card;
+  }
+  /**
+   * Review next_interval
+   */
+  next_interval(next_hard, next_good, next_easy, interval) {
+    let hard_interval, good_interval;
+    hard_interval = this.algorithm.next_interval(next_hard.stability, interval);
+    good_interval = this.algorithm.next_interval(next_good.stability, interval);
+    hard_interval = Math.min(hard_interval, good_interval);
+    good_interval = Math.max(good_interval, hard_interval + 1);
+    const easy_interval = Math.max(
+      this.algorithm.next_interval(next_easy.stability, interval),
+      good_interval + 1
+    );
+    next_hard.scheduled_days = hard_interval;
+    next_hard.due = date_scheduler(this.review_time, hard_interval, true);
+    next_good.scheduled_days = good_interval;
+    next_good.due = date_scheduler(this.review_time, good_interval, true);
+    next_easy.scheduled_days = easy_interval;
+    next_easy.due = date_scheduler(this.review_time, easy_interval, true);
+  }
+  /**
+   * Review next_state
+   */
+  next_state(next_hard, next_good, next_easy) {
+    next_hard.state = State.Review;
+    next_hard.learning_steps = 0;
+    next_good.state = State.Review;
+    next_good.learning_steps = 0;
+    next_easy.state = State.Review;
+    next_easy.learning_steps = 0;
+  }
+}
+
+class LongTermScheduler extends AbstractScheduler {
+  newState(grade) {
+    const exist = this.next.get(grade);
+    if (exist) {
+      return exist;
+    }
+    this.current.scheduled_days = 0;
+    this.current.elapsed_days = 0;
+    const first_interval = 0;
+    const next_again = this.next_ds(first_interval, Rating.Again);
+    const next_hard = this.next_ds(first_interval, Rating.Hard);
+    const next_good = this.next_ds(first_interval, Rating.Good);
+    const next_easy = this.next_ds(first_interval, Rating.Easy);
+    this.next_interval(
+      next_again,
+      next_hard,
+      next_good,
+      next_easy,
+      first_interval
+    );
+    this.next_state(next_again, next_hard, next_good, next_easy);
+    this.update_next(next_again, next_hard, next_good, next_easy);
+    return this.next.get(grade);
+  }
+  next_ds(t, g, r) {
+    const next_state = this.algorithm.next_state(
+      {
+        difficulty: this.current.difficulty,
+        stability: this.current.stability
+      },
+      t,
+      g,
+      r
+    );
+    const card = TypeConvert.card(this.current);
+    card.difficulty = next_state.difficulty;
+    card.stability = next_state.stability;
+    return card;
+  }
+  /**
+   * @see https://github.com/open-spaced-repetition/ts-fsrs/issues/98#issuecomment-2241923194
+   */
+  learningState(grade) {
+    return this.reviewState(grade);
+  }
+  reviewState(grade) {
+    const exist = this.next.get(grade);
+    if (exist) {
+      return exist;
+    }
+    const interval = this.elapsed_days;
+    const retrievability = this.algorithm.forgetting_curve(
+      interval,
+      this.current.stability
+    );
+    const next_again = this.next_ds(interval, Rating.Again, retrievability);
+    const next_hard = this.next_ds(interval, Rating.Hard, retrievability);
+    const next_good = this.next_ds(interval, Rating.Good, retrievability);
+    const next_easy = this.next_ds(interval, Rating.Easy, retrievability);
+    this.next_interval(next_again, next_hard, next_good, next_easy, interval);
+    this.next_state(next_again, next_hard, next_good, next_easy);
+    next_again.lapses += 1;
+    this.update_next(next_again, next_hard, next_good, next_easy);
+    return this.next.get(grade);
+  }
+  /**
+   * Review/New next_interval
+   */
+  next_interval(next_again, next_hard, next_good, next_easy, interval) {
+    let again_interval, hard_interval, good_interval, easy_interval;
+    again_interval = this.algorithm.next_interval(
+      next_again.stability,
+      interval
+    );
+    hard_interval = this.algorithm.next_interval(next_hard.stability, interval);
+    good_interval = this.algorithm.next_interval(next_good.stability, interval);
+    easy_interval = this.algorithm.next_interval(next_easy.stability, interval);
+    again_interval = Math.min(again_interval, hard_interval);
+    hard_interval = Math.max(hard_interval, again_interval + 1);
+    good_interval = Math.max(good_interval, hard_interval + 1);
+    easy_interval = Math.max(easy_interval, good_interval + 1);
+    next_again.scheduled_days = again_interval;
+    next_again.due = date_scheduler(this.review_time, again_interval, true);
+    next_hard.scheduled_days = hard_interval;
+    next_hard.due = date_scheduler(this.review_time, hard_interval, true);
+    next_good.scheduled_days = good_interval;
+    next_good.due = date_scheduler(this.review_time, good_interval, true);
+    next_easy.scheduled_days = easy_interval;
+    next_easy.due = date_scheduler(this.review_time, easy_interval, true);
+  }
+  /**
+   * Review/New next_state
+   */
+  next_state(next_again, next_hard, next_good, next_easy) {
+    next_again.state = State.Review;
+    next_again.learning_steps = 0;
+    next_hard.state = State.Review;
+    next_hard.learning_steps = 0;
+    next_good.state = State.Review;
+    next_good.learning_steps = 0;
+    next_easy.state = State.Review;
+    next_easy.learning_steps = 0;
+  }
+  update_next(next_again, next_hard, next_good, next_easy) {
+    const item_again = {
+      card: next_again,
+      log: this.buildLog(Rating.Again)
+    };
+    const item_hard = {
+      card: next_hard,
+      log: super.buildLog(Rating.Hard)
+    };
+    const item_good = {
+      card: next_good,
+      log: super.buildLog(Rating.Good)
+    };
+    const item_easy = {
+      card: next_easy,
+      log: super.buildLog(Rating.Easy)
+    };
+    this.next.set(Rating.Again, item_again);
+    this.next.set(Rating.Hard, item_hard);
+    this.next.set(Rating.Good, item_good);
+    this.next.set(Rating.Easy, item_easy);
+  }
+}
+
+class Reschedule {
+  fsrs;
+  /**
+   * Creates an instance of the `Reschedule` class.
+   * @param fsrs - An instance of the FSRS class used for scheduling.
+   */
+  constructor(fsrs) {
+    this.fsrs = fsrs;
+  }
+  /**
+   * Replays a review for a card and determines the next review date based on the given rating.
+   * @param card - The card being reviewed.
+   * @param reviewed - The date the card was reviewed.
+   * @param rating - The grade given to the card during the review.
+   * @returns A `RecordLogItem` containing the updated card and review log.
+   */
+  replay(card, reviewed, rating) {
+    return this.fsrs.next(card, reviewed, rating);
+  }
+  /**
+   * Processes a manual review for a card, allowing for custom state, stability, difficulty, and due date.
+   * @param card - The card being reviewed.
+   * @param state - The state of the card after the review.
+   * @param reviewed - The date the card was reviewed.
+   * @param elapsed_days - The number of days since the last review.
+   * @param stability - (Optional) The stability of the card.
+   * @param difficulty - (Optional) The difficulty of the card.
+   * @param due - (Optional) The due date for the next review.
+   * @returns A `RecordLogItem` containing the updated card and review log.
+   * @throws Will throw an error if the state or due date is not provided when required.
+   */
+  handleManualRating(card, state, reviewed, elapsed_days, stability, difficulty, due) {
+    if (typeof state === "undefined") {
+      throw new FSRSValidationError(
+        "reschedule: state is required for manual rating"
+      );
+    }
+    let log;
+    let next_card;
+    if (state === State.New) {
+      log = {
+        rating: Rating.Manual,
+        state,
+        due: due ?? reviewed,
+        stability: card.stability,
+        difficulty: card.difficulty,
+        elapsed_days,
+        last_elapsed_days: card.elapsed_days,
+        scheduled_days: card.scheduled_days,
+        learning_steps: card.learning_steps,
+        review: reviewed
+      };
+      next_card = createEmptyCard(reviewed);
+      next_card.last_review = reviewed;
+    } else {
+      if (typeof due === "undefined") {
+        throw new FSRSValidationError(
+          "reschedule: due is required for manual rating"
+        );
+      }
+      const scheduled_days = date_diff(due, reviewed, "days");
+      log = {
+        rating: Rating.Manual,
+        state: card.state,
+        due: card.last_review || card.due,
+        stability: card.stability,
+        difficulty: card.difficulty,
+        elapsed_days,
+        last_elapsed_days: card.elapsed_days,
+        scheduled_days: card.scheduled_days,
+        learning_steps: card.learning_steps,
+        review: reviewed
+      };
+      next_card = {
+        ...card,
+        state,
+        due,
+        last_review: reviewed,
+        stability: stability || card.stability,
+        difficulty: difficulty || card.difficulty,
+        elapsed_days,
+        scheduled_days,
+        reps: card.reps + 1
+      };
+    }
+    return { card: next_card, log };
+  }
+  /**
+   * Reschedules a card based on its review history.
+   *
+   * @param current_card - The card to be rescheduled.
+   * @param reviews - An array of review history objects.
+   * @returns An array of record log items representing the rescheduling process.
+   */
+  reschedule(current_card, reviews) {
+    const collections = [];
+    let cur_card = createEmptyCard(current_card.due);
+    for (const review of reviews) {
+      let item;
+      review.review = TypeConvert.time(review.review);
+      if (review.rating === Rating.Manual) {
+        let interval = 0;
+        if (cur_card.state !== State.New && cur_card.last_review) {
+          interval = date_diff(review.review, cur_card.last_review, "days");
+        }
+        item = this.handleManualRating(
+          cur_card,
+          review.state,
+          review.review,
+          interval,
+          review.stability,
+          review.difficulty,
+          review.due ? TypeConvert.time(review.due) : void 0
+        );
+      } else {
+        item = this.replay(cur_card, review.review, review.rating);
+      }
+      collections.push(item);
+      cur_card = item.card;
+    }
+    return collections;
+  }
+  calculateManualRecord(current_card, now, record_log_item, update_memory) {
+    if (!record_log_item) {
+      return null;
+    }
+    const { card: reschedule_card, log } = record_log_item;
+    const cur_card = TypeConvert.card(current_card);
+    if (cur_card.due.getTime() === reschedule_card.due.getTime()) {
+      return null;
+    }
+    cur_card.scheduled_days = date_diff(
+      reschedule_card.due,
+      cur_card.due,
+      "days"
+    );
+    return this.handleManualRating(
+      cur_card,
+      reschedule_card.state,
+      TypeConvert.time(now),
+      log.elapsed_days,
+      update_memory ? reschedule_card.stability : void 0,
+      update_memory ? reschedule_card.difficulty : void 0,
+      reschedule_card.due
+    );
+  }
+}
+
+function applyAfterHandler(value, afterHandler) {
+  return typeof afterHandler === "function" ? afterHandler(value) : value;
+}
+class FSRS extends FSRSAlgorithm {
+  strategyHandler = /* @__PURE__ */ new Map();
+  Scheduler;
+  constructor(param) {
+    super(param);
+    const { enable_short_term } = this.parameters;
+    this.Scheduler = enable_short_term ? BasicScheduler : LongTermScheduler;
+  }
+  params_handler_proxy() {
+    const _this = this;
+    return {
+      set: function(target, prop, value) {
+        if (prop === "request_retention" && Number.isFinite(value)) {
+          _this.intervalModifier = _this.calculate_interval_modifier(
+            Number(value)
+          );
+        } else if (prop === "enable_short_term") {
+          _this.Scheduler = value === true ? BasicScheduler : LongTermScheduler;
+        } else if (prop === "w") {
+          value = migrateParameters(
+            value,
+            target.relearning_steps.length,
+            target.enable_short_term
+          );
+          value = clipParameters(
+            Array.from(value),
+            target.relearning_steps.length,
+            target.enable_short_term
+          );
+          _this.forgetting_curve = forgetting_curve.bind(this, value);
+          _this.intervalModifier = _this.calculate_interval_modifier(
+            Number(target.request_retention)
+          );
+        }
+        Reflect.set(target, prop, value);
+        return true;
+      }
+    };
+  }
+  useStrategy(mode, handler) {
+    this.strategyHandler.set(mode, handler);
+    return this;
+  }
+  clearStrategy(mode) {
+    if (mode) {
+      this.strategyHandler.delete(mode);
+    } else {
+      this.strategyHandler.clear();
+    }
+    return this;
+  }
+  getScheduler(card, now) {
+    const schedulerStrategy = this.strategyHandler.get(
+      StrategyMode.SCHEDULER
+    );
+    const Scheduler = schedulerStrategy || this.Scheduler;
+    const instance = new Scheduler(card, now, this, this.strategyHandler);
+    return instance;
+  }
+  /**
+   * Display the collection of cards and logs for the four scenarios after scheduling the card at the current time.
+   * @param card Card to be processed
+   * @param now Current time or scheduled time
+   * @param afterHandler Convert the result to another type. (Optional)
+   * @example
+   * ```typescript
+   * const card: Card = createEmptyCard(new Date());
+   * const f = fsrs();
+   * const recordLog = f.repeat(card, new Date());
+   * ```
+   * @example
+   * ```typescript
+   * interface RevLogUnchecked
+   *   extends Omit<ReviewLog, "due" | "review" | "state" | "rating"> {
+   *   cid: string;
+   *   due: Date | number;
+   *   state: StateType;
+   *   review: Date | number;
+   *   rating: RatingType;
+   * }
+   *
+   * interface RepeatRecordLog {
+   *   card: CardUnChecked; //see method: createEmptyCard
+   *   log: RevLogUnchecked;
+   * }
+   *
+   * function repeatAfterHandler(recordLog: RecordLog) {
+   *     const record: { [key in Grade]: RepeatRecordLog } = {} as {
+   *       [key in Grade]: RepeatRecordLog;
+   *     };
+   *     for (const grade of Grades) {
+   *       record[grade] = {
+   *         card: {
+   *           ...(recordLog[grade].card as Card & { cid: string }),
+   *           due: recordLog[grade].card.due.getTime(),
+   *           state: State[recordLog[grade].card.state] as StateType,
+   *           last_review: recordLog[grade].card.last_review
+   *             ? recordLog[grade].card.last_review!.getTime()
+   *             : null,
+   *         },
+   *         log: {
+   *           ...recordLog[grade].log,
+   *           cid: (recordLog[grade].card as Card & { cid: string }).cid,
+   *           due: recordLog[grade].log.due.getTime(),
+   *           review: recordLog[grade].log.review.getTime(),
+   *           state: State[recordLog[grade].log.state] as StateType,
+   *           rating: Rating[recordLog[grade].log.rating] as RatingType,
+   *         },
+   *       };
+   *     }
+   *     return record;
+   * }
+   * const card: Card = createEmptyCard(new Date(), cardAfterHandler); //see method:  createEmptyCard
+   * const f = fsrs();
+   * const recordLog = f.repeat(card, new Date(), repeatAfterHandler);
+   * ```
+   */
+  repeat(card, now, afterHandler) {
+    const instance = this.getScheduler(card, now);
+    const recordLog = instance.preview();
+    return applyAfterHandler(recordLog, afterHandler);
+  }
+  /**
+   * Display the collection of cards and logs for the card scheduled at the current time, after applying a specific grade rating.
+   * @param card Card to be processed
+   * @param now Current time or scheduled time
+   * @param grade Rating of the review (Again, Hard, Good, Easy)
+   * @param afterHandler Convert the result to another type. (Optional)
+   * @example
+   * ```typescript
+   * const card: Card = createEmptyCard(new Date());
+   * const f = fsrs();
+   * const recordLogItem = f.next(card, new Date(), Rating.Again);
+   * ```
+   * @example
+   * ```typescript
+   * interface RevLogUnchecked
+   *   extends Omit<ReviewLog, "due" | "review" | "state" | "rating"> {
+   *   cid: string;
+   *   due: Date | number;
+   *   state: StateType;
+   *   review: Date | number;
+   *   rating: RatingType;
+   * }
+   *
+   * interface NextRecordLog {
+   *   card: CardUnChecked; //see method: createEmptyCard
+   *   log: RevLogUnchecked;
+   * }
+   *
+  function nextAfterHandler(recordLogItem: RecordLogItem) {
+    const recordItem = {
+      card: {
+        ...(recordLogItem.card as Card & { cid: string }),
+        due: recordLogItem.card.due.getTime(),
+        state: State[recordLogItem.card.state] as StateType,
+        last_review: recordLogItem.card.last_review
+          ? recordLogItem.card.last_review!.getTime()
+          : null,
+      },
+      log: {
+        ...recordLogItem.log,
+        cid: (recordLogItem.card as Card & { cid: string }).cid,
+        due: recordLogItem.log.due.getTime(),
+        review: recordLogItem.log.review.getTime(),
+        state: State[recordLogItem.log.state] as StateType,
+        rating: Rating[recordLogItem.log.rating] as RatingType,
+      },
+    };
+    return recordItem
+  }
+   * const card: Card = createEmptyCard(new Date(), cardAfterHandler); //see method:  createEmptyCard
+   * const f = fsrs();
+   * const recordLogItem = f.repeat(card, new Date(), Rating.Again, nextAfterHandler);
+   * ```
+   */
+  next(card, now, grade, afterHandler) {
+    const instance = this.getScheduler(card, now);
+    const g = TypeConvert.rating(grade);
+    if (g === Rating.Manual) {
+      throw new FSRSValidationError("Cannot review a manual rating");
+    }
+    const recordLogItem = instance.review(g);
+    return applyAfterHandler(recordLogItem, afterHandler);
+  }
+  /**
+   * Get the retrievability of the card
+   * @param card  Card to be processed
+   * @param now  Current time or scheduled time
+   * @param format  default:true , Convert the result to another type. (Optional)
+   * @returns  The retrievability of the card,if format is true, the result is a string, otherwise it is a number
+   */
+  get_retrievability(card, now, format = true) {
+    const processedCard = TypeConvert.card(card);
+    now = now ? TypeConvert.time(now) : /* @__PURE__ */ new Date();
+    const t = processedCard.state !== State.New ? Math.max(date_diff(now, processedCard.last_review, "days"), 0) : 0;
+    const r = processedCard.state !== State.New ? this.forgetting_curve(t, +processedCard.stability.toFixed(8)) : 0;
+    return format ? `${(r * 100).toFixed(2)}%` : r;
+  }
+  /**
+   *
+   * @param card Card to be processed
+   * @param log last review log
+   * @param afterHandler Convert the result to another type. (Optional)
+   * @example
+   * ```typescript
+   * const now = new Date();
+   * const f = fsrs();
+   * const emptyCardFormAfterHandler = createEmptyCard(now);
+   * const repeatFormAfterHandler = f.repeat(emptyCardFormAfterHandler, now);
+   * const { card, log } = repeatFormAfterHandler[Rating.Hard];
+   * const rollbackFromAfterHandler = f.rollback(card, log);
+   * ```
+   *
+   * @example
+   * ```typescript
+   * const now = new Date();
+   * const f = fsrs();
+   * const emptyCardFormAfterHandler = createEmptyCard(now, cardAfterHandler);  //see method: createEmptyCard
+   * const repeatFormAfterHandler = f.repeat(emptyCardFormAfterHandler, now, repeatAfterHandler); //see method: fsrs.repeat()
+   * const { card, log } = repeatFormAfterHandler[Rating.Hard];
+   * const rollbackFromAfterHandler = f.rollback(card, log, cardAfterHandler);
+   * ```
+   */
+  rollback(card, log, afterHandler) {
+    const processedCard = TypeConvert.card(card);
+    const processedLog = TypeConvert.review_log(log);
+    if (processedLog.rating === Rating.Manual) {
+      throw new FSRSValidationError("Cannot rollback a manual rating");
+    }
+    let last_due;
+    let last_review;
+    let last_lapses;
+    switch (processedLog.state) {
+      case State.New:
+        last_due = processedLog.due;
+        last_review = void 0;
+        last_lapses = 0;
+        break;
+      case State.Learning:
+      case State.Relearning:
+      case State.Review:
+        last_due = processedLog.review;
+        last_review = processedLog.due;
+        last_lapses = processedCard.lapses - (processedLog.rating === Rating.Again && processedLog.state === State.Review ? 1 : 0);
+        break;
+    }
+    const prevCard = {
+      ...processedCard,
+      due: last_due,
+      stability: processedLog.stability,
+      difficulty: processedLog.difficulty,
+      elapsed_days: processedLog.last_elapsed_days,
+      scheduled_days: processedLog.scheduled_days,
+      reps: Math.max(0, processedCard.reps - 1),
+      lapses: Math.max(0, last_lapses),
+      learning_steps: processedLog.learning_steps,
+      state: processedLog.state,
+      last_review
+    };
+    return applyAfterHandler(prevCard, afterHandler);
+  }
+  /**
+   *
+   * @param card Card to be processed
+   * @param now Current time or scheduled time
+   * @param reset_count Should the review count information(reps,lapses) be reset. (Optional)
+   * @param afterHandler Convert the result to another type. (Optional)
+   * @example
+   * ```typescript
+   * const now = new Date();
+   * const f = fsrs();
+   * const emptyCard = createEmptyCard(now);
+   * const scheduling_cards = f.repeat(emptyCard, now);
+   * const { card, log } = scheduling_cards[Rating.Hard];
+   * const forgetCard = f.forget(card, new Date(), true);
+   * ```
+   *
+   * @example
+   * ```typescript
+   * interface RepeatRecordLog {
+   *   card: CardUnChecked; //see method: createEmptyCard
+   *   log: RevLogUnchecked; //see method: fsrs.repeat()
+   * }
+   *
+   * function forgetAfterHandler(recordLogItem: RecordLogItem): RepeatRecordLog {
+   *     return {
+   *       card: {
+   *         ...(recordLogItem.card as Card & { cid: string }),
+   *         due: recordLogItem.card.due.getTime(),
+   *         state: State[recordLogItem.card.state] as StateType,
+   *         last_review: recordLogItem.card.last_review
+   *           ? recordLogItem.card.last_review!.getTime()
+   *           : null,
+   *       },
+   *       log: {
+   *         ...recordLogItem.log,
+   *         cid: (recordLogItem.card as Card & { cid: string }).cid,
+   *         due: recordLogItem.log.due.getTime(),
+   *         review: recordLogItem.log.review.getTime(),
+   *         state: State[recordLogItem.log.state] as StateType,
+   *         rating: Rating[recordLogItem.log.rating] as RatingType,
+   *       },
+   *     };
+   * }
+   * const now = new Date();
+   * const f = fsrs();
+   * const emptyCardFormAfterHandler = createEmptyCard(now, cardAfterHandler); //see method:  createEmptyCard
+   * const repeatFormAfterHandler = f.repeat(emptyCardFormAfterHandler, now, repeatAfterHandler); //see method: fsrs.repeat()
+   * const { card } = repeatFormAfterHandler[Rating.Hard];
+   * const forgetFromAfterHandler = f.forget(card, date_scheduler(now, 1, true), false, forgetAfterHandler);
+   * ```
+   */
+  forget(card, now, reset_count = false, afterHandler) {
+    const processedCard = TypeConvert.card(card);
+    now = TypeConvert.time(now);
+    const scheduled_days = processedCard.state === State.New ? 0 : date_diff(now, processedCard.due, "days");
+    const forget_log = {
+      rating: Rating.Manual,
+      state: processedCard.state,
+      due: processedCard.due,
+      stability: processedCard.stability,
+      difficulty: processedCard.difficulty,
+      elapsed_days: 0,
+      last_elapsed_days: processedCard.elapsed_days,
+      scheduled_days,
+      learning_steps: processedCard.learning_steps,
+      review: now
+    };
+    const forget_card = {
+      ...processedCard,
+      due: now,
+      stability: 0,
+      difficulty: 0,
+      elapsed_days: 0,
+      scheduled_days: 0,
+      reps: reset_count ? 0 : processedCard.reps,
+      lapses: reset_count ? 0 : processedCard.lapses,
+      learning_steps: 0,
+      state: State.New,
+      last_review: processedCard.last_review
+    };
+    const recordLogItem = { card: forget_card, log: forget_log };
+    return applyAfterHandler(recordLogItem, afterHandler);
+  }
+  /**
+   * Reschedules the current card and returns the rescheduled collections and reschedule item.
+   *
+   * @template T - The type of the record log item.
+   * @param {CardInput | Card} current_card - The current card to be rescheduled.
+   * @param {Array<FSRSHistory>} reviews - The array of FSRSHistory objects representing the reviews.
+   * @param {Partial<RescheduleOptions<T>>} options - The optional reschedule options.
+   * @returns {IReschedule<T>} - The rescheduled collections and reschedule item.
+   *
+   * @example
+   * ```typescript
+   * const f = fsrs()
+   * const grades: Grade[] = [Rating.Good, Rating.Good, Rating.Good, Rating.Good]
+   * const reviews_at = [
+   *   new Date(2024, 8, 13),
+   *   new Date(2024, 8, 13),
+   *   new Date(2024, 8, 17),
+   *   new Date(2024, 8, 28),
+   * ]
+   *
+   * const reviews: FSRSHistory[] = []
+   * for (let i = 0; i < grades.length; i++) {
+   *   reviews.push({
+   *     rating: grades[i],
+   *     review: reviews_at[i],
+   *   })
+   * }
+   *
+   * const results_short = scheduler.reschedule(
+   *   createEmptyCard(),
+   *   reviews,
+   *   {
+   *     skipManual: false,
+   *   }
+   * )
+   * console.log(results_short)
+   * ```
+   */
+  reschedule(current_card, reviews = [], options = {}) {
+    const {
+      recordLogHandler,
+      reviewsOrderBy,
+      skipManual = true,
+      now = /* @__PURE__ */ new Date(),
+      update_memory_state: updateMemoryState = false
+    } = options;
+    if (reviewsOrderBy && typeof reviewsOrderBy === "function") {
+      reviews.sort(reviewsOrderBy);
+    }
+    if (skipManual) {
+      reviews = reviews.filter((review) => review.rating !== Rating.Manual);
+    }
+    const rescheduleSvc = new Reschedule(this);
+    const collections = rescheduleSvc.reschedule(
+      options.first_card || createEmptyCard(),
+      reviews
+    );
+    const len = collections.length;
+    const cur_card = TypeConvert.card(current_card);
+    const manual_item = rescheduleSvc.calculateManualRecord(
+      cur_card,
+      now,
+      len ? collections[len - 1] : void 0,
+      updateMemoryState
+    );
+    return {
+      collections: typeof recordLogHandler === "function" ? collections.map(recordLogHandler) : collections,
+      reschedule_item: manual_item ? applyAfterHandler(manual_item, recordLogHandler) : null
+    };
+  }
+}
+const fsrs = (params) => {
+  return new FSRS(params || {});
+};
+
+
+return {AbstractScheduler: AbstractScheduler, BasicLearningStepsStrategy: BasicLearningStepsStrategy, CLAMP_PARAMETERS: CLAMP_PARAMETERS, ConvertStepUnitToMinutes: ConvertStepUnitToMinutes, DefaultInitSeedStrategy: DefaultInitSeedStrategy, FSRS: FSRS, FSRS5_DEFAULT_DECAY: FSRS5_DEFAULT_DECAY, FSRS6_DEFAULT_DECAY: FSRS6_DEFAULT_DECAY, FSRSAlgorithm: FSRSAlgorithm, FSRSVersion: FSRSVersion, GenSeedStrategyWithCardId: GenSeedStrategyWithCardId, Grades: Grades, INIT_S_MAX: INIT_S_MAX, Rating: Rating, S_MAX: S_MAX, S_MIN: S_MIN, State: State, StrategyMode: StrategyMode, TypeConvert: TypeConvert, W17_W18_Ceiling: W17_W18_Ceiling, checkParameters: checkParameters, clamp: clamp, clipParameters: clipParameters, computeDecayFactor: computeDecayFactor, createEmptyCard: createEmptyCard, dateDiffInDays: dateDiffInDays, date_diff: date_diff, date_scheduler: date_scheduler, default_enable_fuzz: default_enable_fuzz, default_enable_short_term: default_enable_short_term, default_learning_steps: default_learning_steps, default_maximum_interval: default_maximum_interval, default_relearning_steps: default_relearning_steps, default_request_retention: default_request_retention, default_w: default_w, fixDate: fixDate, fixRating: fixRating, fixState: fixState, forgetting_curve: forgetting_curve, formatDate: formatDate, fsrs: fsrs, generatorParameters: generatorParameters, get_fuzz_range: get_fuzz_range, migrateParameters: migrateParameters, roundTo: roundTo, show_diff_message: show_diff_message}
+})();
+// Path to Germany: German from A1 to B1 for the Goethe-Zertifikat, taught through English.
+// No build step: one ES module with vendored Preact + htm. scripts/bundle.py makes the single-file version.
+const { html, render, useState, useEffect } = __vendor0
+
+const KEY = 'pathtogermany:v1'
+const today = () => new Date().toLocaleDateString('en-CA')
+const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`
+const pct = p => `${Math.round(p * 100)}%`
+
+// ---- progress: one JSON blob in localStorage, backed up by export/import ----
+
+const fresh = () => ({
+  cards: {}, log: [], lesson: 1, newPerDay: 15, autoplay: true, newToday: { date: today(), n: 0 },
+  tests: {}, practice: {}, drafts: {}, settings: {},
+})
+function load() {
+  try { return { ...fresh(), ...JSON.parse(localStorage.getItem(KEY)) } } catch { return fresh() }
+}
+let S = load()
+const listeners = new Set()
+function commit(change) {
+  change(S)
+  try { localStorage.setItem(KEY, JSON.stringify(S)) } catch (e) {
+    alert(`Progress wasn't saved (${e.message}). Export a backup from Settings before closing this tab.`)
+  }
+  listeners.forEach(f => f())
+}
+function useStore() {
+  const [, bump] = useState(0)
+  useEffect(() => { const f = () => bump(n => n + 1); listeners.add(f); return () => listeners.delete(f) }, [])
+  return S
+}
+
+function exportProgress() {
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(S)], { type: 'application/json' }))
+  a.download = `pathtogermany-progress-${today()}.json`
+  a.click()
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000)
+}
+
+async function importProgress(file) {
+  try {
+    const data = JSON.parse(await file.text())
+    if (!data || typeof data.cards !== 'object' || !Array.isArray(data.log)) throw new Error("this isn't a Path to Germany backup")
+    const ok = confirm(`Replace your current progress (${Object.keys(S.cards).length} cards) with this backup (${Object.keys(data.cards).length} cards)?`)
+    if (ok) commit(s => { for (const k of Object.keys(s)) delete s[k]; Object.assign(s, fresh(), data) })
+  } catch (e) {
+    alert(`Import failed: ${e.message}`)
+  }
+}
+
+// ---- stations and how far each one is done ----
+
+const TABS = [['words', 'Words'], ['grammar', 'Grammar'], ['read', 'Read'], ['listen', 'Listen'], ['write', 'Write'],
+  ['speak', 'Speak'], ['pictures', 'Pictures'], ['test', 'Test']]
+const TAB_NAME = Object.fromEntries(TABS)
+const PARTS = ['words', 'grammar', 'read', 'listen', 'write', 'speak', 'test']   // a station's parts in study order
+
+// 0…1 per part: each part keeps its best result in S.practice under "<station>/<part>".
+const partDone = (n, part) => S.practice[`${n}/${part}`] ?? 0
+const stationDone = n => PARTS.reduce((a, p) => a + partDone(n, p), 0) / PARTS.length
+const levelDone = lv => lv.stations.reduce((a, st) => a + stationDone(st.n), 0) / lv.stations.length
+const here = data => data.stations[S.lesson] ?? data.stations[1]
+
+// What to do at a part, said once for the plan rail and once for the next-step sentence.
+const STEP = {
+  words: [() => 'Start with the words of this station, each noun with its article, plural and sound.', 'Open the words'],
+  grammar: [st => html`Now the grammar, starting with <b>${st.grammar[0][1]}</b>.`, 'Open the grammar'],
+  read: [() => 'Read a short text and answer questions in the Lesen format.', 'Start reading'],
+  listen: [() => 'Listen to everyday dialogues and announcements, as in the Hören module.', 'Start listening'],
+  write: [() => 'Write a short exam task and check it against the rubric.', 'Start writing'],
+  speak: [() => 'Speak an exam task out loud, with a timer and a recording.', 'Start speaking'],
+  test: [() => 'Take the station test. 60% passes.', 'Take the test'],
+}
+
+function todayPlan(st) {
+  return PARTS.map(part => {
+    const p = partDone(st.n, part)
+    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
+  })
+}
+
+// ---- small drawn pieces ----
+
+const Train = () => html`<svg class="train" viewBox="0 0 40 20" aria-hidden="true">
+  <path d="M2 16V7a4 4 0 0 1 4-4h20c6 0 11 5 12 11v2z" fill="var(--ink)" />
+  <path d="M8 6h6v4H8zM17 6h6v4h-6z" fill="var(--panel)" /><path d="M27 6c3 .5 6 2.5 7.5 5H27z" fill="var(--panel)" />
+  <path d="M2 13h36" stroke="var(--line)" stroke-width="2" />
+</svg>`
+
+const Arrow = () => html`<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>`
+
+const Mark = () => html`<svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+  <rect width="40" height="40" rx="6" fill="var(--board)" />
+  <path d="M8 28 L16 20 H24 L32 12" fill="none" stroke="var(--a1)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="8" cy="28" r="3.5" fill="#fff" /><circle cx="20" cy="20" r="3.5" fill="#fff" /><circle cx="32" cy="12" r="3.5" fill="#fff" />
+</svg>`
+
+// Progress as a ring, the way a line's completion is drawn.
+const Ring = ({ p, label }) => html`<svg class="ring" viewBox="0 0 120 120" role="img" aria-label=${`${pct(p)} ${label}`}>
+  <circle cx="60" cy="60" r="50" class="ring-track" />${p > 0 ? html`<circle cx="60" cy="60" r="50" class="ring-fill" style=${`--p:${p}`} pathLength="1" />` : ''}
+  <text x="60" y="64" class="ring-n">${pct(p)}</text><text x="60" y="84" class="ring-l">${label}</text>
+</svg>`
+
+// Practice tile icons (48 × 48, drawn in the tile's colour; the gender one uses the gender code itself).
+const ICONS = {
+  sheet: html`<rect x="9" y="5" width="30" height="38" rx="4" fill="none" stroke="currentColor" stroke-width="3" />
+    ${[14, 22, 30].map((y, i) => html`<circle cx="17" cy=${y} r="3.2" fill=${i === 1 ? 'currentColor' : 'none'} stroke="currentColor" stroke-width="2" /><path d=${`M24 ${y} H33`} stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />`)}`,
+  stamp: html`<g transform="rotate(-12 24 24)"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3" />
+    <circle cx="24" cy="24" r="13.5" fill="none" stroke="currentColor" stroke-width="1.5" /><path d="M16.5 24.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></g>`,
+  scene: html`<circle cx="34" cy="13" r="6" fill="currentColor" /><path d="M3 40 Q16 24 26 34 T45 30 V44 H3 Z" fill="currentColor" opacity=".55" />
+    <rect x="13" y="22" width="4" height="12" fill="currentColor" /><circle cx="15" cy="20" r="7" fill="currentColor" />`,
+  verb: html`<rect x="2" y="13" width="19" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="3" />
+    <text x="11.5" y="29" text-anchor="middle" class="icon-t">en</text>
+    <path d="M23 24 H28 M25.5 20.5 L29 24 L25.5 27.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+    <rect x="31" y="13" width="15" height="22" rx="4" fill="currentColor" /><text x="38.5" y="29" text-anchor="middle" class="icon-t inv">t</text>`,
+  gender: html`<rect x="4" y="8" width="40" height="8" rx="4" fill="var(--der)" /><rect x="4" y="20" width="30" height="8" rx="4" fill="var(--die)" />
+    <rect x="4" y="32" width="36" height="8" rx="4" fill="var(--das)" />`,
+  cases: html`${[[5, 5], [26, 5], [5, 26], [26, 26]].map(([x, y], i) => html`<rect x=${x} y=${y} width="17" height="17" rx="3"
+    fill=${i === 2 ? 'currentColor' : 'none'} stroke="currentColor" stroke-width="3" />`)}`,
+  sounds: html`<text x="17" y="36" text-anchor="middle" class="icon-t big">ü</text>
+    <path d="M33 16a12 12 0 0 1 0 17M38.5 11a19 19 0 0 1 0 27" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />`,
+  tip: html`<path d="M24 6 a12 12 0 0 1 7 21.7 V33 H17 V27.7 A12 12 0 0 1 24 6 Z" fill="none" stroke="currentColor" stroke-width="3" />
+    <path d="M18 38 H30 M20 43 H28" stroke="currentColor" stroke-width="3" stroke-linecap="round" />`,
+}
+const TOOLS = [
+  { href: '#/tests', en: 'Practice tests', hint: 'Numbered tests for every exam module', icon: 'sheet' },
+  { href: '#/mock', en: 'Mock exam', hint: 'A timed paper, scored like Goethe', icon: 'stamp' },
+  { href: '#/pictures', en: 'Picture scenes', hint: 'Tap, find and name things', icon: 'scene' },
+  { href: '#/verbs', en: 'Verb forms', hint: 'Präsens to Perfekt, with real mistakes', icon: 'verb' },
+  { href: '#/gender', en: 'der, die, das', hint: 'Genders and plurals by their endings', icon: 'gender' },
+  { href: '#/cases', en: 'Cases and endings', hint: 'den, dem, des and adjective endings', icon: 'cases' },
+  { href: '#/sounds', en: 'Pronunciation', hint: 'ü, ö, ch and r, with minimal pairs', icon: 'sounds' },
+  { href: '#/tips/0', en: 'Tips', hint: 'Learn faster, pass the exam', icon: 'tip' },
+]
+const Tiles = () => html`<ul class="tiles">${TOOLS.map(t => html`<li>
+  <a class="tile" href=${t.href}><svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">${ICONS[t.icon]}</svg>
+    <b>${t.en}</b><small>${t.hint}</small></a></li>`)}</ul>`
+
+// ---- the station name board: the chapter's name, big, on the line's coloured band ----
+
+function Board({ data, n, home }) {
+  const st = data.stations[n]
+  const lv = data.level[st.level]
+  const prev = data.stations[n - 1], next = data.stations[n + 1]
+  const name = html`<span lang="de">${st.de}</span>`
+  return html`<section class=${`board l${st.level}`} aria-label=${`Station ${st.k} of ${st.level}: ${st.en}`}>
+    <div class="board-body">
+      <div class="board-top">
+        <span class="gleis" aria-hidden="true">${st.k}</span><span class="gleis-l">Station<b>${st.k} of ${lv.stations.length}</b></span>
+        <span class="lb">${st.level}</span>
+      </div>
+      <div>
+        <h1 class="board-name">${home ? html`<a href=${`#/station/${n}`}>${name}</a>` : name}</h1>
+        <p class="board-sub">${st.en} · ${st.can}</p>
+      </div>
+    </div>
+    <nav class="band" aria-label="Neighbouring stations">
+      ${prev ? html`<a class="band-prev" href=${`#/station/${prev.n}`}>← <span lang="de">${prev.de}</span></a>` : html`<span></span>`}
+      <ol class="band-dots">${lv.stations.map(x => html`<li class=${x.n === n ? 'on' : x.n < n ? 'past' : ''}>
+        <a href=${`#/station/${x.n}`} aria-label=${`Station ${x.k}: ${x.de}`} title=${x.de}></a></li>`)}</ol>
+      ${next ? html`<a class="band-next" href=${`#/station/${next.n}`}><span lang="de">${next.de}</span> →</a>` : html`<span></span>`}
+    </nav>
+  </section>`
+}
+
+// ---- the route: three lines (A1, A2, B1), twelve stations each, split into two halves ----
+
+function RouteMap({ data, picked, onPick }) {
+  const s = useStore()
+  return html`<section class="route" aria-labelledby="route-h">
+    <div class="route-head">
+      <h2 id="route-h">Your route</h2>
+      <ul class="legend" aria-label="Station key">
+        <li><span class="rdot key done"></span> Done</li><li><span class="rdot key started"></span> Started</li>
+        <li><span class="rdot key"></span> Not started</li><li><${Train} /> You are here</li>
+      </ul>
+    </div>
+    ${data.levels.map(lv => {
+      const on = here(data).level === lv.level
+      const halves = [lv.stations.slice(0, 6), lv.stations.slice(6)]
+      const pickedHere = lv.stations.find(st => st.n === picked)
+      return html`<div class=${`rline l${lv.level}${on ? ' current' : ''}`}>
+        <header class="rline-head">
+          <span class="lb big">${lv.level}</span>
+          <div class="rline-title"><h3>${lv.title}</h3><p>${on ? html`<b>You are on this line.</b> ` : ''}${pct(levelDone(lv))} done</p></div>
+          <span class="pbar"><i style=${`--p:${levelDone(lv)}`}></i></span>
+        </header>
+        <div class="halves">${halves.map((half, h) => html`<div class="half">
+          <span class="half-name">${lv.level}.${h + 1}</span>
+          <ol class="rstations">${half.map(st => {
+            const p = stationDone(st.n)
+            const where = st.n === s.lesson ? ' at' : st.n < s.lesson ? ' passed' : ''
+            return html`<li key=${st.n} class=${`rstn${p >= 1 ? ' done' : p > 0 ? ' started' : ''}${where}${picked === st.n ? ' picked' : ''}`} style=${`--p:${p}`}>
+              ${st.n === s.lesson ? html`<${Train} />` : ''}
+              <button type="button" onClick=${() => onPick(st.n)} aria-pressed=${picked === st.n}
+                aria-label=${`Station ${st.k}, ${st.de} (${st.en}), ${pct(p)} done`}>
+                <span class="rdot"></span><span class="rnum">${st.k}</span><span class="rname" lang="de">${st.de}</span>
+              </button>
+            </li>`
+          })}</ol>
+        </div>`)}</div>
+        ${pickedHere ? html`<${StationCard} data=${data} n=${picked} onClose=${() => onPick(picked)} />` : ''}
+      </div>`
+    })}
+  </section>`
+}
+
+// What a station holds, part by part, with a way into each.
+function StationCard({ data, n, onClose }) {
+  const s = useStore()
+  const st = data.stations[n]
+  return html`<section class=${`scard l${st.level}`} aria-label=${`${st.de} details`}>
+    <div class="scard-head">
+      <span class="lb">${st.level} · ${st.k}</span>
+      <div class="scard-title"><h3 lang="de">${st.de}</h3><p>${st.en}: ${st.can}.</p></div>
+      <div class="scard-actions">
+        ${n === s.lesson ? html`<span class="you">Your current stop</span>`
+          : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
+        <a class="btn" href=${`#/station/${n}`}>Open station <${Arrow} /></a>
+        <button type="button" class="close" onClick=${onClose} aria-label="Close">×</button>
+      </div>
+    </div>
+    <ul class="scard-parts">${PARTS.map(part => html`<li>
+      <a href=${`#/station/${n}/${part}`}>${TAB_NAME[part]}</a>
+      <span class="pbar"><i style=${`--p:${partDone(n, part)}`}></i></span>
+    </li>`)}</ul>
+    <p class="scard-grammar"><b>Grammar:</b> ${st.grammar.map(([, t]) => t).join(' · ')}</p>
+  </section>`
+}
+
+// ---- top bar and home ----
+
+function TopBar({ data, page }) {
+  const s = useStore()
+  const st = here(data)
+  const links = [['', 'Today'], ['study', 'Cards'], ['practice', 'Practice'], ['tests', 'Tests'], ['mock', 'Mock exam'], ['pictures', 'Pictures']]
+  const on = p => (p === '' ? !page : page === p)
+  return html`<header class=${`topbar l${st.level}`}>
+    <a class="brand" href="#/"><${Mark} /><span class="brand-name"><b lang="de">Weg nach Deutschland</b><small>Path to Germany</small></span></a>
+    <nav class="topnav" aria-label="Main"><ul>${links.map(([p, label]) => html`<li>
+      <a href=${`#/${p}`} class=${on(p) ? 'on' : ''} aria-current=${on(p) ? 'page' : null}>${label}</a></li>`)}</ul></nav>
+    <a class="tb-stop" href=${`#/station/${s.lesson}`} title="Your current stop"><span class="lb">${st.level}</span>
+      <span><span class="tb-stop-k">${String(st.k).padStart(2, '0')}</span> <span lang="de">${st.de}</span></span></a>
+  </header>`
+}
+
+function Home({ data }) {
+  const s = useStore()
+  const [picked, setPicked] = useState(null)
+  const st = here(data)
+  const lv = data.level[st.level]
+  const plan = todayPlan(st)
+  const step = plan.find(p => p.state !== 'done')
+  const next = data.stations[st.n + 1]
+  const pick = n => {
+    setPicked(n === picked ? null : n)
+    setTimeout(() => document.querySelector('.scard')?.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
+  }
+  return html`<main class="home">
+    <section class=${`hero l${st.level}`} aria-label="Today">
+      <${Board} data=${data} n=${st.n} home />
+      <div class="go">
+        <${Ring} p=${levelDone(lv)} label=${`of ${lv.level} done`} />
+        <div class="go-text">
+          ${step ? html`<p class="next-text">${STEP[step.part][0](st)}</p>
+              <a class="btn big" href=${step.href}>${STEP[step.part][1]} <${Arrow} /></a>`
+            : next ? html`<p class="next-text">Every part of <span lang="de">${st.de}</span> is done. Move on to the next station.</p>
+              <button type="button" class="btn big" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span> <${Arrow} /></button>`
+            : html`<p class="next-text">Every station is done. Take the B1 mock exam until it passes every time.</p>
+              <a class="btn big" href="#/mock/B1/full">Take the B1 mock exam <${Arrow} /></a>`}
+          <p class="quiet">${plural(lv.stations.filter(x => stationDone(x.n) >= 1).length, 'station')} of ${lv.stations.length} done on the ${lv.level} line</p>
+        </div>
+      </div>
+      <ol class="plan" aria-label="Today's plan at this station">${plan.map(p => html`<li class=${`${p.state}${p === step ? ' now' : ''}`}>
+        <a href=${p.href}><span class="pdot" style=${`--p:${p.p}`}></span><b>${p.label}</b><small>${p.state === 'done' ? 'done' : p.state === 'part' ? pct(p.p) : p === step ? 'next' : ''}</small></a>
+      </li>`)}</ol>
+    </section>
+
+    <section class="practice" aria-labelledby="practice-h">
+      <h2 id="practice-h">Practice</h2>
+      <${Tiles} />
+    </section>
+
+    <${RouteMap} data=${data} picked=${picked} onPick=${pick} />
+    <${Settings} />
+  </main>`
+}
+
+function Settings() {
+  const s = useStore()
+  return html`<details class="settings">
+    <summary>Settings and backup</summary>
+    <label>New cards per day
+      <input type="number" min="0" max="200" value=${s.newPerDay}
+        onChange=${e => commit(x => { x.newPerDay = Math.max(0, Math.min(200, +e.target.value || 0)) })} />
+    </label>
+    <label class="check"><input type="checkbox" checked=${s.autoplay} onChange=${e => commit(x => { x.autoplay = e.target.checked })} />
+      Say each word aloud when its card turns over</label>
+    <p>Progress is kept in this browser only. The double-clicked file and a served copy (http://) keep separate progress,
+      so export a backup now and then and import it wherever you study.</p>
+    <div class="settings-row">
+      <button type="button" onClick=${exportProgress}>Export progress</button>
+      <label class="button">Import progress<input type="file" accept="application/json,.json" hidden
+        onChange=${e => { const f = e.target.files[0]; e.target.value = ''; if (f) importProgress(f) }} /></label>
+    </div>
+  </details>`
+}
+
+// ---- station page: one tab per part, each tab its own address ----
+
+const SOON = {
+  words: "This station's words, each noun with its article and plural, audio and a quick quiz.",
+  grammar: 'Each point with a plain-English explanation, examples lined up with English, and a sentence builder.',
+  read: 'An original text in the Goethe Lesen format, with tap-to-translate and exam questions.',
+  listen: 'Dialogues and announcements read by German voices, with Hören-style questions.',
+  write: 'An exam writing task with a checklist, word count, useful phrases and a model answer.',
+  speak: 'An exam speaking task with timers, recording and a model answer.',
+  pictures: 'A drawn scene where every object is a word of this station.',
+  test: 'A short station test in exam formats. 60% passes.',
+}
+
+function Station({ data, n, tab }) {
+  const s = useStore()
+  const st = data.stations[n]
+  if (!st) return html`<main class="empty"><p>There is no station ${n}. <a href="#/">Back to today</a></p></main>`
+  const t = TAB_NAME[tab] ? tab : 'words'
+  return html`<main class=${`station l${st.level}`}>
+    <${Board} data=${data} n=${n} />
+    <div class="station-bar">
+      <nav class="tabs" aria-label="Station parts">${TABS.map(([id, label]) => html`<a href=${`#/station/${n}/${id}`}
+        class=${id === t ? 'on' : ''} aria-current=${id === t ? 'page' : null}>${label}</a>`)}</nav>
+      ${n === s.lesson ? html`<span class="you">Your current stop</span>`
+        : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
+    </div>
+    <section class="tab-body" aria-label=${TAB_NAME[t]}>
+      ${t === 'grammar' ? html`<ol class="glist">${st.grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>` : ''}
+      <p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>
+    </section>
+  </main>`
+}
+
+function Soon({ title, text }) {
+  return html`<main class="page"><header class="masthead"><h1>${title}</h1><p>${text}</p></header>
+    <p class="soon">Being built now. <a href="#/">Back to today</a></p></main>`
+}
+
+const PracticeHub = () => html`<main class="page">
+  <header class="masthead"><h1>Practice</h1><p>Everything beyond the daily stations: exam papers, pictures and trainers.</p></header>
+  <${Tiles} />
+</main>`
+
+// ---- app shell ----
+
+// '#/station/4/grammar' → { page: 'station', arg: '4', sub: 'grammar' }; '' or '#/' → home.
+function route(hash) {
+  const [, page = '', arg, sub, sub2] = (hash || '#/').slice(1).split('/')
+  return { page, arg, sub, sub2 }
+}
+
+// Every page lives in the URL hash, so it has its own address and Back/Forward move between pages.
+// Each history entry keeps its scroll position (history.state.y): Back returns to where you were, a new page
+// starts at the top, and a new tab of the same page (another station tab) keeps the place.
+function useHash() {
+  const [hash, setHash] = useState(location.hash || '#/')
+  useEffect(() => {
+    history.scrollRestoration = 'manual'
+    let t, prev = location.hash || '#/'
+    const page = h => h.split('/').slice(0, 3).join('/')
+    const save = () => { clearTimeout(t); t = setTimeout(() => history.replaceState({ y: scrollY }, ''), 150) }
+    const go = () => {
+      clearTimeout(t)
+      const h = location.hash || '#/'
+      const y = history.state?.y ?? (page(h) === page(prev) ? scrollY : 0)
+      prev = h
+      setHash(h)
+      setTimeout(() => { scrollTo(0, y); history.replaceState({ y }, '') })   // after Preact's (microtask) re-render
+    }
+    addEventListener('scroll', save, { passive: true })
+    addEventListener('hashchange', go)
+    return () => { removeEventListener('scroll', save); removeEventListener('hashchange', go) }
+  }, [])
+  return hash
+}
+
+function prepare(levels) {
+  const stations = [null]                // stations[n], n = 1…36 across the levels
+  levels.forEach(lv => stations.push(...lv.stations))
+  return { levels, level: Object.fromEntries(levels.map(lv => [lv.level, lv])), stations }
+}
+
+// WegNachDeutschland.html (scripts/bundle.py) carries the data inline as window.__DATA, so it opens from a file.
+const getJson = (name, fallback) => window.__DATA ? Promise.resolve(window.__DATA[name] ?? fallback) : fetch(`data/${name}.json`).then(r => {
+  if (r.ok) return r.json()
+  if (fallback !== undefined) return fallback
+  throw new Error(`data/${name}.json: HTTP ${r.status}`)
+}, e => { if (fallback !== undefined) return fallback; throw e })
+
+function App() {
+  const [data, setData] = useState(null)
+  const [error, setError] = useState(null)
+  const hash = useHash()
+  useEffect(() => {
+    getJson('syllabus').then(sy => setData(prepare(sy))).catch(e => setError(e.message))
+    navigator.storage?.persist?.()
+  }, [])
+  if (error) return html`<main class="empty"><p>The lessons didn't load (${error}). Run <code>python scripts/build_data.py</code>,
+    then open <code>app/WegNachDeutschland.html</code>.</p></main>`
+  if (!data) return html`<main class="empty"><p>Loading…</p></main>`
+  const { page, arg, sub } = route(hash)
+  const view = page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
+    : page === 'practice' ? html`<${PracticeHub} />`
+    : page === 'study' ? html`<${Soon} title="Cards" text="Flashcards for the words up to your current stop, scheduled so you review them just before you'd forget." />`
+    : page === 'tests' ? html`<${Soon} title="Practice tests" text="Numbered tests per level and module: Lesen, Hören, Schreiben, Sprechen, Wortschatz, Grammatik." />`
+    : page === 'mock' ? html`<${Soon} title="Mock exam" text="A timed paper per level in the real Goethe structure, scored the Goethe way." />`
+    : page === 'pictures' ? html`<${Soon} title="Picture scenes" text="Drawn scenes where every object is a word with its article." />`
+    : page === 'verbs' ? html`<${Soon} title="Verb forms" text="Präsens, Perfekt, Präteritum, Imperativ and Konjunktiv II, with real learner mistakes as options." />`
+    : page === 'gender' ? html`<${Soon} title="der, die, das" text="A fast gender drill that teaches the ending rules as you go." />`
+    : page === 'cases' ? html`<${Soon} title="Cases and endings" text="The case table, prepositions and adjective endings." />`
+    : page === 'sounds' ? html`<${Soon} title="Pronunciation" text="A sound guide for ü, ö, ä, ch and r, and minimal-pair listening." />`
+    : page === 'tips' ? html`<${Soon} title="Tips" text="How to learn faster, and how to sit the exam." />`
+    : html`<${Home} data=${data} />`
+  return html`<${TopBar} data=${data} page=${page} />${view}`
+}
+
+render(html`<${App} />`, document.getElementById('app'))
+
+</script>
+</body>
+</html>
