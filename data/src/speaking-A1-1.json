@@ -1,0 +1,1122 @@
+[
+ {
+  "id": "a1-s-01",
+  "station": 1,
+  "part": "Teil 1",
+  "task_en": "Introduce yourself to the group using the seven cards. Then the examiner asks you to spell your surname and to say your phone number.",
+  "task_de": "Stellen Sie sich vor. Buchstabieren Sie Ihren Familiennamen und sagen Sie Ihre Telefonnummer.",
+  "cards": [
+   "Name?",
+   "Alter?",
+   "Land?",
+   "Wohnort?",
+   "Sprachen?",
+   "Beruf?",
+   "Hobby?",
+   "Buchstabieren: Familienname",
+   "Zahl: Telefonnummer"
+  ],
+  "phrases": [
+   [
+    "Ich heiße …",
+    "My name is …"
+   ],
+   [
+    "Ich bin … Jahre alt.",
+    "I'm … years old."
+   ],
+   [
+    "Ich komme aus …",
+    "I come from …"
+   ],
+   [
+    "Ich wohne in …",
+    "I live in …"
+   ],
+   [
+    "Ich spreche …",
+    "I speak …"
+   ],
+   [
+    "Ich bin … von Beruf.",
+    "I'm a … by profession."
+   ],
+   [
+    "Mein Hobby ist …",
+    "My hobby is …"
+   ],
+   [
+    "Meine Telefonnummer ist …",
+    "My phone number is …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Hallo! Ich heiße Priya Sharma.",
+    "Hello! My name is Priya Sharma."
+   ],
+   [
+    "A",
+    "Ich bin 27 Jahre alt.",
+    "I'm 27 years old."
+   ],
+   [
+    "A",
+    "Ich komme aus Indien und wohne jetzt in Köln.",
+    "I come from India and live in Cologne now."
+   ],
+   [
+    "A",
+    "Ich spreche Hindi, Englisch und ein bisschen Deutsch.",
+    "I speak Hindi, English and a little German."
+   ],
+   [
+    "A",
+    "Ich bin Lehrerin von Beruf.",
+    "I'm a teacher by profession."
+   ],
+   [
+    "A",
+    "Mein Hobby ist Kochen.",
+    "My hobby is cooking."
+   ],
+   [
+    "B",
+    "Wie schreibt man Ihren Familiennamen?",
+    "How do you spell your surname?"
+   ],
+   [
+    "A",
+    "S – H – A – R – M – A.",
+    "S – H – A – R – M – A."
+   ],
+   [
+    "B",
+    "Und wie ist Ihre Telefonnummer?",
+    "And what's your phone number?"
+   ],
+   [
+    "A",
+    "Null, zwei, zwei, eins – fünf, vier, drei, acht, sechs, eins.",
+    "0221 543861 (zero, two, two, one – five, four, three, eight, six, one)."
+   ]
+  ],
+  "partner": [
+   [
+    "Buchstabieren Sie bitte Ihren Familiennamen.",
+    "Please spell your surname."
+   ],
+   [
+    "Wie ist Ihre Telefonnummer?",
+    "What's your phone number?"
+   ],
+   [
+    "Noch einmal, bitte. Langsam, bitte.",
+    "Once more, please. Slowly, please."
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-02",
+  "station": 2,
+  "part": "Teil 1",
+  "task_en": "Introduce yourself using the cards: say where you come from, where you live and which languages you speak. Then spell the name of your town and say your postcode.",
+  "task_de": "Stellen Sie sich vor. Buchstabieren Sie Ihren Wohnort und sagen Sie Ihre Postleitzahl.",
+  "cards": [
+   "Name?",
+   "Alter?",
+   "Land?",
+   "Wohnort?",
+   "Sprachen?",
+   "Beruf?",
+   "Hobby?",
+   "Buchstabieren: Wohnort",
+   "Zahl: Postleitzahl"
+  ],
+  "phrases": [
+   [
+    "Mein Name ist …",
+    "My name is …"
+   ],
+   [
+    "Ich komme aus …, aus …",
+    "I come from …, from …"
+   ],
+   [
+    "Jetzt wohne ich in …",
+    "Now I live in …"
+   ],
+   [
+    "Ich spreche … und ein bisschen Deutsch.",
+    "I speak … and a little German."
+   ],
+   [
+    "Das schreibt man: …",
+    "You spell it: …"
+   ],
+   [
+    "Die Postleitzahl ist …",
+    "The postcode is …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Guten Tag! Mein Name ist Priya Sharma. Ich bin 27.",
+    "Hello! My name is Priya Sharma. I'm 27."
+   ],
+   [
+    "A",
+    "Ich komme aus Indien, aus Mumbai.",
+    "I come from India, from Mumbai."
+   ],
+   [
+    "A",
+    "Jetzt wohne ich in Köln, in der Gartenstraße.",
+    "Now I live in Cologne, on Gartenstraße."
+   ],
+   [
+    "A",
+    "Ich spreche Hindi und Englisch. Deutsch lerne ich im Kurs.",
+    "I speak Hindi and English. I'm learning German on a course."
+   ],
+   [
+    "A",
+    "Ich bin Lehrerin, aber hier arbeite ich in einem Café.",
+    "I'm a teacher, but here I work in a café."
+   ],
+   [
+    "A",
+    "Mein Hobby ist Kochen.",
+    "My hobby is cooking."
+   ],
+   [
+    "B",
+    "Wie schreibt man Köln?",
+    "How do you spell Köln?"
+   ],
+   [
+    "A",
+    "K – Ö – L – N.",
+    "K – Ö (o umlaut) – L – N."
+   ],
+   [
+    "B",
+    "Und wie ist die Postleitzahl?",
+    "And what's the postcode?"
+   ],
+   [
+    "A",
+    "Fünf, null, sechs, sieben, zwei.",
+    "50672 (five, zero, six, seven, two)."
+   ]
+  ],
+  "partner": [
+   [
+    "Woher kommen Sie?",
+    "Where do you come from?"
+   ],
+   [
+    "Wo wohnen Sie? Wie schreibt man das?",
+    "Where do you live? How do you spell that?"
+   ],
+   [
+    "Was ist Ihre Postleitzahl?",
+    "What's your postcode?"
+   ],
+   [
+    "Sprechen Sie auch Englisch?",
+    "Do you speak English too?"
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-03",
+  "station": 3,
+  "part": "Teil 1",
+  "task_en": "Introduce yourself using the cards, and say a little about your family. Then spell your first name and say the year you were born.",
+  "task_de": "Stellen Sie sich vor. Buchstabieren Sie Ihren Vornamen und sagen Sie Ihr Geburtsjahr.",
+  "cards": [
+   "Name?",
+   "Alter?",
+   "Land?",
+   "Wohnort?",
+   "Sprachen?",
+   "Beruf?",
+   "Hobby?",
+   "Buchstabieren: Vorname",
+   "Zahl: Geburtsjahr"
+  ],
+  "phrases": [
+   [
+    "Ich bin ledig / verheiratet.",
+    "I'm single / married."
+   ],
+   [
+    "Ich habe einen Bruder / eine Schwester.",
+    "I have a brother / a sister."
+   ],
+   [
+    "Meine Eltern wohnen in …",
+    "My parents live in …"
+   ],
+   [
+    "Ich bin … Jahre alt.",
+    "I'm … years old."
+   ],
+   [
+    "… mit Ypsilon",
+    "… with a y"
+   ],
+   [
+    "Ich bin neunzehnhundert… geboren.",
+    "I was born in nineteen …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Hallo, ich heiße Priya Sharma und bin 27 Jahre alt.",
+    "Hello, my name is Priya Sharma and I'm 27 years old."
+   ],
+   [
+    "A",
+    "Ich komme aus Indien. Jetzt wohne ich in Köln.",
+    "I come from India. Now I live in Cologne."
+   ],
+   [
+    "A",
+    "Ich spreche Hindi, Englisch und ein bisschen Deutsch.",
+    "I speak Hindi, English and a little German."
+   ],
+   [
+    "A",
+    "Ich bin Lehrerin von Beruf.",
+    "I'm a teacher by profession."
+   ],
+   [
+    "A",
+    "Ich bin ledig. Ich habe einen Bruder. Er und meine Eltern wohnen in Mumbai.",
+    "I'm single. I have a brother. He and my parents live in Mumbai."
+   ],
+   [
+    "A",
+    "Mein Hobby ist Kochen.",
+    "My hobby is cooking."
+   ],
+   [
+    "B",
+    "Wie schreibt man Ihren Vornamen?",
+    "How do you spell your first name?"
+   ],
+   [
+    "A",
+    "P – R – I – Y – A. Mit Ypsilon.",
+    "P – R – I – Y – A. With a y."
+   ],
+   [
+    "B",
+    "Und wann sind Sie geboren?",
+    "And when were you born?"
+   ],
+   [
+    "A",
+    "Ich bin neunzehnhundertneunundneunzig geboren.",
+    "I was born in 1999 (nineteen ninety-nine)."
+   ]
+  ],
+  "partner": [
+   [
+    "Haben Sie Geschwister?",
+    "Do you have brothers or sisters?"
+   ],
+   [
+    "Wie schreibt man Ihren Vornamen?",
+    "How do you spell your first name?"
+   ],
+   [
+    "In welchem Jahr sind Sie geboren?",
+    "What year were you born?"
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 120
+ },
+ {
+  "id": "a1-s-04",
+  "station": 4,
+  "part": "Teil 2",
+  "task_en": "Topic: food and drink. Draw a word card, ask your partner a question with the word, then answer your partner's question.",
+  "task_de": "Thema: Essen und Trinken. Fragen und antworten Sie.",
+  "cards": [
+   "Frühstück",
+   "Lieblingsessen",
+   "Kaffee",
+   "Obst",
+   "Restaurant",
+   "Abendessen"
+  ],
+  "phrases": [
+   [
+    "Was isst du zum Frühstück?",
+    "What do you eat for breakfast?"
+   ],
+   [
+    "Ich trinke gern …",
+    "I like drinking …"
+   ],
+   [
+    "Isst du gern …?",
+    "Do you like eating …?"
+   ],
+   [
+    "Mein Lieblingsessen ist …",
+    "My favourite food is …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Was isst du zum Frühstück?",
+    "What do you eat for breakfast?"
+   ],
+   [
+    "B",
+    "Ich esse Brot mit Käse und trinke Tee.",
+    "I eat bread with cheese and drink tea."
+   ],
+   [
+    "B",
+    "Was ist dein Lieblingsessen?",
+    "What's your favourite food?"
+   ],
+   [
+    "A",
+    "Mein Lieblingsessen ist Reis mit Gemüse. Ich esse sehr gern scharf.",
+    "My favourite food is rice with vegetables. I love spicy food."
+   ]
+  ],
+  "partner": [
+   [
+    "Trinkst du gern Kaffee?",
+    "Do you like drinking coffee?"
+   ],
+   [
+    "Was ist dein Lieblingsessen?",
+    "What's your favourite food?"
+   ],
+   [
+    "Isst du gern Obst?",
+    "Do you like eating fruit?"
+   ],
+   [
+    "Gehst du oft ins Restaurant?",
+    "Do you often go to a restaurant?"
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 120
+ },
+ {
+  "id": "a1-s-05",
+  "station": 5,
+  "part": "Teil 3",
+  "task_en": "Picture cards: at home. Draw a card and use the picture to ask your partner for something. Then react to your partner's request.",
+  "task_de": "Formulieren Sie Bitten und reagieren Sie darauf.",
+  "cards": [
+   "ein Fenster",
+   "das Licht",
+   "ein Stuhl",
+   "ein Schlüssel",
+   "eine Tür",
+   "ein Foto"
+  ],
+  "phrases": [
+   [
+    "Können Sie bitte das Fenster öffnen?",
+    "Could you please open the window?"
+   ],
+   [
+    "Mach bitte das Licht an!",
+    "Please turn the light on!"
+   ],
+   [
+    "Gib mir bitte …",
+    "Give me …, please."
+   ],
+   [
+    "Ja, gern.",
+    "Yes, of course."
+   ],
+   [
+    "Hier, bitte.",
+    "Here you are."
+   ],
+   [
+    "Danke schön!",
+    "Thank you very much!"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Können Sie bitte das Fenster öffnen?",
+    "Could you please open the window?"
+   ],
+   [
+    "B",
+    "Ja, gern.",
+    "Yes, of course."
+   ],
+   [
+    "B",
+    "Gib mir bitte den Schlüssel.",
+    "Give me the key, please."
+   ],
+   [
+    "A",
+    "Hier, bitte.",
+    "Here you are."
+   ],
+   [
+    "B",
+    "Danke schön!",
+    "Thank you very much!"
+   ]
+  ],
+  "partner": [
+   [
+    "Machen Sie bitte das Licht an.",
+    "Please turn the light on."
+   ],
+   [
+    "Gib mir bitte den Stuhl.",
+    "Give me the chair, please."
+   ],
+   [
+    "Können Sie bitte die Tür schließen?",
+    "Could you please close the door?"
+   ],
+   [
+    "Zeig mir bitte das Foto.",
+    "Show me the photo, please."
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-06",
+  "station": 6,
+  "part": "Teil 1",
+  "task_en": "Introduce yourself using the cards, and say when you work and study. Then spell the name of your street and say your mobile number.",
+  "task_de": "Stellen Sie sich vor. Buchstabieren Sie Ihre Straße und sagen Sie Ihre Handynummer.",
+  "cards": [
+   "Name?",
+   "Alter?",
+   "Land?",
+   "Wohnort?",
+   "Sprachen?",
+   "Beruf?",
+   "Hobby?",
+   "Buchstabieren: Straße",
+   "Zahl: Handynummer"
+  ],
+  "phrases": [
+   [
+    "Ich arbeite von … bis … Uhr.",
+    "I work from … to … o'clock."
+   ],
+   [
+    "Am Abend lerne ich Deutsch.",
+    "In the evening I study German."
+   ],
+   [
+    "Der Kurs fängt um … Uhr an.",
+    "The course starts at … o'clock."
+   ],
+   [
+    "Das schreibt man mit Eszett (ß).",
+    "You spell it with an ß."
+   ],
+   [
+    "Meine Handynummer ist …",
+    "My mobile number is …"
+   ],
+   [
+    "Wie bitte? Noch einmal, bitte.",
+    "Sorry? Once more, please."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Guten Tag! Ich heiße Priya Sharma. Ich bin 27 Jahre alt.",
+    "Hello! My name is Priya Sharma. I'm 27 years old."
+   ],
+   [
+    "A",
+    "Ich komme aus Indien und wohne in Köln.",
+    "I come from India and live in Cologne."
+   ],
+   [
+    "A",
+    "Ich spreche Hindi, Englisch und Deutsch.",
+    "I speak Hindi, English and German."
+   ],
+   [
+    "A",
+    "Ich bin Lehrerin. Hier in Köln arbeite ich in einem Café, von 8 bis 14 Uhr.",
+    "I'm a teacher. Here in Cologne I work in a café, from 8 am to 2 pm."
+   ],
+   [
+    "A",
+    "Am Abend lerne ich Deutsch. Der Kurs fängt um 18 Uhr an.",
+    "In the evening I study German. The course starts at 6 pm."
+   ],
+   [
+    "A",
+    "Am Wochenende koche ich gern für meine Freunde.",
+    "At the weekend I like cooking for my friends."
+   ],
+   [
+    "B",
+    "Wie heißt Ihre Straße? Buchstabieren Sie bitte.",
+    "What is your street called? Please spell it."
+   ],
+   [
+    "A",
+    "Gartenstraße: G – A – R – T – E – N – S – T – R – A – Eszett – E.",
+    "Gartenstraße: G – A – R – T – E – N – S – T – R – A – ß (sharp s) – E."
+   ],
+   [
+    "B",
+    "Danke. Und Ihre Handynummer?",
+    "Thanks. And your mobile number?"
+   ],
+   [
+    "A",
+    "Null, eins, sieben, sechs – vier, fünf, neun, zwei, acht, eins, sieben.",
+    "0176 4592817 (zero, one, seven, six – four, five, nine, two, eight, one, seven)."
+   ]
+  ],
+  "partner": [
+   [
+    "Wann arbeiten Sie?",
+    "When do you work?"
+   ],
+   [
+    "Wie heißt Ihre Straße? Buchstabieren Sie bitte.",
+    "What is your street called? Please spell it."
+   ],
+   [
+    "Was ist Ihre Handynummer?",
+    "What's your mobile number?"
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 120
+ },
+ {
+  "id": "a1-s-07",
+  "station": 7,
+  "part": "Teil 2",
+  "task_en": "Topic: free time. Draw a word card, ask your partner a question with the word, then answer your partner's question.",
+  "task_de": "Thema: Freizeit. Fragen und antworten Sie.",
+  "cards": [
+   "Wochenende",
+   "Sport",
+   "Kino",
+   "Musik",
+   "Buch",
+   "Schwimmen"
+  ],
+  "phrases": [
+   [
+    "Was machst du am Wochenende?",
+    "What do you do at the weekend?"
+   ],
+   [
+    "Machst du gern Sport?",
+    "Do you like doing sport?"
+   ],
+   [
+    "Ich … gern / lieber / am liebsten.",
+    "I like … / prefer … / like … best."
+   ],
+   [
+    "Kannst du gut schwimmen?",
+    "Can you swim well?"
+   ],
+   [
+    "Willst du am Samstag ins Kino gehen?",
+    "Do you want to go to the cinema on Saturday?"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Was machst du am Wochenende?",
+    "What do you do at the weekend?"
+   ],
+   [
+    "B",
+    "Am Samstag spiele ich Fußball und am Sonntag lese ich viel.",
+    "On Saturday I play football and on Sunday I read a lot."
+   ],
+   [
+    "B",
+    "Gehst du gern ins Kino?",
+    "Do you like going to the cinema?"
+   ],
+   [
+    "A",
+    "Ja, sehr gern! Am liebsten sehe ich lustige Filme.",
+    "Yes, I love it! Best of all I like watching funny films."
+   ]
+  ],
+  "partner": [
+   [
+    "Machst du gern Sport?",
+    "Do you like doing sport?"
+   ],
+   [
+    "Was liest du gern?",
+    "What do you like reading?"
+   ],
+   [
+    "Kannst du schwimmen?",
+    "Can you swim?"
+   ],
+   [
+    "Welche Musik hörst du gern?",
+    "What music do you like listening to?"
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 120
+ },
+ {
+  "id": "a1-s-08",
+  "station": 8,
+  "part": "Teil 3",
+  "task_en": "Picture cards: shopping. Draw a card and use the picture to ask your partner for something. Then react to your partner's request.",
+  "task_de": "Formulieren Sie Bitten und reagieren Sie darauf.",
+  "cards": [
+   "eine Tasche",
+   "Geld",
+   "ein Handy",
+   "ein Kugelschreiber",
+   "eine Jacke",
+   "Papier"
+  ],
+  "phrases": [
+   [
+    "Gib mir bitte deinen Kugelschreiber.",
+    "Give me your pen, please."
+   ],
+   [
+    "Kannst du mir bitte … geben?",
+    "Can you give me …, please?"
+   ],
+   [
+    "Können Sie bitte meine Tasche halten?",
+    "Could you hold my bag, please?"
+   ],
+   [
+    "Ja, klar. / Hier, bitte.",
+    "Yes, sure. / Here you are."
+   ],
+   [
+    "Tut mir leid, ich habe kein …",
+    "Sorry, I don't have any …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Gib mir bitte deinen Kugelschreiber.",
+    "Give me your pen, please."
+   ],
+   [
+    "B",
+    "Hier, bitte. Brauchst du auch Papier?",
+    "Here you are. Do you need paper too?"
+   ],
+   [
+    "A",
+    "Ja, gern. Danke!",
+    "Yes, please. Thanks!"
+   ],
+   [
+    "B",
+    "Kannst du mir bitte zehn Euro geben?",
+    "Can you give me ten euros, please?"
+   ],
+   [
+    "A",
+    "Tut mir leid, ich habe kein Geld dabei.",
+    "Sorry, I don't have any money on me."
+   ]
+  ],
+  "partner": [
+   [
+    "Können Sie bitte meine Tasche halten?",
+    "Could you hold my bag, please?"
+   ],
+   [
+    "Kannst du mir bitte dein Handy geben?",
+    "Can you give me your phone, please?"
+   ],
+   [
+    "Haben Sie bitte ein Blatt Papier für mich?",
+    "Do you have a sheet of paper for me, please?"
+   ],
+   [
+    "Gib mir bitte meine Jacke.",
+    "Give me my jacket, please."
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-09",
+  "station": 9,
+  "part": "Teil 3",
+  "task_en": "Picture cards: in town. Draw a card and use the picture to ask your partner for something. Then react to your partner's request.",
+  "task_de": "Formulieren Sie Bitten und reagieren Sie darauf.",
+  "cards": [
+   "eine Fahrkarte",
+   "ein Stadtplan",
+   "ein Taxi",
+   "der Bahnhof",
+   "eine Briefmarke",
+   "ein Fahrrad"
+  ],
+  "phrases": [
+   [
+    "Können Sie mir bitte helfen?",
+    "Could you help me, please?"
+   ],
+   [
+    "Wo ist bitte der Bahnhof?",
+    "Where is the station, please?"
+   ],
+   [
+    "Gehen Sie geradeaus und dann links.",
+    "Go straight on and then left."
+   ],
+   [
+    "Können Sie bitte ein Taxi bestellen?",
+    "Could you order a taxi, please?"
+   ],
+   [
+    "Gib mir bitte …",
+    "Give me …, please."
+   ],
+   [
+    "Ja, gern. / Hier, bitte.",
+    "Yes, of course. / Here you are."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Entschuldigung, können Sie mir bitte helfen? Wo ist der Bahnhof?",
+    "Excuse me, could you help me, please? Where is the station?"
+   ],
+   [
+    "B",
+    "Ja, gern. Gehen Sie hier geradeaus und dann links.",
+    "Yes, of course. Go straight on here and then left."
+   ],
+   [
+    "A",
+    "Vielen Dank!",
+    "Thank you very much!"
+   ],
+   [
+    "B",
+    "Gib mir bitte den Stadtplan.",
+    "Give me the map, please."
+   ],
+   [
+    "A",
+    "Hier, bitte.",
+    "Here you are."
+   ]
+  ],
+  "partner": [
+   [
+    "Können Sie bitte ein Taxi bestellen?",
+    "Could you order a taxi, please?"
+   ],
+   [
+    "Kannst du mir bitte eine Briefmarke geben?",
+    "Can you give me a stamp, please?"
+   ],
+   [
+    "Kann ich bitte dein Fahrrad nehmen?",
+    "Can I take your bike, please?"
+   ],
+   [
+    "Können Sie mir bitte eine Fahrkarte kaufen? Der Automat ist kaputt.",
+    "Could you buy me a ticket, please? The machine is broken."
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-10",
+  "station": 10,
+  "part": "Teil 3",
+  "task_en": "Picture cards: health. Draw a card and use the picture to ask your partner for something, or say politely what is not allowed. Then react to your partner's request.",
+  "task_de": "Formulieren Sie Bitten und reagieren Sie darauf.",
+  "cards": [
+   "eine Tablette",
+   "ein Glas Wasser",
+   "Rauchen verboten",
+   "ein Fenster",
+   "ein Stuhl",
+   "eine Apotheke"
+  ],
+  "phrases": [
+   [
+    "Haben Sie bitte eine Tablette?",
+    "Do you have a tablet, please?"
+   ],
+   [
+    "Gib mir bitte ein Glas Wasser.",
+    "Give me a glass of water, please."
+   ],
+   [
+    "Hier dürfen Sie nicht rauchen.",
+    "You're not allowed to smoke here."
+   ],
+   [
+    "Können Sie bitte das Fenster öffnen?",
+    "Could you open the window, please?"
+   ],
+   [
+    "Ja, natürlich. / Oh, Entschuldigung!",
+    "Yes, of course. / Oh, sorry!"
+   ],
+   [
+    "Gute Besserung!",
+    "Get well soon!"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich habe Kopfschmerzen. Haben Sie bitte eine Tablette?",
+    "I have a headache. Do you have a tablet, please?"
+   ],
+   [
+    "B",
+    "Ja, hier, bitte. Gute Besserung!",
+    "Yes, here you are. Get well soon!"
+   ],
+   [
+    "B",
+    "Darf ich hier rauchen?",
+    "May I smoke here?"
+   ],
+   [
+    "A",
+    "Nein, tut mir leid. Hier dürfen Sie nicht rauchen.",
+    "No, sorry. You're not allowed to smoke here."
+   ],
+   [
+    "B",
+    "Oh, Entschuldigung!",
+    "Oh, sorry!"
+   ]
+  ],
+  "partner": [
+   [
+    "Gib mir bitte ein Glas Wasser.",
+    "Give me a glass of water, please."
+   ],
+   [
+    "Mir ist schlecht. Können Sie bitte das Fenster öffnen?",
+    "I feel sick. Could you open the window, please?"
+   ],
+   [
+    "Mein Fuß tut weh. Gib mir bitte den Stuhl.",
+    "My foot hurts. Give me the chair, please."
+   ],
+   [
+    "Gibt es hier eine Apotheke?",
+    "Is there a pharmacy here?"
+   ]
+  ],
+  "prep_s": 20,
+  "speak_s": 90
+ },
+ {
+  "id": "a1-s-11",
+  "station": 11,
+  "part": "Teil 2",
+  "task_en": "Topic: travel. Draw a word card, ask your partner a question with the word, then answer your partner's question.",
+  "task_de": "Thema: Reisen. Fragen und antworten Sie.",
+  "cards": [
+   "Urlaub",
+   "Zug",
+   "Hotel",
+   "Koffer",
+   "Meer",
+   "Flugzeug"
+  ],
+  "phrases": [
+   [
+    "Wohin fährst du im Urlaub?",
+    "Where are you going on holiday?"
+   ],
+   [
+    "Fährst du gern mit dem Zug?",
+    "Do you like travelling by train?"
+   ],
+   [
+    "Ich bin nach … gefahren / geflogen.",
+    "I went / flew to …"
+   ],
+   [
+    "Ich habe … gesehen / gemacht.",
+    "I saw / did …"
+   ],
+   [
+    "Warst du schon einmal am Meer?",
+    "Have you ever been to the sea?"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Wohin fährst du im Urlaub?",
+    "Where are you going on holiday?"
+   ],
+   [
+    "B",
+    "Im August fahre ich mit meiner Familie ans Meer.",
+    "In August I'm going to the sea with my family."
+   ],
+   [
+    "B",
+    "Fährst du gern mit dem Zug?",
+    "Do you like travelling by train?"
+   ],
+   [
+    "A",
+    "Ja. Im Mai bin ich mit dem Zug nach Berlin gefahren. Das war schön!",
+    "Yes. In May I went to Berlin by train. That was lovely!"
+   ]
+  ],
+  "partner": [
+   [
+    "Wo hast du im Sommer Urlaub gemacht?",
+    "Where did you go on holiday in the summer?"
+   ],
+   [
+    "Bist du schon einmal mit dem Flugzeug geflogen?",
+    "Have you ever travelled by plane?"
+   ],
+   [
+    "Schläfst du im Urlaub gern im Hotel?",
+    "On holiday, do you like staying in a hotel?"
+   ],
+   [
+    "Hast du einen großen Koffer?",
+    "Do you have a big suitcase?"
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 120
+ },
+ {
+  "id": "a1-s-12",
+  "station": 12,
+  "part": "Teil 2",
+  "task_en": "Topic: holidays and weather. Draw a word card, ask your partner a question with the word, then answer your partner's question.",
+  "task_de": "Thema: Feste und Wetter. Fragen und antworten Sie.",
+  "cards": [
+   "Geburtstag",
+   "Geschenk",
+   "Party",
+   "Wetter",
+   "Sommer",
+   "Winter"
+  ],
+  "phrases": [
+   [
+    "Wann hast du Geburtstag?",
+    "When is your birthday?"
+   ],
+   [
+    "Am vierten März.",
+    "On the fourth of March."
+   ],
+   [
+    "Was hast du zum Geburtstag bekommen?",
+    "What did you get for your birthday?"
+   ],
+   [
+    "Wie ist das Wetter in …?",
+    "What's the weather like in …?"
+   ],
+   [
+    "Im Sommer ist es heiß. / Im Winter schneit es.",
+    "In summer it's hot. / In winter it snows."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Wann hast du Geburtstag?",
+    "When is your birthday?"
+   ],
+   [
+    "B",
+    "Am vierten März. Dann mache ich immer eine Party.",
+    "On the fourth of March. I always have a party then."
+   ],
+   [
+    "B",
+    "Magst du den Winter?",
+    "Do you like winter?"
+   ],
+   [
+    "A",
+    "Nein, im Winter ist es zu kalt. Ich mag den Sommer, dann scheint die Sonne.",
+    "No, it's too cold in winter. I like summer, the sun shines then."
+   ]
+  ],
+  "partner": [
+   [
+    "Wann hast du Geburtstag?",
+    "When is your birthday?"
+   ],
+   [
+    "Was hast du zum Geburtstag bekommen?",
+    "What did you get for your birthday?"
+   ],
+   [
+    "Wie ist das Wetter im Sommer in deinem Land?",
+    "What's the weather like in summer in your country?"
+   ],
+   [
+    "Gehst du gern auf Partys?",
+    "Do you like going to parties?"
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 120
+ }
+]

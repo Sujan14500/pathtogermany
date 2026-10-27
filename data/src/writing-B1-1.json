@@ -1,0 +1,574 @@
+[
+ {
+  "id": "b1-w-01",
+  "station": 1,
+  "part": "Teil 1",
+  "task_en": "You moved into a flat-share (WG) a month ago. Your friend Lena wants to know how you're getting on. Write her an email (about 80 words).",
+  "task_de": "Sie sind vor einem Monat in eine Wohngemeinschaft (WG) gezogen. Ihre Freundin Lena möchte wissen, wie es Ihnen dort gefällt. Schreiben Sie Lena eine E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
+  "points": [
+   "Beschreiben Sie: Wer wohnt mit Ihnen in der WG?",
+   "Begründen Sie: Was ist im Zusammenleben manchmal schwierig?",
+   "Machen Sie Lena einen Vorschlag für einen Besuch."
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Liebe Lena, / Lieber Jonas,",
+    "Dear Lena, / Dear Jonas, (informal)"
+   ],
+   [
+    "Vielen Dank für deine Nachricht!",
+    "Thanks a lot for your message!"
+   ],
+   [
+    "Ich wohne mit … zusammen, der/die …",
+    "I live with …, who …"
+   ],
+   [
+    "Schwierig ist nur, dass …",
+    "The only difficult thing is that …"
+   ],
+   [
+    "Hast du Lust, mich am … zu besuchen?",
+    "Would you like to visit me on …?"
+   ],
+   [
+    "Liebe Grüße / Bis bald!",
+    "Love / See you soon!"
+   ]
+  ],
+  "model": "Liebe Lena,\nvielen Dank für deine Nachricht! Mir geht es in der WG richtig gut. Ich wohne mit zwei netten Leuten zusammen: Tom, der Medizin studiert, und Sara, die in einem Café arbeitet. Schwierig ist nur das Putzen. Die Küche, die wir alle benutzen, ist oft unordentlich, weil wir noch keinen Putzplan haben. Darüber sprechen wir am Sonntag. Hast du Lust, mich nächsten Samstag zu besuchen? Dann koche ich für uns und du lernst die beiden kennen.\nLiebe Grüße",
+  "model_en": "Dear Lena,\nThanks a lot for your message! I'm really happy in the flat-share. I live with two nice people: Tom, who studies medicine, and Sara, who works in a café. The only difficult thing is the cleaning. The kitchen, which we all use, is often messy because we don't have a cleaning rota yet. We're going to talk about it on Sunday. Would you like to visit me next Saturday? Then I'll cook for us and you'll get to know the two of them.\nLove",
+  "rubric": [
+   "Informal greeting (Liebe Lena) and closing (Liebe Grüße)",
+   "All three points: your flatmates, a difficulty with its reason, a suggestion",
+   "Relative clauses describe people and things (Tom, der …; die Küche, die …)",
+   "Ideas are linked with weil, aber, dann",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-02",
+  "station": 2,
+  "part": "Teil 2",
+  "task_en": "In a radio programme's online guestbook people discuss working from home. React to Malte's opinion and write your own (about 80 words).",
+  "task_de": "Sie haben im Radio eine Sendung zum Thema „Arbeiten im Homeoffice“ gehört. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich arbeite seit zwei Jahren nur noch zu Hause. Ich spare jeden Tag eine Stunde Fahrzeit und kann mich viel besser konzentrieren. Ein Büro brauche ich nicht mehr.“ – Malte, 34\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "points": [
+   "Ihre Meinung zum Homeoffice",
+   "Ein Vorteil und ein Nachteil",
+   "Ein Beispiel aus Ihrem Arbeitsleben oder Ihrem Umfeld"
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Ich kann … gut verstehen, aber …",
+    "I can understand … well, but …"
+   ],
+   [
+    "Ein großer Vorteil ist, dass …",
+    "A big advantage is that …"
+   ],
+   [
+    "Ein Nachteil ist aber, dass …",
+    "One disadvantage, though, is that …"
+   ],
+   [
+    "In meiner Firma wird das so gemacht: …",
+    "In my company it's done like this: …"
+   ],
+   [
+    "Meiner Meinung nach ist … die beste Lösung.",
+    "In my opinion … is the best solution."
+   ]
+  ],
+  "model": "Ich kann Malte gut verstehen, denn ich arbeite auch zwei Tage pro Woche zu Hause. Ein großer Vorteil ist, dass man keine Zeit im Verkehr verliert. Ein Nachteil ist aber, dass man die Kollegen kaum noch sieht. Viele Probleme werden im persönlichen Gespräch schneller gelöst als per E-Mail. In meiner Firma wird das so gemacht: Montags und freitags arbeiten wir im Homeoffice, an den anderen Tagen im Büro. Meiner Meinung nach ist diese Mischung die beste Lösung für alle.",
+  "model_en": "I can understand Malte well, because I also work from home two days a week. A big advantage is that you don't lose any time in traffic. One disadvantage, though, is that you hardly see your colleagues any more. Many problems are solved faster in a face-to-face conversation than by email. In my company it's done like this: on Mondays and Fridays we work from home, on the other days in the office. In my opinion this mix is the best solution for everyone.",
+  "rubric": [
+   "You react to Malte's opinion and give your own clearly",
+   "All three points: your opinion, an advantage and a disadvantage, an example",
+   "Connectors link the ideas (denn, aber); a passive sentence fits well here (Probleme werden gelöst)",
+   "Varied sentence structure; few errors that hinder understanding",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-03",
+  "station": 3,
+  "part": "Teil 3",
+  "task_en": "You can't come to your German course next week. Write a short email to your course teacher, Herr Weber (about 40 words).",
+  "task_de": "Sie können nächste Woche nicht zu Ihrem Deutschkurs kommen. Schreiben Sie Ihrem Kursleiter, Herrn Weber, eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "points": [
+   "Entschuldigen Sie sich höflich",
+   "Nennen Sie den Grund",
+   "Bitten Sie um die Arbeitsblätter und die Hausaufgaben"
+  ],
+  "words": [
+   35,
+   50
+  ],
+  "phrases": [
+   [
+    "Sehr geehrter Herr Weber,",
+    "Dear Mr Weber, (formal)"
+   ],
+   [
+    "Leider kann ich … nicht kommen, weil …",
+    "Unfortunately I can't come …, because …"
+   ],
+   [
+    "Das tut mir sehr leid.",
+    "I'm very sorry about that."
+   ],
+   [
+    "Könnten Sie mir bitte … schicken?",
+    "Could you please send me …?"
+   ],
+   [
+    "Vielen Dank und freundliche Grüße",
+    "Many thanks and kind regards"
+   ]
+  ],
+  "model": "Sehr geehrter Herr Weber,\nleider kann ich nächste Woche nicht zum Kurs kommen, weil ich an einer Fortbildung meiner Firma teilnehmen muss. Das tut mir sehr leid. Könnten Sie mir bitte die Arbeitsblätter und die Hausaufgaben per E-Mail schicken?\nVielen Dank und freundliche Grüße",
+  "model_en": "Dear Mr Weber,\nUnfortunately I can't come to the course next week, because I have to attend a training course for my company. I'm very sorry about that. Could you please send me the worksheets and the homework by email?\nMany thanks and kind regards",
+  "rubric": [
+   "Formal greeting (Sehr geehrter Herr Weber) and closing",
+   "Polite Sie-form throughout",
+   "All three points: apology, reason, request",
+   "A polite request with Könnten Sie …?",
+   "About 40 words; short and to the point"
+  ]
+ },
+ {
+  "id": "b1-w-04",
+  "station": 4,
+  "part": "Teil 1",
+  "task_en": "Your friend Jonas writes that he often feels tired and wants to do more sport. You have been going swimming regularly for three months. Write back to him (about 80 words).",
+  "task_de": "Ihr Freund Jonas hat Ihnen geschrieben: Er ist oft müde und möchte mehr Sport machen. Sie gehen seit drei Monaten regelmäßig schwimmen. Antworten Sie Jonas mit einer E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
+  "points": [
+   "Beschreiben Sie: Wann und wo machen Sie Sport?",
+   "Begründen Sie: Warum tut Ihnen der Sport gut?",
+   "Machen Sie Jonas einen Vorschlag."
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Lieber Jonas,",
+    "Dear Jonas,"
+   ],
+   [
+    "Schade, dass …",
+    "What a pity that …"
+   ],
+   [
+    "Seit drei Monaten gehe ich …",
+    "For three months I've been going …"
+   ],
+   [
+    "Wenn ich du wäre, würde ich …",
+    "If I were you, I would …"
+   ],
+   [
+    "Hättest du am … Zeit?",
+    "Would you have time on …?"
+   ],
+   [
+    "Danach könnten wir …",
+    "Afterwards we could …"
+   ]
+  ],
+  "model": "Lieber Jonas,\ndanke für deine Mail! Schade, dass du dich so müde fühlst. Seit drei Monaten gehe ich zweimal pro Woche ins Hallenbad, meistens dienstags und samstags. Am Anfang war es anstrengend, aber jetzt schlafe ich viel besser und habe mehr Energie. Außerdem habe ich keine Rückenschmerzen mehr. Wenn ich du wäre, würde ich einfach mal mitkommen. Hättest du am Samstag um zehn Uhr Zeit? Danach könnten wir zusammen frühstücken.\nViele Grüße",
+  "model_en": "Dear Jonas,\nThanks for your email! What a pity that you feel so tired. For three months I've been going to the indoor pool twice a week, usually on Tuesdays and Saturdays. At first it was tiring, but now I sleep much better and have more energy. Also, I don't have back pain any more. If I were you, I'd simply come along. Would you have time on Saturday at ten? Afterwards we could have breakfast together.\nBest wishes",
+  "rubric": [
+   "Informal greeting and closing; you react to Jonas's message",
+   "All three points: when and where, why it helps, a suggestion",
+   "Konjunktiv II for advice and suggestions (Wenn ich du wäre …; Hättest du …?; Wir könnten …)",
+   "Ideas are linked (aber, außerdem, danach)",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-05",
+  "station": 5,
+  "part": "Teil 2",
+  "task_en": "A TV programme asked: 'Do we still need printed newspapers?' React to Lena's opinion in the online guestbook and write your own (about 80 words).",
+  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Brauchen wir noch gedruckte Zeitungen?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich lese meine Nachrichten nur noch auf dem Handy. Das ist schneller, billiger und besser für die Umwelt. Gedruckte Zeitungen sind für mich Vergangenheit.“ – Lena, 26\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "points": [
+   "Ihre Meinung zum Thema",
+   "Wie informieren Sie sich selbst?",
+   "Ein Vorteil oder Nachteil von Zeitungen oder Nachrichten im Internet"
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Ich sehe das ein bisschen anders.",
+    "I see it a bit differently."
+   ],
+   [
+    "Ich lese die Nachrichten meistens …",
+    "I usually read the news …"
+   ],
+   [
+    "Obwohl …, …",
+    "Although …, …"
+   ],
+   [
+    "Trotzdem …",
+    "Nevertheless …"
+   ],
+   [
+    "Meiner Meinung nach sollte es beides geben.",
+    "In my opinion there should be both."
+   ]
+  ],
+  "model": "Ich verstehe Lenas Meinung, aber ich sehe das ein bisschen anders. Ich lese die Nachrichten zwar auch meistens auf dem Handy, weil das schnell und praktisch ist. Trotzdem kaufe ich am Wochenende gern eine Zeitung. Obwohl sie Geld kostet, kann ich sie in Ruhe und ohne störende Werbung lesen. Außerdem findet man im Internet viele Nachrichten, die nicht stimmen. Meiner Meinung nach sollte es beides geben: das Internet für schnelle Informationen und die Zeitung für längere Artikel.",
+  "model_en": "I understand Lena's opinion, but I see it a bit differently. I do also read the news on my phone most of the time, because it's quick and practical. Nevertheless I like buying a newspaper at the weekend. Although it costs money, I can read it in peace and without annoying adverts. Besides, on the internet you find a lot of news that isn't true. In my opinion there should be both: the internet for quick information and the newspaper for longer articles.",
+  "rubric": [
+   "You react to Lena's opinion and state your own clearly",
+   "All three points: your opinion, how you get your news, an advantage or disadvantage",
+   "obwohl and trotzdem used correctly (verb at the end after obwohl; verb second after trotzdem)",
+   "Varied sentence structure; few errors that hinder understanding",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-06",
+  "station": 6,
+  "part": "Teil 3",
+  "task_en": "A week ago you bought a coffee machine at the shop 'Elektro Hansen'. Now it no longer works. Write a short email to customer service (about 40 words).",
+  "task_de": "Sie haben vor einer Woche im Geschäft „Elektro Hansen“ eine Kaffeemaschine gekauft. Jetzt funktioniert sie nicht mehr. Schreiben Sie dem Kundenservice eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "points": [
+   "Sagen Sie, was Sie wann gekauft haben",
+   "Beschreiben Sie das Problem",
+   "Sagen Sie, was Sie jetzt möchten"
+  ],
+  "words": [
+   35,
+   50
+  ],
+  "phrases": [
+   [
+    "Sehr geehrte Damen und Herren,",
+    "Dear Sir or Madam,"
+   ],
+   [
+    "Am … habe ich bei Ihnen … gekauft.",
+    "On … I bought … from you."
+   ],
+   [
+    "Leider funktioniert … nicht mehr.",
+    "Unfortunately … no longer works."
+   ],
+   [
+    "Wegen dieses Problems möchte ich …",
+    "Because of this problem I'd like to …"
+   ],
+   [
+    "Mit freundlichen Grüßen",
+    "Kind regards"
+   ]
+  ],
+  "model": "Sehr geehrte Damen und Herren,\nam 3. Mai habe ich bei Ihnen eine Kaffeemaschine gekauft. Leider funktioniert sie seit gestern nicht mehr: Das Wasser wird nicht heiß. Wegen dieses Problems möchte ich die Maschine umtauschen. Ist das bis Ende der Woche möglich?\nMit freundlichen Grüßen",
+  "model_en": "Dear Sir or Madam,\nOn 3 May I bought a coffee machine from you. Unfortunately it hasn't worked since yesterday: the water doesn't get hot. Because of this problem I would like to exchange the machine. Is that possible by the end of the week?\nKind regards",
+  "rubric": [
+   "Formal greeting (Sehr geehrte Damen und Herren) and closing (Mit freundlichen Grüßen)",
+   "All three points: what and when, the problem, what you want",
+   "Polite but clear; Sie-form, no du",
+   "wegen + genitive (wegen dieses Problems)",
+   "About 40 words"
+  ]
+ },
+ {
+  "id": "b1-w-07",
+  "station": 7,
+  "part": "Teil 1",
+  "task_en": "Last week you travelled by train to the Baltic Sea. Your friend Priya couldn't come. Write her an email (about 80 words).",
+  "task_de": "Sie waren letzte Woche mit dem Zug an der Ostsee. Ihre Freundin Priya konnte leider nicht mitkommen. Schreiben Sie Priya eine E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
+  "points": [
+   "Beschreiben Sie: Was haben Sie dort gemacht?",
+   "Begründen Sie: Was war auf der Reise ein Problem?",
+   "Machen Sie einen Vorschlag für ein Treffen."
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Schade, dass du nicht dabei warst!",
+    "What a pity you weren't there!"
+   ],
+   [
+    "Wir sind jeden Tag … gegangen.",
+    "Every day we went …"
+   ],
+   [
+    "Nachdem wir … angekommen waren, …",
+    "After we had arrived …, …"
+   ],
+   [
+    "Deshalb …",
+    "That's why …"
+   ],
+   [
+    "Wollen wir uns am … treffen?",
+    "Shall we meet on …?"
+   ]
+  ],
+  "model": "Liebe Priya,\nschade, dass du nicht dabei warst! Die Reise an die Ostsee war wunderschön. Wir sind jeden Tag am Strand spazieren gegangen und haben viel frischen Fisch gegessen. Nur die Hinfahrt war anstrengend: Nachdem wir in Hamburg ausgestiegen waren, mussten wir zwei Stunden auf den nächsten Zug warten. Deshalb sind wir erst um Mitternacht im Hotel angekommen. Ich habe ganz viele Fotos gemacht. Wollen wir uns am Sonntag im Café treffen? Dann zeige ich sie dir.\nLiebe Grüße",
+  "model_en": "Dear Priya,\nWhat a pity you weren't there! The trip to the Baltic Sea was wonderful. Every day we went for walks on the beach and ate lots of fresh fish. Only the journey there was tiring: after we had got off in Hamburg, we had to wait two hours for the next train. That's why we only arrived at the hotel at midnight. I took loads of photos. Shall we meet at the café on Sunday? Then I'll show them to you.\nLove",
+  "rubric": [
+   "Informal greeting and closing",
+   "All three points: what you did, a problem on the journey, a suggestion",
+   "Past tenses in the right order (Perfekt; Plusquamperfekt after nachdem)",
+   "Ideas linked with nur, deshalb, dann",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-08",
+  "station": 8,
+  "part": "Teil 2",
+  "task_en": "In a TV programme's online guestbook people discuss whether cars should be banned from city centres. React to Jonas's opinion and write your own (about 80 words).",
+  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Autofreie Innenstädte“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Autos sollten in der Innenstadt verboten werden. Die Luft wäre sauberer, es wäre ruhiger, und Kinder könnten sicher draußen spielen. Wer in die Stadt will, kann den Bus oder das Fahrrad nehmen.“ – Jonas, 29\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "points": [
+   "Ihre Meinung zum Thema",
+   "Ein Grund oder ein Beispiel",
+   "Ein Vorschlag oder eine Alternative"
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Meiner Meinung nach …",
+    "In my opinion …"
+   ],
+   [
+    "Ich bin der Ansicht, dass …",
+    "I take the view that …"
+   ],
+   [
+    "Ein Vorteil/Nachteil ist, dass …",
+    "One advantage/disadvantage is that …"
+   ],
+   [
+    "Deshalb finde ich …",
+    "That's why I think …"
+   ],
+   [
+    "Zum Schluss möchte ich sagen, …",
+    "Finally, I'd like to say …"
+   ]
+  ],
+  "model": "Ich stimme Jonas nur teilweise zu. Natürlich wäre die Luft in einer autofreien Innenstadt besser, und es gäbe weniger Lärm. Trotzdem finde ich ein komplettes Verbot schwierig. Viele ältere Menschen brauchen das Auto, um einzukaufen oder zum Arzt zu fahren. Auch Handwerker können nicht alles mit dem Fahrrad transportieren. Deshalb schlage ich vor, dass die Städte mehr Busse und Radwege anbieten, damit weniger Leute mit dem Auto fahren. Ausnahmen sollte es aber weiterhin geben.",
+  "model_en": "I only partly agree with Jonas. Of course the air in a car-free city centre would be better, and there would be less noise. Nevertheless I think a complete ban is difficult. Many older people need their car to go shopping or to the doctor's. Tradespeople can't transport everything by bike either. That's why I suggest that cities offer more buses and cycle paths so that fewer people drive. But there should still be exceptions.",
+  "rubric": [
+   "Your opinion is clear and supported by a reason",
+   "All three points are covered",
+   "Connectors (trotzdem, deshalb) link the ideas; um … zu and damit say what something is for",
+   "Varied sentence structure; few errors that hinder understanding",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-09",
+  "station": 9,
+  "part": "Teil 3",
+  "task_en": "Your boss, Frau Brandt, has invited all employees to a concert on Friday evening. You can't go. Write her a short email (about 40 words).",
+  "task_de": "Ihre Chefin, Frau Brandt, hat alle Mitarbeiterinnen und Mitarbeiter am Freitagabend zu einem Konzert eingeladen. Sie können nicht kommen. Schreiben Sie Frau Brandt eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "points": [
+   "Bedanken Sie sich für die Einladung",
+   "Sagen Sie höflich ab und nennen Sie den Grund",
+   "Wünschen Sie allen einen schönen Abend"
+  ],
+  "words": [
+   35,
+   50
+  ],
+  "phrases": [
+   [
+    "Liebe Frau Brandt, / Sehr geehrte Frau Brandt,",
+    "Dear Ms Brandt, (friendly / formal)"
+   ],
+   [
+    "Vielen Dank für die Einladung zu …!",
+    "Thank you very much for the invitation to …!"
+   ],
+   [
+    "Ich höre sowohl … als auch … gern.",
+    "I like listening to both … and …"
+   ],
+   [
+    "Leider kann ich am … nicht kommen, weil …",
+    "Unfortunately I can't come on …, because …"
+   ],
+   [
+    "Ich wünsche Ihnen allen einen schönen Abend!",
+    "I wish you all a lovely evening!"
+   ]
+  ],
+  "model": "Liebe Frau Brandt,\nvielen Dank für die Einladung zum Konzert! Ich höre sowohl Jazz als auch klassische Musik sehr gern. Leider kann ich am Freitag nicht kommen, weil meine Eltern zu Besuch sind. Ich wünsche Ihnen allen einen schönen Abend!\nViele Grüße",
+  "model_en": "Dear Ms Brandt,\nThank you very much for the invitation to the concert! I enjoy both jazz and classical music. Unfortunately I can't come on Friday, because my parents are visiting. I wish you all a lovely evening!\nBest regards",
+  "rubric": [
+   "A greeting that suits your boss (Liebe/Sehr geehrte Frau Brandt) and a closing",
+   "Sie-form throughout",
+   "All three points: thanks, a polite refusal with a reason, good wishes",
+   "Short, friendly and polite",
+   "About 40 words"
+  ]
+ },
+ {
+  "id": "b1-w-10",
+  "station": 10,
+  "part": "Teil 1",
+  "task_en": "For two months you have been volunteering at a club that helps schoolchildren with their homework. Your friend Jonas asks what you do there. Write him an email (about 80 words).",
+  "task_de": "Sie helfen seit zwei Monaten freiwillig in einem Verein, der Schulkindern bei den Hausaufgaben hilft. Ihr Freund Jonas möchte wissen, was Sie dort machen. Schreiben Sie Jonas eine E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
+  "points": [
+   "Beschreiben Sie: Was machen Sie in dem Verein?",
+   "Begründen Sie: Warum ist Ihnen diese Arbeit wichtig?",
+   "Machen Sie Jonas einen Vorschlag."
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Du hast gefragt, …",
+    "You asked …"
+   ],
+   [
+    "Seit zwei Monaten helfe ich …",
+    "For two months I've been helping …"
+   ],
+   [
+    "Ich finde es wichtig, dass …",
+    "I think it's important that …"
+   ],
+   [
+    "Im Juni werden wir … organisieren.",
+    "In June we'll organise …"
+   ],
+   [
+    "Hättest du Lust, … zu …?",
+    "Would you like to …?"
+   ]
+  ],
+  "model": "Lieber Jonas,\ndu hast gefragt, was ich jetzt immer dienstags mache: Seit zwei Monaten helfe ich in einem Verein, der Hausaufgabenhilfe für Schulkinder anbietet. Ich erkläre den Kindern Mathe und lese mit ihnen. Die Arbeit macht mir viel Spaß, und ich finde es wichtig, dass alle Kinder eine Chance bekommen. Im Juni werden wir ein Sommerfest organisieren, und wir brauchen noch Helfer. Du grillst doch so gern! Hättest du Lust, uns am 21. Juni zu helfen?\nViele Grüße",
+  "model_en": "Dear Jonas,\nYou asked what I do every Tuesday now: for two months I've been helping at a club that offers homework help for schoolchildren. I explain maths to the children and read with them. I really enjoy the work, and I think it's important that all children get a chance. In June we're going to organise a summer party, and we still need helpers. You love barbecuing! Would you like to help us on 21 June?\nBest wishes",
+  "rubric": [
+   "Informal greeting and closing",
+   "All three points: what you do, why it matters to you, a suggestion",
+   "Futur I for plans (Wir werden … organisieren)",
+   "Relative clause and dass-clause with the verb at the end",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-11",
+  "station": 11,
+  "part": "Teil 2",
+  "task_en": "In a TV programme's online guestbook people discuss whether young people should take a year off after school. React to Sophie's opinion and write your own (about 80 words).",
+  "task_de": "Sie haben im Fernsehen eine Sendung zum Thema „Nach der Schule erst einmal ein Jahr Pause?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Nach der Schule bin ich ein Jahr durch Australien gereist und habe dort gejobbt. Das war die beste Zeit meines Lebens! Jeder junge Mensch sollte ein Jahr Pause machen, bevor er studiert oder eine Ausbildung beginnt.“ – Sophie, 23\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "points": [
+   "Ihre Meinung zum Thema",
+   "Ein Beispiel aus Ihrem Leben",
+   "Ein Vorteil oder ein Nachteil"
+  ],
+  "words": [
+   70,
+   95
+  ],
+  "phrases": [
+   [
+    "Ich finde die Idee gut, aber …",
+    "I think the idea is good, but …"
+   ],
+   [
+    "Als ich … war, …",
+    "When I was …, …"
+   ],
+   [
+    "Während des Studiums …",
+    "During my studies …"
+   ],
+   [
+    "Andererseits …",
+    "On the other hand …"
+   ],
+   [
+    "Wenn man …, ist es trotzdem möglich.",
+    "If you …, it's still possible."
+   ]
+  ],
+  "model": "Ich finde die Idee gut, aber sie passt nicht für jeden. Als ich mit der Schule fertig war, habe ich sofort mit dem Studium angefangen. Während des Studiums habe ich oft gedacht, dass ich zu wenig von der Welt gesehen habe. Ein Jahr im Ausland ist eine tolle Chance, um eine Sprache zu lernen und selbstständig zu werden. Andererseits kostet so ein Jahr viel Geld, und nicht alle Eltern können das bezahlen. Wenn man aber unterwegs arbeitet, ist es trotzdem möglich.",
+  "model_en": "I think the idea is good, but it doesn't suit everyone. When I finished school, I started university straight away. During my studies I often thought that I had seen too little of the world. A year abroad is a great chance to learn a language and become independent. On the other hand, a year like that costs a lot of money, and not all parents can pay for it. But if you work along the way, it's still possible.",
+  "rubric": [
+   "You react to Sophie's opinion and give your own clearly",
+   "All three points: your opinion, an example from your life, an advantage or disadvantage",
+   "als (one event in the past) and wenn (if / whenever) used correctly",
+   "Varied structure with während, um … zu, andererseits",
+   "About 80 words"
+  ]
+ },
+ {
+  "id": "b1-w-12",
+  "station": 12,
+  "part": "Teil 3",
+  "task_en": "Your landlord, Herr Krüger, wants to have the heating in your flat checked on Thursday morning. You'll be at work then. Write him a short email (about 40 words).",
+  "task_de": "Ihr Vermieter, Herr Krüger, möchte am Donnerstagvormittag die Heizung in Ihrer Wohnung kontrollieren lassen. Zu dieser Zeit sind Sie nicht zu Hause. Schreiben Sie Herrn Krüger eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "points": [
+   "Bedanken Sie sich für die Information",
+   "Erklären Sie, warum der Termin nicht passt",
+   "Schlagen Sie einen anderen Termin oder eine Lösung vor"
+  ],
+  "words": [
+   35,
+   50
+  ],
+  "phrases": [
+   [
+    "Sehr geehrter Herr Krüger,",
+    "Dear Mr Krüger,"
+   ],
+   [
+    "Vielen Dank für Ihre Nachricht.",
+    "Thank you for your message."
+   ],
+   [
+    "Leider bin ich …, deshalb …",
+    "Unfortunately I'm …, so …"
+   ],
+   [
+    "Wäre ein Termin am … möglich?",
+    "Would an appointment on … be possible?"
+   ],
+   [
+    "Mit freundlichen Grüßen",
+    "Kind regards"
+   ]
+  ],
+  "model": "Sehr geehrter Herr Krüger,\nvielen Dank für Ihre Nachricht. Leider bin ich am Donnerstagvormittag bei der Arbeit, deshalb kann ich nicht zu Hause sein. Wäre ein Termin am Freitag ab 14 Uhr möglich? Sonst kann meine Nachbarin, Frau Yilmaz, dem Handwerker die Tür öffnen.\nMit freundlichen Grüßen",
+  "model_en": "Dear Mr Krüger,\nThank you for your message. Unfortunately I'm at work on Thursday morning, so I can't be at home. Would an appointment on Friday from 2 pm be possible? Otherwise my neighbour, Frau Yilmaz, can open the door for the workman.\nKind regards",
+  "rubric": [
+   "Formal greeting and closing",
+   "All three points: thanks, the reason, an alternative",
+   "Connectors (deshalb, sonst) and a polite question with wäre",
+   "Sie-form throughout; no errors that hinder understanding",
+   "About 40 words"
+  ]
+ }
+]

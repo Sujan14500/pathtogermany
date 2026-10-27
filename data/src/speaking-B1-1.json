@@ -1,0 +1,1199 @@
+[
+ {
+  "id": "b1-s-01",
+  "station": 1,
+  "part": "Teil 1",
+  "task_en": "Your neighbour Frau Yilmaz is moving to a smaller flat next month. You and your partner want to help her move. Plan it together (about 3 minutes).",
+  "task_de": "Ihre Nachbarin, Frau Yilmaz, zieht nächsten Monat in eine kleinere Wohnung. Sie möchten ihr zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin beim Umzug helfen. Planen Sie, was Sie tun möchten.",
+  "cards": [
+   "Wann helfen?",
+   "Kartons und Auto?",
+   "Wer hilft noch mit?",
+   "Essen und Getränke?"
+  ],
+  "phrases": [
+   [
+    "Was hältst du davon, wenn wir …?",
+    "What do you think about us …?"
+   ],
+   [
+    "Das ist eine gute Idee.",
+    "That's a good idea."
+   ],
+   [
+    "Ich bin nicht sicher. Wie wäre es mit …?",
+    "I'm not sure. How about …?"
+   ],
+   [
+    "Ich kümmere mich um …",
+    "I'll take care of …"
+   ],
+   [
+    "Gut, dann machen wir es so.",
+    "Good, then let's do it like that."
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Hast du gehört? Frau Yilmaz zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
+    "Have you heard? Frau Yilmaz is moving next month. Shall we help her with the move?"
+   ],
+   [
+    "A",
+    "Ja, gern! Frau Yilmaz ist eine Nachbarin, die uns auch immer hilft. Wann ist der Umzug denn?",
+    "Yes, gladly! Frau Yilmaz is a neighbour who always helps us too. When is the move?"
+   ],
+   [
+    "B",
+    "Der Umzug ist am Samstag, den vierzehnten. Ich habe den ganzen Tag Zeit. Passt dir das?",
+    "The move is on Saturday the fourteenth. I'm free all day. Does that suit you?"
+   ],
+   [
+    "A",
+    "Ja, Samstag passt mir gut. Wollen wir um neun Uhr anfangen? Dann sind wir am Nachmittag fertig.",
+    "Yes, Saturday suits me. Shall we start at nine? Then we'll be finished in the afternoon."
+   ],
+   [
+    "B",
+    "Gut. Wir brauchen viele Kartons. Ich kann im Supermarkt fragen. Kannst du ein Auto besorgen?",
+    "Good. We need lots of boxes. I can ask at the supermarket. Can you get hold of a car?"
+   ],
+   [
+    "A",
+    "Klar. Mein Bruder hat ein großes Auto, das er mir bestimmt leiht. Ich frage ihn heute noch.",
+    "Sure. My brother has a big car that he'll surely lend me. I'll ask him today."
+   ],
+   [
+    "B",
+    "Super. Vielleicht fragen wir auch Jonas? Er ist stark und hat am Wochenende meistens Zeit.",
+    "Great. Maybe we should ask Jonas too? He's strong and is usually free at weekends."
+   ],
+   [
+    "A",
+    "Gute Idee! Ich rufe Jonas heute Abend an. Zu dritt geht es viel schneller.",
+    "Good idea! I'll call Jonas this evening. With three of us it'll go much faster."
+   ],
+   [
+    "B",
+    "Und mittags bekommen alle Hunger. Was meinst du: Sollen wir Pizza bestellen?",
+    "And at lunchtime everyone gets hungry. What do you think: shall we order pizza?"
+   ],
+   [
+    "A",
+    "Pizza ist praktisch. Ich bringe noch Getränke und einen Kuchen mit, den ich am Freitag backe.",
+    "Pizza is practical. I'll also bring drinks and a cake that I'll bake on Friday."
+   ],
+   [
+    "B",
+    "Gut, dann machen wir es so. Ich sage Frau Yilmaz heute Abend Bescheid.",
+    "Good, let's do it like that. I'll let Frau Yilmaz know this evening."
+   ],
+   [
+    "A",
+    "Prima, ich freue mich schon. Bis Samstag!",
+    "Great, I'm looking forward to it. See you on Saturday!"
+   ]
+  ],
+  "partner": [
+   [
+    "Hast du gehört? Frau Yilmaz zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
+    "Have you heard? Frau Yilmaz is moving next month. Shall we help her with the move?"
+   ],
+   [
+    "Der Umzug ist am Samstag, den vierzehnten. Ich habe den ganzen Tag Zeit. Passt dir das?",
+    "The move is on Saturday the fourteenth. I'm free all day. Does that suit you?"
+   ],
+   [
+    "Gut. Wir brauchen viele Kartons. Ich kann im Supermarkt fragen. Kannst du ein Auto besorgen?",
+    "Good. We need lots of boxes. I can ask at the supermarket. Can you get hold of a car?"
+   ],
+   [
+    "Super. Vielleicht fragen wir auch Jonas? Er ist stark und hat am Wochenende meistens Zeit.",
+    "Great. Maybe we should ask Jonas too? He's strong and is usually free at weekends."
+   ],
+   [
+    "Und mittags bekommen alle Hunger. Was meinst du: Sollen wir Pizza bestellen?",
+    "And at lunchtime everyone gets hungry. What do you think: shall we order pizza?"
+   ],
+   [
+    "Gut, dann machen wir es so. Ich sage Frau Yilmaz heute Abend Bescheid.",
+    "Good, let's do it like that. I'll let Frau Yilmaz know this evening."
+   ]
+  ],
+  "prep_s": 300,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-02",
+  "station": 2,
+  "part": "Teil 2",
+  "task_en": "Give a short presentation (about 3 minutes) on the topic on the slides: 'A four-day working week – a model for everyone?'",
+  "task_de": "Präsentieren Sie ein Thema: „Die Vier-Tage-Woche – ein Modell für alle?“",
+  "cards": [
+   "Folie 1: Thema vorstellen, Inhalt nennen",
+   "Folie 2: Ihre persönlichen Erfahrungen",
+   "Folie 3: Die Situation in Ihrem Heimatland",
+   "Folie 4: Vor- und Nachteile, Ihre Meinung",
+   "Folie 5: Abschluss und Dank"
+  ],
+  "phrases": [
+   [
+    "Ich spreche heute über das Thema …",
+    "Today I'm talking about …"
+   ],
+   [
+    "Zuerst …, dann …, danach …, zum Schluss …",
+    "First …, then …, after that …, finally …"
+   ],
+   [
+    "Ich habe selbst die Erfahrung gemacht, dass …",
+    "I've found from my own experience that …"
+   ],
+   [
+    "In meinem Heimatland ist es so, dass …",
+    "In my home country it's the case that …"
+   ],
+   [
+    "Ein Vorteil ist …, ein Nachteil ist …",
+    "One advantage is …, one disadvantage is …"
+   ],
+   [
+    "Damit komme ich zum Schluss. Vielen Dank für Ihre Aufmerksamkeit.",
+    "That brings me to the end. Thank you for your attention."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich spreche heute über das Thema „Die Vier-Tage-Woche – ein Modell für alle?“. Zuerst erzähle ich von meinen eigenen Erfahrungen. Dann berichte ich, wie die Situation in meinem Heimatland ist. Danach nenne ich Vor- und Nachteile und sage meine Meinung. Zum Schluss fasse ich alles kurz zusammen.",
+    "Today I'm talking about the topic 'A four-day week – a model for everyone?'. First I'll tell you about my own experiences. Then I'll report on the situation in my home country. After that I'll name advantages and disadvantages and give my opinion. Finally I'll briefly sum everything up."
+   ],
+   [
+    "A",
+    "Zuerst zu meinen Erfahrungen. Vor zwei Jahren habe ich in einer kleinen Firma gearbeitet, in der wir freitags frei hatten. Dafür haben wir von Montag bis Donnerstag jeden Tag neun Stunden gearbeitet.",
+    "First, my experiences. Two years ago I worked in a small company where we had Fridays off. In return we worked nine hours every day from Monday to Thursday."
+   ],
+   [
+    "A",
+    "Am Anfang waren die langen Tage anstrengend. Aber das lange Wochenende war wunderbar: Ich hatte endlich Zeit für meine Familie, für Sport und für meinen Deutschkurs.",
+    "At first the long days were tiring. But the long weekend was wonderful: at last I had time for my family, for sport and for my German course."
+   ],
+   [
+    "A",
+    "Jetzt komme ich zur Situation in meinem Heimatland Indien. Dort arbeiten viele Menschen noch sechs Tage pro Woche, zum Beispiel in Geschäften oder in kleinen Firmen. In großen IT-Firmen ist die Fünf-Tage-Woche normal. Über eine Vier-Tage-Woche wird bei uns nur selten gesprochen.",
+    "Now I come to the situation in my home country, India. Many people there still work six days a week, for example in shops or small companies. In big IT companies the five-day week is normal. A four-day week is only rarely talked about at home."
+   ],
+   [
+    "A",
+    "In Deutschland wird die Vier-Tage-Woche dagegen schon in einigen Firmen ausprobiert.",
+    "In Germany, on the other hand, the four-day week is already being tried out in some companies."
+   ],
+   [
+    "A",
+    "Was sind die Vorteile? Die Mitarbeiter sind oft zufriedener und seltener krank. Außerdem wird weniger Energie verbraucht, wenn das Büro einen Tag geschlossen ist.",
+    "What are the advantages? Employees are often happier and less often ill. Also, less energy is used when the office is closed for a day."
+   ],
+   [
+    "A",
+    "Es gibt aber auch Nachteile. In manchen Berufen ist eine Vier-Tage-Woche schwierig, zum Beispiel im Krankenhaus oder im Supermarkt. Patienten und Kunden brauchen jeden Tag Hilfe. Und wenn man an vier Tagen genauso viel schaffen muss wie vorher an fünf, bekommt man schnell Stress.",
+    "But there are also disadvantages. In some jobs a four-day week is difficult, for example in a hospital or a supermarket. Patients and customers need help every day. And if you have to get just as much done in four days as you did in five before, you quickly get stressed."
+   ],
+   [
+    "A",
+    "Meiner Meinung nach ist die Vier-Tage-Woche eine gute Idee, aber nicht für alle Berufe. Die Firmen sollten sie ausprobieren, wo es möglich ist.",
+    "In my opinion the four-day week is a good idea, but not for every job. Companies should try it out where it's possible."
+   ],
+   [
+    "A",
+    "Damit komme ich zum Schluss. Die Vier-Tage-Woche hat viele Vorteile, aber sie passt nicht überall. Vielen Dank für Ihre Aufmerksamkeit!",
+    "That brings me to the end. The four-day week has many advantages, but it doesn't fit everywhere. Thank you for your attention!"
+   ]
+  ],
+  "partner": [
+   [
+    "Danke für deine Präsentation, das war sehr interessant. Ich habe eine Frage: Würdest du lieber vier lange oder fünf kürzere Tage arbeiten?",
+    "Thanks for your presentation, that was very interesting. I have a question: would you rather work four long days or five shorter ones?"
+   ],
+   [
+    "Und was würdest du mit dem freien Tag machen?",
+    "And what would you do with the free day?"
+   ]
+  ],
+  "prep_s": 900,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-03",
+  "station": 3,
+  "part": "Teil 3",
+  "task_en": "Your partner gives a short presentation on 'Should there be no more homework?'. Listen, then give feedback, answer their question and ask one of your own (1–2 minutes).",
+  "task_de": "Ihr Gesprächspartner / Ihre Gesprächspartnerin präsentiert ein Thema: „Sollte es keine Hausaufgaben mehr geben?“ Reagieren Sie auf die Präsentation: Geben Sie eine Rückmeldung und stellen Sie eine Frage. Beantworten Sie auch die Frage Ihres Partners / Ihrer Partnerin.",
+  "cards": [
+   "Thema Ihres Partners: „Sollte es keine Hausaufgaben mehr geben?“",
+   "Folie 2: Meine Erfahrungen in der Schule",
+   "Folie 3: Hausaufgaben in Deutschland",
+   "Folie 4: Vor- und Nachteile, meine Meinung",
+   "Ihre Aufgabe: Rückmeldung geben, eine Frage stellen, die Frage beantworten"
+  ],
+  "phrases": [
+   [
+    "Vielen Dank für deine Präsentation.",
+    "Thank you for your presentation."
+   ],
+   [
+    "Besonders interessant fand ich …",
+    "I found … particularly interesting."
+   ],
+   [
+    "Zu deiner Frage: …",
+    "As for your question: …"
+   ],
+   [
+    "Als ich in der Schule war, …",
+    "When I was at school, …"
+   ],
+   [
+    "Ich habe auch eine Frage an dich: …",
+    "I have a question for you too: …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Vielen Dank für deine Präsentation. Du hast das Thema sehr klar erklärt, und besonders interessant fand ich das Beispiel aus deiner Schulzeit.",
+    "Thank you for your presentation. You explained the topic very clearly, and I found the example from your school days particularly interesting."
+   ],
+   [
+    "A",
+    "Zu deiner Frage: Ja, ich hatte auch sehr viele Hausaufgaben. Als ich in der zehnten Klasse war, saß ich jeden Abend am Schreibtisch, bis ich ins Bett ging. Seit ich arbeite, weiß ich aber, dass ich dabei viel gelernt habe.",
+    "As for your question: yes, I had lots of homework too. When I was in year ten, I sat at my desk every evening until I went to bed. But since I've been working, I know that I learned a lot that way."
+   ],
+   [
+    "A",
+    "Ich habe auch eine Frage an dich: Was sollten Kinder deiner Meinung nach am Nachmittag machen, wenn sie weniger Hausaufgaben haben?",
+    "I have a question for you too: in your opinion, what should children do in the afternoon if they have less homework?"
+   ],
+   [
+    "B",
+    "Ich finde, sie sollten Sport machen oder mit Freunden spielen. Das ist genauso wichtig wie Lernen.",
+    "I think they should do sport or play with friends. That's just as important as studying."
+   ]
+  ],
+  "partner": [
+   [
+    "Ich spreche heute über das Thema: Sollte es keine Hausaufgaben mehr geben?",
+    "Today I'm talking about the topic: should there be no more homework?"
+   ],
+   [
+    "Als ich zur Schule ging, hatte ich jeden Tag zwei Stunden Hausaufgaben. Oft war ich abends sehr müde und hatte keine Zeit für Freunde.",
+    "When I went to school, I had two hours of homework every day. I was often very tired in the evening and had no time for friends."
+   ],
+   [
+    "In Deutschland gehen heute viele Kinder in eine Ganztagsschule. Dort machen sie ihre Aufgaben am Nachmittag, und die Lehrer helfen ihnen.",
+    "In Germany today many children go to an all-day school. There they do their tasks in the afternoon, and the teachers help them."
+   ],
+   [
+    "Ich finde, dass Kinder durch Hausaufgaben lernen, selbstständig zu arbeiten. Aber zu viele Aufgaben machen Stress. Deshalb bin ich für weniger Hausaufgaben, aber nicht für gar keine.",
+    "I think children learn to work independently through homework. But too much homework causes stress. That's why I'm for less homework, but not for none at all."
+   ],
+   [
+    "Danke fürs Zuhören. Wie war das bei dir: Hattest du in der Schule viele Hausaufgaben?",
+    "Thanks for listening. How was it for you: did you have a lot of homework at school?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "b1-s-04",
+  "station": 4,
+  "part": "Teil 1",
+  "task_en": "Your colleague Malte broke his leg playing football and is in hospital for a week. Plan a visit together with your partner (about 3 minutes).",
+  "task_de": "Ihr Kollege Malte hat sich beim Fußballspielen das Bein gebrochen und liegt eine Woche im Krankenhaus. Sie möchten ihn zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin besuchen. Planen Sie den Besuch.",
+  "cards": [
+   "Wann besuchen?",
+   "Wie hinkommen?",
+   "Was mitbringen?",
+   "Wer kommt noch mit?"
+  ],
+  "phrases": [
+   [
+    "Wie wäre es, wenn wir …?",
+    "How about if we …?"
+   ],
+   [
+    "Das passt mir gut. / Da kann ich leider nicht.",
+    "That suits me. / Unfortunately I can't make that."
+   ],
+   [
+    "Ich schlage vor, dass …",
+    "I suggest that …"
+   ],
+   [
+    "Wir könnten … mitbringen.",
+    "We could bring …"
+   ],
+   [
+    "Einverstanden! Dann …",
+    "Agreed! Then …"
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Fußball das Bein gebrochen. Sollen wir ihn besuchen?",
+    "Have you heard? Malte is in hospital. He broke his leg playing football. Shall we visit him?"
+   ],
+   [
+    "A",
+    "Ja, unbedingt! Der Arme. Wenn ich im Krankenhaus wäre, würde ich mich auch über Besuch freuen.",
+    "Yes, definitely! Poor guy. If I were in hospital, I'd be glad to have visitors too."
+   ],
+   [
+    "B",
+    "Wie wäre es mit Mittwochabend nach der Arbeit? Die Besuchszeit ist bis acht Uhr.",
+    "How about Wednesday evening after work? Visiting hours are until eight."
+   ],
+   [
+    "A",
+    "Mittwoch passt mir gut. Ich habe um fünf Feierabend, dann hätten wir genug Zeit.",
+    "Wednesday suits me. I finish work at five, so we'd have enough time."
+   ],
+   [
+    "B",
+    "Das Krankenhaus ist ziemlich weit weg. Wollen wir mit dem Bus fahren, oder nimmst du dein Auto?",
+    "The hospital is quite far away. Shall we take the bus, or will you take your car?"
+   ],
+   [
+    "A",
+    "Ich nehme mein Auto, dann sind wir schneller. Ich kann dich direkt vom Büro mitnehmen.",
+    "I'll take my car, then we'll be quicker. I can pick you up straight from the office."
+   ],
+   [
+    "B",
+    "Und was bringen wir mit? Blumen finde ich ein bisschen langweilig.",
+    "And what shall we bring? I find flowers a bit boring."
+   ],
+   [
+    "A",
+    "Da hast du recht. Wir könnten ihm eine Fußballzeitschrift und etwas Obst mitbringen. Im Krankenhaus ist es ja oft langweilig.",
+    "You're right. We could bring him a football magazine and some fruit. Hospital is often boring, after all."
+   ],
+   [
+    "B",
+    "Gute Idee! Sollen wir die anderen Kollegen auch fragen?",
+    "Good idea! Shall we ask the other colleagues too?"
+   ],
+   [
+    "A",
+    "Ja, aber nicht zu viele, sonst wird es für ihn zu anstrengend. Ich schreibe heute eine Nachricht in unsere Team-Gruppe.",
+    "Yes, but not too many, otherwise it'll be too tiring for him. I'll write a message in our team group today."
+   ],
+   [
+    "B",
+    "Gut, dann treffen wir uns am Mittwoch um halb sechs vor dem Büro.",
+    "Good, then let's meet in front of the office on Wednesday at half past five."
+   ],
+   [
+    "A",
+    "Perfekt, das machen wir. Bis Mittwoch!",
+    "Perfect, let's do that. See you on Wednesday!"
+   ]
+  ],
+  "partner": [
+   [
+    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Fußball das Bein gebrochen. Sollen wir ihn besuchen?",
+    "Have you heard? Malte is in hospital. He broke his leg playing football. Shall we visit him?"
+   ],
+   [
+    "Wie wäre es mit Mittwochabend nach der Arbeit? Die Besuchszeit ist bis acht Uhr.",
+    "How about Wednesday evening after work? Visiting hours are until eight."
+   ],
+   [
+    "Das Krankenhaus ist ziemlich weit weg. Wollen wir mit dem Bus fahren, oder nimmst du dein Auto?",
+    "The hospital is quite far away. Shall we take the bus, or will you take your car?"
+   ],
+   [
+    "Und was bringen wir mit? Blumen finde ich ein bisschen langweilig.",
+    "And what shall we bring? I find flowers a bit boring."
+   ],
+   [
+    "Gute Idee! Sollen wir die anderen Kollegen auch fragen?",
+    "Good idea! Shall we ask the other colleagues too?"
+   ],
+   [
+    "Gut, dann treffen wir uns am Mittwoch um halb sechs vor dem Büro.",
+    "Good, then let's meet in front of the office on Wednesday at half past five."
+   ]
+  ],
+  "prep_s": 300,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-05",
+  "station": 5,
+  "part": "Teil 2",
+  "task_en": "Give a short presentation (about 3 minutes) on the topic on the slides: 'Should children have their own smartphone?'",
+  "task_de": "Präsentieren Sie ein Thema: „Brauchen Kinder ein eigenes Smartphone?“",
+  "cards": [
+   "Folie 1: Thema vorstellen, Inhalt nennen",
+   "Folie 2: Ihre persönlichen Erfahrungen",
+   "Folie 3: Die Situation in Ihrem Heimatland",
+   "Folie 4: Vor- und Nachteile, Ihre Meinung",
+   "Folie 5: Abschluss und Dank"
+  ],
+  "phrases": [
+   [
+    "Ich spreche heute über das Thema …",
+    "Today I'm talking about …"
+   ],
+   [
+    "Zuerst möchte ich … erzählen.",
+    "First I'd like to tell you about …"
+   ],
+   [
+    "In meinem Heimatland ist es so, dass …",
+    "In my home country it is the case that …"
+   ],
+   [
+    "Einerseits …, andererseits …",
+    "On the one hand …, on the other hand …"
+   ],
+   [
+    "Vielen Dank für Ihre Aufmerksamkeit.",
+    "Thank you for your attention."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich spreche heute über das Thema „Brauchen Kinder ein eigenes Smartphone?“. Zuerst möchte ich von meinen eigenen Erfahrungen erzählen. Danach beschreibe ich die Situation in meinem Heimatland. Dann nenne ich Vor- und Nachteile und sage meine Meinung. Am Ende fasse ich alles kurz zusammen.",
+    "Today I'm talking about the topic 'Should children have their own smartphone?'. First I'd like to tell you about my own experiences. After that I'll describe the situation in my home country. Then I'll name advantages and disadvantages and give my opinion. At the end I'll briefly sum everything up."
+   ],
+   [
+    "A",
+    "Ich selbst habe mein erstes Handy ziemlich spät bekommen. Es war ein einfaches Handy ohne Internet. Ich konnte nur telefonieren und SMS schreiben. Trotzdem war ich sehr stolz darauf.",
+    "I got my first phone quite late myself. It was a simple phone without internet. I could only make calls and send texts. Even so, I was very proud of it."
+   ],
+   [
+    "A",
+    "Heute ist das ganz anders. Meine Nichte ist erst zehn Jahre alt und hat schon ein eigenes Smartphone. Obwohl ihre Eltern feste Regeln gemacht haben, sitzt sie oft stundenlang vor dem Bildschirm.",
+    "Today it's completely different. My niece is only ten and already has her own smartphone. Although her parents have made firm rules, she often sits in front of the screen for hours."
+   ],
+   [
+    "A",
+    "Jetzt zur Situation in meinem Heimatland Indien. Dort haben viele Kinder in den Städten schon früh ein Smartphone. Oft braucht man es auch für die Schule, zum Beispiel für Hausaufgaben oder Online-Unterricht. Auf dem Land benutzen die Kinder dagegen oft das Handy ihrer Eltern.",
+    "Now to the situation in my home country, India. Many children in the cities have a smartphone early on. You often need it for school too, for example for homework or online lessons. In the countryside, on the other hand, children often use their parents' phone."
+   ],
+   [
+    "A",
+    "Einerseits hat ein Smartphone Vorteile. Kinder können ihre Eltern jederzeit anrufen, wenn es ein Problem gibt. Außerdem kann man damit viel lernen, zum Beispiel mit Sprach-Apps.",
+    "On the one hand a smartphone has advantages. Children can call their parents at any time if there's a problem. Besides, you can learn a lot with it, for example with language apps."
+   ],
+   [
+    "A",
+    "Andererseits gibt es auch Nachteile. Viele Kinder spielen zu viel und bewegen sich zu wenig. Manche schlafen schlecht, weil sie abends noch Videos schauen. Und im Internet sehen Kinder manchmal Dinge, die nicht für sie gedacht sind.",
+    "On the other hand there are disadvantages too. Many children play too much and move too little. Some sleep badly because they still watch videos in the evening. And on the internet children sometimes see things that aren't meant for them."
+   ],
+   [
+    "A",
+    "Meiner Meinung nach brauchen Kinder unter zwölf Jahren kein eigenes Smartphone. Ein einfaches Handy zum Telefonieren reicht. Ältere Kinder können ein Smartphone bekommen, aber die Eltern sollten klare Regeln machen.",
+    "In my opinion children under twelve don't need their own smartphone. A simple phone for calls is enough. Older children can get a smartphone, but parents should set clear rules."
+   ],
+   [
+    "A",
+    "Damit komme ich zum Schluss. Ein Smartphone ist praktisch, aber für kleine Kinder bringt es mehr Probleme als Vorteile. Vielen Dank für Ihre Aufmerksamkeit!",
+    "That brings me to the end. A smartphone is practical, but for young children it brings more problems than advantages. Thank you for your attention!"
+   ]
+  ],
+  "partner": [
+   [
+    "Danke für deine Präsentation. Wie alt warst du, als du dein erstes Handy bekommen hast?",
+    "Thanks for your presentation. How old were you when you got your first phone?"
+   ],
+   [
+    "Und welche Regeln findest du für Kinder besonders wichtig?",
+    "And which rules do you think are particularly important for children?"
+   ]
+  ],
+  "prep_s": 900,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-06",
+  "station": 6,
+  "part": "Teil 3",
+  "task_en": "Your partner gives a short presentation on 'Shopping online or in a shop?'. Listen, then give feedback, answer their question and ask one of your own (1–2 minutes).",
+  "task_de": "Ihr Gesprächspartner / Ihre Gesprächspartnerin präsentiert ein Thema: „Online einkaufen oder im Geschäft?“ Reagieren Sie auf die Präsentation: Geben Sie eine Rückmeldung und stellen Sie eine Frage. Beantworten Sie auch die Frage Ihres Partners / Ihrer Partnerin.",
+  "cards": [
+   "Thema Ihres Partners: „Online einkaufen oder im Geschäft?“",
+   "Folie 2: Wie ich einkaufe",
+   "Folie 3: Die Situation in Deutschland",
+   "Folie 4: Vor- und Nachteile, meine Meinung",
+   "Ihre Aufgabe: Rückmeldung geben, eine Frage stellen, die Frage beantworten"
+  ],
+  "phrases": [
+   [
+    "Danke für deine Präsentation. Sie war gut aufgebaut.",
+    "Thanks for your presentation. It was well structured."
+   ],
+   [
+    "Das Beispiel mit … fand ich sehr interessant.",
+    "I found the example about … very interesting."
+   ],
+   [
+    "Trotz … kaufe ich lieber …",
+    "Despite … I prefer to buy …"
+   ],
+   [
+    "Ich habe auch eine Frage: …",
+    "I have a question too: …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Danke für deine Präsentation. Sie war gut aufgebaut, und das Beispiel mit den kleinen Geschäften fand ich sehr interessant.",
+    "Thanks for your presentation. It was well structured, and I found the example about the small shops very interesting."
+   ],
+   [
+    "A",
+    "Zu deiner Frage: Trotz der günstigen Preise im Internet kaufe ich Kleidung lieber im Geschäft, weil ich sie anprobieren möchte. Bücher und Elektronik bestelle ich aber oft online.",
+    "As for your question: despite the low prices online, I prefer to buy clothes in a shop, because I want to try them on. But I often order books and electronics online."
+   ],
+   [
+    "A",
+    "Ich habe auch eine Frage an dich: Was machst du, wenn ein Paket nicht ankommt oder etwas kaputt ist?",
+    "I have a question for you too: what do you do if a parcel doesn't arrive or something is broken?"
+   ],
+   [
+    "B",
+    "Dann schreibe ich dem Kundenservice. Meistens bekomme ich schnell eine neue Lieferung oder mein Geld zurück.",
+    "Then I write to customer service. Usually I quickly get a new delivery or my money back."
+   ]
+  ],
+  "partner": [
+   [
+    "Mein Thema ist: Online einkaufen oder lieber im Geschäft?",
+    "My topic is: shopping online or rather in a shop?"
+   ],
+   [
+    "Ich kaufe fast alles im Internet, vor allem Kleidung und Bücher. Das geht schnell, und ich kann die Preise vergleichen.",
+    "I buy almost everything online, especially clothes and books. It's quick, and I can compare prices."
+   ],
+   [
+    "In Deutschland bestellen immer mehr Menschen online. Wegen des Online-Handels müssen aber viele kleine Geschäfte in den Innenstädten schließen.",
+    "In Germany more and more people order online. But because of online shopping, many small shops in town centres have to close."
+   ],
+   [
+    "Ein Nachteil sind auch die vielen Pakete. Das ist schlecht für die Umwelt. Trotzdem finde ich Online-Shopping sehr praktisch.",
+    "Another disadvantage is all the parcels. That's bad for the environment. Nevertheless I find online shopping very practical."
+   ],
+   [
+    "Danke fürs Zuhören. Und du? Kaufst du lieber online oder im Geschäft?",
+    "Thanks for listening. And you? Do you prefer to shop online or in a shop?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "b1-s-07",
+  "station": 7,
+  "part": "Teil 1",
+  "task_en": "Priya is new in town. You and your partner want to take her on a day trip next weekend. Plan the trip together (about 3 minutes).",
+  "task_de": "Priya ist neu in Ihrer Stadt. Sie möchten mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin am nächsten Wochenende mit ihr einen Tagesausflug machen. Planen Sie den Ausflug.",
+  "cards": [
+   "Wohin?",
+   "Wie fahren?",
+   "Wann und wo treffen?",
+   "Was mitnehmen?"
+  ],
+  "phrases": [
+   [
+    "Was meinst du, sollen wir …?",
+    "What do you think, shall we …?"
+   ],
+   [
+    "Ich würde lieber …, weil …",
+    "I'd rather …, because …"
+   ],
+   [
+    "Bevor wir losfahren, …",
+    "Before we set off, …"
+   ],
+   [
+    "Kannst du … mitbringen?",
+    "Can you bring …?"
+   ],
+   [
+    "Also, dann treffen wir uns …",
+    "Right, then let's meet …"
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Priya wohnt jetzt seit einem Monat hier und kennt die Gegend noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
+    "Priya has been living here for a month now and doesn't know the area at all yet. Shall we go on a trip with her on Saturday?"
+   ],
+   [
+    "A",
+    "Ja, gern, das ist eine schöne Idee! Wohin könnten wir denn fahren?",
+    "Yes, I'd love to, that's a lovely idea! Where could we go?"
+   ],
+   [
+    "B",
+    "Ich dachte an den See im Süden. Dort kann man schwimmen und schön wandern. Oder hast du eine andere Idee?",
+    "I was thinking of the lake in the south. You can swim there and go for nice walks. Or do you have another idea?"
+   ],
+   [
+    "A",
+    "Der See ist toll! Als ich zum ersten Mal dort war, hatte ich vorher noch nie so klares Wasser gesehen. Das gefällt Priya bestimmt.",
+    "The lake is great! When I was there for the first time, I had never seen such clear water before. Priya will surely like it."
+   ],
+   [
+    "B",
+    "Mit dem Zug dauert es ungefähr eine Stunde. Mit dem Auto geht es schneller, aber ich habe leider kein Auto.",
+    "By train it takes about an hour. By car it's quicker, but unfortunately I don't have a car."
+   ],
+   [
+    "A",
+    "Dann fahren wir lieber mit dem Zug. Das ist entspannter, und wir können unterwegs schon reden.",
+    "Then let's go by train. It's more relaxing, and we can already chat on the way."
+   ],
+   [
+    "B",
+    "Gut. Wann treffen wir uns? Ich würde gern früh losfahren, damit wir lange dort bleiben können.",
+    "Good. When shall we meet? I'd like to set off early so that we can stay there for a long time."
+   ],
+   [
+    "A",
+    "Wie wäre es mit acht Uhr am Bahnhof? Bevor wir losfahren, kaufe ich noch die Fahrkarten.",
+    "How about eight o'clock at the station? Before we set off, I'll buy the tickets."
+   ],
+   [
+    "B",
+    "Und was nehmen wir mit? Am See gibt es nur einen kleinen Kiosk.",
+    "And what shall we take? There's only a small kiosk at the lake."
+   ],
+   [
+    "A",
+    "Ich mache Brötchen und nehme Obst mit. Kannst du Getränke und eine Decke mitbringen? Und wir dürfen die Badesachen nicht vergessen!",
+    "I'll make sandwiches and bring fruit. Can you bring drinks and a blanket? And we mustn't forget our swimming things!"
+   ],
+   [
+    "B",
+    "Super, dann schreibe ich Priya gleich eine Nachricht. Sie wird sich bestimmt freuen.",
+    "Great, then I'll send Priya a message right away. She'll be really pleased."
+   ],
+   [
+    "A",
+    "Prima! Dann bis Samstag um acht am Bahnhof.",
+    "Great! See you on Saturday at eight at the station, then."
+   ]
+  ],
+  "partner": [
+   [
+    "Priya wohnt jetzt seit einem Monat hier und kennt die Gegend noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
+    "Priya has been living here for a month now and doesn't know the area at all yet. Shall we go on a trip with her on Saturday?"
+   ],
+   [
+    "Ich dachte an den See im Süden. Dort kann man schwimmen und schön wandern. Oder hast du eine andere Idee?",
+    "I was thinking of the lake in the south. You can swim there and go for nice walks. Or do you have another idea?"
+   ],
+   [
+    "Mit dem Zug dauert es ungefähr eine Stunde. Mit dem Auto geht es schneller, aber ich habe leider kein Auto.",
+    "By train it takes about an hour. By car it's quicker, but unfortunately I don't have a car."
+   ],
+   [
+    "Gut. Wann treffen wir uns? Ich würde gern früh losfahren, damit wir lange dort bleiben können.",
+    "Good. When shall we meet? I'd like to set off early so that we can stay there for a long time."
+   ],
+   [
+    "Und was nehmen wir mit? Am See gibt es nur einen kleinen Kiosk.",
+    "And what shall we take? There's only a small kiosk at the lake."
+   ],
+   [
+    "Super, dann schreibe ich Priya gleich eine Nachricht. Sie wird sich bestimmt freuen.",
+    "Great, then I'll send Priya a message right away. She'll be really pleased."
+   ]
+  ],
+  "prep_s": 300,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-08",
+  "station": 8,
+  "part": "Teil 2",
+  "task_en": "Give a short presentation (about 3 minutes) on the topic on the slides: 'Should we avoid plastic when we go shopping?'",
+  "task_de": "Präsentieren Sie ein Thema: „Sollte man beim Einkaufen auf Plastik verzichten?“",
+  "cards": [
+   "Folie 1: Thema vorstellen, Inhalt nennen",
+   "Folie 2: Ihre persönlichen Erfahrungen",
+   "Folie 3: Die Situation in Ihrem Heimatland",
+   "Folie 4: Vor- und Nachteile, Ihre Meinung",
+   "Folie 5: Abschluss und Dank"
+  ],
+  "phrases": [
+   [
+    "Ich möchte heute über … sprechen.",
+    "Today I'd like to talk about …"
+   ],
+   [
+    "Ich persönlich versuche, … zu …",
+    "Personally I try to …"
+   ],
+   [
+    "In meinem Heimatland …",
+    "In my home country …"
+   ],
+   [
+    "Man sollte …, damit …",
+    "People should …, so that …"
+   ],
+   [
+    "Zusammenfassend kann man sagen, dass …",
+    "To sum up, one can say that …"
+   ],
+   [
+    "Vielen Dank fürs Zuhören.",
+    "Thanks for listening."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich möchte heute über das Thema „Sollte man beim Einkaufen auf Plastik verzichten?“ sprechen. Zuerst erzähle ich, wie ich selbst einkaufe. Dann spreche ich über die Situation in meinem Heimatland. Danach nenne ich Vor- und Nachteile und sage meine Meinung. Am Ende fasse ich alles zusammen.",
+    "Today I'd like to talk about the topic 'Should we avoid plastic when we go shopping?'. First I'll tell you how I shop myself. Then I'll talk about the situation in my home country. After that I'll name advantages and disadvantages and give my opinion. At the end I'll sum everything up."
+   ],
+   [
+    "A",
+    "Ich persönlich versuche, so wenig Plastik wie möglich zu kaufen. Ich nehme immer eine Stofftasche mit, um keine Plastiktüte kaufen zu müssen. Obst und Gemüse kaufe ich am liebsten auf dem Markt, weil es dort nicht in Plastik verpackt ist.",
+    "Personally I try to buy as little plastic as possible. I always take a cloth bag with me so that I don't have to buy a plastic bag. I prefer to buy fruit and vegetables at the market, because there they aren't wrapped in plastic."
+   ],
+   [
+    "A",
+    "Aber ehrlich gesagt ist das nicht immer einfach. Im Supermarkt sind viele Produkte in Plastik verpackt, zum Beispiel Käse, Fleisch oder Nudeln.",
+    "But to be honest, that isn't always easy. In the supermarket lots of products are wrapped in plastic, for example cheese, meat or pasta."
+   ],
+   [
+    "A",
+    "Jetzt zur Situation in meinem Heimatland Indien. Dort sind seit 2022 viele Produkte aus Plastik verboten, die man nur einmal benutzt, zum Beispiel Plastikbesteck und dünne Plastiktüten. Auf den Märkten bekommt man oft Taschen aus Stoff oder Papier. Trotzdem sieht man leider noch viel Plastikmüll auf den Straßen.",
+    "Now to the situation in my home country, India. Since 2022 many plastic products that you only use once have been banned there, for example plastic cutlery and thin plastic bags. At markets you often get bags made of cloth or paper. Even so, you unfortunately still see a lot of plastic rubbish on the streets."
+   ],
+   [
+    "A",
+    "Was spricht für weniger Plastik? Plastik bleibt Hunderte von Jahren in der Natur. Viel Plastikmüll landet im Meer und ist gefährlich für die Tiere. Wenn wir weniger Plastik kaufen, entsteht auch weniger Müll.",
+    "What speaks for less plastic? Plastic stays in nature for hundreds of years. A lot of plastic rubbish ends up in the sea and is dangerous for animals. If we buy less plastic, there's also less rubbish."
+   ],
+   [
+    "A",
+    "Es gibt aber auch Nachteile. Produkte ohne Plastik sind oft teurer, und man braucht mehr Zeit für den Einkauf. Außerdem bleiben manche Lebensmittel in Plastik länger frisch.",
+    "But there are disadvantages too. Products without plastic are often more expensive, and shopping takes more time. Also, some food stays fresh longer in plastic."
+   ],
+   [
+    "A",
+    "Meiner Meinung nach sollte jeder versuchen, weniger Plastik zu kaufen. Man muss nicht perfekt sein, aber kleine Schritte helfen schon. Die Supermärkte sollten mehr Produkte ohne Verpackung anbieten, damit das Einkaufen ohne Plastik leichter wird.",
+    "In my opinion everyone should try to buy less plastic. You don't have to be perfect, but small steps already help. Supermarkets should offer more products without packaging so that shopping without plastic becomes easier."
+   ],
+   [
+    "A",
+    "Damit bin ich am Ende. Zusammenfassend kann man sagen: Ganz ohne Plastik ist es schwierig, aber weniger Plastik ist für alle möglich. Vielen Dank fürs Zuhören!",
+    "That brings me to the end. To sum up: completely without plastic is difficult, but less plastic is possible for everyone. Thanks for listening!"
+   ]
+  ],
+  "partner": [
+   [
+    "Danke für deine Präsentation! Ich habe eine Frage: Was machst du zu Hause mit deinem Plastikmüll?",
+    "Thanks for your presentation! I have a question: what do you do with your plastic rubbish at home?"
+   ],
+   [
+    "Und was können die Supermärkte deiner Meinung nach noch tun?",
+    "And what else can supermarkets do, in your opinion?"
+   ]
+  ],
+  "prep_s": 900,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-09",
+  "station": 9,
+  "part": "Teil 3",
+  "task_en": "Your partner gives a short presentation on 'Going to the cinema or watching films at home?'. Listen, then give feedback, answer their question and ask one of your own (1–2 minutes).",
+  "task_de": "Ihr Gesprächspartner / Ihre Gesprächspartnerin präsentiert ein Thema: „Ins Kino gehen oder Filme zu Hause schauen?“ Reagieren Sie auf die Präsentation: Geben Sie eine Rückmeldung und stellen Sie eine Frage. Beantworten Sie auch die Frage Ihres Partners / Ihrer Partnerin.",
+  "cards": [
+   "Thema Ihres Partners: „Ins Kino gehen oder Filme zu Hause schauen?“",
+   "Folie 2: Meine Erfahrungen",
+   "Folie 3: Die Situation in Deutschland",
+   "Folie 4: Vor- und Nachteile, meine Meinung",
+   "Ihre Aufgabe: Rückmeldung geben, eine Frage stellen, die Frage beantworten"
+  ],
+  "phrases": [
+   [
+    "Vielen Dank für deine Präsentation.",
+    "Thank you for your presentation."
+   ],
+   [
+    "Du hast nicht nur …, sondern auch … gut beschrieben.",
+    "You described not only … but also … well."
+   ],
+   [
+    "Je …, desto …",
+    "The more …, the more …"
+   ],
+   [
+    "Ich habe auch eine Frage an dich: …",
+    "I have a question for you too: …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Vielen Dank für deine Präsentation. Du hast nicht nur deine Erfahrungen, sondern auch die Situation in Deutschland gut beschrieben.",
+    "Thank you for your presentation. You described not only your experiences but also the situation in Germany well."
+   ],
+   [
+    "A",
+    "Zu deiner Frage: Ich gehe ungefähr einmal im Monat ins Kino, meistens mit Freunden. Je größer das Bild ist, desto mehr Spaß macht mir ein Actionfilm. Komödien schaue ich aber lieber zu Hause.",
+    "As for your question: I go to the cinema about once a month, usually with friends. The bigger the picture, the more I enjoy an action film. But I prefer to watch comedies at home."
+   ],
+   [
+    "A",
+    "Ich habe auch eine Frage an dich: Welchen Film hast du zuletzt im Kino gesehen?",
+    "I have a question for you too: which film did you last see at the cinema?"
+   ],
+   [
+    "B",
+    "Das war ein deutscher Film über eine Familie in Berlin. Er war wirklich lustig.",
+    "It was a German film about a family in Berlin. It was really funny."
+   ]
+  ],
+  "partner": [
+   [
+    "Ich spreche heute über das Thema: Ins Kino gehen oder Filme zu Hause schauen?",
+    "Today I'm talking about the topic: going to the cinema or watching films at home?"
+   ],
+   [
+    "Früher bin ich jede Woche ins Kino gegangen. Heute schaue ich die meisten Filme zu Hause, weil ich dort eine Pause machen kann, wann ich will.",
+    "I used to go to the cinema every week. Today I watch most films at home, because there I can take a break whenever I want."
+   ],
+   [
+    "In Deutschland haben viele Leute ein Streaming-Abo. Trotzdem gehen am Wochenende noch viele ins Kino, vor allem bei großen Filmen.",
+    "In Germany lots of people have a streaming subscription. Nevertheless many still go to the cinema at the weekend, especially for big films."
+   ],
+   [
+    "Ich finde, beides hat Vorteile. Zu Hause ist es billiger und bequemer. Aber im Kino sind sowohl das Bild als auch der Ton viel besser.",
+    "I think both have advantages. At home it's cheaper and more comfortable. But in the cinema both the picture and the sound are much better."
+   ],
+   [
+    "Danke fürs Zuhören. Wie ist es bei dir: Wie oft gehst du ins Kino?",
+    "Thanks for listening. What about you: how often do you go to the cinema?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "b1-s-10",
+  "station": 10,
+  "part": "Teil 1",
+  "task_en": "Your German course wants to hold a flea market; the money goes to the kindergarten in your neighbourhood. Plan it together with your partner (about 3 minutes).",
+  "task_de": "Ihr Deutschkurs möchte einen Flohmarkt organisieren. Das Geld bekommt der Kindergarten in Ihrem Stadtteil. Planen Sie den Flohmarkt zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin.",
+  "cards": [
+   "Wann und wo?",
+   "Was verkaufen?",
+   "Wer macht Werbung?",
+   "Essen und Getränke?"
+  ],
+  "phrases": [
+   [
+    "Ich schlage vor, dass wir …",
+    "I suggest that we …"
+   ],
+   [
+    "Das finde ich gut, aber …",
+    "I like that, but …"
+   ],
+   [
+    "Ich werde mich um … kümmern.",
+    "I'll take care of …"
+   ],
+   [
+    "Könntest du …?",
+    "Could you …?"
+   ],
+   [
+    "Dann haben wir alles besprochen.",
+    "Then we've discussed everything."
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Also, wir sollen den Flohmarkt für den Kindergarten planen. Wann wollen wir ihn machen?",
+    "Right, we're supposed to plan the flea market for the kindergarten. When shall we hold it?"
+   ],
+   [
+    "A",
+    "Ich schlage vor, dass wir ihn an einem Samstag im Mai machen. Dann ist das Wetter hoffentlich schön, und die meisten Leute haben frei.",
+    "I suggest we hold it on a Saturday in May. Then the weather will hopefully be nice, and most people are off work."
+   ],
+   [
+    "B",
+    "Und wo? Ich habe an den Hof der Sprachschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
+    "And where? I was thinking of the language school's courtyard. Herr Weber said we're allowed to use it."
+   ],
+   [
+    "A",
+    "Das ist perfekt. Der Hof ist groß genug, und bei Regen können wir in die Klassenräume gehen.",
+    "That's perfect. The courtyard is big enough, and if it rains we can go into the classrooms."
+   ],
+   [
+    "B",
+    "Was sollen die Leute denn verkaufen? Nur Kleidung oder auch andere Sachen?",
+    "What should people sell? Only clothes, or other things too?"
+   ],
+   [
+    "A",
+    "Ich würde alles erlauben: Kleidung, Bücher, Spielzeug und Geschirr. Ich werde auch meine alten Bücher mitbringen.",
+    "I'd allow everything: clothes, books, toys and crockery. I'll bring my old books too."
+   ],
+   [
+    "B",
+    "Wir brauchen auch Werbung, sonst kommt niemand. Hast du eine Idee?",
+    "We need advertising too, otherwise nobody will come. Do you have an idea?"
+   ],
+   [
+    "A",
+    "Ich werde Plakate machen und sie im Supermarkt und in der Bibliothek aufhängen. Außerdem schreibe ich allen im Kurs eine Nachricht, damit sie es ihren Freunden erzählen.",
+    "I'll make posters and put them up in the supermarket and the library. I'll also send everyone in the course a message so that they tell their friends."
+   ],
+   [
+    "B",
+    "Ich kann einen Kuchen backen und Kaffee kochen. Das verkaufen wir auch, dann bekommt der Kindergarten noch mehr Geld.",
+    "I can bake a cake and make coffee. We'll sell that too, then the kindergarten gets even more money."
+   ],
+   [
+    "A",
+    "Sehr gute Idee! Dann kümmere ich mich um Würstchen und Getränke. Ich frage Jonas, ob er seinen Grill mitbringt.",
+    "Very good idea! Then I'll take care of sausages and drinks. I'll ask Jonas whether he'll bring his barbecue."
+   ],
+   [
+    "B",
+    "Super, dann haben wir alles. Ich erzähle Herrn Weber morgen von unserem Plan.",
+    "Great, then we've got everything. I'll tell Herr Weber about our plan tomorrow."
+   ],
+   [
+    "A",
+    "Toll, ich freue mich schon. Das wird bestimmt ein schöner Tag!",
+    "Great, I'm looking forward to it. It's sure to be a lovely day!"
+   ]
+  ],
+  "partner": [
+   [
+    "Also, wir sollen den Flohmarkt für den Kindergarten planen. Wann wollen wir ihn machen?",
+    "Right, we're supposed to plan the flea market for the kindergarten. When shall we hold it?"
+   ],
+   [
+    "Und wo? Ich habe an den Hof der Sprachschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
+    "And where? I was thinking of the language school's courtyard. Herr Weber said we're allowed to use it."
+   ],
+   [
+    "Was sollen die Leute denn verkaufen? Nur Kleidung oder auch andere Sachen?",
+    "What should people sell? Only clothes, or other things too?"
+   ],
+   [
+    "Wir brauchen auch Werbung, sonst kommt niemand. Hast du eine Idee?",
+    "We need advertising too, otherwise nobody will come. Do you have an idea?"
+   ],
+   [
+    "Ich kann einen Kuchen backen und Kaffee kochen. Das verkaufen wir auch, dann bekommt der Kindergarten noch mehr Geld.",
+    "I can bake a cake and make coffee. We'll sell that too, then the kindergarten gets even more money."
+   ],
+   [
+    "Super, dann haben wir alles. Ich erzähle Herrn Weber morgen von unserem Plan.",
+    "Great, then we've got everything. I'll tell Herr Weber about our plan tomorrow."
+   ]
+  ],
+  "prep_s": 300,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-11",
+  "station": 11,
+  "part": "Teil 2",
+  "task_en": "Give a short presentation (about 3 minutes) on the topic on the slides: 'City or countryside – where would you like to live in future?'",
+  "task_de": "Präsentieren Sie ein Thema: „Stadt oder Land – wo möchten Sie in Zukunft wohnen?“",
+  "cards": [
+   "Folie 1: Thema vorstellen, Inhalt nennen",
+   "Folie 2: Ihre persönlichen Erfahrungen",
+   "Folie 3: Die Situation in Ihrem Heimatland",
+   "Folie 4: Vor- und Nachteile, Ihre Meinung",
+   "Folie 5: Abschluss und Dank"
+  ],
+  "phrases": [
+   [
+    "Mein Thema heute ist …",
+    "My topic today is …"
+   ],
+   [
+    "Als ich ein Kind war, …",
+    "When I was a child, …"
+   ],
+   [
+    "Auf der einen Seite …, auf der anderen Seite …",
+    "On the one hand …, on the other hand …"
+   ],
+   [
+    "Während …, …",
+    "While …, …"
+   ],
+   [
+    "Ich träume davon, … zu …",
+    "I dream of …"
+   ],
+   [
+    "Das war meine Präsentation. Vielen Dank!",
+    "That was my presentation. Thank you!"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Mein Thema heute ist: „Stadt oder Land – wo möchte ich in Zukunft wohnen?“ Zuerst erzähle ich von meinen Erfahrungen. Danach beschreibe ich die Situation in meinem Heimatland. Dann vergleiche ich die Vor- und Nachteile und sage meine Meinung. Zum Schluss fasse ich alles kurz zusammen.",
+    "My topic today is: 'City or countryside – where would I like to live in future?' First I'll tell you about my experiences. After that I'll describe the situation in my home country. Then I'll compare the advantages and disadvantages and give my opinion. Finally I'll briefly sum everything up."
+   ],
+   [
+    "A",
+    "Als ich ein Kind war, habe ich in einem kleinen Dorf gewohnt. Wir hatten einen großen Garten, und ich habe jeden Tag draußen gespielt. Aber wenn ich ins Kino gehen wollte, musste ich eine Stunde mit dem Bus fahren.",
+    "When I was a child, I lived in a small village. We had a big garden, and I played outside every day. But whenever I wanted to go to the cinema, I had to take the bus for an hour."
+   ],
+   [
+    "A",
+    "Seit drei Jahren wohne ich in einer Großstadt. Hier ist alles in der Nähe: die Arbeit, die Geschäfte und meine Freunde. Am Anfang fand ich den Lärm schrecklich, aber inzwischen habe ich mich daran gewöhnt.",
+    "For three years I've been living in a big city. Everything is close by here: work, the shops and my friends. At first I found the noise terrible, but by now I've got used to it."
+   ],
+   [
+    "A",
+    "Jetzt zu meinem Heimatland Indien. Dort ziehen jedes Jahr sehr viele Menschen vom Land in die Städte, weil sie dort Arbeit finden. Deshalb sind Städte wie Mumbai oder Bangalore sehr voll, und die Mieten sind hoch. Auf dem Land ist das Leben ruhiger, aber es gibt weniger Jobs und weniger gute Schulen.",
+    "Now to my home country, India. Every year a great many people move from the countryside to the cities there, because they find work there. That's why cities like Mumbai or Bangalore are very crowded, and rents are high. In the countryside life is quieter, but there are fewer jobs and fewer good schools."
+   ],
+   [
+    "A",
+    "Auf der einen Seite hat die Stadt viele Vorteile: Man findet leichter Arbeit, es gibt Kinos, Theater und gute Ärzte, und man braucht kein Auto.",
+    "On the one hand the city has many advantages: it's easier to find work, there are cinemas, theatres and good doctors, and you don't need a car."
+   ],
+   [
+    "A",
+    "Auf der anderen Seite ist das Leben in der Stadt teuer und laut. Auf dem Land hat man mehr Platz und Natur, und die Luft ist besser. Dafür muss man oft weite Wege fahren.",
+    "On the other hand life in the city is expensive and noisy. In the countryside you have more space and nature, and the air is better. But you often have to travel long distances."
+   ],
+   [
+    "A",
+    "Während meine Eltern immer noch gern im Dorf leben, möchte ich im Moment lieber in der Stadt bleiben. Aber ich träume davon, später in einem kleinen Haus am Stadtrand zu wohnen. Dann hätte ich beides: einen Garten und eine gute Verbindung in die Stadt.",
+    "While my parents still like living in the village, for now I'd rather stay in the city. But I dream of living in a small house on the edge of town later on. Then I'd have both: a garden and a good connection to the city."
+   ],
+   [
+    "A",
+    "Das war meine Präsentation. Zusammengefasst: Beide Orte haben Vor- und Nachteile, und vielleicht ist die Mitte die beste Lösung. Vielen Dank für Ihre Aufmerksamkeit!",
+    "That was my presentation. In short: both places have advantages and disadvantages, and maybe the middle is the best solution. Thank you for your attention!"
+   ]
+  ],
+  "partner": [
+   [
+    "Danke, das war sehr interessant! Ich habe eine Frage: Was hat dir in deinem Dorf am meisten gefehlt, als du ein Kind warst?",
+    "Thanks, that was very interesting! I have a question: what did you miss most in your village when you were a child?"
+   ],
+   [
+    "Und wo möchtest du wohnen, wenn du alt bist?",
+    "And where would you like to live when you're old?"
+   ]
+  ],
+  "prep_s": 900,
+  "speak_s": 180
+ },
+ {
+  "id": "b1-s-12",
+  "station": 12,
+  "part": "Teil 3",
+  "task_en": "Your partner gives a short presentation on 'Learning German: in a course or with an app?'. Listen, then give feedback, answer their question and ask one of your own (about 2 minutes).",
+  "task_de": "Ihr Gesprächspartner / Ihre Gesprächspartnerin präsentiert ein Thema: „Deutsch lernen: im Kurs oder mit einer App?“ Reagieren Sie auf die Präsentation: Geben Sie eine Rückmeldung und stellen Sie eine Frage. Beantworten Sie auch die Frage Ihres Partners / Ihrer Partnerin.",
+  "cards": [
+   "Thema Ihres Partners: „Deutsch lernen: im Kurs oder mit einer App?“",
+   "Folie 2: Meine Erfahrungen",
+   "Folie 3: Lernen im Kurs",
+   "Folie 4: Vor- und Nachteile, meine Meinung",
+   "Ihre Aufgabe: Rückmeldung geben, eine Frage stellen, die Frage beantworten"
+  ],
+  "phrases": [
+   [
+    "Vielen Dank für deine Präsentation.",
+    "Thank you for your presentation."
+   ],
+   [
+    "Du hast sehr klar gesprochen.",
+    "You spoke very clearly."
+   ],
+   [
+    "Ich habe ähnliche Erfahrungen gemacht: …",
+    "I've had similar experiences: …"
+   ],
+   [
+    "Obwohl …, …",
+    "Although …, …"
+   ],
+   [
+    "Ich habe noch eine Frage an dich: …",
+    "I have another question for you: …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Vielen Dank für deine Präsentation. Du hast sehr klar gesprochen, und deine Beispiele waren gut zu verstehen.",
+    "Thank you for your presentation. You spoke very clearly, and your examples were easy to understand."
+   ],
+   [
+    "A",
+    "Zu deiner Frage: Ich habe ähnliche Erfahrungen gemacht. Obwohl ich jeden Tag mit einer App lerne, brauche ich den Kurs, weil ich dort sprechen muss. Am liebsten lerne ich neue Wörter mit Karteikarten, damit ich sie nicht so schnell vergesse.",
+    "As for your question: I've had similar experiences. Although I study with an app every day, I need the course, because there I have to speak. I like learning new words with flashcards best, so that I don't forget them so quickly."
+   ],
+   [
+    "A",
+    "Ich habe noch eine Frage an dich: Benutzt du die App immer noch, nachdem du mit dem Kurs angefangen hast?",
+    "I have another question for you: do you still use the app now that you've started the course?"
+   ],
+   [
+    "B",
+    "Ja, jeden Morgen zehn Minuten im Bus. Damit wiederhole ich die Wörter aus dem Kurs.",
+    "Yes, ten minutes every morning on the bus. I use it to review the words from the course."
+   ]
+  ],
+  "partner": [
+   [
+    "Mein Thema ist: Sollte man Deutsch im Kurs oder allein mit einer App lernen?",
+    "My topic is: should you learn German in a course or on your own with an app?"
+   ],
+   [
+    "Ich habe zuerst ein halbes Jahr nur mit einer App gelernt. Das war praktisch, weil ich im Bus lernen konnte. Aber ich habe fast nie gesprochen.",
+    "At first I learned with just an app for half a year. That was practical, because I could study on the bus. But I hardly ever spoke."
+   ],
+   [
+    "Seit ich einen Kurs besuche, spreche ich viel besser. Ich habe auch nette Leute kennengelernt, mit denen ich nach dem Unterricht Kaffee trinke.",
+    "Since I've been taking a course, I speak much better. I've also met nice people that I have coffee with after class."
+   ],
+   [
+    "Meiner Meinung nach ist eine Mischung am besten: Im Kurs spricht man, und mit der App wiederholt man die Wörter. Ein Kurs ist aber teurer, und man hat feste Termine.",
+    "In my opinion a mix is best: in the course you speak, and with the app you review the words. But a course is more expensive, and you have fixed times."
+   ],
+   [
+    "Danke fürs Zuhören. Und wie lernst du am liebsten?",
+    "Thanks for listening. And how do you like to learn best?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 120
+ }
+]

@@ -1,0 +1,546 @@
+[
+ {
+  "id": "a1-w-01",
+  "station": 1,
+  "part": "Teil 1",
+  "task_en": "Read about Priya and fill in the form for her language course.",
+  "task_de": "Ihre Freundin Priya möchte einen Deutschkurs machen. Lesen Sie den Text und füllen Sie das Formular aus.",
+  "form": {
+   "text_de": "Priya Sharma kommt aus Indien, aus Mumbai. Sie ist 27 Jahre alt und wohnt jetzt in Köln, in der Gartenstraße 12. Sie spricht Englisch und Hindi. Sie möchte am Abend lernen.",
+   "fields": [
+    [
+     "Familienname",
+     "Sharma"
+    ],
+    [
+     "Herkunftsland",
+     "Indien"
+    ],
+    [
+     "Alter",
+     "27"
+    ],
+    [
+     "Wohnort",
+     "Köln"
+    ],
+    [
+     "Kurszeit",
+     "abends"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Familienname: Sharma · Herkunftsland: Indien · Alter: 27 · Wohnort: Köln · Kurszeit: abends",
+  "model_en": "Surname: Sharma · Country: India · Age: 27 · Town: Cologne · Course time: evenings"
+ },
+ {
+  "id": "a1-w-02",
+  "station": 2,
+  "part": "Teil 2",
+  "task_en": "You are new in Cologne and are doing a German course there. Write a short message to your friend Jonas.",
+  "task_de": "Sie sind neu in Köln und machen dort einen Deutschkurs. Schreiben Sie Ihrem Freund Jonas eine kurze Nachricht.",
+  "points": [
+   "Wo Sie jetzt wohnen",
+   "Wer im Kurs ist (Länder, Sprachen)",
+   "Frage: Wann kommt Jonas zu Besuch?"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Lieber Jonas,",
+    "Dear Jonas,"
+   ],
+   [
+    "Ich wohne jetzt in …",
+    "I live in … now"
+   ],
+   [
+    "Wir sind … Leute aus …",
+    "We are … people from …"
+   ],
+   [
+    "Wir sprechen nur Deutsch.",
+    "We only speak German."
+   ],
+   [
+    "Wann kommst du nach …?",
+    "When are you coming to …?"
+   ],
+   [
+    "Viele Grüße",
+    "Best wishes"
+   ]
+  ],
+  "model": "Lieber Jonas, ich wohne jetzt in Köln, in der Gartenstraße. Mein Deutschkurs ist super! Wir sind zwölf Leute aus acht Ländern, zum Beispiel aus Mexiko und Finnland. Wir sprechen nur Deutsch. Wann kommst du nach Köln? Viele Grüße, Priya",
+  "model_en": "Dear Jonas, I live in Cologne now, on Gartenstraße. My German course is great! We are twelve people from eight countries, for example from Mexico and Finland. We only speak German. When are you coming to Cologne? Best wishes, Priya",
+  "rubric": [
+   "All three points are answered",
+   "A greeting and a closing for a friend: Lieber …, Viele Grüße",
+   "du-forms for Jonas: Wann kommst du …?",
+   "The verb in position 2: Wir sind …, Wir sprechen …",
+   "Nouns with capital letters"
+  ]
+ },
+ {
+  "id": "a1-w-03",
+  "station": 3,
+  "part": "Teil 1",
+  "task_en": "Your neighbour Frau Yilmaz wants to register her son at a kindergarten. Read the text and fill in the form for her.",
+  "task_de": "Ihre Nachbarin, Frau Yilmaz, möchte ihren Sohn im Kindergarten anmelden. Lesen Sie den Text und füllen Sie das Formular aus.",
+  "form": {
+   "text_de": "Ayşe Yilmaz ist 38 Jahre alt und arbeitet als Verkäuferin. Ihr Mann Murat ist Koch. Sie haben drei Kinder. Die Töchter Elif und Defne sind neun und sieben Jahre alt und gehen schon in die Schule. Der Sohn heißt Can und ist drei. Ab September geht er in den Kindergarten „Sonnenblume“.",
+   "fields": [
+    [
+     "Familienname",
+     "Yilmaz"
+    ],
+    [
+     "Vorname des Kindes",
+     "Can"
+    ],
+    [
+     "Alter des Kindes",
+     "3"
+    ],
+    [
+     "Geschwister",
+     "2 Schwestern"
+    ],
+    [
+     "Beruf der Mutter",
+     "Verkäuferin"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Familienname: Yilmaz · Vorname des Kindes: Can · Alter des Kindes: 3 · Geschwister: 2 Schwestern · Beruf der Mutter: Verkäuferin",
+  "model_en": "Surname: Yilmaz · Child's first name: Can · Child's age: 3 · Brothers and sisters: 2 sisters · Mother's job: shop assistant"
+ },
+ {
+  "id": "a1-w-04",
+  "station": 4,
+  "part": "Teil 2",
+  "task_en": "You are cooking for friends tonight. Your friend Lena is coming early and can go shopping on the way. Write her a short message.",
+  "task_de": "Sie kochen heute Abend für Freunde. Ihre Freundin Lena kommt früher und kann vorher einkaufen. Schreiben Sie Lena eine kurze Nachricht.",
+  "points": [
+   "Was Sie kochen",
+   "Bitte: Was Lena kaufen soll",
+   "Wann Lena kommen soll"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Liebe Lena,",
+    "Dear Lena,"
+   ],
+   [
+    "Heute Abend koche ich …",
+    "Tonight I'm cooking …"
+   ],
+   [
+    "Ich habe keine / keinen … mehr.",
+    "I have no … left."
+   ],
+   [
+    "Kannst du bitte … kaufen?",
+    "Could you please buy …?"
+   ],
+   [
+    "Kannst du um … Uhr kommen?",
+    "Can you come at … o'clock?"
+   ],
+   [
+    "Liebe Grüße",
+    "Love,"
+   ]
+  ],
+  "model": "Liebe Lena, heute Abend koche ich Reis mit Hähnchen und Gemüse. Ich habe keine Tomaten und keinen Saft mehr. Kannst du bitte ein Kilo Tomaten und eine Flasche Apfelsaft kaufen? Kannst du um sechs Uhr kommen? Danke! Priya",
+  "model_en": "Dear Lena, tonight I'm cooking rice with chicken and vegetables. I have no tomatoes and no juice left. Could you please buy a kilo of tomatoes and a bottle of apple juice? Can you come at six o'clock? Thanks! Priya",
+  "rubric": [
+   "All three points are answered",
+   "kein in the accusative: keine Tomaten, keinen Saft",
+   "Kannst du … kaufen? with the infinitive at the end",
+   "A friendly greeting and closing with du"
+  ]
+ },
+ {
+  "id": "a1-w-05",
+  "station": 5,
+  "part": "Teil 1",
+  "task_en": "Your friend Jonas is looking for a flat. Read the text and fill in the form for the flat agency.",
+  "task_de": "Ihr Freund Jonas sucht eine Wohnung. Lesen Sie den Text und füllen Sie das Formular für das Wohnungsbüro aus.",
+  "form": {
+   "text_de": "Jonas Keller studiert in Köln. Er und sein Bruder Tim suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
+   "fields": [
+    [
+     "Familienname",
+     "Keller"
+    ],
+    [
+     "Personen",
+     "2"
+    ],
+    [
+     "Zimmer",
+     "3"
+    ],
+    [
+     "Balkon (ja / nein)",
+     "ja"
+    ],
+    [
+     "Miete bis",
+     "900 €"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Familienname: Keller · Personen: 2 · Zimmer: 3 · Balkon (ja / nein): ja · Miete bis: 900 €",
+  "model_en": "Surname: Keller · People: 2 · Rooms: 3 · Balcony: yes · Rent up to: €900"
+ },
+ {
+  "id": "a1-w-06",
+  "station": 6,
+  "part": "Teil 2",
+  "task_en": "You can't come to your German course tomorrow. Write a short message to your teacher, Herr Weber.",
+  "task_de": "Sie können morgen nicht zum Deutschkurs kommen. Schreiben Sie Herrn Weber eine kurze Nachricht.",
+  "points": [
+   "Warum Sie nicht kommen können",
+   "Wann Sie wieder kommen",
+   "Bitte: Hausaufgaben schicken"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Lieber Herr Weber,",
+    "Dear Mr Weber,"
+   ],
+   [
+    "Leider kann ich morgen nicht …",
+    "Unfortunately I can't … tomorrow"
+   ],
+   [
+    "Am … bin ich wieder da.",
+    "I'll be back on …"
+   ],
+   [
+    "Können Sie mir bitte …?",
+    "Could you please … me?"
+   ],
+   [
+    "Viele Grüße",
+    "Best wishes"
+   ]
+  ],
+  "model": "Lieber Herr Weber, leider kann ich morgen nicht zum Kurs kommen. Ich habe einen Termin beim Arzt. Am Donnerstag bin ich wieder da. Können Sie mir bitte die Hausaufgaben schicken? Viele Grüße, Priya",
+  "model_en": "Dear Mr Weber, unfortunately I can't come to the course tomorrow. I have a doctor's appointment. I'll be back on Thursday. Could you please send me the homework? Best wishes, Priya",
+  "rubric": [
+   "All three points are answered",
+   "A greeting and a closing",
+   "Sie-form for your teacher: Können Sie …?",
+   "Simple sentences with the verb in position 2",
+   "Nouns with capital letters"
+  ]
+ },
+ {
+  "id": "a1-w-07",
+  "station": 7,
+  "part": "Teil 1",
+  "task_en": "Your friend Lena wants to take a dance course. Read the text and fill in the registration form for her.",
+  "task_de": "Ihre Freundin Lena möchte einen Tanzkurs machen. Lesen Sie den Text und füllen Sie das Anmeldeformular aus.",
+  "form": {
+   "text_de": "Lena Fischer tanzt sehr gern. Sie möchte in der Tanzschule einen Salsa-Kurs machen. Es gibt zwei Kurse: am Dienstag um 17 Uhr und am Samstag um 10 Uhr. Lena arbeitet von Montag bis Freitag bis 18 Uhr. Ihre Handynummer ist 0176 3348259.",
+   "fields": [
+    [
+     "Vorname, Name",
+     "Lena Fischer"
+    ],
+    [
+     "Kurs",
+     "Salsa"
+    ],
+    [
+     "Tag",
+     "Samstag"
+    ],
+    [
+     "Uhrzeit",
+     "10 Uhr"
+    ],
+    [
+     "Handynummer",
+     "0176 3348259"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Vorname, Name: Lena Fischer · Kurs: Salsa · Tag: Samstag · Uhrzeit: 10 Uhr · Handynummer: 0176 3348259",
+  "model_en": "First name, surname: Lena Fischer · Course: salsa · Day: Saturday · Time: 10 o'clock · Mobile number: 0176 3348259"
+ },
+ {
+  "id": "a1-w-08",
+  "station": 8,
+  "part": "Teil 2",
+  "task_en": "Your neighbour Frau Yilmaz is ill. You are going shopping tomorrow. Write her a short note.",
+  "task_de": "Ihre Nachbarin, Frau Yilmaz, ist krank. Sie gehen morgen einkaufen. Schreiben Sie Frau Yilmaz eine kurze Nachricht.",
+  "points": [
+   "Wann Sie einkaufen gehen",
+   "Frage: Was braucht Frau Yilmaz?",
+   "Wann Sie die Sachen bringen"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Liebe Frau Yilmaz,",
+    "Dear Mrs Yilmaz,"
+   ],
+   [
+    "Ich gehe morgen in den Supermarkt.",
+    "I'm going to the supermarket tomorrow."
+   ],
+   [
+    "Brauchen Sie etwas?",
+    "Do you need anything?"
+   ],
+   [
+    "Ich kaufe es gern für Sie.",
+    "I'm happy to buy it for you."
+   ],
+   [
+    "Rufen Sie mich an!",
+    "Give me a call!"
+   ],
+   [
+    "Gute Besserung!",
+    "Get well soon!"
+   ]
+  ],
+  "model": "Liebe Frau Yilmaz, ich gehe morgen Vormittag in den Supermarkt. Brauchen Sie etwas? Brot, Milch, Obst? Ich kaufe es gern für Sie. Um zwölf Uhr bringe ich die Sachen. Rufen Sie mich einfach an! Gute Besserung, Priya",
+  "model_en": "Dear Mrs Yilmaz, I'm going to the supermarket tomorrow morning. Do you need anything? Bread, milk, fruit? I'm happy to buy it for you. I'll bring the things at twelve o'clock. Just give me a call! Get well soon, Priya",
+  "rubric": [
+   "All three points are answered",
+   "Sie-form for a neighbour: Brauchen Sie …?",
+   "Accusative pronouns: es, mich, für Sie",
+   "Time first, verb second: Um zwölf Uhr bringe ich …"
+  ]
+ },
+ {
+  "id": "a1-w-09",
+  "station": 9,
+  "part": "Teil 1",
+  "task_en": "Your colleague Malte wants a monthly ticket for buses and trams. Read the text and fill in the form for him.",
+  "task_de": "Ihr Kollege Malte möchte eine Monatskarte für Bus und Bahn. Lesen Sie den Text und füllen Sie das Formular aus.",
+  "form": {
+   "text_de": "Malte Berger wohnt in Köln, in der Bachstraße 5. Die Postleitzahl ist 50733. Sein Fahrrad ist kaputt. Ab November fährt er jeden Tag mit der Straßenbahn zur Arbeit. Er möchte eine Monatskarte. Er bezahlt nicht bar: Das Geld kommt jeden Monat von seinem Konto.",
+   "fields": [
+    [
+     "Familienname",
+     "Berger"
+    ],
+    [
+     "Straße, Hausnummer",
+     "Bachstraße 5"
+    ],
+    [
+     "PLZ, Wohnort",
+     "50733 Köln"
+    ],
+    [
+     "Monatskarte ab",
+     "November"
+    ],
+    [
+     "Bezahlung (bar / vom Konto)",
+     "vom Konto"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Familienname: Berger · Straße, Hausnummer: Bachstraße 5 · PLZ, Wohnort: 50733 Köln · Monatskarte ab: November · Bezahlung (bar / vom Konto): vom Konto",
+  "model_en": "Surname: Berger · Street and number: Bachstraße 5 · Postcode, town: 50733 Cologne · Monthly ticket from: November · Payment: from his account"
+ },
+ {
+  "id": "a1-w-10",
+  "station": 10,
+  "part": "Teil 2",
+  "task_en": "Your back has hurt for three days. Write a short email to Dr Brandt's practice and ask for an appointment.",
+  "task_de": "Sie haben seit drei Tagen Rückenschmerzen. Schreiben Sie eine kurze E-Mail an die Praxis von Dr. Brandt.",
+  "points": [
+   "Was Sie haben",
+   "Bitte um einen Termin diese Woche",
+   "Wann Sie Zeit haben"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Sehr geehrte Damen und Herren,",
+    "Dear Sir or Madam,"
+   ],
+   [
+    "Ich habe seit … Tagen Rückenschmerzen.",
+    "I've had back pain for … days."
+   ],
+   [
+    "Ich brauche bitte einen Termin.",
+    "I need an appointment, please."
+   ],
+   [
+    "Am Vormittag muss ich arbeiten.",
+    "In the morning I have to work."
+   ],
+   [
+    "Ab … Uhr kann ich kommen.",
+    "I can come from … o'clock."
+   ],
+   [
+    "Mit freundlichen Grüßen",
+    "Kind regards"
+   ]
+  ],
+  "model": "Sehr geehrte Damen und Herren, ich habe seit drei Tagen Rückenschmerzen und kann nicht gut schlafen. Ich brauche bitte diese Woche einen Termin. Am Vormittag muss ich arbeiten, aber ab 15 Uhr kann ich kommen. Mit freundlichen Grüßen, Priya Sharma",
+  "model_en": "Dear Sir or Madam, I have had back pain for three days and can't sleep well. I need an appointment this week, please. In the mornings I have to work, but I can come from 3 pm. Kind regards, Priya Sharma",
+  "rubric": [
+   "All three points are answered",
+   "A formal greeting and closing: Sehr geehrte …, Mit freundlichen Grüßen",
+   "Modal verb in position 2, infinitive at the end: … kann ich kommen",
+   "seit + time: seit drei Tagen"
+  ]
+ },
+ {
+  "id": "a1-w-11",
+  "station": 11,
+  "part": "Teil 1",
+  "task_en": "Priya's parents are visiting her in Germany. Read the text and fill in the hotel booking form for them.",
+  "task_de": "Priyas Eltern besuchen sie in Deutschland. Lesen Sie den Text und füllen Sie das Formular für das Hotel aus.",
+  "form": {
+   "text_de": "Priyas Eltern, Raj und Meena Sharma, fliegen im Juli von Mumbai nach Deutschland. Sie besuchen Priya in Köln. Sie kommen am 12. Juli an und bleiben sechs Nächte im Hotel. Sie möchten ein Doppelzimmer. Sie frühstücken im Hotel, aber am Abend essen sie bei Priya.",
+   "fields": [
+    [
+     "Familienname",
+     "Sharma"
+    ],
+    [
+     "Zimmer (Einzelzimmer / Doppelzimmer)",
+     "Doppelzimmer"
+    ],
+    [
+     "Ankunft",
+     "12. Juli"
+    ],
+    [
+     "Abreise",
+     "18. Juli"
+    ],
+    [
+     "Frühstück / Halbpension",
+     "Frühstück"
+    ]
+   ]
+  },
+  "points": [],
+  "words": [
+   0,
+   0
+  ],
+  "phrases": [],
+  "rubric": [],
+  "model": "Familienname: Sharma · Zimmer (Einzelzimmer / Doppelzimmer): Doppelzimmer · Ankunft: 12. Juli · Abreise: 18. Juli · Frühstück / Halbpension: Frühstück",
+  "model_en": "Surname: Sharma · Room (single / double): double room · Arrival: 12 July · Departure: 18 July · Breakfast / half board: breakfast"
+ },
+ {
+  "id": "a1-w-12",
+  "station": 12,
+  "part": "Teil 2",
+  "task_en": "You're having a birthday party. Write a short invitation to your friend Lena.",
+  "task_de": "Sie feiern Ihren Geburtstag und machen eine Party. Schreiben Sie Ihrer Freundin Lena eine Einladung.",
+  "points": [
+   "Wann und wo die Party ist",
+   "Was Sie machen – und bei Regen?",
+   "Bitte: Antwort bis Mittwoch"
+  ],
+  "words": [
+   25,
+   40
+  ],
+  "phrases": [
+   [
+    "Liebe Lena,",
+    "Dear Lena,"
+   ],
+   [
+    "Am … feiere ich meinen Geburtstag.",
+    "On … I'm celebrating my birthday."
+   ],
+   [
+    "Die Party beginnt um … Uhr.",
+    "The party starts at … o'clock."
+   ],
+   [
+    "Vielleicht regnet es.",
+    "Maybe it will rain."
+   ],
+   [
+    "Kommst du?",
+    "Are you coming?"
+   ],
+   [
+    "Bitte antworte bis …",
+    "Please reply by …"
+   ]
+  ],
+  "model": "Liebe Lena, am 13. Juni feiere ich meinen Geburtstag. Die Party beginnt um 18 Uhr im Park. Wir grillen! Aber vielleicht regnet es, dann feiern wir bei mir. Kommst du? Bitte antworte bis Mittwoch. Liebe Grüße, Priya",
+  "model_en": "Dear Lena, on 13 June I'm celebrating my birthday. The party starts at 6 pm in the park. We're having a barbecue! But maybe it will rain, then we'll celebrate at my place. Are you coming? Please reply by Wednesday. Love, Priya",
+  "rubric": [
+   "All three points are answered",
+   "A date with am: am 13. Juni",
+   "Weather with es: es regnet",
+   "du-forms and a friendly greeting and closing"
+  ]
+ }
+]

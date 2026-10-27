@@ -1,0 +1,1225 @@
+[
+ {
+  "id": "a2-s-01",
+  "station": 1,
+  "part": "Teil 1",
+  "task_en": "Ask your partner about their life: make one question from each card. Then answer your partner's questions about you.",
+  "task_de": "Stellen Sie mit jeder Karte eine Frage. Beantworten Sie auch die Fragen von Ihrem Partner / Ihrer Partnerin.",
+  "cards": [
+   "Kindheit – Wo?",
+   "Ausbildung – Was?",
+   "In Deutschland – Seit wann?",
+   "Sprachen – Welche?"
+  ],
+  "phrases": [
+   [
+    "Wo hast du als Kind gewohnt?",
+    "Where did you live as a child?"
+   ],
+   [
+    "Was für eine Ausbildung hast du gemacht?",
+    "What training did you do?"
+   ],
+   [
+    "Seit wann bist du in Deutschland?",
+    "How long have you been in Germany?"
+   ],
+   [
+    "Welche Sprachen sprichst du?",
+    "Which languages do you speak?"
+   ],
+   [
+    "Und du? / Und was …?",
+    "And you? / And what …?"
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Wo wohnst du jetzt?",
+    "Where do you live now?"
+   ],
+   [
+    "A",
+    "Ich wohne in Köln, in einer kleinen Wohnung im Zentrum. Und wo hast du als Kind gewohnt?",
+    "I live in Cologne, in a small flat in the centre. And where did you live as a child?"
+   ],
+   [
+    "B",
+    "In Danzig, in Polen. Was bist du von Beruf?",
+    "In Gdańsk, in Poland. What do you do for a living?"
+   ],
+   [
+    "A",
+    "Ich bin Programmiererin und arbeite bei einer kleinen Firma. Was für eine Ausbildung hast du gemacht?",
+    "I'm a programmer and work for a small company. What training did you do?"
+   ],
+   [
+    "B",
+    "Ich habe eine Ausbildung als Koch gemacht. Wie lange lernst du schon Deutsch?",
+    "I trained as a cook. How long have you been learning German?"
+   ],
+   [
+    "A",
+    "Seit einem Jahr. Ich besuche zweimal pro Woche einen Kurs. Seit wann bist du in Deutschland?",
+    "For a year. I go to a course twice a week. How long have you been in Germany?"
+   ],
+   [
+    "B",
+    "Seit acht Jahren. Ich bin mit meiner Familie nach Deutschland gekommen. Hast du Geschwister?",
+    "For eight years. I came to Germany with my family. Do you have any brothers or sisters?"
+   ],
+   [
+    "A",
+    "Ja, einen Bruder. Er ist Arzt geworden und lebt jetzt in Kanada. Welche Sprachen sprichst du?",
+    "Yes, a brother. He became a doctor and now lives in Canada. Which languages do you speak?"
+   ],
+   [
+    "B",
+    "Polnisch, Deutsch und ein bisschen Englisch.",
+    "Polish, German and a little English."
+   ]
+  ],
+  "partner": [
+   [
+    "Hallo! Ich fange an: Wo wohnst du jetzt?",
+    "Hi! I'll start: where do you live now?"
+   ],
+   [
+    "Als Kind habe ich in Danzig gewohnt, in Polen. Und was bist du von Beruf?",
+    "As a child I lived in Gdańsk, in Poland. And what do you do for a living?"
+   ],
+   [
+    "Ich habe eine Ausbildung als Koch gemacht. Wie lange lernst du schon Deutsch?",
+    "I trained as a cook. How long have you been learning German?"
+   ],
+   [
+    "Seit acht Jahren. Ich bin mit meiner Familie nach Deutschland gekommen. Hast du Geschwister?",
+    "For eight years. I came to Germany with my family. Do you have any brothers or sisters?"
+   ],
+   [
+    "Ich spreche Polnisch, Deutsch und ein bisschen Englisch.",
+    "I speak Polish, German and a little English."
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-02",
+  "station": 2,
+  "part": "Teil 2",
+  "task_en": "Talk about yourself for about a minute. Use the four prompts on the card. Then answer your partner's question.",
+  "task_de": "Erzählen Sie: Wie wohnen Sie? Die Stichwörter auf der Karte helfen Ihnen.",
+  "cards": [
+   "Wie wohnen Sie?",
+   "Wo?",
+   "Wie groß?",
+   "Mit wem?",
+   "Was gefällt Ihnen (nicht)?"
+  ],
+  "phrases": [
+   [
+    "Ich wohne seit … in …",
+    "I've been living in … for …"
+   ],
+   [
+    "Die Wohnung hat … Zimmer.",
+    "The flat has … rooms."
+   ],
+   [
+    "Im Wohnzimmer steht …",
+    "In the living room there's …"
+   ],
+   [
+    "An der Wand hängen …",
+    "On the wall there are …"
+   ],
+   [
+    "Mir gefällt besonders …",
+    "I especially like …"
+   ],
+   [
+    "Nicht so schön ist …",
+    "What's not so nice is …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich wohne seit zwei Jahren in Köln, in einer Wohnung im dritten Stock.",
+    "I've been living in Cologne for two years, in a flat on the third floor."
+   ],
+   [
+    "A",
+    "Die Wohnung ist nicht sehr groß: Sie hat zwei Zimmer, eine kleine Küche und einen Balkon.",
+    "The flat isn't very big: it has two rooms, a small kitchen and a balcony."
+   ],
+   [
+    "A",
+    "Ich wohne dort mit meiner Schwester zusammen.",
+    "I live there with my sister."
+   ],
+   [
+    "A",
+    "Am liebsten bin ich im Wohnzimmer. Dort steht ein großes Sofa, und an der Wand hängen viele Fotos von unserer Familie.",
+    "My favourite room is the living room. There's a big sofa, and lots of photos of our family hang on the wall."
+   ],
+   [
+    "A",
+    "Mein Schreibtisch steht am Fenster. Da lerne ich jeden Abend Deutsch.",
+    "My desk is by the window. That's where I study German every evening."
+   ],
+   [
+    "A",
+    "Mir gefällt besonders der Balkon, denn im Sommer frühstücken wir dort.",
+    "I especially like the balcony, because in summer we have breakfast there."
+   ],
+   [
+    "A",
+    "Nicht so schön ist die Straße vor dem Haus: Sie ist sehr laut.",
+    "What's not so nice is the street in front of the building: it's very noisy."
+   ],
+   [
+    "A",
+    "Aber die Miete ist nicht so hoch, deshalb bleiben wir noch hier.",
+    "But the rent isn't too high, so we're staying here for now."
+   ]
+  ],
+  "partner": [
+   [
+    "Danke! Und wie sind deine Nachbarn?",
+    "Thanks! And what are your neighbours like?"
+   ],
+   [
+    "Möchtest du später lieber in einem Haus wohnen?",
+    "Would you rather live in a house later on?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-03",
+  "station": 3,
+  "part": "Teil 3",
+  "task_en": "You and your partner, a colleague, have to prepare a presentation for a customer on Thursday. You need about an hour and a half. Find a time when you are both free. Your diary is on the cards.",
+  "task_de": "Sie müssen am Donnerstag zusammen eine Präsentation für einen Kunden vorbereiten (ca. 1,5 Stunden). Finden Sie einen Termin.",
+  "cards": [
+   "8:00–9:30 Teamsitzung",
+   "10:00–12:00 Telefonate mit Kunden",
+   "12:00–13:00 Mittagspause mit Malte",
+   "15:30 Zahnarzt"
+  ],
+  "phrases": [
+   [
+    "Hast du am … Zeit?",
+    "Are you free on …?"
+   ],
+   [
+    "Da kann ich leider nicht, weil …",
+    "Unfortunately I can't then, because …"
+   ],
+   [
+    "Wie ist es um …?",
+    "How about …?"
+   ],
+   [
+    "Passt es dir um …?",
+    "Does … suit you?"
+   ],
+   [
+    "Ja, das passt mir gut.",
+    "Yes, that suits me fine."
+   ],
+   [
+    "Dann treffen wir uns um … in …",
+    "Then let's meet at … in …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Wann können wir die Präsentation vorbereiten? Hast du am Donnerstagvormittag Zeit?",
+    "When can we prepare the presentation? Are you free on Thursday morning?"
+   ],
+   [
+    "B",
+    "Leider nicht. Von neun bis zwölf habe ich einen Workshop. Geht es um acht?",
+    "Unfortunately not. I have a workshop from nine to twelve. Does eight work?"
+   ],
+   [
+    "A",
+    "Um acht geht es bei mir nicht, weil wir dann Teamsitzung haben. Wie ist es um eins, nach der Mittagspause?",
+    "Eight doesn't work for me, because we have a team meeting then. How about one, after lunch?"
+   ],
+   [
+    "B",
+    "Um eins bin ich noch beim Mittagessen. Passt es dir um halb zwei?",
+    "At one I'll still be at lunch. Does half past one suit you?"
+   ],
+   [
+    "A",
+    "Ja, das passt. Ich habe bis drei Zeit, dann muss ich zum Zahnarzt.",
+    "Yes, that works. I'm free until three, then I have to go to the dentist."
+   ],
+   [
+    "B",
+    "Das reicht. Wir brauchen ungefähr anderthalb Stunden.",
+    "That's enough. We need about an hour and a half."
+   ],
+   [
+    "A",
+    "Gut, dann treffen wir uns um halb zwei in meinem Büro.",
+    "Good, then let's meet at half past one in my office."
+   ],
+   [
+    "B",
+    "Prima, ich bringe meinen Laptop mit. Bis Donnerstag!",
+    "Great, I'll bring my laptop. See you Thursday!"
+   ]
+  ],
+  "partner": [
+   [
+    "Wir müssen doch am Donnerstag die Präsentation vorbereiten. Hast du um acht Uhr Zeit?",
+    "We need to prepare the presentation on Thursday. Are you free at eight?"
+   ],
+   [
+    "Schade. Von neun bis zwölf habe ich einen Workshop. Wie ist es am Nachmittag?",
+    "Pity. I have a workshop from nine to twelve. How about the afternoon?"
+   ],
+   [
+    "Um eins bin ich noch beim Mittagessen. Passt es dir um halb zwei?",
+    "At one I'll still be at lunch. Does half past one suit you?"
+   ],
+   [
+    "Super, das reicht. Wir brauchen ungefähr anderthalb Stunden.",
+    "Great, that's enough. We need about an hour and a half."
+   ],
+   [
+    "Dann treffen wir uns um halb zwei in deinem Büro. Ich bringe meinen Laptop mit. Bis Donnerstag!",
+    "Then let's meet at half past one in your office. I'll bring my laptop. See you Thursday!"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 150
+ },
+ {
+  "id": "a2-s-04",
+  "station": 4,
+  "part": "Teil 1",
+  "task_en": "Ask your partner about their life: make one question from each card. Then answer your partner's questions about you.",
+  "task_de": "Stellen Sie mit jeder Karte eine Frage. Beantworten Sie auch die Fragen von Ihrem Partner / Ihrer Partnerin.",
+  "cards": [
+   "Hobby – Was?",
+   "Sport – Wie oft?",
+   "Verein – Welcher?",
+   "Wochenende – Mit wem?"
+  ],
+  "phrases": [
+   [
+    "Was ist dein Hobby?",
+    "What's your hobby?"
+   ],
+   [
+    "Wie oft machst du Sport?",
+    "How often do you do sport?"
+   ],
+   [
+    "In welchem Verein bist du?",
+    "Which club are you in?"
+   ],
+   [
+    "Mit wem triffst du dich am Wochenende?",
+    "Who do you meet up with at the weekend?"
+   ],
+   [
+    "Ich interessiere mich für …",
+    "I'm interested in …"
+   ],
+   [
+    "Ich freue mich auf …",
+    "I'm looking forward to …"
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Spielst du ein Instrument?",
+    "Do you play an instrument?"
+   ],
+   [
+    "A",
+    "Ja, ich spiele seit drei Jahren Gitarre, aber nicht sehr gut. Was ist dein Hobby?",
+    "Yes, I've been playing the guitar for three years, but not very well. What's your hobby?"
+   ],
+   [
+    "B",
+    "Ich fotografiere gern, am liebsten Tiere im Zoo. Und wofür interessierst du dich?",
+    "I like taking photos, best of all animals at the zoo. And what are you interested in?"
+   ],
+   [
+    "A",
+    "Ich interessiere mich für Kunst und gehe oft ins Museum. Wie oft machst du Sport?",
+    "I'm interested in art and often go to museums. How often do you do sport?"
+   ],
+   [
+    "B",
+    "Ich spiele zweimal pro Woche Tennis. Was machst du abends?",
+    "I play tennis twice a week. What do you do in the evenings?"
+   ],
+   [
+    "A",
+    "Abends bin ich meistens müde. Dann koche ich oder lese ein Buch. In welchem Verein bist du?",
+    "In the evenings I'm usually tired. Then I cook or read a book. Which club are you in?"
+   ],
+   [
+    "B",
+    "Im Tennisverein Blau-Weiß. Wir trainieren dienstags und donnerstags. Worauf freust du dich am Wochenende?",
+    "In the Blau-Weiß tennis club. We train on Tuesdays and Thursdays. What are you looking forward to at the weekend?"
+   ],
+   [
+    "A",
+    "Ich freue mich auf ein Konzert am Samstag. Mit wem triffst du dich am Wochenende?",
+    "I'm looking forward to a concert on Saturday. Who do you meet up with at the weekend?"
+   ],
+   [
+    "B",
+    "Meistens mit Freunden aus dem Verein. Wir gehen oft zusammen essen.",
+    "Usually with friends from the club. We often go out to eat together."
+   ]
+  ],
+  "partner": [
+   [
+    "Hallo! Ich fange an: Spielst du ein Instrument?",
+    "Hi! I'll start: do you play an instrument?"
+   ],
+   [
+    "Ich fotografiere gern, am liebsten Tiere im Zoo. Und wofür interessierst du dich?",
+    "I like taking photos, best of all animals at the zoo. And what are you interested in?"
+   ],
+   [
+    "Ich spiele zweimal pro Woche Tennis. Was machst du abends?",
+    "I play tennis twice a week. What do you do in the evenings?"
+   ],
+   [
+    "Im Tennisverein Blau-Weiß. Wir trainieren dienstags und donnerstags. Worauf freust du dich am Wochenende?",
+    "In the Blau-Weiß tennis club. We train on Tuesdays and Thursdays. What are you looking forward to at the weekend?"
+   ],
+   [
+    "Meistens mit Freunden aus dem Verein. Wir gehen oft zusammen essen.",
+    "Usually with friends from the club. We often go out to eat together."
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-05",
+  "station": 5,
+  "part": "Teil 2",
+  "task_en": "Talk about yourself for about a minute. Use the four prompts on the card. Then answer your partner's question.",
+  "task_de": "Erzählen Sie: Wie kaufen Sie Kleidung? Die Stichwörter auf der Karte helfen Ihnen.",
+  "cards": [
+   "Kleidung kaufen",
+   "Wo?",
+   "Wie oft?",
+   "Mit wem?",
+   "Was ist Ihnen wichtig?"
+  ],
+  "phrases": [
+   [
+    "Ich kaufe … einmal im Monat.",
+    "I buy … once a month."
+   ],
+   [
+    "Am liebsten gehe ich in / auf …",
+    "Best of all I like going to …"
+   ],
+   [
+    "Mir ist wichtig, dass …",
+    "What matters to me is that …"
+   ],
+   [
+    "Ich trage gern …",
+    "I like wearing …"
+   ],
+   [
+    "Letzte Woche habe ich … gekauft.",
+    "Last week I bought …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich kaufe nicht sehr oft Kleidung, vielleicht einmal im Monat.",
+    "I don't buy clothes very often, maybe once a month."
+   ],
+   [
+    "A",
+    "Am liebsten gehe ich in kleine Geschäfte in der Altstadt oder auf den Flohmarkt.",
+    "Best of all I like going to little shops in the old town or to the flea market."
+   ],
+   [
+    "A",
+    "Dort gibt es schöne alte Sachen, und sie sind nicht so teuer.",
+    "They have lovely old things there, and they aren't so expensive."
+   ],
+   [
+    "A",
+    "Manchmal bestelle ich auch online, aber dann passt oft die Größe nicht.",
+    "Sometimes I order online too, but then the size often doesn't fit."
+   ],
+   [
+    "A",
+    "Meistens gehe ich mit meiner Freundin Lena einkaufen. Sie hat einen sehr guten Geschmack.",
+    "I usually go shopping with my friend Lena. She has very good taste."
+   ],
+   [
+    "A",
+    "Mir ist wichtig, dass die Kleidung bequem ist.",
+    "What matters to me is that the clothes are comfortable."
+   ],
+   [
+    "A",
+    "Ich trage gern weite Hosen, weiche Pullover und bequeme Schuhe.",
+    "I like wearing loose trousers, soft jumpers and comfortable shoes."
+   ],
+   [
+    "A",
+    "Letzte Woche habe ich einen warmen Mantel gekauft – für nur zwanzig Euro!",
+    "Last week I bought a warm coat – for just twenty euros!"
+   ]
+  ],
+  "partner": [
+   [
+    "Schön! Was trägst du am liebsten bei der Arbeit?",
+    "Nice! What do you like wearing best at work?"
+   ],
+   [
+    "Hast du schon einmal etwas auf dem Flohmarkt verkauft?",
+    "Have you ever sold anything at a flea market?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-06",
+  "station": 6,
+  "part": "Teil 3",
+  "task_en": "Your friend Jonas has broken his leg and is in hospital. You and your partner want to visit him together on Saturday. Visiting hours are 2 pm to 7 pm. Find a time when you are both free. Your diary is on the cards.",
+  "task_de": "Jonas hat sich das Bein gebrochen und liegt im Krankenhaus. Sie möchten ihn am Samstag zusammen besuchen (Besuchszeit: 14–19 Uhr). Finden Sie einen Termin.",
+  "cards": [
+   "9:00–10:00 Yoga",
+   "11:00–12:30 Einkaufen auf dem Markt",
+   "13:00–15:00 Mittagessen bei Frau Yilmaz",
+   "17:00–19:00 Babysitten bei Malte"
+  ],
+  "phrases": [
+   [
+    "Wollen wir ihn zusammen besuchen?",
+    "Shall we visit him together?"
+   ],
+   [
+    "Um … geht es leider nicht. Da …",
+    "… doesn't work, I'm afraid. I'm … then."
+   ],
+   [
+    "Wie wäre es um …?",
+    "How about …?"
+   ],
+   [
+    "Um … passt es mir gut, aber um … muss ich gehen.",
+    "… suits me, but I have to leave at …"
+   ],
+   [
+    "Sollen wir ihm etwas mitbringen?",
+    "Shall we bring him something?"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Jonas liegt im Krankenhaus. Wollen wir ihn am Samstag zusammen besuchen?",
+    "Jonas is in hospital. Shall we visit him together on Saturday?"
+   ],
+   [
+    "B",
+    "Ja, gern! Die Besuchszeit ist von zwei bis sieben. Hast du um zwei Zeit?",
+    "Yes, sure! Visiting hours are from two to seven. Are you free at two?"
+   ],
+   [
+    "A",
+    "Um zwei geht es leider nicht. Da esse ich bei Frau Yilmaz zu Mittag, bis drei. Geht es bei dir um drei?",
+    "Two doesn't work, I'm afraid. I'm having lunch at Frau Yilmaz's then, until three. Does three work for you?"
+   ],
+   [
+    "B",
+    "Nein, von drei bis vier habe ich Fußballtraining. Wie wäre es um vier?",
+    "No, I have football training from three to four. How about four?"
+   ],
+   [
+    "A",
+    "Um vier passt es mir gut. Aber um fünf muss ich gehen, da bin ich Babysitterin bei Malte.",
+    "Four suits me fine. But I have to leave at five, I'm babysitting for Malte then."
+   ],
+   [
+    "B",
+    "Kein Problem, eine Stunde ist genug. Jonas ist bestimmt müde. Sollen wir ihm etwas mitbringen?",
+    "No problem, an hour is enough. Jonas is sure to be tired. Shall we bring him something?"
+   ],
+   [
+    "A",
+    "Ja, vielleicht Schokolade und eine Zeitschrift. Er liest doch so gern.",
+    "Yes, maybe chocolate and a magazine. He loves reading, after all."
+   ],
+   [
+    "B",
+    "Gute Idee. Dann treffen wir uns um vier vor dem Krankenhaus.",
+    "Good idea. Then let's meet at four in front of the hospital."
+   ],
+   [
+    "A",
+    "Super, bis Samstag!",
+    "Great, see you Saturday!"
+   ]
+  ],
+  "partner": [
+   [
+    "Jonas liegt im Krankenhaus. Wollen wir ihn am Samstag zusammen besuchen? Ich habe um zwei Zeit.",
+    "Jonas is in hospital. Shall we visit him together on Saturday? I'm free at two."
+   ],
+   [
+    "Um drei habe ich leider Fußballtraining. Wie wäre es um vier?",
+    "I'm afraid I have football training at three. How about four?"
+   ],
+   [
+    "Super. Eine Stunde ist genug, Jonas ist bestimmt noch müde. Sollen wir ihm etwas mitbringen?",
+    "Great. An hour is enough, Jonas is sure to be tired still. Shall we bring him something?"
+   ],
+   [
+    "Gute Idee! Ich kaufe ihm noch eine Zeitschrift. Er liest doch so gern.",
+    "Good idea! I'll buy him a magazine as well. He loves reading, after all."
+   ],
+   [
+    "Dann treffen wir uns um vier vor dem Krankenhaus. Bis Samstag!",
+    "Then let's meet at four in front of the hospital. See you Saturday!"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 150
+ },
+ {
+  "id": "a2-s-07",
+  "station": 7,
+  "part": "Teil 1",
+  "task_en": "Ask your partner about their life: make one question from each card. Then answer your partner's questions about you.",
+  "task_de": "Stellen Sie mit jeder Karte eine Frage. Beantworten Sie auch die Fragen von Ihrem Partner / Ihrer Partnerin.",
+  "cards": [
+   "Letzter Urlaub – Wo?",
+   "Weg zur Arbeit – Wie?",
+   "Reisen – Mit wem?",
+   "Traumreise – Wohin?"
+  ],
+  "phrases": [
+   [
+    "Wo warst du im letzten Urlaub?",
+    "Where were you on your last holiday?"
+   ],
+   [
+    "Wie kommst du zur Arbeit?",
+    "How do you get to work?"
+   ],
+   [
+    "Mit wem reist du am liebsten?",
+    "Who do you like travelling with most?"
+   ],
+   [
+    "Wohin möchtest du einmal reisen?",
+    "Where would you like to travel one day?"
+   ],
+   [
+    "Ich war zwei Wochen am Meer / in den Bergen.",
+    "I spent two weeks at the seaside / in the mountains."
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Wohin fährst du in den nächsten Ferien?",
+    "Where are you going in the next holidays?"
+   ],
+   [
+    "A",
+    "Im August fahre ich in die Berge, nach Österreich. Wo warst du im letzten Urlaub?",
+    "In August I'm going to the mountains, to Austria. Where were you on your last holiday?"
+   ],
+   [
+    "B",
+    "Ich war zwei Wochen am Meer, an der Ostsee. Das Wetter war super! Was nimmst du immer mit auf Reisen?",
+    "I spent two weeks at the seaside, on the Baltic. The weather was great! What do you always take with you when you travel?"
+   ],
+   [
+    "A",
+    "Immer meine Kamera und ein gutes Buch. Wie kommst du zur Arbeit?",
+    "Always my camera and a good book. How do you get to work?"
+   ],
+   [
+    "B",
+    "Meistens mit dem Fahrrad. Wenn es regnet, nehme ich den Bus. Fährst du gern mit dem Zug?",
+    "Usually by bike. When it rains, I take the bus. Do you like travelling by train?"
+   ],
+   [
+    "A",
+    "Ja, im Zug kann ich lesen. Aber letzte Woche hatte mein Zug zwei Stunden Verspätung! Mit wem reist du am liebsten?",
+    "Yes, I can read on the train. But last week my train was two hours late! Who do you like travelling with most?"
+   ],
+   [
+    "B",
+    "Mit meiner Schwester. Mit ihr hatte ich immer viel Spaß. Hast du einen Führerschein?",
+    "With my sister. I always had lots of fun with her. Do you have a driving licence?"
+   ],
+   [
+    "A",
+    "Nein, ich hatte nie Zeit für die Fahrstunden. Wohin möchtest du einmal reisen?",
+    "No, I never had time for driving lessons. Where would you like to travel one day?"
+   ],
+   [
+    "B",
+    "Nach Indien! Priya hat mir so viel davon erzählt.",
+    "To India! Priya has told me so much about it."
+   ]
+  ],
+  "partner": [
+   [
+    "Ich fange an: Wohin fährst du in den nächsten Ferien?",
+    "I'll start: where are you going in the next holidays?"
+   ],
+   [
+    "Ich war zwei Wochen am Meer, an der Ostsee. Das Wetter war super! Was nimmst du immer mit auf Reisen?",
+    "I spent two weeks at the seaside, on the Baltic. The weather was great! What do you always take with you when you travel?"
+   ],
+   [
+    "Meistens mit dem Fahrrad. Wenn es regnet, nehme ich den Bus. Fährst du gern mit dem Zug?",
+    "Usually by bike. When it rains, I take the bus. Do you like travelling by train?"
+   ],
+   [
+    "Am liebsten mit meiner Schwester. Mit ihr hatte ich immer viel Spaß. Hast du einen Führerschein?",
+    "Best of all with my sister. I always had lots of fun with her. Do you have a driving licence?"
+   ],
+   [
+    "Nach Indien! Priya hat mir so viel davon erzählt.",
+    "To India! Priya has told me so much about it."
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-08",
+  "station": 8,
+  "part": "Teil 2",
+  "task_en": "Talk about yourself for about a minute. Use the four prompts on the card. Then answer your partner's question.",
+  "task_de": "Erzählen Sie: Wie benutzen Sie Handy und Internet? Die Stichwörter auf der Karte helfen Ihnen.",
+  "cards": [
+   "Handy und Internet",
+   "Wie lange?",
+   "Wofür?",
+   "Wann nicht?",
+   "Was ist gut, was ist schlecht?"
+  ],
+  "phrases": [
+   [
+    "Ich benutze mein Handy …",
+    "I use my phone …"
+   ],
+   [
+    "Zum Deutschlernen benutze ich …",
+    "For learning German I use …"
+   ],
+   [
+    "… ist sehr nützlich. Trotzdem …",
+    "… is very useful. Still, …"
+   ],
+   [
+    "Ich weiß nicht, ob …",
+    "I don't know if …"
+   ],
+   [
+    "Ich glaube, dass …",
+    "I think that …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Ich benutze mein Handy jeden Tag, ich glaube, ungefähr drei Stunden.",
+    "I use my phone every day, about three hours, I think."
+   ],
+   [
+    "A",
+    "Morgens lese ich im Bus die Nachrichten und meine E-Mails.",
+    "In the morning I read the news and my emails on the bus."
+   ],
+   [
+    "A",
+    "Mit meiner Familie im Ausland mache ich oft Videoanrufe. Das ist kostenlos und sehr praktisch.",
+    "I often video call my family abroad. It's free and very handy."
+   ],
+   [
+    "A",
+    "Zum Deutschlernen benutze ich Apps, und ich höre deutsche Podcasts.",
+    "For learning German I use apps, and I listen to German podcasts."
+   ],
+   [
+    "A",
+    "Abends sehe ich manchmal eine Serie auf dem Laptop.",
+    "In the evening I sometimes watch a series on my laptop."
+   ],
+   [
+    "A",
+    "Beim Essen benutze ich das Handy nicht, und im Schlafzimmer liegt es nie.",
+    "I don't use my phone during meals, and it's never in the bedroom."
+   ],
+   [
+    "A",
+    "Das Internet ist sehr nützlich. Trotzdem bin ich manchmal zu lange online.",
+    "The internet is very useful. Still, I'm sometimes online for too long."
+   ],
+   [
+    "A",
+    "Ich weiß nicht, ob das so gut für mich ist.",
+    "I don't know if that's so good for me."
+   ]
+  ],
+  "partner": [
+   [
+    "Danke! Welche App benutzt du am meisten?",
+    "Thanks! Which app do you use most?"
+   ],
+   [
+    "Liest du auch noch Zeitungen auf Papier?",
+    "Do you still read newspapers on paper as well?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-09",
+  "station": 9,
+  "part": "Teil 3",
+  "task_en": "You and your partner want to buy a present for Frau Yilmaz's birthday together. Find a time when you are both free. Your diary is on the cards.",
+  "task_de": "Sie möchten zusammen ein Geschenk für Frau Yilmaz kaufen. Finden Sie einen Termin.",
+  "cards": [
+   "Samstag 9 Uhr: Frühstück mit Lena",
+   "Samstag 11–13 Uhr: frei",
+   "Samstag 15 Uhr: Fußball",
+   "Sonntag: Oma besuchen"
+  ],
+  "phrases": [
+   [
+    "Hast du am Samstag Zeit?",
+    "Are you free on Saturday?"
+   ],
+   [
+    "Da kann ich leider nicht.",
+    "Unfortunately I can't then."
+   ],
+   [
+    "Wie wäre es um …?",
+    "How about at …?"
+   ],
+   [
+    "Gut, dann treffen wir uns …",
+    "Good, then let's meet …"
+   ],
+   [
+    "Was schenken wir ihr?",
+    "What shall we give her?"
+   ],
+   [
+    "Das gefällt ihr bestimmt.",
+    "She'll definitely like that."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Frau Yilmaz hat bald Geburtstag. Wollen wir ihr zusammen ein Geschenk kaufen?",
+    "It's Frau Yilmaz's birthday soon. Shall we buy her a present together?"
+   ],
+   [
+    "B",
+    "Ja, gern! Am Samstag um neun habe ich Zeit. Und du?",
+    "Yes, sure! I'm free on Saturday at nine. And you?"
+   ],
+   [
+    "A",
+    "Um neun kann ich leider nicht, da frühstücke ich mit Lena. Aber von elf bis eins bin ich frei.",
+    "Unfortunately I can't at nine, I'm having breakfast with Lena. But I'm free from eleven to one."
+   ],
+   [
+    "B",
+    "Elf ist gut. Treffen wir uns vor dem Kaufhaus?",
+    "Eleven is good. Shall we meet in front of the department store?"
+   ],
+   [
+    "A",
+    "Ja, super. Was schenken wir ihr denn?",
+    "Yes, great. So what shall we give her?"
+   ],
+   [
+    "B",
+    "Sie hat so viele Blumen auf dem Balkon. Vielleicht eine schöne Pflanze?",
+    "She has so many flowers on her balcony. Maybe a nice plant?"
+   ],
+   [
+    "A",
+    "Gute Idee, das gefällt ihr bestimmt! Und wir schreiben ihr eine Karte.",
+    "Good idea, she'll definitely like that! And we'll write her a card."
+   ],
+   [
+    "B",
+    "Prima. Dann bis Samstag um elf!",
+    "Great. See you Saturday at eleven, then!"
+   ]
+  ],
+  "partner": [
+   [
+    "Wir wollen doch zusammen ein Geschenk für Frau Yilmaz kaufen. Am Samstag um neun habe ich Zeit. Und du?",
+    "We want to buy a present for Frau Yilmaz together. I'm free on Saturday at nine. And you?"
+   ],
+   [
+    "Schade. Und um elf? Geht das?",
+    "Pity. And at eleven? Does that work?"
+   ],
+   [
+    "Super, dann treffen wir uns um elf vor dem Kaufhaus. Was schenken wir ihr denn?",
+    "Great, then let's meet at eleven in front of the department store. So what shall we give her?"
+   ],
+   [
+    "Gute Idee, das gefällt ihr bestimmt! Wir schreiben ihr auch eine Karte, oder?",
+    "Good idea, she'll definitely like that! We'll write her a card too, shall we?"
+   ],
+   [
+    "Prima. Dann bis Samstag um elf!",
+    "Great. See you Saturday at eleven, then!"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 180
+ },
+ {
+  "id": "a2-s-10",
+  "station": 10,
+  "part": "Teil 1",
+  "task_en": "Ask your partner about their life: make one question from each card. Then answer your partner's questions about you.",
+  "task_de": "Stellen Sie mit jeder Karte eine Frage. Beantworten Sie auch die Fragen von Ihrem Partner / Ihrer Partnerin.",
+  "cards": [
+   "Schule – Wo?",
+   "Lieblingsfach – Welches?",
+   "Deutsch lernen – Wie?",
+   "Prüfung – Wann?"
+  ],
+  "phrases": [
+   [
+    "Wo bist du zur Schule gegangen?",
+    "Where did you go to school?"
+   ],
+   [
+    "Was war dein Lieblingsfach?",
+    "What was your favourite subject?"
+   ],
+   [
+    "Wie lernst du am liebsten Deutsch?",
+    "How do you like learning German best?"
+   ],
+   [
+    "… war für mich am schwierigsten.",
+    "… was the hardest for me."
+   ],
+   [
+    "Lieber …, das macht mehr Spaß.",
+    "I prefer …, it's more fun."
+   ]
+  ],
+  "model": [
+   [
+    "B",
+    "Welches Fach war in der Schule am schwierigsten für dich?",
+    "Which subject was hardest for you at school?"
+   ],
+   [
+    "A",
+    "Physik! Das war für mich am schwierigsten. Wo bist du zur Schule gegangen?",
+    "Physics! That was the hardest for me. Where did you go to school?"
+   ],
+   [
+    "B",
+    "In São Paulo, in Brasilien. Meine Schule war sehr groß. Lernst du lieber allein oder in einer Gruppe?",
+    "In São Paulo, in Brazil. My school was very big. Do you prefer learning alone or in a group?"
+   ],
+   [
+    "A",
+    "Lieber in einer Gruppe, das macht mehr Spaß. Was war dein Lieblingsfach?",
+    "In a group, it's more fun. What was your favourite subject?"
+   ],
+   [
+    "B",
+    "Sport! In Mathe war ich nicht so gut. Wie lange bist du zur Schule gegangen?",
+    "Sport! I wasn't so good at maths. How many years did you go to school?"
+   ],
+   [
+    "A",
+    "Zwölf Jahre. Danach habe ich an der Universität studiert. Wie lernst du am liebsten Deutsch?",
+    "Twelve years. After that I studied at university. How do you like learning German best?"
+   ],
+   [
+    "B",
+    "Am liebsten mit Filmen und Serien. Vokabeln lerne ich mit Karten. Welche Sprache möchtest du noch lernen?",
+    "Best of all with films and series. I learn vocabulary with cards. Which other language would you like to learn?"
+   ],
+   [
+    "A",
+    "Spanisch, das finde ich schöner als Französisch. Wann ist deine Prüfung?",
+    "Spanish, I think it's nicer than French. When is your exam?"
+   ],
+   [
+    "B",
+    "Im Juni. Ich bin schon ein bisschen nervös!",
+    "In June. I'm already a bit nervous!"
+   ]
+  ],
+  "partner": [
+   [
+    "Ich fange an: Welches Fach war in der Schule am schwierigsten für dich?",
+    "I'll start: which subject was hardest for you at school?"
+   ],
+   [
+    "In São Paulo, in Brasilien. Meine Schule war sehr groß. Lernst du lieber allein oder in einer Gruppe?",
+    "In São Paulo, in Brazil. My school was very big. Do you prefer learning alone or in a group?"
+   ],
+   [
+    "Sport! In Mathe war ich nicht so gut. Wie lange bist du zur Schule gegangen?",
+    "Sport! I wasn't so good at maths. How many years did you go to school?"
+   ],
+   [
+    "Am liebsten mit Filmen und Serien. Vokabeln lerne ich mit Karten. Welche Sprache möchtest du noch lernen?",
+    "Best of all with films and series. I learn vocabulary with cards. Which other language would you like to learn?"
+   ],
+   [
+    "Im Juni. Ich bin schon ein bisschen nervös!",
+    "In June. I'm already a bit nervous!"
+   ]
+  ],
+  "prep_s": 30,
+  "speak_s": 90
+ },
+ {
+  "id": "a2-s-11",
+  "station": 11,
+  "part": "Teil 3",
+  "task_en": "Priya, a newcomer from India, needs a bank account. You and your partner want to go to the bank with her on Tuesday. The bank is open 9–12 and 2–6. Find a time when you are both free. Your diary is on the cards.",
+  "task_de": "Priya braucht ein Bankkonto. Sie möchten am Dienstag zusammen mit ihr zur Bank gehen (geöffnet: 9–12 und 14–18 Uhr). Finden Sie einen Termin.",
+  "cards": [
+   "8:00–12:00 Arbeit",
+   "12:00–13:30 Deutschkurs",
+   "14:00–15:00 Fahrrad aus der Werkstatt abholen",
+   "17:30 Paket von der Post abholen"
+  ],
+  "phrases": [
+   [
+    "Hättest du am … Zeit?",
+    "Would you be free on …?"
+   ],
+   [
+    "Da muss ich leider arbeiten.",
+    "Unfortunately I have to work then."
+   ],
+   [
+    "Würde es um … gehen?",
+    "Would … work?"
+   ],
+   [
+    "Ich hole mein Fahrrad aus der Werkstatt ab.",
+    "I'm picking up my bike from the repair shop."
+   ],
+   [
+    "Könntest du Priya Bescheid sagen?",
+    "Could you let Priya know?"
+   ],
+   [
+    "Sie soll ihren Pass mitbringen.",
+    "She should bring her passport."
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Priya braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen?",
+    "Priya needs a bank account. Shall we go to the bank with her on Tuesday?"
+   ],
+   [
+    "B",
+    "Ja, gute Idee. Am Vormittag hätte ich Zeit, so um zehn. Geht das bei dir?",
+    "Yes, good idea. I'd be free in the morning, around ten. Does that work for you?"
+   ],
+   [
+    "A",
+    "Nein, leider nicht. Bis zwölf muss ich arbeiten, und danach habe ich Deutschkurs.",
+    "No, I'm afraid not. I have to work until twelve, and after that I have my German course."
+   ],
+   [
+    "B",
+    "Die Bank ist ab zwei wieder geöffnet. Hast du am Nachmittag Zeit?",
+    "The bank opens again at two. Are you free in the afternoon?"
+   ],
+   [
+    "A",
+    "Um zwei hole ich mein Fahrrad aus der Werkstatt ab. Ich habe es reparieren lassen. Ab drei bin ich frei.",
+    "At two I'm picking up my bike from the repair shop. I've had it repaired. I'm free from three."
+   ],
+   [
+    "B",
+    "Um drei habe ich noch einen Termin beim Friseur. Würde es um halb vier gehen?",
+    "At three I still have a hairdresser's appointment. Would half past three work?"
+   ],
+   [
+    "A",
+    "Ja, halb vier passt mir gut. Um halb sechs muss ich zur Post, aber das ist kein Problem.",
+    "Yes, half past three suits me fine. I have to go to the post office at half past five, but that's no problem."
+   ],
+   [
+    "B",
+    "Super, dann treffen wir uns um halb vier vor der Bank. Ich sage Priya Bescheid.",
+    "Great, then let's meet at half past three in front of the bank. I'll let Priya know."
+   ],
+   [
+    "A",
+    "Könntest du ihr bitte auch sagen, dass sie ihren Pass mitbringen soll?",
+    "Could you please also tell her to bring her passport?"
+   ],
+   [
+    "B",
+    "Klar, mache ich. Bis Dienstag!",
+    "Sure, will do. See you Tuesday!"
+   ]
+  ],
+  "partner": [
+   [
+    "Priya braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen? Ich hätte am Vormittag Zeit, so um zehn.",
+    "Priya needs a bank account. Shall we go to the bank with her on Tuesday? I'd be free in the morning, around ten."
+   ],
+   [
+    "Schade. Die Bank ist ab zwei wieder geöffnet. Hast du am Nachmittag Zeit?",
+    "Pity. The bank opens again at two. Are you free in the afternoon?"
+   ],
+   [
+    "Um drei habe ich leider einen Termin beim Friseur. Würde es um halb vier gehen?",
+    "I'm afraid I have a hairdresser's appointment at three. Would half past three work?"
+   ],
+   [
+    "Super. Ich sage Priya Bescheid. Was muss sie zur Bank mitbringen?",
+    "Great. I'll let Priya know. What does she need to bring to the bank?"
+   ],
+   [
+    "Gut, das schreibe ich ihr. Dann treffen wir uns um halb vier vor der Bank. Bis Dienstag!",
+    "Good, I'll text her that. Then let's meet at half past three in front of the bank. See you Tuesday!"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 180
+ },
+ {
+  "id": "a2-s-12",
+  "station": 12,
+  "part": "Teil 2",
+  "task_en": "Talk about yourself for about a minute. Use the four prompts on the card. Then answer your partner's question.",
+  "task_de": "Erzählen Sie: Was machen Sie für die Umwelt? Die Stichwörter auf der Karte helfen Ihnen.",
+  "cards": [
+   "Was machen Sie für die Umwelt?",
+   "Unterwegs?",
+   "Beim Einkaufen?",
+   "Zu Hause?",
+   "Was ist schwierig?"
+  ],
+  "phrases": [
+   [
+    "Die Umwelt ist mir wichtig.",
+    "The environment matters to me."
+   ],
+   [
+    "Ich versuche, … zu …",
+    "I try to …"
+   ],
+   [
+    "…, deshalb …",
+    "…, so …"
+   ],
+   [
+    "…, trotzdem …",
+    "…, but still …"
+   ],
+   [
+    "Man sollte …",
+    "People should …"
+   ]
+  ],
+  "model": [
+   [
+    "A",
+    "Die Umwelt ist mir wichtig, deshalb versuche ich, jeden Tag etwas zu tun.",
+    "The environment matters to me, so I try to do something every day."
+   ],
+   [
+    "A",
+    "Ich habe kein Auto. Zur Arbeit fahre ich mit dem Fahrrad, auch wenn es regnet.",
+    "I don't have a car. I cycle to work, even when it rains."
+   ],
+   [
+    "A",
+    "Zum Einkaufen nehme ich immer eine Tasche von zu Hause mit.",
+    "I always take a bag from home when I go shopping."
+   ],
+   [
+    "A",
+    "Obst und Gemüse kaufe ich gern auf dem Markt, denn es kommt aus der Region.",
+    "I like buying fruit and vegetables at the market, because they come from the region."
+   ],
+   [
+    "A",
+    "Zu Hause trennen wir den Müll: Papier, Plastik, Glas und Bio.",
+    "At home we separate the rubbish: paper, plastic, glass and food waste."
+   ],
+   [
+    "A",
+    "Schwierig finde ich das Reisen. Meine Familie wohnt weit weg, deshalb muss ich manchmal fliegen.",
+    "What I find difficult is travel. My family lives far away, so sometimes I have to fly."
+   ],
+   [
+    "A",
+    "Das ist nicht gut für die Umwelt, trotzdem möchte ich sie besuchen.",
+    "That's not good for the environment, but I still want to visit them."
+   ],
+   [
+    "A",
+    "Ich finde, man sollte weniger kaufen und mehr reparieren.",
+    "I think people should buy less and repair more."
+   ]
+  ],
+  "partner": [
+   [
+    "Danke! Fährst du auch im Winter mit dem Fahrrad?",
+    "Thanks! Do you cycle in winter too?"
+   ],
+   [
+    "Was macht man in deinem Land für die Umwelt?",
+    "What do people do for the environment in your country?"
+   ]
+  ],
+  "prep_s": 60,
+  "speak_s": 90
+ }
+]
