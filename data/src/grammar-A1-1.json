@@ -1,0 +1,6250 @@
+[
+ {
+  "id": "a1-pronouns",
+  "pattern": "ich · du · er / sie / es · wir · ihr · sie · Sie",
+  "explain": "Personal pronouns stand for people and things: ich (I), du (you), er (he), sie (she), es (it), wir (we), ihr (you, several friends), sie (they). For one 'you', choose: du for friends, family and children, Sie for adults you don't know well, like a teacher or a neighbour. Polite Sie always has a capital S.",
+  "compare_en": "English has one 'you'; German picks du (friendly), ihr (friendly, several people) or Sie (polite, one or more). sie can mean 'she' or 'they', and Sie means polite 'you': the verb ending helps you tell them apart.",
+  "table": [
+   [
+    "German",
+    "English"
+   ],
+   [
+    "ich",
+    "I"
+   ],
+   [
+    "du",
+    "you (one friend)"
+   ],
+   [
+    "er / sie / es",
+    "he / she / it"
+   ],
+   [
+    "wir",
+    "we"
+   ],
+   [
+    "ihr",
+    "you (several friends)"
+   ],
+   [
+    "sie",
+    "they"
+   ],
+   [
+    "Sie",
+    "you (polite, one or more)"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "heiße",
+     "Priya."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am called"
+     ],
+     [
+      [
+       2
+      ],
+      "Priya."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Er",
+     "heißt",
+     "Malte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "He"
+     ],
+     [
+      [
+       1
+      ],
+      "is called"
+     ],
+     [
+      [
+       2
+      ],
+      "Malte."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wohnst",
+     "du",
+     "hier?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "here?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Wohnen",
+     "Sie",
+     "hier,",
+     "Frau Yilmaz?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "here,"
+     ],
+     [
+      [
+       3
+      ],
+      "Mrs Yilmaz?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-present-regular",
+  "pattern": "verb stem + ending: ich -e · du -st · er / sie / es -t",
+  "explain": "A German verb changes its ending to match the subject (who does it). Take the infinitive, e.g. wohnen, drop -en to get the stem wohn-, then add the ending: ich wohne, du wohnst, er wohnt. If the stem ends in -s, -ß or -z, du only adds -t: du heißt. If it ends in -t or -d, add an extra e: du arbeitest, er arbeitet.",
+  "compare_en": "English only adds -s for he, she and it (he lives). German gives almost every person its own ending, so the ending tells you who is doing it.",
+  "table": [
+   [
+    "",
+    "wohnen",
+    "heißen",
+    "arbeiten"
+   ],
+   [
+    "ich",
+    "wohne",
+    "heiße",
+    "arbeite"
+   ],
+   [
+    "du",
+    "wohnst",
+    "heißt",
+    "arbeitest"
+   ],
+   [
+    "er / sie / es",
+    "wohnt",
+    "heißt",
+    "arbeitet"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "wohne",
+     "in Berlin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in Berlin."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Du",
+     "heißt",
+     "Jonas,",
+     "richtig?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "are called"
+     ],
+     [
+      [
+       2
+      ],
+      "Jonas,"
+     ],
+     [
+      [
+       3
+      ],
+      "right?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "arbeitet",
+     "in Hamburg."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "works"
+     ],
+     [
+      [
+       2
+      ],
+      "in Hamburg."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-w-questions",
+  "pattern": "W-word + VERB + subject + …?",
+  "explain": "W-questions ask for information. They start with a question word: wer? (who), wie? (how), wo? (where), woher? (where from), was? (what). The verb comes straight after it, in position 2, and then the subject. To ask someone's name, German uses wie: Wie heißt du?",
+  "compare_en": "English often needs 'do' (Where do you live?). German never does: the verb itself stands in position 2: Wo wohnst du? Careful: wer means 'who', not 'where'.",
+  "table": [
+   [
+    "question word",
+    "meaning",
+    "example"
+   ],
+   [
+    "wer?",
+    "who?",
+    "Wer ist das?"
+   ],
+   [
+    "wie?",
+    "how? / what? (names)",
+    "Wie heißt du?"
+   ],
+   [
+    "wo?",
+    "where?",
+    "Wo wohnst du?"
+   ],
+   [
+    "woher?",
+    "where … from?",
+    "Woher kommst du?"
+   ],
+   [
+    "was?",
+    "what?",
+    "Was machst du?"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wo",
+     "wohnt",
+     "Frau Yilmaz?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [],
+      "does"
+     ],
+     [
+      [
+       2
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "live?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Woher",
+     "kommst",
+     "du?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [],
+      "do"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       1
+      ],
+      "come"
+     ],
+     [
+      [
+       0
+      ],
+      "from?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wie",
+     "heißen",
+     "Sie?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "What"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "your"
+     ],
+     [
+      [
+       1
+      ],
+      "name?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wer",
+     "ist",
+     "das?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Who"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "that?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-sein",
+  "pattern": "ich bin · du bist · er / sie / es ist · wir sind · ihr seid · sie / Sie sind",
+  "explain": "sein (to be) is the most important verb, and it is irregular, so learn its forms by heart. Use it to say who you are, where you are from, how old you are and what someone is like: Ich bin Priya. Ich bin 25 Jahre alt. For jobs, German uses no 'a': Jonas ist Student.",
+  "compare_en": "Like 'to be', sein is irregular in English too (I am, you are, he is). But German drops the 'a' with jobs: Ich bin Student = I am a student.",
+  "table": [
+   [
+    "",
+    "sein"
+   ],
+   [
+    "ich",
+    "bin"
+   ],
+   [
+    "du",
+    "bist"
+   ],
+   [
+    "er / sie / es",
+    "ist"
+   ],
+   [
+    "wir",
+    "sind"
+   ],
+   [
+    "ihr",
+    "seid"
+   ],
+   [
+    "sie / Sie",
+    "sind"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "bin",
+     "aus Indien."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am"
+     ],
+     [
+      [
+       2
+      ],
+      "from India."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "ist",
+     "Student."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [],
+      "a"
+     ],
+     [
+      [
+       2
+      ],
+      "student."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena und Jonas",
+     "sind",
+     "in Berlin."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena and Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "in Berlin."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Bist",
+     "du",
+     "verheiratet?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Are"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       2
+      ],
+      "married?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-present-plural",
+  "pattern": "wir -en · ihr -t · sie / Sie -en",
+  "explain": "In the plural, wir, sie (they) and Sie (polite you) all use the infinitive form: wir wohnen, sie wohnen, Sie wohnen. Only ihr (you, several friends) is different: it takes -t, like er: ihr wohnt. After a stem ending in -t or -d, ihr adds -et: ihr arbeitet.",
+  "compare_en": "In English, we, you and they share one form (we live, they live). German is the same for wir, sie and Sie, but ihr has its own -t ending: ihr wohnt.",
+  "table": [
+   [
+    "",
+    "wohnen",
+    "kommen",
+    "arbeiten"
+   ],
+   [
+    "ich",
+    "wohne",
+    "komme",
+    "arbeite"
+   ],
+   [
+    "du",
+    "wohnst",
+    "kommst",
+    "arbeitest"
+   ],
+   [
+    "er / sie / es",
+    "wohnt",
+    "kommt",
+    "arbeitet"
+   ],
+   [
+    "wir",
+    "wohnen",
+    "kommen",
+    "arbeiten"
+   ],
+   [
+    "ihr",
+    "wohnt",
+    "kommt",
+    "arbeitet"
+   ],
+   [
+    "sie / Sie",
+    "wohnen",
+    "kommen",
+    "arbeiten"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wir",
+     "lernen",
+     "Deutsch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "are learning"
+     ],
+     [
+      [
+       2
+      ],
+      "German."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena und Jonas",
+     "wohnen",
+     "in Hamburg."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena and Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in Hamburg."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ihr",
+     "wohnt",
+     "in Köln,",
+     "oder?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in Cologne,"
+     ],
+     [
+      [
+       3
+      ],
+      "don't you?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Kommen",
+     "Sie",
+     "aus Indien?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "come"
+     ],
+     [
+      [
+       2
+      ],
+      "from India?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-yes-no",
+  "pattern": "VERB + subject + …?",
+  "explain": "A yes/no question starts with the verb, and the subject comes right after it: Kommst du aus Indien? Wohnt Lena in Köln? The answer begins with ja (yes) or nein (no). When you speak, your voice goes up at the end.",
+  "compare_en": "English adds do/does (Do you come from India?) or turns 'is' around (Is he married?). German just puts the verb first, for every verb: Kommst du …? Ist er …? There is no 'do'.",
+  "examples": [
+   {
+    "de": [
+     "Kommst",
+     "du",
+     "aus Indien?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "come"
+     ],
+     [
+      [
+       2
+      ],
+      "from India?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Wohnt",
+     "Lena",
+     "in Köln?"
+    ],
+    "en": [
+     [
+      [],
+      "Does"
+     ],
+     [
+      [
+       1
+      ],
+      "Lena"
+     ],
+     [
+      [
+       0
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in Cologne?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Sprechen",
+     "Sie",
+     "Englisch?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "speak"
+     ],
+     [
+      [
+       2
+      ],
+      "English?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Ist",
+     "Malte",
+     "verheiratet?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Is"
+     ],
+     [
+      [
+       1
+      ],
+      "Malte"
+     ],
+     [
+      [
+       2
+      ],
+      "married?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-v2",
+  "pattern": "position 1 + VERB (position 2) + …",
+  "explain": "In a German statement the verb with the ending always stands in position 2. Position 1 is one block: often the subject, but it can also be a word like hier or a phrase like in Berlin. A block can have several words: Lena und Jonas is one position. If something else is in position 1, the subject goes right after the verb.",
+  "compare_en": "English keeps the subject before the verb: Here I live. German keeps the verb in position 2, even if the subject then comes after it: Hier wohne ich.",
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "komme",
+     "aus Indien."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "come"
+     ],
+     [
+      [
+       2
+      ],
+      "from India."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena und Jonas",
+     "lernen",
+     "Englisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena and Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "are learning"
+     ],
+     [
+      [
+       2
+      ],
+      "English."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hier",
+     "wohnt",
+     "Frau Yilmaz."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "lives"
+     ],
+     [
+      [
+       0
+      ],
+      "here."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "In Berlin",
+     "studiert",
+     "Priya",
+     "Deutsch."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "is studying"
+     ],
+     [
+      [
+       3
+      ],
+      "German"
+     ],
+     [
+      [
+       0
+      ],
+      "in Berlin."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-haben",
+  "pattern": "ich habe · du hast · er / sie / es hat · wir haben · ihr habt · sie / Sie haben",
+  "explain": "haben means 'to have'. It is almost regular, but du and er/sie/es lose the b: du hast, er hat. Use it for family, things and time: Ich habe zwei Brüder. Hast du Zeit? Some feelings also use haben: Ich habe Hunger (I'm hungry), Ich habe Durst (I'm thirsty).",
+  "compare_en": "haben works like 'have' (I have a brother). But where English says 'I am hungry', German says Ich habe Hunger, literally 'I have hunger'.",
+  "table": [
+   [
+    "",
+    "haben"
+   ],
+   [
+    "ich",
+    "habe"
+   ],
+   [
+    "du",
+    "hast"
+   ],
+   [
+    "er / sie / es",
+    "hat"
+   ],
+   [
+    "wir",
+    "haben"
+   ],
+   [
+    "ihr",
+    "habt"
+   ],
+   [
+    "sie / Sie",
+    "haben"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Frau Yilmaz",
+     "hat",
+     "zwei Kinder."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "two children."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hast",
+     "du",
+     "Geschwister?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "any brothers or sisters?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "hat",
+     "eine Schwester."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "a sister."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Habt",
+     "ihr",
+     "Kinder?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "children?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-articles",
+  "pattern": "der / ein (masculine) · die / eine (feminine) · das / ein (neuter) · die (plural)",
+  "explain": "Every German noun has a gender: masculine (der), feminine (die) or neuter (das). Use der/die/das (the) for something already known, and ein/eine (a) for something new: Das ist ein Hund. Der Hund ist klein. In the plural the article is always die, and there is no plural of ein. Learn every noun with its article.",
+  "compare_en": "English has one 'the' and one 'a'. German has three genders, and they don't always follow meaning: das Mädchen (the girl) is neuter.",
+  "table": [
+   [
+    "",
+    "the",
+    "a"
+   ],
+   [
+    "masculine",
+    "der Vater",
+    "ein Vater"
+   ],
+   [
+    "feminine",
+    "die Mutter",
+    "eine Mutter"
+   ],
+   [
+    "neuter",
+    "das Kind",
+    "ein Kind"
+   ],
+   [
+    "plural",
+    "die Kinder",
+    "– Kinder"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Das",
+     "ist",
+     "ein Hund."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "a dog."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der Hund",
+     "ist",
+     "klein."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The dog"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "small."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Frau Yilmaz",
+     "hat",
+     "eine Tochter und ein Baby."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "a daughter and a baby."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Großeltern",
+     "wohnen",
+     "in Indien."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The grandparents"
+     ],
+     [
+      [
+       1
+      ],
+      "live"
+     ],
+     [
+      [
+       2
+      ],
+      "in India."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-possessive-nom",
+  "pattern": "mein / dein / sein / ihr + noun (endings like ein)",
+  "explain": "Possessive words say whose something is: mein (my), dein (your), sein (his), ihr (her), unser (our), euer (your, several friends), ihr (their), Ihr (your, polite). They take the same endings as ein: mein Vater, meine Mutter, mein Kind, meine Eltern.",
+  "compare_en": "As in English, the owner decides: Jonas → sein (his), Lena → ihr (her). But German also adds -e when the thing owned is feminine or plural: sein Bruder, seine Schwester.",
+  "table": [
+   [
+    "",
+    "der Vater",
+    "die Mutter",
+    "das Kind",
+    "die Eltern"
+   ],
+   [
+    "ich",
+    "mein Vater",
+    "meine Mutter",
+    "mein Kind",
+    "meine Eltern"
+   ],
+   [
+    "du",
+    "dein Vater",
+    "deine Mutter",
+    "dein Kind",
+    "deine Eltern"
+   ],
+   [
+    "er",
+    "sein Vater",
+    "seine Mutter",
+    "sein Kind",
+    "seine Eltern"
+   ],
+   [
+    "sie (she, they)",
+    "ihr Vater",
+    "ihre Mutter",
+    "ihr Kind",
+    "ihre Eltern"
+   ],
+   [
+    "wir",
+    "unser Vater",
+    "unsere Mutter",
+    "unser Kind",
+    "unsere Eltern"
+   ],
+   [
+    "ihr",
+    "euer Vater",
+    "eure Mutter",
+    "euer Kind",
+    "eure Eltern"
+   ],
+   [
+    "Sie",
+    "Ihr Vater",
+    "Ihre Mutter",
+    "Ihr Kind",
+    "Ihre Eltern"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Das",
+     "ist",
+     "meine Mutter."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "This"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "my mother."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wo",
+     "wohnt",
+     "deine Familie?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [],
+      "does"
+     ],
+     [
+      [
+       2
+      ],
+      "your family"
+     ],
+     [
+      [
+       1
+      ],
+      "live?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ihr Sohn",
+     "ist",
+     "drei Jahre alt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Her son"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "three years old."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "und",
+     "seine Frau",
+     "wohnen",
+     "in Köln."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "and"
+     ],
+     [
+      [
+       2
+      ],
+      "his wife"
+     ],
+     [
+      [
+       3
+      ],
+      "live"
+     ],
+     [
+      [
+       4
+      ],
+      "in Cologne."
+     ]
+    ],
+    "v": [
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-accusative",
+  "pattern": "subject + verb + den / einen + masculine noun (the object)",
+  "explain": "The object is the person or thing the action is done to: Ich trinke einen Kaffee. It is in the accusative case. Good news: only masculine nouns change: der → den, ein → einen. Feminine (die, eine), neuter (das, ein) and plural stay the same. Verbs like haben, essen, trinken, nehmen and bestellen take an object.",
+  "compare_en": "English shows this only with pronouns (he → him). German shows it on the article: Der Salat ist gut (subject), but Ich esse den Salat (object).",
+  "table": [
+   [
+    "",
+    "subject (nominative)",
+    "object (accusative)"
+   ],
+   [
+    "masculine",
+    "der / ein Apfel",
+    "den / einen Apfel"
+   ],
+   [
+    "feminine",
+    "die / eine Banane",
+    "die / eine Banane"
+   ],
+   [
+    "neuter",
+    "das / ein Brot",
+    "das / ein Brot"
+   ],
+   [
+    "plural",
+    "die / – Äpfel",
+    "die / – Äpfel"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "trinke",
+     "einen Kaffee."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am drinking"
+     ],
+     [
+      [
+       2
+      ],
+      "a coffee."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "bestellt",
+     "den Fisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "orders"
+     ],
+     [
+      [
+       2
+      ],
+      "the fish."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Frau Yilmaz",
+     "kauft",
+     "ein Brot."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "buys"
+     ],
+     [
+      [
+       2
+      ],
+      "a loaf of bread."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hast",
+     "du",
+     "einen Apfel?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "an apple?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-moechten",
+  "pattern": "ich möchte + object · ich möchte + … + infinitive (at the end)",
+  "explain": "möchte means 'would like'. It is the polite way to ask for things in a café or shop: Ich möchte einen Tee, bitte. ich and er/sie/es have the same form, möchte, with no -t. With a second verb, that verb goes to the end in the infinitive: Ich möchte bezahlen.",
+  "compare_en": "Like 'would like', möchte is more polite than 'want'. But there is no 'to' before the second verb: Ich möchte bezahlen = I would like to pay.",
+  "table": [
+   [
+    "",
+    "möchten"
+   ],
+   [
+    "ich",
+    "möchte"
+   ],
+   [
+    "du",
+    "möchtest"
+   ],
+   [
+    "er / sie / es",
+    "möchte"
+   ],
+   [
+    "wir",
+    "möchten"
+   ],
+   [
+    "ihr",
+    "möchtet"
+   ],
+   [
+    "sie / Sie",
+    "möchten"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "möchte",
+     "einen Tee,",
+     "bitte."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "would like"
+     ],
+     [
+      [
+       2
+      ],
+      "a tea,"
+     ],
+     [
+      [
+       3
+      ],
+      "please."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Möchtest",
+     "du",
+     "ein Glas Wasser?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Would"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "like"
+     ],
+     [
+      [
+       2
+      ],
+      "a glass of water?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "möchten",
+     "jetzt",
+     "bezahlen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "would like"
+     ],
+     [
+      [],
+      "to"
+     ],
+     [
+      [
+       3
+      ],
+      "pay"
+     ],
+     [
+      [
+       2
+      ],
+      "now."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "möchte",
+     "einen Salat",
+     "bestellen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "would like"
+     ],
+     [
+      [],
+      "to"
+     ],
+     [
+      [
+       3
+      ],
+      "order"
+     ],
+     [
+      [
+       2
+      ],
+      "a salad."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-kein-nicht",
+  "pattern": "kein + noun · nicht + verb, adjective or der/die/das/mein + noun",
+  "explain": "Use kein for 'no' or 'not a' before a noun that would have ein or no article: Ich habe keinen Hund. Ich trinke keinen Kaffee. kein takes the same endings as ein, and keine in the plural. Use nicht for everything else: verbs, adjectives, and nouns with der/die/das or mein: Das Essen ist nicht gut. Das ist nicht mein Tee.",
+  "compare_en": "English says 'not a', 'not any' or 'no': I don't have a dog. German simply uses kein: Ich habe keinen Hund. Never say nicht ein.",
+  "table": [
+   [
+    "positive",
+    "negative"
+   ],
+   [
+    "Das ist ein Apfel.",
+    "Das ist kein Apfel."
+   ],
+   [
+    "Ich trinke Milch.",
+    "Ich trinke keine Milch."
+   ],
+   [
+    "Wir haben Brötchen.",
+    "Wir haben keine Brötchen."
+   ],
+   [
+    "Ich koche.",
+    "Ich koche nicht."
+   ],
+   [
+    "Der Tee ist gut.",
+    "Der Tee ist nicht gut."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "esse",
+     "kein Fleisch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "don't"
+     ],
+     [
+      [
+       1
+      ],
+      "eat"
+     ],
+     [
+      [
+       2
+      ],
+      "meat."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Das",
+     "ist",
+     "nicht",
+     "mein Tee!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "That"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "not"
+     ],
+     [
+      [
+       3
+      ],
+      "my tea!"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Der Kaffee",
+     "ist",
+     "nicht warm."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The coffee"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "not warm."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "kocht",
+     "heute",
+     "nicht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "not"
+     ],
+     [
+      [
+       1
+      ],
+      "cooking"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-plurals",
+  "pattern": "der Tisch → die Tische · die Tür → die Türen · das Bild → die Bilder · das Sofa → die Sofas",
+  "explain": "German has several plural endings, so learn each noun with its plural: der Tisch, die Tische. The plural article is always die. Rough guide: most feminine nouns add -(e)n; many masculine nouns add -e, sometimes with an umlaut (ä, ö, ü); short neuter nouns often add -er with an umlaut; words from other languages add -s; nouns ending in -er often stay the same.",
+  "compare_en": "English nearly always adds -s (tables, rooms). In German -s is the rarest ending, mostly for borrowed words like Sofas and Fotos. Some nouns don't change at all, like 'sheep': das Zimmer → die Zimmer.",
+  "table": [
+   [
+    "ending",
+    "singular",
+    "plural"
+   ],
+   [
+    "-e",
+    "der Tisch",
+    "die Tische"
+   ],
+   [
+    "umlaut + -e",
+    "der Stuhl",
+    "die Stühle"
+   ],
+   [
+    "-(e)n",
+    "die Tür",
+    "die Türen"
+   ],
+   [
+    "umlaut + -er",
+    "das Haus",
+    "die Häuser"
+   ],
+   [
+    "-er",
+    "das Bild",
+    "die Bilder"
+   ],
+   [
+    "-s",
+    "das Sofa",
+    "die Sofas"
+   ],
+   [
+    "no change",
+    "das Zimmer",
+    "die Zimmer"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Die Wohnung",
+     "hat",
+     "drei Zimmer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The flat"
+     ],
+     [
+      [
+       1
+      ],
+      "has"
+     ],
+     [
+      [
+       2
+      ],
+      "three rooms."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "haben",
+     "vier Stühle und zwei Tische."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "four chairs and two tables."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Fenster",
+     "sind",
+     "sehr groß."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The windows"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "very big."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Häuser hier",
+     "sind",
+     "neu."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The houses here"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "new."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-es-gibt",
+  "pattern": "Es gibt + accusative (einen / eine / ein / –)",
+  "explain": "es gibt means 'there is' or 'there are'. It never changes: es gibt for one thing and for many things. What follows is an object (accusative), so masculine nouns take einen or keinen: Es gibt einen Balkon. In a question the verb comes first: Gibt es hier einen Aufzug?",
+  "compare_en": "English switches between 'there is' and 'there are'. German always says es gibt (literally 'it gives'), followed by the accusative.",
+  "examples": [
+   {
+    "de": [
+     "Es",
+     "gibt",
+     "einen Balkon."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "There"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "a balcony."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "gibt",
+     "zwei Zimmer und eine Küche."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "There"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "two rooms and a kitchen."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Gibt",
+     "es",
+     "hier einen Aufzug?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Is"
+     ],
+     [
+      [
+       1
+      ],
+      "there"
+     ],
+     [
+      [
+       2
+      ],
+      "a lift here?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Hier",
+     "gibt",
+     "es",
+     "keinen Supermarkt."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "There"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "no supermarket"
+     ],
+     [
+      [
+       0
+      ],
+      "here."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-adj-sein",
+  "pattern": "noun + sein + adjective (no ending)",
+  "explain": "An adjective describes something: groß (big), klein (small), hell (bright), ruhig (quiet), teuer (expensive). After sein the adjective has no ending at all, whatever the gender or number: Der Balkon ist klein. Die Küche ist klein. Die Zimmer sind klein. You can add sehr (very), zu (too) or nicht (not) in front of it.",
+  "compare_en": "Just like English: The room is big. The adjective only gets an ending when it stands before a noun (ein großes Zimmer), which you will learn later.",
+  "examples": [
+   {
+    "de": [
+     "Das Zimmer",
+     "ist",
+     "groß und hell."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The room"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "big and bright."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Miete",
+     "ist",
+     "zu teuer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The rent"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "too expensive."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Die Stühle",
+     "sind",
+     "neu."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The chairs"
+     ],
+     [
+      [
+       1
+      ],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "new."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ist",
+     "der Balkon",
+     "groß?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Is"
+     ],
+     [
+      [
+       1
+      ],
+      "the balcony"
+     ],
+     [
+      [
+       2
+      ],
+      "big?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-separable",
+  "pattern": "subject + VERB (position 2) + … + PREFIX (at the end)",
+  "explain": "Some verbs have a small front part, the prefix: auf-, an-, ein-, mit-, fern-. In a normal sentence the prefix splits off and goes to the very end: aufstehen → Ich stehe um 7 Uhr auf. The main part stands in position 2 as usual. In the dictionary the verb is one word, and the prefix is stressed: AUFstehen.",
+  "compare_en": "English has verbs like this too: get up, call up, come along. German just pushes the small part to the end of the sentence, even after a long middle: Ich rufe morgen um acht Uhr Lena an.",
+  "table": [
+   [
+    "infinitive",
+    "sentence"
+   ],
+   [
+    "aufstehen",
+    "Ich stehe um 7 Uhr auf."
+   ],
+   [
+    "anrufen",
+    "Jonas ruft Lena an."
+   ],
+   [
+    "fernsehen",
+    "Wir sehen am Abend fern."
+   ],
+   [
+    "einkaufen",
+    "Malte kauft im Supermarkt ein."
+   ],
+   [
+    "mitkommen",
+    "Kommst du mit?"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "stehe",
+     "um 7 Uhr",
+     "auf."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "get up"
+     ],
+     [
+      [
+       2
+      ],
+      "at 7 o'clock."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "ruft",
+     "seine Mutter",
+     "an."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "calls"
+     ],
+     [
+      [
+       2
+      ],
+      "his mother."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Wann",
+     "fängt",
+     "der Kurs",
+     "an?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [],
+      "does"
+     ],
+     [
+      [
+       2
+      ],
+      "the course"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "start?"
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Am Abend",
+     "sehen",
+     "wir",
+     "fern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In the evening"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "watch TV."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-time-preps",
+  "pattern": "um + clock time · am + day / part of the day · im + month / season · von … bis …",
+  "explain": "Use um for clock times (um 8 Uhr), am for days and parts of the day (am Montag, am Abend, am Wochenende), and im for months and seasons (im Mai, im Winter). von … bis means 'from … to/until': von 9 bis 17 Uhr. One exception: in der Nacht (at night).",
+  "compare_en": "English uses at, on and in (at 8, on Monday, in May), and German uses um, am and im the same way. But 'in the evening' is am Abend, and 'at the weekend' is am Wochenende.",
+  "table": [
+   [
+    "",
+    "German",
+    "English"
+   ],
+   [
+    "clock time",
+    "um 8 Uhr",
+    "at 8 o'clock"
+   ],
+   [
+    "day",
+    "am Montag",
+    "on Monday"
+   ],
+   [
+    "part of the day",
+    "am Abend",
+    "in the evening"
+   ],
+   [
+    "month, season",
+    "im Mai, im Winter",
+    "in May, in winter"
+   ],
+   [
+    "from … to",
+    "von 9 bis 17 Uhr",
+    "from 9 am to 5 pm"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Der Kurs",
+     "beginnt",
+     "um 9 Uhr."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The course"
+     ],
+     [
+      [
+       1
+      ],
+      "starts"
+     ],
+     [
+      [
+       2
+      ],
+      "at 9 o'clock."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Am Montag",
+     "arbeite",
+     "ich",
+     "von 8 bis 16 Uhr."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "On Monday"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "work"
+     ],
+     [
+      [
+       3
+      ],
+      "from 8 am to 4 pm."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "gehen",
+     "am Abend",
+     "ins Kino."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "are going"
+     ],
+     [
+      [
+       3
+      ],
+      "to the cinema"
+     ],
+     [
+      [
+       2
+      ],
+      "in the evening."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-inversion",
+  "pattern": "Time / place + VERB + subject + rest",
+  "explain": "You can start a sentence with a time (heute, am Montag, um 8 Uhr) instead of the subject. The verb must still stand in position 2, so the subject moves behind the verb: Ich arbeite am Montag → Am Montag arbeite ich. This is very common in German.",
+  "compare_en": "English keeps the subject before the verb: On Monday I work. In German that order is wrong (Am Montag ich arbeite ✗). The verb stays second, and the subject comes third.",
+  "examples": [
+   {
+    "de": [
+     "Am Montag",
+     "arbeite",
+     "ich",
+     "bis 18 Uhr."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "On Monday"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "work"
+     ],
+     [
+      [
+       3
+      ],
+      "until 6 pm."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Heute",
+     "frühstückt",
+     "Lena",
+     "im Café."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Today"
+     ],
+     [
+      [
+       2
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is having breakfast"
+     ],
+     [
+      [
+       3
+      ],
+      "in the café."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Um 7 Uhr",
+     "stehe",
+     "ich",
+     "auf."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "At 7 o'clock"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "get up."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Dann",
+     "duscht",
+     "Jonas."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Then"
+     ],
+     [
+      [
+       2
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "has a shower."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-stem-change",
+  "pattern": "only du and er / sie / es: a → ä · e → i · e → ie",
+  "explain": "Some common verbs change their vowel, but only with du and er/sie/es: fahren → du fährst, er fährt; sprechen → du sprichst, er spricht; lesen → du liest, sie liest. All other forms are regular: ich fahre, wir fahren, ihr fahrt. Learn these verbs together with their er form.",
+  "compare_en": "English has nothing like this in the present tense. A tip: if the er form changes, the du form changes in the same way, and the rest stays regular.",
+  "table": [
+   [
+    "",
+    "fahren (a → ä)",
+    "sprechen (e → i)",
+    "lesen (e → ie)"
+   ],
+   [
+    "ich",
+    "fahre",
+    "spreche",
+    "lese"
+   ],
+   [
+    "du",
+    "fährst",
+    "sprichst",
+    "liest"
+   ],
+   [
+    "er / sie / es",
+    "fährt",
+    "spricht",
+    "liest"
+   ],
+   [
+    "wir",
+    "fahren",
+    "sprechen",
+    "lesen"
+   ],
+   [
+    "ihr",
+    "fahrt",
+    "sprecht",
+    "lest"
+   ],
+   [
+    "sie / Sie",
+    "fahren",
+    "sprechen",
+    "lesen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Jonas",
+     "fährt",
+     "am Wochenende nach Hamburg."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1
+      ],
+      "is going"
+     ],
+     [
+      [
+       2
+      ],
+      "to Hamburg at the weekend."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "liest",
+     "ein Buch."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is reading"
+     ],
+     [
+      [
+       2
+      ],
+      "a book."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Sprichst",
+     "du",
+     "Englisch?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "speak"
+     ],
+     [
+      [
+       2
+      ],
+      "English?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "nimmt",
+     "den Bus."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "takes"
+     ],
+     [
+      [
+       2
+      ],
+      "the bus."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-gern",
+  "pattern": "verb + gern · verb + lieber · verb + am liebsten",
+  "explain": "To say you like doing something, put gern after the verb: Ich tanze gern (I like dancing). lieber means 'prefer' and am liebsten means 'like best of all': Ich schwimme lieber. Am liebsten lese ich. nicht gern means 'don't like'. For things you like, use mögen instead: Ich mag Kaffee.",
+  "compare_en": "English uses the verb 'like': I like swimming. German keeps the action verb and adds the little word gern: Ich schwimme gern, literally 'I swim gladly'.",
+  "table": [
+   [
+    "",
+    "German",
+    "English"
+   ],
+   [
+    "gern",
+    "Ich lese gern.",
+    "I like reading."
+   ],
+   [
+    "lieber",
+    "Ich lese lieber.",
+    "I prefer reading."
+   ],
+   [
+    "am liebsten",
+    "Ich lese am liebsten.",
+    "I like reading best."
+   ],
+   [
+    "nicht gern",
+    "Ich lese nicht gern.",
+    "I don't like reading."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Jonas",
+     "spielt",
+     "gern Fußball."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       2
+      ],
+      "likes"
+     ],
+     [
+      [
+       1
+      ],
+      "playing"
+     ],
+     [
+      [
+       2
+      ],
+      "football."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "tanze",
+     "gern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "like"
+     ],
+     [
+      [
+       1
+      ],
+      "dancing."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "trinke",
+     "lieber Tee."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "prefer"
+     ],
+     [
+      [
+       1
+      ],
+      "drinking"
+     ],
+     [
+      [
+       2
+      ],
+      "tea."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Am liebsten",
+     "geht",
+     "Priya",
+     "ins Kino."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Most of all,"
+     ],
+     [
+      [
+       2
+      ],
+      "Priya"
+     ],
+     [
+      [
+       0
+      ],
+      "likes"
+     ],
+     [
+      [
+       1
+      ],
+      "going"
+     ],
+     [
+      [
+       3
+      ],
+      "to the cinema."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-koennen-wollen",
+  "pattern": "subject + kann / will (position 2) + … + infinitive (at the end)",
+  "explain": "können (can, be able to) and wollen (want to) are modal verbs. The modal verb stands in position 2, and the main verb goes to the very end in the infinitive: Ich kann gut schwimmen. Lena will ins Kino gehen. ich and er/sie/es have the same form with no ending: ich kann, er kann; ich will, sie will.",
+  "compare_en": "German will means 'want to', not 'will': Ich will tanzen = I want to dance. And English keeps the two verbs together (I can swim well), while German splits them: Ich kann gut schwimmen.",
+  "table": [
+   [
+    "",
+    "können",
+    "wollen"
+   ],
+   [
+    "ich",
+    "kann",
+    "will"
+   ],
+   [
+    "du",
+    "kannst",
+    "willst"
+   ],
+   [
+    "er / sie / es",
+    "kann",
+    "will"
+   ],
+   [
+    "wir",
+    "können",
+    "wollen"
+   ],
+   [
+    "ihr",
+    "könnt",
+    "wollt"
+   ],
+   [
+    "sie / Sie",
+    "können",
+    "wollen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "kann",
+     "gut",
+     "schwimmen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "can"
+     ],
+     [
+      [
+       3
+      ],
+      "swim"
+     ],
+     [
+      [
+       2
+      ],
+      "well."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "wollen",
+     "ins Kino",
+     "gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "want"
+     ],
+     [
+      [],
+      "to"
+     ],
+     [
+      [
+       3
+      ],
+      "go"
+     ],
+     [
+      [
+       2
+      ],
+      "to the cinema."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Kannst",
+     "du",
+     "heute",
+     "mitkommen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Can"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "come along"
+     ],
+     [
+      [
+       2
+      ],
+      "today?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "will",
+     "am Samstag",
+     "tanzen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "wants"
+     ],
+     [
+      [],
+      "to"
+     ],
+     [
+      [
+       3
+      ],
+      "dance"
+     ],
+     [
+      [
+       2
+      ],
+      "on Saturday."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-acc-pronouns",
+  "pattern": "ich → mich · du → dich · er → ihn · sie → sie · es → es · wir → uns · ihr → euch",
+  "explain": "When a pronoun is the object (the person or thing the action is done to), some forms change: ich → mich, du → dich, er → ihn, wir → uns, ihr → euch. sie, es and Sie stay the same. For things, the pronoun follows the gender: der Computer → ihn, die Jacke → sie, das Handy → es.",
+  "compare_en": "English does this for people: he → him, we → us. German does it for things too: die Jacke is sie, so 'I'll take it' is Ich nehme sie.",
+  "table": [
+   [
+    "subject",
+    "object (accusative)",
+    "English"
+   ],
+   [
+    "ich",
+    "mich",
+    "me"
+   ],
+   [
+    "du",
+    "dich",
+    "you"
+   ],
+   [
+    "er",
+    "ihn",
+    "him / it"
+   ],
+   [
+    "sie",
+    "sie",
+    "her / it"
+   ],
+   [
+    "es",
+    "es",
+    "it"
+   ],
+   [
+    "wir",
+    "uns",
+    "us"
+   ],
+   [
+    "ihr",
+    "euch",
+    "you"
+   ],
+   [
+    "sie / Sie",
+    "sie / Sie",
+    "them / you"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Malte",
+     "besucht",
+     "uns",
+     "am Sonntag."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1
+      ],
+      "is visiting"
+     ],
+     [
+      [
+       2
+      ],
+      "us"
+     ],
+     [
+      [
+       3
+      ],
+      "on Sunday."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Kennst",
+     "du",
+     "ihn?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "know"
+     ],
+     [
+      [
+       2
+      ],
+      "him?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Die Schuhe sind billig,",
+     "ich",
+     "nehme",
+     "sie."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "The shoes are cheap,"
+     ],
+     [
+      [],
+      "so"
+     ],
+     [
+      [
+       1
+      ],
+      "I"
+     ],
+     [
+      [
+       2
+      ],
+      "will take"
+     ],
+     [
+      [
+       3
+      ],
+      "them."
+     ]
+    ],
+    "v": [
+     2
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-possessive-acc",
+  "pattern": "subject + verb + meinen / deinen / seinen / ihren + masculine noun",
+  "explain": "Possessives (mein, dein, sein, ihr, unser, euer, Ihr) take the same endings as ein. So as an object, only masculine nouns change: mein → meinen. Ich suche meinen Schlüssel. Feminine, neuter and plural stay the same: meine Tasche, mein Handy, meine Schuhe.",
+  "compare_en": "English 'my' never changes. In German the ending shows whether the noun is the subject or the object: Mein Schlüssel ist weg (subject), Ich suche meinen Schlüssel (object).",
+  "table": [
+   [
+    "",
+    "subject (nominative)",
+    "object (accusative)"
+   ],
+   [
+    "masculine",
+    "mein Schlüssel",
+    "meinen Schlüssel"
+   ],
+   [
+    "feminine",
+    "meine Tasche",
+    "meine Tasche"
+   ],
+   [
+    "neuter",
+    "mein Handy",
+    "mein Handy"
+   ],
+   [
+    "plural",
+    "meine Schuhe",
+    "meine Schuhe"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "suche",
+     "meinen Schlüssel."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am looking for"
+     ],
+     [
+      [
+       2
+      ],
+      "my key."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Hast",
+     "du",
+     "deinen Ausweis?"
+    ],
+    "en": [
+     [
+      [],
+      "Do"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "have"
+     ],
+     [
+      [
+       2
+      ],
+      "your ID card?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "bringt",
+     "seine Jacke",
+     "mit."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "is bringing"
+     ],
+     [
+      [
+       2
+      ],
+      "his jacket."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "verkauft",
+     "ihren Computer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "is selling"
+     ],
+     [
+      [
+       2
+      ],
+      "her computer."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-welch-dies",
+  "pattern": "welcher / welche / welches …? – dieser / diese / dieses",
+  "explain": "welch- asks 'which?' when you choose between things, and dies- means 'this' and points at one. Both take endings like der, die, das: der → -er, die → -e, das → -es, plural die → -e. As an object, masculine -er becomes -en, just like der → den: Welchen Computer kaufst du? – Diesen.",
+  "compare_en": "English 'which' and 'this' never change. In German the ending matches the article: der Schuh → dieser Schuh, die Jacke → diese Jacke, das Handy → dieses Handy.",
+  "table": [
+   [
+    "",
+    "welch- (which?)",
+    "dies- (this)"
+   ],
+   [
+    "masculine",
+    "welcher (object: welchen)",
+    "dieser (object: diesen)"
+   ],
+   [
+    "feminine",
+    "welche",
+    "diese"
+   ],
+   [
+    "neuter",
+    "welches",
+    "dieses"
+   ],
+   [
+    "plural",
+    "welche",
+    "diese"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Welchen Computer",
+     "kaufst",
+     "du?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Which computer"
+     ],
+     [
+      [],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       1
+      ],
+      "buying?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Dieser Schuh",
+     "ist",
+     "zu klein."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "This shoe"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "too small."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "nehme",
+     "diese Tasche."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "will take"
+     ],
+     [
+      [
+       2
+      ],
+      "this bag."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Welches Handy",
+     "ist",
+     "neu?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Which phone"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "new?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-imperative",
+  "pattern": "Sie: Gehen Sie …! · du: Geh …! · ihr: Geht …!",
+  "explain": "The imperative gives instructions, directions and requests, and the verb comes first. Sie: the verb + Sie (Gehen Sie geradeaus!). du: take the du form and drop du and -st (du kommst → Komm!). ihr: the ihr form without ihr (ihr kommt → Kommt!). The change e → i stays (Nimm!), but a → ä does not (Fahr!). Add bitte to sound polite.",
+  "compare_en": "English has one form for everyone: Go straight on! German has three, depending on who you are talking to, and the Sie form keeps its pronoun: Gehen Sie!",
+  "table": [
+   [
+    "",
+    "Sie",
+    "du",
+    "ihr"
+   ],
+   [
+    "gehen",
+    "Gehen Sie!",
+    "Geh!",
+    "Geht!"
+   ],
+   [
+    "kommen",
+    "Kommen Sie!",
+    "Komm!",
+    "Kommt!"
+   ],
+   [
+    "nehmen",
+    "Nehmen Sie!",
+    "Nimm!",
+    "Nehmt!"
+   ],
+   [
+    "fahren",
+    "Fahren Sie!",
+    "Fahr!",
+    "Fahrt!"
+   ],
+   [
+    "sein",
+    "Seien Sie!",
+    "Sei!",
+    "Seid!"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Steigen",
+     "Sie",
+     "am Bahnhof",
+     "aus!"
+    ],
+    "en": [
+     [
+      [
+       0,
+       1,
+       3
+      ],
+      "Get off"
+     ],
+     [
+      [
+       2
+      ],
+      "at the station!"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Gehen",
+     "Sie",
+     "geradeaus!"
+    ],
+    "en": [
+     [
+      [
+       0,
+       1
+      ],
+      "Go"
+     ],
+     [
+      [
+       2
+      ],
+      "straight on!"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Nimm",
+     "den Bus,",
+     "Lena!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Take"
+     ],
+     [
+      [
+       1
+      ],
+      "the bus,"
+     ],
+     [
+      [
+       2
+      ],
+      "Lena!"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Lena und Jonas,",
+     "wartet",
+     "an der Ampel!"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena and Jonas,"
+     ],
+     [
+      [
+       1
+      ],
+      "wait"
+     ],
+     [
+      [
+       2
+      ],
+      "at the traffic lights!"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-dative-preps",
+  "pattern": "mit / zu / von / aus / bei / nach + dative: dem · der · dem · den",
+  "explain": "After mit, zu, von, aus, bei and nach the noun is always in the dative case. The articles change: der → dem, das → dem, die → der, plural die → den. Short forms: zu dem → zum, zu der → zur, von dem → vom, bei dem → beim. Use nach for towns and countries (nach Berlin), but zu for people and places (zum Arzt, zur Post).",
+  "compare_en": "English 'to' can be zu or nach: nach Berlin, but zum Bahnhof and zu Lena. And after mit the article always changes: mit dem Bus (by bus).",
+  "table": [
+   [
+    "",
+    "nominative",
+    "dative",
+    "example"
+   ],
+   [
+    "masculine",
+    "der / ein",
+    "dem / einem",
+    "mit dem Bus"
+   ],
+   [
+    "feminine",
+    "die / eine",
+    "der / einer",
+    "zur Post"
+   ],
+   [
+    "neuter",
+    "das / ein",
+    "dem / einem",
+    "mit dem Fahrrad"
+   ],
+   [
+    "plural",
+    "die",
+    "den (+ -n)",
+    "mit den Kindern"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "fahre",
+     "mit dem Bus",
+     "zum Bahnhof."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "am going"
+     ],
+     [
+      [
+       3
+      ],
+      "to the station"
+     ],
+     [
+      [
+       2
+      ],
+      "by bus."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "kommt",
+     "aus Indien."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "comes"
+     ],
+     [
+      [
+       2
+      ],
+      "from India."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "gehen",
+     "heute",
+     "zur Post."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1
+      ],
+      "are going"
+     ],
+     [
+      [
+       3
+      ],
+      "to the post office"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "wohnt",
+     "bei ihren Eltern."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1
+      ],
+      "lives"
+     ],
+     [
+      [
+       2
+      ],
+      "with her parents."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-wo-wohin-basic",
+  "pattern": "Wo? (place) · Woher? (from where) · Wohin? (to where)",
+  "explain": "German has three question words for places. wo? asks where something is: Wo ist die Post? woher? asks where from: Woher kommst du? – Aus Indien. wohin? asks where to: Wohin fährst du? – Nach Köln. Verbs of movement like gehen and fahren go with wohin; sein and wohnen go with wo.",
+  "compare_en": "English uses 'where' for all three. A tip: if the English question could end in 'to' or 'from' (Where are you going to? Where are you from?), use wohin or woher.",
+  "table": [
+   [
+    "question",
+    "answer",
+    "English"
+   ],
+   [
+    "Wo wohnst du?",
+    "In Berlin.",
+    "Where do you live?"
+   ],
+   [
+    "Woher kommst du?",
+    "Aus Indien.",
+    "Where are you from?"
+   ],
+   [
+    "Wohin gehst du?",
+    "Zur Post.",
+    "Where are you going?"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wohin",
+     "fährst",
+     "du",
+     "am Wochenende?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [],
+      "are"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       1
+      ],
+      "going"
+     ],
+     [
+      [
+       3
+      ],
+      "at the weekend?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Wo",
+     "ist",
+     "die Haltestelle?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the bus stop?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Woher",
+     "kommt",
+     "Priya?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Where"
+     ],
+     [
+      [],
+      "does"
+     ],
+     [
+      [
+       2
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1
+      ],
+      "come"
+     ],
+     [
+      [
+       0
+      ],
+      "from?"
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-muessen",
+  "pattern": "subject + muss (position 2) + … + infinitive (at the end)",
+  "explain": "müssen means 'must' or 'have to': something is necessary. Like all modal verbs it stands in position 2, and the main verb goes to the end in the infinitive: Ich muss zum Arzt gehen. ich and er/sie/es both say muss, with no ending. Careful: nicht müssen means 'don't have to': Du musst nicht kommen.",
+  "compare_en": "English 'must not' means it is forbidden, but German muss nicht only means 'not necessary'. For 'must not', German uses darf nicht.",
+  "table": [
+   [
+    "",
+    "müssen"
+   ],
+   [
+    "ich",
+    "muss"
+   ],
+   [
+    "du",
+    "musst"
+   ],
+   [
+    "er / sie / es",
+    "muss"
+   ],
+   [
+    "wir",
+    "müssen"
+   ],
+   [
+    "ihr",
+    "müsst"
+   ],
+   [
+    "sie / Sie",
+    "müssen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "muss",
+     "heute",
+     "zum Arzt",
+     "gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "have to"
+     ],
+     [
+      [
+       4
+      ],
+      "go"
+     ],
+     [
+      [
+       3
+      ],
+      "to the doctor"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Du",
+     "musst",
+     "viel Wasser",
+     "trinken."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "must"
+     ],
+     [
+      [
+       3
+      ],
+      "drink"
+     ],
+     [
+      [
+       2
+      ],
+      "a lot of water."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Muss",
+     "Malte",
+     "im Bett",
+     "bleiben?"
+    ],
+    "en": [
+     [
+      [],
+      "Does"
+     ],
+     [
+      [
+       1
+      ],
+      "Malte"
+     ],
+     [
+      [
+       0
+      ],
+      "have to"
+     ],
+     [
+      [
+       3
+      ],
+      "stay"
+     ],
+     [
+      [
+       2
+      ],
+      "in bed?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Sie",
+     "müssen",
+     "nicht",
+     "warten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       2
+      ],
+      "don't"
+     ],
+     [
+      [
+       1
+      ],
+      "have to"
+     ],
+     [
+      [
+       3
+      ],
+      "wait."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-duerfen",
+  "pattern": "subject + darf (position 2) + … + infinitive (at the end)",
+  "explain": "dürfen means 'may' or 'be allowed to'. Use it to ask for permission or to give it: Darf ich hier sitzen? With nicht it means 'must not', so it is forbidden: Hier darf man nicht rauchen. ich and er/sie/es have no ending, and the singular has no umlaut: ich darf, er darf.",
+  "compare_en": "Darf ich …? is like 'May I …?'. And darf nicht is English 'must not' (not allowed), while muss nicht only means 'don't have to'.",
+  "table": [
+   [
+    "",
+    "dürfen"
+   ],
+   [
+    "ich",
+    "darf"
+   ],
+   [
+    "du",
+    "darfst"
+   ],
+   [
+    "er / sie / es",
+    "darf"
+   ],
+   [
+    "wir",
+    "dürfen"
+   ],
+   [
+    "ihr",
+    "dürft"
+   ],
+   [
+    "sie / Sie",
+    "dürfen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Darf",
+     "ich",
+     "das Fenster",
+     "öffnen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "May"
+     ],
+     [
+      [
+       1
+      ],
+      "I"
+     ],
+     [
+      [
+       3
+      ],
+      "open"
+     ],
+     [
+      [
+       2
+      ],
+      "the window?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Hier",
+     "darf",
+     "man",
+     "nicht",
+     "rauchen."
+    ],
+    "en": [
+     [
+      [
+       2
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "must"
+     ],
+     [
+      [
+       3
+      ],
+      "not"
+     ],
+     [
+      [
+       4
+      ],
+      "smoke"
+     ],
+     [
+      [
+       0
+      ],
+      "here."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Du",
+     "darfst",
+     "jetzt",
+     "nach Hause",
+     "gehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "You"
+     ],
+     [
+      [
+       1
+      ],
+      "may"
+     ],
+     [
+      [
+       4
+      ],
+      "go"
+     ],
+     [
+      [
+       3
+      ],
+      "home"
+     ],
+     [
+      [
+       2
+      ],
+      "now."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-modal-sentence",
+  "pattern": "position 1 + MODAL (position 2) + … middle … + INFINITIVE (end)",
+  "explain": "With a modal verb (können, müssen, dürfen, wollen, möchten) a German sentence makes a frame, the verb bracket: the modal verb in position 2 and the infinitive at the very end. Everything else (time, object, place, nicht) goes in the middle. A separable verb stays in one piece at the end: Ich muss früh aufstehen.",
+  "compare_en": "In English the two verbs stand together: I must take a tablet. In German they open and close the sentence like a bracket: Ich muss eine Tablette nehmen.",
+  "table": [
+   [
+    "position 1",
+    "position 2",
+    "middle",
+    "end"
+   ],
+   [
+    "Ich",
+    "muss",
+    "heute zum Arzt",
+    "gehen."
+   ],
+   [
+    "Morgen",
+    "kann",
+    "ich nicht",
+    "kommen."
+   ],
+   [
+    "Wann",
+    "darf",
+    "ich wieder Sport",
+    "machen?"
+   ],
+   [
+    "Lena",
+    "will",
+    "um 6 Uhr",
+    "aufstehen."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Frau Yilmaz",
+     "muss",
+     "am Morgen",
+     "eine Tablette",
+     "nehmen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Mrs Yilmaz"
+     ],
+     [
+      [
+       1
+      ],
+      "has to"
+     ],
+     [
+      [
+       4
+      ],
+      "take"
+     ],
+     [
+      [
+       3
+      ],
+      "a tablet"
+     ],
+     [
+      [
+       2
+      ],
+      "in the morning."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Morgen",
+     "kann",
+     "ich",
+     "leider",
+     "nicht",
+     "kommen."
+    ],
+    "en": [
+     [
+      [
+       3
+      ],
+      "Unfortunately"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "can't"
+     ],
+     [
+      [
+       5
+      ],
+      "come"
+     ],
+     [
+      [
+       0
+      ],
+      "tomorrow."
+     ]
+    ],
+    "v": [
+     1,
+     5
+    ]
+   },
+   {
+    "de": [
+     "Wann",
+     "darf",
+     "ich",
+     "wieder Sport",
+     "machen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [
+       1
+      ],
+      "am"
+     ],
+     [
+      [
+       2
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "allowed to"
+     ],
+     [
+      [
+       4
+      ],
+      "do"
+     ],
+     [
+      [
+       3
+      ],
+      "sport again?"
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Ich",
+     "muss",
+     "um 6 Uhr",
+     "aufstehen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1
+      ],
+      "have to"
+     ],
+     [
+      [
+       3
+      ],
+      "get up"
+     ],
+     [
+      [
+       2
+      ],
+      "at 6."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-perfekt-haben",
+  "pattern": "subject + haben (position 2) + … + Partizip II (end): ge- + stem + -t",
+  "explain": "The Perfekt is the usual way to talk about the past when you speak or write a message. It has two parts: haben in position 2 and the Partizip II (past participle) at the end. For regular verbs the participle is ge- + stem + -t: kaufen → gekauft, arbeiten → gearbeitet. Verbs ending in -ieren have no ge-: studieren → studiert.",
+  "compare_en": "English often uses the simple past (I bought a ticket yesterday), but German says Ich habe gestern ein Ticket gekauft, literally 'I have bought'. And the participle goes to the end, not next to haben.",
+  "table": [
+   [
+    "infinitive",
+    "Partizip II",
+    "example"
+   ],
+   [
+    "kaufen",
+    "gekauft",
+    "Ich habe ein Ticket gekauft."
+   ],
+   [
+    "machen",
+    "gemacht",
+    "Wir haben Urlaub gemacht."
+   ],
+   [
+    "buchen",
+    "gebucht",
+    "Lena hat ein Hotel gebucht."
+   ],
+   [
+    "arbeiten",
+    "gearbeitet",
+    "Malte hat viel gearbeitet."
+   ],
+   [
+    "telefonieren",
+    "telefoniert",
+    "Ich habe mit Jonas telefoniert."
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "gestern",
+     "ein Ticket",
+     "gekauft."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "bought"
+     ],
+     [
+      [
+       3
+      ],
+      "a ticket"
+     ],
+     [
+      [
+       2
+      ],
+      "yesterday."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hat",
+     "ein Hotel",
+     "gebucht."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "booked"
+     ],
+     [
+      [
+       2
+      ],
+      "a hotel."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Was",
+     "habt",
+     "ihr",
+     "im Urlaub",
+     "gemacht?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "What"
+     ],
+     [
+      [
+       1
+      ],
+      "did"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "do"
+     ],
+     [
+      [
+       3
+      ],
+      "on holiday?"
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Malte",
+     "hat",
+     "am Wochenende",
+     "gearbeitet."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Malte"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "worked"
+     ],
+     [
+      [
+       2
+      ],
+      "at the weekend."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-perfekt-sein",
+  "pattern": "subject + sein (position 2) + … + Partizip II (end)",
+  "explain": "Some verbs use sein instead of haben in the Perfekt. These are verbs of movement from one place to another (fahren, fliegen, gehen, kommen, reisen), a few verbs of change (aufstehen), and sein and bleiben themselves: Ich bin nach Berlin gefahren. Wir sind zu Hause geblieben. All other verbs take haben.",
+  "compare_en": "English always uses 'have' (I have gone), so this is new. Think 'movement from A to B = sein': Ich bin geflogen (I flew), but Ich habe ein Ticket gebucht (I booked a ticket).",
+  "table": [
+   [
+    "infinitive",
+    "Perfekt (er / sie / es)"
+   ],
+   [
+    "fahren",
+    "ist gefahren"
+   ],
+   [
+    "fliegen",
+    "ist geflogen"
+   ],
+   [
+    "gehen",
+    "ist gegangen"
+   ],
+   [
+    "kommen",
+    "ist gekommen"
+   ],
+   [
+    "reisen",
+    "ist gereist"
+   ],
+   [
+    "bleiben",
+    "ist geblieben"
+   ],
+   [
+    "sein",
+    "ist gewesen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "bin",
+     "nach Berlin",
+     "gefahren."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "went"
+     ],
+     [
+      [
+       2
+      ],
+      "to Berlin."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Priya",
+     "ist",
+     "im Mai",
+     "nach Deutschland",
+     "geflogen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Priya"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "flew"
+     ],
+     [
+      [
+       3
+      ],
+      "to Germany"
+     ],
+     [
+      [
+       2
+      ],
+      "in May."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Wir",
+     "sind",
+     "am Sonntag",
+     "zu Hause",
+     "geblieben."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1,
+       4
+      ],
+      "stayed"
+     ],
+     [
+      [
+       3
+      ],
+      "at home"
+     ],
+     [
+      [
+       2
+      ],
+      "on Sunday."
+     ]
+    ],
+    "v": [
+     1,
+     4
+    ]
+   },
+   {
+    "de": [
+     "Bist",
+     "du",
+     "schon einmal",
+     "geflogen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Have"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       2
+      ],
+      "ever"
+     ],
+     [
+      [
+       3
+      ],
+      "flown?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-partizip-irregular",
+  "pattern": "ge- + stem (often with a new vowel) + -en",
+  "explain": "Many common verbs are irregular: their Partizip II ends in -en, and the vowel often changes: trinken → getrunken, schreiben → geschrieben, finden → gefunden. Some keep their vowel: essen → gegessen, sehen → gesehen. There is no rule to guess them, so learn each verb with its participle.",
+  "compare_en": "English has irregular verbs too, and some look alike: drink – drunk, trinken – getrunken; find – found, finden – gefunden.",
+  "table": [
+   [
+    "infinitive",
+    "Partizip II",
+    "English"
+   ],
+   [
+    "essen",
+    "hat gegessen",
+    "eaten"
+   ],
+   [
+    "trinken",
+    "hat getrunken",
+    "drunk"
+   ],
+   [
+    "schreiben",
+    "hat geschrieben",
+    "written"
+   ],
+   [
+    "sehen",
+    "hat gesehen",
+    "seen"
+   ],
+   [
+    "nehmen",
+    "hat genommen",
+    "taken"
+   ],
+   [
+    "finden",
+    "hat gefunden",
+    "found"
+   ],
+   [
+    "schlafen",
+    "hat geschlafen",
+    "slept"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Wir",
+     "haben",
+     "Fisch",
+     "gegessen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "We"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "ate"
+     ],
+     [
+      [
+       2
+      ],
+      "fish."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Hast",
+     "du",
+     "meine E-Mail",
+     "gelesen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Have"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "read"
+     ],
+     [
+      [
+       2
+      ],
+      "my email?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hat",
+     "im Zug",
+     "geschlafen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "slept"
+     ],
+     [
+      [
+       2
+      ],
+      "on the train."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Jonas",
+     "hat",
+     "seinen Schlüssel",
+     "gefunden."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Jonas"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "found"
+     ],
+     [
+      [
+       2
+      ],
+      "his key."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-dates",
+  "pattern": "am + ordinal + -en (am ersten Mai) · im + month (im Juli)",
+  "explain": "Dates use ordinal numbers (first, second …). Up to 19 add -te (zweite, vierte), from 20 add -ste (zwanzigste); erste, dritte, siebte and achte are special. 'On' a date is am + ordinal + -en: am ersten Mai. In writing a dot shows the ordinal: am 3. Oktober (say am dritten). For a whole month use im: im Juli.",
+  "compare_en": "English writes 1st, 2nd, 3rd; German writes 1., 2., 3. and says am ersten, am zweiten, am dritten. 'In July' is im Juli, and 'today is the first' is Heute ist der erste.",
+  "table": [
+   [
+    "number",
+    "ordinal",
+    "on the …"
+   ],
+   [
+    "1.",
+    "erste",
+    "am ersten"
+   ],
+   [
+    "2.",
+    "zweite",
+    "am zweiten"
+   ],
+   [
+    "3.",
+    "dritte",
+    "am dritten"
+   ],
+   [
+    "7.",
+    "siebte",
+    "am siebten"
+   ],
+   [
+    "20.",
+    "zwanzigste",
+    "am zwanzigsten"
+   ],
+   [
+    "31.",
+    "einunddreißigste",
+    "am einunddreißigsten"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Mein Geburtstag",
+     "ist",
+     "am ersten Mai."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "My birthday"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "on the first of May."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Im August",
+     "fahren",
+     "wir",
+     "ans Meer."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In August"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "are going"
+     ],
+     [
+      [
+       3
+      ],
+      "to the sea."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Heute",
+     "ist",
+     "der dritte Oktober."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Today"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       2
+      ],
+      "the third of October."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Am 24. Dezember",
+     "feiern",
+     "wir",
+     "Weihnachten."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "On 24th December"
+     ],
+     [
+      [
+       2
+      ],
+      "we"
+     ],
+     [
+      [
+       1
+      ],
+      "celebrate"
+     ],
+     [
+      [
+       3
+      ],
+      "Christmas."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-es-weather",
+  "pattern": "Es + weather verb (Es regnet.) · Es ist + adjective (Es ist kalt.)",
+  "explain": "For the weather German always uses es as the subject, like English 'it': Es regnet (it's raining). Es ist kalt. Es ist warm. Because es is the subject, the verb takes the er/sie/es form. In a question or after a time phrase, es comes right after the verb: Regnet es? Im Winter ist es kalt.",
+  "compare_en": "Like English 'it is raining', but German has no -ing: Es regnet means both 'it rains' and 'it's raining'. Never drop es: Heute ist kalt ✗ → Heute ist es kalt ✓.",
+  "examples": [
+   {
+    "de": [
+     "Im Winter",
+     "ist",
+     "es",
+     "sehr kalt."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "In winter"
+     ],
+     [
+      [
+       2
+      ],
+      "it"
+     ],
+     [
+      [
+       1
+      ],
+      "is"
+     ],
+     [
+      [
+       3
+      ],
+      "very cold."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Es",
+     "regnet",
+     "heute."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "It"
+     ],
+     [
+      [
+       1
+      ],
+      "is raining"
+     ],
+     [
+      [
+       2
+      ],
+      "today."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   },
+   {
+    "de": [
+     "Regnet",
+     "es",
+     "in Hamburg?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Is"
+     ],
+     [
+      [
+       1
+      ],
+      "it"
+     ],
+     [
+      [
+       0
+      ],
+      "raining"
+     ],
+     [
+      [
+       2
+      ],
+      "in Hamburg?"
+     ]
+    ],
+    "v": [
+     0
+    ]
+   },
+   {
+    "de": [
+     "Morgen",
+     "wird",
+     "es",
+     "warm."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Tomorrow"
+     ],
+     [
+      [
+       2
+      ],
+      "it"
+     ],
+     [
+      [
+       1
+      ],
+      "will be"
+     ],
+     [
+      [
+       3
+      ],
+      "warm."
+     ]
+    ],
+    "v": [
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a1-perfekt-separable",
+  "pattern": "prefix + ge + participle: einkaufen → eingekauft, anrufen → angerufen",
+  "explain": "In the Perfekt of a separable verb, ge- goes between the prefix and the verb: einkaufen → eingekauft, anrufen → angerufen, einladen → eingeladen. The participle is one word, at the end. Movement and change verbs still take sein: Ich bin um 7 Uhr aufgestanden. Der Zug ist pünktlich angekommen.",
+  "compare_en": "English keeps the small word separate (I called him up). German glues it to the front of the participle, with ge- in the middle: Ich habe ihn angerufen.",
+  "table": [
+   [
+    "infinitive",
+    "Perfekt"
+   ],
+   [
+    "einkaufen",
+    "hat eingekauft"
+   ],
+   [
+    "anrufen",
+    "hat angerufen"
+   ],
+   [
+    "einladen",
+    "hat eingeladen"
+   ],
+   [
+    "fernsehen",
+    "hat ferngesehen"
+   ],
+   [
+    "aufstehen",
+    "ist aufgestanden"
+   ],
+   [
+    "ankommen",
+    "ist angekommen"
+   ]
+  ],
+  "examples": [
+   {
+    "de": [
+     "Ich",
+     "habe",
+     "am Samstag",
+     "eingekauft."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "I"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "did the shopping"
+     ],
+     [
+      [
+       2
+      ],
+      "on Saturday."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Lena",
+     "hat",
+     "ihre Freunde",
+     "eingeladen."
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Lena"
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      "invited"
+     ],
+     [
+      [
+       2
+      ],
+      "her friends."
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Wann",
+     "bist",
+     "du",
+     "aufgestanden?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "When"
+     ],
+     [
+      [
+       1
+      ],
+      "did"
+     ],
+     [
+      [
+       2
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "get up?"
+     ]
+    ],
+    "v": [
+     1,
+     3
+    ]
+   },
+   {
+    "de": [
+     "Hast",
+     "du",
+     "Malte",
+     "angerufen?"
+    ],
+    "en": [
+     [
+      [
+       0
+      ],
+      "Did"
+     ],
+     [
+      [
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       3
+      ],
+      "call"
+     ],
+     [
+      [
+       2
+      ],
+      "Malte?"
+     ]
+    ],
+    "v": [
+     0,
+     3
+    ]
+   }
+  ]
+ }
+]

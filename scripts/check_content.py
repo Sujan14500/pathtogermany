@@ -207,7 +207,353 @@ def read_tsv(path, cols=WORD_COLS):
     return rows, problems
 
 
+# ---- exam-format content (docs/08-exam-formats.md): reading, listening, writing, speaking ----
+
+OPTS = {'rf': ['richtig', 'falsch'], 'jn': ['ja', 'nein']}
+READ_PARTS = {'A1': {'Teil 1': ('rf', 5), 'Teil 2': ('match', 5), 'Teil 3': ('rf', 5)},
+              'A2': {'Teil 1': ('abc', 5), 'Teil 2': ('abc', 5), 'Teil 3': ('abc', 5), 'Teil 4': ('match', 5)},
+              'B1': {'Teil 1': ('rf', 6), 'Teil 2': ('abc', 3), 'Teil 3': ('match', 7), 'Teil 4': ('jn', 7), 'Teil 5': ('abc', 4)}}
+LISTEN_PARTS = {'A1': {'Teil 1': (['abc'], 1), 'Teil 2': (['rf'], 1), 'Teil 3': (['abc'], 1)},
+                'A2': {'Teil 1': (['abc'], 1), 'Teil 2': (['match'] * 5, 5), 'Teil 3': (['abc'], 1), 'Teil 4': (['jn'] * 5, 5)},
+                'B1': {'Teil 1': (['rf', 'abc'], 2), 'Teil 2': (['abc'] * 5, 5), 'Teil 3': (['rf'] * 7, 7), 'Teil 4': (['match'] * 8, 8)}}
+WRITE_PARTS = {'A1': ['Teil 1', 'Teil 2'], 'A2': ['Teil 1', 'Teil 2'], 'B1': ['Teil 1', 'Teil 2', 'Teil 3']}
+SPEAK_PARTS = {'A1': ['Teil 1', 'Teil 2', 'Teil 3'], 'A2': ['Teil 1', 'Teil 2', 'Teil 3'], 'B1': ['Teil 1', 'Teil 2', 'Teil 3']}
+READ_WORDS = {'A1': (30, 260), 'A2': (60, 420), 'B1': (120, 750)}
+
+
+def blank(x):
+    return not (isinstance(x, str) and x.strip())
+
+
+def check_question(q, where, fmt, valid_ev, labels=()):
+    """One exam question: format, options, answer index, evidence, explanation."""
+    out = []
+    if q.get('format') != fmt:
+        out.append(f'{where}: format should be {fmt!r} for this part, not {q.get("format")!r}')
+    opts, a = q.get('opts', []), q.get('a')
+    if fmt in OPTS and opts != OPTS[fmt]:
+        out.append(f'{where}: opts must be {OPTS[fmt]}')
+    if fmt == 'abc' and (len(opts) != 3 or len(set(opts)) != 3):
+        out.append(f'{where}: abc needs 3 different options')
+    if fmt == 'match' and (len(opts) < 2 or (labels and not set(opts) <= set(labels) | {'x'})):
+        out.append(f'{where}: match options must be the labels of the texts/ads ({sorted(labels)}) or x')
+    if not isinstance(a, int) or not 0 <= a < len(opts):
+        out.append(f'{where}: a must index opts')
+    if blank(q.get('q')) and fmt != 'match':
+        out.append(f'{where}: empty q')
+    if blank(q.get('why')):
+        out.append(f'{where}: empty why (say why the answer is right)')
+    ev = q.get('ev', [])
+    if not ev and not (isinstance(a, int) and a < len(opts) and opts[a] == 'x'):
+        out.append(f'{where}: ev must point to the evidence')
+    if any(e not in valid_ev for e in ev):
+        out.append(f'{where}: ev {ev} points to something that does not exist')
+    return out
+
+
+def lopsided(answers, n_opts):
+    return len(answers) >= 9 and max(answers.count(k) for k in range(n_opts)) > .55 * len(answers)
+
+
+def check_reading(texts, level):
+    out, ids, abc = [], set(), []
+    for i, t in enumerate(texts):
+        where = f'text {i} ({t.get("id", "?")})'
+        if t.get('id') in ids or blank(t.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(t.get('id'))
+        if not isinstance(t.get('station'), int) or not 1 <= t['station'] <= 12:
+            out.append(f'{where}: station must be 1–12')
+        part = READ_PARTS[level].get(t.get('part'))
+        if not part:
+            out.append(f'{where}: part must be one of {list(READ_PARTS[level])}')
+            continue
+        for k in ('type', 'title'):
+            if blank(t.get(k)):
+                out.append(f'{where}: empty {k}')
+        blocks = t.get('blocks', [])
+        sids, labels, words, bids = set(), set(), 0, set()
+        for b in blocks:
+            if blank(b.get('id')) or b['id'] in bids:
+                out.append(f'{where}: every block needs its own id')
+            bids.add(b.get('id'))
+            if b.get('t') not in ('h', 'p', 'ad', 'sign', 'comment', 'list'):
+                out.append(f'{where} block {b.get("id")}: t must be h, p, ad, sign, comment or list')
+            if b.get('label'):
+                labels.add(b['label'])
+            for k, pair in enumerate(b.get('s', [])):
+                if not (isinstance(pair, list) and len(pair) == 2 and not blank(pair[0]) and not blank(pair[1])):
+                    out.append(f'{where} block {b.get("id")}: s is a list of ["German", "English"] pairs')
+                    continue
+                sids.add(f'{b["id"]}.{k}')
+                words += len(pair[0].split())
+            if not b.get('s'):
+                out.append(f'{where} block {b.get("id")}: no sentences')
+        lo, hi = READ_WORDS[level]
+        if not lo <= words <= hi:
+            out.append(f'{where}: {words} German words; {level} texts here have {lo}–{hi}')
+        fmt, n = part
+        qs = t.get('questions', [])
+        if len(qs) != n:
+            out.append(f'{where}: {t["part"]} has {n} questions, not {len(qs)}')
+        for j, q in enumerate(qs):
+            out += check_question(q, f'{where} question {j}', fmt, sids, labels)
+            if fmt == 'abc' and isinstance(q.get('a'), int):
+                abc.append(q['a'])
+        text = ' '.join(p[0] for b in blocks for p in b.get('s', []) if isinstance(p, list) and p).lower()
+        for g in t.get('glossary', []):
+            if blank(g.get('w')) or blank(g.get('en')):
+                out.append(f'{where}: glossary entries need w and en')
+            elif g['w'].lower() not in text:
+                out.append(f'{where}: glossary word {g["w"]!r} is not in the text')
+        pr = t.get('predict', {})
+        if blank(pr.get('q')) or len(pr.get('opts', [])) != 3 or pr.get('a') not in (0, 1, 2):
+            out.append(f'{where}: predict needs q, 3 opts and a')
+    if lopsided(abc, 3):
+        out.append(f'abc answer positions are lopsided ({[abc.count(k) for k in range(3)]})')
+    return out
+
+
+def check_listening(items, level):
+    out, ids, abc = [], set(), []
+    for i, it in enumerate(items):
+        where = f'item {i} ({it.get("id", "?")})'
+        if it.get('id') in ids or blank(it.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(it.get('id'))
+        if not isinstance(it.get('station'), int) or not 1 <= it['station'] <= 12:
+            out.append(f'{where}: station must be 1–12')
+        part = LISTEN_PARTS[level].get(it.get('part'))
+        if not part:
+            out.append(f'{where}: part must be one of {list(LISTEN_PARTS[level])}')
+            continue
+        if blank(it.get('setup')):
+            out.append(f'{where}: empty setup (one English line: who is talking, where)')
+        lines = it.get('lines', [])
+        if not lines:
+            out.append(f'{where}: no lines')
+        for k, l in enumerate(lines):
+            if l.get('who') not in ('A', 'B', 'N') or blank(l.get('de')) or blank(l.get('en')):
+                out.append(f'{where} line {k}: needs who (A, B or N), de and en')
+        fmts, n = part
+        qs = it.get('questions', [])
+        if len(qs) != n:
+            out.append(f'{where}: {it["part"]} has {n} question(s) per item, not {len(qs)}')
+        for j, q in enumerate(qs):
+            fmt = fmts[min(j, len(fmts) - 1)]
+            out += check_question(q, f'{where} question {j}', fmt, set(range(len(lines))))
+            if fmt == 'match' and len(q.get('opts', [])) < 3:
+                out.append(f'{where} question {j}: match needs 3+ options')
+            if fmt == 'abc' and isinstance(q.get('a'), int):
+                abc.append(q['a'])
+    if lopsided(abc, 3):
+        out.append(f'abc answer positions are lopsided ({[abc.count(k) for k in range(3)]})')
+    return out
+
+
+def pairs_ok(xs):
+    return isinstance(xs, list) and xs and all(isinstance(p, list) and len(p) == 2 and not blank(p[0]) and not blank(p[1]) for p in xs)
+
+
+def check_writing(tasks, level):
+    out, ids = [], set()
+    for i, t in enumerate(tasks):
+        where = f'task {i} ({t.get("id", "?")})'
+        if t.get('id') in ids or blank(t.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(t.get('id'))
+        if not isinstance(t.get('station'), int) or not 1 <= t['station'] <= 12:
+            out.append(f'{where}: station must be 1–12')
+        if t.get('part') not in WRITE_PARTS[level]:
+            out.append(f'{where}: part must be one of {WRITE_PARTS[level]}')
+        for k in ('task_en', 'task_de', 'model', 'model_en'):
+            if blank(t.get(k)):
+                out.append(f'{where}: empty {k}')
+        form = level == 'A1' and t.get('part') == 'Teil 1'
+        if form:
+            f = t.get('form', {})
+            if blank(f.get('text_de')) or len(f.get('fields', [])) != 5 or not pairs_ok(f.get('fields')):
+                out.append(f'{where}: A1 Teil 1 needs form.text_de and 5 form.fields ["label", "answer"]')
+        else:
+            if len(t.get('points', [])) != 3 or any(blank(p) for p in t.get('points', [])):
+                out.append(f'{where}: 3 points to cover')
+            w = t.get('words', [])
+            if not (isinstance(w, list) and len(w) == 2 and 0 < w[0] < w[1]):
+                out.append(f'{where}: words is [min, max]')
+            elif not w[0] * .8 <= len(t.get('model', '').split()) <= w[1] * 1.25:
+                out.append(f'{where}: the model has {len(t.get("model", "").split())} words for a {w} task')
+            if not pairs_ok(t.get('phrases')) or len(t['phrases']) < 4:
+                out.append(f'{where}: 4+ phrases as ["German", "English"]')
+            if len(t.get('rubric', [])) < 3:
+                out.append(f'{where}: 3+ rubric lines')
+    return out
+
+
+def check_speaking(tasks, level):
+    out, ids = [], set()
+    for i, t in enumerate(tasks):
+        where = f'task {i} ({t.get("id", "?")})'
+        if t.get('id') in ids or blank(t.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(t.get('id'))
+        if not isinstance(t.get('station'), int) or not 1 <= t['station'] <= 12:
+            out.append(f'{where}: station must be 1–12')
+        if t.get('part') not in SPEAK_PARTS[level]:
+            out.append(f'{where}: part must be one of {SPEAK_PARTS[level]}')
+        for k in ('task_en', 'task_de'):
+            if blank(t.get(k)):
+                out.append(f'{where}: empty {k}')
+        if not t.get('cards') or any(blank(c) for c in t['cards']):
+            out.append(f'{where}: cards (the prompts on the exam cards) missing')
+        if not pairs_ok(t.get('phrases')) or len(t['phrases']) < 4:
+            out.append(f'{where}: 4+ phrases as ["German", "English"]')
+        model = t.get('model', [])
+        if not model or any(not (isinstance(m, list) and len(m) == 3 and m[0] in ('A', 'B') and not blank(m[1]) and not blank(m[2])) for m in model):
+            out.append(f'{where}: model is a list of ["A" or "B", "German", "English"]')
+        if not isinstance(t.get('partner', []), list) or (t.get('partner') and not pairs_ok(t['partner'])):
+            out.append(f'{where}: partner is a list of ["German", "English"] lines the app says as your partner')
+        if not all(isinstance(t.get(k), int) and t[k] > 0 for k in ('prep_s', 'speak_s')):
+            out.append(f'{where}: prep_s and speak_s in seconds')
+    return out
+
+
+def known_words():
+    """(lemma, article) of every course word, from data/src/words-*.tsv."""
+    out = set()
+    for p in (ROOT / 'data/src').glob('words-*.tsv'):
+        rows, _ = read_tsv(p)
+        out |= {(r['lemma'], r['article']) for r in rows}
+    return out
+
+
+SCENE_ANIMS = {'drive', 'pass', 'fall'}
+VIEW_W, VIEW_H = 1000, 620
+
+
+def label_box(o):
+    """The name board's rectangle in scene coordinates: bottom-centre at at + tag."""
+    text = f'{o.get("a") or ""} {o["w"]}'.strip()
+    w, h = len(text) * 11 + 22, 30
+    x = o.get('at', [0, 0])[0] + o.get('tag', [0, 0])[0]
+    y = o.get('at', [0, 0])[1] + o.get('tag', [0, 0])[1]
+    return x - w / 2, y - h, x + w / 2, y
+
+
+def check_scenes(scenes, words=None):
+    import xml.etree.ElementTree as ET
+    words = known_words() if words is None else words
+    out, ids = [], set()
+    for sc in scenes:
+        where = f'scene {sc.get("id", "?")}'
+        if sc.get('id') in ids or blank(sc.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(sc.get('id'))
+        for k in ('de', 'en', 'sky', 'back'):
+            if blank(sc.get(k)):
+                out.append(f'{where}: empty {k}')
+        if not sc.get('stations') or not all(isinstance(n, int) and 1 <= n <= 36 for n in sc['stations']):
+            out.append(f'{where}: stations is a list of station numbers 1–36')
+        svgs = [('back', sc.get('back', ''))] + [(f'object {i}', o.get('svg', '')) for i, o in enumerate(sc.get('objs', []))]
+        for name, svg in svgs:
+            try:
+                ET.fromstring(f'<g xmlns="http://www.w3.org/2000/svg">{svg}</g>')
+            except ET.ParseError as e:
+                out.append(f'{where} {name}: the SVG is not well-formed ({e})')
+        live = [o for o in sc.get('objs', []) if o.get('w')]
+        if len(live) < 15:
+            out.append(f'{where}: {len(live)} labelled words, needs 15 or more')
+        seen = set()
+        for o in live:
+            w = f'{o.get("a") or ""} {o["w"]}'.strip()
+            if (o['w'], o.get('a') or '') not in words:
+                out.append(f'{where}: "{w}" is not a course word (lemma and article as in data/src/words-*.tsv)')
+            if w in seen:
+                out.append(f'{where}: "{w}" is labelled twice')
+            seen.add(w)
+            if not (isinstance(o.get('at'), list) and len(o['at']) == 2 and isinstance(o.get('tag'), list) and len(o['tag']) == 2):
+                out.append(f'{where} "{w}": at and tag are [x, y]')
+                continue
+            if o.get('mv') and (len(o['mv']) not in (3, 4) or o.get('move') not in SCENE_ANIMS):
+                out.append(f'{where} "{w}": mv is [from, to, seconds, delay] with move drive, pass or fall')
+            if o.get('only') not in (None, 'sun', 'rain', 'snow'):
+                out.append(f'{where} "{w}": only is sun, rain or snow')
+            x0, y0, x1, y1 = label_box(o)
+            if not o.get('mv') and (x0 < 0 or y0 < 0 or x1 > VIEW_W or y1 > VIEW_H):
+                out.append(f'{where} "{w}": its label sticks out of the picture')
+        still = [o for o in live if not o.get('mv') and isinstance(o.get('at'), list) and isinstance(o.get('tag'), list)]
+        for i, a in enumerate(still):
+            for b in still[i + 1:]:
+                if a.get('only') and b.get('only') and a['only'] != b['only']:
+                    continue
+                ax0, ay0, ax1, ay1 = label_box(a)
+                bx0, by0, bx1, by1 = label_box(b)
+                if ax0 < bx1 and bx0 < ax1 and ay0 < by1 and by0 < ay1:
+                    out.append(f'{where}: the labels of "{a["w"]}" and "{b["w"]}" overlap')
+    return out
+
+
+def check_vq(qs, level, words=None):
+    words = known_words() if words is None else words
+    lemmas = {w for w, _ in words}
+    out, pos = [], []
+    for i, q in enumerate(qs):
+        where = f'question {i} ({q.get("w", "?")})'
+        if q.get('type') not in ('synonym', 'usage', 'context'):
+            out.append(f'{where}: type is synonym, usage or context')
+        if q.get('w') not in lemmas:
+            out.append(f'{where}: w must be a course word (its lemma)')
+        if blank(q.get('q')) or blank(q.get('why')):
+            out.append(f'{where}: q and why must not be empty')
+        if q.get('type') == 'context' and str(q.get('q', '')).count('___') != 1:
+            out.append(f'{where}: a context question has exactly one ___')
+        if q.get('type') == 'synonym' and (blank(q.get('u')) or q['u'] not in q.get('q', '')):
+            out.append(f'{where}: a synonym question names the underlined part u, which appears in q')
+        opts = q.get('opts', [])
+        if len(opts) != 4 or len(set(opts)) != 4 or any(blank(o) for o in opts):
+            out.append(f'{where}: 4 different options')
+        if not isinstance(q.get('a'), int) or not 0 <= q['a'] < 4:
+            out.append(f'{where}: a indexes opts')
+        else:
+            pos.append(q['a'])
+        if not isinstance(q.get('station'), int) or not 1 <= q['station'] <= 12:
+            out.append(f'{where}: station 1–12')
+    if lopsided(pos, 4):
+        out.append(f'answer positions are lopsided ({[pos.count(k) for k in range(4)]})')
+    return out
+
+
+def check_sounds(sounds, level=None):
+    out, ids = [], set()
+    for s in sounds:
+        where = f'sound {s.get("id", "?")}'
+        if s.get('id') in ids or blank(s.get('id')):
+            out.append(f'{where}: id missing or repeated')
+        ids.add(s.get('id'))
+        for k in ('sound', 'title', 'how'):
+            if blank(s.get(k)):
+                out.append(f'{where}: empty {k}')
+        m = s.get('mouth', {})
+        if m.get('lips') not in ('round', 'spread', 'open', 'neutral') or m.get('tongue') not in ('front', 'mid', 'back', 'tip', 'low') \
+                or not isinstance(m.get('jaw'), (int, float)) or not 0 <= m['jaw'] <= 1:
+            out.append(f'{where}: mouth needs lips (round/spread/open/neutral), tongue (front/mid/back/tip/low) and jaw 0–1')
+        if not pairs_ok(s.get('examples')) or len(s['examples']) < 4:
+            out.append(f'{where}: 4+ examples as ["German word", "English"]')
+        ps = s.get('pairs', [])
+        if len(ps) < 4 or any(not (isinstance(p, list) and len(p) == 4 and not any(blank(x) for x in p) and p[0] != p[1]) for p in ps):
+            out.append(f'{where}: 4+ minimal pairs as ["word with this sound", "contrast word", "English 1", "English 2"]')
+    return out
+
+
+CHECKS = {'reading-': check_reading, 'listen-': check_listening, 'writing-': check_writing, 'speaking-': check_speaking,
+          'scenes-': check_scenes, 'vq-': check_vq, 'sounds': check_sounds}
+
+
 def check_file(path, copied):
+    for prefix, check in CHECKS.items():
+        if path.name.startswith(prefix):
+            data, problems = read_json(path)
+            parts = path.stem.split('-')
+            return problems + check(data, parts[1] if len(parts) > 1 else None)
     if path.name.startswith('words-'):
         rows, problems = read_tsv(path)
         return problems + check_words(rows, copied)
@@ -254,6 +600,25 @@ def test():
     assert check_gq([dict(q, opts=['a', 'a', 'b', 'c'])], {'a1-inversion'}), 'duplicate options'
     assert check_gq([dict(q, q='no blank')], {'a1-inversion'}), 'no blank'
     assert check_gq([q] * 8, {'a1-inversion'}), 'all answers in the same position'
+    text = {'id': 'r1', 'station': 2, 'part': 'Teil 1', 'type': 'email', 'title': 'Hallo Lena', 'intro': '',
+            'blocks': [{'id': 'b1', 't': 'p', 's': [['Ich heiße Priya und ich komme aus Indien.', "I'm Priya and I'm from India."]] * 6}],
+            'glossary': [{'w': 'Indien', 'en': 'India'}], 'predict': {'q': '?', 'opts': ['a', 'b', 'c'], 'a': 0},
+            'questions': [{'q': 'Priya kommt aus Indien.', 'format': 'rf', 'opts': ['richtig', 'falsch'], 'a': 0, 'ev': ['b1.0'], 'why': 'x'}] * 5}
+    assert check_reading([text], 'A1') == [], check_reading([text], 'A1')
+    assert check_reading([dict(text, part='Teil 9')], 'A1'), 'unknown part'
+    bad_q = dict(text['questions'][0], ev=['b9.9'])
+    assert check_reading([dict(text, questions=[bad_q] * 5)], 'A1'), 'evidence that does not exist'
+    item = {'id': 'h1', 'station': 1, 'part': 'Teil 1', 'setup': 'At a café.', 'lines': [{'who': 'A', 'de': 'Ein Kaffee, bitte.', 'en': 'A coffee, please.'}],
+            'questions': [{'q': 'Was bestellt sie?', 'format': 'abc', 'opts': ['Kaffee', 'Tee', 'Wasser'], 'a': 0, 'ev': [0], 'why': 'x'}]}
+    assert check_listening([item], 'A1') == [], check_listening([item], 'A1')
+    assert check_listening([dict(item, lines=[{'who': 'Z', 'de': 'x', 'en': 'y'}])], 'A1'), 'unknown speaker'
+    words = {(f'Ding{i}', 'das') for i in range(20)}
+    objs = [{'w': f'Ding{i}', 'a': 'das', 'at': [90 + (i % 5) * 190, 100 + (i // 5) * 120], 'tag': [0, -10], 'svg': '<circle r="10" fill="#c00"/>'} for i in range(16)]
+    sc = {'id': 'test', 'de': 'Test', 'en': 'Test', 'sky': '#fff', 'back': '<rect width="1000" height="620"/>', 'stations': [1], 'objs': objs}
+    assert check_scenes([sc], words) == [], check_scenes([sc], words)
+    assert check_scenes([dict(sc, objs=objs[:14])], words), 'too few words'
+    assert check_scenes([dict(sc, objs=objs + [dict(objs[0], w='Ding17', at=[92, 101])])], words), 'overlapping labels'
+    assert check_scenes([dict(sc, back='<rect width="1000"')], words), 'broken SVG'
     print('ok')
 
 

@@ -16,13 +16,16 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
   - Type: Barlow Semi Condensed (boards; Bahnschrift offline), Atkinson Hyperlegible Next (body, 17 px).
   - Spacing 4/8/12/16/24/32/48; 6 px sign radius; pills only for badges.
 - Welcome line on home: "Liebe Sneka, willkommen!" (Dear Sneka, welcome!), chosen by the user 2026-10-28.
-- GitHub remote: _none yet (ask before creating; it must be private)_
+- GitHub remote: `origin` = https://github.com/Sujan14500/pathtogermany (user gave it 2026-10-28 and asked for pushes at
+  phase ends). On 2026-10-28 the API showed it PUBLIC (`private: false`), so nothing was pushed: CLAUDE.md requires a
+  private repo. Before each push run `curl -s -o /dev/null -w "%{http_code}" https://api.github.com/repos/Sujan14500/pathtogermany`;
+  push only on 404. Never create branches or PRs: commit and push straight to main.
 
 ## Phases
 - [x] Phase 0: confirm and plan
 - [x] Phase 1: shell, store, router, single-file build
 - [x] Phase 2: words and flashcards (3,163 words: A1 779, A2 588, B1 1,796)
-- [ ] Phase 3: grammar and trainers
+- [x] Phase 3: grammar and trainers (109 points, 436 form-choice questions; verbs and cases trainers)
 - [ ] Phase 4: reading
 - [ ] Phase 5: listening
 - [ ] Phase 6: writing and speaking
@@ -54,7 +57,11 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
   Wiktionary; disagreements in data/cache/word-check.tsv, all 46 reviewed: homographs and accepted variants).
 - `python scripts/build_data.py --verb-fixture` writes app/test-verbs.json (Wiktionary tables); test.html checks the
   conjugation helpers against it (59 verbs, all forms right).
-- Phase 3 code is in (grammar tab with aligned examples and builder, grammar SRS cards, #/verbs, #/cases); the
-  grammar content (grammar-*.json, gq-*.json) is being written by three agents.
+- Content in progress (2026-10-28, orchestrated background agents; formats in docs/08-exam-formats.md, validators in
+  scripts/check_content.py): reading-<lv>-1.json (24 texts/level), listen-<lv>-1.json (42–48 items/level),
+  writing-/speaking-<lv>-1.json (12 + 12 tasks/level), scenes-1/2/3.json (10 picture scenes, preview with
+  scripts/scene_preview.py), sounds.json (12 sounds, minimal pairs), vq-<lv>-1.json (120 vocab questions/level),
+  app/manifest.webmanifest + app/sw.js + PNG icons. If a file is missing after a restart, its agent died: relaunch it with
+  the same brief (one Agent call per message: batched launches get cancelled).
 - Other sessions work in this repo too (learning-science spec in docs/07-learning-science.md, export-on-close).
   Stage only your own paths.
