@@ -143,6 +143,18 @@ def build_grammar(levels, points, gq):
     return out, [q for q in gq if q['g'] in where], missing
 
 
+def level_content(kind):
+    """data/src/<kind>-<level>-*.json → one list, each item with its level and n, the station across levels (1…36)."""
+    out = []
+    for p in sorted(SRC.glob(f'{kind}-*.json')):
+        level = p.stem.split('-')[1]
+        for x in json.loads(p.read_text(encoding='utf-8')):
+            out.append(dict(x, level=level, n=LEVELS.index(level) * STATIONS_PER_LEVEL + x['station']))
+    ids = [x['id'] for x in out if 'id' in x]
+    assert len(ids) == len(set(ids)), f'{kind}: repeated ids'
+    return out
+
+
 def read_json_files(pattern):
     return [x for p in sorted(SRC.glob(pattern)) for x in json.loads(p.read_text(encoding='utf-8'))]
 
@@ -211,8 +223,19 @@ def main():
           f'{len(notes)} differences from Wiktionary → data/cache/word-check.tsv')
     grammar, gq, missing = build_grammar(levels, read_json_files('grammar-*.json'), read_json_files('gq-*.json'))
     write_json('grammar', grammar)
-    write_json('drills', {'gq': gq})
-    print(f'grammar: {len(grammar)} points ({len(missing)} not written yet), {len(gq)} form-choice questions')
+    vq = level_content('vq')
+    write_json('drills', {'gq': gq, 'vq': vq})
+    print(f'grammar: {len(grammar)} points ({len(missing)} not written yet), {len(gq)} form-choice questions, {len(vq)} vocabulary questions')
+    counts = []
+    for kind, name in (('reading', 'reading'), ('listen', 'listening'), ('writing', 'writing'), ('speaking', 'speaking')):
+        items = level_content(kind)
+        write_json(name, items)
+        counts.append(f'{name} {len(items)}')
+    scenes = read_json_files('scenes-*.json')
+    write_json('scenes', scenes)
+    sounds = json.loads((SRC / 'sounds.json').read_text(encoding='utf-8')) if (SRC / 'sounds.json').exists() else []
+    write_json('sounds', sounds)
+    print(', '.join(counts) + f', scenes {len(scenes)}, sounds {len(sounds)}')
     out = bundle()
     print(f'{out.relative_to(ROOT)}: {out.stat().st_size // 1024} KB')
 

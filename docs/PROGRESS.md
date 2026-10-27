@@ -15,6 +15,8 @@ Keep this file current: tick a phase when its acceptance checks pass, and note i
   - Lines: A1 amber `#F2A20C`, A2 teal `#12A3B4`, B1 violet `#8A5CF5`.
   - Type: Barlow Semi Condensed (boards; Bahnschrift offline), Atkinson Hyperlegible Next (body, 17 px).
   - Spacing 4/8/12/16/24/32/48; 6 px sign radius; pills only for badges.
+- Devices: laptop only (user, 2026-10-28): no mobile UI or features; check screens at 1366 px and 1500 px, light and
+  dark, instead of phone widths. Desktop install/offline (manifest + service worker) stays.
 - Welcome line on home: "Liebe Sneka, willkommen!" (Dear Sneka, welcome!), chosen by the user 2026-10-28.
 - GitHub remote: `origin` = https://github.com/Sujan14500/pathtogermany (user gave it 2026-10-28 and asked for pushes at
   phase ends). On 2026-10-28 the API showed it PUBLIC (`private: false`), so nothing was pushed: CLAUDE.md requires a

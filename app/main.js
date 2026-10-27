@@ -1729,3 +1729,5 @@ function App() {
 }
 
 render(html`<${App} />`, document.getElementById('app'))
+// Offline use and "install" when served over http(s); a file:// page can't have a service worker.
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js')
