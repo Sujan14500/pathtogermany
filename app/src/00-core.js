@@ -10,7 +10,9 @@ const endOfToday = () => { const d = new Date(); d.setHours(23, 59, 59, 999); re
 const reducedMotion = () => S.settings.motion === 'reduce' || matchMedia('(prefers-reduced-motion: reduce)').matches   // Settings can force it
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`
 const pct = p => `${Math.round(p * 100)}%`
-const shuffle = xs => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
+const shuffle = (xs, r = Math.random) => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }   // r: a seeded rng for fixed papers
+const mmss = s => { const c = Math.max(0, Math.ceil(s)); return `${Math.floor(c / 60)}:${String(c % 60).padStart(2, '0')}` }   // seconds → 1:05
+const gapped = s => s.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)   // "Ich ___ müde." with a drawn gap
 let D = null   // the loaded data (prepare()), set once at start
 
 // ---- progress: one JSON blob in localStorage, backed up by export/import ----
@@ -54,7 +56,7 @@ addEventListener('beforeunload', e => {
   e.preventDefault(); e.returnValue = ''
   setTimeout(() => document.getElementById('leave-export')?.showModal(), 400)
 })
-const LeaveExport = () => html`<dialog id="leave-export" class="leave" aria-labelledby="leave-h">
+const LeaveExport = () => html`<dialog id="leave-export" class="leave-dlg" aria-labelledby="leave-h">
   <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><rect x="10" y="4" width="28" height="36" rx="3" fill="#fff" />
     <path d="M24 14v16M17 23l7 7 7-7" fill="none" stroke="var(--board)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
     <rect x="6" y="40" width="36" height="4" rx="2" fill="var(--a1)" /></svg>
@@ -237,8 +239,8 @@ const stopSpeech = () => { lineQueue = null; if ('speechSynthesis' in window) sp
 // ---- registries: each feature fragment adds itself, so it needs no edits elsewhere ----
 
 // PAGES: route name ('#/<name>/…') → component({ data, arg, sub, sub2, hash }); the router (99-app.js)
-// falls back to its own pages. TAB_VIEWS: station tab id (see TABS) → component({ data, n }); the station
-// page (90-station.js) falls back to "being written now". Register at a fragment's top level:
+// adds the station page and home. TAB_VIEWS: station tab id (see TABS) → component({ data, n }), one for every
+// tab (90-station.js). Register at a fragment's top level:
 // PAGES.pictures = PicturesPage, TAB_VIEWS.listen = ListenTab.
 const PAGES = {}
 const TAB_VIEWS = {}
@@ -251,12 +253,13 @@ const TAB_NAME = Object.fromEntries(TABS)
 const PARTS = ['words', 'grammar', 'read', 'listen', 'write', 'speak', 'test']   // a station's parts in study order
 
 // 0…1 per part: words count learned cards, grammar the points studied; the other parts keep their best result in
-// S.practice["<station>/<part>"].
+// S.practice["<station>/<part>"], and count as done at the exam's pass mark (60%), so a pass moves the plan on.
 function partDone(n, part) {
   const ws = part === 'words' && D?.wordsBy[n], gs = part === 'grammar' && D?.grammarBy[n]
   if (ws?.length) return ws.filter(w => known(w.id)).length / ws.length
   if (gs?.length) return gs.filter(g => S.practice[`g:${g.id}`]).length / gs.length
-  return S.practice[`${n}/${part}`] ?? 0
+  const p = S.practice[`${n}/${part}`] ?? 0
+  return p >= .6 ? 1 : p
 }
 const stationDone = n => PARTS.reduce((a, p) => a + partDone(n, p), 0) / PARTS.length
 const levelDone = lv => lv.stations.reduce((a, st) => a + stationDone(st.n), 0) / lv.stations.length

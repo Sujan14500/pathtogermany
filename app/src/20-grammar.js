@@ -97,7 +97,7 @@ function Builder({ ex, onDone }) {
 }
 
 const gqQuiz = qs => shuffle(qs).map(q => ({
-  q: html`<span lang="de">${q.q.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)}</span>`,
+  q: html`<span lang="de">${gapped(q.q)}</span>`,
   opts: q.opts, a: q.a, why: html`${q.why} <span class="quiet">(${q.en})</span>`, say: q.q.replace('___', q.opts[q.a]),
 }))
 
@@ -106,7 +106,7 @@ function GuessFirst({ q }) {
   const [picked, setPicked] = useState(null)
   return html`<section class="guess" aria-label="Guess first">
     <h3>Guess first</h3><p class="quiet">A wrong guess is fine: it makes the explanation stick.</p>
-    <p class="quiz-q" lang="de">${q.q.split('___').map((part, k) => html`${k ? html`<span class="gap"></span>` : ''}${part}`)}</p>
+    <p class="quiz-q" lang="de">${gapped(q.q)}</p>
     <div class="guess-opts">${q.opts.map((o, k) => html`<button type="button" lang="de" disabled=${picked !== null} onClick=${() => setPicked(k)}
       class=${picked === null ? '' : k === q.a ? 'right' : k === picked ? 'wrong' : 'dim'}>${o}</button>`)}</div>
     ${picked !== null ? html`<p class="guess-after">${picked === q.a ? html`<b>Right.</b>` : html`<b>Not this one.</b>`} Read on to see why.</p>` : ''}
@@ -146,8 +146,6 @@ function GrammarPoint({ data, g, i }) {
 
 function GrammarTab({ data, n }) {
   const gs = data.grammarBy[n]
-  if (!gs.length) return html`<ol class="glist">${data.stations[n].grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>
-    <p class="soon">${SOON.grammar} <span class="quiet">Being written now.</span></p>`
   const go = id => document.getElementById(`g-${id}`)?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' })
   return html`<div class="grammar-tab">
     <nav class="g-index" aria-label="Grammar points">${gs.map((g, i) => html`<button type="button" onClick=${() => go(g.id)}>

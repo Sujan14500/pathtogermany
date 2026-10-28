@@ -22,8 +22,5 @@
 .tip-here li { display: flex; gap: 8px; align-items: baseline; padding-left: 18px; position: relative; }
 .tip-here li::before { content: ""; position: absolute; left: 0; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
 .tip-here a { font-weight: 600; }
-.tip-here li.later { color: var(--muted); }
-.tip-here li.later::before { background: none; border: 2px solid var(--rule); width: 9px; height: 9px; }
-.tip-here small { font: 600 .75rem var(--body); border: 1.5px solid var(--rule); border-radius: 999px; padding: 0 8px; white-space: nowrap; }
 .tip-ev { margin: 16px 0 0; font-size: .88rem; color: var(--muted); }
 .tip .after { margin-top: 18px; }

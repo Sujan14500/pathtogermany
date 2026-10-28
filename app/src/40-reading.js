@@ -215,7 +215,7 @@ function Reader({ t, exam, onDone, onNext }) {
     <article class="r-text">
       <header class="r-head">
         <span class="lb">Lesen ${t.part}</span><span class="r-type">${TEXT_TYPE[t.type] ?? t.type} · ${words} words</span>
-        ${timing ? html`<span class="r-clock" role="timer">${fmtClock(Date.now() - time.againStart)}</span>
+        ${timing ? html`<span class="r-clock" role="timer">${mmss((Date.now() - time.againStart) / 1000)}</span>
           <button type="button" class="btn" onClick=${() => setTime(x => ({ ...x, again: Date.now() - x.againStart }))}>Done reading</button>` : ''}
         ${exam ? '' : html`<button type="button" class=${`r-aloud${speakingAt !== null ? ' on' : ''}`} onClick=${readAloud}><${Speaker} /> ${speakingAt !== null ? 'Stop' : 'Read it to me'}</button>`}
       </header>
@@ -248,7 +248,6 @@ function Reader({ t, exam, onDone, onNext }) {
     </section>` : ''}
   </div></div>`
 }
-const fmtClock = ms => { const s = Math.floor(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` }
 
 // Tiles to pick one of the station's texts or recordings: its exam part, a title and the best score so far.
 function Picks({ items, i, setI, label, part, title, sub, keyOf }) {

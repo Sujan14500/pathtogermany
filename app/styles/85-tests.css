@@ -20,7 +20,7 @@
   padding: 3px 12px; border-radius: 4px; background: var(--board); color: #fff; box-shadow: 0 0 0 2px var(--board-rim);
   font: 700 1.5rem/1.2 var(--display); font-variant-numeric: tabular-nums; letter-spacing: .02em;
 }
-.xm-clock.low { background: var(--die); box-shadow: none; }
+.xm-clock.low { background: var(--die); color: var(--panel); box-shadow: none; }
 .xm-bar .btn { white-space: nowrap; }
 
 .xm-modhead { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 18px; margin: 18px 0 4px; }
@@ -65,7 +65,7 @@
 .xm-points li::before { content: counter(pt); position: absolute; left: 12px; top: 8px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--line); color: var(--on-line); font: 700 .85rem var(--display); }
 .xm-sheet { padding: 18px 20px; background: var(--panel); border-radius: 6px; border-top: 5px solid var(--line); }
 .xm-sheet textarea { display: block; width: 100%; padding: 12px 14px; border: 2px solid var(--rule); border-radius: 6px; background: var(--platform); font-size: 1.1rem; line-height: 1.6; resize: vertical; }
-.xm-sheet textarea:focus { border-color: var(--line); outline: none; }
+.xm-sheet textarea:focus { border-color: var(--line-deep); outline: none; }
 
 .xm-handin { margin: 32px 0 0; display: flex; justify-content: center; }
 
@@ -137,7 +137,7 @@
 .xm-ticket-top { display: flex; align-items: center; gap: 12px; margin: 0; }
 .xm-passed { color: var(--das); font-weight: 700; }
 .xm-ticket h2 { margin: 12px 0 18px; font-size: 2rem; }
-.xm-facts { list-style: none; margin: 0 0 14px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.xm-facts { list-style: none; margin: 0 0 14px; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 10px; }
 .xm-facts li { display: grid; gap: 2px; padding: 10px 12px; border: 2px solid var(--rule); border-radius: 6px; }
 .xm-facts b { font: 700 2.1rem/1 var(--display); }
 .xm-facts small { color: var(--muted); font-size: .85rem; line-height: 1.3; }
@@ -233,7 +233,7 @@
   .xm-part.singles { grid-template-columns: 1fr; }
   .xm-side { position: static; max-height: none; }
   .xm-steps, .xm-bar-title { display: none; }
-  .xm-facts { grid-template-columns: 1fr 1fr; }
+  .xm-facts { grid-template-columns: 1fr 1fr; grid-auto-flow: row; }
 }
 .xm-due { margin: -6px 0 0; padding: 8px 12px; border-left: 4px solid var(--line); background: var(--guide); border-radius: 0 6px 6px 0; }
 .xm-count { margin: 0; color: var(--muted); font-size: .88rem; }

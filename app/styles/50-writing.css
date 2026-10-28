@@ -50,7 +50,7 @@
   background-image: linear-gradient(transparent calc(2rem - 1px), color-mix(in srgb, var(--rule) 80%, transparent) 0);
   background-size: 100% 2rem; background-position: 0 4px; background-attachment: local;
 }
-.w-editor textarea:focus { border-color: var(--line); }
+.w-editor textarea:focus { border-color: var(--line-deep); }
 .w-editor textarea::placeholder { color: var(--muted); opacity: .7; }
 
 /* the word count: a track with the target band; the bar turns green inside it */
@@ -135,7 +135,7 @@
 .w-ff { display: grid; gap: 3px; }
 .w-ff > span { font-size: .88rem; font-weight: 600; color: var(--muted); }
 .w-ff input { border: 0; border-bottom: 2px solid var(--muted); border-radius: 4px 4px 0 0; background: var(--guide); padding: .45rem .7rem; font-size: 1.1rem; }
-.w-ff input:focus { outline: none; border-bottom-color: var(--line); background: color-mix(in srgb, var(--line) 10%, var(--panel)); }
+.w-ff input:focus { outline: none; border-bottom-color: var(--line-deep); background: color-mix(in srgb, var(--line) 10%, var(--panel)); }
 .w-ff.right input { border-bottom-color: var(--das); background: color-mix(in srgb, var(--das) 10%, var(--panel)); }
 .w-ff.wrong input { border-bottom-color: var(--die); background: color-mix(in srgb, var(--die) 8%, var(--panel)); }
 .w-ff small { font-size: .9rem; }

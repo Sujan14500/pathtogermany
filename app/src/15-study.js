@@ -53,6 +53,12 @@ export function diffChars(a, b) {
   return out
 }
 
+// The verdict on a typed answer, with what was typed marked against the answer (cards and picture scenes).
+const Typed = ({ check, typed, w }) => html`<p class=${`typed ${check.verdict}`}>
+  <span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
+  ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
+  ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>`
+
 // A word missed four times or more gets a memory hook of the learner's own, shown on both its cards.
 function HookBox({ w }) {
   const s = useStore()
@@ -147,9 +153,7 @@ function Study({ data }) {
         : html`<h2 class="card-term en">${w.en}</h2>
             <p class="card-forms">${POS_NAME[w.p]}</p>
             <div class="card-back">${revealed ? html`<p class="card-de"><${Word} w=${w} /> <${SayButton} text=${said(w)} /></p>
-              ${check ? html`<p class=${`typed ${check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
-                ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
-                ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>` : ''}
+              ${check ? html`<${Typed} check=${check} typed=${typed} w=${w} />` : ''}
               <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />`
               : html`<form class="type-it" onSubmit=${submit} onClick=${e => e.stopPropagation()}>
                   <input lang="de" autocomplete="off" autocapitalize="off" spellcheck="false" value=${typed} onInput=${e => setTyped(e.target.value)}
@@ -168,7 +172,7 @@ function Study({ data }) {
           ${GRADES.map(([g, label]) => html`<button type="button" class=${`g${g}`} onClick=${() => rate(g)}>
             ${label}<small>${fmtInterval(preview[g].card.due - now)}</small><kbd>${g}</kbd></button>`)}
         </div>`
-      : html`<button type="button" class="show" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
+      : html`<button type="button" class="reveal" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
   </main>`
 }
 
@@ -178,18 +182,19 @@ function Arrived({ data, done }) {
   const unseen = data.words.some(w => !s.cards[w.id] && w.n <= s.lesson)
   const st = here(data)
   const next = data.stations[st.n + 1]
+  const step = nextStep(todayPlan(st, []))   // the day's next stop after the cards (80-home.js)
   return html`<main class=${`study arrived l${st.level}`}>
     <article class="card open">
       <h2 class="card-term" lang="de">Angekommen!</h2>
-      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : data.words.length ? 'Nothing to study right now.' : 'The word cards are being written now.'}
-        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}
-        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}</p>
+      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : 'Nothing to study right now.'}
+        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}
+        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}</p>
       <div class="band card-band"><span></span><span lang="de">${st.de}</span></div>
     </article>
     <div class="after">
       ${unseen ? html`<button type="button" onClick=${() => commit(x => { x.newToday = { date: today(), n: (x.newToday.date === today() ? x.newToday.n : 0) - 10 } })}>Learn 10 more new words</button>`
         : next ? html`<button type="button" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span></button>` : ''}
-      <a class="btn" href=${`#/station/${st.n}/grammar`}>Go on with the station <${Arrow} /></a>
+      <a class="btn" href=${step?.href ?? '#/'}>${step ? `Next: ${step.label}` : 'Back to today'} <${Arrow} /></a>
     </div>
   </main>`
 }

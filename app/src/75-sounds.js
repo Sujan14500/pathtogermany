@@ -199,7 +199,6 @@ function SoundPairs({ s }) {
 
 // ---- say a word of a pair, then hear the voice and yourself back to back ----
 
-const canRecord = () => !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder)
 const sameWord = (a, b) => a.localeCompare(b, 'de', { sensitivity: 'accent' }) === 0   // schön ≠ schon, Schön = schön
 const canRecognise = () => !!SpeechRec && !navigator.brave   // Brave has the API but it never hears anything
 function SoundSayWord({ word, other }) {

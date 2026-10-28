@@ -30,7 +30,7 @@
 
 .l-controls { display: flex; align-items: center; gap: 16px; }
 .l-play { display: grid; place-items: center; width: 64px; height: 64px; padding: 0; flex: none; border: 0; border-radius: 50%; background: var(--ink); color: var(--platform); }
-.l-play:hover { background: var(--line-deep); color: #fff; }
+.l-play:hover { background: var(--line-deep); color: var(--on-deep); }
 .l-play.on { background: var(--line); color: var(--on-line); }
 .l-play svg { margin-left: 3px; }
 .l-play.on svg { margin-left: 0; }

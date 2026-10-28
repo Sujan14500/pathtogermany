@@ -1,10 +1,9 @@
-/* ---- settings and backup (the Settings component in 80-home.js); overrides the older .settings rules in 80-home.css ---- */
+/* ---- settings and backup (the Settings component in 80-home.js) ---- */
 
-.settings { max-width: none; margin-top: 40px; padding: 0; border: 0; background: var(--panel); border-radius: 6px; }
-.settings label { margin: 0; }
+.settings { margin-top: 40px; background: var(--panel); border-radius: 6px; }
 .settings > summary {
   display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px;
-  padding: 16px 22px; list-style: none; cursor: pointer; font-weight: 400; border-radius: 6px;
+  padding: 16px 22px; list-style: none; cursor: pointer; border-radius: 6px;
 }
 .settings > summary::-webkit-details-marker { display: none; }
 .settings > summary:hover .set-title b { text-decoration: underline; }

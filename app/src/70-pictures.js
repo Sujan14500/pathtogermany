@@ -278,9 +278,7 @@ function Scene({ sc, focus }) {
                   <button type="submit" class="btn">Check</button>
                 </form>`}
             <button type="button" class="scene-swap" onClick=${() => setChoose(!choose)}>${choose ? 'Type it instead' : 'Choose from four instead'}</button>`
-          : html`<p class=${`typed ${q.check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[q.check.verdict]}</span>
-              ${q.check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(q.typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
-              ${q.check.notes.length ? html`<small>${q.check.notes.join(' ')}</small>` : ''}</p>
+          : html`<${Typed} check=${q.check} typed=${q.typed} w=${w} />
             <p class="scene-big"><${Word} w=${w} /><${SayButton} text=${said(w)} /></p>
             <p class="scene-en">${w.en}</p>
             <button type="button" class="btn" ref=${next} onClick=${() => ask('name')}>Next <${Arrow} /></button>`}

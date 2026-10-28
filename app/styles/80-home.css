@@ -16,7 +16,7 @@
 }
 .topnav a:hover { color: var(--ink); }
 .topnav a.on { color: var(--ink); box-shadow: inset 0 -3px 0 var(--line); }
-.count { font: 700 .75rem/1 var(--body); background: var(--die); color: #fff; padding: 3px 6px; border-radius: 999px; }
+.count { font: 700 .75rem/1 var(--body); background: var(--die); color: var(--panel); padding: 3px 6px; border-radius: 999px; }
 .tb-stop {
   margin-left: auto; display: flex; align-items: center; gap: 8px; min-width: 0;
   font: 600 1.05rem/1.2 var(--display); text-decoration: none;
@@ -73,12 +73,12 @@
 .now .pdot { border-color: var(--ink); box-shadow: 0 0 0 4px var(--panel), 0 0 0 6px var(--ink); }
 .plan b { font: 600 1.1rem/1.2 var(--display); }
 .plan small { min-height: 1.2em; color: var(--muted); font-size: .8rem; }
-.now small { color: var(--ink); font-weight: 700; }
+.plan .now small { color: var(--ink); font-weight: 700; }
 
 .practice h2, .route-head h2 { margin: 40px 0 14px; font-size: 1.6rem; }
-.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
 .tile {
-  display: grid; gap: 4px; height: 100%; padding: 16px; border-radius: 6px; text-decoration: none;
+  display: grid; align-content: start; gap: 4px; height: 100%; padding: 16px; border-radius: 6px; text-decoration: none;
   background: var(--panel); border-bottom: 4px solid transparent; transition: transform .2s var(--arrive), border-color .2s;
 }
 .tile svg { color: var(--ink); margin-bottom: 6px; transition: color .2s; }
@@ -123,7 +123,7 @@
 .rdot.key.started { background: conic-gradient(var(--line) 50%, var(--panel) 0); }
 .rdot.key.done, .rstn.done .rdot { background: var(--line); }
 .rnum { font: 700 .95rem var(--display); color: var(--muted); font-variant-numeric: tabular-nums; }
-.rname { font: 500 .95rem/1.15 var(--display); text-align: center; overflow-wrap: anywhere; }
+.rname { font: 500 .95rem/1.15 var(--display); text-align: center; }   /* a long name may reach past its stop; never split mid-word */
 .rstn > button:hover .rname { text-decoration: underline; }
 .rstn.at .rdot { box-shadow: 0 0 0 4px var(--panel), 0 0 0 7px var(--ink); }
 .rstn.at .rname, .rstn.at .rnum { color: var(--ink); font-weight: 700; }
@@ -145,30 +145,22 @@
 .scard-grammar { margin: 14px 0 0; color: var(--muted); font-size: .95rem; }
 .scard-grammar b { color: var(--ink); }
 
-.settings { margin-top: 40px; border-top: 2px solid var(--rule); padding-top: 12px; max-width: 70ch; }
-.settings summary { cursor: pointer; font-weight: 700; padding: .4rem 0; }
-.settings label { display: flex; align-items: center; gap: .75rem; margin: .9rem 0; }
-.settings input[type="number"] { width: 5.5rem; padding: .4rem .5rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); }
-.settings-row { display: flex; gap: 12px; flex-wrap: wrap; }
-.settings-row label.button { margin: 0; }
-
 /* the export offered when the learner tries to close the tab and stays */
-.leave {
+.leave-dlg {
   width: min(460px, calc(100vw - 32px)); padding: 28px 30px 30px; border: 0; border-radius: 6px;
   background: var(--board); color: var(--board-ink); box-shadow: 0 0 0 2px var(--board-rim), 0 30px 60px -20px rgb(0 0 0 / .6);
 }
-.leave[open] { animation: rise .3s var(--arrive); }
-.leave::backdrop { background: rgb(10 16 28 / .55); }
-.leave h2 { margin: 14px 0 8px; font: 600 1.9rem/1.05 var(--display); }
-.leave p { margin: 0 0 22px; color: var(--board-soft); }
-.leave .btn { background: var(--a1); color: var(--on-line); }
-.leave .btn:hover { background: #fff; color: var(--board); }
+.leave-dlg[open] { animation: rise .3s var(--arrive); }
+.leave-dlg::backdrop { background: rgb(10 16 28 / .55); }
+.leave-dlg h2 { margin: 14px 0 8px; font: 600 1.9rem/1.05 var(--display); }
+.leave-dlg p { margin: 0 0 22px; color: var(--board-soft); }
+.leave-dlg .btn { background: var(--a1); color: var(--on-line); }
+.leave-dlg .btn:hover { background: #fff; color: var(--board); }
 
 /* the study plan line and the week */
 .plan-line { margin: -12px 0 16px; color: var(--muted); font-size: .95rem; }
 .plan-line a { color: var(--muted); }
 .plan-line b { color: var(--ink); }
-.plan-set input { flex: 1; padding: .4rem .6rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); min-width: 0; }
 .week { margin-top: 12px; }
 .week ol { display: flex; gap: 10px; list-style: none; margin: 0; padding: 0; }
 .week li { display: grid; justify-items: center; gap: 2px; }
@@ -176,9 +168,3 @@
 .week li.on .wk-dot { background: var(--line); border-color: var(--line); }
 .week small { color: var(--muted); font-size: .75rem; }
 .week .quiet { margin: 6px 0 0; font-size: .85rem; }
-
-.settings select { padding: .4rem .5rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--panel); max-width: 100%; }
-.voice-help { padding: 12px 16px; border-left: 5px solid var(--die); background: var(--panel); border-radius: 6px; }
-.voice-help p { margin: 6px 0; }
-.cmd { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.cmd code { background: var(--guide); padding: 4px 8px; border-radius: 4px; overflow-wrap: anywhere; }

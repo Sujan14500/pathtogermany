@@ -39,7 +39,7 @@
 .scene-no { line-height: 1.6; }
 .scene-type { display: flex; gap: 8px; width: 100%; }
 .scene-type input { flex: 1; min-width: 0; padding: .55rem .8rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--platform); font-size: 1.15rem; }
-.scene-type input:focus { border-color: var(--line); outline: none; }
+.scene-type input:focus { border-color: var(--line-deep); outline: none; }
 .scene-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; }
 .scene-opts button { justify-content: center; font: 700 1.15rem var(--display); }
 .scene-swap { border: 0; background: none; padding: 0; color: var(--muted); font-size: .92rem; text-decoration: underline; text-underline-offset: .2em; }

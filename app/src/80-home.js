@@ -21,9 +21,12 @@ function todayPlan(st, q) {
   const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
   return [...cards, ...revisitStops(), ...PARTS.map(part => {   // revisit stops (L15) and spaced mocks (L17): 85-tests.js
     const p = partDone(st.n, part)
-    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
+    const begun = p > 0 || (part === 'words' && D.wordsBy[st.n].some(w => S.cards[w.id]))
+    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : begun ? 'part' : 'todo' }
   }), ...mockStops(st)]
 }
+// The next stop: the first one not done. Words under way don't hold the day up: the cards bring them in, a few a day.
+const nextStep = plan => plan.find(p => p.state !== 'done' && !(p.part === 'words' && p.state === 'part'))
 
 const Mark = () => html`<svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
   <rect width="40" height="40" rx="6" fill="var(--board)" />
@@ -161,13 +164,13 @@ function Home({ data }) {
   const lv = data.level[st.level]
   const q = queue()
   const plan = todayPlan(st, q)
-  const step = plan.find(p => p.state !== 'done')
+  const step = nextStep(plan)
   const next = data.stations[st.n + 1]
   const pick = n => {
     setPicked(n === picked ? null : n)
     setTimeout(() => document.querySelector('.scard')?.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
   }
-  return html`<main class="home">
+  return html`<main class=${`home l${st.level}`}>
     <p class="welcome"><span lang="de">Liebe Sneka, willkommen!</span><small>Dear Sneka, welcome!</small></p>
     <p class="plan-line">${s.settings.plan ? html`<b>Your plan:</b> ${s.settings.plan}`
       : html`<a href="#/" onClick=${e => { e.preventDefault(); openSettings() }}>Plan when and where you study (one sentence)</a>`}</p>
@@ -178,7 +181,7 @@ function Home({ data }) {
         <div class="go-text">
           ${step ? html`<p class="next-text">${STEP[step.part][0](st, q)}</p>
               <a class="btn big" href=${step.href}>${STEP[step.part][1]} <${Arrow} /></a>`
-            : next ? html`<p class="next-text">Every part of <span lang="de">${st.de}</span> is done. Move on to the next station.</p>
+            : next ? html`<p class="next-text">You have been through every part of <span lang="de">${st.de}</span>. Move on: its words keep coming back in your cards.</p>
               <button type="button" class="btn big" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span> <${Arrow} /></button>`
             : html`<p class="next-text">Every station is done. Take the B1 mock exam until it passes every time.</p>
               <a class="btn big" href="#/mock/B1/full">Take the B1 mock exam <${Arrow} /></a>`}
@@ -211,7 +214,7 @@ function Week() {
   const studied = new Set(s.log.map(([, , t]) => new Date(t).toLocaleDateString('en-CA')))
   const days = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - 6 + k); return d })
   const on = d => studied.has(d.toLocaleDateString('en-CA'))
-  const lapsed = !on(days[6]) && !on(days[5])
+  const lapsed = s.log.length > 0 && !on(days[6]) && !on(days[5])   // not for a first day
   return html`<div class="week" aria-label="This week">
     <ol>${days.map(d => html`<li class=${on(d) ? 'on' : ''}><span class="wk-dot"></span><small lang="de">${DAYS[d.getDay()]}</small></li>`)}</ol>
     ${lapsed ? html`<p class="quiet">Never miss twice: five minutes of cards today keeps the habit.</p>` : ''}

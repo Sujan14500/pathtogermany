@@ -22,7 +22,6 @@
 .wmore { grid-column: 2; padding: 0 4px 10px; }
 
 .words-tools { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.words-tools .check { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; cursor: pointer; }
 .toggle { gap: 10px; }
 .toggle-knob { position: relative; width: 34px; height: 20px; border-radius: 999px; background: var(--rule); transition: background .2s; flex: none; }
 .toggle-knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--panel); transition: transform .2s var(--arrive); }

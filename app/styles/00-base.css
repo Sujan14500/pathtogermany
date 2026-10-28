@@ -16,6 +16,8 @@
   --a2: #12A3B4; --a2-deep: #0B6B78;
   --b1: #8A5CF5; --b1-deep: #5F35C4;
   --on-line: #111;                    /* text on a line-coloured band */
+  --on-deep: #fff;                    /* text on --line-deep (hovered buttons) */
+  --hard: #9A6A00;                    /* the Hard grade, a typo */
   --display: "Barlow Semi Condensed", "Bahnschrift SemiCondensed", "Bahnschrift", "Arial Narrow", sans-serif;
   --body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
   --arrive: cubic-bezier(.2, .8, .2, 1);
@@ -36,11 +38,16 @@
     --a1: #F5B33A; --a1-deep: #F5B33A;
     --a2: #3CC4D3; --a2-deep: #3CC4D3;
     --b1: #A98BFF; --b1-deep: #A98BFF;
+    --on-deep: #111; --hard: #E8B04A;
   }
 }
 .lA1 { --line: var(--a1); --line-deep: var(--a1-deep); --on-line: #111; }
 .lA2 { --line: var(--a2); --line-deep: var(--a2-deep); --on-line: #06262B; }
 .lB1 { --line: var(--b1); --line-deep: var(--b1-deep); --on-line: #fff; }
+@media (prefers-color-scheme: dark) {   /* the line colours are bright at night: dark text on them */
+  .lA2 { --on-deep: #06262B; }
+  .lB1 { --on-line: #14092F; --on-deep: #14092F; }
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -55,7 +62,7 @@ button, .button, input, textarea, select { font: inherit; color: inherit; }
 button, .button {
   cursor: pointer; display: inline-flex; align-items: center; gap: .5rem;
   border: 2px solid var(--rule); background: var(--panel); border-radius: 6px;
-  padding: .5rem 1rem; font-weight: 600;
+  padding: .5rem 1rem; font-weight: 600; text-decoration: none;
 }
 button:hover, .button:hover { border-color: var(--line); }
 :focus-visible { outline: 3px solid var(--line-deep); outline-offset: 3px; }
@@ -77,10 +84,11 @@ main { max-width: 1480px; margin: 0 auto; padding: 32px 32px 72px; }
   display: inline-flex; align-items: center; gap: 10px; border: 0; border-radius: 6px;
   background: var(--ink); color: var(--platform); text-decoration: none; font-weight: 700; padding: .6rem 1.1rem;
 }
-.btn:hover { background: var(--line-deep); color: #fff; }
+.btn:hover { background: var(--line-deep); color: var(--on-deep); }
+.btn:disabled { background: var(--rule); color: var(--muted); }
 .btn.big { font-size: 1.15rem; padding: 14px 22px; }
 .arrow { width: 1.25em; height: 1.25em; flex: none; transition: transform .2s var(--arrive); }
-.btn:hover .arrow { transform: translateX(3px); }
+.btn:not(:disabled):hover .arrow { transform: translateX(3px); }
 
 .pbar { display: block; height: 6px; border-radius: 3px; background: var(--rule); overflow: hidden; }
 .pbar i { display: block; height: 100%; width: calc(var(--p) * 100%); background: var(--line); transition: width .8s var(--arrive); }
@@ -103,6 +111,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 32px 32px 72px; }
 .board-top .lb { margin-left: auto; font-size: 1.1rem; padding: 4px 10px; }
 .board-name { margin: 0; font-size: clamp(2.4rem, 5.4vw, 5.2rem); line-height: .98; letter-spacing: -.01em; overflow-wrap: break-word; }
 .board-name a { text-decoration: none; }
+.board a:focus-visible { outline-color: currentColor; }   /* white on the board, dark on the band */
 .board-name a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: .12em; }
 .board-sub { margin: 10px 0 0; color: var(--board-soft); font-size: 1.08rem; }
 .band {

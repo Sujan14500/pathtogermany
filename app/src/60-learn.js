@@ -16,22 +16,22 @@ const TIP_ICONS = {
     <circle cx="24" cy="5" r="3" fill="currentColor" />`,
 }
 // Each tip: what to do, why (one or two sentences), the evidence, and where the app does it.
-// A "here" entry is [label, href] when it's built, or [label, null, 'with Reading'] for what comes in a later phase.
+// A "here" entry is [label, href].
 function tipsFor(s) {
   const st = `#/station/${s.lesson}`
   return [
     { icon: 'test', title: "Test, don't reread", says: 'Pulling a word out of memory makes it stronger; reading it again barely does. So every step here ends in a question, a typed answer or something you say.',
       ev: 'Retrieval practice: Karpicke & Roediger 2008; Dunlosky et al. 2013 (strong evidence).',
       here: [["Today's cards", '#/study'], ['Cover the English in a word list', `${st}/words`], ['Test yourself on a station', `${st}/words`],
-        ['Known words in a text: how much of it you already know', null, 'with Reading']] },
+        ['Known words in a text: how much of it you already know', `${st}/read`]] },
     { icon: 'often', title: 'Little and often', says: 'Spread your study over the days. Each card comes back just before you would forget it, so fifteen minutes a day beats two hours on a Sunday.',
       ev: 'Spacing: Cepeda et al. 2008 (strong). The cards use FSRS, aiming at 90% recall.',
-      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', null, 'with the tests'],
-        ['Station tests that mix in the six stations before', null, 'with the tests'], ['Mock exams spaced at least three days apart', null, 'with the tests']] },
+      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', `${st}/test`],
+        ['Station tests that mix in the six stations before', `${st}/test`], ['Mock exams spaced at least three days apart', '#/mock']] },
     { icon: 'aloud', title: 'Say it aloud', says: 'Words you say out loud stick better than words you read silently. Every card asks you to say it, and the voice says it back.',
       ev: 'The production effect: MacLeod et al. 2010; Fawcett 2013. Shadowing helps most at lower levels (Hamada).',
-      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', null, 'with Listening'],
-        ['Read it again against the clock; hear it again, faster', null, 'with Reading and Listening']] },
+      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', `${st}/listen`],
+        ['Read it again against the clock; hear it again, faster', `${st}/read`]] },
     { icon: 'sleep', title: 'Sleep on it', says: 'Sleep between two sessions halves the work of relearning. Do your cards in the evening and again the next morning.',
       ev: 'Mazza et al. 2016.', here: [["Today's cards", '#/study']] },
     { icon: 'twice', title: 'Never miss twice', says: 'A habit takes about two months to form, and one missed day does not break it; two in a row might. Decide when and where you study, in one sentence.',
@@ -42,13 +42,13 @@ function tipsFor(s) {
       here: [['New cards among the reviews', '#/study'], ['Verb forms', '#/verbs'], ['der, die, das', '#/gender'], ['Cases and endings', '#/cases']] },
     { icon: 'guess', title: 'Guess first', says: 'A guess before the lesson, even a wrong one, makes the lesson stick. Each grammar point starts with one question.',
       ev: 'Pretesting: Kornell, Hays & Bjork 2009; Richland, Kornell & Kao 2009.',
-      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', null, 'with Reading']] },
+      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', `${st}/read`]] },
     { icon: 'hook', title: 'Hooks for tricky words only', says: 'Most words stick through repetition. For the few that keep slipping, make a picture: der words frozen in blue ice, die words on fire, das words overgrown with leaves.',
       ev: 'The keyword method: Atkinson & Raugh 1975; mixed evidence on its own, so only for words missed four times.',
       here: [['Tricky words get a memory hook in your cards', '#/study']] },
     { icon: 'test', title: 'The exam day', says: 'Know the format before the day: sit at least two full mock exams under time. Read the questions before the text, answer every question (a wrong answer costs nothing), and tick off every point of a writing task.',
       ev: 'Goethe-Zertifikat: 60% passes; at A2 that means 60% of the written part and of Sprechen, and at B1 each module is passed on its own.',
-      here: [['Practice tests in every module', null, 'with the tests'], ['Timed mock exams', null, 'with the tests']] },
+      here: [['Practice tests in every module', '#/tests'], ['Timed mock exams', '#/mock']] },
   ]
 }
 
@@ -57,7 +57,7 @@ function Tips({ arg }) {
   const tips = tipsFor(s)
   const i = Math.min(Math.max(Number(arg) || 0, 0), tips.length - 1)
   const t = tips[i]
-  const go = t.here.find(([, href]) => href)
+  const go = t.here[0]
   const open = (e, href) => { if (href === '#/' && /Settings/.test(e.currentTarget.textContent)) { e.preventDefault(); location.hash = '#/'; setTimeout(openSettings, 300) } }
   return html`<main class="page tips">
     <header class="masthead"><h1>How you learn here</h1>
@@ -72,11 +72,10 @@ function Tips({ arg }) {
         <h2>${t.title}</h2>
         <p class="tip-says">${t.says}</p>
         <h3>In this app</h3>
-        <ul class="tip-here">${t.here.map(([label, href, when]) => html`<li class=${href ? '' : 'later'}>
-          ${href ? html`<a href=${href} onClick=${e => open(e, href)}>${label}</a>` : html`<span>${label}</span> <small>${when}</small>`}</li>`)}</ul>
+        <ul class="tip-here">${t.here.map(([label, href]) => html`<li><a href=${href} onClick=${e => open(e, href)}>${label}</a></li>`)}</ul>
         <p class="tip-ev">${t.ev}</p>
         <div class="after">
-          ${go ? html`<a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>` : ''}
+          <a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>
           ${i > 0 ? html`<a class="button" href=${`#/tips/${i - 1}`}>← Previous</a>` : ''}
           ${i < tips.length - 1 ? html`<a class="button" href=${`#/tips/${i + 1}`}>Next: ${tips[i + 1].title} →</a>` : ''}
         </div>

@@ -14,11 +14,9 @@ export function seededRandom(seed) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296
   }
 }
-const xmShuffle = (xs, r) => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
 const strHash = s => [...s].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0, 2166136261)   // FNV-1a
 const xmAddDays = (d, k) => { const x = new Date(`${d}T12:00`); x.setDate(x.getDate() + k); return x.toLocaleDateString('en-CA') }
 const xmDate = d => new Date(`${d}T12:00`).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })
-const tClock = ms => { const s = Math.ceil(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` }
 
 // The Goethe papers, checked against Goethe's Durchführungsbestimmungen (2025) and Modellsätze (docs/08-exam-formats.md).
 // Per module: minutes [full, short], and per part [Teil, items in a full paper, items in a short one, raw points]. Lesen
@@ -50,7 +48,7 @@ const PART_EN = {
     Lesen: ['Two short messages. Richtig or falsch?', 'Ads and web pages, two per situation. Where do you find the information?', 'Signs and notices. Richtig or falsch?'],
     Schreiben: ['Fill in a form for someone else, from the text.', 'Write a short message (about 30 words) covering all three points.'],
     Sprechen: ['Introduce yourself, then spell a word and say a number.', 'A topic and word cards: ask a question with your card, answer your partner’s.', 'Picture cards: make a request and react to one.'] },
-  A2: { Lesen: ['A short newspaper article. Choose a, b or c.', 'An information board. Where do you go? Choose a, b or c.', 'An email or letter. Choose a, b or c.', 'Six ads, five people. Which ad fits each person?'],
+  A2: { Lesen: ['A short newspaper article. Choose a, b or c.', 'An information board. Where do you go? Choose a, b or c.', 'An email or letter. Choose a, b or c.', 'Six ads, five people. Which ad fits each person? One person has none (x).'],
     Hören: ['Five short texts: radio, phone messages, announcements. Choose a, b or c.', 'One longer conversation, played once. Match each person or day to a choice.',
       'Short everyday conversations, each played once. Choose a, b or c.', 'A radio interview. Did the guest say it? Ja or nein.'],
     Schreiben: ['A text message (20–30 words) covering all three points.', 'An email (30–40 words) covering all three points.'],
@@ -89,12 +87,11 @@ function xmItem(m, x, pts) {
 }
 
 // A vocabulary (vq) or grammar (gq) question as one exam question with four options.
-const xmGap = s => s.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)
 const VQ_ASK = { context: 'Which word fits the gap?', synonym: 'Which means the same as the underlined part?', usage: 'In which sentence is the word used correctly?' }
 function xmSingle(x) {
   const n = x.n ?? gpoint(x.g)?.n
   const at = x.u ? x.q.indexOf(x.u) : -1
-  const body = x.g || x.type === 'context' ? xmGap(x.q) : at >= 0 ? html`${x.q.slice(0, at)}<u>${x.u}</u>${x.q.slice(at + x.u.length)}` : html`<b>${x.q}</b>`
+  const body = x.g || x.type === 'context' ? gapped(x.q) : at >= 0 ? html`${x.q.slice(0, at)}<u>${x.u}</u>${x.q.slice(at + x.u.length)}` : html`<b>${x.q}</b>`
   return { kind: 'q', x, n, qs: [{ q: html`<small class="xm-ask" lang="en">${x.g ? 'Which form fits the gap?' : VQ_ASK[x.type]}</small>${body}`,
     format: 'abcd', opts: x.opts, a: x.a, why: x.g ? html`${x.why} <i class="xm-en">${x.en}</i>` : x.why }] }
 }
@@ -122,14 +119,14 @@ function mockPaper(lv, size) {
 // Practice tests: a fixed order per part (exam items first), paper k takes the k-th window of it.
 function practiceOrder(pool, salt) {
   const r = seededRandom(strHash(salt))
-  return [...xmShuffle(pool.filter(isExamItem), r), ...xmShuffle(pool.filter(x => !isExamItem(x)), r)]
+  return [...shuffle(pool.filter(isExamItem), r), ...shuffle(pool.filter(x => !isExamItem(x)), r)]
 }
 const xmWindow = (order, c, k) => [...new Set(Array.from({ length: Math.min(c, order.length) }, (_, j) => order[((k - 1) * c + j) % order.length]))]
 const xmBanks = {}
 function xmBank(lv, mod) {   // the level's vocabulary or grammar questions, in a fixed order
   const xs = mod === 'wortschatz' ? D.vq.filter(q => q.level === lv)
     : D.grammar.filter(g => D.stations[g.n]?.level === lv).flatMap(g => (D.gq[g.id] ?? []).map(q => ({ ...q, n: g.n })))
-  return (xmBanks[lv + mod] ??= xmShuffle(xs, seededRandom(strHash(lv + mod))))
+  return (xmBanks[lv + mod] ??= shuffle(xs, seededRandom(strHash(lv + mod))))
 }
 const skillSpec = (lv, mod) => EXAMS[lv].mods.find(x => MOD_OF[x[0]] === mod)
 function paperCount(lv, mod) {
@@ -150,7 +147,7 @@ function practicePaper(lv, mod, k) {
 // Station test (L16): words, grammar and a recording from this station, and about a third from the six stations before.
 function stationPaper(n, seed) {
   const r = seededRandom(seed)
-  const take = (xs, c) => xmShuffle(xs, r).slice(0, c)
+  const take = (xs, c) => shuffle(xs, r).slice(0, c)
   const vq = k => D.vq.filter(q => q.n === k)
   const gq = k => (D.grammarBy[k] ?? []).flatMap(g => (D.gq[g.id] ?? []).map(q => ({ ...q, n: k })))
   const before = Array.from({ length: Math.min(6, n - 1) }, (_, i) => n - 1 - i)
@@ -159,7 +156,7 @@ function stationPaper(n, seed) {
   const hear = take((D.listeningBy[n] ?? []).filter(x => x.questions.length <= 2), 1)
   const st = D.stations[n]
   return xmNumber({ key: `station/${n}`, kind: 'station', level: st.level, title: `Station test · ${st.de}`, mods: [{ m: 'Station test', min: 0, parts: [
-    { teil: 'Wörter und Grammatik', en: 'Choose the right answer. Some questions come from earlier stations.', items: xmShuffle([...own, ...back], r).map(xmSingle) },
+    { teil: 'Wörter und Grammatik', en: 'Choose the right answer. Some questions come from earlier stations.', items: shuffle([...own, ...back], r).map(xmSingle) },
     { teil: 'Hören', en: 'Listen, then answer. You can play it twice.', items: hear.map(x => xmItem('Hören', x)) },
   ].filter(p => p.items.length) }] })
 }
@@ -305,7 +302,7 @@ function XmSitting({ paper, onDone, after }) {
       ${paper.mods.length > 1 ? html`<ol class="xm-steps" aria-label="Modules">${paper.mods.map((x, i) => html`<li class=${i < mod ? 'past' : i === mod ? 'on' : ''}
         aria-current=${i === mod ? 'step' : null}><span class="xm-stepdot"></span><span lang="de">${x.m}</span></li>`)}</ol>` : html`<span class="xm-steps"></span>`}
       ${qs.length ? html`<span class="xm-done">${done} of ${qs.length} answered</span>` : ''}
-      ${left !== null ? html`<span class=${`xm-clock${left < 5 * MIN ? ' low' : ''}`} role="timer" aria-label="Time left in this module">${tClock(left)}</span>` : ''}
+      ${left !== null ? html`<span class=${`xm-clock${left < 5 * MIN ? ' low' : ''}`} role="timer" aria-label="Time left in this module">${mmss(left / 1000)}</span>` : ''}
       <button type="button" class="btn" onClick=${handIn}>${last ? 'Hand in' : html`Hand in <span lang="de">${md.m}</span>`} <${Arrow} /></button>
     </div>
     <header class="xm-modhead"><h2 lang="de">${md.m}</h2>${md.min ? html`<p class="quiet">${`${md.min} minutes${paper.kind === 'mock' ? ', as in the exam' : ''}.${md.m === 'Hören'
@@ -343,7 +340,6 @@ const rateShare = (groups, v = {}) => { const ks = rubricKeys(groups); return ks
 const formShare = (t, fields = [], same = {}) => t.form.fields.filter(([, a], i) => normField(fields[i]) === normField(a) || same[i]).length / t.form.fields.length
 const draftShare = it => { const d = S.drafts[it.x.id] ?? {}; return it.x.form ? formShare(it.x, d.fields, d.same) : rateShare(xmGroups(it.kind, it.x), d.rubric) }
 const draftRated = it => { const d = S.drafts[it.x.id] ?? {}; return it.x.form ? !!d.checked : rubricScore(xmGroups(it.kind, it.x), d.rubric) !== null }
-const themOf = t => (t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner')
 
 function XmWrite({ t, value, onChange }) {
   const kind = WRITE_KIND[t.level][t.part]
@@ -387,8 +383,6 @@ function XmSpeak({ t, onRec }) {
       ${phase === 'prep' || phase === 'speak' ? html`<${VoicePartner} lines=${t.partner} label=${themOf(t)} />` : ''}
     </section></div>`
 }
-
-const XM_WHO = { A: 'Woman', B: 'Man', N: 'Announcer' }
 
 function XmScore({ paper, work, onDone }) {
   const tasks = xmTasks(paper)
@@ -472,7 +466,7 @@ function XmReview({ paper, ans }) {
   const quote = it => {
     const ev = shown[it.x.id ?? it.qs[0].id]
     if (!ev) return ''
-    const lines = it.kind === 'read' ? it.x.blocks.flatMap(b => b.s.map((s, k) => [`${b.id}.${k}`, s[0], s[1]])).filter(([id]) => ev.includes(id))
+    const lines = it.kind === 'read' ? sentences(it.x).map(x => [x.id, x.de, x.en]).filter(([id]) => ev.includes(id))
       : it.x.lines.map((l, i) => [i, l.de, l.en]).filter(([i]) => ev.includes(i))
     return html`<blockquote class="xm-ev">${lines.map(([, de, en]) => html`<p><span lang="de">${de}</span><small>${en}</small></p>`)}</blockquote>`
   }
@@ -482,14 +476,14 @@ function XmReview({ paper, ans }) {
       const st = D.stations[it.n]
       const [tab, what] = it.kind === 'read' ? ['read', 'reading'] : it.kind === 'listen' ? ['listen', 'listening'] : it.x.g ? ['grammar', gpoint(it.x.g)?.title] : ['words', html`the word <span lang="de">${it.x.w}</span>`]
       return html`<article class="xm-rev">
-        <header><span class="xm-teil" lang="de">${md.m === 'Station test' ? '' : `${md.m} `}${p.teil}</span>
+        <header><span class="xm-teil" lang="de">${md.m === 'Station test' || md.m === p.teil ? '' : `${md.m} `}${p.teil}</span>
           ${it.kind === 'read' ? html`<b lang="de">${it.x.title}</b>` : it.kind === 'listen' ? html`<span>${it.x.setup}</span>` : ''}
           ${st ? html`<a class="xm-study" href=${`#/station/${it.n}/${tab}`}>Study ${what} at <span lang="de">${st.de}</span> <${Arrow} /></a>` : ''}</header>
         <ol class="eqs">${wrong(it).map(q => html`<${ExamQuestion} key=${q.id} q=${q} k=${q.id} pick=${ans[q.id]} done=${true} onPick=${() => {}}
           where=${it.kind === 'listen' ? 'recording' : 'text'} onShow=${ev => setShown(s => ({ ...s, [it.x.id ?? it.qs[0].id]: ev }))} />`)}</ol>
         ${quote(it)}
         ${it.kind === 'read' ? html`<details class="xm-whole"><summary>The whole text</summary><${Reader} t=${it.bare} exam /></details>` : ''}
-        ${it.kind === 'listen' ? html`<details class="xm-whole"><summary>What was said</summary><ol class="xm-model">${it.x.lines.map(l => html`<li><b>${XM_WHO[l.who]}</b>
+        ${it.kind === 'listen' ? html`<details class="xm-whole"><summary>What was said</summary><ol class="xm-model">${it.x.lines.map(l => html`<li><b>${whoName(l.who, it.x)}</b>
           <span lang="de">${l.de}</span><small>${l.en}</small></li>`)}</ol></details>` : ''}
       </article>`
     })}
@@ -503,7 +497,7 @@ function StationTest({ n }) {
   const rec = s.tests[`station/${n}`]
   const due = revisitDue(rec)
   const revisit = !!due && due <= today()
-  const seed = n * 100 + (rec?.revisits.length ?? 0)
+  const seed = n * 100 + (rec?.revisits.length ?? 0) + (rec?.first ? 1 : 0)   // retakes before a pass: the same paper; each revisit: a new one
   const paper = useMemo(() => stationPaper(n, seed), [n, seed])
   const [run, setRun] = useState(null)
   const st = D.stations[n]
@@ -528,7 +522,7 @@ function StationTest({ n }) {
       <ul class="xm-facts">
         <li><b>${paper.count}</b><small>questions in exam formats</small></li>
         <li><b>${own}</b><small>from this station</small></li>
-        <li><b>${paper.count - own}</b><small>from the six before</small></li>
+        ${paper.count > own ? html`<li><b>${paper.count - own}</b><small>from the stations before</small></li>` : ''}
         <li><b>60%</b><small>passes</small></li>
       </ul>
       <p class="quiet">Words, grammar and a recording. Mixing in earlier stations makes all of them stick.</p>

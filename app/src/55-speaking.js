@@ -8,7 +8,6 @@ const SPEAK_KIND = {
   A2: { 'Teil 1': 'Fragen zur Person', 'Teil 2': 'Über sich sprechen', 'Teil 3': 'Etwas zusammen planen' },
   B1: { 'Teil 1': 'Gemeinsam etwas planen', 'Teil 2': 'Ein Thema präsentieren', 'Teil 3': 'Über eine Präsentation sprechen' },
 }
-const mmss = s => { const c = Math.max(0, Math.ceil(s)); return `${Math.floor(c / 60)}:${String(c % 60).padStart(2, '0')}` }
 // Brave lists webkitSpeechRecognition but has no speech service behind it, so it never hears anything.
 const transcriptNote = () => (navigator.brave ? 'Brave has no speech-to-text, so there is no transcript here; the recording works. For a transcript, open this file in Microsoft Edge.'
   : SpeechRec ? null : 'This browser has no German speech-to-text, so there is no transcript; the recording works.')
@@ -17,6 +16,7 @@ const phrasesHeard = (phrases, heard) => {
   const h = new Set(tokens(heard.toLowerCase()))
   return new Set(phrases.map(([de], i) => { const ws = tokens(de.toLowerCase()); return ws.length && ws.filter(w => h.has(w)).length / ws.length >= .6 ? i : -1 }).filter(i => i >= 0))
 }
+const themOf = t => (t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner')   // who speaks with you
 const SayLine = ({ who, de }) => html`<button class="say" type="button" aria-label="Play this line" onClick=${e => { e.stopPropagation(); speakLines([[who, de]]) }}><${Speaker} /></button>`
 
 // A ring that empties as the time runs out; it calls onEnd once at zero.
@@ -126,7 +126,7 @@ function SpeakTask({ t, n }) {
   useEffect(() => { if (phase === 'done' && r.state === 'rec') r.stop() }, [phase, r.state])   // a slow permission prompt
   const speakNow = () => { stopSpeech(); setPhase('speak'); if (canRecord()) r.start() }
   const finish = () => { r.stop(); stopSpeech(); setPhase('done') }
-  const them = t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner'
+  const them = themOf(t)
   const note = transcriptNote()
   const used = phase === 'done' && r.heard ? phrasesHeard(t.phrases, r.heard) : null
   const groups = rubricGroups('speak', t.level, [], t.part)
@@ -153,7 +153,7 @@ function SpeakTask({ t, n }) {
       </div>`,
     done: html`<div class="sp-body sp-wide">
         <h3>Your recording</h3>
-        ${r.url ? html`<audio controls src=${r.url}></audio>` : html`<p class="quiet">${r.error || (canRecord() ? 'Nothing was recorded.' : 'This browser cannot record here.')}</p>`}
+        ${r.url ? html`<audio controls src=${r.url}></audio>` : html`<p class="quiet">${r.error || (canRecord() ? 'Nothing was recorded.' : 'This browser cannot record here.')} Score what you said from memory.</p>`}
         ${r.heard ? html`<p class="sp-heard"><b>What the browser heard</b> <span lang="de">${r.heard}</span></p>`
           : r.url ? html`<p class="quiet">${note ?? 'No transcript came back: speech-to-text needs an internet connection.'}</p>` : ''}
         <div class="sp-btns"><button type="button" onClick=${() => { stopSpeech(); setPhase('ready') }}>Try again</button></div>

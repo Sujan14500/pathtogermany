@@ -1,13 +1,14 @@
 // ---- recording: MediaRecorder, and the browser's German speech recognition where it has one ----
 
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition
+const canRecord = () => !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder)
 // Records the microphone; where SpeechRecognition (de-DE) exists, also writes down what it heard. Audio never leaves
 // the browser.
 function useRecorder() {
   const [st, setSt] = useState({ state: 'idle', url: null, heard: '', error: null })
   const rec = useRef(null)
   const start = async () => {
-    if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+    if (!canRecord()) {
       setSt(x => ({ ...x, state: 'idle', error: 'This browser cannot record. Use Chrome or Edge on this laptop.' }))
       return false
     }

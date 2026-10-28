@@ -54,7 +54,32 @@ def all_routes():
     n = sum(len(lv['stations']) for lv in levels)
     tabs = ['words', 'grammar', 'read', 'listen', 'write', 'speak', 'pictures', 'test']
     pages = ['/', '/study', '/practice', '/tests', '/mock', '/pictures', '/verbs', '/gender', '/cases', '/sounds', '/tips/0', '/station/99']
-    return pages + [f'/station/{i}/{t}' for i in range(1, n + 1) for t in tabs]
+    return pages + [f'/station/{i}/{t}' for i in range(1, n + 1) for t in tabs] + paper_routes()
+
+
+def paper_routes():
+    """Every practice test (/tests/<lv>/<mod>/<k>) and both mocks per level. The counts follow paperCount() in
+    app/src/85-tests.js, whose EXAMS and QSIZE tables are read from there."""
+    src = (APP / 'src/85-tests.js').read_text(encoding='utf-8')
+    load = lambda name: json.loads((APP / f'data/{name}.json').read_text(encoding='utf-8'))
+    qsize = {lv: int(k) for lv, k in re.findall(r'(A1|A2|B1): (\d+)', re.search(r'const QSIZE = \{([^}]*)\}', src)[1])}
+    exams = src[src.index('const EXAMS'):src.index('const PART_EN')]
+    level_of = {st['n']: lv['level'] for lv in load('syllabus') for st in lv['stations']}
+    point_lv = {g['id']: level_of[g['n']] for g in load('grammar')}
+    pools = {'Lesen': load('reading'), 'Hören': load('listening'), 'Schreiben': load('writing'), 'Sprechen': load('speaking')}
+    ids = {'Lesen': 'lesen', 'Hören': 'hoeren', 'Schreiben': 'schreiben', 'Sprechen': 'sprechen'}
+    drills = load('drills')
+    out = []
+    for lv in ['A1', 'A2', 'B1']:
+        block = exams[exams.index(f'{lv}: {{'):][:exams[exams.index(f'{lv}: {{'):].index('] },') + 4]
+        count = {'wortschatz': len([q for q in drills['vq'] if q['level'] == lv]) // qsize[lv],
+                 'grammatik': len([q for q in drills['gq'] if point_lv.get(q['g']) == lv]) // qsize[lv]}
+        for m, parts in re.findall(r"\['(\w+)', \[\d+, \d+\], \[(.*?)\]\]\]", block):
+            count[ids[m]] = max(-(-len([x for x in pools[m] if x['level'] == lv and x['part'] == teil]) // int(c))
+                                for teil, c in re.findall(r"'(Teil \d)', (\d+)", parts))
+        out += [f'/tests/{lv}'] + [f'/tests/{lv}/{mod}/{k}' for mod, c in count.items() for k in range(1, max(1, c) + 1)]
+        out += [f'/mock/{lv}/full', f'/mock/{lv}/short']
+    return out
 
 
 def run(out, route='/', w=1500, h=1000, dark=False, clicks=(), routes=(), probe=''):
@@ -70,7 +95,7 @@ def run(out, route='/', w=1500, h=1000, dark=False, clicks=(), routes=(), probe=
     args.append(f'--blink-settings=preferredColorScheme={0 if dark else 1}')
     args += [f'--screenshot={Path(out).resolve()}' if out else '--dump-dom', harness.as_uri()]
     try:
-        p = subprocess.run(args, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=180)
+        p = subprocess.run(args, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=900)
     finally:
         harness.unlink(missing_ok=True)
     errors, current, seen = [], route, set()
