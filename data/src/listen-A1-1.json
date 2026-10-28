@@ -8,8 +8,8 @@
   "lines": [
    {
     "who": "B",
-    "de": "Guten Morgen! Wie heißen Sie, bitte?",
-    "en": "Good morning! What is your name, please?"
+    "de": "Hallo! Wie heißen Sie, bitte?",
+    "en": "Hello! What is your name, please?"
    },
    {
     "who": "A",
@@ -18,8 +18,8 @@
    },
    {
     "who": "B",
-    "de": "Priya … Schreibt man das mit Jot? Pe, Er, I, Jot, A?",
-    "en": "Priya … Is that written with a J? P, R, I, J, A?"
+    "de": "Priya … Mit Jot? Pe, Er, I, Jot, A?",
+    "en": "Priya … With a J? P, R, I, J, A?"
    },
    {
     "who": "A",
@@ -28,8 +28,8 @@
    },
    {
     "who": "B",
-    "de": "Ah, mit Ypsilon. Danke schön!",
-    "en": "Ah, with a Y. Thank you!"
+    "de": "Ah, mit Ypsilon. Vielen Dank!",
+    "en": "Ah, with a Y. Thanks a lot!"
    }
   ],
   "questions": [
@@ -68,8 +68,8 @@
    },
    {
     "who": "A",
-    "de": "Moment … dreiundvierzig, sechsundachtzig, zwölf?",
-    "en": "Just a moment … forty-three, eighty-six, twelve?"
+    "de": "Ah … dreiundvierzig, sechsundachtzig, zwölf?",
+    "en": "Ah … forty-three, eighty-six, twelve?"
    },
    {
     "who": "B",
@@ -109,23 +109,23 @@
   "lines": [
    {
     "who": "N",
-    "de": "Eine Information für den Deutschkurs von Herrn Weber:",
-    "en": "Information for Herr Weber's German course:"
+    "de": "Für den Kurs von Herrn Weber:",
+    "en": "For Herr Weber's course:"
    },
    {
     "who": "N",
-    "de": "Der Kurs ist heute nicht in Zimmer dreißig, sondern in Zimmer dreizehn.",
-    "en": "Today the course is not in room thirty but in room thirteen."
+    "de": "Der Kurs ist heute nicht in Zimmer dreißig. Er ist in Zimmer dreizehn.",
+    "en": "Today the course is not in room thirty. It is in room thirteen."
    },
    {
     "who": "N",
-    "de": "Zimmer dreizehn ist im ersten Stock.",
-    "en": "Room thirteen is on the first floor."
+    "de": "Noch einmal: Zimmer dreizehn, nicht dreißig!",
+    "en": "Once more: room thirteen, not thirty!"
    }
   ],
   "questions": [
    {
-    "q": "Der Deutschkurs ist heute in Zimmer dreißig.",
+    "q": "Der Kurs ist heute in Zimmer dreißig.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -133,9 +133,10 @@
     ],
     "a": 1,
     "ev": [
-     1
+     1,
+     2
     ],
-    "why": "The course is 'nicht in Zimmer dreißig, sondern in Zimmer dreizehn': room 13, not 30. Listen for -zehn (13) against -ßig (30)."
+    "why": "The course is 'nicht in Zimmer dreißig', it is 'in Zimmer dreizehn': room 13, not 30. Listen for -zehn (13) against -ßig (30)."
    }
   ]
  },
@@ -148,13 +149,13 @@
   "lines": [
    {
     "who": "B",
-    "de": "Hallo Priya, hier ist Herr Weber von der Sprachschule.",
-    "en": "Hello Priya, this is Herr Weber from the language school."
+    "de": "Hallo Priya, hier ist Herr Weber.",
+    "en": "Hello Priya, this is Herr Weber."
    },
    {
     "who": "B",
-    "de": "Ich habe eine Frage. Bitte rufen Sie mich an.",
-    "en": "I have a question. Please call me."
+    "de": "Ich habe eine Frage zum Kurs.",
+    "en": "I have a question about the course."
    },
    {
     "who": "B",
@@ -199,8 +200,8 @@
    },
    {
     "who": "A",
-    "de": "Ich heiße Priya. Ich bin eine Freundin von Lena.",
-    "en": "My name's Priya. I'm a friend of Lena's."
+    "de": "Ich heiße Priya. Ich kenne Lena aus dem Sprachcafé.",
+    "en": "My name's Priya. I know Lena from the language café."
    },
    {
     "who": "B",
@@ -219,8 +220,8 @@
    },
    {
     "who": "A",
-    "de": "Nein, ich wohne in der Gartenstraße. Das ist nicht weit.",
-    "en": "No, I live on Gartenstraße. That's not far."
+    "de": "Nein, ich wohne in der Gartenstraße.",
+    "en": "No, I live on Gartenstraße."
    }
   ],
   "questions": [
@@ -254,8 +255,8 @@
    },
    {
     "who": "A",
-    "de": "Ja, genau.",
-    "en": "Yes, exactly."
+    "de": "Ja, richtig.",
+    "en": "Yes, that's right."
    },
    {
     "who": "B",
@@ -305,18 +306,18 @@
   "lines": [
    {
     "who": "N",
-    "de": "Liebe Studentinnen und Studenten aus dem Ausland, herzlich willkommen!",
-    "en": "Dear students from abroad, welcome!"
+    "de": "Guten Tag! Eine Information für die Studentinnen und Studenten aus dem Ausland:",
+    "en": "Hello! Information for the students from abroad:"
    },
    {
     "who": "N",
-    "de": "Der Deutschtest ist heute in Zimmer acht.",
-    "en": "The German test is in room eight today."
+    "de": "Der Deutschtest ist heute um neun Uhr.",
+    "en": "The German test is at nine o'clock today."
    },
    {
     "who": "N",
-    "de": "Bitte bringen Sie Ihren Pass und einen Kugelschreiber mit. Schreiben Sie bitte nicht mit Bleistift.",
-    "en": "Please bring your passport and a pen. Please do not write in pencil."
+    "de": "Bitte kommen Sie mit Ihrem Pass und einem Kugelschreiber. Bitte nicht mit Bleistift!",
+    "en": "Please come with your passport and a pen. Not in pencil, please!"
    }
   ],
   "questions": [
@@ -331,7 +332,7 @@
     "ev": [
      2
     ],
-    "why": "You need 'Ihren Pass und einen Kugelschreiber' (a pen). A pencil is what you should not use: 'nicht mit Bleistift'."
+    "why": "You come 'mit Ihrem Pass und einem Kugelschreiber' (a pen). A pencil is what you should not use: 'nicht mit Bleistift'."
    }
   ]
  },
@@ -349,8 +350,8 @@
    },
    {
     "who": "A",
-    "de": "Hier ist meine neue Adresse.",
-    "en": "Here's my new address."
+    "de": "Hier ist meine Adresse.",
+    "en": "Here's my address."
    },
    {
     "who": "A",
@@ -394,13 +395,13 @@
   "lines": [
    {
     "who": "B",
-    "de": "Schau mal, Lena, das ist meine Familie.",
-    "en": "Look, Lena, this is my family."
+    "de": "Hier, Lena, das ist meine Familie.",
+    "en": "Here, Lena, this is my family."
    },
    {
     "who": "A",
-    "de": "Oh, schön! Ist das deine Schwester?",
-    "en": "Oh, nice! Is that your sister?"
+    "de": "Oh! Ist das deine Schwester?",
+    "en": "Oh! Is that your sister?"
    },
    {
     "who": "B",
@@ -499,18 +500,18 @@
   "lines": [
    {
     "who": "N",
-    "de": "Liebe Kunden, der kleine Leon, vier Jahre alt, sucht seine Oma, Frau Kaiser.",
-    "en": "Dear customers, little Leon, four years old, is looking for his grandma, Frau Kaiser."
+    "de": "Liebe Kunden, hier ist der kleine Leon, vier Jahre alt. Wo ist seine Oma, Frau Kaiser?",
+    "en": "Dear customers, little Leon, four years old, is here. Where is his grandma, Frau Kaiser?"
    },
    {
     "who": "N",
-    "de": "Frau Kaiser, bitte kommen Sie zur Kasse drei. Leon wartet dort auf Sie.",
-    "en": "Frau Kaiser, please come to checkout three. Leon is waiting for you there."
+    "de": "Frau Kaiser, bitte kommen Sie zur Information. Leon ist dort.",
+    "en": "Frau Kaiser, please come to the information desk. Leon is there."
    }
   ],
   "questions": [
    {
-    "q": "Leon sucht seine Mutter.",
+    "q": "Frau Kaiser ist Leons Mutter.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -520,7 +521,7 @@
     "ev": [
      0
     ],
-    "why": "Leon is looking for 'seine Oma', his grandmother Frau Kaiser, not his mother."
+    "why": "Frau Kaiser is 'seine Oma', Leon's grandmother, not his mother."
    }
   ]
  },
@@ -538,8 +539,8 @@
    },
    {
     "who": "A",
-    "de": "Ich habe eine tolle Nachricht: Ich bin wieder Oma!",
-    "en": "I have great news: I'm a grandma again!"
+    "de": "Ich bin wieder Oma!",
+    "en": "I'm a grandma again!"
    },
    {
     "who": "A",
@@ -553,8 +554,8 @@
    },
    {
     "who": "A",
-    "de": "Ruf mich doch mal an! Tschüss!",
-    "en": "Give me a call! Bye!"
+    "de": "Bis bald! Tschüss!",
+    "en": "See you soon! Bye!"
    }
   ],
   "questions": [
@@ -644,8 +645,8 @@
    },
    {
     "who": "A",
-    "de": "Okay, Milch und Brot. Und Eier?",
-    "en": "Okay, milk and bread. And eggs?"
+    "de": "Gut, Milch und Brot. Und Eier?",
+    "en": "Right, milk and bread. And eggs?"
    },
    {
     "who": "B",
@@ -1359,8 +1360,8 @@
    },
    {
     "who": "A",
-    "de": "Prima, dann nehme ich die schwarze.",
-    "en": "Great, then I'll take the black one."
+    "de": "Gut, dann nehme ich die schwarze.",
+    "en": "Good, then I'll take the black one."
    }
   ],
   "questions": [
@@ -1410,8 +1411,8 @@
    },
    {
     "who": "B",
-    "de": "Am Freitag? Okay. Kann ich dann mit Karte bezahlen?",
-    "en": "On Friday? Okay. Can I pay by card then?"
+    "de": "Am Freitag? Na gut. Kann ich dann mit Karte bezahlen?",
+    "en": "On Friday? All right then. Can I pay by card then?"
    },
    {
     "who": "A",
@@ -1494,8 +1495,8 @@
    },
    {
     "who": "B",
-    "de": "Und eine gute Nachricht: Die Reparatur kostet nicht fünfzehn Euro, sondern nur zwölf Euro fünfzig.",
-    "en": "And some good news: the repair does not cost fifteen euros, only twelve euros fifty."
+    "de": "Und eine gute Nachricht: Die Reparatur kostet nur zwölf Euro fünfzig, nicht fünfzehn Euro.",
+    "en": "And some good news: the repair costs only twelve euros fifty, not fifteen euros."
    },
    {
     "who": "B",
@@ -1516,7 +1517,7 @@
     "ev": [
      2
     ],
-    "why": "'Nicht fünfzehn Euro, sondern nur zwölf Euro fünfzig' = 12.50 euros. Careful: zwölf (12), not zwanzig (20)."
+    "why": "'Nur zwölf Euro fünfzig, nicht fünfzehn Euro' = 12.50 euros. Careful: zwölf (12), not zwanzig (20)."
    }
   ]
  },
@@ -1634,8 +1635,8 @@
    },
    {
     "who": "N",
-    "de": "Der Regionalexpress nach Köln, Abfahrt vierzehn Uhr zwölf, fährt heute nicht von Gleis drei, sondern von Gleis fünf.",
-    "en": "The regional express to Cologne, departing at 14:12, is not leaving from platform three today but from platform five."
+    "de": "Der Regionalexpress nach Köln, Abfahrt vierzehn Uhr zwölf, fährt heute von Gleis fünf, nicht von Gleis drei.",
+    "en": "The regional express to Cologne, departing at 14:12, is leaving from platform five today, not from platform three."
    },
    {
     "who": "N",
@@ -1655,7 +1656,7 @@
     "ev": [
      1
     ],
-    "why": "It leaves 'nicht von Gleis drei, sondern von Gleis fünf': platform 5."
+    "why": "It leaves 'von Gleis fünf, nicht von Gleis drei': platform 5."
    }
   ]
  },
@@ -1678,8 +1679,8 @@
    },
    {
     "who": "B",
-    "de": "Nimm die Straßenbahn, Linie zwei, und fahr bis zur Haltestelle Goetheplatz.",
-    "en": "Take the tram, line two, and ride to the Goetheplatz stop."
+    "de": "Nimm die Straßenbahn Nummer zwei und fahr bis zur Haltestelle Goetheplatz.",
+    "en": "Take tram number two and ride to the Goetheplatz stop."
    },
    {
     "who": "B",
@@ -1701,7 +1702,7 @@
      1,
      2
     ],
-    "why": "The bus doesn't run at the weekend, so: 'Nimm die Straßenbahn, Linie zwei.'"
+    "why": "The bus doesn't run at the weekend, so: 'Nimm die Straßenbahn Nummer zwei.'"
    }
   ]
  },
@@ -1790,8 +1791,8 @@
    },
    {
     "who": "B",
-    "de": "Okay. Vielen Dank.",
-    "en": "Okay. Thank you very much."
+    "de": "Gut. Vielen Dank.",
+    "en": "All right. Thank you very much."
    }
   ],
   "questions": [
@@ -2016,8 +2017,8 @@
    },
    {
     "who": "N",
-    "de": "Der Flug hat leider eine Stunde Verspätung. Er fliegt nicht um fünfzehn Uhr zwanzig, sondern um sechzehn Uhr zwanzig.",
-    "en": "Unfortunately the flight is an hour late. It does not leave at 15:20 but at 16:20."
+    "de": "Der Flug hat leider eine Stunde Verspätung. Er fliegt erst um sechzehn Uhr zwanzig, nicht um fünfzehn Uhr zwanzig.",
+    "en": "Unfortunately the flight is an hour late. It only leaves at 16:20, not at 15:20."
    },
    {
     "who": "N",
@@ -2037,7 +2038,7 @@
     "ev": [
      1
     ],
-    "why": "The flight is an hour late: 'nicht um fünfzehn Uhr zwanzig, sondern um sechzehn Uhr zwanzig' = 16:20."
+    "why": "The flight is an hour late: 'erst um sechzehn Uhr zwanzig, nicht um fünfzehn Uhr zwanzig' = 16:20."
    }
   ]
  },

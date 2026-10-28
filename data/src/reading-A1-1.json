@@ -669,8 +669,8 @@
     "t": "h",
     "s": [
      [
-      "Liebe Lena,",
-      "Dear Lena,"
+      "Hallo Lena,",
+      "Hi Lena,"
      ]
     ]
    },
@@ -687,8 +687,8 @@
       "I come from India, from Mumbai."
      ],
      [
-      "Mumbai ist eine große Stadt.",
-      "Mumbai is a big city."
+      "Mumbai ist eine Stadt im Westen von Indien.",
+      "Mumbai is a city in the west of India."
      ],
      [
       "Jetzt wohne ich hier in Köln, in der Gartenstraße.",
@@ -735,8 +735,8 @@
       "But now I live and work here in Cologne."
      ],
      [
-      "Ich wohne in der Bergstraße, das ist nicht weit von dir.",
-      "I live on Bergstraße, that's not far from you."
+      "Ich wohne in der Bergstraße, Nummer 15.",
+      "I live on Bergstraße, number 15."
      ],
      [
       "Ich spreche Deutsch, Englisch und ein bisschen Französisch.",
@@ -757,10 +757,6 @@
    {
     "w": "Norden",
     "en": "north"
-   },
-   {
-    "w": "nicht weit",
-    "en": "not far"
    },
    {
     "w": "ein bisschen",
@@ -2342,7 +2338,7 @@
       "Monday, Wednesday and Friday from 6.30 to 7.30 am."
      ],
      [
-      "Danach haben Sie noch Zeit für das Frühstück.",
+      "Dann haben Sie noch Zeit für das Frühstück.",
       "Afterwards you still have time for breakfast."
      ]
     ],
@@ -2440,10 +2436,6 @@
    {
     "w": "geöffnet",
     "en": "open"
-   },
-   {
-    "w": "Danach",
-    "en": "afterwards"
    },
    {
     "w": "Pakete",

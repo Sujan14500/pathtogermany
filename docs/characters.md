@@ -26,7 +26,7 @@ names a recurring character must match the tables below; all of `data/src` was b
 | Sprachschule Nord | Priya's A1 evening course (18:00), taught by Herr Weber. |
 | Volkshochschule (VHS) | A2 morning intensive course, then courses after work; B1 evening course and Saturday B1 prep course. Herr Weber teaches here too. |
 | Sprachcafé | Fridays; where Priya met Lena. |
-| Malte's firm | a small software company in Köln; the team speaks English. |
+| Malte's firm | a small software company in Köln; the team speaks English. The boss is a woman (*die Chefin*); Malte leads the team. |
 
 ## Priya
 
@@ -52,7 +52,7 @@ names a recurring character must match the tables below; all of `data/src` was b
 | Born | May 1998 in a village near Bremen; school and kindergarten with Jonas and Tim; Abitur 2015 |
 | Age | 28 at the start of A1, 29 from May of Year 2, 30 at B1 |
 | Home | Bergstraße 15, 3rd floor, since A1 st2 (before: Lindenstraße 50); lives alone; rent 520 €, small garden at the back |
-| Work | studied architecture in Köln; architect in an office in Köln, weekdays until about 18. B1 st11: her firm offers her a year in its Vienna office; she accepts for the year after B1, sublets the flat, Jonas waters her plants |
+| Work | studied architecture in Köln; architect in an office in Köln, weekdays until about 18. B1 st11: her firm offers her a year in its Vienna office; she accepts for the year after B1, sublets the flat, Jonas waters her plants, and her dog goes with her |
 | Family | parents in her home village (her father is ill from the spring of the B1 year; she visits every weekend); a sister who is a doctor at a Köln hospital, with two small children (nephew 3 at B1); a brother, a cook who plays in a band; grandparents, an aunt, an uncle, a cousin |
 | Partner | single (Lena and Jonas are old friends, not a couple) |
 | Free time | dancing and salsa, the choir Bunte Stimmen (Wednesdays), tennis with Jonas (Thursdays), running, guitar, Spanish; a small red car she rarely drives; a dog. She doesn't eat fish |
@@ -65,7 +65,7 @@ names a recurring character must match the tables below; all of `data/src` was b
 | Born | 4 June 1998 near Bremen; his parents live in Bremen |
 | Age | 28 at the start of A1, 29 on 4 June of Year 2, 30 on 4 June of Year 3 (A2 st9, surprise party at Malte's) |
 | Home | A1: near the tram stop Goetheplatz; looks for a flat with his friend Moritz at A1 st5. From A2 st2: Bergstraße 9, 3rd floor |
-| Work | an apprenticeship after his Abitur; A1–A2 office job at Malte's firm (shares an office with Malte), more than an hour's commute; applies for a job nearer home at A2 st3. B1: back at university in Köln, a student with little money |
+| Work | an apprenticeship after his Abitur; A1–A2 office job at Malte's firm (shares an office with Malte), more than an hour a day there and back by bus and train; applies for a job nearer home at A2 st3. Leaves the firm in the summer before B1. B1: back at university in Köln, a student with little money |
 | Family | sister Anna (22 at A1, studies in Berlin, birthday 13 May), brother Paul (16 at A1, apprentice at A2, 18 at B1), grandparents, an uncle in Vienna, an aunt, a cousin (Abitur at B1) |
 | Partner | single |
 | Free time | football (club, matches on Saturdays, training on Tuesdays; broke his leg at A2 st6), tennis, crime novels, barbecues, cooking; an old car he thinks of selling at B1; dreams of a trip to India |
@@ -78,7 +78,7 @@ names a recurring character must match the tables below; all of `data/src` was b
 | Age | 39 at A1, turns 40 at A2 st9 |
 | Home | Bachstraße 5, 50733 Köln; from A2 st2 Bergstraße 12 |
 | Work | studied computer science in Köln, worked in Hamburg and Luxembourg; team lead at the small software firm (colleagues Jonas, Katja, later Priya and you); business trips |
-| Family | wife Julia (sales assistant in a bakery); son Leo (10 at A1), daughter Mia (7 at A1, 8 at A2 st4, 9 from A2 st9); a sister in Vienna |
+| Family | wife Julia (sales assistant in a bakery); son Leo (10 at A1, 11 at A2 st4), daughter Mia (7 at A1, 8 at A2 st4, 9 from A2 st9); a sister in Vienna |
 | Free time | volleyball in a club twice a week (broke his leg at B1 st4), running, swimming, drums in a band, a photography course; his bike breaks at A1 and is repaired at A2 |
 
 ## Herr Weber
@@ -101,7 +101,7 @@ names a recurring character must match the tables below; all of `data/src` was b
 | Origin | Turkey, where she had a big garden; speaks Turkish and German |
 | Age | about 60 at A1 |
 | Home | Bergstraße 9, 1st floor, directly below Priya; looks after the back garden (apple trees) and has a plot in a community garden |
-| Family | husband (turns 60 at A1 st12) dies during A2: at B1 st9 she has been a widow for a year. Son Emre with two sons (17 at A2, 18 at B1, and one about 10); daughter Elif in Hamburg with baby Aylin (born at A1 st3); a sister in Switzerland; a niece (wedding in Köln at A2); her mother in a care home |
+| Family | husband (turns 60 at A1 st12) dies during A2 (at B1 st1 "a few months ago"; since then Priya visits her even more often): at B1 st9 she has been a widow for about a year. Son Emre with two sons (17 at A2, 18 at B1, and one about 10); daughter Elif in Hamburg with baby Aylin (born at A1 st3); a sister in Switzerland; a niece (wedding in Köln at A2); her mother in a care home |
 | Work | self-employed, works some days; used to work half-days in a bakery |
 | Pets, car | a small dog, and from A2 a cat; a car |
 | Free time | the choir Bunte Stimmen, a photography course on Tuesdays, a hiking group, baking. Birthday 14 June |
@@ -142,6 +142,6 @@ Krüger, Polat, Wendt.
 | A2 st3 | 1 May of Year 3: Priya starts in Malte's team (trial period, then permanent). Jonas applies for a job nearer home |
 | A2 st6–9 | Jonas breaks his leg. Jonas turns 30 (4 June), Malte 40, Mia 9. Frau Yilmaz's husband dies during this year |
 | A2 st10 | Priya has learned German for two years; she plans the B1 exam for March |
-| B1 st1–3 | Year 3 autumn: Priya's blog (two years in Köln, the house, school days, "noch einmal Schülerin – mit 29"). Jonas is back at university |
+| B1 st1–3 | Year 3 autumn: Priya's blog (two years in Köln, the house, school days, "noch einmal Schülerin – mit 29"). Jonas has left Malte's firm and is back at university |
 | B1 st4–9 | Malte breaks his leg (volleyball). Frau Yilmaz, a widow for a year, wants to dance again |
 | B1 st11–12 | Lena gets the Vienna offer and decides to go. Herr Weber runs the February prep course; Priya takes the B1 exam in March of Year 4 |

@@ -6,7 +6,7 @@
   "task_en": "Read about Priya and fill in the form for her language course.",
   "task_de": "Ihre Freundin Priya möchte einen Deutschkurs machen. Lesen Sie den Text und füllen Sie das Formular aus.",
   "form": {
-   "text_de": "Priya Sharma kommt aus Indien, aus Mumbai. Sie ist 27 Jahre alt und wohnt jetzt in Köln, in der Gartenstraße 12. Sie spricht Englisch und Hindi. Sie möchte am Abend lernen.",
+   "text_de": "Priya Sharma kommt aus Indien, aus Mumbai. Sie ist 27 Jahre alt und wohnt jetzt in Köln, in der Gartenstraße 12. Sie möchte abends lernen.",
    "fields": [
     [
      "Familienname",
@@ -49,7 +49,7 @@
   "points": [
    "Wo Sie jetzt wohnen",
    "Wer im Kurs ist (Länder, Sprachen)",
-   "Frage: Wann kommt Felix zu Besuch?"
+   "Frage: Wann kommt Felix nach Köln?"
   ],
   "words": [
    25,
@@ -65,8 +65,8 @@
     "I live in … now"
    ],
    [
-    "Wir sind … Leute aus …",
-    "We are … people from …"
+    "Wir sind … Schüler aus …",
+    "We are … students from …"
    ],
    [
     "Wir sprechen nur Deutsch.",
@@ -81,8 +81,8 @@
     "Best wishes"
    ]
   ],
-  "model": "Lieber Felix, ich wohne jetzt in Köln, in der Gartenstraße. Mein Deutschkurs ist super! Wir sind zwölf Leute aus acht Ländern, zum Beispiel aus Mexiko und Finnland. Wir sprechen nur Deutsch. Wann kommst du nach Köln? Viele Grüße, Priya",
-  "model_en": "Dear Felix, I live in Cologne now, on Gartenstraße. My German course is great! We are twelve people from eight countries, for example from Mexico and Finland. We only speak German. When are you coming to Cologne? Best wishes, Priya",
+  "model": "Lieber Felix, ich wohne jetzt in Köln, in der Gartenstraße. Mein Deutschkurs ist sehr gut! Wir sind zwölf Schüler aus acht Ländern, zum Beispiel aus Mexiko und Finnland. Wir sprechen nur Deutsch. Wann kommst du nach Köln? Viele Grüße, Priya",
+  "model_en": "Dear Felix, I live in Cologne now, on Gartenstraße. My German course is very good! We are twelve students from eight countries, for example from Mexico and Finland. We only speak German. When are you coming to Cologne? Best wishes, Priya",
   "rubric": [
    "All three points are answered",
    "A greeting and a closing for a friend: Lieber …, Viele Grüße",
@@ -98,7 +98,7 @@
   "task_en": "Your neighbour Frau Polat wants to register her son at a kindergarten. Read the text and fill in the form for her.",
   "task_de": "Ihre Nachbarin, Frau Polat, möchte ihren Sohn im Kindergarten anmelden. Lesen Sie den Text und füllen Sie das Formular aus.",
   "form": {
-   "text_de": "Zehra Polat ist 38 Jahre alt und arbeitet als Verkäuferin. Ihr Mann Murat ist Koch. Sie haben drei Kinder. Die Töchter Selin und Defne sind neun und sieben Jahre alt und gehen schon in die Schule. Der Sohn heißt Can und ist drei. Ab September geht er in den Kindergarten „Sonnenblume“.",
+   "text_de": "Zehra Polat ist 38 Jahre alt und arbeitet als Verkäuferin. Ihr Mann heißt Murat. Sie haben drei Kinder. Die Töchter Selin und Defne sind neun und sieben Jahre alt und gehen schon in die Schule. Der Sohn heißt Can und ist drei. Bald geht er in den Kindergarten „Sonnenblume“.",
    "fields": [
     [
      "Familienname",
@@ -189,7 +189,7 @@
   "task_en": "Your friend Jonas is looking for a flat. Read the text and fill in the form for the flat agency.",
   "task_de": "Ihr Freund Jonas sucht eine Wohnung. Lesen Sie den Text und füllen Sie das Formular für das Wohnungsbüro aus.",
   "form": {
-   "text_de": "Jonas Keller arbeitet in Köln. Er und sein Freund Moritz suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
+   "text_de": "Jonas Keller arbeitet in Köln. Er und sein Freund Moritz suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können nicht mehr als 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
    "fields": [
     [
      "Familienname",

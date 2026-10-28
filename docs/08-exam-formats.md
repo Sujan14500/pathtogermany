@@ -46,7 +46,7 @@ texts; the ranges below are the app's targets, with the Modellsatz length where 
   you go?").
 - **A2 Teil 3** · an email or letter, 150–260 words (Modellsatz: about 255) · 5 × `abc`.
 - **A2 Teil 4** · 6 short ads (a–f), 6 people (one is the example) · 5 × `match`; for one person no ad fits (`x`).
-  The app's A2 Teil 4 texts don't have the `x` item yet.
+  The app's A2 Teil 4 texts (station and exam pool) all have one `x` item, with a near-miss ad as the trap.
 - **B1 Teil 1** · a blog or diary entry, 250–350 words (Modellsatz: about 340) · 6 × `rf`. 10 min.
 - **B1 Teil 2** · two press articles of about 200–300 words · 3 × `abc` each. 20 min.
 - **B1 Teil 3** · 10 short ads (a–j), 7 situations · 7 × `match`, one situation has no fitting ad (`x`). 10 min.

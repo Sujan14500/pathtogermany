@@ -229,7 +229,7 @@
   "id": "a2-h-01-3",
   "station": 1,
   "part": "Teil 3",
-  "setup": "At a party, Malte (man) talks to Priya (woman), who moved to Germany a year ago.",
+  "setup": "At Lena's party, Malte (man) talks to Priya (woman), who came to Cologne a year ago.",
   "once": true,
   "lines": [
    {
@@ -269,8 +269,13 @@
    },
    {
     "who": "A",
-    "de": "Genau. Aber zuerst mache ich einen Deutschkurs.",
-    "en": "Exactly. But first I'm doing a German course."
+    "de": "Genau. Im ersten Jahr habe ich in einem Café gearbeitet und abends Deutsch gelernt. Jetzt mache ich jeden Vormittag einen Kurs an der Volkshochschule.",
+    "en": "Exactly. In my first year I worked in a café and learned German in the evenings. Now I do a course at the adult education centre every morning."
+   },
+   {
+    "who": "B",
+    "de": "Programmiererin, sagst du? Gib mir doch mal deine E-Mail-Adresse. Vielleicht suchen wir in meiner Firma bald jemanden.",
+    "en": "A programmer, you say? Give me your email address. Maybe my company will be looking for someone soon."
    }
   ],
   "questions": [
@@ -907,7 +912,7 @@
    },
    {
     "who": "B",
-    "de": "Ja. Mein Chef ist eigentlich nett, und das Gehalt ist auch okay.",
+    "de": "Ja. Meine Chefin ist eigentlich nett, und das Gehalt ist auch okay.",
     "en": "Yes. My boss is actually nice, and the salary is okay too."
    },
    {
@@ -917,8 +922,8 @@
    },
    {
     "who": "B",
-    "de": "Weil ich jeden Tag über eine Stunde mit dem Zug zur Arbeit fahre. Die neue Firma ist nur zehn Minuten von meiner Wohnung entfernt.",
-    "en": "Because every day I spend over an hour on the train to work. The new company is only ten minutes from my flat."
+    "de": "Weil ich jeden Tag hin und zurück über eine Stunde mit Bus und Bahn fahre. Die neue Firma ist nur zehn Minuten von meiner Wohnung entfernt.",
+    "en": "Because every day I spend over an hour on the bus and train, there and back. The new company is only ten minutes from my flat."
    },
    {
     "who": "A",
@@ -937,14 +942,14 @@
     "format": "abc",
     "opts": [
      "weil er dort mehr verdient",
-     "weil sein Chef unfreundlich ist",
+     "weil seine Chefin unfreundlich ist",
      "weil der Weg zur Arbeit zu lang ist"
     ],
     "a": 2,
     "ev": [
      3
     ],
-    "why": "He travels over an hour by train every day; the new company is ten minutes away. His boss is nice, and he would even earn a little less."
+    "why": "He spends over an hour a day getting to work and back; the new company is ten minutes away. His boss is nice, and he would even earn a little less."
    }
   ]
  },

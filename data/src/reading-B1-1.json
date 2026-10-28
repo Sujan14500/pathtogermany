@@ -4,16 +4,16 @@
   "station": 1,
   "part": "Teil 1",
   "type": "blog",
-  "title": "Neue Nachbarn",
-  "intro": "Priya, who moved from India to Cologne, writes on her blog about her first months in a block of flats.",
+  "title": "Meine Nachbarn",
+  "intro": "Priya, who came from India to Cologne two years ago, looks back on her blog at how she got to know the neighbours in her block of flats.",
   "blocks": [
    {
     "id": "b1",
     "t": "h",
     "s": [
      [
-      "Neues Zuhause, neue Nachbarn",
-      "New home, new neighbours"
+      "Zwei Jahre, ein Haus, viele Nachbarn",
+      "Two years, one building, lots of neighbours"
      ]
     ]
    },
@@ -44,8 +44,8 @@
     "t": "p",
     "s": [
      [
-      "Das hat sich im Oktober geändert, und zwar durch ein Paket.",
-      "That changed in October – because of a parcel."
+      "Das hat sich schon in meinem ersten Herbst geändert, und zwar durch ein Paket.",
+      "That changed in my very first autumn – because of a parcel."
      ],
      [
       "Der Paketbote hatte es bei Frau Yilmaz abgegeben, der Nachbarin, die direkt unter mir wohnt.",
@@ -58,6 +58,14 @@
      [
       "Wir haben fast zwei Stunden geredet, über ihre Enkel, über indisches Essen und über die Leute im Haus.",
       "We talked for almost two hours, about her grandchildren, about Indian food and about the people in the building."
+     ],
+     [
+      "Seitdem trinken wir fast jede Woche zusammen Tee.",
+      "Since then we've had tea together almost every week."
+     ],
+     [
+      "Seit ihr Mann vor ein paar Monaten gestorben ist, besuche ich sie noch öfter.",
+      "Since her husband died a few months ago, I visit her even more often."
      ]
     ]
    },
@@ -66,8 +74,8 @@
     "t": "p",
     "s": [
      [
-      "Von ihr habe ich auch erfahren, warum Herr Brandt, der neben mir wohnt, immer so unfreundlich zu mir war.",
-      "From her I also found out why Herr Brandt, who lives next door to me, was always so unfriendly to me."
+      "Von ihr habe ich vor Kurzem auch erfahren, warum Herr Brandt, der neben mir wohnt, immer so unfreundlich zu mir war.",
+      "From her I also found out recently why Herr Brandt, who lives next door to me, was always so unfriendly to me."
      ],
      [
       "Meine Waschmaschine steht direkt an der Wand zu seinem Schlafzimmer, und ich habe oft spät am Abend gewaschen, weil ich erst um neun vom Abendkurs komme.",
@@ -100,8 +108,8 @@
       "Since then he even greets me with a smile."
      ],
      [
-      "Langsam fühlt sich das Haus wie ein richtiges Zuhause an.",
-      "Slowly the building is starting to feel like a real home."
+      "Nach zwei Jahren ist das alte Haus für mich ein richtiges Zuhause.",
+      "After two years the old building is a real home for me."
      ]
     ]
    }
@@ -1158,6 +1166,14 @@
      [
       "Er hilft mir mit Deutsch, und ich bringe ihm dafür ein bisschen Marathi bei.",
       "He helps me with German, and in return I teach him a bit of Marathi."
+     ],
+     [
+      "Ich bin übrigens nicht die Einzige, die noch einmal lernt: Mein Nachbar Jonas hat im Sommer bei Maltes Firma aufgehört und studiert jetzt wieder an der Uni.",
+      "By the way, I'm not the only one learning again: my neighbour Jonas left Malte's firm in the summer and is now back at university."
+     ],
+     [
+      "Am Wochenende sitzen wir manchmal zusammen am Küchentisch, er mit seinen Büchern für die Uni und ich mit meinen Hausaufgaben.",
+      "At weekends we sometimes sit together at the kitchen table, him with his books for university and me with my homework."
      ],
      [
       "Im März möchte ich die B1-Prüfung machen – drückt mir die Daumen!",
@@ -5401,6 +5417,10 @@
      [
       "Jonas meinte, ich könnte die Wohnung für ein Jahr untervermieten, und er würde sich in der Zeit um meine Pflanzen kümmern.",
       "Jonas said I could sublet the flat for a year, and he would look after my plants during that time."
+     ],
+     [
+      "Und mein Hund würde natürlich mitkommen – in Wien gibt es zum Glück viele Parks.",
+      "And my dog would come with me, of course – luckily Vienna has lots of parks."
      ],
      [
       "Bis Ende des Monats muss ich mich entscheiden.",

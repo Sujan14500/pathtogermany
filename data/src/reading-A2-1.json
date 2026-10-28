@@ -58,16 +58,16 @@
     "t": "p",
     "s": [
      [
-      "Heute fühlt sie sich in Köln wohl.",
-      "Today she feels at home in Cologne."
+      "Heute, ein Jahr später, fühlt sie sich in Köln wohl.",
+      "Today, a year later, she feels at home in Cologne."
      ],
      [
-      "Jeden Vormittag besucht sie einen Deutschkurs an der Volkshochschule.",
-      "Every morning she goes to a German course at the adult education centre."
+      "Im ersten Jahr hat sie in einem Café gearbeitet und abends Deutsch gelernt, jetzt besucht sie jeden Vormittag einen Kurs an der Volkshochschule.",
+      "In her first year she worked in a café and learned German in the evenings; now she goes to a course at the adult education centre every morning."
      ],
      [
-      "Dort hat sie viele nette Leute kennengelernt, zum Beispiel Ana aus Mexiko.",
-      "There she has met lots of nice people, for example Ana from Mexico."
+      "In ihren Kursen hat sie viele nette Leute kennengelernt, zum Beispiel Ana aus Mexiko.",
+      "In her courses she has met lots of nice people, for example Ana from Mexico."
      ],
      [
       "Ihre Nachbarin, Frau Yilmaz, hilft ihr oft bei den Hausaufgaben.",
@@ -590,7 +590,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Kleinanzeigen: Wohnen",
-  "intro": "Six small ads from a local website about flats and moving. Five people are looking for something.",
+  "intro": "Six small ads from a local website about flats and moving. Five people are looking for something. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -782,7 +782,7 @@
   },
   "questions": [
    {
-    "q": "Lucia sucht ein günstiges Zimmer in der Nähe der Universität.",
+    "q": "Lucia braucht schon ab 1. März ein günstiges Zimmer in der Nähe der Universität.",
     "format": "match",
     "opts": [
      "a",
@@ -790,14 +790,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 2,
-    "ev": [
-     "b4.1",
-     "b4.3"
-    ],
-    "why": "Ad c offers a room in a shared flat five minutes from the university for 320 euros."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. Ad c is a cheap room near the university, but it is only free from 1 April, and Lucia needs one from 1 March."
    },
    {
     "q": "Eine Studentin möchte jede Woche ein paar Stunden am Vormittag arbeiten. Sie macht gern sauber.",
@@ -808,7 +806,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -825,7 +824,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -842,7 +842,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -860,7 +861,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -901,7 +903,7 @@
       "You know that I have written lots of applications since January."
      ],
      [
-      "Letzte Woche hatte ich ein Gespräch bei einer kleinen Softwarefirma hier in Köln, und gestern hat mich der Chef angerufen.",
+      "Letzte Woche hatte ich ein Gespräch bei einer kleinen Softwarefirma hier in Köln, und gestern hat mich die Chefin angerufen.",
       "Last week I had an interview at a small software company here in Cologne, and yesterday the boss called me."
      ]
     ]
@@ -1013,13 +1015,13 @@
     "opts": [
      "eine Bewerbung geschrieben.",
      "ein Gespräch in einer Firma gehabt.",
-     "einen Anruf vom Chef bekommen."
+     "einen Anruf von der Chefin bekommen."
     ],
     "a": 2,
     "ev": [
      "b2.2"
     ],
-    "why": "\"gestern hat mich der Chef angerufen\"; the interview was last week."
+    "why": "\"gestern hat mich die Chefin angerufen\"; the interview was last week."
    },
    {
     "q": "Priya macht am Anfang ein Praktikum, weil …",
@@ -1087,7 +1089,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Stellenmarkt",
-  "intro": "Six job ads from a local newspaper. Five people are looking for work or help with work.",
+  "intro": "Six job ads from a local newspaper. Five people are looking for work or help with work. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -1275,7 +1277,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -1284,7 +1287,7 @@
     "why": "Café Morgenrot needs people on Saturday and Sunday."
    },
    {
-    "q": "Eine Freundin von Priya sucht eine Arbeit am Vormittag. Sie kann sehr gut mit dem Computer arbeiten und spricht Englisch.",
+    "q": "Eine Freundin von Priya möchte gern im Büro arbeiten. Sie kann gut mit dem Computer arbeiten und spricht Englisch, aber sie hat nur nachmittags Zeit.",
     "format": "match",
     "opts": [
      "a",
@@ -1292,14 +1295,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 1,
-    "ev": [
-     "b3.1",
-     "b3.2"
-    ],
-    "why": "Ad b is office work from 8 to 12 for someone who speaks English and likes computers."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. Ad b is office work with English and computers, but only from 8 to 12 in the morning, and she only has time in the afternoon."
    },
    {
     "q": "Der Enkel von Frau Yilmaz ist 17. Er möchte einen Beruf in der Küche lernen.",
@@ -1310,7 +1311,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -1328,7 +1330,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
@@ -1345,7 +1348,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -1569,7 +1573,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Freizeit in der Stadt",
-  "intro": "Six ads for free-time activities. Five people are looking for something to do.",
+  "intro": "Six ads for free-time activities. Five people are looking for something to do. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -1741,7 +1745,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -1759,7 +1764,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -1777,7 +1783,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -1794,7 +1801,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
@@ -1804,7 +1812,7 @@
     "why": "The Tanzhaus has a dance evening every Friday from 9 pm."
    },
    {
-    "q": "Malte sucht für seine Tochter (8) etwas für den Samstagvormittag.",
+    "q": "Malte sucht für seinen Sohn (11) etwas für den Samstagvormittag. Er malt sehr gern.",
     "format": "match",
     "opts": [
      "a",
@@ -1812,13 +1820,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 2,
-    "ev": [
-     "b4.1"
-    ],
-    "why": "Children aged 6 to 10 paint there on Saturday mornings."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. Ad c is painting on Saturday mornings, but only for children from 6 to 10, and Malte's son is 11."
    }
   ]
  },
@@ -2004,7 +2011,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Einkaufen und Mode",
-  "intro": "Six ads about shopping, clothes and food. Five people are looking for something.",
+  "intro": "Six ads about shopping, clothes and food. Five people are looking for something. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -2172,7 +2179,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -2190,7 +2198,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -2200,7 +2209,7 @@
     "why": "At the children's flea market you can rent a table for 5 euros and sell toys and books."
    },
    {
-    "q": "Jonas fährt im Juli ans Meer und braucht günstige Schuhe für den Sommer.",
+    "q": "Jonas fährt im Juli ans Meer und braucht günstige Schuhe für den Sommer. Er hat aber erst nächste Woche Zeit zum Einkaufen.",
     "format": "match",
     "opts": [
      "a",
@@ -2208,13 +2217,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 3,
-    "ev": [
-     "b5.1"
-    ],
-    "why": "Pfeiffer has summer shoes at half price."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. Schuhhaus Pfeiffer (ad d) has summer shoes at half price, but only until Saturday, and Jonas can't go shopping until next week."
    },
    {
     "q": "Malte kommt spät von der Arbeit und möchte lernen, wie man schnell etwas Gutes kocht.",
@@ -2225,7 +2233,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -2243,7 +2252,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -2873,7 +2883,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Unterwegs",
-  "intro": "Six ads about trips and travel. Five people are planning something.",
+  "intro": "Six ads about trips and travel. Five people are planning something. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -2898,8 +2908,8 @@
       "Discover the city by bike!"
      ],
      [
-      "Fahrräder ab 10 Euro am Tag, E-Bikes ab 25 Euro.",
-      "Bikes from 10 euros a day, e-bikes from 25 euros."
+      "Fahrräder ab 10 Euro am Tag.",
+      "Bikes from 10 euros a day."
      ],
      [
       "Täglich 8–20 Uhr, direkt neben Gleis 1.",
@@ -3049,7 +3059,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -3067,7 +3078,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -3085,7 +3097,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -3095,7 +3108,7 @@
     "why": "Someone is driving to Munich on Friday at 4 pm and takes passengers for 35 euros."
    },
    {
-    "q": "Jonas möchte am Sonntag einen Ausflug machen. Er möchte nicht laufen und nicht Rad fahren, sondern auf dem Wasser sein.",
+    "q": "Jonas möchte im Oktober an einem Sonntag einen Ausflug machen. Er möchte nicht laufen und nicht Rad fahren, sondern auf dem Wasser sein.",
     "format": "match",
     "opts": [
      "a",
@@ -3103,14 +3116,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 3,
-    "ev": [
-     "b5.1",
-     "b5.2"
-    ],
-    "why": "The boat trip on the Rhine runs every Sunday."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. The boat trip on the Rhine (ad d) runs on Sundays, but only from May to September, and Jonas wants to go in October."
    },
    {
     "q": "Herr Weber und seine Frau möchten im Herbst ein paar Tage eine Hauptstadt im Ausland besuchen.",
@@ -3121,7 +3132,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
@@ -3737,7 +3749,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Rund ums Fest",
-  "intro": "Six ads for parties and celebrations. Five people need something for a celebration.",
+  "intro": "Six ads for parties and celebrations. Five people need something for a celebration. Find the right ad for each person – or x if there is none.",
   "blocks": [
    {
     "id": "b1",
@@ -3909,7 +3921,7 @@
   },
   "questions": [
    {
-    "q": "Malte feiert seinen 40. Geburtstag mit 50 Gästen, aber seine Wohnung ist zu klein.",
+    "q": "Malte feiert seinen 40. Geburtstag mit 80 Gästen, aber seine Wohnung ist zu klein.",
     "format": "match",
     "opts": [
      "a",
@@ -3917,13 +3929,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 0,
-    "ev": [
-     "b2.1"
-    ],
-    "why": "The party room has space for up to 60 guests."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. The party room (ad a) holds up to 60 guests, and Malte is inviting 80."
    },
    {
     "q": "Maltes Tochter wird neun. Auf ihrer Party sollen die Kinder etwas Lustiges sehen.",
@@ -3934,7 +3945,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -3952,7 +3964,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -3970,7 +3983,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -3987,7 +4001,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [

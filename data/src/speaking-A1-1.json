@@ -83,8 +83,8 @@
    ],
    [
     "B",
-    "Wie schreibt man Ihren Familiennamen?",
-    "How do you spell your surname?"
+    "Buchstabieren Sie bitte Ihren Familiennamen.",
+    "Please spell your surname."
    ],
    [
     "A",
@@ -112,8 +112,8 @@
     "What's your phone number?"
    ],
    [
-    "Noch einmal, bitte. Langsam, bitte.",
-    "Once more, please. Slowly, please."
+    "Noch einmal, bitte.",
+    "Once more, please."
    ]
   ],
   "prep_s": 20,
@@ -154,8 +154,8 @@
     "I speak … and a little German."
    ],
    [
-    "Das schreibt man: …",
-    "You spell it: …"
+    "Ich buchstabiere: …",
+    "I'll spell it: …"
    ],
    [
     "Die Postleitzahl ist …",
@@ -195,8 +195,8 @@
    ],
    [
     "B",
-    "Wie schreibt man Köln?",
-    "How do you spell Köln?"
+    "Buchstabieren Sie bitte Köln.",
+    "Please spell Köln."
    ],
    [
     "A",
@@ -220,8 +220,8 @@
     "Where do you come from?"
    ],
    [
-    "Wo wohnen Sie? Wie schreibt man das?",
-    "Where do you live? How do you spell that?"
+    "Wo wohnen Sie? Buchstabieren Sie das bitte.",
+    "Where do you live? Please spell that."
    ],
    [
     "Was ist Ihre Postleitzahl?",
@@ -311,8 +311,8 @@
    ],
    [
     "B",
-    "Wie schreibt man Ihren Vornamen?",
-    "How do you spell your first name?"
+    "Buchstabieren Sie bitte Ihren Vornamen.",
+    "Please spell your first name."
    ],
    [
     "A",
@@ -336,8 +336,8 @@
     "Do you have brothers or sisters?"
    ],
    [
-    "Wie schreibt man Ihren Vornamen?",
-    "How do you spell your first name?"
+    "Buchstabieren Sie bitte Ihren Vornamen.",
+    "Please spell your first name."
    ],
    [
     "In welchem Jahr sind Sie geboren?",
