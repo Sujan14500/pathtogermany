@@ -178,7 +178,7 @@
  {
   "id": "a2-werden",
   "pattern": "subject + werden + job / adjective / age",
-  "explain": "werden means \"to become\" or \"to get\". Use it for jobs (Ich werde Ärztin, with no article before the job), for changes (Es wird kalt) and for birthdays (Lena wird 30). It is irregular: du wirst, er/sie wird. In the Perfekt it takes sein: Er ist Arzt geworden.",
+  "explain": "werden means \"to become\" or \"to get\". Use it for jobs (Ich werde Ärztin, with no article before the job), for changes (Es wird kalt) and for birthdays (Opa wird 80). It is irregular: du wirst, er/sie wird. In the Perfekt it takes sein: Er ist Arzt geworden.",
   "compare_en": "English uses \"become\", \"get\" or \"turn\": it's getting cold = es wird kalt, she turns 30 = sie wird 30. False friend: bekommen means \"to get, to receive\", never \"to become\".",
   "table": [
    [
@@ -295,17 +295,17 @@
    },
    {
     "de": [
-     "Lena",
+     "Opa",
      "wird",
      "am Samstag",
-     "30."
+     "80."
     ],
     "en": [
      [
       [
        0
       ],
-      "Lena"
+      "Grandpa"
      ],
      [
       [
@@ -317,7 +317,7 @@
       [
        3
       ],
-      "30"
+      "80"
      ],
      [
       [
@@ -1050,7 +1050,8 @@
    {
     "de": [
      "Priya",
-     "lernt Deutsch,",
+     "lernt",
+     "Deutsch,",
      "weil",
      "sie",
      "in Deutschland",
@@ -1068,43 +1069,49 @@
       [
        1
       ],
-      "is learning German"
+      "is learning"
      ],
      [
       [
        2
       ],
-      "because"
+      "German"
      ],
      [
       [
        3
       ],
+      "because"
+     ],
+     [
+      [
+       4
+      ],
       "she"
      ],
      [
       [
-       6
+       7
       ],
       "would like"
      ],
      [
       [
-       5
+       6
       ],
       "to work"
      ],
      [
       [
-       4
+       5
       ],
       "in Germany."
      ]
     ],
     "v": [
      1,
-     5,
-     6
+     6,
+     7
     ]
    },
    {
@@ -1917,7 +1924,7 @@
       [
        0
       ],
-      "Frau Yilmaz"
+      "Mrs Yilmaz"
      ],
      [
       [
@@ -2273,7 +2280,8 @@
    {
     "de": [
      "Jonas",
-     "trägt heute",
+     "trägt",
+     "heute",
      "seine neue Brille."
     ],
     "en": [
@@ -2291,13 +2299,13 @@
      ],
      [
       [
-       2
+       3
       ],
       "his new glasses"
      ],
      [
       [
-       1
+       2
       ],
       "today."
      ]
@@ -2562,8 +2570,10 @@
    },
    {
     "de": [
-     "Ich trinke",
-     "immer Tee,",
+     "Ich",
+     "trinke",
+     "immer",
+     "Tee,",
      "wenn",
      "ich",
      "krank",
@@ -2578,50 +2588,50 @@
      ],
      [
       [
-       1
+       2
       ],
       "always"
      ],
      [
       [
-       0
+       1
       ],
       "drink"
      ],
      [
       [
-       1
+       3
       ],
       "tea"
      ],
      [
       [
-       2
+       4
       ],
       "when"
      ],
      [
       [
-       3
+       5
       ],
       "I"
      ],
      [
       [
-       5
+       7
       ],
       "am"
      ],
      [
       [
-       4
+       6
       ],
       "ill."
      ]
     ],
     "v": [
-     0,
-     5
+     1,
+     7
     ]
    },
    {
@@ -3510,8 +3520,8 @@
    },
    {
     "de": [
-     "Frau Yilmaz",
-     "wohnt",
+     "Meine Großeltern",
+     "wohnen",
      "jetzt",
      "auf dem Land."
     ],
@@ -3520,7 +3530,7 @@
       [
        0
       ],
-      "Frau Yilmaz"
+      "My grandparents"
      ],
      [
       [
@@ -3532,7 +3542,7 @@
       [
        1
       ],
-      "lives"
+      "live"
      ],
      [
       [
@@ -3629,45 +3639,57 @@
   "examples": [
    {
     "de": [
-     "Wissen Sie,",
+     "Wissen",
+     "Sie,",
      "wo",
      "der Bahnhof",
      "ist?"
     ],
     "en": [
      [
-      [
-       0
-      ],
-      "Do you know"
+      [],
+      "Do"
      ],
      [
       [
        1
       ],
-      "where"
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "know"
      ],
      [
       [
        2
       ],
-      "the station"
+      "where"
      ],
      [
       [
        3
+      ],
+      "the station"
+     ],
+     [
+      [
+       4
       ],
       "is?"
      ]
     ],
     "v": [
      0,
-     3
+     4
     ]
    },
    {
     "de": [
-     "Können Sie",
+     "Können",
+     "Sie",
      "mir",
      "sagen,",
      "wann",
@@ -3679,43 +3701,49 @@
       [
        0
       ],
-      "Can you"
-     ],
-     [
-      [
-       2
-      ],
-      "tell"
+      "Can"
      ],
      [
       [
        1
       ],
-      "me"
+      "you"
      ],
      [
       [
        3
       ],
-      "when"
+      "tell"
+     ],
+     [
+      [
+       2
+      ],
+      "me"
      ],
      [
       [
        4
       ],
-      "the film"
+      "when"
      ],
      [
       [
        5
+      ],
+      "the film"
+     ],
+     [
+      [
+       6
       ],
       "starts?"
      ]
     ],
     "v": [
      0,
-     2,
-     5
+     3,
+     6
     ]
    },
    {
@@ -3775,7 +3803,8 @@
   "examples": [
    {
     "de": [
-     "Weißt du,",
+     "Weißt",
+     "du,",
      "ob",
      "das Internet",
      "wieder",
@@ -3783,44 +3812,55 @@
     ],
     "en": [
      [
-      [
-       0
-      ],
-      "Do you know"
+      [],
+      "Do"
      ],
      [
       [
        1
       ],
-      "if"
+      "you"
+     ],
+     [
+      [
+       0
+      ],
+      "know"
      ],
      [
       [
        2
       ],
+      "if"
+     ],
+     [
+      [
+       3
+      ],
       "the internet"
      ],
      [
       [
-       4
+       5
       ],
       "is working"
      ],
      [
       [
-       3
+       4
       ],
       "again?"
      ]
     ],
     "v": [
      0,
-     4
+     5
     ]
    },
    {
     "de": [
-     "Ich frage",
+     "Ich",
+     "frage",
      "Herrn Weber,",
      "ob",
      "wir",
@@ -3832,42 +3872,48 @@
       [
        0
       ],
-      "I'm asking"
+      "I"
      ],
      [
       [
        1
       ],
-      "Mr Weber"
+      "am asking"
      ],
      [
       [
        2
       ],
-      "whether"
+      "Mr Weber"
      ],
      [
       [
        3
       ],
-      "we"
-     ],
-     [
-      [
-       5
-      ],
-      "are writing"
+      "whether"
      ],
      [
       [
        4
       ],
+      "we"
+     ],
+     [
+      [
+       6
+      ],
+      "are writing"
+     ],
+     [
+      [
+       5
+      ],
       "a test tomorrow."
      ]
     ],
     "v": [
-     0,
-     5
+     1,
+     6
     ]
    },
    {
@@ -4312,7 +4358,8 @@
    },
    {
     "de": [
-     "Kannst du",
+     "Kannst",
+     "du",
      "mir",
      "das Foto",
      "zeigen?"
@@ -4322,30 +4369,36 @@
       [
        0
       ],
-      "Can you"
-     ],
-     [
-      [
-       3
-      ],
-      "show"
+      "Can"
      ],
      [
       [
        1
       ],
-      "me"
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "show"
      ],
      [
       [
        2
+      ],
+      "me"
+     ],
+     [
+      [
+       3
       ],
       "the photo?"
      ]
     ],
     "v": [
      0,
-     3
+     4
     ]
    },
    {
@@ -5202,7 +5255,8 @@
   "examples": [
    {
     "de": [
-     "Könnten Sie",
+     "Könnten",
+     "Sie",
      "mir",
      "bitte",
      "helfen?"
@@ -5212,35 +5266,42 @@
       [
        0
       ],
-      "Could you"
-     ],
-     [
-      [
-       3
-      ],
-      "help"
+      "Could"
      ],
      [
       [
        1
       ],
-      "me,"
+      "you"
+     ],
+     [
+      [
+       4
+      ],
+      "help"
      ],
      [
       [
        2
+      ],
+      "me,"
+     ],
+     [
+      [
+       3
       ],
       "please?"
      ]
     ],
     "v": [
      0,
-     3
+     4
     ]
    },
    {
     "de": [
-     "Würden Sie",
+     "Würden",
+     "Sie",
      "hier",
      "unterschreiben?"
     ],
@@ -5249,24 +5310,30 @@
       [
        0
       ],
-      "Would you"
+      "Would"
      ],
      [
       [
-       2
+       1
+      ],
+      "you"
+     ],
+     [
+      [
+       3
       ],
       "sign"
      ],
      [
       [
-       1
+       2
       ],
       "here?"
      ]
     ],
     "v": [
      0,
-     2
+     3
     ]
    },
    {
@@ -5712,40 +5779,46 @@
    },
    {
     "de": [
-     "Hast du",
+     "Hast",
+     "du",
      "Lust,",
      "am Wochenende",
      "Fahrrad zu fahren?"
     ],
     "en": [
      [
-      [
-       0
-      ],
-      "Do you"
+      [],
+      "Do"
      ],
      [
       [
        1
       ],
+      "you"
+     ],
+     [
+      [
+       0,
+       2
+      ],
       "feel like"
      ],
      [
       [
-       3
+       4
       ],
       "cycling"
      ],
      [
       [
-       2
+       3
       ],
       "at the weekend?"
      ]
     ],
     "v": [
      0,
-     3
+     4
     ]
    }
   ]

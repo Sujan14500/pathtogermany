@@ -75,7 +75,7 @@
   ],
   "a": 0,
   "why": "es takes the er/sie/es form: es wird. Es wird dunkel = it gets dark.",
-  "en": "In winter it gets dark at five o'clock."
+  "en": "In winter it gets dark as early as five o'clock."
  },
  {
   "g": "a2-werden",
@@ -504,7 +504,7 @@
   ],
   "a": 3,
   "why": "er, sie, es (and Sie) always take sich as the reflexive pronoun.",
-  "en": "Frau Yilmaz is annoyed about the loud music."
+  "en": "Mrs Yilmaz is annoyed about the loud music."
  },
  {
   "g": "a2-reflexive",
@@ -868,7 +868,7 @@
   ],
   "a": 2,
   "why": "After sollten the second verb goes to the end as a plain infinitive, without zu.",
-  "en": "Frau Yilmaz, you should go for more walks."
+  "en": "Mrs Yilmaz, you should go for more walks."
  },
  {
   "g": "a2-sollte",
@@ -933,7 +933,7 @@
   ],
   "a": 0,
   "why": "helfen takes the dative, and the dative of wir is uns.",
-  "en": "Could you help us, please?"
+  "en": "Can you help us, please?"
  },
  {
   "g": "a2-praeteritum-sein-haben",
@@ -1193,7 +1193,7 @@
   ],
   "a": 3,
   "why": "In an ob-clause the modal (können) is last and the infinitive helfen comes just before it.",
-  "en": "Frau Yilmaz is asking if we can help her."
+  "en": "Mrs Yilmaz is asking if we can help her."
  },
  {
   "g": "a2-trotzdem",
@@ -1297,7 +1297,7 @@
   ],
   "a": 1,
   "why": "danken takes the dative, and the polite Sie becomes Ihnen in the dative.",
-  "en": "Thank you for the invitation, Frau Yilmaz."
+  "en": "Thank you for the invitation, Mrs Yilmaz."
  },
  {
   "g": "a2-two-objects",
@@ -1388,7 +1388,7 @@
   ],
   "a": 3,
   "why": "Yilmaz ends in -z, so it takes only an apostrophe: Frau Yilmaz' Kinder.",
-  "en": "Frau Yilmaz's children often play in the garden."
+  "en": "Mrs Yilmaz's children often play in the garden."
  },
  {
   "g": "a2-genitive-names",

@@ -1,7 +1,7 @@
 [
  {
   "g": "a1-pronouns",
-  "q": "Herr Weber, wie heißen ___?",
+  "q": "Entschuldigung, wie heißen ___?",
   "opts": [
    "Sie",
    "du",
@@ -9,8 +9,8 @@
    "er"
   ],
   "a": 0,
-  "why": "Herr Weber is an adult you don't know well, so you use polite Sie. heißen (with -en) also only fits Sie here; du would need heißt.",
-  "en": "Mr Weber, what is your name?"
+  "why": "You are asking an adult you don't know, so you use polite Sie. heißen (with -en) also only fits Sie here; du would need heißt.",
+  "en": "Excuse me, what is your name?"
  },
  {
   "g": "a1-pronouns",
@@ -1058,7 +1058,7 @@
   "opts": [
    "gerner",
    "mehr gern",
-   "besser",
+   "lieb",
    "lieber"
   ],
   "a": 3,

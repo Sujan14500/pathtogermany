@@ -16,15 +16,15 @@ das	pron				that; this (pointing at something)	Das ist unser neues Sofa.	That is
 der	art				the (masculine; die = feminine and plural, das = neuter)	Der Schrank ist alt, das Sofa ist neu.	The wardrobe is old, the sofa is new.	5
 Drucker	n	der	Drucker		printer	Hast du einen Drucker zu Hause?	Do you have a printer at home?	5
 Dusche	n	die	Duschen		shower	Am Morgen ist Jonas lange unter der Dusche.	In the morning Jonas spends a long time in the shower.	5
-duschen	v			duscht, duschte, hat geduscht	to (have a) shower	Jonas duscht immer am Abend.	Jonas always showers in the evening.	5
+duschen	v			duscht, duschte, hat geduscht	to (have a) shower	Lena duscht immer am Abend.	Lena always showers in the evening.	5
 Ecke	n	die	Ecken		corner	Das Bett steht in der Ecke.	The bed is in the corner.	5
 einfach	adj				simple, easy; (adv) just, simply	Das Zimmer ist einfach, aber schön.	The room is simple but nice.	5
-Fax	n	das	Faxe		fax	Herr Weber schickt ein Fax an die Schule.	Herr Weber sends a fax to the school.	5
+Fax	n	das	Faxe		fax	Herr Weber schickt ein Fax an die Schule.	Mr Weber sends a fax to the school.	5
 Foto	n	das	Fotos		photo	Ich mache ein Foto von meinem Zimmer.	I am taking a photo of my room.	5
-Garten	n	der	Gärten		garden	Frau Yilmaz arbeitet gern im Garten.	Frau Yilmaz likes working in the garden.	5
-gehören	v			gehört, gehörte, hat gehört	to belong (to)	Der Schlüssel gehört Frau Yilmaz.	The key belongs to Frau Yilmaz.	5
+Garten	n	der	Gärten		garden	Frau Yilmaz arbeitet gern im Garten.	Mrs Yilmaz likes working in the garden.	5
+gehören	v			gehört, gehörte, hat gehört	to belong (to)	Der Schlüssel gehört Frau Yilmaz.	The key belongs to Mrs Yilmaz.	5
 Halle	n	die	Hallen		hall; lobby	In der Halle gibt es einen Kiosk.	There is a kiosk in the hall.	5
-Haus	n	das	Häuser		house; building	Das Haus von Frau Yilmaz hat einen Garten.	Frau Yilmaz's house has a garden.	5
+Haus	n	das	Häuser		house; building	Das Haus von Frau Yilmaz hat einen Garten.	Mrs Yilmaz's house has a garden.	5
 hell	adj				bright, light	Die Küche ist schön hell.	The kitchen is nice and bright.	5
 hinten	adv				at the back, behind	Das Bad ist hinten links.	The bathroom is at the back on the left.	5
 in	prep				in; into	Wir essen in der Küche.	We eat in the kitchen.	5
@@ -52,15 +52,15 @@ Sofa	n	das	Sofas		sofa	Das Sofa steht vor dem Fenster.	The sofa is in front of t
 stehen	v			steht, stand, hat gestanden	to stand; to be (standing somewhere)	Der Kühlschrank steht in der Küche.	The fridge is in the kitchen.	5
 stellen	v			stellt, stellte, hat gestellt	to put, to place (standing up)	Stell den Stuhl bitte an den Tisch!	Please put the chair at the table!	5
 Stock	n	der	Stock		floor, storey	Lena wohnt im dritten Stock.	Lena lives on the third floor.	5
-Teil	n	der	Teile		part	Dieser Teil vom Garten gehört Frau Yilmaz.	This part of the garden belongs to Frau Yilmaz.	5
+Teil	n	der	Teile		part	Dieser Teil vom Garten gehört Frau Yilmaz.	This part of the garden belongs to Mrs Yilmaz.	5
 Telefon	n	das	Telefone		telephone	Das Telefon liegt auf dem Sofa.	The phone is on the sofa.	5
 Tisch	n	der	Tische		table	In der Küche steht ein großer Tisch.	There is a big table in the kitchen.	5
 Toilette	n	die	Toiletten		toilet	Die Toilette ist links, das Bad rechts.	The toilet is on the left, the bathroom on the right.	5
 Treppe	n	die	Treppen		stairs, staircase	Ich nehme die Treppe, nicht den Aufzug.	I take the stairs, not the lift.	5
 umziehen	v			zieht um, zog um, ist umgezogen	to move (house)	Wir ziehen im Mai um.	We are moving in May.	5
-unten	adv				down; downstairs; at the bottom	Frau Yilmaz wohnt unten.	Frau Yilmaz lives downstairs.	5
+unten	adv				down; downstairs; at the bottom	Frau Yilmaz wohnt unten.	Mrs Yilmaz lives downstairs.	5
 unter	prep				under, below	Die Schuhe stehen unter dem Bett.	The shoes are under the bed.	5
-vermieten	v			vermietet, vermietete, hat vermietet	to rent out, to let	Frau Yilmaz vermietet ein Zimmer.	Frau Yilmaz is renting out a room.	5
+vermieten	v			vermietet, vermietete, hat vermietet	to rent out, to let	Frau Yilmaz vermietet ein Zimmer.	Mrs Yilmaz is renting out a room.	5
 Vermieter	n	der	Vermieter		landlord	Der Vermieter wohnt im ersten Stock.	The landlord lives on the first floor.	5
 vor	prep				in front of; before; ago	Das Fahrrad steht vor dem Haus.	The bike is in front of the house.	5
 waschen	v			wäscht, wusch, hat gewaschen	to wash	Am Samstag wäscht Jonas sein Auto.	On Saturday Jonas washes his car.	5
@@ -101,7 +101,7 @@ Freitag	n	der	Freitage		Friday	Am Freitag gehen wir ins Kino.	On Friday we are g
 früher	adv				earlier; in the past, formerly	Morgen stehe ich früher auf.	Tomorrow I'm getting up earlier.	6
 gerade	adv				just; right now; (adj) straight	Malte telefoniert gerade mit Lena.	Malte is on the phone with Lena right now.	6
 gestern	adv				yesterday	Gestern war ich sehr müde.	Yesterday I was very tired.	6
-halb	adj				half; (with times) half past: halb acht = 7:30	Es ist schon halb acht!	It's already half past seven!	6
+halb	adj				half; (with times) halb acht = 7:30, half past seven (half an hour before eight)	Es ist schon halb acht!	It's already half past seven!	6
 Hausaufgabe	n	die	Hausaufgaben		homework (task)	Ich mache meine Hausaufgaben nach dem Essen.	I do my homework after dinner.	6
 heute	adv				today	Heute arbeite ich nur bis drei.	Today I only work until three.	6
 immer	adv				always	Ich trinke am Morgen immer Kaffee.	I always drink coffee in the morning.	6
@@ -115,7 +115,7 @@ Mittag	n	der	Mittage		midday, noon	Am Mittag esse ich mit Malte.	At midday I eat
 Mittwoch	n	der	Mittwoche		Wednesday	Am Mittwoch gehe ich schwimmen.	On Wednesday I go swimming.	6
 Moment	n	der	Momente		moment	Im Moment habe ich keine Zeit.	I have no time at the moment.	6
 Montag	n	der	Montage		Monday	Am Montag arbeite ich bis fünf Uhr.	On Monday I work until five o'clock.	6
-Morgen	n	der	Morgen		morning	Guten Morgen, Herr Weber!	Good morning, Herr Weber!	6
+Morgen	n	der	Morgen		morning	Guten Morgen, Herr Weber!	Good morning, Mr Weber!	6
 morgen	adv				tomorrow	Morgen fängt mein Deutschkurs an.	My German course starts tomorrow.	6
 Nachmittag	n	der	Nachmittage		afternoon	Am Nachmittag trinken wir Kaffee.	In the afternoon we drink coffee.	6
 Nacht	n	die	Nächte		night	Gute Nacht, schlaf gut!	Good night, sleep well!	6
@@ -134,7 +134,7 @@ Sonntag	n	der	Sonntage		Sunday	Am Sonntag frühstücken wir zusammen.	On Sunday 
 spät	adj				late	Es ist schon spät, ich gehe ins Bett.	It's already late, I'm going to bed.	6
 später	adv				later	Ich mache das später.	I'll do that later.	6
 Stunde	n	die	Stunden		hour; lesson	Ich lerne jeden Tag eine Stunde Deutsch.	I study German for an hour every day.	6
-Tag	n	der	Tage		day	Guten Tag, Frau Yilmaz!	Hello, Frau Yilmaz!	6
+Tag	n	der	Tage		day	Guten Tag, Frau Yilmaz!	Hello, Mrs Yilmaz!	6
 telefonieren	v			telefoniert, telefonierte, hat telefoniert	to talk on the phone	Lena telefoniert jeden Abend mit ihrer Mutter.	Lena talks to her mother on the phone every evening.	6
 Termin	n	der	Termine		appointment	Ich habe heute um drei einen Termin.	I have an appointment at three today.	6
 Uhr	n	die	Uhren		clock; watch; (with times) o'clock	Es ist jetzt acht Uhr.	It is eight o'clock now.	6
@@ -166,7 +166,7 @@ Fußball	n	der	Fußbälle		football (the game; the ball)	Jonas spielt am Samstag
 Führung	n	die	Führungen		guided tour	Die Führung durch die Stadt dauert zwei Stunden.	The guided tour of the town takes two hours.	7
 für	prep				for	Die CD ist für Lena.	The CD is for Lena.	7
 gegen	prep				against; (with times) around, about	Wir treffen uns gegen sieben Uhr.	We'll meet at around seven o'clock.	7
-Gespräch	n	das	Gespräche		conversation, talk	Ich habe heute ein Gespräch mit Herrn Weber.	Today I have a talk with Herr Weber.	7
+Gespräch	n	das	Gespräche		conversation, talk	Ich habe heute ein Gespräch mit Herrn Weber.	Today I have a talk with Mr Weber.	7
 gewinnen	v			gewinnt, gewann, hat gewonnen	to win	Wer gewinnt heute, Jonas oder Malte?	Who is going to win today, Jonas or Malte?	7
 glauben	v			glaubt, glaubte, hat geglaubt	to believe; to think	Ich glaube, das Kino ist heute geschlossen.	I think the cinema is closed today.	7
 Hobby	n	das	Hobbys		hobby	Kochen ist mein Hobby.	Cooking is my hobby.	7
@@ -204,10 +204,10 @@ treffen	v			trifft, traf, hat getroffen	to meet	Ich treffe Jonas vor dem Kino.	I
 Unterricht	n	der	-		lessons, class, teaching	Nach dem Unterricht gehen wir schwimmen.	After class we go swimming.	7
 vielleicht	adv				maybe, perhaps	Vielleicht gehen wir am Sonntag wandern.	Maybe we'll go hiking on Sunday.	7
 wandern	v			wandert, wanderte, ist gewandert	to hike, to go walking	Am Wochenende wandern wir gern.	At the weekend we like to go hiking.	7
-wiederholen	v			wiederholt, wiederholte, hat wiederholt	to repeat	Herr Weber wiederholt die Frage.	Herr Weber repeats the question.	7
+wiederholen	v			wiederholt, wiederholte, hat wiederholt	to repeat	Herr Weber wiederholt die Frage.	Mr Weber repeats the question.	7
 wollen	v			will, wollte, hat gewollt	to want (to)	Wir wollen am Samstag schwimmen gehen.	We want to go swimming on Saturday.	7
 wunderbar	adj				wonderful	Das Wetter ist heute wunderbar!	The weather is wonderful today!	7
-Zeitung	n	die	Zeitungen		newspaper	Herr Weber liest jeden Morgen die Zeitung.	Herr Weber reads the newspaper every morning.	7
+Zeitung	n	die	Zeitungen		newspaper	Herr Weber liest jeden Morgen die Zeitung.	Mr Weber reads the newspaper every morning.	7
 abgeben	v			gibt ab, gab ab, hat abgegeben	to hand in; to leave (with someone)	Sie können Ihre Jacke hier abgeben.	You can leave your jacket here.	8
 ander	adj				other; different	Haben Sie die Jacke auch in einer anderen Farbe?	Do you have the jacket in another colour too?	8
 Angebot	n	das	Angebote		offer; im Angebot: on special offer	Die Jacke ist diese Woche im Angebot.	The jacket is on special offer this week.	8
@@ -267,7 +267,7 @@ suchen	v			sucht, suchte, hat gesucht	to look for, to search	Ich suche eine Hose
 Tasche	n	die	Taschen		bag; pocket	Ist das deine Tasche?	Is that your bag?	8
 teuer	adj				expensive	Das Handy ist mir zu teuer.	The mobile phone is too expensive for me.	8
 tun	v			tut, tat, hat getan	to do	Am Samstag habe ich viel zu tun.	I have a lot to do on Saturday.	8
-verkaufen	v			verkauft, verkaufte, hat verkauft	to sell	Frau Yilmaz verkauft ihr altes Sofa.	Frau Yilmaz is selling her old sofa.	8
+verkaufen	v			verkauft, verkaufte, hat verkauft	to sell	Frau Yilmaz verkauft ihr altes Sofa.	Mrs Yilmaz is selling her old sofa.	8
 weiß	adj				white	Die weiße Hose gefällt mir.	I like the white trousers.	8
 wichtig	adj				important	Der Preis ist mir nicht so wichtig.	The price isn't that important to me.	8
 Zoll	n	der	-		customs	Nach dem Flug geht Priya durch den Zoll.	After the flight Priya goes through customs.	8

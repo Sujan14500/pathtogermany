@@ -304,7 +304,7 @@
   "type": "context",
   "w": "Beruf",
   "station": 3,
-  "q": "Herr Weber arbeitet als Verkäufer. Das ist sein ___.",
+  "q": "Mein Bruder arbeitet als Verkäufer. Das ist sein ___.",
   "opts": [
    "Kunde",
    "Partner",
@@ -913,7 +913,7 @@
    "gern"
   ],
   "a": 1,
-  "why": "leider = unfortunately: you would like to come but can't. Vielleicht (maybe) doesn't fit, because she knows she has to work."
+  "why": "leider = unfortunately: you would like to come but can't. Vielleicht (maybe) doesn't fit, because the speaker knows they have to work."
  },
  {
   "type": "synonym",

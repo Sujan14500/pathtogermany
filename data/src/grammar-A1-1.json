@@ -1071,7 +1071,7 @@
    {
     "de": [
      "In Berlin",
-     "studiert",
+     "lernt",
      "Priya",
      "Deutsch."
     ],
@@ -1086,7 +1086,7 @@
       [
        1
       ],
-      "is studying"
+      "is learning"
      ],
      [
       [
@@ -1558,16 +1558,19 @@
    },
    {
     "de": [
-     "Ihr Sohn",
+     "Lena",
      "ist",
-     "drei Jahre alt."
+     "zwanzig,",
+     "ihr Bruder",
+     "ist",
+     "dreizehn."
     ],
     "en": [
      [
       [
        0
       ],
-      "Her son"
+      "Lena"
      ],
      [
       [
@@ -1579,11 +1582,30 @@
       [
        2
       ],
-      "three years old."
+      "twenty,"
+     ],
+     [
+      [
+       3
+      ],
+      "her brother"
+     ],
+     [
+      [
+       4
+      ],
+      "is"
+     ],
+     [
+      [
+       5
+      ],
+      "thirteen."
      ]
     ],
     "v": [
-     1
+     1,
+     4
     ]
    },
    {

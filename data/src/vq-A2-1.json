@@ -160,7 +160,7 @@
   "type": "context",
   "w": "Erdgeschoss",
   "station": 2,
-  "q": "Frau Yilmaz ist 85 Jahre alt. Treppen sind schwer für sie, deshalb wohnt sie im ___.",
+  "q": "Meine Oma ist 85 Jahre alt. Treppen sind schwer für sie, deshalb wohnt sie im ___.",
   "opts": [
    "Stockwerk",
    "Schlafzimmer",
@@ -356,13 +356,13 @@
    "außerdem"
   ],
   "a": 0,
-  "why": "deshalb = that's why, so; German also means the same (so, therefore). sonst means otherwise, außerdem means besides."
+  "why": "deshalb = that's why, so; the German word also (so, therefore; not English \"also\") means the same. sonst means otherwise, außerdem means besides."
  },
  {
   "type": "synonym",
   "w": "herstellen",
   "station": 3,
-  "q": "Die Firma von Herrn Weber will bald Fahrräder herstellen.",
+  "q": "Eine Firma in unserer Stadt will bald Fahrräder herstellen.",
   "u": "herstellen",
   "opts": [
    "verkaufen",
@@ -905,7 +905,7 @@
   "type": "context",
   "w": "Führerschein",
   "station": 7,
-  "q": "Malte ist 18 und macht gerade den ___. Bald darf er Auto fahren.",
+  "q": "Meine Schwester ist 18 und macht gerade den ___. Bald darf sie Auto fahren.",
   "opts": [
    "Fahrplan",
    "Stadtplan",
@@ -1321,7 +1321,7 @@
   "type": "context",
   "w": "streng",
   "station": 10,
-  "q": "Bei Frau Yilmaz dürfen wir im Unterricht kein Handy benutzen. Sie ist sehr ___.",
+  "q": "Bei Herrn Weber dürfen wir im Unterricht kein Handy benutzen. Er ist sehr ___.",
   "opts": [
    "streng",
    "schwierig",
@@ -1329,7 +1329,7 @@
    "verschieden"
   ],
   "a": 0,
-  "why": "streng = strict: she has firm rules. schwierig (difficult) is for tasks and exams, not for people."
+  "why": "streng = strict: he has firm rules. schwierig (difficult) is for tasks and exams, not for people."
  },
  {
   "type": "context",
