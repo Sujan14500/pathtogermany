@@ -1,0 +1,2910 @@
+[
+ {
+  "id": "a1-hx-09-1",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "In the street: a man asks a woman the way to the swimming pool.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Entschuldigung, wie komme ich zum Schwimmbad?",
+    "en": "Excuse me, how do I get to the swimming pool?"
+   },
+   {
+    "who": "A",
+    "de": "Zum Schwimmbad? Das ist weit. Nehmen Sie den Bus Nummer acht.",
+    "en": "To the swimming pool? That's a long way. Take bus number eight."
+   },
+   {
+    "who": "B",
+    "de": "Kann ich nicht zu Fuß gehen?",
+    "en": "Can't I walk?"
+   },
+   {
+    "who": "A",
+    "de": "Doch, aber zu Fuß brauchen Sie vierzig Minuten. Mit dem Bus sind es nur zehn Minuten.",
+    "en": "You can, but on foot it takes you forty minutes. By bus it's only ten minutes."
+   },
+   {
+    "who": "B",
+    "de": "Vierzig Minuten? Dann nehme ich lieber den Bus. Danke!",
+    "en": "Forty minutes? Then I'd rather take the bus. Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie lange braucht man zu Fuß zum Schwimmbad?",
+    "format": "abc",
+    "opts": [
+     "10 Minuten",
+     "40 Minuten",
+     "8 Minuten"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "'Zu Fuß brauchen Sie vierzig Minuten.' Ten minutes is the bus ride, and eight (acht) is the number of the bus."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-2",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "In a department store: a woman asks a salesman where she can find shoes.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Entschuldigung, wo finde ich hier Schuhe?",
+    "en": "Excuse me, where can I find shoes here?"
+   },
+   {
+    "who": "B",
+    "de": "Schuhe sind im dritten Stock.",
+    "en": "Shoes are on the third floor."
+   },
+   {
+    "who": "A",
+    "de": "Und Jacken? Ich brauche auch eine Jacke.",
+    "en": "And jackets? I need a jacket too."
+   },
+   {
+    "who": "B",
+    "de": "Jacken sind im ersten Stock. Hier unten haben wir nur Taschen.",
+    "en": "Jackets are on the first floor. Down here we only have bags."
+   },
+   {
+    "who": "A",
+    "de": "Danke. Und wo ist der Aufzug?",
+    "en": "Thanks. And where is the lift?"
+   },
+   {
+    "who": "B",
+    "de": "Da hinten links, neben der Kasse.",
+    "en": "Back there on the left, next to the till."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo sind die Schuhe?",
+    "format": "abc",
+    "opts": [
+     "im ersten Stock",
+     "unten neben der Kasse",
+     "im dritten Stock"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "'Schuhe sind im dritten Stock.' The jackets are on the first floor, and down by the till are only the bags and the lift."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-3",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At a bus stop: a man asks a woman how much a ticket costs.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Entschuldigung, wie viel kostet eine Fahrkarte für den Bus?",
+    "en": "Excuse me, how much is a bus ticket?"
+   },
+   {
+    "who": "A",
+    "de": "Für Kinder einen Euro zehn und für Sie zwei Euro zwanzig.",
+    "en": "One euro ten for children, and two euros twenty for you."
+   },
+   {
+    "who": "B",
+    "de": "Und gibt es auch eine Karte für den ganzen Tag?",
+    "en": "And is there also a ticket for the whole day?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, die kostet sechs Euro.",
+    "en": "Yes, that one costs six euros."
+   },
+   {
+    "who": "B",
+    "de": "Ich fahre heute nur einmal in die Stadt. Dann nehme ich eine Fahrkarte für zwei Euro zwanzig.",
+    "en": "I'm only going into town once today. Then I'll take a ticket for two euros twenty."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie viel bezahlt der Mann?",
+    "format": "abc",
+    "opts": [
+     "1,10 €",
+     "2,20 €",
+     "6,00 €"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     4
+    ],
+    "why": "He goes into town only once, so he takes 'eine Fahrkarte für zwei Euro zwanzig'. 1,10 € is the price for children, and 6 € is the ticket for the whole day."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-4",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A woman and a man decide where to meet tomorrow.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Treffen wir uns morgen um drei vor dem Kino?",
+    "en": "Shall we meet in front of the cinema at three tomorrow?"
+   },
+   {
+    "who": "B",
+    "de": "Vor dem Kino? Da ist es immer so laut. Lieber im Café neben der Post.",
+    "en": "In front of the cinema? It's always so noisy there. Better in the café next to the post office."
+   },
+   {
+    "who": "A",
+    "de": "Morgen ist Montag. Da ist das Café geschlossen.",
+    "en": "Tomorrow is Monday. The café is closed then."
+   },
+   {
+    "who": "B",
+    "de": "Ach ja, richtig. Dann treffen wir uns an der Haltestelle vor der Bank.",
+    "en": "Oh yes, that's right. Then let's meet at the stop in front of the bank."
+   },
+   {
+    "who": "A",
+    "de": "Gut. Also um drei an der Haltestelle.",
+    "en": "Good. So at three at the stop."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo treffen sich die Frau und der Mann?",
+    "format": "abc",
+    "opts": [
+     "vor dem Kino",
+     "im Café",
+     "an der Haltestelle"
+    ],
+    "a": 2,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "The cinema is too noisy for him, and the café is closed on Mondays. So they meet 'um drei an der Haltestelle'."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-5",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At the railway station: a woman asks a man where the taxis are.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Entschuldigung, wo sind hier die Taxis?",
+    "en": "Excuse me, where are the taxis here?"
+   },
+   {
+    "who": "B",
+    "de": "Nicht hier am Eingang. Gehen Sie da hinten zum Ausgang.",
+    "en": "Not here at the entrance. Go to the exit back there."
+   },
+   {
+    "who": "A",
+    "de": "Zum Ausgang. Stehen die Taxis neben dem Kiosk?",
+    "en": "To the exit. Are the taxis next to the kiosk?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, der Kiosk ist links. Die Taxis stehen rechts, vor der Bäckerei.",
+    "en": "No, the kiosk is on the left. The taxis are on the right, in front of the bakery."
+   },
+   {
+    "who": "A",
+    "de": "Vielen Dank!",
+    "en": "Thank you very much!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo stehen die Taxis?",
+    "format": "abc",
+    "opts": [
+     "am Eingang",
+     "neben dem Kiosk",
+     "vor der Bäckerei"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "'Die Taxis stehen rechts, vor der Bäckerei.' They are not at the entrance, and the kiosk is on the other side, on the left."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-6",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "On the phone: a man asks a woman how to get to her flat by tram.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Wie komme ich am Samstag zu dir? Mit der Straßenbahn?",
+    "en": "How do I get to your place on Saturday? By tram?"
+   },
+   {
+    "who": "A",
+    "de": "Ja. Nimm am Bahnhof die Straßenbahn Nummer vier.",
+    "en": "Yes. Take tram number four at the station."
+   },
+   {
+    "who": "B",
+    "de": "Und wo muss ich aussteigen? An der Feldstraße?",
+    "en": "And where do I have to get off? At Feldstraße?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, eine Haltestelle später, an der Schulstraße. Mein Haus ist gleich neben der Haltestelle.",
+    "en": "No, one stop later, at Schulstraße. My house is right next to the stop."
+   },
+   {
+    "who": "B",
+    "de": "Gut, Schulstraße. Bis Samstag!",
+    "en": "Good, Schulstraße. See you on Saturday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo steigt der Mann aus?",
+    "format": "abc",
+    "opts": [
+     "an der Schulstraße",
+     "am Bahnhof",
+     "an der Feldstraße"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Not at Feldstraße: 'eine Haltestelle später, an der Schulstraße'. The station is where he gets on the tram."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-7",
+  "station": 9,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "In the morning: a woman tells her neighbour that her car is broken.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Morgen! Mein Auto ist kaputt. Fährst du heute mit dem Auto in die Stadt?",
+    "en": "Good morning! My car is broken. Are you driving into town today?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, heute nehme ich das Fahrrad. Aber der Bus fährt um acht.",
+    "en": "No, today I'm taking my bike. But the bus goes at eight."
+   },
+   {
+    "who": "A",
+    "de": "Um acht? Das ist zu spät. Ich muss um acht bei der Arbeit sein.",
+    "en": "At eight? That's too late. I have to be at work at eight."
+   },
+   {
+    "who": "B",
+    "de": "Dann nimm doch die S-Bahn. Die fährt alle zehn Minuten.",
+    "en": "Then take the S-Bahn. It runs every ten minutes."
+   },
+   {
+    "who": "A",
+    "de": "Gute Idee. Dann fahre ich mit der S-Bahn.",
+    "en": "Good idea. Then I'll go by S-Bahn."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie fährt die Frau heute in die Stadt?",
+    "format": "abc",
+    "opts": [
+     "mit dem Bus",
+     "mit der S-Bahn",
+     "mit dem Auto"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "Her car is broken and the bus at eight is too late for her, so: 'Dann fahre ich mit der S-Bahn.' The man is taking his bike, not his car."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-8",
+  "station": 9,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement on a bus.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information für alle Fahrgäste im Bus Nummer zwölf:",
+    "en": "Information for all passengers on bus number twelve:"
+   },
+   {
+    "who": "N",
+    "de": "Heute hält der Bus nicht am Rathaus. Die Straße dort ist geschlossen.",
+    "en": "Today the bus does not stop at the town hall. The street there is closed."
+   },
+   {
+    "who": "N",
+    "de": "Bitte steigen Sie an der Post aus. Von dort gehen Sie fünf Minuten zu Fuß.",
+    "en": "Please get off at the post office. From there it's a five-minute walk."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Bus hält heute an der Post.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "The bus doesn't stop at the town hall (Rathaus) today: 'Bitte steigen Sie an der Post aus.'"
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-9",
+  "station": 9,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement in a department store.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Kundinnen und Kunden, heute gibt es im zweiten Stock alle Jacken zum halben Preis.",
+    "en": "Dear customers, today all jackets on the second floor are half price."
+   },
+   {
+    "who": "N",
+    "de": "Und besuchen Sie unser Café im vierten Stock. Dort gibt es Kaffee und Kuchen für nur drei Euro.",
+    "en": "And visit our café on the fourth floor. There you get coffee and cake for only three euros."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Café ist im zweiten Stock.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The café is 'im vierten Stock' (4th floor). On the second floor are the jackets at half price."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-10",
+  "station": 9,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement on a tram.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Nächste Haltestelle: Universität.",
+    "en": "Next stop: University."
+   },
+   {
+    "who": "N",
+    "de": "Sie möchten zum Krankenhaus? Dann steigen Sie bitte hier aus und nehmen Sie den Bus Nummer elf.",
+    "en": "Would you like to go to the hospital? Then please get off here and take bus number eleven."
+   },
+   {
+    "who": "N",
+    "de": "Die Straßenbahn fährt weiter zum Bahnhof.",
+    "en": "The tram continues to the station."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Zum Krankenhaus fährt man mit der Straßenbahn weiter.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "For the hospital you get off here and take 'den Bus Nummer elf'. The tram goes on to the station."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-11",
+  "station": 9,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement at the tourist information office.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information für alle Gäste der Stadtführung:",
+    "en": "Information for everyone on the city tour:"
+   },
+   {
+    "who": "N",
+    "de": "Die Führung beginnt heute nicht um zehn Uhr, sondern um elf Uhr.",
+    "en": "Today the tour does not start at ten but at eleven."
+   },
+   {
+    "who": "N",
+    "de": "Wir treffen uns vor dem Bahnhof. Die Führung dauert zwei Stunden.",
+    "en": "We meet in front of the station. The tour takes two hours."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Führung beginnt heute um elf Uhr.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Nicht um zehn Uhr, sondern um elf Uhr': today the tour starts at eleven. Two hours is how long it lasts."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-12",
+  "station": 9,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Wilma leaves a message for a friend who is visiting her new flat.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo, hier ist Wilma. Du kommst doch heute zum ersten Mal in meine neue Wohnung.",
+    "en": "Hi, it's Wilma. You're coming to my new flat for the first time today."
+   },
+   {
+    "who": "A",
+    "de": "Nimm am Bahnhof nicht den Bus Nummer drei, der fährt heute nicht. Nimm den Bus Nummer dreizehn.",
+    "en": "At the station, don't take bus number three; it isn't running today. Take bus number thirteen."
+   },
+   {
+    "who": "A",
+    "de": "Steig an der Haltestelle Waldweg aus und geh dann zwei Minuten geradeaus. Ich wohne in Nummer dreißig.",
+    "en": "Get off at the Waldweg stop and then walk straight on for two minutes. I live at number thirty."
+   },
+   {
+    "who": "A",
+    "de": "Bis später!",
+    "en": "See you later!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Welchen Bus soll man am Bahnhof nehmen?",
+    "format": "abc",
+    "opts": [
+     "Nummer 13",
+     "Nummer 3",
+     "Nummer 30"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Nimm den Bus Nummer dreizehn' (13). Bus number 3 isn't running today, and thirty (30) is Wilma's house number."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-13",
+  "station": 9,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Ansgar leaves a message for his wife, Theda.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Theda, hier ist Ansgar. Mein Auto ist kaputt. Es steht jetzt an der Kreuzung vor der Post.",
+    "en": "Hi Theda, it's Ansgar. My car has broken down. It's standing at the crossroads in front of the post office."
+   },
+   {
+    "who": "B",
+    "de": "Ich gehe jetzt zu Fuß zum Bahnhof. Das sind nur zehn Minuten.",
+    "en": "I'm walking to the station now. It's only ten minutes."
+   },
+   {
+    "who": "B",
+    "de": "Kannst du mich um fünf am Bahnhof abholen? Bitte am Bahnhof, nicht an der Post! Danke!",
+    "en": "Can you pick me up at the station at five? At the station, please, not at the post office! Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo soll Theda Ansgar abholen?",
+    "format": "abc",
+    "opts": [
+     "an der Post",
+     "am Bahnhof",
+     "an der Kreuzung"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Ansgar walks to the station: 'Kannst du mich um fünf am Bahnhof abholen?' The car is at the crossroads by the post office."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-14",
+  "station": 9,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "A bicycle shop leaves a message for Herr Tiedemann.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Tiedemann, hier ist Fahrrad Sternkopf.",
+    "en": "Hello, Herr Tiedemann, this is Sternkopf's bicycle shop."
+   },
+   {
+    "who": "A",
+    "de": "Ihr Fahrrad ist leider noch nicht fertig. Wir brauchen ein neues Teil, und das kommt am Mittwoch.",
+    "en": "Your bike isn't ready yet, I'm afraid. We need a new part, and it arrives on Wednesday."
+   },
+   {
+    "who": "A",
+    "de": "Sie können das Fahrrad dann am Donnerstag ab zehn Uhr abholen.",
+    "en": "You can then pick up the bike on Thursday from ten o’clock."
+   },
+   {
+    "who": "A",
+    "de": "Am Freitag ist unser Laden geschlossen. Auf Wiederhören!",
+    "en": "On Friday our shop is closed. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kann Herr Tiedemann sein Fahrrad abholen?",
+    "format": "abc",
+    "opts": [
+     "am Mittwoch",
+     "am Freitag",
+     "am Donnerstag"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "why": "'Sie können das Fahrrad dann am Donnerstag ab zehn Uhr abholen.' On Wednesday only the new part arrives, and on Friday the shop is closed."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-15",
+  "station": 9,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "A taxi company leaves a message for Frau Ehlers.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Abend, Frau Ehlers, hier ist Taxi Grothe.",
+    "en": "Good evening, Frau Ehlers, this is Grothe Taxis."
+   },
+   {
+    "who": "B",
+    "de": "Sie möchten morgen um sechs Uhr ein Taxi zum Flughafen. Leider haben wir um sechs kein Auto frei.",
+    "en": "You'd like a taxi to the airport tomorrow at six. Unfortunately we have no car free at six."
+   },
+   {
+    "who": "B",
+    "de": "Um Viertel nach sechs geht es, aber das ist für Ihren Flug vielleicht zu spät.",
+    "en": "Quarter past six is possible, but that may be too late for your flight."
+   },
+   {
+    "who": "B",
+    "de": "Das Taxi kommt also schon um Viertel vor sechs. Bitte warten Sie vor dem Haus. Auf Wiederhören!",
+    "en": "So the taxi will come earlier, at quarter to six. Please wait in front of the house. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt das Taxi?",
+    "format": "abc",
+    "opts": [
+     "um 5:45 Uhr",
+     "um 6:00 Uhr",
+     "um 6:15 Uhr"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "'Das Taxi kommt also schon um Viertel vor sechs' (5:45). At six no car is free, and quarter past six (6:15) may be too late for her flight."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-09-16",
+  "station": 9,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "The town hall leaves a message for Herr Kuhnert about his new ID card.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Kuhnert, hier ist das Rathaus, Zimmer zwölf.",
+    "en": "Hello, Herr Kuhnert, this is the town hall (Rathaus), room twelve."
+   },
+   {
+    "who": "A",
+    "de": "Ihr neuer Ausweis ist fertig. Sie können ihn ab Montag bei uns abholen.",
+    "en": "Your new ID card is ready. You can pick it up from us from Monday."
+   },
+   {
+    "who": "A",
+    "de": "Ein Foto brauchen wir nicht mehr, das haben wir schon. Und Sie müssen auch nichts bezahlen.",
+    "en": "We don't need a photo any more; we already have one. And you don't have to pay anything either."
+   },
+   {
+    "who": "A",
+    "de": "Bitte bringen Sie nur Ihren alten Ausweis mit. Auf Wiederhören!",
+    "en": "Please just bring your old ID card. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was soll Herr Kuhnert mitbringen?",
+    "format": "abc",
+    "opts": [
+     "ein Foto",
+     "Geld",
+     "seinen alten Ausweis"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "'Bitte bringen Sie nur Ihren alten Ausweis mit.' They already have his photo, and he pays nothing ('nichts bezahlen'), so he needs no money."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-1",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At a doctor’s practice: a woman asks the man at the reception for an appointment.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Mein Rücken tut sehr weh. Kann ich einen Termin bekommen?",
+    "en": "Hello. My back hurts a lot. Can I get an appointment?"
+   },
+   {
+    "who": "B",
+    "de": "Diese Woche haben wir leider keinen Termin mehr frei. Aber am Montag um neun Uhr geht es.",
+    "en": "This week we have no appointments left, I’m afraid. But Monday at nine is possible."
+   },
+   {
+    "who": "A",
+    "de": "Am Montag muss ich arbeiten. Geht es auch am Dienstag?",
+    "en": "On Monday I have to work. Is Tuesday possible too?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, am Dienstag um elf.",
+    "en": "Yes, on Tuesday at eleven."
+   },
+   {
+    "who": "A",
+    "de": "Dienstag um elf ist gut. Vielen Dank!",
+    "en": "Tuesday at eleven is fine. Thank you very much!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann hat die Frau ihren Termin?",
+    "format": "abc",
+    "opts": [
+     "am Montag um neun",
+     "am Dienstag um elf",
+     "am Dienstag um neun"
+    ],
+    "a": 1,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "On Monday she has to work, so she takes 'Dienstag um elf'. Nine o'clock is the free time on Monday."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-2",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At the doctor’s: a man tells the doctor (a woman) what is wrong.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Was fehlt Ihnen denn?",
+    "en": "Hello. What's the matter?"
+   },
+   {
+    "who": "B",
+    "de": "Ich habe seit gestern Schmerzen.",
+    "en": "I've been in pain since yesterday."
+   },
+   {
+    "who": "A",
+    "de": "Wo denn? Haben Sie Kopfschmerzen?",
+    "en": "Where? Do you have a headache?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, der Kopf ist okay. Mein Bauch tut weh. Und ich bin sehr müde.",
+    "en": "No, my head is fine. My stomach hurts. And I’m very tired."
+   },
+   {
+    "who": "A",
+    "de": "Haben Sie auch Fieber?",
+    "en": "Do you have a temperature too?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, Fieber habe ich nicht.",
+    "en": "No, I don't have a temperature."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was hat der Mann?",
+    "format": "abc",
+    "opts": [
+     "Bauchschmerzen",
+     "Kopfschmerzen",
+     "Fieber"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "'Mein Bauch tut weh': he has a stomach ache. His head is fine ('der Kopf ist okay'), and he has no fever."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-3",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At the pharmacy: a man asks for something for his daughter.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag. Meine Tochter hat Halsschmerzen. Haben Sie Tabletten für Kinder?",
+    "en": "Hello. My daughter has a sore throat. Do you have tablets for children?"
+   },
+   {
+    "who": "A",
+    "de": "Wie alt ist Ihre Tochter?",
+    "en": "How old is your daughter?"
+   },
+   {
+    "who": "B",
+    "de": "Sechs Jahre.",
+    "en": "Six."
+   },
+   {
+    "who": "A",
+    "de": "Diese Tabletten sind nur für Kinder ab zwölf. Nehmen Sie lieber diesen Tee. Den trinkt sie dreimal am Tag, warm.",
+    "en": "These tablets are only for children from twelve. Better take this tea. She drinks it warm, three times a day."
+   },
+   {
+    "who": "B",
+    "de": "Gut, dann nehme ich den Tee.",
+    "en": "Fine, then I'll take the tea."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was kauft der Mann?",
+    "format": "abc",
+    "opts": [
+     "Tee",
+     "Tabletten",
+     "Tabletten und Tee"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "The tablets are only for children 'ab zwölf', and his daughter is six. So: 'dann nehme ich den Tee', and only the tea."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-4",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "On the phone: a woman tells her boss that she is ill.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Morgen. Ich bin leider krank. Ich habe hohes Fieber.",
+    "en": "Good morning. I'm ill, I'm afraid. I have a high temperature."
+   },
+   {
+    "who": "B",
+    "de": "Oh, das tut mir leid. Waren Sie schon beim Arzt?",
+    "en": "Oh, I'm sorry. Have you been to the doctor yet?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, heute Morgen. Ich muss bis Mittwoch zu Hause bleiben.",
+    "en": "Yes, this morning. I have to stay at home until Wednesday."
+   },
+   {
+    "who": "B",
+    "de": "Dann kommen Sie am Donnerstag wieder?",
+    "en": "So you’ll be back on Thursday?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, am Donnerstag habe ich frei. Ich komme am Freitag wieder.",
+    "en": "No, I have Thursday off. I'll be back on Friday."
+   },
+   {
+    "who": "B",
+    "de": "Gut. Gute Besserung!",
+    "en": "Fine. Get well soon!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt die Frau wieder zur Arbeit?",
+    "format": "abc",
+    "opts": [
+     "am Mittwoch",
+     "am Donnerstag",
+     "am Freitag"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "She stays at home until Wednesday, and Thursday is her day off: 'Ich komme am Freitag wieder.'"
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-5",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At a dentist’s reception: a man has an appointment at ten.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag. Ich habe um zehn Uhr einen Termin.",
+    "en": "Hello. I have an appointment at ten."
+   },
+   {
+    "who": "A",
+    "de": "Guten Tag. Heute ist es leider sehr voll. Sie müssen noch eine halbe Stunde warten.",
+    "en": "Hello. It's very busy today, I'm afraid. You'll have to wait another half hour."
+   },
+   {
+    "who": "B",
+    "de": "Eine halbe Stunde? Nicht nur zehn Minuten? Ich muss um elf bei der Arbeit sein.",
+    "en": "Half an hour? Not just ten minutes? I have to be at work at eleven."
+   },
+   {
+    "who": "A",
+    "de": "Nein, leider nicht. Oder Sie kommen morgen um acht wieder.",
+    "en": "No, I'm afraid not. Or you can come back tomorrow at eight."
+   },
+   {
+    "who": "B",
+    "de": "Nein, dann warte ich lieber.",
+    "en": "No, then I'd rather wait."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie lange muss der Mann warten?",
+    "format": "abc",
+    "opts": [
+     "zehn Minuten",
+     "eine halbe Stunde",
+     "bis morgen"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     4
+    ],
+    "why": "'Sie müssen noch eine halbe Stunde warten', and he decides to wait. Ten minutes is only what he hoped for, and tomorrow at eight is the other offer, which he says no to."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-6",
+  "station": 10,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A woman meets a man she knows. Something is wrong with his arm.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo! Was hast du denn am Arm?",
+    "en": "Hi! What's wrong with your arm?"
+   },
+   {
+    "who": "B",
+    "de": "Ich hatte am Sonntag einen Unfall mit dem Fahrrad.",
+    "en": "I had an accident on my bike on Sunday."
+   },
+   {
+    "who": "A",
+    "de": "Oh nein! Kannst du am Samstag Fußball spielen?",
+    "en": "Oh no! Can you play football on Saturday?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, ich darf sechs Wochen keinen Sport machen.",
+    "en": "No, I'm not allowed to do any sport for six weeks."
+   },
+   {
+    "who": "A",
+    "de": "Und arbeiten?",
+    "en": "And work?"
+   },
+   {
+    "who": "B",
+    "de": "Arbeiten darf ich ab Montag wieder.",
+    "en": "I can go back to work from Monday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ab wann darf der Mann wieder arbeiten?",
+    "format": "abc",
+    "opts": [
+     "ab Montag",
+     "ab Sonntag",
+     "in sechs Wochen"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "'Arbeiten darf ich ab Montag wieder.' Sunday was the day of the accident, and six weeks is how long he must not do sport."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-7",
+  "station": 10,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement in a hospital.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information für alle Besucher:",
+    "en": "Information for all visitors:"
+   },
+   {
+    "who": "N",
+    "de": "Sie können Ihre Familie und Ihre Freunde hier jeden Tag von vierzehn bis neunzehn Uhr besuchen.",
+    "en": "You can visit your family and friends here every day from 2 p.m. to 7 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Bitte bringen Sie keine Blumen mit. Blumen sind in den Zimmern leider verboten.",
+    "en": "Please do not bring flowers. Unfortunately flowers are not allowed in the rooms."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Besucher dürfen Blumen mitbringen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "'Bitte bringen Sie keine Blumen mit. Blumen sind … verboten': flowers are not allowed."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-8",
+  "station": 10,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "A health tip on the radio.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt unser Tipp für die Gesundheit:",
+    "en": "And now our health tip:"
+   },
+   {
+    "who": "N",
+    "de": "Heute wird es sehr warm, über dreißig Grad. Trinken Sie bitte viel Wasser, zwei Liter am Tag.",
+    "en": "Today it will be very warm, over thirty degrees. Please drink a lot of water, two litres a day."
+   },
+   {
+    "who": "N",
+    "de": "Und machen Sie am Mittag keinen Sport. Laufen Sie lieber am Morgen oder am Abend.",
+    "en": "And do no sport at midday. Better go running in the morning or in the evening."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Man soll heute viel Wasser trinken.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Trinken Sie bitte viel Wasser, zwei Liter am Tag.'"
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-9",
+  "station": 10,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "A recorded announcement when you phone a doctor’s practice.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Hier ist die Praxis Doktor Haberland. Wir haben vom zweiten bis zum sechzehnten August Urlaub.",
+    "en": "This is Doctor Haberland's practice. We are on holiday from the 2nd to the 16th of August."
+   },
+   {
+    "who": "N",
+    "de": "In dieser Zeit gehen Sie bitte zu Doktor Meinke in der Kirchstraße zwölf.",
+    "en": "During this time please go to Doctor Meinke at Kirchstraße 12."
+   },
+   {
+    "who": "N",
+    "de": "Ab dem siebzehnten August sind wir wieder für Sie da.",
+    "en": "From the 17th of August we are there for you again."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Praxis Haberland ist am 10. August geschlossen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     2
+    ],
+    "why": "The practice is on holiday 'vom zweiten bis zum sechzehnten August' (2nd to 16th), and the 10th is in between. It opens again on the 17th."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-10",
+  "station": 10,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement on a train.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Durchsage für alle Fahrgäste:",
+    "en": "An announcement for all passengers:"
+   },
+   {
+    "who": "N",
+    "de": "Ist ein Arzt oder eine Ärztin im Zug? Ein Mann ist krank und braucht Hilfe.",
+    "en": "Is there a doctor on the train? A man is ill and needs help."
+   },
+   {
+    "who": "N",
+    "de": "Bitte kommen Sie schnell in Wagen sieben. Das ist der Wagen hinter dem Restaurant.",
+    "en": "Please come quickly to carriage (Wagen) seven. That is the carriage behind the restaurant car."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der kranke Mann ist im Restaurant.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "The man is 'in Wagen sieben', the carriage behind the restaurant car, not in the restaurant itself."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-11",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "A doctor’s practice leaves a message for Frau Ohlendorf.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Frau Ohlendorf, hier ist die Praxis Doktor Hinrichs.",
+    "en": "Hello, Frau Ohlendorf, this is Doctor Hinrichs's practice."
+   },
+   {
+    "who": "A",
+    "de": "Sie haben am Donnerstag um neun Uhr einen Termin. Leider ist Doktor Hinrichs am Donnerstag nicht da.",
+    "en": "You have an appointment on Thursday at nine. Unfortunately Doctor Hinrichs isn't there on Thursday."
+   },
+   {
+    "who": "A",
+    "de": "Können Sie am Freitag kommen, auch um neun? Oder am Montag um elf?",
+    "en": "Can you come on Friday, also at nine? Or on Monday at eleven?"
+   },
+   {
+    "who": "A",
+    "de": "Bitte rufen Sie uns an. Auf Wiederhören!",
+    "en": "Please give us a call. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann ist Doktor Hinrichs nicht in der Praxis?",
+    "format": "abc",
+    "opts": [
+     "am Freitag",
+     "am Donnerstag",
+     "am Montag"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "'Leider ist Doktor Hinrichs am Donnerstag nicht da.' Friday and Monday are the new times the practice offers her."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-12",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Fynn leaves a message for his friend Gunda.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Gunda, hier ist Fynn. Ich kann heute Abend leider nicht mit ins Kino. Ich bin krank und habe Fieber.",
+    "en": "Hi Gunda, it's Fynn. I'm afraid I can't come to the cinema tonight. I'm ill and have a temperature."
+   },
+   {
+    "who": "B",
+    "de": "Kannst du nach dem Kino kurz zu mir kommen? Tabletten habe ich, aber ich habe keinen Tee mehr.",
+    "en": "Can you drop by my place after the cinema? I've got tablets, but I've run out of tea."
+   },
+   {
+    "who": "B",
+    "de": "Und bring mir bitte auch Obst mit, Äpfel oder Bananen. Danke!",
+    "en": "And please bring me some fruit too, apples or bananas. Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was hat Fynn schon zu Hause?",
+    "format": "abc",
+    "opts": [
+     "Tee",
+     "Obst",
+     "Tabletten"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "'Tabletten habe ich': he has tablets. He has no tea left, and Gunda should bring fruit."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-13",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "A hospital leaves a message for Herr Trautmann about his father.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Trautmann, hier ist das Stadtkrankenhaus.",
+    "en": "Hello, Herr Trautmann, this is the city hospital."
+   },
+   {
+    "who": "A",
+    "de": "Ihr Vater ist wieder gesund. Heute bleibt er noch hier.",
+    "en": "Your father is well again. He is staying here today."
+   },
+   {
+    "who": "A",
+    "de": "Morgen kann er nach Hause, aber nicht am Vormittag, sondern um drei Uhr am Nachmittag.",
+    "en": "Tomorrow he can go home, but not in the morning: at three in the afternoon."
+   },
+   {
+    "who": "A",
+    "de": "Bitte bringen Sie seine Jacke mit. Auf Wiederhören!",
+    "en": "Please bring his jacket. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kann der Vater nach Hause?",
+    "format": "abc",
+    "opts": [
+     "heute",
+     "morgen um drei Uhr",
+     "morgen am Vormittag"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "'Morgen kann er nach Hause … um drei Uhr am Nachmittag.' Today he still stays in hospital, and not in the morning."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-14",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Bettina leaves a message for her colleague Jörg.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Jörg, hier ist Bettina. Mein Zahn tut sehr weh. Ich muss heute zum Zahnarzt.",
+    "en": "Hi Jörg, it's Bettina. My tooth hurts a lot. I have to go to the dentist today."
+   },
+   {
+    "who": "A",
+    "de": "Ich habe um halb neun einen Termin. Ich bin also nicht um acht bei der Arbeit, ich komme um elf.",
+    "en": "I have an appointment at half past eight. So I won't be at work at eight; I'll come at eleven."
+   },
+   {
+    "who": "A",
+    "de": "Sag das bitte auch dem Chef. Danke und bis später!",
+    "en": "Please tell the boss too. Thanks, and see you later!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt Bettina heute zur Arbeit?",
+    "format": "abc",
+    "opts": [
+     "um 8 Uhr",
+     "um 8:30 Uhr",
+     "um 11 Uhr"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "'Ich komme um elf.' Eight is when she normally starts, and half past eight (halb neun = 8:30) is her dentist's appointment."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-15",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Eberhard, a swimming coach, leaves a message for Bodo.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Bodo, hier ist Eberhard vom Schwimmverein.",
+    "en": "Hi Bodo, it's Eberhard from the swimming club."
+   },
+   {
+    "who": "B",
+    "de": "Ich habe eine Grippe. Am Dienstag gibt es also kein Training.",
+    "en": "I have the flu. So there's no training on Tuesday."
+   },
+   {
+    "who": "B",
+    "de": "Das nächste Training ist am Donnerstag, um sechs Uhr wie immer.",
+    "en": "The next training session is on Thursday, at six as always."
+   },
+   {
+    "who": "B",
+    "de": "Am Samstag schwimmen wir dann in Kassel. Bis Donnerstag!",
+    "en": "Then on Saturday we swim in Kassel. See you on Thursday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann ist das nächste Training?",
+    "format": "abc",
+    "opts": [
+     "am Donnerstag",
+     "am Dienstag",
+     "am Samstag"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "'Das nächste Training ist am Donnerstag.' Tuesday's session is cancelled because Eberhard has the flu, and on Saturday they swim in Kassel."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-10-16",
+  "station": 10,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Leopold leaves a message for Rosalie about his doctor.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Rosalie, hier ist Leopold. Du suchst doch einen Arzt für deinen Rücken.",
+    "en": "Hi Rosalie, it's Leopold. You're looking for a doctor for your back, aren't you?"
+   },
+   {
+    "who": "B",
+    "de": "Ich gehe immer zu Doktor Brodersen. Die Praxis ist am Montag, Dienstag und Freitag nur am Vormittag geöffnet.",
+    "en": "I always go to Doctor Brodersen. The practice is only open in the mornings on Monday, Tuesday and Friday."
+   },
+   {
+    "who": "B",
+    "de": "Am Mittwoch ist sie bis neunzehn Uhr geöffnet. Dann kannst du nach der Arbeit zum Arzt gehen. Am Donnerstag ist die Praxis geschlossen.",
+    "en": "On Wednesday it is open until 7 p.m. Then you can go to the doctor after work. On Thursday the practice is closed."
+   },
+   {
+    "who": "B",
+    "de": "Ruf am besten bald an! Tschüss!",
+    "en": "Best call soon! Bye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "An welchem Tag ist die Praxis bis 19 Uhr geöffnet?",
+    "format": "abc",
+    "opts": [
+     "am Mittwoch",
+     "am Montag",
+     "am Donnerstag"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "'Am Mittwoch ist sie bis neunzehn Uhr geöffnet.' On Monday it is open only in the morning, and on Thursday it is closed."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-1",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At the ticket office: a woman asks about trains to Dresden.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Wann fährt der nächste Zug nach Dresden?",
+    "en": "Hello. When is the next train to Dresden?"
+   },
+   {
+    "who": "B",
+    "de": "Um zehn Uhr fünfzehn. Aber da müssen Sie in Leipzig umsteigen.",
+    "en": "At 10:15. But with that one you have to change trains (umsteigen) in Leipzig."
+   },
+   {
+    "who": "A",
+    "de": "Gibt es auch einen Zug direkt nach Dresden?",
+    "en": "Is there also a direct train to Dresden?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, um elf Uhr fünf. Der ist um halb zwei in Dresden.",
+    "en": "Yes, at 11:05. It gets to Dresden at half past one."
+   },
+   {
+    "who": "A",
+    "de": "Dann nehme ich den Zug um elf Uhr fünf.",
+    "en": "Then I'll take the train at 11:05."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann fährt die Frau ab?",
+    "format": "abc",
+    "opts": [
+     "um 10:15 Uhr",
+     "um 13:30 Uhr",
+     "um 11:05 Uhr"
+    ],
+    "a": 2,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "She wants a direct train, so she takes 'den Zug um elf Uhr fünf'. At 10:15 she would have to change trains, and half past one (13:30) is when she arrives."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-2",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At a hotel reception in the evening: a guest talks to the receptionist (a woman).",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Abend. Ich habe ein Einzelzimmer gebucht. Mein Name ist Lorenzen.",
+    "en": "Good evening. I booked a single room. My name is Lorenzen."
+   },
+   {
+    "who": "A",
+    "de": "Guten Abend, Herr Lorenzen. Ja, für zwei Nächte. Hier ist Ihr Schlüssel, Zimmer vierundzwanzig.",
+    "en": "Good evening, Herr Lorenzen. Yes, for two nights. Here is your key, room twenty-four."
+   },
+   {
+    "who": "B",
+    "de": "Danke. Wann gibt es morgen Frühstück?",
+    "en": "Thank you. When is breakfast tomorrow?"
+   },
+   {
+    "who": "A",
+    "de": "Von Montag bis Freitag von halb sieben bis zehn Uhr. Am Wochenende bis elf Uhr.",
+    "en": "Monday to Friday from half past six until ten. At the weekend until eleven."
+   },
+   {
+    "who": "B",
+    "de": "Morgen ist Samstag. Dann kann ich lange schlafen!",
+    "en": "Tomorrow is Saturday. Then I can sleep in!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Bis wann gibt es morgen Frühstück?",
+    "format": "abc",
+    "opts": [
+     "bis 11 Uhr",
+     "bis 10 Uhr",
+     "bis 6:30 Uhr"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "Tomorrow is Saturday, and 'am Wochenende' breakfast is 'bis elf Uhr'. Until ten is Monday to Friday, and half past six is when breakfast starts."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-3",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A man asks a woman about her holiday.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo! Wie war dein Urlaub? Warst du wieder in Italien?",
+    "en": "Hi! How was your holiday? Were you in Italy again?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, dieses Jahr nicht. Italien war zu teuer. Wir waren in der Schweiz, an einem See.",
+    "en": "No, not this year. Italy was too expensive. We were in Switzerland, at a lake."
+   },
+   {
+    "who": "B",
+    "de": "Schön! Und was habt ihr gemacht?",
+    "en": "Nice! And what did you do?"
+   },
+   {
+    "who": "A",
+    "de": "Wir sind viel gewandert und haben viele Fotos gemacht. Nächstes Jahr fahren wir ans Meer, nach Spanien.",
+    "en": "We hiked a lot and took lots of photos. Next year we're going to the seaside, to Spain."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo war die Frau im Urlaub?",
+    "format": "abc",
+    "opts": [
+     "in der Schweiz",
+     "in Italien",
+     "in Spanien"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Wir waren in der Schweiz.' Italy was too expensive this year, and Spain is the plan for next year."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-4",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At the airport: a man asks a woman at the information desk about his flight.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Entschuldigung, ich fliege nach Madrid. Wo muss ich warten?",
+    "en": "Excuse me, I'm flying to Madrid. Where do I have to wait?"
+   },
+   {
+    "who": "A",
+    "de": "Moment … Madrid … Ausgang zweiunddreißig. Nein, Entschuldigung: Ausgang dreiundzwanzig.",
+    "en": "One moment … Madrid … gate thirty-two. No, sorry: gate twenty-three."
+   },
+   {
+    "who": "B",
+    "de": "Dreiundzwanzig? Auf meinem Ticket steht Ausgang zwölf.",
+    "en": "Twenty-three? My ticket says gate twelve."
+   },
+   {
+    "who": "A",
+    "de": "Ja, das ist neu. Ausgang zwölf ist heute geschlossen. Gehen Sie hier geradeaus und dann die Treppe nach oben.",
+    "en": "Yes, that's new. Gate twelve is closed today. Go straight on here and then up the stairs."
+   },
+   {
+    "who": "B",
+    "de": "Danke schön!",
+    "en": "Thank you!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo muss der Mann warten?",
+    "format": "abc",
+    "opts": [
+     "an Ausgang 23",
+     "an Ausgang 32",
+     "an Ausgang 12"
+    ],
+    "a": 0,
+    "ev": [
+     1,
+     3
+    ],
+    "why": "She corrects herself: not 32, but 'Ausgang dreiundzwanzig' (23). Gate 12 on his ticket is closed today."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-5",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A man asks a woman how long the journey to Vienna takes.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Du warst doch schon oft in Wien. Wie lange braucht man von hier nach Wien?",
+    "en": "You've often been to Vienna. How long does it take from here to Vienna?"
+   },
+   {
+    "who": "A",
+    "de": "Mit dem Flugzeug geht es schnell, nur eine Stunde. Mit dem Zug brauchst du circa vier Stunden, mit dem Auto fünf.",
+    "en": "By plane it’s quick, only an hour. By train you need about four hours, by car five."
+   },
+   {
+    "who": "B",
+    "de": "Ich habe kein Auto, und Fliegen ist mir zu teuer. Also nehme ich den Zug.",
+    "en": "I don't have a car, and flying is too expensive for me. So I'll take the train."
+   },
+   {
+    "who": "A",
+    "de": "Gute Idee. Im Zug kannst du auch lesen.",
+    "en": "Good idea. On the train you can read, too."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie lange braucht der Mann nach Wien?",
+    "format": "abc",
+    "opts": [
+     "1 Stunde",
+     "5 Stunden",
+     "circa 4 Stunden"
+    ],
+    "a": 2,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "He takes the train ('Also nehme ich den Zug'), and by train it's 'circa vier Stunden'. One hour is the plane, and five hours the car."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-6",
+  "station": 11,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "At a travel agency: a woman wants to book a holiday.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Ich möchte im Juli eine Woche ans Meer fahren.",
+    "en": "Hello. I'd like to go to the seaside for a week in July."
+   },
+   {
+    "who": "B",
+    "de": "Hier habe ich ein schönes Hotel in Italien, gleich am Meer. Eine Woche mit Halbpension kostet sechshundert Euro.",
+    "en": "Here I have a lovely hotel in Italy, right by the sea. A week with half board costs six hundred euros."
+   },
+   {
+    "who": "A",
+    "de": "Sechshundert Euro? Das ist zu teuer. Haben Sie auch ein Hotel für vierhundert Euro?",
+    "en": "Six hundred euros? That’s too expensive. Do you also have a hotel for four hundred euros?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, hier: ein kleines Hotel in Kroatien, mit Frühstück. Das kostet vierhundertzwanzig Euro.",
+    "en": "Yes, here: a small hotel in Croatia, with breakfast. That costs four hundred and twenty euros."
+   },
+   {
+    "who": "A",
+    "de": "Das ist gut. Das nehme ich.",
+    "en": "That's good. I'll take it."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie viel kostet die Reise der Frau?",
+    "format": "abc",
+    "opts": [
+     "400 €",
+     "600 €",
+     "420 €"
+    ],
+    "a": 2,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "She takes the small hotel in Croatia for 'vierhundertzwanzig Euro' (420). 600 € is the hotel in Italy, and 400 € is what she asked for."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-7",
+  "station": 11,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement at a railway station.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information zum Zug nach Frankfurt:",
+    "en": "Information about the train to Frankfurt:"
+   },
+   {
+    "who": "N",
+    "de": "Der Zug, Abfahrt neun Uhr vierzig, hat heute circa zwanzig Minuten Verspätung.",
+    "en": "The train, departing at 9:40, is about twenty minutes late (Verspätung) today."
+   },
+   {
+    "who": "N",
+    "de": "Der Zug fährt wie immer von Gleis sechs.",
+    "en": "The train leaves from platform six as usual."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Zug nach Frankfurt fährt pünktlich um 9:40 Uhr.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "It is 'circa zwanzig Minuten' late (Verspätung), so it leaves at about ten, not on time. Only the platform stays the same."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-8",
+  "station": 11,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement at an airport.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Durchsage zum Flug nach London:",
+    "en": "An announcement about the flight to London:"
+   },
+   {
+    "who": "N",
+    "de": "Bitte kommen Sie jetzt zum Ausgang vierzehn. Das Flugzeug fliegt in zwanzig Minuten.",
+    "en": "Please come to gate fourteen now. The plane leaves in twenty minutes."
+   },
+   {
+    "who": "N",
+    "de": "Bitte zeigen Sie am Ausgang Ihren Pass und Ihr Ticket.",
+    "en": "Please show your passport and your ticket at the gate."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Flugzeug nach London fliegt in zwanzig Minuten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Das Flugzeug fliegt in zwanzig Minuten.' Gate fourteen is where the passengers go."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-9",
+  "station": 11,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement on a train.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "In wenigen Minuten sind wir in Hannover.",
+    "en": "In a few minutes we'll be in Hanover."
+   },
+   {
+    "who": "N",
+    "de": "Ihr Anschluss: Der Zug nach Bremen fährt um zehn Uhr acht von Gleis vier.",
+    "en": "Your connection (Anschluss): the train to Bremen leaves at 10:08 from platform four."
+   },
+   {
+    "who": "N",
+    "de": "Der Bus zum Flughafen fährt vor dem Bahnhof ab.",
+    "en": "The bus to the airport leaves from in front of the station."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Zug nach Bremen fährt von Gleis acht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "It leaves 'von Gleis vier' (platform 4). 'Acht' is part of the time: 10:08."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-10",
+  "station": 11,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement in a hotel restaurant.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Gäste, eine Information zum Ausflug morgen:",
+    "en": "Dear guests, some information about tomorrow’s trip:"
+   },
+   {
+    "who": "N",
+    "de": "Der Bus nach Salzburg fährt um halb neun vor dem Hotel ab, nicht um neun.",
+    "en": "The bus to Salzburg leaves from in front of the hotel at half past eight, not at nine."
+   },
+   {
+    "who": "N",
+    "de": "Bitte seien Sie pünktlich. Frühstück gibt es morgen schon ab sieben Uhr.",
+    "en": "Please be on time. Tomorrow breakfast starts at seven."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Bus fährt morgen um neun Uhr ab.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "why": "The bus leaves 'um halb neun' (8:30), 'nicht um neun'. Seven is when breakfast starts."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-11",
+  "station": 11,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement at a small railway station.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Achtung, eine wichtige Information:",
+    "en": "Attention, an important piece of information:"
+   },
+   {
+    "who": "N",
+    "de": "Heute fahren keine Züge nach Waldheim. Bitte nehmen Sie den Bus vor dem Bahnhof. Er fährt alle dreißig Minuten.",
+    "en": "Today no trains run to Waldheim. Please take the bus in front of the station. It runs every thirty minutes."
+   },
+   {
+    "who": "N",
+    "de": "Ihre Fahrkarte ist auch im Bus gültig.",
+    "en": "Your ticket is also valid on the bus."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Nach Waldheim fährt man heute mit dem Bus.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Heute fahren keine Züge nach Waldheim. Bitte nehmen Sie den Bus', and the train ticket is valid on the bus."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-12",
+  "station": 11,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Hedwig Sielaff, who rents out a holiday flat, leaves a message for Herr Möllenkamp.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Möllenkamp, hier ist Hedwig Sielaff. Sie kommen ja am Samstag in meine Ferienwohnung am See.",
+    "en": "Hello, Herr Möllenkamp, this is Hedwig Sielaff. You're coming to my holiday flat at the lake on Saturday."
+   },
+   {
+    "who": "A",
+    "de": "Ich bin am Samstag leider nicht da. Und eine Rezeption gibt es bei uns nicht, wir sind ja kein Hotel.",
+    "en": "Unfortunately I'm not there on Saturday. And we don't have a reception; we're not a hotel, after all."
+   },
+   {
+    "who": "A",
+    "de": "Den Schlüssel bekommen Sie im Café gleich neben dem Haus. Das Café ist bis achtzehn Uhr geöffnet.",
+    "en": "You can get the key at the café right next to the house. The café is open until 6 p.m."
+   },
+   {
+    "who": "A",
+    "de": "Gute Reise und auf Wiederhören!",
+    "en": "Have a good trip, and goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo bekommt Herr Möllenkamp den Schlüssel?",
+    "format": "abc",
+    "opts": [
+     "bei Frau Sielaff",
+     "im Café",
+     "an der Rezeption"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "'Den Schlüssel bekommen Sie im Café gleich neben dem Haus.' Frau Sielaff isn't there on Saturday, and there is no reception."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-13",
+  "station": 11,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Uwe leaves a message for Liesel from the train.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Liesel, hier ist Uwe. Ich bin im Zug, und der Zug hat leider Verspätung.",
+    "en": "Hi Liesel, it's Uwe. I'm on the train, and unfortunately the train is late."
+   },
+   {
+    "who": "B",
+    "de": "Ich komme nicht um siebzehn Uhr an, sondern um achtzehn Uhr dreißig.",
+    "en": "I'm not arriving at 5 p.m. but at 6:30 p.m."
+   },
+   {
+    "who": "B",
+    "de": "Das Essen im Restaurant um neunzehn Uhr ist aber kein Problem.",
+    "en": "But dinner at the restaurant at 7 p.m. is no problem."
+   },
+   {
+    "who": "B",
+    "de": "Holst du mich am Bahnhof ab? Bis später!",
+    "en": "Will you pick me up at the station? See you later!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt Uwe an?",
+    "format": "abc",
+    "opts": [
+     "um 17:00 Uhr",
+     "um 19:00 Uhr",
+     "um 18:30 Uhr"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "The train is late: 'nicht um siebzehn Uhr …, sondern um achtzehn Uhr dreißig' (18:30). 19 Uhr is the dinner at the restaurant."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-14",
+  "station": 11,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "The airport’s luggage service leaves a message for Herr Rohwedder.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Rohwedder, hier ist der Gepäckservice vom Flughafen.",
+    "en": "Hello, Herr Rohwedder, this is the airport luggage service."
+   },
+   {
+    "who": "A",
+    "de": "Ihr Koffer ist da! Er war leider in Paris.",
+    "en": "Your suitcase is here! Unfortunately it was in Paris."
+   },
+   {
+    "who": "A",
+    "de": "Sie müssen nicht zum Flughafen kommen. Wir bringen den Koffer heute Abend zu Ihrem Hotel.",
+    "en": "You don't have to come to the airport. We'll bring the suitcase to your hotel this evening."
+   },
+   {
+    "who": "A",
+    "de": "Auf Wiederhören!",
+    "en": "Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo bekommt Herr Rohwedder seinen Koffer?",
+    "format": "abc",
+    "opts": [
+     "im Hotel",
+     "am Flughafen",
+     "in Paris"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "'Wir bringen den Koffer heute Abend zu Ihrem Hotel.' He doesn't have to come to the airport, and Paris is where the suitcase was by mistake."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-15",
+  "station": 11,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Adelheid leaves a message for her brother Gernot from her holiday.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Gernot, hier ist Adelheid. Viele Grüße aus Prag!",
+    "en": "Hi Gernot, it's Adelheid. Greetings from Prague!"
+   },
+   {
+    "who": "A",
+    "de": "Wir sind gestern angekommen. Das Hotel ist super und das Wetter ist schön.",
+    "en": "We arrived yesterday. The hotel is great and the weather is lovely."
+   },
+   {
+    "who": "A",
+    "de": "Wir kommen am Dienstag zurück. Du musst mich nicht vom Flughafen abholen, ich nehme ein Taxi.",
+    "en": "We're coming back on Tuesday. You don't have to pick me up from the airport; I'll take a taxi."
+   },
+   {
+    "who": "A",
+    "de": "Aber kannst du bitte am Montag meine Post holen? Danke und tschüss!",
+    "en": "But could you please collect my post on Monday? Thanks, and bye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was soll Gernot am Montag machen?",
+    "format": "abc",
+    "opts": [
+     "Adelheid vom Flughafen abholen",
+     "Adelheids Post holen",
+     "ein Taxi bestellen"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "'Kannst du bitte am Montag meine Post holen?' He doesn't need to pick her up, and she takes a taxi herself."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-11-16",
+  "station": 11,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Kurt leaves a message for his colleague Gesa about a work trip.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Gesa, hier ist Kurt. Ich habe die Fahrkarten für Montag nach Frankfurt gekauft.",
+    "en": "Hi Gesa, it's Kurt. I've bought the tickets to Frankfurt for Monday."
+   },
+   {
+    "who": "B",
+    "de": "Der Zug fährt um sieben Uhr zehn ab, von Gleis drei.",
+    "en": "The train leaves at 7:10, from platform three."
+   },
+   {
+    "who": "B",
+    "de": "Treffen wir uns um sieben am Gleis? Ich bringe Kaffee mit. Bis Montag!",
+    "en": "Shall we meet at seven on the platform? I'll bring coffee. See you on Monday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Von welchem Gleis fährt der Zug?",
+    "format": "abc",
+    "opts": [
+     "Gleis 3",
+     "Gleis 7",
+     "Gleis 10"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Von Gleis drei.' Seven and ten are in the times: the train leaves at 7:10, and they meet at seven."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-1",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "In winter: a woman and a man want to go on a trip.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Machen wir heute zusammen einen Ausflug?",
+    "en": "Shall we go on a trip together today?"
+   },
+   {
+    "who": "B",
+    "de": "Heute? Es regnet doch den ganzen Tag.",
+    "en": "Today? But it's raining all day."
+   },
+   {
+    "who": "A",
+    "de": "Und morgen? Wie wird das Wetter?",
+    "en": "And tomorrow? What will the weather be like?"
+   },
+   {
+    "who": "B",
+    "de": "Morgen scheint die Sonne. Aber es ist kalt, nur zwei Grad.",
+    "en": "Tomorrow the sun will shine. But it'll be cold, only two degrees."
+   },
+   {
+    "who": "A",
+    "de": "Kalt ist kein Problem. Am Wochenende gibt es Schnee. Dann machen wir den Ausflug morgen.",
+    "en": "Cold is no problem. At the weekend there'll be snow. So let's go on the trip tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie ist das Wetter morgen?",
+    "format": "abc",
+    "opts": [
+     "Die Sonne scheint.",
+     "Es regnet.",
+     "Es schneit."
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "'Morgen scheint die Sonne', though it is cold. The rain is today, and the snow comes at the weekend."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-2",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A man invites a woman to his birthday party.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo! Ich habe bald Geburtstag und mache eine Party. Kommst du?",
+    "en": "Hi! It's my birthday soon and I'm having a party. Will you come?"
+   },
+   {
+    "who": "A",
+    "de": "Gern! Wann denn? Diesen Samstag? Da bin ich leider in Köln.",
+    "en": "I'd love to! When? This Saturday? I'm in Cologne then, unfortunately."
+   },
+   {
+    "who": "B",
+    "de": "Nein, nicht diesen Samstag. In zwei Wochen, am vierzehnten.",
+    "en": "No, not this Saturday. In two weeks, on the fourteenth."
+   },
+   {
+    "who": "A",
+    "de": "Aber dein Geburtstag ist doch am zehnten, oder?",
+    "en": "But your birthday is on the tenth, isn’t it?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, aber am zehnten ist Mittwoch. Wir feiern lieber am Samstag.",
+    "en": "Yes, but the tenth is a Wednesday. We'd rather celebrate on a Saturday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann ist die Party?",
+    "format": "abc",
+    "opts": [
+     "diesen Samstag",
+     "am 14.",
+     "am 10."
+    ],
+    "a": 1,
+    "ev": [
+     2,
+     4
+    ],
+    "why": "The party is 'in zwei Wochen, am vierzehnten', a Saturday. His birthday is on the 10th, but that's a Wednesday, and this Saturday she is in Cologne."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-3",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "In a shop: a man is looking for a present for his wife.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag. Meine Frau hat morgen Geburtstag. Ich suche ein Geschenk.",
+    "en": "Hello. It's my wife's birthday tomorrow. I'm looking for a present."
+   },
+   {
+    "who": "A",
+    "de": "Liest Ihre Frau gern? Wir haben viele neue Bücher.",
+    "en": "Does your wife like reading? We have lots of new books."
+   },
+   {
+    "who": "B",
+    "de": "Nein, Bücher hat sie sehr viele. Was kostet die Tasche da?",
+    "en": "No, she has lots of books. How much is that bag there?"
+   },
+   {
+    "who": "A",
+    "de": "Neunzig Euro.",
+    "en": "Ninety euros."
+   },
+   {
+    "who": "B",
+    "de": "Neunzig Euro? Das ist zu teuer. Dann kaufe ich ihr lieber Blumen.",
+    "en": "Ninety euros? That's too expensive. Then I'd rather buy her flowers."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was kauft der Mann für seine Frau?",
+    "format": "abc",
+    "opts": [
+     "ein Buch",
+     "Blumen",
+     "eine Tasche"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "She already has lots of books, and the bag is too expensive (90 €): 'Dann kaufe ich ihr lieber Blumen.'"
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-4",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A woman and a man talk about Christmas.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Was machst du an Weihnachten? Fährst du zu deinen Eltern?",
+    "en": "What are you doing at Christmas? Are you going to your parents?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, meine Eltern sind dieses Jahr in Spanien, im Urlaub.",
+    "en": "No, my parents are in Spain this year, on holiday."
+   },
+   {
+    "who": "A",
+    "de": "Oh! Und wo feierst du dann?",
+    "en": "Oh! So where are you celebrating?"
+   },
+   {
+    "who": "B",
+    "de": "Bei meinem Bruder in Hamburg. Und du?",
+    "en": "At my brother’s in Hamburg. And you?"
+   },
+   {
+    "who": "A",
+    "de": "Ich bleibe hier. Meine Schwester kommt zu mir.",
+    "en": "I'm staying here. My sister is coming to me."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo feiert der Mann Weihnachten?",
+    "format": "abc",
+    "opts": [
+     "bei seinen Eltern",
+     "in Spanien",
+     "bei seinem Bruder"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "'Bei meinem Bruder in Hamburg.' His parents are on holiday in Spain this year."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-5",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "A man asks a woman about the summer festival at the school.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Gehst du am Freitag zum Sommerfest in der Schule?",
+    "en": "Are you going to the summer festival at the school on Friday?"
+   },
+   {
+    "who": "A",
+    "de": "Ja! Wann fängt es an? Um sechs?",
+    "en": "Yes! When does it start? At six?"
+   },
+   {
+    "who": "B",
+    "de": "Nein, schon um vier. Um sechs grillen wir.",
+    "en": "No, at four already. At six we're having a barbecue."
+   },
+   {
+    "who": "A",
+    "de": "Um vier muss ich noch arbeiten. Ich komme um halb sechs.",
+    "en": "At four I still have to work. I'll come at half past five."
+   },
+   {
+    "who": "B",
+    "de": "Gut, dann sehen wir uns da.",
+    "en": "Good, then we'll see each other there."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann beginnt das Sommerfest?",
+    "format": "abc",
+    "opts": [
+     "um 6 Uhr",
+     "um 4 Uhr",
+     "um 5:30 Uhr"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "'Nein, schon um vier.' Six is when the barbecue starts, and half past five is when the woman arrives."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-6",
+  "station": 12,
+  "part": "Teil 1",
+  "pool": "exam",
+  "setup": "Two neighbours plan a garden party for Sunday.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Am Sonntag feiern wir im Garten. Was bringst du mit?",
+    "en": "On Sunday we’re having a party in the garden. What will you bring?"
+   },
+   {
+    "who": "B",
+    "de": "Fleisch und Brot. Bringst du einen Kuchen mit?",
+    "en": "Meat and bread. Are you bringing a cake?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, den Kuchen macht meine Schwester.",
+    "en": "No, my sister is making the cake."
+   },
+   {
+    "who": "B",
+    "de": "Und den Salat?",
+    "en": "And the salad?"
+   },
+   {
+    "who": "A",
+    "de": "Den Salat macht mein Mann. Ich kaufe die Getränke: Saft, Wasser und Bier.",
+    "en": "My husband is making the salad. I’m buying the drinks: juice, water and beer."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was bringt die Frau mit?",
+    "format": "abc",
+    "opts": [
+     "Getränke",
+     "einen Kuchen",
+     "einen Salat"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "why": "'Ich kaufe die Getränke.' Her sister makes the cake, and her husband makes the salad."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-7",
+  "station": 12,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement in a supermarket.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Liebe Kundinnen und Kunden, bald ist Weihnachten.",
+    "en": "Dear customers, it's Christmas soon."
+   },
+   {
+    "who": "N",
+    "de": "Am vierundzwanzigsten Dezember ist unser Supermarkt nur bis vierzehn Uhr geöffnet.",
+    "en": "On the 24th of December our supermarket is only open until 2 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Am fünfundzwanzigsten und sechsundzwanzigsten Dezember haben wir geschlossen. Schöne Weihnachten!",
+    "en": "On the 25th and 26th of December we are closed. Merry Christmas!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Am 24. Dezember ist der Supermarkt bis 14 Uhr geöffnet.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Am vierundzwanzigsten Dezember ist unser Supermarkt nur bis vierzehn Uhr geöffnet.' It is closed on the 25th and 26th."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-8",
+  "station": 12,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "The weather report on the radio.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt das Wetter für heute:",
+    "en": "And now today's weather:"
+   },
+   {
+    "who": "N",
+    "de": "Im Norden regnet es, und es gibt viel Wind. Es wird nur acht Grad warm.",
+    "en": "In the north it's raining and very windy. It will only get up to eight degrees."
+   },
+   {
+    "who": "N",
+    "de": "Im Süden scheint die Sonne, bei fünfzehn Grad.",
+    "en": "In the south (Süden) the sun is shining, at fifteen degrees."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Im Norden scheint heute die Sonne.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "In the north 'regnet es, und es gibt viel Wind'. The sun shines in the south (Süden)."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-9",
+  "station": 12,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "An announcement at a Christmas market.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Willkommen auf unserem Weihnachtsmarkt!",
+    "en": "Welcome to our Christmas market!"
+   },
+   {
+    "who": "N",
+    "de": "Der Markt ist bis zum dreiundzwanzigsten Dezember jeden Tag von elf bis einundzwanzig Uhr geöffnet.",
+    "en": "The market is open every day until the 23rd of December, from 11 a.m. to 9 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Und am Samstag um sechzehn Uhr singen hier Kinder aus der Schule am Bahnhof Weihnachtslieder.",
+    "en": "And on Saturday at 4 p.m. children from the school by the station will sing Christmas songs here."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Weihnachtsmarkt ist jeden Tag ab elf Uhr geöffnet.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "'Jeden Tag von elf bis einundzwanzig Uhr geöffnet': it opens at eleven every day. Four p.m. (sechzehn Uhr) on Saturday is the children's singing."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-10",
+  "station": 12,
+  "part": "Teil 2",
+  "pool": "exam",
+  "setup": "A radio announcement about a children’s festival.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information für alle Familien:",
+    "en": "Information for all families:"
+   },
+   {
+    "who": "N",
+    "de": "Wir müssen das Kinderfest am Samstag, dem zehnten Juni, leider absagen. Am zehnten soll es den ganzen Tag regnen.",
+    "en": "Unfortunately we have to cancel the children's festival on Saturday, the 10th of June. It is supposed to rain all day on the 10th."
+   },
+   {
+    "who": "N",
+    "de": "Wir feiern eine Woche später, am siebzehnten Juni, von zehn bis achtzehn Uhr.",
+    "en": "We will celebrate a week later, on the 17th of June, from 10 a.m. to 6 p.m."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Kinderfest ist am 10. Juni.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "The festival on the 10th is cancelled ('absagen') because of the rain. It takes place 'eine Woche später, am siebzehnten Juni'."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-11",
+  "station": 12,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Ottilie leaves a message about her birthday party.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo, hier ist Ottilie. Ich habe am Freitag Geburtstag und mache eine Party!",
+    "en": "Hi, it's Ottilie. It's my birthday on Friday and I'm having a party!"
+   },
+   {
+    "who": "A",
+    "de": "Wir feiern nicht bei mir, meine Wohnung ist zu klein. Und ein Restaurant ist zu teuer.",
+    "en": "We're not celebrating at my place; my flat is too small. And a restaurant is too expensive."
+   },
+   {
+    "who": "A",
+    "de": "Wir feiern im Garten von meinen Eltern. Die Party beginnt um acht. Kommst du? Ruf mich an!",
+    "en": "We're celebrating in my parents' garden. The party starts at eight. Are you coming? Call me!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo feiert Ottilie?",
+    "format": "abc",
+    "opts": [
+     "in ihrer Wohnung",
+     "im Garten von ihren Eltern",
+     "im Restaurant"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "'Wir feiern im Garten von meinen Eltern.' Her flat is too small, and a restaurant is too expensive."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-12",
+  "station": 12,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Kasimir leaves a message for Yvonne about their trip tomorrow.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Yvonne, hier ist Kasimir. Morgen machen wir ja unseren Ausflug an den See.",
+    "en": "Hi Yvonne, it's Kasimir. Tomorrow we're going on our trip to the lake."
+   },
+   {
+    "who": "B",
+    "de": "Im Radio sagen sie: Am Vormittag regnet es, aber am Nachmittag scheint die Sonne. Und am Sonntag wird es kalt.",
+    "en": "On the radio they say: in the morning it'll rain, but in the afternoon the sun will shine. And on Sunday it'll be cold."
+   },
+   {
+    "who": "B",
+    "de": "Wir fahren also morgen, aber nicht um elf, sondern um drei Uhr. Bis morgen!",
+    "en": "So we'll go tomorrow, but not at eleven: at three. See you tomorrow!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann fahren Kasimir und Yvonne an den See?",
+    "format": "abc",
+    "opts": [
+     "morgen um 11 Uhr",
+     "morgen um 3 Uhr",
+     "am Sonntag"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "It rains in the morning, so they go tomorrow 'nicht um elf, sondern um drei Uhr'. Sunday will be cold."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-13",
+  "station": 12,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Hanne leaves a message for her friend Waldemar.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Hallo Waldemar, hier ist Hanne. Ich heirate!",
+    "en": "Hi Waldemar, it's Hanne. I'm getting married!"
+   },
+   {
+    "who": "A",
+    "de": "Die Hochzeit ist am vierzehnten September. Mein Bruder ist bis zum vierten September in Kanada, und ohne ihn feiere ich nicht!",
+    "en": "The wedding is on the 14th of September. My brother is in Canada until the 4th of September, and I won't celebrate without him!"
+   },
+   {
+    "who": "A",
+    "de": "Eine Einladung schicke ich dir noch. Bitte antworte bis Ende Juli. Tschüss!",
+    "en": "I'll send you an invitation. Please answer by the end of July. Bye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann ist die Hochzeit?",
+    "format": "abc",
+    "opts": [
+     "am 4. September",
+     "Ende Juli",
+     "am 14. September"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "'Die Hochzeit ist am vierzehnten September.' Her brother is in Canada until the 4th, and the end of July is the date to answer by."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-14",
+  "station": 12,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "Ruprecht leaves a message for his colleague Hiltrud about a birthday present.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Hiltrud, hier ist Ruprecht. Unsere Kollegin hat am Montag Geburtstag. Wir kaufen zusammen ein Geschenk.",
+    "en": "Hi Hiltrud, it's Ruprecht. Our colleague has her birthday on Monday. We're buying a present together."
+   },
+   {
+    "who": "B",
+    "de": "Blumen bekommt sie jedes Jahr, und Bücher hat sie sehr viele.",
+    "en": "She gets flowers every year, and she has lots of books."
+   },
+   {
+    "who": "B",
+    "de": "Ich kaufe zwei Karten für das Kino. Sie sieht doch so gern Filme.",
+    "en": "I’m buying two cinema tickets. She loves watching films."
+   },
+   {
+    "who": "B",
+    "de": "Jeder bezahlt zehn Euro. Kannst du mir das Geld morgen geben? Danke!",
+    "en": "Everyone pays ten euros. Can you give me the money tomorrow? Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was kaufen die Kollegen für die Kollegin?",
+    "format": "abc",
+    "opts": [
+     "Karten für das Kino",
+     "Blumen",
+     "ein Buch"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "'Ich kaufe zwei Karten für das Kino.' She gets flowers every year and already has lots of books."
+   }
+  ]
+ },
+ {
+  "id": "a1-hx-12-15",
+  "station": 12,
+  "part": "Teil 3",
+  "pool": "exam",
+  "setup": "A teacher, Frau Hasselbach, leaves a message for Herr Hagedorn about a class trip.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag, Herr Hagedorn, hier ist Frau Hasselbach, die Lehrerin von Ihrer Tochter.",
+    "en": "Hello, Herr Hagedorn, this is Frau Hasselbach, your daughter's teacher."
+   },
+   {
+    "who": "A",
+    "de": "Am Freitag machen wir mit der Klasse einen Ausflug an den See. Es wird kalt, und vielleicht gibt es Schnee.",
+    "en": "On Friday the class is going on a trip to the lake. It'll be cold, and there may be snow."
+   },
+   {
+    "who": "A",
+    "de": "Ihre Tochter braucht also warme Kleidung: eine warme Jacke und gute Schuhe.",
+    "en": "So your daughter needs warm clothes: a warm jacket and good shoes."
+   },
+   {
+    "who": "A",
+    "de": "Essen und Geld muss sie nicht mitbringen. Das Essen bekommen die Kinder dort. Auf Wiederhören!",
+    "en": "She doesn't need to bring food or money. The children get their food there. Goodbye!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was muss die Tochter mitbringen?",
+    "format": "abc",
+    "opts": [
+     "Essen",
+     "Geld",
+     "warme Kleidung"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "why": "'Ihre Tochter braucht also warme Kleidung: eine warme Jacke und gute Schuhe.' Food is provided there, and she doesn't need money."
+   }
+  ]
+ }
+]
