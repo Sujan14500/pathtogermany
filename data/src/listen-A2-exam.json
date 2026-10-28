@@ -5,7 +5,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: the weather forecast for the weekend.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -56,7 +56,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: the traffic report during the town festival.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -107,7 +107,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the phone: the recorded message of a bank.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -158,7 +158,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a language school.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -209,7 +209,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: news from the region.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -260,7 +260,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a bakery.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -311,7 +311,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the phone: the recorded message of a car repair shop.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -362,7 +362,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: news from the town.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -413,7 +413,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: a tip for Sunday.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -464,7 +464,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: news about the Christmas market.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -515,7 +515,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the phone: the recorded message of the citizens' office at the town hall.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -566,7 +566,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: a warning about the weather.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -617,7 +617,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: information for students at the university.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -668,7 +668,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a dance school.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -719,7 +719,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a phone repair shop.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -770,7 +770,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: local news after heavy rain.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -821,7 +821,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: an advert for help with schoolwork.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -872,7 +872,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: news about tonight's summer festival.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -923,7 +923,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the phone: the recorded message of a hairdresser's.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -974,7 +974,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: a tip for a car-free Sunday in town.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -1025,7 +1025,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: information from the adult education centre.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -1076,7 +1076,7 @@
   "station": 9,
   "part": "Teil 2",
   "setup": "Alina (woman) tells her friend Ingo (man) about the presents she got for her birthday. What did each person give her?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1248,7 +1248,7 @@
   "station": 10,
   "part": "Teil 2",
   "setup": "Gesine (woman) tells her colleague Matthias (man) about her son's project week at school. What do the children do on each day?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1415,7 +1415,7 @@
   "station": 11,
   "part": "Teil 2",
   "setup": "Hedda (woman) tells her friend Goran (man) about the neighbourhood help list in her building. What does each neighbour offer?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1587,7 +1587,7 @@
   "station": 12,
   "part": "Teil 2",
   "setup": "Gerd (man) tells his colleague Irina (woman) about his hiking holiday in the mountains. What was the weather like on each day?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -1760,7 +1760,7 @@
   "station": 9,
   "part": "Teil 2",
   "setup": "Mirko (man) and his flatmate Jule (woman) plan a garden party. What is each person bringing?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1929,7 +1929,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Hannes (man) phones his sister Tabea (woman) about a birthday present for their mother.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1986,7 +1986,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "At a party: Hauke (man) talks to Swantje (woman), who invited him.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2037,7 +2037,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Femke (woman) and her husband Eike (man) plan their daughter's birthday party.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2099,7 +2099,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Daria (woman) asks her colleague Reinhard (man) about his brother's wedding.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2155,7 +2155,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Timo (man) phones his friend Jette (woman) about his garden party.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2211,7 +2211,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Two pupils, Dilara (woman) and Emil (man), talk before an exam.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2267,7 +2267,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Enno (man) asks at a language school about a course. A woman at reception answers.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2319,7 +2319,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "At a parents' evening: Doreen (woman) talks to her son's teacher, Herr Thalheim (man).",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2370,7 +2370,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Two students, Kilian (man) and Imke (woman), talk in the university cafeteria.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2426,7 +2426,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Sönke (man) asks his friend Derya (woman) how she is learning Spanish.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2482,7 +2482,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Bianca (woman) and Norbert (man) talk about which school their daughter should go to.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2539,7 +2539,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "At the bank: Yasemin (woman) wants to open an account. A bank clerk (man) helps her.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2596,7 +2596,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "Folke Hohmann (man) phones a bicycle shop. A woman answers.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2657,7 +2657,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "At the dry cleaner's: Kerstin (woman) brings some clothes. A man works at the counter.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2718,7 +2718,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "Rafael (man) phones his internet provider. A woman at the hotline answers.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2780,7 +2780,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "At the hairdresser's: Olga (woman) talks to the hairdresser (man).",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2838,7 +2838,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Jarno (man) and his friend Birte (woman) plan a trip for Sunday.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2890,7 +2890,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Ulrike (woman) asks her neighbour Lothar (man) to look after her balcony plants.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2951,7 +2951,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Florian (man) talks to his colleague Paula (woman) at work.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3007,7 +3007,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "At a campsite: Benedikt (man) asks the woman at reception for a place for his tent.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3063,7 +3063,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Zofia (woman) talks to her brother Marek (man) before a trip to an island in the North Sea.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",

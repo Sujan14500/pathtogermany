@@ -109,13 +109,13 @@ Grammar points by level (every one must have at least one example and one form-c
   - Partizip I/II as adjectives (recognition)
   - indirect speech (recognition)
 
-## Goethe exam structure (verify against the official Übungssätze before building tests)
+## Goethe exam structure (verified against Goethe's 2025 documents; details and sources in `docs/08-exam-formats.md`)
 
 | Exam | Lesen | Hören | Schreiben | Sprechen | Passing |
 |---|---|---|---|---|---|
-| A1 (Start Deutsch 1) | 3 parts, ~25 min | 3 parts, ~20 min | 2 parts (form, short message), ~20 min | 3 parts (introduce, ask/answer on topic cards, requests), ~15 min | 60% overall |
-| A2 | 4 parts, ~30 min | 4 parts, ~30 min | 2 parts, ~30 min | 3 parts, ~15 min | 60% overall |
-| B1 | 5 parts, 65 min | 4 parts, 40 min | 3 parts, 60 min | 3 parts, 15 min | 60% in each module (modular) |
+| A1 (Start Deutsch 1) | 3 parts, 25 min | 3 parts, ~20 min | 2 parts (form, short message), 20 min | 3 parts (introduce, ask/answer on topic cards, requests), 15 min, no preparation | 60% overall |
+| A2 | 4 parts, 30 min | 4 parts, ~30 min | 2 parts, 30 min | 3 parts, 15 min, no preparation | 60% overall, with 45 of 75 written and 15 of 25 in Sprechen |
+| B1 | 5 parts, 65 min | 4 parts, ~40 min | 3 parts, 60 min | 3 parts, 15 min after 15 min preparation | 60% in each module (modular) |
 
 Model the app's question formats on these parts: richtig/falsch, a/b/c, matching texts to people or headings,
 and information in ads. Keep the timings and the part order.

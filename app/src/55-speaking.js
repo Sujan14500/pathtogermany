@@ -129,7 +129,7 @@ function SpeakTask({ t, n }) {
   const them = t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner'
   const note = transcriptNote()
   const used = phase === 'done' && r.heard ? phrasesHeard(t.phrases, r.heard) : null
-  const groups = rubricGroups('speak', t.level)
+  const groups = rubricGroups('speak', t.level, [], t.part)
   const stage = {
     ready: html`<div class="sp-times"><span><b>${mmss(t.prep_s)}</b> to prepare</span><span><b>${mmss(t.speak_s)}</b> to speak</span></div>
       <div class="sp-body">

@@ -47,7 +47,7 @@ function tipsFor(s) {
       ev: 'The keyword method: Atkinson & Raugh 1975; mixed evidence on its own, so only for words missed four times.',
       here: [['Tricky words get a memory hook in your cards', '#/study']] },
     { icon: 'test', title: 'The exam day', says: 'Know the format before the day: sit at least two full mock exams under time. Read the questions before the text, answer every question (a wrong answer costs nothing), and tick off every point of a writing task.',
-      ev: 'Goethe-Zertifikat: 60% passes; at B1 each module is passed on its own.',
+      ev: 'Goethe-Zertifikat: 60% passes; at A2 that means 60% of the written part and of Sprechen, and at B1 each module is passed on its own.',
       here: [['Practice tests in every module', null, 'with the tests'], ['Timed mock exams', null, 'with the tests']] },
   ]
 }

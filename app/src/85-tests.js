@@ -20,18 +20,21 @@ const xmAddDays = (d, k) => { const x = new Date(`${d}T12:00`); x.setDate(x.getD
 const xmDate = d => new Date(`${d}T12:00`).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })
 const tClock = ms => { const s = Math.ceil(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` }
 
-// The Goethe papers (docs/08-exam-formats.md, timings from docs/03-content.md). Per module: minutes [full, short], and per
-// part [Teil, items in a full paper, items in a short one, raw points]. Lesen and Hören items are texts or recordings and
-// every question is a point; Schreiben and Sprechen have one task per part, worth the part's raw points. A1 and A2 turn each
-// module into 25 points and pass at 60 of 100 overall; B1 turns each into 100 and needs 60 in every module.
-// ponytail: B1 Sprechen's 16 points for pronunciation are spread over its three parts (28 + 40 + 16, scaled to 100).
+// The Goethe papers, checked against Goethe's Durchführungsbestimmungen (2025) and Modellsätze (docs/08-exam-formats.md).
+// Per module: minutes [full, short], and per part [Teil, items in a full paper, items in a short one, raw points]. Lesen
+// and Hören items are texts or recordings and every question is a point; Schreiben and Sprechen have one task per part,
+// worth the part's raw points. A1 and A2 turn each module into 25 points (A1 × 1.66, A2 × 1.25); A1 passes at 60 of 100
+// overall, A2 (split) needs 45 of 75 in Lesen + Hören + Schreiben and 15 of 25 in Sprechen. B1 turns each module into 100
+// and needs 60 in every module (each).
+// ponytail: Aussprache is scored once for the whole Sprechen (A2: 5 of 25, B1: 16 of 100); the app spreads it over the
+// parts by scaling (A2 4 + 8 + 8 → 25, B1 28 + 40 + 16 → 100), since every part's self-score has a pronunciation line.
 const EXAMS = {
   A1: { name: 'Start Deutsch 1', each: false, mods: [
     ['Hören', [20, 10], [['Teil 1', 6, 3], ['Teil 2', 4, 2], ['Teil 3', 5, 3]]],
     ['Lesen', [25, 15], [['Teil 1', 1, 1], ['Teil 2', 1, 1], ['Teil 3', 1, 0]]],
     ['Schreiben', [20, 10], [['Teil 1', 1, 0, 5], ['Teil 2', 1, 1, 10]]],
     ['Sprechen', [15, 5], [['Teil 1', 1, 1, 3], ['Teil 2', 1, 0, 6], ['Teil 3', 1, 0, 6]]]] },
-  A2: { name: 'Goethe-Zertifikat A2', each: false, mods: [
+  A2: { name: 'Goethe-Zertifikat A2', each: false, split: true, mods: [
     ['Lesen', [30, 15], [['Teil 1', 1, 1], ['Teil 2', 1, 0], ['Teil 3', 1, 0], ['Teil 4', 1, 1]]],
     ['Hören', [30, 15], [['Teil 1', 5, 3], ['Teil 2', 1, 0], ['Teil 3', 5, 2], ['Teil 4', 1, 1]]],
     ['Schreiben', [30, 15], [['Teil 1', 1, 0, 10], ['Teil 2', 1, 1, 10]]],
@@ -48,7 +51,8 @@ const PART_EN = {
     Schreiben: ['Fill in a form for someone else, from the text.', 'Write a short message (about 30 words) covering all three points.'],
     Sprechen: ['Introduce yourself, then spell a word and say a number.', 'A topic and word cards: ask a question with your card, answer your partner’s.', 'Picture cards: make a request and react to one.'] },
   A2: { Lesen: ['A short newspaper article. Choose a, b or c.', 'An information board. Where do you go? Choose a, b or c.', 'An email or letter. Choose a, b or c.', 'Six ads, five people. Which ad fits each person?'],
-    Hören: ['Short radio items, played once. Choose a, b or c.', 'One longer conversation. Match each person or day to a choice.', 'Short everyday conversations. Choose a, b or c.', 'A radio interview. Did the guest say it? Ja or nein.'],
+    Hören: ['Five short texts: radio, phone messages, announcements. Choose a, b or c.', 'One longer conversation, played once. Match each person or day to a choice.',
+      'Short everyday conversations, each played once. Choose a, b or c.', 'A radio interview. Did the guest say it? Ja or nein.'],
     Schreiben: ['A text message (20–30 words) covering all three points.', 'An email (30–40 words) covering all three points.'],
     Sprechen: ['Question cards: ask your partner about their life, answer their questions.', 'Talk about yourself on the topic card, with its four prompts.', 'Plan something together: find a time in the two diaries.'] },
   B1: { Lesen: ['A blog post. Richtig or falsch?', 'Two newspaper articles. Choose a, b or c.', 'Ads and situations. Which ad fits? One situation has none (x).', 'Readers’ comments. Is the writer for it? Ja or nein.', 'Rules or instructions. Choose a, b or c.'],
@@ -63,7 +67,7 @@ const QSIZE = { A1: 12, A2: 15, B1: 15 }   // questions in a Wortschatz or Gramm
 const LEVELS_ = ['A1', 'A2', 'B1']
 // Official practice papers can't be copied into the app; these open Goethe's own pages.
 const GOETHE_LINKS = [
-  ['A1', 'Start Deutsch 1', 'https://goethe.de/en/spr/kup/prf/prf/sd1/ueb.html'],
+  ['A1', 'Start Deutsch 1', 'https://www.goethe.de/ins/de/en/prf/prf/gzsd1/ueb.html'],
   ['A2', 'Goethe-Zertifikat A2', 'https://www.goethe.de/ins/de/en/prf/prf/gzsd2/ub2.html'],
   ['B1', 'Goethe-Zertifikat B1', 'https://www.goethe.de/ins/de/en/prf/prf/gzb1/ueb.html'],
   ['B1', 'B1 online exam training', 'https://www.goethe.de/en/spr/prf/ueb/pb1.html'],
@@ -162,6 +166,13 @@ function stationPaper(n, seed) {
 
 // ---- scoring: points per part, turned into the module score the Goethe way ----
 
+const xmSum = (xs, k) => xs.reduce((a, x) => a + x[k], 0)
+const xmSixty = xs => xmSum(xs, 'pts') >= .6 * xmSum(xs, 'max')
+// The written modules and Sprechen, each as [points, max] (A2 needs 60% of both).
+const xmSplit = mods => [mods.filter(x => x.m !== 'Sprechen'), mods.filter(x => x.m === 'Sprechen')].map(xs => [xmSum(xs, 'pts'), xmSum(xs, 'max')])
+// A whole paper's pass: B1 every module at 60%, A2 the written part and Sprechen each at 60% (45 of 75, 15 of 25), A1 60% overall.
+export const examPass = (lv, mods) => (EXAMS[lv].each ? mods.every(x => xmSixty([x])) : EXAMS[lv].split ? xmSplit(mods).every(([p, m]) => p >= .6 * m) : xmSixty(mods))
+
 function xmGrade(paper, ans, self) {
   const mods = paper.mods.map(md => {
     let raw = 0, of = 0
@@ -173,8 +184,8 @@ function xmGrade(paper, ans, self) {
     return { m: md.m, raw, of, max, pts: of ? Math.round(raw / of * max) : 0 }
   })
   const pts = mods.reduce((a, x) => a + x.pts, 0), max = mods.reduce((a, x) => a + x.max, 0)
-  const each = paper.kind === 'mock' && EXAMS[paper.level].each
-  return { mods, pts, max, self, p: max ? pts / max : 0, each, pass: each ? mods.every(x => x.pts >= .6 * x.max) : pts >= .6 * max }
+  const mock = paper.kind === 'mock', each = mock && EXAMS[paper.level].each
+  return { mods, pts, max, self, p: max ? pts / max : 0, each, split: mock && !!EXAMS[paper.level].split, pass: mock ? examPass(paper.level, mods) : pts >= .6 * max }
 }
 // The stations behind the wrong answers, most mistakes first (L17).
 function weakStations(paper, ans) {
@@ -298,7 +309,8 @@ function XmSitting({ paper, onDone, after }) {
       <button type="button" class="btn" onClick=${handIn}>${last ? 'Hand in' : html`Hand in <span lang="de">${md.m}</span>`} <${Arrow} /></button>
     </div>
     <header class="xm-modhead"><h2 lang="de">${md.m}</h2>${md.min ? html`<p class="quiet">${`${md.min} minutes${paper.kind === 'mock' ? ', as in the exam' : ''}.${md.m === 'Hören'
-      ? ' Each recording plays as often as the exam allows.' : md.m === 'Sprechen' ? ' Each task has its own clock to prepare and to speak.' : ''}${md.m === 'Schreiben' || md.m === 'Sprechen'
+      ? ' Each recording plays as often as the exam allows.' : md.m === 'Sprechen' ? (paper.kind === 'mock' && paper.level !== 'B1' ? ' Each task has its own clock to speak; the exam gives no time to prepare.'
+      : ' Each task has its own clock to prepare and to speak.') : ''}${md.m === 'Schreiben' || md.m === 'Sprechen'
       ? (paper.kind === 'mock' ? ' You score this part yourself afterwards, in the Goethe criteria.' : ' Finish each task, then rate it in its self-score: that is its score here.') : ''}`}</p>` : ''}</header>
     ${md.parts.map(p => html`<section class=${`xm-part${p.items[0].kind === 'q' ? ' singles' : ''}`} key=${`${mod}${p.teil}`}>
       <header class="xm-parthead"><span class="xm-teil" lang="de">${p.teil}</span><p>${p.en}</p></header>
@@ -326,7 +338,7 @@ function XmItem({ it, ans, pick, work, setWork, practice }) {
 // save the text and the self-score in S.drafts[id]. Mocks show the bare exam sheet (no hints, phrases or model, and not
 // the station's saved draft), then a scoring step with the same self-score in the Goethe criteria. ----
 
-const xmGroups = (kind, t) => rubricGroups(kind === 'write' ? 'write' : 'speak', t.level, kind === 'write' ? t.rubric : undefined)
+const xmGroups = (kind, t) => rubricGroups(kind === 'write' ? 'write' : 'speak', t.level, kind === 'write' ? t.rubric : [], t.part)
 const rateShare = (groups, v = {}) => { const ks = rubricKeys(groups); return ks.reduce((a, k) => a + (v[k] ?? 0), 0) / ks.length }   // unrated lines count 0
 const formShare = (t, fields = [], same = {}) => t.form.fields.filter(([, a], i) => normField(fields[i]) === normField(a) || same[i]).length / t.form.fields.length
 const draftShare = it => { const d = S.drafts[it.x.id] ?? {}; return it.x.form ? formShare(it.x, d.fields, d.same) : rateShare(xmGroups(it.kind, it.x), d.rubric) }
@@ -348,8 +360,11 @@ function XmWrite({ t, value, onChange }) {
       onInput=${e => onChange(e.target.value)}></textarea><${WordMeter} n=${countWords(v)} lo=${t.words[0]} hi=${t.words[1]} /></section></div>`
 }
 
+// The exam gives 15 minutes to prepare at B1 (for the plan and the presentation), none at A1 and A2.
+const xmPrep = t => t.level === 'B1' && t.part !== 'Teil 3'
+
 function XmSpeak({ t, onRec }) {
-  const r = useRecorder()
+  const r = useRecorder(), prep = xmPrep(t)
   const [phase, setPhase] = useState('ready')   // ready → prep → speak → done, each with the task's own clock
   useEffect(() => { if (r.url) onRec(r.url) }, [r.url])
   useEffect(() => () => stopSpeech(), [])
@@ -358,9 +373,10 @@ function XmSpeak({ t, onRec }) {
   return html`<div class="xm-speak"><article class="w-card"><${TaskHead} t=${t} kind="speak" mod="Sprechen" name=${SPEAK_KIND[t.level][t.part]} />
       <${TaskText} t=${t} /><${SpeakCards} t=${t} /></article>
     <section class=${`sp-stage sp-st-${phase}`} aria-label="Prepare and speak">
-      ${phase === 'ready' ? html`<div class="sp-times"><span><b>${mmss(t.prep_s)}</b> to prepare</span><span><b>${mmss(t.speak_s)}</b> to speak</span></div>
-          <div class="sp-body"><div class="sp-btns"><button type="button" class="btn" onClick=${() => setPhase('prep')}>Start preparing <${Arrow} /></button>
-            <button type="button" onClick=${speakNow}>Skip to speaking</button></div><p class="sp-note">Your microphone records you while you speak; you score it afterwards.</p></div>`
+      ${phase === 'ready' ? html`<div class="sp-times">${prep ? html`<span><b>${mmss(t.prep_s)}</b> to prepare</span>` : ''}<span><b>${mmss(t.speak_s)}</b> to speak</span></div>
+          <div class="sp-body"><div class="sp-btns">${prep ? html`<button type="button" class="btn" onClick=${() => setPhase('prep')}>Start preparing <${Arrow} /></button>
+            <button type="button" onClick=${speakNow}>Skip to speaking</button>` : html`<button type="button" class="btn" onClick=${speakNow}>Start speaking <${Arrow} /></button>`}</div>
+            <p class="sp-note">${prep ? '' : 'As in the exam, there is no time to prepare. '}Your microphone records you while you speak; you score it afterwards.</p></div>`
         : phase === 'prep' ? html`<${Countdown} key="prep" secs=${t.prep_s} kind="prep" label="Prepare" onEnd=${speakNow} />
           <div class="sp-body"><button type="button" class="btn" onClick=${speakNow}>Start speaking now <${Arrow} /></button></div>`
         : phase === 'speak' ? html`<${Countdown} key="speak" secs=${t.speak_s} kind="rec" label="Speak" onEnd=${finish} />
@@ -418,6 +434,8 @@ function XmResult({ paper, r, ans, after }) {
   const rows = r.mods.length > 1 ? r.mods.map(x => [x.m, x.pts, x.max])   // modules, or a practice paper's tasks
     : tasks.map(({ p, it }) => [p.teil, Math.round((r.self[it.x.id] ?? 0) * it.pts), it.pts])
   const verdict = mock && r.each ? (r.pass ? 'Every module is at 60 or more: that passes the B1 exam.' : html`B1 needs 60 in every module, and ${low.map(x => html`<span lang="de">${x.m}</span>`).reduce((a, b) => html`${a} and ${b}`)} ${low.length > 1 ? 'are' : 'is'} below it.`)
+    : r.split ? (([[w, wm], [o, om]]) => (r.pass ? `${w} of ${wm} written and ${o} of ${om} in Sprechen: that passes.`
+      : `A2 needs ${Math.ceil(.6 * wm)} of ${wm} in Lesen, Hören and Schreiben together (you have ${w}), and ${Math.ceil(.6 * om)} of ${om} in Sprechen (you have ${o}).`))(xmSplit(r.mods))
     : mock ? (r.pass ? '60 or more of 100: that passes.' : `${Math.ceil(.6 * r.max) - r.pts} more points would pass (60 of 100).`)
     : r.pass ? 'Passed: 60% is the pass mark.' : `${Math.ceil(.6 * r.max) - r.pts} more ${unit} would pass (60%).`
   const due = paper.kind === 'station' && revisitDue(S.tests[paper.key])   // saved before the result shows
@@ -604,7 +622,7 @@ function MockPage({ data, arg, sub }) {
           <p class="xm-exam-top"><span class="lb big">${lv}</span>${lv === mine ? html`<span class="xm-yours">Your level now</span>` : ''}</p>
           <h2 lang="de">${E.name}</h2>
           <ol class="xm-exam-mods">${E.mods.map(([m, min, parts]) => html`<li><b lang="de">${m}</b><small>${plural(parts.length, 'part')} · ${min[0]} min</small></li>`)}</ol>
-          <p class="xm-rule">${E.each ? 'Pass: 60 of 100 in every module' : 'Pass: 60 of 100 overall'}</p>
+          <p class="xm-rule">${E.each ? 'Pass: 60 of 100 in every module' : E.split ? 'Pass: 45 of 75 written and 15 of 25 in Sprechen' : 'Pass: 60 of 100 overall'}</p>
         </div>
         <div class="xm-exam-go">
           <a class="btn big" href=${`#/mock/${lv}/full`}>Full paper <small>${mockMinutes(lv, 'full')} min</small></a>

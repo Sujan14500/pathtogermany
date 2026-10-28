@@ -183,37 +183,43 @@ export const pointFound = (text, point, names) => pointEvidence(text, point, nam
 
 // ---- self-scoring in the Goethe criteria ----
 
-// Each criterion: its German name, what it means, which of a task's rubric lines belong to it (the last one takes the
-// rest), and its own line when the task has none for it. Speaking tasks have no rubric lines, so they use these.
+// The Goethe criteria (Modellsätze, Prüferblätter; docs/08-exam-formats.md). Each: its German name, what it means, which
+// of a task's rubric lines belong to it (the one without a pattern takes the rest), and its own line when the task has
+// none for it. Speaking tasks have no rubric lines, so they use these. B1 Sprechen has its own set per part.
+const REGISTER = /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal|frame/i
+const B1_TALK = [{ de: 'Wortschatz', en: 'range of words', line: ['When a word was missing, I said it another way'] },
+  { de: 'Strukturen', en: 'grammar', line: ['Verb second; verb at the end after weil and dass'] }]
+const B1_SOUND = { de: 'Aussprache', en: 'melody, word stress, sounds', line: ['Clear sounds and a natural melody'] }
 const CRITERIA = {
   write: {
-    A1: [{ de: 'Erfüllung der Aufgabenstellung', en: 'the three points', re: /point|answered/i, line: 'All three points are answered' },
-      { de: 'Kommunikative Gestaltung', en: 'right for the reader', re: /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal/i, line: 'A greeting, a closing, and du or Sie as fits the reader' },
-      { de: 'Sprache', en: 'words and forms', line: 'The verb in position 2; nouns with capital letters' }],
-    A2: [{ de: 'Erfüllung der Aufgabenstellung', en: 'the three points', re: /point|answered/i, line: 'All three points are answered' },
-      { de: 'Kommunikative Gestaltung', en: 'right for the reader, ideas linked', re: /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal|frame|connector/i, line: 'A greeting and closing that fit the reader' },
-      { de: 'Formale Richtigkeit', en: 'correct forms', line: 'The verb in position 2, and at the end after weil and dass' }],
+    // A1 Teil 2: 3 points per content point, answered so a reader understands it, and 1 for the text type
+    A1: [{ de: 'Erfüllung der Aufgabenstellung', en: 'each point answered, and understandable', line: 'All three points are answered, and a reader understands them' },
+      { de: 'Kommunikative Gestaltung des Textes', en: 'right for the text type', re: REGISTER, line: 'A greeting, a closing, and du or Sie as fits the reader' }],
+    A2: [{ de: 'Aufgabenerfüllung', en: 'the three points, in the right register', re: new RegExp(`point|answered|suggest|${REGISTER.source}`, 'i'), line: 'All three points, with a greeting and closing that fit the reader' },
+      { de: 'Sprache', en: 'linking, words and grammar', line: 'Ideas linked; the verb in position 2, and at the end after weil and dass' }],
     B1: [{ de: 'Erfüllung', en: 'points, text type, register, length', re: /^(?!.*(link|connector)).*(point|words|react|opinion|greet|clos|Sie\b|Sie-|throughout|polite|friendly|short)/i, line: 'All three points, in the right register' },
       { de: 'Kohärenz', en: 'ideas linked into one text', re: /link|connector/i, line: 'Ideas are linked: weil, deshalb, aber, außerdem' },
       { de: 'Wortschatz', en: 'range and fit of the words', re: /vocabulary|word choice/i, line: 'Words fit the topic, without the same ones again and again' },
       { de: 'Strukturen', en: 'grammar range and accuracy', line: 'Varied sentences; few errors that hinder understanding' }],
   },
   speak: {
-    A1: [{ de: 'Aufgabenerfüllung', en: 'the task', line: ['I used every card', 'My questions and answers fit the cards', 'A listener would understand every word'] }],
-    A2: [{ de: 'Aufgabenerfüllung', en: 'the task', line: ['I covered every card or prompt', 'I reacted to what my partner said'] },
-      { de: 'Wortschatz und Strukturen', en: 'words and grammar', line: ['I found the words I needed, or said it another way', 'The verb in position 2, and at the end after weil'] },
-      { de: 'Aussprache', en: 'pronunciation', line: ['Clear sounds: ü, ö, ch, r'] }],
-    B1: [{ de: 'Erfüllung', en: 'the task', line: ['I covered every point on the cards or slides'] },
-      { de: 'Kohärenz', en: 'linked, easy to follow', line: ['My ideas were linked: zuerst, dann, deshalb, außerdem'] },
-      { de: 'Wortschatz', en: 'range of words', line: ['When a word was missing, I said it another way'] },
-      { de: 'Strukturen', en: 'grammar', line: ['Verb second; verb at the end after weil and dass'] },
-      { de: 'Aussprache', en: 'pronunciation and melody', line: ['Clear sounds and a natural melody'] }],
+    A1: [{ de: 'Erfüllung der Aufgabenstellung und sprachliche Realisierung', en: 'the task, said so a listener understands', line: ['I used every card', 'My questions and answers fit the cards', 'A listener would understand every word'] }],
+    A2: [{ de: 'Aufgabenerfüllung', en: 'the task, the partner, the register', line: ['I covered every card or prompt', 'I reacted to what my partner said'] },
+      { de: 'Sprache', en: 'range and accuracy of words and grammar', line: ['I found the words I needed, or said it another way', 'The verb in position 2, and at the end after weil'] },
+      { de: 'Aussprache', en: 'melody, word stress, sounds', line: ['Clear sounds: ü, ö, ch, r'] }],
+    B1: {
+      'Teil 1': [{ de: 'Erfüllung', en: 'the plan: every point, suggestions', line: ['I covered every point of the plan and made suggestions'] },
+        { de: 'Interaktion', en: 'starting, keeping it going, reacting', line: ['I reacted to my partner and kept the talk going'] }, ...B1_TALK, B1_SOUND],
+      'Teil 2': [{ de: 'Erfüllung', en: 'all five slides', line: ['I covered all five slides'] },
+        { de: 'Kohärenz', en: 'linked, easy to follow', line: ['My ideas were linked: zuerst, dann, deshalb, außerdem'] }, ...B1_TALK, B1_SOUND],
+      'Teil 3': [{ de: 'Erfüllung', en: 'feedback, a question, an answer', line: ['I gave feedback on the presentation and asked a question', 'I answered the questions about mine'] }, B1_SOUND],
+    },
   },
 }
-function rubricGroups(mod, level, lines = []) {
-  const cs = CRITERIA[mod][level]
+function rubricGroups(mod, level, lines = [], part) {
+  const set = CRITERIA[mod][level], cs = set[part] ?? set
   const groups = cs.map(c => ({ de: c.de, en: c.en, lines: [] }))
-  for (const l of lines) { const i = cs.findIndex(c => c.re?.test(l)); groups[i < 0 ? cs.length - 1 : i].lines.push(l) }
+  for (const l of lines) { const i = cs.findIndex(c => c.re?.test(l)); groups[i < 0 ? cs.findIndex(c => !c.re) : i].lines.push(l) }
   groups.forEach((g, i) => { if (!g.lines.length) g.lines.push(...[].concat(cs[i].line)) })
   return groups
 }
