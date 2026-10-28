@@ -1,0 +1,7036 @@
+[
+ {
+  "id": "b1-rx-t1-1",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Mit 41 in die Backstube",
+  "intro": "Henrike, who worked in an office for fifteen years, writes on her blog about starting a new career.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Mit 41 noch einmal in die Ausbildung",
+      "Back into training at 41"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Fünfzehn Jahre lang habe ich bei einer Versicherung in Bielefeld gearbeitet.",
+      "For fifteen years I worked for an insurance company in Bielefeld."
+     ],
+     [
+      "Die Stelle war sicher und gut bezahlt, aber ich saß den ganzen Tag vor dem Bildschirm und war nie richtig zufrieden.",
+      "The job was secure and well paid, but I sat in front of a screen all day and was never really happy."
+     ],
+     [
+      "Am meisten habe ich mich immer auf den Sonntagmorgen gefreut, wenn ich für meine Familie Brot und Brötchen gebacken habe.",
+      "What I always looked forward to most was Sunday morning, when I baked bread and rolls for my family."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Vor einem Jahr habe ich dann eine Entscheidung getroffen, die alle überrascht hat: Ich mache jetzt eine Ausbildung in einer Bäckerei.",
+      "A year ago I made a decision that surprised everyone: I am now training in a bakery."
+     ],
+     [
+      "Die Bäckerei in meinem Stadtteil hatte lange niemanden für die Ausbildung gefunden, und nach einem Probetag hat mir der Chef sofort einen Platz angeboten.",
+      "The bakery in my part of town hadn’t found anyone to train for a long time, and after a trial day the boss offered me a place straight away."
+     ],
+     [
+      "Weil ich schon einen Beruf gelernt habe, dauert meine Ausbildung nur zwei statt drei Jahre.",
+      "Because I have already trained for one job, my training only lasts two years instead of three."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Am Anfang war es härter, als ich gedacht hatte.",
+      "At first it was harder than I had expected."
+     ],
+     [
+      "Mein Wecker klingelt um halb drei, und um vier stehe ich schon in der Backstube.",
+      "My alarm goes off at half past two, and by four I’m already standing in the bakehouse."
+     ],
+     [
+      "Nach zwei Wochen taten mir Füße und Rücken so weh, dass ich fast aufgehört hätte.",
+      "After two weeks my feet and back hurt so much that I almost gave up."
+     ],
+     [
+      "Zum Glück hat mein Mann gesagt: „Gib nicht so schnell auf!“",
+      "Luckily my husband said: “Don’t give up so quickly!”"
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "In der Berufsschule bin ich die Älteste in der Klasse, die meisten sind erst 17 oder 18.",
+      "At vocational school I’m the oldest in the class; most of them are only 17 or 18."
+     ],
+     [
+      "Ich hatte Angst, dass sie mich komisch finden, aber wir verstehen uns prima.",
+      "I was afraid they would find me odd, but we get on brilliantly."
+     ],
+     [
+      "Sie helfen mir mit den Apps für den Unterricht, und ich erkläre ihnen dafür, worauf man bei einem Mietvertrag achten muss.",
+      "They help me with the apps for lessons, and in return I explain to them what you have to watch out for in a rental contract."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Natürlich verdiene ich im Moment viel weniger als früher, deshalb haben wir unseren Sommerurlaub abgesagt.",
+      "Of course I earn much less than before at the moment, so we cancelled our summer holiday."
+     ],
+     [
+      "Aber wenn ich morgens das erste warme Brot aus dem Ofen hole, weiß ich, dass ich richtig entschieden habe.",
+      "But when I take the first warm loaf out of the oven in the morning, I know I made the right decision."
+     ],
+     [
+      "Nach der Prüfung möchte ich irgendwann ein kleines Café mit eigener Backstube eröffnen.",
+      "After the exam I’d like to open a small café with its own bakehouse one day."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Probetag",
+    "en": "trial day (a day of work to try out a job)"
+   },
+   {
+    "w": "Backstube",
+    "en": "bakehouse, the room where the baking is done"
+   },
+   {
+    "w": "Wecker",
+    "en": "alarm clock"
+   },
+   {
+    "w": "worauf",
+    "en": "what … (to watch out for)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Henrike hat sich in ihrem alten Beruf sehr wohlgefühlt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "She sat in front of a screen all day and was “nie richtig zufrieden” – never really happy."
+   },
+   {
+    "q": "Henrike hat schon früher in ihrer Freizeit gebacken.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "On Sunday mornings she used to bake bread and rolls for her family."
+   },
+   {
+    "q": "Henrikes Ausbildung dauert genauso lange wie bei den anderen in ihrer Klasse.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "Because she has already learned a job, her training lasts only two years instead of three."
+   },
+   {
+    "q": "In den ersten Wochen wollte Henrike die Ausbildung beinahe abbrechen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Her feet and back hurt so much that she “fast aufgehört hätte” – almost gave up."
+   },
+   {
+    "q": "Die jüngeren Mitschüler unterstützen Henrike bei der Technik.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "They help her with the apps used in lessons."
+   },
+   {
+    "q": "Henrike möchte nach der Ausbildung wieder in einem Büro arbeiten.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "She wants to open her own small café with a bakehouse, not go back to an office."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t1-2",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Mein erstes Mal auf der Bühne",
+  "intro": "Ole, a nurse in Lübeck, writes on his blog about joining an amateur theatre group.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Lampenfieber mit 35",
+      "Stage fright at 35"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Als Kind wollte ich Schauspieler werden, aber dann habe ich doch etwas „Vernünftiges“ gelernt und bin Krankenpfleger geworden.",
+      "As a child I wanted to be an actor, but then I learned something “sensible” after all and became a nurse."
+     ],
+     [
+      "Im Frühling habe ich in der Zeitung gelesen, dass eine Theatergruppe in meinem Viertel neue Mitglieder sucht.",
+      "In spring I read in the paper that a theatre group in my neighbourhood was looking for new members."
+     ],
+     [
+      "Erfahrung brauchte man nicht, nur Zeit für zwei Treffen pro Woche.",
+      "You didn’t need experience, only time for two meetings a week."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Beim ersten Treffen war ich so nervös, dass ich am liebsten wieder nach Hause gegangen wäre.",
+      "At the first meeting I was so nervous that I would have liked to go straight home again."
+     ],
+     [
+      "Die anderen waren aber sehr nett: eine Studentin, ein Busfahrer, eine Rentnerin und noch fünf andere Leute.",
+      "But the others were very nice: a student, a bus driver, a pensioner and five other people."
+     ],
+     [
+      "Unsere Leiterin, Frau Ellerbrock, hat uns zuerst nur Spiele machen lassen, damit wir uns kennenlernen.",
+      "Our director, Frau Ellerbrock, first just had us play games so that we would get to know each other."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Im Sommer haben wir dann mit einem lustigen Stück angefangen, das Frau Ellerbrock selbst geschrieben hat.",
+      "In the summer we then started on a funny play that Frau Ellerbrock had written herself."
+     ],
+     [
+      "Ich spiele einen Hotelbesitzer, der ständig Ärger mit seinen Gästen hat.",
+      "I play a hotel owner who constantly has trouble with his guests."
+     ],
+     [
+      "Am schwierigsten war für mich, den langen Text auswendig zu lernen.",
+      "The hardest thing for me was learning the long text by heart."
+     ],
+     [
+      "Meine Freundin hat jeden Abend mit mir geübt, bis ich ihn konnte.",
+      "My girlfriend practised with me every evening until I knew it."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Am Samstag war endlich die erste Vorstellung.",
+      "On Saturday the first performance finally took place."
+     ],
+     [
+      "Über hundert Leute saßen im Saal, und alle Karten waren schon eine Woche vorher verkauft.",
+      "Over a hundred people sat in the hall, and all the tickets had been sold a week before."
+     ],
+     [
+      "Einmal habe ich einen Satz vergessen, aber mein Kollege auf der Bühne hat mir schnell geholfen, und niemand hat es gemerkt.",
+      "Once I forgot a line, but my colleague on stage quickly helped me, and nobody noticed."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Nach der Vorstellung haben wir bis spät in die Nacht gefeiert.",
+      "After the performance we celebrated until late at night."
+     ],
+     [
+      "Im Winter spielen wir das Stück noch dreimal, und das ganze Geld spenden wir einem Kindergarten in unserem Viertel.",
+      "In the winter we’re performing the play three more times, and we’re giving all the money to a nursery in our neighbourhood."
+     ],
+     [
+      "Wer Lust auf Theater hat: Wir suchen noch jemanden für Licht und Ton!",
+      "If you fancy some theatre: we’re still looking for someone to do lights and sound!"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Lampenfieber",
+    "en": "stage fright"
+   },
+   {
+    "w": "Vernünftiges",
+    "en": "something sensible"
+   },
+   {
+    "w": "Leiterin",
+    "en": "(female) leader, here: director"
+   },
+   {
+    "w": "auswendig",
+    "en": "by heart"
+   },
+   {
+    "w": "Saal",
+    "en": "hall"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ole hat schon als Kind davon geträumt, auf der Bühne zu stehen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "As a child he wanted to become an actor."
+   },
+   {
+    "q": "Für die Theatergruppe musste man schon Theater gespielt haben.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "No experience was needed – only time for two meetings a week."
+   },
+   {
+    "q": "Beim ersten Treffen hat die Gruppe sofort mit dem Stück angefangen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "First the director only let them play games so that they could get to know each other; the play came in the summer."
+   },
+   {
+    "q": "Ole hat seinen Text mit Hilfe seiner Freundin gelernt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "His girlfriend practised with him every evening until he knew it."
+   },
+   {
+    "q": "Bei der ersten Vorstellung haben die Zuschauer Oles Fehler bemerkt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "A colleague helped him quickly when he forgot a line, and nobody noticed."
+   },
+   {
+    "q": "Mit den nächsten Vorstellungen will die Gruppe anderen helfen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "All the money from the winter performances goes to a nursery in the neighbourhood."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t1-3",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Rettet das Freibad!",
+  "intro": "Rieke, a mother of two, writes on her blog about how her neighbourhood fought to keep its open-air pool.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Wie wir unser Freibad gerettet haben",
+      "How we saved our open-air pool"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Im Januar stand in der Zeitung, dass die Stadt das Freibad in unserem Stadtteil schließen will.",
+      "In January the paper said that the town wants to close the open-air pool in our part of town."
+     ],
+     [
+      "Die Stadt meinte, die Reparaturen sind zu teuer, und es kommen sowieso zu wenige Besucher.",
+      "The town said the repairs were too expensive and too few visitors came anyway."
+     ],
+     [
+      "Für mich war das ein Schock, denn ich habe dort als Kind schwimmen gelernt, und heute gehe ich jeden Sommer mit meinen Töchtern hin.",
+      "For me that was a shock, because I learned to swim there as a child, and today I go there every summer with my daughters."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Zusammen mit zwei Nachbarinnen habe ich eine Bürgerinitiative gegründet.",
+      "Together with two neighbours I founded a citizens’ action group."
+     ],
+     [
+      "Wir haben Unterschriften gesammelt, vor dem Supermarkt, in den Schulen und im Internet.",
+      "We collected signatures, outside the supermarket, in the schools and on the internet."
+     ],
+     [
+      "Nach sechs Wochen hatten wir über 4000 Unterschriften, viel mehr, als wir erwartet hatten.",
+      "After six weeks we had over 4,000 signatures, many more than we had expected."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Im April durften wir unsere Argumente im Stadtrat vorstellen.",
+      "In April we were allowed to present our arguments to the town council."
+     ],
+     [
+      "Ich hatte noch nie vor so vielen Menschen gesprochen und habe in der Nacht vorher kaum geschlafen.",
+      "I had never spoken in front of so many people and hardly slept the night before."
+     ],
+     [
+      "Ein Politiker hat gefragt, wer die Reparaturen bezahlen soll.",
+      "A politician asked who was supposed to pay for the repairs."
+     ],
+     [
+      "Das war eine schwierige Frage, und wir hatten zuerst keine gute Antwort.",
+      "That was a difficult question, and at first we had no good answer."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Dann hat eine Nachbarin vorgeschlagen, dass ein Verein das Bad zusammen mit der Stadt führt.",
+      "Then a neighbour suggested that a club should run the pool together with the town."
+     ],
+     [
+      "Die Mitglieder zahlen einen kleinen Beitrag im Jahr und helfen im Sommer an der Kasse oder beim Putzen.",
+      "The members pay a small fee each year and help at the till or with the cleaning in summer."
+     ],
+     [
+      "So muss die Stadt weniger Personal bezahlen.",
+      "That way the town has to pay for fewer staff."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Im Mai hat der Stadtrat entschieden, dass das Freibad mindestens fünf weitere Jahre offen bleibt.",
+      "In May the council decided that the pool will stay open for at least five more years."
+     ],
+     [
+      "Unser Verein hat inzwischen 300 Mitglieder, und am 1. Juni wurde das Bad wieder geöffnet.",
+      "Our club now has 300 members, and on 1 June the pool opened again."
+     ],
+     [
+      "Ich habe gelernt: Politik ist nicht nur etwas für Politiker.",
+      "I have learned: politics isn’t only something for politicians."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Freibad",
+    "en": "open-air swimming pool"
+   },
+   {
+    "w": "Bürgerinitiative",
+    "en": "citizens’ action group"
+   },
+   {
+    "w": "Stadtrat",
+    "en": "town council"
+   },
+   {
+    "w": "Reparaturen",
+    "en": "repairs"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Rieke kennt das Freibad seit ihrer Kindheit.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "She learned to swim there as a child."
+   },
+   {
+    "q": "Die Bürgerinitiative hat weniger Unterschriften bekommen, als sie gehofft hatte.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "They collected over 4,000 signatures – many more than they had expected."
+   },
+   {
+    "q": "Rieke war vor ihrer Rede im Stadtrat sehr aufgeregt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "She had never spoken in front of so many people and hardly slept the night before."
+   },
+   {
+    "q": "Die Bürgerinitiative wusste sofort, wie man die Reparaturen bezahlen kann.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "When a politician asked who would pay, they had no good answer at first."
+   },
+   {
+    "q": "Die Mitglieder des Vereins bekommen Geld für ihre Arbeit im Bad.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The members pay a small yearly fee themselves and help at the till or with the cleaning."
+   },
+   {
+    "q": "Nach der Entscheidung des Stadtrats ist das Freibad wieder geöffnet worden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "The council decided to keep the pool open, and it opened again on 1 June."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t1-4",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Abschied von der Großstadt",
+  "intro": "Hinnerk, a graphic designer and father of twins, writes on his blog about moving from Frankfurt to a village.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Vom Großstadtleben aufs Land",
+      "From big-city life to the countryside"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Zwölf Jahre lang haben meine Frau und ich in Frankfurt gewohnt, in einer kleinen Wohnung im vierten Stock ohne Aufzug.",
+      "For twelve years my wife and I lived in Frankfurt, in a small flat on the fourth floor without a lift."
+     ],
+     [
+      "Als unsere Zwillinge auf die Welt kamen, wurde es dort schnell zu eng.",
+      "When our twins were born, it quickly got too cramped there."
+     ],
+     [
+      "Eine größere Wohnung in der Stadt konnten wir uns nicht leisten.",
+      "We couldn’t afford a bigger flat in the city."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Also haben wir vor einem Jahr etwas gemacht, über das wir früher gelacht hätten: Wir sind aufs Land gezogen.",
+      "So a year ago we did something we would have laughed at in the past: we moved to the countryside."
+     ],
+     [
+      "Für die Hälfte unserer alten Miete wohnen wir jetzt in einem Haus mit Garten, in einem Dorf mit 800 Einwohnern.",
+      "For half our old rent we now live in a house with a garden, in a village of 800 people."
+     ],
+     [
+      "Ich arbeite als Grafiker und kann das meiste von zu Hause aus erledigen.",
+      "I work as a graphic designer and can do most things from home."
+     ],
+     [
+      "Nur einmal pro Woche fahre ich ins Büro nach Frankfurt, das dauert mit dem Zug fast zwei Stunden.",
+      "Only once a week do I go to the office in Frankfurt; that takes almost two hours by train."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Natürlich gibt es auch Nachteile.",
+      "Of course there are disadvantages too."
+     ],
+     [
+      "Zum nächsten Supermarkt braucht man mit dem Auto zwanzig Minuten, und der Bus fährt nur alle zwei Stunden.",
+      "It takes twenty minutes by car to the nearest supermarket, and the bus only runs every two hours."
+     ],
+     [
+      "Ohne Auto geht hier fast nichts, deshalb mussten wir ein zweites kaufen.",
+      "Hardly anything works here without a car, so we had to buy a second one."
+     ],
+     [
+      "Meine Frau vermisst außerdem die Kinos und Restaurants.",
+      "My wife also misses the cinemas and restaurants."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Am meisten hat mich aber überrascht, wie schnell wir hier Freunde gefunden haben.",
+      "But what surprised me most was how quickly we made friends here."
+     ],
+     [
+      "Schon in der ersten Woche haben uns die Nachbarn zum Grillen eingeladen.",
+      "In the very first week the neighbours invited us to a barbecue."
+     ],
+     [
+      "Inzwischen singt meine Frau im Chor, und ich spiele in der Fußballmannschaft des Dorfes, obwohl ich eigentlich gar nicht gut spiele.",
+      "By now my wife sings in the choir, and I play in the village football team, although I don’t actually play well at all."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Ob wir für immer hierbleiben, wissen wir noch nicht.",
+      "We don’t know yet whether we’ll stay here for ever."
+     ],
+     [
+      "Wenn die Kinder später aufs Gymnasium gehen, müssen sie jeden Tag eine Stunde mit dem Bus fahren.",
+      "When the children go to grammar school later, they’ll have to travel an hour by bus every day."
+     ],
+     [
+      "Aber im Moment fühlen wir uns hier sehr wohl.",
+      "But at the moment we feel very much at home here."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Zwillinge",
+    "en": "twins"
+   },
+   {
+    "w": "Grafiker",
+    "en": "graphic designer"
+   },
+   {
+    "w": "Nachteile",
+    "en": "disadvantages"
+   },
+   {
+    "w": "Chor",
+    "en": "choir"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Hinnerk und seine Frau sind umgezogen, weil ihre Wohnung zu klein geworden war.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "After the twins were born, the flat quickly got too cramped."
+   },
+   {
+    "q": "Das Haus auf dem Land kostet mehr Miete als die alte Wohnung.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "They pay half their old rent for the house."
+   },
+   {
+    "q": "Hinnerk muss jeden Tag ins Büro nach Frankfurt fahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "He works mostly from home and goes to the office only once a week."
+   },
+   {
+    "q": "Die Familie hat jetzt zwei Autos.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Without a car hardly anything works, so they had to buy a second one."
+   },
+   {
+    "q": "Die Familie hat im Dorf nur langsam Kontakt zu anderen Menschen gefunden.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "He was surprised how quickly they made friends; the neighbours invited them in the first week."
+   },
+   {
+    "q": "Hinnerk ist sicher, dass die Familie für immer im Dorf bleibt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.0"
+    ],
+    "why": "They don’t know yet whether they will stay for ever – school will mean long bus journeys."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t1-5",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "type": "blog",
+  "title": "Hinter der Bühne",
+  "intro": "Ilka, a student, writes on her blog about working as a volunteer at a music festival.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Drei Tage Festival – diesmal als Helferin",
+      "Three days of festival – this time as a volunteer"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Seit Jahren fahre ich jeden Sommer zum Musikfestival am See, aber im Juli war alles anders.",
+      "For years I have gone to the music festival by the lake every summer, but in July everything was different."
+     ],
+     [
+      "Die Tickets sind nämlich sehr teuer geworden, und als Studentin habe ich nicht viel Geld.",
+      "The tickets have become very expensive, you see, and as a student I don’t have much money."
+     ],
+     [
+      "Eine Freundin hat mir dann erzählt, dass das Festival jedes Jahr Leute sucht, die mitarbeiten und dafür kostenlos hineinkommen.",
+      "Then a friend told me that the festival looks for people every year who work there and get in free in return."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Ich habe mich online beworben und kam ins Team am Eingang.",
+      "I applied online and was put on the team at the entrance."
+     ],
+     [
+      "Dort mussten wir die Taschen der Besucher kontrollieren und ihnen ein Band um das Handgelenk machen.",
+      "There we had to check the visitors’ bags and put a band round their wrists."
+     ],
+     [
+      "Jede Schicht dauerte sechs Stunden, und in meiner freien Zeit durfte ich alle Konzerte besuchen.",
+      "Each shift lasted six hours, and in my free time I was allowed to go to all the concerts."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Am ersten Tag hat es leider die ganze Zeit geregnet.",
+      "Unfortunately it rained the whole time on the first day."
+     ],
+     [
+      "Viele Besucher hatten schlechte Laune, und einige haben sich bei uns beschwert, weil sie so lange warten mussten.",
+      "Many visitors were in a bad mood, and some complained to us because they had to wait so long."
+     ],
+     [
+      "Ich war am Abend total nass und müde und habe mich gefragt, warum ich das eigentlich mache.",
+      "In the evening I was completely wet and tired and wondered why I was actually doing this."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Am Samstag kam dann aber die Sonne, und die Stimmung war fantastisch.",
+      "But on Saturday the sun came out, and the atmosphere was fantastic."
+     ],
+     [
+      "Mein schönster Moment war das Konzert meiner Lieblingsband am Sonntagabend, das ich direkt vor der Bühne erlebt habe.",
+      "My best moment was my favourite band’s concert on Sunday evening, which I watched right in front of the stage."
+     ],
+     [
+      "Außerdem habe ich im Team viele nette Leute kennengelernt, und mit einigen von ihnen habe ich immer noch Kontakt.",
+      "I also met lots of nice people on the team, and I’m still in touch with some of them."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Würde ich es wieder machen?",
+      "Would I do it again?"
+     ],
+     [
+      "Auf jeden Fall, aber nächstes Mal nehme ich eine bessere Regenjacke und eine zweite Hose mit.",
+      "Definitely, but next time I’ll take a better rain jacket and a second pair of trousers."
+     ],
+     [
+      "Und ich würde gern im Team hinter der Bühne arbeiten, weil ich dort vielleicht ein paar Musiker treffe.",
+      "And I’d like to work on the team behind the stage, because I might meet a few musicians there."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Helferin",
+    "en": "(female) helper, volunteer"
+   },
+   {
+    "w": "Handgelenk",
+    "en": "wrist"
+   },
+   {
+    "w": "Schicht",
+    "en": "shift (of work)"
+   },
+   {
+    "w": "Lieblingsband",
+    "en": "favourite band"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ilka war in diesem Sommer zum ersten Mal auf dem Festival.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "She has gone to the festival every summer for years; only her role was new."
+   },
+   {
+    "q": "Die Helfer müssen für das Festival kein Ticket kaufen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "People who work at the festival get in free."
+   },
+   {
+    "q": "Ilka hat am Eingang Tickets verkauft.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Her team checked bags and put bands on visitors’ wrists; she didn’t sell tickets."
+   },
+   {
+    "q": "Am ersten Tag waren alle Besucher trotz des Regens gut gelaunt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Many visitors were in a bad mood, and some complained about the long wait."
+   },
+   {
+    "q": "Ilka konnte das Konzert ihrer Lieblingsband von ganz vorne sehen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "She watched her favourite band right in front of the stage."
+   },
+   {
+    "q": "Beim nächsten Festival möchte Ilka eine andere Aufgabe übernehmen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "Next time she would like to work on the team behind the stage instead of at the entrance."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-1",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Sonntags in die Bibliothek",
+  "intro": "A local newspaper reports on a town library that now opens on Sundays – without staff.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Bücher ausleihen am Sonntag – ganz ohne Personal",
+      "Borrowing books on a Sunday – without any staff"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Wer in Neuburg am Sonntag ein Buch ausleihen wollte, stand bisher vor einer geschlossenen Tür.",
+      "Until now, anyone in Neuburg who wanted to borrow a book on a Sunday stood in front of a closed door."
+     ],
+     [
+      "Seit März ist die Stadtbibliothek nun auch sonntags von 10 bis 18 Uhr geöffnet, obwohl dann kein Personal da ist.",
+      "Since March the town library has also been open on Sundays from 10 a.m. to 6 p.m., although there are no staff there then."
+     ],
+     [
+      "Die Besucher öffnen die Tür mit ihrem Bibliotheksausweis und leihen die Bücher an einem Automaten selbst aus.",
+      "Visitors open the door with their library card and check the books out themselves at a machine."
+     ],
+     [
+      "Kameras sorgen für Sicherheit.",
+      "Cameras ensure security."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Die Idee kommt aus Dänemark, wo solche „offenen Bibliotheken“ schon seit Jahren normal sind.",
+      "The idea comes from Denmark, where such “open libraries” have been normal for years."
+     ],
+     [
+      "Die Leiterin der Bibliothek, Gerda Hesse, war am Anfang nicht sicher, ob das funktioniert.",
+      "The head of the library, Gerda Hesse, wasn’t sure at first whether it would work."
+     ],
+     [
+      "„Ich hatte Angst, dass Bücher gestohlen werden oder dass jemand etwas kaputt macht“, erzählt sie.",
+      "“I was afraid that books would be stolen or that someone would break something,” she says."
+     ],
+     [
+      "Doch nach einem halben Jahr ist sie positiv überrascht: Bisher fehlt kein einziges Buch.",
+      "But after half a year she is pleasantly surprised: so far not a single book is missing."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Besonders beliebt ist der Sonntag bei Familien.",
+      "Sunday is particularly popular with families."
+     ],
+     [
+      "Viele Eltern arbeiten unter der Woche bis zum Abend und haben nur am Wochenende Zeit, mit ihren Kindern in Ruhe Bücher auszusuchen.",
+      "Many parents work until the evening during the week and only have time at the weekend to choose books with their children in peace."
+     ],
+     [
+      "Jeden Sonntag kommen etwa 150 Menschen, fast so viele wie an einem normalen Wochentag.",
+      "About 150 people come every Sunday, almost as many as on a normal weekday."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Kritik gibt es trotzdem.",
+      "There is criticism all the same."
+     ],
+     [
+      "Ältere Menschen vermissen am Sonntag eine Person, die ihnen bei der Suche hilft oder Fragen beantwortet.",
+      "Older people miss having someone on Sundays who helps them search or answers questions."
+     ],
+     [
+      "Die Bibliothek plant deshalb, ab Herbst einmal im Monat auch am Sonntag eine Beratung anzubieten.",
+      "The library is therefore planning to offer advice on one Sunday a month from the autumn."
+     ],
+     [
+      "Dafür sucht sie noch Freiwillige aus der Stadt.",
+      "For that it is still looking for volunteers from the town."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "ausleihen",
+    "en": "to borrow"
+   },
+   {
+    "w": "Bibliotheksausweis",
+    "en": "library card"
+   },
+   {
+    "w": "Automaten",
+    "en": "machine (der Automat)"
+   },
+   {
+    "w": "Freiwillige",
+    "en": "volunteers"
+   }
+  ],
+  "questions": [
+   {
+    "q": "In diesem Text geht es um eine Bibliothek, …",
+    "format": "abc",
+    "opts": [
+     "die nur noch am Wochenende geöffnet ist.",
+     "die man sonntags ohne Mitarbeiter benutzen kann.",
+     "die Bücher aus Dänemark anbietet."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "It is now open on Sundays although no staff are there: visitors let themselves in and use a machine."
+   },
+   {
+    "q": "Wie sind die Erfahrungen nach einem halben Jahr?",
+    "format": "abc",
+    "opts": [
+     "Es wurden einige Bücher gestohlen.",
+     "Die Kameras haben oft nicht funktioniert.",
+     "Bisher ist nichts verschwunden."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "The head of the library feared theft, but so far not a single book is missing."
+   },
+   {
+    "q": "Was ist für ältere Besucher ein Problem?",
+    "format": "abc",
+    "opts": [
+     "Am Sonntag ist niemand da, der ihnen hilft.",
+     "Die Automaten sind zu kompliziert.",
+     "Sonntags ist die Bibliothek zu voll."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Older people miss someone who helps them search or answers questions on Sundays."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-2",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Mit dem Bleistift ins Museum",
+  "intro": "A newspaper article about an art museum that invites its visitors to draw.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Zeichnen statt nur schauen",
+      "Drawing instead of just looking"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Jeden Mittwochabend sieht man im Kunstmuseum Oldenburg etwas Ungewöhnliches: Viele Menschen sitzen mit Papier und Bleistift vor den Bildern und zeichnen.",
+      "Every Wednesday evening you can see something unusual at the Oldenburg art museum: lots of people sit in front of the pictures with paper and pencil, drawing."
+     ],
+     [
+      "Das Angebot heißt „Offenes Zeichnen“ und kostet nichts extra, man bezahlt nur den normalen Eintritt von sechs Euro.",
+      "The offer is called “Open Drawing” and costs nothing extra; you only pay the normal admission of six euros."
+     ],
+     [
+      "Papier und Stifte bekommt man an der Kasse.",
+      "You get paper and pencils at the ticket desk."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "„Wir wollten, dass die Leute länger vor einem Bild stehen bleiben“, sagt der Leiter des Museums, Konstantin Rademacher.",
+      "“We wanted people to stay in front of a picture for longer,” says the head of the museum, Konstantin Rademacher."
+     ],
+     [
+      "Normalerweise schauen Besucher nur wenige Sekunden auf ein Kunstwerk, dann gehen sie weiter.",
+      "Normally visitors look at a work of art for only a few seconds, then they move on."
+     ],
+     [
+      "Wer zeichnet, muss dagegen genau hinsehen und entdeckt Details, die er sonst nicht bemerkt hätte.",
+      "Anyone who draws, on the other hand, has to look closely and discovers details they would not otherwise have noticed."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Am Anfang kamen nur etwa zehn Personen, inzwischen sind es jede Woche über sechzig.",
+      "At first only about ten people came; now there are over sixty every week."
+     ],
+     [
+      "Die meisten haben keinen Stift mehr in die Hand genommen, seit sie die Schule verlassen haben.",
+      "Most of them haven’t picked up a pencil since they left school."
+     ],
+     [
+      "Eine Künstlerin gibt am Anfang des Abends ein paar Tipps, aber eine richtige Unterrichtsstunde ist das nicht.",
+      "An artist gives a few tips at the start of the evening, but it isn’t a real lesson."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Die Rentnerin Edda Lüders kommt seit dem ersten Abend jede Woche.",
+      "The pensioner Edda Lüders has come every week since the first evening."
+     ],
+     [
+      "„Ich dachte immer, ich kann nicht zeichnen“, sagt sie und lacht.",
+      "“I always thought I couldn’t draw,” she says, laughing."
+     ],
+     [
+      "„Das glaube ich zwar immer noch, aber es macht mir trotzdem großen Spaß.“",
+      "“I still believe that, but I enjoy it a lot all the same.”"
+     ],
+     [
+      "Wegen des großen Erfolgs will das Museum im nächsten Jahr auch einen Termin am Sonntagvormittag anbieten, extra für Familien mit Kindern.",
+      "Because of the great success, the museum wants to offer a session on Sunday mornings next year as well, especially for families with children."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Bleistift",
+    "en": "pencil"
+   },
+   {
+    "w": "Ungewöhnliches",
+    "en": "something unusual"
+   },
+   {
+    "w": "Kunstwerk",
+    "en": "work of art"
+   },
+   {
+    "w": "hinsehen",
+    "en": "to look (closely)"
+   },
+   {
+    "w": "Künstlerin",
+    "en": "(female) artist"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was erfährt man über das Angebot „Offenes Zeichnen“?",
+    "format": "abc",
+    "opts": [
+     "Man muss sich vorher anmelden.",
+     "Man braucht nur eine Eintrittskarte für das Museum.",
+     "Man muss eigene Stifte mitbringen."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "It costs nothing extra beyond the normal admission, and paper and pencils are handed out at the desk."
+   },
+   {
+    "q": "Warum hat das Museum das Angebot eingeführt?",
+    "format": "abc",
+    "opts": [
+     "Die Besucher sollen sich die Bilder genauer ansehen.",
+     "Das Museum möchte neue Künstler finden.",
+     "Am Mittwoch kamen zu wenige Besucher."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "The museum wanted people to stay longer in front of a picture and look closely."
+   },
+   {
+    "q": "Edda Lüders …",
+    "format": "abc",
+    "opts": [
+     "hat früher als Zeichenlehrerin gearbeitet.",
+     "zeichnet inzwischen sehr gut.",
+     "hat Freude am Zeichnen, obwohl sie es nicht gut kann."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "She still thinks she can’t draw, but she enjoys it a lot all the same."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-3",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Klaviere für alle",
+  "intro": "A newspaper reports on pianos that anyone can play in a city centre.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Musik in der Fußgängerzone: fünf Klaviere für alle",
+      "Music in the pedestrian zone: five pianos for everyone"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Seit Anfang Juni stehen in der Innenstadt von Würzburg fünf bunte Klaviere, und jeder darf auf ihnen spielen.",
+      "Since the beginning of June five colourful pianos have stood in Würzburg’s city centre, and anyone may play them."
+     ],
+     [
+      "Die Instrumente hatten Bürgerinnen und Bürger gespendet, Kunststudenten haben sie anschließend bemalt.",
+      "The instruments had been donated by local people; art students then painted them."
+     ],
+     [
+      "Die Aktion läuft bis Ende September und wird vom Kulturamt der Stadt organisiert.",
+      "The campaign runs until the end of September and is organised by the city’s culture office."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Schon am ersten Wochenende war das Interesse groß.",
+      "Interest was high from the very first weekend."
+     ],
+     [
+      "Kinder probierten die Tasten aus, ein älterer Herr spielte stundenlang Jazz, und eine Schülerin übte für ihre Klavierprüfung.",
+      "Children tried out the keys, an older gentleman played jazz for hours, and a schoolgirl practised for her piano exam."
+     ],
+     [
+      "Auch Touristen setzen sich gern ans Klavier und spielen ein Lied aus ihrer Heimat.",
+      "Tourists also like to sit down at a piano and play a song from home."
+     ],
+     [
+      "„Die Klaviere bringen Menschen zusammen, die sich sonst nie getroffen hätten“, sagt Wiebke Marquardt vom Kulturamt.",
+      "“The pianos bring together people who would never have met otherwise,” says Wiebke Marquardt of the culture office."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Ganz ohne Probleme ist das Projekt allerdings nicht.",
+      "The project isn’t entirely without problems, though."
+     ],
+     [
+      "Einige Geschäftsleute beschweren sich, dass ihnen die Musik vor ihrer Tür auf die Nerven geht.",
+      "Some shopkeepers complain that the music outside their door gets on their nerves."
+     ],
+     [
+      "Deshalb gilt jetzt eine Regel: Gespielt werden darf nur zwischen 10 und 20 Uhr.",
+      "So there is now a rule: playing is only allowed between 10 a.m. and 8 p.m."
+     ],
+     [
+      "Abends werden die Klaviere mit einer Plane bedeckt, damit sie bei Regen nicht nass werden.",
+      "In the evening the pianos are covered with a tarpaulin so that they don’t get wet when it rains."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Was nach dem Sommer mit den Klavieren passiert, steht schon fest.",
+      "What happens to the pianos after the summer has already been decided."
+     ],
+     [
+      "Sie werden an Schulen und Kindergärten verschenkt, die sich kein eigenes Instrument leisten können.",
+      "They will be given to schools and nurseries that can’t afford their own instrument."
+     ],
+     [
+      "Wenn die Aktion weiter so erfolgreich ist, soll es im nächsten Jahr eine Fortsetzung geben.",
+      "If the campaign continues to be so successful, there will be a follow-up next year."
+     ],
+     [
+      "Das Kulturamt hofft, dass dann noch mehr Klaviere gespendet werden.",
+      "The culture office hopes that even more pianos will be donated then."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Fußgängerzone",
+    "en": "pedestrian zone"
+   },
+   {
+    "w": "Kulturamt",
+    "en": "culture office (of a city)"
+   },
+   {
+    "w": "Tasten",
+    "en": "keys (of a piano)"
+   },
+   {
+    "w": "stundenlang",
+    "en": "for hours"
+   },
+   {
+    "w": "Plane",
+    "en": "tarpaulin, waterproof cover"
+   },
+   {
+    "w": "Fortsetzung",
+    "en": "continuation, follow-up"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Woher kommen die Klaviere?",
+    "format": "abc",
+    "opts": [
+     "Die Stadt hat sie gekauft.",
+     "Kunststudenten haben sie gebaut.",
+     "Menschen aus der Stadt haben sie geschenkt."
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Local people donated them; the art students only painted them."
+   },
+   {
+    "q": "Warum darf man nicht den ganzen Tag spielen?",
+    "format": "abc",
+    "opts": [
+     "Manche Ladenbesitzer fühlen sich gestört.",
+     "Die Klaviere müssen abends repariert werden.",
+     "Es hat zu oft geregnet."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "Shopkeepers complained that the music got on their nerves, so playing is now limited to 10–20 Uhr."
+   },
+   {
+    "q": "Was passiert mit den Klavieren nach der Aktion?",
+    "format": "abc",
+    "opts": [
+     "Die Stadt verkauft sie wieder.",
+     "Schulen und Kindergärten bekommen sie.",
+     "Sie bleiben in der Innenstadt stehen."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "They will be given to schools and nurseries that can’t afford an instrument."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-4",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Die Bürger entscheiden mit",
+  "intro": "A newspaper reports on a town where residents decide how part of the town’s money is spent.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Lüneburg: Bürger entscheiden über 200 000 Euro",
+      "Lüneburg: residents decide on 200,000 euros"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "In Lüneburg dürfen die Einwohner zum ersten Mal selbst bestimmen, was mit einem Teil vom Geld der Stadt passiert.",
+      "In Lüneburg the residents may decide for the first time what happens to part of the town’s money."
+     ],
+     [
+      "Insgesamt gibt es 200 000 Euro für Projekte, die das Leben in der Stadt besser machen sollen.",
+      "In total there are 200,000 euros for projects that are meant to make life in the town better."
+     ],
+     [
+      "Bis Ende Februar konnte jeder, der mindestens 14 Jahre alt ist und in Lüneburg wohnt, Vorschläge machen.",
+      "Until the end of February anyone aged at least 14 who lives in Lüneburg could make suggestions."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Über 600 Ideen sind bei der Stadtverwaltung angekommen.",
+      "Over 600 ideas reached the town administration."
+     ],
+     [
+      "Viele wünschen sich mehr Bänke und Bäume, andere schlagen einen Spielplatz, eine öffentliche Toilette am Bahnhof oder bessere Radwege vor.",
+      "Many want more benches and trees; others suggest a playground, a public toilet at the station or better cycle paths."
+     ],
+     [
+      "Experten haben dann geprüft, ob die Vorschläge möglich sind und was sie kosten würden.",
+      "Experts then checked whether the suggestions were possible and what they would cost."
+     ],
+     [
+      "Am Ende blieben 45 Projekte übrig.",
+      "In the end 45 projects were left."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Jetzt sind wieder die Bürger dran: Bis zum 30. April kann jeder online über die Projekte abstimmen.",
+      "Now it’s the residents’ turn again: until 30 April anyone can vote on the projects online."
+     ],
+     [
+      "Jede Person hat fünf Stimmen.",
+      "Each person has five votes."
+     ],
+     [
+      "Wer kein Internet hat, kann im Rathaus auf Papier abstimmen.",
+      "Anyone without internet can vote on paper at the town hall."
+     ],
+     [
+      "Die Projekte mit den meisten Stimmen werden im nächsten Jahr gebaut oder organisiert, bis das Geld weg ist.",
+      "The projects with the most votes will be built or organised next year until the money is used up."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Bürgermeisterin Almut Feldhaus ist sehr zufrieden, dass so viele mitgemacht haben.",
+      "Mayor Almut Feldhaus is very pleased that so many people took part."
+     ],
+     [
+      "„Die Menschen kennen ihre Stadt am besten“, sagt sie.",
+      "“People know their town best,” she says."
+     ],
+     [
+      "Kritik kommt dagegen von der Opposition im Stadtrat.",
+      "Criticism, on the other hand, comes from the opposition on the town council."
+     ],
+     [
+      "200 000 Euro seien nur ein sehr kleiner Teil des Haushalts, und die wichtigen Entscheidungen treffe weiter die Politik.",
+      "200,000 euros is only a very small part of the budget, they say, and politicians still make the important decisions."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Stadtverwaltung",
+    "en": "town administration"
+   },
+   {
+    "w": "Radwege",
+    "en": "cycle paths"
+   },
+   {
+    "w": "abstimmen",
+    "en": "to vote"
+   },
+   {
+    "w": "Opposition",
+    "en": "opposition (parties not in power)"
+   },
+   {
+    "w": "Haushalts",
+    "en": "budget (der Haushalt)"
+   },
+   {
+    "w": "seien",
+    "en": "are (reported speech)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wer durfte Vorschläge machen?",
+    "format": "abc",
+    "opts": [
+     "nur Menschen, die bei Wahlen wählen dürfen",
+     "alle Einwohner ab 14 Jahren",
+     "nur Vereine und Gruppen aus der Stadt"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "Anyone aged 14 or over who lives in Lüneburg could make suggestions."
+   },
+   {
+    "q": "Was ist mit den 600 Vorschlägen passiert?",
+    "format": "abc",
+    "opts": [
+     "Fachleute haben sie geprüft, und viele sind weggefallen.",
+     "Der Stadtrat hat die besten selbst ausgewählt.",
+     "Die Bürger haben schon über alle abgestimmt."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.2",
+     "b3.3"
+    ],
+    "why": "Experts checked them, and only 45 projects were left; the vote comes next."
+   },
+   {
+    "q": "Was kritisiert die Opposition?",
+    "format": "abc",
+    "opts": [
+     "Man kann nur online abstimmen.",
+     "Zu wenige Bürger haben mitgemacht.",
+     "Die Bürger entscheiden nur über wenig Geld."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "The opposition says 200,000 euros is only a small part of the budget; voting is also possible at the town hall."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-5",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Oma und Opa auf Zeit",
+  "intro": "A newspaper article about older people who help families as “borrowed grandparents”.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leihgroßeltern: wenn die eigene Oma weit weg wohnt",
+      "Borrowed grandparents: when your own grandma lives far away"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Viele junge Familien wohnen heute weit weg von ihren Eltern.",
+      "Many young families today live far away from their parents."
+     ],
+     [
+      "Wenn der Kindergarten geschlossen ist oder ein Kind krank wird, fehlt oft jemand, der schnell helfen kann.",
+      "When the nursery is closed or a child gets ill, there is often no one who can help quickly."
+     ],
+     [
+      "Gleichzeitig gibt es viele ältere Menschen, die allein leben und gern mehr Kontakt zu Kindern hätten.",
+      "At the same time there are many older people who live alone and would like more contact with children."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Ein Verein in Göppingen bringt seit drei Jahren beide Gruppen zusammen.",
+      "For three years a club in Göppingen has been bringing the two groups together."
+     ],
+     [
+      "Er vermittelt sogenannte Leihgroßeltern: ältere Frauen und Männer, die regelmäßig Zeit mit einer Familie verbringen.",
+      "It arranges so-called borrowed grandparents: older women and men who regularly spend time with a family."
+     ],
+     [
+      "Sie holen die Kinder vom Kindergarten ab, lesen ihnen vor oder gehen mit ihnen auf den Spielplatz.",
+      "They pick the children up from nursery, read to them or go to the playground with them."
+     ],
+     [
+      "Geld bekommen sie dafür nicht.",
+      "They don’t get any money for it."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Bevor eine Leihoma oder ein Leihopa eine Familie kennenlernt, führt der Verein ein langes Gespräch mit beiden Seiten.",
+      "Before a borrowed grandma or grandpa meets a family, the club has a long conversation with both sides."
+     ],
+     [
+      "Außerdem müssen die älteren Leute einen Erste-Hilfe-Kurs für Kinder machen.",
+      "The older people also have to do a first-aid course for children."
+     ],
+     [
+      "Das erste Treffen findet immer im Büro des Vereins statt.",
+      "The first meeting always takes place in the club’s office."
+     ],
+     [
+      "Wenn sich beide Seiten sympathisch finden, vereinbaren sie, wie oft sie sich sehen.",
+      "If both sides like each other, they agree how often they will see each other."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Zurzeit sind 40 Leihgroßeltern aktiv, aber über 70 Familien stehen auf der Warteliste.",
+      "At the moment 40 borrowed grandparents are active, but over 70 families are on the waiting list."
+     ],
+     [
+      "„Uns fehlen vor allem Männer“, sagt Ute Seidel, die den Verein gegründet hat.",
+      "“Above all we lack men,” says Ute Seidel, who founded the club."
+     ],
+     [
+      "Reinhold Thiele, 72, ist einer von nur fünf Leihopas.",
+      "Reinhold Thiele, 72, is one of only five borrowed grandpas."
+     ],
+     [
+      "„Mein Enkel wohnt in Australien, deshalb freue ich mich über jeden Nachmittag mit dem kleinen Finn“, sagt er.",
+      "“My grandson lives in Australia, so I enjoy every afternoon with little Finn,” he says."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Leihgroßeltern",
+    "en": "borrowed grandparents (Leihoma, Leihopa)"
+   },
+   {
+    "w": "vermittelt",
+    "en": "arranges, puts in touch (vermitteln)"
+   },
+   {
+    "w": "Erste-Hilfe-Kurs",
+    "en": "first-aid course"
+   },
+   {
+    "w": "Warteliste",
+    "en": "waiting list"
+   }
+  ],
+  "questions": [
+   {
+    "q": "In diesem Text geht es um ein Projekt, bei dem …",
+    "format": "abc",
+    "opts": [
+     "Großeltern ihre eigenen Enkel öfter sehen.",
+     "ältere Menschen Familien mit kleinen Kindern helfen.",
+     "Kinder ältere Menschen im Altenheim besuchen."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Older people who are not related to the family spend time with its children and help out."
+   },
+   {
+    "q": "Was müssen die Leihgroßeltern tun, bevor sie anfangen?",
+    "format": "abc",
+    "opts": [
+     "einen Kurs besuchen",
+     "die Familie zu Hause besuchen",
+     "eine Gebühr an den Verein bezahlen"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "They must do a first-aid course; the first meeting is at the club’s office, not at home."
+   },
+   {
+    "q": "Welches Problem hat der Verein?",
+    "format": "abc",
+    "opts": [
+     "Zu wenige Familien wollen mitmachen.",
+     "Es melden sich zu wenige ältere Männer.",
+     "Die Leihgroßeltern wollen Geld für ihre Hilfe."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Over 70 families are waiting, and above all men are missing: there are only five borrowed grandpas."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-6",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Die Feuerwehr braucht Nachwuchs",
+  "intro": "A regional newspaper reports on a volunteer fire brigade that is short of members.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Freiwillige Feuerwehr: Ein Ort sucht Nachwuchs",
+      "Volunteer fire brigade: a town looks for new members"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "In Deutschland gibt es über eine Million Feuerwehrleute, aber die meisten bekommen für diese Arbeit kein Gehalt.",
+      "In Germany there are over a million firefighters, but most of them get no salary for the work."
+     ],
+     [
+      "Vor allem auf dem Land wird die Feuerwehr von Freiwilligen organisiert, die tagsüber einen ganz normalen Beruf haben.",
+      "Especially in the countryside, the fire brigade is run by volunteers who have a completely normal job during the day."
+     ],
+     [
+      "Wenn der Alarm kommt, lassen sie alles liegen und fahren los.",
+      "When the alarm goes off, they drop everything and set off."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Doch in vielen Orten fehlen Leute.",
+      "But many places are short of people."
+     ],
+     [
+      "In Ebersbach zum Beispiel hatte die Feuerwehr vor zehn Jahren noch 60 Mitglieder, heute sind es nur noch 40.",
+      "In Ebersbach, for example, the fire brigade still had 60 members ten years ago; today there are only 40."
+     ],
+     [
+      "Viele junge Leute ziehen zum Studium oder für die Arbeit in die Stadt, und wer bleibt, arbeitet oft weit weg vom Wohnort.",
+      "Many young people move to the city to study or for work, and those who stay often work far from where they live."
+     ],
+     [
+      "Tagsüber ist es deshalb manchmal schwer, genug Leute für einen Einsatz zu finden.",
+      "So during the day it is sometimes hard to find enough people for a call-out."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Feuerwehrchef Gregor Winkler versucht es jetzt mit neuen Ideen.",
+      "Fire chief Gregor Winkler is now trying new ideas."
+     ],
+     [
+      "Seit dem Frühling gibt es eine Gruppe für Kinder ab sechs Jahren, die dort spielerisch lernen, was man bei einem Feuer tun muss.",
+      "Since the spring there has been a group for children aged six and over, who learn through play what to do in a fire."
+     ],
+     [
+      "Außerdem hat er Firmen im Ort gebeten, ihre Mitarbeiter bei einem Alarm gehen zu lassen.",
+      "He has also asked companies in the town to let their staff leave when there is an alarm."
+     ],
+     [
+      "Drei Betriebe haben schon zugestimmt.",
+      "Three companies have already agreed."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Besonders freut sich Winkler über Mitglieder, die man früher selten gesehen hat: Frauen und Menschen, die aus anderen Ländern nach Deutschland gekommen sind.",
+      "Winkler is especially pleased about members who were rarely seen in the past: women and people who have come to Germany from other countries."
+     ],
+     [
+      "Eine von ihnen ist Selin Aydın, die seit einem Jahr dabei ist.",
+      "One of them is Selin Aydın, who has been a member for a year."
+     ],
+     [
+      "„Am Anfang hatte ich Angst vor der schweren Technik, aber im Team hilft jeder jedem“, sagt die junge Verkäuferin.",
+      "“At first I was afraid of the heavy equipment, but in the team everyone helps everyone,” says the young sales assistant."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Feuerwehr",
+    "en": "fire brigade"
+   },
+   {
+    "w": "Nachwuchs",
+    "en": "new, young members"
+   },
+   {
+    "w": "Freiwilligen",
+    "en": "volunteers"
+   },
+   {
+    "w": "Einsatz",
+    "en": "call-out, operation"
+   },
+   {
+    "w": "spielerisch",
+    "en": "through play"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was erfährt man über die meisten Feuerwehrleute in Deutschland?",
+    "format": "abc",
+    "opts": [
+     "Sie bekommen für die Arbeit bei der Feuerwehr kein Geld.",
+     "Sie arbeiten nur in großen Städten.",
+     "Sie haben keinen anderen Beruf."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "Most get no salary: they are volunteers with normal jobs."
+   },
+   {
+    "q": "Warum hat die Feuerwehr in Ebersbach Probleme?",
+    "format": "abc",
+    "opts": [
+     "Sie hat zu wenig Geld für die Technik.",
+     "Es gibt zu viele Einsätze in der Nacht.",
+     "Viele Mitglieder sind tagsüber nicht im Ort."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.2",
+     "b3.3"
+    ],
+    "why": "Young people move away, and those who stay often work far away, so few are there during the day."
+   },
+   {
+    "q": "Was hat Gregor Winkler gemacht, um neue Mitglieder zu bekommen?",
+    "format": "abc",
+    "opts": [
+     "Er bezahlt jungen Leuten ein Gehalt.",
+     "Er hat ein Angebot für Kinder gestartet.",
+     "Er hat Firmen um Geld gebeten."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "He started a group for children from six; he asked companies to let staff go to alarms, not for money."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-7",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Was sich junge Menschen wünschen",
+  "intro": "A magazine article on a survey about the wishes and worries of young people.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Umfrage: Sicherheit ist der jungen Generation am wichtigsten",
+      "Survey: security matters most to the young generation"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Ein eigenes Haus, viel Geld oder eine Reise um die Welt?",
+      "A house of your own, lots of money or a trip around the world?"
+     ],
+     [
+      "Eine neue Umfrage unter 2000 jungen Menschen zwischen 16 und 25 Jahren zeigt, dass die meisten ganz andere Wünsche haben.",
+      "A new survey of 2,000 young people between 16 and 25 shows that most have quite different wishes."
+     ],
+     [
+      "Ganz oben auf der Liste steht ein sicherer Arbeitsplatz: Drei von vier jungen Leuten finden ihn „sehr wichtig“.",
+      "At the top of the list is a secure job: three out of four young people find it “very important”."
+     ],
+     [
+      "Auf Platz zwei folgen gute Freunde, auf Platz drei die Gesundheit.",
+      "In second place come good friends, in third place health."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Überrascht hat die Forscher, dass viel Geld für die meisten nicht so wichtig ist.",
+      "What surprised the researchers is that a lot of money is not so important for most of them."
+     ],
+     [
+      "Nur jeder Fünfte möchte später einmal reich werden.",
+      "Only one in five wants to be rich one day."
+     ],
+     [
+      "Viel wichtiger ist vielen, genug Freizeit zu haben.",
+      "Having enough free time is much more important to many."
+     ],
+     [
+      "Mehr als die Hälfte würde lieber weniger verdienen, wenn sie dafür nur vier Tage pro Woche arbeiten müsste.",
+      "More than half would rather earn less if in return they only had to work four days a week."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Bei der Frage nach einer eigenen Familie gibt es große Unterschiede.",
+      "On the question of having a family of their own there are big differences."
+     ],
+     [
+      "Zwei Drittel wünschen sich später Kinder, aber viele wollen damit noch lange warten.",
+      "Two thirds would like children later, but many want to wait a long time first."
+     ],
+     [
+      "Als Gründe nennen sie hohe Mieten und die Angst, Beruf und Familie nicht gut verbinden zu können.",
+      "As reasons they give high rents and the fear of not being able to combine work and family well."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Die Studie zeigt auch, dass sich junge Menschen Sorgen machen.",
+      "The study also shows that young people are worried."
+     ],
+     [
+      "Fast die Hälfte hat Angst, dass ihr Leben später schlechter sein wird als das Leben ihrer Eltern.",
+      "Almost half are afraid that their life will be worse later than their parents’ life."
+     ],
+     [
+      "Die größten Sorgen machen ihnen die Umwelt und die hohen Preise.",
+      "Their biggest worries are the environment and high prices."
+     ],
+     [
+      "Trotzdem sagen acht von zehn, dass sie im Moment mit ihrem Leben zufrieden sind.",
+      "All the same, eight out of ten say they are happy with their life at the moment."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Generation",
+    "en": "generation"
+   },
+   {
+    "w": "Forscher",
+    "en": "researchers"
+   },
+   {
+    "w": "reich",
+    "en": "rich"
+   },
+   {
+    "w": "Drittel",
+    "en": "third (⅓)"
+   },
+   {
+    "w": "Studie",
+    "en": "study"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was ist den jungen Menschen laut der Umfrage am wichtigsten?",
+    "format": "abc",
+    "opts": [
+     "gute Freunde",
+     "viel Geld zu verdienen",
+     "eine Arbeit, die sicher ist"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "A secure job is at the top of the list; friends come second, and money matters to few."
+   },
+   {
+    "q": "Was sagt die Umfrage über Arbeit und Freizeit?",
+    "format": "abc",
+    "opts": [
+     "Die meisten möchten mehr arbeiten, um reich zu werden.",
+     "Viele würden für mehr Freizeit auf Geld verzichten.",
+     "Nur wenige wünschen sich eine Vier-Tage-Woche."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "More than half would rather earn less if they only had to work four days a week."
+   },
+   {
+    "q": "Warum wollen viele junge Leute erst spät Kinder haben?",
+    "format": "abc",
+    "opts": [
+     "Wohnen ist teuer, und Arbeit und Familie sind schwer zu verbinden.",
+     "Sie wollen zuerst lange reisen.",
+     "Sie machen sich Sorgen um ihre Gesundheit."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "They name high rents and the fear of not being able to combine work and family."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-8",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Mit 70 an die Uni",
+  "intro": "A newspaper portrait of a retired electrician who now studies history at university.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Studium mit 70: „Ich wollte immer schon Geschichte studieren“",
+      "Studying at 70: “I always wanted to study history”"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Wenn morgens um zehn die Vorlesung über das Mittelalter beginnt, sitzt Hartmut Ostermann immer in der ersten Reihe.",
+      "When the lecture on the Middle Ages starts at ten in the morning, Hartmut Ostermann always sits in the front row."
+     ],
+     [
+      "Der frühere Elektriker ist 70 Jahre alt und studiert seit einem Jahr an der Universität Bamberg.",
+      "The former electrician is 70 years old and has been studying at the University of Bamberg for a year."
+     ],
+     [
+      "Er ist einer von über 300 älteren Menschen, die dort als Gasthörer angemeldet sind.",
+      "He is one of over 300 older people registered there as guest students."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "„Als junger Mann hatte ich keine Wahl“, erzählt Ostermann.",
+      "“As a young man I had no choice,” says Ostermann."
+     ],
+     [
+      "„Mein Vater hatte eine kleine Firma, und es war klar, dass ich sie einmal übernehme.“",
+      "“My father had a small firm, and it was clear that I would take it over one day.”"
+     ],
+     [
+      "Abitur durfte er deshalb nicht machen, obwohl er ein guter Schüler war.",
+      "So he wasn’t allowed to do his Abitur, although he was a good pupil."
+     ],
+     [
+      "Für ein normales Studium braucht man das Abitur, für Gasthörer gilt das nicht.",
+      "For a normal degree you need the Abitur, but that doesn’t apply to guest students."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Gasthörer zahlen pro Semester eine Gebühr von 120 Euro und dürfen die meisten Vorlesungen besuchen.",
+      "Guest students pay a fee of 120 euros per semester and may attend most lectures."
+     ],
+     [
+      "Prüfungen machen sie nicht, einen Abschluss bekommen sie deshalb auch nicht.",
+      "They don’t take exams, so they don’t get a degree either."
+     ],
+     [
+      "Für Ostermann ist das kein Problem: „Ich brauche kein Zeugnis mehr.",
+      "For Ostermann that’s no problem: “I don’t need a certificate any more."
+     ],
+     [
+      "Ich will einfach verstehen, wie die Welt so geworden ist, wie sie ist.“",
+      "I simply want to understand how the world became the way it is.”"
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Nicht alle Studenten finden die älteren Gäste gut.",
+      "Not all students like the older guests."
+     ],
+     [
+      "Manche beschweren sich, dass die Älteren in den Vorlesungen zu viele Fragen stellen oder die besten Plätze besetzen.",
+      "Some complain that the older ones ask too many questions in lectures or take the best seats."
+     ],
+     [
+      "Ostermann versteht das: „Ich versuche, mich zurückzuhalten, aber manchmal kann ich einfach nicht still sein.“",
+      "Ostermann understands that: “I try to hold back, but sometimes I simply can’t keep quiet.”"
+     ],
+     [
+      "Nach der Vorlesung trifft er sich oft mit zwei jungen Studentinnen in der Mensa, die ihm bei Fragen zum Computer helfen.",
+      "After the lecture he often meets two young students in the canteen who help him with questions about the computer."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Vorlesung",
+    "en": "lecture (at university)"
+   },
+   {
+    "w": "Mittelalter",
+    "en": "the Middle Ages"
+   },
+   {
+    "w": "Gasthörer",
+    "en": "guest student (attends lectures, takes no exams)"
+   },
+   {
+    "w": "zurückzuhalten",
+    "en": "to hold back (sich zurückhalten)"
+   },
+   {
+    "w": "Mensa",
+    "en": "university canteen"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum hat Hartmut Ostermann als junger Mann nicht studiert?",
+    "format": "abc",
+    "opts": [
+     "Er sollte später die Firma seines Vaters leiten.",
+     "Er hatte schlechte Noten in der Schule.",
+     "Er wollte lieber Elektriker werden."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "It was clear he would take over his father’s firm, so he couldn’t do the Abitur – although he was a good pupil."
+   },
+   {
+    "q": "Was gilt für Gasthörer an der Universität?",
+    "format": "abc",
+    "opts": [
+     "Sie bezahlen eine Gebühr, bekommen aber keinen Abschluss.",
+     "Sie müssen am Ende Prüfungen machen.",
+     "Sie brauchen das Abitur."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "They pay 120 euros per semester, take no exams and get no degree; they need no Abitur."
+   },
+   {
+    "q": "Was kritisieren manche jüngere Studenten?",
+    "format": "abc",
+    "opts": [
+     "Die älteren Gäste kommen oft zu spät.",
+     "Die älteren Gäste verstehen nichts von Computern.",
+     "Die älteren Gäste stellen zu viele Fragen."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Some complain that the older ones ask too many questions or take the best seats."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t2-9",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 2",
+  "type": "article",
+  "title": "Ein Dorf kauft ein",
+  "intro": "A regional newspaper reports on a village whose residents opened their own shop.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Der Laden gehört jetzt allen",
+      "The shop now belongs to everyone"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Als der einzige Lebensmittelladen in Kirchheim vor zwei Jahren schließen musste, war das für viele Bewohner ein großes Problem.",
+      "When the only grocery shop in Kirchheim had to close two years ago, it was a big problem for many residents."
+     ],
+     [
+      "Der nächste Supermarkt liegt im Nachbarort, und nicht alle haben ein Auto.",
+      "The nearest supermarket is in the next village, and not everyone has a car."
+     ],
+     [
+      "Besonders für ältere Menschen wurde das Einkaufen schwierig.",
+      "Shopping became difficult especially for older people."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Deshalb haben sich die Leute im Dorf etwas überlegt: Sie haben einen eigenen Laden gegründet.",
+      "So the people in the village came up with something: they set up their own shop."
+     ],
+     [
+      "Über 250 Bewohner haben Anteile gekauft, jeder Anteil kostet 100 Euro.",
+      "Over 250 residents bought shares; each share costs 100 euros."
+     ],
+     [
+      "Mit dem Geld wurden Regale, Kühlschränke und eine Kasse gekauft.",
+      "With the money, shelves, fridges and a till were bought."
+     ],
+     [
+      "Im Mai wurde der Dorfladen eröffnet.",
+      "In May the village shop was opened."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Heute gibt es dort fast alles, was man im Alltag braucht: Brot, Obst und Gemüse, Milch, Getränke und sogar Briefmarken.",
+      "Today you can get almost everything you need in everyday life there: bread, fruit and vegetables, milk, drinks and even stamps."
+     ],
+     [
+      "Viele Produkte kommen von Bauernhöfen aus der Region.",
+      "Many products come from farms in the region."
+     ],
+     [
+      "Zwei Verkäuferinnen sind fest angestellt, außerdem helfen zwölf Freiwillige jede Woche ein paar Stunden mit.",
+      "Two sales assistants are employed permanently, and twelve volunteers also help for a few hours each week."
+     ],
+     [
+      "Die Preise sind etwas höher als im Supermarkt, aber dafür spart man die Fahrt.",
+      "The prices are a little higher than in the supermarket, but you save the journey."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Inzwischen ist der Laden auch ein Treffpunkt geworden.",
+      "In the meantime the shop has also become a meeting place."
+     ],
+     [
+      "In einer Ecke gibt es ein kleines Café mit vier Tischen.",
+      "In one corner there is a small café with four tables."
+     ],
+     [
+      "„Früher hat man sich nur in der Kirche oder beim Arzt getroffen“, sagt Dorothea Ahlers, die jeden Morgen hier ihre Zeitung kauft.",
+      "“In the past you only met people at church or at the doctor’s,” says Dorothea Ahlers, who buys her paper here every morning."
+     ],
+     [
+      "Ganz sicher ist die Zukunft des Ladens aber noch nicht: Bisher verdient er weniger Geld, als er ausgibt.",
+      "But the shop’s future is not completely secure yet: so far it earns less money than it spends."
+     ],
+     [
+      "Die Bewohner hoffen deshalb, dass bald noch mehr Kunden kommen.",
+      "So the residents hope that more customers will come soon."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Lebensmittelladen",
+    "en": "grocery shop"
+   },
+   {
+    "w": "Nachbarort",
+    "en": "neighbouring village"
+   },
+   {
+    "w": "Anteile",
+    "en": "shares (der Anteil)"
+   },
+   {
+    "w": "Regale",
+    "en": "shelves"
+   },
+   {
+    "w": "Treffpunkt",
+    "en": "meeting place"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum haben die Bewohner einen eigenen Laden gegründet?",
+    "format": "abc",
+    "opts": [
+     "Im Dorf gab es keine Möglichkeit mehr zum Einkaufen.",
+     "Der Supermarkt im Ort war zu teuer.",
+     "Sie wollten nur Produkte aus der Region kaufen."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The only grocery shop had closed, and the nearest supermarket is in the next village."
+   },
+   {
+    "q": "Wer arbeitet im Dorfladen?",
+    "format": "abc",
+    "opts": [
+     "nur Bewohner, die Anteile gekauft haben",
+     "Bauern aus der Region",
+     "zwei Angestellte und einige Freiwillige"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Two sales assistants are employed, and twelve volunteers help a few hours a week."
+   },
+   {
+    "q": "Was erfährt man über die Situation des Ladens?",
+    "format": "abc",
+    "opts": [
+     "Er verdient schon viel Geld.",
+     "Er braucht noch mehr Kunden.",
+     "Er muss bald wieder schließen."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.3",
+     "b5.4"
+    ],
+    "why": "So far it earns less than it spends, so it needs more customers – but nothing says it will close."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t3-1",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Kreativ in der Freizeit",
+  "intro": "Seven people you know are looking for something. Find the right ad for each person – or x if there is none. You can use each ad only once.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Kultur und Hobby: Angebote im Herbst",
+      "Culture and hobbies: offers in the autumn"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Fotografieren mit dem Smartphone: An drei Abenden lernen Sie, wie Sie mit Ihrem Handy bessere Bilder machen.",
+      "Taking photos with your smartphone: in three evenings you learn how to take better pictures with your mobile."
+     ],
+     [
+      "Volkshochschule, donnerstags von 19 bis 21 Uhr, 45 Euro.",
+      "Adult education centre, Thursdays from 7 to 9 p.m., 45 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Unser Chor sucht Männer, die gern singen!",
+      "Our choir is looking for men who like singing!"
+     ],
+     [
+      "Wir singen Pop und Jazz und treffen uns jeden Montag um 20 Uhr im Gemeindehaus.",
+      "We sing pop and jazz and meet every Monday at 8 p.m. in the parish hall."
+     ],
+     [
+      "Noten lesen müssen Sie nicht können.",
+      "You don’t need to be able to read music."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Theaterwoche für Kinder von 8 bis 12 Jahren: In den Herbstferien spielen wir zusammen Theater und zeigen am Freitag unser Stück den Eltern.",
+      "Theatre week for children aged 8 to 12: in the autumn holidays we act together and show our play to the parents on Friday."
+     ],
+     [
+      "Täglich von 9 bis 14 Uhr, mit Mittagessen.",
+      "Daily from 9 a.m. to 2 p.m., with lunch."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Sie schreiben gern Geschichten oder Gedichte?",
+      "Do you like writing stories or poems?"
+     ],
+     [
+      "In unserer Gruppe lesen wir uns unsere Texte vor und sagen offen unsere Meinung.",
+      "In our group we read our texts to each other and give our honest opinion."
+     ],
+     [
+      "Jeden zweiten Dienstag in der Stadtbibliothek, kostenlos.",
+      "Every other Tuesday in the town library, free of charge."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Gitarre lernen: Ich unterrichte Erwachsene, immer nur eine Person allein, gern auch ohne Erfahrung.",
+      "Learn the guitar: I teach adults, always just one person on their own, and beginners are welcome."
+     ],
+     [
+      "Ich komme zu Ihnen nach Hause, 25 Euro pro Stunde.",
+      "I come to your home, 25 euros an hour."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Ich verkaufe zwei Karten für das Konzert der Band „Kompass“ am 14. November, zum normalen Preis.",
+      "I’m selling two tickets for the concert by the band “Kompass” on 14 November, at the normal price."
+     ],
+     [
+      "Es gibt keine Karten mehr an der Kasse.",
+      "There are no tickets left at the box office."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Museum für Stadtgeschichte: Jeden ersten Sonntag im Monat ist der Eintritt frei.",
+      "Museum of town history: admission is free on the first Sunday of every month."
+     ],
+     [
+      "Um 11 Uhr gibt es dann eine kostenlose Führung für Familien mit Kindern.",
+      "At 11 a.m. there is then a free guided tour for families with children."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Töpfern am Wochenende: In unserer Werkstatt machen Sie an zwei Tagen Ihre eigenen Tassen und Teller.",
+      "Pottery at the weekend: in our workshop you make your own cups and plates in two days."
+     ],
+     [
+      "Material inklusive, 120 Euro.",
+      "Materials included, 120 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Salsa für Paare: Neuer Kurs ab 5. Oktober, immer samstags um 19 Uhr.",
+      "Salsa for couples: new course from 5 October, every Saturday at 7 p.m."
+     ],
+     [
+      "Sie haben keinen Partner?",
+      "You don’t have a partner?"
+     ],
+     [
+      "Kein Problem, bei uns finden Sie jemanden.",
+      "No problem, you’ll find someone with us."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Jeden Mittwoch zeigen wir im Studentenhaus einen alten Film in der Originalsprache mit Untertiteln.",
+      "Every Wednesday we show an old film in the original language with subtitles at the student centre."
+     ],
+     [
+      "Nach dem Film diskutieren wir zusammen.",
+      "After the film we discuss it together."
+     ],
+     [
+      "Eintritt 3 Euro.",
+      "Admission 3 euros."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gemeindehaus",
+    "en": "parish hall"
+   },
+   {
+    "w": "Noten",
+    "en": "here: written music"
+   },
+   {
+    "w": "Gedichte",
+    "en": "poems"
+   },
+   {
+    "w": "Töpfern",
+    "en": "pottery, making things out of clay"
+   },
+   {
+    "w": "Untertiteln",
+    "en": "subtitles"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre Nachbarin möchte ihrer zehnjährigen Tochter in den Ferien etwas Kreatives bieten.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "The theatre week is for children aged 8 to 12 and takes place in the autumn holidays."
+   },
+   {
+    "q": "Ein Kollege möchte Gitarre spielen lernen, aber nur zusammen mit anderen in einer Gruppe.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The guitar teacher (e) only teaches one person at a time; no ad offers a group course."
+   },
+   {
+    "q": "Ein Freund singt gern, kann aber keine Noten lesen. Er sucht eine Gruppe, mit der er regelmäßig Musik machen kann.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "The choir is looking for men, meets every Monday and doesn’t need you to read music."
+   },
+   {
+    "q": "Ihre Schwester möchte im Urlaub schönere Fotos machen, hat aber keine teure Kamera.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The course teaches how to take better pictures with a mobile phone."
+   },
+   {
+    "q": "Ein Bekannter schreibt in seiner Freizeit kurze Geschichten und möchte wissen, was andere darüber denken.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "In the writing group members read their texts to each other and give honest feedback."
+   },
+   {
+    "q": "Ihre Eltern möchten am Sonntag mit ihren Enkeln etwas unternehmen, das nicht viel kostet.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0"
+    ],
+    "why": "The museum is free on the first Sunday of the month and has a free tour for families."
+   },
+   {
+    "q": "Eine Kollegin sieht gern alte Filme und spricht danach gern mit anderen darüber.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 9,
+    "ev": [
+     "b11.1"
+    ],
+    "why": "The student centre shows old films and discusses them afterwards."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t3-2",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Mitmachen und helfen",
+  "intro": "Seven people you know are looking for something. Find the right ad for each person – or x if there is none. You can use each ad only once.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Engagement und Beratung in Ihrer Stadt",
+      "Getting involved and getting advice in your town"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Die Tafel Nordstadt sucht Fahrerinnen und Fahrer, die samstags Lebensmittel bei Supermärkten abholen.",
+      "The Nordstadt food bank is looking for drivers to collect food from supermarkets on Saturdays."
+     ],
+     [
+      "Sie brauchen einen normalen Führerschein für das Auto.",
+      "You need a normal car driving licence."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Lesepaten gesucht: Lesen Sie einmal pro Woche mit Kindern, die Probleme mit dem Lesen haben.",
+      "Reading mentors wanted: read once a week with children who have problems with reading."
+     ],
+     [
+      "Eine Stunde am Vormittag, Grundschule am Park.",
+      "One hour in the morning, Grundschule am Park."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Ärger mit dem Vermieter?",
+      "Trouble with your landlord?"
+     ],
+     [
+      "Der Mieterverein berät seine Mitglieder bei allen Fragen rund um die Wohnung, zum Beispiel zu Nebenkosten oder Reparaturen.",
+      "The tenants’ association advises its members on all questions about their flat, for example on service charges or repairs."
+     ],
+     [
+      "Mitgliedschaft 6 Euro im Monat.",
+      "Membership 6 euros a month."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Begegnungscafé im Stadtteilzentrum: Jeden Donnerstag treffen sich hier Menschen aus vielen Ländern, um Deutsch zu sprechen.",
+      "Meeting café at the community centre: every Thursday people from many countries meet here to speak German."
+     ],
+     [
+      "Neue Gesichter sind immer willkommen!",
+      "New faces are always welcome!"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Der Tierschutzverein sucht Menschen, die mit den Hunden aus dem Tierheim spazieren gehen.",
+      "The animal welfare society is looking for people to take the dogs from the animal shelter for walks."
+     ],
+     [
+      "Besonders am Wochenende brauchen wir Hilfe.",
+      "We especially need help at weekends."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Sprechstunde im Rathaus: Die Bürgermeisterin beantwortet jeden ersten Montag im Monat Ihre Fragen und hört sich Ihre Ideen für die Stadt an.",
+      "Open office hour at the town hall: the mayor answers your questions and listens to your ideas for the town on the first Monday of every month."
+     ],
+     [
+      "Zimmer 12, ohne Anmeldung.",
+      "Room 12, no appointment needed."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Kleidersammlung für Familien in Not: Gut erhaltene Winterkleidung können Sie bis zum 30. November im Gemeindehaus abgeben.",
+      "Clothes collection for families in need: you can hand in winter clothes in good condition at the parish hall until 30 November."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Hausaufgabenhilfe für Schüler der Klassen 5 bis 10: Studenten helfen montags bis donnerstags von 14 bis 16 Uhr im Jugendhaus.",
+      "Homework help for pupils in years 5 to 10: students help Monday to Thursday from 2 to 4 p.m. at the youth centre."
+     ],
+     [
+      "Das Angebot ist kostenlos.",
+      "The service is free."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Sie verstehen die Formulare vom Amt nicht?",
+      "You don’t understand the forms from the authorities?"
+     ],
+     [
+      "Unsere freiwilligen Helfer füllen sie mit Ihnen zusammen aus.",
+      "Our volunteers fill them in together with you."
+     ],
+     [
+      "Dienstags von 10 bis 12 Uhr im Bürgerhaus West.",
+      "Tuesdays from 10 a.m. to 12 noon at Bürgerhaus West."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Besuchsdienst im Krankenhaus: Wir suchen Menschen, die Patienten ohne Familie besuchen, ihnen vorlesen oder einfach zuhören.",
+      "Visiting service at the hospital: we are looking for people to visit patients without family, read to them or simply listen."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Tafel",
+    "en": "food bank"
+   },
+   {
+    "w": "Lesepaten",
+    "en": "reading mentors"
+   },
+   {
+    "w": "Mieterverein",
+    "en": "tenants’ association"
+   },
+   {
+    "w": "Nebenkosten",
+    "en": "service charges (heating, water …)"
+   },
+   {
+    "w": "Tierschutzverein",
+    "en": "animal welfare society"
+   },
+   {
+    "w": "Tierheim",
+    "en": "animal shelter"
+   },
+   {
+    "w": "erhaltene",
+    "en": "kept, here: in good condition"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ein Rentner hat vormittags viel Zeit und möchte gern etwas mit Kindern machen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Reading mentors read with children for an hour in the morning; the homework help (h) is in the afternoon and run by students."
+   },
+   {
+    "q": "Ihre Nachbarin hat einen Brief vom Amt bekommen und weiß nicht, wie sie das Formular ausfüllen soll.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.1"
+    ],
+    "why": "Volunteers help you fill in forms from the authorities."
+   },
+   {
+    "q": "Ein Kollege fährt gern Auto und hat samstags Zeit, um etwas Gutes zu tun.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The food bank needs drivers on Saturdays; walking dogs (e) has nothing to do with driving."
+   },
+   {
+    "q": "Ihr Freund hat Streit mit seinem Vermieter, weil die Heizkosten so hoch sind, und braucht Rat.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "The tenants’ association advises on all questions about the flat, including service charges."
+   },
+   {
+    "q": "Eine Bekannte möchte der Bürgermeisterin persönlich ihre Idee für einen neuen Spielplatz erklären.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.0"
+    ],
+    "why": "In the mayor’s open office hour you can present your ideas for the town."
+   },
+   {
+    "q": "Ihr Nachbar zieht um und möchte sein altes Sofa und zwei Schränke verschenken.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The collection (g) only takes winter clothes; no ad takes furniture."
+   },
+   {
+    "q": "Eine Teilnehmerin aus Ihrem Deutschkurs möchte mehr sprechen üben und Leute aus anderen Ländern kennenlernen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "At the meeting café people from many countries meet to speak German."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t3-3",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Neue Lebensabschnitte",
+  "intro": "Seven people you know are looking for something. Find the right ad for each person – or x if there is none. You can use each ad only once.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Neue Lebensabschnitte: Anzeigen für jeden Anfang",
+      "New stages of life: ads for every new start"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Umzüge ohne Stress: Wir packen, transportieren und bauen Ihre Möbel wieder auf, auch am Wochenende.",
+      "Removals without stress: we pack, transport and reassemble your furniture, at weekends too."
+     ],
+     [
+      "Nach einem Besuch bei Ihnen bekommen Sie ein kostenloses Angebot.",
+      "After a visit to your home you receive a free quote."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Erste Hilfe am Kind: Kurs für Eltern und Großeltern, die wissen möchten, was man bei Unfällen mit kleinen Kindern tun muss.",
+      "First aid for children: a course for parents and grandparents who want to know what to do when small children have accidents."
+     ],
+     [
+      "Samstag, 9 bis 15 Uhr.",
+      "Saturday, 9 a.m. to 3 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Gut vorbereitet in die Rente: Seminar für Menschen, die in den nächsten zwei Jahren aufhören zu arbeiten.",
+      "Well prepared for retirement: a seminar for people who will stop working in the next two years."
+     ],
+     [
+      "Themen sind Geld, Gesundheit und neue Aufgaben für die freie Zeit.",
+      "The topics are money, health and new activities for your free time."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Hochzeitsfotograf mit zehn Jahren Erfahrung macht natürliche Bilder von Ihrem schönsten Tag.",
+      "Wedding photographer with ten years’ experience takes natural pictures of your happiest day."
+     ],
+     [
+      "Auch für kleine Feiern im Standesamt.",
+      "Also for small celebrations at the registry office."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Sie wissen nicht, welches Fach Sie studieren sollen?",
+      "You don’t know which subject to study?"
+     ],
+     [
+      "Die Studienberatung der Universität hilft Ihnen bei der Entscheidung.",
+      "The university’s study advice service helps you decide."
+     ],
+     [
+      "Persönliche Termine von Montag bis Freitag.",
+      "Personal appointments Monday to Friday."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Den Führerschein in vier Wochen: Kurs in den Sommerferien bei der Fahrschule am Markt.",
+      "Your driving licence in four weeks: a course in the summer holidays at the Fahrschule am Markt."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Wohnung zu vermieten: drei Zimmer, Balkon, ruhige Lage, ideal für junge Familien.",
+      "Flat to let: three rooms, balcony, quiet location, ideal for young families."
+     ],
+     [
+      "Kindergarten und Schule in der Nähe, 950 Euro warm, frei ab 1. März.",
+      "Nursery and school nearby, 950 euros including heating, available from 1 March."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Ein Jahr helfen und die Welt kennenlernen: Wir vermitteln junge Leute zwischen 18 und 26 in soziale Projekte in Südamerika und Afrika.",
+      "Help for a year and get to know the world: we place young people aged 18 to 26 in social projects in South America and Africa."
+     ],
+     [
+      "Infoabend am 12. Januar.",
+      "Information evening on 12 January."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Sie ziehen bald nach Spanien?",
+      "Are you moving to Spain soon?"
+     ],
+     [
+      "In unserem Spanischkurs lernen Sie die Sprache für den Alltag: beim Arzt, auf dem Amt und bei der Wohnungssuche.",
+      "In our Spanish course you learn the language for everyday life: at the doctor’s, at the authorities and when looking for a flat."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Wandern und neue Leute treffen: Gruppe für Singles ab 50, die gern in der Natur sind.",
+      "Hiking and meeting new people: a group for singles over 50 who like being out in nature."
+     ],
+     [
+      "Wir wandern jeden zweiten Sonntag.",
+      "We go hiking every other Sunday."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Lebensabschnitte",
+    "en": "stages of life"
+   },
+   {
+    "w": "Standesamt",
+    "en": "registry office (where civil weddings take place)"
+   },
+   {
+    "w": "Studienberatung",
+    "en": "study advice service"
+   },
+   {
+    "w": "Fahrschule",
+    "en": "driving school"
+   },
+   {
+    "w": "vermitteln",
+    "en": "to place, to arrange"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre Kollegin heiratet im Mai nur mit wenigen Gästen und möchte trotzdem schöne Fotos.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The wedding photographer also works at small registry-office celebrations."
+   },
+   {
+    "q": "Ein Nachbar hört nächstes Jahr auf zu arbeiten und weiß noch nicht, was er dann mit seiner Zeit machen soll.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "The seminar is for people retiring within two years and covers new activities for their free time."
+   },
+   {
+    "q": "Ihre Cousine hat gerade Abitur gemacht und möchte vor dem Studium ein Jahr im Ausland helfen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 7,
+    "ev": [
+     "b9.0"
+    ],
+    "why": "Young people aged 18 to 26 can help for a year in social projects abroad."
+   },
+   {
+    "q": "Ein Freund zieht mit seiner Familie in eine andere Stadt und hat keine Zeit, alles selbst einzupacken.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The removal firm packs, transports and reassembles the furniture."
+   },
+   {
+    "q": "Ihre Schwester bekommt bald ihr erstes Kind und sucht einen Kurs, der sie auf die Geburt vorbereitet.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The first-aid course (b) is about accidents with small children, not about preparing for the birth."
+   },
+   {
+    "q": "Ein Bekannter, 58, lebt seit zwei Jahren allein und möchte am Wochenende aktiv sein und vielleicht eine neue Partnerin finden.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 9,
+    "ev": [
+     "b11.0"
+    ],
+    "why": "The hiking group is for singles over 50 and meets on Sundays."
+   },
+   {
+    "q": "Ihr Onkel zieht im Herbst nach Málaga und spricht noch kein Wort Spanisch.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.0"
+    ],
+    "why": "The Spanish course is for people moving to Spain and teaches everyday language."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t3-4",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Ferien und Ausflüge",
+  "intro": "Seven people you know are looking for something. Find the right ad for each person – or x if there is none. You can use each ad only once.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Reisen, Ausflüge, Urlaub: unsere Angebote",
+      "Travel, day trips, holidays: our offers"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Mit dem Rad an der Mosel: fünf Tage, jeden Tag drei bis vier Stunden auf dem Fahrrad, Übernachtung in kleinen Hotels.",
+      "Cycling along the Moselle: five days, three to four hours on the bike every day, nights in small hotels."
+     ],
+     [
+      "Ihr Gepäck bringen wir zum nächsten Hotel, Fahrräder können Sie bei uns leihen.",
+      "We take your luggage to the next hotel, and you can hire bikes from us."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Ferienwohnung an der Ostsee: zwei Zimmer, nur drei Minuten zu Fuß zum Strand, Haustiere erlaubt.",
+      "Holiday flat on the Baltic coast: two rooms, only three minutes’ walk to the beach, pets allowed."
+     ],
+     [
+      "Noch frei im Juni und September.",
+      "Still available in June and September."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Segelkurs am Bodensee für junge Leute von 14 bis 17: eine Woche auf dem Wasser, Übernachtung im Zelt, Prüfung am Ende.",
+      "Sailing course on Lake Constance for young people aged 14 to 17: a week on the water, nights in a tent, an exam at the end."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Mit dem Bus zum Weihnachtsmarkt nach Nürnberg: Abfahrt am Samstag um 7 Uhr, Rückfahrt um 20 Uhr.",
+      "By coach to the Christmas market in Nuremberg: departure on Saturday at 7 a.m., return at 8 p.m."
+     ],
+     [
+      "Preis 39 Euro, mit einer Führung durch die Stadt.",
+      "Price 39 euros, with a guided tour of the city."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Ein ruhiges Wochenende im Schwarzwald: zwei Nächte im Hotel mit Schwimmbad, eine Massage ist im Preis inklusive.",
+      "A quiet weekend in the Black Forest: two nights in a hotel with a pool, one massage included in the price."
+     ],
+     [
+      "Nur für Erwachsene.",
+      "Adults only."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Urlaub auf dem Bauernhof: Kinder helfen beim Füttern der Tiere und dürfen reiten.",
+      "Holidays on the farm: children help feed the animals and can go riding."
+     ],
+     [
+      "Zimmer mit Frühstück ab 70 Euro pro Nacht.",
+      "Rooms with breakfast from 70 euros a night."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Jeden Sonntag erklärt eine Försterin bei einer Wanderung Pflanzen und Tiere im Stadtwald.",
+      "Every Sunday a forester explains the plants and animals in the town forest on a walk."
+     ],
+     [
+      "Wir treffen uns um 10 Uhr am Waldhaus, die Teilnahme ist kostenlos.",
+      "We meet at 10 a.m. at the Waldhaus; taking part is free."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Drei Tage Wien: Flug und zwei Nächte im Hotel im Zentrum, mit einer Karte für die Oper.",
+      "Three days in Vienna: flight and two nights in a hotel in the centre, with a ticket for the opera."
+     ],
+     [
+      "Ab 499 Euro pro Person.",
+      "From 499 euros per person."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Camping am See: Platz für Zelte und Wohnwagen, Hunde sind willkommen.",
+      "Camping by the lake: space for tents and caravans, dogs welcome."
+     ],
+     [
+      "Das ganze Jahr geöffnet.",
+      "Open all year round."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Mit dem Schiff von Dresden durch die Sächsische Schweiz und zurück.",
+      "By boat from Dresden through Saxon Switzerland and back."
+     ],
+     [
+      "Täglich ab 9 Uhr, Kinder unter 6 Jahren fahren kostenlos.",
+      "Daily from 9 a.m.; children under 6 travel free."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gepäck",
+    "en": "luggage"
+   },
+   {
+    "w": "Segelkurs",
+    "en": "sailing course"
+   },
+   {
+    "w": "Försterin",
+    "en": "(female) forester"
+   },
+   {
+    "w": "Wohnwagen",
+    "en": "caravan"
+   },
+   {
+    "w": "füttern",
+    "en": "to feed (animals)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre Tante möchte eine Woche Urlaub in einem Hotel in Italien machen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "No ad offers a holiday in Italy; the city break (h) goes to Vienna."
+   },
+   {
+    "q": "Ihre Eltern möchten im Dezember einen Tag in eine andere Stadt fahren, aber nicht selbst Auto fahren.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "A day trip by coach to the Christmas market in Nuremberg."
+   },
+   {
+    "q": "Ein Kollege möchte mit seinem Hund im Sommer eine Woche in einer Wohnung am Meer verbringen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "The holiday flat on the Baltic coast allows pets and is free in June; the camping site (i) is by a lake and has no flats."
+   },
+   {
+    "q": "Ihre Freundin ist sehr gestresst und möchte sich ein paar Tage ohne ihre Kinder erholen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "A quiet weekend with a pool and a massage, adults only."
+   },
+   {
+    "q": "Ihr Nachbar möchte im Urlaub Sport machen, aber sein Gepäck nicht selbst tragen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "On the cycling holiday the luggage is taken to the next hotel."
+   },
+   {
+    "q": "Ein Bekannter möchte mit seinen Kindern Ferien machen, bei denen die Kinder viel mit Tieren zu tun haben.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.0"
+    ],
+    "why": "On the farm the children feed the animals and can ride."
+   },
+   {
+    "q": "Ihre Kollegin interessiert sich für die Natur in ihrer Stadt und möchte am Wochenende etwas lernen, ohne Geld auszugeben.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.1"
+    ],
+    "why": "The forester’s Sunday walk in the town forest is free."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t3-5",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "type": "ads",
+  "title": "Rund ums Wohnen",
+  "intro": "Seven people you know are looking for something. Find the right ad for each person – or x if there is none. You can use each ad only once.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Anzeigen: Haus, Wohnung, Garten",
+      "Ads: house, flat, garden"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "label": "a",
+    "s": [
+     [
+      "Wir streichen Ihre Wohnung schnell und sauber und bringen die Farbe selbst mit.",
+      "We paint your flat quickly and cleanly and bring the paint ourselves."
+     ],
+     [
+      "Wir übernehmen auch kleine Aufträge, zum Beispiel ein einzelnes Zimmer.",
+      "We also take on small jobs, for example a single room."
+     ],
+     [
+      "Die Beratung ist kostenlos.",
+      "The advice is free."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "label": "b",
+    "s": [
+     [
+      "Wir putzen Treppenhäuser, kümmern uns um die Gärten und räumen im Winter den Schnee vor großen Häusern mit vielen Wohnungen.",
+      "We clean stairwells, look after the gardens and clear the snow in winter outside large buildings with many flats."
+     ],
+     [
+      "Wir arbeiten nur für Vermieter, nicht für private Haushalte.",
+      "We only work for landlords, not for private households."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "label": "c",
+    "s": [
+     [
+      "Gebrauchte Möbel günstig: Sofas, Tische, Schränke und Betten aus zweiter Hand.",
+      "Used furniture at low prices: sofas, tables, wardrobes and beds, second-hand."
+     ],
+     [
+      "Wir liefern auch und bauen die Möbel bei Ihnen auf, Sozialkaufhaus Mitte, Montag bis Samstag 10 bis 18 Uhr.",
+      "We also deliver and assemble the furniture at your home; Sozialkaufhaus Mitte, Monday to Saturday 10 a.m. to 6 p.m."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "label": "d",
+    "s": [
+     [
+      "Tür zu und Schlüssel drinnen?",
+      "Door shut and key inside?"
+     ],
+     [
+      "Unser Schlüsseldienst öffnet Ihre Tür rund um die Uhr, auch nachts und am Wochenende.",
+      "Our locksmith service opens your door around the clock, also at night and at weekends."
+     ],
+     [
+      "Fester Preis: 89 Euro.",
+      "Fixed price: 89 euros."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "label": "e",
+    "s": [
+     [
+      "Zimmer frei in einer Wohnung mit zwei Studentinnen: klein, aber hell und mit Möbeln.",
+      "Room free in a flat with two female students: small but bright, and furnished."
+     ],
+     [
+      "Nur für Frauen, ab sofort, 420 Euro warm.",
+      "Women only, available immediately, 420 euros including heating."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "label": "f",
+    "s": [
+     [
+      "Familie mit drei Kindern sucht jemanden, der zweimal pro Woche bei uns putzt.",
+      "Family with three children is looking for someone to clean for us twice a week."
+     ],
+     [
+      "Wir zahlen 15 Euro pro Stunde.",
+      "We pay 15 euros an hour."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "label": "g",
+    "s": [
+     [
+      "Rentner mit Erfahrung hilft bei allen Arbeiten im Garten, auch bei schweren.",
+      "Experienced pensioner helps with all jobs in the garden, including heavy ones."
+     ],
+     [
+      "Rufen Sie einfach an, dann sprechen wir über den Preis.",
+      "Just call, and we’ll talk about the price."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "label": "h",
+    "s": [
+     [
+      "Strom und Heizung zu teuer?",
+      "Electricity and heating too expensive?"
+     ],
+     [
+      "Die Verbraucherzentrale berät Sie kostenlos am Telefon, wie Sie Energie sparen können.",
+      "The consumer advice centre advises you free of charge by phone on how you can save energy."
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "label": "i",
+    "s": [
+     [
+      "Kartons für den Umzug zu verschenken: 30 Stück, nur einmal benutzt.",
+      "Boxes for moving to give away: 30 of them, used only once."
+     ],
+     [
+      "Bitte selbst abholen in der Ahornstraße.",
+      "Please collect them yourself in Ahornstraße."
+     ]
+    ]
+   },
+   {
+    "id": "b11",
+    "t": "ad",
+    "label": "j",
+    "s": [
+     [
+      "Wasser in der Küche oder die Heizung kaputt?",
+      "Water in the kitchen or the heating broken?"
+     ],
+     [
+      "Unser Handwerker ist in 60 Minuten bei Ihnen, Tag und Nacht.",
+      "Our tradesman is with you in 60 minutes, day and night."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "streichen",
+    "en": "to paint (walls)"
+   },
+   {
+    "w": "Sozialkaufhaus",
+    "en": "charity shop selling cheap second-hand goods"
+   },
+   {
+    "w": "Schlüsseldienst",
+    "en": "locksmith service"
+   },
+   {
+    "w": "Verbraucherzentrale",
+    "en": "consumer advice centre"
+   },
+   {
+    "w": "Kartons",
+    "en": "cardboard boxes"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihr Kollege hat am Sonntagabend seinen Schlüssel in der Wohnung vergessen und kommt nicht mehr hinein.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The locksmith opens doors around the clock, at weekends too."
+   },
+   {
+    "q": "Eine Bekannte hat wenig Geld und braucht für ihre erste eigene Wohnung ein Bett und einen Schrank.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "The charity shop sells cheap second-hand beds and wardrobes."
+   },
+   {
+    "q": "Ihre Nachbarin findet ihre Strom- und Heizkosten zu hoch und möchte wissen, was sie tun kann.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 7,
+    "ev": [
+     "b9.1"
+    ],
+    "why": "The consumer advice centre gives free advice on saving energy."
+   },
+   {
+    "q": "Ein Freund möchte nur das Kinderzimmer neu streichen lassen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "The painter also takes small jobs such as a single room."
+   },
+   {
+    "q": "Ihre Cousine zieht nächste Woche um und braucht Kartons, will aber nichts dafür bezahlen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 8,
+    "ev": [
+     "b10.0"
+    ],
+    "why": "Thirty moving boxes are being given away for free."
+   },
+   {
+    "q": "Ein älteres Ehepaar schafft die Arbeit in seinem großen Garten nicht mehr allein.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 6,
+    "ev": [
+     "b8.0"
+    ],
+    "why": "The pensioner helps with all garden jobs; the caretaker service (b) only works for landlords of large buildings."
+   },
+   {
+    "q": "Ihr Neffe beginnt im Oktober sein Studium und sucht ein günstiges Zimmer.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g",
+     "h",
+     "i",
+     "j",
+     "x"
+    ],
+    "a": 10,
+    "ev": [],
+    "why": "The flat-share room (e) is for women only, so there is nothing for him."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t4-1",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Museen ohne Eintritt?",
+  "intro": "In a newspaper forum, readers answer the question whether museums should be free to enter.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollten Museen keinen Eintritt kosten?",
+      "Readers’ forum: Should museums be free to enter?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Ein Besuch im Museum kostet in vielen Städten zwischen 8 und 15 Euro.",
+      "In many cities a visit to a museum costs between 8 and 15 euros."
+     ],
+     [
+      "Sollte der Eintritt für alle frei sein?",
+      "Should admission be free for everyone?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Quirin, 23, Darmstadt",
+    "s": [
+     [
+      "Als Student überlege ich mir genau, wofür ich Geld ausgebe, und zwölf Euro für ein Museum sind mir oft zu viel.",
+      "As a student I think carefully about what I spend money on, and twelve euros for a museum is often too much for me."
+     ],
+     [
+      "In London ist der Eintritt in die großen Museen frei, und sie sind immer voll.",
+      "In London the big museums are free to enter, and they are always full."
+     ],
+     [
+      "Ich bin sicher, dass es bei uns genauso wäre.",
+      "I’m sure it would be the same here."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Serkan, 34, Duisburg",
+    "s": [
+     [
+      "Wir sind eine Familie mit drei Kindern, und ein Museumsbesuch kostet uns schnell 40 Euro.",
+      "We are a family with three children, and a museum visit quickly costs us 40 euros."
+     ],
+     [
+      "Deshalb gehen wir leider selten hin.",
+      "That’s why we unfortunately rarely go."
+     ],
+     [
+      "Dabei bezahlen wir die Museen schon mit unseren Steuern.",
+      "And yet we already pay for the museums with our taxes."
+     ],
+     [
+      "Kunst und Geschichte gehören allen, also sollte man dafür nicht noch einmal bezahlen müssen.",
+      "Art and history belong to everyone, so you shouldn’t have to pay for them a second time."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Hildegard, 67, Heilbronn",
+    "s": [
+     [
+      "So schön die Idee klingt: Wer soll das bezahlen?",
+      "As nice as the idea sounds: who is supposed to pay for it?"
+     ],
+     [
+      "Museen brauchen Geld für ihre Mitarbeiter, für neue Ausstellungen und für die Pflege der Kunstwerke.",
+      "Museums need money for their staff, for new exhibitions and for looking after the works of art."
+     ],
+     [
+      "Für Schüler, Studenten und Rentner gibt es schon heute günstigere Tickets.",
+      "There are already cheaper tickets for pupils, students and pensioners today."
+     ],
+     [
+      "Das reicht meiner Meinung nach völlig.",
+      "In my opinion that is quite enough."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Lasse, 17, Potsdam",
+    "s": [
+     [
+      "Mit der Schule waren wir schon oft im Museum, und meistens fand ich es interessanter, als ich gedacht hatte.",
+      "We’ve often been to museums with school, and mostly I found it more interesting than I had expected."
+     ],
+     [
+      "Allein gehe ich aber nie hin, weil ich mein Taschengeld lieber für andere Sachen ausgebe.",
+      "But I never go on my own, because I’d rather spend my pocket money on other things."
+     ],
+     [
+      "Wenn es nichts kosten würde, würde ich bestimmt auch mal spontan mit Freunden hingehen.",
+      "If it cost nothing, I’d definitely go spontaneously with friends sometimes."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Agnes, 45, Flensburg",
+    "s": [
+     [
+      "Ich arbeite an der Kasse eines Museums.",
+      "I work at the ticket desk of a museum."
+     ],
+     [
+      "Letztes Jahr gab es bei uns einen Versuch mit freiem Eintritt an jedem Sonntag.",
+      "Last year we tried free admission every Sunday."
+     ],
+     [
+      "Es kamen zwar viele Leute, aber die meisten blieben nur zehn Minuten.",
+      "A lot of people did come, but most of them only stayed ten minutes."
+     ],
+     [
+      "Wer bezahlt, schaut sich die Ausstellung auch genauer an.",
+      "People who pay look at the exhibition more closely."
+     ],
+     [
+      "Ich bin deshalb gegen freien Eintritt.",
+      "So I’m against free admission."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Ortrud, 52, Jena",
+    "s": [
+     [
+      "Ich glaube nicht, dass es am Preis liegt.",
+      "I don’t think it’s about the price."
+     ],
+     [
+      "Viele Menschen gehen nicht ins Museum, weil sie es langweilig finden, nicht weil es zu teuer ist.",
+      "Many people don’t go to museums because they find them boring, not because they are too expensive."
+     ],
+     [
+      "Ins Kino gehen sie ja auch, obwohl das nicht billig ist.",
+      "After all, they go to the cinema, although that isn’t cheap."
+     ],
+     [
+      "Die Museen sollten lieber ihre Ausstellungen spannender machen, statt auf ihr Geld zu verzichten.",
+      "Museums should rather make their exhibitions more exciting than give up their money."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Cem, 29, Mannheim",
+    "s": [
+     [
+      "Kultur darf keine Frage des Geldes sein.",
+      "Culture must not be a question of money."
+     ],
+     [
+      "Ich bin in einer Familie aufgewachsen, in der für Museen nie Geld da war, und habe erst als Erwachsener gemerkt, was ich verpasst habe.",
+      "I grew up in a family where there was never money for museums, and only realised as an adult what I had missed."
+     ],
+     [
+      "Kindern aus solchen Familien würde freier Eintritt sehr helfen.",
+      "Free admission would help children from such families a lot."
+     ],
+     [
+      "Deshalb bin ich klar dafür.",
+      "That’s why I’m clearly in favour."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "wofür",
+    "en": "what … for"
+   },
+   {
+    "w": "Steuern",
+    "en": "taxes"
+   },
+   {
+    "w": "Ausstellungen",
+    "en": "exhibitions"
+   },
+   {
+    "w": "Pflege",
+    "en": "care, looking after"
+   },
+   {
+    "w": "verpasst",
+    "en": "missed (verpassen)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ist Quirin für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "Twelve euros is too much for him, and he is sure free museums would be full here as in London."
+   },
+   {
+    "q": "Ist Serkan für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "Families already pay through taxes, so they shouldn’t have to pay again."
+   },
+   {
+    "q": "Ist Hildegard für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "Museums need the money, and the cheaper tickets that already exist are enough for her."
+   },
+   {
+    "q": "Ist Lasse für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "If it were free, he would go spontaneously with friends."
+   },
+   {
+    "q": "Ist Agnes für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.4"
+    ],
+    "why": "Visitors who don’t pay only stayed ten minutes, so she is against it."
+   },
+   {
+    "q": "Ist Ortrud für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.3"
+    ],
+    "why": "She thinks the price isn’t the problem; museums should become more exciting instead of giving up their income."
+   },
+   {
+    "q": "Ist Cem für freien Eintritt in Museen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.3"
+    ],
+    "why": "Culture must not depend on money; he is clearly in favour."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t4-2",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Einkaufen am Sonntag?",
+  "intro": "In a newspaper forum, readers answer the question whether shops should be allowed to open on Sundays.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollten Geschäfte auch sonntags öffnen dürfen?",
+      "Readers’ forum: Should shops be allowed to open on Sundays too?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "In Deutschland sind die meisten Geschäfte am Sonntag geschlossen.",
+      "In Germany most shops are closed on Sundays."
+     ],
+     [
+      "Ist das noch richtig, oder sollte sich das ändern?",
+      "Is that still right, or should it change?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Ricarda, 31, Bremen",
+    "s": [
+     [
+      "Ich bin Krankenschwester und arbeite im Schichtdienst, oft auch am Samstag.",
+      "I’m a nurse and work shifts, often on Saturdays too."
+     ],
+     [
+      "Wenn ich nach einem Spätdienst nach Hause komme, sind die Geschäfte schon lange zu.",
+      "When I come home after a late shift, the shops have long been closed."
+     ],
+     [
+      "Der Sonntag ist oft mein einziger freier Tag, und gerade dann kann ich nicht einkaufen.",
+      "Sunday is often my only day off, and that’s exactly when I can’t go shopping."
+     ],
+     [
+      "Das ist doch nicht mehr zeitgemäß.",
+      "That simply isn’t up to date any more."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Eckhard, 58, Gelsenkirchen",
+    "s": [
+     [
+      "Ich verkaufe seit dreißig Jahren in einem Kaufhaus Schuhe und arbeite schon jeden Samstag.",
+      "I’ve been selling shoes in a department store for thirty years and already work every Saturday."
+     ],
+     [
+      "Der Sonntag ist der einzige Tag, an dem meine ganze Familie zusammen ist.",
+      "Sunday is the only day when my whole family is together."
+     ],
+     [
+      "Wenn die Geschäfte öffnen, müssen Leute wie ich auch am Sonntag arbeiten.",
+      "If the shops open, people like me will have to work on Sundays too."
+     ],
+     [
+      "Ich hoffe sehr, dass es so bleibt, wie es ist.",
+      "I very much hope it stays the way it is."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Gunnar, 44, Osnabrück",
+    "s": [
+     [
+      "Eine Gesellschaft braucht einen Tag, an dem nicht alles ums Geld geht.",
+      "A society needs one day on which not everything is about money."
+     ],
+     [
+      "Am Sonntag treffen sich Familien, Vereine machen Ausflüge, man geht spazieren oder in die Kirche.",
+      "On Sundays families get together, clubs go on outings, people go for walks or to church."
+     ],
+     [
+      "Wer sieben Tage die Woche einkaufen will, hat für so etwas bald keine Zeit mehr.",
+      "Anyone who wants to shop seven days a week will soon have no time left for such things."
+     ],
+     [
+      "Sechs Tage Einkaufen reichen völlig.",
+      "Six days of shopping are quite enough."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Talea, 26, Halle",
+    "s": [
+     [
+      "In vielen anderen Ländern ist es ganz normal, dass man am Sonntag einkaufen kann.",
+      "In many other countries it’s completely normal to be able to shop on Sundays."
+     ],
+     [
+      "Außerdem bestellen die Leute heute sowieso im Internet, und Online-Shops sind 24 Stunden am Tag geöffnet.",
+      "Besides, people order on the internet anyway these days, and online shops are open 24 hours a day."
+     ],
+     [
+      "Wenn die Geschäfte in der Stadt auch am Sonntag öffnen dürften, hätten sie bessere Chancen.",
+      "If the shops in town were also allowed to open on Sundays, they would have a better chance."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Corinna, 63, Trier",
+    "s": [
+     [
+      "Ich bin Rentnerin und gehe am Sonntag gern in die Stadt.",
+      "I’m a pensioner and like going into town on Sundays."
+     ],
+     [
+      "Leider ist die Innenstadt dann fast leer, und alles wirkt ein bisschen traurig.",
+      "Unfortunately the town centre is almost empty then, and everything seems a little sad."
+     ],
+     [
+      "Wenn die Geschäfte offen wären, wäre endlich wieder Leben in den Straßen.",
+      "If the shops were open, there would finally be life in the streets again."
+     ],
+     [
+      "Für mich wäre das ein Gewinn.",
+      "For me that would be a gain."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Marlene, 38, Wiesbaden",
+    "s": [
+     [
+      "Ich habe ein kleines Geschäft für Kinderkleidung mit zwei Angestellten.",
+      "I have a small children’s clothes shop with two employees."
+     ],
+     [
+      "Wenn die großen Kaufhäuser sonntags öffnen, müsste ich auch öffnen, sonst gehen die Kunden zur Konkurrenz.",
+      "If the big department stores open on Sundays, I would have to open too, or the customers will go to the competition."
+     ],
+     [
+      "Aber für einen siebten Tag habe ich weder das Personal noch das Geld.",
+      "But I have neither the staff nor the money for a seventh day."
+     ],
+     [
+      "Für kleine Läden wie meinen wäre das das Ende.",
+      "For small shops like mine that would be the end."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Lennart, 21, Ingolstadt",
+    "s": [
+     [
+      "Ich studiere und arbeite am Wochenende in einer Bäckerei, die sonntags schon morgens geöffnet hat.",
+      "I’m a student and work at weekends in a bakery that already opens on Sunday mornings."
+     ],
+     [
+      "Am Sonntag verdiene ich mehr als an anderen Tagen, und das Geld brauche ich.",
+      "On Sundays I earn more than on other days, and I need the money."
+     ],
+     [
+      "Viele meiner Freunde würden auch gern sonntags in einem Geschäft jobben.",
+      "Lots of my friends would also like to work in a shop on Sundays."
+     ],
+     [
+      "Ich finde, jeder sollte selbst entscheiden können, ob er sonntags arbeitet oder einkauft.",
+      "I think everyone should be able to decide for themselves whether to work or shop on Sundays."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Schichtdienst",
+    "en": "shift work"
+   },
+   {
+    "w": "zeitgemäß",
+    "en": "up to date, modern"
+   },
+   {
+    "w": "Gesellschaft",
+    "en": "society"
+   },
+   {
+    "w": "Konkurrenz",
+    "en": "the competition"
+   },
+   {
+    "w": "jobben",
+    "en": "to work in a (student) job"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ist Ricarda dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "Sunday is often her only free day, and closed shops are “nicht mehr zeitgemäß” for her."
+   },
+   {
+    "q": "Ist Eckhard dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "He would have to work on Sundays too and wants things to stay as they are."
+   },
+   {
+    "q": "Ist Gunnar dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "Society needs one day not about money; six shopping days are enough."
+   },
+   {
+    "q": "Ist Talea dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "Shops in town would have a better chance against online shops."
+   },
+   {
+    "q": "Ist Corinna dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.3"
+    ],
+    "why": "Open shops would bring life back to the empty town centre – a gain for her."
+   },
+   {
+    "q": "Ist Marlene dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.3"
+    ],
+    "why": "Her small shop has neither staff nor money for a seventh day; it would be the end."
+   },
+   {
+    "q": "Ist Lennart dafür, dass Geschäfte sonntags öffnen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.3"
+    ],
+    "why": "He earns more on Sundays and thinks everyone should decide for themselves."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t4-3",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Ein Jahr Pause nach der Schule?",
+  "intro": "In a magazine forum, readers answer the question whether young people should take a year off after school.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Nach der Schule erst einmal ein Jahr Pause?",
+      "Readers’ forum: A year off after school first?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Viele junge Leute reisen nach dem Abitur, arbeiten oder helfen in einem sozialen Projekt, bevor sie eine Ausbildung oder ein Studium beginnen.",
+      "Many young people travel, work or help in a social project after the Abitur before starting training or university."
+     ],
+     [
+      "Ist das eine gute Idee?",
+      "Is that a good idea?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Jasper, 19, Koblenz",
+    "s": [
+     [
+      "Ich schreibe gerade aus Neuseeland, wo ich seit fünf Monaten auf Bauernhöfen arbeite und dafür Essen und ein Bett bekomme.",
+      "I’m writing from New Zealand, where I’ve been working on farms for five months in exchange for food and a bed."
+     ],
+     [
+      "Ich habe hier mehr über mich gelernt als in zwölf Jahren Schule.",
+      "I’ve learned more about myself here than in twelve years of school."
+     ],
+     [
+      "Nach der Reise weiß ich endlich, was ich studieren will.",
+      "After the trip I finally know what I want to study."
+     ],
+     [
+      "Jeder sollte diese Erfahrung machen.",
+      "Everyone should have this experience."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Elke, 49, Hagen",
+    "s": [
+     [
+      "Mein Sohn wollte nach dem Abitur auch „nur ein Jahr“ Pause machen.",
+      "My son also wanted to take “just one year” off after the Abitur."
+     ],
+     [
+      "Daraus sind inzwischen zwei Jahre geworden, und er jobbt immer noch in einem Café.",
+      "That has now turned into two years, and he is still working in a café."
+     ],
+     [
+      "Wer einmal aus dem Lernen raus ist, kommt schwer wieder hinein.",
+      "Once you’re out of the habit of learning, it’s hard to get back into it."
+     ],
+     [
+      "Ich würde jedem raten, direkt weiterzumachen.",
+      "I would advise everyone to carry on straight away."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Isabel, 18, Tübingen",
+    "s": [
+     [
+      "Ich mache im Sommer Abitur und fange im Oktober sofort mit dem Studium an.",
+      "I’m taking my Abitur in the summer and start university straight away in October."
+     ],
+     [
+      "Ich weiß genau, dass ich Ärztin werden will, warum sollte ich also warten?",
+      "I know exactly that I want to be a doctor, so why should I wait?"
+     ],
+     [
+      "Ich möchte so früh wie möglich mein eigenes Geld verdienen.",
+      "I want to earn my own money as early as possible."
+     ],
+     [
+      "Reisen kann ich auch noch später, in den Ferien.",
+      "I can still travel later, in the holidays."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Ilyas, 22, Offenbach",
+    "s": [
+     [
+      "Nach der Schule hatte ich keine Ahnung, was ich machen soll.",
+      "After school I had no idea what to do."
+     ],
+     [
+      "Deshalb habe ich ein Jahr lang in einem Krankenhaus geholfen.",
+      "So I helped in a hospital for a year."
+     ],
+     [
+      "Dort habe ich gemerkt, dass mir die Arbeit mit kranken Menschen gefällt, und jetzt mache ich eine Ausbildung zum Krankenpfleger.",
+      "There I noticed that I like working with sick people, and now I’m training to be a nurse."
+     ],
+     [
+      "Ohne das Jahr wäre ich nie auf diese Idee gekommen.",
+      "Without that year I would never have had the idea."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Torsten, 61, Saarbrücken",
+    "s": [
+     [
+      "Ein Jahr Pause muss man sich leisten können.",
+      "You have to be able to afford a year off."
+     ],
+     [
+      "Reisen ist teuer, und nicht alle Eltern können ihren Kindern so etwas bezahlen.",
+      "Travelling is expensive, and not all parents can pay for something like that for their children."
+     ],
+     [
+      "Für viele junge Leute ist es besser, gleich mit der Ausbildung anzufangen und in den Ferien zu reisen.",
+      "For many young people it’s better to start their training straight away and travel in the holidays."
+     ],
+     [
+      "Ich halte nicht viel von dem Trend.",
+      "I don’t think much of the trend."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Annegret, 55, Fulda",
+    "s": [
+     [
+      "Ich leite die Personalabteilung einer großen Firma und lese jedes Jahr Hunderte Bewerbungen.",
+      "I run the HR department of a large company and read hundreds of applications every year."
+     ],
+     [
+      "Bewerber, die ein Jahr im Ausland oder in einem sozialen Projekt verbracht haben, sind oft selbstständiger als andere.",
+      "Applicants who have spent a year abroad or in a social project are often more independent than others."
+     ],
+     [
+      "Ein Jahr Pause ist im Lebenslauf deshalb kein Nachteil, im Gegenteil.",
+      "So a year off is not a disadvantage on a CV – quite the opposite."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Romy, 20, Schwerin",
+    "s": [
+     [
+      "Nach dem Abitur habe ich ein Jahr als Au-pair in Frankreich gelebt.",
+      "After the Abitur I lived in France for a year as an au pair."
+     ],
+     [
+      "Am Anfang hatte ich oft Heimweh, aber dann habe ich nicht nur die Sprache gelernt, sondern auch, allein Probleme zu lösen.",
+      "At first I was often homesick, but then I learned not only the language but also how to solve problems on my own."
+     ],
+     [
+      "Heute studiere ich Französisch und kann so ein Jahr jedem empfehlen.",
+      "Today I study French and can recommend a year like that to anyone."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Neuseeland",
+    "en": "New Zealand"
+   },
+   {
+    "w": "Ahnung",
+    "en": "idea, clue"
+   },
+   {
+    "w": "Personalabteilung",
+    "en": "HR department"
+   },
+   {
+    "w": "Bewerber",
+    "en": "applicants"
+   },
+   {
+    "w": "Lebenslauf",
+    "en": "CV"
+   },
+   {
+    "w": "Heimweh",
+    "en": "homesickness"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ist Jasper dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "He has learned a lot on his trip and thinks everyone should have this experience."
+   },
+   {
+    "q": "Ist Elke dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "Her son’s one year became two; she advises carrying on straight away."
+   },
+   {
+    "q": "Ist Isabel dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "She knows what she wants to study and starts straight away; travelling can wait for the holidays."
+   },
+   {
+    "q": "Ist Ilyas dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.3"
+    ],
+    "why": "His year in a hospital showed him which job he wants."
+   },
+   {
+    "q": "Ist Torsten dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.3"
+    ],
+    "why": "A year off is expensive; he thinks it is better to start training and travel in the holidays."
+   },
+   {
+    "q": "Ist Annegret dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.2"
+    ],
+    "why": "As an HR manager she finds such applicants more independent; it is an advantage on a CV."
+   },
+   {
+    "q": "Ist Romy dafür, nach der Schule ein Jahr Pause zu machen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.2"
+    ],
+    "why": "Her year as an au pair taught her a lot, and she recommends it to everyone."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t4-4",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Geld für Hausarbeit?",
+  "intro": "In a parents’ magazine, readers answer the question whether children should be paid for helping at home.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollen Kinder Geld bekommen, wenn sie im Haushalt helfen?",
+      "Readers’ forum: Should children get money when they help with the housework?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Tisch decken, Müll rausbringen, Auto waschen: Manche Eltern bezahlen ihre Kinder dafür, andere nicht.",
+      "Laying the table, taking out the rubbish, washing the car: some parents pay their children for it, others don’t."
+     ],
+     [
+      "Was meinen Sie?",
+      "What do you think?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Patrick, 39, Krefeld",
+    "s": [
+     [
+      "Bei uns gibt es für jede Aufgabe einen kleinen Betrag, zum Beispiel einen Euro fürs Autowaschen.",
+      "At our house there’s a small amount for every job, for example one euro for washing the car."
+     ],
+     [
+      "So lernen die Kinder früh, dass man für Arbeit Geld bekommt und dass Geld nicht vom Himmel fällt.",
+      "That way the children learn early that you get money for work and that money doesn’t fall from the sky."
+     ],
+     [
+      "Ihr Zimmer müssen sie natürlich trotzdem ohne Geld aufräumen.",
+      "Of course they still have to tidy their rooms without money."
+     ],
+     [
+      "Ich finde das sehr sinnvoll.",
+      "I think that makes a lot of sense."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Friederike, 42, Aachen",
+    "s": [
+     [
+      "Mich bezahlt auch niemand dafür, dass ich koche oder die Wäsche mache.",
+      "Nobody pays me for cooking or doing the washing either."
+     ],
+     [
+      "Eine Familie ist ein Team, und im Team hilft jeder mit, ohne etwas dafür zu verlangen.",
+      "A family is a team, and in a team everyone helps without asking for anything in return."
+     ],
+     [
+      "Unsere Kinder bekommen ein festes Taschengeld, und die Hilfe im Haushalt ist ganz normal.",
+      "Our children get fixed pocket money, and helping at home is completely normal."
+     ],
+     [
+      "Geld gibt es dafür nicht.",
+      "There’s no money for it."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Noah, 13, Minden",
+    "s": [
+     [
+      "Ich mähe bei uns jede Woche den Rasen und bekomme dafür drei Euro.",
+      "I mow our lawn every week and get three euros for it."
+     ],
+     [
+      "Das Geld spare ich für ein neues Fahrrad, und in zwei Monaten habe ich genug zusammen.",
+      "I’m saving the money for a new bike, and in two months I’ll have enough."
+     ],
+     [
+      "Ohne das Geld würde ich bestimmt viel weniger helfen.",
+      "Without the money I’m sure I would help much less."
+     ],
+     [
+      "Ich finde das System super.",
+      "I think the system is great."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Dagmar, 70, Celle",
+    "s": [
+     [
+      "Als ich ein Kind war, hat niemand für Hilfe im Haushalt Geld bekommen.",
+      "When I was a child, nobody got money for helping at home."
+     ],
+     [
+      "Kinder sollten helfen, weil sie zur Familie gehören, nicht wegen des Geldes.",
+      "Children should help because they belong to the family, not because of the money."
+     ],
+     [
+      "Sonst fragen sie irgendwann bei jeder Kleinigkeit: „Was bekomme ich dafür?“",
+      "Otherwise one day they’ll ask with every little thing: “What do I get for it?”"
+     ],
+     [
+      "Meine Enkel helfen mir im Garten, und danach backen wir zusammen einen Kuchen – das ist ihr Lohn.",
+      "My grandchildren help me in the garden, and afterwards we bake a cake together – that’s their reward."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Ulf, 51, Wolfsburg",
+    "s": [
+     [
+      "Ich halte nichts davon, Kinder für jede Hilfe zu bezahlen.",
+      "I don’t think much of paying children for every bit of help."
+     ],
+     [
+      "Sie lernen sonst, dass man nur arbeitet, wenn man Geld bekommt.",
+      "Otherwise they learn that you only work when you get money."
+     ],
+     [
+      "Bei uns hat jedes Kind feste Aufgaben, und das Taschengeld gibt es unabhängig davon jeden Monat.",
+      "At our house every child has fixed jobs, and the pocket money comes every month regardless."
+     ],
+     [
+      "So sehen die Kinder, dass beides nichts miteinander zu tun hat.",
+      "That way the children see that the two have nothing to do with each other."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Jens, 45, Kassel",
+    "s": [
+     [
+      "Normale Aufgaben wie Tisch decken oder das eigene Zimmer aufräumen sind bei uns selbstverständlich.",
+      "Normal jobs such as laying the table or tidying your own room are a matter of course at our house."
+     ],
+     [
+      "Aber für größere Arbeiten, zum Beispiel Fenster putzen oder im Garten helfen, bekommen unsere Kinder etwas Geld.",
+      "But for bigger jobs, for example cleaning windows or helping in the garden, our children get some money."
+     ],
+     [
+      "Das finde ich fair, und die Kinder sind motivierter.",
+      "I think that’s fair, and the children are more motivated."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Ronja, 16, Neumünster",
+    "s": [
+     [
+      "Meine Mutter ist alleinerziehend und arbeitet sehr viel.",
+      "My mother is a single parent and works a lot."
+     ],
+     [
+      "Deshalb koche ich zweimal pro Woche für meinen kleinen Bruder und mich.",
+      "So I cook for my little brother and me twice a week."
+     ],
+     [
+      "Ich würde nie Geld dafür nehmen, weil wir das zusammen schaffen müssen.",
+      "I would never take money for it, because we have to manage it together."
+     ],
+     [
+      "Hilfe in der Familie sollte man nicht bezahlen.",
+      "You shouldn’t pay for help within the family."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Haushalt",
+    "en": "household, housework"
+   },
+   {
+    "w": "Betrag",
+    "en": "amount (of money)"
+   },
+   {
+    "w": "sinnvoll",
+    "en": "sensible, useful"
+   },
+   {
+    "w": "mähe",
+    "en": "mow (mähen)"
+   },
+   {
+    "w": "Kleinigkeit",
+    "en": "little thing"
+   },
+   {
+    "w": "unabhängig",
+    "en": "independent(ly), regardless"
+   },
+   {
+    "w": "alleinerziehend",
+    "en": "bringing up a child alone"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ist Patrick dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "He pays for every job so that the children learn that work earns money."
+   },
+   {
+    "q": "Ist Friederike dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "In a family everyone helps without asking for anything; there is no money for it."
+   },
+   {
+    "q": "Ist Noah dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "He earns three euros for mowing the lawn, saves for a bike and likes the system."
+   },
+   {
+    "q": "Ist Dagmar dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "Children should help because they belong to the family, not for money."
+   },
+   {
+    "q": "Ist Ulf dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.0"
+    ],
+    "why": "He doesn’t think much of it; pocket money and jobs have nothing to do with each other."
+   },
+   {
+    "q": "Ist Jens dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.2"
+    ],
+    "why": "Normal jobs are unpaid, but for bigger jobs his children get money, which he finds fair."
+   },
+   {
+    "q": "Ist Ronja dafür, dass Kinder für Hilfe im Haushalt Geld bekommen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b9.3"
+    ],
+    "why": "She helps her mother and would never take money; help in the family shouldn’t be paid."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t4-5",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 4",
+  "type": "comments",
+  "title": "Ein Instrument für jedes Kind?",
+  "intro": "In a newspaper forum, readers answer the question whether every child should learn an instrument at school.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Leserforum: Sollte jedes Kind in der Schule ein Instrument lernen?",
+      "Readers’ forum: Should every child learn an instrument at school?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "An einigen Grundschulen lernen alle Kinder ein Instrument, zum Beispiel Geige oder Flöte.",
+      "At some primary schools all children learn an instrument, for example violin or flute."
+     ],
+     [
+      "Sollte das an allen Schulen so sein?",
+      "Should that be the case at all schools?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "comment",
+    "label": "Oskar, 15, Paderborn",
+    "s": [
+     [
+      "In der dritten Klasse mussten wir alle Flöte spielen, und ich habe es gehasst.",
+      "In year three we all had to play the flute, and I hated it."
+     ],
+     [
+      "Ich habe einfach kein Talent für Musik, und jede Stunde war für mich ein Stress.",
+      "I simply have no talent for music, and every lesson was stressful for me."
+     ],
+     [
+      "Ich hätte lieber mehr Sport gemacht.",
+      "I would rather have done more sport."
+     ],
+     [
+      "Man sollte die Kinder selbst wählen lassen.",
+      "You should let children choose for themselves."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "comment",
+    "label": "Kirsten, 41, Hamm",
+    "s": [
+     [
+      "Ich bin Musiklehrerin und sehe jeden Tag, wie gut Musik den Kindern tut.",
+      "I’m a music teacher and see every day how good music is for children."
+     ],
+     [
+      "Wer ein Instrument lernt, kann sich besser konzentrieren und lernt, im Team zu arbeiten.",
+      "Anyone who learns an instrument can concentrate better and learns to work in a team."
+     ],
+     [
+      "Privater Unterricht ist aber teuer, und viele Familien können ihn nicht bezahlen.",
+      "But private lessons are expensive, and many families can’t pay for them."
+     ],
+     [
+      "Deshalb gehört das Instrument in die Schule, für alle.",
+      "That’s why the instrument belongs in school, for everyone."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "comment",
+    "label": "Nora, 36, Konstanz",
+    "s": [
+     [
+      "Meine Tochter hat in der Grundschule Geige gelernt, weil die Schule die Instrumente und den Unterricht bezahlt hat.",
+      "My daughter learned the violin at primary school because the school paid for the instruments and lessons."
+     ],
+     [
+      "Ohne das Projekt hätten wir uns das nie leisten können.",
+      "Without the project we could never have afforded it."
+     ],
+     [
+      "Heute spielt sie im Jugendorchester und ist sehr stolz.",
+      "Today she plays in the youth orchestra and is very proud."
+     ],
+     [
+      "Ich wünsche mir so etwas für alle Kinder.",
+      "I wish for something like that for all children."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "comment",
+    "label": "Volker, 60, Chemnitz",
+    "s": [
+     [
+      "Unseren Schulen fehlen schon jetzt Lehrer für Mathematik und Deutsch, und viele Kinder können am Ende der Grundschule nicht richtig lesen.",
+      "Our schools already lack teachers for maths and German, and many children can’t read properly by the end of primary school."
+     ],
+     [
+      "Zuerst müssen diese Probleme gelöst werden.",
+      "Those problems have to be solved first."
+     ],
+     [
+      "Ein Instrument für jedes Kind klingt schön, ist aber im Moment nicht realistisch.",
+      "An instrument for every child sounds nice, but it isn’t realistic at the moment."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "comment",
+    "label": "Werner, 72, Fürth",
+    "s": [
+     [
+      "Ich spiele seit sechzig Jahren Klavier, und Musik ist mein Leben.",
+      "I’ve played the piano for sixty years, and music is my life."
+     ],
+     [
+      "Aber Zwang bringt nichts: Musik muss aus Freude kommen.",
+      "But forcing people achieves nothing: music has to come from joy."
+     ],
+     [
+      "Wer als Kind gezwungen wird, hört später oft ganz mit der Musik auf.",
+      "Anyone who is forced as a child often gives up music completely later."
+     ],
+     [
+      "Ein freiwilliges Angebot am Nachmittag finde ich gut, aber nicht als Pflicht für alle.",
+      "I think a voluntary afternoon activity is good, but not as a requirement for everyone."
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "comment",
+    "label": "Liane, 28, Rosenheim",
+    "s": [
+     [
+      "Ich habe als Kind nie ein Instrument gelernt und finde das heute sehr schade.",
+      "I never learned an instrument as a child and today I find that a great pity."
+     ],
+     [
+      "Mit 28 ist es viel schwerer, noch damit anzufangen.",
+      "At 28 it’s much harder to start."
+     ],
+     [
+      "Hätte meine Schule so ein Angebot gehabt, hätte ich bestimmt Gitarre gelernt.",
+      "If my school had had an offer like that, I would definitely have learned the guitar."
+     ],
+     [
+      "Ich finde die Idee wunderbar.",
+      "I think the idea is wonderful."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "comment",
+    "label": "Lars, 33, Siegen",
+    "s": [
+     [
+      "Meine Kinder sitzen in ihrer Freizeit viel zu oft vor dem Handy.",
+      "My children sit in front of their phones far too often in their free time."
+     ],
+     [
+      "Ein Instrument wäre eine gute Abwechslung, bei der sie etwas mit den Händen machen und Geduld lernen.",
+      "An instrument would be a good change, where they do something with their hands and learn patience."
+     ],
+     [
+      "Wenn es in der Schule für alle Pflicht wäre, müsste ich sie auch nicht jeden Tag dazu überreden.",
+      "If it were compulsory for everyone at school, I wouldn’t have to talk them into it every day."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Geige",
+    "en": "violin"
+   },
+   {
+    "w": "Flöte",
+    "en": "flute"
+   },
+   {
+    "w": "gehasst",
+    "en": "hated (hassen)"
+   },
+   {
+    "w": "Jugendorchester",
+    "en": "youth orchestra"
+   },
+   {
+    "w": "Zwang",
+    "en": "force, compulsion"
+   },
+   {
+    "w": "Pflicht",
+    "en": "duty, requirement"
+   },
+   {
+    "w": "Abwechslung",
+    "en": "change, variety"
+   },
+   {
+    "w": "überreden",
+    "en": "to persuade"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ist Oskar dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "He hated the flute and thinks children should choose for themselves."
+   },
+   {
+    "q": "Ist Kirsten dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "Music helps children, and private lessons are too expensive for many – so it belongs in school."
+   },
+   {
+    "q": "Ist Nora dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "The school project let her daughter learn the violin; she wishes that for all children."
+   },
+   {
+    "q": "Ist Volker dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "Schools must first solve the lack of maths and German teachers; the idea is not realistic now."
+   },
+   {
+    "q": "Ist Werner dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     "b7.3"
+    ],
+    "why": "He loves music, but wants a voluntary offer, not a requirement for everyone."
+   },
+   {
+    "q": "Ist Liane dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.3"
+    ],
+    "why": "She regrets not learning one and finds the idea wonderful."
+   },
+   {
+    "q": "Ist Lars dafür, dass alle Kinder in der Schule ein Instrument lernen?",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.2"
+    ],
+    "why": "An instrument would be a good change from the phone, and as a school requirement he wouldn’t have to persuade his children."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t5-1",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 5",
+  "type": "terms",
+  "title": "Fotowettbewerb „Mein Viertel“",
+  "intro": "Your town is holding a photo competition. These are the conditions for taking part.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Fotowettbewerb „Mein Viertel, meine Stadt“ – Teilnahmebedingungen",
+      "Photo competition “My neighbourhood, my town” – conditions of entry"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Das Kulturamt der Stadt Hameln lädt alle ein, ihre Stadt mit der Kamera zu zeigen.",
+      "The culture office of the town of Hameln invites everyone to show their town through the camera."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Wer darf mitmachen?",
+      "Who can take part?"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Teilnehmen dürfen alle, die in Hameln wohnen oder arbeiten.",
+      "Anyone who lives or works in Hameln may take part."
+     ],
+     [
+      "Wer mit Fotografieren sein Geld verdient, darf leider nicht mitmachen.",
+      "Unfortunately, anyone who earns their living from photography may not take part."
+     ],
+     [
+      "Für junge Leute unter 18 Jahren gibt es einen eigenen Preis; sie brauchen die Unterschrift ihrer Eltern.",
+      "There is a separate prize for young people under 18; they need their parents’ signature."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Ihre Fotos",
+      "Your photos"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Jede Person darf höchstens drei Fotos einreichen.",
+      "Each person may submit no more than three photos."
+     ],
+     [
+      "Die Bilder müssen in Hameln gemacht worden sein und dürfen nicht älter als ein Jahr sein.",
+      "The pictures must have been taken in Hameln and may not be more than a year old."
+     ],
+     [
+      "Fotos mit dem Handy sind genauso willkommen wie Fotos mit der Kamera, aber Bilder, die am Computer stark verändert wurden, nehmen nicht teil.",
+      "Photos taken with a mobile phone are just as welcome as photos taken with a camera, but pictures that have been heavily changed on a computer are not accepted."
+     ],
+     [
+      "Wenn auf Ihrem Foto Personen gut zu erkennen sind, brauchen Sie ihre schriftliche Erlaubnis.",
+      "If people can be clearly recognised in your photo, you need their written permission."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Einsendung und Preise",
+      "Sending in and prizes"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Schicken Sie Ihre Fotos bis zum 31. August per E-Mail oder geben Sie sie auf einem USB-Stick im Kulturamt ab.",
+      "Send your photos by e-mail by 31 August or hand them in on a USB stick at the culture office."
+     ],
+     [
+      "Eine Jury wählt die zehn besten Bilder aus, die im Oktober im Rathaus ausgestellt werden.",
+      "A jury chooses the ten best pictures, which will be exhibited in the town hall in October."
+     ],
+     [
+      "Der erste Preis ist ein Gutschein über 300 Euro für ein Fotogeschäft.",
+      "The first prize is a voucher worth 300 euros for a photo shop."
+     ],
+     [
+      "Mit der Teilnahme erlauben Sie der Stadt, Ihre Fotos kostenlos für ihren Kalender zu benutzen.",
+      "By taking part you allow the town to use your photos free of charge for its calendar."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Teilnahmebedingungen",
+    "en": "conditions of entry"
+   },
+   {
+    "w": "einreichen",
+    "en": "to submit, to hand in"
+   },
+   {
+    "w": "erkennen",
+    "en": "to recognise"
+   },
+   {
+    "w": "Jury",
+    "en": "jury, panel of judges"
+   },
+   {
+    "w": "ausgestellt",
+    "en": "exhibited (ausstellen)"
+   },
+   {
+    "w": "Gutschein",
+    "en": "voucher"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wer darf am Wettbewerb teilnehmen?",
+    "format": "abc",
+    "opts": [
+     "nur Erwachsene, die in Hameln wohnen",
+     "auch Fotografen, die mit Fotos ihr Geld verdienen",
+     "auch Menschen, die nur in Hameln arbeiten"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "Anyone who lives or works in Hameln may take part; under-18s can too, but professionals can’t."
+   },
+   {
+    "q": "Was müssen Sie tun, wenn Ihr Nachbar gut auf Ihrem Foto zu sehen ist?",
+    "format": "abc",
+    "opts": [
+     "ihn um eine schriftliche Erlaubnis bitten",
+     "das Foto am Computer verändern",
+     "das Foto persönlich im Kulturamt abgeben"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.3"
+    ],
+    "why": "If people can be clearly recognised, you need their written permission."
+   },
+   {
+    "q": "Welches Foto können Sie schicken?",
+    "format": "abc",
+    "opts": [
+     "ein Bild vom Hamelner Markt, das Sie vor drei Jahren gemacht haben",
+     "ein Handyfoto, das Sie vor zwei Monaten in Ihrer Straße in Hameln gemacht haben",
+     "ein Foto, das Sie am Computer stark bearbeitet haben"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1",
+     "b6.2"
+    ],
+    "why": "Mobile photos are welcome if they were taken in Hameln within the last year; old or heavily edited pictures are not."
+   },
+   {
+    "q": "Was passiert mit den besten Fotos?",
+    "format": "abc",
+    "opts": [
+     "Sie werden an ein Fotogeschäft verkauft.",
+     "Man kann sie im Rathaus sehen.",
+     "Sie werden in der Zeitung gedruckt."
+    ],
+    "a": 1,
+    "ev": [
+     "b8.1"
+    ],
+    "why": "The ten best pictures are exhibited in the town hall in October."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t5-2",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 5",
+  "type": "rules",
+  "title": "Konzerthaus: Ihr Besuch",
+  "intro": "You have tickets for a concert. The concert hall’s website has these notes for visitors.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Konzerthaus am Ring – Hinweise für Ihren Besuch",
+      "Konzerthaus am Ring – notes for your visit"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Damit alle Gäste den Abend genießen können, bitten wir Sie, die folgenden Hinweise zu beachten.",
+      "So that all guests can enjoy the evening, we ask you to observe the following notes."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Einlass",
+      "Admission"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Der Saal wird 30 Minuten vor Beginn geöffnet.",
+      "The hall opens 30 minutes before the start."
+     ],
+     [
+      "Wer zu spät kommt, kann erst in der Pause oder nach dem ersten Stück auf seinen Platz gehen.",
+      "Anyone who arrives late can only go to their seat in the interval or after the first piece."
+     ],
+     [
+      "Bis dahin können Sie das Konzert auf einem Bildschirm im Foyer sehen.",
+      "Until then you can watch the concert on a screen in the foyer."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Garderobe",
+      "Cloakroom"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Mäntel, große Taschen und Regenschirme geben Sie bitte an der Garderobe ab; der Service ist im Ticketpreis enthalten.",
+      "Please leave coats, large bags and umbrellas at the cloakroom; the service is included in the ticket price."
+     ],
+     [
+      "Rucksäcke dürfen nicht mit in den Saal genommen werden.",
+      "Rucksacks may not be taken into the hall."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Während des Konzerts",
+      "During the concert"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Bitte schalten Sie Ihr Handy aus.",
+      "Please switch off your mobile phone."
+     ],
+     [
+      "Fotos und Videos sind während der Musik nicht erlaubt, beim Applaus am Ende dürfen Sie aber gern ein Foto machen.",
+      "Photos and videos are not allowed while the music is playing, but you are welcome to take a photo during the applause at the end."
+     ],
+     [
+      "Getränke dürfen nur im Foyer getrunken werden.",
+      "Drinks may only be consumed in the foyer."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "Tickets",
+      "Tickets"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Gekaufte Tickets können nicht zurückgegeben werden.",
+      "Tickets that have been bought cannot be returned."
+     ],
+     [
+      "Wenn Sie nicht kommen können, dürfen Sie Ihr Ticket aber an eine andere Person weitergeben.",
+      "If you can’t come, however, you may pass your ticket on to another person."
+     ],
+     [
+      "Fällt ein Konzert aus, bekommen Sie Ihr Geld innerhalb von vier Wochen zurück.",
+      "If a concert is cancelled, you get your money back within four weeks."
+     ],
+     [
+      "Schüler und Studenten zahlen an der Abendkasse nur die Hälfte.",
+      "Pupils and students only pay half at the box office on the evening."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Einlass",
+    "en": "admission, entry"
+   },
+   {
+    "w": "Foyer",
+    "en": "foyer, entrance hall"
+   },
+   {
+    "w": "Garderobe",
+    "en": "cloakroom"
+   },
+   {
+    "w": "Applaus",
+    "en": "applause"
+   },
+   {
+    "w": "Abendkasse",
+    "en": "box office (on the evening)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Sie kommen zehn Minuten zu spät. Was passiert?",
+    "format": "abc",
+    "opts": [
+     "Sie dürfen nicht mehr in das Konzerthaus.",
+     "Sie warten, bis Sie in den Saal dürfen.",
+     "Sie müssen ein neues Ticket kaufen."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Latecomers go in at the interval or after the first piece and can watch on a screen until then."
+   },
+   {
+    "q": "Was gilt für Ihren Rucksack?",
+    "format": "abc",
+    "opts": [
+     "Sie dürfen ihn unter Ihren Sitz stellen.",
+     "Sie müssen für die Garderobe extra bezahlen.",
+     "Sie müssen ihn an der Garderobe abgeben."
+    ],
+    "a": 2,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "Rucksacks may not go into the hall, and the cloakroom is included in the ticket price."
+   },
+   {
+    "q": "Wann dürfen Sie fotografieren?",
+    "format": "abc",
+    "opts": [
+     "am Ende, wenn das Publikum klatscht",
+     "während der Musik, wenn Sie leise sind",
+     "nur in der Pause im Foyer"
+    ],
+    "a": 0,
+    "ev": [
+     "b8.1"
+    ],
+    "why": "Photos are allowed during the applause at the end, not while the music is playing."
+   },
+   {
+    "q": "Sie sind krank und können nicht zum Konzert gehen. Was können Sie tun?",
+    "format": "abc",
+    "opts": [
+     "Sie bekommen Ihr Geld zurück.",
+     "Sie tauschen das Ticket gegen ein anderes Konzert.",
+     "Sie schenken das Ticket einer Freundin."
+    ],
+    "a": 2,
+    "ev": [
+     "b10.1"
+    ],
+    "why": "Tickets can’t be returned, but you may pass them on to someone else; money back only if the concert is cancelled."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t5-3",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 5",
+  "type": "rules",
+  "title": "Regeln im Gemeinschaftsgarten",
+  "intro": "You have joined a community garden. These are the rules the members agreed on.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Gemeinschaftsgarten Am Mühlbach – unsere Regeln",
+      "Am Mühlbach community garden – our rules"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Unser Garten gehört allen, die hier mitmachen.",
+      "Our garden belongs to everyone who takes part here."
+     ],
+     [
+      "Damit die Zusammenarbeit gut klappt, haben die Mitglieder im März gemeinsam Regeln beschlossen.",
+      "So that working together goes well, the members agreed on rules together in March."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Beete",
+      "Beds"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Jedes Mitglied bekommt ein eigenes kleines Beet.",
+      "Every member gets their own small bed."
+     ],
+     [
+      "Wer sein Beet länger als vier Wochen nicht pflegt, bekommt zuerst eine Erinnerung.",
+      "Anyone who doesn’t look after their bed for more than four weeks first gets a reminder."
+     ],
+     [
+      "Nach zwei weiteren Wochen bekommt es eine andere Person von der Warteliste.",
+      "After two more weeks it goes to someone else on the waiting list."
+     ],
+     [
+      "Die Kräuter und das Obst in der Mitte des Gartens dürfen alle ernten.",
+      "Everyone may harvest the herbs and the fruit in the middle of the garden."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Gemeinsame Arbeit",
+      "Working together"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Jeden ersten Samstag im Monat arbeiten wir alle zusammen: Wir machen die Wege sauber und reparieren, was kaputt ist.",
+      "On the first Saturday of every month we all work together: we clean the paths and repair whatever is broken."
+     ],
+     [
+      "Jedes Mitglied hilft mindestens viermal im Jahr mit.",
+      "Every member helps at least four times a year."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Wasser und Werkzeug",
+      "Water and tools"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Gegossen wird mit Regenwasser aus den Tonnen; das Wasser aus der Leitung ist nur für sehr heiße Wochen gedacht.",
+      "Watering is done with rainwater from the barrels; tap water is only meant for very hot weeks."
+     ],
+     [
+      "Werkzeug finden Sie im kleinen Haus am Eingang, den Schlüssel bekommt jedes Mitglied am Anfang der Saison.",
+      "You’ll find tools in the small hut by the entrance; every member gets the key at the start of the season."
+     ],
+     [
+      "Bitte bringen Sie alles sauber zurück.",
+      "Please bring everything back clean."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "Gift und Feuer",
+      "Poison and fire"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Gift gegen Insekten oder kranke Pflanzen ist im ganzen Garten verboten.",
+      "Poison against insects or sick plants is forbidden in the whole garden."
+     ],
+     [
+      "Grillen ist nur bei unseren gemeinsamen Festen im Garten erlaubt.",
+      "Barbecues are only allowed at our shared parties in the garden."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Beet",
+    "en": "bed (for plants)"
+   },
+   {
+    "w": "pflegt",
+    "en": "looks after (pflegen)"
+   },
+   {
+    "w": "Kräuter",
+    "en": "herbs"
+   },
+   {
+    "w": "ernten",
+    "en": "to harvest"
+   },
+   {
+    "w": "Regenwasser",
+    "en": "rainwater"
+   },
+   {
+    "w": "Tonnen",
+    "en": "here: rain barrels"
+   },
+   {
+    "w": "Gegossen",
+    "en": "watered (gießen)"
+   },
+   {
+    "w": "Leitung",
+    "en": "here: water pipe, the tap"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was passiert, wenn sich jemand lange nicht um sein Beet kümmert?",
+    "format": "abc",
+    "opts": [
+     "Er bekommt zuerst eine Erinnerung.",
+     "Er muss sofort eine Strafe zahlen.",
+     "Die anderen Mitglieder pflegen das Beet für ihn."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "After four weeks there is first a reminder; two weeks later the bed goes to someone on the waiting list."
+   },
+   {
+    "q": "Was dürfen alle Mitglieder ernten?",
+    "format": "abc",
+    "opts": [
+     "das Gemüse aus allen Beeten",
+     "die Kräuter und das Obst in der Mitte des Gartens",
+     "nur das, was sie am gemeinsamen Samstag gepflanzt haben"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "Everyone may harvest the herbs and fruit in the middle; the beds belong to their members."
+   },
+   {
+    "q": "Womit sollen die Mitglieder normalerweise gießen?",
+    "format": "abc",
+    "opts": [
+     "mit Wasser aus der Leitung",
+     "mit Wasser, das sie von zu Hause mitbringen",
+     "mit gesammeltem Regenwasser"
+    ],
+    "a": 2,
+    "ev": [
+     "b8.0"
+    ],
+    "why": "Rainwater from the barrels is used; tap water is only for very hot weeks."
+   },
+   {
+    "q": "Was gilt für das Grillen?",
+    "format": "abc",
+    "opts": [
+     "Es ist nur bei gemeinsamen Festen erlaubt.",
+     "Es ist am gemeinsamen Samstag erlaubt.",
+     "Es ist im ganzen Garten verboten."
+    ],
+    "a": 0,
+    "ev": [
+     "b10.1"
+    ],
+    "why": "Barbecues are allowed only at the shared garden parties."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t5-4",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 5",
+  "type": "terms",
+  "title": "Volkshochschule: Anmeldung",
+  "intro": "You want to book a course at the adult education centre. These are its terms.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Volkshochschule Rheinberg – Anmeldung und Teilnahme",
+      "Rheinberg adult education centre – registration and attendance"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Bitte lesen Sie die folgenden Bedingungen, bevor Sie sich für einen Kurs anmelden.",
+      "Please read the following terms before you register for a course."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Anmeldung",
+      "Registration"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Sie können sich online, mit der Post oder persönlich in unserem Büro anmelden.",
+      "You can register online, by post or in person at our office."
+     ],
+     [
+      "Telefonisch ist leider keine Anmeldung möglich.",
+      "Unfortunately you cannot register by phone."
+     ],
+     [
+      "Wer sich zuerst anmeldet, bekommt zuerst einen Platz.",
+      "First come, first served."
+     ],
+     [
+      "Ist ein Kurs voll, setzen wir Sie gern auf die Warteliste.",
+      "If a course is full, we will gladly put you on the waiting list."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Kosten",
+      "Costs"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Die Kursgebühr wird zwei Wochen vor Kursbeginn von Ihrem Konto abgebucht.",
+      "The course fee is taken from your account two weeks before the course starts."
+     ],
+     [
+      "Menschen mit wenig Einkommen, Schüler und Studenten zahlen die Hälfte, wenn sie einen Nachweis zeigen.",
+      "People on a low income, pupils and students pay half if they show proof."
+     ],
+     [
+      "Bücher und Material sind nicht in der Gebühr enthalten.",
+      "Books and materials are not included in the fee."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Abmeldung",
+      "Cancellation"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Bis zehn Tage vor Kursbeginn können Sie sich kostenlos abmelden.",
+      "You can cancel free of charge up to ten days before the course starts."
+     ],
+     [
+      "Danach müssen Sie die volle Gebühr bezahlen.",
+      "After that you have to pay the full fee."
+     ],
+     [
+      "Das gilt nicht, wenn Sie selbst eine andere Person finden, die Ihren Platz übernimmt.",
+      "That doesn’t apply if you find someone else yourself who takes over your place."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "Wenn ein Kurs nicht stattfindet",
+      "If a course doesn’t take place"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Wenn sich weniger als acht Personen anmelden, kann der Kurs nicht stattfinden.",
+      "If fewer than eight people register, the course cannot take place."
+     ],
+     [
+      "Wir informieren Sie dann spätestens drei Tage vorher und zahlen das ganze Geld zurück.",
+      "We will then inform you at least three days beforehand and refund all the money."
+     ],
+     [
+      "Am Ende des Kurses bekommen Sie eine Bescheinigung, wenn Sie bei mindestens acht von zehn Terminen da waren.",
+      "At the end of the course you get a certificate if you attended at least eight out of ten sessions."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "abgebucht",
+    "en": "taken from your account (abbuchen)"
+   },
+   {
+    "w": "Einkommen",
+    "en": "income"
+   },
+   {
+    "w": "Nachweis",
+    "en": "proof, document"
+   },
+   {
+    "w": "Abmeldung",
+    "en": "cancellation, withdrawing"
+   },
+   {
+    "w": "Bescheinigung",
+    "en": "certificate, confirmation"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie können Sie sich für einen Kurs anmelden?",
+    "format": "abc",
+    "opts": [
+     "nur über das Internet",
+     "am Telefon oder im Büro",
+     "mit einem Brief, im Internet oder im Büro"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "Online, by post or in person are possible; phone registration is not."
+   },
+   {
+    "q": "Wer bezahlt weniger für einen Kurs?",
+    "format": "abc",
+    "opts": [
+     "alle, die zwei Kurse buchen",
+     "Studenten mit einem Nachweis",
+     "alle, die sich früh anmelden"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "People on a low income, pupils and students pay half if they show proof."
+   },
+   {
+    "q": "Sie können eine Woche vor Kursbeginn doch nicht teilnehmen. Was gilt?",
+    "format": "abc",
+    "opts": [
+     "Sie zahlen den ganzen Preis, wenn niemand Ihren Platz übernimmt.",
+     "Sie bekommen die Hälfte der Gebühr zurück.",
+     "Sie können sich noch kostenlos abmelden."
+    ],
+    "a": 0,
+    "ev": [
+     "b8.1",
+     "b8.2"
+    ],
+    "why": "Free cancellation ends ten days before the start; after that you pay in full unless someone takes over your place."
+   },
+   {
+    "q": "Wann bekommen Sie eine Bescheinigung?",
+    "format": "abc",
+    "opts": [
+     "wenn Sie eine Prüfung bestanden haben",
+     "wenn Sie fast immer im Kurs waren",
+     "wenn Sie die Gebühr bezahlt haben"
+    ],
+    "a": 1,
+    "ev": [
+     "b10.2"
+    ],
+    "why": "You need to have attended at least eight of the ten sessions."
+   }
+  ]
+ },
+ {
+  "id": "b1-rx-t5-5",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 5",
+  "type": "rules",
+  "title": "Unser Gemeinschaftsraum",
+  "intro": "You live in a block of flats with a shared room for parties. These are the rules for using it.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Haus Ahornweg – Regeln für den Gemeinschaftsraum",
+      "Haus Ahornweg – rules for the shared room"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Der Gemeinschaftsraum im Erdgeschoss ist für alle Mieterinnen und Mieter da: für private Feiern, Treffen und Kurse.",
+      "The shared room on the ground floor is there for all tenants: for private parties, meetings and courses."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Reservierung und Kosten",
+      "Booking and costs"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Bitte reservieren Sie den Raum spätestens zwei Wochen vorher bei der Hausverwaltung, am besten per E-Mail.",
+      "Please book the room at least two weeks in advance with the property management, preferably by e-mail."
+     ],
+     [
+      "Für Feiern kostet der Raum 30 Euro pro Tag, Treffen von Hausbewohnern ohne Feier sind kostenlos.",
+      "For parties the room costs 30 euros a day; meetings of residents without a party are free."
+     ],
+     [
+      "Bei Feiern zahlen Sie außerdem eine Kaution von 100 Euro, die Sie zurückbekommen, wenn alles in Ordnung ist.",
+      "For parties you also pay a deposit of 100 euros, which you get back if everything is in order."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "h",
+    "s": [
+     [
+      "Was es im Raum gibt",
+      "What there is in the room"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "p",
+    "s": [
+     [
+      "Im Raum gibt es zwei lange Tische, 30 Stühle und eine kleine Küche mit Kühlschrank und Geschirr für 30 Personen.",
+      "In the room there are two long tables, 30 chairs and a small kitchen with a fridge and crockery for 30 people."
+     ],
+     [
+      "Eine Musikanlage gibt es nicht, aber Sie dürfen eigene Lautsprecher mitbringen.",
+      "There is no sound system, but you may bring your own speakers."
+     ]
+    ]
+   },
+   {
+    "id": "b7",
+    "t": "h",
+    "s": [
+     [
+      "Ruhe",
+      "Quiet"
+     ]
+    ]
+   },
+   {
+    "id": "b8",
+    "t": "p",
+    "s": [
+     [
+      "Ab 22 Uhr müssen die Fenster geschlossen bleiben, und die Musik muss leise sein.",
+      "From 10 p.m. the windows must stay closed and the music must be quiet."
+     ],
+     [
+      "Um 1 Uhr muss jede Feier zu Ende sein.",
+      "Every party must be over by 1 a.m."
+     ],
+     [
+      "Rauchen ist im ganzen Raum verboten, auch bei offenem Fenster.",
+      "Smoking is forbidden in the whole room, even with the window open."
+     ]
+    ]
+   },
+   {
+    "id": "b9",
+    "t": "h",
+    "s": [
+     [
+      "Nach der Feier",
+      "After the party"
+     ]
+    ]
+   },
+   {
+    "id": "b10",
+    "t": "p",
+    "s": [
+     [
+      "Räumen Sie den Raum bitte bis 12 Uhr am nächsten Tag auf und bringen Sie Ihren Müll selbst zu den Tonnen.",
+      "Please tidy the room by 12 noon the next day and take your rubbish to the bins yourself."
+     ],
+     [
+      "Den Schlüssel werfen Sie danach in den Briefkasten der Hausverwaltung.",
+      "Afterwards, put the key in the property management’s letterbox."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gemeinschaftsraum",
+    "en": "shared room, common room"
+   },
+   {
+    "w": "Hausverwaltung",
+    "en": "property management"
+   },
+   {
+    "w": "Kaution",
+    "en": "deposit"
+   },
+   {
+    "w": "Geschirr",
+    "en": "crockery, dishes"
+   },
+   {
+    "w": "Musikanlage",
+    "en": "sound system"
+   },
+   {
+    "w": "Lautsprecher",
+    "en": "loudspeakers"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Sie möchten Ihren Geburtstag im Gemeinschaftsraum feiern. Was müssen Sie tun?",
+    "format": "abc",
+    "opts": [
+     "alle Nachbarn um Erlaubnis bitten",
+     "den Raum rechtzeitig bei der Hausverwaltung reservieren",
+     "die Hausverwaltung am Tag vorher anrufen"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "You book the room at least two weeks ahead with the property management, preferably by e-mail."
+   },
+   {
+    "q": "Was kostet eine Feier?",
+    "format": "abc",
+    "opts": [
+     "nichts, weil Sie im Haus wohnen",
+     "nur die Kaution von 100 Euro",
+     "30 Euro und eine Kaution, die man zurückbekommen kann"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "A party costs 30 euros a day plus a 100-euro deposit that you get back; only meetings without a party are free."
+   },
+   {
+    "q": "Was ist bei einer Feier erlaubt?",
+    "format": "abc",
+    "opts": [
+     "eigene Musikboxen mitzubringen",
+     "nach 22 Uhr bei offenem Fenster Musik zu hören",
+     "am offenen Fenster zu rauchen"
+    ],
+    "a": 0,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "You may bring your own speakers; windows stay closed after 22 Uhr and smoking is banned even with the window open."
+   },
+   {
+    "q": "Was müssen Sie nach der Feier machen?",
+    "format": "abc",
+    "opts": [
+     "den Raum noch in der Nacht sauber machen",
+     "den Schlüssel persönlich zur Hausverwaltung bringen",
+     "den Abfall selbst wegbringen"
+    ],
+    "a": 2,
+    "ev": [
+     "b10.0"
+    ],
+    "why": "You take your rubbish to the bins yourself; you can tidy up until noon the next day and post the key in the letterbox."
+   }
+  ]
+ }
+]
