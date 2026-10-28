@@ -650,7 +650,7 @@
      "b3.1",
      "b3.2"
     ],
-    "why": "The boss says they had big problems finding new staff; no one applied for three jobs."
+    "why": "The boss says they had big problems finding new staff; three jobs were advertised, but not one suitable application came in."
    },
    {
     "q": "Was sagt Tim Albers über die neue Arbeitszeit?",
@@ -1160,8 +1160,8 @@
       "He helps me with German, and in return I teach him a bit of Marathi."
      ],
      [
-      "Im Juni möchte ich die B1-Prüfung machen – drückt mir die Daumen!",
-      "In June I want to take the B1 exam – keep your fingers crossed for me!"
+      "Im März möchte ich die B1-Prüfung machen – drückt mir die Daumen!",
+      "In March I want to take the B1 exam – keep your fingers crossed for me!"
      ]
     ]
    }
@@ -1778,8 +1778,8 @@
       "Registration only as a pair."
      ],
      [
-      "Tanzschule Lehmann, sonntags um 17 Uhr.",
-      "Lehmann dance school, Sundays at 5 p.m."
+      "Tanzschule Lehmann, sonntags um 19 Uhr.",
+      "Lehmann dance school, Sundays at 7 p.m."
      ]
     ]
    },
@@ -1840,7 +1840,7 @@
   },
   "questions": [
    {
-    "q": "Malte arbeitet im Büro und hat seit Monaten Schmerzen im Rücken.",
+    "q": "Lena arbeitet im Büro und hat seit Monaten Schmerzen im Rücken.",
     "format": "match",
     "opts": [
      "a",
@@ -2045,8 +2045,8 @@
       "He found that her blood pressure was too high and advised her to get more exercise."
      ],
      [
-      "Bevor sie Tabletten nahm, wollte sie es lieber mit Sport versuchen.",
-      "Before taking pills, she preferred to try sport."
+      "Statt sofort Tabletten zu nehmen, wollte sie es lieber zuerst mit Sport versuchen.",
+      "Instead of taking pills straight away, she preferred to try sport first."
      ],
      [
       "Eine Nachbarin nahm sie zu einer Walking-Gruppe mit, die sich zweimal pro Woche am Aasee trifft.",
@@ -2155,7 +2155,7 @@
     "ev": [
      "b3.1"
     ],
-    "why": "Her GP found that her blood pressure was too high and advised more exercise."
+    "why": "Her GP found that her blood pressure was too high and advised more exercise. She tried sport instead of pills, so no pills failed."
    },
    {
     "q": "Wie hat sie mit dem Training begonnen?",
@@ -2876,7 +2876,7 @@
     "why": "He wanted them, but walked on and cleaned his old shoes."
    },
    {
-    "q": "Zu Beginn des Experiments hat Jonas dafür gesorgt, dass er keine Werbung mehr per E-Mail bekommt.",
+    "q": "Zu Beginn des Experiments hat Jonas dafür gesorgt, dass er von Online-Shops keine Werbung mehr per E-Mail bekommt.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -3034,7 +3034,7 @@
       "'Volle Dose' zero-packaging shop: pasta, rice, oil and detergent without plastic."
      ],
      [
-      "Bringen Sie Ihre eigenen Behälter mit oder leihen Sie Gläser bei uns.",
+      "Bringen Sie Ihre eigenen Behälter mit oder leihen Sie sich bei uns Gläser.",
       "Bring your own containers or borrow jars from us."
      ]
     ]
@@ -3379,8 +3379,8 @@
       "72-year-old Hannelore Busch from Wiesental is delighted."
      ],
      [
-      "Nachdem ihr Mann gestorben war, hatte sie das Auto verkauft, weil sie nicht gern selbst fuhr.",
-      "After her husband had died, she had sold the car because she didn't like driving herself."
+      "Nachdem ihr Mann gestorben war, verkaufte sie das Auto, weil sie nicht gern selbst fuhr.",
+      "After her husband died, she sold the car because she didn't like driving herself."
      ],
      [
       "„Danach musste ich immer meine Kinder fragen, wenn ich zum Arzt oder zum Einkaufen wollte“, erzählt sie.",
@@ -4543,10 +4543,10 @@
      "b10.0",
      "b10.1"
     ],
-    "why": "The dance afternoon welcomes older people without a partner; the couples’ course needs two."
+    "why": "The dance afternoon is for older people and welcomes anyone without a partner."
    },
    {
-    "q": "Malte interessiert sich für Fotografie, hat aber nur unter der Woche Zeit.",
+    "q": "Ein Nachbar von Malte interessiert sich für Fotografie, hat aber nur unter der Woche Zeit.",
     "format": "match",
     "opts": [
      "a",
@@ -6208,7 +6208,7 @@
     "ev": [
      "b8.2"
     ],
-    "why": "She likes flexible work but says no law is needed."
+    "why": "Most companies already offer it voluntarily, so she says no law is needed."
    }
   ]
  },
@@ -6271,8 +6271,8 @@
       "The seniors' wishes are very varied."
      ],
      [
-      "Der 84-jährige Heinz Krüger wollte lernen, wie man Fotos verschickt, damit er seiner Tochter in Kanada Bilder von seinem Garten schicken kann.",
-      "84-year-old Heinz Krüger wanted to learn how to send photos so that he can send his daughter in Canada pictures of his garden."
+      "Der 84-jährige Heinz Krüger wollte lernen, wie man Fotos verschickt, damit er seiner Tochter in Kanada Bilder aus dem Rosengarten des Heims schicken kann.",
+      "84-year-old Heinz Krüger wanted to learn how to send photos so that he can send his daughter in Canada pictures of the home's rose garden."
      ],
      [
       "Inzwischen telefoniert er sogar jeden Sonntag per Video mit ihr.",

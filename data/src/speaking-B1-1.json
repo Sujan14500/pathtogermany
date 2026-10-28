@@ -3,8 +3,8 @@
   "id": "b1-s-01",
   "station": 1,
   "part": "Teil 1",
-  "task_en": "Your neighbour Frau Yilmaz is moving to a smaller flat next month. You and your partner want to help her move. Plan it together (about 3 minutes).",
-  "task_de": "Ihre Nachbarin, Frau Yilmaz, zieht nächsten Monat in eine kleinere Wohnung. Sie möchten ihr zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin beim Umzug helfen. Planen Sie, was Sie tun möchten.",
+  "task_en": "Your neighbour Frau Hartmann is moving to a smaller flat next month. You and your partner want to help her move. Plan it together (about 3 minutes).",
+  "task_de": "Ihre Nachbarin, Frau Hartmann, zieht nächsten Monat in eine kleinere Wohnung. Sie möchten ihr zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin beim Umzug helfen. Planen Sie, was Sie tun möchten.",
   "cards": [
    "Wann helfen?",
    "Kartons und Auto?",
@@ -36,13 +36,13 @@
   "model": [
    [
     "B",
-    "Hast du gehört? Frau Yilmaz zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
-    "Have you heard? Frau Yilmaz is moving next month. Shall we help her with the move?"
+    "Hast du gehört? Frau Hartmann zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
+    "Have you heard? Frau Hartmann is moving next month. Shall we help her with the move?"
    ],
    [
     "A",
-    "Ja, gern! Frau Yilmaz ist eine Nachbarin, die uns auch immer hilft. Wann ist der Umzug denn?",
-    "Yes, gladly! Frau Yilmaz is a neighbour who always helps us too. When is the move?"
+    "Ja, gern! Frau Hartmann ist eine Nachbarin, die uns auch immer hilft. Wann ist der Umzug denn?",
+    "Yes, gladly! Frau Hartmann is a neighbour who always helps us too. When is the move?"
    ],
    [
     "B",
@@ -86,8 +86,8 @@
    ],
    [
     "B",
-    "Gut, dann machen wir es so. Ich sage Frau Yilmaz heute Abend Bescheid.",
-    "Good, let's do it like that. I'll let Frau Yilmaz know this evening."
+    "Gut, dann machen wir es so. Ich sage Frau Hartmann heute Abend Bescheid.",
+    "Good, let's do it like that. I'll let Frau Hartmann know this evening."
    ],
    [
     "A",
@@ -97,8 +97,8 @@
   ],
   "partner": [
    [
-    "Hast du gehört? Frau Yilmaz zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
-    "Have you heard? Frau Yilmaz is moving next month. Shall we help her with the move?"
+    "Hast du gehört? Frau Hartmann zieht nächsten Monat um. Wollen wir ihr beim Umzug helfen?",
+    "Have you heard? Frau Hartmann is moving next month. Shall we help her with the move?"
    ],
    [
     "Der Umzug ist am Samstag, den vierzehnten. Ich habe den ganzen Tag Zeit. Passt dir das?",
@@ -117,8 +117,8 @@
     "And at lunchtime everyone gets hungry. What do you think: shall we order pizza?"
    ],
    [
-    "Gut, dann machen wir es so. Ich sage Frau Yilmaz heute Abend Bescheid.",
-    "Good, let's do it like that. I'll let Frau Yilmaz know this evening."
+    "Gut, dann machen wir es so. Ich sage Frau Hartmann heute Abend Bescheid.",
+    "Good, let's do it like that. I'll let Frau Hartmann know this evening."
    ]
   ],
   "prep_s": 300,
@@ -309,8 +309,8 @@
   "id": "b1-s-04",
   "station": 4,
   "part": "Teil 1",
-  "task_en": "Your colleague Malte broke his leg playing football and is in hospital for a week. Plan a visit together with your partner (about 3 minutes).",
-  "task_de": "Ihr Kollege Malte hat sich beim Fußballspielen das Bein gebrochen und liegt eine Woche im Krankenhaus. Sie möchten ihn zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin besuchen. Planen Sie den Besuch.",
+  "task_en": "Your colleague Malte broke his leg playing volleyball and is in hospital for a week. Plan a visit together with your partner (about 3 minutes).",
+  "task_de": "Ihr Kollege Malte hat sich beim Volleyballspielen das Bein gebrochen und liegt eine Woche im Krankenhaus. Sie möchten ihn zusammen mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin besuchen. Planen Sie den Besuch.",
   "cards": [
    "Wann besuchen?",
    "Wie hinkommen?",
@@ -342,8 +342,8 @@
   "model": [
    [
     "B",
-    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Fußball das Bein gebrochen. Sollen wir ihn besuchen?",
-    "Have you heard? Malte is in hospital. He broke his leg playing football. Shall we visit him?"
+    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Volleyball das Bein gebrochen. Sollen wir ihn besuchen?",
+    "Have you heard? Malte is in hospital. He broke his leg playing volleyball. Shall we visit him?"
    ],
    [
     "A",
@@ -377,8 +377,8 @@
    ],
    [
     "A",
-    "Da hast du recht. Wir könnten ihm eine Fußballzeitschrift und etwas Obst mitbringen. Im Krankenhaus ist es ja oft langweilig.",
-    "You're right. We could bring him a football magazine and some fruit. Hospital is often boring, after all."
+    "Da hast du recht. Wir könnten ihm eine Sportzeitschrift und etwas Obst mitbringen. Im Krankenhaus ist es ja oft langweilig.",
+    "You're right. We could bring him a sports magazine and some fruit. Hospital is often boring, after all."
    ],
    [
     "B",
@@ -403,8 +403,8 @@
   ],
   "partner": [
    [
-    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Fußball das Bein gebrochen. Sollen wir ihn besuchen?",
-    "Have you heard? Malte is in hospital. He broke his leg playing football. Shall we visit him?"
+    "Hast du schon gehört? Malte liegt im Krankenhaus. Er hat sich beim Volleyball das Bein gebrochen. Sollen wir ihn besuchen?",
+    "Have you heard? Malte is in hospital. He broke his leg playing volleyball. Shall we visit him?"
    ],
    [
     "Wie wäre es mit Mittwochabend nach der Arbeit? Die Besuchszeit ist bis acht Uhr.",
@@ -602,8 +602,8 @@
   "id": "b1-s-07",
   "station": 7,
   "part": "Teil 1",
-  "task_en": "Priya is new in town. You and your partner want to take her on a day trip next weekend. Plan the trip together (about 3 minutes).",
-  "task_de": "Priya ist neu in Ihrer Stadt. Sie möchten mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin am nächsten Wochenende mit ihr einen Tagesausflug machen. Planen Sie den Ausflug.",
+  "task_en": "Your friend Priya doesn't know the area around your town yet. You and your partner want to take her on a day trip next weekend. Plan the trip together (about 3 minutes).",
+  "task_de": "Ihre Freundin Priya kennt die Gegend um Ihre Stadt noch nicht. Sie möchten mit Ihrem Gesprächspartner / Ihrer Gesprächspartnerin am nächsten Wochenende mit ihr einen Tagesausflug machen. Planen Sie den Ausflug.",
   "cards": [
    "Wohin?",
    "Wie fahren?",
@@ -635,8 +635,8 @@
   "model": [
    [
     "B",
-    "Priya wohnt jetzt seit einem Monat hier und kennt die Gegend noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
-    "Priya has been living here for a month now and doesn't know the area at all yet. Shall we go on a trip with her on Saturday?"
+    "Priya wohnt zwar schon eine Weile hier, aber die Gegend um die Stadt kennt sie noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
+    "Priya has been living here for a while, but she doesn't know the area around the town at all yet. Shall we go on a trip with her on Saturday?"
    ],
    [
     "A",
@@ -680,7 +680,7 @@
    ],
    [
     "A",
-    "Ich mache Brötchen und nehme Obst mit. Kannst du Getränke und eine Decke mitbringen? Und wir dürfen die Badesachen nicht vergessen!",
+    "Ich mache belegte Brötchen und nehme Obst mit. Kannst du Getränke und eine Decke mitbringen? Und wir dürfen die Badesachen nicht vergessen!",
     "I'll make sandwiches and bring fruit. Can you bring drinks and a blanket? And we mustn't forget our swimming things!"
    ],
    [
@@ -696,8 +696,8 @@
   ],
   "partner": [
    [
-    "Priya wohnt jetzt seit einem Monat hier und kennt die Gegend noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
-    "Priya has been living here for a month now and doesn't know the area at all yet. Shall we go on a trip with her on Saturday?"
+    "Priya wohnt zwar schon eine Weile hier, aber die Gegend um die Stadt kennt sie noch gar nicht. Wollen wir am Samstag mit ihr einen Ausflug machen?",
+    "Priya has been living here for a while, but she doesn't know the area around the town at all yet. Shall we go on a trip with her on Saturday?"
    ],
    [
     "Ich dachte an den See im Süden. Dort kann man schwimmen und schön wandern. Oder hast du eine andere Idee?",
@@ -942,8 +942,8 @@
    ],
    [
     "B",
-    "Und wo? Ich habe an den Hof der Sprachschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
-    "And where? I was thinking of the language school's courtyard. Herr Weber said we're allowed to use it."
+    "Und wo? Ich habe an den Hof der Volkshochschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
+    "And where? I was thinking of the adult education centre's courtyard. Herr Weber said we're allowed to use it."
    ],
    [
     "A",
@@ -997,8 +997,8 @@
     "Right, we're supposed to plan the flea market for the kindergarten. When shall we hold it?"
    ],
    [
-    "Und wo? Ich habe an den Hof der Sprachschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
-    "And where? I was thinking of the language school's courtyard. Herr Weber said we're allowed to use it."
+    "Und wo? Ich habe an den Hof der Volkshochschule gedacht. Herr Weber hat gesagt, dass wir ihn benutzen dürfen.",
+    "And where? I was thinking of the adult education centre's courtyard. Herr Weber said we're allowed to use it."
    ],
    [
     "Was sollen die Leute denn verkaufen? Nur Kleidung oder auch andere Sachen?",
@@ -1162,8 +1162,8 @@
    ],
    [
     "A",
-    "Ich habe noch eine Frage an dich: Benutzt du die App immer noch, nachdem du mit dem Kurs angefangen hast?",
-    "I have another question for you: do you still use the app now that you've started the course?"
+    "Ich habe noch eine Frage an dich: Benutzt du die App immer noch, seit du den Kurs besuchst?",
+    "I have another question for you: do you still use the app now that you're taking the course?"
    ],
    [
     "B",

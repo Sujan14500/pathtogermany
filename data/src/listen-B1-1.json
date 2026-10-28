@@ -385,17 +385,17 @@
     "why": "She suggests he should simply talk to her."
    },
    {
-    "q": "Paul hat den Putzplan gemacht.",
+    "q": "Den Putzplan hat eine Mitbewohnerin von Jonas gemacht.",
     "format": "rf",
     "opts": [
      "richtig",
      "falsch"
     ],
-    "a": 1,
+    "a": 0,
     "ev": [
      15
     ],
-    "why": "Sara made the cleaning rota."
+    "why": "Sara, his female flatmate, made the cleaning rota; Paul is the other flatmate."
    },
    {
     "q": "Lena hilft Jonas am Samstag, ein Möbelstück aufzubauen.",
@@ -432,7 +432,7 @@
    },
    {
     "who": "B",
-    "de": "Herr Fischer ist nämlich krank, und ohne ihn macht das keinen Sinn.",
+    "de": "Herr Fischer ist nämlich krank, und ohne ihn hat das keinen Sinn.",
     "en": "You see, Herr Fischer is ill, and without him there's no point."
    },
    {
@@ -583,7 +583,7 @@
    },
    {
     "who": "A",
-    "de": "Bitte rufen Sie mich bis sechzehn Uhr kurz zurück, ob der Termin passt.",
+    "de": "Bitte rufen Sie mich bis sechzehn Uhr kurz zurück und sagen Sie mir, ob der Termin passt.",
     "en": "Please call me back briefly before four o'clock to say whether the appointment suits you."
    }
   ],
@@ -1391,8 +1391,8 @@
    },
    {
     "who": "A",
-    "de": "Ich würde auch gern mehr Sport machen, aber nach der Arbeit bin ich einfach zu müde. Und am Wochenende habe ich meinen Deutschkurs.",
-    "en": "I'd like to do more sport too, but after work I'm just too tired. And at the weekend I have my German course."
+    "de": "Ich würde auch gern mehr Sport machen, aber nach der Arbeit bin ich einfach zu müde. Und am Wochenende mache ich die Hausaufgaben für meinen Deutschkurs.",
+    "en": "I'd like to do more sport too, but after work I'm just too tired. And at the weekend I do the homework for my German course."
    },
    {
     "who": "B",
@@ -1501,7 +1501,7 @@
     "ev": [
      7
     ],
-    "why": "At the weekend she has her German course."
+    "why": "At the weekend she does the homework for her German course."
    },
    {
     "q": "Für den Yogakurs müssen die Mitarbeiter selbst bezahlen.",
@@ -1711,7 +1711,7 @@
    {
     "who": "A",
     "de": "Doch, ich verstehe das gut. Meine eigenen Kinder lesen auch keine Zeitung aus Papier. Ob man auf Papier oder online liest, ist gar nicht das Problem. Unsere Artikel kann man ja auch im Internet lesen.",
-    "en": "No, I understand it well. My own children don't read a paper newspaper either. Whether you read on paper or online isn't the problem at all. You can read our articles on the internet too."
+    "en": "Actually, I understand it well. My own children don't read a paper newspaper either. Whether you read on paper or online isn't the problem at all. You can read our articles on the internet too."
    },
    {
     "who": "A",
@@ -1746,7 +1746,7 @@
    {
     "who": "N",
     "de": "Ich muss zugeben, dass ich selbst auch kaum für Nachrichten im Internet bezahle. Herr Demir, wären Sie bereit, für gute Nachrichten Geld auszugeben?",
-    "en": "I have to admit that I hardly ever pay for news on the internet myself. Herr Demir, would you be prepared to spend money on good news?"
+    "en": "I have to admit that I hardly ever pay for news on the internet myself. Herr Demir, would you be prepared to spend money on good-quality news?"
    },
    {
     "who": "B",
@@ -2277,17 +2277,17 @@
     "why": "It was fifty euros cheaper online."
    },
    {
-    "q": "Jonas hat sein Fahrrad neu gekauft.",
+    "q": "Jonas hat sein Fahrrad nicht neu gekauft.",
     "format": "rf",
     "opts": [
      "richtig",
      "falsch"
     ],
-    "a": 1,
+    "a": 0,
     "ev": [
      12
     ],
-    "why": "His bike, like his desk, is second-hand."
+    "why": "His bike, like his desk, is second-hand, so he did not buy it new."
    },
    {
     "q": "Jonas bezahlt gebrauchte Sachen erst, wenn er sie gesehen hat.",
@@ -3162,8 +3162,8 @@
    },
    {
     "who": "A",
-    "de": "Nimm am besten eine Decke mit, wir sitzen nämlich auf der Wiese. Ruf mich an, ob du Zeit hast!",
-    "en": "Best bring a blanket, because we'll be sitting on the grass. Call me and tell me whether you're free!"
+    "de": "Nimm am besten eine Decke mit, wir sitzen nämlich auf der Wiese. Sag mir bitte Bescheid, ob du Zeit hast!",
+    "en": "Best bring a blanket, because we'll be sitting on the grass. Let me know whether you're free!"
    }
   ],
   "questions": [
@@ -3789,13 +3789,13 @@
   "id": "b1-h-11-1",
   "station": 11,
   "part": "Teil 1",
-  "setup": "A voicemail from Jonas to his friend Priya.",
+  "setup": "A voicemail from Kai, a friend of Priya's, to Priya.",
   "once": false,
   "lines": [
    {
     "who": "B",
-    "de": "Hallo Priya, hier ist Jonas. Stell dir vor, ich habe den Ausbildungsplatz in Leipzig bekommen!",
-    "en": "Hi Priya, it's Jonas. Guess what, I got the apprenticeship in Leipzig!"
+    "de": "Hallo Priya, hier ist Kai. Stell dir vor, ich habe den Ausbildungsplatz in Dresden bekommen!",
+    "en": "Hi Priya, it's Kai. Guess what, I got the apprenticeship in Dresden!"
    },
    {
     "who": "B",
@@ -3825,7 +3825,7 @@
   ],
   "questions": [
    {
-    "q": "Jonas zieht wegen einer Ausbildung in eine andere Stadt.",
+    "q": "Kai zieht wegen einer Ausbildung in eine andere Stadt.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -3837,10 +3837,10 @@
      1,
      2
     ],
-    "why": "He got an apprenticeship place in Leipzig and has to move soon."
+    "why": "He got an apprenticeship place in Dresden and has to move soon."
    },
    {
-    "q": "Worum bittet Jonas Priya?",
+    "q": "Worum bittet Kai Priya?",
     "format": "abc",
     "opts": [
      "etwas zu essen mitzubringen",
@@ -3865,7 +3865,7 @@
    {
     "who": "N",
     "de": "Sie träumen davon, nach der Schule ein Jahr im Ausland zu verbringen? Dann sollten Sie am Wochenende in die Stadthalle kommen.",
-    "en": "Do you dream of spending a year abroad after school? Then you should come to the town hall this weekend."
+    "en": "Do you dream of spending a year abroad after school? Then you should come to the civic hall this weekend."
    },
    {
     "who": "N",
@@ -4147,13 +4147,13 @@
   "id": "b1-h-12-2",
   "station": 12,
   "part": "Teil 1",
-  "setup": "A voicemail from Priya to her friend Lena.",
+  "setup": "A voicemail from Priya to Ana, a classmate from her German course.",
   "once": false,
   "lines": [
    {
     "who": "A",
-    "de": "Hallo Lena, hier ist Priya, es geht um unsere Lerngruppe.",
-    "en": "Hi Lena, it's Priya; it's about our study group."
+    "de": "Hallo Ana, hier ist Priya, es geht um unsere Lerngruppe.",
+    "en": "Hi Ana, it's Priya; it's about our study group."
    },
    {
     "who": "A",
@@ -4162,8 +4162,8 @@
    },
    {
     "who": "A",
-    "de": "Malte hat vorgeschlagen, dass wir zu ihm kommen. Er wohnt direkt am Bahnhof.",
-    "en": "Malte suggested that we come to his place. He lives right by the station."
+    "de": "Tarek hat vorgeschlagen, dass wir zu ihm kommen. Er wohnt direkt am Bahnhof.",
+    "en": "Tarek suggested that we come to his place. He lives right by the station."
    },
    {
     "who": "A",
@@ -4172,8 +4172,8 @@
    },
    {
     "who": "A",
-    "de": "Wir treffen uns also am Donnerstag um achtzehn Uhr bei Malte. Bring bitte deinen Laptop mit, dann können wir die Hörübungen machen.",
-    "en": "So we're meeting at Malte's on Thursday at six. Please bring your laptop, then we can do the listening exercises."
+    "de": "Wir treffen uns also am Donnerstag um achtzehn Uhr bei Tarek. Bring bitte deinen Laptop mit, dann können wir die Hörübungen machen.",
+    "en": "So we're meeting at Tarek's on Thursday at six. Please bring your laptop, then we can do the listening exercises."
    },
    {
     "who": "A",
@@ -4194,14 +4194,14 @@
      1,
      4
     ],
-    "why": "The group room in the library is taken, so they meet at Malte's."
+    "why": "The group room in the library is taken, so they meet at Tarek's."
    },
    {
-    "q": "Warum findet Priya es gut, bei Malte zu lernen?",
+    "q": "Warum findet Priya es gut, bei Tarek zu lernen?",
     "format": "abc",
     "opts": [
      "Weil man dort laut üben kann.",
-     "Weil Malte direkt am Bahnhof wohnt.",
+     "Weil Tarek direkt am Bahnhof wohnt.",
      "Weil es dort etwas zu essen gibt."
     ],
     "a": 0,

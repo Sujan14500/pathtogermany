@@ -40,8 +40,8 @@
     "Love / See you soon!"
    ]
   ],
-  "model": "Liebe Lena,\nvielen Dank für deine Nachricht! Mir geht es in der WG richtig gut. Ich wohne mit zwei netten Leuten zusammen: Tom, der Medizin studiert, und Sara, die in einem Café arbeitet. Schwierig ist nur das Putzen. Die Küche, die wir alle benutzen, ist oft unordentlich, weil wir noch keinen Putzplan haben. Darüber sprechen wir am Sonntag. Hast du Lust, mich nächsten Samstag zu besuchen? Dann koche ich für uns und du lernst die beiden kennen.\nLiebe Grüße",
-  "model_en": "Dear Lena,\nThanks a lot for your message! I'm really happy in the flat-share. I live with two nice people: Tom, who studies medicine, and Sara, who works in a café. The only difficult thing is the cleaning. The kitchen, which we all use, is often messy because we don't have a cleaning rota yet. We're going to talk about it on Sunday. Would you like to visit me next Saturday? Then I'll cook for us and you'll get to know the two of them.\nLove",
+  "model": "Liebe Lena,\nvielen Dank für deine Nachricht! Mir geht es in der WG richtig gut. Ich wohne mit zwei netten Leuten zusammen: Tom, der Medizin studiert, und Nele, die in einem Café arbeitet. Schwierig ist nur das Putzen. Die Küche, die wir alle benutzen, ist oft unordentlich, weil wir noch keinen Putzplan haben. Darüber sprechen wir am Sonntag. Hast du Lust, mich nächsten Samstag zu besuchen? Dann koche ich für uns und du lernst die beiden kennen.\nLiebe Grüße",
+  "model_en": "Dear Lena,\nThanks a lot for your message! I'm really happy in the flat-share. I live with two nice people: Tom, who studies medicine, and Nele, who works in a café. The only difficult thing is the cleaning. The kitchen, which we all use, is often messy because we don't have a cleaning rota yet. We're going to talk about it on Sunday. Would you like to visit me next Saturday? Then I'll cook for us and you'll get to know the two of them.\nLove",
   "rubric": [
    "Informal greeting (Liebe Lena) and closing (Liebe Grüße)",
    "All three points: your flatmates, a difficulty with its reason, a suggestion",
@@ -54,8 +54,8 @@
   "id": "b1-w-02",
   "station": 2,
   "part": "Teil 2",
-  "task_en": "In a radio programme's online guestbook people discuss working from home. React to Malte's opinion and write your own (about 80 words).",
-  "task_de": "Sie haben im Radio eine Sendung zum Thema „Arbeiten im Homeoffice“ gehört. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich arbeite seit zwei Jahren nur noch zu Hause. Ich spare jeden Tag eine Stunde Fahrzeit und kann mich viel besser konzentrieren. Ein Büro brauche ich nicht mehr.“ – Malte, 34\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "task_en": "In a radio programme's online guestbook people discuss working from home. React to Sven's opinion and write your own (about 80 words).",
+  "task_de": "Sie haben im Radio eine Sendung zum Thema „Arbeiten im Homeoffice“ gehört. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich arbeite seit zwei Jahren nur noch zu Hause. Ich spare jeden Tag eine Stunde Fahrzeit und kann mich viel besser konzentrieren. Ein Büro brauche ich nicht mehr.“ – Sven, 34\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
   "points": [
    "Ihre Meinung zum Homeoffice",
    "Ein Vorteil und ein Nachteil",
@@ -87,10 +87,10 @@
     "In my opinion … is the best solution."
    ]
   ],
-  "model": "Ich kann Malte gut verstehen, denn ich arbeite auch zwei Tage pro Woche zu Hause. Ein großer Vorteil ist, dass man keine Zeit im Verkehr verliert. Ein Nachteil ist aber, dass man die Kollegen kaum noch sieht. Viele Probleme werden im persönlichen Gespräch schneller gelöst als per E-Mail. In meiner Firma wird das so gemacht: Montags und freitags arbeiten wir im Homeoffice, an den anderen Tagen im Büro. Meiner Meinung nach ist diese Mischung die beste Lösung für alle.",
-  "model_en": "I can understand Malte well, because I also work from home two days a week. A big advantage is that you don't lose any time in traffic. One disadvantage, though, is that you hardly see your colleagues any more. Many problems are solved faster in a face-to-face conversation than by email. In my company it's done like this: on Mondays and Fridays we work from home, on the other days in the office. In my opinion this mix is the best solution for everyone.",
+  "model": "Ich kann Sven gut verstehen, denn ich arbeite auch zwei Tage pro Woche zu Hause. Ein großer Vorteil ist, dass man keine Zeit im Verkehr verliert. Ein Nachteil ist aber, dass man die Kollegen kaum noch sieht. Viele Probleme werden im persönlichen Gespräch schneller gelöst als per E-Mail. In meiner Firma wird das so gemacht: Montags und freitags arbeiten wir im Homeoffice, an den anderen Tagen im Büro. Meiner Meinung nach ist diese Mischung die beste Lösung für alle.",
+  "model_en": "I can understand Sven well, because I also work from home two days a week. A big advantage is that you don't lose any time in traffic. One disadvantage, though, is that you hardly see your colleagues any more. Many problems are solved faster in a face-to-face conversation than by email. In my company it's done like this: on Mondays and Fridays we work from home, on the other days in the office. In my opinion this mix is the best solution for everyone.",
   "rubric": [
-   "You react to Malte's opinion and give your own clearly",
+   "You react to Sven's opinion and give your own clearly",
    "All three points: your opinion, an advantage and a disadvantage, an example",
    "Connectors link the ideas (denn, aber); a passive sentence fits well here (Probleme werden gelöst)",
    "Varied sentence structure; few errors that hinder understanding",
