@@ -149,8 +149,8 @@
   "id": "a2-w-04",
   "station": 4,
   "part": "Teil 2",
-  "task_en": "Your colleague Malte has invited you to his football club's summer party. Write him an email.",
-  "task_de": "Ihr Kollege Malte hat Sie zum Sommerfest von seinem Fußballverein eingeladen. Schreiben Sie Malte eine E-Mail.",
+  "task_en": "Your German teacher, Herr Weber, started the choir Bunte Stimmen. He has invited your course to the choir's summer party on Saturday. Write Herr Weber an email.",
+  "task_de": "Ihr Deutschlehrer, Herr Weber, hat den Chor „Bunte Stimmen“ gegründet. Er hat Ihren Kurs am Samstag zum Sommerfest vom Chor eingeladen. Schreiben Sie Herrn Weber eine E-Mail.",
   "points": [
    "Danken Sie für die Einladung.",
    "Sie kommen, aber später: Warum?",
@@ -162,37 +162,37 @@
   ],
   "phrases": [
    [
-    "Lieber Malte,",
-    "Dear Malte,"
+    "Lieber Herr Weber,",
+    "Dear Mr Weber,"
    ],
    [
-    "Vielen Dank für die Einladung.",
-    "Thanks a lot for the invitation."
+    "Vielen Dank für die Einladung zu …",
+    "Thank you very much for the invitation to …"
    ],
    [
-    "Ich komme gern, aber …",
-    "I'd love to come, but …"
+    "Ich komme gern, aber erst um …, weil …",
+    "I'd be glad to come, but not until …, because …"
    ],
    [
-    "Soll ich etwas mitbringen?",
-    "Shall I bring something?"
+    "Was soll ich mitbringen? Brauchen Sie noch …?",
+    "What shall I bring? Do you still need …?"
    ],
    [
     "Ich freue mich schon darauf!",
     "I'm already looking forward to it!"
    ],
    [
-    "Bis Samstag! / Viele Grüße",
-    "See you Saturday! / Best wishes"
+    "Viele Grüße",
+    "Best wishes"
    ]
   ],
-  "model": "Lieber Malte,\nvielen Dank für die Einladung! Ich komme gern, aber erst um vier, weil ich am Samstag bis drei arbeiten muss. Soll ich etwas mitbringen, vielleicht einen Kuchen oder Getränke? Ich freue mich schon darauf!\nViele Grüße",
-  "model_en": "Dear Malte, thanks a lot for the invitation! I'd love to come, but not until four, because I have to work until three on Saturday. Shall I bring something, maybe a cake or drinks? I'm already looking forward to it! Best wishes",
+  "model": "Lieber Herr Weber,\nvielen Dank für die Einladung zum Sommerfest von Ihrem Chor! Ich komme gern, aber erst um vier, weil ich bis drei ein Fußballspiel habe. Was soll ich mitbringen? Brauchen Sie noch einen Kuchen? Ich freue mich schon darauf!\nViele Grüße",
+  "model_en": "Dear Mr Weber, thank you very much for the invitation to your choir's summer party! I'd be glad to come, but not until four, because I have a football match until three. What shall I bring? Do you still need a cake? I'm already looking forward to it! Best wishes",
   "rubric": [
    "All three points are answered",
-   "Greeting and closing fit the reader",
-   "Connectors such as weil, aber, deshalb",
-   "Verb in position 2, and at the end after weil/dass",
+   "Sie and Ihr all the way through (Brauchen Sie …?, Ihrem Chor), with Lieber Herr … and Viele Grüße",
+   "weil sends the verb to the end: weil ich … ein Fußballspiel habe",
+   "Verb in position 2 in every statement and after a question word: Was soll ich …?",
    "sich freuen auf → Ich freue mich darauf"
   ]
  },
@@ -342,11 +342,11 @@
   "id": "a2-w-08",
   "station": 8,
   "part": "Teil 2",
-  "task_en": "Your laptop isn't working properly, and your friend Lena knows a lot about computers. Write her an email.",
-  "task_de": "Ihr Laptop funktioniert nicht richtig. Ihre Freundin Lena weiß viel über Computer. Schreiben Sie Lena eine E-Mail.",
+  "task_en": "The internet in your flat isn't working. A technician has to get into the cellar, but only your landlord, Herr Krüger, has the key. Write Herr Krüger an email.",
+  "task_de": "Das Internet in Ihrer Wohnung funktioniert nicht. Ein Techniker muss in den Keller, aber nur Ihr Vermieter, Herr Krüger, hat den Schlüssel. Schreiben Sie Herrn Krüger eine E-Mail.",
   "points": [
    "Beschreiben Sie das Problem.",
-   "Bitten Sie Lena um Hilfe.",
+   "Bitten Sie Herrn Krüger um Hilfe.",
    "Machen Sie einen Vorschlag: Wann?"
   ],
   "words": [
@@ -355,37 +355,38 @@
   ],
   "phrases": [
    [
-    "Liebe Lena,",
-    "Dear Lena,"
+    "Sehr geehrter Herr Krüger,",
+    "Dear Mr Krüger,"
    ],
    [
-    "Mein Laptop funktioniert nicht richtig.",
-    "My laptop isn't working properly."
+    "Seit Montag funktioniert mein Internet nicht.",
+    "My internet hasn't worked since Monday."
    ],
    [
-    "…, trotzdem funktioniert … nicht.",
-    "…, but … still doesn't work."
+    "…, trotzdem geht es nicht.",
+    "…, but it still doesn't work."
    ],
    [
-    "Weißt du, was das Problem ist?",
-    "Do you know what the problem is?"
+    "Könnten Sie bitte …?",
+    "Could you please …?"
    ],
    [
-    "Kannst du mir helfen?",
-    "Can you help me?"
+    "Ich möchte fragen, ob Ihnen … passt.",
+    "I'd like to ask whether … suits you."
    ],
    [
-    "Liebe Grüße",
-    "Love / Best wishes"
+    "Mit freundlichen Grüßen",
+    "Kind regards"
    ]
   ],
-  "model": "Liebe Lena,\nmein Laptop ist so langsam! Ich habe ihn schon dreimal neu gestartet, trotzdem funktioniert das Internet nicht. Weißt du, was das Problem ist? Kannst du mir helfen? Hast du am Freitagabend Zeit? Ich koche für uns!\nLiebe Grüße",
-  "model_en": "Dear Lena, my laptop is so slow! I've already restarted it three times, but the internet still doesn't work. Do you know what the problem is? Can you help me? Are you free on Friday evening? I'll cook for us! Love",
+  "model": "Sehr geehrter Herr Krüger,\nseit Montag funktioniert mein Internet nicht. Ich habe alles neu gestartet, trotzdem geht es nicht. Der Techniker muss in den Keller. Könnten Sie ihm bitte die Tür öffnen? Ich möchte fragen, ob Ihnen Donnerstag um zehn passt.\nMit freundlichen Grüßen",
+  "model_en": "Dear Mr Krüger, my internet hasn't worked since Monday. I've restarted everything, but it still doesn't work. The technician has to get into the cellar. Could you please open the door for him? I'd like to ask whether Thursday at ten suits you. Kind regards",
   "rubric": [
    "All three points are answered",
-   "Indirect question: Weißt du, was das Problem ist? (verb at the end)",
-   "trotzdem with the verb straight after: trotzdem funktioniert …",
-   "du and dir all the way through, with Liebe … and Liebe Grüße"
+   "Sie and Ihnen all the way through, with Sehr geehrter Herr … and Mit freundlichen Grüßen",
+   "Indirect question: ob sends the verb to the end (ob Ihnen Donnerstag passt)",
+   "trotzdem with the verb straight after: trotzdem geht es nicht",
+   "A polite request: Könnten Sie bitte …?"
   ]
  },
  {
@@ -534,8 +535,8 @@
   "id": "a2-w-12",
   "station": 12,
   "part": "Teil 2",
-  "task_en": "Jonas has invited you to go hiking in the mountains on Saturday, but the forecast says it will rain. Write him an email.",
-  "task_de": "Jonas hat Sie für Samstag zu einer Wanderung in den Bergen eingeladen. Aber am Samstag soll es regnen. Schreiben Sie Jonas eine E-Mail.",
+  "task_en": "Your firm is going on a staff outing on Friday: a hike in the Siebengebirge hills near Bonn. Frau Wendt from HR has invited everyone, but the forecast says it will rain on Friday. Write Frau Wendt an email.",
+  "task_de": "Ihre Firma macht am Freitag einen Ausflug: Alle wandern im Siebengebirge. Frau Wendt aus der Personalabteilung hat alle eingeladen. Aber am Freitag soll es regnen. Schreiben Sie Frau Wendt eine E-Mail.",
   "points": [
    "Danken Sie für die Einladung.",
    "Schlagen Sie einen anderen Tag vor.",
@@ -547,16 +548,20 @@
   ],
   "phrases": [
    [
-    "Danke für die Einladung!",
-    "Thanks for the invitation!"
+    "Liebe Frau Wendt,",
+    "Dear Ms Wendt,"
    ],
    [
-    "Am Samstag soll es regnen.",
-    "It's supposed to rain on Saturday."
+    "Vielen Dank für Ihre Einladung!",
+    "Thank you very much for your invitation!"
    ],
    [
-    "Wollen wir lieber am … gehen?",
-    "Shall we go on … instead?"
+    "Leider soll es am Freitag regnen.",
+    "Unfortunately it's supposed to rain on Friday."
+   ],
+   [
+    "Könnten Sie den Ausflug auf … verschieben?",
+    "Could you move the outing to …?"
    ],
    [
     "Ich schlage vor, mit dem Zug zu fahren.",
@@ -571,10 +576,11 @@
     "Best wishes"
    ]
   ],
-  "model": "Lieber Jonas,\ndanke für die Einladung, ich wandere sehr gern! Aber am Samstag soll es regnen. Wollen wir lieber am Sonntag gehen? Ich schlage vor, mit dem Zug zu fahren. Das ist besser für die Umwelt.\nViele Grüße",
-  "model_en": "Dear Jonas, thanks for the invitation, I love hiking! But it's supposed to rain on Saturday. Shall we go on Sunday instead? I suggest going by train. That's better for the environment. Best wishes",
+  "model": "Liebe Frau Wendt,\nvielen Dank für Ihre Einladung, ich wandere sehr gern! Leider soll es am Freitag regnen. Könnten Sie den Ausflug auf nächsten Freitag verschieben? Ich schlage vor, mit dem Zug zu fahren. Das ist besser für die Umwelt.\nViele Grüße",
+  "model_en": "Dear Ms Wendt, thank you very much for your invitation, I love hiking! Unfortunately it's supposed to rain on Friday. Could you move the outing to next Friday? I suggest going by train. That's better for the environment. Best wishes",
   "rubric": [
    "All three points are answered",
+   "Sie and Ihr all the way through (Ihre Einladung, Könnten Sie …?), with Liebe Frau … and Viele Grüße",
    "zu + infinitive at the end: Ich schlage vor, … zu fahren",
    "Weather: es regnet, es soll regnen (it's supposed to rain)",
    "A reason for your idea: Das ist besser für …"

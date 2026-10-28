@@ -2662,7 +2662,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Service in Ihrer Stadt",
-  "intro": "Six ads for services on a local website. Five people need help with something.",
+  "intro": "Six ads for services on a local website. Five people need help with something. Find the right ad for each person – or x if there is none.",
   "pool": "exam",
   "blocks": [
    {
@@ -2830,7 +2830,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -2847,7 +2848,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -2864,7 +2866,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -2882,7 +2885,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
@@ -2892,7 +2896,7 @@
     "why": "Ad f helps older people with shopping, cooking and cleaning, for families who live far away."
    },
    {
-    "q": "Orhan hat ein Zeugnis aus der Türkei. Er braucht es auf Deutsch.",
+    "q": "Orhan hat ein Zeugnis aus der Türkei. Er braucht es schon morgen auf Deutsch.",
     "format": "match",
     "opts": [
      "a",
@@ -2900,13 +2904,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 1,
-    "ev": [
-     "b3.1"
-    ],
-    "why": "Ad b translates school reports (Zeugnisse) and other papers into German."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. Ad b translates school reports into German, but it takes three to five days, and Orhan needs his tomorrow."
    }
   ]
  },
@@ -2916,7 +2919,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Draußen in der Natur",
-  "intro": "Six ads for activities in nature. Five people are looking for something to do outdoors.",
+  "intro": "Six ads for activities in nature. Five people are looking for something to do outdoors. Find the right ad for each person – or x if there is none.",
   "pool": "exam",
   "blocks": [
    {
@@ -3080,7 +3083,7 @@
   ],
   "questions": [
    {
-    "q": "Mathilda ist 9. Sie möchte mit ihrem Vater am Abend Tiere im Wald sehen.",
+    "q": "Mathilda ist 7. Sie möchte mit ihrem Vater am Abend Tiere im Wald sehen.",
     "format": "match",
     "opts": [
      "a",
@@ -3088,14 +3091,12 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
-    "a": 3,
-    "ev": [
-     "b5.1",
-     "b5.3"
-    ],
-    "why": "Ad d is a night walk in the forest for families with children aged 8 and over. The tent holiday in ad a is for children from 10, without parents."
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. The night walk in ad d is for children aged 8 and over, and Mathilda is only 7. The tent holiday in ad a is for children from 10, without parents."
    },
    {
     "q": "Herr Mertens wohnt in einer Wohnung ohne Balkon. Er möchte gern selbst Gemüse haben.",
@@ -3106,7 +3107,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -3123,7 +3125,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -3141,7 +3144,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -3158,7 +3162,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -3174,7 +3179,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Alles für Ihr Fest",
-  "intro": "Six ads for parties and celebrations. Five people are planning a celebration.",
+  "intro": "Six ads for parties and celebrations. Five people are planning a celebration. Find the right ad for each person – or x if there is none.",
   "pool": "exam",
   "blocks": [
    {
@@ -3330,24 +3335,6 @@
   ],
   "questions": [
    {
-    "q": "Nesrin heiratet im Juni. Sie möchte mit allen Gästen auf dem Wasser feiern.",
-    "format": "match",
-    "opts": [
-     "a",
-     "b",
-     "c",
-     "d",
-     "e",
-     "f"
-    ],
-    "a": 2,
-    "ev": [
-     "b4.1",
-     "b4.2"
-    ],
-    "why": "In ad c you celebrate with your guests on a boat on the river, also weddings. The band in ad b plays at weddings, but not on the water."
-   },
-   {
     "q": "Ludwig feiert im Garten mit 80 Gästen. Er hat aber nur zwölf Teller.",
     "format": "match",
     "opts": [
@@ -3356,7 +3343,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
@@ -3373,13 +3361,30 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
      "b6.2"
     ],
     "why": "Ad e now bakes cakes without sugar."
+   },
+   {
+    "q": "Nesrin heiratet im Juni. Sie möchte mit 150 Gästen auf dem Wasser feiern.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "x"
+    ],
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. On the boat in ad c you can celebrate a wedding on the river, but only with up to 120 people, and Nesrin has 150 guests."
    },
    {
     "q": "Wencke möchte ihre Freunde zum Geburtstag einladen, nicht mit einer E-Mail, sondern mit einer schönen Karte.",
@@ -3390,7 +3395,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -3407,7 +3413,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -3424,7 +3431,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Kurse und Unterricht",
-  "intro": "Six ads for courses and lessons. Five people want to learn something.",
+  "intro": "Six ads for courses and lessons. Five people want to learn something. Find the right ad for each person – or x if there is none.",
   "pool": "exam",
   "blocks": [
    {
@@ -3588,24 +3595,6 @@
   ],
   "questions": [
    {
-    "q": "Die Tochter von Frau Sander geht in die 7. Klasse. Sie hat schlechte Noten in Englisch.",
-    "format": "match",
-    "opts": [
-     "a",
-     "b",
-     "c",
-     "d",
-     "e",
-     "f"
-    ],
-    "a": 5,
-    "ev": [
-     "b7.1",
-     "b7.2"
-    ],
-    "why": "Ad f helps pupils from year 5 to 10 with problems in English."
-   },
-   {
     "q": "Anton ist 66. Er möchte lernen, wie er seinen Enkeln E-Mails schreibt.",
     "format": "match",
     "opts": [
@@ -3614,13 +3603,30 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
      "b2.1"
     ],
     "why": "Ad a teaches people aged 60 and over how to write emails."
+   },
+   {
+    "q": "Die Tochter von Frau Sander geht in die 7. Klasse. Sie hat schlechte Noten in Französisch.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "x"
+    ],
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. The students in ad f help pupils in year 7, but only with English, German and maths, not French."
    },
    {
     "q": "Juna ist 17. In den Sommerferien möchte sie Auto fahren lernen.",
@@ -3631,7 +3637,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -3648,7 +3655,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 1,
     "ev": [
@@ -3665,7 +3673,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 3,
     "ev": [
@@ -3682,7 +3691,7 @@
   "part": "Teil 4",
   "type": "ad",
   "title": "Urlaub in der Natur",
-  "intro": "Six holiday ads from a travel magazine. Five people are planning a holiday in nature.",
+  "intro": "Six holiday ads from a travel magazine. Five people are planning a holiday in nature. Find the right ad for each person – or x if there is none.",
   "pool": "exam",
   "blocks": [
    {
@@ -3850,7 +3859,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 2,
     "ev": [
@@ -3868,7 +3878,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 0,
     "ev": [
@@ -3885,13 +3896,30 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 5,
     "ev": [
      "b7.2"
     ],
     "why": "The quiet flat by the lake in ad f welcomes dogs."
+   },
+   {
+    "q": "Detlef fährt gern Fahrrad. Er möchte im Urlaub jeden Tag in den Bergen fahren.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "x"
+    ],
+    "a": 6,
+    "ev": [],
+    "why": "No ad fits. The cycling holiday in ad d goes along a river on easy paths, not in the mountains. The house in the mountains in ad b can only be reached on foot."
    },
    {
     "q": "Svea und ihre Freundinnen haben wenig Geld. Sie möchten am Meer im Zelt schlafen.",
@@ -3902,7 +3930,8 @@
      "c",
      "d",
      "e",
-     "f"
+     "f",
+     "x"
     ],
     "a": 4,
     "ev": [
@@ -3910,23 +3939,6 @@
      "b6.3"
     ],
     "why": "The campsite in ad e is right by the sea and cheap: 12 euros a night for a tent."
-   },
-   {
-    "q": "Detlef fährt gern Fahrrad. Er möchte im Urlaub jeden Tag an einem Fluss fahren.",
-    "format": "match",
-    "opts": [
-     "a",
-     "b",
-     "c",
-     "d",
-     "e",
-     "f"
-    ],
-    "a": 3,
-    "ev": [
-     "b5.1"
-    ],
-    "why": "Ad d is a cycling holiday along a river."
    }
   ]
  }

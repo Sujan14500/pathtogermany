@@ -4,7 +4,7 @@
   "station": 1,
   "part": "Teil 1",
   "setup": "On the radio: a tip for people who are new in town.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -54,7 +54,7 @@
   "station": 1,
   "part": "Teil 2",
   "setup": "Lena (woman) shows her friend Jonas (man) photos from a family party. Where does each relative work now?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -230,7 +230,7 @@
   "station": 1,
   "part": "Teil 3",
   "setup": "At a party, Malte (man) talks to Priya (woman), who moved to Germany a year ago.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -295,7 +295,7 @@
   "station": 1,
   "part": "Teil 3",
   "setup": "Lena (woman) meets her friend Jonas (man) on Monday morning.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -345,7 +345,7 @@
   "station": 2,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a furniture store.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -395,7 +395,7 @@
   "station": 2,
   "part": "Teil 3",
   "setup": "Jonas (man) is moving into a new flat. His friend Lena (woman) is helping him.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -450,7 +450,7 @@
   "station": 2,
   "part": "Teil 3",
   "setup": "In the stairwell: Frau Yilmaz (woman), a neighbour, talks to Jonas (man), who has just moved in.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -666,7 +666,7 @@
   "station": 3,
   "part": "Teil 1",
   "setup": "On the radio: local news.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -716,7 +716,7 @@
   "station": 3,
   "part": "Teil 2",
   "setup": "Priya (woman) starts a new job on Monday. Her colleague Malte (man) tells her about her first week. What happens on which day?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -898,7 +898,7 @@
   "station": 3,
   "part": "Teil 3",
   "setup": "Lena (woman) and Jonas (man) talk over coffee.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -953,7 +953,7 @@
   "station": 3,
   "part": "Teil 3",
   "setup": "Malte (man) arrives for a meeting at another company and speaks to the woman at reception.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1009,7 +1009,7 @@
   "station": 4,
   "part": "Teil 1",
   "setup": "On the radio: a tip for the weekend.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -1059,7 +1059,7 @@
   "station": 4,
   "part": "Teil 3",
   "setup": "Jonas (man) phones his friend Lena (woman).",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1116,7 +1116,7 @@
   "station": 4,
   "part": "Teil 3",
   "setup": "Frau Yilmaz (woman) asks Herr Weber (man), a teacher, about evening courses at the adult education centre.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -1338,7 +1338,7 @@
   "station": 5,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a department store.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -1388,7 +1388,7 @@
   "station": 5,
   "part": "Teil 2",
   "setup": "Lena (woman) tells her friend Jonas (man) about a family trip to the flea market. What did each person buy?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -1565,7 +1565,7 @@
   "station": 5,
   "part": "Teil 3",
   "setup": "In a clothes shop: a shop assistant (woman) helps Jonas (man).",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -1620,7 +1620,7 @@
   "station": 5,
   "part": "Teil 3",
   "setup": "Malte (man) is at the supermarket. His colleague Priya (woman) phones him.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -1680,7 +1680,7 @@
   "station": 6,
   "part": "Teil 1",
   "setup": "On the radio: a health report in the regional news.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -1730,7 +1730,7 @@
   "station": 6,
   "part": "Teil 3",
   "setup": "Jonas (man) phones a doctor's practice. A receptionist (woman) answers.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -1791,7 +1791,7 @@
   "station": 6,
   "part": "Teil 3",
   "setup": "Lena (woman) and Jonas (man) talk after work.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2007,7 +2007,7 @@
   "station": 7,
   "part": "Teil 1",
   "setup": "On the radio: the traffic report.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -2057,7 +2057,7 @@
   "station": 7,
   "part": "Teil 2",
   "setup": "Priya (woman) tells her friend Jonas (man) about her holiday in Bavaria. What did she do on each day?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2233,7 +2233,7 @@
   "station": 7,
   "part": "Teil 3",
   "setup": "At the station ticket office: Jonas (man) speaks to a woman at the counter.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2284,7 +2284,7 @@
   "station": 7,
   "part": "Teil 3",
   "setup": "Jonas (man) asks his friend Lena (woman) about her holiday.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2339,7 +2339,7 @@
   "station": 8,
   "part": "Teil 1",
   "setup": "On the radio: the presenter tells listeners what is on tonight.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -2390,7 +2390,7 @@
   "station": 8,
   "part": "Teil 3",
   "setup": "Priya (woman) speaks to her German teacher, Herr Weber (man), after class.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2445,7 +2445,7 @@
   "station": 8,
   "part": "Teil 3",
   "setup": "Lena (woman) meets her friend Jonas (man), whose phone is broken.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2663,7 +2663,7 @@
   "station": 9,
   "part": "Teil 1",
   "setup": "On the radio: a tip for the weekend.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -2714,7 +2714,7 @@
   "station": 9,
   "part": "Teil 2",
   "setup": "Lena (woman) and Jonas (man) talk about Christmas presents. What is Jonas giving each person?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -2891,7 +2891,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Malte (man) invites his colleague Priya (woman) to his birthday party.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -2953,7 +2953,7 @@
   "station": 9,
   "part": "Teil 3",
   "setup": "Jonas (man) meets his neighbour Frau Yilmaz (woman) in the courtyard.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3009,7 +3009,7 @@
   "station": 10,
   "part": "Teil 1",
   "setup": "On the radio: news from the town.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -3059,7 +3059,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "Lena (woman) wants to learn Spanish. She talks to Jonas (man) about the courses she has found.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3114,7 +3114,7 @@
   "station": 10,
   "part": "Teil 3",
   "setup": "After a practice test, Priya (woman) talks to her teacher, Herr Weber (man).",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -3335,7 +3335,7 @@
   "station": 11,
   "part": "Teil 1",
   "setup": "On the radio: an advert for a bicycle shop.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -3385,7 +3385,7 @@
   "station": 11,
   "part": "Teil 2",
   "setup": "Jonas (man) asks his neighbour Frau Yilmaz (woman) to take in a parcel for him. Where does Frau Yilmaz go on each day?",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3556,7 +3556,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "At the post office: Malte (man) wants to send a parcel. A woman works at the counter.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3618,7 +3618,7 @@
   "station": 11,
   "part": "Teil 3",
   "setup": "Lena (woman) phones the garage about her car. A mechanic (man) answers.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
@@ -3674,7 +3674,7 @@
   "station": 12,
   "part": "Teil 1",
   "setup": "On the radio: the weather forecast for the weekend.",
-  "once": true,
+  "once": false,
   "lines": [
    {
     "who": "N",
@@ -3724,7 +3724,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Jonas (man) and Lena (woman) talk in the morning. It is raining.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "B",
@@ -3779,7 +3779,7 @@
   "station": 12,
   "part": "Teil 3",
   "setup": "Frau Yilmaz (woman) sees her neighbour Jonas (man) at the bins in the courtyard.",
-  "once": false,
+  "once": true,
   "lines": [
    {
     "who": "A",
