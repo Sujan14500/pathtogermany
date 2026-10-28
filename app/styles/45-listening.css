@@ -1,0 +1,93 @@
+/* ---- listening: the stage (who speaks, play, speed), questions beside it, the transcript after ---- */
+
+/* speaker colours: A (woman) the line colour, B (man) ink, N (announcer) grey; not the gender colours, which mean der/die/das */
+.p-A { --who: var(--line-deep); } .p-B { --who: var(--ink); } .p-N { --who: var(--muted); }
+
+.listen { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.l-main { display: grid; gap: 18px; min-width: 0; }
+.l-stage { display: grid; gap: 18px; padding: 20px 24px 22px; background: var(--panel); border-radius: 6px; border-top: 5px solid var(--line); }
+.l-setup { display: flex; gap: 10px; align-items: baseline; margin: 0; font-size: 1.08rem; }
+.l-setup .lb { flex: none; }
+
+/* the cast: one figure per voice; the one talking lifts and glows */
+.l-cast { display: flex; justify-content: center; gap: 28px; padding: 6px 0 0; }
+.person { display: grid; justify-items: center; gap: 6px; margin: 0; color: var(--who); }
+.person svg { width: 84px; height: 84px; padding: 8px; border-radius: 50%; background: var(--guide); box-shadow: 0 0 0 3px transparent; transition: transform .25s var(--arrive), box-shadow .25s; }
+.person .face { fill: color-mix(in srgb, currentColor 22%, var(--panel)); }
+.person .collar { stroke: var(--panel); }
+.person figcaption { font: 600 .95rem var(--display); color: var(--muted); }
+.person.talking svg { transform: translateY(-4px); box-shadow: 0 0 0 3px var(--who); background: color-mix(in srgb, var(--who) 12%, var(--panel)); }
+.person.talking figcaption { color: var(--ink); }
+.person .arc { opacity: .35; }
+.person.talking .arc { animation: pulse .9s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: .25; } to { opacity: 1; } }
+
+/* the track: one segment per line, coloured by who says it */
+.l-track { display: flex; gap: 3px; list-style: none; margin: 0; padding: 0; height: 10px; }
+.l-track li { flex: 1 1 0; min-width: 4px; border-radius: 3px; background: color-mix(in srgb, var(--who) 30%, var(--guide)); transition: background .2s; }
+.l-track li.past { background: color-mix(in srgb, var(--who) 60%, var(--guide)); }
+.l-track li.now { background: var(--who); box-shadow: 0 0 0 2px color-mix(in srgb, var(--who) 35%, transparent); }
+
+.l-controls { display: flex; align-items: center; gap: 16px; }
+.l-play { display: grid; place-items: center; width: 64px; height: 64px; padding: 0; flex: none; border: 0; border-radius: 50%; background: var(--ink); color: var(--platform); }
+.l-play:hover { background: var(--line-deep); color: #fff; }
+.l-play.on { background: var(--line); color: var(--on-line); }
+.l-play svg { margin-left: 3px; }
+.l-play.on svg { margin-left: 0; }
+.l-info { display: grid; gap: 2px; min-width: 0; }
+.l-info b { font: 700 1.15rem var(--display); }
+.l-plays { display: flex; align-items: center; gap: 5px; color: var(--muted); font-size: .92rem; }
+.l-plays i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--muted); }
+.l-plays i.on { background: var(--muted); }
+.l-plays i:last-of-type { margin-right: 4px; }
+.seg { display: inline-flex; margin-left: auto; flex: none; }
+.seg button { padding: .4rem .85rem; font-size: .95rem; border-radius: 0; }
+.seg button:first-child { border-radius: 6px 0 0 6px; }
+.seg button:last-child { border-radius: 0 6px 6px 0; margin-left: -2px; }
+.seg button.on { position: relative; border-color: var(--ink); background: var(--ink); color: var(--platform); }
+
+.no-voice { padding: 14px 18px; border-radius: 6px; border-left: 6px solid var(--die); background: color-mix(in srgb, var(--die) 8%, var(--panel)); }
+.no-voice p, .no-voice ol { margin: 0; }
+.no-voice ol { margin: 6px 0; padding-left: 1.3em; }
+.l-read { margin: 0; padding: 12px 16px; list-style: none; display: grid; gap: 6px; border-radius: 6px; background: var(--guide); font-size: 1.08rem; }
+
+/* the transcript, after answering */
+.transcript { padding: 18px 22px; background: var(--panel); border-radius: 6px; animation: rise .3s var(--arrive) both; }
+.transcript h3 { margin: 0 0 10px; font-size: 1.2rem; }
+.transcript ol { list-style: none; margin: 0; padding: 0; display: grid; }
+.tl { display: grid; grid-template-columns: 5.6em minmax(0, 1fr) auto; gap: 4px 12px; align-items: start; padding: 9px 8px; border-bottom: 1px solid var(--rule); border-radius: 4px; }
+.tl:last-child { border-bottom: 0; }
+.tl.ev { background: color-mix(in srgb, var(--das) 9%, transparent); box-shadow: inset 4px 0 0 var(--das); }
+.tl.lit { background: color-mix(in srgb, var(--das) 22%, transparent); }
+.tl.now { background: color-mix(in srgb, var(--line) 22%, transparent); }
+.who { justify-self: start; padding: 1px 7px; border-radius: 4px; background: var(--who); color: var(--panel); font: 700 .85rem/1.5 var(--display); white-space: nowrap; }
+.tl .who { margin-top: 3px; }
+.l-read .who { display: inline-block; min-width: 5.5em; }
+.tl-text { display: grid; gap: 2px; }
+.t-de { font-size: 1.08rem; }
+.t-en { color: var(--muted); font-size: .92rem; }
+.tl-do { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px; max-width: 260px; }
+.tl-key { display: flex; align-items: center; gap: 8px; margin: 12px 0 0; font-size: .9rem; }
+.ev-key { width: 14px; height: 14px; flex: none; border-radius: 3px; background: color-mix(in srgb, var(--das) 18%, transparent); box-shadow: inset 4px 0 0 var(--das); }
+
+/* shadowing (L14) */
+.shadow { display: inline-flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 6px; }
+.mini { padding: .2rem .6rem; font-size: .85rem; gap: .35rem; }
+.mini.rec { border-color: var(--die); color: var(--die); }
+.rec-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--die); animation: pulse .6s ease-in-out infinite alternate; }
+.mini-audio { height: 30px; width: 200px; }
+.heard { flex-basis: 100%; text-align: right; font-size: .9rem; }
+.heard .ok { color: var(--das); font-weight: 600; } .heard .miss { color: var(--muted); text-decoration: line-through; }
+.rec-err { flex-basis: 100%; text-align: right; color: var(--die); font-size: .85rem; }
+
+.l-qs .r-again button:not(.btn) { font-weight: 600; }
+.listen.exam .r-qs { position: static; max-height: none; }
+
+@media (max-width: 1099px) {
+  .listen { grid-template-columns: minmax(0, 1fr); }
+  .l-qs { position: static; max-height: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .person.talking svg { transform: none; }
+}
+.listen.solo { grid-template-columns: minmax(0, 1fr); }

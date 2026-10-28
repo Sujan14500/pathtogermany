@@ -7,7 +7,7 @@ import { fsrs, createEmptyCard, Rating, State } from './vendor/ts-fsrs-5.4.2.js'
 const KEY = 'pathtogermany:v1'
 const today = () => new Date().toLocaleDateString('en-CA')
 const endOfToday = () => { const d = new Date(); d.setHours(23, 59, 59, 999); return d }
-const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches
+const reducedMotion = () => S.settings.motion === 'reduce' || matchMedia('(prefers-reduced-motion: reduce)').matches   // Settings can force it
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`
 const pct = p => `${Math.round(p * 100)}%`
 const shuffle = xs => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
@@ -209,7 +209,8 @@ function speakLines(lines, { rate, onLine, onEnd } = {}) {
   const token = {}
   lineQueue = token
   const vA = voiceFor('A'), vB = voiceFor('B')
-  const vN = deVoices().find(v => v !== vA && v !== vB) ?? vA
+  const natural = v => /natural|online|neural/i.test(v.name)
+  const vN = deVoices().filter(v => v !== vA && v !== vB).sort((a, b) => natural(b) - natural(a))[0] ?? vA
   const one = !vA || !vB || vA === vB
   let i = 0, started = false
   const next = () => {
@@ -220,7 +221,9 @@ function speakLines(lines, { rate, onLine, onEnd } = {}) {
     u.lang = 'de-DE'
     u.voice = who === 'B' ? vB : who === 'N' ? vN : vA
     u.rate = rate ?? S.settings.rate ?? 0.95
-    if (one || (who === 'N' && vN === vA)) u.pitch = who === 'B' ? .7 : who === 'N' ? 1 : 1.25
+    if (one) u.pitch = who === 'B' ? .7 : who === 'N' ? 1 : 1.25
+    else if (who === 'N' && vN === vA) u.pitch = .85   // the announcer shares the woman's voice: lower it
+    token.u = u   // Chrome drops the events of an utterance nothing refers to, and the queue would stall
     u.onstart = () => { started = true; onLine?.(i) }
     u.onend = () => { i++; setTimeout(next, who === lines[i]?.[0] ? 150 : 420) }
     u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') noVoice() }
