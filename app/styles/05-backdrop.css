@@ -1,0 +1,31 @@
+/* Settings switching the theme or motion (applyLook) changes every colour at once, without transitions. */
+.look-switch *, .look-switch *::before, .look-switch *::after { transition: none !important; }
+
+/* ---- background: German nouns drift up behind the page, article in its gender colour, English surfacing halfway ---- */
+
+:root { --drift: 8%; --drift-en: 36%; }   /* strength of the drifting words and of their English */
+@media (prefers-color-scheme: dark) { :root { --drift: 11%; --drift-en: 40%; } }
+.backdrop { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.backdrop span {
+  position: absolute; bottom: -6rem; left: var(--x);
+  display: grid; justify-items: start; gap: .15rem; opacity: 0;
+  font-size: var(--size); white-space: nowrap;
+  animation: drift var(--dur) linear var(--delay) infinite;
+}
+.backdrop b { font: 600 1em/1 var(--display); color: color-mix(in srgb, var(--ink) var(--drift), transparent); }
+.backdrop i { font-style: normal; font-weight: 700; color: color-mix(in srgb, var(--g) calc(var(--drift) * 1.8), transparent); }
+.backdrop small {
+  font: 600 clamp(.75rem, .4em, 1rem)/1.2 var(--body); color: color-mix(in srgb, var(--muted) var(--drift-en), transparent);
+  opacity: 0; animation: drift-en var(--dur) linear var(--delay) infinite;
+}
+@keyframes drift {
+  0% { transform: translateY(0); opacity: 0; }
+  10%, 84% { opacity: 1; }
+  100% { transform: translateY(calc(-100vh - 10rem)); opacity: 0; }
+}
+@keyframes drift-en { 0%, 40% { opacity: 0; } 50%, 78% { opacity: 1; } 88%, 100% { opacity: 0; } }
+
+/* Reduced motion: the words hold still where they are instead of vanishing (99-motion.css would end them at once). */
+@media (prefers-reduced-motion: reduce) {
+  .backdrop span, .backdrop small { animation-duration: var(--dur) !important; animation-iteration-count: infinite !important; animation-play-state: paused !important; }
+}
