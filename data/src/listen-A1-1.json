@@ -209,18 +209,18 @@
    },
    {
     "who": "A",
-    "de": "Ich komme aus Indien, aus Delhi.",
-    "en": "I'm from India, from Delhi."
+    "de": "Ich komme aus Indien, aus Mumbai.",
+    "en": "I'm from India, from Mumbai."
    },
    {
     "who": "B",
-    "de": "Und wohnst du hier in Köln?",
-    "en": "And do you live here in Cologne?"
+    "de": "Wohnst du auch in der Bergstraße? Lena wohnt da.",
+    "en": "Do you live on Bergstraße too? Lena lives there."
    },
    {
     "who": "A",
-    "de": "Nein, mein Deutschkurs ist in Köln, aber ich wohne in Bonn.",
-    "en": "No, my German course is in Cologne, but I live in Bonn."
+    "de": "Nein, ich wohne in der Gartenstraße. Das ist nicht weit.",
+    "en": "No, I live on Gartenstraße. That's not far."
    }
   ],
   "questions": [
@@ -228,15 +228,15 @@
     "q": "Wo wohnt Priya?",
     "format": "abc",
     "opts": [
-     "in Delhi",
-     "in Köln",
-     "in Bonn"
+     "in Mumbai",
+     "in der Bergstraße",
+     "in der Gartenstraße"
     ],
     "a": 2,
     "ev": [
      5
     ],
-    "why": "She says 'ich wohne in Bonn'. She comes from Delhi, and only her course is in Köln."
+    "why": "She says 'ich wohne in der Gartenstraße'. Bergstraße is Lena's street, and Mumbai is where Priya comes from."
    }
   ]
  },
@@ -354,13 +354,13 @@
    },
    {
     "who": "A",
-    "de": "Ich wohne jetzt in der Lindenstraße, Nummer fünfzehn.",
-    "en": "I now live at Lindenstraße, number fifteen."
+    "de": "Ich wohne jetzt in der Bergstraße, Nummer fünfzehn.",
+    "en": "I now live at Bergstraße, number fifteen."
    },
    {
     "who": "A",
-    "de": "Nicht mehr in der Gartenstraße! Jonas wohnt auch da, in der Lindenstraße fünfzig.",
-    "en": "Not in Gartenstraße any more! Jonas lives there too, at Lindenstraße fifty."
+    "de": "Nicht mehr in der Lindenstraße fünfzig!",
+    "en": "Not at Lindenstraße fifty any more!"
    },
    {
     "who": "A",
@@ -373,15 +373,15 @@
     "q": "Wo wohnt Lena jetzt?",
     "format": "abc",
     "opts": [
-     "Gartenstraße 15",
-     "Lindenstraße 15",
-     "Lindenstraße 50"
+     "Lindenstraße 50",
+     "Bergstraße 15",
+     "Bergstraße 50"
     ],
     "a": 1,
     "ev": [
      2
     ],
-    "why": "'Ich wohne jetzt in der Lindenstraße, Nummer fünfzehn.' Number 50 is Jonas's house, and Gartenstraße is her old street."
+    "why": "'Ich wohne jetzt in der Bergstraße, Nummer fünfzehn.' Lindenstraße 50 is her old address. Listen for fünfzehn (15) against fünfzig (50)."
    }
   ]
  },
@@ -1344,23 +1344,23 @@
    },
    {
     "who": "B",
-    "de": "Die schwarze? Die kostet neunundachtzig Euro.",
-    "en": "The black one? It costs eighty-nine euros."
+    "de": "Die blaue? Die kostet neunundachtzig Euro.",
+    "en": "The blue one? It costs eighty-nine euros."
    },
    {
     "who": "A",
-    "de": "Oh, das ist aber teuer. Haben Sie die Jacke auch in Blau?",
-    "en": "Oh, that's expensive. Do you have the jacket in blue too?"
+    "de": "Oh, das ist aber teuer. Haben Sie die Jacke auch in Schwarz?",
+    "en": "Oh, that's expensive. Do you have the jacket in black too?"
    },
    {
     "who": "B",
-    "de": "Ja, hier. Die blaue ist im Angebot, sie kostet nur neunundfünfzig Euro.",
-    "en": "Yes, here. The blue one is on offer, it's only fifty-nine euros."
+    "de": "Ja, hier. Die schwarze ist im Angebot, sie kostet nur neunundfünfzig Euro.",
+    "en": "Yes, here. The black one is on offer, it's only fifty-nine euros."
    },
    {
     "who": "A",
-    "de": "Prima, dann nehme ich die blaue.",
-    "en": "Great, then I'll take the blue one."
+    "de": "Prima, dann nehme ich die schwarze.",
+    "en": "Great, then I'll take the black one."
    }
   ],
   "questions": [
@@ -1377,7 +1377,7 @@
      3,
      4
     ],
-    "why": "She takes 'die blaue', which costs 'neunundfünfzig' (59, nine-and-fifty). 89 euros is the black one."
+    "why": "She takes 'die schwarze', which costs 'neunundfünfzig' (59, nine-and-fifty). 89 euros is the blue one."
    }
   ]
  },
@@ -1689,7 +1689,7 @@
   ],
   "questions": [
    {
-    "q": "Wie soll Lena zu Jonas fahren?",
+    "q": "Wie fährt Lena zu Jonas?",
     "format": "abc",
     "opts": [
      "mit dem Bus",

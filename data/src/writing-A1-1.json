@@ -44,12 +44,12 @@
   "id": "a1-w-02",
   "station": 2,
   "part": "Teil 2",
-  "task_en": "You are new in Cologne and are doing a German course there. Write a short message to your friend Jonas.",
-  "task_de": "Sie sind neu in Köln und machen dort einen Deutschkurs. Schreiben Sie Ihrem Freund Jonas eine kurze Nachricht.",
+  "task_en": "You are new in Cologne and are doing a German course there. Write a short message to your friend Felix.",
+  "task_de": "Sie sind neu in Köln und machen dort einen Deutschkurs. Schreiben Sie Ihrem Freund Felix eine kurze Nachricht.",
   "points": [
    "Wo Sie jetzt wohnen",
    "Wer im Kurs ist (Länder, Sprachen)",
-   "Frage: Wann kommt Jonas zu Besuch?"
+   "Frage: Wann kommt Felix zu Besuch?"
   ],
   "words": [
    25,
@@ -57,8 +57,8 @@
   ],
   "phrases": [
    [
-    "Lieber Jonas,",
-    "Dear Jonas,"
+    "Lieber Felix,",
+    "Dear Felix,"
    ],
    [
     "Ich wohne jetzt in …",
@@ -81,12 +81,12 @@
     "Best wishes"
    ]
   ],
-  "model": "Lieber Jonas, ich wohne jetzt in Köln, in der Gartenstraße. Mein Deutschkurs ist super! Wir sind zwölf Leute aus acht Ländern, zum Beispiel aus Mexiko und Finnland. Wir sprechen nur Deutsch. Wann kommst du nach Köln? Viele Grüße, Priya",
-  "model_en": "Dear Jonas, I live in Cologne now, on Gartenstraße. My German course is great! We are twelve people from eight countries, for example from Mexico and Finland. We only speak German. When are you coming to Cologne? Best wishes, Priya",
+  "model": "Lieber Felix, ich wohne jetzt in Köln, in der Gartenstraße. Mein Deutschkurs ist super! Wir sind zwölf Leute aus acht Ländern, zum Beispiel aus Mexiko und Finnland. Wir sprechen nur Deutsch. Wann kommst du nach Köln? Viele Grüße, Priya",
+  "model_en": "Dear Felix, I live in Cologne now, on Gartenstraße. My German course is great! We are twelve people from eight countries, for example from Mexico and Finland. We only speak German. When are you coming to Cologne? Best wishes, Priya",
   "rubric": [
    "All three points are answered",
    "A greeting and a closing for a friend: Lieber …, Viele Grüße",
-   "du-forms for Jonas: Wann kommst du …?",
+   "du-forms for Felix: Wann kommst du …?",
    "The verb in position 2: Wir sind …, Wir sprechen …",
    "Nouns with capital letters"
   ]
@@ -95,14 +95,14 @@
   "id": "a1-w-03",
   "station": 3,
   "part": "Teil 1",
-  "task_en": "Your neighbour Frau Yilmaz wants to register her son at a kindergarten. Read the text and fill in the form for her.",
-  "task_de": "Ihre Nachbarin, Frau Yilmaz, möchte ihren Sohn im Kindergarten anmelden. Lesen Sie den Text und füllen Sie das Formular aus.",
+  "task_en": "Your neighbour Frau Polat wants to register her son at a kindergarten. Read the text and fill in the form for her.",
+  "task_de": "Ihre Nachbarin, Frau Polat, möchte ihren Sohn im Kindergarten anmelden. Lesen Sie den Text und füllen Sie das Formular aus.",
   "form": {
-   "text_de": "Ayşe Yilmaz ist 38 Jahre alt und arbeitet als Verkäuferin. Ihr Mann Murat ist Koch. Sie haben drei Kinder. Die Töchter Elif und Defne sind neun und sieben Jahre alt und gehen schon in die Schule. Der Sohn heißt Can und ist drei. Ab September geht er in den Kindergarten „Sonnenblume“.",
+   "text_de": "Zehra Polat ist 38 Jahre alt und arbeitet als Verkäuferin. Ihr Mann Murat ist Koch. Sie haben drei Kinder. Die Töchter Selin und Defne sind neun und sieben Jahre alt und gehen schon in die Schule. Der Sohn heißt Can und ist drei. Ab September geht er in den Kindergarten „Sonnenblume“.",
    "fields": [
     [
      "Familienname",
-     "Yilmaz"
+     "Polat"
     ],
     [
      "Vorname des Kindes",
@@ -129,8 +129,8 @@
   ],
   "phrases": [],
   "rubric": [],
-  "model": "Familienname: Yilmaz · Vorname des Kindes: Can · Alter des Kindes: 3 · Geschwister: 2 Schwestern · Beruf der Mutter: Verkäuferin",
-  "model_en": "Surname: Yilmaz · Child's first name: Can · Child's age: 3 · Brothers and sisters: 2 sisters · Mother's job: shop assistant"
+  "model": "Familienname: Polat · Vorname des Kindes: Can · Alter des Kindes: 3 · Geschwister: 2 Schwestern · Beruf der Mutter: Verkäuferin",
+  "model_en": "Surname: Polat · Child's first name: Can · Child's age: 3 · Brothers and sisters: 2 sisters · Mother's job: shop assistant"
  },
  {
   "id": "a1-w-04",
@@ -140,8 +140,8 @@
   "task_de": "Sie kochen heute Abend für Freunde. Ihre Freundin Lena kommt früher und kann vorher einkaufen. Schreiben Sie Lena eine kurze Nachricht.",
   "points": [
    "Was Sie kochen",
-   "Bitte: Was Lena kaufen soll",
-   "Wann Lena kommen soll"
+   "Bitte: Was kauft Lena ein?",
+   "Wann kommt Lena?"
   ],
   "words": [
    25,
@@ -189,7 +189,7 @@
   "task_en": "Your friend Jonas is looking for a flat. Read the text and fill in the form for the flat agency.",
   "task_de": "Ihr Freund Jonas sucht eine Wohnung. Lesen Sie den Text und füllen Sie das Formular für das Wohnungsbüro aus.",
   "form": {
-   "text_de": "Jonas Keller studiert in Köln. Er und sein Bruder Tim suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
+   "text_de": "Jonas Keller arbeitet in Köln. Er und sein Bruder Tim suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
    "fields": [
     [
      "Familienname",
@@ -252,8 +252,8 @@
     "I'll be back on …"
    ],
    [
-    "Können Sie mir bitte …?",
-    "Could you please … me?"
+    "Können Sie mir bitte … schicken?",
+    "Could you please send me …?"
    ],
    [
     "Viele Grüße",
@@ -406,7 +406,7 @@
   "id": "a1-w-10",
   "station": 10,
   "part": "Teil 2",
-  "task_en": "Your back has hurt for three days. Write a short email to Dr Brandt's practice and ask for an appointment.",
+  "task_en": "You have had back pain for three days. Write a short email to Dr Brandt's practice and ask for an appointment.",
   "task_de": "Sie haben seit drei Tagen Rückenschmerzen. Schreiben Sie eine kurze E-Mail an die Praxis von Dr. Brandt.",
   "points": [
    "Was Sie haben",
@@ -534,11 +534,11 @@
     "Please reply by …"
    ]
   ],
-  "model": "Liebe Lena, am 13. Juni feiere ich meinen Geburtstag. Die Party beginnt um 18 Uhr im Park. Wir grillen! Aber vielleicht regnet es, dann feiern wir bei mir. Kommst du? Bitte antworte bis Mittwoch. Liebe Grüße, Priya",
-  "model_en": "Dear Lena, on 13 June I'm celebrating my birthday. The party starts at 6 pm in the park. We're having a barbecue! But maybe it will rain, then we'll celebrate at my place. Are you coming? Please reply by Wednesday. Love, Priya",
+  "model": "Liebe Lena, am 3. Mai feiere ich meinen Geburtstag. Die Party beginnt um 18 Uhr im Park. Wir grillen! Aber vielleicht regnet es, dann feiern wir bei mir. Kommst du? Bitte antworte bis Mittwoch. Liebe Grüße, Priya",
+  "model_en": "Dear Lena, on 3 May I'm celebrating my birthday. The party starts at 6 pm in the park. We're having a barbecue! But maybe it will rain, then we'll celebrate at my place. Are you coming? Please reply by Wednesday. Love, Priya",
   "rubric": [
    "All three points are answered",
-   "A date with am: am 13. Juni",
+   "A date with am: am 3. Mai",
    "Weather with es: es regnet",
    "du-forms and a friendly greeting and closing"
   ]

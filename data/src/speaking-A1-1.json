@@ -185,8 +185,8 @@
    ],
    [
     "A",
-    "Ich bin Lehrerin, aber hier arbeite ich in einem Café.",
-    "I'm a teacher, but here I work in a café."
+    "Ich bin Lehrerin, aber hier arbeite ich in einem Büro.",
+    "I'm a teacher, but here I work in an office."
    ],
    [
     "A",
@@ -475,7 +475,7 @@
    ],
    [
     "B",
-    "Gib mir bitte den Schlüssel.",
+    "Geben Sie mir bitte den Schlüssel.",
     "Give me the key, please."
    ],
    [
@@ -571,8 +571,8 @@
    ],
    [
     "A",
-    "Ich bin Lehrerin. Hier in Köln arbeite ich in einem Café, von 8 bis 14 Uhr.",
-    "I'm a teacher. Here in Cologne I work in a café, from 8 am to 2 pm."
+    "Ich bin Lehrerin. Hier in Köln arbeite ich in einem Büro, von 8 bis 14 Uhr.",
+    "I'm a teacher. Here in Cologne I work in an office, from 8 am to 2 pm."
    ],
    [
     "A",
@@ -591,8 +591,8 @@
    ],
    [
     "A",
-    "Gartenstraße: G – A – R – T – E – N – S – T – R – A – Eszett – E.",
-    "Gartenstraße: G – A – R – T – E – N – S – T – R – A – ß (sharp s) – E."
+    "Bergstraße: B – E – R – G – S – T – R – A – Eszett – E.",
+    "Bergstraße: B – E – R – G – S – T – R – A – ß (sharp s) – E."
    ],
    [
     "B",
@@ -843,7 +843,7 @@
    ],
    [
     "B",
-    "Gib mir bitte den Stadtplan.",
+    "Geben Sie mir bitte den Stadtplan.",
     "Give me the map, please."
    ],
    [

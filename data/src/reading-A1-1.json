@@ -435,7 +435,7 @@
     "why": "Ad d gives an email address; ad c only gives a phone number."
    },
    {
-    "q": "Der Kurs soll nicht mehr als 100 Euro kosten.",
+    "q": "Sie möchten einen Deutschkurs. Sie haben nur 100 Euro.",
     "format": "match",
     "opts": [
      "e",
@@ -515,8 +515,8 @@
       "Please fill in the form with a pen."
      ],
      [
-      "Kein Bleistift, bitte!",
-      "No pencil, please!"
+      "Bitte nicht mit Bleistift schreiben!",
+      "Please don't write in pencil!"
      ],
      [
       "Unterschreiben Sie unten rechts.",
@@ -652,7 +652,7 @@
      "b2.1",
      "b2.2"
     ],
-    "why": "The sign says: with a pen – 'Kein Bleistift, bitte!'"
+    "why": "The sign says: with a pen – 'Bitte nicht mit Bleistift schreiben!'"
    },
    {
     "q": "Ana kommt aus Spanien.",
@@ -722,20 +722,20 @@
       "Thanks for your email!"
      ],
      [
-      "Ich komme aus Indien, aus Pune.",
-      "I come from India, from Pune."
+      "Ich komme aus Indien, aus Mumbai.",
+      "I come from India, from Mumbai."
      ],
      [
-      "Pune ist eine große Stadt.",
-      "Pune is a big city."
+      "Mumbai ist eine große Stadt.",
+      "Mumbai is a big city."
      ],
      [
-      "Jetzt wohne ich hier in Köln, in der Lindenstraße.",
-      "Now I live here in Cologne, on Lindenstraße."
+      "Jetzt wohne ich hier in Köln, in der Gartenstraße.",
+      "Now I live here in Cologne, on Gartenstraße."
      ],
      [
-      "Ich spreche Marathi, Hindi und Englisch.",
-      "I speak Marathi, Hindi and English."
+      "Ich spreche Hindi und Englisch.",
+      "I speak Hindi and English."
      ],
      [
       "Ich lerne seit drei Monaten Deutsch.",
@@ -825,7 +825,7 @@
   },
   "questions": [
    {
-    "q": "Pune ist ein Dorf in Indien.",
+    "q": "Priya wohnt jetzt in Mumbai.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -833,9 +833,10 @@
     ],
     "a": 1,
     "ev": [
-     "b2.2"
+     "b2.1",
+     "b2.3"
     ],
-    "why": "Priya writes: 'Pune ist eine große Stadt' – a big city, not a village."
+    "why": "Priya comes from Mumbai, but now she lives in Cologne: 'Jetzt wohne ich hier in Köln'."
    },
    {
     "q": "Priya lernt seit drei Monaten Deutsch.",
@@ -1015,8 +1016,8 @@
     "t": "ad",
     "s": [
      [
-      "Firma Holz & Co sucht Verkäufer für unser Geschäft.",
-      "Holz & Co is looking for sales staff for our shop."
+      "Holz & Co: Wir suchen Verkäufer für unser Geschäft.",
+      "Holz & Co: we're looking for sales staff for our shop."
      ],
      [
       "Sie arbeiten 40 Stunden pro Woche und verdienen gut.",
@@ -1068,7 +1069,7 @@
       "Puppies for sale!"
      ],
      [
-      "Unsere Hündin hat vier Babys, sie sind zehn Wochen alt.",
+      "Unsere Hündin hat vier Hundebabys, sie sind zehn Wochen alt.",
       "Our dog has four puppies; they are ten weeks old."
      ],
      [
@@ -1382,7 +1383,7 @@
     "why": "Room 104 gives information Monday to Friday from 8 to 12."
    },
    {
-    "q": "Sandra heiratet am Freitag.",
+    "q": "Man gibt die 5 Euro bei Sandra ab.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -1390,10 +1391,9 @@
     ],
     "a": 1,
     "ev": [
-     "b4.1",
      "b4.3"
     ],
-    "why": "Sandra marries on 20 June; Friday is only the last day to give the 5 euros."
+    "why": "You give the 5 euros to Ms Schulz ('bei Frau Schulz'), not to Sandra: the present is for Sandra."
    },
    {
     "q": "Für ein Baby bezahlt man im Zoo nichts.",
@@ -2207,7 +2207,7 @@
      ],
      [
       "Jonas hat noch einen Kühlschrank im Keller.",
-      "Jonas still has a fridge in his cellar."
+      "Jonas has a spare fridge in his cellar."
      ],
      [
       "Möchtest du ihn?",
@@ -2652,7 +2652,7 @@
      ],
      [
       "Ab Montag beginnt der Kurs schon um 8.30 Uhr.",
-      "From Monday the course starts at 8.30."
+      "From Monday the course starts earlier, at 8.30."
      ],
      [
       "Der Unterricht endet um 11.30 Uhr.",
@@ -4165,7 +4165,7 @@
     "why": "You get on at the front (vorne); the back is for getting off."
    },
    {
-    "q": "Den Eingang finden Sie in der Bahnhofstraße.",
+    "q": "Der Eingang in der Bahnhofstraße ist geöffnet.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -4857,7 +4857,7 @@
     "why": "One suitcase per person up to 23 kilos is included."
    },
    {
-    "q": "Im Preis sind Frühstück und Abendessen.",
+    "q": "Für 449 Euro bekommen Sie auch Frühstück und Abendessen.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -4865,9 +4865,10 @@
     ],
     "a": 0,
     "ev": [
-     "b4.2"
+     "b4.2",
+     "b4.3"
     ],
-    "why": "Halbpension means breakfast and dinner are included."
+    "why": "Halbpension means breakfast and dinner, and the 449 euros are for everything together ('alles zusammen')."
    },
    {
     "q": "Sie können heute an diesem Automaten eine Fahrkarte kaufen.",
@@ -5304,7 +5305,7 @@
   },
   "questions": [
    {
-    "q": "Sie möchten am Samstag im Garten grillen und wissen: Wie wird das Wetter?",
+    "q": "Sie möchten am Samstag im Garten grillen. Wie ist das Wetter am Samstag?",
     "format": "match",
     "opts": [
      "a",
