@@ -1,0 +1,3299 @@
+[
+ {
+  "id": "a1-rx-01",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "type": "sms",
+  "title": "Der Weg zu Torben",
+  "intro": "Torben texts his colleague Fenja the way to his new flat; Fenja answers.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Hallo Fenja,",
+      "Hi Fenja,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "schön, du kommst am Sonntag zum Kaffee!",
+      "great that you're coming for coffee on Sunday!"
+     ],
+     [
+      "Hier ist der Weg: Nimm am Bahnhof die Straßenbahn 3.",
+      "Here's the way: at the station, take tram number 3."
+     ],
+     [
+      "Fahr bis zur Haltestelle Schillerplatz – das sind nur vier Haltestellen.",
+      "Ride to the Schillerplatz stop – that's only four stops."
+     ],
+     [
+      "Dort steigst du aus und gehst links in die Rosenstraße.",
+      "Get off there and turn left into Rosenstraße."
+     ],
+     [
+      "Dann immer geradeaus bis zur Nummer 12.",
+      "Then keep going straight on to number 12."
+     ],
+     [
+      "Ich wohne im dritten Stock.",
+      "I live on the third floor."
+     ],
+     [
+      "Der Aufzug ist leider kaputt.",
+      "Unfortunately the lift is out of order."
+     ],
+     [
+      "Bis Sonntag! Torben",
+      "See you on Sunday! Torben"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Hallo Torben,",
+      "Hi Torben,"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "danke für den Weg!",
+      "thanks for the directions!"
+     ],
+     [
+      "Ich komme aber nicht mit der Straßenbahn, ich fahre mit dem Fahrrad.",
+      "But I'm not coming by tram – I'm cycling."
+     ],
+     [
+      "Gibt es vor dem Haus Platz für mein Fahrrad?",
+      "Is there space for my bike in front of the building?"
+     ],
+     [
+      "Meine Schwester ist am Wochenende bei mir. Kann sie auch mitkommen?",
+      "My sister is staying with me at the weekend. Can she come too?"
+     ],
+     [
+      "Wir bringen einen Kuchen mit.",
+      "We'll bring a cake."
+     ],
+     [
+      "Wir sind um drei Uhr bei dir.",
+      "We'll be at yours at three o'clock."
+     ],
+     [
+      "Bis dann, Fenja",
+      "See you then, Fenja"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Straßenbahn",
+    "en": "tram"
+   },
+   {
+    "w": "steigst du aus",
+    "en": "(aussteigen) you get off"
+   },
+   {
+    "w": "Stock",
+    "en": "floor (of a building)"
+   },
+   {
+    "w": "Aufzug",
+    "en": "lift, elevator"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Fenja steigt am Schillerplatz in die Straßenbahn ein.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.3"
+    ],
+    "why": "She gets on the tram at the station (am Bahnhof); Schillerplatz is where she gets off (steigst du aus)."
+   },
+   {
+    "q": "Von der Haltestelle geht Fenja nach links.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "Torben writes: 'gehst links in die Rosenstraße' – from the stop she turns left."
+   },
+   {
+    "q": "Fenja kann in Torbens Haus mit dem Aufzug fahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.6"
+    ],
+    "why": "The lift is out of order (kaputt), so she has to take the stairs."
+   },
+   {
+    "q": "Fenja kommt mit der Straßenbahn.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "She writes that she is coming by bike, not by tram."
+   },
+   {
+    "q": "Fenja ist am Nachmittag bei Torben.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.5"
+    ],
+    "why": "She'll be there at three o'clock – that's the afternoon."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-02",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "type": "email",
+  "title": "Ein neuer Termin",
+  "intro": "A doctor's practice emails Mr Brandl about his appointment; he replies.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Guten Tag, Herr Brandl,",
+      "Hello Mr Brandl,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Frau Dr. Ruppert ist am Dienstag leider nicht in der Praxis.",
+      "Unfortunately Dr Ruppert isn't at the practice on Tuesday."
+     ],
+     [
+      "Ihr Termin am Dienstag um 9 Uhr ist also nicht möglich.",
+      "So your appointment on Tuesday at 9 am isn't possible."
+     ],
+     [
+      "Können Sie am Donnerstag um 15.30 Uhr kommen?",
+      "Can you come on Thursday at 3.30 pm?"
+     ],
+     [
+      "Oder am Freitag um 8 Uhr?",
+      "Or on Friday at 8 am?"
+     ],
+     [
+      "Bitte bringen Sie Ihre Tabletten mit.",
+      "Please bring your tablets with you."
+     ],
+     [
+      "Viele Grüße, Ihre Praxis Dr. Ruppert",
+      "Best wishes, Dr Ruppert's practice"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Guten Tag,",
+      "Hello,"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "vielen Dank für Ihre E-Mail.",
+      "thank you for your email."
+     ],
+     [
+      "Am Donnerstag arbeite ich bis 17 Uhr, das geht leider nicht.",
+      "On Thursday I work until 5 pm, so that doesn't work, unfortunately."
+     ],
+     [
+      "Ich komme gern am Freitag um 8 Uhr.",
+      "I'm happy to come on Friday at 8 am."
+     ],
+     [
+      "Mein Rücken tut noch weh, aber ich habe kein Fieber mehr.",
+      "My back still hurts, but I don't have a temperature any more."
+     ],
+     [
+      "Ich nehme am Morgen und am Abend eine Tablette.",
+      "I take one tablet in the morning and one in the evening."
+     ],
+     [
+      "Viele Grüße, Rolf Brandl",
+      "Best wishes, Rolf Brandl"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Praxis",
+    "en": "(doctor's) practice"
+   },
+   {
+    "w": "möglich",
+    "en": "possible"
+   },
+   {
+    "w": "Tabletten",
+    "en": "tablets"
+   },
+   {
+    "w": "kein Fieber mehr",
+    "en": "no temperature any more"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Herr Brandl kann am Dienstag nicht zu Frau Dr. Ruppert gehen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.1"
+    ],
+    "why": "Dr Ruppert isn't at the practice on Tuesday, so his Tuesday appointment can't happen."
+   },
+   {
+    "q": "Die Praxis bietet Herrn Brandl zwei neue Termine an.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2",
+     "b2.3"
+    ],
+    "why": "The practice offers Thursday at 3.30 pm or Friday at 8 am."
+   },
+   {
+    "q": "Herr Brandl geht am Donnerstag zum Arzt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "He works until 5 pm on Thursday, so he takes the Friday appointment at 8 am."
+   },
+   {
+    "q": "Herr Brandl hat jetzt kein Fieber.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "'ich habe kein Fieber mehr' – he no longer has a temperature."
+   },
+   {
+    "q": "Herr Brandl nimmt jeden Tag nur eine Tablette.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.4"
+    ],
+    "why": "He takes one in the morning and one in the evening – two a day."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-03",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "email",
+  "title": "Ferien am Meer",
+  "intro": "Frieda emails her friend Mats from her holiday; Mats answers.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Lieber Mats,",
+      "Dear Mats,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "seit Montag bin ich mit meiner Familie am Meer.",
+      "I've been at the seaside with my family since Monday."
+     ],
+     [
+      "Wir sind mit dem Zug gefahren, die Reise hat sechs Stunden gedauert.",
+      "We came by train; the journey took six hours."
+     ],
+     [
+      "Unser Hotel ist klein, aber das Zimmer hat einen Balkon mit Blick auf das Meer.",
+      "Our hotel is small, but the room has a balcony with a view of the sea."
+     ],
+     [
+      "Gestern hat es leider viel geregnet, da sind wir ins Schwimmbad gegangen.",
+      "Unfortunately it rained a lot yesterday, so we went to the swimming pool."
+     ],
+     [
+      "Heute scheint die Sonne und wir baden im Meer.",
+      "Today the sun is shining and we're swimming in the sea."
+     ],
+     [
+      "Am Samstag fahren wir zurück.",
+      "We're going back on Saturday."
+     ],
+     [
+      "Viele Grüße, Frieda",
+      "Best wishes, Frieda"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Liebe Frieda,",
+      "Dear Frieda,"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "danke für deine E-Mail!",
+      "thanks for your email!"
+     ],
+     [
+      "Hier in der Stadt ist es auch sehr warm.",
+      "It's very warm here in town too."
+     ],
+     [
+      "Ich habe zurzeit keinen Urlaub, ich muss arbeiten.",
+      "I don't have any holiday at the moment; I have to work."
+     ],
+     [
+      "Aber im August fliege ich mit meinem Bruder nach Portugal.",
+      "But in August I'm flying to Portugal with my brother."
+     ],
+     [
+      "Die Tickets haben wir schon gekauft.",
+      "We've already bought the tickets."
+     ],
+     [
+      "Erzähl mir am Sonntag von deiner Reise!",
+      "Tell me about your trip on Sunday!"
+     ],
+     [
+      "Bis bald, Mats",
+      "See you soon, Mats"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Blick",
+    "en": "view"
+   },
+   {
+    "w": "geregnet",
+    "en": "(regnen) rained"
+   },
+   {
+    "w": "baden",
+    "en": "to swim, bathe"
+   },
+   {
+    "w": "zurzeit",
+    "en": "at the moment"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Frieda ist mit dem Auto ans Meer gefahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "They went by train (mit dem Zug)."
+   },
+   {
+    "q": "Friedas Zimmer hat keinen Balkon.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "The room has a balcony with a view of the sea."
+   },
+   {
+    "q": "Gestern war das Wetter schlecht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "It rained a lot yesterday, so they went to the swimming pool."
+   },
+   {
+    "q": "Mats arbeitet zurzeit.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "He writes: 'Ich habe zurzeit keinen Urlaub, ich muss arbeiten.'"
+   },
+   {
+    "q": "Mats fliegt im August allein nach Portugal.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "He's flying with his brother (mit meinem Bruder), not alone."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-04",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "type": "email",
+  "title": "Grillen im Garten",
+  "intro": "Karim invites the people from his German course to a barbecue; Merle answers.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Hallo zusammen,",
+      "Hi everyone,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "unser Kurs ist bald zu Ende und ich möchte mit euch feiern!",
+      "our course ends soon and I'd like to celebrate with you!"
+     ],
+     [
+      "Ich lade euch am Samstag, 21. Juni, zum Grillen ein.",
+      "I'm inviting you to a barbecue on Saturday 21 June."
+     ],
+     [
+      "Wir feiern bei mir im Garten, ab 17 Uhr.",
+      "We'll celebrate in my garden, from 5 pm."
+     ],
+     [
+      "Ich kaufe Fleisch, Fisch und Brot.",
+      "I'll buy meat, fish and bread."
+     ],
+     [
+      "Bitte bringt einen Salat oder ein Getränk mit.",
+      "Please bring a salad or a drink."
+     ],
+     [
+      "Bei Regen feiern wir in der Küche, sie ist zum Glück groß.",
+      "If it rains, we'll celebrate in the kitchen – luckily it's big."
+     ],
+     [
+      "Bitte sagt bis Mittwoch zu oder ab.",
+      "Please tell me by Wednesday whether you're coming."
+     ],
+     [
+      "Karim",
+      "Karim"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Lieber Karim,",
+      "Dear Karim,"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "vielen Dank für die Einladung!",
+      "thank you very much for the invitation!"
+     ],
+     [
+      "Am Samstag arbeite ich bis 18 Uhr, dann komme ich sofort zu dir.",
+      "On Saturday I work until 6 pm, then I'll come straight to you."
+     ],
+     [
+      "Ich mache einen Salat mit Tomaten.",
+      "I'll make a tomato salad."
+     ],
+     [
+      "Kann mein Freund Ruben auch mitkommen?",
+      "Can my friend Ruben come too?"
+     ],
+     [
+      "Er kocht sehr gern und hilft dir beim Grillen.",
+      "He loves cooking and will help you with the barbecue."
+     ],
+     [
+      "Liebe Grüße, Merle",
+      "Love, Merle"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "zu Ende",
+    "en": "over, finished"
+   },
+   {
+    "w": "Grillen",
+    "en": "barbecue (grillen: to grill)"
+   },
+   {
+    "w": "zum Glück",
+    "en": "luckily"
+   },
+   {
+    "w": "zu oder ab",
+    "en": "(zusagen / absagen) say yes or no"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Karim feiert das Ende vom Deutschkurs.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The course ends soon and Karim wants to celebrate with the group."
+   },
+   {
+    "q": "Die Gäste sollen Fleisch mitbringen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3",
+     "b2.4"
+    ],
+    "why": "Karim buys the meat himself; the guests bring a salad or a drink."
+   },
+   {
+    "q": "Bei Regen ist die Party im Haus.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.5"
+    ],
+    "why": "If it rains, they celebrate in the kitchen – inside the house."
+   },
+   {
+    "q": "Merle ist um 17 Uhr noch bei der Arbeit.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2",
+     "b4.1"
+    ],
+    "why": "The party starts at 5 pm, but Merle works until 6 pm."
+   },
+   {
+    "q": "Ruben kocht nicht gern.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.4"
+    ],
+    "why": "Merle writes: 'Er kocht sehr gern' – he loves cooking."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-05",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "sms",
+  "title": "Der Zug kommt später",
+  "intro": "Tilda texts her brother Theo from the train; Theo answers.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Hallo Theo,",
+      "Hi Theo,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "ich sitze im Zug nach Freiburg.",
+      "I'm on the train to Freiburg."
+     ],
+     [
+      "Leider kommt er 40 Minuten später an, um 18.20 Uhr.",
+      "Unfortunately it's arriving 40 minutes late, at 6.20 pm."
+     ],
+     [
+      "Kannst du mich am Bahnhof abholen?",
+      "Can you pick me up at the station?"
+     ],
+     [
+      "Ich habe einen großen Koffer und eine Tasche.",
+      "I've got a big suitcase and a bag."
+     ],
+     [
+      "Ich warte am Eingang vor der Bäckerei.",
+      "I'll wait at the entrance in front of the bakery."
+     ],
+     [
+      "Tilda",
+      "Tilda"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "h",
+    "s": [
+     [
+      "Hi Tilda,",
+      "Hi Tilda,"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "kein Problem, aber ich habe heute kein Auto.",
+      "no problem, but I haven't got the car today."
+     ],
+     [
+      "Unser Vater braucht es, er ist bei Oma.",
+      "Our father needs it; he's at Grandma's."
+     ],
+     [
+      "Ich komme mit der S-Bahn und helfe dir mit dem Koffer.",
+      "I'll come on the S-Bahn and help you with the suitcase."
+     ],
+     [
+      "Dann nehmen wir zusammen ein Taxi nach Hause.",
+      "Then we'll take a taxi home together."
+     ],
+     [
+      "Unsere Mutter kocht heute Abend für uns – es gibt Fisch!",
+      "Our mother is cooking for us this evening – we're having fish!"
+     ],
+     [
+      "Bis gleich! Theo",
+      "See you soon! Theo"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "später an",
+    "en": "(später ankommen) arrive late"
+   },
+   {
+    "w": "abholen",
+    "en": "to pick up, collect"
+   },
+   {
+    "w": "Koffer",
+    "en": "suitcase"
+   },
+   {
+    "w": "S-Bahn",
+    "en": "suburban train"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Tilda kommt nicht pünktlich in Freiburg an.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Her train arrives 40 minutes late."
+   },
+   {
+    "q": "Tilda hat nur eine kleine Tasche.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "She has a big suitcase as well as a bag."
+   },
+   {
+    "q": "Theo holt Tilda mit dem Auto ab.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.0",
+     "b4.2"
+    ],
+    "why": "Theo hasn't got the car today; he comes on the S-Bahn."
+   },
+   {
+    "q": "Tilda und Theo fahren mit dem Taxi nach Hause.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "Theo writes: 'Dann nehmen wir zusammen ein Taxi nach Hause.'"
+   },
+   {
+    "q": "Am Abend essen Tilda und Theo Fisch.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.4"
+    ],
+    "why": "Their mother is cooking fish for them this evening."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-06",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "web",
+  "title": "Wege in der Stadt",
+  "intro": "You are new in town. Read the ads and web pages: post, banks, buses, maps and a kindergarten.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "ad",
+    "s": [
+     [
+      "Post am Rathausplatz",
+      "Post office on Rathausplatz"
+     ],
+     [
+      "Briefe, Briefmarken und Pakete: Montag bis Freitag 9 bis 18 Uhr, Samstag 9 bis 12 Uhr.",
+      "Letters, stamps and parcels: Monday to Friday 9 am to 6 pm, Saturday 9 am to 12 noon."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Kiosk am Bahnhof",
+      "Station kiosk"
+     ],
+     [
+      "Zeitungen, Getränke und Briefmarken.",
+      "Newspapers, drinks and stamps."
+     ],
+     [
+      "Montag bis Sonntag von 6 bis 22 Uhr geöffnet.",
+      "Open Monday to Sunday from 6 am to 10 pm."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Bank Mitte",
+      "Bank Mitte"
+     ],
+     [
+      "Geld bekommen Sie bei uns auch in der Nacht: Der Automat im Eingang ist 24 Stunden geöffnet.",
+      "You can get money from us at night too: the machine in the entrance is open 24 hours."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Bank am Bahnhof",
+      "Bank at the station"
+     ],
+     [
+      "Unser Schalter ist Montag bis Freitag von 9 bis 16 Uhr für Sie da.",
+      "Our counter is open for you Monday to Friday from 9 am to 4 pm."
+     ],
+     [
+      "Wir helfen Ihnen gern bei Fragen zu Ihrem Konto.",
+      "We're happy to help with questions about your account."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Bus zum Flughafen",
+      "Airport bus"
+     ],
+     [
+      "Vom Bahnhof zum Flughafen in 25 Minuten.",
+      "From the station to the airport in 25 minutes."
+     ],
+     [
+      "Ein Ticket kostet 6 Euro.",
+      "A ticket costs 6 euros."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Mit dem Bus in den Urlaub",
+      "On holiday by coach"
+     ],
+     [
+      "Ein Wochenende in Paris oder London: ab 89 Euro.",
+      "A weekend in Paris or London: from 89 euros."
+     ],
+     [
+      "Abfahrt am Bahnhof.",
+      "Departure from the station."
+     ]
+    ],
+    "label": "f"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Buchladen Seite 7",
+      "Seite 7 bookshop"
+     ],
+     [
+      "Reiseführer und Pläne von der Stadt, ab 8 Euro.",
+      "Travel guides and maps of the town, from 8 euros."
+     ]
+    ],
+    "label": "g"
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "s": [
+     [
+      "Information am Bahnhof",
+      "Information at the station"
+     ],
+     [
+      "Neu in der Stadt? Bei uns gibt es Pläne von der Stadt.",
+      "New in town? We have maps of the town."
+     ],
+     [
+      "Sie kosten nichts!",
+      "They're free!"
+     ]
+    ],
+    "label": "h"
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "s": [
+     [
+      "Kindergarten Löwenzahn",
+      "Löwenzahn kindergarten"
+     ],
+     [
+      "Ab September haben wir freie Plätze für Kinder von 3 bis 6 Jahren.",
+      "From September we have free places for children aged 3 to 6."
+     ]
+    ],
+    "label": "i"
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "s": [
+     [
+      "Lindenschule",
+      "Lindenschule"
+     ],
+     [
+      "Anmeldung für die Klasse 1: bis 31. März, Montag bis Freitag 8 bis 12 Uhr.",
+      "Registration for year 1: by 31 March, Monday to Friday 8 am to 12 noon."
+     ]
+    ],
+    "label": "j"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Pakete",
+    "en": "parcels"
+   },
+   {
+    "w": "Buchladen",
+    "en": "bookshop"
+   },
+   {
+    "w": "Kiosk",
+    "en": "kiosk, newsagent"
+   },
+   {
+    "w": "Schalter",
+    "en": "counter"
+   },
+   {
+    "w": "Konto",
+    "en": "(bank) account"
+   },
+   {
+    "w": "Pläne",
+    "en": "maps (Plan: map, plan)"
+   },
+   {
+    "w": "Anmeldung",
+    "en": "registration"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Es ist Sonntag. Sie brauchen Briefmarken.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "The station kiosk (ad b) sells stamps and is open on Sunday; the post office (ad a) is closed on Sundays."
+   },
+   {
+    "q": "Es ist 21 Uhr. Sie brauchen Geld.",
+    "format": "match",
+    "opts": [
+     "c",
+     "d"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Bank Mitte's machine (ad c) is open 24 hours; the counter in ad d closes at 4 pm."
+   },
+   {
+    "q": "Sie fliegen heute nach London. Sie möchten mit dem Bus zum Flughafen fahren.",
+    "format": "match",
+    "opts": [
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.0",
+     "b5.1"
+    ],
+    "why": "Ad e is the bus from the station to the airport; ad f is a coach holiday to Paris or London."
+   },
+   {
+    "q": "Sie möchten einen Plan von der Stadt, aber Sie möchten kein Geld bezahlen.",
+    "format": "match",
+    "opts": [
+     "g",
+     "h"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.1",
+     "b8.2"
+    ],
+    "why": "At the information office (ad h) the maps are free; the bookshop (ad g) sells them from 8 euros."
+   },
+   {
+    "q": "Ihre Tochter ist drei Jahre alt. Sie suchen einen Platz für sie.",
+    "format": "match",
+    "opts": [
+     "i",
+     "j"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.1"
+    ],
+    "why": "Kindergarten Löwenzahn (ad i) has places for children aged 3 to 6; ad j is a school, for year 1."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-07",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "ad",
+  "title": "Arzt, Apotheke, Sport",
+  "intro": "Ads for doctors, chemists and courses.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "ad",
+    "s": [
+     [
+      "Praxis Dr. Haupt",
+      "Dr Haupt's practice"
+     ],
+     [
+      "Montag bis Freitag 8 bis 12 Uhr, Mittwoch auch 15 bis 19 Uhr.",
+      "Monday to Friday 8 am to 12 noon, Wednesday also 3 pm to 7 pm."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Praxis Dr. Brehm",
+      "Dr Brehm's practice"
+     ],
+     [
+      "Montag, Dienstag und Donnerstag 8 bis 18 Uhr.",
+      "Monday, Tuesday and Thursday 8 am to 6 pm."
+     ],
+     [
+      "Mittwoch und Freitag nur 8 bis 12 Uhr.",
+      "Wednesday and Friday only 8 am to 12 noon."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Apotheke am Bahnhof",
+      "Chemist's at the station"
+     ],
+     [
+      "Montag bis Samstag 8 bis 20 Uhr.",
+      "Monday to Saturday 8 am to 8 pm."
+     ],
+     [
+      "Bei uns finden Sie Tabletten, Tee und mehr für Ihre Gesundheit.",
+      "Here you'll find tablets, tea and more for your health."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Apotheke Sonne",
+      "Apotheke Sonne"
+     ],
+     [
+      "Sie sind krank und können nicht aus dem Haus?",
+      "Are you ill and can't leave the house?"
+     ],
+     [
+      "Rufen Sie an: 0711 24 68 10. Wir bringen Ihre Medikamente nach Hause.",
+      "Call 0711 24 68 10. We'll bring your medicine to your home."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Yoga am Abend",
+      "Yoga in the evening"
+     ],
+     [
+      "Dienstag und Donnerstag um 19 Uhr in der Schule am Bahnhof.",
+      "Tuesday and Thursday at 7 pm at the school by the station."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Sport am Wochenende",
+      "Sport at the weekend"
+     ],
+     [
+      "Wir laufen und spielen Fußball: Samstag und Sonntag um 10 Uhr.",
+      "We run and play football: Saturday and Sunday at 10 am."
+     ],
+     [
+      "Kommen Sie einfach!",
+      "Just come along!"
+     ]
+    ],
+    "label": "f"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Kurs: Hilfe bei Unfällen",
+      "Course: help after accidents"
+     ],
+     [
+      "Was mache ich bei einem Unfall? Das lernen Sie hier.",
+      "What do I do after an accident? You'll learn that here."
+     ],
+     [
+      "Samstag, 9 bis 16 Uhr, 30 Euro.",
+      "Saturday, 9 am to 4 pm, 30 euros."
+     ]
+    ],
+    "label": "g"
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "s": [
+     [
+      "Kurs: Gesund essen",
+      "Course: eating healthily"
+     ],
+     [
+      "Wir kochen zusammen mit Obst und Gemüse.",
+      "We cook together with fruit and vegetables."
+     ],
+     [
+      "Freitag, 18 bis 21 Uhr.",
+      "Friday, 6 pm to 9 pm."
+     ]
+    ],
+    "label": "h"
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "s": [
+     [
+      "Schwimmbad am See",
+      "Lakeside swimming pool"
+     ],
+     [
+      "Montag bis Sonntag 7 bis 20 Uhr. Eintritt: 4 Euro.",
+      "Monday to Sunday 7 am to 8 pm. Admission: 4 euros."
+     ]
+    ],
+    "label": "i"
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "s": [
+     [
+      "Schwimmen lernen – auch mit 40 oder 60!",
+      "Learn to swim – even at 40 or 60!"
+     ],
+     [
+      "Sie können nicht schwimmen? Kein Problem!",
+      "Can't swim? No problem!"
+     ],
+     [
+      "Kurs: Montag um 19 Uhr im Schwimmbad am See.",
+      "Course: Monday at 7 pm at the lakeside pool."
+     ]
+    ],
+    "label": "j"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Praxis",
+    "en": "(doctor's) practice"
+   },
+   {
+    "w": "Apotheke",
+    "en": "chemist's, pharmacy"
+   },
+   {
+    "w": "Medikamente",
+    "en": "medicines"
+   },
+   {
+    "w": "Yoga",
+    "en": "yoga"
+   },
+   {
+    "w": "Unfällen",
+    "en": "(Unfall) accidents"
+   },
+   {
+    "w": "Eintritt",
+    "en": "admission (price)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Es ist Mittwoch, 16 Uhr. Sie brauchen einen Arzt.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b"
+    ],
+    "a": 0,
+    "ev": [
+     "b1.1"
+    ],
+    "why": "Dr Haupt (ad a) is also open on Wednesday from 3 to 7 pm; Dr Brehm (ad b) closes at 12 on Wednesdays."
+   },
+   {
+    "q": "Sie sind krank und brauchen Tabletten. Sie möchten zu Hause bleiben.",
+    "format": "match",
+    "opts": [
+     "c",
+     "d"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "Apotheke Sonne (ad d) brings medicine to your home; for ad c you have to go to the chemist's."
+   },
+   {
+    "q": "Sie möchten Sport machen. Sie haben nur am Wochenende Zeit.",
+    "format": "match",
+    "opts": [
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1"
+    ],
+    "why": "Ad f is on Saturday and Sunday; the yoga in ad e is on Tuesday and Thursday."
+   },
+   {
+    "q": "Sie möchten lernen: Was macht man bei einem Unfall?",
+    "format": "match",
+    "opts": [
+     "g",
+     "h"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.0",
+     "b7.1"
+    ],
+    "why": "Course g teaches what to do after an accident; course h is about cooking."
+   },
+   {
+    "q": "Sie sind 45 Jahre alt und können nicht schwimmen.",
+    "format": "match",
+    "opts": [
+     "i",
+     "j"
+    ],
+    "a": 1,
+    "ev": [
+     "b10.0",
+     "b10.1"
+    ],
+    "why": "Ad j is a course for adults who can't swim yet; ad i only gives the pool's opening times."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-08",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 2",
+  "type": "web",
+  "title": "Hotels, Züge, Urlaub",
+  "intro": "Web pages and ads about hotels, trains, luggage, holidays and travel guides.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "ad",
+    "s": [
+     [
+      "Hotel Elbblick, Hamburg",
+      "Hotel Elbblick, Hamburg"
+     ],
+     [
+      "Doppelzimmer mit Blick auf das Wasser: 160 Euro für eine Nacht.",
+      "Double room with a view of the water: 160 euros a night."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Hotel Mini, Hamburg",
+      "Hotel Mini, Hamburg"
+     ],
+     [
+      "Einzelzimmer ab 39 Euro, Frühstück 6 Euro.",
+      "Single rooms from 39 euros, breakfast 6 euros."
+     ],
+     [
+      "Nur 5 Minuten zum Bahnhof.",
+      "Only 5 minutes to the station."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Reisebüro Weltweit",
+      "Weltweit travel agency"
+     ],
+     [
+      "Flüge nach Berlin ab 49 Euro!",
+      "Flights to Berlin from 49 euros!"
+     ],
+     [
+      "Buchen Sie jetzt.",
+      "Book now."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Wann fährt mein Zug?",
+      "When does my train leave?"
+     ],
+     [
+      "Abfahrt und Ankunft von Zügen: Auskunft am Telefon, 0800 12 34 56.",
+      "Departures and arrivals of trains: information by phone, 0800 12 34 56."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Am Bahnhof: Gepäck abgeben",
+      "At the station: leave your luggage"
+     ],
+     [
+      "Ihr Koffer bleibt bei uns, Sie besichtigen die Stadt.",
+      "Your suitcase stays with us while you see the town."
+     ],
+     [
+      "5 Euro für einen Tag.",
+      "5 euros for one day."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Laden für Koffer und Taschen",
+      "Shop for suitcases and bags"
+     ],
+     [
+      "Neue Koffer jetzt 20 % billiger!",
+      "New suitcases now 20% cheaper!"
+     ]
+    ],
+    "label": "f"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Urlaub für die Familie in Rimini",
+      "Family holiday in Rimini"
+     ],
+     [
+      "Zwei Wochen am Meer, Hotel mit Halbpension.",
+      "Two weeks by the sea, hotel with half board."
+     ],
+     [
+      "Kinder bis 12 Jahre bezahlen nichts.",
+      "Children up to 12 pay nothing."
+     ]
+    ],
+    "label": "g"
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "s": [
+     [
+      "Drei Tage London",
+      "Three days in London"
+     ],
+     [
+      "Mit dem Bus nach London: Wir besichtigen die Stadt.",
+      "By coach to London: we'll see the sights."
+     ],
+     [
+      "Ab 199 Euro, mit Frühstück.",
+      "From 199 euros, with breakfast."
+     ]
+    ],
+    "label": "h"
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "s": [
+     [
+      "Paris im Kino",
+      "Paris at the cinema"
+     ],
+     [
+      "Filme über Paris: Montag, Mittwoch und Freitag um 20 Uhr im Kino am Bahnhof.",
+      "Films about Paris: Monday, Wednesday and Friday at 8 pm at the cinema by the station."
+     ]
+    ],
+    "label": "i"
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "s": [
+     [
+      "Neu im Buchladen",
+      "New in the bookshop"
+     ],
+     [
+      "Der Reiseführer „Paris in 3 Tagen“ – mit vielen Fotos und einem Plan von der Stadt.",
+      "The travel guide 'Paris in 3 Days' – with lots of photos and a map of the city."
+     ]
+    ],
+    "label": "j"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Einzelzimmer",
+    "en": "single room"
+   },
+   {
+    "w": "Buchladen",
+    "en": "bookshop"
+   },
+   {
+    "w": "Auskunft",
+    "en": "information"
+   },
+   {
+    "w": "Gepäck",
+    "en": "luggage"
+   },
+   {
+    "w": "besichtigen",
+    "en": "to see the sights of, to visit"
+   },
+   {
+    "w": "Halbpension",
+    "en": "half board (breakfast and dinner)"
+   },
+   {
+    "w": "Reiseführer",
+    "en": "travel guide (book)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Sie fahren allein nach Hamburg und suchen ein Zimmer für wenig Geld.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Hotel Mini (ad b) has single rooms from 39 euros; the double room in ad a costs 160 euros."
+   },
+   {
+    "q": "Sie möchten wissen: Wann fährt der Zug nach Berlin?",
+    "format": "match",
+    "opts": [
+     "c",
+     "d"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.0",
+     "b4.1"
+    ],
+    "why": "Ad d gives train times by phone; ad c sells flights."
+   },
+   {
+    "q": "Ihr Zug fährt erst am Abend. Sie möchten ohne Koffer die Stadt besichtigen.",
+    "format": "match",
+    "opts": [
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "At ad e you can leave your suitcase for the day; ad f sells new suitcases."
+   },
+   {
+    "q": "Sie möchten im Sommer mit Ihren Kindern Urlaub am Meer machen.",
+    "format": "match",
+    "opts": [
+     "g",
+     "h"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.0",
+     "b7.1"
+    ],
+    "why": "Ad g is a family holiday by the sea; ad h is a coach trip to see London."
+   },
+   {
+    "q": "Sie fliegen bald nach Paris. Sie möchten vorher etwas über die Stadt lesen.",
+    "format": "match",
+    "opts": [
+     "i",
+     "j"
+    ],
+    "a": 1,
+    "ev": [
+     "b10.1"
+    ],
+    "why": "Ad j is a guidebook about Paris to read; ad i is films about Paris at the cinema."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-09",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 2",
+  "type": "web",
+  "title": "Wetter, Blumen, Ostern",
+  "intro": "Web pages and ads: the weather, flowers, Easter, cards and Christmas.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "ad",
+    "s": [
+     [
+      "Wetter am Freitag",
+      "Weather on Friday"
+     ],
+     [
+      "Viel Sonne und wenig Wind, am Nachmittag 22 Grad.",
+      "Lots of sun and little wind, 22 degrees in the afternoon."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Wetter am Sonntag",
+      "Weather on Sunday"
+     ],
+     [
+      "Am Vormittag Regen, am Nachmittag Sonne, 17 Grad.",
+      "Rain in the morning, sun in the afternoon, 17 degrees."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Blumen für Ihre Freunde",
+      "Flowers for your friends"
+     ],
+     [
+      "Bestellen Sie im Internet – wir bringen Ihre Blumen in einem Tag zu Ihren Freunden.",
+      "Order online – we'll take your flowers to your friends within a day."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Für Ihren Garten",
+      "For your garden"
+     ],
+     [
+      "Blumen, Bäume und Gemüse für den Balkon.",
+      "Flowers, trees and vegetables for the balcony."
+     ],
+     [
+      "Montag bis Samstag 9 bis 19 Uhr.",
+      "Monday to Saturday 9 am to 7 pm."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Ostern im Hotel Linde",
+      "Easter at Hotel Linde"
+     ],
+     [
+      "Zwei Nächte für Sie und Ihren Partner, mit Frühstück und Abendessen.",
+      "Two nights for you and your partner, with breakfast and dinner."
+     ],
+     [
+      "Nur 220 Euro!",
+      "Only 220 euros!"
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Ostern im Zoo",
+      "Easter at the zoo"
+     ],
+     [
+      "Am Sonntag suchen Kinder bis 10 Jahre Eier im Zoo.",
+      "On Sunday, children up to 10 look for eggs at the zoo."
+     ],
+     [
+      "Für Kinder ist der Eintritt frei.",
+      "Admission is free for children."
+     ]
+    ],
+    "label": "f"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Papier und Karten",
+      "Paper and cards"
+     ],
+     [
+      "Schöne Karten für Babys, Hochzeiten und Geburtstage.",
+      "Lovely cards for babies, weddings and birthdays."
+     ]
+    ],
+    "label": "g"
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "s": [
+     [
+      "Karten für Konzerte und Partys",
+      "Tickets for concerts and parties"
+     ],
+     [
+      "Kaufen Sie Ihre Karten an der Kasse in der Halle, Montag bis Freitag 10 bis 18 Uhr.",
+      "Buy your tickets at the box office in the hall, Monday to Friday 10 am to 6 pm."
+     ]
+    ],
+    "label": "h"
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "s": [
+     [
+      "Bäume für Weihnachten",
+      "Christmas trees"
+     ],
+     [
+      "Ab 1. Dezember: Kaufen Sie Ihren Baum bei uns – wir bringen ihn auch nach Hause.",
+      "From 1 December: buy your tree from us – we'll also bring it to your home."
+     ]
+    ],
+    "label": "i"
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "s": [
+     [
+      "Weihnachten nicht allein!",
+      "Don't spend Christmas alone!"
+     ],
+     [
+      "Am 24. Dezember feiern wir zusammen im Café Sternchen: Essen, Kuchen und Lieder.",
+      "On 24 December we celebrate together at Café Sternchen: food, cake and songs."
+     ],
+     [
+      "Kommen Sie, ab 18 Uhr!",
+      "Come along, from 6 pm!"
+     ]
+    ],
+    "label": "j"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Grad",
+    "en": "degrees"
+   },
+   {
+    "w": "Abendessen",
+    "en": "dinner"
+   },
+   {
+    "w": "Bäume",
+    "en": "trees"
+   },
+   {
+    "w": "Ostern",
+    "en": "Easter"
+   },
+   {
+    "w": "Eier",
+    "en": "eggs"
+   },
+   {
+    "w": "Konzerte",
+    "en": "concerts"
+   },
+   {
+    "w": "Lieder",
+    "en": "songs"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Heute ist Donnerstag. Sie möchten morgen mit dem Fahrrad an den See fahren. Wie wird das Wetter?",
+    "format": "match",
+    "opts": [
+     "a",
+     "b"
+    ],
+    "a": 0,
+    "ev": [
+     "b1.0",
+     "b1.1"
+    ],
+    "why": "Tomorrow is Friday, and ad a gives Friday's weather; ad b is for Sunday."
+   },
+   {
+    "q": "Ihre Freundin hat Geburtstag. Sie wohnt in einer anderen Stadt. Sie möchten ihr Blumen schicken.",
+    "format": "match",
+    "opts": [
+     "c",
+     "d"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Ad c takes flowers to your friends; ad d sells plants for your own garden."
+   },
+   {
+    "q": "Es ist Ostern. Sie suchen etwas für Ihre Kinder (5 und 7 Jahre).",
+    "format": "match",
+    "opts": [
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1",
+     "b6.2"
+    ],
+    "why": "Ad f is an Easter egg hunt for children up to 10; ad e is a hotel weekend for two adults."
+   },
+   {
+    "q": "Ihre Kollegin hat ein Baby bekommen. Sie möchten ihr eine Karte schreiben.",
+    "format": "match",
+    "opts": [
+     "g",
+     "h"
+    ],
+    "a": 0,
+    "ev": [
+     "b7.1"
+    ],
+    "why": "Ad g sells greeting cards, also for babies; the Karten in ad h are tickets for concerts."
+   },
+   {
+    "q": "Sie sind am 24. Dezember allein und möchten mit anderen Leuten feiern.",
+    "format": "match",
+    "opts": [
+     "i",
+     "j"
+    ],
+    "a": 1,
+    "ev": [
+     "b10.1"
+    ],
+    "why": "Ad j is a Christmas Eve party at Café Sternchen; ad i sells Christmas trees."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-10",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 2",
+  "type": "ad",
+  "title": "Feiern und Geschenke",
+  "intro": "Ads for parties, weddings, festivals and presents.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "ad",
+    "s": [
+     [
+      "Bar Blau",
+      "Bar Blau"
+     ],
+     [
+      "Feiern Sie Ihren Geburtstag bei uns!",
+      "Celebrate your birthday with us!"
+     ],
+     [
+      "Nur ab 18 Jahren, Freitag und Samstag ab 21 Uhr.",
+      "Over-18s only, Friday and Saturday from 9 pm."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Geburtstag im Schwimmbad",
+      "Birthday party at the swimming pool"
+     ],
+     [
+      "Für Kinder ab 5 Jahren: Wir schwimmen, spielen und essen Kuchen.",
+      "For children from 5: we swim, play games and eat cake."
+     ],
+     [
+      "Bis 12 Kinder, 120 Euro.",
+      "Up to 12 children, 120 euros."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Restaurant am Wasser",
+      "Restaurant am Wasser"
+     ],
+     [
+      "Wir feiern Ihre Hochzeit: Platz für 100 Gäste, mit großem Garten.",
+      "We'll host your wedding: room for 100 guests, with a big garden."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Restaurant Oben",
+      "Restaurant Oben"
+     ],
+     [
+      "Im 8. Stock, mit Blick über die Stadt.",
+      "On the 8th floor, with a view over the town."
+     ],
+     [
+      "Platz für 60 Gäste.",
+      "Room for 60 guests."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Fest im Herbst",
+      "Autumn festival"
+     ],
+     [
+      "Samstag, 12. Oktober, ab 19 Uhr in der Halle am Bahnhof.",
+      "Saturday 12 October, from 7 pm in the hall by the station."
+     ],
+     [
+      "Essen, Wein und Lieder.",
+      "Food, wine and songs."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Fest im Sommer",
+      "Summer festival"
+     ],
+     [
+      "Samstag, 19. Juli, ab 14 Uhr draußen am Rathausplatz.",
+      "Saturday 19 July, from 2 pm, outdoors on Rathausplatz."
+     ],
+     [
+      "Mit Essen und Getränken – auch für Kinder.",
+      "With food and drinks – for children too."
+     ]
+    ],
+    "label": "f"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Möbel für Ihre Küche",
+      "Furniture for your kitchen"
+     ],
+     [
+      "Neue Tische und Stühle jetzt 30 % billiger!",
+      "New tables and chairs now 30% cheaper!"
+     ]
+    ],
+    "label": "g"
+   },
+   {
+    "id": "b8",
+    "t": "ad",
+    "s": [
+     [
+      "Party-Service Konfetti",
+      "Konfetti party service"
+     ],
+     [
+      "Sie feiern? Wir bringen Tische, Stühle und Gläser für einen Abend.",
+      "Having a party? We'll bring tables, chairs and glasses for one evening."
+     ],
+     [
+      "Am nächsten Tag holen wir sie ab.",
+      "We'll collect them the next day."
+     ]
+    ],
+    "label": "h"
+   },
+   {
+    "id": "b9",
+    "t": "ad",
+    "s": [
+     [
+      "Bücher zu Weihnachten",
+      "Books for Christmas"
+     ],
+     [
+      "Bücher über Essen, Reisen und Gärten – ein schönes Geschenk für Ihre Familie!",
+      "Books about food, travel and gardens – a lovely present for your family!"
+     ]
+    ],
+    "label": "i"
+   },
+   {
+    "id": "b10",
+    "t": "ad",
+    "s": [
+     [
+      "Für Kinder",
+      "For children"
+     ],
+     [
+      "Bei uns finden Sie Geschenke für Babys und Kinder bis 10 Jahre.",
+      "Here you'll find presents for babies and children up to 10."
+     ]
+    ],
+    "label": "j"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Hochzeit",
+    "en": "wedding"
+   },
+   {
+    "w": "Gäste",
+    "en": "guests"
+   },
+   {
+    "w": "Herbst",
+    "en": "autumn"
+   },
+   {
+    "w": "Lieder",
+    "en": "songs"
+   },
+   {
+    "w": "Party-Service",
+    "en": "party hire service"
+   },
+   {
+    "w": "Gärten",
+    "en": "gardens"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihr Sohn wird sechs. Er möchte mit seinen Freunden feiern, aber nicht zu Hause.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.0",
+     "b2.1"
+    ],
+    "why": "Ad b is a birthday party at the pool for children from 5; Bar Blau (ad a) is for over-18s only."
+   },
+   {
+    "q": "Sie heiraten im Mai. Sie möchten mit 80 Gästen feiern, auch draußen.",
+    "format": "match",
+    "opts": [
+     "c",
+     "d"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Restaurant am Wasser (ad c) has room for 100 guests and a big garden; ad d only has room for 60."
+   },
+   {
+    "q": "Es ist Juli. Sie möchten mit Ihrer Familie draußen ein Fest besuchen.",
+    "format": "match",
+    "opts": [
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b6.1",
+     "b6.2"
+    ],
+    "why": "The summer festival (ad f) is outdoors in July and is for children too; ad e is indoors in October."
+   },
+   {
+    "q": "Sie feiern am Samstag mit vielen Gästen. Sie brauchen für einen Abend Tische und Stühle.",
+    "format": "match",
+    "opts": [
+     "g",
+     "h"
+    ],
+    "a": 1,
+    "ev": [
+     "b8.1",
+     "b8.2"
+    ],
+    "why": "The party service (ad h) brings tables and chairs for one evening and collects them; ad g sells new furniture."
+   },
+   {
+    "q": "Ihre Mutter kocht und reist gern. Sie suchen ein Geschenk für sie.",
+    "format": "match",
+    "opts": [
+     "i",
+     "j"
+    ],
+    "a": 0,
+    "ev": [
+     "b9.1"
+    ],
+    "why": "Ad i has books about food and travel; ad j has presents for babies and children."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-11",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "type": "sign",
+  "title": "Unterwegs in der Stadt",
+  "intro": "Signs at a bus stop, a bank, a crossroads, an S-Bahn station and a supermarket.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "sign",
+    "s": [
+     [
+      "Haltestelle Kleistplatz",
+      "Kleistplatz stop"
+     ],
+     [
+      "Vom 3. bis 14. März fahren hier keine Busse.",
+      "From 3 to 14 March no buses stop here."
+     ],
+     [
+      "Bitte gehen Sie zur Haltestelle Post, 200 Meter geradeaus.",
+      "Please walk to the Post stop, 200 metres straight ahead."
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "sign",
+    "s": [
+     [
+      "Bank am Kleistplatz",
+      "Bank am Kleistplatz"
+     ],
+     [
+      "Schalter: Montag bis Freitag 9 bis 13 Uhr und 14 bis 17 Uhr.",
+      "Counter: Monday to Friday 9 am to 1 pm and 2 pm to 5 pm."
+     ],
+     [
+      "Unser Automat im Eingang ist 24 Stunden für Sie da.",
+      "Our cash machine in the entrance is there for you 24 hours a day."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "sign",
+    "s": [
+     [
+      "Vorsicht!",
+      "Caution!"
+     ],
+     [
+      "Die Ampel an der Kreuzung ist kaputt.",
+      "The traffic lights at the crossroads are out of order."
+     ],
+     [
+      "Bitte fahren Sie langsam.",
+      "Please drive slowly."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "sign",
+    "s": [
+     [
+      "S-Bahn S2",
+      "S-Bahn S2"
+     ],
+     [
+      "Montag bis Freitag fährt die S2 vom Bahnhof bis zum Flughafen.",
+      "Monday to Friday the S2 runs from the station to the airport."
+     ],
+     [
+      "Am Samstag und Sonntag fährt sie nur bis zur Haltestelle Neustadt.",
+      "On Saturday and Sunday it only goes as far as the Neustadt stop."
+     ],
+     [
+      "Weiter zum Flughafen mit dem Bus 30.",
+      "Continue to the airport on bus 30."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "sign",
+    "s": [
+     [
+      "Supermarkt in der Uhlandstraße",
+      "Supermarket on Uhlandstraße"
+     ],
+     [
+      "Neue Zeiten: Montag bis Freitag 7 bis 22 Uhr, Samstag 7 bis 20 Uhr.",
+      "New opening hours: Monday to Friday 7 am to 10 pm, Saturday 7 am to 8 pm."
+     ],
+     [
+      "Sonntag geschlossen.",
+      "Closed on Sunday."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Meter",
+    "en": "metres"
+   },
+   {
+    "w": "Schalter",
+    "en": "counter"
+   },
+   {
+    "w": "Automat",
+    "en": "(cash) machine"
+   },
+   {
+    "w": "Ampel",
+    "en": "traffic lights"
+   },
+   {
+    "w": "Kreuzung",
+    "en": "crossroads"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Am 10. März können Sie hier in den Bus einsteigen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b1.1",
+     "b1.2"
+    ],
+    "why": "From 3 to 14 March no buses stop here; you walk to the Post stop instead."
+   },
+   {
+    "q": "Sie können hier am Samstag Geld bekommen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "The counter is closed on Saturday, but the machine in the entrance works 24 hours a day."
+   },
+   {
+    "q": "An der Kreuzung müssen die Autos langsam fahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1",
+     "b3.2"
+    ],
+    "why": "The traffic lights are broken, so drivers are asked to go slowly."
+   },
+   {
+    "q": "Am Sonntag fährt die S2 bis zum Flughafen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2",
+     "b4.3"
+    ],
+    "why": "At the weekend the S2 only goes to Neustadt; from there you take bus 30 to the airport."
+   },
+   {
+    "q": "Am Samstag können Sie um 21 Uhr hier einkaufen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "On Saturday the supermarket closes at 8 pm (20 Uhr)."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-12",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "type": "notice",
+  "title": "Beim Arzt und im Schwimmbad",
+  "intro": "Notices at a doctor's practice, a waiting room, a chemist's, a swimming pool and a hospital.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "sign",
+    "s": [
+     [
+      "Praxis Dr. Ahrens",
+      "Dr Ahrens's practice"
+     ],
+     [
+      "Wir haben vom 4. bis 15. August Urlaub.",
+      "We are on holiday from 4 to 15 August."
+     ],
+     [
+      "In dieser Zeit hilft Ihnen Dr. Kranich, Bahnhofstraße 8.",
+      "During that time Dr Kranich, Bahnhofstraße 8, will help you."
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "sign",
+    "s": [
+     [
+      "Wartezimmer",
+      "Waiting room"
+     ],
+     [
+      "Bitte machen Sie hier Ihr Handy aus.",
+      "Please switch off your mobile phone here."
+     ],
+     [
+      "Telefonieren Sie bitte draußen. Danke!",
+      "Please make phone calls outside. Thank you!"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "sign",
+    "s": [
+     [
+      "Apotheke im Bahnhof",
+      "Chemist's in the station"
+     ],
+     [
+      "Geöffnet: Montag bis Samstag 8 bis 19 Uhr.",
+      "Open: Monday to Saturday 8 am to 7 pm."
+     ],
+     [
+      "Heute von 12.30 bis 14 Uhr geschlossen.",
+      "Closed today from 12.30 to 2 pm."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "sign",
+    "s": [
+     [
+      "Schwimmbad",
+      "Swimming pool"
+     ],
+     [
+      "Kinder unter 8 Jahren dürfen nur mit Mutter oder Vater ins Wasser.",
+      "Children under 8 may only go in the water with their mother or father."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "sign",
+    "s": [
+     [
+      "Krankenhaus – 3. Stock",
+      "Hospital – 3rd floor"
+     ],
+     [
+      "Rauchen verboten!",
+      "No smoking!"
+     ],
+     [
+      "Bitte rauchen Sie nur draußen im Garten.",
+      "Please only smoke outside in the garden."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Praxis",
+    "en": "(doctor's) practice"
+   },
+   {
+    "w": "Wartezimmer",
+    "en": "waiting room"
+   },
+   {
+    "w": "machen Sie hier Ihr Handy aus",
+    "en": "(ausmachen) switch off your mobile here"
+   },
+   {
+    "w": "unter",
+    "en": "under"
+   },
+   {
+    "w": "verboten",
+    "en": "not allowed"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Am 10. August ist die Praxis von Dr. Ahrens geschlossen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b1.1"
+    ],
+    "why": "The practice is on holiday from 4 to 15 August, and the 10th is in between."
+   },
+   {
+    "q": "Im Wartezimmer dürfen Sie telefonieren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "The sign asks you to switch off your phone here and to make calls outside."
+   },
+   {
+    "q": "Sie können heute um 15 Uhr in der Apotheke Medikamente kaufen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1",
+     "b3.2"
+    ],
+    "why": "It's only closed from 12.30 to 2 pm today; at 3 pm it's open again."
+   },
+   {
+    "q": "Ein Kind mit 6 Jahren darf hier nicht allein schwimmen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Children under 8 may only go in the water with a parent."
+   },
+   {
+    "q": "Im 3. Stock dürfen Patienten im Zimmer rauchen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "Smoking is not allowed there; you may only smoke outside in the garden."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-13",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "type": "sign",
+  "title": "Am Bahnhof und am Flughafen",
+  "intro": "Signs at a station, a hotel, an airport and a bus stop, and a poster for a coach trip.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "sign",
+    "s": [
+     [
+      "Gleis 7",
+      "Platform 7"
+     ],
+     [
+      "Zug 2034 nach Aachen, Abfahrt 14.05 Uhr.",
+      "Train 2034 to Aachen, departure 14.05."
+     ],
+     [
+      "Heute fährt der Zug von Gleis 9 ab.",
+      "Today the train leaves from platform 9."
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "sign",
+    "s": [
+     [
+      "Hotel zur Linde – Rezeption",
+      "Hotel zur Linde – reception"
+     ],
+     [
+      "Wir sind von 7 bis 22 Uhr für Sie da.",
+      "We're here for you from 7 am to 10 pm."
+     ],
+     [
+      "Kommen Sie später an? Bitte rufen Sie uns vor 22 Uhr an: 0761 55 32 10.",
+      "Arriving later? Please call us before 10 pm: 0761 55 32 10."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "sign",
+    "s": [
+     [
+      "Flughafen – Abflug",
+      "Airport – departures"
+     ],
+     [
+      "Flüge nach London, Paris und Madrid: Terminal 2.",
+      "Flights to London, Paris and Madrid: Terminal 2."
+     ],
+     [
+      "Der Bus zum Terminal 2 fährt hier ab.",
+      "The bus to Terminal 2 leaves from here."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "sign",
+    "s": [
+     [
+      "Bus 48",
+      "Bus 48"
+     ],
+     [
+      "Bitte kaufen Sie Ihre Fahrkarte am Automaten an der Haltestelle.",
+      "Please buy your ticket from the machine at the stop."
+     ],
+     [
+      "Im Bus gibt es keine Fahrkarten.",
+      "There are no tickets on the bus."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "sign",
+    "s": [
+     [
+      "Reise mit dem Bus nach Salzburg",
+      "Coach trip to Salzburg"
+     ],
+     [
+      "Abfahrt: Samstag, 6 Uhr, vor dem Bahnhof.",
+      "Departure: Saturday, 6 am, in front of the station."
+     ],
+     [
+      "Bitte nehmen Sie Ihren Pass oder Ihren Ausweis mit.",
+      "Please bring your passport or your ID card."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gleis",
+    "en": "platform, track"
+   },
+   {
+    "w": "Terminal",
+    "en": "terminal (airport building)"
+   },
+   {
+    "w": "Rezeption",
+    "en": "reception"
+   },
+   {
+    "w": "Abflug",
+    "en": "departure (of a plane)"
+   },
+   {
+    "w": "Automaten",
+    "en": "(Automat) machine"
+   },
+   {
+    "w": "Ausweis",
+    "en": "ID card"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Der Zug nach Aachen fährt heute von Gleis 7 ab.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b1.2"
+    ],
+    "why": "Today the train leaves from platform 9, not 7."
+   },
+   {
+    "q": "Um 23 Uhr ist die Rezeption geöffnet.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Reception is open from 7 am to 10 pm; later guests must call before 10."
+   },
+   {
+    "q": "Sie fliegen nach Paris. Sie müssen zum Terminal 2 fahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Flights to London, Paris and Madrid leave from Terminal 2."
+   },
+   {
+    "q": "Sie können im Bus eine Fahrkarte kaufen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "You buy your ticket from the machine at the stop; there are no tickets on the bus."
+   },
+   {
+    "q": "Für die Reise nach Salzburg brauchen Sie einen Pass oder einen Ausweis.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "The poster asks you to bring your passport or ID card."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-14",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "type": "notice",
+  "title": "Feste, Ferien und Wetter",
+  "intro": "Notices at a school, an outdoor pool, in a block of flats, at a restaurant and at the zoo.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "sign",
+    "s": [
+     [
+      "Liebe Eltern,",
+      "Dear parents,"
+     ],
+     [
+      "am Freitag, 27. Juni, feiern wir in der Schule ein Fest.",
+      "on Friday 27 June we're having a party at school."
+     ],
+     [
+      "Der Unterricht endet am Freitag schon um 11 Uhr.",
+      "On Friday lessons end early, at 11 am."
+     ],
+     [
+      "Das Fest beginnt um 12 Uhr im Garten – kommen Sie auch!",
+      "The party starts at 12 noon in the garden – do come too!"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "sign",
+    "s": [
+     [
+      "Schwimmbad Sonnenberg",
+      "Sonnenberg outdoor pool"
+     ],
+     [
+      "Im Sommer: Montag bis Sonntag von 9 bis 20 Uhr geöffnet.",
+      "In summer: open Monday to Sunday, 9 am to 8 pm."
+     ],
+     [
+      "Bei Regen ist das Bad geschlossen.",
+      "The pool is closed when it rains."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "sign",
+    "s": [
+     [
+      "Hallo zusammen!",
+      "Hello everyone!"
+     ],
+     [
+      "Am Samstag, 6. September, heiraten wir!",
+      "We're getting married on Saturday 6 September!"
+     ],
+     [
+      "Wir feiern ab 18 Uhr bei uns im Garten.",
+      "We're celebrating in our garden from 6 pm."
+     ],
+     [
+      "Es wird vielleicht ein bisschen laut. Kommen Sie auch und feiern Sie mit!",
+      "It may get a bit loud. Come along and celebrate with us!"
+     ],
+     [
+      "Mira und Jonte, 2. Stock",
+      "Mira and Jonte, 2nd floor"
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "sign",
+    "s": [
+     [
+      "Restaurant Adler",
+      "Restaurant Adler"
+     ],
+     [
+      "Liebe Gäste, vom 24. bis 26. Dezember ist unser Restaurant geschlossen.",
+      "Dear guests, our restaurant is closed from 24 to 26 December."
+     ],
+     [
+      "Ab 27. Dezember sind wir ab 11 Uhr für Sie da.",
+      "From 27 December we're open for you from 11 am."
+     ],
+     [
+      "Frohe Weihnachten!",
+      "Merry Christmas!"
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "sign",
+    "s": [
+     [
+      "Zoo – Information",
+      "Zoo – information"
+     ],
+     [
+      "Heute gibt es viel Wind und Regen.",
+      "Today there's a lot of wind and rain."
+     ],
+     [
+      "Wir schließen den Zoo schon um 14 Uhr.",
+      "We're closing the zoo early, at 2 pm."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Unterricht",
+    "en": "lessons"
+   },
+   {
+    "w": "Bad",
+    "en": "(swimming) pool"
+   },
+   {
+    "w": "heiraten",
+    "en": "to get married"
+   },
+   {
+    "w": "Frohe Weihnachten",
+    "en": "Merry Christmas"
+   },
+   {
+    "w": "Zoo",
+    "en": "zoo"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Am Freitag haben die Kinder nur am Vormittag Unterricht.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b1.2"
+    ],
+    "why": "Lessons end at 11 am on Friday, so there are only morning lessons."
+   },
+   {
+    "q": "Es regnet. Sie können heute nicht im Schwimmbad Sonnenberg schwimmen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "The pool is closed when it rains (bei Regen)."
+   },
+   {
+    "q": "Mira und Jonte feiern in ihrer Wohnung.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "They celebrate in the garden (im Garten), not in their flat."
+   },
+   {
+    "q": "Am 26. Dezember können Sie hier essen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "The restaurant is closed from 24 to 26 December and opens again on the 27th."
+   },
+   {
+    "q": "Heute können Sie am Vormittag in den Zoo gehen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "The zoo only closes early, at 2 pm, so it is open in the morning."
+   }
+  ]
+ },
+ {
+  "id": "a1-rx-15",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "type": "sign",
+  "title": "Schilder an Haus und Straße",
+  "intro": "Signs at a post office, on a street, at a block of flats, on a ticket machine and at a bus stop.",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "sign",
+    "s": [
+     [
+      "Post",
+      "Post office"
+     ],
+     [
+      "Ab 1. April finden Sie uns im Supermarkt am Bahnhof.",
+      "From 1 April you'll find us in the supermarket at the station."
+     ],
+     [
+      "Hier ist die Post dann geschlossen.",
+      "This post office will then be closed."
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "sign",
+    "s": [
+     [
+      "Mozartstraße",
+      "Mozartstraße"
+     ],
+     [
+      "Am Samstag von 10 bis 22 Uhr feiern wir hier ein Fest.",
+      "On Saturday from 10 am to 10 pm we're having a street party here."
+     ],
+     [
+      "Die Straße ist dann für Autos geschlossen.",
+      "The street will then be closed to cars."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "sign",
+    "s": [
+     [
+      "Bitte keine Fahrräder an die Tür stellen!",
+      "Please don't put bicycles against the door!"
+     ],
+     [
+      "Platz für Fahrräder finden Sie hinten im Garten.",
+      "You'll find room for bikes at the back, in the garden."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "sign",
+    "s": [
+     [
+      "Automat für Fahrkarten",
+      "Ticket machine"
+     ],
+     [
+      "Hier können Sie nicht bar bezahlen.",
+      "You can't pay cash here."
+     ],
+     [
+      "Bitte bezahlen Sie mit Karte.",
+      "Please pay by card."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "sign",
+    "s": [
+     [
+      "Bus 12",
+      "Bus 12"
+     ],
+     [
+      "Ab Montag fährt der Bus 12 nicht mehr zum Krankenhaus.",
+      "From Monday, bus 12 no longer goes to the hospital."
+     ],
+     [
+      "Bitte nehmen Sie die Straßenbahn 4.",
+      "Please take tram 4."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Supermarkt",
+    "en": "supermarket"
+   },
+   {
+    "w": "hinten",
+    "en": "at the back"
+   },
+   {
+    "w": "Automat",
+    "en": "machine"
+   },
+   {
+    "w": "bar",
+    "en": "in cash"
+   },
+   {
+    "w": "nicht mehr",
+    "en": "no longer"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Im April ist die Post im Supermarkt.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b1.1"
+    ],
+    "why": "From 1 April the post office is in the supermarket at the station."
+   },
+   {
+    "q": "Am Samstag können Sie mit dem Auto durch die Mozartstraße fahren.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1",
+     "b2.2"
+    ],
+    "why": "There is a street party on Saturday, and the street is closed to cars."
+   },
+   {
+    "q": "Sie können Ihr Fahrrad vor die Tür stellen.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.0",
+     "b3.1"
+    ],
+    "why": "Bikes must not stand at the door; they go at the back, in the garden."
+   },
+   {
+    "q": "An diesem Automaten brauchen Sie eine Karte.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "You can't pay cash at this machine, only by card."
+   },
+   {
+    "q": "Ab Montag fahren Sie mit dem Bus 12 zum Krankenhaus.",
+    "format": "rf",
+    "opts": [
+     "richtig",
+     "falsch"
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "From Monday bus 12 no longer goes to the hospital; you take tram 4."
+   }
+  ]
+ }
+]
