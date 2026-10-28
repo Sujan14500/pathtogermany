@@ -116,6 +116,7 @@ der	Berg	n	7
 der	Beruf	n	3
 	besetzt	adj	11
 	besichtigen	v	11
+die	Besserung	n	8
 	bestellen	v	4
 	besuchen	v	7
 das	Bett	n	5
@@ -922,6 +923,7 @@ der	Wochentag	n	6
 	woher	adv	1
 	wohin	adv	1
 	wohnen	v	2
+der	Wohnort	n	1
 die	Wohnung	n	5
 das	Wohnzimmer	n	5
 die	Wolke	n	12
@@ -930,6 +932,7 @@ das	Wort	n	1
 	wunderbar	adj	7
 	wünschen	v	12
 das	Yoga	n	6
+die	Zahl	n	1
 	zahlen	v	4
 der	Zahn	n	10
 	zehn	num	1

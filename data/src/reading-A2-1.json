@@ -917,8 +917,8 @@
       "From 1 May I will work there in Malte's team."
      ],
      [
-      "Am Anfang mache ich drei Monate ein Praktikum, weil mein Deutsch noch nicht so gut ist.",
-      "At first I will do a three-month internship, because my German isn't that good yet."
+      "Die ersten drei Monate sind eine Probezeit – das ist in Deutschland ganz normal.",
+      "The first three months are a trial period – that's quite normal in Germany."
      ],
      [
       "Danach bekomme ich hoffentlich einen festen Vertrag.",
@@ -987,6 +987,10 @@
     "en": "software company"
    },
    {
+    "w": "Probezeit",
+    "en": "trial period (the first months in a new job)"
+   },
+   {
     "w": "einen festen Vertrag",
     "en": "a permanent contract"
    },
@@ -1024,18 +1028,18 @@
     "why": "\"gestern hat mich die Chefin angerufen\"; the interview was last week."
    },
    {
-    "q": "Priya macht am Anfang ein Praktikum, weil …",
+    "q": "In den ersten drei Monaten …",
     "format": "abc",
     "opts": [
-     "die Firma nur Praktikanten sucht.",
-     "ihr Deutsch noch nicht so gut ist.",
-     "sie noch an der Universität ist."
+     "macht Priya ein Praktikum.",
+     "hat Priya eine Probezeit.",
+     "verdient Priya noch kein Geld."
     ],
     "a": 1,
     "ev": [
      "b3.1"
     ],
-    "why": "She writes: \"weil mein Deutsch noch nicht so gut ist\"."
+    "why": "She writes: \"Die ersten drei Monate sind eine Probezeit\" – a trial period, not an internship. She is paid from the start; the pay is just not very high at first."
    },
    {
     "q": "Am Freitag …",

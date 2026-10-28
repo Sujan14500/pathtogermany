@@ -3,12 +3,12 @@
   "id": "b1-w-01",
   "station": 1,
   "part": "Teil 1",
-  "task_en": "You moved into a flat-share (WG) a month ago. Your friend Lena wants to know how you're getting on. Write her an email (about 80 words).",
-  "task_de": "Sie sind vor einem Monat in eine Wohngemeinschaft (WG) gezogen. Ihre Freundin Lena möchte wissen, wie es Ihnen dort gefällt. Schreiben Sie Lena eine E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
+  "task_en": "You live at Bergstraße 9 in Cologne, an old house with ten flats. Your friend Miriam from Munich wants to know what living with your neighbours is like. Write her an email (about 80 words).",
+  "task_de": "Sie wohnen in der Bergstraße 9 in Köln, in einem alten Haus mit zehn Wohnungen. Ihre Freundin Miriam aus München möchte wissen, wie das Zusammenleben mit den Nachbarn ist. Schreiben Sie Miriam eine E-Mail (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten.",
   "points": [
-   "Beschreiben Sie: Wer wohnt mit Ihnen in der WG?",
+   "Beschreiben Sie: Wer wohnt mit Ihnen im Haus?",
    "Begründen Sie: Was ist im Zusammenleben manchmal schwierig?",
-   "Machen Sie Lena einen Vorschlag für einen Besuch."
+   "Machen Sie Miriam einen Vorschlag für einen Besuch."
   ],
   "words": [
    70,
@@ -16,16 +16,16 @@
   ],
   "phrases": [
    [
-    "Liebe Lena, / Lieber Jonas,",
-    "Dear Lena, / Dear Jonas, (informal)"
+    "Liebe Miriam, / Lieber Jonas,",
+    "Dear Miriam, / Dear Jonas, (informal)"
    ],
    [
     "Vielen Dank für deine Nachricht!",
     "Thanks a lot for your message!"
    ],
    [
-    "Ich wohne mit … zusammen, der/die …",
-    "I live with …, who …"
+    "Im ersten Stock wohnt …, der/die …",
+    "On the first floor there's …, who …"
    ],
    [
     "Schwierig ist nur, dass …",
@@ -40,12 +40,12 @@
     "Love / See you soon!"
    ]
   ],
-  "model": "Liebe Lena,\nvielen Dank für deine Nachricht! Mir geht es in der WG richtig gut. Ich wohne mit zwei netten Leuten zusammen: Tom, der Medizin studiert, und Nele, die in einem Café arbeitet. Schwierig ist nur das Putzen. Die Küche, die wir alle benutzen, ist oft unordentlich, weil wir noch keinen Putzplan haben. Darüber sprechen wir am Sonntag. Hast du Lust, mich nächsten Samstag zu besuchen? Dann koche ich für uns und du lernst die beiden kennen.\nLiebe Grüße",
-  "model_en": "Dear Lena,\nThanks a lot for your message! I'm really happy in the flat-share. I live with two nice people: Tom, who studies medicine, and Nele, who works in a café. The only difficult thing is the cleaning. The kitchen, which we all use, is often messy because we don't have a cleaning rota yet. We're going to talk about it on Sunday. Would you like to visit me next Saturday? Then I'll cook for us and you'll get to know the two of them.\nLove",
+  "model": "Liebe Miriam,\nvielen Dank für deine Nachricht! Mir gefällt es in der Bergstraße 9 richtig gut. Das Haus ist alt, aber die Nachbarn sind nett. Frau Yilmaz, die im ersten Stock wohnt, hilft allen, und Familie Polat, die unten wohnt, hat drei lustige Kinder. Schwierig ist nur das Putzen. Das Treppenhaus, das wir alle benutzen, ist oft schmutzig, weil wir noch keinen Putzplan haben. Darüber sprechen wir am Sonntag. Hast du Lust, mich nächsten Samstag zu besuchen? Dann koche ich für uns.\nLiebe Grüße",
+  "model_en": "Dear Miriam,\nThanks a lot for your message! I really like living at Bergstraße 9. The house is old, but the neighbours are nice. Frau Yilmaz, who lives on the first floor, helps everybody, and the Polat family, who live downstairs, have three funny children. The only difficult thing is the cleaning. The stairwell, which we all use, is often dirty because we don't have a cleaning rota yet. We're going to talk about it on Sunday. Would you like to visit me next Saturday? Then I'll cook for us.\nLove",
   "rubric": [
-   "Informal greeting (Liebe Lena) and closing (Liebe Grüße)",
-   "All three points: your flatmates, a difficulty with its reason, a suggestion",
-   "Relative clauses describe people and things (Tom, der …; die Küche, die …)",
+   "Informal greeting (Liebe Miriam) and closing (Liebe Grüße)",
+   "All three points: your neighbours, a difficulty with its reason, a suggestion",
+   "Relative clauses describe people and things (Frau Yilmaz, die …; das Treppenhaus, das …)",
    "Ideas are linked with weil, aber, dann",
    "About 80 words"
   ]
