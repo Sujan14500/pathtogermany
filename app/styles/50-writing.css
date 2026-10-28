@@ -1,0 +1,151 @@
+/* ---- writing: the exam task and the text beside live hints and phrases; then the model and a self-score.
+   The task card, side boxes, model and self-score are shared with speaking (55-speaking.css). ---- */
+
+.w-task, .sp-task { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr); gap: 24px; align-items: start; }
+.w-main, .sp-main { display: grid; gap: 16px; min-width: 0; }
+.w-side, .sp-side {
+  position: sticky; top: calc(var(--top) + 64px); display: grid; gap: 16px;
+  max-height: calc(100vh - var(--top) - 84px); overflow: auto; overscroll-behavior: contain;
+}
+
+/* the exam sheet */
+.w-card { background: var(--panel); border-radius: 6px; border-top: 5px solid var(--line); padding: 18px 24px 22px; }
+.w-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.w-icon { width: 40px; height: 40px; flex: none; fill: none; stroke: var(--line-deep); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.w-mod { margin: 0; display: grid; }
+.w-mod b { font: 700 1.35rem/1.1 var(--display); }
+.w-mod span { color: var(--muted); font-size: .95rem; }
+.w-extra { margin-left: auto; color: var(--muted); font-size: .92rem; white-space: nowrap; }
+.w-head .lb { flex: none; }
+.w-head > p + .lb { margin-left: auto; }
+.w-de p { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.5; }
+.w-en { margin: 0; color: var(--muted); font-size: .95rem; }
+.w-post {
+  margin: 4px 0 12px; display: grid; grid-template-columns: auto 1fr; gap: 0 12px; align-items: center;
+  padding: 12px 16px; background: var(--guide); border-radius: 6px; border-left: 5px solid var(--line);
+}
+.w-post-av { grid-row: span 2; align-self: start; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--board); color: #fff; font: 700 1.2rem var(--display); }
+.w-post figcaption { font: 600 .9rem var(--display); color: var(--muted); }
+.w-post blockquote { margin: 0; font-size: 1.05rem; }
+
+/* the content points: each ticks itself off (the tick draws in) once its key words are in the text */
+.w-points { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 6px; }
+.w-points button {
+  width: 100%; justify-content: flex-start; text-align: left; gap: 12px; padding: .55rem .8rem;
+  border-color: transparent; background: var(--guide); font-weight: 600;
+}
+.w-points button:hover { border-color: var(--rule); }
+.w-points svg { width: 26px; height: 26px; flex: none; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.w-points circle { stroke: var(--muted); fill: var(--panel); transition: fill .25s, stroke .25s; }
+.w-points path { stroke: var(--panel); stroke-dasharray: 16; stroke-dashoffset: 16; transition: stroke-dashoffset .35s var(--arrive) .1s; }
+.w-points .on circle { fill: var(--das); stroke: var(--das); }
+.w-points .on path { stroke-dashoffset: 0; }
+.w-points small { margin-left: auto; padding-left: 8px; color: var(--das); font-weight: 600; font-size: .8rem; white-space: nowrap; }
+
+/* the text: ruled like an exam answer sheet */
+.w-editor { background: var(--panel); border-radius: 6px; padding: 16px 18px 14px; }
+.w-editor textarea {
+  display: block; width: 100%; min-height: 15rem; resize: vertical; padding: 4px 14px; border: 2px solid var(--rule); border-radius: 6px;
+  font: 400 1.12rem/2rem var(--body); color: var(--ink); background-color: var(--panel);
+  background-image: linear-gradient(transparent calc(2rem - 1px), color-mix(in srgb, var(--rule) 80%, transparent) 0);
+  background-size: 100% 2rem; background-position: 0 4px; background-attachment: local;
+}
+.w-editor textarea:focus { border-color: var(--line); }
+.w-editor textarea::placeholder { color: var(--muted); opacity: .7; }
+
+/* the word count: a track with the target band; the bar turns green inside it */
+.w-meter { margin-top: 12px; }
+.w-track { position: relative; height: 12px; border-radius: 6px; background: var(--guide); overflow: hidden; }
+.w-zone { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--das) 22%, transparent); box-shadow: inset 2px 0 var(--das), inset -2px 0 var(--das); }
+.w-track i { position: absolute; left: 0; top: 3px; height: 6px; border-radius: 3px; background: var(--muted); transition: width .3s var(--arrive), background .3s; }
+.w-meter.ok .w-track i { background: var(--das); }
+.w-meter.over .w-track i { background: var(--a1); }
+.w-meter p { margin: 6px 0 0; }
+.w-meter b { font: 700 1.35rem var(--display); }
+.w-ok { color: var(--das); font-weight: 700; }
+.w-over { color: var(--a1-deep); font-weight: 700; }
+.w-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-top: 14px; }
+.w-actions .linkish { margin-left: auto; }
+
+/* side boxes: hints and phrases */
+.w-box { background: var(--panel); border-radius: 6px; padding: 16px 18px; }
+.w-box h3 { margin: 0 0 10px; font-size: 1.2rem; display: flex; align-items: baseline; gap: 8px; }
+.w-box h3 small { margin-left: auto; font: 400 .85rem var(--body); color: var(--muted); }
+.w-box p { margin: 0; }
+.w-hints ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.w-hints li {
+  display: grid; gap: 3px; padding: 8px 12px; border-left: 4px solid var(--a1); border-radius: 0 6px 6px 0;
+  background: var(--guide); font-size: .95rem; animation: rise .25s var(--arrive) both;
+}
+.w-hints .w-h-point { border-left-color: var(--line-deep); }
+.w-hints .w-h-order, .w-hints .w-h-caps { border-left-color: var(--die); }
+.w-hint-de { font-weight: 700; }
+.w-hint-none { color: var(--das); font-weight: 600; }
+.w-phrases ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.w-hints + .w-phrases ul { grid-template-columns: 1fr 1fr; }   /* writing: two columns keep the side short, so it can stay in view */
+.w-phrases button {
+  width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 0 10px; align-items: center; text-align: left;
+  padding: .4rem .7rem; border-width: 1.5px; font-weight: 400;
+}
+.w-phrases button b { font-weight: 600; }
+.w-phrases button small, .w-phrases li small { grid-column: 1; display: block; color: var(--muted); font-size: .85rem; }
+.w-phrases button svg { grid-row: 1 / span 2; grid-column: 2; align-self: start; margin-top: 3px; width: 16px; height: 16px; fill: none; stroke: var(--line-deep); stroke-width: 2.5; stroke-linecap: round; }
+.w-phrases button:hover svg { stroke: var(--ink); }
+
+/* after writing: the model beside the self-score */
+.w-after, .sp-after {
+  margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 24px; align-items: start;
+  scroll-margin-top: calc(var(--top) + 70px); animation: rise .35s var(--arrive) both;
+}
+.w-model, .sp-model { background: var(--panel); border-radius: 6px; padding: 18px 24px 20px; border-top: 5px solid var(--das); }
+.w-model header, .sp-model header { display: flex; align-items: center; gap: 10px; }
+.w-model h3, .sp-model h3 { margin: 0; font-size: 1.3rem; }
+.w-model header .check, .sp-model header .check { margin-left: auto; }
+.w-model-de { margin: 12px 0; white-space: pre-line; font-size: 1.12rem; line-height: 1.7; }
+.w-model-en { margin: 0 0 12px; white-space: pre-line; color: var(--muted); }
+.w-model > p:last-child { margin: 0; font-size: .92rem; }
+.w-task .check, .sp-task .check { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; cursor: pointer; }
+
+.w-rubric { background: var(--panel); border-radius: 6px; padding: 18px 22px 20px; border-top: 5px solid var(--line); }
+.w-rubric h3 { margin: 0; font-size: 1.3rem; }
+.w-rubric > p { margin: 4px 0 14px; font-size: .92rem; }
+.w-crit + .w-crit { margin-top: 12px; padding-top: 12px; border-top: 2px solid var(--rule); }
+.w-crit-h { margin: 0 0 6px; }
+.w-crit-h b { font: 700 1.08rem var(--display); }
+.w-crit-h span { color: var(--muted); font-size: .88rem; }
+.w-crit ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.w-crit li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; font-size: .95rem; }
+.w-seg { display: inline-flex; border: 2px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.w-seg button { border: 0; border-radius: 0; padding: .25rem .6rem; font-size: .85rem; }
+.w-seg button + button { border-left: 2px solid var(--rule); }
+.w-seg button:hover { background: var(--guide); }
+.w-seg .on.r2 { background: var(--das); color: var(--panel); }
+.w-seg .on.r1 { background: var(--a1); color: #111; }
+.w-seg .on.r0 { background: var(--die); color: var(--panel); }
+.w-total { margin-top: 16px; min-height: 52px; display: flex; align-items: center; gap: 18px; }
+.w-total p { margin: 0; }
+.w-total .stamp { font-size: 1.4rem; }
+
+/* A1 Teil 1: the text, and a form to fill in from it */
+.w-form { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(320px, 1fr); gap: 24px; align-items: start; }
+.w-source { margin-top: 14px; display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: start; padding: 14px 16px; background: var(--guide); border-radius: 6px; border-left: 5px solid var(--line); }
+.w-source p { margin: 0; font-size: 1.12rem; line-height: 1.65; }
+.w-formcard { display: grid; gap: 12px; padding: 18px 22px 20px; background: var(--panel); border: 2px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--rule); }
+.w-form-h { margin: 0 0 2px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); font: 700 1.45rem var(--display); }
+.w-ff { display: grid; gap: 3px; }
+.w-ff > span { font-size: .88rem; font-weight: 600; color: var(--muted); }
+.w-ff input { border: 0; border-bottom: 2px solid var(--muted); border-radius: 4px 4px 0 0; background: var(--guide); padding: .45rem .7rem; font-size: 1.1rem; }
+.w-ff input:focus { outline: none; border-bottom-color: var(--line); background: color-mix(in srgb, var(--line) 10%, var(--panel)); }
+.w-ff.right input { border-bottom-color: var(--das); background: color-mix(in srgb, var(--das) 10%, var(--panel)); }
+.w-ff.wrong input { border-bottom-color: var(--die); background: color-mix(in srgb, var(--die) 8%, var(--panel)); }
+.w-ff small { font-size: .9rem; }
+.w-form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 4px; }
+.w-form-foot p { margin: 0; }
+
+.w-more { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin-top: 24px; padding-top: 14px; border-top: 2px solid var(--rule); font-size: .95rem; }
+.w-more a { font-weight: 600; }
+
+@media (max-width: 1099px) {
+  .w-task, .sp-task, .w-after, .sp-after, .w-form { grid-template-columns: minmax(0, 1fr); }
+  .w-side, .sp-side { position: static; max-height: none; }
+}

@@ -1,0 +1,100 @@
+/* ---- speaking: the exam cards, the stage (timers, recording, the voice partner), then the model and a self-score.
+   Layout, task card, side boxes and self-score come from 50-writing.css; the partner figure and shadowing from 45-listening.css. ---- */
+
+/* the exam cards */
+.sp-cards { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); gap: 10px; }
+.sp-card {
+  display: grid; align-content: center; justify-items: center; gap: 2px; min-height: 86px; padding: 10px 8px; text-align: center;
+  background: var(--panel); border: 2px solid var(--rule); border-radius: 8px; box-shadow: 0 3px 0 var(--rule);
+}
+.sp-card small { font-size: .74rem; color: var(--muted); line-height: 1.2; }
+.sp-card b { font: 700 1.25rem/1.15 var(--display); overflow-wrap: break-word; }
+.sp-card b.sp-long { font-size: 1.02rem; }
+.sp-card span { font-size: .92rem; font-weight: 600; color: var(--line-deep); }
+
+.sp-topic {
+  margin-top: 16px; max-width: 580px; display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "a b" "t t" "c d"; gap: 10px 24px;
+  padding: 16px 22px; text-align: center; background: var(--panel); border: 2px solid var(--rule); border-radius: 8px; box-shadow: 0 3px 0 var(--rule);
+}
+.sp-topic b { grid-area: t; padding: 10px 0; border-block: 2px dashed var(--rule); font: 700 1.6rem/1.15 var(--display); }
+.sp-topic span { font-weight: 600; color: var(--line-deep); }
+.sp-tc0 { grid-area: a; } .sp-tc1 { grid-area: b; } .sp-tc2 { grid-area: c; } .sp-tc3 { grid-area: d; }
+
+.sp-diary { margin-top: 16px; max-width: 480px; border: 2px solid var(--rule); border-radius: 6px; overflow: hidden; background: var(--panel); }
+.sp-diary-h { margin: 0; padding: 8px 14px; background: var(--board); color: #fff; font: 600 1.05rem var(--display); }
+.sp-diary ul { list-style: none; margin: 0; padding: 0; }
+.sp-diary li { display: grid; grid-template-columns: 9.5em 1fr; gap: 12px; padding: 8px 14px; border-top: 1px solid var(--rule); }
+.sp-diary li:first-child { border-top: 0; }
+.sp-diary li b { font-family: var(--display); color: var(--line-deep); }
+
+.sp-slides { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 10px; }
+.sp-slides li {
+  position: relative; display: grid; align-content: center; justify-items: center; gap: 4px; min-height: 100px; padding: 24px 10px 12px;
+  text-align: center; font-size: .9rem; line-height: 1.3; background: var(--panel); border: 2px solid var(--rule); border-radius: 4px;
+}
+.sp-slides li.sp-title { background: var(--board); color: #fff; border-color: var(--board-rim); }
+.sp-slides b { font: 700 1.02rem/1.15 var(--display); }
+.sp-slide-n { position: absolute; top: 6px; left: 9px; font: 700 .75rem var(--display); color: var(--muted); }
+.sp-slides .sp-title .sp-slide-n, .sp-slides .sp-title span { color: var(--board-soft); }
+.sp-slide-task { margin: 10px 0 0; padding: 8px 12px; background: var(--guide); border-left: 4px solid var(--line); border-radius: 0 6px 6px 0; }
+
+/* the stage: a ring for each timer (line colour to prepare, red while speaking) */
+.sp-stage {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px 24px; align-items: center;
+  padding: 20px 24px; background: var(--panel); border-radius: 6px; border-left: 6px solid var(--line);
+}
+.sp-stage.sp-st-speak { border-left-color: var(--die); }
+.sp-stage.sp-st-done { border-left-color: var(--das); }
+.sp-times { display: grid; gap: 4px; padding-right: 22px; border-right: 2px solid var(--rule); }
+.sp-times span { color: var(--muted); font-size: .92rem; }
+.sp-times b { display: block; color: var(--ink); font: 700 1.7rem/1 var(--display); }
+.sp-body { display: grid; gap: 10px; justify-items: start; min-width: 0; }
+.sp-body.sp-wide { grid-column: 1 / -1; }
+.sp-body p, .sp-body h3 { margin: 0; }
+.sp-body h3 { font-size: 1.2rem; }
+.sp-btns { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.sp-note { color: var(--muted); font-size: .92rem; max-width: 62ch; }
+.sp-rec { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.sp-rec .rec-err { text-align: left; font-size: .95rem; }
+.sp-live, .sp-heard { padding: 8px 12px; background: var(--guide); border-radius: 6px; }
+.sp-heard b { display: block; font-size: .85rem; color: var(--muted); }
+.sp-body audio { width: min(100%, 460px); }
+
+.sp-count { position: relative; display: grid; place-content: center; justify-items: center; width: 132px; height: 132px; }
+.sp-count svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+.sp-count circle { fill: none; stroke-width: 10; }
+.sp-ring-track { stroke: var(--guide); }
+.sp-ring-fill { stroke: var(--line); stroke-dasharray: 1; stroke-linecap: round; transition: stroke-dashoffset .25s linear; }
+.sp-count.k-rec .sp-ring-fill { stroke: var(--die); }
+.sp-count b { font: 700 2.1rem/1 var(--display); font-variant-numeric: tabular-nums; }
+.sp-count small { color: var(--muted); font-size: .85rem; }
+
+/* the partner: their figure lifts while the voice speaks */
+.sp-partner { grid-column: 1 / -1; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 18px; align-items: center; padding: 14px 16px; background: var(--guide); border-radius: 6px; }
+.sp-partner .person svg { width: 64px; height: 64px; background: var(--panel); }
+.sp-p-body { display: grid; gap: 8px; min-width: 0; }
+.sp-p-count { margin: 0; color: var(--muted); font-size: .9rem; }
+.sp-p-btns { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.sp-p-lines { margin: 0; padding-left: 1.3em; display: grid; gap: 4px; }
+.sp-p-lines small { display: block; color: var(--muted); }
+
+/* phrases you can hear; after speaking, the ones the browser heard get a tick */
+.sp-ph { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px; align-items: start; padding: 4px 6px; border-radius: 6px; }
+.sp-ph b { font-weight: 600; }
+.sp-ph.is-used { background: color-mix(in srgb, var(--das) 12%, transparent); box-shadow: inset 4px 0 var(--das); }
+
+/* the model answer as a script: your lines and theirs, the one being read lit up */
+.sp-model > p.quiet { margin: 6px 0 0; font-size: .92rem; }
+.sp-model ol { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.sp-model li { display: grid; grid-template-columns: 5.2em minmax(0, 1fr); gap: 10px; padding: 8px 10px; border-radius: 6px; transition: background .2s; }
+.sp-model li.me { background: color-mix(in srgb, var(--line) 7%, transparent); }
+.sp-model li.now { background: color-mix(in srgb, var(--line) 26%, transparent); }
+.sp-who { padding-top: 5px; font: 700 .85rem var(--display); color: var(--muted); }
+.sp-model li.me .sp-who { color: var(--line-deep); }
+.sp-line { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; align-items: start; }
+.sp-line p { grid-column: 1; margin: 0; display: flex; align-items: flex-start; gap: 2px; font-size: 1.05rem; }
+.sp-line p > span { padding-top: 4px; }
+.sp-line small { grid-column: 1; display: block; color: var(--muted); font-size: .9rem; }
+.sp-line .shadow { grid-column: 2; grid-row: 1 / span 2; max-width: 230px; padding-top: 2px; }
+
+.sp-after > .soon { margin: 0; }

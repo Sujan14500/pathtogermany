@@ -7,7 +7,7 @@
 <script type="module">
 // Self-check for helpers in main.js. Serve app/ (python -m http.server -d app) and open /test.html; it prints ok.
 import { route, findWord, genderRule, umlaut, pluralPattern, fmtInterval, present, preterite, imperative, verbMistakes, perfect,
-  spreadNew, checkAnswer, diffChars } from './main.js'
+  spreadNew, checkAnswer, diffChars, countWords, writingHints, pointFound } from './main.js'
 
 const fails = []
 const check = (ok, what) => { if (!ok) fails.push(what) }
@@ -76,6 +76,23 @@ for (const t of verbs) {
   ;[0, 2, 3].forEach(i => check(!verbMistakes(w, 'perfect', i).includes(perfect(w, i)), `${t.w}: a mistake equals the right Perfekt`))
 }
 check(verbs.length >= 50 && forms > 600, `only ${verbs.length} verbs / ${forms} forms checked`)
+
+// writing hints (50-writing.js): each simple check fires on its mistake and stays quiet on a clean text
+const wt = { level: 'A1', words: [25, 40], phrases: [['Lieber Felix,', 'Dear Felix,'], ['Viele Grüße', 'Best wishes']],
+  model: 'Lieber Felix, ich wohne jetzt in Köln. Wann kommst du? Viele Grüße, Priya' }
+const kinds = text => writingHints(text, wt, new Map([['kurs', 'Kurs']])).map(h => h.k).sort().join(' ')
+const hint = (text, k) => writingHints(text, wt, new Map([['kurs', 'Kurs']])).find(h => h.k === k)?.de
+check(countWords('Am 13. Juni, z.B. um 18:00 – E-Mail!') === 7, 'countWords: numbers, abbreviations, dashes')
+check(kinds('Lieber Felix,\nich wohne jetzt in Köln. Im Kurs sind wir zehn Leute. Wann kommst du?\nViele Grüße\nSneka') === '', 'writingHints: clean text')
+check(hint('Lieber Felix, heute ich gehe ins Kino.', 'order') === 'heute ich gehe → heute gehe ich', 'writingHints: verb second')
+check(hint('Lieber Felix, ich bleibe zu Hause, weil ich bin müde.', 'order') === 'weil ich bin müde → weil ich müde bin', 'writingHints: verb at the end')
+check(!hint('Lieber Felix, ich weiß, dass er kommt und wir gehen.', 'order'), 'writingHints: no verb-end hint for a correct clause')
+check(hint('Lieber Felix, der kurs ist gut.', 'caps') === 'kurs → Kurs', 'writingHints: lower-case noun')
+check(kinds('Lieber Felix, wann kommen Sie? Wann kommst du?') === 'reg', 'writingHints: du and Sie mixed')
+check(kinds('Ich wohne jetzt in Köln.') === 'frame', 'writingHints: no greeting')
+check(pointFound('Wir sind zehn Leute aus acht Ländern.', 'Wer im Kurs ist (Länder, Sprachen)') && !pointFound('Hallo, wie geht es dir?', 'Wer im Kurs ist (Länder, Sprachen)'), 'pointFound: key-word stems')
+check(pointFound('Wann kommst du?', 'Frage: Wann kommt Felix zu Besuch?', 'Felix') && !pointFound('Du kommst bald.', 'Frage: Wann kommt Felix zu Besuch?', 'Felix'), 'pointFound: a question needs ?')
+check(pointFound('Mir geht es nicht gut, ich habe Fieber.', 'Warum kommen Sie nicht?'), 'pointFound: a reason without weil')
 
 document.getElementById('out').textContent = fails.length ? `FAIL\n${fails.join('\n')}` : 'ok'
 document.title = fails.length ? 'FAIL' : 'ok'
