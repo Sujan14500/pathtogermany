@@ -1,0 +1,3933 @@
+[
+ {
+  "id": "a2-rx-01",
+  "station": 9,
+  "part": "Teil 1",
+  "type": "article",
+  "title": "Ein Fest für die ganze Straße",
+  "intro": "A local newspaper reports on a street party that the neighbours organise every year.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Ein Fest für die ganze Straße",
+      "A party for the whole street"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Am Samstag haben die Nachbarn in der Kastanienallee wieder zusammen gefeiert.",
+      "On Saturday the neighbours in Kastanienallee celebrated together again."
+     ],
+     [
+      "Das Fest gibt es schon seit zehn Jahren.",
+      "The party has been going for ten years now."
+     ],
+     [
+      "Von 11 bis 22 Uhr durften keine Autos durch die Straße fahren, und überall standen Tische und Stühle.",
+      "From 11 am to 10 pm no cars were allowed to drive along the street, and there were tables and chairs everywhere."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Die Idee hatte Roswitha Kröger.",
+      "The idea came from Roswitha Kröger."
+     ],
+     [
+      "Sie wohnt seit 30 Jahren in der Straße und kennt fast alle Nachbarn.",
+      "She has lived in the street for 30 years and knows almost all the neighbours."
+     ],
+     [
+      "„Früher haben wir nur Hallo und Tschüss gesagt“, erzählt sie.",
+      "\"We used to just say hello and goodbye,\" she says."
+     ],
+     [
+      "„Heute helfen wir uns oft, zum Beispiel beim Einkaufen oder mit den Kindern.“",
+      "\"Today we often help each other, for example with the shopping or with the children.\""
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Wie jedes Jahr gab es ein buntes Programm.",
+      "As every year, there was a colourful programme."
+     ],
+     [
+      "Die Kinder haben auf der Straße gemalt und Fußball gespielt.",
+      "The children painted on the street and played football."
+     ],
+     [
+      "Am Nachmittag haben drei Schüler aus der Straße Musik gemacht.",
+      "In the afternoon three pupils from the street played music."
+     ],
+     [
+      "Jede Familie hat etwas zu essen mitgebracht: Salate, Kuchen und Suppen.",
+      "Every family brought something to eat: salads, cakes and soups."
+     ],
+     [
+      "Die Getränke haben einen Euro gekostet, und das Geld bekommt der Kindergarten in der Straße.",
+      "The drinks cost one euro, and the money goes to the nursery in the street."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Nur am Abend war es nicht so schön: Es hat eine Stunde lang geregnet.",
+      "Only the evening was not so nice: it rained for an hour."
+     ],
+     [
+      "Aber das war kein Problem.",
+      "But that was no problem."
+     ],
+     [
+      "Alle sind in die große Garage von Nummer 14 gegangen und haben dort weiter gefeiert.",
+      "Everyone went into the big garage at number 14 and carried on celebrating there."
+     ],
+     [
+      "Nächstes Jahr möchte Frau Kröger das Fest schon im Juni machen.",
+      "Next year Frau Kröger wants to hold the party in June."
+     ],
+     [
+      "„Dann ist es abends länger hell, und das Wetter ist hoffentlich besser“, sagt sie.",
+      "\"Then it stays light longer in the evening, and the weather will hopefully be better,\" she says."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "bunt",
+    "en": "colourful, varied"
+   },
+   {
+    "w": "Suppen",
+    "en": "soups"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Fest in der Kastanienallee …",
+    "format": "abc",
+    "opts": [
+     "findet zum ersten Mal statt.",
+     "gibt es seit zehn Jahren.",
+     "ist jeden Monat."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "The text says \"Das Fest gibt es schon seit zehn Jahren\": it has been held for ten years, so this is not the first time."
+   },
+   {
+    "q": "Frau Kröger erzählt, dass die Nachbarn heute …",
+    "format": "abc",
+    "opts": [
+     "nur Hallo und Tschüss sagen.",
+     "sich oft helfen.",
+     "wenig Zeit für Feste haben."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "Only saying hello and goodbye was \"früher\" (in the past). Today, she says, \"helfen wir uns oft\"."
+   },
+   {
+    "q": "Das Geld für die Getränke …",
+    "format": "abc",
+    "opts": [
+     "bekommt der Kindergarten.",
+     "bekommen die drei Schüler.",
+     "bezahlt Frau Kröger."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.4"
+    ],
+    "why": "The drinks cost one euro each, and \"das Geld bekommt der Kindergarten in der Straße\"."
+   },
+   {
+    "q": "Was haben die Nachbarn am Abend gemacht?",
+    "format": "abc",
+    "opts": [
+     "Sie sind nach Hause gegangen, denn es hat geregnet.",
+     "Sie haben in einer Garage weiter gefeiert.",
+     "Sie haben im Kindergarten gefeiert."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "It rained, but nobody went home: everyone went into the big garage at number 14 and carried on celebrating."
+   },
+   {
+    "q": "Nächstes Jahr …",
+    "format": "abc",
+    "opts": [
+     "soll das Fest im Juni sein.",
+     "soll das Fest in einer Garage sein.",
+     "soll das Fest nur bis 18 Uhr dauern."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.3"
+    ],
+    "why": "Frau Kröger wants to hold the party in June next year, because it stays light longer and the weather is hopefully better."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-02",
+  "station": 10,
+  "part": "Teil 1",
+  "type": "article",
+  "title": "Schüler helfen Schülern",
+  "intro": "A newspaper article about a school where older pupils help younger ones with their homework.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Schüler helfen Schülern",
+      "Pupils help pupils"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "An der Humboldt-Schule in Kassel gibt es seit zwei Jahren ein neues Projekt: Ältere Schüler helfen jüngeren Schülern bei den Hausaufgaben.",
+      "At the Humboldt-Schule in Kassel there has been a new project for two years: older pupils help younger pupils with their homework."
+     ],
+     [
+      "Sie treffen sich jeden Dienstag und Donnerstag nach dem Unterricht in der Bibliothek der Schule.",
+      "They meet every Tuesday and Thursday after lessons in the school library."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Einer von ihnen ist Tjark Feddersen.",
+      "One of them is Tjark Feddersen."
+     ],
+     [
+      "Er ist 16 Jahre alt und hilft zwei Mädchen aus der Klasse 5 in Englisch.",
+      "He is 16 and helps two girls from year 5 with English."
+     ],
+     [
+      "„Ich war früher selbst schlecht in Englisch“, sagt Tjark.",
+      "\"I used to be bad at English myself,\" Tjark says."
+     ],
+     [
+      "„Deshalb verstehe ich gut, warum die Kinder manchmal Probleme haben.“",
+      "\"That's why I understand well why the children sometimes have problems.\""
+     ],
+     [
+      "Geld bekommt er für seine Hilfe nicht, aber die Schule schreibt sie in sein Zeugnis.",
+      "He doesn't get money for his help, but the school writes it in his school report."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Die Idee hatte Silke Brockmann.",
+      "The idea came from Silke Brockmann."
+     ],
+     [
+      "Sie ist seit 20 Jahren Lehrerin an der Schule.",
+      "She has been a teacher at the school for 20 years."
+     ],
+     [
+      "„Viele Eltern haben am Nachmittag keine Zeit, und private Lehrer sind sehr teuer“, sagt sie.",
+      "\"Many parents have no time in the afternoon, and private teachers are very expensive,\" she says."
+     ],
+     [
+      "„Und die Kinder lernen oft gern von den Großen.“",
+      "\"And children often like learning from the older ones.\""
+     ],
+     [
+      "Nach einem Jahr waren die Noten von fast allen Kindern besser.",
+      "After one year almost all the children's marks were better."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Ab Herbst soll es das Projekt auch für Deutsch geben.",
+      "From the autumn the project is to run for German too."
+     ],
+     [
+      "Dafür sucht die Schule noch zehn Schüler aus den Klassen 9 und 10.",
+      "For this the school is still looking for ten pupils from years 9 and 10."
+     ],
+     [
+      "Wer Lust hat, kann sich bis Ende Juni im Büro der Schule anmelden.",
+      "Anyone interested can sign up at the school office by the end of June."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Lehrerin",
+    "en": "teacher (a woman)"
+   },
+   {
+    "w": "Lehrer",
+    "en": "teachers"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Bei dem Projekt …",
+    "format": "abc",
+    "opts": [
+     "lernen Lehrer von Schülern.",
+     "machen Schüler nach dem Unterricht Sport.",
+     "helfen ältere Schüler jüngeren Schülern."
+    ],
+    "a": 2,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The project: \"Ältere Schüler helfen jüngeren Schülern bei den Hausaufgaben.\""
+   },
+   {
+    "q": "Tjark versteht die Probleme der Kinder gut, weil …",
+    "format": "abc",
+    "opts": [
+     "er zwei kleine Schwestern hat.",
+     "er später Lehrer werden möchte.",
+     "er früher selbst schlecht in Englisch war."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.2",
+     "b3.3"
+    ],
+    "why": "Tjark was bad at English himself, \"deshalb\" (that is why) he understands the children's problems. The two girls are the pupils he helps, not his sisters."
+   },
+   {
+    "q": "Für seine Hilfe …",
+    "format": "abc",
+    "opts": [
+     "bekommt Tjark Geld von der Schule.",
+     "bekommt Tjark eine bessere Note in Englisch.",
+     "steht etwas in Tjarks Zeugnis."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.4"
+    ],
+    "why": "He gets no money, but the school writes his help in his school report (Zeugnis)."
+   },
+   {
+    "q": "Frau Brockmann sagt, dass …",
+    "format": "abc",
+    "opts": [
+     "private Lehrer nicht viel kosten.",
+     "viele Eltern nachmittags nicht helfen können.",
+     "die Kinder lieber allein lernen."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "She says many parents have no time in the afternoon, so they cannot help. Private teachers are \"sehr teuer\", and children like learning from the older ones."
+   },
+   {
+    "q": "Ab Herbst …",
+    "format": "abc",
+    "opts": [
+     "gibt es das Projekt nur noch am Dienstag.",
+     "sollen ältere Schüler auch in Deutsch helfen.",
+     "können sich auch Eltern für das Projekt anmelden."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "From the autumn the project will also run for German, and the school is looking for ten older pupils to help."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-03",
+  "station": 11,
+  "part": "Teil 1",
+  "type": "article",
+  "title": "Bank und Post im Bus",
+  "intro": "A regional newspaper reports on a bus that brings bank and post-office services to villages.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Bank und Post kommen mit dem Bus",
+      "The bank and the post office come by bus"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "In vielen Dörfern gibt es keine Bank, keine Post und oft auch keinen Laden mehr.",
+      "In many villages there is no longer a bank, a post office or often even a shop."
+     ],
+     [
+      "Für alte Menschen ohne Auto ist das ein großes Problem.",
+      "For old people without a car that is a big problem."
+     ],
+     [
+      "Deshalb fährt seit März ein blauer Bus durch die Dörfer bei Celle.",
+      "That is why since March a blue bus has been driving through the villages near Celle."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Im Bus kann man Geld holen und überweisen.",
+      "On the bus you can get cash and transfer money."
+     ],
+     [
+      "Man kann dort auch Briefmarken kaufen und Pakete abgeben oder abholen.",
+      "You can also buy stamps there and hand in or collect parcels."
+     ],
+     [
+      "Der Bus kommt einmal pro Woche in jedes Dorf und steht dann zwei Stunden vor der Kirche oder vor dem Rathaus.",
+      "The bus comes to each village once a week and then stands for two hours in front of the church or the town hall."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Im Bus arbeitet Waltraud Kowalski.",
+      "Waltraud Kowalski works on the bus."
+     ],
+     [
+      "Sie hat früher 25 Jahre in einer Bank in der Stadt gearbeitet.",
+      "She used to work in a bank in town for 25 years."
+     ],
+     [
+      "„Viele Kunden kommen jede Woche, auch wenn sie nur eine Briefmarke brauchen“, erzählt sie und lacht.",
+      "\"Many customers come every week, even if they only need one stamp,\" she says and laughs."
+     ],
+     [
+      "„Sie möchten auch ein bisschen reden.",
+      "\"They also want to chat a little."
+     ],
+     [
+      "Manche bringen mir sogar Kuchen mit.“",
+      "Some even bring me cake.\""
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Für die Kunden ist der Service kostenlos.",
+      "The service is free for customers."
+     ],
+     [
+      "Im Moment fährt der Bus in zwölf Dörfer.",
+      "At the moment the bus goes to twelve villages."
+     ],
+     [
+      "Ab Januar soll ein zweiter Bus kommen, denn viele andere Dörfer möchten auch mitmachen.",
+      "From January a second bus is to come, because many other villages want to take part too."
+     ],
+     [
+      "Den Fahrplan findet man im Internet und im Rathaus.",
+      "The timetable can be found online and at the town hall."
+     ]
+    ]
+   }
+  ],
+  "glossary": [],
+  "questions": [
+   {
+    "q": "Warum gibt es den Bus?",
+    "format": "abc",
+    "opts": [
+     "In den Dörfern gibt es keine Bank und keine Post mehr.",
+     "Viele alte Menschen möchten in die Stadt fahren.",
+     "Die Busse in die Stadt sind zu teuer."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.0",
+     "b2.2"
+    ],
+    "why": "Many villages no longer have a bank or a post office, which is a problem for old people without a car; \"deshalb\" (that is why) the bus runs."
+   },
+   {
+    "q": "Im Bus kann man …",
+    "format": "abc",
+    "opts": [
+     "Lebensmittel kaufen.",
+     "Pakete abholen.",
+     "Fahrkarten kaufen."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "You can get money, buy stamps and hand in or collect parcels. The text says the villages have no shop, and the bus does not sell food or tickets."
+   },
+   {
+    "q": "Der Bus …",
+    "format": "abc",
+    "opts": [
+     "kommt jeden Tag in die Dörfer.",
+     "fährt nur am Wochenende.",
+     "steht jede Woche zwei Stunden in jedem Dorf."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "The bus comes \"einmal pro Woche\" to each village and stays for two hours."
+   },
+   {
+    "q": "Frau Kowalski erzählt, dass manche Kunden …",
+    "format": "abc",
+    "opts": [
+     "ihr Kuchen mitbringen.",
+     "nur Geld holen.",
+     "nicht gern reden."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.4"
+    ],
+    "why": "\"Manche bringen mir sogar Kuchen mit\": some even bring her cake. Many also come to chat."
+   },
+   {
+    "q": "Ab Januar …",
+    "format": "abc",
+    "opts": [
+     "kostet der Service etwas.",
+     "fährt der Bus auch in die Stadt.",
+     "gibt es einen zweiten Bus."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "From January a second bus is to come, because other villages want it too. The service stays free."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-04",
+  "station": 12,
+  "part": "Teil 1",
+  "type": "article",
+  "title": "Eine Woche ohne Auto",
+  "intro": "A newspaper article about families who left their cars at home for a week.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Eine Woche ohne Auto",
+      "A week without a car"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Kann man eine Woche ohne Auto leben?",
+      "Can you live for a week without a car?"
+     ],
+     [
+      "Das haben 40 Familien aus Rheinfeld im Mai probiert.",
+      "40 families from Rheinfeld tried it in May."
+     ],
+     [
+      "Sie haben ihr Auto sieben Tage in der Garage gelassen.",
+      "They left their car in the garage for seven days."
+     ],
+     [
+      "Dafür hat die Stadt ihnen Fahrkarten für Bus und Bahn und Fahrräder gegeben, alles kostenlos.",
+      "In return the town gave them tickets for buses and trains and bicycles, all for free."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Familie Wiesner hat drei Kinder und wohnt außerhalb der Stadt.",
+      "The Wiesner family has three children and lives outside the town."
+     ],
+     [
+      "„Am Anfang war es schwierig“, sagt Annika Wiesner.",
+      "\"At first it was difficult,\" says Annika Wiesner."
+     ],
+     [
+      "„Zum Supermarkt brauchen wir mit dem Fahrrad 20 Minuten, und am Montag hat es auch noch geregnet.“",
+      "\"It takes us 20 minutes to the supermarket by bike, and on Monday it rained as well.\""
+     ],
+     [
+      "Aber schon nach drei Tagen war alles leichter.",
+      "But after only three days everything was easier."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Die Kinder sind jeden Morgen mit dem Fahrrad zur Schule gefahren.",
+      "The children rode their bikes to school every morning."
+     ],
+     [
+      "„Sie waren im Unterricht viel wacher als sonst“, sagt der Vater.",
+      "\"They were much more awake in class than usual,\" says their father."
+     ],
+     [
+      "Zum Einkaufen ist die Familie nur zweimal in der Woche gefahren und hat besser geplant.",
+      "The family only went shopping twice a week and planned better."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Nach der Woche wollten 15 Familien ihr Auto nicht mehr jeden Tag benutzen.",
+      "After the week, 15 families no longer wanted to use their car every day."
+     ],
+     [
+      "Familie Wiesner möchte ihr zweites Auto sogar verkaufen.",
+      "The Wiesner family even wants to sell their second car."
+     ],
+     [
+      "Die Stadt möchte das Projekt im nächsten Jahr wiederholen, dann mit 100 Familien.",
+      "The town wants to repeat the project next year, then with 100 families."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "wacher",
+    "en": "more awake (wach: awake)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was haben die Familien für die Woche bekommen?",
+    "format": "abc",
+    "opts": [
+     "Ein neues Auto.",
+     "Fahrkarten und Fahrräder.",
+     "Geld von der Stadt."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "The town gave them free tickets for buses and trains and bicycles, not money or a car."
+   },
+   {
+    "q": "Am Anfang …",
+    "format": "abc",
+    "opts": [
+     "war die Woche für Familie Wiesner nicht leicht.",
+     "hatte Familie Wiesner viel Spaß.",
+     "ist Familie Wiesner mit dem Auto zum Supermarkt gefahren."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Annika Wiesner says: \"Am Anfang war es schwierig\" (difficult = not easy). It only got easier after three days."
+   },
+   {
+    "q": "Was sagt der Vater über die Kinder?",
+    "format": "abc",
+    "opts": [
+     "Sie sind mit dem Bus zur Schule gefahren.",
+     "Sie waren am Morgen oft müde.",
+     "Sie waren in der Schule wacher."
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "He says they were \"viel wacher als sonst\" in class. They went to school by bike, not by bus."
+   },
+   {
+    "q": "Zum Einkaufen …",
+    "format": "abc",
+    "opts": [
+     "ist die Familie jeden Tag gefahren.",
+     "ist die Familie nur zweimal pro Woche gefahren.",
+     "hat die Familie den Bus genommen."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "They went shopping \"nur zweimal in der Woche\" and planned better."
+   },
+   {
+    "q": "Familie Wiesner möchte …",
+    "format": "abc",
+    "opts": [
+     "wieder in der Stadt wohnen.",
+     "ein Auto verkaufen.",
+     "wieder jeden Tag mit dem Auto fahren."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The family even wants to sell their second car."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-05",
+  "station": 9,
+  "part": "Teil 1",
+  "type": "article",
+  "title": "Ein Fest zum 100. Geburtstag",
+  "intro": "A local newspaper reports on a woman who has just turned 100.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Ein Fest zum 100. Geburtstag",
+      "A party for a 100th birthday"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "Am Sonntag hat Gertrud Reimers ihren 100. Geburtstag gefeiert.",
+      "On Sunday Gertrud Reimers celebrated her 100th birthday."
+     ],
+     [
+      "Ins Restaurant „Am Markt“ sind 70 Gäste gekommen: ihre Kinder, ihre Enkel und viele Freunde.",
+      "70 guests came to the restaurant \"Am Markt\": her children, her grandchildren and lots of friends."
+     ],
+     [
+      "Sogar der Bürgermeister war da und hat ihr Blumen gebracht.",
+      "Even the mayor was there and brought her flowers."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Frau Reimers kommt aus einem kleinen Dorf in den Bergen.",
+      "Frau Reimers comes from a small village in the mountains."
+     ],
+     [
+      "Viele Jahre war sie Lehrerin für Musik.",
+      "For many years she was a music teacher."
+     ],
+     [
+      "Noch heute singt sie jeden Dienstag mit anderen Frauen in der Kirche.",
+      "She still sings with other women in the church every Tuesday."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Was ist ihr Tipp für ein langes Leben?",
+      "What is her tip for a long life?"
+     ],
+     [
+      "„Ich habe nie geraucht, ich bin viel spazieren gegangen, und ich lache gern“, sagt sie.",
+      "\"I never smoked, I went for lots of walks, and I like to laugh,\" she says."
+     ],
+     [
+      "Bis vor zwei Jahren hat sie noch allein gewohnt.",
+      "Until two years ago she still lived on her own."
+     ],
+     [
+      "Dann ist sie zu ihrer Tochter umgezogen, denn ihre Wohnung war im 3. Stock, und es gab keinen Aufzug.",
+      "Then she moved in with her daughter, because her flat was on the 3rd floor and there was no lift."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Ein Geschenk hat ihr besonders gut gefallen: ein Buch mit alten Fotos aus ihrem Leben.",
+      "She especially liked one present: a book with old photos from her life."
+     ],
+     [
+      "Ihre Enkelin hat es selbst gemacht.",
+      "Her granddaughter made it herself."
+     ],
+     [
+      "„Ich habe viel gelacht und auch ein bisschen geweint“, sagt Frau Reimers.",
+      "\"I laughed a lot and cried a little too,\" says Frau Reimers."
+     ],
+     [
+      "Und ihr Wunsch für das nächste Jahr?",
+      "And her wish for the next year?"
+     ],
+     [
+      "„Gesund bleiben und noch einmal ans Meer fahren.“",
+      "\"Stay healthy and go to the sea one more time.\""
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Enkel",
+    "en": "grandchildren"
+   },
+   {
+    "w": "Enkelin",
+    "en": "granddaughter"
+   },
+   {
+    "w": "Bürgermeister",
+    "en": "mayor"
+   },
+   {
+    "w": "Lehrerin",
+    "en": "teacher (a woman)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo hat Frau Reimers ihren Geburtstag gefeiert?",
+    "format": "abc",
+    "opts": [
+     "In einem Restaurant.",
+     "In der Kirche.",
+     "Bei ihrer Tochter."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "The 70 guests came to the restaurant \"Am Markt\". She sings in the church, and she lives with her daughter."
+   },
+   {
+    "q": "Frau Reimers …",
+    "format": "abc",
+    "opts": [
+     "war früher Lehrerin.",
+     "singt jeden Tag in der Kirche.",
+     "kommt aus einer großen Stadt."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "She was a music teacher for many years. She sings only on Tuesdays, and she comes from a small village."
+   },
+   {
+    "q": "Was ist ihr Tipp für ein langes Leben?",
+    "format": "abc",
+    "opts": [
+     "Jeden Tag Obst essen.",
+     "Früh schlafen gehen.",
+     "Nicht rauchen und viel lachen."
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "She never smoked, went for lots of walks and likes to laugh. She says nothing about fruit or sleep."
+   },
+   {
+    "q": "Warum wohnt Frau Reimers jetzt bei ihrer Tochter?",
+    "format": "abc",
+    "opts": [
+     "Sie wollte nicht mehr allein sein.",
+     "Ihre Tochter war krank.",
+     "In ihrem alten Haus gab es keinen Aufzug."
+    ],
+    "a": 2,
+    "ev": [
+     "b4.3"
+    ],
+    "why": "She moved because her flat was on the 3rd floor and there was no lift."
+   },
+   {
+    "q": "Welches Geschenk hat ihr besonders gefallen?",
+    "format": "abc",
+    "opts": [
+     "Ein Buch mit Fotos.",
+     "Blumen vom Bürgermeister.",
+     "Eine Reise ans Meer."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "She especially liked a book with old photos from her life. A trip to the sea is only her wish."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-06",
+  "station": 9,
+  "part": "Teil 2",
+  "type": "directory",
+  "title": "Messe „Feste feiern“",
+  "intro": "You are at a big fair about parties and celebrations. Read the plan at the entrance.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Messe „Feste feiern“: Wo finden Sie was?",
+      "The \"Celebrate!\" fair: where do you find what?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "list",
+    "s": [
+     [
+      "Halle 1: Hochzeit: Kleider, Anzüge, Ringe, Blumen",
+      "Hall 1: weddings: dresses, suits, rings, flowers"
+     ],
+     [
+      "Halle 2: Feste für Kinder: Spiele, Ideen für Partys, Torten für Kinder",
+      "Hall 2: children's parties: games, party ideas, cakes for children"
+     ],
+     [
+      "Halle 3: Essen und Trinken: Getränke, Grills, Kuchen und Torten für Ihr Fest",
+      "Hall 3: food and drink: drinks, barbecues, cakes and gateaux for your party"
+     ],
+     [
+      "Halle 4: Musik und Licht: Bands, Lampen, Kerzen",
+      "Hall 4: music and lighting: bands, lamps, candles"
+     ],
+     [
+      "Halle 5: Wo feiern? Hotels, Restaurants, Räume und Gärten für Feste",
+      "Hall 5: where to celebrate? Hotels, restaurants, rooms and gardens for parties"
+     ],
+     [
+      "Halle 6: Einladungen und Fotos: Karten, Fotobücher, Fotostudios",
+      "Hall 6: invitations and photos: cards, photo books, photo studios"
+     ],
+     [
+      "Eingang: Information, Kasse, Café",
+      "Entrance: information, ticket desk, café"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Jeden Tag um 15 Uhr können Sie in Halle 1 kostenlos tanzen lernen.",
+      "Every day at 3 pm you can learn to dance in Hall 1 for free."
+     ],
+     [
+      "Kinder können in Halle 2 malen und basteln.",
+      "Children can paint and do crafts in Hall 2."
+     ],
+     [
+      "Karten für den nächsten Tag bekommen Sie an der Kasse am Eingang.",
+      "You can get tickets for the next day at the ticket desk at the entrance."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Messe",
+    "en": "trade fair"
+   },
+   {
+    "w": "Halle",
+    "en": "hall"
+   },
+   {
+    "w": "Grills",
+    "en": "barbecues"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre Schwester heiratet im Sommer. Sie möchten mit ihr ein Kleid suchen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Halle 5",
+     "Halle 1",
+     "Halle 6"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "Getting married means a wedding (Hochzeit), and wedding dresses (Kleider) are in Hall 1."
+   },
+   {
+    "q": "Sie feiern Ihren 50. Geburtstag und suchen einen schönen Ort für 40 Gäste. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Halle 3",
+     "Halle 5",
+     "Eingang"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.4"
+    ],
+    "why": "You need a place to celebrate: hotels, restaurants and rooms for parties are in Hall 5."
+   },
+   {
+    "q": "Auf Ihrer Hochzeit soll am Abend eine Band spielen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Halle 1",
+     "Halle 4",
+     "Halle 5"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "Bands are in Hall 4 (Musik und Licht). Hall 1 is about weddings, but it has no music."
+   },
+   {
+    "q": "Sie feiern im Garten und brauchen noch einen Grill. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Halle 3",
+     "Halle 5",
+     "Halle 4"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "Barbecues (Grills) are in Hall 3. Hall 5 has gardens to rent, not barbecues."
+   },
+   {
+    "q": "Sie möchten morgen wieder auf die Messe kommen und brauchen eine Karte. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Eingang",
+     "Halle 6",
+     "Halle 1"
+    ],
+    "a": 0,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "A ticket (Karte) for the next day is sold at the ticket desk at the entrance. Hall 6 has invitation cards, not tickets."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-07",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "directory",
+  "title": "VHS – Haus am Park",
+  "intro": "You want to do a course at the adult education centre (VHS). Read the board in the entrance hall.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "VHS – Haus am Park",
+      "VHS adult education centre – Haus am Park"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "list",
+    "s": [
+     [
+      "3. Stock: Sprachen: Englisch, Spanisch, Türkisch · Deutsch für Ausländer (A1 bis C1)",
+      "3rd floor: languages: English, Spanish, Turkish · German for foreigners (A1 to C1)"
+     ],
+     [
+      "2. Stock: Computer und Beruf: Arbeiten am Computer, Internet, Bewerbungen schreiben · Prüfungen",
+      "2nd floor: computers and work: working on a computer, the internet, writing applications · exams"
+     ],
+     [
+      "1. Stock: Kunst und Musik: Malen, Zeichnen, Fotografieren, Gitarre, Klavier",
+      "1st floor: art and music: painting, drawing, photography, guitar, piano"
+     ],
+     [
+      "Erdgeschoss: Anmeldung und Beratung · Kasse · Cafeteria",
+      "Ground floor: registration and advice · cash desk · cafeteria"
+     ],
+     [
+      "Untergeschoss: Küche: Kochen lernen · Sport: Yoga, Tanzen, Training für den Rücken",
+      "Basement: kitchen: learning to cook · sport: Yoga, dancing, exercises for your back"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Sie wissen nicht, welcher Kurs für Ihr Deutsch der richtige ist?",
+      "You don't know which course is the right one for your German?"
+     ],
+     [
+      "Dann machen Sie einen kurzen Test bei der Beratung im Erdgeschoss.",
+      "Then do a short test at the advice desk on the ground floor."
+     ],
+     [
+      "Alle Prüfungen finden im 2. Stock statt.",
+      "All exams take place on the 2nd floor."
+     ],
+     [
+      "Die Anmeldung ist von Montag bis Donnerstag von 9 bis 18 Uhr geöffnet.",
+      "Registration is open from Monday to Thursday, 9 am to 6 pm."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Beratung",
+    "en": "advice, advice desk"
+   },
+   {
+    "w": "Untergeschoss",
+    "en": "basement"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Sie müssen Bewerbungen schreiben und brauchen Hilfe am Computer. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "3. Stock",
+     "2. Stock"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Writing applications (Bewerbungen schreiben) is part of \"Computer und Beruf\" on the 2nd floor."
+   },
+   {
+    "q": "Sie möchten einen Deutschkurs machen, aber Sie wissen nicht, welcher Kurs zu Ihnen passt. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "3. Stock",
+     "Erdgeschoss",
+     "1. Stock"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "The German courses are on the 3rd floor, but to find the right one you first do a short test at the advice desk on the ground floor."
+   },
+   {
+    "q": "Ihr Rücken tut oft weh. Sie möchten etwas dagegen tun. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "2. Stock",
+     "Untergeschoss",
+     "Erdgeschoss"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.4"
+    ],
+    "why": "Exercises for your back (Training für den Rücken) are in the basement."
+   },
+   {
+    "q": "Sie möchten lernen, wie man schöne Fotos macht. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "2. Stock",
+     "Untergeschoss",
+     "1. Stock"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "Photography (Fotografieren) is with art and music on the 1st floor, not with the computers."
+   },
+   {
+    "q": "Sie haben am Samstag die Prüfung für Ihren Deutschkurs. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "3. Stock",
+     "Erdgeschoss",
+     "anderes Stockwerk"
+    ],
+    "a": 2,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "All exams are on the 2nd floor. That floor is not among the options, so the answer is \"anderes Stockwerk\". The courses are on the 3rd floor, but not the exams."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-08",
+  "station": 11,
+  "part": "Teil 2",
+  "type": "directory",
+  "title": "Einkaufszentrum Ostpark",
+  "intro": "You are in a shopping centre and need a few services. Read the board next to the lift.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Einkaufszentrum Ostpark: Service von A bis Z",
+      "Ostpark shopping centre: services from A to Z"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "list",
+    "s": [
+     [
+      "3. Stock: Restaurants · Toiletten",
+      "3rd floor: restaurants · toilets"
+     ],
+     [
+      "2. Stock: Schuhe und Schlüssel: Reparatur und neue Schlüssel · Kleidung ändern: Hosen, Röcke, Mäntel",
+      "2nd floor: shoes and keys: repairs and new keys · clothing alterations: trousers, skirts, coats"
+     ],
+     [
+      "1. Stock: Reisebüro · Reparatur von Handys und Tablets · Fotostudio: Fotos für Pass und Ausweis",
+      "1st floor: travel agency · repairs for mobile phones and tablets · photo studio: photos for passports and ID cards"
+     ],
+     [
+      "Erdgeschoss: Post: Briefe und Pakete · Bank · Reinigung für Kleidung und Wäsche · Information",
+      "Ground floor: post office: letters and parcels · bank · cleaning for clothes and laundry · information"
+     ],
+     [
+      "Untergeschoss: Parken · Werkstatt: Reifen wechseln, kleine Reparaturen am Auto",
+      "Basement: parking · garage: changing tyres, small car repairs"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Öffnungszeiten: Montag bis Samstag von 9 bis 20 Uhr.",
+      "Opening hours: Monday to Saturday, 9 am to 8 pm."
+     ],
+     [
+      "Die Post schließt am Samstag schon um 14 Uhr.",
+      "On Saturdays the post office closes at 2 pm."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Einkaufszentrum",
+    "en": "shopping centre"
+   },
+   {
+    "w": "Öffnungszeiten",
+    "en": "opening hours"
+   },
+   {
+    "w": "Untergeschoss",
+    "en": "basement"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre neue Hose ist zu lang. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "2. Stock",
+     "1. Stock"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Trousers that are too long need changing (Kleidung ändern), on the 2nd floor. The cleaning service on the ground floor only washes clothes."
+   },
+   {
+    "q": "Sie brauchen ein Foto für Ihren neuen Pass. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "1. Stock",
+     "Erdgeschoss",
+     "anderes Stockwerk"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "The photo studio for passport photos is on the 1st floor, which is an option, so \"anderes Stockwerk\" is wrong."
+   },
+   {
+    "q": "Ihre Tochter braucht auch einen Schlüssel für Ihre Wohnung. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "Untergeschoss",
+     "anderes Stockwerk"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "New keys are made on the 2nd floor. That floor is not among the options, so the answer is \"anderes Stockwerk\"."
+   },
+   {
+    "q": "Im Winter brauchen Sie für Ihr Auto andere Reifen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "2. Stock",
+     "Untergeschoss"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.4"
+    ],
+    "why": "The garage in the basement changes tyres (Reifen wechseln)."
+   },
+   {
+    "q": "Sie möchten Ihrer Mutter ein Paket schicken. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "1. Stock",
+     "3. Stock"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "You send parcels at the post office on the ground floor."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-09",
+  "station": 12,
+  "part": "Teil 2",
+  "type": "directory",
+  "title": "Museum für Natur und Umwelt",
+  "intro": "You are visiting a museum about nature and the environment. Read the board at the entrance.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Museum für Natur und Umwelt: Was finden Sie wo?",
+      "Museum of nature and the environment: what do you find where?"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "list",
+    "s": [
+     [
+      "3. Stock: Wetter: Sonne, Wind, Wolken und Gewitter · Café mit großem Balkon",
+      "3rd floor: weather: sun, wind, clouds and thunderstorms · café with a big balcony"
+     ],
+     [
+      "2. Stock: Tiere im Wald: Vögel und andere Tiere aus unseren Wäldern",
+      "2nd floor: animals in the forest: birds and other animals from our forests"
+     ],
+     [
+      "1. Stock: Leben im Wasser: Fische aus Flüssen, Seen und Meeren",
+      "1st floor: life in the water: fish from rivers, lakes and seas"
+     ],
+     [
+      "Erdgeschoss: Kasse · Information · Bücher, Spiele und Postkarten zum Kaufen",
+      "Ground floor: tickets · information · books, games and postcards to buy"
+     ],
+     [
+      "Untergeschoss: Umwelt und wir: Wie macht man weniger Müll? Wie kann man Wasser sparen?",
+      "Basement: the environment and us: how do you make less rubbish? How can you save water?"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Führungen gibt es jeden Sonntag um 11 Uhr.",
+      "There are guided tours every Sunday at 11 am."
+     ],
+     [
+      "Wir treffen uns an der Information.",
+      "We meet at the information desk."
+     ],
+     [
+      "Für Schulklassen nur mit Anmeldung.",
+      "School classes must book in advance."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Untergeschoss",
+    "en": "basement"
+   },
+   {
+    "w": "Führungen",
+    "en": "guided tours"
+   },
+   {
+    "w": "Schulklassen",
+    "en": "school classes"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ihre Tochter macht in der Schule ein Projekt über Regen und Wolken. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "1. Stock",
+     "3. Stock",
+     "Untergeschoss"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "Rain and clouds are weather (Wetter), on the 3rd floor. The 1st floor is about animals in the water."
+   },
+   {
+    "q": "Sie möchten wissen, wie Sie zu Hause weniger Müll machen können. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "2. Stock",
+     "anderes Stockwerk"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.4"
+    ],
+    "why": "Less rubbish is a topic in the basement (Untergeschoss). That floor is not among the options, so the answer is \"anderes Stockwerk\"."
+   },
+   {
+    "q": "Sie möchten am Sonntag an einer Führung teilnehmen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "3. Stock",
+     "2. Stock",
+     "Erdgeschoss"
+    ],
+    "a": 2,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "The guided tours start at the information desk, which is on the ground floor."
+   },
+   {
+    "q": "Ihr Sohn interessiert sich sehr für Vögel. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "3. Stock",
+     "2. Stock",
+     "1. Stock"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Birds (Vögel) are with the forest animals on the 2nd floor."
+   },
+   {
+    "q": "Sie möchten nach dem Besuch etwas trinken und dabei draußen sitzen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Erdgeschoss",
+     "Untergeschoss",
+     "3. Stock"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "The café is on the 3rd floor, and it has a big balcony where you can sit outside."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-10",
+  "station": 10,
+  "part": "Teil 2",
+  "type": "directory",
+  "title": "Universität Weidenfeld – Haus A",
+  "intro": "You are a student at a university. Read the board in the main building.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Universität Weidenfeld – Haus A",
+      "Weidenfeld University – Building A"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "list",
+    "s": [
+     [
+      "4. Stock: Sprachen lernen: Kurse in vielen Sprachen, auch Deutsch für Studenten aus dem Ausland",
+      "4th floor: learning languages: courses in many languages, also German for students from abroad"
+     ],
+     [
+      "3. Stock: Bibliothek: Bücher, Zeitschriften, ruhige Plätze zum Lernen, Drucker",
+      "3rd floor: library: books, magazines, quiet places to study, printers"
+     ],
+     [
+      "2. Stock: Hilfe für das Studium: Welches Fach passt zu mir? · Büro für Prüfungen: Termine und Noten",
+      "2nd floor: help with your studies: which subject suits me? · exams office: dates and marks"
+     ],
+     [
+      "1. Stock: Studium im Ausland: Wie finde ich einen Platz an einer Universität in einem anderen Land?",
+      "1st floor: studying abroad: how do I find a place at a university in another country?"
+     ],
+     [
+      "Erdgeschoss: Information · Cafeteria · Jobs für Studenten",
+      "Ground floor: information · cafeteria · jobs for students"
+     ],
+     [
+      "Untergeschoss: Fahrräder · Sport für Studenten: Fußball, Volleyball, Tanzen",
+      "Basement: bicycles · sport for students: football, volleyball, dancing"
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Die Cafeteria ist von 8 bis 16 Uhr geöffnet, die Bibliothek bis 22 Uhr.",
+      "The cafeteria is open from 8 am to 4 pm, the library until 10 pm."
+     ],
+     [
+      "In den Ferien ist die Bibliothek samstags geschlossen.",
+      "In the holidays the library is closed on Saturdays."
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Untergeschoss",
+    "en": "basement"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Sie möchten nächstes Jahr ein paar Monate in Spanien studieren. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "1. Stock",
+     "4. Stock",
+     "2. Stock"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "Studying in another country (Studium im Ausland) is on the 1st floor. The 4th floor only has language courses."
+   },
+   {
+    "q": "Sie haben eine Prüfung geschrieben und möchten Ihre Note wissen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "2. Stock",
+     "3. Stock",
+     "Erdgeschoss"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "The exams office with dates and marks (Noten) is on the 2nd floor."
+   },
+   {
+    "q": "Sie brauchen am Wochenende etwas Geld und suchen Arbeit. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "1. Stock",
+     "2. Stock",
+     "anderes Stockwerk"
+    ],
+    "a": 2,
+    "ev": [
+     "b2.4"
+    ],
+    "why": "Jobs for students are on the ground floor. That floor is not among the options, so the answer is \"anderes Stockwerk\"."
+   },
+   {
+    "q": "Sie möchten in einer Mannschaft Volleyball spielen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "Untergeschoss",
+     "Erdgeschoss",
+     "4. Stock"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.5"
+    ],
+    "why": "Sport for students, with volleyball, is in the basement."
+   },
+   {
+    "q": "Sie kommen aus Brasilien und möchten besser Deutsch sprechen. Wohin gehen Sie?",
+    "format": "abc",
+    "opts": [
+     "1. Stock",
+     "4. Stock",
+     "3. Stock"
+    ],
+    "a": 1,
+    "ev": [
+     "b2.0"
+    ],
+    "why": "German courses for students from abroad are on the 4th floor. The 1st floor is for going abroad, not for coming here."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-11",
+  "station": 10,
+  "part": "Teil 3",
+  "type": "email",
+  "title": "Projektwoche in der Klasse 6b",
+  "intro": "A class teacher writes to the parents of her class about a project week.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Liebe Eltern der Klasse 6b,",
+      "Dear parents of class 6b,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "vom 9. bis 13. März gibt es an unserer Schule keinen normalen Unterricht, denn dann ist Projektwoche.",
+      "from 9 to 13 March there are no normal lessons at our school, because it is project week."
+     ],
+     [
+      "Die Kinder arbeiten die ganze Woche in Gruppen an einem Thema.",
+      "The children work on a topic in groups all week."
+     ],
+     [
+      "Unsere Klasse hat das Thema „Wasser“ gewählt.",
+      "Our class has chosen the topic \"water\"."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Am Montag fahren wir mit dem Bus an den Fluss und untersuchen dort das Wasser.",
+      "On Monday we are going to the river by bus to examine the water there."
+     ],
+     [
+      "Bitte geben Sie Ihrem Kind an dem Tag Stiefel und alte Kleidung mit, denn es wird sicher nass und schmutzig.",
+      "Please give your child boots and old clothes that day, because it will certainly get wet and dirty."
+     ],
+     [
+      "Der Bus kostet 4 Euro pro Kind.",
+      "The bus costs 4 euros per child."
+     ],
+     [
+      "Bitte geben Sie Ihrem Kind das Geld bis zum 6. März mit.",
+      "Please give your child the money to bring to school by 6 March."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Am Freitag zeigen alle Klassen ihre Ergebnisse auf einem Fest in der Schule.",
+      "On Friday all the classes show their results at a party at the school."
+     ],
+     [
+      "Das Fest beginnt um 15 Uhr und endet um 18 Uhr.",
+      "The party starts at 3 pm and ends at 6 pm."
+     ],
+     [
+      "Sie und Ihre Familien sind natürlich auch eingeladen!",
+      "You and your families are of course invited too!"
+     ],
+     [
+      "Für das Fest brauchen wir noch Hilfe: Wer kann einen Kuchen backen oder eine Stunde in der Cafeteria Kaffee verkaufen?",
+      "We still need help for the party: who can bake a cake or sell coffee in the cafeteria for an hour?"
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Bitte schreiben Sie mir bis zum 2. März, ob Sie helfen können.",
+      "Please write to me by 2 March whether you can help."
+     ],
+     [
+      "Haben Sie noch Fragen?",
+      "Do you have any more questions?"
+     ],
+     [
+      "Sie erreichen mich jeden Mittwoch von 12 bis 13 Uhr in der Schule.",
+      "You can reach me at the school every Wednesday from 12 to 1 pm."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "h",
+    "s": [
+     [
+      "Viele Grüße",
+      "Best wishes"
+     ],
+     [
+      "Mirjam Gerlach",
+      "Mirjam Gerlach"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Projektwoche",
+    "en": "project week"
+   },
+   {
+    "w": "untersuchen",
+    "en": "to examine, to test"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Klasse 6b …",
+    "format": "abc",
+    "opts": [
+     "hat in der Projektwoche normalen Unterricht.",
+     "arbeitet in der Projektwoche zum Thema Wasser.",
+     "fährt die ganze Woche an einen Fluss."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "The class has chosen the topic \"Wasser\". There are no normal lessons, and the trip to the river is only on Monday."
+   },
+   {
+    "q": "Am Montag sollen die Kinder …",
+    "format": "abc",
+    "opts": [
+     "mit dem Fahrrad zur Schule kommen.",
+     "einen Kuchen mitbringen.",
+     "alte Kleidung tragen."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "On Monday they go to the river, so the children need boots and old clothes. The cake is for the party on Friday."
+   },
+   {
+    "q": "Bis zum 6. März sollen die Eltern …",
+    "format": "abc",
+    "opts": [
+     "dem Kind vier Euro mitgeben.",
+     "einen Kuchen backen.",
+     "Frau Gerlach eine Nachricht schreiben."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.3"
+    ],
+    "why": "The bus costs 4 euros, and the money must come to school by 6 March. The date for writing to Frau Gerlach is 2 March."
+   },
+   {
+    "q": "Das Fest am Freitag …",
+    "format": "abc",
+    "opts": [
+     "beginnt am Vormittag.",
+     "ist auch für die Familien der Kinder.",
+     "endet um 20 Uhr."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "The families are invited too. The party is from 3 pm to 6 pm."
+   },
+   {
+    "q": "Frau Gerlach möchte bis zum 2. März wissen, …",
+    "format": "abc",
+    "opts": [
+     "ob die Familien zum Fest kommen.",
+     "welches Thema die Kinder wählen.",
+     "ob die Eltern beim Fest helfen."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "She asks the parents to write by 2 March \"ob Sie helfen können\": whether they can help (a cake, or selling coffee). She does not ask who is coming."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-12",
+  "station": 11,
+  "part": "Teil 3",
+  "type": "email",
+  "title": "Ihr neuer Anschluss",
+  "intro": "An internet company writes to a new customer about a visit from its technician.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Sehr geehrte Frau Stöckl,",
+      "Dear Ms Stöckl,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "vielen Dank, dass Sie bei uns Internet und Telefon bestellt haben.",
+      "thank you for ordering internet and telephone from us."
+     ],
+     [
+      "Ab dem 14. Mai haben Sie zu Hause Internet und Telefon.",
+      "From 14 May you will have internet and telephone at home."
+     ],
+     [
+      "Vorher muss aber unser Mitarbeiter zu Ihnen in die Wohnung kommen.",
+      "Before that, however, our technician has to come to your flat."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Er kommt am Dienstag, 13. Mai, zwischen 8 und 12 Uhr.",
+      "He is coming on Tuesday, 13 May, between 8 am and 12 noon."
+     ],
+     [
+      "Wann genau, können wir Ihnen leider nicht sagen.",
+      "Unfortunately we cannot tell you exactly when."
+     ],
+     [
+      "Unser Mitarbeiter ruft Sie aber eine halbe Stunde vorher an.",
+      "But our technician will call you half an hour before."
+     ],
+     [
+      "Die Arbeit dauert circa eine Stunde.",
+      "The work takes about an hour."
+     ],
+     [
+      "Bitte bleiben Sie an dem Vormittag zu Hause, oder ein Nachbar öffnet ihm die Tür.",
+      "Please stay at home that morning, or have a neighbour open the door for him."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Das neue Gerät für Internet und Telefon schicken wir Ihnen vorher mit der Post.",
+      "We will send you the new device for internet and telephone by post beforehand."
+     ],
+     [
+      "Bitte öffnen Sie das Paket nicht, das macht unser Mitarbeiter.",
+      "Please do not open the parcel; our technician will do that."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Haben Sie am 13. Mai keine Zeit?",
+      "Are you busy on 13 May?"
+     ],
+     [
+      "Dann können Sie den Termin bis zum 9. Mai im Internet ändern oder uns kostenlos unter 0800 4455 66 anrufen.",
+      "Then you can change the appointment online by 9 May or call us free of charge on 0800 4455 66."
+     ],
+     [
+      "Für den Besuch bezahlen Sie nichts.",
+      "You pay nothing for the visit."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "h",
+    "s": [
+     [
+      "Mit freundlichen Grüßen",
+      "Kind regards"
+     ],
+     [
+      "Ihr Team von DigiNord",
+      "Your DigiNord team"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Gerät",
+    "en": "device"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Ab dem 14. Mai …",
+    "format": "abc",
+    "opts": [
+     "kommt der Mitarbeiter zu Frau Stöckl.",
+     "hat Frau Stöckl zu Hause Internet.",
+     "kann Frau Stöckl den Termin nicht mehr ändern."
+    ],
+    "a": 1,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "From 14 May she has internet and telephone at home. The technician comes before that, on 13 May, and the appointment can be changed until 9 May."
+   },
+   {
+    "q": "Der Mitarbeiter kommt …",
+    "format": "abc",
+    "opts": [
+     "am Nachmittag.",
+     "am Abend.",
+     "am Vormittag."
+    ],
+    "a": 2,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "He comes between 8 am and 12 noon, in the morning (Vormittag)."
+   },
+   {
+    "q": "Was macht der Mitarbeiter vor seinem Besuch?",
+    "format": "abc",
+    "opts": [
+     "Er schickt ihr eine E-Mail.",
+     "Er ruft Frau Stöckl an.",
+     "Er spricht mit ihrem Nachbarn."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "He calls her half an hour before he comes. A neighbour can open the door, but he does not talk to the neighbour first."
+   },
+   {
+    "q": "Was soll Frau Stöckl mit dem Paket machen?",
+    "format": "abc",
+    "opts": [
+     "Sie soll es nicht öffnen.",
+     "Sie soll es zur Post bringen.",
+     "Sie soll das Gerät zurückschicken."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "\"Bitte öffnen Sie das Paket nicht\": the technician opens it."
+   },
+   {
+    "q": "Wenn Frau Stöckl am 13. Mai keine Zeit hat, …",
+    "format": "abc",
+    "opts": [
+     "muss sie 20 Euro bezahlen.",
+     "kann sie einen anderen Termin machen.",
+     "kommt der Mitarbeiter am Abend."
+    ],
+    "a": 1,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "She can change the appointment online or by phone. The visit costs nothing."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-13",
+  "station": 12,
+  "part": "Teil 3",
+  "type": "email",
+  "title": "Grüße von der Insel",
+  "intro": "Smilla writes to her friend Rasmus from an island where she is working as a volunteer.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Hallo Rasmus,",
+      "Hi Rasmus,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "viele Grüße von der Insel Amrum!",
+      "greetings from the island of Amrum!"
+     ],
+     [
+      "Ich bin jetzt seit zwei Wochen hier und helfe zwei Monate lang freiwillig in einem Verein für Natur und Umwelt.",
+      "I have been here for two weeks now, and I am volunteering for two months with a nature and environment association."
+     ],
+     [
+      "Jeden Morgen gehe ich um sechs Uhr an den Strand und notiere, welche Vögel ich sehe.",
+      "Every morning I go to the beach at six and note down which birds I see."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Am Nachmittag erkläre ich den Touristen, warum sie nicht überall am Strand laufen dürfen.",
+      "In the afternoon I explain to the tourists why they can't walk everywhere on the beach."
+     ],
+     [
+      "Im Frühling bekommen viele Vögel dort ihre Jungen.",
+      "In spring many birds have their young there."
+     ],
+     [
+      "Die meisten Leute verstehen das, aber manche ärgern sich auch und werden laut.",
+      "Most people understand that, but some also get annoyed and start shouting."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Ich wohne mit drei anderen jungen Leuten in einem kleinen Haus, und wir kochen jeden Abend zusammen.",
+      "I live with three other young people in a small house, and we cook together every evening."
+     ],
+     [
+      "Das Wetter ist leider oft nicht so schön, es gibt viel Wind und Regen.",
+      "Unfortunately the weather is often not so nice; there is a lot of wind and rain."
+     ],
+     [
+      "Aber die Landschaft ist wunderbar!",
+      "But the landscape is wonderful!"
+     ],
+     [
+      "Ein Auto brauche ich hier nicht, ich fahre überall mit dem Fahrrad.",
+      "I don't need a car here; I go everywhere by bike."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Hast du nicht Lust, mich zu besuchen?",
+      "Wouldn't you like to visit me?"
+     ],
+     [
+      "Im Juni gibt es hier ein großes Fest am Strand, das wird sicher toll.",
+      "In June there is a big party on the beach here; it will certainly be great."
+     ],
+     [
+      "Du kannst bei uns im Haus schlafen, wir haben noch ein Bett frei.",
+      "You can sleep at our house; we still have a free bed."
+     ],
+     [
+      "Das Schiff zur Insel fährt jeden Tag um 10 und um 16 Uhr.",
+      "The ship to the island goes every day at 10 am and at 4 pm."
+     ],
+     [
+      "Schreib mir bald!",
+      "Write to me soon!"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "h",
+    "s": [
+     [
+      "Liebe Grüße",
+      "Love"
+     ],
+     [
+      "Smilla",
+      "Smilla"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "notiere",
+    "en": "note down (notieren)"
+   },
+   {
+    "w": "ihre Jungen",
+    "en": "their young (baby birds)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Smilla ist auf der Insel, weil …",
+    "format": "abc",
+    "opts": [
+     "sie dort freiwillig in einem Verein arbeitet.",
+     "sie dort Urlaub macht.",
+     "sie dort studiert."
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "She is volunteering (freiwillig) for two months with a nature and environment association."
+   },
+   {
+    "q": "Was macht Smilla jeden Morgen?",
+    "format": "abc",
+    "opts": [
+     "Sie kocht für alle Frühstück.",
+     "Sie zeigt Touristen den Strand.",
+     "Sie schreibt auf, welche Vögel sie sieht."
+    ],
+    "a": 2,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "Every morning she notes down which birds she sees. She talks to tourists in the afternoon, and they cook in the evening."
+   },
+   {
+    "q": "Manche Touristen ärgern sich, weil …",
+    "format": "abc",
+    "opts": [
+     "sie nicht überall am Strand laufen dürfen.",
+     "das Wetter so schlecht ist.",
+     "sie auf der Insel kein Auto fahren dürfen."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0",
+     "b3.2"
+    ],
+    "why": "Smilla explains why the tourists may not walk everywhere on the beach (the birds have their young there), and some get annoyed about it."
+   },
+   {
+    "q": "Wie ist das Wetter auf der Insel?",
+    "format": "abc",
+    "opts": [
+     "Meistens sonnig und warm.",
+     "Sehr kalt, es schneit oft.",
+     "Oft windig und nass."
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "There is often a lot of wind and rain: windy and wet."
+   },
+   {
+    "q": "Rasmus kann im Juni …",
+    "format": "abc",
+    "opts": [
+     "bei Smilla im Haus schlafen.",
+     "mit dem Auto auf die Insel fahren.",
+     "in einem Hotel am Strand wohnen."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "Smilla writes that he can sleep at their house, because they have a free bed. He comes by ship, not by car."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-14",
+  "station": 9,
+  "part": "Teil 3",
+  "type": "email",
+  "title": "Wir heiraten!",
+  "intro": "Thea writes to her friend Malin with big news and a question.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Liebe Malin,",
+      "Dear Malin,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "ich habe eine tolle Nachricht: Levent und ich heiraten!",
+      "I have great news: Levent and I are getting married!"
+     ],
+     [
+      "Er hat mich an meinem Geburtstag in einem Restaurant gefragt, und ich habe sofort Ja gesagt.",
+      "He asked me on my birthday in a restaurant, and I said yes straight away."
+     ],
+     [
+      "Die Hochzeit ist am Samstag, 22. August.",
+      "The wedding is on Saturday, 22 August."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Zuerst heiraten wir um 11 Uhr im Rathaus in Freiburg, nur mit unseren Familien.",
+      "First we get married at 11 am at the registry office in Freiburg, only with our families."
+     ],
+     [
+      "Am Nachmittag feiern wir dann mit allen Freunden im Garten der Eltern von Levent, direkt an einem See.",
+      "In the afternoon we then celebrate with all our friends in the garden of Levent's parents, right on a lake."
+     ],
+     [
+      "Es gibt gutes Essen, Musik und hoffentlich viel Sonne.",
+      "There will be good food, music and hopefully lots of sunshine."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Und jetzt meine Frage: Kannst du an dem Tag ein paar Fotos machen?",
+      "And now my question: could you take a few photos on the day?"
+     ],
+     [
+      "Du fotografierst so gut, und einen Fotografen können wir leider nicht bezahlen.",
+      "You take such good photos, and unfortunately we can't afford a photographer."
+     ],
+     [
+      "Du musst natürlich nicht den ganzen Tag arbeiten, nur am Nachmittag eine Stunde.",
+      "Of course you don't have to work all day, just for an hour in the afternoon."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Für die Nacht haben wir Zimmer in einem kleinen Hotel im Dorf reserviert.",
+      "For the night we have booked rooms in a small hotel in the village."
+     ],
+     [
+      "Du musst nichts bezahlen, das ist unser Geschenk für alle Gäste.",
+      "You don't have to pay anything; that is our present to all the guests."
+     ],
+     [
+      "Geschenke brauchen wir nicht, aber wir sparen für eine Reise nach Mexiko.",
+      "We don't need presents, but we are saving for a trip to Mexico."
+     ],
+     [
+      "Bitte sag mir bis Ende Mai, ob du kommen kannst.",
+      "Please tell me by the end of May whether you can come."
+     ],
+     [
+      "Ich freue mich so!",
+      "I'm so happy!"
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "h",
+    "s": [
+     [
+      "Deine Thea",
+      "Love, Thea"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Fotografen",
+    "en": "photographer"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo hat Levent Thea gefragt?",
+    "format": "abc",
+    "opts": [
+     "Im Rathaus.",
+     "Bei seinen Eltern.",
+     "In einem Restaurant."
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "He asked her on her birthday in a restaurant. The town hall and his parents' garden are where the wedding takes place."
+   },
+   {
+    "q": "Wer ist um 11 Uhr im Rathaus dabei?",
+    "format": "abc",
+    "opts": [
+     "Nur die Familien.",
+     "Alle Freunde.",
+     "Nur Thea und Levent."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "At the town hall at 11 am it is \"nur mit unseren Familien\". The friends come in the afternoon."
+   },
+   {
+    "q": "Was soll Malin auf der Hochzeit machen?",
+    "format": "abc",
+    "opts": [
+     "Den ganzen Tag helfen.",
+     "Am Nachmittag Fotos machen.",
+     "Einen Fotografen suchen."
+    ],
+    "a": 1,
+    "ev": [
+     "b4.0"
+    ],
+    "why": "Thea asks her to take photos, only for an hour in the afternoon, because they cannot pay a photographer."
+   },
+   {
+    "q": "Die Gäste …",
+    "format": "abc",
+    "opts": [
+     "schlafen kostenlos in einem Hotel.",
+     "schlafen bei den Eltern von Levent.",
+     "reservieren selbst ein Zimmer im Dorf."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "The couple has booked rooms in a hotel, and the guests pay nothing: it is their present."
+   },
+   {
+    "q": "Was schreibt Thea über Geschenke?",
+    "format": "abc",
+    "opts": [
+     "Jeder Gast soll etwas aus Mexiko mitbringen.",
+     "Sie wünschen sich Fotos für ihre Wohnung.",
+     "Sie und Levent möchten lieber Geld für eine Reise."
+    ],
+    "a": 2,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "They don't need presents but are saving for a trip to Mexico, so money for the trip is the best present."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-15",
+  "station": 11,
+  "part": "Teil 3",
+  "type": "email",
+  "title": "Ihre neue Waschmaschine",
+  "intro": "An electrical shop writes to a customer about the delivery of a washing machine.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Sehr geehrter Herr Bachmann,",
+      "Dear Mr Bachmann,"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "p",
+    "s": [
+     [
+      "vielen Dank, dass Sie bei uns eine Waschmaschine gekauft haben.",
+      "thank you for buying a washing machine from us."
+     ],
+     [
+      "Wir liefern die Maschine am Donnerstag, 6. November, zwischen 14 und 18 Uhr.",
+      "We will deliver the machine on Thursday, 6 November, between 2 pm and 6 pm."
+     ],
+     [
+      "Unsere Mitarbeiter bringen sie in Ihre Wohnung und schließen sie auch an.",
+      "Our staff will bring it into your flat and also connect it."
+     ],
+     [
+      "Das dauert circa 30 Minuten.",
+      "That takes about 30 minutes."
+     ]
+    ]
+   },
+   {
+    "id": "b3",
+    "t": "p",
+    "s": [
+     [
+      "Ihre alte Maschine nehmen wir gern mit, das kostet 25 Euro.",
+      "We are happy to take your old machine away; that costs 25 euros."
+     ],
+     [
+      "Bitte sagen Sie uns bis Montag, ob wir das machen sollen.",
+      "Please tell us by Monday whether we should do that."
+     ]
+    ]
+   },
+   {
+    "id": "b4",
+    "t": "p",
+    "s": [
+     [
+      "Noch eine Frage: Sie wohnen im 4. Stock.",
+      "One more question: you live on the 4th floor."
+     ],
+     [
+      "Gibt es in Ihrem Haus einen Aufzug?",
+      "Is there a lift in your building?"
+     ],
+     [
+      "Wenn nicht, brauchen wir zwei Mitarbeiter, und Sie bezahlen 30 Euro mehr.",
+      "If not, we need two members of staff, and you pay 30 euros more."
+     ]
+    ]
+   },
+   {
+    "id": "b5",
+    "t": "p",
+    "s": [
+     [
+      "Am Mittwoch schicken wir Ihnen eine Nachricht auf Ihr Handy, wann genau wir kommen.",
+      "On Wednesday we will send a message to your mobile saying exactly when we are coming."
+     ],
+     [
+      "Die Rechnung bekommen Sie mit der Maschine, Sie können dann bar oder mit Karte bezahlen.",
+      "You will get the bill with the machine; you can then pay in cash or by card."
+     ],
+     [
+      "Sie sind am Donnerstag nicht zu Hause?",
+      "You are not at home on Thursday?"
+     ],
+     [
+      "Dann rufen Sie uns bitte an: 0761 334455.",
+      "Then please call us: 0761 334455."
+     ]
+    ]
+   },
+   {
+    "id": "b6",
+    "t": "h",
+    "s": [
+     [
+      "Mit freundlichen Grüßen",
+      "Kind regards"
+     ],
+     [
+      "Ihr Team von Elektro Bremer",
+      "Your team at Elektro Bremer"
+     ]
+    ]
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Waschmaschine",
+    "en": "washing machine"
+   },
+   {
+    "w": "schließen sie auch an",
+    "en": "also connect it (anschließen)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann bringt das Geschäft die Maschine?",
+    "format": "abc",
+    "opts": [
+     "Am Montagvormittag.",
+     "Am Mittwochabend.",
+     "Am Donnerstagnachmittag."
+    ],
+    "a": 2,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "The delivery is on Thursday between 2 pm and 6 pm: Thursday afternoon. Monday and Wednesday are other dates in the email."
+   },
+   {
+    "q": "Für 25 Euro …",
+    "format": "abc",
+    "opts": [
+     "nimmt das Geschäft die alte Maschine mit.",
+     "schließen die Mitarbeiter die Maschine an.",
+     "kommen die Mitarbeiter schneller."
+    ],
+    "a": 0,
+    "ev": [
+     "b3.0"
+    ],
+    "why": "25 euros is the price for taking the old machine away. Connecting the new one is part of the delivery."
+   },
+   {
+    "q": "Bis Montag soll Herr Bachmann …",
+    "format": "abc",
+    "opts": [
+     "die Maschine bezahlen.",
+     "sagen, ob er die alte Maschine abgeben möchte.",
+     "einen neuen Termin machen."
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "By Monday he should say whether the shop should take the old machine. He pays when the machine comes."
+   },
+   {
+    "q": "Wenn es keinen Aufzug gibt, …",
+    "format": "abc",
+    "opts": [
+     "wird die Lieferung teurer.",
+     "kann das Geschäft nicht liefern.",
+     "muss Herr Bachmann beim Tragen helfen."
+    ],
+    "a": 0,
+    "ev": [
+     "b4.2"
+    ],
+    "why": "Without a lift they need two people, and he pays 30 euros more: the delivery gets more expensive."
+   },
+   {
+    "q": "Was passiert am Mittwoch?",
+    "format": "abc",
+    "opts": [
+     "Herr Bachmann bekommt eine Nachricht mit der Uhrzeit.",
+     "Herr Bachmann bezahlt die Rechnung.",
+     "Die Mitarbeiter bringen die Maschine."
+    ],
+    "a": 0,
+    "ev": [
+     "b5.0"
+    ],
+    "why": "On Wednesday the shop sends a message to his mobile saying exactly when they are coming."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-16",
+  "station": 11,
+  "part": "Teil 4",
+  "type": "ad",
+  "title": "Service in Ihrer Stadt",
+  "intro": "Six ads for services on a local website. Five people need help with something.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Service in Ihrer Stadt",
+      "Services in your town"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Reinigung Weiß",
+      "Weiß dry cleaner's"
+     ],
+     [
+      "Bei uns wird Ihre Kleidung wieder wie neu: Anzüge, Mäntel und Kleider.",
+      "With us your clothes look like new again: suits, coats and dresses."
+     ],
+     [
+      "Sie haben es eilig?",
+      "In a hurry?"
+     ],
+     [
+      "Bei uns ist Ihre Kleidung in nur zwei Stunden fertig.",
+      "With us your clothes are ready in only two hours."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Lingua: Wir übersetzen für Sie",
+      "Lingua: we translate for you"
+     ],
+     [
+      "Zeugnisse, Verträge und Briefe von der Stadt: Wir übersetzen Ihre Papiere aus 30 Sprachen ins Deutsche.",
+      "School reports, contracts and letters from the town: we translate your papers from 30 languages into German."
+     ],
+     [
+      "Sie bekommen alles in drei bis fünf Tagen.",
+      "You get everything in three to five days."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Reparatur von Handys und Laptops",
+      "Repairs for mobile phones and laptops"
+     ],
+     [
+      "Bringen Sie Ihr Gerät in unseren Laden in der Bahnhofstraße.",
+      "Bring your device to our shop in Bahnhofstraße."
+     ],
+     [
+      "Wir reparieren fast alles, oft noch am gleichen Tag.",
+      "We repair almost everything, often on the same day."
+     ],
+     [
+      "Montag bis Freitag 9 bis 17 Uhr, samstags geschlossen.",
+      "Monday to Friday 9 am to 5 pm, closed on Saturdays."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Computerhilfe zu Hause",
+      "Computer help at home"
+     ],
+     [
+      "Ihr Laptop ist langsam, oder Sie haben Probleme mit Ihren E-Mails?",
+      "Is your laptop slow, or do you have problems with your emails?"
+     ],
+     [
+      "Wir kommen zu Ihnen nach Hause, auch abends und am Wochenende.",
+      "We come to your home, evenings and weekends too."
+     ],
+     [
+      "Eine Stunde kostet 35 Euro.",
+      "One hour costs 35 euros."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Ferien für Ihr Tier",
+      "Holidays for your pet"
+     ],
+     [
+      "Sie fahren in Urlaub, aber Ihr Hund oder Ihre Katze kann nicht mitkommen?",
+      "You are going on holiday, but your dog or cat can't come with you?"
+     ],
+     [
+      "Bei uns gibt es viel Platz und einen großen Garten.",
+      "We have lots of space and a big garden."
+     ],
+     [
+      "Wir kümmern uns gern um Ihr Tier, pro Tag 20 Euro.",
+      "We are happy to look after your pet, 20 euros a day."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Hilfe für ältere Menschen",
+      "Help for older people"
+     ],
+     [
+      "Wir kaufen für Sie ein, kochen, putzen und gehen mit Ihnen zum Arzt.",
+      "We do your shopping, cook, clean and go to the doctor with you."
+     ],
+     [
+      "Ihre Familie wohnt weit weg?",
+      "Your family lives far away?"
+     ],
+     [
+      "Wir sind für Sie da!",
+      "We are there for you!"
+     ]
+    ],
+    "label": "f"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Verträge",
+    "en": "contracts"
+   },
+   {
+    "w": "Papiere",
+    "en": "papers, documents"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Bruno hat Probleme mit seinem Laptop. Er arbeitet jeden Tag bis 18 Uhr.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.2"
+    ],
+    "why": "Ad d comes to your home, in the evening and at weekends too. The shop in ad c also repairs laptops, but it is only open until 5 pm on weekdays, when Bruno is at work."
+   },
+   {
+    "q": "Selma geht heute Abend auf eine Hochzeit, aber ihr Kleid ist schmutzig.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.3"
+    ],
+    "why": "Ad a cleans dresses, and they are ready in only two hours, so in time for this evening."
+   },
+   {
+    "q": "Herr Hufnagel macht im Juli drei Wochen Urlaub in Spanien. Seine Katze kann nicht mitkommen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.1",
+     "b6.3"
+    ],
+    "why": "Ad e looks after dogs and cats while their owners are on holiday."
+   },
+   {
+    "q": "Die Mutter von Volkmar ist 82 und kann nicht mehr allein einkaufen. Volkmar wohnt in einer anderen Stadt.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.1",
+     "b7.2"
+    ],
+    "why": "Ad f helps older people with shopping, cooking and cleaning, for families who live far away."
+   },
+   {
+    "q": "Orhan hat ein Zeugnis aus der Türkei. Er braucht es auf Deutsch.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Ad b translates school reports (Zeugnisse) and other papers into German."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-17",
+  "station": 12,
+  "part": "Teil 4",
+  "type": "ad",
+  "title": "Draußen in der Natur",
+  "intro": "Six ads for activities in nature. Five people are looking for something to do outdoors.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Draußen in der Natur",
+      "Outdoors in nature"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Ferien im Zelt",
+      "Holidays in a tent"
+     ],
+     [
+      "Für Kinder von 10 bis 14 Jahren: zwei Wochen im August an einem See.",
+      "For children aged 10 to 14: two weeks in August at a lake."
+     ],
+     [
+      "Wir schwimmen, wandern und kochen jeden Abend am Feuer.",
+      "We swim, go hiking and cook on a fire every evening."
+     ],
+     [
+      "Die Eltern bleiben zu Hause!",
+      "Parents stay at home!"
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Fotos in der Natur: ein Kurs",
+      "Photos in nature: a course"
+     ],
+     [
+      "Wie fotografiert man Blumen, Bäume und Tiere?",
+      "How do you photograph flowers, trees and animals?"
+     ],
+     [
+      "Das lernen Sie an einem Samstag von 10 bis 16 Uhr im Wald.",
+      "You learn it on a Saturday from 10 am to 4 pm in the forest."
+     ],
+     [
+      "Bitte bringen Sie Ihre eigene Kamera mit.",
+      "Please bring your own camera."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Garten für alle",
+      "A garden for everyone"
+     ],
+     [
+      "Sie haben keinen Garten, möchten aber gern eigenes Gemüse haben?",
+      "You don't have a garden, but you would like your own vegetables?"
+     ],
+     [
+      "Im Park an der Schillerstraße bekommen Sie ein kleines Stück Land für Tomaten, Kartoffeln und Salat.",
+      "In the park on Schillerstraße you get a small piece of land for tomatoes, potatoes and lettuce."
+     ],
+     [
+      "Nur 30 Euro im Jahr.",
+      "Only 30 euros a year."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Wanderung in der Nacht",
+      "A walk at night"
+     ],
+     [
+      "Welche Tiere sind nachts im Wald unterwegs?",
+      "Which animals are out and about in the forest at night?"
+     ],
+     [
+      "Sehen und hören Sie die Tiere, wenn alle anderen schlafen.",
+      "See and hear the animals when everyone else is asleep."
+     ],
+     [
+      "Für Familien mit Kindern ab 8 Jahren, jeden Freitag um 21 Uhr.",
+      "For families with children aged 8 and over, every Friday at 9 pm."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Das Tierheim braucht Sie!",
+      "The animal shelter needs you!"
+     ],
+     [
+      "Unsere Hunde möchten jeden Tag spazieren gehen, aber wir haben zu wenig Zeit.",
+      "Our dogs want to go for a walk every day, but we have too little time."
+     ],
+     [
+      "Wer hat Lust, uns zu helfen?",
+      "Who would like to help us?"
+     ],
+     [
+      "Kommen Sie einfach zwischen 14 und 17 Uhr vorbei.",
+      "Just come by between 2 pm and 5 pm."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Mit dem Fahrrad um den See",
+      "By bike around the lake"
+     ],
+     [
+      "Jeden Sonntag machen wir zusammen eine lange Tour.",
+      "Every Sunday we do a long ride together."
+     ],
+     [
+      "Start ist um 9 Uhr am Bahnhof, die Tour ist kostenlos.",
+      "The start is at 9 am at the station; the ride is free."
+     ],
+     [
+      "Bitte kommen Sie mit Ihrem eigenen Fahrrad.",
+      "Please come with your own bike."
+     ]
+    ],
+    "label": "f"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Tierheim",
+    "en": "animal shelter"
+   },
+   {
+    "w": "Land",
+    "en": "land (here: a piece of ground)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Mathilda ist 9. Sie möchte mit ihrem Vater am Abend Tiere im Wald sehen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1",
+     "b5.3"
+    ],
+    "why": "Ad d is a night walk in the forest for families with children aged 8 and over. The tent holiday in ad a is for children from 10, without parents."
+   },
+   {
+    "q": "Herr Mertens wohnt in einer Wohnung ohne Balkon. Er möchte gern selbst Gemüse haben.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "Ad c gives people without a garden a small piece of land for vegetables."
+   },
+   {
+    "q": "Liv liebt Hunde, aber in ihrer Wohnung darf sie kein Tier haben. Nachmittags hat sie Zeit.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.1",
+     "b6.3"
+    ],
+    "why": "In ad e you can take the shelter's dogs for a walk in the afternoon, without having your own dog."
+   },
+   {
+    "q": "Frau Göbel muss im August arbeiten. Ihre Söhne (11 und 13) sollen in der Zeit Ferien in der Natur machen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Ad a is a two-week tent holiday in August for children aged 10 to 14, and the parents stay at home."
+   },
+   {
+    "q": "Vincent hat eine neue Kamera. Er möchte lernen, wie man Pflanzen und Tiere fotografiert.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1"
+    ],
+    "why": "Ad b is a course on photographing flowers, trees and animals."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-18",
+  "station": 9,
+  "part": "Teil 4",
+  "type": "ad",
+  "title": "Alles für Ihr Fest",
+  "intro": "Six ads for parties and celebrations. Five people are planning a celebration.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Alles für Ihr Fest",
+      "Everything for your party"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Essen aus Italien für Ihr Fest",
+      "Italian food for your party"
+     ],
+     [
+      "Wir kochen Pizza, Nudeln und Salate für 20 bis 100 Gäste.",
+      "We cook pizza, pasta and salads for 20 to 100 guests."
+     ],
+     [
+      "Sie holen das Essen bei uns ab.",
+      "You collect the food from us."
+     ],
+     [
+      "Teller und Gläser haben wir leider nicht.",
+      "Unfortunately we don't have plates and glasses."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Die Band „Sommerwind“",
+      "The band \"Sommerwind\""
+     ],
+     [
+      "Wir spielen Pop, Rock und alte Lieder zum Tanzen.",
+      "We play pop, rock and old songs to dance to."
+     ],
+     [
+      "Für Hochzeiten, Feste in der Firma und Partys.",
+      "For weddings, company parties and other parties."
+     ],
+     [
+      "Wir sind fünf Leute, ab 600 Euro pro Abend.",
+      "There are five of us; from 600 euros per evening."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Feiern auf dem Schiff",
+      "Celebrate on a boat"
+     ],
+     [
+      "Fahren Sie mit Ihren Gästen vier Stunden auf dem Fluss.",
+      "Go out on the river with your guests for four hours."
+     ],
+     [
+      "Für Hochzeiten, Geburtstage und andere Feste, bis 120 Personen.",
+      "For weddings, birthdays and other parties, up to 120 people."
+     ],
+     [
+      "Essen und Getränke gibt es auf dem Schiff.",
+      "Food and drinks are served on board."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Karten mit Ihrem Foto",
+      "Cards with your photo"
+     ],
+     [
+      "Einladungen, Karten zur Hochzeit oder zum Geburtstag: Wir drucken Ihre Karten mit Ihrem Lieblingsfoto.",
+      "Invitations, wedding or birthday cards: we print your cards with your favourite photo."
+     ],
+     [
+      "In zwei Tagen sind die Karten bei Ihnen.",
+      "The cards reach you in two days."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Café Mühlrad: Torten für jedes Fest",
+      "Café Mühlrad: cakes for every celebration"
+     ],
+     [
+      "Wir backen Ihre Torte, wie Sie es möchten.",
+      "We bake your cake the way you want it."
+     ],
+     [
+      "Neu: Torten ohne Zucker und ohne Ei.",
+      "New: cakes without sugar and without egg."
+     ],
+     [
+      "Bitte bestellen Sie drei Tage vorher.",
+      "Please order three days in advance."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Zu wenig Teller?",
+      "Not enough plates?"
+     ],
+     [
+      "Wir leihen Ihnen Geschirr, Gläser, Tische und Stühle für Ihr Fest.",
+      "We lend you crockery, glasses, tables and chairs for your party."
+     ],
+     [
+      "Wir bringen alles zu Ihnen und holen es am nächsten Tag wieder ab.",
+      "We bring everything to you and collect it again the next day."
+     ],
+     [
+      "Sie müssen nichts sauber machen!",
+      "You don't have to clean anything!"
+     ]
+    ],
+    "label": "f"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Lieblingsfoto",
+    "en": "favourite photo"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Nesrin heiratet im Juni. Sie möchte mit allen Gästen auf dem Wasser feiern.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "In ad c you celebrate with your guests on a boat on the river, also weddings. The band in ad b plays at weddings, but not on the water."
+   },
+   {
+    "q": "Ludwig feiert im Garten mit 80 Gästen. Er hat aber nur zwölf Teller.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.1"
+    ],
+    "why": "Ad f lends plates (Geschirr), glasses, tables and chairs. The food service in ad a has no plates."
+   },
+   {
+    "q": "Die Tochter von Herrn Marx hat Geburtstag. Sie möchte eine Torte, aber sie darf keinen Zucker essen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.2"
+    ],
+    "why": "Ad e now bakes cakes without sugar."
+   },
+   {
+    "q": "Wencke möchte ihre Freunde zum Geburtstag einladen, nicht mit einer E-Mail, sondern mit einer schönen Karte.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Ad d prints invitation cards for birthdays."
+   },
+   {
+    "q": "Hugo plant ein Sommerfest für seine Firma. Die Gäste sollen tanzen können.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.1",
+     "b3.2"
+    ],
+    "why": "Ad b plays songs to dance to, also at company parties (Feste in der Firma)."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-19",
+  "station": 10,
+  "part": "Teil 4",
+  "type": "ad",
+  "title": "Kurse und Unterricht",
+  "intro": "Six ads for courses and lessons. Five people want to learn something.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Kurse und Unterricht",
+      "Courses and lessons"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Internet für Menschen ab 60",
+      "The internet for people aged 60 and over"
+     ],
+     [
+      "Wie schreibe ich E-Mails?",
+      "How do I write emails?"
+     ],
+     [
+      "Wie schicke ich Fotos?",
+      "How do I send photos?"
+     ],
+     [
+      "In kleinen Gruppen lernen Sie langsam und ohne Stress, dienstags und donnerstags von 10 bis 12 Uhr.",
+      "In small groups you learn slowly and without stress, on Tuesdays and Thursdays from 10 am to 12 noon."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Deutsch am Abend",
+      "German in the evening"
+     ],
+     [
+      "Sie arbeiten und möchten trotzdem besser Deutsch sprechen?",
+      "You work and still want to speak better German?"
+     ],
+     [
+      "Unsere Kurse sind montags und mittwochs von 18.30 bis 21 Uhr.",
+      "Our courses are on Mondays and Wednesdays from 6.30 pm to 9 pm."
+     ],
+     [
+      "Es gibt Kurse von A1 bis B2.",
+      "There are courses from A1 to B2."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Fahrschule Grünpfeil",
+      "Grünpfeil driving school"
+     ],
+     [
+      "Den Führerschein in den Ferien machen!",
+      "Get your driving licence in the holidays!"
+     ],
+     [
+      "In drei Wochen lernen Sie bei uns alles für die Prüfung.",
+      "With us you learn everything for the test in three weeks."
+     ],
+     [
+      "Ab 17 Jahren, Unterricht auch auf Englisch.",
+      "From age 17, lessons in English too."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Musikschule Klang",
+      "Klang music school"
+     ],
+     [
+      "Klavier, Gitarre und Singen für alle von 6 bis 99.",
+      "Piano, guitar and singing for everyone from 6 to 99."
+     ],
+     [
+      "Unterricht auch am Abend.",
+      "Lessons in the evening too."
+     ],
+     [
+      "Die erste Stunde ist kostenlos.",
+      "The first lesson is free."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Deutsch am Vormittag",
+      "German in the morning"
+     ],
+     [
+      "Lernen Sie schnell Deutsch: jeden Tag von 8.30 bis 12.30 Uhr.",
+      "Learn German fast: every day from 8.30 am to 12.30 pm."
+     ],
+     [
+      "Ihre kleinen Kinder können bei uns spielen, wenn Sie lernen.",
+      "Your small children can play with us while you learn."
+     ],
+     [
+      "Anmeldung im Büro, Zimmer 4.",
+      "Registration in the office, room 4."
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Nachhilfe bei Ihnen zu Hause",
+      "Tutoring at your home"
+     ],
+     [
+      "Probleme in Englisch, Deutsch oder Mathe?",
+      "Problems with English, German or maths?"
+     ],
+     [
+      "Studenten helfen Schülern von Klasse 5 bis 10.",
+      "Students help pupils from year 5 to year 10."
+     ],
+     [
+      "Eine Stunde kostet 18 Euro.",
+      "One hour costs 18 euros."
+     ]
+    ],
+    "label": "f"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Nachhilfe",
+    "en": "tutoring, extra lessons"
+   },
+   {
+    "w": "Mathe",
+    "en": "maths"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Die Tochter von Frau Sander geht in die 7. Klasse. Sie hat schlechte Noten in Englisch.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.1",
+     "b7.2"
+    ],
+    "why": "Ad f helps pupils from year 5 to 10 with problems in English."
+   },
+   {
+    "q": "Anton ist 66. Er möchte lernen, wie er seinen Enkeln E-Mails schreibt.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.1"
+    ],
+    "why": "Ad a teaches people aged 60 and over how to write emails."
+   },
+   {
+    "q": "Juna ist 17. In den Sommerferien möchte sie Auto fahren lernen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1"
+    ],
+    "why": "At the driving school in ad c you can get your licence in the holidays, from age 17."
+   },
+   {
+    "q": "Burak arbeitet von 7 bis 16 Uhr. Er möchte nach der Arbeit Deutsch lernen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 1,
+    "ev": [
+     "b3.2"
+    ],
+    "why": "Ad b has German courses in the evening, after work. The course in ad e is in the morning, when Burak is working."
+   },
+   {
+    "q": "Tilman ist 35 und hat als Kind Gitarre gespielt. Er möchte wieder spielen, aber er hat nur abends Zeit.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1",
+     "b5.2"
+    ],
+    "why": "The music school in ad d teaches guitar to all ages, also in the evening."
+   }
+  ]
+ },
+ {
+  "id": "a2-rx-20",
+  "station": 12,
+  "part": "Teil 4",
+  "type": "ad",
+  "title": "Urlaub in der Natur",
+  "intro": "Six holiday ads from a travel magazine. Five people are planning a holiday in nature.",
+  "pool": "exam",
+  "blocks": [
+   {
+    "id": "b1",
+    "t": "h",
+    "s": [
+     [
+      "Urlaub in der Natur",
+      "Holidays in nature"
+     ]
+    ]
+   },
+   {
+    "id": "b2",
+    "t": "ad",
+    "s": [
+     [
+      "Wandern ohne Koffer",
+      "Hiking without a suitcase"
+     ],
+     [
+      "Sie wandern jeden Tag circa fünf Stunden von Hotel zu Hotel.",
+      "You hike for about five hours every day from hotel to hotel."
+     ],
+     [
+      "Ihr Gepäck bringen wir mit dem Auto ins nächste Hotel.",
+      "We take your luggage by car to the next hotel."
+     ],
+     [
+      "Sieben Tage, ab 690 Euro.",
+      "Seven days, from 690 euros."
+     ]
+    ],
+    "label": "a"
+   },
+   {
+    "id": "b3",
+    "t": "ad",
+    "s": [
+     [
+      "Haus in den Bergen",
+      "A house in the mountains"
+     ],
+     [
+      "Unser altes Haus liegt hoch in den Bergen.",
+      "Our old house is high up in the mountains."
+     ],
+     [
+      "Sie kommen nur zu Fuß zu uns, circa zwei Stunden.",
+      "You can only reach us on foot, about two hours."
+     ],
+     [
+      "Kein Internet, kein Fernseher, nur Ruhe.",
+      "No internet, no television, just peace and quiet."
+     ]
+    ],
+    "label": "b"
+   },
+   {
+    "id": "b4",
+    "t": "ad",
+    "s": [
+     [
+      "Ferien auf dem Bauernhof",
+      "Farm holidays"
+     ],
+     [
+      "Bei uns können Kinder bei den Tieren helfen und jeden Tag reiten.",
+      "Here children can help with the animals and go riding every day."
+     ],
+     [
+      "Wir haben Pferde, Schweine und Katzen.",
+      "We have horses, pigs and cats."
+     ],
+     [
+      "Für Familien mit Kindern ab 4 Jahren.",
+      "For families with children aged 4 and over."
+     ]
+    ],
+    "label": "c"
+   },
+   {
+    "id": "b5",
+    "t": "ad",
+    "s": [
+     [
+      "Mit dem Fahrrad am Fluss",
+      "By bike along the river"
+     ],
+     [
+      "Eine Woche Urlaub mit dem Fahrrad: Sie fahren jeden Tag am Fluss von Dorf zu Dorf.",
+      "A week's cycling holiday: every day you ride along the river from village to village."
+     ],
+     [
+      "Die Wege sind leicht, auch für Kinder.",
+      "The paths are easy, for children too."
+     ],
+     [
+      "Fahrräder können Sie bei uns leihen.",
+      "You can hire bikes from us."
+     ]
+    ],
+    "label": "d"
+   },
+   {
+    "id": "b6",
+    "t": "ad",
+    "s": [
+     [
+      "Campingplatz Düne",
+      "Düne campsite"
+     ],
+     [
+      "Schlafen Sie im Zelt, direkt am Meer.",
+      "Sleep in a tent, right by the sea."
+     ],
+     [
+      "Ein Platz für ein Zelt kostet nur 12 Euro pro Nacht.",
+      "A pitch for a tent costs only 12 euros a night."
+     ],
+     [
+      "Für junge Leute mit wenig Geld genau das Richtige!",
+      "Just the thing for young people with little money!"
+     ]
+    ],
+    "label": "e"
+   },
+   {
+    "id": "b7",
+    "t": "ad",
+    "s": [
+     [
+      "Ruhige Wohnung am See",
+      "Quiet flat by a lake"
+     ],
+     [
+      "Zwei Zimmer mit Küche und Balkon, direkt am Wasser, für bis zu vier Personen.",
+      "Two rooms with a kitchen and balcony, right by the water, for up to four people."
+     ],
+     [
+      "Hunde sind bei uns willkommen!",
+      "Dogs are welcome!"
+     ]
+    ],
+    "label": "f"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "Bauernhof",
+    "en": "farm"
+   },
+   {
+    "w": "Campingplatz",
+    "en": "campsite"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Familie Kuhn hat zwei Kinder (6 und 9). Die Kinder lieben Tiere, besonders Pferde.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 2,
+    "ev": [
+     "b4.1",
+     "b4.2"
+    ],
+    "why": "On the farm in ad c children can help with the animals and ride horses every day."
+   },
+   {
+    "q": "Karla und ihr Freund möchten eine Woche wandern, aber sie möchten ihre Sachen nicht jeden Tag tragen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 0,
+    "ev": [
+     "b2.2"
+    ],
+    "why": "In ad a you hike from hotel to hotel, and your luggage goes by car. To the house in ad b you must walk with your things."
+   },
+   {
+    "q": "Herr Vogelsang möchte mit seinem Hund eine Woche Ruhe an einem See haben.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 5,
+    "ev": [
+     "b7.2"
+    ],
+    "why": "The quiet flat by the lake in ad f welcomes dogs."
+   },
+   {
+    "q": "Svea und ihre Freundinnen haben wenig Geld. Sie möchten am Meer im Zelt schlafen.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 4,
+    "ev": [
+     "b6.1",
+     "b6.3"
+    ],
+    "why": "The campsite in ad e is right by the sea and cheap: 12 euros a night for a tent."
+   },
+   {
+    "q": "Detlef fährt gern Fahrrad. Er möchte im Urlaub jeden Tag an einem Fluss fahren.",
+    "format": "match",
+    "opts": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f"
+    ],
+    "a": 3,
+    "ev": [
+     "b5.1"
+    ],
+    "why": "Ad d is a cycling holiday along a river."
+   }
+  ]
+ }
+]
