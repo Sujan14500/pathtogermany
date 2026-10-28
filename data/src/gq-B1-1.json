@@ -685,7 +685,7 @@
    "Deshalb"
   ],
   "a": 2,
-  "why": "Position 1 followed directly by the verb (haben) means an adverb: trotzdem = still. obwohl would send the verb to the end.",
+  "why": "Position 1 followed directly by the verb (haben) means an adverb: trotzdem = still. obwohl would send the verb to the end, and deshalb (so) makes no sense: being boring is no reason to watch to the end.",
   "en": "The film was boring. We still watched it to the end."
  },
  {
@@ -711,7 +711,7 @@
    "trotzdem"
   ],
   "a": 3,
-  "why": "trotzdem can also stand after the verb in a main clause. obwohl and weil can only start a side clause.",
+  "why": "trotzdem can also stand after the verb in a main clause. obwohl and weil can only start a side clause, and deshalb (so) clashes with aber: having little time is no reason to read the paper.",
   "en": "Malte has little time, but he still reads the newspaper every morning."
  },
  {
@@ -1062,7 +1062,7 @@
    "bis"
   ],
   "a": 1,
-  "why": "A whole clause follows (du losfährst, verb at the end), so you need the conjunction bevor, not vor.",
+  "why": "A whole clause follows (du losfährst, verb at the end), so you need the conjunction bevor, not the preposition vor. nachdem would need the earlier tense: nachdem du losgefahren bist.",
   "en": "Call me before you set off."
  },
  {
@@ -1153,7 +1153,7 @@
    "weil"
   ],
   "a": 1,
-  "why": "New subject (die Wärme) and the verb at the end: damit. um … zu only works without a new subject.",
+  "why": "New subject (die Wärme) and the verb at the end: damit. um … zu only works without a new subject, and dass on its own doesn't express a purpose in standard German.",
   "en": "I close the window so that the heat doesn't escape."
  },
  {
@@ -1310,7 +1310,7 @@
   ],
   "a": 1,
   "why": "noch pairs with weder: weder … noch = neither … nor.",
-  "en": "Unfortunately Priya had neither the time nor the wish to go to the party."
+  "en": "Unfortunately Priya had neither the time nor the inclination to go to the party."
  },
  {
   "g": "b1-weder",
@@ -1668,12 +1668,12 @@
   "q": "Malte hat sich ___ eine neue Stelle in Hamburg beworben.",
   "opts": [
    "um",
-   "für",
+   "über",
    "an",
    "nach"
   ],
   "a": 0,
-  "why": "sich bewerben um + accusative = apply for. für is a typical mistake from English 'for'.",
+  "why": "sich bewerben um + accusative = apply for. Don't translate English 'for' here: learn bewerben with um (you may hear für in speech, but um is the standard).",
   "en": "Malte has applied for a new job in Hamburg."
  },
  {
@@ -1813,7 +1813,7 @@
    "im Kurs sehr geduldig heute",
    "heute sehr geduldig im Kurs",
    "sehr geduldig im Kurs heute",
-   "im Kurs heute sehr geduldig"
+   "sehr geduldig heute im Kurs"
   ],
   "a": 1,
   "why": "Time (heute) before manner (sehr geduldig), and the place (im Kurs) last.",
