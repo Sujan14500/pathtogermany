@@ -1,39 +1,65 @@
 article	word	pos	station
-	abends	adv	4
+	abends	adv	0
+das	Abitur	n	10
 	abschließen	v	7
 die	Ahnung	n	1
-	aktiv	adj	1
+die	Aktion	n	12
+	aktiv	adj	0
 	aktuell	adj	8
 	all	art	5
-	als	conj	3
+	als	conj	0
 die	Ampel	n	7
 	anders	adv	1
+der	Angestellte	n	3
+die	Angestellte	n	3
+der	Angestellter	n	0
 die	Angst	n	6
-	ansehen	v	8
-der	Anzug	n	9
-die	Apotheke	n	6
+	annehmen	v	11
+	ansehen	v	2
+	anstrengend	adj	7
+der	Anzug	n	5
+die	Apotheke	n	0
+die	App	n	8
 der	Apparat	n	11
+die	Arbeit	n	0
+der	Arbeitstag	n	3
+die	Arbeitszeit	n	3
 	arm	adj	1
 der	Artikel	n	10
+der	Arzt	n	6
+die	Aufgabe	n	10
+	aufheben	v	9
 	aufmachen	v	11
 	aufpassen	v	10
 	aufregend	adj	4
 	aufräumen	v	2
-die	Ausbildung	n	3
+der	Auftrag	n	11
+die	Ausbildung	n	1
 	ausgeben	v	5
 	ausgehen	v	4
+die	Aushilfe	n	3
 	auspacken	v	2
+	ausprobieren	v	4
 	ausruhen	v	6
+die	Aussicht	n	7
+die	Aussprache	n	10
 	aussprechen	v	10
 die	Ausstellung	n	4
 	austragen	v	11
+der	Auszubildende	n	3
+die	Auszubildende	n	3
+der	Auszubildender	n	0
+der	Autor	n	8
+die	Autorin	n	8
 	außer	prep	7
 	außerdem	adv	3
 	außerhalb	prep	7
 der	Babysitter	n	4
-	backen	v	5
+	backen	v	0
+der	Bahnhof	n	0
 der	Ball	n	4
 die	Band	n	4
+die	Bank	n	11
 der	Basketball	n	4
 	basteln	v	4
 	bauen	v	2
@@ -48,71 +74,105 @@ die	Baustelle	n	2
 	beliebt	adj	4
 	bequem	adj	5
 	beraten	v	11
-der	Berg	n	12
+der	Berg	n	0
 	berichten	v	3
 	berühmt	adj	4
 der	Bescheid	n	11
-	beschreiben	v	10
+	beschreiben	v	8
 	beschweren	v	1
-	besonders	adv	3
+	besonders	adv	2
+die	Besprechung	n	3
 	bestehen	v	10
+	bestimmt	adj	1
 	bestätigen	v	11
 der	Besuch	n	9
+die	Bewegung	n	6
 	bewerben	v	3
 die	Bewerbung	n	3
 	bewölkt	adj	12
-die	Bibliothek	n	10
-das	Blatt	n	8
-	blau	adj	5
+die	Bibliothek	n	0
+der	Bildschirm	n	8
+die	Biologie	n	10
+	bisher	adv	10
+das	Blatt	n	0
+	blau	adj	0
 der	Blog	n	8
 	blond	adj	1
 die	Bluse	n	5
 	blöd	adj	1
+der	Boden	n	8
 die	Bohne	n	5
 	braten	v	5
-	braun	adj	5
-die	Brille	n	6
+	braun	adj	0
+die	Bremse	n	11
+die	Brille	n	1
 die	Brücke	n	12
 	buchen	adj	7
-	bunt	adj	5
-das	Büro	n	3
-die	Cafeteria	n	10
+	bunt	adj	4
+der	Bus	n	0
+der	Bäcker	n	3
+die	Bäckerin	n	3
+das	Büro	n	0
+die	Cafeteria	n	3
+das	Celsius	n	0
 	chatten	v	8
+der	Chef	n	3
+die	Chefin	n	0
+die	Chemie	n	10
+der	Chor	n	4
 der	Club	n	9
 der	Comic	n	8
+der	Cousin	n	1
+die	Cousine	n	1
 die	Creme	n	6
-	dabei	adv	9
+	dabei	adv	0
 	dafür	adv	9
 	dagegen	adv	9
-	damals	adv	9
-	darüber	adv	9
+	dahin	adv	11
+	damals	adv	4
+	danach	adv	1
+	daran	adv	4
+	darauf	adv	4
+	darüber	adv	0
+	das	pron	0
 	dass	conj	3
 die	Datei	n	8
+	davon	adv	4
+	dazu	adv	4
 	denken	v	1
-	deshalb	adv	3
+	deshalb	adv	1
 	deutlich	adj	8
 	dick	adj	1
 	dienstags	adv	4
 das	Ding	n	1
-	direkt	adj	8
+	direkt	adj	0
+der	Direktor	n	10
+die	Disko	n	4
 	diskutieren	v	10
 	doch	other	3
+die	Doktorin	n	6
 	donnerstags	adv	4
+die	Dose	n	5
 	dreimal	adv	4
 	dringend	adj	3
 	drinnen	adv	2
-	drüben	adv	2
+	drittens	adv	10
+	drüben	adv	0
 	dumm	adj	1
-	dunkel	adj	5
+	dunkel	adj	1
 	dünn	adj	1
 das	E-Book	n	8
+	eben	adv	1
 	echt	adj	1
 	egal	adj	1
 der	Ehepartner	n	9
+	ehrlich	adj	2
 	eigen	adj	1
-	eigentlich	adv	3
+	eigentlich	adv	0
 	einen	v	0
 	einig	pron	5
+	einige	art	5
+die	Einladung	n	0
 	einpacken	v	2
 	eintragen	v	3
 	einverstanden	adj	1
@@ -120,61 +180,105 @@ der	Ehepartner	n	9
 das	Eis	n	9
 	endlich	adj	9
 	eng	adj	2
-das	Erdgeschoss	n	2
+das	Englisch	n	0
+der	Enkel	n	1
+die	Enkelin	n	1
+	entdecken	v	7
+	entfernen	v	3
+die	Erde	n	12
+das	Erdgeschoss	n	0
 die	Erfahrung	n	3
+der	Erfolg	n	4
 	erinnern	v	1
+die	Erinnerung	n	9
 die	Erlaubnis	n	6
 	erlaubt	adj	6
 die	Ermäßigung	n	11
 	erreichen	v	3
-	erst	adv	9
+	erst	adv	0
+	erstens	adv	10
 	es	pron	1
-	etwas	pron	1
+die	Etage	n	8
+	etwa	adv	6
+	etwas	pron	0
+die	Europäerin	n	0
+	extra	adv	11
 das	Fach	n	10
+der	Fahrer	n	0
+die	Fahrerin	n	7
+die	Fahrkarte	n	7
 der	Fahrplan	n	7
-	fallen	v	10
+	fallen	v	7
 der	Fan	n	8
 	fantastisch	adj	1
-	fast	adv	4
+	fast	adv	0
 	faul	adj	1
-die	Feier	n	9
-das	Fenster	n	2
+die	Feier	n	0
+der	Feierabend	n	11
+der	Feiertag	n	0
+das	Fenster	n	0
 die	Ferien	n	9
+pl	Ferien	n	9
 der	Fernseher	n	8
-das	Fest	n	9
+das	Fest	n	0
 das	Festival	n	9
 	fett	adj	5
+das	Fieber	n	6
 	fit	adj	6
 	fleißig	adj	1
-der	Flohmarkt	n	5
-der	Flug	n	7
-der	Fluss	n	12
+der	Flohmarkt	n	2
+der	Flug	n	0
+der	Flur	n	2
+der	Fluss	n	10
+das	Formular	n	11
 der	Fotoapparat	n	8
-	fotografieren	v	8
+die	Fotografie	n	4
+	fotografieren	v	4
+der	Franke	n	0
+der	Franken	n	5
+das	Französisch	n	0
 	freitags	adv	4
 	freiwillig	adj	4
-	freundlich	adj	1
-	frisch	adj	12
-	froh	adj	1
-	früh	adj	4
+die	Freizeit	n	4
+die	Fremdsprache	n	10
+die	Freundin	n	0
+	freundlich	adj	0
+	frisch	adj	0
+der	Friseur	n	3
+die	Friseurin	n	3
+	froh	adj	0
+	früh	adj	0
+das	Fundbüro	n	11
+	funktionieren	v	8
 	furchtbar	adj	1
 	fühlen	v	1
 der	Führer	n	7
 die	Gabel	n	2
-	ganz	adj	3
+	gang	v	0
+	ganz	adj	0
+	gar	adv	4
 die	Garage	n	2
+der	Gast	n	0
+die	Geburt	n	11
+der	Geburtstag	n	0
 	gefährlich	adj	12
 das	Gegenteil	n	1
 	gegenüber	prep	2
 das	Gehalt	n	3
-	gelb	adj	5
+	gelb	adj	0
+das	Geld	n	0
 die	Geldbörse	n	5
-	genau	adj	10
+	genau	adj	1
 	genug	art	5
+die	Geografie	n	10
+das	Gepäck	n	0
 das	Gericht	n	5
 das	Gerät	n	11
+das	Geschenk	n	0
 die	Geschichte	n	8
+	geschieden	adj	1
 das	Geschirr	n	2
+der	Geschmack	n	5
 das	Gesicht	n	6
 	gesund	adj	6
 die	Gesundheit	n	6
@@ -182,37 +286,60 @@ die	Gesundheit	n	6
 	gewesen	adj	0
 das	Gewitter	n	9
 die	Gitarre	n	4
-	grau	adj	5
-die	Grippe	n	6
-	grün	adj	5
+das	Gleis	n	0
+	gratis	adv	5
+	grau	adj	0
+die	Grippe	n	0
+die	Grundschule	n	1
+die	Größe	n	0
+	grün	adj	0
+	gründen	v	4
 der	Hals	n	6
 der	Hamburger	n	9
+der	Handschuh	n	12
 das	Handtuch	n	6
+der	Handwerker	n	3
+die	Handwerkerin	n	3
 	hart	adj	5
+der	Hauptbahnhof	n	12
 die	Hauptstadt	n	7
 der	Haushalt	n	2
 das	Heft	n	10
 die	Heizung	n	2
 	heiß	adj	12
+der	Helfer	n	2
 das	Hemd	n	5
 	her	adv	2
 	heraus	adv	2
 	herein	adv	2
 	herstellen	v	3
+	herunter	adv	8
 	herunterladen	v	8
+das	Heute	n	0
 der	Himmel	n	12
-	hin	adv	2
+	hin	adv	0
 	hinter	prep	2
+das	Hobby	n	0
+die	Hochzeit	n	0
+der	Hof	n	2
 	hoffen	v	1
 	hoffentlich	adv	1
+das	Homeoffice	n	3
 die	Homepage	n	8
 die	Hose	n	5
 	husten	v	6
 	hängen	v	2
 	hässlich	adj	1
-die	Idee	n	1
+der	Hörer	n	6
+der	ICE	n	0
+	ideal	adj	9
+die	Idee	n	0
+	im	other	0
+die	Informatik	n	1
 	informieren	v	11
+die	Innenstadt	n	7
 die	Insel	n	12
+	insgesamt	adv	11
 das	Instrument	n	4
 	intelligent	adj	1
 	interessant	adj	1
@@ -220,169 +347,269 @@ das	Interesse	n	1
 	interessieren	v	1
 	interessiert	adj	1
 das	Interview	n	8
+	irgendwann	adv	11
+der	Jazz	n	9
 die	Jeans	n	5
+pl	Jeans	n	5
 	jeder	pron	5
 	jemand	pron	1
-	joggen	v	4
+	jobben	v	1
+	joggen	v	0
+der	Journalist	n	8
+die	Journalistin	n	8
 die	Jugend	n	1
 der	Kalender	n	2
-	kalt	adj	12
-die	Kamera	n	8
-die	Katze	n	12
-das	Kaufhaus	n	5
-der	Keller	n	2
+	kalt	adj	0
+die	Kamera	n	4
+der	Karneval	n	9
+die	Katastrophe	n	7
+die	Katze	n	2
+die	Kauffrau	n	3
+das	Kaufhaus	n	0
+der	Kaufmann	n	3
+der	Keller	n	0
+der	Kellner	n	3
+die	Kellnerin	n	3
+pl	Kenntnisse	n	3
+die	Kerze	n	9
 die	Kette	n	2
+das	Kilogramm	n	0
+die	Kindheit	n	1
 die	Kirche	n	7
+die	Kiste	n	2
 	klappen	v	11
 das	Klavier	n	4
-das	Kleid	n	9
+das	Kleid	n	5
+der	Klick	n	9
+	klingeln	v	11
+	klingen	v	3
 	klug	adj	1
+der	Koch	n	3
+der	Kollege	n	3
+die	Kollegin	n	0
 	komisch	adj	1
 der	Kontakt	n	11
 	kontrollieren	v	11
-das	Konzert	n	4
+das	Konzert	n	0
+der	Kopf	n	0
+	korrigieren	v	10
 die	Kosmetik	n	6
-	kostenlos	adj	5
+	kostenlos	adj	0
+das	Kostüm	n	9
+das	Krankenhaus	n	0
+der	Krankenpfleger	n	6
+die	Krankenschwester	n	6
 die	Krankheit	n	6
 der	Kredit	n	11
-die	Kreuzung	n	7
+die	Kreuzung	n	0
 der	Krimi	n	8
 die	Kultur	n	4
+die	Kundin	n	0
 die	Kunst	n	4
-der	Käse	n	5
-der	Körper	n	6
+der	Käse	n	0
+die	Köchin	n	3
+der	König	n	9
+der	Körper	n	0
 	kühl	adj	12
 	kümmern	v	4
 	kündigen	v	3
+der	Künstler	n	4
+die	Künstlerin	n	4
+die	Küste	n	12
 die	Lampe	n	2
 die	Landschaft	n	12
 	langweilig	adj	4
-der	Laptop	n	8
-	lassen	v	11
+der	Laptop	n	3
+	lassen	v	2
 	Latein	name	10
+die	Laune	n	6
+der	Lautsprecher	n	8
+der	Lebenslauf	n	3
+	lecker	adj	5
+das	Leder	n	5
 	leer	adj	2
+die	Lehrerin	n	0
 	leidtun	v	6
 	leihen	v	2
-	liefern	v	11
+die	Leitung	n	12
+	liefern	v	2
 	lila	adj	5
 der	Link	n	8
+	linken	v	0
+	live	adv	8
 die	Lust	n	4
 	Luxemburg	name	1
+der	Luxemburger	n	1
+die	Luxemburgerin	n	1
 	luxemburgisch	adj	1
 der	Löffel	n	2
 die	Lüge	n	1
 	lügen	v	1
 der	Magen	n	6
 die	Mailbox	n	11
-	mal	adv	4
-	malen	v	4
+	mal	adv	0
+	malen	v	0
+der	Maler	n	3
+die	Mama	n	1
 	manch	pron	5
-	manchmal	adv	4
+	manche	art	5
+	manchmal	adv	2
 die	Mannschaft	n	4
 der	Mantel	n	5
 	markieren	v	10
-der	Markt	n	5
-das	Medikament	n	6
+der	Markt	n	0
+die	Mathe	n	1
+die	Mathematik	n	3
+der	Mechaniker	n	3
+die	Mechanikerin	n	3
+pl	Medien	n	8
+das	Medikament	n	0
+die	Medizin	n	1
 	meinen	v	1
+	meiner	pron	0
 die	Meinung	n	1
 	meistens	adv	4
 die	Menge	n	3
 	merken	v	10
-die	Messe	n	9
+die	Messe	n	3
 das	Messer	n	2
 	mindestens	adv	4
 das	Mineral	n	12
-der	Mitarbeiter	n	11
-das	Mittagessen	n	5
+der	Mitarbeiter	n	3
+das	Mitglied	n	4
+das	Mittagessen	n	0
 	mittags	adv	4
-das	Mittel	n	3
+das	Mittel	n	6
+die	Mitternacht	n	4
 	mittwochs	adv	4
 das	Mobil	n	0
-die	Mode	n	5
+die	Mode	n	0
+das	Model	n	3
 	modern	v	5
 	montags	adv	4
 	morgens	adv	4
 der	Motor	n	11
 der	Motorroller	n	7
-das	Museum	n	4
-die	Musik	n	8
+das	Museum	n	0
+die	Musik	n	0
+der	Musiker	n	4
+die	Musikerin	n	4
 der	Müll	n	2
 die	Mütze	n	5
-der	Nachbar	n	1
-die	Nachbarin	n	1
+der	Nachbar	n	0
+die	Nachbarin	n	0
+die	Nachhilfe	n	3
 	nachmittags	adv	4
-die	Nachricht	n	8
+die	Nachricht	n	0
 	nachts	adv	4
 	nass	adj	12
-die	Natur	n	12
-	natürlich	adj	12
-	neben	prep	2
+die	Natur	n	0
+	natürlich	adj	0
+	neben	prep	0
 	nebenan	adv	2
 	neblig	adj	12
 	nennen	v	1
 	nervös	adj	1
 	nett	adj	1
+das	Neujahr	n	9
 	niemand	pron	1
 	nirgends	adv	2
-die	Note	n	10
+	normalerweise	adv	3
+die	Note	n	4
 	notieren	v	10
 die	Notiz	n	3
 	notwendig	adj	3
 die	Nudel	n	5
+	nun	adv	3
 die	Nähe	n	2
+	nötig	adj	3
 	nützlich	adj	5
+	ob	conj	8
 	offen	adj	2
-das	Ohr	n	6
-	online	adj	8
+das	Ohr	n	0
+	okay	other	2
+der	Onkel	n	0
+	online	adj	5
 die	Orange	n	5
 	orange	adj	5
 	organisieren	v	3
+das	Ostern	n	0
 das	Paar	n	5
 	packen	v	2
-das	Paket	n	11
+das	Paket	n	0
+der	Papa	n	1
 das	Parfüm	n	6
-der	Park	n	12
-	parken	v	7
-	passen	v	5
-	passieren	v	11
+der	Park	n	0
+	parken	v	0
+der	Parkplatz	n	2
+	passen	v	3
+	passieren	v	7
 	passiert	adj	11
 das	Passwort	n	8
-die	Person	n	1
+der	Patient	n	6
+die	Patientin	n	6
+der	PC	n	8
+	per	prep	3
+	perfekt	adj	3
+die	Person	n	0
+der	Personalausweis	n	11
 das	Pferd	n	12
-die	Pflanze	n	12
-die	Pizza	n	5
+die	Pflanze	n	2
+	pflanzen	v	12
+die	Physik	n	10
+die	Pizza	n	0
 das	Plakat	n	8
 	planen	v	3
+das	Plastik	n	2
 	plötzlich	adv	9
+der	Polizist	n	7
+die	Polizistin	n	7
 die	Portion	n	5
+die	Post	n	0
 das	Poster	n	8
 die	Postkarte	n	11
 	praktisch	adj	5
 	preiswert	adj	5
+	prima	adj	3
 	privat	adj	3
-	pro	prep	3
+	pro	prep	0
+die	Probe	n	4
 	probieren	v	5
 das	Produkt	n	3
-das	Programm	n	8
+das	Programm	n	3
+der	Programmierer	n	1
 das	Projekt	n	3
+die	Präsentation	n	3
 	prüfen	v	11
+die	Prüfung	n	0
 der	Pullover	n	5
+der	Punkt	n	10
 	putzen	v	2
 die	Qualität	n	3
 das	Quiz	n	8
 das	Radio	n	8
+der	Rappen	n	5
 	raten	v	9
-das	Rathaus	n	7
+das	Rathaus	n	0
 	rechnen	v	7
-	recht	adj	10
+	recht	adj	6
 	reden	v	1
+das	Regal	n	2
+der	Regen	n	0
+der	Regenschirm	n	12
+die	Region	n	3
 	reich	adj	1
+	reichen	v	3
 der	Reifen	n	11
 die	Reihe	n	10
 die	Reinigung	n	11
+die	Reise	n	0
+der	Reisepass	n	11
 	reiten	v	4
+die	Religion	n	10
 	renovieren	v	2
 	renoviert	adj	2
+der	Rentner	n	1
 die	Rentnerin	n	11
 	reservieren	v	7
 	reserviert	adj	7
@@ -391,267 +618,326 @@ das	Rezept	n	5
 das	Rind	n	12
 der	Ring	n	2
 der	Rock	n	5
+der	Roman	n	10
 	romantisch	adj	1
-	rosa	adj	5
+	rosa	adj	0
 die	Rose	n	9
-	rot	adj	5
+	rot	adj	0
 der	Rucksack	n	4
-	rufen	v	8
+	rufen	v	0
 die	Ruhe	n	6
 	rund	adj	5
 der	Rundgang	n	3
 das	Rätsel	n	2
-der	Rücken	n	6
-die	Sache	n	1
+der	Rücken	n	0
+die	Rückfahrt	n	7
+die	Sache	n	0
+der	Sack	n	12
 	sammeln	v	4
 	samstags	adv	4
 der	Satz	n	10
-	sauber	adj	2
+	sauber	adj	0
 	sauer	adj	5
-	schade	adj	9
+die	Schachtel	n	9
+	schade	adj	0
 	schaffen	v	3
-	scharf	adj	5
-	schenken	v	9
+	scharf	adj	0
+	schauen	v	2
+der	Schauspieler	n	8
+die	Schauspielerin	n	8
+	schenken	v	2
 die	Schere	n	11
 das	Schiff	n	7
 	schimpfen	v	1
 der	Schirm	n	12
-das	Schlafzimmer	n	2
+das	Schlafzimmer	n	0
+	schlagen	v	7
 	schlimm	adj	1
 das	Schloss	n	2
 der	Schmerz	n	6
 	schmutzig	adj	2
-der	Schnee	n	12
+der	Schnee	n	0
 	schneiden	v	5
-	schneien	v	12
-die	Schokolade	n	9
+	schneien	v	0
+die	Schokolade	n	6
 	schrecklich	adj	1
+der	Schreibtisch	n	2
 	schriftlich	adj	10
 	schwach	adj	6
 	schwanger	adj	6
 das	Schwein	n	12
+die	Schweiz	n	1
+	Schweiz	name	1
+der	Schweizer	n	1
+die	Schweizerin	n	1
 	schweizerisch	adj	1
-	schwierig	adj	10
+	schwierig	adj	2
 	schädlich	adj	5
 die	Schülerin	n	10
 die	Seife	n	6
 die	Seite	n	8
+das	Sekretariat	n	10
 	selbst	other	3
-die	Sendung	n	8
-der	Service	n	11
+die	Sendung	n	2
+pl	Senioren	n	8
+die	Serie	n	4
+der	Service	n	2
+der	Sessel	n	2
 	setzen	v	2
+die	Show	n	9
 	sicher	adj	3
+der	Silvester	n	9
 	singen	v	4
 die	Situation	n	1
-der	Ski	n	4
-	sogar	adv	4
-	sonnig	adj	12
+der	Ski	n	0
+das	Smartphone	n	8
+die	SMS	n	0
+die	Software	n	8
+	sogar	adv	3
+	sondern	conj	1
+	sonnig	adj	7
 	sonntags	adv	4
 	sonst	adv	3
+die	Sorge	n	6
+	sozial	adj	8
+die	Sozialkunde	n	10
 	spannend	adj	4
 	sparen	v	5
 	spazieren	v	4
-der	Spaß	n	4
+der	Spaß	n	0
 	speichern	v	8
+der	Spiegel	n	2
 das	Spiel	n	4
 	sportlich	adj	6
 der	Sportplatz	n	4
 die	Sprech	n	0
-der	Stadtplan	n	7
+der	Stadtplan	n	0
 der	Star	n	8
-	stark	adj	6
+	stark	adj	0
+	starten	v	8
+	statt	prep	3
 	stattfinden	v	4
+der	Stau	n	7
+der	Stempel	n	11
 	sterben	v	1
 der	Stiefel	n	5
 der	Stift	n	10
+die	Stimme	n	4
+	stimmen	v	3
 das	Stockwerk	n	2
-der	Strand	n	12
+der	Strand	n	7
+	streiken	v	12
 	streiten	v	1
 	streng	adj	10
 der	Stress	n	6
 	stressig	adj	6
-der	Stuhl	n	2
+der	Strom	n	2
+die	Studentin	n	0
+der	Stuhl	n	0
+der	Stundenplan	n	10
 	stören	v	2
-das	Stück	n	5
-	super	adj	1
-der	Supermarkt	n	5
+das	Stück	n	0
+	super	adj	0
+der	Supermarkt	n	0
 die	Suppe	n	5
 	surfen	v	4
 	sympathisch	adj	1
-	süß	adj	1
+der	Sänger	n	4
+die	Sängerin	n	4
+	süß	adj	0
+pl	Süßigkeiten	n	5
 das	T-Shirt	n	5
 das	Tablet	n	8
-die	Tablette	n	6
+die	Tablette	n	0
 die	Tafel	n	10
+	tagsüber	adv	4
+die	Tante	n	1
 das	Taschengeld	n	4
 die	Tasse	n	2
 das	Team	n	3
+die	Technik	n	10
+der	Techniker	n	3
+die	Technikerin	n	3
 	teilen	v	3
 	teilnehmen	v	4
+der	Teilnehmer	n	6
+die	Teilzeit	n	3
 der	Teller	n	2
-das	Tennis	n	4
+das	Tennis	n	0
+der	Teppich	n	2
+der	Termin	n	0
 das	Theater	n	4
 	tief	adj	10
-das	Tier	n	12
-der	Tipp	n	3
+das	Tier	n	4
+der	Tipp	n	1
 der	Titel	n	10
-	toll	adj	1
+	toll	adj	0
+die	Tonne	n	12
 der	Topf	n	2
-die	Torte	n	5
+die	Torte	n	0
 	total	adj	9
 die	Tour	n	12
 der	Tourist	n	7
+die	Touristin	n	7
 	tragen	v	5
-	trainieren	v	6
+	trainieren	v	4
 das	Training	n	4
 der	Traum	n	1
 	traurig	adj	1
+der	Treffpunkt	n	4
+	trennen	v	2
+das	Trinkgeld	n	3
 	trocken	adj	12
+	trotzdem	adv	7
 	träumen	v	1
+	tschüs	other	0
 	typisch	adj	1
-	täglich	adj	4
-die	Tür	n	2
+	täglich	adj	0
+die	Tür	n	0
+das	Ufer	n	12
+die	Umgebung	n	4
 	umsteigen	v	7
+	umtauschen	v	5
+die	Umwelt	n	12
 der	Umzug	n	2
 	unbedingt	adj	3
-der	Unfall	n	6
-die	Universität	n	10
+der	Unfall	n	0
+	ungefähr	adv	3
+die	Universität	n	2
+das	Untergeschoss	n	2
 	unterhalten	v	4
 die	Unterkunft	n	2
 	unternehmen	v	4
+	unterrichten	v	1
 der	Unterschied	n	10
 	untersuchen	v	6
 	unterwegs	adv	7
 	verbieten	v	6
+die	Verbindung	n	7
 	verdient	adj	3
 	vereinbaren	v	11
 	vergessen	v	10
 	vergleichen	v	10
 	verkauft	adj	5
+der	Verkehr	n	7
+die	Verkäuferin	n	3
 	verletzen	v	6
 	verletzt	adj	6
 	verlieben	v	1
 	verliebt	adj	1
 	verlieren	v	10
 die	Vermieterin	n	2
+	vermissen	v	1
 	verpassen	v	7
 	verreisen	v	7
 	verschieben	v	3
 	verschieden	adj	10
-die	Verspätung	n	7
+die	Verspätung	n	0
 	versuchen	v	3
 der	Vertrag	n	2
+das	Video	n	8
 	viermal	adv	4
+	viertens	adv	10
+das	Visum	n	11
 der	Vogel	n	12
-	voll	adj	5
+die	Volkshochschule	n	1
+	voll	adj	0
 der	Volleyball	n	4
 	vorbei	adj	7
-	vorbereiten	v	9
+	vorbereiten	v	3
 	vorgestern	adv	9
-	vorher	adv	9
+	vorher	adv	0
 	vormittags	adv	4
-	vorn	adv	2
-der	Vorschlag	n	11
+	vorn	adv	0
+der	Vorschlag	n	5
+	vorsichtig	adj	7
 	vorwärts	adv	7
 	wach	adj	6
+	wachsen	v	12
 der	Wagen	n	2
 	wahr	adj	1
 	wahrscheinlich	adj	3
 der	Wald	n	12
-	warm	adj	12
+die	Wand	n	2
+	warm	adj	0
+das	WC	n	2
 die	Webseite	n	8
-	wechseln	v	7
+	wechseln	v	3
 	wecken	v	6
+der	Wecker	n	8
 der	Weg	n	7
 	wegen	prep	7
 	wehtun	v	6
 	weich	adj	5
-	weil	conj	3
+das	Weihnachten	n	0
+	weil	conj	2
 	weinen	v	1
 	welcher	art	5
 	wenigstens	adv	4
 	wenn	conj	3
-die	Werkstatt	n	11
+	werfen	v	12
+die	Werkstatt	n	1
+der	Werktag	n	3
 der	Wettbewerb	n	4
-	wieder	adv	4
+das	Wetter	n	0
+der	Wetterbericht	n	12
+	wieder	adv	0
 	wiederholt	adv	4
-	willkommen	adj	11
-	windig	adj	12
+	willkommen	adj	0
+	windig	adj	7
 	wirklich	adj	1
 der	Witz	n	9
 	witzig	adj	1
-das	Wohnzimmer	n	2
-die	Wolke	n	12
+	wofür	adv	4
+	wohl	adv	1
+die	Wohngemeinschaft	n	2
+das	Wohnzimmer	n	0
+die	Wolke	n	0
 der	Workshop	n	3
+	worüber	adv	4
+	wunderschön	adj	7
 der	Wunsch	n	9
 die	Wurst	n	5
 	wählen	v	9
 die	Wäsche	n	2
-	wünschen	v	9
+	wäscht	v	0
+das	Wörterbuch	n	10
+	wünschen	v	0
 die	Zahl	n	10
-der	Zahn	n	6
+der	Zahn	n	0
 	zeichnen	v	4
-	zeigen	v	11
-die	Zeitschrift	n	8
+	zeigen	v	0
+die	Zeitschrift	n	6
+die	Zeitung	n	0
 das	Zelt	n	12
-das	Zentrum	n	7
+das	Zentrum	n	1
 der	Zettel	n	11
-das	Zeugnis	n	10
+das	Zeugnis	n	3
 das	Ziel	n	3
 der	Zirkus	n	9
 die	Zitrone	n	5
 der	Zoo	n	4
 der	Zucker	n	5
-	zuerst	adv	9
+	zuerst	adv	1
+der	Zug	n	0
 	zuhören	v	10
 	zuletzt	adv	9
-	zumachen	v	11
-	zweimal	adv	4
+	zumachen	v	1
+	zur	other	0
+	zwanzigste	adj	0
+	zweimal	adv	0
+	zweitens	adv	10
+die	Zwiebel	n	5
 	ändern	v	10
 	ärgern	v	1
+die	Ärztin	n	1
 	Österreich	name	1
+der	Österreicher	n	1
+die	Österreicherin	n	1
 	österreichisch	adj	1
 	üben	v	10
 	überall	adv	2
 	übermorgen	adv	9
 	übersetzen	v	8
 	übersetzt	adj	8
-der	Bus	n	7
-der	Zug	n	7
-der	Bahnhof	n	7
-das	Gleis	n	7
-der	Fahrer	n	7
-das	Gepäck	n	7
-die	Reise	n	7
-die	Fahrkarte	n	7
-die	Umwelt	n	12
-der	Regen	n	12
-das	Wetter	n	12
-der	Arzt	n	6
-das	Fieber	n	6
-der	Kopf	n	6
-der	Termin	n	6
-das	Krankenhaus	n	6
-der	Geburtstag	n	9
-die	Einladung	n	9
-das	Geschenk	n	9
-die	Prüfung	n	10
-die	Aufgabe	n	10
 die	Übung	n	10
-die	Bank	n	11
-die	Post	n	11
-das	Formular	n	11
-der	Stempel	n	11
-die	Zeitung	n	8
-das	Hobby	n	4
-die	Freizeit	n	4
-die	Kerze	n	9
-der	Gast	n	9
-die	Hochzeit	n	9
-die	Arbeit	n	3
-der	Kollege	n	3
-der	Chef	n	3
-die	Größe	n	5
-das	Geld	n	5
-die	Sorge	n	6
-der	Regenschirm	n	12

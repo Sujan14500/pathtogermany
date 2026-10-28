@@ -1,7 +1,7 @@
 lemma	pos	article	plural	forms	english	example_de	example_en	station
-an	prep				at; on (a wall, a door); to	Wer ist an der Tür?	Who is at the door?	5
+an	prep				at; on (a wall, a door); to	Wer ist an der Tür?	Who is at the door?	1
 Apartment	n	das	Apartments		apartment, small flat	Malte hat ein kleines Apartment in der Stadt.	Malte has a small apartment in town.	5
-auf	prep				on (top of); onto	Der Hund schläft auf dem Sofa.	The dog is sleeping on the sofa.	5
+auf	prep				on (top of); onto	Wie sagt man das auf Deutsch?	How do you say that in German?	1
 Aufzug	n	der	Aufzüge		lift, elevator	Mit dem Aufzug fahren wir nach oben.	We take the lift up.	5
 Ausgang	n	der	Ausgänge		exit, way out	Der Ausgang ist dort hinten.	The exit is back there.	5
 Bad	n	das	Bäder		bathroom; bath	Das Bad ist klein, aber hell.	The bathroom is small but bright.	5
@@ -12,8 +12,8 @@ Bild	n	das	Bilder		picture	Das Bild über dem Sofa ist schön.	The picture above
 Blick	n	der	Blicke		view; look, glance	Das Zimmer hat einen Blick auf den Garten.	The room has a view of the garden.	5
 Computer	n	der	Computer		computer	Mein Computer ist schon alt.	My computer is already old.	5
 daneben	adv				next to it, beside it	Das ist das Bad, und daneben ist die Küche.	This is the bathroom, and next to it is the kitchen.	5
-das	pron				that; this (pointing at something)	Das ist unser neues Sofa.	That is our new sofa.	5
-der	art				the (masculine; die = feminine and plural, das = neuter)	Der Schrank ist alt, das Sofa ist neu.	The wardrobe is old, the sofa is new.	5
+das	pron				that; this (pointing at something)	Das ist Frau Yilmaz.	That is Mrs Yilmaz.	1
+der	art				the (masculine; die = feminine and plural, das = neuter)	Der Herr heißt Weber.	The gentleman's name is Weber.	1
 Drucker	n	der	Drucker		printer	Hast du einen Drucker zu Hause?	Do you have a printer at home?	5
 Dusche	n	die	Duschen		shower	Am Morgen ist Jonas lange unter der Dusche.	In the morning Jonas spends a long time in the shower.	5
 duschen	v			duscht, duschte, hat geduscht	to (have a) shower	Lena duscht immer am Abend.	Lena always showers in the evening.	5
@@ -24,10 +24,10 @@ Foto	n	das	Fotos		photo	Ich mache ein Foto von meinem Zimmer.	I am taking a phot
 Garten	n	der	Gärten		garden	Frau Yilmaz arbeitet gern im Garten.	Mrs Yilmaz likes working in the garden.	5
 gehören	v			gehört, gehörte, hat gehört	to belong (to)	Der Schlüssel gehört Frau Yilmaz.	The key belongs to Mrs Yilmaz.	5
 Halle	n	die	Hallen		hall; lobby	In der Halle gibt es einen Kiosk.	There is a kiosk in the hall.	5
-Haus	n	das	Häuser		house; building	Das Haus von Frau Yilmaz hat einen Garten.	Mrs Yilmaz's house has a garden.	5
+Haus	n	das	Häuser		house; building	Das Haus von Frau Yilmaz hat einen Garten.	Mrs Yilmaz's house has a garden.	4
 hell	adj				bright, light	Die Küche ist schön hell.	The kitchen is nice and bright.	5
 hinten	adv				at the back, behind	Das Bad ist hinten links.	The bathroom is at the back on the left.	5
-in	prep				in; into	Wir essen in der Küche.	We eat in the kitchen.	5
+in	prep				in; into	Wir lernen Deutsch in Köln.	We are learning German in Cologne.	1
 Internet	n	das	-		internet	Hat die Wohnung Internet?	Does the flat have internet?	5
 Küche	n	die	Küchen		kitchen; cooking	Die Küche ist sehr klein.	The kitchen is very small.	5
 Kühlschrank	n	der	Kühlschränke		fridge	Ist noch Milch im Kühlschrank?	Is there any milk left in the fridge?	5
@@ -36,7 +36,7 @@ legen	v			legt, legte, hat gelegt	to lay, to put (down flat)	Leg bitte den Schl�
 leise	adj				quiet, soft	Bitte sprich leise, Jonas schläft.	Please speak quietly, Jonas is sleeping.	5
 Licht	n	das	Lichter		light	Das Zimmer hat viel Licht.	The room gets a lot of light.	5
 liegen	v			liegt, lag, hat gelegen	to lie, to be (lying somewhere)	Die Zeitung liegt auf dem Tisch.	The newspaper is on the table.	5
-man	pron				one, you, people (in general)	Hier kann man gut wohnen.	You can live well here.	5
+man	pron				one, you, people (in general)	Wie buchstabiert man das?	How do you spell that?	1
 Maschine	n	die	Maschinen		machine	Die Maschine macht sehr guten Kaffee.	The machine makes very good coffee.	5
 Miete	n	die	Mieten		rent	Wie hoch ist die Miete?	How high is the rent?	5
 mieten	v			mietet, mietete, hat gemietet	to rent (from someone)	Priya mietet ein Zimmer in Köln.	Priya is renting a room in Cologne.	5
@@ -58,11 +58,11 @@ Tisch	n	der	Tische		table	In der Küche steht ein großer Tisch.	There is a big 
 Toilette	n	die	Toiletten		toilet	Die Toilette ist links, das Bad rechts.	The toilet is on the left, the bathroom on the right.	5
 Treppe	n	die	Treppen		stairs, staircase	Ich nehme die Treppe, nicht den Aufzug.	I take the stairs, not the lift.	5
 umziehen	v			zieht um, zog um, ist umgezogen	to move (house)	Wir ziehen im Mai um.	We are moving in May.	5
-unten	adv				down; downstairs; at the bottom	Frau Yilmaz wohnt unten.	Mrs Yilmaz lives downstairs.	5
-unter	prep				under, below	Die Schuhe stehen unter dem Bett.	The shoes are under the bed.	5
+unten	adv				down; downstairs; at the bottom	Frau Yilmaz wohnt unten.	Mrs Yilmaz lives downstairs.	2
+unter	prep				under, below	Das Baby ist unter einem Jahr alt.	The baby is under a year old.	3
 vermieten	v			vermietet, vermietete, hat vermietet	to rent out, to let	Frau Yilmaz vermietet ein Zimmer.	Mrs Yilmaz is renting out a room.	5
 Vermieter	n	der	Vermieter		landlord	Der Vermieter wohnt im ersten Stock.	The landlord lives on the first floor.	5
-vor	prep				in front of; before; ago	Das Fahrrad steht vor dem Haus.	The bike is in front of the house.	5
+vor	prep				in front of; before; ago	Wir sind um fünf vor acht in der Schule.	We're at school at five to eight.	2
 waschen	v			wäscht, wusch, hat gewaschen	to wash	Am Samstag wäscht Jonas sein Auto.	On Saturday Jonas washes his car.	5
 Wohnung	n	die	Wohnungen		flat, apartment	Priya sucht eine Wohnung in Köln.	Priya is looking for a flat in Cologne.	5
 Zimmer	n	das	Zimmer		room	Wie viele Zimmer hat deine Wohnung?	How many rooms does your flat have?	5
@@ -71,8 +71,8 @@ zwischen	prep				between	Der Tisch steht zwischen dem Sofa und dem Fenster.	The 
 Fenster	n	das	Fenster		window	Vom Fenster sehe ich den Garten.	From the window I can see the garden.	5
 Tür	n	die	Türen		door	Bitte schließ die Tür!	Please close the door!	5
 Stuhl	n	der	Stühle		chair	Wir brauchen noch zwei Stühle.	We still need two chairs.	5
-ab	prep				from (a time on)	Ab Montag habe ich Urlaub.	From Monday I am on holiday.	6
-Abend	n	der	Abende		evening	Am Abend koche ich für Lena.	In the evening I cook for Lena.	6
+ab	prep				from (a time on)	Ab Montag habe ich Urlaub.	From Monday I am on holiday.	3
+Abend	n	der	Abende		evening	Am Abend koche ich für Lena.	In the evening I cook for Lena.	2
 abholen	v			holt ab, holte ab, hat abgeholt	to pick up, to collect	Ich hole dich um acht Uhr ab.	I'll pick you up at eight o'clock.	6
 Anfang	n	der	Anfänge		beginning, start	Am Anfang ist alles neu.	At the beginning everything is new.	6
 anfangen	v			fängt an, fing an, hat angefangen	to begin, to start	Der Unterricht fängt um neun Uhr an.	The lesson starts at nine o'clock.	6
@@ -85,65 +85,65 @@ Aufgabe	n	die	Aufgaben		task; exercise	Macht jetzt bitte Aufgabe zwei!	Now pleas
 aufhören	v			hört auf, hörte auf, hat aufgehört	to stop, to finish	Um fünf Uhr höre ich mit der Arbeit auf.	I stop work at five o'clock.	6
 aufstehen	v			steht auf, stand auf, ist aufgestanden	to get up	Wann stehst du am Wochenende auf?	When do you get up at the weekend?	6
 ausmachen	v			macht aus, machte aus, hat ausgemacht	to switch off, to turn off	Um elf Uhr mache ich das Licht aus.	At eleven o'clock I switch off the light.	6
-bald	adv				soon	Priya hat bald eine Prüfung.	Priya has an exam soon.	6
+bald	adv				soon	Tschüss, bis bald!	Bye, see you soon!	2
 beginnen	v			beginnt, begann, hat begonnen	to begin, to start	Der Deutschkurs beginnt am Montag.	The German course starts on Monday.	6
-bis	prep				until; to (von … bis = from … to)	Ich arbeite heute bis sechs Uhr.	Today I work until six o'clock.	6
-dann	adv				then	Ich dusche, dann frühstücke ich.	I have a shower, then I have breakfast.	6
+bis	prep				until; to (von … bis = from … to)	Der Kurs ist von neun bis zwölf.	The course is from nine to twelve.	1
+dann	adv				then	Ich dusche, dann frühstücke ich.	I have a shower, then I have breakfast.	4
 dauern	v			dauert, dauerte, hat gedauert	to last, to take (time)	Das Frühstück dauert nur zehn Minuten.	Breakfast only takes ten minutes.	6
-Dienstag	n	der	Dienstage		Tuesday	Am Dienstag habe ich einen Deutschkurs.	On Tuesday I have a German class.	6
-Donnerstag	n	der	Donnerstage		Thursday	Jonas hat am Donnerstag frei.	Jonas has Thursday off.	6
+Dienstag	n	der	Dienstage		Tuesday	Am Dienstag habe ich einen Deutschkurs.	On Tuesday I have a German class.	3
+Donnerstag	n	der	Donnerstage		Thursday	Der Deutschkurs ist am Montag und am Donnerstag.	The German course is on Monday and Thursday.	2
 eilig	adj				urgent; es eilig haben: to be in a hurry	Tut mir leid, ich habe es eilig!	Sorry, I'm in a hurry!	6
-einmal	adv				once; one time	Ich rufe meine Mutter einmal in der Woche an.	I call my mother once a week.	6
+einmal	adv				once; one time	Sagen Sie das bitte noch einmal.	Please say that once more.	1
 Ende	n	das	Enden		end	Am Ende der Woche bin ich oft müde.	At the end of the week I am often tired.	6
 enden	v			endet, endete, hat geendet	to end, to finish	Der Kurs endet um zwölf Uhr.	The course ends at twelve o'clock.	6
-fertig	adj				ready; finished	Das Frühstück ist fertig!	Breakfast is ready!	6
-Freitag	n	der	Freitage		Friday	Am Freitag gehen wir ins Kino.	On Friday we are going to the cinema.	6
+fertig	adj				ready; finished	Das Frühstück ist fertig!	Breakfast is ready!	5
+Freitag	n	der	Freitage		Friday	Am Freitag gehen wir ins Kino.	On Friday we are going to the cinema.	2
 früher	adv				earlier; in the past, formerly	Morgen stehe ich früher auf.	Tomorrow I'm getting up earlier.	6
 gerade	adv				just; right now; (adj) straight	Malte telefoniert gerade mit Lena.	Malte is on the phone with Lena right now.	6
 gestern	adv				yesterday	Gestern war ich sehr müde.	Yesterday I was very tired.	6
 halb	adj				half; (with times) halb acht = 7:30, half past seven (half an hour before eight)	Es ist schon halb acht!	It's already half past seven!	6
 Hausaufgabe	n	die	Hausaufgaben		homework (task)	Ich mache meine Hausaufgaben nach dem Essen.	I do my homework after dinner.	6
-heute	adv				today	Heute arbeite ich nur bis drei.	Today I only work until three.	6
+heute	adv				today	Heute ist der Kurs um sieben.	Today the class is at seven.	1
 immer	adv				always	Ich trinke am Morgen immer Kaffee.	I always drink coffee in the morning.	6
-jetzt	adv				now	Wo bist du jetzt?	Where are you now?	6
+jetzt	adv				now	Wo bist du jetzt?	Where are you now?	1
 lange	adv				(for) a long time	Ich warte schon lange auf den Bus.	I have been waiting for the bus for a long time.	6
 meist	adv				usually, mostly; die meisten: most	Ich stehe meist um sechs Uhr auf.	I usually get up at six o'clock.	6
 Minute	n	die	Minuten		minute	Der Bus kommt in fünf Minuten.	The bus is coming in five minutes.	6
 mitkommen	v			kommt mit, kam mit, ist mitgekommen	to come along, to come with (someone)	Kommst du heute Abend mit?	Are you coming along this evening?	6
 mitnehmen	v			nimmt mit, nahm mit, hat mitgenommen	to take along, to take with you	Nimm deine Jacke mit, es ist kalt!	Take your jacket, it's cold!	6
 Mittag	n	der	Mittage		midday, noon	Am Mittag esse ich mit Malte.	At midday I eat with Malte.	6
-Mittwoch	n	der	Mittwoche		Wednesday	Am Mittwoch gehe ich schwimmen.	On Wednesday I go swimming.	6
+Mittwoch	n	der	Mittwoche		Wednesday	Am Mittwoch gehe ich schwimmen.	On Wednesday I go swimming.	3
 Moment	n	der	Momente		moment	Im Moment habe ich keine Zeit.	I have no time at the moment.	6
-Montag	n	der	Montage		Monday	Am Montag arbeite ich bis fünf Uhr.	On Monday I work until five o'clock.	6
+Montag	n	der	Montage		Monday	Am Montag arbeite ich bis fünf Uhr.	On Monday I work until five o'clock.	2
 Morgen	n	der	Morgen		morning	Guten Morgen, Herr Weber!	Good morning, Mr Weber!	6
 morgen	adv				tomorrow	Morgen fängt mein Deutschkurs an.	My German course starts tomorrow.	6
 Nachmittag	n	der	Nachmittage		afternoon	Am Nachmittag trinken wir Kaffee.	In the afternoon we drink coffee.	6
 Nacht	n	die	Nächte		night	Gute Nacht, schlaf gut!	Good night, sleep well!	6
 nie	adv				never	Ich komme nie zu spät.	I am never late.	6
-noch	adv				still; yet; (noch ein) another, more	Um acht Uhr schläft Lena noch.	At eight o'clock Lena is still asleep.	6
-oft	adv				often	Jonas kommt oft zu spät.	Jonas is often late.	6
+noch	adv				still; yet; (noch ein) another, more	Wie bitte? Noch einmal, bitte!	Pardon? Once more, please!	1
+oft	adv				often	Wir essen oft Pizza.	We often eat pizza.	4
 pünktlich	adj				on time, punctual	Der Kurs beginnt pünktlich um neun.	The course starts at nine on the dot.	6
-Samstag	n	der	Samstage		Saturday	Am Samstag treffe ich Lena.	On Saturday I'm meeting Lena.	6
+Samstag	n	der	Samstage		Saturday	Ist am Samstag auch Kurs? – Nein.	Is there a class on Saturday too? – No.	2
 schlafen	v			schläft, schlief, hat geschlafen	to sleep	Am Wochenende schlafe ich bis zehn Uhr.	At the weekend I sleep until ten o'clock.	6
 Schluss	n	der	Schlüsse		end, finish	Um sechs Uhr ist Schluss.	At six o'clock we finish.	6
-schon	adv				already	Lena ist schon zu Hause.	Lena is already at home.	6
+schon	adv				already	Lena ist schon da.	Lena is already here.	3
 seit	prep				since; for (up to now)	Priya lernt seit einer Woche Deutsch.	Priya has been learning German for a week.	6
 Sekunde	n	die	Sekunden		second	Warte bitte eine Sekunde, ich komme!	Please wait a second, I'm coming!	6
-sofort	adv				immediately, right away	Moment, ich komme sofort!	One moment, I'm coming right away!	6
-Sonntag	n	der	Sonntage		Sunday	Am Sonntag frühstücken wir zusammen.	On Sunday we have breakfast together.	6
+sofort	adv				immediately, right away	Ich bringe Ihnen sofort die Speisekarte.	I'll bring you the menu right away.	4
+Sonntag	n	der	Sonntage		Sunday	Am Sonntag frühstücken wir zusammen.	On Sunday we have breakfast together.	3
 spät	adj				late	Es ist schon spät, ich gehe ins Bett.	It's already late, I'm going to bed.	6
 später	adv				later	Ich mache das später.	I'll do that later.	6
 Stunde	n	die	Stunden		hour; lesson	Ich lerne jeden Tag eine Stunde Deutsch.	I study German for an hour every day.	6
-Tag	n	der	Tage		day	Guten Tag, Frau Yilmaz!	Hello, Mrs Yilmaz!	6
+Tag	n	der	Tage		day	Guten Tag, Frau Yilmaz!	Hello, Mrs Yilmaz!	2
 telefonieren	v			telefoniert, telefonierte, hat telefoniert	to talk on the phone	Lena telefoniert jeden Abend mit ihrer Mutter.	Lena talks to her mother on the phone every evening.	6
 Termin	n	der	Termine		appointment	Ich habe heute um drei einen Termin.	I have an appointment at three today.	6
-Uhr	n	die	Uhren		clock; watch; (with times) o'clock	Es ist jetzt acht Uhr.	It is eight o'clock now.	6
-um	prep				at (a clock time); around	Ich frühstücke um halb sieben.	I have breakfast at half past six.	6
+Uhr	n	die	Uhren		clock; watch; (with times) o'clock	Es ist jetzt acht Uhr.	It is eight o'clock now.	2
+um	prep				at (a clock time); around	Der Kurs ist heute um acht.	The course is at eight today.	1
 vierundzwanzig	num				twenty-four	Ein Tag hat vierundzwanzig Stunden.	A day has twenty-four hours.	6
-von	prep				from; of (von … bis = from … to)	Ich arbeite von acht bis vier Uhr.	I work from eight to four o'clock.	6
+von	prep				from; of (von … bis = from … to)	Viele Grüße von Lena!	Best wishes from Lena!	1
 Vormittag	n	der	Vormittage		morning (before noon)	Am Vormittag habe ich Unterricht.	In the morning I have lessons.	6
-Woche	n	die	Wochen		week	Die Woche hat sieben Tage.	The week has seven days.	6
-Wochenende	n	das	Wochenenden		weekend	Am Wochenende besuche ich meine Eltern.	At the weekend I visit my parents.	6
+Woche	n	die	Wochen		week	Die Woche hat sieben Tage.	The week has seven days.	3
+Wochenende	n	das	Wochenenden		weekend	Am Wochenende besuche ich meine Eltern.	At the weekend I visit my parents.	3
 Wochentag	n	der	Wochentage		day of the week; weekday	Welcher Wochentag ist heute?	What day of the week is it today?	6
 zurzeit	adv				at the moment, currently	Malte hat zurzeit viel Arbeit.	Malte has a lot of work at the moment.	6
 anklicken	v			klickt an, klickte an, hat angeklickt	to click (on)	Klick bitte das Foto an!	Please click on the photo!	7
@@ -159,50 +159,50 @@ drucken	v			druckt, druckte, hat gedruckt	to print	Kannst du die Karten drucken?
 Eintritt	n	der	-		admission; entrance fee	Der Eintritt ins Schwimmbad kostet vier Euro.	Admission to the swimming pool costs four euros.	7
 Ergebnis	n	das	Ergebnisse		result; score	Das Ergebnis ist zwei zu eins.	The score is two to one.	7
 erzählen	v			erzählt, erzählte, hat erzählt	to tell (about)	Erzähl mir von deinem Hobby!	Tell me about your hobby!	7
-fernsehen	v			sieht fern, sah fern, hat ferngesehen	to watch TV	Am Abend sehe ich gern fern.	In the evening I like watching TV.	7
+fernsehen	v			sieht fern, sah fern, hat ferngesehen	to watch TV	Am Abend sehe ich gern fern.	In the evening I like watching TV.	6
 Film	n	der	Filme		film, movie	Der Film beginnt um acht Uhr.	The film starts at eight o'clock.	7
 Freizeit	n	die	-		free time, spare time	Was machst du in deiner Freizeit?	What do you do in your free time?	7
 Fußball	n	der	Fußbälle		football (the game; the ball)	Jonas spielt am Samstag Fußball.	Jonas plays football on Saturday.	7
 Führung	n	die	Führungen		guided tour	Die Führung durch die Stadt dauert zwei Stunden.	The guided tour of the town takes two hours.	7
-für	prep				for	Die CD ist für Lena.	The CD is for Lena.	7
+für	prep				for	Danke für die Antwort!	Thanks for the answer!	1
 gegen	prep				against; (with times) around, about	Wir treffen uns gegen sieben Uhr.	We'll meet at around seven o'clock.	7
 Gespräch	n	das	Gespräche		conversation, talk	Ich habe heute ein Gespräch mit Herrn Weber.	Today I have a talk with Mr Weber.	7
 gewinnen	v			gewinnt, gewann, hat gewonnen	to win	Wer gewinnt heute, Jonas oder Malte?	Who is going to win today, Jonas or Malte?	7
 glauben	v			glaubt, glaubte, hat geglaubt	to believe; to think	Ich glaube, das Kino ist heute geschlossen.	I think the cinema is closed today.	7
-Hobby	n	das	Hobbys		hobby	Kochen ist mein Hobby.	Cooking is my hobby.	7
+Hobby	n	das	Hobbys		hobby	Kochen ist mein Hobby.	Cooking is my hobby.	6
 hören	v			hört, hörte, hat gehört	to hear; to listen (to)	Ich höre gern Musik.	I like listening to music.	7
 Karte	n	die	Karten		ticket; card; map	Ich habe zwei Karten für das Kino.	I have two tickets for the cinema.	7
-Kino	n	das	Kinos		cinema	Gehen wir heute ins Kino?	Shall we go to the cinema today?	7
-klar	adj				clear; klar!: sure, of course	Klar, ich komme gern mit!	Sure, I'd love to come along!	7
-können	v			kann, konnte, hat gekonnt	can, to be able to; may	Kannst du gut kochen?	Can you cook well?	7
+Kino	n	das	Kinos		cinema	Gehen wir heute ins Kino?	Shall we go to the cinema today?	6
+klar	adj				clear; klar!: sure, of course	Klar, ich komme gern mit!	Sure, I'd love to come along!	6
+können	v			kann, konnte, hat gekonnt	can, to be able to; may	Kannst du gut kochen?	Can you cook well?	4
 lachen	v			lacht, lachte, hat gelacht	to laugh	Wir lachen viel zusammen.	We laugh a lot together.	7
 laufen	v			läuft, lief, ist gelaufen	to run; to walk	Malte läuft jeden Morgen am See.	Malte runs by the lake every morning.	7
 leicht	adj				easy; light (not heavy)	Die Aufgabe ist leicht.	The exercise is easy.	7
-leider	adv				unfortunately	Ich kann leider nicht kommen.	Unfortunately I can't come.	7
+leider	adv				unfortunately	Ich kann leider nicht kommen.	Unfortunately I can't come.	2
 lesen	v			liest, las, hat gelesen	to read	Lena liest jeden Abend im Bett.	Lena reads in bed every evening.	7
 lieben	v			liebt, liebte, hat geliebt	to love	Priya liebt Musik und Tanzen.	Priya loves music and dancing.	7
 Lied	n	das	Lieder		song	Kennst du das Lied?	Do you know the song?	7
 lustig	adj				funny; fun	Malte ist ein lustiger Kollege.	Malte is a funny colleague.	7
 Lösung	n	die	Lösungen		solution; answer	Hast du eine Lösung für das Problem?	Do you have a solution to the problem?	7
-mit	prep				with; by (bus, train …)	Ich gehe mit Lena ins Kino.	I'm going to the cinema with Lena.	7
+mit	prep				with; by (bus, train …)	Ich gehe mit Lena ins Kino.	I'm going to the cinema with Lena.	1
 mitmachen	v			macht mit, machte mit, hat mitgemacht	to join in, to take part	Wir spielen Fußball – machst du mit?	We're playing football – are you joining in?	7
 möglich	adj				possible	Ist das am Samstag möglich?	Is that possible on Saturday?	7
-ohne	prep				without	Lena geht ohne Jonas ins Kino.	Lena is going to the cinema without Jonas.	7
+ohne	prep				without	Ich trinke Kaffee ohne Milch.	I drink coffee without milk.	4
 Party	n	die	Partys		party	Am Freitag gibt es eine Party bei Malte.	On Friday there is a party at Malte's.	7
-Problem	n	das	Probleme		problem	Ich habe ein Problem mit dem Computer.	I have a problem with the computer.	7
+Problem	n	das	Probleme		problem	Ich habe ein Problem mit dem Computer.	I have a problem with the computer.	4
 Prüfung	n	die	Prüfungen		exam, test	Die Prüfung ist am Freitag.	The exam is on Friday.	7
-schreiben	v			schreibt, schrieb, hat geschrieben	to write	Priya schreibt eine E-Mail an Lena.	Priya is writing an email to Lena.	7
+schreiben	v			schreibt, schrieb, hat geschrieben	to write	Priya schreibt eine E-Mail an Lena.	Priya is writing an email to Lena.	6
 schwer	adj				difficult, hard; heavy	Die Prüfung ist nicht schwer.	The exam is not difficult.	7
 Schwimmbad	n	das	Schwimmbäder		swimming pool	Im Sommer gehen wir oft ins Schwimmbad.	In summer we often go to the swimming pool.	7
 schwimmen	v			schwimmt, schwamm, ist geschwommen	to swim	Jonas schwimmt sehr gut.	Jonas swims very well.	7
-schön	adj				beautiful; nice	Das ist ein schönes Lied.	That is a beautiful song.	7
+schön	adj				beautiful; nice	Das ist ein schönes Lied.	That is a beautiful song.	5
 spielen	v			spielt, spielte, hat gespielt	to play	Spielst du gern Karten?	Do you like playing cards?	7
 tanzen	v			tanzt, tanzte, hat getanzt	to dance	Lena tanzt sehr gern.	Lena loves dancing.	7
 Text	n	der	Texte		text	Lies bitte den Text.	Please read the text.	7
 Thema	n	das	Themen		topic, subject	Unser Thema heute ist Freizeit.	Our topic today is free time.	7
-treffen	v			trifft, traf, hat getroffen	to meet	Ich treffe Jonas vor dem Kino.	I'm meeting Jonas in front of the cinema.	7
-Unterricht	n	der	-		lessons, class, teaching	Nach dem Unterricht gehen wir schwimmen.	After class we go swimming.	7
-vielleicht	adv				maybe, perhaps	Vielleicht gehen wir am Sonntag wandern.	Maybe we'll go hiking on Sunday.	7
+treffen	v			trifft, traf, hat getroffen	to meet	Ich treffe Jonas vor dem Kino.	I'm meeting Jonas in front of the cinema.	6
+Unterricht	n	der	-		lessons, class, teaching	Nach dem Unterricht gehen wir schwimmen.	After class we go swimming.	6
+vielleicht	adv				maybe, perhaps	Vielleicht gehen wir am Sonntag wandern.	Maybe we'll go hiking on Sunday.	5
 wandern	v			wandert, wanderte, ist gewandert	to hike, to go walking	Am Wochenende wandern wir gern.	At the weekend we like to go hiking.	7
 wiederholen	v			wiederholt, wiederholte, hat wiederholt	to repeat	Herr Weber wiederholt die Frage.	Mr Weber repeats the question.	7
 wollen	v			will, wollte, hat gewollt	to want (to)	Wir wollen am Samstag schwimmen gehen.	We want to go swimming on Saturday.	7
@@ -210,27 +210,27 @@ wunderbar	adj				wonderful	Das Wetter ist heute wunderbar!	The weather is wonder
 Zeitung	n	die	Zeitungen		newspaper	Herr Weber liest jeden Morgen die Zeitung.	Mr Weber reads the newspaper every morning.	7
 abgeben	v			gibt ab, gab ab, hat abgegeben	to hand in; to leave (with someone)	Sie können Ihre Jacke hier abgeben.	You can leave your jacket here.	8
 ander	adj				other; different	Haben Sie die Jacke auch in einer anderen Farbe?	Do you have the jacket in another colour too?	8
-Angebot	n	das	Angebote		offer; im Angebot: on special offer	Die Jacke ist diese Woche im Angebot.	The jacket is on special offer this week.	8
+Angebot	n	das	Angebote		offer; im Angebot: on special offer	Diese Woche ist der Käse im Angebot.	The cheese is on special offer this week.	4
 aussehen	v			sieht aus, sah aus, hat ausgesehen	to look (good, nice …)	Die Schuhe sehen sehr schön aus.	The shoes look very nice.	8
 Automat	n	der	Automaten		(vending) machine	Gibt es hier einen Automaten für Getränke?	Is there a drinks machine here?	8
 automatisch	adj				automatic; automatically	Das Geld kommt automatisch auf mein Konto.	The money goes into my account automatically.	8
 bar	adj				(in) cash	Zahlen Sie bar oder mit Karte?	Are you paying in cash or by card?	8
 bekommen	v			bekommt, bekam, hat bekommen	to get, to receive	Ich bekomme zehn Euro zurück.	I get ten euros back.	8
 billig	adj				cheap	Die Schuhe sind heute sehr billig.	The shoes are very cheap today.	8
-brauchen	v			braucht, brauchte, hat gebraucht	to need	Ich brauche eine neue Jacke.	I need a new jacket.	8
+brauchen	v			braucht, brauchte, hat gebraucht	to need	Ich brauche eine neue Jacke.	I need a new jacket.	5
 breit	adj				wide, broad	Die Schuhe sind mir zu breit.	The shoes are too wide for me.	8
-bringen	v			bringt, brachte, hat gebracht	to bring; to take (somewhere)	Der Verkäufer bringt mir eine andere Größe.	The shop assistant brings me another size.	8
+bringen	v			bringt, brachte, hat gebracht	to bring; to take (somewhere)	Bringen Sie mir bitte ein Glas Wasser.	Please bring me a glass of water.	4
 circa	adv				about, approximately (ca.)	Die Jacke kostet circa fünfzig Euro.	The jacket costs about fifty euros.	8
-einkaufen	v			kauft ein, kaufte ein, hat eingekauft	to shop, to go shopping	Am Samstag kaufe ich im Supermarkt ein.	On Saturday I do my shopping at the supermarket.	8
+einkaufen	v			kauft ein, kaufte ein, hat eingekauft	to shop, to go shopping	Am Samstag kaufe ich im Supermarkt ein.	On Saturday I do my shopping at the supermarket.	4
 Farbe	n	die	Farben		colour	Welche Farbe hat deine Jacke?	What colour is your jacket?	8
-finden	v			findet, fand, hat gefunden	to find; to think (an opinion)	Wie findest du die Hose?	What do you think of the trousers?	8
-geben	v			gibt, gab, hat gegeben	to give; es gibt: there is, there are	Geben Sie mir bitte zwei Brötchen!	Please give me two bread rolls!	8
+finden	v			findet, fand, hat gefunden	to find; to think (an opinion)	Wie findest du die Hose?	What do you think of the trousers?	5
+geben	v			gibt, gab, hat gegeben	to give; es gibt: there is, there are	Geben Sie mir bitte zwei Brötchen!	Please give me two bread rolls!	3
 gefallen	v			gefällt, gefiel, hat gefallen	to please; das gefällt mir: I like it	Gefallen dir die Schuhe?	Do you like the shoes?	8
 Geld	n	das	-		money	Ich habe nicht viel Geld.	I don't have much money.	8
-geschlossen	adj				closed, shut	Am Sonntag ist der Laden geschlossen.	The shop is closed on Sunday.	8
+geschlossen	adj				closed, shut	Am Sonntag ist der Laden geschlossen.	The shop is closed on Sunday.	4
 Geschäft	n	das	Geschäfte		shop, store; business	Das Geschäft öffnet um neun Uhr.	The shop opens at nine o'clock.	8
 Gewicht	n	das	Gewichte		weight	Der Koffer hat ein Gewicht von zwanzig Kilo.	The suitcase weighs twenty kilos.	8
-geöffnet	adj				open	Der Kiosk ist bis zehn Uhr geöffnet.	The kiosk is open until ten o'clock.	8
+geöffnet	adj				open	Der Kiosk ist bis zehn Uhr geöffnet.	The kiosk is open until ten o'clock.	6
 gleich	adj				same; (adv) right away, in a moment	Lena und Priya haben die gleiche Jacke.	Lena and Priya have the same jacket.	8
 Größe	n	die	Größen		size; height	Die Schuhe gibt es nicht in meiner Größe.	The shoes don't come in my size.	8
 günstig	adj				good value, reasonably priced	Das Angebot ist wirklich günstig.	The offer is really good value.	8
@@ -238,12 +238,12 @@ Handy	n	das	Handys		mobile phone	Ich kaufe ein neues Handy.	I'm buying a new mob
 hoch	adj				high; tall	Der Preis ist mir zu hoch.	The price is too high for me.	8
 holen	v			holt, holte, hat geholt	to fetch, to get	Ich hole noch schnell Milch.	I'll just quickly get some milk.	8
 Jacke	n	die	Jacken		jacket	Die Jacke kostet sechzig Euro.	The jacket costs sixty euros.	8
-kaputt	adj				broken	Die Tasche ist leider kaputt.	Unfortunately the bag is broken.	8
-kaufen	v			kauft, kaufte, hat gekauft	to buy	Lena kauft ein Geschenk für Jonas.	Lena is buying a present for Jonas.	8
+kaputt	adj				broken	Die Tasche ist leider kaputt.	Unfortunately the bag is broken.	5
+kaufen	v			kauft, kaufte, hat gekauft	to buy	Ich kaufe Brot und Käse im Supermarkt.	I buy bread and cheese at the supermarket.	4
 Kiosk	n	der	Kioske		kiosk, news stand	Ich kaufe eine Zeitung am Kiosk.	I buy a newspaper at the kiosk.	8
 Kleidung	n	die	-		clothes, clothing	Wo gibt es hier günstige Kleidung?	Where can you get cheap clothes around here?	8
 Konto	n	das	Konten		(bank) account	Priya hat jetzt ein Konto bei der Bank.	Priya now has an account at the bank.	8
-kosten	v			kostet, kostete, hat gekostet	to cost	Was kosten die Schuhe?	How much are the shoes?	8
+kosten	v			kostet, kostete, hat gekostet	to cost	Was kostet ein Kilo Tomaten?	How much is a kilo of tomatoes?	4
 kriegen	v			kriegt, kriegte, hat gekriegt	to get (informal)	Kriege ich zwei Brötchen, bitte?	Can I get two bread rolls, please?	8
 kurz	adj				short	Die Hose ist leider zu kurz.	Unfortunately the trousers are too short.	8
 Laden	n	der	Läden		shop	Der Laden an der Ecke ist sehr klein.	The shop on the corner is very small.	8
@@ -252,27 +252,27 @@ mehr	adv				more; nicht mehr: no longer	Diese Tasche kostet zwanzig Euro mehr.	T
 mitbringen	v			bringt mit, brachte mit, hat mitgebracht	to bring (along)	Bringst du Brot vom Supermarkt mit?	Will you bring some bread from the supermarket?	8
 Lebensmittel	n	pl			food, groceries	Lebensmittel kaufe ich im Supermarkt.	I buy groceries at the supermarket.	8
 normal	adj				normal, usual	Das ist ein normaler Preis.	That is a normal price.	8
-nur	adv				only, just	Die Tasche kostet nur zehn Euro.	The bag only costs ten euros.	8
+nur	adv				only, just	Ich spreche nur ein bisschen Deutsch.	I only speak a little German.	2
 Papier	n	das	Papiere		paper; (Papiere) documents	Ich brauche Papier für den Drucker.	I need paper for the printer.	8
-Preis	n	der	Preise		price	Der Preis steht auf dem Schild.	The price is on the sign.	8
+Preis	n	der	Preise		price	Der Preis steht auf dem Schild.	The price is on the sign.	7
 Prospekt	n	der	Prospekte		brochure, leaflet	Im Prospekt stehen viele Angebote.	There are lots of offers in the brochure.	8
-Reparatur	n	die	Reparaturen		repair	Die Reparatur kostet vierzig Euro.	The repair costs forty euros.	8
-reparieren	v			repariert, reparierte, hat repariert	to repair, to fix	Können Sie mein Handy reparieren?	Can you repair my mobile phone?	8
+Reparatur	n	die	Reparaturen		repair	Die Reparatur kostet vierzig Euro.	The repair costs forty euros.	5
+reparieren	v			repariert, reparierte, hat repariert	to repair, to fix	Können Sie mein Handy reparieren?	Can you repair my mobile phone?	5
 Schalter	n	der	Schalter		counter (at a bank, station …); switch	Am Schalter kaufe ich eine Fahrkarte.	I buy a ticket at the counter.	8
-schicken	v			schickt, schickte, hat geschickt	to send	Schick mir bitte eine E-Mail!	Please send me an email!	8
+schicken	v			schickt, schickte, hat geschickt	to send	Schick mir bitte eine E-Mail!	Please send me an email!	6
 Schild	n	das	Schilder		sign	Lies bitte das Schild an der Tür!	Please read the sign on the door!	8
 Schuh	n	der	Schuhe		shoe	Die Schuhe sind zu klein.	The shoes are too small.	8
 schwarz	adj				black	Ich suche schwarze Schuhe.	I'm looking for black shoes.	8
-suchen	v			sucht, suchte, hat gesucht	to look for, to search	Ich suche eine Hose in Größe 38.	I'm looking for trousers in size 38.	8
+suchen	v			sucht, suchte, hat gesucht	to look for, to search	Ich suche eine Wohnung mit Balkon.	I'm looking for a flat with a balcony.	5
 Tasche	n	die	Taschen		bag; pocket	Ist das deine Tasche?	Is that your bag?	8
-teuer	adj				expensive	Das Handy ist mir zu teuer.	The mobile phone is too expensive for me.	8
+teuer	adj				expensive	Das Handy ist mir zu teuer.	The mobile phone is too expensive for me.	5
 tun	v			tut, tat, hat getan	to do	Am Samstag habe ich viel zu tun.	I have a lot to do on Saturday.	8
-verkaufen	v			verkauft, verkaufte, hat verkauft	to sell	Frau Yilmaz verkauft ihr altes Sofa.	Mrs Yilmaz is selling her old sofa.	8
+verkaufen	v			verkauft, verkaufte, hat verkauft	to sell	Frau Yilmaz verkauft ihr altes Sofa.	Mrs Yilmaz is selling her old sofa.	7
 weiß	adj				white	Die weiße Hose gefällt mir.	I like the white trousers.	8
-wichtig	adj				important	Der Preis ist mir nicht so wichtig.	The price isn't that important to me.	8
+wichtig	adj				important	Der Preis ist mir nicht so wichtig.	The price isn't that important to me.	5
 Zoll	n	der	-		customs	Nach dem Flug geht Priya durch den Zoll.	After the flight Priya goes through customs.	8
 überweisen	v			überweist, überwies, hat überwiesen	to transfer (money)	Ich überweise die Miete am Montag.	I'm transferring the rent on Monday.	8
-Euro	n	der	Euro		euro	Das Ticket kostet zwölf Euro.	The ticket costs twelve euros.	8
+Euro	n	der	Euro		euro	Im Praktikum verdiene ich 500 Euro im Monat.	In the internship I earn 500 euros a month.	3
 Hose	n	die	Hosen		trousers, pants	Diese Hose ist sehr schön.	These trousers are very nice.	8
 rot	adj				red	Wie gefällt dir die rote Jacke?	How do you like the red jacket?	8
 blau	adj				blue	Ich nehme die blaue Tasche.	I'll take the blue bag.	8

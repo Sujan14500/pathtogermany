@@ -13,6 +13,7 @@ der	Absender	n
 	achtzehn	num
 	achtzig	num
 die	Adresse	n
+	alle	art
 	allein	adj
 	also	conj
 	alt	adj
@@ -89,6 +90,7 @@ die	Bank	n
 	bar	adj
 der	Bauch	n
 der	Baum	n
+der	Beamte	n
 	bedeuten	v
 	beginnen	v
 	bei	prep
@@ -96,6 +98,7 @@ der	Baum	n
 das	Bein	n
 das	Beispiel	n
 	bekannt	adj
+der	Bekannte	n
 	bekommen	v
 	benutzen	v
 der	Beruf	n
@@ -104,6 +107,7 @@ der	Beruf	n
 	bestellen	v
 	besuchen	v
 das	Bett	n
+der	Bewohner	n
 	bezahlen	v
 das	Bier	n
 das	Bild	n
@@ -115,12 +119,14 @@ die	Bitte	n
 	bitte	adv
 	bitten	v
 	bitter	adj
+	blau	adj
 	bleiben	v
 der	Bleistift	n
 der	Blick	n
 die	Blume	n
 der	Bogen	n
 	brauchen	v
+	braun	adj
 	breit	adj
 der	Brief	n
 die	Briefmarke	n
@@ -137,6 +143,7 @@ die	Bäckerei	n
 	böse	adj
 das	Café	n
 die	CD	n
+der	Cent	n
 der	Chef	n
 	circa	adv
 der	Computer	n
@@ -147,7 +154,6 @@ der	Dank	n
 	danke	other
 	danken	v
 	dann	adv
-	das	pron
 das	Datum	n
 	dauern	v
 	dein	art
@@ -155,9 +161,12 @@ das	Datum	n
 	der	art
 	Deutsch	name
 	deutsch	adj
+die	Deutsche	n
+der	Deutscher	n
 	Deutschland	name
 der	Dezember	n
 der	Dienstag	n
+	dieser	pron
 die	Disco	n
 der	Doktor	n
 der	Donnerstag	n
@@ -197,7 +206,7 @@ der	Eintritt	n
 	einundzwanzig	num
 das	Einzelzimmer	n
 	elf	num
-die	Eltern	n
+pl	Eltern	n
 	empfehlen	v
 der	Empfänger	n
 das	Ende	n
@@ -209,13 +218,19 @@ die	Entschuldigung	n
 das	Ergebnis	n
 	erklären	v
 	erlauben	v
+	erste	adj
+der	Erwachsene	n
 	erzählen	v
+	es	pron
 das	Essen	n
 	essen	v
 	euer	art
+der	Euro	n
 	Europa	name
+der	Europäer	n
 	europäisch	adj
 	fahren	v
+der	Fahrer	n
 die	Fahrkarte	n
 das	Fahrrad	n
 	falsch	adj
@@ -234,6 +249,9 @@ das	Feuer	n
 das	Fieber	n
 der	Film	n
 	finden	v
+die	Finne	n
+die	Finnin	n
+	finnisch	adj
 	Finnland	name
 die	Firma	n
 der	Fisch	n
@@ -254,6 +272,7 @@ die	Freizeit	n
 	freuen	v
 der	Freund	n
 	früher	adj
+das	Frühjahr	n
 der	Frühling	n
 das	Frühstück	n
 	frühstücken	v
@@ -267,6 +286,7 @@ die	Führung	n
 der	Garten	n
 der	Gast	n
 	geben	v
+	geboren	adj
 das	Geburtsjahr	n
 der	Geburtsort	n
 der	Geburtstag	n
@@ -274,6 +294,7 @@ der	Geburtstag	n
 	gegen	prep
 	gehen	v
 	gehören	v
+	gelb	adj
 das	Geld	n
 das	Gemüse	n
 das	Gepäck	n
@@ -282,7 +303,7 @@ das	Gepäck	n
 	gern	adv
 das	Geschenk	n
 	geschlossen	adj
-die	Geschwister	n
+pl	Geschwister	n
 das	Geschäft	n
 das	Gespräch	n
 	gestern	adv
@@ -298,15 +319,19 @@ das	Gleis	n
 das	Glück	n
 	glücklich	adj
 der	Glückwunsch	n
+der	Grad	n
+das	Gramm	n
 	gratulieren	v
+	grau	adj
 	grillen	v
 	groß	adj
-die	Großeltern	n
+pl	Großeltern	n
 die	Großmutter	n
 der	Großvater	n
 die	Gruppe	n
 der	Gruß	n
 die	Größe	n
+	grün	adj
 	gut	adj
 	gültig	adj
 	günstig	adj
@@ -332,6 +357,7 @@ die	Heimat	n
 der	Herbst	n
 der	Herd	n
 der	Herr	n
+	herzlich	adj
 	heute	adv
 	hier	adv
 die	Hilfe	n
@@ -359,8 +385,10 @@ das	Internet	n
 die	Jacke	n
 das	Jahr	n
 der	Januar	n
+	jeder	pron
 	jetzt	adv
 der	Job	n
+der	Jugendliche	n
 der	Juli	n
 	jung	adj
 der	Junge	n
@@ -374,6 +402,8 @@ die	Kasse	n
 	kein	pron
 	kennen	v
 	kennenlernen	v
+das	Kilo	n
+der	Kilometer	n
 das	Kind	n
 der	Kindergarten	n
 das	Kino	n
@@ -412,18 +442,22 @@ das	Leben	n
 	leben	v
 	ledig	adj
 	legen	v
+der	Lehrer	n
 	leicht	adj
 	leider	adv
 	leise	adj
 	lernen	v
 	lesen	v
-die	Leute	n
+	letzte	adj
+pl	Leute	n
 das	Licht	n
 	lieb	adj
 	lieben	v
 das	Lied	n
 	liegen	v
 	links	adv
+der	Liter	n
+der	Lkw	n
 das	Lokal	n
 	lustig	adj
 die	Lösung	n
@@ -437,10 +471,17 @@ das	Meer	n
 	mein	art
 	meist	adv
 der	Mensch	n
+der	Meter	n
+der	Mexikaner	n
+die	Mexikanerin	n
+	mexikanisch	adj
 	Mexiko	name
 die	Miete	n
 	mieten	v
 die	Milch	n
+die	Milliarde	n
+die	Million	n
+	minus	adv
 die	Minute	n
 	mit	prep
 	mitbringen	v
@@ -460,7 +501,7 @@ die	Mutter	n
 das	Mädchen	n
 	männlich	adj
 der	März	n
-die	Möbel	n
+pl	Möbel	n
 	mögen	v
 	möglich	adj
 	müde	adj
@@ -469,6 +510,7 @@ die	Möbel	n
 der	Nachmittag	n
 die	Nacht	n
 der	Name	n
+die	Nationalität	n
 	nehmen	v
 	nein	other
 	neu	adj
@@ -482,10 +524,11 @@ der	Name	n
 der	Norden	n
 	normal	adj
 der	November	n
+die	Null	n
 	null	num
 die	Nummer	n
 	nur	adv
-	nächst	prep
+	nächste	adj
 	oben	adv
 das	Obst	n
 	oder	conj
@@ -496,14 +539,18 @@ die	Oma	n
 der	Opa	n
 die	Ordnung	n
 der	Ort	n
+der	Osten	n
 das	Papier	n
-die	Papiere	n
+pl	Papiere	n
 der	Partner	n
+die	Partnerin	n
 die	Party	n
 der	Pass	n
 die	Pause	n
+das	Pfund	n
 der	Plan	n
 der	Platz	n
+	plus	adv
 die	Polizei	n
 die	Pommes	n
 die	Post	n
@@ -513,8 +560,10 @@ die	Praxis	n
 der	Preis	n
 das	Problem	n
 der	Prospekt	n
+das	Prozent	n
 die	Prüfung	n
 	pünktlich	adj
+der	Quadratmeter	n
 	rauchen	v
 der	Raum	n
 die	Rechnung	n
@@ -532,6 +581,7 @@ das	Restaurant	n
 die	Rezeption	n
 	richtig	adj
 	riechen	v
+	rot	adj
 	ruhig	adj
 die	S-Bahn	n
 der	Saft	n
@@ -569,6 +619,7 @@ der	Schüler	n
 der	See	n
 	sehen	v
 die	Sehenswürdigkeit	n
+	sehr	adv
 	sein	v
 	seit	conj
 die	Sekunde	n
@@ -586,6 +637,7 @@ das	Sofa	n
 der	Sohn	n
 	sollen	v
 der	Sommer	n
+der	Sonnabend	n
 die	Sonne	n
 der	Sonntag	n
 die	Speisekarte	n
@@ -607,6 +659,7 @@ der	Student	n
 das	Studium	n
 die	Stunde	n
 	suchen	v
+der	Süden	n
 der	Tag	n
 	tanzen	v
 die	Tasche	n
@@ -632,6 +685,10 @@ die	Treppe	n
 	trinken	v
 	tschüss	other
 	tun	v
+der	Türke	n
+	Türkei	name
+die	Türkin	n
+	türkisch	adj
 die	Uhr	n
 	um	prep
 	umziehen	v
@@ -653,10 +710,12 @@ der	Verkäufer	n
 	vermieten	v
 der	Vermieter	n
 	verstehen	v
+der	Verwandte	n
 	viel	pron
 	vielleicht	adv
 	vier	num
 	vierte	adj
+der	Viertel	n
 	vierundzwanzig	num
 	vierzehn	num
 	vierzig	num
@@ -681,17 +740,19 @@ der	Wein	n
 	weit	adj
 	weiter	adv
 	weiß	adj
-	welch	art
+	welcher	art
 die	Welt	n
 	wenig	adj
 	wer	pron
 	werden	v
+der	Westen	n
 das	Wetter	n
 	wichtig	adj
 	wie	adv
 	wiederholen	v
 das	Wiederhören	n
 das	Wiedersehen	n
+	willkommen	adj
 der	Wind	n
 der	Winter	n
 	wir	pron
@@ -711,12 +772,14 @@ das	Wort	n
 	zehn	num
 die	Zeit	n
 die	Zeitung	n
+der	Zentimeter	n
 die	Zigarette	n
 das	Zimmer	n
 der	Zoll	n
 	zu	prep
 	zufrieden	adj
 der	Zug	n
+	zum	other
 	zurzeit	adv
 	zurück	adv
 	zusammen	adv

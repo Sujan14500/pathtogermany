@@ -7,7 +7,8 @@
 <script type="module">
 // Self-check for helpers in main.js. Serve app/ (python -m http.server -d app) and open /test.html; it prints ok.
 import { route, findWord, genderRule, umlaut, pluralPattern, fmtInterval, present, preterite, imperative, verbMistakes, perfect,
-  spreadNew, checkAnswer, diffChars, countWords, writingHints, pointFound } from './main.js'
+  spreadNew, checkAnswer, diffChars, countWords, writingHints, pointFound, knownShare, buildForms } from './main.js'
+import { examPass } from './main.js'
 
 const fails = []
 const check = (ok, what) => { if (!ok) fails.push(what) }
@@ -32,6 +33,18 @@ const aufstehen = { w: 'aufstehen', p: 'v', f: 'steht auf, stand auf, ist aufges
 check(at('Ich stehe um sieben auf.', aufstehen) === 'stehe', 'findWord: separable verb')
 const alt = { w: 'alt', p: 'adj' }
 check(at('Das ist ein altes Haus.', alt) === 'altes' && at('Wir halten an.', alt) === null, 'findWord: adjective endings, not inside halten')
+
+// known words in a text (40-reading.js, L11): extra forms, compounds, place names; a glossed word counts only if learned
+const kw = [['der', 'art'], ['welcher', 'art'], ['in', 'prep'], ['ich', 'pron'], ['wohnen', 'v', , , 'wohnt, wohnte, hat gewohnt'],
+  ['Kind', 'n', 'das', 'Kinder'], ['Zimmer', 'n', 'das', 'Zimmer'], ['Öffnung', 'n', 'die', 'Öffnungen'], ['Zeit', 'n', 'die', 'Zeiten'],
+  ['Haus', 'n', 'das', 'Häuser', , 9]].map(([w, p, a, pl, f, n = 1]) => ({ w, p, a, pl, f, n }))
+const kix = buildForms(kw)
+const share = (de, en) => knownShare({ blocks: [{ s: [[de, en]] }], glossary: [{ w: 'Haus', en: 'house' }] }, w => w.n <= 1, kix)
+check(share('Welche Kinderzimmer?', "Which children's rooms?").share === 1, 'knownShare: welche, and the compound Kinder|zimmer')
+check(share('Die Öffnungszeiten', 'The opening hours').share === 1, 'knownShare: Öffnung|s|zeiten with a linking s')
+check(share('Ich wohne in Köln.', 'I live in Cologne.').share === 1, 'knownShare: Köln/Cologne is a name, not an unknown word')
+check(share('Ich wohne im Haus.', 'I live in the house.').share === 0.75, 'knownShare: a glossed word not learned yet is unknown')
+check(share('Kinder, Xylofonzimmer', 'Children, xylophone room').share === 0.5, 'knownShare: a compound with an unknown part is unknown')
 
 // gender rules and plurals
 const rule = w => genderRule({ w })?.art
@@ -93,6 +106,11 @@ check(kinds('Ich wohne jetzt in Köln.') === 'frame', 'writingHints: no greeting
 check(pointFound('Wir sind zehn Leute aus acht Ländern.', 'Wer im Kurs ist (Länder, Sprachen)') && !pointFound('Hallo, wie geht es dir?', 'Wer im Kurs ist (Länder, Sprachen)'), 'pointFound: key-word stems')
 check(pointFound('Wann kommst du?', 'Frage: Wann kommt Felix zu Besuch?', 'Felix') && !pointFound('Du kommst bald.', 'Frage: Wann kommt Felix zu Besuch?', 'Felix'), 'pointFound: a question needs ?')
 check(pointFound('Mir geht es nicht gut, ich habe Fieber.', 'Warum kommen Sie nicht?'), 'pointFound: a reason without weil')
+
+// Goethe pass rules (85-tests.js): A1 60 overall; A2 also 45 of 75 written and 15 of 25 spoken; B1 60 in every module
+const mods = (...ps) => ['Lesen', 'Hören', 'Schreiben', 'Sprechen'].map((m, i) => ({ m, pts: ps[i], max: ps.length > 4 ? ps[4] : 25 }))
+check(examPass('A1', mods(25, 25, 10, 0)) && !examPass('A2', mods(25, 25, 10, 0)) && examPass('A2', mods(15, 15, 15, 15)), 'examPass: A2 needs 15 of 25 in Sprechen')
+check(!examPass('A2', mods(14, 15, 15, 25)) && examPass('B1', mods(60, 60, 60, 60, 100)) && !examPass('B1', mods(100, 100, 100, 59, 100)), 'examPass: A2 45 written, B1 every module')
 
 document.getElementById('out').textContent = fails.length ? `FAIL\n${fails.join('\n')}` : 'ok'
 document.title = fails.length ? 'FAIL' : 'ok'

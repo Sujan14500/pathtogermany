@@ -4,13 +4,14 @@ die	Abbildung	n	3
 das	Abenteuer	n	9
 der	Abfall	n	1
 der	Abfalleimer	n	1
-	abheben	v	4
-	abhängen	v	12
+	abheben	v	6
+	abhängen	v	8
 	abhängig	adj	12
-das	Abitur	n	3
+das	Abitur	n	0
 	ablehnen	v	12
 	abmachen	v	12
 	abnehmen	v	4
+das	Abo	n	5
 das	Abonnement	n	5
 	abonnieren	v	5
 	absagen	v	5
@@ -18,6 +19,7 @@ der	Abschied	n	7
 der	Abschluss	n	2
 der	Abschnitt	n	3
 	abschreiben	v	3
+die	Absenderin	n	0
 die	Absicht	n	8
 	absolut	adj	12
 	abstimmen	v	10
@@ -26,14 +28,18 @@ der	Abwart	n	1
 	abwaschen	v	1
 	abwesend	adj	12
 	abwärts	adv	7
-	achten	v	12
+das	Achten	n	0
+	achten	v	4
 der	Affe	n	8
+die	Akademie	n	3
 der	Akku	n	4
-die	Aktion	n	5
+der	Akkumulator	n	0
+die	Aktion	n	0
 die	Aktivität	n	4
 	akzeptieren	v	12
 der	Alarm	n	5
 der	Alkohol	n	4
+	allen	pron	0
 	allerdings	adv	5
 	allgemein	adj	10
 der	Alltag	n	3
@@ -46,17 +52,18 @@ das	Altersheim	n	1
 das	Amt	n	2
 	analysieren	v	12
 der	Anbieter	n	2
-	andererseits	adv	5
+	andererseits	adv	3
 	anerkennen	v	10
 	anfangs	adv	3
 die	Angabe	n	5
 	angeben	v	5
-	angenehm	adj	11
+der	Angehörige	n	4
+	angenehm	adj	5
 	anhaben	v	7
 	ankündigen	v	5
 die	Anlage	n	2
 die	Anleitung	n	2
-	annehmen	v	12
+	annehmen	v	0
 die	Annonce	n	5
 der	Anrufbeantworter	n	5
 	anschaffen	v	6
@@ -65,21 +72,28 @@ der	Anrufbeantworter	n	5
 	ansprechen	v	5
 der	Anspruch	n	2
 	anstellen	v	2
-	anstrengend	adj	12
+	anstrengend	adj	0
 der	Antrag	n	2
 der	Anwalt	n	2
 	anwenden	v	12
 	anwesend	adj	11
+die	Anwältin	n	0
 die	Anzahl	n	3
+die	Anzeigen	n	0
 	anzeigen	v	5
 die	Aprikose	n	8
+der	Arbeiter	n	2
 die	Arbeiterin	n	2
+der	Arbeitgeber	n	2
+der	Arbeitnehmer	n	2
 die	Arbeitserlaubnis	n	2
 die	Arbeitslosigkeit	n	2
 die	Arbeitsstelle	n	2
 der	Architekt	n	2
 die	Architektin	n	2
+das	Argument	n	3
 die	Art	n	12
+	ass	v	0
 das	Asyl	n	7
 der	Atem	n	4
 	atmen	v	4
@@ -88,44 +102,52 @@ der	Aufenthalt	n	2
 	auffordern	v	5
 die	Aufforderung	n	5
 	aufführen	v	9
-	aufgeben	v	11
+	aufgeben	v	4
 	aufhalten	v	11
-	aufheben	v	12
+	aufheben	v	0
 	aufladen	v	7
 	auflösen	v	11
 	aufmerksam	adj	3
+die	Aufmerksamkeit	n	2
 die	Aufnahme	n	5
 	aufnehmen	v	5
 	aufregen	v	4
+	aufs	other	0
 	aufschreiben	v	12
-der	Auftrag	n	2
+der	Auftrag	n	0
 	auftreten	v	11
 der	Auftritt	n	9
 	aufwachen	v	11
 	aufwärts	adv	7
 der	Augenblick	n	7
+die	Ausbildung	n	3
 der	Ausdruck	n	5
 	ausdrucken	v	5
 	auseinander	adv	12
 die	Ausfahrt	n	7
-	ausfallen	v	11
+	ausfallen	v	1
+der	Ausflug	n	7
 die	Ausgabe	n	5
 	ausgezeichnet	adj	9
-die	Aushilfe	n	2
+die	Aushilfe	n	0
+die	Ausländerin	n	0
 die	Ausnahme	n	8
 	ausreichen	v	3
 	ausreichend	adj	12
 	ausrichten	v	5
-	ausschließen	v	10
+	ausschließen	v	5
 	ausschließlich	adj	12
-die	Aussicht	n	11
-die	Aussprache	n	3
+die	Aussicht	n	0
+die	Aussprache	n	0
 	ausstellen	v	9
-die	Auswahl	n	12
+die	Ausstellung	n	9
+die	Auswahl	n	2
 	auswählen	v	12
-der	Autor	n	3
-die	Autorin	n	3
+der	Autor	n	0
+die	Autorin	n	0
 	außen	adv	7
+der	Azubi	n	2
+die	Babysitterin	n	0
 die	Badewanne	n	1
 das	Ballett	n	9
 die	Bankleitzahl	n	6
@@ -136,7 +158,7 @@ die	Batterie	n	6
 der	Bau	n	2
 der	Bauer	n	2
 der	Bauernhof	n	1
-	beachten	v	12
+	beachten	v	1
 die	Beamtin	n	2
 	beantragen	v	2
 	bearbeiten	v	2
@@ -149,18 +171,20 @@ die	Bedingung	n	6
 	befreit	adj	11
 	befriedigend	adj	12
 	begegnen	v	9
-	begeistert	adj	4
+	begeistert	adj	2
 der	Beginn	n	3
-	begleiten	v	11
+	begleiten	v	7
 	begrenzt	adj	12
 die	Begründung	n	12
 	begrüßen	v	11
-	behalten	v	12
+	behalten	v	11
 	behandeln	v	11
 	behaupten	v	5
+die	Behauptung	n	12
 	behindern	v	12
 	behindert	adj	4
 die	Behörde	n	2
+	beim	other	0
 	beinahe	adv	11
 	beispielsweise	adv	12
 der	Beitrag	n	5
@@ -168,58 +192,65 @@ der	Beitrag	n	5
 der	Beleg	n	6
 	beleidigen	v	11
 	bemerken	v	12
+das	Benutzen	n	0
 das	Benzin	n	7
 	benötigen	v	6
 	beobachten	v	8
-die	Beratung	n	12
-	berechnen	v	11
-der	Bereich	n	8
-	bereit	adj	12
+die	Beratung	n	2
+	berechnen	v	7
+der	Bereich	n	7
+	bereit	adj	5
 	bereiten	v	12
-	bereits	adv	12
+	bereits	adv	4
 der	Bericht	n	5
 	beruflich	adj	2
 die	Berufsschule	n	2
 	berufstätig	adj	2
 	beruhigen	v	11
-	beschließen	v	10
+	beschließen	v	8
 die	Beschreibung	n	3
 	beschränken	v	12
+die	Beschwerde	n	6
 	beschädigen	v	6
 	beschäftigen	v	2
 die	Beschäftigung	n	2
 	besetzen	v	2
 	besitzen	v	6
-	besorgen	v	6
+	besondere	adj	3
+	besorgen	v	1
 	besprechen	v	2
-die	Besprechung	n	2
+die	Besprechung	n	0
 die	Besserung	n	4
-	bestimmt	adj	11
+	bestimmt	adj	0
 	bestrafen	v	6
 die	Bestätigung	n	6
 der	Betrag	n	6
 	betreuen	v	1
 der	Betreuer	n	1
+die	Betreuerin	n	0
 die	Betreuung	n	1
 der	Betrieb	n	2
 der	Betriebsrat	n	2
 die	Betriebsrätin	n	2
 	betrunken	adj	11
 	betrügen	v	6
-	bevor	conj	7
+	bevor	conj	2
 die	Bevölkerung	n	10
 	bewegen	v	4
-die	Bewegung	n	2
+die	Bewegung	n	0
 der	Beweis	n	10
 	beweisen	v	10
+die	Bewerbung	n	2
+die	Bewohnerin	n	0
 die	Beziehung	n	1
+	beziehungsweise	conj	10
 die	Biene	n	8
 	bieten	v	12
 der	Bikini	n	4
-der	Bildschirm	n	3
+der	Bildschirm	n	0
 das	Billett	n	7
-die	Biologie	n	3
-	bisher	adv	3
+die	Biologie	n	0
+	bisher	adv	0
 	blass	adj	4
 	blind	adj	4
 der	Blitz	n	8
@@ -229,14 +260,14 @@ der	Blitz	n	8
 das	Blut	n	4
 	bluten	v	4
 	blühen	v	8
-der	Boden	n	8
+der	Boden	n	0
 das	Boot	n	7
 die	Botschaft	n	5
 	brach	adj	0
 der	Braten	n	6
-	brechen	v	12
+	brechen	v	4
 die	Breite	n	7
-die	Bremse	n	6
+die	Bremse	n	0
 	bremsen	v	7
 	brennen	v	8
 der	Briefkasten	n	5
@@ -246,13 +277,16 @@ der	Briefumschlag	n	5
 die	Broschüre	n	5
 die	Brust	n	4
 das	Brötli	n	4
+der	Bub	n	0
 die	Buchhandlung	n	3
 das	Buffet	n	7
 der	Bund	n	10
 der	Bundeskanzler	n	10
 die	Bundeskanzlerin	n	10
+das	Bundesland	n	10
 der	Bundespräsident	n	10
 der	Bundesrat	n	10
+die	Bundesrepublik	n	10
 der	Bundestag	n	10
 die	Burg	n	7
 der	Bär	n	8
@@ -267,72 +301,88 @@ das	Camp	n	4
 	campen	v	4
 die	Castingshow	n	5
 der	CD-Player	n	5
-die	Chance	n	11
+die	Chance	n	10
 der	Chat	n	5
 	checken	v	5
+	chic	adj	0
 	China	name	1
 	Chinesisch	name	1
 der	Chip	n	5
 die	Chipkarte	n	5
 die	City	n	7
 der	Coiffeur	n	2
+die	Coiffeuse	n	0
+das	Cola	n	4
 die	Cola	n	4
 	cool	adj	9
 die	Couch	n	1
-der	Cousin	n	1
-die	Cousine	n	1
+der	Cousin	n	0
+die	Cousine	n	0
+das	Couvert	n	0
 das	Dach	n	1
 	daher	adv	12
-	dahin	adv	7
-	damit	adv	8
-	danach	adv	3
+	dahin	adv	0
+	damit	adv	1
+	danach	adv	0
 	dankbar	adj	11
 	darstellen	v	9
 die	Darstellung	n	9
 die	Daten	n	5
+der	Datenträger	n	0
 die	Dauer	n	6
 	dauernd	adj	7
 die	Decke	n	1
+	deiner	pron	0
+das	Deka	n	0
 	dekorieren	v	9
 die	Demokratie	n	10
+	demokratisch	adj	10
 	den	pron	0
 das	Denkmal	n	7
 	derselbe	pron	11
+	des	art	0
 das	Dessert	n	4
-	deswegen	adv	12
+	desto	conj	9
+	deswegen	adv	4
 	det	pron	0
 das	Detail	n	9
 der	Dialekt	n	3
 der	Dialog	n	3
 	dicht	adj	12
 der	Dieb	n	6
-	dienen	v	2
+	dienen	v	1
 der	Dienst	n	2
-	diesmal	adv	11
+	diesmal	adv	3
 	digital	adj	5
 das	Diplom	n	2
-der	Direktor	n	2
+der	Direktor	n	0
+die	Direktorin	n	0
 die	Diskothek	n	9
-die	Diskussion	n	12
+die	Diskussion	n	10
 die	Distanz	n	7
 die	Diät	n	4
-die	Doktorin	n	2
+die	Doktorin	n	0
 das	Dokument	n	2
 der	Donner	n	8
 	donnern	v	8
 	doppelt	adj	6
 	dorthin	adv	7
-die	Dose	n	6
+die	Dose	n	0
 der	Dreck	n	1
 	drehen	v	11
+die	Drei	n	0
+der	Dreier	n	0
+	dreiviertel	prep	0
 	drin	adv	7
-	drittens	adv	7
+das	Drittel	n	6
+der	Drittel	n	6
+	drittens	adv	0
 die	Droge	n	4
 die	Drogerie	n	4
 der	Druck	n	5
 	du	pron	0
 	durcheinander	adj	12
-der	Durchschnitt	n	6
+der	Durchschnitt	n	5
 	durchschnittlich	adj	6
 	durstig	adj	4
 	duzen	v	1
@@ -343,17 +393,23 @@ das	E-Bike	n	5
 	ebenso	adv	9
 das	Eck	n	7
 	eckig	adj	7
+das	EG	n	0
 die	Ehe	n	1
 das	Ehepaar	n	1
-	eher	adv	11
-	ehrlich	adj	1
+	eher	adv	3
+	ehrlich	adj	0
+die	Eidgenossenschaft	n	0
 die	Eile	n	1
 	eilen	v	7
 die	Einbahnstraße	n	7
 	einbrechen	v	6
-der	Einbruch	n	6
+die	Einbrecher	n	0
+die	Einbrecherin	n	0
+der	Einbruch	n	5
 	eindeutig	adj	11
 der	Eindruck	n	9
+der	Einer	n	0
+	einer	pron	0
 	einerseits	adv	5
 die	Einfahrt	n	7
 der	Einfall	n	12
@@ -361,27 +417,31 @@ der	Einfall	n	12
 der	Einfluss	n	10
 	einfügen	v	12
 	einführen	v	12
-die	Einführung	n	11
+die	Einführung	n	2
 	einheitlich	adj	6
 der	Einkauf	n	6
+das	Einkommen	n	2
 die	Einleitung	n	3
 die	Einnahme	n	6
 	einnehmen	v	6
 	einrichten	v	1
 die	Einrichtung	n	1
+die	Eins	n	0
 	einsam	adj	1
 	einschalten	v	5
 	einschließlich	prep	6
 das	Einschreiben	n	5
+der	Einser	n	0
 	einsetzen	v	12
 	einstellen	v	2
-	eintreten	v	12
+	eintreten	v	9
 der	Einwohner	n	7
+die	Einwohnerin	n	0
 	einzahlen	v	6
 die	Einzahlung	n	6
 die	Einzelheit	n	9
 	einzeln	adj	9
-	einzig	adj	12
+	einzig	adj	2
 die	Eisenbahn	n	7
 der	Elefant	n	8
 	elegant	adj	9
@@ -391,49 +451,52 @@ der	Empfang	n	11
 	empfangen	v	12
 die	Empfehlung	n	12
 	endgültig	adj	11
-die	Energie	n	8
-der	Enkel	n	1
-die	Enkelin	n	1
-	entdecken	v	3
+die	Energie	n	2
+der	Enkel	n	0
+die	Enkelin	n	0
+	entdecken	v	0
 die	Ente	n	8
-	entfernen	v	11
+	entfernen	v	0
 die	Entfernung	n	7
 	entgegenkommen	v	12
 	enthalten	v	11
 	entlang	adv	7
 	entlassen	v	2
 die	Entlassung	n	2
-	entscheiden	v	11
+	entscheiden	v	2
 die	Entscheidung	n	10
 	entschlossen	adj	11
-	entsorgen	v	8
-	entstehen	v	12
+	entsorgen	v	6
+	entstehen	v	8
 	enttäuschen	v	4
 die	Enttäuschung	n	4
 	entweder	conj	9
 	entwickeln	v	3
 die	Entwicklung	n	3
 der	Erdapfel	n	8
-die	Erde	n	8
+die	Erde	n	0
+das	Erdgeschoß	n	0
 das	Ereignis	n	8
-	erfahren	v	11
+	erfahren	v	1
 	erfinden	v	3
 die	Erfindung	n	3
-der	Erfolg	n	11
-	erfolgreich	adj	11
-	erforderlich	adj	12
+der	Erfolg	n	0
+	erfolgreich	adj	9
+	erforderlich	adj	2
 	erfordern	v	12
 	erfüllen	v	11
+das	Ergebnis	n	12
 	ergänzen	v	3
-	erhalten	v	11
+	erhalten	v	4
 die	Erholung	n	4
 	erhöhen	v	8
 die	Erhöhung	n	8
-die	Erinnerung	n	3
-	erkennen	v	12
+die	Erinnerung	n	0
+	erkennen	v	5
+das	Erklären	n	0
 die	Erklärung	n	12
 die	Erkältung	n	4
-	erleben	v	9
+	erleben	v	3
 das	Erlebnis	n	9
 	erledigen	v	2
 	erleichtern	v	11
@@ -444,10 +507,10 @@ die	Ernte	n	8
 die	Ernährung	n	4
 der	Ersatz	n	6
 	erschrecken	v	4
-	erschöpft	adj	4
+	erschöpft	adj	2
 	ersetzen	v	6
-	erstellen	v	12
-	erstens	adv	7
+	erstellen	v	2
+	erstens	adv	0
 	erwachsen	v	11
 	erwarten	v	11
 	erziehen	v	1
@@ -456,9 +519,10 @@ die	Erzählung	n	3
 	eröffnen	v	9
 die	Eröffnung	n	9
 der	Essig	n	8
-die	Etage	n	1
-	etwa	adv	11
-	eventuell	adj	11
+die	Etage	n	0
+	etwa	adv	0
+die	EU	n	0
+	eventuell	adj	7
 	ewig	adj	11
 der	Experte	n	2
 der	Export	n	2
@@ -466,30 +530,32 @@ der	Export	n	2
 	extrem	adj	9
 die	Fabrik	n	2
 die	Fachfrau	n	2
+pl	Fachleute	n	2
 der	Fachmann	n	2
 die	Fahrbahn	n	7
 die	Fahrt	n	7
 das	Fahrzeug	n	2
 	fair	adj	10
 der	Faktor	n	8
-der	Fall	n	8
+der	Fall	n	5
 	falls	conj	11
 	fangen	v	11
 die	Fantasie	n	9
 	farbig	adj	9
 der	Fasching	n	9
-	fassen	v	12
+	fassen	v	2
 	faulenzen	v	4
 der	Fauteuil	n	10
 	faxen	v	2
-der	Feierabend	n	2
-der	Feiertag	n	11
+der	Feber	n	0
+der	Feierabend	n	0
+der	Feiertag	n	0
 das	Feld	n	8
 die	Fernbedienung	n	5
 das	Fernsehen	n	5
 	fest	adj	12
 	festhalten	v	10
-	festlegen	v	11
+	festlegen	v	10
 	festnehmen	v	6
 die	Festplatte	n	5
 	festsetzen	v	12
@@ -507,47 +573,53 @@ die	Fitness	n	4
 	flach	adj	12
 der	Fleck	n	1
 der	Fleischhauer	n	2
-	flexibel	adj	11
+	flexibel	adj	2
 die	Fliege	n	8
 	fliehen	v	7
 	fließen	v	8
 	fließend	adj	10
 die	Flucht	n	7
-der	Flur	n	1
+der	Flur	n	0
 die	Fläche	n	6
 die	Flöte	n	9
+der	Flüchtling	n	10
 die	Flüssigkeit	n	4
 die	Folge	n	8
 	folgen	v	8
-	folgend	adj	12
+	folgend	adj	1
 die	Folie	n	3
 	fordern	v	11
 die	Forderung	n	12
 die	Form	n	9
 die	Forschung	n	3
+	fort	adv	0
 die	Fortbildung	n	2
 der	Fortschritt	n	3
 	fortsetzen	v	11
 die	Fortsetzung	n	9
 das	Forum	n	5
 der	Fotograf	n	5
-die	Fotografie	n	5
+die	Fotografie	n	0
 	frech	adj	1
 die	Freiheit	n	10
-die	Fremdsprache	n	3
+die	Fremdsprache	n	0
 	fressen	v	4
 die	Freude	n	4
 die	Freundschaft	n	1
+der	Friede	n	0
+der	Frieden	n	10
 	frieren	v	10
-der	Friseur	n	2
-die	Friseurin	n	2
+der	Friseur	n	0
+die	Friseurin	n	0
 die	Frist	n	2
 die	Frisur	n	4
 die	Frucht	n	8
 	fröhlich	adj	4
-das	Fundbüro	n	6
-	funktionieren	v	11
+der	Früh	n	0
+das	Fundbüro	n	0
+	funktionieren	v	0
 der	Fußgänger	n	7
+die	Fußgängerin	n	0
 die	Fußgängerzone	n	7
 die	Fähigkeit	n	2
 die	Fähre	n	7
@@ -555,8 +627,11 @@ die	Fähre	n	7
 	fördern	v	2
 die	Förderung	n	2
 	führen	v	10
-der	Führerschein	n	7
+der	Führerschein	n	0
+die	Fünf	n	0
+der	Fünfer	n	0
 	fürchten	v	4
+	fürs	other	0
 	füttern	v	1
 die	Galerie	n	9
 der	Gang	n	7
@@ -572,9 +647,9 @@ das	Gebirge	n	7
 	gebrauchen	v	6
 die	Gebrauchsanweisung	n	2
 	gebraucht	adj	6
-die	Geburt	n	1
+die	Geburt	n	0
 das	Gebäck	n	4
-das	Gebäude	n	12
+das	Gebäude	n	7
 die	Gebühr	n	2
 der	Gedanke	n	3
 das	Gedicht	n	3
@@ -583,48 +658,56 @@ die	Geduld	n	1
 die	Gefahr	n	8
 	gefunden	adj	0
 das	Gefängnis	n	6
-das	Gefühl	n	4
+das	Gefühl	n	3
 die	Gegend	n	1
 der	Gegensatz	n	5
 der	Gegenstand	n	6
 der	Gegner	n	9
 	gegossen	adj	0
+das	Gehalt	n	2
 	geheim	adj	10
 das	Geheimnis	n	1
 der	Gehsteig	n	7
+	gejobbt	adj	0
 der	Geldautomat	n	6
 die	Gelegenheit	n	11
 	gelernt	adj	0
 	geliefert	adj	0
 	gelingen	v	11
-	gelten	v	11
+	gelten	v	1
+	gelöst	adj	0
 die	Gemeinde	n	10
-	gemeinsam	adj	12
+	gemeinsam	adj	4
 die	Gemeinschaft	n	1
 	gemeldet	adj	0
-	gemischt	adj	10
+	gemischt	adj	3
 	gemütlich	adj	1
-	genauso	adv	9
+	genauso	adv	2
 	genehmigen	v	10
 die	Generation	n	1
 	genießen	v	11
 	genügen	v	12
+	genügend	adj	0
+das	Gepäck	n	7
 	gerecht	adj	10
 	gering	adj	10
 	gesamt	adj	10
+die	Gesamtschule	n	3
 	geschehen	v	11
 	geschickt	adj	12
-	geschieden	adj	1
+	geschieden	adj	0
 das	Geschlecht	n	10
-der	Geschmack	n	4
+der	Geschmack	n	0
 die	Geschwindigkeit	n	6
 die	Gesellschaft	n	10
 das	Gesetz	n	6
-	gespannt	adj	4
+	gespannt	adj	3
+der	Gesprächspartner	n	1
+die	Gesundheit	n	4
 die	Gewalt	n	10
 die	Gewerkschaft	n	2
 der	Gewinn	n	6
-das	Gewissen	n	11
+das	Gewissen	n	8
 die	Gewohnheit	n	3
 	gewohnt	adj	3
 	gewöhnen	v	3
@@ -638,35 +721,37 @@ die	Glace	n	6
 	glatt	adj	12
 	gleichberechtigt	adj	1
 	gleichfalls	adv	9
-	gleichzeitig	adj	12
+	gleichzeitig	adj	3
 	global	adj	8
 das	Gold	n	8
 	googeln	v	5
 der	Gott	n	9
 die	Grafik	n	3
 das	Gras	n	8
-	gratis	adv	6
+	gratis	adv	0
 die	Gratulation	n	11
 	greifen	v	10
 die	Grenze	n	10
 der	Grieche	n	1
 	Griechenland	name	1
 die	Griechin	n	1
+das	Griechisch	n	0
 	griechisch	adj	1
 der	Grill	n	11
 	grillieren	v	12
-der	Grund	n	12
-die	Grundschule	n	3
+der	Grund	n	2
+die	Grundschule	n	0
 das	Grundstück	n	10
-	gründen	v	11
+	gründen	v	0
 	gründlich	adj	12
-	grüßen	v	12
+	grüßen	v	1
 	gucken	v	10
 das	Gymnasium	n	3
 die	Gymnastik	n	4
 das	Hackfleisch	n	6
 der	Hafen	n	7
 	hageln	v	8
+	halben	prep	0
 	halbtags	adv	2
 das	Hallenbad	n	4
 der	Halt	n	7
@@ -675,37 +760,45 @@ der	Halt	n	7
 der	Hammer	n	1
 der	Handel	n	2
 	handeln	v	12
-der	Handwerker	n	2
+der	Handwerker	n	0
 der	Hase	n	8
-	hassen	v	10
-der	Hauptbahnhof	n	11
+	hassen	v	3
+der	Hauptbahnhof	n	0
+die	Hauptschule	n	3
 der	Hausmeister	n	1
+die	Hausmeisterin	n	0
+die	Hausordnung	n	1
 das	Haustier	n	1
 die	Haut	n	4
 	heben	v	12
 das	Heim	n	1
 	heim	adv	7
-	heimlich	adj	10
+das	Heimatland	n	2
+	heimlich	adj	5
 das	Heimweh	n	1
 	heizen	v	8
 der	Held	n	9
 die	Heldin	n	9
 die	Herausforderung	n	11
 die	Herkunft	n	1
-	herunter	adv	7
+der	Herr	n	10
+der	Hersteller	n	6
+	herunter	adv	0
 das	Herz	n	4
-	herzlich	adj	1
+	herzlich	adj	0
 	heutig	adj	11
 	hierher	adv	7
 das	Hilfsmittel	n	2
 	hinterher	adv	3
 	hinterlassen	v	12
+der	Hinweis	n	12
 	hinweisen	v	12
 	historisch	adj	9
 der	Hit	n	5
 die	Hitze	n	4
 	hochladen	v	5
-der	Hof	n	10
+die	Hochschule	n	3
+der	Hof	n	0
 die	Hoffnung	n	4
 das	Holz	n	8
 der	Honig	n	8
@@ -716,15 +809,18 @@ der	Husten	n	4
 der	Hut	n	4
 die	Hälfte	n	6
 der	Händler	n	2
+die	Händlerin	n	0
 	häufig	adj	11
-	höchstens	adv	12
+	höchstens	adv	2
 	höflich	adj	1
 die	Höhe	n	7
-der	Hörer	n	5
+das	Hören	n	0
+der	Hörer	n	0
+die	Hörerin	n	0
 	hübsch	adj	9
 der	Hügel	n	7
 die	Hütte	n	1
-	ideal	adj	9
+	ideal	adj	0
 	illegal	adj	10
 der	Imbiss	n	7
 der	Import	n	2
@@ -734,13 +830,14 @@ die	Industrie	n	2
 die	Infektion	n	4
 der	Ingenieur	n	2
 der	Inhalt	n	3
-	inklusive	prep	6
+	inklusive	prep	4
 	innen	adv	7
 	inner	adj	11
-	innerhalb	prep	6
+	innerhalb	prep	5
+	ins	other	0
 das	Insekt	n	8
 das	Inserat	n	5
-	insgesamt	adv	6
+	insgesamt	adv	0
 	installieren	v	5
 das	Institut	n	3
 die	Integration	n	1
@@ -748,27 +845,31 @@ die	Integration	n	1
 die	Intelligenz	n	3
 	intensiv	adj	12
 	interkulturell	adj	1
-	inzwischen	adv	7
+	inzwischen	adv	1
 	irgend	adv	11
 	irgendein	art	11
-	irgendwann	adv	7
+	irgendwann	adv	0
 das	Jahrhundert	n	7
 das	Jahrtausend	n	7
 das	Jahrzehnt	n	7
 die	Jause	n	7
-der	Jazz	n	9
+der	Jazz	n	0
 	je	adv	9
-	jederzeit	adv	7
+	jederzeit	adv	5
 	jedoch	adv	5
 	jemals	adv	7
-	jeweils	adv	10
-	jobben	v	2
-der	Journalist	n	5
-die	Journalistin	n	5
+	jeweils	adv	9
+	jobben	v	0
+der	Journalist	n	0
+die	Journalistin	n	0
+die	Jugend	n	0
 die	Jugendherberge	n	4
-das	Kabel	n	5
+	jährlich	adj	6
+der	Jänner	n	0
+das	Kabel	n	1
 die	Kabine	n	1
 das	Kaffeehaus	n	7
+die	Kaffeemaschine	n	6
 der	Kakao	n	4
 der	Kampf	n	9
 der	Kanal	n	5
@@ -779,36 +880,42 @@ der	Kanton	n	7
 das	Kapitel	n	3
 	kaputtgehen	v	6
 	kaputtmachen	v	6
-der	Karneval	n	9
+der	Karneval	n	0
 die	Karotte	n	8
 die	Karriere	n	2
 die	Kassette	n	5
 der	Kasten	n	10
 der	Katalog	n	6
-die	Katastrophe	n	8
+die	Katastrophe	n	0
 der	Kauf	n	6
-	kaum	adv	11
-der	Kellner	n	2
-die	Kellnerin	n	2
+	kaum	adv	2
+der	Kellner	n	0
+die	Kellnerin	n	0
 das	Kennzeichen	n	7
 die	Kerze	n	1
+das	Ketchup	n	6
 der	Ketchup	n	6
+der	Ketschup	n	0
+das	Kfz	n	7
 der	Killer	n	9
-die	Kindheit	n	1
+die	Killerin	n	0
+die	Kindertagesstätte	n	3
+die	Kindheit	n	0
 das	Kissen	n	1
-die	Kiste	n	1
+die	Kiste	n	0
+die	Kita	n	3
 	klagen	v	11
 	klasse	adj	9
 die	Klassenarbeit	n	3
 	kleben	v	12
 	klettern	v	4
-der	Klick	n	5
+der	Klick	n	0
 	klicken	v	5
 das	Klima	n	8
 die	Klimaanlage	n	8
 die	Klingel	n	1
-	klingeln	v	1
-	klingen	v	9
+	klingeln	v	0
+	klingen	v	0
 die	Klinik	n	4
 	klopfen	v	10
 der	Kloß	n	6
@@ -819,10 +926,11 @@ das	Knie	n	4
 der	Knochen	n	4
 der	Knopf	n	4
 der	Knödel	n	6
-der	Koch	n	2
+der	Koch	n	0
+der	Kollege	n	10
 der	Kommentar	n	5
 die	Kommunikation	n	5
-	komplett	adj	10
+	komplett	adj	8
 	kompliziert	adj	11
 der	Kompromiss	n	1
 die	Konferenz	n	2
@@ -840,17 +948,20 @@ die	Kopie	n	2
 der	Kopierer	n	2
 	korrekt	adj	10
 der	Korridor	n	1
-	korrigieren	v	3
+	korrigieren	v	0
 die	Kosten	n	6
-das	Kostüm	n	4
+pl	Kosten	n	6
+das	Kostüm	n	0
 die	Kraft	n	4
+	kraft	prep	0
 das	Kraftfahrzeug	n	2
 das	Kraftwerk	n	8
+der	Kranke	n	4
 	kranken	v	11
 das	Krankenhaus	n	4
 die	Krankenkasse	n	4
-der	Krankenpfleger	n	2
-die	Krankenschwester	n	2
+der	Krankenpfleger	n	0
+die	Krankenschwester	n	0
 der	Krankenwagen	n	4
 	kreativ	adj	9
 die	Kreditkarte	n	6
@@ -858,7 +969,8 @@ der	Kreis	n	12
 das	Kreuz	n	10
 der	Krieg	n	10
 die	Kriminalpolizei	n	6
-die	Krise	n	10
+die	Krippe	n	3
+die	Krise	n	5
 die	Kritik	n	5
 	kritisch	adj	5
 	kritisieren	v	5
@@ -866,23 +978,25 @@ das	Krokodil	n	8
 	kräftig	adj	4
 die	Kuh	n	8
 der	Kuli	n	6
+die	Kunst	n	9
 der	Kunststoff	n	2
 die	Kurve	n	7
 der	Kuss	n	1
 das	Kuvert	n	5
 die	Kälte	n	4
 	kämpfen	v	9
+der	Käufer	n	6
 die	Käuferin	n	6
-die	Köchin	n	2
-der	König	n	11
+die	Köchin	n	0
+der	König	n	0
 	körperlich	adj	4
 die	Kündigung	n	2
-der	Künstler	n	9
-die	Künstlerin	n	9
+der	Künstler	n	0
+die	Künstlerin	n	0
 	künstlich	adj	12
 	kürzlich	adv	3
 	küssen	v	1
-die	Küste	n	7
+die	Küste	n	0
 die	Lage	n	7
 das	Lager	n	2
 	landen	v	7
@@ -891,23 +1005,28 @@ die	Landwirtschaft	n	2
 die	Langeweile	n	4
 der	Laster	n	7
 das	Laufwerk	n	5
-die	Laune	n	4
-der	Lautsprecher	n	5
-der	Lebenslauf	n	3
-die	Lebensmittel	n	4
-	lecker	adj	4
-das	Leder	n	4
+die	Laune	n	0
+der	Lautsprecher	n	0
+der	Lebenslauf	n	0
+die	Lebensmittel	n	0
+pl	Lebensmittel	n	0
+	lecker	adj	0
+das	Leder	n	0
 die	Lehre	n	2
 der	Lehrling	n	2
 die	Lehrstelle	n	2
 	leid	adj	11
-	leiden	v	4
+	leiden	v	3
 	leisten	v	2
 die	Leistung	n	2
 	leiten	v	2
 der	Leiter	n	2
 die	Leiterin	n	2
-die	Leitung	n	2
+die	Leitung	n	0
+der	Lerner	n	3
+die	Lernerin	n	0
+das	Lesen	n	0
+der	Leser	n	5
 die	Leserin	n	10
 das	Lexikon	n	3
 	liberal	adj	10
@@ -920,55 +1039,63 @@ die	Linie	n	7
 die	Lippe	n	4
 die	Liste	n	11
 die	Literatur	n	3
-	live	adv	5
+	live	adv	0
 	loben	v	12
 das	Loch	n	10
 	locker	adj	11
 der	Lohn	n	2
-	los	adv	12
+	los	adj	4
+	los	adv	4
 	losfahren	v	7
 die	Luft	n	8
-	lächeln	v	11
+	lächeln	v	1
 die	Länge	n	7
 	längst	adv	7
 der	Lärm	n	1
 	löschen	v	5
-	lösen	v	8
+	lösen	v	2
 der	Löwe	n	8
 das	Magazin	n	5
 	mager	adj	4
 die	Mahlzeit	n	4
 die	Mahnung	n	2
+die	Mail	n	2
 	mailen	v	5
 das	Mal	n	3
-der	Maler	n	9
+der	Maler	n	0
 die	Malerin	n	9
 der	Manager	n	2
+die	Managerin	n	0
 der	Mangel	n	6
+	mangelhaft	adj	3
 die	Mappe	n	2
 die	Margarine	n	8
 die	Marille	n	8
 die	Marke	n	6
 die	Marmelade	n	6
 das	Material	n	2
+die	Mathe	n	0
 die	Matura	n	3
 die	Mauer	n	7
 die	Maus	n	8
 	maximal	adj	8
-der	Mechaniker	n	2
-die	Mechanikerin	n	2
-die	Medien	n	5
-die	Medizin	n	4
-das	Mehl	n	8
-	mehrere	pron	10
+der	Mechaniker	n	0
+die	Mechanikerin	n	0
+die	Medien	n	0
+pl	Medien	n	0
+die	Medizin	n	0
+das	Mehl	n	2
+	mehrere	pron	4
 die	Mehrheit	n	10
 die	Mehrwertsteuer	n	6
 	meiner	pron	0
 	meinetwegen	adv	10
+die	Meinung	n	5
 der	Meister	n	2
 	melden	v	5
 die	Meldung	n	5
 die	Mensa	n	3
+der	Mensch	n	10
 	menschlich	adj	10
 das	Menü	n	4
 	merkwürdig	adj	9
@@ -978,66 +1105,79 @@ die	Methode	n	2
 die	Metropole	n	7
 der	Metzger	n	2
 der	Mieter	n	1
+die	Mieterin	n	0
 der	Migrant	n	1
 die	Migration	n	1
 	mild	adj	12
 die	Minderheit	n	1
-das	Mineralwasser	n	4
+das	Mineralwasser	n	0
 	minimal	adj	8
 der	Minister	n	10
 die	Ministerin	n	10
-	minus	adv	10
+	minus	adv	0
+	mir	pron	0
 	mischen	v	11
 die	Mitarbeiterin	n	2
 	miteinander	adv	1
-das	Mitglied	n	2
+das	Mitglied	n	0
 	mitteilen	v	5
+die	Mittelschule	n	3
 	mitten	adv	7
-die	Mitternacht	n	7
+die	Mitternacht	n	0
+	mittlerer	adj	0
 	mittlerweile	adv	7
+das	Mobil	n	0
 	mobil	adj	5
 die	Mobilität	n	7
 das	Mobiltelefon	n	5
-das	Modell	n	12
+das	Modell	n	2
 der	Moderator	n	5
+die	Moderatorin	n	0
 das	Modul	n	10
 der	Monat	n	7
+	monatlich	adj	6
 der	Mond	n	8
 der	Monitor	n	5
 das	Motorrad	n	7
 das	Mountainbike	n	4
 	musikalisch	adj	9
-der	Musiker	n	9
-die	Musikerin	n	9
+der	Musiker	n	0
+die	Musikerin	n	0
 der	Muskel	n	4
 der	Mut	n	1
-	mutig	adj	9
+	mutig	adj	3
 die	Muttersprache	n	3
 das	Märchen	n	3
 	möbliert	adj	1
-die	Möglichkeit	n	11
+die	Möglichkeit	n	8
 	möglichst	adv	11
 die	Möhre	n	8
 die	Mücke	n	1
+das	Müesli	n	0
 die	Mühe	n	3
+der	Müll	n	8
 die	Mülltonne	n	1
 	mündlich	adj	3
 die	Münze	n	11
+der	Nachbar	n	1
+die	Nachbarin	n	1
 	nachdem	conj	7
 	nachdenken	v	3
 die	Nachfrage	n	6
 	nachher	adv	3
-die	Nachhilfe	n	3
+die	Nachhilfe	n	0
+die	Nachricht	n	5
 	nachschlagen	v	3
 die	Nachspeise	n	4
-der	Nachteil	n	12
+der	Nachteil	n	2
 der	Nachwuchs	n	1
 die	Nadel	n	4
 der	Nagel	n	1
-	nah	adj	12
+	nah	adj	9
 das	Nahrungsmittel	n	4
 die	Nase	n	4
 	national	adj	8
+der	Nationalfeiertag	n	10
 der	Nebel	n	8
 	nebenbei	adv	9
 der	Neffe	n	1
@@ -1045,7 +1185,7 @@ der	Neffe	n	1
 der	Nerv	n	4
 das	Netz	n	5
 das	Netzwerk	n	5
-	neugierig	adj	11
+	neugierig	adj	3
 die	Neuigkeit	n	5
 	neulich	adv	3
 die	Nichte	n	1
@@ -1055,24 +1195,27 @@ die	Nichtraucherin	n	4
 	nirgendwo	adv	7
 	nochmals	adv	12
 die	Nord	n	0
-	normalerweise	adv	12
+	normalerweise	adv	0
 die	Notaufnahme	n	4
 der	Notausgang	n	7
-der	Notfall	n	4
+der	Notfall	n	1
 der	Notruf	n	4
-	nun	adv	9
-	nutzen	v	8
+	nun	adv	0
+	nutzen	v	5
 	nähen	v	4
-	nämlich	adj	12
-	nötig	adj	10
-	ob	conj	5
+	nämlich	adj	2
+	nördlich	adj	7
+	nötig	adj	0
+	nützen	v	0
+	ob	conj	0
 der	Ober	n	11
 	ober	prep	0
 das	Obergeschoss	n	1
 	obwohl	conj	5
 	offenbar	adj	11
 	offiziell	adj	10
-der	Onkel	n	1
+	okay	other	0
+der	Onkel	n	0
 die	Oper	n	9
 die	Operation	n	4
 	operieren	v	4
@@ -1081,55 +1224,67 @@ das	Opfer	n	6
 das	Orchester	n	9
 	ordentlich	adj	4
 die	Ordination	n	4
+das	Ordnen	n	0
 	ordnen	v	12
 der	Ordner	n	2
 die	Organisation	n	2
-das	Original	n	5
+das	Original	n	2
 	original	adj	5
-der	Osten	n	7
+der	Osten	n	0
 der	Ozean	n	7
+	paar	art	0
 die	Panne	n	6
 der	Paradeiser	n	8
 	parallel	adj	12
-	parkieren	v	9
+	parkieren	v	7
 das	Parlament	n	10
 die	Partei	n	10
 der	Passagier	n	7
+die	Passagierin	n	0
 	passiv	adj	10
-der	Patient	n	4
-die	Patientin	n	4
+der	Patient	n	0
+die	Patientin	n	0
 	pauschal	adj	6
-der	PC	n	2
+der	PC	n	0
 das	Pech	n	7
 	peinlich	adj	4
 die	Pension	n	4
 der	Pensionist	n	2
-	per	prep	6
-	perfekt	adj	9
+	per	prep	0
+	perfekt	adj	0
 der	Perron	n	7
 das	Personal	n	2
-	persönlich	adj	11
+der	Personal	n	2
+pl	Personalien	n	10
+der	Personenkraftwagen	n	0
+	persönlich	adj	2
 die	Pfanne	n	6
 der	Pfeffer	n	8
-	pflanzen	v	8
+das	Pfingsten	n	9
+	pflanzen	v	0
 das	Pflaster	n	4
 die	Pflaume	n	8
 	pflegen	v	12
 der	Pfleger	n	2
+die	Pflegerin	n	0
 die	Pflicht	n	6
+die	Phantasie	n	9
+die	Philosophie	n	3
 das	Picknick	n	4
 die	Pille	n	4
 der	Pilz	n	8
 der	Pinguin	n	8
+der	Pkw	n	7
 die	Planung	n	2
-das	Plastik	n	8
+das	Plastik	n	0
 die	Plattform	n	5
-	plus	adv	9
+	plus	adv	0
 die	Politik	n	10
 der	Politiker	n	10
+die	Politikerin	n	0
 	politisch	adj	10
-der	Polizist	n	6
-die	Polizistin	n	6
+der	Polizist	n	0
+die	Polizistin	n	0
 	populär	adj	10
 das	Portemonnaie	n	6
 	positiv	adj	11
@@ -1137,7 +1292,7 @@ das	Poulet	n	6
 der	Praktikant	n	2
 die	Praktikantin	n	2
 die	Presse	n	5
-	prima	adj	9
+	prima	adj	0
 die	Produktion	n	2
 	produzieren	v	2
 der	Professor	n	3
@@ -1146,10 +1301,11 @@ der	Profi	n	2
 der	Protest	n	10
 	protestieren	v	10
 der	Prozess	n	2
-die	Präsentation	n	3
+die	Präsentation	n	0
 	präsentieren	v	3
+die	Prüfung	n	3
 das	Publikum	n	9
-der	Punkt	n	12
+der	Punkt	n	0
 die	Puppe	n	1
 das	Puzzle	n	1
 der	Pöstler	n	2
@@ -1157,14 +1313,15 @@ die	Qualifikation	n	2
 das	Quartier	n	1
 	quer	adj	7
 die	Quittung	n	6
-der	Rabatt	n	6
-das	Rad	n	7
+der	Rabatt	n	4
+das	Rad	n	4
 der	Radfahrer	n	7
 die	Radfahrerin	n	7
 der	Rand	n	7
 der	Rasen	n	1
 	rasieren	v	4
 der	Rat	n	12
+der	Raucher	n	4
 die	Raucherin	n	4
 	rauf	adv	7
 	raus	adv	7
@@ -1173,24 +1330,27 @@ die	Reaktion	n	10
 	realisieren	v	11
 	realistisch	adj	8
 die	Realität	n	8
+die	Realschule	n	3
 die	Recherche	n	3
 der	Rechner	n	2
 das	Recht	n	6
+	rechten	v	0
 	rechtlich	adj	6
 	rechtzeitig	adj	7
+das	Recycling	n	8
 die	Rede	n	12
-	reduzieren	v	8
+	reduzieren	v	6
 das	Referat	n	3
 die	Reform	n	10
-das	Regal	n	1
-die	Regel	n	10
-	regelmäßig	adj	9
+das	Regal	n	0
+die	Regel	n	1
+	regelmäßig	adj	3
 	regeln	v	10
-die	Regierung	n	10
+die	Regierung	n	5
 der	Regierungsrat	n	10
-die	Region	n	8
+die	Region	n	0
 	regional	adj	8
-	reichen	v	10
+	reichen	v	0
 	reif	adj	11
 die	Reihenfolge	n	7
 	rein	adj	7
@@ -1198,13 +1358,14 @@ die	Reihenfolge	n	7
 die	Reklame	n	5
 der	Rekord	n	9
 	relativ	adj	11
-die	Religion	n	9
+die	Religion	n	0
 	rennen	v	4
 die	Rente	n	2
-der	Rentner	n	2
+der	Rentner	n	0
 die	Reportage	n	5
 der	Reporter	n	5
 die	Reporterin	n	5
+die	Republik	n	10
 die	Reservierung	n	7
 der	Respekt	n	1
 	retten	v	8
@@ -1215,35 +1376,36 @@ die	Richtung	n	7
 das	Risiko	n	8
 	roh	adj	12
 die	Rolle	n	7
-der	Roman	n	3
+der	Roman	n	0
 die	Rufnummer	n	5
 die	Runde	n	9
 die	Rundfahrt	n	7
-die	Rückfahrt	n	7
+die	Rückfahrt	n	0
 die	Rückkehr	n	7
-die	Rückmeldung	n	5
+die	Rückmeldung	n	3
 die	Rücksicht	n	1
 	rückwärts	adv	7
 das	Rüebli	n	8
 der	Saal	n	9
-der	Sack	n	1
+der	Sack	n	0
 die	Saison	n	9
 die	Salbe	n	4
 der	Salon	n	9
 	salzig	adj	4
 der	Sand	n	8
 das	Sandwich	n	4
+der	Sandwich	n	4
 	satt	adj	4
-die	Schachtel	n	1
+die	Schachtel	n	0
 der	Schaden	n	6
 	schaden	v	6
 das	Schaf	n	8
 	schalten	v	5
 der	Schatten	n	8
-	schauen	v	10
+	schauen	v	0
 das	Schaufenster	n	6
-der	Schauspieler	n	9
-die	Schauspielerin	n	9
+der	Schauspieler	n	0
+die	Schauspielerin	n	0
 die	Scheibe	n	11
 	scheiden	v	1
 die	Scheidung	n	1
@@ -1253,7 +1415,7 @@ der	Schein	n	6
 	schießen	v	9
 die	Schildkröte	n	8
 der	Schlaf	n	4
-	schlagen	v	10
+	schlagen	v	0
 die	Schlange	n	8
 	schlank	adj	4
 	schließlich	adv	7
@@ -1275,6 +1437,7 @@ die	Schularbeit	n	3
 die	Schuld	n	6
 	schuld	adj	6
 die	Schulden	n	6
+pl	Schulden	n	6
 	schuldig	adj	6
 die	Schulter	n	4
 der	Schutz	n	8
@@ -1282,61 +1445,73 @@ das	Schwammerl	n	8
 die	Schwangerschaft	n	4
 	schweigen	v	9
 	Schweiz	name	1
-der	Schweizer	n	1
-die	Schweizerin	n	1
+der	Schweizer	n	0
+die	Schweizerin	n	0
+	schweren	v	0
 die	Schwierigkeit	n	10
 	schwitzen	v	4
 	schätzen	v	11
+	schönen	v	0
 die	Schüssel	n	6
 	schütteln	v	12
 	schützen	v	8
+die	Sechs	n	0
+der	Sechser	n	0
 	sehr	adv	3
-	seitdem	conj	3
+	seitdem	conj	1
 der	Sekretär	n	2
 die	Sekretärin	n	2
 	selber	pron	9
 	selbstverständlich	adj	11
-	selten	adj	10
-	seltsam	adj	9
+	selten	adj	2
+	seltsam	adj	3
 das	Semester	n	3
 das	Seminar	n	3
 die	Semmel	n	4
 	senden	v	5
 der	Sender	n	5
+pl	Senioren	n	0
 	senkrecht	adj	7
-die	Serie	n	5
-der	Sessel	n	1
-die	Show	n	5
+die	Serie	n	0
+der	Sessel	n	0
+das	Shirt	n	0
+die	Show	n	0
+	sich bewerben	v	2
 die	Sicherheit	n	8
 	sichern	v	8
 	sichtbar	adj	11
 der	Sieg	n	9
 	siegen	v	9
+der	Sieger	n	4
+die	Siegerin	n	0
 	siezen	v	1
 	sinken	v	8
-der	Sinn	n	9
+der	Sinn	n	2
 	sinnlos	adj	9
 	sinnvoll	adj	9
 der	Sitz	n	12
-das	Smartphone	n	5
+das	Smartphone	n	0
 der	Snack	n	4
-	sobald	conj	7
+	sobald	conj	5
 die	Socke	n	4
 	sodass	conj	8
-die	Software	n	5
+die	Software	n	0
 	sogenannt	adj	11
-	solange	adv	7
+	solange	adv	3
 	solch	pron	3
+	solls	other	0
 das	Sonderangebot	n	6
-	sondern	conj	5
+	sondern	conj	0
+die	Sonderschule	n	0
 der	Song	n	5
+	sonnabends	adv	2
 die	Sorge	n	4
 	sorgen	v	4
 das	Souvenir	n	7
 	soviel	conj	9
-	sowieso	adv	10
+	sowieso	adv	3
 	sowohl	conj	9
-	sozial	adj	10
+	sozial	adj	0
 der	Sozialarbeiter	n	2
 die	Sozialarbeiterin	n	2
 die	Soße	n	6
@@ -1345,13 +1520,15 @@ der	Spaziergang	n	4
 der	Speisewagen	n	7
 der	Spezialist	n	2
 	speziell	adj	11
-der	Spiegel	n	1
+der	Spiegel	n	0
+der	Spieler	n	0
 die	Spielerin	n	9
 der	Spielplatz	n	1
 das	Spielzeug	n	1
 	spitz	adj	12
 die	Sportart	n	4
 der	Sportler	n	4
+die	Sportlerin	n	0
 der	Spot	n	5
 die	Sprechstunde	n	4
 	springen	v	4
@@ -1361,23 +1538,26 @@ die	Spur	n	7
 	spülen	v	1
 	spüren	v	4
 der	Staat	n	10
+	staatlich	adj	10
 das	Stadion	n	4
 der	Stadtpräsident	n	10
+die	Stadtpräsidentin	n	0
 	stammen	v	3
 der	Standpunkt	n	5
-der	Start	n	7
-	starten	v	7
+der	Start	n	4
+	starten	v	0
 die	Station	n	7
 die	Statistik	n	3
 	statistisch	adj	3
 	statt	conj	6
-der	Stau	n	7
+der	Stau	n	0
 der	Staub	n	1
 	staubsaugen	v	1
+der	Staubsauger	n	6
 das	Steak	n	6
 	stechen	v	9
 die	Steckdose	n	1
-	stecken	v	10
+	stecken	v	8
 der	Stecker	n	1
 	stehlen	v	6
 	steigen	v	8
@@ -1386,14 +1566,16 @@ der	Stein	n	8
 der	Stempel	n	2
 der	Stern	n	8
 die	Steuer	n	6
+die	Steuern	n	10
+pl	Steuern	n	10
 die	Stewardess	n	7
 die	Stiege	n	1
 das	Stiegenhaus	n	1
 der	Stil	n	9
 	stilistisch	adj	9
-	still	adj	12
-die	Stimme	n	9
-	stimmen	v	3
+	still	adj	3
+die	Stimme	n	0
+	stimmen	v	0
 die	Stimmung	n	4
 	stinken	v	9
 der	Stoff	n	8
@@ -1403,22 +1585,23 @@ der	Stoff	n	8
 	strafbar	adj	6
 die	Strafe	n	6
 der	Strafzettel	n	6
-die	Strecke	n	7
+die	Strecke	n	4
 das	Streichholz	n	8
-der	Streik	n	10
-	streiken	v	10
+der	Streik	n	6
+	streiken	v	0
 der	Streit	n	1
-der	Strom	n	5
+der	Strom	n	0
 die	Struktur	n	10
 der	Strumpf	n	4
 die	Studie	n	3
-das	Studio	n	5
+der	Studierende	n	3
+das	Studio	n	3
 die	Stufe	n	3
 	stumm	adj	12
 der	Sturm	n	8
 	städtisch	adj	10
 der	Ständerat	n	10
-	ständig	adj	7
+	ständig	adj	4
 die	Störung	n	3
 	stürzen	v	9
 die	Sucht	n	4
@@ -1428,40 +1611,44 @@ der	Swimmingpool	n	4
 das	Symbol	n	5
 das	System	n	10
 die	Szene	n	9
-der	Sänger	n	9
-die	Sängerin	n	9
+der	Sänger	n	0
+die	Sängerin	n	0
 	süchtig	adj	4
-der	Süden	n	7
-die	Tabelle	n	3
+der	Süden	n	0
+	südlich	adj	7
+die	Tabelle	n	2
 der	Tagesablauf	n	2
 das	Tal	n	7
 das	Talent	n	3
 	tanken	v	7
 die	Tankstelle	n	7
-die	Tante	n	1
+die	Tante	n	0
 der	Tanz	n	9
 das	Taschentuch	n	4
 die	Tastatur	n	3
 die	Taste	n	5
 die	Tat	n	10
 die	Tatsache	n	10
-	tatsächlich	adj	11
+	tatsächlich	adj	5
 	taub	adj	4
 	tauchen	v	4
 	tauschen	v	12
-die	Technik	n	2
+die	Technik	n	0
 	technisch	adj	2
 die	Technologie	n	2
+das	Teilen	n	0
 die	Teilnahme	n	3
+der	Teilnehmer	n	0
 die	Teilnehmerin	n	9
-die	Teilzeit	n	2
+die	Teilzeit	n	0
 die	Temperatur	n	8
-das	Tempo	n	6
-der	Teppich	n	1
+das	Tempo	n	4
+der	Teppich	n	0
 der	Terminal	n	7
 der	Terminkalender	n	2
 die	Terrasse	n	1
-	testen	v	10
+	testen	v	2
+die	Textnachricht	n	5
 	theoretisch	adj	12
 die	Theorie	n	12
 die	Therapie	n	4
@@ -1470,6 +1657,7 @@ der	Tierpark	n	8
 der	Tod	n	4
 	tolerant	adj	10
 das	Tor	n	7
+der	Tote	n	8
 der	Tourismus	n	9
 die	Tradition	n	9
 	traditionell	adj	9
@@ -1477,66 +1665,75 @@ der	Trainer	n	4
 die	Trainerin	n	4
 das	Tram	n	7
 der	Transport	n	11
-	transportieren	v	12
-der	Treffpunkt	n	3
+	transportieren	v	8
+der	Treffpunkt	n	0
 	treiben	v	9
 der	Trend	n	5
-	trennen	v	1
+	trennen	v	0
 die	Trennung	n	1
 das	Treppenhaus	n	1
 	treten	v	10
 	treu	adj	1
-das	Trinkgeld	n	6
+das	Trinkgeld	n	0
 	trocknen	v	4
 die	Tropfen	n	11
+pl	Tropfen	n	11
 das	Trottoir	n	7
 	trotz	prep	6
-	trotzdem	adv	5
+	trotzdem	adv	0
 die	Träne	n	11
 das	Tuch	n	1
 der	Turm	n	7
 	twittern	v	5
 der	Typ	n	5
 der	Täter	n	2
+die	Täterin	n	0
 die	Tätigkeit	n	2
 	tödlich	adj	4
-der	Türke	n	1
-die	Türkin	n	1
+der	Türke	n	0
+die	Türkin	n	0
 	Türkisch	name	1
-	türkisch	adj	1
+	türkisch	adj	0
 die	Tüte	n	6
 die	U-Bahn	n	7
-das	Ufer	n	12
+das	Ufer	n	0
+die	Ukraine	n	1
+	Ukraine	name	1
 der	Ukrainer	n	1
 die	Ukrainerin	n	1
 	Ukrainisch	name	1
 	ukrainisch	adj	1
 	umarmen	v	1
 	umdrehen	v	3
-die	Umfrage	n	5
-die	Umgebung	n	6
+die	Umfrage	n	2
+die	Umgebung	n	0
 	umgehen	v	9
 	umgekehrt	adj	10
 die	Umleitung	n	7
 	umso	conj	9
 	umsonst	adv	6
-	umtauschen	v	6
+	umtauschen	v	0
 die	Umwelt	n	8
 der	Umweltschutz	n	8
 	unentschieden	adj	11
 	ungefähr	adj	7
+	ungenügend	adj	3
 	ungewöhnlich	adj	9
 	unglaublich	adj	9
 das	Unglück	n	7
 	unheimlich	adj	9
-die	Uniform	n	4
+die	Uni	n	3
+die	Uniform	n	3
+die	Union	n	10
 	unterbrechen	v	12
-das	Untergeschoss	n	1
+das	Untergeschoss	n	0
 das	Untergeschoß	n	0
 die	Unterhaltung	n	9
+pl	Unterlagen	n	2
 	unterlassen	v	3
 der	Unternehmer	n	2
-	unterrichten	v	3
+die	Unternehmerin	n	0
+	unterrichten	v	0
 	unterscheiden	v	9
 	unterschiedlich	adj	9
 	unterstreichen	v	3
@@ -1560,17 +1757,19 @@ die	Verantwortung	n	10
 	verbessern	v	3
 	verbessert	adj	0
 	verbinden	v	12
-die	Verbindung	n	5
-das	Verbot	n	6
-	verbrauchen	v	6
+die	Verbindung	n	0
+das	Verbot	n	5
+	verbrauchen	v	2
 	verbraucht	adj	0
 der	Verbrecher	n	6
+die	Verbrecherin	n	0
 	verbrennen	v	3
-	verbringen	v	9
+	verbringen	v	5
 der	Verdacht	n	6
 	verdächtig	adj	6
 die	Vergangenheit	n	3
 	vergeblich	adj	10
+das	Vergessen	n	0
 der	Vergleich	n	9
 das	Vergnügen	n	4
 	vergnügt	adj	4
@@ -1581,20 +1780,22 @@ das	Verhalten	n	10
 das	Verhältnis	n	1
 das	Verkehrsmittel	n	7
 das	Verkehrszeichen	n	6
-die	Verkäuferin	n	2
+die	Verkäuferin	n	0
 der	Verlag	n	3
-	verlangen	v	12
+	verlangen	v	8
 	verlassen	v	3
 	verlaufen	v	7
 die	Verletzung	n	4
+der	Verlierer	n	4
 der	Verlust	n	6
-	verlängern	v	9
+	verlängern	v	7
 	vermeiden	v	8
 die	Vermietung	n	1
-	vermissen	v	11
+	vermissen	v	0
 die	Vermittlung	n	10
 	vermuten	v	12
 	vermutlich	adj	11
+die	Vermutung	n	12
 	vernünftig	adj	11
 	verpacken	v	6
 	verpflegen	v	12
@@ -1604,20 +1805,24 @@ die	Vermittlung	n	10
 die	Versammlung	n	11
 	verschmutzen	v	8
 	verschreiben	v	4
-	verschwinden	v	12
+	verschwinden	v	1
 	versichern	v	6
 die	Versicherung	n	6
-	versprechen	v	11
+	versprechen	v	10
+die	Verspätung	n	7
 	verstecken	v	3
 	versteckt	adj	9
 	verständlich	adj	5
-das	Verständnis	n	3
+das	Verständnis	n	2
 der	Versuch	n	3
 	versäumen	v	3
-	verteilen	v	10
+	verteilen	v	2
+der	Vertrag	n	2
+das	Vertrauen	n	0
 	vertrauen	v	1
 	vertreten	v	10
 der	Vertreter	n	2
+die	Vertreterin	n	0
 die	Vertretung	n	2
 	verursachen	v	8
 	verurteilen	v	6
@@ -1627,19 +1832,21 @@ die	Verwaltung	n	2
 	verwenden	v	12
 	verzeihen	v	1
 	verzichten	v	6
-	verändern	v	6
+	verändern	v	2
 	verändert	adj	0
 	veröffentlichen	v	5
-das	Video	n	5
-das	Viertel	n	6
-	viertel	num	6
+das	Video	n	0
+die	Vier	n	0
+der	Vierer	n	0
+das	Viertel	n	0
+	viertel	num	0
 	violett	adj	9
 	virtuell	adj	5
 der	Virus	n	4
 die	Visitenkarte	n	5
-das	Visum	n	7
+das	Visum	n	0
 das	Vitamin	n	4
-die	Volkshochschule	n	3
+die	Volkshochschule	n	0
 die	Volksschule	n	3
 die	Vollzeit	n	2
 	voneinander	adv	3
@@ -1656,47 +1863,52 @@ die	Vorfahrt	n	7
 	vorläufig	adj	11
 der	Vorort	n	7
 	vorschlagen	v	12
-die	Vorschrift	n	6
-	vorsichtig	adj	12
+die	Vorschrift	n	2
+	vorsichtig	adj	0
 die	Vorstellung	n	9
 das	Vorstellungsgespräch	n	2
-der	Vorteil	n	12
+der	Vorteil	n	2
 der	Vortrag	n	3
 der	Vorwurf	n	5
-	völlig	adj	3
+	völlig	adj	1
 	waagerecht	adj	7
-	wachsen	v	9
+	wachsen	v	0
+	wagen	v	0
 die	Wahl	n	10
 	wahnsinnig	adj	9
 die	Wahrheit	n	10
-die	Wand	n	1
+die	Wand	n	0
 die	Wanderung	n	4
-die	Ware	n	6
-	warnen	v	10
+die	Ware	n	2
+	warnen	v	8
 das	Waschmittel	n	1
-das	WC	n	1
-der	Wecker	n	11
+das	Wasserklosett	n	0
+das	WC	n	0
+der	Wecker	n	0
 	weder	conj	9
 	weise	adj	11
 die	Weiterbildung	n	2
 	weltweit	adj	8
-	wenden	v	12
+	wenden	v	4
 die	Werbung	n	5
-	werfen	v	3
+	werfen	v	0
 das	Werk	n	8
+	werktags	adv	2
 das	Werkzeug	n	1
-der	Wert	n	6
+der	Wert	n	5
 	wert	adj	6
 	wertlos	adj	6
 	wertvoll	adj	6
 	weshalb	adv	12
-der	Westen	n	7
+der	Westen	n	0
+	westlich	adj	7
 	wetten	v	9
-der	Wetterbericht	n	5
+der	Wetterbericht	n	0
 die	Wettervorhersage	n	5
+die	WG	n	0
 	widersprechen	v	5
 die	Wiederholung	n	3
-	wiegen	v	9
+	wiegen	v	3
 die	Wiese	n	8
 	wieso	adv	12
 	wild	adj	8
@@ -1711,18 +1923,23 @@ das	Wissen	n	3
 die	Wissenschaft	n	3
 der	Wissenschaftler	n	3
 die	Wissenschaftlerin	n	3
-	wohl	adv	11
+	wochentags	adv	2
+	wohl	adv	0
+die	Wohngemeinschaft	n	0
 der	Wohnort	n	1
 der	Wohnsitz	n	1
 die	Wolle	n	4
 	worum	adv	12
-	worüber	adv	12
+	worüber	adv	0
 die	Wunde	n	4
 das	Wunder	n	9
-	wunderschön	adj	9
+	wunderschön	adj	0
+der	Wunsch	n	11
+das	Wählen	n	0
 	während	conj	6
 die	Wärme	n	4
-das	Wörterbuch	n	3
+	wöchentlich	adj	6
+das	Wörterbuch	n	0
 	wütend	adj	4
 	zahlreich	adj	10
 die	Zahlung	n	6
@@ -1733,6 +1950,7 @@ das	Zeichen	n	5
 die	Zeichnung	n	3
 die	Zeile	n	3
 der	Zeitpunkt	n	7
+die	Zeitschrift	n	5
 	zelten	v	4
 	zentral	adj	12
 	zerstören	v	3
@@ -1740,46 +1958,57 @@ das	Zertifikat	n	2
 das	Zeug	n	1
 der	Zeuge	n	6
 die	Zeugin	n	6
+das	Zeugnis	n	3
 	ziehen	v	8
-	ziemlich	adv	9
+das	Ziel	n	11
+	ziemlich	adv	4
+pl	Zinsen	n	6
+	zirka	adv	6
 die	Zone	n	7
 	zubereiten	v	10
 der	Zufall	n	7
 	zufällig	adj	11
 der	Zugang	n	11
 	zugehen	v	12
+	zugeordnet	adj	0
 	zugänglich	adj	3
 das	Zuhause	n	1
 der	Zuhörer	n	5
-die	Zukunft	n	8
+die	Zuhörerin	n	0
+die	Zukunft	n	5
 	zukünftig	adj	10
 	zumindest	adv	8
 	zunehmen	v	4
-	zunächst	adv	3
+	zunächst	adv	2
 	zuordnen	v	3
-	zurechtkommen	v	9
+	zurechtkommen	v	3
 	zusagen	v	5
 die	Zusammenarbeit	n	2
-	zusammenfassen	v	12
+	zusammenfassen	v	11
 der	Zusammenhang	n	8
 	zuschauen	v	10
-der	Zuschauer	n	5
+der	Zuschauer	n	4
+die	Zuschauerin	n	0
 der	Zuschlag	n	2
 der	Zustand	n	11
 	zustimmen	v	10
 die	Zustimmung	n	10
-	zuständig	adj	2
-	zusätzlich	adj	6
-	zuverlässig	adj	12
+	zuständig	adj	1
+	zusätzlich	adj	3
+pl	Zutaten	n	6
+	zuverlässig	adj	6
 das	Zvieri	n	7
-	zwar	adv	5
+	zwar	adv	1
 der	Zweck	n	8
+die	Zwei	n	0
+der	Zweier	n	0
 	zweifach	adj	6
 der	Zweifel	n	10
 	zweifeln	v	10
-	zweitens	adv	7
+	zweitausend	num	0
+	zweitens	adv	0
 die	Zweitsprache	n	3
-die	Zwiebel	n	8
+die	Zwiebel	n	0
 	zwingen	v	3
 	zählen	v	8
 die	Zünder	n	0
@@ -1789,18 +2018,19 @@ die	Änderung	n	9
 	ängstlich	adj	4
 der	Ärger	n	1
 	ärgerlich	adj	1
-die	Ärztin	n	4
+die	Ärztin	n	0
 	äußerlich	adj	10
 	öffentlich	adj	5
 die	Öffentlichkeit	n	5
-der	Österreicher	n	1
-die	Österreicherin	n	1
+der	Österreicher	n	0
+die	Österreicherin	n	0
+	östlich	adj	7
 	überfahren	v	7
-	überhaupt	adv	10
+	überhaupt	adv	1
 	überholen	v	7
 	überlegen	adj	11
 die	Übernachtung	n	7
-	übernehmen	v	12
+	übernehmen	v	2
 	überprüfen	v	7
 	überqueren	v	7
 	überraschen	v	11
@@ -1808,49 +2038,16 @@ die	Überraschung	n	11
 	überreden	v	3
 die	Überschrift	n	3
 der	Übersetzer	n	3
+die	Übersetzerin	n	0
 die	Übersetzung	n	3
 die	Überstunde	n	2
 	übertragen	v	8
-	übertreiben	v	9
+	übertreiben	v	1
 die	Überweisung	n	6
 	überzeugen	v	12
-	überzeugt	adj	12
+	überzeugt	adj	2
 die	Überzeugung	n	11
 	üblich	adj	10
-	übrig	adj	10
-	übrigens	adv	11
+	übrig	adj	2
+	übrigens	adv	2
 die	Übung	n	3
-	sich bewerben	v	2
-die	Bewerbung	n	2
-der	Arbeitgeber	n	2
-der	Arbeitnehmer	n	2
-das	Gehalt	n	2
-der	Vertrag	n	2
-der	Nachbar	n	1
-die	Nachbarin	n	1
-die	Hausordnung	n	1
-die	Ausbildung	n	3
-die	Prüfung	n	3
-das	Zeugnis	n	3
-die	Gesundheit	n	4
-die	Verspätung	n	7
-der	Ausflug	n	7
-das	Gepäck	n	7
-der	Müll	n	8
-das	Recycling	n	8
-die	Ausstellung	n	9
-die	Kunst	n	9
-der	Flüchtling	n	10
-der	Kollege	n	10
-der	Herr	n	10
-der	Mensch	n	10
-der	Wunsch	n	11
-das	Ziel	n	11
-die	Beschwerde	n	6
-das	Argument	n	12
-die	Meinung	n	5
-die	Nachricht	n	5
-die	Zeitschrift	n	5
-die	Vermutung	n	12
-das	Ergebnis	n	12
-die	Behauptung	n	12

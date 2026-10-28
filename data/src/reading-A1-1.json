@@ -4,7 +4,7 @@
   "station": 1,
   "part": "Teil 1",
   "type": "sms",
-  "title": "Eine neue Nummer",
+  "title": "Hier ist Priya!",
   "intro": "Priya sends Lena a text message; then Lena writes to Jonas.",
   "blocks": [
    {
@@ -26,8 +26,8 @@
       "It's Priya from the language café."
      ],
      [
-      "Das ist meine neue Handynummer: 0157 48 23 96.",
-      "This is my new mobile number: 0157 48 23 96."
+      "Das ist meine Nummer: 0157 48 23 96.",
+      "This is my number: 0157 48 23 96."
      ],
      [
       "Wie geht es dir?",
@@ -38,8 +38,8 @@
       "I'm very well, thanks."
      ],
      [
-      "Bis Freitag im Café!",
-      "See you on Friday at the café!"
+      "Bis Freitag!",
+      "See you on Friday!"
      ],
      [
       "Tschüss, Priya",
@@ -62,8 +62,8 @@
     "t": "p",
     "s": [
      [
-      "im Sprachcafé ist eine neue Frau.",
-      "There's a new woman at the language café."
+      "im Sprachcafé ist jetzt eine Frau aus Mumbai.",
+      "There is a woman from Mumbai at the language café now."
      ],
      [
       "Sie heißt nicht Pia, sie heißt Priya.",
@@ -74,8 +74,8 @@
       "Her name has five letters: P – R – I – Y – A."
      ],
      [
-      "Priya ist sehr nett.",
-      "Priya is very nice."
+      "Hier ist ihre Nummer: 0157 48 23 96.",
+      "Here is her number: 0157 48 23 96."
      ],
      [
       "Am Freitag ist sie wieder da.",
@@ -98,14 +98,6 @@
     "en": "language café (people meet to practise languages)"
    },
    {
-    "w": "Handynummer",
-    "en": "mobile phone number"
-   },
-   {
-    "w": "nett",
-    "en": "nice, kind"
-   },
-   {
     "w": "Freitag",
     "en": "Friday"
    }
@@ -121,7 +113,7 @@
   },
   "questions": [
    {
-    "q": "Priya hat eine neue Handynummer.",
+    "q": "Priyas Nummer ist 0157 48 23 96.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -131,7 +123,7 @@
     "ev": [
      "b2.1"
     ],
-    "why": "She writes: 'Das ist meine neue Handynummer'."
+    "why": "She writes: 'Das ist meine Nummer: 0157 48 23 96.'"
    },
    {
     "q": "Priya geht es nicht gut.",
@@ -158,10 +150,10 @@
      "b2.4",
      "b4.4"
     ],
-    "why": "Priya writes 'Bis Freitag im Café!' and Lena says she is there again on Friday."
+    "why": "Priya writes 'Bis Freitag!' and Lena says she is there again on Friday."
    },
    {
-    "q": "Die neue Frau heißt Pia.",
+    "q": "Die Frau aus Mumbai heißt Pia.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -201,16 +193,16 @@
     "t": "ad",
     "s": [
      [
-      "Deutsch am Vormittag",
-      "German in the morning"
+      "Deutsch lernen – Kurs 1",
+      "Learning German – course 1"
      ],
      [
-      "Kurs A1: Montag bis Freitag, 9 bis 12 Uhr.",
-      "Course A1: Monday to Friday, 9 am to 12 noon."
+      "Der Kurs ist um 9 Uhr.",
+      "The course is at 9 o’clock."
      ],
      [
-      "Sprachschule Nord, Tel. 0221 55 30 80",
-      "Sprachschule Nord (language school), phone 0221 55 30 80"
+      "Telefonnummer: 0221 55 30 80",
+      "Phone number: 0221 55 30 80"
      ]
     ],
     "label": "a"
@@ -220,16 +212,16 @@
     "t": "ad",
     "s": [
      [
-      "Deutsch am Abend",
-      "German in the evening"
+      "Deutsch lernen – Kurs 2",
+      "Learning German – course 2"
      ],
      [
-      "Kurs A1: Dienstag und Donnerstag, 18 bis 20 Uhr.",
-      "Course A1: Tuesday and Thursday, 6 to 8 pm."
+      "Der Kurs ist abends um 18 Uhr, mit Herrn Weber.",
+      "The course is in the evening at 6 pm, with Mr Weber."
      ],
      [
-      "Sprachschule Nord, Tel. 0221 55 30 80",
-      "Sprachschule Nord (language school), phone 0221 55 30 80"
+      "Telefonnummer: 0221 55 30 80",
+      "Phone number: 0221 55 30 80"
      ]
     ],
     "label": "b"
@@ -243,12 +235,8 @@
       "Questions about the course?"
      ],
      [
-      "Rufen Sie an: 0221 55 30 81.",
-      "Call us: 0221 55 30 81."
-     ],
-     [
-      "Wir sind von 9 bis 12 Uhr für Sie da.",
-      "We're there for you from 9 am to 12 noon."
+      "Hier ist die Telefonnummer: 0221 55 30 81.",
+      "Here is the phone number: 0221 55 30 81."
      ]
     ],
     "label": "c"
@@ -262,12 +250,8 @@
       "Questions about the course?"
      ],
      [
-      "Schreiben Sie uns eine E-Mail: info@sprachschule-nord.de",
-      "Write us an email: info@sprachschule-nord.de"
-     ],
-     [
-      "Die Antwort kommt schnell.",
-      "The answer comes quickly."
+      "Bitte kommen Sie und fragen Sie Herrn Weber.",
+      "Please come and ask Mr Weber."
      ]
     ],
     "label": "d"
@@ -277,12 +261,12 @@
     "t": "ad",
     "s": [
      [
-      "Deutsch für Anfänger",
-      "German for beginners"
+      "Zahlen auf Deutsch",
+      "Numbers in German"
      ],
      [
-      "12 Abende, 90 Euro.",
-      "12 evenings, 90 euros."
+      "Eins, zwei, drei … hundert: Wir lernen die Zahlen.",
+      "One, two, three … a hundred: we learn the numbers."
      ]
     ],
     "label": "e"
@@ -292,12 +276,16 @@
     "t": "ad",
     "s": [
      [
-      "Deutsch für Anfänger",
-      "German for beginners"
+      "Das ABC auf Deutsch",
+      "The ABC in German"
      ],
      [
-      "12 Abende, 190 Euro, mit Buch und CD.",
-      "12 evenings, 190 euros, with a book and a CD."
+      "A, B, C … Z: Wir lernen das ABC.",
+      "A, B, C … Z: we learn the ABC."
+     ],
+     [
+      "Buchstabieren Sie Ihren Namen!",
+      "Spell your name!"
      ]
     ],
     "label": "f"
@@ -307,12 +295,12 @@
     "t": "ad",
     "s": [
      [
-      "Zahlen-Trainer im Internet",
-      "Number trainer on the internet"
+      "Hallo! Wie heißen Sie?",
+      "Hello! What's your name?"
      ],
      [
-      "Hören und sprechen Sie die Zahlen von 1 bis 100.",
-      "Listen to and say the numbers from 1 to 100."
+      "Hier lernen Sie: Ich heiße … und ich komme aus …",
+      "Here you learn: My name is … and I come from …"
      ]
     ],
     "label": "g"
@@ -322,16 +310,12 @@
     "t": "ad",
     "s": [
      [
-      "Buchstaben-Trainer im Internet",
-      "Letter trainer on the internet"
+      "Danke! Bitte! Entschuldigung!",
+      "Thank you! Please! Sorry!"
      ],
      [
-      "Hören, sprechen und buchstabieren Sie das ABC.",
-      "Listen to, say and spell the alphabet."
-     ],
-     [
-      "Üben Sie jeden Tag zehn Minuten!",
-      "Practise ten minutes every day!"
+      "Hier lernen Sie: Wie sagt man das auf Deutsch?",
+      "Here you learn: how do you say that in German?"
      ]
     ],
     "label": "h"
@@ -341,12 +325,12 @@
     "t": "ad",
     "s": [
      [
-      "Sprachcafé im Café am Markt",
-      "Language café at the Café am Markt"
+      "Sprachcafé",
+      "Language café"
      ],
      [
-      "Jeden Freitag um 19 Uhr sprechen wir Deutsch.",
-      "Every Friday at 7 pm we speak German."
+      "Hier sprechen wir Deutsch.",
+      "We speak German here."
      ],
      [
       "Kommen Sie und lernen Sie Leute kennen!",
@@ -364,12 +348,8 @@
       "German test A1"
      ],
      [
-      "Samstag, 10 Uhr, Sprachschule Nord.",
-      "Saturday, 10 am, Sprachschule Nord."
-     ],
-     [
-      "Bitte bringen Sie Ihren Pass mit.",
-      "Please bring your passport."
+      "Bitte kommen Sie um 10 Uhr.",
+      "Please come at 10 o’clock."
      ]
     ],
     "label": "j"
@@ -377,24 +357,16 @@
   ],
   "glossary": [
    {
-    "w": "Vormittag",
-    "en": "morning (before noon)"
+    "w": "abends",
+    "en": "in the evening"
    },
    {
-    "w": "Anfänger",
-    "en": "beginners"
+    "w": "Sprachcafé",
+    "en": "language café (people meet to practise languages)"
    },
    {
-    "w": "Üben",
-    "en": "practise"
-   },
-   {
-    "w": "jeden",
-    "en": "every"
-   },
-   {
-    "w": "kennen",
-    "en": "(kennenlernen) to get to know"
+    "w": "Leute",
+    "en": "people"
    }
   ],
   "predict": {
@@ -408,7 +380,7 @@
   },
   "questions": [
    {
-    "q": "Sie arbeiten am Vormittag. Sie möchten am Abend Deutsch lernen.",
+    "q": "Sie arbeiten am Vormittag. Sie möchten abends Deutsch lernen.",
     "format": "match",
     "opts": [
      "a",
@@ -416,49 +388,49 @@
     ],
     "a": 1,
     "ev": [
-     "b2.0",
      "b2.1"
     ],
-    "why": "Ad b: the course is on Tuesday and Thursday evenings, 6 to 8 pm."
+    "why": "Ad b: the course is in the evening at 6 pm; ad a is at 9 in the morning."
    },
    {
-    "q": "Sie haben eine Frage zum Kurs. Sie möchten eine E-Mail schreiben.",
+    "q": "Sie haben eine Frage zum Kurs. Sie möchten anrufen.",
     "format": "match",
     "opts": [
      "c",
      "d"
     ],
-    "a": 1,
+    "a": 0,
     "ev": [
-     "b4.1"
+     "b3.1"
     ],
-    "why": "Ad d gives an email address; ad c only gives a phone number."
+    "why": "Ad c gives a phone number; in ad d you go and ask Mr Weber."
    },
    {
-    "q": "Sie möchten einen Deutschkurs. Sie haben nur 100 Euro.",
+    "q": "Sie möchten Ihren Namen auf Deutsch buchstabieren.",
     "format": "match",
     "opts": [
      "e",
      "f"
     ],
-    "a": 0,
+    "a": 1,
     "ev": [
-     "b5.1"
+     "b6.1",
+     "b6.2"
     ],
-    "why": "Ad e costs 90 euros; ad f costs 190 euros."
+    "why": "Ad f is about the ABC and spelling your name; ad e is about numbers."
    },
    {
-    "q": "Sie möchten das deutsche ABC üben.",
+    "q": "Sie möchten sich auf Deutsch vorstellen.",
     "format": "match",
     "opts": [
      "g",
      "h"
     ],
-    "a": 1,
+    "a": 0,
     "ev": [
-     "b8.1"
+     "b7.1"
     ],
-    "why": "Ad h trains letters and spelling; ad g is about numbers."
+    "why": "Ad g teaches 'Ich heiße …' and 'Ich komme aus …': you introduce yourself; ad h is about polite words."
    },
    {
     "q": "Sie möchten Leute treffen und Deutsch sprechen.",
@@ -472,7 +444,7 @@
      "b9.1",
      "b9.2"
     ],
-    "why": "Ad i: people meet every Friday to speak German; ad j is a test."
+    "why": "Ad i: people meet at the language café to speak German; ad j is a test."
    }
   ]
  },
@@ -481,8 +453,8 @@
   "station": 2,
   "part": "Teil 3",
   "type": "sign",
-  "title": "In der Sprachschule und im Amt",
-  "intro": "Signs and notices at a language school and at the citizens’ office.",
+  "title": "In der Sprachschule",
+  "intro": "Signs and notices at Priya’s language school.",
   "blocks": [
    {
     "id": "b1",
@@ -507,16 +479,16 @@
     "t": "sign",
     "s": [
      [
-      "Bürgeramt – Anmeldung",
-      "Citizens' office – registration"
+      "Das Formular für den Kurs",
+      "The form for the course"
      ],
      [
       "Bitte füllen Sie das Formular mit Kugelschreiber aus.",
       "Please fill in the form with a pen."
      ],
      [
-      "Bitte nicht mit Bleistift schreiben!",
-      "Please don't write in pencil!"
+      "Bitte nicht mit Bleistift!",
+      "Please not in pencil!"
      ],
      [
       "Unterschreiben Sie unten rechts.",
@@ -541,12 +513,12 @@
       "I speak Spanish and English and I'm learning German now."
      ],
      [
-      "Ich helfe dir gern mit Spanisch!",
-      "I'm happy to help you with Spanish!"
+      "Ich spreche auch gern mit dir Spanisch!",
+      "I'm also happy to speak Spanish with you!"
      ],
      [
-      "Tel. 0176 33 44 21",
-      "Phone 0176 33 44 21"
+      "Meine Telefonnummer: 0176 33 44 21",
+      "My phone number: 0176 33 44 21"
      ]
     ]
    },
@@ -567,8 +539,8 @@
       "Students from 15 countries present their home countries."
      ],
      [
-      "Es gibt Musik und Essen aus der ganzen Welt.",
-      "There is music and food from all over the world."
+      "Kommen Sie auch!",
+      "Come along too!"
      ]
     ]
    },
@@ -577,16 +549,16 @@
     "t": "sign",
     "s": [
      [
-      "Sekretariat",
-      "Office"
+      "Information",
+      "Information desk"
      ],
      [
-      "Öffnungszeiten: Montag bis Donnerstag, 9 bis 12 Uhr.",
-      "Opening hours: Monday to Thursday, 9 am to 12 noon."
+      "Wir sind Montag bis Donnerstag von 9 bis 12 Uhr da.",
+      "We're here Monday to Thursday from 9 am to 12 noon."
      ],
      [
-      "Freitag geschlossen.",
-      "Closed on Friday."
+      "Am Freitag sind wir nicht da.",
+      "We're not here on Friday."
      ]
     ]
    }
@@ -597,24 +569,12 @@
     "en": "room"
    },
    {
-    "w": "Bürgeramt",
-    "en": "citizens' office (town registration office)"
-   },
-   {
     "w": "Kugelschreiber",
     "en": "ballpoint pen"
    },
    {
     "w": "Heimat",
     "en": "home country"
-   },
-   {
-    "w": "Öffnungszeiten",
-    "en": "opening hours"
-   },
-   {
-    "w": "geschlossen",
-    "en": "closed"
    }
   ],
   "predict": {
@@ -622,7 +582,7 @@
    "opts": [
     "At a train station",
     "In a supermarket",
-    "At a language school and an office"
+    "At a language school"
    ],
    "a": 2
   },
@@ -652,7 +612,7 @@
      "b2.1",
      "b2.2"
     ],
-    "why": "The sign says: with a pen – 'Bitte nicht mit Bleistift schreiben!'"
+    "why": "The sign says: with a pen – 'Bitte nicht mit Bleistift!'"
    },
    {
     "q": "Ana kommt aus Spanien.",
@@ -668,7 +628,7 @@
     "why": "Ana speaks Spanish, but she comes from Mexico (aus Mexiko)."
    },
    {
-    "q": "Am Samstag gibt es Essen aus vielen Ländern.",
+    "q": "Am Samstag sind Schüler aus vielen Ländern in der Sprachschule.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -676,12 +636,13 @@
     ],
     "a": 0,
     "ev": [
-     "b4.3"
+     "b4.1",
+     "b4.2"
     ],
-    "why": "The poster says: 'Essen aus der ganzen Welt' – food from all over the world."
+    "why": "The poster says: on Saturday students from 15 countries present their home countries at the school."
    },
    {
-    "q": "Am Montag um 10 Uhr ist das Sekretariat geöffnet.",
+    "q": "Am Montag um 10 Uhr ist die Information da.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -691,7 +652,7 @@
     "ev": [
      "b5.1"
     ],
-    "why": "The office is open Monday to Thursday from 9 to 12, so 10 am on Monday is fine."
+    "why": "The information desk is open Monday to Thursday from 9 to 12, so 10 am on Monday is fine."
    }
   ]
  },
@@ -902,12 +863,12 @@
     "t": "ad",
     "s": [
      [
-      "Babysitterin hat Zeit!",
-      "Babysitter available!"
+      "Ich habe Zeit für Ihr Kind!",
+      "I have time for your child!"
      ],
      [
-      "Ich heiße Jana, bin 19 und spiele gern mit kleinen Kindern.",
-      "My name is Jana, I'm 19 and I like playing with small children."
+      "Ich heiße Jana, bin 19 und bin gern mit kleinen Kindern zusammen.",
+      "My name is Jana, I'm 19 and I like being with small children."
      ],
      [
       "Montag bis Freitag ab 14 Uhr.",
@@ -921,12 +882,12 @@
     "t": "ad",
     "s": [
      [
-      "Hilfe für Schüler",
-      "Help for school students"
+      "Englisch für Schüler",
+      "English for school students"
      ],
      [
-      "Student gibt Nachhilfe in Mathe und Englisch für Kinder ab 10 Jahren.",
-      "A student gives tutoring in maths and English for children aged 10 and over."
+      "Ein Student lernt mit Kindern ab 10 Jahren Englisch.",
+      "A student learns English with children aged 10 and over."
      ],
      [
       "Montag bis Freitag ab 15 Uhr.",
@@ -940,12 +901,12 @@
     "t": "ad",
     "s": [
      [
-      "Café Sonne sucht Hilfe in der Küche.",
-      "Café Sonne is looking for help in the kitchen."
+      "Café Nowak: ein Job am Wochenende!",
+      "Café Nowak: a weekend job!"
      ],
      [
-      "Arbeitszeit: Samstag und Sonntag von 8 bis 15 Uhr.",
-      "Working hours: Saturday and Sunday from 8 am to 3 pm."
+      "Arbeiten Sie bei uns: Samstag und Sonntag von 8 bis 15 Uhr.",
+      "Work with us: Saturday and Sunday from 8 am to 3 pm."
      ]
     ],
     "label": "c"
@@ -955,16 +916,16 @@
     "t": "ad",
     "s": [
      [
-      "Büro-Job bei der Firma Hartwig",
-      "Office job at the Hartwig company"
+      "Eine Stelle bei der Firma Hartwig",
+      "A job at the Hartwig company"
      ],
      [
-      "Wir suchen eine Kollegin oder einen Kollegen für unser Team.",
-      "We're looking for a colleague for our team."
+      "Wir möchten eine Kollegin oder einen Kollegen für unsere Gruppe.",
+      "We would like a colleague for our group."
      ],
      [
-      "Arbeitszeit: Montag bis Freitag von 8 bis 16 Uhr.",
-      "Working hours: Monday to Friday from 8 am to 4 pm."
+      "Sie arbeiten Montag bis Freitag von 8 bis 16 Uhr.",
+      "You work Monday to Friday from 8 am to 4 pm."
      ]
     ],
     "label": "d"
@@ -974,16 +935,12 @@
     "t": "ad",
     "s": [
      [
-      "FC Blau-Weiß Köln",
-      "FC Blau-Weiß Cologne (football club)"
+      "Eltern und Babys",
+      "Parents and babies"
      ],
      [
-      "Wir suchen Spieler für unser Team: Männer ab 18 Jahren.",
-      "We're looking for players for our team: men aged 18 and over."
-     ],
-     [
-      "Training: Donnerstag um 19 Uhr.",
-      "Training: Thursday at 7 pm."
+      "Für Mütter und Väter mit Babys: Wir sind jeden Dienstag um 10 Uhr zusammen.",
+      "For mothers and fathers with babies: we meet every Tuesday at 10 am."
      ]
     ],
     "label": "e"
@@ -993,16 +950,16 @@
     "t": "ad",
     "s": [
      [
-      "Fußball für Kinder!",
-      "Football for children!"
+      "Kinder-Gruppe im Verein",
+      "Children’s group at the club"
      ],
      [
-      "Der Sportverein Nord hat eine Gruppe für Jungen und Mädchen von 6 bis 10 Jahren.",
-      "The Nord sports club has a group for boys and girls aged 6 to 10."
+      "Der Verein Nord hat eine Gruppe für Jungen und Mädchen von 6 bis 10 Jahren.",
+      "The Nord club has a group for boys and girls aged 6 to 10."
      ],
      [
-      "Training: Dienstag um 16 Uhr.",
-      "Training: Tuesday at 4 pm."
+      "Wir sind jeden Mittwoch um 16 Uhr zusammen.",
+      "We meet every Wednesday at 4 pm."
      ]
     ],
     "label": "f"
@@ -1012,12 +969,12 @@
     "t": "ad",
     "s": [
      [
-      "Holz & Co: Wir suchen Verkäufer für unser Geschäft.",
-      "Holz & Co: we're looking for sales staff for our shop."
+      "Bäckerei Krause: ein Job als Verkäufer oder Verkäuferin",
+      "Krause Bakery: a job as a sales assistant"
      ],
      [
-      "Sie arbeiten 40 Stunden pro Woche und verdienen gut.",
-      "You work 40 hours a week and earn well."
+      "Sie arbeiten fünf Tage pro Woche und verdienen gut.",
+      "You work five days a week and earn well."
      ]
     ],
     "label": "g"
@@ -1027,12 +984,12 @@
     "t": "ad",
     "s": [
      [
-      "Praktikum bei Holz & Co!",
-      "Internship at Holz & Co!"
+      "Praktikum bei der Firma Hartwig!",
+      "Internship at the Hartwig company!"
      ],
      [
-      "Lernen Sie unsere Firma kennen: drei Monate im Büro, ab Mai.",
-      "Get to know our company: three months in the office, from May."
+      "Lernen Sie unsere Firma kennen: ein Praktikum für drei Monate.",
+      "Get to know our company: a three-month internship."
      ]
     ],
     "label": "h"
@@ -1042,16 +999,16 @@
     "t": "ad",
     "s": [
      [
-      "Hundesitter in Köln-Nord",
-      "Dog sitter in north Cologne"
+      "Zeit für Ihren Hund",
+      "Time for your dog"
      ],
      [
-      "Ihr Hund ist den ganzen Tag allein?",
-      "Is your dog alone all day?"
+      "Sie arbeiten viel und Ihr Hund ist allein?",
+      "You work a lot and your dog is alone?"
      ],
      [
-      "Ich gehe gern mit Hunden spazieren, Montag bis Freitag.",
-      "I like walking dogs, Monday to Friday."
+      "Ich habe Zeit für Ihren Hund: Montag bis Freitag von 9 bis 17 Uhr.",
+      "I have time for your dog: Monday to Friday from 9 am to 5 pm."
      ]
     ],
     "label": "i"
@@ -1061,16 +1018,16 @@
     "t": "ad",
     "s": [
      [
-      "Kleine Hunde zu verkaufen!",
-      "Puppies for sale!"
+      "Kleine Hunde: 300 Euro",
+      "Puppies: 300 euros"
      ],
      [
-      "Unsere Hündin hat vier Hundebabys, sie sind zehn Wochen alt.",
-      "Our dog has four puppies; they are ten weeks old."
+      "Unser Hund hat vier Babys.",
+      "Our dog has four puppies."
      ],
      [
-      "Preis: 300 Euro.",
-      "Price: 300 euros."
+      "Sie sind zehn Wochen alt.",
+      "They are ten weeks old."
      ]
     ],
     "label": "j"
@@ -1078,35 +1035,27 @@
   ],
   "glossary": [
    {
-    "w": "Nachhilfe",
-    "en": "tutoring, extra lessons"
-   },
-   {
-    "w": "Arbeitszeit",
-    "en": "working hours"
-   },
-   {
-    "w": "Training",
-    "en": "training session"
-   },
-   {
     "w": "Praktikum",
-    "en": "internship, work placement"
+    "en": "internship"
    },
    {
-    "w": "spazieren",
-    "en": "(spazieren gehen) to go for a walk"
+    "w": "verdienen",
+    "en": "to earn"
    },
    {
-    "w": "Hündin",
-    "en": "female dog"
+    "w": "Verein",
+    "en": "club"
+   },
+   {
+    "w": "zusammen",
+    "en": "together"
    }
   ],
   "predict": {
    "q": "What kind of texts are these?",
    "opts": [
     "Train timetables",
-    "Small ads about jobs, children, sport and pets",
+    "Small ads about jobs, children and pets",
     "Restaurant menus"
    ],
    "a": 1
@@ -1124,7 +1073,7 @@
      "b1.1",
      "b1.2"
     ],
-    "why": "Ad a: Jana plays with small children in the afternoon; ad b is tutoring for children aged 10 and over."
+    "why": "Ad a: Jana is with small children in the afternoon; ad b is English for children aged 10 and over."
    },
    {
     "q": "Sie suchen einen Job. Sie haben nur am Wochenende Zeit.",
@@ -1135,12 +1084,13 @@
     ],
     "a": 0,
     "ev": [
+     "b3.0",
      "b3.1"
     ],
     "why": "Ad c: the café job is on Saturday and Sunday; ad d is Monday to Friday."
    },
    {
-    "q": "Ihr Sohn ist sieben Jahre alt. Er möchte in einem Verein Fußball spielen.",
+    "q": "Ihr Sohn ist sieben Jahre alt. Er möchte mit anderen Kindern in einem Verein sein.",
     "format": "match",
     "opts": [
      "e",
@@ -1150,7 +1100,7 @@
     "ev": [
      "b6.1"
     ],
-    "why": "Ad f has a group for children aged 6 to 10; ad e is for men aged 18 and over."
+    "why": "Ad f has a group for children aged 6 to 10; ad e is for parents with babies."
    },
    {
     "q": "Sie möchten drei Monate in einer Firma arbeiten und lernen.",
@@ -1164,7 +1114,7 @@
      "b8.0",
      "b8.1"
     ],
-    "why": "Ad h is a three-month internship; ad g is a full-time job."
+    "why": "Ad h is a three-month internship; ad g is a job five days a week."
    },
    {
     "q": "Sie haben einen Hund und arbeiten den ganzen Tag. Sie suchen Hilfe.",
@@ -1178,7 +1128,7 @@
      "b9.1",
      "b9.2"
     ],
-    "why": "Ad i: a dog sitter walks dogs that are alone all day; ad j sells puppies."
+    "why": "Ad i: someone has time for dogs that are alone; ad j sells puppies."
    }
   ]
  },
@@ -1188,7 +1138,7 @@
   "part": "Teil 3",
   "type": "sign",
   "title": "Aushänge in der Stadt",
-  "intro": "Notices on doors and boards: a bakery, a nursery, a job centre, an office and the zoo.",
+  "intro": "Notices on doors and boards: a bakery, a children’s group, the city, an office and the zoo.",
   "blocks": [
    {
     "id": "b1",
@@ -1199,16 +1149,16 @@
       "Krause Bakery"
      ],
      [
-      "Wir suchen eine Verkäuferin oder einen Verkäufer!",
-      "We're looking for a sales assistant!"
+      "Ein Job für eine Verkäuferin oder einen Verkäufer!",
+      "A job for a sales assistant!"
      ],
      [
-      "Arbeitszeit: Montag bis Freitag, 6 bis 12 Uhr.",
-      "Working hours: Monday to Friday, 6 am to 12 noon."
+      "Sie arbeiten Montag bis Freitag von 6 bis 12 Uhr.",
+      "You work Monday to Friday from 6 am to 12 noon."
      ],
      [
-      "Bitte fragen Sie hier im Laden nach Herrn Krause.",
-      "Please ask for Mr Krause here in the shop."
+      "Bitte fragen Sie hier nach Herrn Krause.",
+      "Please ask for Mr Krause here."
      ]
     ]
    },
@@ -1217,20 +1167,20 @@
     "t": "sign",
     "s": [
      [
-      "Kindergarten Sonnenschein",
-      "Sonnenschein nursery"
+      "Kinder-Gruppe Sonnenschein",
+      "Sonnenschein children’s group"
      ],
      [
-      "Liebe Eltern, am Samstag ist unser Sommerfest!",
-      "Dear parents, our summer party is on Saturday!"
+      "Liebe Eltern, am Samstag ist bei uns Familien-Tag!",
+      "Dear parents, on Saturday it's family day here!"
      ],
      [
-      "Bringen Sie die ganze Familie mit: Geschwister, Oma und Opa sind auch herzlich willkommen.",
-      "Bring the whole family: brothers and sisters, grandma and grandpa are very welcome too."
+      "Geschwister, Oma und Opa kommen bitte auch!",
+      "Brothers and sisters, grandma and grandpa, please come too!"
      ],
      [
-      "Beginn: 14 Uhr",
-      "Start: 2 pm"
+      "Wir sind ab 14 Uhr da.",
+      "We're here from 2 pm."
      ]
     ]
    },
@@ -1239,16 +1189,16 @@
     "t": "sign",
     "s": [
      [
-      "Jobcenter Köln-Mitte",
-      "Job centre, Cologne centre"
+      "Stadt Köln – Job und Beruf",
+      "City of Cologne – jobs and careers"
      ],
      [
-      "Sie sind arbeitslos und suchen eine Stelle?",
-      "Are you unemployed and looking for a job?"
+      "Sie sind arbeitslos? Sie möchten eine Stelle?",
+      "Are you unemployed? Would you like a job?"
      ],
      [
-      "Informationen bekommen Sie in Zimmer 104.",
-      "You can get information in room 104."
+      "Kommen Sie zur Information, Nummer 104.",
+      "Come to the information desk, number 104."
      ],
      [
       "Montag bis Freitag, 8 bis 12 Uhr",
@@ -1283,33 +1233,25 @@
     "t": "sign",
     "s": [
      [
-      "Zoo Köln – Preise",
-      "Cologne Zoo – prices"
+      "Zoo Köln",
+      "Cologne Zoo"
      ],
      [
-      "Erwachsene: 20 Euro",
-      "Adults: 20 euros"
+      "Eltern: 20 Euro",
+      "Parents: 20 euros"
      ],
      [
       "Kinder von 3 bis 12 Jahren: 10 Euro",
       "Children aged 3 to 12: 10 euros"
      ],
      [
-      "Kinder unter 3 Jahren: frei",
-      "Children under 3: free"
+      "Babys und Kinder unter 3 Jahren: 0 Euro",
+      "Babies and children under 3: 0 euros"
      ]
     ]
    }
   ],
   "glossary": [
-   {
-    "w": "Sommerfest",
-    "en": "summer party"
-   },
-   {
-    "w": "willkommen",
-    "en": "welcome"
-   },
    {
     "w": "arbeitslos",
     "en": "unemployed"
@@ -1319,8 +1261,8 @@
     "en": "present, gift"
    },
    {
-    "w": "Erwachsene",
-    "en": "adults"
+    "w": "Zoo",
+    "en": "zoo"
    },
    {
     "w": "unter",
@@ -1349,10 +1291,10 @@
      "b1.1",
      "b1.2"
     ],
-    "why": "The bakery is looking for a sales assistant who works from 6 am to 12 noon."
+    "why": "The bakery has a job for a sales assistant who works from 6 am to 12 noon."
    },
    {
-    "q": "Das Sommerfest ist nur für Eltern und Kinder.",
+    "q": "Der Familien-Tag ist nur für Eltern und Kinder.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -1362,10 +1304,10 @@
     "ev": [
      "b2.2"
     ],
-    "why": "The whole family is welcome: brothers and sisters, grandma and grandpa too."
+    "why": "Brothers and sisters, grandma and grandpa should come too."
    },
    {
-    "q": "Am Montag um 10 Uhr bekommen Sie in Zimmer 104 Informationen.",
+    "q": "Am Montag um 10 Uhr können Sie zur Information kommen.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -1376,7 +1318,7 @@
      "b3.2",
      "b3.3"
     ],
-    "why": "Room 104 gives information Monday to Friday from 8 to 12."
+    "why": "The information desk (number 104) is open Monday to Friday from 8 to 12."
    },
    {
     "q": "Man gibt die 5 Euro bei Sandra ab.",
@@ -1402,7 +1344,7 @@
     "ev": [
      "b5.3"
     ],
-    "why": "Children under 3 get in free, so a baby pays nothing."
+    "why": "Babies and children under 3 pay 0 euros."
    }
   ]
  },
@@ -4887,7 +4829,7 @@
   "part": "Teil 1",
   "type": "postcard",
   "title": "Grüße von der Reise",
-  "intro": "Priya sends Lena a postcard from Berlin; Jonas texts Lena from Vienna.",
+  "intro": "Two postcards for Lena: Priya writes from Berlin, Jonas from Vienna.",
   "blocks": [
    {
     "id": "b1",
@@ -4942,8 +4884,8 @@
     "t": "h",
     "s": [
      [
-      "Hi Lena,",
-      "Hi Lena,"
+      "Liebe Lena,",
+      "Dear Lena,"
      ]
     ]
    },
@@ -4972,8 +4914,8 @@
       "I'm staying here for a week."
      ],
      [
-      "Jonas",
-      "Jonas"
+      "Viele Grüße, Jonas",
+      "Best wishes, Jonas"
      ]
     ]
    }

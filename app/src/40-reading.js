@@ -7,44 +7,62 @@ const TEXT_TYPE = { sms: 'Text messages', email: 'Email', postcard: 'Postcard', 
   comments: 'Reader comments', rules: 'House rules', terms: 'Terms and conditions', instructions: 'Instructions' }
 
 // ---- known words in a text (L11) ----
-// Forms the rules in wordForms miss: articles, contractions, irregular verbs, pronoun cases, comparatives.
+// Forms the rules in wordForms miss: articles, contractions, irregular verbs, pronoun cases, comparatives, Konjunktiv II.
 const tokens = s => s.match(/\p{L}+(?:-\p{L}+)*/gu) ?? []
 const MORE_FORMS = {
-  der: 'die den dem des', jeder: 'jede jeden jedem jedes', in: 'im ins', an: 'am ans', zu: 'zum zur', von: 'vom', bei: 'beim',
-  sein: 'bin bist sind seid wäre wären seine seinen seinem seiner seines', haben: 'habe hast habt hätte hätten',
-  werden: 'werde wirst werdet würde würden', können: 'kannst', müssen: 'musst', dürfen: 'darfst', wollen: 'willst', mögen: 'magst',
-  wissen: 'weißt', er: 'ihm', sie: 'ihnen', gut: 'besser best', viel: 'mehr meist', gern: 'lieber', groß: 'größer größt',
-  alt: 'älter ältest', jung: 'jünger jüngst', lang: 'länger längst', kurz: 'kürzer', warm: 'wärmer', kalt: 'kälter', hoch: 'höher hoh',
-  nah: 'näher nächst',
+  der: 'die den dem des denen dessen deren', jeder: 'jede jeden jedem jedes', welcher: 'welche welchen welchem welches',
+  dieser: 'diese diesen diesem dieses', wer: 'wen wem wessen', in: 'im ins', an: 'am ans', zu: 'zum zur', von: 'vom', bei: 'beim',
+  für: 'fürs', sein: 'bin bist sind seid wäre wären wärst seine seinen seinem seiner seines', haben: 'habe hast habt hätte hätten hättest',
+  werden: 'werde wirst werdet würde würden würdest würdet', können: 'kannst könnte könntest könnten könntet', müssen: 'musst',
+  dürfen: 'darfst', wollen: 'willst', mögen: 'magst', wissen: 'weißt', er: 'ihm', sie: 'ihnen', gut: 'besser best',
+  viel: 'mehr meist', gern: 'lieber liebsten', groß: 'größer größt', alt: 'älter ältest', jung: 'jünger jüngst', lang: 'länger längst',
+  kurz: 'kürzer', warm: 'wärmer', kalt: 'kälter', hoch: 'höher hoh', nah: 'näher nächst', teuer: 'teurer teuerst',
 }
-let formIndex = null   // lower-case form → course word, the earliest station's first
-function courseForms() {
-  if (formIndex) return formIndex
-  formIndex = new Map()
-  for (const w of D.words) {
+// Place names the English spells differently (Köln → Cologne) are names, like the ones spelled the same.
+const PLACES = new Set(['köln', 'münchen', 'wien', 'prag', 'rom', 'zürich', 'genf', 'brüssel', 'warschau', 'moskau', 'lissabon',
+  'mailand', 'venedig', 'neapel', 'florenz', 'athen', 'kopenhagen', 'nürnberg', 'hannover', 'braunschweig'])
+export function buildForms(words) {   // lower-case form → course word, the earliest station's first
+  const ix = new Map()
+  for (const w of words) {
     const more = MORE_FORMS[w.w]?.split(' ') ?? []
     const forms = [...wordForms(w), ...more, ...(w.p === 'adj' ? more.flatMap(f => ['e', 'en', 'er', 'es', 'em'].map(e => f + e)) : []),
       ...(w.p === 'v' ? [w.w.replace(/^sich /, '').replace(/e?n$/, '')] : []),            // the stem: imperatives (Komm! Ruf an!)
       ...(w.p !== 'n' && w.p !== 'v' && /e$/.test(w.w) ? ['m', 'n', 'r', 's'].map(e => w.w + e) : []),   // alle → alles, allem
       ...(w.a === 'der' ? ['in', 'innen'].map(e => w.w.replace(/e$/, '') + e) : [])]     // Freund → Freundin, Kollege → Kollegin
-    for (const f of forms) if (f.length > 1 && !formIndex.has(f.toLowerCase())) formIndex.set(f.toLowerCase(), w)
+    for (const f of forms) if (f.length > 1 && !ix.has(f.toLowerCase())) ix.set(f.toLowerCase(), w)
   }
-  return formIndex
+  return ix
 }
-// The share of a text's words the learner knows; isKnown(word) decides. Names, numbers and addresses (no course word,
-// and the same in the English) don't count.
-function knownShare(t, isKnown) {
-  const ix = courseForms()
+let formIndex = null
+const courseForms = () => formIndex || (formIndex = buildForms(D.words))
+// A word the course doesn't teach counts as known when it splits fully into known course words: hyphen parts
+// (Zahnarzt-Notdienst), or two or three parts of 3+ letters with an optional linking s/n/en/e (Kinder|zimmer,
+// Öffnung|s|zeiten, Freitag|abend). known(part) decides for each part.
+const linkless = h => [h, h.endsWith('s') && h.slice(0, -1), h.endsWith('en') && h.slice(0, -2), h.endsWith('n') && h.slice(0, -1),
+  h + 'e', h.endsWith('e') && h.slice(0, -1)].filter(x => x && x.length >= 3)
+function compoundKnown(t, known, depth = 0) {
+  if (t.includes('-')) return t.split('-').every(p => p && (known(p) || PLACES.has(p) || compoundKnown(p, known, depth + 1)))
+  if (depth > 2) return false
+  for (let i = 3; i <= t.length - 3; i++) {
+    const tail = t.slice(i)
+    if ((known(tail) || (depth < 2 && compoundKnown(tail, known, depth + 1))) && linkless(t.slice(0, i)).some(known)) return true
+  }
+  return false
+}
+// The share of a text's words the learner knows; isKnown(word) decides. Names, numbers and addresses (no course word, and
+// the same in the English, or a place name) don't count. Glossed words count only if the learner knows them.
+export function knownShare(t, isKnown, ix = courseForms()) {
+  const known = f => { const w = ix.get(f); return !!w && isKnown(w) }
   let all = 0, yes = 0
   const unknown = new Map()   // lower-case token → its course word, or null if the course doesn't teach it
   for (const b of t.blocks) for (const [de, en] of b.s) {
     const same = new Set(tokens(en))
     for (const tok of tokens(de)) {
-      const w = ix.get(tok.toLowerCase())
-      if (!w && same.has(tok)) continue
+      const low = tok.toLowerCase(), w = ix.get(low)
+      if (!w && (same.has(tok) || PLACES.has(low))) continue
       all++
-      if (w && isKnown(w)) yes++
-      else unknown.set(tok.toLowerCase(), w ?? null)
+      if (w ? isKnown(w) : compoundKnown(low, known)) yes++
+      else unknown.set(low, w ?? null)
     }
   }
   return { share: all ? yes / all : 1, unknown }

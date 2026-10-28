@@ -1,18 +1,21 @@
 article	word	pos
 	abends	adv
+das	Abitur	n
 	abschließen	v
 die	Ahnung	n
 	aktiv	adj
 	aktuell	adj
-	all	art
 	als	conj
 die	Ampel	n
 	anders	adv
+die	Angestellte	n
+der	Angestellter	n
 die	Angst	n
 	ansehen	v
 der	Anzug	n
 die	Apotheke	n
 der	Apparat	n
+der	Arbeitstag	n
 	arm	adj
 der	Artikel	n
 	aufmachen	v
@@ -27,6 +30,10 @@ die	Ausbildung	n
 	aussprechen	v
 die	Ausstellung	n
 	austragen	v
+die	Auszubildende	n
+der	Auszubildender	n
+der	Autor	n
+die	Autorin	n
 	außer	prep
 	außerdem	adv
 	außerhalb	prep
@@ -62,30 +69,37 @@ der	Besuch	n
 die	Bewerbung	n
 	bewölkt	adj
 die	Bibliothek	n
+die	Biologie	n
 das	Blatt	n
-	blau	adj
 der	Blog	n
 	blond	adj
 die	Bluse	n
 	blöd	adj
 die	Bohne	n
 	braten	v
-	braun	adj
 die	Brille	n
 die	Brücke	n
 	buchen	adj
 	bunt	adj
+der	Bäcker	n
+die	Bäckerin	n
 das	Büro	n
 die	Cafeteria	n
+das	Celsius	n
 	chatten	v
+die	Chefin	n
+die	Chemie	n
 der	Club	n
 der	Comic	n
+der	Cousin	n
+die	Cousine	n
 die	Creme	n
 	dabei	adv
 	dafür	adv
 	dagegen	adv
 	damals	adv
 	darüber	adv
+	das	pron
 	dass	conj
 die	Datei	n
 	denken	v
@@ -95,12 +109,16 @@ die	Datei	n
 	dienstags	adv
 das	Ding	n
 	direkt	adj
+der	Direktor	n
+die	Disko	n
 	diskutieren	v
 	doch	other
+die	Doktorin	n
 	donnerstags	adv
 	dreimal	adv
 	dringend	adj
 	drinnen	adv
+	drittens	adv
 	drüben	adv
 	dumm	adj
 	dunkel	adj
@@ -112,7 +130,7 @@ der	Ehepartner	n
 	eigen	adj
 	eigentlich	adv
 	einen	v
-	einig	pron
+	einige	art
 	einpacken	v
 	eintragen	v
 	einverstanden	adj
@@ -120,6 +138,9 @@ der	Ehepartner	n
 das	Eis	n
 	endlich	adj
 	eng	adj
+das	Englisch	n
+der	Enkel	n
+die	Enkelin	n
 das	Erdgeschoss	n
 die	Erfahrung	n
 	erinnern	v
@@ -128,9 +149,11 @@ die	Erlaubnis	n
 die	Ermäßigung	n
 	erreichen	v
 	erst	adv
-	es	pron
+	erstens	adv
 	etwas	pron
+die	Europäerin	n
 das	Fach	n
+die	Fahrerin	n
 der	Fahrplan	n
 	fallen	v
 der	Fan	n
@@ -138,8 +161,9 @@ der	Fan	n
 	fast	adv
 	faul	adj
 die	Feier	n
+der	Feiertag	n
 das	Fenster	n
-die	Ferien	n
+pl	Ferien	n
 der	Fernseher	n
 das	Fest	n
 das	Festival	n
@@ -151,29 +175,35 @@ der	Flug	n
 der	Fluss	n
 der	Fotoapparat	n
 	fotografieren	v
+der	Franke	n
+das	Französisch	n
 	freitags	adv
 	freiwillig	adj
+die	Freundin	n
 	freundlich	adj
 	frisch	adj
+der	Friseur	n
+die	Friseurin	n
 	froh	adj
 	früh	adj
 	furchtbar	adj
 	fühlen	v
-der	Führer	n
 die	Gabel	n
+	gang	v
 	ganz	adj
 die	Garage	n
 	gefährlich	adj
 das	Gegenteil	n
 	gegenüber	prep
 das	Gehalt	n
-	gelb	adj
 die	Geldbörse	n
 	genau	adj
 	genug	art
+die	Geografie	n
 das	Gericht	n
 das	Gerät	n
 die	Geschichte	n
+	geschieden	adj
 das	Geschirr	n
 das	Gesicht	n
 	gesund	adj
@@ -182,12 +212,12 @@ die	Gesundheit	n
 	gewesen	adj
 das	Gewitter	n
 die	Gitarre	n
-	grau	adj
 die	Grippe	n
-	grün	adj
 der	Hals	n
 der	Hamburger	n
 das	Handtuch	n
+der	Handwerker	n
+die	Handwerkerin	n
 	hart	adj
 die	Hauptstadt	n
 der	Haushalt	n
@@ -200,6 +230,7 @@ das	Hemd	n
 	herein	adv
 	herstellen	v
 	herunterladen	v
+das	Heute	n
 der	Himmel	n
 	hin	adv
 	hinter	prep
@@ -210,7 +241,9 @@ die	Hose	n
 	husten	v
 	hängen	v
 	hässlich	adj
+der	ICE	n
 die	Idee	n
+	im	other
 	informieren	v
 die	Insel	n
 das	Instrument	n
@@ -220,40 +253,54 @@ das	Interesse	n
 	interessieren	v
 	interessiert	adj
 das	Interview	n
-die	Jeans	n
-	jeder	pron
+pl	Jeans	n
 	jemand	pron
 	joggen	v
-die	Jugend	n
+der	Journalist	n
+die	Journalistin	n
 der	Kalender	n
 	kalt	adj
 die	Kamera	n
+der	Karneval	n
 die	Katze	n
+die	Kauffrau	n
 das	Kaufhaus	n
+der	Kaufmann	n
 der	Keller	n
+der	Kellner	n
+die	Kellnerin	n
+pl	Kenntnisse	n
 die	Kette	n
+das	Kilogramm	n
 die	Kirche	n
 	klappen	v
 das	Klavier	n
 das	Kleid	n
 	klug	adj
+der	Koch	n
+die	Kollegin	n
 	komisch	adj
 der	Kontakt	n
 	kontrollieren	v
 das	Konzert	n
 die	Kosmetik	n
 	kostenlos	adj
+der	Krankenpfleger	n
 die	Krankheit	n
 der	Kredit	n
 die	Kreuzung	n
 der	Krimi	n
 die	Kultur	n
+die	Kundin	n
 die	Kunst	n
 der	Käse	n
+die	Köchin	n
 der	Körper	n
 	kühl	adj
 	kümmern	v
 	kündigen	v
+der	Künstler	n
+die	Künstlerin	n
 die	Lampe	n
 die	Landschaft	n
 	langweilig	adj
@@ -261,13 +308,17 @@ der	Laptop	n
 	lassen	v
 	Latein	name
 	leer	adj
+die	Lehrerin	n
 	leidtun	v
 	leihen	v
 	liefern	v
 	lila	adj
 der	Link	n
+	linken	v
 die	Lust	n
 	Luxemburg	name
+der	Luxemburger	n
+die	Luxemburgerin	n
 	luxemburgisch	adj
 der	Löffel	n
 die	Lüge	n
@@ -276,14 +327,19 @@ der	Magen	n
 die	Mailbox	n
 	mal	adv
 	malen	v
-	manch	pron
+die	Mama	n
+	manche	art
 	manchmal	adv
 die	Mannschaft	n
 der	Mantel	n
 	markieren	v
 der	Markt	n
+die	Mathematik	n
+der	Mechaniker	n
+die	Mechanikerin	n
 das	Medikament	n
 	meinen	v
+	meiner	pron
 die	Meinung	n
 	meistens	adv
 die	Menge	n
@@ -291,14 +347,14 @@ die	Menge	n
 die	Messe	n
 das	Messer	n
 	mindestens	adv
-das	Mineral	n
 der	Mitarbeiter	n
 das	Mittagessen	n
 	mittags	adv
 das	Mittel	n
+die	Mitternacht	n
 	mittwochs	adv
-das	Mobil	n
 die	Mode	n
+das	Model	n
 	modern	v
 	montags	adv
 	morgens	adv
@@ -306,6 +362,8 @@ der	Motor	n
 der	Motorroller	n
 das	Museum	n
 die	Musik	n
+der	Musiker	n
+die	Musikerin	n
 der	Müll	n
 die	Mütze	n
 der	Nachbar	n
@@ -322,6 +380,7 @@ die	Natur	n
 	nennen	v
 	nervös	adj
 	nett	adj
+das	Neujahr	n
 	niemand	pron
 	nirgends	adv
 die	Note	n
@@ -333,13 +392,16 @@ die	Nähe	n
 	nützlich	adj
 	offen	adj
 das	Ohr	n
+der	Onkel	n
 	online	adj
 die	Orange	n
 	orange	adj
 	organisieren	v
+das	Ostern	n
 das	Paar	n
 	packen	v
 das	Paket	n
+der	Papa	n
 das	Parfüm	n
 der	Park	n
 	parken	v
@@ -347,13 +409,17 @@ der	Park	n
 	passieren	v
 	passiert	adj
 das	Passwort	n
+der	PC	n
 die	Person	n
 das	Pferd	n
 die	Pflanze	n
+die	Physik	n
 die	Pizza	n
 das	Plakat	n
 	planen	v
 	plötzlich	adv
+der	Polizist	n
+die	Polizistin	n
 die	Portion	n
 das	Poster	n
 die	Postkarte	n
@@ -367,10 +433,12 @@ das	Programm	n
 das	Projekt	n
 	prüfen	v
 der	Pullover	n
+der	Punkt	n
 	putzen	v
 die	Qualität	n
 das	Quiz	n
 das	Radio	n
+der	Rappen	n
 	raten	v
 das	Rathaus	n
 	rechnen	v
@@ -381,8 +449,10 @@ der	Reifen	n
 die	Reihe	n
 die	Reinigung	n
 	reiten	v
+die	Religion	n
 	renovieren	v
 	renoviert	adj
+der	Rentner	n
 die	Rentnerin	n
 	reservieren	v
 	reserviert	adj
@@ -394,7 +464,6 @@ der	Rock	n
 	romantisch	adj
 	rosa	adj
 die	Rose	n
-	rot	adj
 der	Rucksack	n
 	rufen	v
 die	Ruhe	n
@@ -411,6 +480,8 @@ der	Satz	n
 	schade	adj
 	schaffen	v
 	scharf	adj
+der	Schauspieler	n
+die	Schauspielerin	n
 	schenken	v
 die	Schere	n
 das	Schiff	n
@@ -430,24 +501,31 @@ die	Schokolade	n
 	schwach	adj
 	schwanger	adj
 das	Schwein	n
+	Schweiz	name
+der	Schweizer	n
+die	Schweizerin	n
 	schweizerisch	adj
 	schwierig	adj
 	schädlich	adj
 die	Schülerin	n
 die	Seife	n
 die	Seite	n
+das	Sekretariat	n
 	selbst	other
 die	Sendung	n
 der	Service	n
 	setzen	v
 	sicher	adj
+der	Silvester	n
 	singen	v
 die	Situation	n
 der	Ski	n
+die	SMS	n
 	sogar	adv
 	sonnig	adj
 	sonntags	adv
 	sonst	adv
+die	Sozialkunde	n
 	spannend	adj
 	sparen	v
 	spazieren	v
@@ -456,7 +534,6 @@ der	Spaß	n
 das	Spiel	n
 	sportlich	adj
 der	Sportplatz	n
-die	Sprech	n
 der	Stadtplan	n
 der	Star	n
 	stark	adj
@@ -470,7 +547,9 @@ der	Strand	n
 	streng	adj
 der	Stress	n
 	stressig	adj
+die	Studentin	n
 der	Stuhl	n
+der	Stundenplan	n
 	stören	v
 das	Stück	n
 	super	adj
@@ -478,14 +557,20 @@ der	Supermarkt	n
 die	Suppe	n
 	surfen	v
 	sympathisch	adj
+der	Sänger	n
+die	Sängerin	n
 	süß	adj
 das	T-Shirt	n
 das	Tablet	n
 die	Tablette	n
 die	Tafel	n
+	tagsüber	adv
+die	Tante	n
 das	Taschengeld	n
 die	Tasse	n
 das	Team	n
+der	Techniker	n
+die	Technikerin	n
 	teilen	v
 	teilnehmen	v
 der	Teller	n
@@ -501,6 +586,7 @@ die	Torte	n
 	total	adj
 die	Tour	n
 der	Tourist	n
+die	Touristin	n
 	tragen	v
 	trainieren	v
 das	Training	n
@@ -508,6 +594,7 @@ der	Traum	n
 	traurig	adj
 	trocken	adj
 	träumen	v
+	tschüs	other
 	typisch	adj
 	täglich	adj
 die	Tür	n
@@ -528,6 +615,8 @@ der	Unterschied	n
 	vergessen	v
 	vergleichen	v
 	verkauft	adj
+der	Verkehr	n
+die	Verkäuferin	n
 	verletzen	v
 	verletzt	adj
 	verlieben	v
@@ -542,6 +631,7 @@ die	Verspätung	n
 	versuchen	v
 der	Vertrag	n
 	viermal	adv
+	viertens	adv
 der	Vogel	n
 	voll	adj
 der	Volleyball	n
@@ -552,6 +642,7 @@ der	Volleyball	n
 	vormittags	adv
 	vorn	adv
 der	Vorschlag	n
+	vorsichtig	adj
 	vorwärts	adv
 	wach	adj
 der	Wagen	n
@@ -559,6 +650,7 @@ der	Wagen	n
 	wahrscheinlich	adj
 der	Wald	n
 	warm	adj
+das	WC	n
 die	Webseite	n
 	wechseln	v
 	wecken	v
@@ -566,16 +658,16 @@ der	Weg	n
 	wegen	prep
 	wehtun	v
 	weich	adj
+das	Weihnachten	n
 	weil	conj
 	weinen	v
-	welcher	art
 	wenigstens	adv
 	wenn	conj
 die	Werkstatt	n
+der	Werktag	n
 der	Wettbewerb	n
 	wieder	adv
 	wiederholt	adv
-	willkommen	adj
 	windig	adj
 	wirklich	adj
 der	Witz	n
@@ -587,6 +679,8 @@ der	Wunsch	n
 die	Wurst	n
 	wählen	v
 die	Wäsche	n
+	wäscht	v
+das	Wörterbuch	n
 	wünschen	v
 die	Zahl	n
 der	Zahn	n
@@ -606,10 +700,16 @@ der	Zucker	n
 	zuhören	v
 	zuletzt	adv
 	zumachen	v
+	zur	other
+	zwanzigste	adj
 	zweimal	adv
+	zweitens	adv
 	ändern	v
 	ärgern	v
+die	Ärztin	n
 	Österreich	name
+der	Österreicher	n
+die	Österreicherin	n
 	österreichisch	adj
 	üben	v
 	überall	adv

@@ -11,7 +11,7 @@ words-<level>-*.tsv columns: lemma, pos, article, plural, forms, english, exampl
   forms    verbs only: 3rd person present, Präteritum, Perfekt, e.g. 'fährt, fuhr, ist gefahren'
   station  1–12 within the level
 assign-<level>.tsv columns: article, word, pos, station — every row of data/src/goethe-<level>.tsv exactly once,
-  station 1–12 (0 = not a learner word, dropped); extra rows allowed; 35–100 words per station.
+  station 1–12 (0 = not a learner word, dropped); extra rows allowed; words per station: A1/A2 35–130, B1 35–200.
 grammar-<level>-*.json: [{id, pattern, explain, compare_en, table?, examples}] — id from data/src/syllabus.json;
   table: [[header cells], [row cells] …] (optional); examples: 2–4 of
   {de: [German chunks], en: [[[chunk indexes], "English text"] …], v: [indexes of the verb chunks]}
@@ -83,7 +83,10 @@ def check_words(rows, copied=frozenset()):
     return out
 
 
-def check_assign(rows, goethe):
+ASSIGN_LIMITS = {'A1': (35, 130), 'A2': (35, 130), 'B1': (35, 200)}   # words per station; B1 has three times the words
+
+
+def check_assign(rows, goethe, level='A1'):
     """rows: assignment dicts; goethe: [(article, word, pos)] checklist of the level."""
     out, count, seen = [], {}, {}
     for i, r in enumerate(rows, 2):
@@ -98,7 +101,8 @@ def check_assign(rows, goethe):
             out.append(f'line {i} ({r["word"]}): a noun needs der/die/das/pl')
         count[int(r['station'])] = count.get(int(r['station']), 0) + 1
     out += [f'missing from the checklist: {a} {w} ({p})'.replace('  ', ' ') for a, w, p in goethe if (a, w, p) not in seen]
-    out += [f'station {k}: {count.get(k, 0)} words (keep 35–100)' for k in range(1, 13) if not 35 <= count.get(k, 0) <= 100]
+    lo, hi = ASSIGN_LIMITS[level]
+    out += [f'station {k}: {count.get(k, 0)} words (keep {lo}–{hi})' for k in range(1, 13) if not lo <= count.get(k, 0) <= hi]
     return out
 
 
@@ -216,6 +220,7 @@ READ_PARTS = {'A1': {'Teil 1': ('rf', 5), 'Teil 2': ('match', 5), 'Teil 3': ('rf
 LISTEN_PARTS = {'A1': {'Teil 1': (['abc'], 1), 'Teil 2': (['rf'], 1), 'Teil 3': (['abc'], 1)},
                 'A2': {'Teil 1': (['abc'], 1), 'Teil 2': (['match'] * 5, 5), 'Teil 3': (['abc'], 1), 'Teil 4': (['jn'] * 5, 5)},
                 'B1': {'Teil 1': (['rf', 'abc'], 2), 'Teil 2': (['abc'] * 5, 5), 'Teil 3': (['rf'] * 7, 7), 'Teil 4': (['match'] * 8, 8)}}
+LISTEN_ONCE = {'A1': {'Teil 2'}, 'A2': {'Teil 2', 'Teil 3'}, 'B1': {'Teil 2', 'Teil 3'}}   # parts played once (Modellsätze); the rest twice
 WRITE_PARTS = {'A1': ['Teil 1', 'Teil 2'], 'A2': ['Teil 1', 'Teil 2'], 'B1': ['Teil 1', 'Teil 2', 'Teil 3']}
 SPEAK_PARTS = {'A1': ['Teil 1', 'Teil 2', 'Teil 3'], 'A2': ['Teil 1', 'Teil 2', 'Teil 3'], 'B1': ['Teil 1', 'Teil 2', 'Teil 3']}
 READ_WORDS = {'A1': (30, 260), 'A2': (60, 420), 'B1': (120, 750)}
@@ -327,6 +332,9 @@ def check_listening(items, level):
         if not part:
             out.append(f'{where}: part must be one of {list(LISTEN_PARTS[level])}')
             continue
+        once = it['part'] in LISTEN_ONCE[level]
+        if it.get('once', False) is not once:
+            out.append(f'{where}: once must be {str(once).lower()}: the exam plays {level} {it["part"]} {"once" if once else "twice"}')
         if blank(it.get('setup')):
             out.append(f'{where}: empty setup (one English line: who is talking, where)')
         lines = it.get('lines', [])
@@ -571,7 +579,7 @@ def check_file(path, copied):
         level = path.stem.split('-')[1]
         goethe_rows, _ = read_tsv(ROOT / f'data/src/goethe-{level}.tsv', ['article', 'word', 'pos'])
         goethe = [(r['article'], r['word'], r['pos']) for r in goethe_rows]
-        return problems + check_assign(rows, goethe)
+        return problems + check_assign(rows, goethe, level)
     if path.name.startswith(('grammar-', 'gq-')):
         data, problems = read_json(path)
         check = check_grammar if path.name.startswith('grammar-') else check_gq
@@ -625,6 +633,7 @@ def test():
             'questions': [{'q': 'Was bestellt sie?', 'format': 'abc', 'opts': ['Kaffee', 'Tee', 'Wasser'], 'a': 0, 'ev': [0], 'why': 'x'}]}
     assert check_listening([item], 'A1') == [], check_listening([item], 'A1')
     assert check_listening([dict(item, lines=[{'who': 'Z', 'de': 'x', 'en': 'y'}])], 'A1'), 'unknown speaker'
+    assert check_listening([dict(item, once=True)], 'A1') and not check_listening([dict(item, part='Teil 3', once=True)], 'A2'), 'once per part'
     words = {(f'Ding{i}', 'das') for i in range(20)}
     objs = [{'w': f'Ding{i}', 'a': 'das', 'at': [90 + (i % 5) * 190, 100 + (i // 5) * 120], 'tag': [0, -10], 'svg': '<circle r="10" fill="#c00"/>'} for i in range(16)]
     sc = {'id': 'test', 'de': 'Test', 'en': 'Test', 'sky': '#fff', 'back': '<rect width="1000" height="620"/>', 'stations': [1], 'objs': objs}

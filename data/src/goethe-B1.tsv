@@ -7,10 +7,10 @@ der	Abfalleimer	n
 	abheben	v
 	abhängen	v
 	abhängig	adj
-das	Abitur	n
 	ablehnen	v
 	abmachen	v
 	abnehmen	v
+das	Abo	n
 das	Abonnement	n
 	abonnieren	v
 	absagen	v
@@ -18,6 +18,7 @@ der	Abschied	n
 der	Abschluss	n
 der	Abschnitt	n
 	abschreiben	v
+die	Absenderin	n
 die	Absicht	n
 	absolut	adj
 	abstimmen	v
@@ -26,14 +27,18 @@ der	Abwart	n
 	abwaschen	v
 	abwesend	adj
 	abwärts	adv
+das	Achten	n
 	achten	v
 der	Affe	n
+die	Akademie	n
 der	Akku	n
+der	Akkumulator	n
 die	Aktion	n
 die	Aktivität	n
 	akzeptieren	v
 der	Alarm	n
 der	Alkohol	n
+	allen	pron
 	allerdings	adv
 	allgemein	adj
 der	Alltag	n
@@ -51,6 +56,7 @@ der	Anbieter	n
 	anfangs	adv
 die	Angabe	n
 	angeben	v
+der	Angehörige	n
 	angenehm	adj
 	anhaben	v
 	ankündigen	v
@@ -70,9 +76,12 @@ der	Antrag	n
 der	Anwalt	n
 	anwenden	v
 	anwesend	adj
+die	Anwältin	n
 die	Anzahl	n
+die	Anzeigen	n
 	anzeigen	v
 die	Aprikose	n
+der	Arbeiter	n
 die	Arbeiterin	n
 die	Arbeitserlaubnis	n
 die	Arbeitslosigkeit	n
@@ -80,6 +89,7 @@ die	Arbeitsstelle	n
 der	Architekt	n
 die	Architektin	n
 die	Art	n
+	ass	v
 das	Asyl	n
 der	Atem	n
 	atmen	v
@@ -97,6 +107,7 @@ die	Aufforderung	n
 die	Aufnahme	n
 	aufnehmen	v
 	aufregen	v
+	aufs	other
 	aufschreiben	v
 der	Auftrag	n
 	auftreten	v
@@ -112,6 +123,7 @@ die	Ausfahrt	n
 die	Ausgabe	n
 	ausgezeichnet	adj
 die	Aushilfe	n
+die	Ausländerin	n
 die	Ausnahme	n
 	ausreichen	v
 	ausreichend	adj
@@ -123,9 +135,9 @@ die	Aussprache	n
 	ausstellen	v
 die	Auswahl	n
 	auswählen	v
-der	Autor	n
-die	Autorin	n
 	außen	adv
+der	Azubi	n
+die	Babysitterin	n
 die	Badewanne	n
 das	Ballett	n
 die	Bankleitzahl	n
@@ -161,6 +173,7 @@ die	Begründung	n
 	behindern	v
 	behindert	adj
 die	Behörde	n
+	beim	other
 	beinahe	adv
 	beispielsweise	adv
 der	Beitrag	n
@@ -168,6 +181,7 @@ der	Beitrag	n
 der	Beleg	n
 	beleidigen	v
 	bemerken	v
+das	Benutzen	n
 das	Benzin	n
 	benötigen	v
 	beobachten	v
@@ -190,6 +204,7 @@ die	Beschreibung	n
 die	Beschäftigung	n
 	besetzen	v
 	besitzen	v
+	besondere	adj
 	besorgen	v
 	besprechen	v
 die	Besprechung	n
@@ -200,6 +215,7 @@ die	Bestätigung	n
 der	Betrag	n
 	betreuen	v
 der	Betreuer	n
+die	Betreuerin	n
 die	Betreuung	n
 der	Betrieb	n
 der	Betriebsrat	n
@@ -212,13 +228,14 @@ die	Bevölkerung	n
 die	Bewegung	n
 der	Beweis	n
 	beweisen	v
+die	Bewohnerin	n
 die	Beziehung	n
+	beziehungsweise	conj
 die	Biene	n
 	bieten	v
 der	Bikini	n
 der	Bildschirm	n
 das	Billett	n
-die	Biologie	n
 	bisher	adv
 	blass	adj
 	blind	adj
@@ -246,13 +263,16 @@ der	Briefumschlag	n
 die	Broschüre	n
 die	Brust	n
 das	Brötli	n
+der	Bub	n
 die	Buchhandlung	n
 das	Buffet	n
 der	Bund	n
 der	Bundeskanzler	n
 die	Bundeskanzlerin	n
+das	Bundesland	n
 der	Bundespräsident	n
 der	Bundesrat	n
+die	Bundesrepublik	n
 der	Bundestag	n
 die	Burg	n
 der	Bär	n
@@ -266,21 +286,19 @@ die	Bürste	n
 das	Camp	n
 	campen	v
 die	Castingshow	n
-der	CD-Player	n
 die	Chance	n
 der	Chat	n
 	checken	v
-	China	name
-	Chinesisch	name
+	chic	adj
 der	Chip	n
 die	Chipkarte	n
 die	City	n
 der	Coiffeur	n
-die	Cola	n
+die	Coiffeuse	n
+das	Cola	n
 	cool	adj
 die	Couch	n
-der	Cousin	n
-die	Cousine	n
+das	Couvert	n
 das	Dach	n
 	daher	adv
 	dahin	adv
@@ -290,17 +308,21 @@ das	Dach	n
 	darstellen	v
 die	Darstellung	n
 die	Daten	n
+der	Datenträger	n
 die	Dauer	n
 	dauernd	adj
 die	Decke	n
+	deiner	pron
+das	Deka	n
 	dekorieren	v
 die	Demokratie	n
+	demokratisch	adj
 	den	pron
 das	Denkmal	n
 	derselbe	pron
+	des	art
 das	Dessert	n
 	deswegen	adv
-	det	pron
 das	Detail	n
 der	Dialekt	n
 der	Dialog	n
@@ -311,12 +333,11 @@ der	Dienst	n
 	diesmal	adv
 	digital	adj
 das	Diplom	n
-der	Direktor	n
+die	Direktorin	n
 die	Diskothek	n
 die	Diskussion	n
 die	Distanz	n
 die	Diät	n
-die	Doktorin	n
 das	Dokument	n
 der	Donner	n
 	donnern	v
@@ -325,8 +346,11 @@ der	Donner	n
 die	Dose	n
 der	Dreck	n
 	drehen	v
+die	Drei	n
+der	Dreier	n
+	dreiviertel	prep
 	drin	adv
-	drittens	adv
+der	Drittel	n
 die	Droge	n
 die	Drogerie	n
 der	Druck	n
@@ -337,23 +361,28 @@ der	Durchschnitt	n
 	durstig	adj
 	duzen	v
 die	DVD	n
-das	E-Bike	n
 	eben	adj
 	ebenfalls	adv
 	ebenso	adv
 das	Eck	n
 	eckig	adj
+das	EG	n
 die	Ehe	n
 das	Ehepaar	n
 	eher	adv
 	ehrlich	adj
+die	Eidgenossenschaft	n
 die	Eile	n
 	eilen	v
 die	Einbahnstraße	n
 	einbrechen	v
+die	Einbrecher	n
+die	Einbrecherin	n
 der	Einbruch	n
 	eindeutig	adj
 der	Eindruck	n
+der	Einer	n
+	einer	pron
 	einerseits	adv
 die	Einfahrt	n
 der	Einfall	n
@@ -364,19 +393,23 @@ der	Einfluss	n
 die	Einführung	n
 	einheitlich	adj
 der	Einkauf	n
+das	Einkommen	n
 die	Einleitung	n
 die	Einnahme	n
 	einnehmen	v
 	einrichten	v
 die	Einrichtung	n
+die	Eins	n
 	einsam	adj
 	einschalten	v
 	einschließlich	prep
 das	Einschreiben	n
+der	Einser	n
 	einsetzen	v
 	einstellen	v
 	eintreten	v
 der	Einwohner	n
+die	Einwohnerin	n
 	einzahlen	v
 die	Einzahlung	n
 die	Einzelheit	n
@@ -392,8 +425,6 @@ der	Empfang	n
 die	Empfehlung	n
 	endgültig	adj
 die	Energie	n
-der	Enkel	n
-die	Enkelin	n
 	entdecken	v
 die	Ente	n
 	entfernen	v
@@ -415,6 +446,7 @@ die	Enttäuschung	n
 die	Entwicklung	n
 der	Erdapfel	n
 die	Erde	n
+das	Erdgeschoß	n
 das	Ereignis	n
 	erfahren	v
 	erfinden	v
@@ -431,6 +463,7 @@ die	Erholung	n
 die	Erhöhung	n
 die	Erinnerung	n
 	erkennen	v
+das	Erklären	n
 die	Erklärung	n
 die	Erkältung	n
 	erleben	v
@@ -447,7 +480,6 @@ der	Ersatz	n
 	erschöpft	adj
 	ersetzen	v
 	erstellen	v
-	erstens	adv
 	erwachsen	v
 	erwarten	v
 	erziehen	v
@@ -458,6 +490,7 @@ die	Eröffnung	n
 der	Essig	n
 die	Etage	n
 	etwa	adv
+die	EU	n
 	eventuell	adj
 	ewig	adj
 der	Experte	n
@@ -466,6 +499,7 @@ der	Export	n
 	extrem	adj
 die	Fabrik	n
 die	Fachfrau	n
+pl	Fachleute	n
 der	Fachmann	n
 die	Fahrbahn	n
 die	Fahrt	n
@@ -482,8 +516,8 @@ der	Fasching	n
 	faulenzen	v
 der	Fauteuil	n
 	faxen	v
+der	Feber	n
 der	Feierabend	n
-der	Feiertag	n
 das	Feld	n
 die	Fernbedienung	n
 das	Fernsehen	n
@@ -525,6 +559,7 @@ die	Folie	n
 die	Forderung	n
 die	Form	n
 die	Forschung	n
+	fort	adv
 die	Fortbildung	n
 der	Fortschritt	n
 	fortsetzen	v
@@ -538,16 +573,17 @@ die	Fremdsprache	n
 	fressen	v
 die	Freude	n
 die	Freundschaft	n
+der	Friede	n
 	frieren	v
-der	Friseur	n
-die	Friseurin	n
 die	Frist	n
 die	Frisur	n
 die	Frucht	n
 	fröhlich	adj
+der	Früh	n
 das	Fundbüro	n
 	funktionieren	v
 der	Fußgänger	n
+die	Fußgängerin	n
 die	Fußgängerzone	n
 die	Fähigkeit	n
 die	Fähre	n
@@ -556,7 +592,10 @@ die	Fähre	n
 die	Förderung	n
 	führen	v
 der	Führerschein	n
+die	Fünf	n
+der	Fünfer	n
 	fürchten	v
+	fürs	other
 	füttern	v
 die	Galerie	n
 der	Gang	n
@@ -592,12 +631,14 @@ der	Gegner	n
 	geheim	adj
 das	Geheimnis	n
 der	Gehsteig	n
+	gejobbt	adj
 der	Geldautomat	n
 die	Gelegenheit	n
 	gelernt	adj
 	geliefert	adj
 	gelingen	v
 	gelten	v
+	gelöst	adj
 die	Gemeinde	n
 	gemeinsam	adj
 die	Gemeinschaft	n
@@ -609,12 +650,13 @@ die	Gemeinschaft	n
 die	Generation	n
 	genießen	v
 	genügen	v
+	genügend	adj
 	gerecht	adj
 	gering	adj
 	gesamt	adj
+die	Gesamtschule	n
 	geschehen	v
 	geschickt	adj
-	geschieden	adj
 das	Geschlecht	n
 der	Geschmack	n
 die	Geschwindigkeit	n
@@ -652,6 +694,7 @@ die	Grenze	n
 der	Grieche	n
 	Griechenland	name
 die	Griechin	n
+das	Griechisch	n
 	griechisch	adj
 der	Grill	n
 	grillieren	v
@@ -667,6 +710,7 @@ die	Gymnastik	n
 das	Hackfleisch	n
 der	Hafen	n
 	hageln	v
+	halben	prep
 	halbtags	adv
 das	Hallenbad	n
 der	Halt	n
@@ -675,11 +719,12 @@ der	Halt	n
 der	Hammer	n
 der	Handel	n
 	handeln	v
-der	Handwerker	n
 der	Hase	n
 	hassen	v
 der	Hauptbahnhof	n
+die	Hauptschule	n
 der	Hausmeister	n
+die	Hausmeisterin	n
 das	Haustier	n
 die	Haut	n
 	heben	v
@@ -692,9 +737,9 @@ der	Held	n
 die	Heldin	n
 die	Herausforderung	n
 die	Herkunft	n
+der	Hersteller	n
 	herunter	adv
 das	Herz	n
-	herzlich	adj
 	heutig	adj
 	hierher	adv
 das	Hilfsmittel	n
@@ -705,6 +750,7 @@ das	Hilfsmittel	n
 der	Hit	n
 die	Hitze	n
 	hochladen	v
+die	Hochschule	n
 der	Hof	n
 die	Hoffnung	n
 das	Holz	n
@@ -716,11 +762,14 @@ der	Husten	n
 der	Hut	n
 die	Hälfte	n
 der	Händler	n
+die	Händlerin	n
 	häufig	adj
 	höchstens	adv
 	höflich	adj
 die	Höhe	n
+das	Hören	n
 der	Hörer	n
+die	Hörerin	n
 	hübsch	adj
 der	Hügel	n
 die	Hütte	n
@@ -738,6 +787,7 @@ der	Inhalt	n
 	innen	adv
 	inner	adj
 	innerhalb	prep
+	ins	other
 das	Insekt	n
 das	Inserat	n
 	insgesamt	adv
@@ -763,9 +813,10 @@ der	Jazz	n
 	jemals	adv
 	jeweils	adv
 	jobben	v
-der	Journalist	n
-die	Journalistin	n
+die	Jugend	n
 die	Jugendherberge	n
+	jährlich	adj
+der	Jänner	n
 das	Kabel	n
 die	Kabine	n
 das	Kaffeehaus	n
@@ -779,7 +830,6 @@ der	Kanton	n
 das	Kapitel	n
 	kaputtgehen	v
 	kaputtmachen	v
-der	Karneval	n
 die	Karotte	n
 die	Karriere	n
 die	Kassette	n
@@ -788,15 +838,18 @@ der	Katalog	n
 die	Katastrophe	n
 der	Kauf	n
 	kaum	adv
-der	Kellner	n
-die	Kellnerin	n
 das	Kennzeichen	n
 die	Kerze	n
-der	Ketchup	n
+das	Ketchup	n
+der	Ketschup	n
+das	Kfz	n
 der	Killer	n
+die	Killerin	n
+die	Kindertagesstätte	n
 die	Kindheit	n
 das	Kissen	n
 die	Kiste	n
+die	Kita	n
 	klagen	v
 	klasse	adj
 die	Klassenarbeit	n
@@ -819,7 +872,6 @@ das	Knie	n
 der	Knochen	n
 der	Knopf	n
 der	Knödel	n
-der	Koch	n
 der	Kommentar	n
 die	Kommunikation	n
 	komplett	adj
@@ -841,15 +893,16 @@ der	Kopierer	n
 	korrekt	adj
 der	Korridor	n
 	korrigieren	v
-die	Kosten	n
+pl	Kosten	n
 das	Kostüm	n
 die	Kraft	n
+	kraft	prep
 das	Kraftfahrzeug	n
 das	Kraftwerk	n
+der	Kranke	n
 	kranken	v
 das	Krankenhaus	n
 die	Krankenkasse	n
-der	Krankenpfleger	n
 die	Krankenschwester	n
 der	Krankenwagen	n
 	kreativ	adj
@@ -858,6 +911,7 @@ der	Kreis	n
 das	Kreuz	n
 der	Krieg	n
 die	Kriminalpolizei	n
+die	Krippe	n
 die	Krise	n
 die	Kritik	n
 	kritisch	adj
@@ -872,13 +926,11 @@ der	Kuss	n
 das	Kuvert	n
 die	Kälte	n
 	kämpfen	v
+der	Käufer	n
 die	Käuferin	n
-die	Köchin	n
 der	König	n
 	körperlich	adj
 die	Kündigung	n
-der	Künstler	n
-die	Künstlerin	n
 	künstlich	adj
 	kürzlich	adv
 	küssen	v
@@ -894,7 +946,7 @@ das	Laufwerk	n
 die	Laune	n
 der	Lautsprecher	n
 der	Lebenslauf	n
-die	Lebensmittel	n
+pl	Lebensmittel	n
 	lecker	adj
 das	Leder	n
 die	Lehre	n
@@ -908,6 +960,10 @@ die	Leistung	n
 der	Leiter	n
 die	Leiterin	n
 die	Leitung	n
+der	Lerner	n
+die	Lernerin	n
+das	Lesen	n
+der	Leser	n
 die	Leserin	n
 das	Lexikon	n
 	liberal	adj
@@ -925,7 +981,7 @@ die	Literatur	n
 das	Loch	n
 	locker	adj
 der	Lohn	n
-	los	adv
+	los	adj
 	losfahren	v
 die	Luft	n
 	lächeln	v
@@ -939,31 +995,32 @@ das	Magazin	n
 	mager	adj
 die	Mahlzeit	n
 die	Mahnung	n
+die	Mail	n
 	mailen	v
 das	Mal	n
 der	Maler	n
 die	Malerin	n
 der	Manager	n
+die	Managerin	n
 der	Mangel	n
+	mangelhaft	adj
 die	Mappe	n
 die	Margarine	n
 die	Marille	n
 die	Marke	n
 die	Marmelade	n
 das	Material	n
+die	Mathe	n
 die	Matura	n
 die	Mauer	n
 die	Maus	n
 	maximal	adj
-der	Mechaniker	n
-die	Mechanikerin	n
-die	Medien	n
+pl	Medien	n
 die	Medizin	n
 das	Mehl	n
 	mehrere	pron
 die	Mehrheit	n
 die	Mehrwertsteuer	n
-	meiner	pron
 	meinetwegen	adv
 der	Meister	n
 	melden	v
@@ -978,6 +1035,7 @@ die	Methode	n
 die	Metropole	n
 der	Metzger	n
 der	Mieter	n
+die	Mieterin	n
 der	Migrant	n
 die	Migration	n
 	mild	adj
@@ -986,29 +1044,31 @@ das	Mineralwasser	n
 	minimal	adj
 der	Minister	n
 die	Ministerin	n
-	minus	adv
+	mir	pron
 	mischen	v
 die	Mitarbeiterin	n
 	miteinander	adv
 das	Mitglied	n
 	mitteilen	v
+die	Mittelschule	n
 	mitten	adv
-die	Mitternacht	n
+	mittlerer	adj
 	mittlerweile	adv
+das	Mobil	n
 	mobil	adj
 die	Mobilität	n
 das	Mobiltelefon	n
 das	Modell	n
 der	Moderator	n
+die	Moderatorin	n
 das	Modul	n
 der	Monat	n
+	monatlich	adj
 der	Mond	n
 der	Monitor	n
 das	Motorrad	n
 das	Mountainbike	n
 	musikalisch	adj
-der	Musiker	n
-die	Musikerin	n
 der	Muskel	n
 der	Mut	n
 	mutig	adj
@@ -1019,6 +1079,7 @@ die	Möglichkeit	n
 	möglichst	adv
 die	Möhre	n
 die	Mücke	n
+das	Müesli	n
 die	Mühe	n
 die	Mülltonne	n
 	mündlich	adj
@@ -1038,6 +1099,7 @@ der	Nagel	n
 das	Nahrungsmittel	n
 die	Nase	n
 	national	adj
+der	Nationalfeiertag	n
 der	Nebel	n
 	nebenbei	adv
 der	Neffe	n
@@ -1054,7 +1116,6 @@ die	Nichtraucherin	n
 	niedrig	adj
 	nirgendwo	adv
 	nochmals	adv
-die	Nord	n
 	normalerweise	adv
 die	Notaufnahme	n
 der	Notausgang	n
@@ -1064,7 +1125,9 @@ der	Notruf	n
 	nutzen	v
 	nähen	v
 	nämlich	adj
+	nördlich	adj
 	nötig	adj
+	nützen	v
 	ob	conj
 der	Ober	n
 	ober	prep
@@ -1072,7 +1135,7 @@ das	Obergeschoss	n
 	obwohl	conj
 	offenbar	adj
 	offiziell	adj
-der	Onkel	n
+	okay	other
 die	Oper	n
 die	Operation	n
 	operieren	v
@@ -1081,13 +1144,14 @@ das	Opfer	n
 das	Orchester	n
 	ordentlich	adj
 die	Ordination	n
+das	Ordnen	n
 	ordnen	v
 der	Ordner	n
 die	Organisation	n
 das	Original	n
 	original	adj
-der	Osten	n
 der	Ozean	n
+	paar	art
 die	Panne	n
 der	Paradeiser	n
 	parallel	adj
@@ -1095,11 +1159,11 @@ der	Paradeiser	n
 das	Parlament	n
 die	Partei	n
 der	Passagier	n
+die	Passagierin	n
 	passiv	adj
 der	Patient	n
 die	Patientin	n
 	pauschal	adj
-der	PC	n
 das	Pech	n
 	peinlich	adj
 die	Pension	n
@@ -1107,29 +1171,34 @@ der	Pensionist	n
 	per	prep
 	perfekt	adj
 der	Perron	n
-das	Personal	n
+der	Personal	n
+pl	Personalien	n
+der	Personenkraftwagen	n
 	persönlich	adj
 die	Pfanne	n
 der	Pfeffer	n
+das	Pfingsten	n
 	pflanzen	v
 das	Pflaster	n
 die	Pflaume	n
 	pflegen	v
 der	Pfleger	n
+die	Pflegerin	n
 die	Pflicht	n
+die	Phantasie	n
+die	Philosophie	n
 das	Picknick	n
 die	Pille	n
 der	Pilz	n
 der	Pinguin	n
+der	Pkw	n
 die	Planung	n
 das	Plastik	n
 die	Plattform	n
-	plus	adv
 die	Politik	n
 der	Politiker	n
+die	Politikerin	n
 	politisch	adj
-der	Polizist	n
-die	Polizistin	n
 	populär	adj
 das	Portemonnaie	n
 	positiv	adj
@@ -1149,7 +1218,6 @@ der	Prozess	n
 die	Präsentation	n
 	präsentieren	v
 das	Publikum	n
-der	Punkt	n
 die	Puppe	n
 das	Puzzle	n
 der	Pöstler	n
@@ -1165,6 +1233,7 @@ der	Rand	n
 der	Rasen	n
 	rasieren	v
 der	Rat	n
+der	Raucher	n
 die	Raucherin	n
 	rauf	adv
 	raus	adv
@@ -1173,9 +1242,11 @@ die	Reaktion	n
 	realisieren	v
 	realistisch	adj
 die	Realität	n
+die	Realschule	n
 die	Recherche	n
 der	Rechner	n
 das	Recht	n
+	rechten	v
 	rechtlich	adj
 	rechtzeitig	adj
 die	Rede	n
@@ -1198,13 +1269,12 @@ die	Reihenfolge	n
 die	Reklame	n
 der	Rekord	n
 	relativ	adj
-die	Religion	n
 	rennen	v
 die	Rente	n
-der	Rentner	n
 die	Reportage	n
 der	Reporter	n
 die	Reporterin	n
+die	Republik	n
 die	Reservierung	n
 der	Respekt	n
 	retten	v
@@ -1232,7 +1302,7 @@ die	Salbe	n
 der	Salon	n
 	salzig	adj
 der	Sand	n
-das	Sandwich	n
+der	Sandwich	n
 	satt	adj
 die	Schachtel	n
 der	Schaden	n
@@ -1242,8 +1312,6 @@ das	Schaf	n
 der	Schatten	n
 	schauen	v
 das	Schaufenster	n
-der	Schauspieler	n
-die	Schauspielerin	n
 die	Scheibe	n
 	scheiden	v
 die	Scheidung	n
@@ -1274,23 +1342,23 @@ der	Schritt	n
 die	Schularbeit	n
 die	Schuld	n
 	schuld	adj
-die	Schulden	n
+pl	Schulden	n
 	schuldig	adj
 die	Schulter	n
 der	Schutz	n
 das	Schwammerl	n
 die	Schwangerschaft	n
 	schweigen	v
-	Schweiz	name
-der	Schweizer	n
-die	Schweizerin	n
+	schweren	v
 die	Schwierigkeit	n
 	schwitzen	v
 	schätzen	v
+	schönen	v
 die	Schüssel	n
 	schütteln	v
 	schützen	v
-	sehr	adv
+die	Sechs	n
+der	Sechser	n
 	seitdem	conj
 der	Sekretär	n
 die	Sekretärin	n
@@ -1303,15 +1371,19 @@ das	Seminar	n
 die	Semmel	n
 	senden	v
 der	Sender	n
+pl	Senioren	n
 	senkrecht	adj
 die	Serie	n
 der	Sessel	n
+das	Shirt	n
 die	Show	n
 die	Sicherheit	n
 	sichern	v
 	sichtbar	adj
 der	Sieg	n
 	siegen	v
+der	Sieger	n
+die	Siegerin	n
 	siezen	v
 	sinken	v
 der	Sinn	n
@@ -1327,9 +1399,12 @@ die	Software	n
 	sogenannt	adj
 	solange	adv
 	solch	pron
+	solls	other
 das	Sonderangebot	n
 	sondern	conj
+die	Sonderschule	n
 der	Song	n
+	sonnabends	adv
 die	Sorge	n
 	sorgen	v
 das	Souvenir	n
@@ -1346,12 +1421,14 @@ der	Speisewagen	n
 der	Spezialist	n
 	speziell	adj
 der	Spiegel	n
+der	Spieler	n
 die	Spielerin	n
 der	Spielplatz	n
 das	Spielzeug	n
 	spitz	adj
 die	Sportart	n
 der	Sportler	n
+die	Sportlerin	n
 der	Spot	n
 die	Sprechstunde	n
 	springen	v
@@ -1361,8 +1438,10 @@ die	Spur	n
 	spülen	v
 	spüren	v
 der	Staat	n
+	staatlich	adj
 das	Stadion	n
 der	Stadtpräsident	n
+die	Stadtpräsidentin	n
 	stammen	v
 der	Standpunkt	n
 der	Start	n
@@ -1386,6 +1465,7 @@ der	Stein	n
 der	Stempel	n
 der	Stern	n
 die	Steuer	n
+die	Steuern	n
 die	Stewardess	n
 die	Stiege	n
 das	Stiegenhaus	n
@@ -1412,6 +1492,7 @@ der	Strom	n
 die	Struktur	n
 der	Strumpf	n
 die	Studie	n
+der	Studierende	n
 das	Studio	n
 die	Stufe	n
 	stumm	adj
@@ -1428,17 +1509,14 @@ der	Swimmingpool	n
 das	Symbol	n
 das	System	n
 die	Szene	n
-der	Sänger	n
-die	Sängerin	n
 	süchtig	adj
-der	Süden	n
+	südlich	adj
 die	Tabelle	n
 der	Tagesablauf	n
 das	Tal	n
 das	Talent	n
 	tanken	v
 die	Tankstelle	n
-die	Tante	n
 der	Tanz	n
 das	Taschentuch	n
 die	Tastatur	n
@@ -1452,7 +1530,9 @@ die	Tatsache	n
 die	Technik	n
 	technisch	adj
 die	Technologie	n
+das	Teilen	n
 die	Teilnahme	n
+der	Teilnehmer	n
 die	Teilnehmerin	n
 die	Teilzeit	n
 die	Temperatur	n
@@ -1462,6 +1542,7 @@ der	Terminal	n
 der	Terminkalender	n
 die	Terrasse	n
 	testen	v
+die	Textnachricht	n
 	theoretisch	adj
 die	Theorie	n
 die	Therapie	n
@@ -1470,6 +1551,7 @@ der	Tierpark	n
 der	Tod	n
 	tolerant	adj
 das	Tor	n
+der	Tote	n
 der	Tourismus	n
 die	Tradition	n
 	traditionell	adj
@@ -1488,7 +1570,7 @@ das	Treppenhaus	n
 	treu	adj
 das	Trinkgeld	n
 	trocknen	v
-die	Tropfen	n
+pl	Tropfen	n
 das	Trottoir	n
 	trotz	prep
 	trotzdem	adv
@@ -1498,15 +1580,14 @@ der	Turm	n
 	twittern	v
 der	Typ	n
 der	Täter	n
+die	Täterin	n
 die	Tätigkeit	n
 	tödlich	adj
-der	Türke	n
-die	Türkin	n
 	Türkisch	name
-	türkisch	adj
 die	Tüte	n
 die	U-Bahn	n
 das	Ufer	n
+	Ukraine	name
 der	Ukrainer	n
 die	Ukrainerin	n
 	Ukrainisch	name
@@ -1525,17 +1606,22 @@ die	Umwelt	n
 der	Umweltschutz	n
 	unentschieden	adj
 	ungefähr	adj
+	ungenügend	adj
 	ungewöhnlich	adj
 	unglaublich	adj
 das	Unglück	n
 	unheimlich	adj
+die	Uni	n
 die	Uniform	n
+die	Union	n
 	unterbrechen	v
 das	Untergeschoss	n
 das	Untergeschoß	n
 die	Unterhaltung	n
+pl	Unterlagen	n
 	unterlassen	v
 der	Unternehmer	n
+die	Unternehmerin	n
 	unterrichten	v
 	unterscheiden	v
 	unterschiedlich	adj
@@ -1565,12 +1651,14 @@ das	Verbot	n
 	verbrauchen	v
 	verbraucht	adj
 der	Verbrecher	n
+die	Verbrecherin	n
 	verbrennen	v
 	verbringen	v
 der	Verdacht	n
 	verdächtig	adj
 die	Vergangenheit	n
 	vergeblich	adj
+das	Vergessen	n
 der	Vergleich	n
 das	Vergnügen	n
 	vergnügt	adj
@@ -1581,12 +1669,12 @@ das	Verhalten	n
 das	Verhältnis	n
 das	Verkehrsmittel	n
 das	Verkehrszeichen	n
-die	Verkäuferin	n
 der	Verlag	n
 	verlangen	v
 	verlassen	v
 	verlaufen	v
 die	Verletzung	n
+der	Verlierer	n
 der	Verlust	n
 	verlängern	v
 	vermeiden	v
@@ -1615,9 +1703,11 @@ das	Verständnis	n
 der	Versuch	n
 	versäumen	v
 	verteilen	v
+das	Vertrauen	n
 	vertrauen	v
 	vertreten	v
 der	Vertreter	n
+die	Vertreterin	n
 die	Vertretung	n
 	verursachen	v
 	verurteilen	v
@@ -1631,7 +1721,8 @@ die	Verwaltung	n
 	verändert	adj
 	veröffentlichen	v
 das	Video	n
-das	Viertel	n
+die	Vier	n
+der	Vierer	n
 	viertel	num
 	violett	adj
 	virtuell	adj
@@ -1657,7 +1748,6 @@ die	Vorfahrt	n
 der	Vorort	n
 	vorschlagen	v
 die	Vorschrift	n
-	vorsichtig	adj
 die	Vorstellung	n
 das	Vorstellungsgespräch	n
 der	Vorteil	n
@@ -1666,6 +1756,7 @@ der	Vorwurf	n
 	völlig	adj
 	waagerecht	adj
 	wachsen	v
+	wagen	v
 die	Wahl	n
 	wahnsinnig	adj
 die	Wahrheit	n
@@ -1674,26 +1765,27 @@ die	Wanderung	n
 die	Ware	n
 	warnen	v
 das	Waschmittel	n
-das	WC	n
+das	Wasserklosett	n
 der	Wecker	n
 	weder	conj
-	weise	adj
 die	Weiterbildung	n
 	weltweit	adj
 	wenden	v
 die	Werbung	n
 	werfen	v
 das	Werk	n
+	werktags	adv
 das	Werkzeug	n
 der	Wert	n
 	wert	adj
 	wertlos	adj
 	wertvoll	adj
 	weshalb	adv
-der	Westen	n
+	westlich	adj
 	wetten	v
 der	Wetterbericht	n
 die	Wettervorhersage	n
+die	WG	n
 	widersprechen	v
 die	Wiederholung	n
 	wiegen	v
@@ -1711,7 +1803,9 @@ das	Wissen	n
 die	Wissenschaft	n
 der	Wissenschaftler	n
 die	Wissenschaftlerin	n
+	wochentags	adv
 	wohl	adv
+die	Wohngemeinschaft	n
 der	Wohnort	n
 der	Wohnsitz	n
 die	Wolle	n
@@ -1720,9 +1814,10 @@ die	Wolle	n
 die	Wunde	n
 das	Wunder	n
 	wunderschön	adj
+das	Wählen	n
 	während	conj
 die	Wärme	n
-das	Wörterbuch	n
+	wöchentlich	adj
 	wütend	adj
 	zahlreich	adj
 die	Zahlung	n
@@ -1742,15 +1837,18 @@ der	Zeuge	n
 die	Zeugin	n
 	ziehen	v
 	ziemlich	adv
+	zirka	adv
 die	Zone	n
 	zubereiten	v
 der	Zufall	n
 	zufällig	adj
 der	Zugang	n
 	zugehen	v
+	zugeordnet	adj
 	zugänglich	adj
 das	Zuhause	n
 der	Zuhörer	n
+die	Zuhörerin	n
 die	Zukunft	n
 	zukünftig	adj
 	zumindest	adv
@@ -1764,20 +1862,24 @@ die	Zusammenarbeit	n
 der	Zusammenhang	n
 	zuschauen	v
 der	Zuschauer	n
+die	Zuschauerin	n
 der	Zuschlag	n
 der	Zustand	n
 	zustimmen	v
 die	Zustimmung	n
 	zuständig	adj
 	zusätzlich	adj
+pl	Zutaten	n
 	zuverlässig	adj
 das	Zvieri	n
 	zwar	adv
 der	Zweck	n
+die	Zwei	n
+der	Zweier	n
 	zweifach	adj
 der	Zweifel	n
 	zweifeln	v
-	zweitens	adv
+	zweitausend	num
 die	Zweitsprache	n
 die	Zwiebel	n
 	zwingen	v
@@ -1789,12 +1891,9 @@ die	Änderung	n
 	ängstlich	adj
 der	Ärger	n
 	ärgerlich	adj
-die	Ärztin	n
 	äußerlich	adj
 	öffentlich	adj
 die	Öffentlichkeit	n
-der	Österreicher	n
-die	Österreicherin	n
 	überfahren	v
 	überhaupt	adv
 	überholen	v
@@ -1808,6 +1907,7 @@ die	Überraschung	n
 	überreden	v
 die	Überschrift	n
 der	Übersetzer	n
+die	Übersetzerin	n
 die	Übersetzung	n
 die	Überstunde	n
 	übertragen	v

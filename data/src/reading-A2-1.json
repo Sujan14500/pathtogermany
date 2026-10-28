@@ -2519,8 +2519,8 @@
       "2nd floor: Dr Ali Demir, eye doctor · Dr Jan Rohde, ear, nose and throat doctor"
      ],
      [
-      "1. Stock: Dr. Stefan Lindemann, Allgemeinmedizin (Hausarzt) · Labor",
-      "1st floor: Dr Stefan Lindemann, general medicine (family doctor) · laboratory"
+      "1. Stock: Dr. Stefan Lindemann, Hausarzt",
+      "1st floor: Dr Stefan Lindemann, family doctor"
      ],
      [
       "Erdgeschoss: Apotheke am Lindenplatz · Information",
@@ -2555,14 +2555,6 @@
    {
     "w": "Kinderärztin",
     "en": "children's doctor (paediatrician)"
-   },
-   {
-    "w": "Allgemeinmedizin",
-    "en": "general medicine"
-   },
-   {
-    "w": "Labor",
-    "en": "laboratory"
    },
    {
     "w": "Sprechzeiten",
