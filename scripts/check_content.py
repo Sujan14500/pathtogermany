@@ -306,8 +306,8 @@ def check_reading(texts, level):
                 out.append(f'{where}: glossary entries need w and en')
             elif g['w'].lower() not in text:
                 out.append(f'{where}: glossary word {g["w"]!r} is not in the text')
-        pr = t.get('predict', {})
-        if blank(pr.get('q')) or len(pr.get('opts', [])) != 3 or pr.get('a') not in (0, 1, 2):
+        pr = t.get('predict', {})   # exam-pool texts never open in the station reader, so they need no predict
+        if t.get('pool') != 'exam' and (blank(pr.get('q')) or len(pr.get('opts', [])) != 3 or pr.get('a') not in (0, 1, 2)):
             out.append(f'{where}: predict needs q, 3 opts and a')
     if lopsided(abc, 3):
         out.append(f'abc answer positions are lopsided ({[abc.count(k) for k in range(3)]})')
@@ -548,12 +548,21 @@ CHECKS = {'reading-': check_reading, 'listen-': check_listening, 'writing-': che
           'scenes-': check_scenes, 'vq-': check_vq, 'sounds': check_sounds}
 
 
+def check_pool(items, exam_file):
+    """Optional "pool": "exam" on a text or recording keeps it off the station tabs, for practice tests and mocks only
+    (unseen texts). reading-<level>-exam.json and listen-<level>-exam.json hold only such items; other files none."""
+    want = 'exam' if exam_file else None
+    return [f'item {i} ({x.get("id", "?")}): ' + ('pool must be "exam" in an -exam file' if exam_file else 'pool "exam" items go in a <kind>-<level>-exam.json file')
+            for i, x in enumerate(items or []) if isinstance(x, dict) and x.get('pool') != want]
+
+
 def check_file(path, copied):
     for prefix, check in CHECKS.items():
         if path.name.startswith(prefix):
             data, problems = read_json(path)
             parts = path.stem.split('-')
-            return problems + check(data, parts[1] if len(parts) > 1 else None)
+            pool = check_pool(data, path.stem.endswith('-exam')) if prefix in ('reading-', 'listen-') else []
+            return problems + pool + check(data, parts[1] if len(parts) > 1 else None)
     if path.name.startswith('words-'):
         rows, problems = read_tsv(path)
         return problems + check_words(rows, copied)
@@ -606,6 +615,10 @@ def test():
             'questions': [{'q': 'Priya kommt aus Indien.', 'format': 'rf', 'opts': ['richtig', 'falsch'], 'a': 0, 'ev': ['b1.0'], 'why': 'x'}] * 5}
     assert check_reading([text], 'A1') == [], check_reading([text], 'A1')
     assert check_reading([dict(text, part='Teil 9')], 'A1'), 'unknown part'
+    exam_text = {k: v for k, v in text.items() if k != 'predict'}
+    assert check_reading([dict(exam_text, pool='exam')], 'A1') == [] and check_reading([exam_text], 'A1'), 'predict only for station texts'
+    assert check_pool([dict(text, pool='exam')], True) == [] and check_pool([text], False) == [], 'pool matches the file'
+    assert check_pool([text], True) and check_pool([dict(text, pool='exam')], False) and check_pool([dict(text, pool='x')], True), 'pool mismatch'
     bad_q = dict(text['questions'][0], ev=['b9.9'])
     assert check_reading([dict(text, questions=[bad_q] * 5)], 'A1'), 'evidence that does not exist'
     item = {'id': 'h1', 'station': 1, 'part': 'Teil 1', 'setup': 'At a café.', 'lines': [{'who': 'A', 'de': 'Ein Kaffee, bitte.', 'en': 'A coffee, please.'}],

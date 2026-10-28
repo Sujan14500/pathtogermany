@@ -19,10 +19,10 @@ const STEP = {
 // Today at this stop: the day's cards first, then each part of the station in order.
 function todayPlan(st, q) {
   const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
-  return [...cards, ...PARTS.map(part => {
+  return [...cards, ...revisitStops(), ...PARTS.map(part => {   // revisit stops (L15) and spaced mocks (L17): 85-tests.js
     const p = partDone(st.n, part)
     return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
-  })]
+  }), ...mockStops(st)]
 }
 
 const Mark = () => html`<svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
@@ -219,54 +219,118 @@ function Week() {
 }
 const openSettings = () => { const d = document.querySelector('.settings'); if (d) { d.open = true; d.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth' }); d.querySelector('input')?.focus() } }
 
+// Settings: four groups (daily study, voice, look, progress) behind one summary line on the home page.
+const SetChoice = ({ name, value, opts, onPick }) => html`<div class="set-seg" role="radiogroup" aria-label=${name}>${opts.map(([v, label, sw]) => html`
+  <label class=${value === v ? 'on' : ''}><input type="radio" name=${name} checked=${value === v} onChange=${() => onPick(v)} />${sw ? html`<i class=${`set-sw ${sw}`} aria-hidden="true"></i>` : ''}${label}</label>`)}</div>`
+const SetIcon = ({ d }) => html`<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d=${d} fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`
+const SET_ICONS = {
+  day: 'M4 6h16v14H4zM4 10h16M8 3v5M16 3v5M8 14h3',
+  voice: 'M4 9v6h4l5 4V5L8 9H4zM16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12',
+  look: 'M12 3a9 9 0 1 0 0 18zM12 3a9 9 0 0 1 0 18',
+  save: 'M12 4v11M7 10l5 5 5-5M4 19h16',
+  sliders: 'M4 7h9M17 7h3M4 17h3M11 17h9M15 4v6M9 14v6',
+}
+const SET_RATES = [[0.7, 'Slow'], [0.85, 'Slower'], [0.95, 'Normal'], [1.1, 'Fast']]
+const SET_THEMES = [[undefined, 'Windows', 'sys'], ['light', 'Light', 'light'], ['dark', 'Dark', 'dark']]
 function Settings() {
   const s = useStore()
   const [, bump] = useState(0)
+  const [wipe, setWipe] = useState(false)
   useEffect(() => {   // the voice list arrives asynchronously
     if (!('speechSynthesis' in window)) return
     const f = () => bump(n => n + 1)
     speechSynthesis.addEventListener('voiceschanged', f)
     return () => speechSynthesis.removeEventListener('voiceschanged', f)
   }, [])
+  useEffect(() => applyLook(), [s.settings.theme, s.settings.motion])   // also after an import or a reset
   const voices = deVoices()
   const set = (k, v) => commit(x => { x.settings = { ...x.settings, [k]: v } })
+  const perDay = n => commit(x => { x.newPerDay = Math.max(0, Math.min(100, Math.round(n) || 0)) })
+  const learned = D.words.filter(w => known(w.id)).length
+  const reset = () => { commit(x => { for (const k of Object.keys(x)) delete x[k]; Object.assign(x, fresh()); x.unexported = false }); setWipe(false) }
+  const rate = s.settings.rate ?? 0.95
   return html`<details class="settings">
-    <summary>Settings and backup</summary>
-    <label>New cards per day
-      <input type="number" min="0" max="200" value=${s.newPerDay}
-        onChange=${e => commit(x => { x.newPerDay = Math.max(0, Math.min(200, +e.target.value || 0)) })} />
-    </label>
-    <label class="plan-set">My study plan
-      <input type="text" value=${s.settings.plan ?? ''} placeholder="After breakfast, at my desk, I open today's cards."
-        onChange=${e => set('plan', e.target.value.trim() || undefined)} />
-    </label>
-    <label class="check"><input type="checkbox" checked=${s.autoplay} onChange=${e => commit(x => { x.autoplay = e.target.checked })} />
-      Say each word aloud when its card turns over</label>
-    <label>German voice
-      <select value=${s.settings.voice ?? ''} onChange=${e => set('voice', e.target.value || undefined)}>
-        <option value="">Automatic (best available)</option>
-        ${voices.map(v => html`<option value=${v.name}>${v.name}</option>`)}
-      </select>
-    </label>
-    <label>Speed
-      <select value=${String(s.settings.rate ?? 0.95)} onChange=${e => set('rate', +e.target.value)}>
-        <option value="0.7">Slow</option><option value="0.85">A little slower</option><option value="0.95">Normal</option><option value="1.1">Fast</option>
-      </select>
-      <button type="button" onClick=${() => speak('Hallo Sneka! Willkommen in Deutschland.')}><${Speaker} /> Test the voice</button>
-    </label>
-    ${voices.length ? '' : html`<div class="voice-help">
-      <p><b>This browser has no German voice yet.</b> Add one in Windows: Settings → Time &amp; language → Speech → Add voices →
-        German (Deutsch). Then quit the browser completely (Brave keeps running in the background: right-click its tray icon → Exit)
-        and open it again. Microsoft Edge has German voices built in.</p>
-      <p>Or install it from an administrator PowerShell (Start → type PowerShell → Run as administrator):</p>
-      <p class="cmd"><code>${VOICE_CMD}</code> <button type="button" onClick=${() => navigator.clipboard?.writeText(VOICE_CMD)}>Copy</button></p>
-    </div>`}
-    <p>Progress is kept in this browser only. The double-clicked file and a served copy (http://) keep separate progress,
-      so export a backup now and then and import it wherever you study.</p>
-    <div class="settings-row">
-      <button type="button" onClick=${exportProgress}>Export progress</button>
-      <label class="button">Import progress<input type="file" accept="application/json,.json" hidden
-        onChange=${e => { const f = e.target.files[0]; e.target.value = ''; if (f) importProgress(f) }} /></label>
+    <summary>
+      <span class="set-badge"><${SetIcon} d=${SET_ICONS.sliders} /></span>
+      <span class="set-title"><b>Settings and backup</b>
+        <small>${[`${s.newPerDay} new cards a day`, `${SET_RATES.find(r => r[0] === rate)?.[1].toLowerCase() ?? 'normal'} speech`,
+          `${SET_THEMES.find(t => t[0] === s.settings.theme)?.[1] ?? 'Windows'} theme`, s.unexported === false ? 'backed up' : 'not backed up yet'].join(' · ')}</small></span>
+      <svg class="set-chev" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </summary>
+    <div class="set-grid">
+      <section class="set-card" aria-labelledby="set-day">
+        <h3 id="set-day"><${SetIcon} d=${SET_ICONS.day} /> Daily study</h3>
+        <label class="set-field"><span>My study plan</span>
+          <input type="text" value=${s.settings.plan ?? ''} placeholder="After breakfast, at my desk, I open today's cards."
+            onChange=${e => set('plan', e.target.value.trim() || undefined)} />
+          <small>One sentence: when and where. Today shows it under the welcome.</small></label>
+        <div class="set-field"><span id="set-new">New cards per day</span>
+          <div class="set-step" role="group" aria-labelledby="set-new">
+            <button type="button" aria-label="Fewer" onClick=${() => perDay(s.newPerDay - 5)}>−</button>
+            <input type="number" min="0" max="100" value=${s.newPerDay} aria-labelledby="set-new" onChange=${e => perDay(+e.target.value)} />
+            <button type="button" aria-label="More" onClick=${() => perDay(s.newPerDay + 5)}>+</button>
+          </div>
+          <small>Each new card comes back as reviews over the next weeks, so more new cards means more reviews later. 10 to 20 is a steady pace.</small></div>
+      </section>
+
+      <section class="set-card" aria-labelledby="set-voice">
+        <h3 id="set-voice"><${SetIcon} d=${SET_ICONS.voice} /> Voice</h3>
+        <label class="set-field"><span>German voice</span>
+          <select value=${s.settings.voice ?? ''} onChange=${e => set('voice', e.target.value || undefined)} disabled=${!voices.length}>
+            <option value="">${voices.length ? 'Automatic (best available)' : 'No German voice found'}</option>
+            ${voices.map(v => html`<option value=${v.name}>${v.name}</option>`)}
+          </select></label>
+        <div class="set-field"><span>Speed</span>
+          <${SetChoice} name="Speed" value=${rate} opts=${SET_RATES} onPick=${v => set('rate', v)} /></div>
+        <div class="set-row">
+          <button type="button" onClick=${() => speak('Hallo Sneka! Willkommen in Deutschland.')}><${Speaker} /> Test the voice</button>
+          <label class="set-switch"><input type="checkbox" checked=${s.autoplay} onChange=${e => commit(x => { x.autoplay = e.target.checked })} />
+            Read each word aloud when its card turns over</label>
+        </div>
+        ${voices.length ? '' : html`<div class="set-help">
+          <p><b>This browser has no German voice yet.</b> In Windows: Settings → Time &amp; language → Speech → Add voices → German (Deutsch).
+            Then quit the browser completely (Brave keeps running in the background: right-click its tray icon → Exit) and reopen it.
+            Microsoft Edge has German voices built in.</p>
+          <p>Or, from an administrator PowerShell (Start → type PowerShell → Run as administrator):</p>
+          <p class="set-cmd"><code>${VOICE_CMD}</code> <button type="button" onClick=${() => navigator.clipboard?.writeText(VOICE_CMD)}>Copy</button></p>
+        </div>`}
+      </section>
+
+      <section class="set-card" aria-labelledby="set-look">
+        <h3 id="set-look"><${SetIcon} d=${SET_ICONS.look} /> Look</h3>
+        <div class="set-field"><span>Theme</span>
+          <${SetChoice} name="Theme" value=${s.settings.theme} opts=${SET_THEMES} onPick=${v => set('theme', v)} /></div>
+        <div class="set-field"><span>Motion</span>
+          <${SetChoice} name="Motion" value=${s.settings.motion} opts=${[[undefined, 'As Windows says'], ['reduce', 'Reduce motion']]} onPick=${v => set('motion', v)} />
+          <small>Reduced motion keeps every picture and the drifting words still.</small></div>
+        <label class="set-switch"><input type="checkbox" checked=${s.settings.backdrop !== false} onChange=${e => set('backdrop', e.target.checked ? undefined : false)} />
+          Drifting words behind Today and Practice</label>
+      </section>
+
+      <section class="set-card" aria-labelledby="set-save">
+        <h3 id="set-save"><${SetIcon} d=${SET_ICONS.save} /> Your progress</h3>
+        <dl class="set-stats">
+          <div><dt>Words learned</dt><dd>${learned}</dd></div>
+          <div><dt>Cards started</dt><dd>${Object.keys(s.cards).length}</dd></div>
+          <div><dt>Answers given</dt><dd>${s.log.length}</dd></div>
+        </dl>
+        <p class="set-note">Progress lives in this browser only. The double-clicked file and a served copy (http://) keep separate progress.
+          Now and then, export a backup and import it wherever you study.</p>
+        <div class="set-row">
+          <button type="button" class="btn" onClick=${exportProgress}>Export progress</button>
+          <label class="button">Import progress<input type="file" accept="application/json,.json" hidden
+            onChange=${e => { const f = e.target.files[0]; e.target.value = ''; if (f) importProgress(f) }} /></label>
+          ${wipe ? '' : html`<button type="button" class="set-danger-link" onClick=${() => setWipe(true)}>Reset all progress…</button>`}
+        </div>
+        ${wipe ? html`<div class="set-wipe" role="alert">
+          <p><b>Delete all progress in this browser?</b> ${plural(Object.keys(s.cards).length, 'card')}, every test result, draft and setting. This can't be undone.</p>
+          <div class="set-row">
+            <button type="button" onClick=${exportProgress}>Export a backup first</button>
+            <button type="button" class="set-danger" onClick=${reset}>Delete everything</button>
+            <button type="button" onClick=${() => setWipe(false)}>Keep it</button>
+          </div>
+        </div>` : ''}
+      </section>
     </div>
   </details>`
 }

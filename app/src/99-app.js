@@ -36,11 +36,12 @@ function prepare(levels, words, grammar, drills, reading, listening, writing, sp
   levels.forEach(lv => stations.push(...lv.stations))
   words.sort((a, b) => a.n - b.n)        // stable: a station's words keep their written order
   const by = xs => { const out = stations.map(() => []); xs.forEach(x => out[x.n]?.push(x)); return out }
+  const study = xs => xs.filter(x => x.pool !== 'exam')   // "pool": "exam" items are kept for tests and mocks (85-tests.js)
   const verbSet = new Set(words.filter(w => w.p === 'v').map(w => w.w))
   const gq = {}
   drills.gq.forEach(q => (gq[q.g] ??= []).push(q))
   D = { levels, level: Object.fromEntries(levels.map(lv => [lv.level, lv])), stations, words, wordsBy: by(words), verbSet,
-    grammar, grammarBy: by(grammar), gq, vq: drills.vq ?? [], reading, readingBy: by(reading), listening, listeningBy: by(listening),
+    grammar, grammarBy: by(grammar), gq, vq: drills.vq ?? [], reading, readingBy: by(study(reading)), listening, listeningBy: by(study(listening)),
     writing, writingBy: by(writing), speaking, speakingBy: by(speaking), scenes, sounds }
   return D
 }
@@ -74,7 +75,7 @@ function App() {
     : page === 'pictures' ? html`<${Soon} title="Picture scenes" text="Drawn scenes where every object is a word with its article." />`
     : page === 'sounds' ? html`<${Soon} title="Pronunciation" text="A sound guide for ü, ö, ä, ch and r, and minimal-pair listening." />`
     : html`<${Home} data=${data} />`
-  return html`<${TopBar} data=${data} page=${page} />${view}<${LeaveExport} />`
+  return html`<${Backdrop} data=${data} page=${page} /><${TopBar} data=${data} page=${page} />${view}<${LeaveExport} />`
 }
 
 render(html`<${App} />`, document.getElementById('app'))
