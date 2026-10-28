@@ -1,0 +1,172 @@
+/* ---- picture scenes: the glow shows what you can point at, what is picked and what is right ---- */
+
+/* the picture beside its panel (modes and switches, then the word or the question); the picture is never taller than
+   the window below the top bar */
+.scene { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; }
+.scene-stage { flex: 999 1 36rem; min-width: 0; max-width: calc((100vh - var(--top) - 150px) * 1000 / 620); }
+.scene-panel {
+  flex: 1 1 20rem; display: grid; gap: 14px; align-content: start;
+  padding: 16px 18px 20px; background: var(--panel); border-radius: 6px; border-left: 6px solid var(--line);
+}
+.scene-tools { display: grid; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+.scene-tools .modes, .scene-wx { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0; margin: 0; }
+.scene-tools .modes button, .scene-wx button { justify-content: center; gap: 6px; border-radius: 0; padding: .4rem .5rem; font-size: .95rem; }
+.scene-tools .modes button:first-child, .scene-wx button:first-child { border-radius: 6px 0 0 6px; }
+.scene-tools .modes button:last-child, .scene-wx button:last-child { border-radius: 0 6px 6px 0; }
+.scene-tools .modes button + button, .scene-wx button + button { margin-left: -2px; }
+.scene-tools .modes button.on, .scene-wx button.on { position: relative; background: var(--ink); border-color: var(--ink); color: var(--platform); }
+.scene-tog { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.scene-tog .toggle { border: 0; background: none; padding: .15rem 0; font-size: .92rem; }
+.scene-body { display: grid; gap: 10px; }
+.scene-panel p { margin: 0; }
+.scene-hint b { font: 700 1.5rem var(--display); }
+.scene-hint p { margin-top: 4px; color: var(--muted); }
+.scene-bank { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.scene-bank button { padding: .2rem .55rem; border-width: 2px; font-weight: 600; font-size: .98rem; }
+.scene-bank button.on { border-color: var(--line); background: var(--guide); }
+.scene-bank .word { font-weight: 600; }
+.scene-word { display: grid; gap: 6px; animation: rise .25s var(--arrive) both; }
+.scene-big { display: flex; align-items: center; gap: 8px; font: 700 2.1rem/1.15 var(--display); overflow-wrap: anywhere; }
+.scene-en { font-size: 1.2rem; font-weight: 600; }
+.scene-pl { color: var(--muted); }
+.scene-pl b { color: var(--ink); font-weight: 600; }
+.scene-word .scene-chip { justify-self: start; margin-top: 4px; background: var(--guide); }
+.scene-q { display: grid; gap: 10px; justify-items: start; }
+.scene-k { width: 100%; color: var(--muted); font-size: .92rem; font-weight: 600; }
+.scene-prompt { font: 700 2rem/1.15 var(--display); }
+.scene-again { padding: .35rem .8rem; font-size: .95rem; }
+.scene-yes b { color: var(--das); }
+.scene-no { line-height: 1.6; }
+.scene-type { display: flex; gap: 8px; width: 100%; }
+.scene-type input { flex: 1; min-width: 0; padding: .55rem .8rem; border: 2px solid var(--rule); border-radius: 6px; background: var(--platform); font-size: 1.15rem; }
+.scene-type input:focus { border-color: var(--line); outline: none; }
+.scene-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; }
+.scene-opts button { justify-content: center; font: 700 1.15rem var(--display); }
+.scene-swap { border: 0; background: none; padding: 0; color: var(--muted); font-size: .92rem; text-decoration: underline; text-underline-offset: .2em; }
+.scene-swap:hover { color: var(--ink); }
+.scene-q .typed { justify-items: start; margin: 0; }
+
+/* ---- the drawing ---- */
+.scene-art { display: block; width: 100%; height: auto; border-radius: 6px; user-select: none; -webkit-tap-highlight-color: transparent; background: var(--panel); }
+.scene-stage .scene-art { box-shadow: 0 0 0 2px var(--rule); }
+.scene-art .live { cursor: pointer; outline: none; }
+.scene-art .sc-look { transition: filter .2s; }
+.scene-art .live:hover .sc-look, .scene-art .live:focus-visible .sc-look { filter: drop-shadow(0 0 3px #FFC93C) drop-shadow(0 0 3px #FFC93C); }
+.scene-art .sel .sc-look, .scene-art .show .sc-look { filter: drop-shadow(0 0 4px #FFB300) drop-shadow(0 0 4px #FFB300); }
+.scene-art .ask .sc-look { filter: drop-shadow(0 0 5px #FFB300) drop-shadow(0 0 5px #FFB300); animation: sc-ask 1.2s ease-in-out infinite; }
+@keyframes sc-ask { 50% { filter: drop-shadow(0 0 1px #FFB300); } }
+.scene-art .good .sc-look { filter: drop-shadow(0 0 4px #2FBF5B) drop-shadow(0 0 4px #2FBF5B); }
+.scene-art .bad .sc-look { filter: drop-shadow(0 0 4px #E5483B) drop-shadow(0 0 4px #E5483B); animation: sc-shake .3s ease; }
+@keyframes sc-shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+.scene-art .sc-ring { fill: none; stroke: #FFB300; stroke-width: 4; stroke-dasharray: 10 7; pointer-events: none; }
+.scene-art .good .sc-ring { stroke: #2FBF5B; stroke-dasharray: none; }
+.scene-art .off { visibility: hidden; pointer-events: none; }
+.scene-art .sc-night { fill: #0B1020; opacity: 0; pointer-events: none; }
+
+/* name boards: white enamel signs with a navy rim; the article in its gender colour (light tones: the board is white) */
+.scene-art .sc-tags { opacity: 0; pointer-events: none; transition: opacity .2s; }
+.scene-art .sc-tags.on { opacity: 1; pointer-events: auto; cursor: pointer; }
+.scene-art .sc-tag rect { fill: #FFFFFF; stroke: #0E2452; stroke-width: 2; }
+.scene-art .sc-tags.hold rect { stroke: #F2A20C; stroke-width: 3; }
+.scene-art .sc-tag text { font: 700 18px var(--display); text-anchor: middle; fill: #121A26; }
+.scene-art .g-der .art { fill: #1D5BD6; }
+.scene-art .g-die .art { fill: #C62F28; }
+.scene-art .g-das .art { fill: #16804A; }
+.scene-art .g-pl .art { fill: #636978; }
+.scene-art .sc-lead { stroke: #0E2452; stroke-width: 1.5; fill: none; }
+.scene-art .sc-pin { fill: #0E2452; stroke: #FFFFFF; stroke-width: 1.5; }
+
+/* ---- motion: movers (drive, pass, fall) and the small motion classes the scene artists use ---- */
+.scene-art .sc-move.drive { animation: sc-drive var(--dur) linear var(--delay) infinite; }
+@keyframes sc-drive { from { transform: translateX(var(--from)); } to { transform: translateX(var(--to)); } }
+.scene-art .sc-move.pass { animation: sc-pass var(--dur) linear var(--delay) infinite; }
+@keyframes sc-pass { 0% { transform: translateX(var(--from)); } 45%, 100% { transform: translateX(var(--to)); } }
+.scene-art .sc-move.fall { animation: sc-fall var(--dur) ease-in-out var(--delay) infinite; }
+@keyframes sc-fall {
+  0% { transform: translate(0, var(--from)) rotate(-20deg); opacity: 0; } 12%, 85% { opacity: 1; }
+  50% { transform: translate(34px, calc((var(--from) + var(--to)) / 2)) rotate(25deg); }
+  100% { transform: translate(0, var(--to)) rotate(-10deg); opacity: 0; }
+}
+.scene-art .sc-tags .sc-move.fall { animation-name: sc-fall-tag; }   /* the board falls along, upright */
+@keyframes sc-fall-tag {
+  0% { transform: translate(0, var(--from)); opacity: 0; } 12%, 85% { opacity: 1; }
+  50% { transform: translate(34px, calc((var(--from) + var(--to)) / 2)); }
+  100% { transform: translate(0, var(--to)); opacity: 0; }
+}
+.scene-art .hold *, .scene-stage.paused .scene-art *:not(.sc-look) { animation-play-state: paused !important; }
+
+/* wave, blink and sway behave as in pathtojapan: wave turns about the koerper scene's shoulder (356, 214) */
+.scene-art .wave { transform-box: view-box; transform-origin: 356px 214px; animation: sc-wave 2.6s ease-in-out infinite; }
+@keyframes sc-wave { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-14deg); } 70% { transform: rotate(8deg); } }
+.scene-art .sway { transform-box: fill-box; transform-origin: center bottom; animation: sc-sway 4.5s ease-in-out infinite alternate; }
+@keyframes sc-sway { from { transform: rotate(-2deg); } to { transform: rotate(2deg); } }
+.scene-art .wag { transform-box: fill-box; transform-origin: left center; animation: sc-wag .4s ease-in-out infinite alternate; }
+@keyframes sc-wag { from { transform: rotate(-12deg); } to { transform: rotate(14deg); } }
+.scene-art .spin { transform-box: fill-box; transform-origin: center; animation: sc-spin 60s linear infinite; }   /* a clock's second hand */
+.scene-art .sc-move .spin { animation-duration: .9s; animation-direction: var(--turn); }                          /* the wheels of a mover */
+@keyframes sc-spin { to { transform: rotate(1turn); } }
+.scene-art .bounce { animation: sc-bounce .9s cubic-bezier(.45, 0, .55, 1) infinite alternate; }
+@keyframes sc-bounce { from { transform: translateY(-36px); } to { transform: translateY(0); } }
+.scene-art .blink { transform-box: fill-box; transform-origin: center; animation: sc-blink 4.5s infinite; }
+@keyframes sc-blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+.scene-art .flash { animation: sc-flash 1.6s steps(1) infinite; }   /* a light going on and off */
+@keyframes sc-flash { 50% { opacity: .15; } }
+.scene-art .steam > * { animation: sc-steam 2.8s ease-in-out infinite; }
+.scene-art .steam > :nth-child(2n) { animation-delay: -1.4s; }
+@keyframes sc-steam { 0% { opacity: 0; transform: translateY(8px); } 40% { opacity: .9; } 100% { opacity: 0; transform: translateY(-20px); } }
+.scene-art .swim { transform-box: fill-box; transform-origin: center; animation: sc-swim 9s linear infinite; }
+@keyframes sc-swim { 0% { transform: translateX(-60px) scaleX(1); } 49% { transform: translateX(60px) scaleX(1); } 50% { transform: translateX(60px) scaleX(-1); } 99% { transform: translateX(-60px) scaleX(-1); } 100% { transform: translateX(-60px) scaleX(1); } }
+.scene-art .drip > * { animation: sc-drip 1.1s linear infinite; }
+.scene-art .drip > :nth-child(3n+1) { animation-delay: -.37s; }
+.scene-art .drip > :nth-child(3n+2) { animation-delay: -.73s; }
+@keyframes sc-drip { 0% { transform: translateY(-8px); opacity: 0; } 25% { opacity: 1; } 100% { transform: translateY(12px); opacity: 0; } }
+.scene-art .flutter { transform-box: fill-box; transform-origin: center; animation: sc-flutter 1.2s ease-in-out infinite; }
+.scene-art .flutter > * { transform-box: fill-box; transform-origin: center; animation: sc-flutter 2.6s ease-in-out infinite; }
+.scene-art .flutter > :nth-child(2n) { animation-delay: -1.3s; }
+@keyframes sc-flutter { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(3px, 5px) rotate(-14deg); } }
+/* flow: dashes running along a path (rain, snow, a shower). A pattern of 40 (the default 16 24, or the scene's own
+   inline one, e.g. 0 40 for snowflakes) loops without a jump; snow drifts slower than rain */
+.scene-art .flow { stroke-dasharray: 16 24; animation: sc-flow .5s linear infinite; }
+.scene-art [data-only="snow"] .flow { animation-duration: 2.4s; }
+@keyframes sc-flow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -40px; } }
+.scene-art.frozen *, .scene-art.frozen { animation: none !important; transition: none !important; }
+
+/* ---- the gallery, a station's Words-tab link and a flashcard's picture ---- */
+.scene-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin: 6px 0 16px; }
+.scene-head h1 { margin: 0; font-size: clamp(2rem, 3.4vw, 2.8rem); }
+.scene-head-en { color: var(--muted); font-size: 1.15rem; }
+.scene-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; align-self: center; }
+.scene-chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 4px; border-radius: 6px; background: var(--panel); font-weight: 600; font-size: .92rem; text-decoration: none; }
+.scene-chip:hover { box-shadow: 0 0 0 2px var(--line); }
+.pictures-tab > .modes { margin-bottom: 14px; }
+
+.scene-level { margin-top: 28px; }
+.scene-level h2 { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font-size: 1.6rem; }
+.scene-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); gap: 18px; }
+.scene-card {
+  display: grid; gap: 4px; padding: 10px 10px 14px; background: var(--panel); border-radius: 6px; text-decoration: none;
+  box-shadow: 0 1px 0 var(--rule); transition: transform .2s var(--arrive), box-shadow .2s;
+}
+.scene-card:hover { transform: translateY(-3px); box-shadow: 0 0 0 2px var(--line), 0 16px 30px -22px rgb(15 23 36 / .6); }
+.scene-card .scene-art { margin-bottom: 6px; }
+.scene-card-t { padding: 0 4px; font-size: 1.05rem; color: var(--muted); }
+.scene-card-t b { font: 700 1.35rem var(--display); color: var(--ink); margin-right: 6px; }
+.scene-card small { padding: 0 4px; color: var(--muted); }
+
+.scene-link {
+  display: inline-flex; align-items: center; gap: 12px; padding: 5px 14px 5px 5px; border: 2px solid var(--rule); border-radius: 6px;
+  background: var(--panel); text-decoration: none; font-weight: 600; line-height: 1.25;
+}
+.scene-link:hover { border-color: var(--line); }
+.scene-link-art { width: 84px; flex: none; }
+.scene-link-art .scene-art { border-radius: 4px; }
+.scene-link small { display: block; color: var(--muted); font-weight: 400; }
+
+.scene-pic { width: min(calc(100% - 56px), 28rem); margin: 4px auto 22px; border-radius: 6px; box-shadow: 0 0 0 2px var(--rule); animation: rise .35s var(--arrive) both; }
+
+@media (prefers-color-scheme: dark) {
+  .scene-art .sc-night { opacity: .14; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-art, .scene-art * { animation: none !important; }   /* pictures hold still; movers wait at their rest place */
+}

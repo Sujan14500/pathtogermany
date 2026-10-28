@@ -44,6 +44,7 @@ function WordsTab({ data, n }) {
       <p><b>${ws.length} words</b> · ${learned} learned as cards. Tap a word for its example. New cards for this station come in${' '}
         <a href="#/study">today's cards</a> once it is your current stop.</p>
       <div class="words-tools">
+        <${SceneLink} n=${n} />
         <button type="button" class=${`toggle${cover ? ' on' : ''}`} aria-pressed=${!!cover} title="Try to recall each meaning first, then tap the word to check"
           onClick=${() => commit(x => { x.settings = { ...x.settings, cover: !cover } })}><span class="toggle-knob"></span>Cover the English</button>
         <button type="button" class="btn" onClick=${start}>Test yourself <${Arrow} /></button>

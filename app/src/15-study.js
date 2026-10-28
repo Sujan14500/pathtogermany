@@ -156,6 +156,7 @@ function Study({ data }) {
                     placeholder=${w.a && w.a !== 'pl' ? 'der/die/das + word' : 'Type the German'} aria-label="Your answer in German" />
                   <button type="submit" class="btn">Check <kbd>Enter</kbd></button>
                 </form>`}</div>`}
+      ${revealed && c.w ? html`<${ScenePic} key=${c.id} w=${c.w} />` : ''}
       ${revealed && c.w && (tricky || hook) ? html`<${HookBox} w=${c.w} />` : ''}
       <div class="band card-band">
         <span>${prev ? html`← <span lang="de">${prev.w ? said(prev.w) : prev.g.title}</span>` : ''}</span>
