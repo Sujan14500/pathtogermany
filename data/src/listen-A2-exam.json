@@ -1,0 +1,3927 @@
+[
+ {
+  "id": "a2-hx-1-01",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: the weather forecast for the weekend.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und nun das Wetter für das Wochenende.",
+    "en": "And now the weather for the weekend."
+   },
+   {
+    "who": "N",
+    "de": "Am Samstagvormittag ist es noch bewölkt, und im Norden regnet es ein bisschen.",
+    "en": "On Saturday morning it is still cloudy, and in the north it rains a little."
+   },
+   {
+    "who": "N",
+    "de": "Am Nachmittag kommt dann überall die Sonne, und es wird bis zu 22 Grad warm.",
+    "en": "In the afternoon the sun comes out everywhere, and it gets up to 22 degrees."
+   },
+   {
+    "who": "N",
+    "de": "Am Sonntag gibt es dann leider Gewitter, und es wird kühler: nur noch 15 Grad.",
+    "en": "On Sunday, unfortunately, there will be thunderstorms, and it gets cooler: only 15 degrees."
+   },
+   {
+    "who": "N",
+    "de": "Wer einen Ausflug machen möchte, fährt also am besten am Samstagnachmittag los.",
+    "en": "So if you want to go on a trip, it is best to set off on Saturday afternoon."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie wird das Wetter am Sonntag?",
+    "format": "abc",
+    "opts": [
+     "Es ist sonnig und warm.",
+     "Es gibt Gewitter.",
+     "Es ist bewölkt und regnet ein bisschen."
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "On Sunday there will be thunderstorms (\"Am Sonntag gibt es dann leider Gewitter\"). Sun and 22 degrees is Saturday afternoon; cloud and a little rain is Saturday morning."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-02",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "On the radio: the traffic report during the town festival.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt die Verkehrsmeldungen.",
+    "en": "And now the traffic news."
+   },
+   {
+    "who": "N",
+    "de": "Wegen des Stadtfests dürfen von Freitag bis Sonntag keine Autos in die Innenstadt fahren.",
+    "en": "Because of the town festival, no cars may drive into the town centre from Friday to Sunday."
+   },
+   {
+    "who": "N",
+    "de": "Die Busse der Linien 4 und 7 fahren in dieser Zeit nicht über den Marktplatz, sie halten am Bahnhof.",
+    "en": "During this time the buses on lines 4 and 7 don't go via the market square; they stop at the station."
+   },
+   {
+    "who": "N",
+    "de": "Wer mit dem Auto zum Fest kommt, parkt bitte am Stadion. Von dort fährt alle zehn Minuten ein kostenloser Bus in die Stadt.",
+    "en": "If you come to the festival by car, please park at the stadium. From there a free bus goes into town every ten minutes."
+   },
+   {
+    "who": "N",
+    "de": "Auf den Autobahnen rund um die Stadt ist es im Moment ruhig, es gibt keinen Stau.",
+    "en": "On the motorways around the town it is quiet at the moment; there are no traffic jams."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo sollen Besucher mit dem Auto parken?",
+    "format": "abc",
+    "opts": [
+     "am Marktplatz",
+     "am Stadion",
+     "am Bahnhof"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Drivers should park at the stadium (\"parkt bitte am Stadion\") and take the free bus. The market square and the station are about the buses on lines 4 and 7."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-03",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "On the phone: the recorded message of a bank.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Tag und herzlich willkommen bei der Stadtbank.",
+    "en": "Hello and welcome to the Stadtbank."
+   },
+   {
+    "who": "N",
+    "de": "Leider rufen Sie außerhalb unserer Öffnungszeiten an.",
+    "en": "Unfortunately you are calling outside our opening hours."
+   },
+   {
+    "who": "N",
+    "de": "Wir sind von Montag bis Freitag von 9 bis 16 Uhr für Sie da, am Donnerstag sogar bis 18 Uhr.",
+    "en": "We are here for you from Monday to Friday from 9 to 4, on Thursdays even until 6."
+   },
+   {
+    "who": "N",
+    "de": "Haben Sie Ihre Bankkarte verloren? Dann drücken Sie bitte jetzt die Eins. Ein Mitarbeiter hilft Ihnen sofort, auch in der Nacht.",
+    "en": "Have you lost your bank card? Then please press one now. A member of staff will help you straight away, even at night."
+   },
+   {
+    "who": "N",
+    "de": "Für alle anderen Fragen schreiben Sie uns bitte eine E-Mail oder rufen Sie morgen wieder an.",
+    "en": "For all other questions please write us an email or call again tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was sollen Sie tun, wenn Ihre Bankkarte weg ist?",
+    "format": "abc",
+    "opts": [
+     "eine E-Mail schreiben",
+     "morgen wieder anrufen",
+     "die Eins drücken"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "If you have lost your card, press one now (\"Dann drücken Sie bitte jetzt die Eins\") and someone helps at once. An email or calling tomorrow is for all other questions."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-04",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "On the radio: an advert for a language school.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Sie möchten im Urlaub mit den Leuten im Land sprechen? Dann kommen Sie zur Sprachschule Wortwelt!",
+    "en": "Would you like to talk to the people in the country on holiday? Then come to the Wortwelt language school!"
+   },
+   {
+    "who": "N",
+    "de": "Bei uns lernen Sie Spanisch, Italienisch oder Französisch in kleinen Gruppen, mit höchstens acht Personen.",
+    "en": "With us you learn Spanish, Italian or French in small groups, with at most eight people."
+   },
+   {
+    "who": "N",
+    "de": "Unsere Abendkurse beginnen am 3. März. Ganz neu sind unsere Kurse am Samstag: Da lernen Sie nur einmal pro Woche, aber fünf Stunden lang.",
+    "en": "Our evening courses start on 3 March. Brand new are our Saturday courses: you learn only once a week, but for five hours."
+   },
+   {
+    "who": "N",
+    "de": "Wenn Sie sich bis Ende Februar anmelden, bekommen Sie zehn Prozent Ermäßigung.",
+    "en": "If you sign up by the end of February, you get a ten per cent discount."
+   },
+   {
+    "who": "N",
+    "de": "Sprachschule Wortwelt, direkt am Bahnhofsplatz.",
+    "en": "Wortwelt language school, right on Station Square."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was ist neu bei der Sprachschule Wortwelt?",
+    "format": "abc",
+    "opts": [
+     "Kurse am Samstag",
+     "Kurse am Abend",
+     "Kurse mit acht Personen"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "\"Ganz neu sind unsere Kurse am Samstag\": the Saturday courses are new. The evening courses simply start in March, and the groups of at most eight are how they always teach."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-05",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: news from the region.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und nun Nachrichten aus der Region.",
+    "en": "And now news from the region."
+   },
+   {
+    "who": "N",
+    "de": "Am Samstag sammeln Schüler, Eltern und Lehrer Müll im Stadtwald. Letztes Jahr haben sie über 300 Kilo gefunden, vor allem Plastikflaschen.",
+    "en": "On Saturday pupils, parents and teachers are collecting rubbish in the town forest. Last year they found over 300 kilos, mostly plastic bottles."
+   },
+   {
+    "who": "N",
+    "de": "Treffpunkt ist um 10 Uhr am Parkplatz vor dem Wald. Handschuhe und Tüten bekommen alle Helfer dort von der Stadt.",
+    "en": "The meeting point is the car park in front of the forest at 10 o'clock. All helpers get gloves and bags there from the town."
+   },
+   {
+    "who": "N",
+    "de": "Bitte bringen Sie nur etwas zu trinken mit, denn die Aktion dauert etwa drei Stunden.",
+    "en": "Please just bring something to drink, because the clean-up lasts about three hours."
+   },
+   {
+    "who": "N",
+    "de": "Danach gibt es für alle eine warme Suppe im Gasthaus am See.",
+    "en": "Afterwards there is a hot soup for everyone at the inn by the lake."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was müssen die Helfer selbst mitbringen?",
+    "format": "abc",
+    "opts": [
+     "etwas zu trinken",
+     "Handschuhe",
+     "eine Suppe"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "\"Bitte bringen Sie nur etwas zu trinken mit\": helpers only bring a drink. The town hands out the gloves, and the soup is served afterwards at the inn."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-06",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "On the radio: an advert for a bakery.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Sie feiern bald Geburtstag, Hochzeit oder ein Familienfest? Dann denken Sie an die Bäckerei Kornblume!",
+    "en": "Are you celebrating a birthday, a wedding or a family party soon? Then think of the Kornblume bakery!"
+   },
+   {
+    "who": "N",
+    "de": "Wir backen Torten für jede Feier, groß oder klein, mit Schokolade, Obst oder Sahne.",
+    "en": "We bake cakes for every party, big or small, with chocolate, fruit or cream."
+   },
+   {
+    "who": "N",
+    "de": "Bestellen Sie Ihre Torte bitte mindestens drei Tage vorher. Nur für eine Hochzeitstorte brauchen wir eine Woche Zeit.",
+    "en": "Please order your cake at least three days in advance. Only for a wedding cake do we need a week."
+   },
+   {
+    "who": "N",
+    "de": "Am Wochenende bringen wir Ihre Torte auch zu Ihnen nach Hause, für nur fünf Euro.",
+    "en": "At the weekend we also bring your cake to your home, for only five euros."
+   },
+   {
+    "who": "N",
+    "de": "Bäckerei Kornblume, im Mühlenweg 12.",
+    "en": "Kornblume bakery, at Mühlenweg 12."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann muss man eine Geburtstagstorte bestellen?",
+    "format": "abc",
+    "opts": [
+     "eine Woche vorher",
+     "mindestens drei Tage vorher",
+     "am Wochenende"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "Cakes must be ordered at least three days in advance (\"mindestens drei Tage vorher\"). A week is only for wedding cakes, and the weekend is when they deliver."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-07",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "On the phone: the recorded message of a car repair shop.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Tag, hier ist die Autowerkstatt Raabe.",
+    "en": "Hello, this is the Raabe car repair shop."
+   },
+   {
+    "who": "N",
+    "de": "Im Moment können wir leider nicht ans Telefon gehen.",
+    "en": "Unfortunately we can't answer the phone at the moment."
+   },
+   {
+    "who": "N",
+    "de": "Bitte denken Sie daran: Vom 24. Juli bis zum 7. August machen wir Urlaub. Dann ist die Werkstatt geschlossen.",
+    "en": "Please remember: from 24 July to 7 August we are on holiday. The garage is closed then."
+   },
+   {
+    "who": "N",
+    "de": "Wenn Sie in dieser Zeit Hilfe brauchen, rufen Sie bitte die Werkstatt Ostring an. Die Nummer ist 47 11 80.",
+    "en": "If you need help during this time, please call the Ostring garage. The number is 47 11 80."
+   },
+   {
+    "who": "N",
+    "de": "Sie brauchen Winterreifen? Dann vereinbaren Sie schon jetzt einen Termin für Oktober.",
+    "en": "Do you need winter tyres? Then make an appointment for October now."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was sollen Kunden tun, wenn sie im Urlaub der Werkstatt Hilfe brauchen?",
+    "format": "abc",
+    "opts": [
+     "bis zum 7. August warten",
+     "einen Termin für Oktober machen",
+     "eine andere Werkstatt anrufen"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "During the holiday, customers who need help should call the Ostring garage (\"rufen Sie bitte die Werkstatt Ostring an\"). 7 August is when the holiday ends, and the October appointment is for winter tyres."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-08",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "On the radio: news from the town.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und jetzt gute Nachrichten für die Familien in unserer Stadt.",
+    "en": "And now good news for the families in our town."
+   },
+   {
+    "who": "N",
+    "de": "Die Grundschule am Park bekommt eine eigene Bibliothek.",
+    "en": "The primary school by the park is getting its own library."
+   },
+   {
+    "who": "N",
+    "de": "Seit Januar haben Eltern, Lehrer und Kinder dafür Geld gesammelt, zum Beispiel mit einem Flohmarkt und einem Sommerfest. So haben sie 8000 Euro bekommen.",
+    "en": "Since January parents, teachers and children have collected money for it, for example with a flea market and a summer party. That way they raised 8,000 euros."
+   },
+   {
+    "who": "N",
+    "de": "Die Stadt gibt noch einmal 8000 Euro dazu.",
+    "en": "The town is adding another 8,000 euros."
+   },
+   {
+    "who": "N",
+    "de": "Die Bibliothek öffnet im Oktober, direkt nach den Herbstferien. Dann können die Kinder dort auch in den Pausen lesen.",
+    "en": "The library opens in October, straight after the autumn holidays. Then the children can read there in the breaks, too."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann öffnet die Bibliothek?",
+    "format": "abc",
+    "opts": [
+     "im Januar",
+     "im Oktober",
+     "im Sommer"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "why": "\"Die Bibliothek öffnet im Oktober\", after the autumn holidays. January is when they started collecting money, and the summer party was one way of raising it."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-09",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: a tip for Sunday.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Und hier unser Tipp für Sonntag: Der Tierpark am Erlenbach feiert seinen 50. Geburtstag.",
+    "en": "And here is our tip for Sunday: the wildlife park on the Erlenbach is celebrating its 50th birthday."
+   },
+   {
+    "who": "N",
+    "de": "Von 10 bis 18 Uhr dürfen Kinder die Tiere füttern und auf kleinen Pferden reiten.",
+    "en": "From 10 to 6, children may feed the animals and ride small horses."
+   },
+   {
+    "who": "N",
+    "de": "Um 14 Uhr erklärt eine Tierärztin, wie man Vögeln im Winter helfen kann.",
+    "en": "At 2 o'clock a vet explains how you can help birds in winter."
+   },
+   {
+    "who": "N",
+    "de": "Der Eintritt kostet an diesem Tag nur zwei Euro, und Kinder unter sechs Jahren kommen kostenlos rein.",
+    "en": "Entry costs only two euros on this day, and children under six get in free."
+   },
+   {
+    "who": "N",
+    "de": "Kommen Sie am besten mit dem Bus, denn es gibt nur wenige Parkplätze.",
+    "en": "Best come by bus, because there are only a few parking spaces."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie viel bezahlt man für ein Kind mit vier Jahren?",
+    "format": "abc",
+    "opts": [
+     "zwei Euro",
+     "nichts",
+     "sechs Euro"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "Children under six get in free (\"Kinder unter sechs Jahren kommen kostenlos rein\"), so a four-year-old pays nothing. Two euros is the normal ticket on that day; six is the age limit, not a price."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-10",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "On the radio: news about the Christmas market.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Bald ist Weihnachten, und auch in unserer Stadt beginnt jetzt die schönste Zeit im Jahr.",
+    "en": "Christmas is coming soon, and in our town too the most beautiful time of the year is starting."
+   },
+   {
+    "who": "N",
+    "de": "Der Weihnachtsmarkt auf dem Schlossplatz öffnet in diesem Jahr schon am Donnerstag und nicht wie sonst am Freitag.",
+    "en": "This year the Christmas market on Castle Square opens on Thursday already, and not on Friday as usual."
+   },
+   {
+    "who": "N",
+    "de": "Es gibt über sechzig kleine Häuser mit Kerzen, Spielzeug, Kuchen und warmen Getränken.",
+    "en": "There are over sixty little huts with candles, toys, cakes and hot drinks."
+   },
+   {
+    "who": "N",
+    "de": "Am Sonntag um 16 Uhr kommt der Nikolaus und bringt allen Kindern Schokolade.",
+    "en": "On Sunday at 4 o'clock Saint Nicholas comes and brings all the children chocolate."
+   },
+   {
+    "who": "N",
+    "de": "Der Markt ist jeden Tag von 11 bis 21 Uhr geöffnet.",
+    "en": "The market is open every day from 11 to 9."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann öffnet der Weihnachtsmarkt in diesem Jahr?",
+    "format": "abc",
+    "opts": [
+     "am Donnerstag",
+     "am Freitag",
+     "am Sonntag"
+    ],
+    "a": 0,
+    "ev": [
+     1
+    ],
+    "why": "This year it opens on Thursday (\"schon am Donnerstag\"). Friday is when it usually opens, and Sunday is when Saint Nicholas comes."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-11",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "On the phone: the recorded message of the citizens' office at the town hall.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Willkommen beim Bürgeramt der Stadt.",
+    "en": "Welcome to the town's citizens' office."
+   },
+   {
+    "who": "N",
+    "de": "Weil wir im Rathaus renovieren, ist das Bürgeramt dort bis Ende Mai geschlossen.",
+    "en": "Because we are renovating the town hall, the citizens' office there is closed until the end of May."
+   },
+   {
+    "who": "N",
+    "de": "Sie finden uns in dieser Zeit in der Hafenstraße 5, direkt gegenüber der Post.",
+    "en": "During this time you will find us at Hafenstraße 5, directly opposite the post office."
+   },
+   {
+    "who": "N",
+    "de": "Für einen neuen Pass brauchen Sie immer einen Termin. Den bekommen Sie auf unserer Webseite.",
+    "en": "For a new passport you always need an appointment. You get it on our website."
+   },
+   {
+    "who": "N",
+    "de": "Nach einem Umzug können Sie sich auch ohne Termin anmelden, jeden Montag von 8 bis 12 Uhr.",
+    "en": "After a move you can also register without an appointment, every Monday from 8 to 12."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo ist das Bürgeramt bis Ende Mai?",
+    "format": "abc",
+    "opts": [
+     "im Rathaus",
+     "in der Post",
+     "in der Hafenstraße"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "why": "Until the end of May the office is at Hafenstraße 5 (\"Sie finden uns in dieser Zeit in der Hafenstraße 5\"). The town hall is closed for renovation, and the post office is only across the street."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-12",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: a warning about the weather.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Achtung, liebe Hörerinnen und Hörer: Die nächsten Tage werden sehr heiß.",
+    "en": "Attention, dear listeners: the next few days will be very hot."
+   },
+   {
+    "who": "N",
+    "de": "Morgen und übermorgen erwarten wir bis zu 36 Grad. Erst am Freitag wird es wieder kühler.",
+    "en": "Tomorrow and the day after we expect up to 36 degrees. It only gets cooler again on Friday."
+   },
+   {
+    "who": "N",
+    "de": "Bitte trinken Sie viel Wasser und bleiben Sie mittags lieber im Haus.",
+    "en": "Please drink a lot of water and preferably stay indoors at midday."
+   },
+   {
+    "who": "N",
+    "de": "Auch Tiere brauchen jetzt Hilfe: Stellen Sie für die Vögel einen Teller mit Wasser auf den Balkon.",
+    "en": "Animals need help now too: put a plate of water on the balcony for the birds."
+   },
+   {
+    "who": "N",
+    "de": "Und machen Sie bitte im Wald kein Feuer, denn alles ist sehr trocken.",
+    "en": "And please don't light a fire in the forest, because everything is very dry."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann wird es wieder kühler?",
+    "format": "abc",
+    "opts": [
+     "morgen",
+     "übermorgen",
+     "am Freitag"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "\"Erst am Freitag wird es wieder kühler\": only on Friday. Tomorrow and the day after are the hottest days, with up to 36 degrees."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-13",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "On the radio: information for students at the university.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information für alle Studenten der Universität:",
+    "en": "A piece of information for all students at the university:"
+   },
+   {
+    "who": "N",
+    "de": "Die Bibliothek hat ab nächster Woche länger geöffnet.",
+    "en": "From next week the library is open longer."
+   },
+   {
+    "who": "N",
+    "de": "Bis zum Ende der Prüfungen im Februar können Sie dort jeden Tag bis Mitternacht lernen, auch am Sonntag.",
+    "en": "Until the end of the exams in February you can study there every day until midnight, Sundays included."
+   },
+   {
+    "who": "N",
+    "de": "Bücher leihen können Sie aber weiter nur bis 20 Uhr.",
+    "en": "But you can still only borrow books until 8 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Und noch ein Tipp: In der Cafeteria gibt es ab 18 Uhr Kaffee für nur einen Euro.",
+    "en": "And one more tip: from 6 p.m. the cafeteria sells coffee for just one euro."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Bis wann kann man in der Bibliothek Bücher leihen?",
+    "format": "abc",
+    "opts": [
+     "bis 20 Uhr",
+     "bis Mitternacht",
+     "bis 18 Uhr"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Borrowing books is still only possible until 8 p.m. (\"nur bis 20 Uhr\"). Midnight is how long you can study there, and 6 p.m. is when the cheap coffee starts."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-14",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "On the radio: an advert for a dance school.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Sie heiraten bald und möchten auf Ihrer Hochzeit tanzen? Aber Sie können es noch nicht so gut?",
+    "en": "Are you getting married soon and want to dance at your wedding? But you can't do it very well yet?"
+   },
+   {
+    "who": "N",
+    "de": "Kein Problem! Die Tanzschule Rhythmus hat einen Kurs nur für Hochzeitspaare.",
+    "en": "No problem! The Rhythmus dance school has a course just for wedding couples."
+   },
+   {
+    "who": "N",
+    "de": "Vier Wochen lang lernen Sie jeden Mittwochabend die wichtigsten Tänze für Ihre Feier.",
+    "en": "For four weeks you learn the most important dances for your celebration every Wednesday evening."
+   },
+   {
+    "who": "N",
+    "de": "Der erste Abend ist kostenlos. Danach kostet der Kurs 120 Euro pro Paar. Wenn Sie mit Freunden kommen, bezahlt jedes Paar nur 100 Euro.",
+    "en": "The first evening is free. After that the course costs 120 euros per couple. If you come with friends, each couple pays only 100 euros."
+   },
+   {
+    "who": "N",
+    "de": "Rufen Sie an und melden Sie sich an: Tanzschule Rhythmus, Telefon 30 40 50.",
+    "en": "Call and sign up: Rhythmus dance school, telephone 30 40 50."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie viel bezahlt ein Paar normalerweise für den Kurs?",
+    "format": "abc",
+    "opts": [
+     "100 Euro",
+     "120 Euro",
+     "nichts"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "The course costs 120 euros per couple (\"kostet der Kurs 120 Euro pro Paar\"). 100 euros is only for couples who come with friends, and only the first evening is free."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-15",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "On the radio: an advert for a phone repair shop.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Ihr Handy funktioniert nicht mehr richtig? Der Bildschirm ist kaputt?",
+    "en": "Your mobile phone doesn't work properly any more? The screen is broken?"
+   },
+   {
+    "who": "N",
+    "de": "Dann kommen Sie zu Handy-Hilfe im Einkaufszentrum am Westring.",
+    "en": "Then come to Handy-Hilfe in the shopping centre on the Westring."
+   },
+   {
+    "who": "N",
+    "de": "Wir reparieren fast alle Handys in nur einer Stunde. In der Zeit können Sie bei uns einen Kaffee trinken.",
+    "en": "We repair almost all phones in just one hour. Meanwhile you can have a coffee with us."
+   },
+   {
+    "who": "N",
+    "de": "Neu: Wir holen Ihr Handy auch bei Ihnen zu Hause ab und bringen es am nächsten Tag zurück.",
+    "en": "New: we also collect your phone from your home and bring it back the next day."
+   },
+   {
+    "who": "N",
+    "de": "Und Schüler und Studenten bekommen bei uns zehn Prozent Ermäßigung.",
+    "en": "And pupils and students get a ten per cent discount with us."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was ist neu bei Handy-Hilfe?",
+    "format": "abc",
+    "opts": [
+     "Man muss nicht selbst ins Geschäft kommen.",
+     "Die Reparatur dauert nur eine Stunde.",
+     "Schüler bezahlen weniger."
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "The new service: they collect the phone from your home and bring it back (\"Neu: Wir holen Ihr Handy auch bei Ihnen zu Hause ab\"), so you don't have to go to the shop. The one-hour repair and the student discount are not called new."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-16",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: local news after heavy rain.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Nach dem starken Regen der letzten Tage hat der Fluss sehr viel Wasser.",
+    "en": "After the heavy rain of the last few days, the river is very high."
+   },
+   {
+    "who": "N",
+    "de": "Die Wege direkt am Fluss sind deshalb bis Mittwoch geschlossen.",
+    "en": "The paths right along the river are therefore closed until Wednesday."
+   },
+   {
+    "who": "N",
+    "de": "Auch über die kleine Brücke zum Stadtpark darf im Moment niemand gehen.",
+    "en": "Nobody may cross the small bridge to the town park at the moment either."
+   },
+   {
+    "who": "N",
+    "de": "Fußgänger und Radfahrer nehmen bitte die große Brücke am Bahnhof.",
+    "en": "Pedestrians and cyclists, please use the big bridge by the station."
+   },
+   {
+    "who": "N",
+    "de": "Ab Donnerstag soll es wieder trocken und sonnig sein.",
+    "en": "From Thursday it should be dry and sunny again."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie kommt man jetzt zu Fuß zum Stadtpark?",
+    "format": "abc",
+    "opts": [
+     "über die kleine Brücke",
+     "auf dem Weg am Fluss",
+     "über die große Brücke am Bahnhof"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "Pedestrians (\"Fußgänger\") should use the big bridge by the station (\"nehmen bitte die große Brücke am Bahnhof\"). The small bridge and the paths along the river are closed."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-17",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "On the radio: an advert for help with schoolwork.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Hat Ihr Kind Probleme in Mathe, Deutsch oder Englisch? Sind die Noten schlechter geworden?",
+    "en": "Does your child have problems in maths, German or English? Have the marks got worse?"
+   },
+   {
+    "who": "N",
+    "de": "Lernhilfe Plus hilft! Unsere Lehrerinnen und Lehrer kommen zu Ihnen nach Hause oder lernen online mit Ihrem Kind.",
+    "en": "Lernhilfe Plus helps! Our teachers come to your home or study online with your child."
+   },
+   {
+    "who": "N",
+    "de": "Eine Stunde kostet 25 Euro. Die erste Stunde ist kostenlos, denn wir möchten Ihr Kind zuerst kennenlernen.",
+    "en": "One lesson costs 25 euros. The first lesson is free, because we want to get to know your child first."
+   },
+   {
+    "who": "N",
+    "de": "Unser Büro ist von Montag bis Freitag von 14 bis 19 Uhr für Sie da.",
+    "en": "Our office is there for you Monday to Friday from 2 to 7 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Rufen Sie uns an oder schreiben Sie uns über unsere Homepage.",
+    "en": "Call us or write to us through our website."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum ist die erste Stunde kostenlos?",
+    "format": "abc",
+    "opts": [
+     "Das Kind lernt online.",
+     "Die Lehrer möchten das Kind kennenlernen.",
+     "Die Noten sind schlechter geworden."
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "why": "The first lesson is free \"denn wir möchten Ihr Kind zuerst kennenlernen\": the teachers want to get to know the child. Online lessons are one option, and worse marks are the problem the advert starts with."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-18",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 1",
+  "setup": "On the radio: news about tonight's summer festival.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine wichtige Information für alle, die heute Abend zum Sommerfest am See wollen.",
+    "en": "An important piece of information for everyone who wants to go to the summer festival by the lake tonight."
+   },
+   {
+    "who": "N",
+    "de": "Wegen des Gewitters beginnt das Konzert nicht um 19 Uhr, sondern erst um 21 Uhr.",
+    "en": "Because of the thunderstorm the concert doesn't start at 7 p.m. but only at 9 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Das Feuerwerk gibt es heute nicht. Es ist jetzt morgen um 22 Uhr.",
+    "en": "There won't be fireworks tonight. They are now tomorrow at 10 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Die Restaurants am See haben aber schon ab 17 Uhr geöffnet.",
+    "en": "But the restaurants by the lake are open from 5 p.m."
+   },
+   {
+    "who": "N",
+    "de": "Wir wünschen Ihnen trotzdem einen schönen Abend!",
+    "en": "We wish you a lovely evening all the same!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann beginnt das Konzert heute?",
+    "format": "abc",
+    "opts": [
+     "um 19 Uhr",
+     "um 22 Uhr",
+     "um 21 Uhr"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "why": "The concert starts \"nicht um 19 Uhr, sondern erst um 21 Uhr\": 7 p.m. was the old time. 10 p.m. is the new time for the fireworks, tomorrow."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-19",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 1",
+  "setup": "On the phone: the recorded message of a hairdresser's.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Hallo und herzlich willkommen beim Friseursalon Schnittpunkt.",
+    "en": "Hello and welcome to the Schnittpunkt hair salon."
+   },
+   {
+    "who": "N",
+    "de": "Leider sind wir gerade alle bei der Arbeit und können nicht ans Telefon gehen.",
+    "en": "Unfortunately we are all busy working right now and can't answer the phone."
+   },
+   {
+    "who": "N",
+    "de": "Von Dienstag bis Freitag sind wir von 9 bis 19 Uhr für Sie da, am Samstag von 9 bis 14 Uhr. Montags ist der Salon geschlossen.",
+    "en": "From Tuesday to Friday we are there for you from 9 to 7, on Saturday from 9 to 2. On Mondays the salon is closed."
+   },
+   {
+    "who": "N",
+    "de": "Termine können Sie auch über unsere App buchen, auch am Abend und am Wochenende.",
+    "en": "You can also book appointments through our app, even in the evening and at the weekend."
+   },
+   {
+    "who": "N",
+    "de": "Oder Sie sagen nach dem Ton Ihren Namen und Ihre Telefonnummer, dann rufen wir Sie zurück.",
+    "en": "Or say your name and phone number after the tone, and we'll call you back."
+   }
+  ],
+  "questions": [
+   {
+    "q": "An welchem Tag ist der Salon geschlossen?",
+    "format": "abc",
+    "opts": [
+     "am Montag",
+     "am Samstag",
+     "am Freitag"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "\"Montags ist der Salon geschlossen\": it is closed on Mondays. On Saturday it is open from 9 to 2, and Friday is a normal working day."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-20",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 1",
+  "setup": "On the radio: a tip for a car-free Sunday in town.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Am Sonntag ist autofreier Tag in unserer Stadt: Von 10 bis 18 Uhr dürfen in der Innenstadt keine Autos fahren.",
+    "en": "On Sunday it's car-free day in our town: from 10 to 6 no cars may drive in the town centre."
+   },
+   {
+    "who": "N",
+    "de": "Dafür gibt es viel Programm: Auf der Hauptstraße können Kinder malen und spielen, und auf dem Rathausplatz spielen Bands.",
+    "en": "Instead there's lots going on: on the high street children can paint and play, and bands play on Town Hall Square."
+   },
+   {
+    "who": "N",
+    "de": "Wer kein Fahrrad hat, kann am Bahnhof kostenlos eins leihen.",
+    "en": "If you don't have a bike, you can borrow one for free at the station."
+   },
+   {
+    "who": "N",
+    "de": "Busse und Straßenbahnen kosten an diesem Tag nichts.",
+    "en": "Buses and trams cost nothing on this day."
+   },
+   {
+    "who": "N",
+    "de": "Das ganze Programm finden Sie auf der Homepage der Stadt.",
+    "en": "You can find the whole programme on the town's website."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was kann man am Bahnhof machen?",
+    "format": "abc",
+    "opts": [
+     "ein Fahrrad leihen",
+     "Bands hören",
+     "mit Kindern malen"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "why": "At the station you can borrow a bike for free (\"kann am Bahnhof kostenlos eins leihen\"). The music is on Town Hall Square, and the painting is on the high street."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-1-21",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 1",
+  "setup": "On the radio: information from the adult education centre.",
+  "once": true,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Eine Information der Volkshochschule:",
+    "en": "A piece of information from the adult education centre:"
+   },
+   {
+    "who": "N",
+    "de": "Die Anmeldung für die Deutschprüfungen im Juni beginnt am 2. Mai.",
+    "en": "Registration for the German exams in June starts on 2 May."
+   },
+   {
+    "who": "N",
+    "de": "Bitte melden Sie sich persönlich in unserem Büro an. Am Telefon oder per E-Mail ist das leider nicht möglich.",
+    "en": "Please register in person at our office. Unfortunately this is not possible by phone or by email."
+   },
+   {
+    "who": "N",
+    "de": "Bringen Sie Ihren Pass mit. Die Prüfung kostet 150 Euro, und Sie bezahlen sie direkt bei der Anmeldung.",
+    "en": "Bring your passport. The exam costs 150 euros, and you pay it straight away when you register."
+   },
+   {
+    "who": "N",
+    "de": "Zur Vorbereitung gibt es auch einen Kurs: jeden Samstag im Mai, von 9 bis 13 Uhr.",
+    "en": "There is also a preparation course: every Saturday in May, from 9 to 1."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie kann man sich für die Prüfung anmelden?",
+    "format": "abc",
+    "opts": [
+     "am Telefon",
+     "per E-Mail",
+     "im Büro der Volkshochschule"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "why": "You must register in person at the office (\"persönlich in unserem Büro\"). The announcement says clearly that phone and email are not possible."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-2-01",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "setup": "Alina (woman) tells her friend Ingo (man) about the presents she got for her birthday. What did each person give her?",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Alina, alles Gute zum Geburtstag! Leider einen Tag zu spät. Wie war deine Party?",
+    "en": "Alina, happy birthday! A day late, unfortunately. How was your party?"
+   },
+   {
+    "who": "A",
+    "de": "Danke, Ingo! Es war super. Und ich habe so schöne Geschenke bekommen.",
+    "en": "Thanks, Ingo! It was great. And I got such lovely presents."
+   },
+   {
+    "who": "B",
+    "de": "Erzähl! Was hat dir deine Mutter geschenkt?",
+    "en": "Tell me! What did your mother give you?"
+   },
+   {
+    "who": "A",
+    "de": "Eine Uhr. Meine alte ist im Urlaub ins Wasser gefallen. Eigentlich wollte Mama mir ein Kochbuch kaufen, aber sie weiß ja, dass ich nicht gern koche.",
+    "en": "A watch. My old one fell into the water on holiday. Mum actually wanted to buy me a cookbook, but she knows I don't like cooking."
+   },
+   {
+    "who": "B",
+    "de": "Ha, das stimmt! Und dein Vater?",
+    "en": "Ha, that's true! And your father?"
+   },
+   {
+    "who": "A",
+    "de": "Papa hat mir Theaterkarten geschenkt, für ein Stück im Dezember. Wir gehen zusammen hin.",
+    "en": "Dad gave me theatre tickets, for a play in December. We're going together."
+   },
+   {
+    "who": "B",
+    "de": "Schön. Und dein Bruder? Der vergisst doch immer alles.",
+    "en": "Nice. And your brother? He always forgets everything."
+   },
+   {
+    "who": "A",
+    "de": "Diesmal nicht! Ich dachte, er bringt wieder eine Tasche mit, wie letztes Jahr. Aber er hat mir eine große Pflanze für mein Wohnzimmer geschenkt.",
+    "en": "Not this time! I thought he'd bring a bag again, like last year. But he gave me a big plant for my living room."
+   },
+   {
+    "who": "B",
+    "de": "Und deine Kollegen? Du hast doch erzählt, dass sie Geld gesammelt haben.",
+    "en": "And your colleagues? You said they had collected money."
+   },
+   {
+    "who": "A",
+    "de": "Ja, und dafür haben sie mir ein Fahrrad gekauft! Mein altes war ja kaputt.",
+    "en": "Yes, and with it they bought me a bike! My old one was broken, you know."
+   },
+   {
+    "who": "B",
+    "de": "Wow! Und deine beste Freundin?",
+    "en": "Wow! And your best friend?"
+   },
+   {
+    "who": "A",
+    "de": "Sie hat einen Kalender mit Fotos von uns gemacht, mit Bildern aus zwanzig Jahren. Da habe ich fast geweint.",
+    "en": "She made a calendar with photos of us, with pictures from twenty years. I almost cried."
+   },
+   {
+    "who": "B",
+    "de": "Wie schön! Oh je, dann war mein Geschenk wohl keine gute Idee. Es ist ein Kochbuch!",
+    "en": "How lovely! Oh dear, then my present probably wasn't a good idea. It's a cookbook!"
+   },
+   {
+    "who": "A",
+    "de": "Ach, Ingo! Vielleicht fange ich jetzt ja mit dem Kochen an.",
+    "en": "Oh, Ingo! Maybe I'll start cooking now."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Mutter",
+    "format": "match",
+    "opts": [
+     "ein Fahrrad",
+     "eine Tasche",
+     "eine Uhr",
+     "einen Kalender",
+     "Theaterkarten",
+     "ein Kochbuch",
+     "eine Pflanze"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "Her mother gave her a watch. She only wanted to buy a cookbook, but Alina doesn't like cooking."
+   },
+   {
+    "q": "Vater",
+    "format": "match",
+    "opts": [
+     "ein Fahrrad",
+     "eine Tasche",
+     "eine Uhr",
+     "einen Kalender",
+     "Theaterkarten",
+     "ein Kochbuch",
+     "eine Pflanze"
+    ],
+    "a": 4,
+    "ev": [
+     5
+    ],
+    "why": "\"Papa hat mir Theaterkarten geschenkt\", for a play in December."
+   },
+   {
+    "q": "Bruder",
+    "format": "match",
+    "opts": [
+     "ein Fahrrad",
+     "eine Tasche",
+     "eine Uhr",
+     "einen Kalender",
+     "Theaterkarten",
+     "ein Kochbuch",
+     "eine Pflanze"
+    ],
+    "a": 6,
+    "ev": [
+     7
+    ],
+    "why": "She expected a bag again like last year, but her brother gave her a big plant for her living room."
+   },
+   {
+    "q": "Kollegen",
+    "format": "match",
+    "opts": [
+     "ein Fahrrad",
+     "eine Tasche",
+     "eine Uhr",
+     "einen Kalender",
+     "Theaterkarten",
+     "ein Kochbuch",
+     "eine Pflanze"
+    ],
+    "a": 0,
+    "ev": [
+     9
+    ],
+    "why": "Her colleagues collected money and bought her a bike, because her old one was broken."
+   },
+   {
+    "q": "beste Freundin",
+    "format": "match",
+    "opts": [
+     "ein Fahrrad",
+     "eine Tasche",
+     "eine Uhr",
+     "einen Kalender",
+     "Theaterkarten",
+     "ein Kochbuch",
+     "eine Pflanze"
+    ],
+    "a": 3,
+    "ev": [
+     11
+    ],
+    "why": "Her best friend made a calendar with photos from twenty years. The cookbook is Ingo's present."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-2-02",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 2",
+  "setup": "Gesine (woman) tells her colleague Matthias (man) about her son's project week at school. What do the children do on each day?",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Gesine, du siehst müde aus. Ist alles in Ordnung?",
+    "en": "Gesine, you look tired. Is everything all right?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, ja. Mein Sohn hat diese Woche Projektwoche in der Schule. Jeden Tag passiert etwas anderes, und wir Eltern müssen viel organisieren.",
+    "en": "Yes, yes. My son has project week at school this week. Something different happens every day, and we parents have to organise a lot."
+   },
+   {
+    "who": "B",
+    "de": "Projektwoche? Was machen die Kinder denn da?",
+    "en": "Project week? What do the children do?"
+   },
+   {
+    "who": "A",
+    "de": "Am Montag waren sie im Museum. Da haben sie viel über die Geschichte von unserer Stadt gelernt.",
+    "en": "On Monday they were at the museum. They learned a lot about the history of our town there."
+   },
+   {
+    "who": "B",
+    "de": "Und heute? Heute ist ja Dienstag.",
+    "en": "And today? It's Tuesday today."
+   },
+   {
+    "who": "A",
+    "de": "Heute wollten sie eigentlich in den Zoo fahren. Aber wegen des Regens bleiben sie in der Schule und backen Brot. Ich habe ihm extra Geld für den Zoo mitgegeben!",
+    "en": "Today they actually wanted to go to the zoo. But because of the rain they're staying at school and baking bread. I even gave him extra money for the zoo!"
+   },
+   {
+    "who": "B",
+    "de": "Schade. Und morgen?",
+    "en": "Too bad. And tomorrow?"
+   },
+   {
+    "who": "A",
+    "de": "Am Mittwoch kommt eine Schauspielerin in die Schule, und die Kinder spielen zusammen Theater.",
+    "en": "On Wednesday an actress comes to the school, and the children put on a play together."
+   },
+   {
+    "who": "B",
+    "de": "Das macht bestimmt Spaß. Und am Donnerstag?",
+    "en": "That must be fun. And on Thursday?"
+   },
+   {
+    "who": "A",
+    "de": "Am Donnerstag fahren sie mit dem Fahrrad zum See und machen dort ein Picknick. Ins Schwimmbad gehen sie leider nicht, das ist zu teuer.",
+    "en": "On Thursday they cycle to the lake and have a picnic there. They're not going to the swimming pool, unfortunately; that's too expensive."
+   },
+   {
+    "who": "B",
+    "de": "Und am Freitag ist dann alles vorbei?",
+    "en": "And on Friday it's all over?"
+   },
+   {
+    "who": "A",
+    "de": "Am Freitag gibt es eine Ausstellung für die Eltern. Die Kinder zeigen ihre Bilder und Fotos aus der Woche. Da gehe ich natürlich hin.",
+    "en": "On Friday there's an exhibition for the parents. The children show their pictures and photos from the week. Of course I'm going."
+   },
+   {
+    "who": "B",
+    "de": "Na dann, viel Spaß! Und am Wochenende ein bisschen Schlaf.",
+    "en": "Well then, have fun! And get a bit of sleep at the weekend."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Montag",
+    "format": "match",
+    "opts": [
+     "Theater",
+     "Zoo",
+     "Ausstellung",
+     "Museum",
+     "Schwimmbad",
+     "Brot backen",
+     "Picknick am See"
+    ],
+    "a": 3,
+    "ev": [
+     3
+    ],
+    "why": "On Monday they were at the museum and learned about the history of the town."
+   },
+   {
+    "q": "Dienstag",
+    "format": "match",
+    "opts": [
+     "Theater",
+     "Zoo",
+     "Ausstellung",
+     "Museum",
+     "Schwimmbad",
+     "Brot backen",
+     "Picknick am See"
+    ],
+    "a": 5,
+    "ev": [
+     5
+    ],
+    "why": "They wanted to go to the zoo, but because of the rain they stay at school and bake bread."
+   },
+   {
+    "q": "Mittwoch",
+    "format": "match",
+    "opts": [
+     "Theater",
+     "Zoo",
+     "Ausstellung",
+     "Museum",
+     "Schwimmbad",
+     "Brot backen",
+     "Picknick am See"
+    ],
+    "a": 0,
+    "ev": [
+     7
+    ],
+    "why": "On Wednesday an actress comes and the children put on a play (\"spielen zusammen Theater\")."
+   },
+   {
+    "q": "Donnerstag",
+    "format": "match",
+    "opts": [
+     "Theater",
+     "Zoo",
+     "Ausstellung",
+     "Museum",
+     "Schwimmbad",
+     "Brot backen",
+     "Picknick am See"
+    ],
+    "a": 6,
+    "ev": [
+     9
+    ],
+    "why": "On Thursday they cycle to the lake for a picnic. The swimming pool is too expensive, so they don't go."
+   },
+   {
+    "q": "Freitag",
+    "format": "match",
+    "opts": [
+     "Theater",
+     "Zoo",
+     "Ausstellung",
+     "Museum",
+     "Schwimmbad",
+     "Brot backen",
+     "Picknick am See"
+    ],
+    "a": 2,
+    "ev": [
+     11
+    ],
+    "why": "On Friday there is an exhibition of the children's pictures and photos for the parents."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-2-03",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 2",
+  "setup": "Hedda (woman) tells her friend Goran (man) about the neighbourhood help list in her building. What does each neighbour offer?",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hedda, was ist das für ein Zettel an eurer Haustür?",
+    "en": "Hedda, what's that note on your front door?"
+   },
+   {
+    "who": "A",
+    "de": "Das ist unsere neue Liste für Nachbarschaftshilfe. Alle Nachbarn schreiben auf, wie sie den anderen helfen können.",
+    "en": "That's our new neighbourhood help list. All the neighbours write down how they can help the others."
+   },
+   {
+    "who": "B",
+    "de": "Gute Idee! Und, was steht da?",
+    "en": "Good idea! So, what does it say?"
+   },
+   {
+    "who": "A",
+    "de": "Zum Beispiel die Studentin aus dem zweiten Stock. Sie gibt Kindern aus dem Haus Nachhilfe in Mathe und Englisch, für fünf Euro pro Stunde.",
+    "en": "For example the student from the second floor. She tutors children from the building in maths and English, for five euros an hour."
+   },
+   {
+    "who": "B",
+    "de": "Das ist aber billig. Und der alte Herr aus dem Erdgeschoss? Der ist doch Rentner, oder?",
+    "en": "That's cheap. And the old gentleman on the ground floor? He's retired, isn't he?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, und er repariert Fahrräder. Früher hatte er einen Fahrradladen. Viele fragen ihn auch nach ihren Computern, aber davon versteht er leider nichts.",
+    "en": "Yes, and he repairs bikes. He used to have a bike shop. Lots of people ask him about their computers too, but unfortunately he knows nothing about them."
+   },
+   {
+    "who": "B",
+    "de": "Schade, mein Laptop ist nämlich gerade kaputt. Und wer ist das hier, die Krankenschwester?",
+    "en": "Pity, because my laptop is broken right now. And who's this here, the nurse?"
+   },
+   {
+    "who": "A",
+    "de": "Sie arbeitet meistens nachts und ist am Tag zu Hause. Deshalb nimmt sie für alle die Pakete an.",
+    "en": "She mostly works nights and is at home during the day. So she takes in the parcels for everyone."
+   },
+   {
+    "who": "B",
+    "de": "Sehr praktisch. Ich bin nie zu Hause, wenn ein Paket kommt.",
+    "en": "Very handy. I'm never at home when a parcel comes."
+   },
+   {
+    "who": "A",
+    "de": "Und dann gibt es noch eine Friseurin im vierten Stock. Sie schneidet den Nachbarn in ihrer Küche die Haare, zum halben Preis.",
+    "en": "And then there's a hairdresser on the fourth floor. She cuts the neighbours' hair in her kitchen, at half price."
+   },
+   {
+    "who": "B",
+    "de": "Ha, das würde ich sofort nehmen! Und das Ehepaar mit dem großen Garten?",
+    "en": "Ha, I'd take that straight away! And the married couple with the big garden?"
+   },
+   {
+    "who": "A",
+    "de": "Die beiden haben selbst zwei Hunde. Sie gehen auch gern mit den Hunden von anderen Leuten spazieren, wenn die keine Zeit haben.",
+    "en": "They have two dogs themselves. They're also happy to walk other people's dogs when those people have no time."
+   },
+   {
+    "who": "B",
+    "de": "Und auf Kinder aufpassen? Das brauchen doch viele Familien.",
+    "en": "And looking after children? Lots of families need that."
+   },
+   {
+    "who": "A",
+    "de": "Das stimmt, aber dafür hat sich noch niemand gemeldet. Vielleicht schreibe ich mich selbst auf die Liste.",
+    "en": "That's true, but nobody has offered yet. Maybe I'll put myself on the list."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Studentin",
+    "format": "match",
+    "opts": [
+     "Haare schneiden",
+     "Computer reparieren",
+     "Pakete annehmen",
+     "auf Kinder aufpassen",
+     "mit Hunden spazieren gehen",
+     "Fahrräder reparieren",
+     "Nachhilfe geben"
+    ],
+    "a": 6,
+    "ev": [
+     3
+    ],
+    "why": "The student tutors children from the building in maths and English (\"Nachhilfe\")."
+   },
+   {
+    "q": "Rentner",
+    "format": "match",
+    "opts": [
+     "Haare schneiden",
+     "Computer reparieren",
+     "Pakete annehmen",
+     "auf Kinder aufpassen",
+     "mit Hunden spazieren gehen",
+     "Fahrräder reparieren",
+     "Nachhilfe geben"
+    ],
+    "a": 5,
+    "ev": [
+     5
+    ],
+    "why": "The retired man repairs bikes; he used to have a bike shop. He knows nothing about computers."
+   },
+   {
+    "q": "Krankenschwester",
+    "format": "match",
+    "opts": [
+     "Haare schneiden",
+     "Computer reparieren",
+     "Pakete annehmen",
+     "auf Kinder aufpassen",
+     "mit Hunden spazieren gehen",
+     "Fahrräder reparieren",
+     "Nachhilfe geben"
+    ],
+    "a": 2,
+    "ev": [
+     7
+    ],
+    "why": "The nurse works nights and is at home in the day, so she takes in everyone's parcels."
+   },
+   {
+    "q": "Friseurin",
+    "format": "match",
+    "opts": [
+     "Haare schneiden",
+     "Computer reparieren",
+     "Pakete annehmen",
+     "auf Kinder aufpassen",
+     "mit Hunden spazieren gehen",
+     "Fahrräder reparieren",
+     "Nachhilfe geben"
+    ],
+    "a": 0,
+    "ev": [
+     9
+    ],
+    "why": "The hairdresser cuts the neighbours' hair in her kitchen at half price."
+   },
+   {
+    "q": "Ehepaar",
+    "format": "match",
+    "opts": [
+     "Haare schneiden",
+     "Computer reparieren",
+     "Pakete annehmen",
+     "auf Kinder aufpassen",
+     "mit Hunden spazieren gehen",
+     "Fahrräder reparieren",
+     "Nachhilfe geben"
+    ],
+    "a": 4,
+    "ev": [
+     11
+    ],
+    "why": "The couple walk other people's dogs. Nobody offers to look after children yet."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-2-04",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 2",
+  "setup": "Gerd (man) tells his colleague Irina (woman) about his hiking holiday in the mountains. What was the weather like on each day?",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Gerd, du bist ja ganz braun! Wie war dein Urlaub in den Bergen?",
+    "en": "Gerd, you're so tanned! How was your holiday in the mountains?"
+   },
+   {
+    "who": "B",
+    "de": "Schön, aber das Wetter war total verrückt. Jeden Tag war es anders.",
+    "en": "Nice, but the weather was totally crazy. Every day it was different."
+   },
+   {
+    "who": "A",
+    "de": "Wirklich? Hier in der Stadt war es die ganze Woche heiß, über 30 Grad.",
+    "en": "Really? Here in town it was hot all week, over 30 degrees."
+   },
+   {
+    "who": "B",
+    "de": "So heiß war es bei uns nie. Am Montag sind wir auf den ersten Berg gestiegen, aber oben war so viel Nebel. Wir haben gar nichts gesehen.",
+    "en": "It was never that hot where we were. On Monday we climbed the first mountain, but at the top there was so much fog. We couldn't see anything at all."
+   },
+   {
+    "who": "A",
+    "de": "Schade! Und am Dienstag?",
+    "en": "Pity! And on Tuesday?"
+   },
+   {
+    "who": "B",
+    "de": "Am Dienstag hat es den ganzen Tag geregnet. Wir sind im Hotel geblieben und haben Karten gespielt.",
+    "en": "On Tuesday it rained all day. We stayed in the hotel and played cards."
+   },
+   {
+    "who": "A",
+    "de": "Oh nein. Hattet ihr auch mal Sonne?",
+    "en": "Oh no. Did you get any sun at all?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, am Mittwoch. Da war der Himmel ganz blau, und wir sind sieben Stunden gewandert. Das war der beste Tag.",
+    "en": "Yes, on Wednesday. The sky was completely blue, and we hiked for seven hours. That was the best day."
+   },
+   {
+    "who": "A",
+    "de": "Und am Donnerstag?",
+    "en": "And on Thursday?"
+   },
+   {
+    "who": "B",
+    "de": "Da kam schon am Mittag ein Gewitter. Wir sind ganz schnell nach unten gelaufen.",
+    "en": "A thunderstorm came at midday already. We ran down really fast."
+   },
+   {
+    "who": "A",
+    "de": "Das klingt gefährlich! Und am letzten Tag?",
+    "en": "That sounds dangerous! And on the last day?"
+   },
+   {
+    "who": "B",
+    "de": "Du glaubst es nicht: Am Freitag hat es oben auf dem Berg geschneit, im Juni! Es war kalt, aber zum Glück gar nicht windig.",
+    "en": "You won't believe it: on Friday it snowed up on the mountain, in June! It was cold, but luckily not windy at all."
+   },
+   {
+    "who": "A",
+    "de": "Schnee im Juni! Hast du Fotos gemacht?",
+    "en": "Snow in June! Did you take photos?"
+   },
+   {
+    "who": "B",
+    "de": "Natürlich, ganz viele. Ich zeige sie dir in der Mittagspause.",
+    "en": "Of course, loads. I'll show you at lunch."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Montag",
+    "format": "match",
+    "opts": [
+     "Wind",
+     "Regen",
+     "Schnee",
+     "über 30 Grad",
+     "Sonne",
+     "Gewitter",
+     "Nebel"
+    ],
+    "a": 6,
+    "ev": [
+     3
+    ],
+    "why": "On Monday there was so much fog at the top that they saw nothing."
+   },
+   {
+    "q": "Dienstag",
+    "format": "match",
+    "opts": [
+     "Wind",
+     "Regen",
+     "Schnee",
+     "über 30 Grad",
+     "Sonne",
+     "Gewitter",
+     "Nebel"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "On Tuesday it rained all day, so they stayed in the hotel."
+   },
+   {
+    "q": "Mittwoch",
+    "format": "match",
+    "opts": [
+     "Wind",
+     "Regen",
+     "Schnee",
+     "über 30 Grad",
+     "Sonne",
+     "Gewitter",
+     "Nebel"
+    ],
+    "a": 4,
+    "ev": [
+     6,
+     7
+    ],
+    "why": "On Wednesday the sky was completely blue: their sunny day and the best one."
+   },
+   {
+    "q": "Donnerstag",
+    "format": "match",
+    "opts": [
+     "Wind",
+     "Regen",
+     "Schnee",
+     "über 30 Grad",
+     "Sonne",
+     "Gewitter",
+     "Nebel"
+    ],
+    "a": 5,
+    "ev": [
+     9
+    ],
+    "why": "On Thursday a thunderstorm came at midday and they ran down."
+   },
+   {
+    "q": "Freitag",
+    "format": "match",
+    "opts": [
+     "Wind",
+     "Regen",
+     "Schnee",
+     "über 30 Grad",
+     "Sonne",
+     "Gewitter",
+     "Nebel"
+    ],
+    "a": 2,
+    "ev": [
+     11
+    ],
+    "why": "On Friday it snowed on the mountain. It was not windy, and \"über 30 Grad\" was the weather in the town, not in the mountains."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-2-05",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 2",
+  "setup": "Mirko (man) and his flatmate Jule (woman) plan a garden party. What is each person bringing?",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Jule, wir müssen die Party am Samstag noch planen. Wer bringt eigentlich was mit?",
+    "en": "Jule, we still have to plan the party on Saturday. Who's actually bringing what?"
+   },
+   {
+    "who": "A",
+    "de": "Ich habe schon allen geschrieben. Dein Bruder macht die Musik, oder?",
+    "en": "I've already written to everyone. Your brother is doing the music, isn't he?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, er bringt seine Lautsprecher mit. Er wollte auch einen Kuchen backen, aber ich habe gesagt, das ist zu viel Arbeit für ihn.",
+    "en": "Yes, he's bringing his speakers. He also wanted to bake a cake, but I said that's too much work for him."
+   },
+   {
+    "who": "A",
+    "de": "Gut. Und meine Kollegin bringt einen großen Kartoffelsalat mit. Den macht sie super.",
+    "en": "Good. And my colleague is bringing a big potato salad. She makes it brilliantly."
+   },
+   {
+    "who": "B",
+    "de": "Lecker! Und die Nachbarn von unten? Kommen die auch?",
+    "en": "Yum! And the neighbours from downstairs? Are they coming too?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, und sie leihen uns ihren Grill. Unser Grill ist ja letzten Sommer kaputtgegangen.",
+    "en": "Yes, and they're lending us their barbecue. Ours broke last summer, you know."
+   },
+   {
+    "who": "B",
+    "de": "Perfekt. Dann brauchen wir nur noch Getränke.",
+    "en": "Perfect. Then we just need drinks."
+   },
+   {
+    "who": "A",
+    "de": "Die kaufen meine Eltern. Sie haben ein großes Auto und fahren am Freitag sowieso zum Supermarkt.",
+    "en": "My parents are buying those. They have a big car and are going to the supermarket on Friday anyway."
+   },
+   {
+    "who": "B",
+    "de": "Toll. Und meine Freundin hat gesagt, sie backt einen Kuchen, mit Erdbeeren.",
+    "en": "Great. And my girlfriend said she'll bake a cake, with strawberries."
+   },
+   {
+    "who": "A",
+    "de": "Super. Aber was ist mit Stühlen? Wir haben nur sechs.",
+    "en": "Super. But what about chairs? We only have six."
+   },
+   {
+    "who": "B",
+    "de": "Die Leute können auf der Wiese sitzen. Ich lege ein paar Decken hin.",
+    "en": "People can sit on the grass. I'll put a few blankets down."
+   },
+   {
+    "who": "A",
+    "de": "Gut. Und Würstchen und Brot kaufen wir beide selbst, am Samstagmorgen.",
+    "en": "Good. And the two of us will buy sausages and bread ourselves, on Saturday morning."
+   },
+   {
+    "who": "B",
+    "de": "Dann haben wir alles. Das wird eine tolle Party!",
+    "en": "Then we have everything. It's going to be a great party!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Mirkos Bruder",
+    "format": "match",
+    "opts": [
+     "Würstchen",
+     "Grill",
+     "Musik",
+     "Kuchen",
+     "Getränke",
+     "Stühle",
+     "Salat"
+    ],
+    "a": 2,
+    "ev": [
+     1,
+     2
+    ],
+    "why": "Mirko's brother brings his speakers and does the music. He wanted to bake a cake too, but Mirko said no."
+   },
+   {
+    "q": "Jules Kollegin",
+    "format": "match",
+    "opts": [
+     "Würstchen",
+     "Grill",
+     "Musik",
+     "Kuchen",
+     "Getränke",
+     "Stühle",
+     "Salat"
+    ],
+    "a": 6,
+    "ev": [
+     3
+    ],
+    "why": "Jule's colleague brings a big potato salad."
+   },
+   {
+    "q": "Nachbarn",
+    "format": "match",
+    "opts": [
+     "Würstchen",
+     "Grill",
+     "Musik",
+     "Kuchen",
+     "Getränke",
+     "Stühle",
+     "Salat"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "The neighbours from downstairs lend them their barbecue."
+   },
+   {
+    "q": "Jules Eltern",
+    "format": "match",
+    "opts": [
+     "Würstchen",
+     "Grill",
+     "Musik",
+     "Kuchen",
+     "Getränke",
+     "Stühle",
+     "Salat"
+    ],
+    "a": 4,
+    "ev": [
+     6,
+     7
+    ],
+    "why": "Jule's parents buy the drinks, because they have a big car."
+   },
+   {
+    "q": "Mirkos Freundin",
+    "format": "match",
+    "opts": [
+     "Würstchen",
+     "Grill",
+     "Musik",
+     "Kuchen",
+     "Getränke",
+     "Stühle",
+     "Salat"
+    ],
+    "a": 3,
+    "ev": [
+     8
+    ],
+    "why": "Mirko's girlfriend bakes a strawberry cake. Nobody brings chairs, and Mirko and Jule buy the sausages themselves."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-01",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "setup": "Hannes (man) phones his sister Tabea (woman) about a birthday present for their mother.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Tabea, hier ist Hannes. Mama hat doch am Sonntag Geburtstag. Hast du schon eine Idee für ein Geschenk?",
+    "en": "Hi Tabea, it's Hannes. Mum's birthday is on Sunday, remember. Do you have an idea for a present yet?"
+   },
+   {
+    "who": "A",
+    "de": "Ich habe an ein Buch gedacht. Aber sie liest im Moment nicht so viel, sie hat zu wenig Zeit.",
+    "en": "I thought of a book. But she isn't reading much at the moment; she has too little time."
+   },
+   {
+    "who": "B",
+    "de": "Und Blumen? Die findet sie doch immer schön.",
+    "en": "And flowers? She always likes those."
+   },
+   {
+    "who": "A",
+    "de": "Blumen bringt unsere Tante bestimmt mit, wie jedes Jahr.",
+    "en": "Our aunt is sure to bring flowers, like every year."
+   },
+   {
+    "who": "B",
+    "de": "Stimmt. Was hältst du von Konzertkarten? Sie hört doch so gern Jazz.",
+    "en": "True. What do you think of concert tickets? She loves listening to jazz."
+   },
+   {
+    "who": "A",
+    "de": "Super Idee! Dann gehen wir alle zusammen ins Konzert. Ich kaufe die Karten heute noch online.",
+    "en": "Great idea! Then we'll all go to the concert together. I'll buy the tickets online today."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was schenken Hannes und Tabea ihrer Mutter?",
+    "format": "abc",
+    "opts": [
+     "ein Buch",
+     "Konzertkarten",
+     "Blumen"
+    ],
+    "a": 1,
+    "ev": [
+     4,
+     5
+    ],
+    "why": "Hannes suggests concert tickets because she loves jazz, and Tabea agrees (\"Super Idee!\"). Their mother isn't reading much now, and their aunt will bring flowers."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-02",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "setup": "At a party: Hauke (man) talks to Swantje (woman), who invited him.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Danke für die Einladung, Swantje! Die Party ist super. Hast du heute Geburtstag?",
+    "en": "Thanks for the invitation, Swantje! The party is great. Is it your birthday today?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, mein Geburtstag war schon im März.",
+    "en": "No, my birthday was back in March."
+   },
+   {
+    "who": "B",
+    "de": "Ach so. Dann feierst du bestimmt deine neue Wohnung, oder? Sie ist wirklich schön.",
+    "en": "I see. Then you must be celebrating your new flat, right? It's really nice."
+   },
+   {
+    "who": "A",
+    "de": "Danke, aber hier wohne ich schon seit drei Jahren. Nein, ich habe letzte Woche meine Ausbildung beendet. Ab Oktober arbeite ich als Krankenschwester.",
+    "en": "Thanks, but I've lived here for three years. No, last week I finished my training. From October I'll be working as a nurse."
+   },
+   {
+    "who": "B",
+    "de": "Das ist ja toll! Herzlichen Glückwunsch!",
+    "en": "That's great! Congratulations!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was feiert Swantje?",
+    "format": "abc",
+    "opts": [
+     "das Ende ihrer Ausbildung",
+     "ihren Geburtstag",
+     "ihre neue Wohnung"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Swantje finished her training last week (\"ich habe letzte Woche meine Ausbildung beendet\"). Her birthday was in March, and she has lived in the flat for three years."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-03",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "setup": "Femke (woman) and her husband Eike (man) plan their daughter's birthday party.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Eike, unsere Tochter hat in zwei Wochen Geburtstag. Wo wollen wir dieses Jahr feiern?",
+    "en": "Eike, our daughter's birthday is in two weeks. Where shall we celebrate this year?"
+   },
+   {
+    "who": "B",
+    "de": "Wie letztes Jahr bei uns zu Hause?",
+    "en": "At home, like last year?"
+   },
+   {
+    "who": "A",
+    "de": "Hm, sie möchte zwölf Kinder einladen. Dafür ist unsere Wohnung zu klein.",
+    "en": "Hm, she wants to invite twelve children. Our flat is too small for that."
+   },
+   {
+    "who": "B",
+    "de": "Und im Schwimmbad? Da haben die Kinder bestimmt viel Spaß.",
+    "en": "And at the swimming pool? The children would have lots of fun there."
+   },
+   {
+    "who": "A",
+    "de": "Das ist aber teuer. Und zwei von den Kindern können noch nicht schwimmen.",
+    "en": "But that's expensive. And two of the children can't swim yet."
+   },
+   {
+    "who": "B",
+    "de": "Dann machen wir ein Picknick im Park am Fluss, mit Spielen und Kuchen. Am Samstag soll es sonnig werden.",
+    "en": "Then let's have a picnic in the park by the river, with games and cake. It's supposed to be sunny on Saturday."
+   },
+   {
+    "who": "A",
+    "de": "Gute Idee, so machen wir es!",
+    "en": "Good idea, that's what we'll do!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo feiert die Tochter ihren Geburtstag?",
+    "format": "abc",
+    "opts": [
+     "zu Hause",
+     "im Park",
+     "im Schwimmbad"
+    ],
+    "a": 1,
+    "ev": [
+     5,
+     6
+    ],
+    "why": "They decide on a picnic in the park by the river (\"Gute Idee, so machen wir es!\"). The flat is too small for twelve children, and the pool is expensive and two children can't swim."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-04",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "setup": "Daria (woman) asks her colleague Reinhard (man) about his brother's wedding.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Na, Reinhard, wie war die Hochzeit von deinem Bruder?",
+    "en": "So, Reinhard, how was your brother's wedding?"
+   },
+   {
+    "who": "B",
+    "de": "Wunderschön! Wir haben in einem alten Schloss gefeiert, mit fast hundert Gästen.",
+    "en": "Beautiful! We celebrated in an old castle, with almost a hundred guests."
+   },
+   {
+    "who": "A",
+    "de": "Und das Essen? Du hattest doch Angst, dass es nur Fisch gibt.",
+    "en": "And the food? You were worried there would only be fish."
+   },
+   {
+    "who": "B",
+    "de": "Es gab auch Fleisch und Nudeln. Das Essen war gut, aber nichts Besonderes.",
+    "en": "There was meat and pasta too. The food was good, but nothing special."
+   },
+   {
+    "who": "A",
+    "de": "Und die Band? Hast du viel getanzt?",
+    "en": "And the band? Did you dance a lot?"
+   },
+   {
+    "who": "B",
+    "de": "Nicht so viel, die Band war leider viel zu laut. Aber das Schönste war am Abend: Mein Bruder und seine Frau haben zusammen ein Lied gesungen. Alle haben geweint!",
+    "en": "Not much; the band was far too loud, unfortunately. But the best part was in the evening: my brother and his wife sang a song together. Everyone cried!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was hat Reinhard auf der Hochzeit am besten gefallen?",
+    "format": "abc",
+    "opts": [
+     "das Lied am Abend",
+     "das Essen",
+     "die Band"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "\"Das Schönste war am Abend\": the song his brother and his wife sang together. The food was nothing special, and the band was too loud."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-05",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 3",
+  "setup": "Timo (man) phones his friend Jette (woman) about his garden party.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Hallo Jette! Kommst du am Samstag zu meiner Gartenparty?",
+    "en": "Hi Jette! Are you coming to my garden party on Saturday?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, gern! Aber ich kann leider erst später kommen. Ich arbeite bis sechs Uhr im Laden.",
+    "en": "Yes, I'd love to! But I'm afraid I can only come later. I'm working in the shop until six."
+   },
+   {
+    "who": "B",
+    "de": "Kein Problem. Wir fangen um vier an, aber die Party geht bis Mitternacht.",
+    "en": "No problem. We start at four, but the party goes on until midnight."
+   },
+   {
+    "who": "A",
+    "de": "Dann bin ich um sieben bei dir. Soll ich etwas mitbringen?",
+    "en": "Then I'll be at yours at seven. Shall I bring something?"
+   },
+   {
+    "who": "B",
+    "de": "Vielleicht einen Salat? Getränke haben wir genug.",
+    "en": "Maybe a salad? We have enough drinks."
+   },
+   {
+    "who": "A",
+    "de": "Mache ich. Bis Samstag!",
+    "en": "Will do. See you on Saturday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt Jette zur Party?",
+    "format": "abc",
+    "opts": [
+     "um sieben Uhr",
+     "um vier Uhr",
+     "um sechs Uhr"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "Jette says \"Dann bin ich um sieben bei dir\". The party starts at four, and she works in the shop until six."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-06",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "Two pupils, Dilara (woman) and Emil (man), talk before an exam.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Emil, morgen schreiben wir die Matheprüfung. Hast du viel gelernt?",
+    "en": "Emil, we have the maths exam tomorrow. Have you studied a lot?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, das ganze Wochenende. Aber Mathe ist für mich zum Glück nicht so schwer.",
+    "en": "Yes, all weekend. But luckily maths isn't that hard for me."
+   },
+   {
+    "who": "A",
+    "de": "Für mich schon! Und was ist mit Englisch nächste Woche?",
+    "en": "It is for me! And what about English next week?"
+   },
+   {
+    "who": "B",
+    "de": "Englisch geht. Aber vor Chemie habe ich wirklich Angst. Das verstehe ich einfach nicht.",
+    "en": "English is OK. But I'm really scared of chemistry. I just don't understand it."
+   },
+   {
+    "who": "A",
+    "de": "Komm doch am Donnerstag zu mir, dann lernen wir zusammen. Chemie ist mein Lieblingsfach.",
+    "en": "Come to my place on Thursday, then we'll study together. Chemistry is my favourite subject."
+   },
+   {
+    "who": "B",
+    "de": "Oh ja, gern! Danke!",
+    "en": "Oh yes, I'd like that! Thanks!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Welches Fach findet Emil am schwierigsten?",
+    "format": "abc",
+    "opts": [
+     "Mathe",
+     "Englisch",
+     "Chemie"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "Emil is scared of chemistry and doesn't understand it (\"vor Chemie habe ich wirklich Angst\"). Maths isn't hard for him, and English is OK."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-07",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "Enno (man) asks at a language school about a course. A woman at reception answers.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag. Ich möchte einen Italienischkurs für Anfänger machen. Haben Sie noch Plätze frei?",
+    "en": "Hello. I'd like to do an Italian course for beginners. Do you still have places?"
+   },
+   {
+    "who": "A",
+    "de": "Im Kurs am Dienstagabend leider nicht mehr, der ist schon voll. Aber im Kurs am Samstagvormittag sind noch zwei Plätze frei.",
+    "en": "Not in the Tuesday evening course, I'm afraid; that one is full. But there are still two places in the Saturday morning course."
+   },
+   {
+    "who": "B",
+    "de": "Samstag ist schlecht, da muss ich arbeiten. Gibt es keinen anderen Kurs?",
+    "en": "Saturday is bad, I have to work then. Isn't there another course?"
+   },
+   {
+    "who": "A",
+    "de": "Doch, ab März gibt es einen neuen Abendkurs, immer donnerstags von 18 Uhr bis halb acht.",
+    "en": "Yes, from March there's a new evening course, every Thursday from 6 to half past 7."
+   },
+   {
+    "who": "B",
+    "de": "Das passt mir gut. Dann melde ich mich für diesen Kurs an.",
+    "en": "That suits me well. Then I'll sign up for that course."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Welchen Kurs macht Enno?",
+    "format": "abc",
+    "opts": [
+     "den Kurs am Dienstagabend",
+     "den Kurs am Samstagvormittag",
+     "den Kurs am Donnerstagabend"
+    ],
+    "a": 2,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "He signs up for the new Thursday evening course (\"Dann melde ich mich für diesen Kurs an\"). The Tuesday course is full, and on Saturdays he has to work."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-08",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "At a parents' evening: Doreen (woman) talks to her son's teacher, Herr Thalheim (man).",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Abend, Herr Thalheim. Wie läuft es denn mit meinem Sohn in der Schule?",
+    "en": "Good evening, Herr Thalheim. How is my son getting on at school?"
+   },
+   {
+    "who": "B",
+    "de": "Eigentlich gut. In Deutsch und in Sport hat er sehr gute Noten.",
+    "en": "Quite well, really. In German and in PE he has very good marks."
+   },
+   {
+    "who": "A",
+    "de": "Und in Mathe? Da hatte er doch immer Probleme.",
+    "en": "And in maths? He always had problems there."
+   },
+   {
+    "who": "B",
+    "de": "In Mathe ist er viel besser geworden. Aber im Englischunterricht sagt er fast nie etwas. Er sollte mehr sprechen, auch wenn er Fehler macht.",
+    "en": "He has got much better in maths. But in English lessons he hardly ever says anything. He should speak more, even if he makes mistakes."
+   },
+   {
+    "who": "A",
+    "de": "Er ist eben ein bisschen ruhig. Ich spreche zu Hause mit ihm darüber.",
+    "en": "He's just a bit quiet. I'll talk to him about it at home."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was soll Doreens Sohn tun?",
+    "format": "abc",
+    "opts": [
+     "mehr Mathe üben",
+     "im Englischunterricht mehr sprechen",
+     "mehr Sport machen"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "The teacher says he should speak more in English lessons (\"Er sollte mehr sprechen\"). He has already got much better in maths, and his PE marks are very good."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-09",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "Two students, Kilian (man) and Imke (woman), talk in the university cafeteria.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Imke, lernst du heute wieder in der Bibliothek?",
+    "en": "Imke, are you studying in the library again today?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, da ist es mir im Moment zu voll. Man findet fast keinen Platz.",
+    "en": "No, it's too full for me there at the moment. You can hardly find a seat."
+   },
+   {
+    "who": "B",
+    "de": "Und zu Hause?",
+    "en": "And at home?"
+   },
+   {
+    "who": "A",
+    "de": "Zu Hause hört mein Nachbar den ganzen Tag laute Musik.",
+    "en": "At home my neighbour plays loud music all day."
+   },
+   {
+    "who": "B",
+    "de": "Ich lerne oft hier in der Cafeteria. Es ist nicht ganz ruhig, aber der Kaffee ist gut.",
+    "en": "I often study here in the cafeteria. It's not completely quiet, but the coffee is good."
+   },
+   {
+    "who": "A",
+    "de": "Nee, das ist nichts für mich. Am liebsten lerne ich im Park unter einem Baum, wenn es warm ist. Da kann ich am besten denken.",
+    "en": "Nah, that's not for me. I like studying best in the park under a tree, when it's warm. That's where I can think best."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo lernt Imke am liebsten?",
+    "format": "abc",
+    "opts": [
+     "in der Bibliothek",
+     "in der Cafeteria",
+     "im Park"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "why": "\"Am liebsten lerne ich im Park unter einem Baum\". The library is too full for her, and the cafeteria is where Kilian studies; she says it's not for her."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-10",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "Sönke (man) asks his friend Derya (woman) how she is learning Spanish.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Derya, du lernst doch Spanisch. Gehst du noch zur Volkshochschule?",
+    "en": "Derya, you're learning Spanish, aren't you? Do you still go to the adult education centre?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, seit Januar nicht mehr. Der Kurs war mir zu langsam.",
+    "en": "No, not since January. The course was too slow for me."
+   },
+   {
+    "who": "B",
+    "de": "Lernst du jetzt mit einer App?",
+    "en": "Are you learning with an app now?"
+   },
+   {
+    "who": "A",
+    "de": "Das habe ich probiert, aber allein war es mir zu langweilig. Jetzt habe ich eine Lehrerin aus Madrid. Wir sprechen zweimal pro Woche im Internet zusammen.",
+    "en": "I tried that, but on my own it was too boring for me. Now I have a teacher from Madrid. We talk online twice a week."
+   },
+   {
+    "who": "B",
+    "de": "Und, bist du zufrieden?",
+    "en": "And, are you happy with it?"
+   },
+   {
+    "who": "A",
+    "de": "Sehr! Ich spreche jetzt viel mehr als früher.",
+    "en": "Very! I speak much more now than before."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie lernt Derya jetzt Spanisch?",
+    "format": "abc",
+    "opts": [
+     "mit einer Lehrerin im Internet",
+     "in einem Kurs an der Volkshochschule",
+     "mit einer App"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "She now has a teacher from Madrid and they talk online twice a week (\"im Internet\"). She stopped the course in January, and the app was too boring on her own."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-11",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 3",
+  "setup": "Bianca (woman) and Norbert (man) talk about which school their daughter should go to.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Norbert, wir müssen bald eine Schule für unsere Tochter wählen. Welche findest du am besten?",
+    "en": "Norbert, we have to choose a school for our daughter soon. Which one do you think is best?"
+   },
+   {
+    "who": "B",
+    "de": "Die Schillerschule ist am nächsten. Da könnte sie zu Fuß hingehen.",
+    "en": "The Schiller School is the nearest. She could walk there."
+   },
+   {
+    "who": "A",
+    "de": "Ja, aber die Klassen dort sind sehr groß, fast dreißig Kinder.",
+    "en": "Yes, but the classes there are very big, almost thirty children."
+   },
+   {
+    "who": "B",
+    "de": "Das Gymnasium am Markt hat einen guten Namen. Aber mit dem Bus braucht sie bis dahin vierzig Minuten.",
+    "en": "The grammar school on the market square has a good name. But by bus it takes her forty minutes to get there."
+   },
+   {
+    "who": "A",
+    "de": "Und die Waldschule? Die ist kleiner als die anderen, sie hat einen großen Garten, und mit dem Fahrrad sind es nur zehn Minuten.",
+    "en": "And the Wald School? It's smaller than the others, it has a big garden, and by bike it's only ten minutes."
+   },
+   {
+    "who": "B",
+    "de": "Stimmt, und sie fährt so gern Fahrrad. Gut, dann nehmen wir die Waldschule.",
+    "en": "True, and she loves cycling. Right, then we'll choose the Wald School."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Welche Schule wählen Bianca und Norbert?",
+    "format": "abc",
+    "opts": [
+     "die Schillerschule",
+     "das Gymnasium am Markt",
+     "die Waldschule"
+    ],
+    "a": 2,
+    "ev": [
+     4,
+     5
+    ],
+    "why": "\"Gut, dann nehmen wir die Waldschule\": it's small, has a garden and is ten minutes by bike. The Schiller School has very big classes, and the grammar school is forty minutes away by bus."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-12",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "setup": "At the bank: Yasemin (woman) wants to open an account. A bank clerk (man) helps her.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Ich möchte ein Konto aufmachen. Ich bin neu in der Stadt.",
+    "en": "Hello. I'd like to open an account. I'm new in town."
+   },
+   {
+    "who": "B",
+    "de": "Sehr gern. Haben Sie Ihren Pass dabei?",
+    "en": "Certainly. Do you have your passport with you?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, hier ist er. Und hier ist ein Brief von meiner Vermieterin, da steht meine Adresse.",
+    "en": "Yes, here it is. And here's a letter from my landlady with my address on it."
+   },
+   {
+    "who": "B",
+    "de": "Danke. Wir brauchen aber noch Ihre Anmeldung vom Bürgeramt. Der Brief ist leider nicht genug.",
+    "en": "Thank you. But we also need your registration from the citizens' office. The letter isn't enough, I'm afraid."
+   },
+   {
+    "who": "A",
+    "de": "Oh, die liegt zu Hause. Kann ich sie morgen bringen?",
+    "en": "Oh, that's at home. Can I bring it tomorrow?"
+   },
+   {
+    "who": "B",
+    "de": "Natürlich. Kommen Sie morgen einfach mit der Anmeldung vorbei, dann machen wir alles fertig.",
+    "en": "Of course. Just come by tomorrow with the registration, and we'll finish everything."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was muss Yasemin morgen mitbringen?",
+    "format": "abc",
+    "opts": [
+     "ihren Pass",
+     "die Anmeldung vom Bürgeramt",
+     "einen Brief von der Vermieterin"
+    ],
+    "a": 1,
+    "ev": [
+     3,
+     5
+    ],
+    "why": "The bank still needs her registration from the citizens' office, and she should come back tomorrow with it (\"mit der Anmeldung\"). She has already shown her passport, and the landlady's letter isn't enough."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-13",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "setup": "Folke Hohmann (man) phones a bicycle shop. A woman answers.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag, hier ist Folke Hohmann. Ich habe am Montag mein Fahrrad zu Ihnen gebracht. Ist es schon fertig?",
+    "en": "Hello, this is Folke Hohmann. I brought my bike to you on Monday. Is it ready yet?"
+   },
+   {
+    "who": "A",
+    "de": "Moment bitte … Ja, Herr Hohmann. Die Bremsen sind repariert, aber wir mussten auch einen neuen Reifen bestellen.",
+    "en": "One moment, please … Yes, Herr Hohmann. The brakes are repaired, but we also had to order a new tyre."
+   },
+   {
+    "who": "B",
+    "de": "Oh. Und wann kommt der Reifen?",
+    "en": "Oh. And when is the tyre coming?"
+   },
+   {
+    "who": "A",
+    "de": "Morgen Vormittag. Dann ist Ihr Fahrrad am Donnerstagnachmittag fertig.",
+    "en": "Tomorrow morning. Then your bike will be ready on Thursday afternoon."
+   },
+   {
+    "who": "B",
+    "de": "Hm. Ich brauche aber jeden Tag ein Fahrrad für die Arbeit.",
+    "en": "Hm. But I need a bike every day for work."
+   },
+   {
+    "who": "A",
+    "de": "Kein Problem. Bis Donnerstag können Sie ein Fahrrad von uns leihen, kostenlos.",
+    "en": "No problem. Until Thursday you can borrow a bike from us, free of charge."
+   },
+   {
+    "who": "B",
+    "de": "Super, dann komme ich heute noch vorbei und hole es.",
+    "en": "Great, then I'll come by today and pick it up."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann ist Folkes Fahrrad fertig?",
+    "format": "abc",
+    "opts": [
+     "heute",
+     "morgen Vormittag",
+     "am Donnerstagnachmittag"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "why": "\"Dann ist Ihr Fahrrad am Donnerstagnachmittag fertig.\" The new tyre arrives tomorrow morning, and today he only picks up a bike to borrow."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-14",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "setup": "At the dry cleaner's: Kerstin (woman) brings some clothes. A man works at the counter.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Guten Tag. Ich möchte diesen Mantel und zwei Blusen reinigen lassen.",
+    "en": "Hello. I'd like to have this coat and two blouses cleaned."
+   },
+   {
+    "who": "B",
+    "de": "Gern. Der Mantel kostet 14 Euro, die Blusen kosten 5 Euro pro Stück.",
+    "en": "Certainly. The coat costs 14 euros, the blouses 5 euros each."
+   },
+   {
+    "who": "A",
+    "de": "Wann kann ich die Sachen abholen?",
+    "en": "When can I pick the things up?"
+   },
+   {
+    "who": "B",
+    "de": "Die Blusen sind morgen fertig, der Mantel erst am Freitag.",
+    "en": "The blouses will be ready tomorrow, the coat not until Friday."
+   },
+   {
+    "who": "A",
+    "de": "Am Freitag bin ich leider nicht in der Stadt. Geht es auch am Samstag?",
+    "en": "Unfortunately I'm not in town on Friday. Is Saturday possible too?"
+   },
+   {
+    "who": "B",
+    "de": "Natürlich, samstags haben wir bis 13 Uhr geöffnet.",
+    "en": "Of course, on Saturdays we're open until 1 p.m."
+   },
+   {
+    "who": "A",
+    "de": "Gut, dann komme ich am Samstag und hole alles zusammen ab.",
+    "en": "Good, then I'll come on Saturday and pick everything up together."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann holt Kerstin den Mantel ab?",
+    "format": "abc",
+    "opts": [
+     "am Samstag",
+     "morgen",
+     "am Freitag"
+    ],
+    "a": 0,
+    "ev": [
+     6
+    ],
+    "why": "She will come on Saturday and pick everything up together (\"dann komme ich am Samstag\"). The blouses are ready tomorrow and the coat on Friday, but she is away on Friday."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-15",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "setup": "Rafael (man) phones his internet provider. A woman at the hotline answers.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag, mein Internet funktioniert seit gestern nicht mehr. Ich arbeite zu Hause und brauche es dringend.",
+    "en": "Hello, my internet hasn't worked since yesterday. I work from home and need it urgently."
+   },
+   {
+    "who": "A",
+    "de": "Das tut mir leid. Haben Sie den Router schon aus- und wieder angemacht?",
+    "en": "I'm sorry. Have you already switched the router off and on again?"
+   },
+   {
+    "who": "B",
+    "de": "Ja, schon zweimal. Das hat nichts geholfen.",
+    "en": "Yes, twice already. It didn't help."
+   },
+   {
+    "who": "A",
+    "de": "Dann schicke ich Ihnen einen Techniker. Morgen ist leider schon alles voll. Geht es am Mittwoch um acht Uhr?",
+    "en": "Then I'll send you a technician. Unfortunately tomorrow is fully booked. Does Wednesday at eight work?"
+   },
+   {
+    "who": "B",
+    "de": "Um acht bringe ich meine Kinder zur Schule. Geht es auch etwas später?",
+    "en": "At eight I take my children to school. Is a bit later possible?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, um zehn Uhr ist noch ein Termin frei.",
+    "en": "Yes, there's still an appointment free at ten."
+   },
+   {
+    "who": "B",
+    "de": "Perfekt, den nehme ich.",
+    "en": "Perfect, I'll take it."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann kommt der Techniker?",
+    "format": "abc",
+    "opts": [
+     "morgen",
+     "am Mittwoch um zehn Uhr",
+     "am Mittwoch um acht Uhr"
+    ],
+    "a": 1,
+    "ev": [
+     5,
+     6
+    ],
+    "why": "Rafael takes the appointment at ten on Wednesday (\"Perfekt, den nehme ich\"). Tomorrow is fully booked, and at eight he takes his children to school."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-16",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 3",
+  "setup": "At the hairdresser's: Olga (woman) talks to the hairdresser (man).",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Tag! Was kann ich für Sie tun?",
+    "en": "Hello! What can I do for you?"
+   },
+   {
+    "who": "A",
+    "de": "Ich möchte meine Haare schneiden lassen. Nur ein bisschen kürzer, bitte, ungefähr drei Zentimeter.",
+    "en": "I'd like to have my hair cut. Just a little shorter, please, about three centimetres."
+   },
+   {
+    "who": "B",
+    "de": "Gern. Möchten Sie vielleicht auch eine neue Farbe? Rot ist gerade sehr modern.",
+    "en": "Of course. Would you perhaps like a new colour too? Red is very fashionable right now."
+   },
+   {
+    "who": "A",
+    "de": "Nein danke, keine Farbe. Ich mag meine Haare so, wie sie sind.",
+    "en": "No thanks, no colour. I like my hair the way it is."
+   },
+   {
+    "who": "B",
+    "de": "Und soll ich die Haare vorher waschen?",
+    "en": "And shall I wash your hair first?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, bitte, waschen und schneiden.",
+    "en": "Yes, please: wash and cut."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was lässt Olga beim Friseur machen?",
+    "format": "abc",
+    "opts": [
+     "nur die Haare waschen",
+     "Haare waschen und schneiden",
+     "Haare schneiden und eine neue Farbe"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     3,
+     5
+    ],
+    "why": "She wants her hair cut, and then says yes to washing (\"waschen und schneiden\"). She says no to a new colour."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-17",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "Jarno (man) and his friend Birte (woman) plan a trip for Sunday.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Birte, hast du am Sonntag Lust auf eine Wanderung in den Bergen?",
+    "en": "Birte, do you fancy a hike in the mountains on Sunday?"
+   },
+   {
+    "who": "A",
+    "de": "Gern, aber hast du den Wetterbericht gehört? In den Bergen soll es am Sonntag Gewitter geben.",
+    "en": "I'd like to, but have you heard the weather forecast? There are supposed to be thunderstorms in the mountains on Sunday."
+   },
+   {
+    "who": "B",
+    "de": "Oh, das ist gefährlich. Und an den See? Da könnten wir auch schwimmen.",
+    "en": "Oh, that's dangerous. And to the lake? We could swim there too."
+   },
+   {
+    "who": "A",
+    "de": "Zum Schwimmen ist es noch zu kalt, nur 17 Grad. Wie wäre es mit dem Wald hinter dem Dorf? Da gibt es einen schönen Weg, und dort bleibt es trocken.",
+    "en": "It's still too cold for swimming, only 17 degrees. How about the forest behind the village? There's a nice path, and it stays dry there."
+   },
+   {
+    "who": "B",
+    "de": "Okay, dann gehen wir in den Wald. Ich bringe Brötchen mit.",
+    "en": "OK, then we'll go to the forest. I'll bring bread rolls."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wohin gehen Jarno und Birte am Sonntag?",
+    "format": "abc",
+    "opts": [
+     "in den Wald",
+     "in die Berge",
+     "an den See"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     4
+    ],
+    "why": "They agree on the forest behind the village (\"dann gehen wir in den Wald\"). Thunderstorms are forecast in the mountains, and it's too cold to swim in the lake."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-18",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "Ulrike (woman) asks her neighbour Lothar (man) to look after her balcony plants.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Lothar, ich bin ab Samstag zwei Wochen im Urlaub. Könntest du meinen Pflanzen auf dem Balkon Wasser geben?",
+    "en": "Lothar, I'm on holiday for two weeks from Saturday. Could you water my plants on the balcony?"
+   },
+   {
+    "who": "B",
+    "de": "Klar, gern. Muss ich jeden Tag kommen?",
+    "en": "Sure, happy to. Do I have to come every day?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, nur wenn es heiß und trocken ist. Dann am besten am Abend.",
+    "en": "No, only when it's hot and dry. Then best in the evening."
+   },
+   {
+    "who": "B",
+    "de": "Und wenn es regnet?",
+    "en": "And when it rains?"
+   },
+   {
+    "who": "A",
+    "de": "Dann musst du gar nichts machen. Nur bei starkem Wind stell bitte die kleinen Pflanzen ins Wohnzimmer.",
+    "en": "Then you don't have to do anything at all. Only when there's a strong wind, please put the small plants in the living room."
+   },
+   {
+    "who": "B",
+    "de": "Alles klar. Bringst du mir den Schlüssel am Freitag?",
+    "en": "All right. Will you bring me the key on Friday?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, genau. Vielen Dank, Lothar!",
+    "en": "Yes, exactly. Thanks a lot, Lothar!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was soll Lothar tun, wenn es regnet?",
+    "format": "abc",
+    "opts": [
+     "die Pflanzen ins Wohnzimmer stellen",
+     "am Abend Wasser geben",
+     "nichts"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "When it rains he doesn't have to do anything at all (\"Dann musst du gar nichts machen\"). The plants go into the living room only in strong wind, and evening watering is for hot, dry days."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-19",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "Florian (man) talks to his colleague Paula (woman) at work.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Paula, du kommst ja gar nicht mehr mit dem Auto. Ist es kaputt?",
+    "en": "Paula, you don't come by car any more. Is it broken?"
+   },
+   {
+    "who": "A",
+    "de": "Nein, aber ich möchte etwas für die Umwelt tun. Und Benzin ist so teuer geworden.",
+    "en": "No, but I want to do something for the environment. And petrol has got so expensive."
+   },
+   {
+    "who": "B",
+    "de": "Fährst du jetzt mit dem Bus?",
+    "en": "Do you take the bus now?"
+   },
+   {
+    "who": "A",
+    "de": "Das habe ich zuerst probiert, aber ich musste zweimal umsteigen. Das hat zu lange gedauert.",
+    "en": "I tried that first, but I had to change twice. It took too long."
+   },
+   {
+    "who": "B",
+    "de": "Und mit dem Fahrrad? Das sind doch nur acht Kilometer.",
+    "en": "And by bike? It's only eight kilometres."
+   },
+   {
+    "who": "A",
+    "de": "Genau, ich fahre jetzt jeden Tag mit dem Fahrrad, auch wenn es regnet. Und ich fühle mich viel fitter.",
+    "en": "Exactly, I cycle every day now, even when it rains. And I feel much fitter."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie kommt Paula jetzt zur Arbeit?",
+    "format": "abc",
+    "opts": [
+     "mit dem Auto",
+     "mit dem Fahrrad",
+     "mit dem Bus"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "\"Ich fahre jetzt jeden Tag mit dem Fahrrad\". She stopped driving for the environment and because of petrol prices, and the bus took too long."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-20",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "At a campsite: Benedikt (man) asks the woman at reception for a place for his tent.",
+  "once": false,
+  "lines": [
+   {
+    "who": "B",
+    "de": "Guten Abend. Haben Sie noch einen Platz für ein kleines Zelt? Für zwei Nächte.",
+    "en": "Good evening. Do you still have a pitch for a small tent? For two nights."
+   },
+   {
+    "who": "A",
+    "de": "Direkt am See ist leider alles voll. Aber hinten am Wald ist noch ein Platz frei.",
+    "en": "Right by the lake everything is full, I'm afraid. But at the back by the forest there's still a pitch free."
+   },
+   {
+    "who": "B",
+    "de": "Ist es da nicht sehr dunkel?",
+    "en": "Isn't it very dark there?"
+   },
+   {
+    "who": "A",
+    "de": "Ein bisschen, aber dort ist es schön ruhig. Oder Sie nehmen einen Platz neben dem Spielplatz. Da ist es heller, aber auch lauter.",
+    "en": "A little, but it's nice and quiet there. Or you take a pitch next to the playground. It's lighter there, but also louder."
+   },
+   {
+    "who": "B",
+    "de": "Ich möchte lieber meine Ruhe haben. Dann nehme ich den Platz am Wald.",
+    "en": "I'd rather have some peace and quiet. Then I'll take the pitch by the forest."
+   },
+   {
+    "who": "A",
+    "de": "Gut. Das macht 24 Euro pro Nacht.",
+    "en": "Fine. That's 24 euros a night."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wo stellt Benedikt sein Zelt auf?",
+    "format": "abc",
+    "opts": [
+     "am See",
+     "neben dem Spielplatz",
+     "am Wald"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "why": "He wants peace and quiet and takes the pitch by the forest (\"Dann nehme ich den Platz am Wald\"). The lake is full, and the playground is louder."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-3-21",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 3",
+  "setup": "Zofia (woman) talks to her brother Marek (man) before a trip to an island in the North Sea.",
+  "once": false,
+  "lines": [
+   {
+    "who": "A",
+    "de": "Marek, hast du schon gepackt? Wir fahren morgen früh auf die Insel.",
+    "en": "Marek, have you packed yet? We're going to the island early tomorrow."
+   },
+   {
+    "who": "B",
+    "de": "Fast. Ich nehme nur T-Shirts und kurze Hosen mit. Es ist doch Sommer.",
+    "en": "Almost. I'm only taking T-shirts and shorts. It's summer, after all."
+   },
+   {
+    "who": "A",
+    "de": "Am Meer ist es oft windig und kühl, besonders am Abend. Nimm lieber auch einen warmen Pullover mit.",
+    "en": "By the sea it's often windy and cool, especially in the evening. Better take a warm jumper too."
+   },
+   {
+    "who": "B",
+    "de": "Okay, den packe ich ein. Und einen Regenschirm?",
+    "en": "OK, I'll pack one. And an umbrella?"
+   },
+   {
+    "who": "A",
+    "de": "Der hilft bei dem Wind nicht viel. Nimm lieber deine Regenjacke.",
+    "en": "That won't help much in the wind. Better take your rain jacket."
+   },
+   {
+    "who": "B",
+    "de": "Gut, die kommt auch in den Koffer.",
+    "en": "Fine, that goes in the suitcase too."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was nimmt Marek gegen den Regen mit?",
+    "format": "abc",
+    "opts": [
+     "eine Regenjacke",
+     "einen Regenschirm",
+     "einen Pullover"
+    ],
+    "a": 0,
+    "ev": [
+     4,
+     5
+    ],
+    "why": "For rain he packs his rain jacket (\"Nimm lieber deine Regenjacke\" – \"die kommt auch in den Koffer\"). An umbrella won't help in the wind, and the jumper is against the cold."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-4-01",
+  "pool": "exam",
+  "station": 9,
+  "part": "Teil 4",
+  "setup": "A radio programme about people in the town. The host talks to Insa Rehbein (woman), a wedding planner.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Willkommen bei „Menschen in unserer Stadt“. Heute ist Insa Rehbein bei uns. Sie plant Hochzeiten, und das schon seit zwölf Jahren. Hallo, Frau Rehbein!",
+    "en": "Welcome to \"People in Our Town\". Today Insa Rehbein is with us. She plans weddings, and has done for twelve years. Hello, Frau Rehbein!"
+   },
+   {
+    "who": "A",
+    "de": "Hallo, und danke für die Einladung!",
+    "en": "Hello, and thanks for inviting me!"
+   },
+   {
+    "who": "N",
+    "de": "Frau Rehbein, wie sind Sie zu diesem Beruf gekommen?",
+    "en": "Frau Rehbein, how did you come to this job?"
+   },
+   {
+    "who": "A",
+    "de": "Eigentlich war ich Köchin in einem Hotel. Dort gab es fast jedes Wochenende eine Hochzeit, und ich habe oft bei der Planung geholfen. Irgendwann habe ich gedacht: Das möchte ich richtig machen.",
+    "en": "I was actually a cook in a hotel. There was a wedding there almost every weekend, and I often helped with the planning. At some point I thought: I want to do this properly."
+   },
+   {
+    "who": "N",
+    "de": "Was ist bei Ihrer Arbeit am wichtigsten?",
+    "en": "What is the most important thing in your work?"
+   },
+   {
+    "who": "A",
+    "de": "Gut zuhören. Jedes Paar ist anders. Manche wollen eine große Feier mit zweihundert Gästen, andere möchten nur mit der Familie in einem kleinen Restaurant essen.",
+    "en": "Listening well. Every couple is different. Some want a big celebration with two hundred guests, others just want to eat with the family in a small restaurant."
+   },
+   {
+    "who": "N",
+    "de": "Und wo heiraten die Leute im Moment am liebsten?",
+    "en": "And where do people most like to get married at the moment?"
+   },
+   {
+    "who": "A",
+    "de": "Viele Paare feiern gern draußen, im Garten oder sogar im Wald. Das ist wunderschön, aber man braucht immer auch einen Plan für Regen.",
+    "en": "Lots of couples like to celebrate outdoors, in a garden or even in the forest. It's beautiful, but you always need a plan for rain too."
+   },
+   {
+    "who": "N",
+    "de": "Ist bei einer Hochzeit schon einmal etwas Schlimmes passiert?",
+    "en": "Has anything bad ever happened at a wedding?"
+   },
+   {
+    "who": "A",
+    "de": "Oh ja! Einmal hat der Bäcker die Torte zu einer falschen Adresse gebracht. Wir haben sie erst eine Stunde später gefunden, in einem anderen Hotel. Heute kann ich darüber lachen.",
+    "en": "Oh yes! Once the baker took the cake to the wrong address. We only found it an hour later, in another hotel. Today I can laugh about it."
+   },
+   {
+    "who": "N",
+    "de": "Wie viele Hochzeiten organisieren Sie im Jahr?",
+    "en": "How many weddings do you organise a year?"
+   },
+   {
+    "who": "A",
+    "de": "Ungefähr dreißig, die meisten im Sommer. Im Winter habe ich mehr Zeit für meine Familie.",
+    "en": "About thirty, most of them in summer. In winter I have more time for my family."
+   },
+   {
+    "who": "N",
+    "de": "Sind Sie selbst verheiratet?",
+    "en": "Are you married yourself?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, seit acht Jahren. Aber unsere eigene Hochzeit war ganz klein: nur wir zwei und unsere Eltern, am Strand in Portugal. An diesem Tag wollte ich nicht arbeiten!",
+    "en": "Yes, for eight years. But our own wedding was very small: just the two of us and our parents, on a beach in Portugal. On that day I didn't want to work!"
+   },
+   {
+    "who": "N",
+    "de": "Was ist Ihr Tipp für Paare, die bald heiraten?",
+    "en": "What's your tip for couples who are getting married soon?"
+   },
+   {
+    "who": "A",
+    "de": "Fangen Sie früh mit der Planung an, mindestens ein Jahr vorher. Und vergessen Sie nicht, an Ihrem großen Tag selbst Spaß zu haben!",
+    "en": "Start planning early, at least a year before. And don't forget to have fun yourselves on your big day!"
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank, Frau Rehbein, und weiter viel Erfolg!",
+    "en": "Thank you very much, Frau Rehbein, and continued success!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Frau Rehbein hat früher in einem Hotel gearbeitet.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "She used to be a cook in a hotel (\"Eigentlich war ich Köchin in einem Hotel\")."
+   },
+   {
+    "q": "Alle Paare möchten eine große Feier mit vielen Gästen.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "Every couple is different: some want two hundred guests, others only a family meal in a small restaurant."
+   },
+   {
+    "q": "Wer draußen heiratet, muss auch an Regen denken.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     7
+    ],
+    "why": "Outdoor weddings are beautiful, but you always need a plan for rain."
+   },
+   {
+    "q": "Einmal hat der Bäcker die Torte vergessen.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     9
+    ],
+    "why": "The baker didn't forget the cake: he took it to the wrong address, and they found it an hour later."
+   },
+   {
+    "q": "Frau Rehbein hatte selbst eine große Hochzeit.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     13
+    ],
+    "why": "Her own wedding was very small: just the couple and their parents, on a beach in Portugal."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-4-02",
+  "pool": "exam",
+  "station": 10,
+  "part": "Teil 4",
+  "setup": "A radio programme about learning at any age. The host talks to Hamid (man), who has just passed his school-leaving exam at 43.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Abend und willkommen bei „Nie zu spät“, unserer Sendung über das Lernen in jedem Alter. Mein Gast heute ist Hamid. Er ist 43 Jahre alt und hat gerade sein Abitur gemacht. Hallo, Hamid!",
+    "en": "Good evening and welcome to \"Never Too Late\", our programme about learning at any age. My guest today is Hamid. He is 43 and has just passed his Abitur, the school-leaving exam for university. Hello, Hamid!"
+   },
+   {
+    "who": "B",
+    "de": "Hallo! Ich freue mich, dass ich hier sein darf.",
+    "en": "Hello! I'm glad to be here."
+   },
+   {
+    "who": "N",
+    "de": "Hamid, warum haben Sie das Abitur nicht schon als junger Mann gemacht?",
+    "en": "Hamid, why didn't you do your Abitur as a young man?"
+   },
+   {
+    "who": "B",
+    "de": "Mit sechzehn hatte ich keine Lust mehr auf Schule. Ich wollte Geld verdienen und habe eine Ausbildung als Maler gemacht. Das war damals auch richtig für mich.",
+    "en": "At sixteen I'd had enough of school. I wanted to earn money and trained as a painter and decorator. That was right for me at the time, too."
+   },
+   {
+    "who": "N",
+    "de": "Und warum sind Sie dann mit vierzig wieder zur Schule gegangen?",
+    "en": "And why did you go back to school at forty?"
+   },
+   {
+    "who": "B",
+    "de": "Ich hatte Probleme mit dem Rücken und konnte nicht mehr als Maler arbeiten. Ich wollte etwas Neues lernen, und dafür brauchte ich das Abitur.",
+    "en": "I had problems with my back and couldn't work as a painter any more. I wanted to learn something new, and for that I needed the Abitur."
+   },
+   {
+    "who": "N",
+    "de": "Wie war es, wieder in einer Klasse zu sitzen?",
+    "en": "What was it like to sit in a classroom again?"
+   },
+   {
+    "who": "B",
+    "de": "Am Anfang sehr komisch! Ich war der Älteste in der Klasse, die anderen waren alle ungefähr zwanzig. Aber sie waren sehr nett, und wir haben oft zusammen gelernt.",
+    "en": "Very strange at first! I was the oldest in the class; the others were all about twenty. But they were very nice, and we often studied together."
+   },
+   {
+    "who": "N",
+    "de": "Sie waren an einer Abendschule. Wie haben Sie das mit der Arbeit geschafft?",
+    "en": "You were at an evening school. How did you manage it alongside work?"
+   },
+   {
+    "who": "B",
+    "de": "Am Tag habe ich in einem Baumarkt gearbeitet, und von sechs bis zehn Uhr abends war ich in der Schule. Am Wochenende habe ich Hausaufgaben gemacht. Das war sehr anstrengend.",
+    "en": "During the day I worked in a DIY store, and from six to ten in the evening I was at school. At the weekend I did homework. That was very tiring."
+   },
+   {
+    "who": "N",
+    "de": "Welches Fach war für Sie am schwierigsten?",
+    "en": "Which subject was hardest for you?"
+   },
+   {
+    "who": "B",
+    "de": "Englisch. Mathe war nie ein Problem, aber Englisch hatte ich fünfundzwanzig Jahre nicht gesprochen. Meine Tochter hat mir sehr geholfen.",
+    "en": "English. Maths was never a problem, but I hadn't spoken English for twenty-five years. My daughter helped me a lot."
+   },
+   {
+    "who": "N",
+    "de": "Und was hat Ihre Familie dazu gesagt?",
+    "en": "And what did your family say about it?"
+   },
+   {
+    "who": "B",
+    "de": "Meine Frau hat mir immer geholfen. Und meine Kinder fanden es lustig, dass Papa auch Hausaufgaben machen muss.",
+    "en": "My wife always helped me. And my children found it funny that Dad had to do homework too."
+   },
+   {
+    "who": "N",
+    "de": "Und wie geht es jetzt weiter?",
+    "en": "And what happens now?"
+   },
+   {
+    "who": "B",
+    "de": "Im Oktober beginne ich an der Universität. Ich möchte Lehrer werden, für Kunst und Mathe.",
+    "en": "In October I start at university. I want to become a teacher, for art and maths."
+   },
+   {
+    "who": "N",
+    "de": "Dann viel Erfolg, Hamid, und vielen Dank für das Gespräch!",
+    "en": "Then good luck, Hamid, and thank you for talking to us!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Hamid hat mit sechzehn eine Ausbildung gemacht.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     3
+    ],
+    "why": "At sixteen he left school and trained as a painter (\"habe eine Ausbildung als Maler gemacht\")."
+   },
+   {
+    "q": "Hamid ist wieder zur Schule gegangen, weil er mehr Geld verdienen wollte.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "why": "He went back because of his back problems: he couldn't work as a painter and needed the Abitur to learn something new."
+   },
+   {
+    "q": "Am Anfang war es für Hamid ganz normal, wieder in einer Klasse zu sitzen.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     7
+    ],
+    "why": "At first it was \"sehr komisch\", very strange: he was the oldest in the class."
+   },
+   {
+    "q": "Englisch war für Hamid leichter als Mathe.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "English was the hardest subject; maths was never a problem."
+   },
+   {
+    "q": "Hamid möchte später an einer Schule unterrichten.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     15
+    ],
+    "why": "He starts university in October because he wants to become a teacher of art and maths."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-4-03",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 4",
+  "setup": "A radio programme about the town. The host talks to Wolfram (man), who runs a repair café.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Hallo und willkommen bei „Stadtgespräch“. Ihr Toaster ist kaputt, die Lampe geht nicht mehr, die Jacke hat ein Loch? Dann ist das Reparaturcafé die richtige Adresse. Wolfram hat es vor drei Jahren aufgemacht. Hallo, Wolfram!",
+    "en": "Hello and welcome to \"Town Talk\". Your toaster is broken, the lamp doesn't work any more, your jacket has a hole? Then the repair café is the right place. Wolfram opened it three years ago. Hello, Wolfram!"
+   },
+   {
+    "who": "B",
+    "de": "Hallo, schön, dass ich hier sein kann.",
+    "en": "Hello, nice to be here."
+   },
+   {
+    "who": "N",
+    "de": "Wolfram, wie funktioniert so ein Reparaturcafé?",
+    "en": "Wolfram, how does a repair café work?"
+   },
+   {
+    "who": "B",
+    "de": "Ganz einfach: An jedem ersten Samstag im Monat treffen wir uns im Jugendzentrum. Die Leute bringen ihre kaputten Sachen mit, und wir reparieren sie zusammen.",
+    "en": "Very simply: on the first Saturday of every month we meet at the youth centre. People bring their broken things, and we repair them together."
+   },
+   {
+    "who": "N",
+    "de": "Und was kostet das?",
+    "en": "And what does it cost?"
+   },
+   {
+    "who": "B",
+    "de": "Die Reparatur ist kostenlos. Nur neue Teile muss man selbst bezahlen. Und es gibt Kaffee und Kuchen. Dafür kann jeder etwas Geld in eine Kasse legen, wenn er möchte.",
+    "en": "The repair is free. You only have to pay for new parts yourself. And there's coffee and cake. For that, anyone can put some money in a cash box if they like."
+   },
+   {
+    "who": "N",
+    "de": "Wer repariert denn bei Ihnen?",
+    "en": "So who does the repairs?"
+   },
+   {
+    "who": "B",
+    "de": "Wir sind zwölf Leute, alle freiwillig. Viele sind Rentner, zum Beispiel ein früherer Elektriker. Aber auch zwei Studenten helfen mit. Die wissen sehr viel über Handys.",
+    "en": "There are twelve of us, all volunteers. Many are retired, for example a former electrician. But two students help too. They know a lot about mobile phones."
+   },
+   {
+    "who": "N",
+    "de": "Was bringen die Leute am meisten?",
+    "en": "What do people bring most?"
+   },
+   {
+    "who": "B",
+    "de": "Lampen und Kaffeemaschinen. Handys bringen sie seltener, die kaufen viele Leute lieber neu.",
+    "en": "Lamps and coffee machines. They bring phones less often; many people prefer to buy those new."
+   },
+   {
+    "who": "N",
+    "de": "Kann man denn alles reparieren?",
+    "en": "Can everything be repaired?"
+   },
+   {
+    "who": "B",
+    "de": "Leider nicht. Ungefähr sieben von zehn Sachen schaffen wir. Aber auch wenn es nicht klappt, lernen die Leute etwas über ihr Gerät.",
+    "en": "Sadly not. We manage about seven things out of ten. But even when it doesn't work, people learn something about their device."
+   },
+   {
+    "who": "N",
+    "de": "Warum ist Ihnen das Reparieren so wichtig?",
+    "en": "Why is repairing so important to you?"
+   },
+   {
+    "who": "B",
+    "de": "Wir werfen viel zu viel weg. Das ist schlecht für die Umwelt und kostet viel Geld. Und ehrlich gesagt: Es macht einfach Spaß, wenn ein altes Radio wieder spielt!",
+    "en": "We throw far too much away. That's bad for the environment and costs a lot of money. And to be honest: it's simply fun when an old radio plays again!"
+   },
+   {
+    "who": "N",
+    "de": "Kann man bei Ihnen auch mitmachen?",
+    "en": "Can people join in?"
+   },
+   {
+    "who": "B",
+    "de": "Sehr gern! Wir suchen vor allem Leute, die Fahrräder reparieren können. Im Sommer haben wir da immer sehr viel zu tun.",
+    "en": "Very gladly! Above all we're looking for people who can repair bikes. In summer we always have a lot to do there."
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank, Wolfram. Das nächste Reparaturcafé ist übrigens am 4. November.",
+    "en": "Thank you very much, Wolfram. By the way, the next repair café is on 4 November."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Das Reparaturcafé ist jeden Samstag geöffnet.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "It meets only on the first Saturday of every month (\"An jedem ersten Samstag im Monat\")."
+   },
+   {
+    "q": "Für die Reparatur muss man nichts bezahlen.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "\"Die Reparatur ist kostenlos\"; only new parts cost money."
+   },
+   {
+    "q": "Die Leute bringen vor allem Handys.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     9
+    ],
+    "why": "They mostly bring lamps and coffee machines; phones come less often."
+   },
+   {
+    "q": "Im Reparaturcafé kann man nicht alles reparieren.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     11
+    ],
+    "why": "They manage about seven things out of ten (\"Leider nicht\")."
+   },
+   {
+    "q": "Wolfram sucht noch Helfer für Fahrräder.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     15
+    ],
+    "why": "Above all they are looking for people who can repair bikes."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-4-04",
+  "pool": "exam",
+  "station": 12,
+  "part": "Teil 4",
+  "setup": "A radio programme about nature. The host talks to Magda (woman), a ranger in a national park.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Willkommen bei „Natur pur“. Mein Gast ist heute Magda. Sie arbeitet als Rangerin in einem Nationalpark. Hallo, Magda!",
+    "en": "Welcome to \"Pure Nature\". My guest today is Magda. She works as a ranger in a national park. Hello, Magda!"
+   },
+   {
+    "who": "A",
+    "de": "Hallo! Schön, dass ich hier sein darf.",
+    "en": "Hello! Lovely to be here."
+   },
+   {
+    "who": "N",
+    "de": "Magda, was macht eine Rangerin eigentlich?",
+    "en": "Magda, what does a ranger actually do?"
+   },
+   {
+    "who": "A",
+    "de": "Ich bin fast den ganzen Tag draußen. Ich kontrolliere die Wege, ich zähle Tiere und Pflanzen, und ich erkläre den Besuchern den Park. Im Büro bin ich nur selten.",
+    "en": "I'm outside almost all day. I check the paths, I count animals and plants, and I explain the park to visitors. I'm only rarely in the office."
+   },
+   {
+    "who": "N",
+    "de": "Auch im Winter?",
+    "en": "In winter too?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, bei jedem Wetter. Nur bei sehr starkem Wind bleibe ich im Büro. Dann ist es im Wald zu gefährlich.",
+    "en": "Yes, in all weathers. Only when the wind is very strong do I stay in the office. Then it's too dangerous in the forest."
+   },
+   {
+    "who": "N",
+    "de": "Wer sind Ihre Besucher?",
+    "en": "Who are your visitors?"
+   },
+   {
+    "who": "A",
+    "de": "Viele Familien und Wanderer. Aber am liebsten arbeite ich mit Schulklassen. Kinder stellen die besten Fragen!",
+    "en": "Lots of families and hikers. But I like working with school classes best. Children ask the best questions!"
+   },
+   {
+    "who": "N",
+    "de": "Gibt es Regeln für die Besucher?",
+    "en": "Are there rules for visitors?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, ein paar. Man muss auf den Wegen bleiben, und Hunde dürfen nicht frei laufen. Feuer machen ist natürlich verboten.",
+    "en": "Yes, a few. You have to stay on the paths, and dogs mustn't run free. Making fires is forbidden, of course."
+   },
+   {
+    "who": "N",
+    "de": "Und machen die Leute das auch?",
+    "en": "And do people stick to that?"
+   },
+   {
+    "who": "A",
+    "de": "Die meisten schon. Aber leider lassen manche Besucher ihren Müll im Wald liegen. Das ärgert mich sehr.",
+    "en": "Most do. But sadly some visitors leave their rubbish lying in the forest. That makes me very angry."
+   },
+   {
+    "who": "N",
+    "de": "Haben Sie ein Lieblingstier im Park?",
+    "en": "Do you have a favourite animal in the park?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, die Eule. Das ist ein großer Vogel, der nachts fliegt. Man sieht sie nur sehr selten. Ich habe sie in fünf Jahren erst dreimal gesehen.",
+    "en": "Yes, the owl. That's a big bird that flies at night. You see it only very rarely. In five years I've only seen it three times."
+   },
+   {
+    "who": "N",
+    "de": "Was können wir alle für die Natur tun?",
+    "en": "What can we all do for nature?"
+   },
+   {
+    "who": "A",
+    "de": "Kleine Dinge helfen schon. Zum Beispiel im Garten nicht alles ganz ordentlich machen, sondern eine Ecke ein bisschen wild lassen. Da wohnen dann Vögel und Insekten.",
+    "en": "Small things already help. For example, not making everything in the garden perfectly tidy, but leaving one corner a bit wild. Birds and insects live there then."
+   },
+   {
+    "who": "N",
+    "de": "Ein schöner Tipp. Vielen Dank, Magda!",
+    "en": "A lovely tip. Thank you very much, Magda!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Magda arbeitet meistens im Büro.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "She is outside almost all day and only rarely in the office."
+   },
+   {
+    "q": "Bei sehr starkem Wind geht Magda nicht in den Wald.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "When the wind is very strong she stays in the office, because the forest is too dangerous then."
+   },
+   {
+    "q": "Magda arbeitet am liebsten mit Kindern.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     7
+    ],
+    "why": "She likes working with school classes best: \"Kinder stellen die besten Fragen!\""
+   },
+   {
+    "q": "Alle Besucher nehmen ihren Müll wieder mit.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "Most keep to the rules, but some visitors leave their rubbish in the forest."
+   },
+   {
+    "q": "Magda hat ihr Lieblingstier nur ein paar Mal gesehen.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     13
+    ],
+    "why": "She has seen the owl only three times in five years."
+   }
+  ]
+ },
+ {
+  "id": "a2-hx-4-05",
+  "pool": "exam",
+  "station": 11,
+  "part": "Teil 4",
+  "setup": "A radio programme about working life. The host talks to Gudrun (woman), who delivers the post in a village.",
+  "once": false,
+  "lines": [
+   {
+    "who": "N",
+    "de": "Guten Morgen und willkommen bei „Mein Arbeitstag“. Heute ist Gudrun bei uns. Sie ist Briefträgerin in einem Dorf. Hallo, Gudrun!",
+    "en": "Good morning and welcome to \"My Working Day\". Today Gudrun is with us. She is a postwoman in a village. Hello, Gudrun!"
+   },
+   {
+    "who": "A",
+    "de": "Guten Morgen!",
+    "en": "Good morning!"
+   },
+   {
+    "who": "N",
+    "de": "Gudrun, wann beginnt Ihr Arbeitstag?",
+    "en": "Gudrun, when does your working day start?"
+   },
+   {
+    "who": "A",
+    "de": "Sehr früh. Um halb sechs bin ich im Postzentrum. Dort sortiere ich zuerst die Briefe und Pakete für meine Straßen. Um acht fahre ich dann los.",
+    "en": "Very early. At half past five I'm at the post centre. There I first sort the letters and parcels for my streets. Then at eight I set off."
+   },
+   {
+    "who": "N",
+    "de": "Fahren Sie mit dem Fahrrad?",
+    "en": "Do you go by bike?"
+   },
+   {
+    "who": "A",
+    "de": "Früher ja, aber heute habe ich ein kleines Elektroauto. Es gibt so viele Pakete, die passen nicht mehr auf ein Fahrrad.",
+    "en": "I used to, but now I have a small electric car. There are so many parcels that they don't fit on a bike any more."
+   },
+   {
+    "who": "N",
+    "de": "Gibt es heute mehr Pakete als früher?",
+    "en": "Are there more parcels today than before?"
+   },
+   {
+    "who": "A",
+    "de": "Viel mehr! Vor fünfzehn Jahren hatte ich vielleicht zwanzig Pakete am Tag. Heute sind es oft über hundert, vor allem vor Weihnachten.",
+    "en": "Far more! Fifteen years ago I had maybe twenty parcels a day. Today it's often over a hundred, especially before Christmas."
+   },
+   {
+    "who": "N",
+    "de": "Was ist das Schönste an Ihrem Beruf?",
+    "en": "What's the best thing about your job?"
+   },
+   {
+    "who": "A",
+    "de": "Die Menschen. Im Dorf kennen mich alle. Eine alte Dame wartet jeden Tag am Fenster auf mich, und manchmal bekomme ich einen Kaffee.",
+    "en": "The people. Everyone in the village knows me. An old lady waits for me at the window every day, and sometimes I get a coffee."
+   },
+   {
+    "who": "N",
+    "de": "Und was ist nicht so schön?",
+    "en": "And what isn't so nice?"
+   },
+   {
+    "who": "A",
+    "de": "Der Winter, wenn Schnee und Eis auf den Straßen liegen. Und Hunde? Vor Hunden habe ich keine Angst mehr. Die meisten kennen mich und freuen sich, wenn ich komme.",
+    "en": "Winter, when there's snow and ice on the roads. And dogs? I'm not afraid of dogs any more. Most of them know me and are happy when I come."
+   },
+   {
+    "who": "N",
+    "de": "Was machen Sie, wenn niemand zu Hause ist?",
+    "en": "What do you do when nobody is at home?"
+   },
+   {
+    "who": "A",
+    "de": "Dann frage ich zuerst die Nachbarn. Wenn das nicht klappt, schreibe ich eine Karte, und die Leute holen das Paket in der Post im Dorf ab.",
+    "en": "Then I ask the neighbours first. If that doesn't work, I write a card, and people pick up the parcel at the village post office."
+   },
+   {
+    "who": "N",
+    "de": "Möchten Sie diesen Beruf noch lange machen?",
+    "en": "Would you like to do this job for a long time yet?"
+   },
+   {
+    "who": "A",
+    "de": "Ja, auf jeden Fall bis zur Rente. Ich arbeite gern draußen. Ein Büro wäre nichts für mich.",
+    "en": "Yes, definitely until I retire. I like working outdoors. An office wouldn't be for me."
+   },
+   {
+    "who": "N",
+    "de": "Vielen Dank, Gudrun, und einen schönen Arbeitstag!",
+    "en": "Thank you very much, Gudrun, and have a nice working day!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Gudrun beginnt ihre Arbeit um acht Uhr.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "why": "She starts at half past five at the post centre; eight is when she sets off on her round."
+   },
+   {
+    "q": "Gudrun bringt die Post heute mit dem Auto.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "why": "She used to cycle, but now she has a small electric car because of all the parcels."
+   },
+   {
+    "q": "Gudrun hat heute weniger Pakete als früher.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     7
+    ],
+    "why": "She has far more: about twenty a day fifteen years ago, often over a hundred today."
+   },
+   {
+    "q": "Gudrun hat Angst vor Hunden.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 1,
+    "ev": [
+     11
+    ],
+    "why": "\"Vor Hunden habe ich keine Angst mehr\": most dogs know her and are happy to see her."
+   },
+   {
+    "q": "Gudrun möchte bis zur Rente Briefträgerin bleiben.",
+    "format": "jn",
+    "opts": [
+     "ja",
+     "nein"
+    ],
+    "a": 0,
+    "ev": [
+     15
+    ],
+    "why": "She wants to do the job \"auf jeden Fall bis zur Rente\"; an office wouldn't be for her."
+   }
+  ]
+ }
+]
