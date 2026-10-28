@@ -12,7 +12,9 @@ const endOfToday = () => { const d = new Date(); d.setHours(23, 59, 59, 999); re
 const reducedMotion = () => S.settings.motion === 'reduce' || matchMedia('(prefers-reduced-motion: reduce)').matches   // Settings can force it
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`
 const pct = p => `${Math.round(p * 100)}%`
-const shuffle = xs => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
+const shuffle = (xs, r = Math.random) => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }   // r: a seeded rng for fixed papers
+const mmss = s => { const c = Math.max(0, Math.ceil(s)); return `${Math.floor(c / 60)}:${String(c % 60).padStart(2, '0')}` }   // seconds → 1:05
+const gapped = s => s.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)   // "Ich ___ müde." with a drawn gap
 let D = null   // the loaded data (prepare()), set once at start
 
 // ---- progress: one JSON blob in localStorage, backed up by export/import ----
@@ -56,7 +58,7 @@ addEventListener('beforeunload', e => {
   e.preventDefault(); e.returnValue = ''
   setTimeout(() => document.getElementById('leave-export')?.showModal(), 400)
 })
-const LeaveExport = () => html`<dialog id="leave-export" class="leave" aria-labelledby="leave-h">
+const LeaveExport = () => html`<dialog id="leave-export" class="leave-dlg" aria-labelledby="leave-h">
   <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><rect x="10" y="4" width="28" height="36" rx="3" fill="#fff" />
     <path d="M24 14v16M17 23l7 7 7-7" fill="none" stroke="var(--board)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
     <rect x="6" y="40" width="36" height="4" rx="2" fill="var(--a1)" /></svg>
@@ -239,8 +241,8 @@ const stopSpeech = () => { lineQueue = null; if ('speechSynthesis' in window) sp
 // ---- registries: each feature fragment adds itself, so it needs no edits elsewhere ----
 
 // PAGES: route name ('#/<name>/…') → component({ data, arg, sub, sub2, hash }); the router (99-app.js)
-// falls back to its own pages. TAB_VIEWS: station tab id (see TABS) → component({ data, n }); the station
-// page (90-station.js) falls back to "being written now". Register at a fragment's top level:
+// adds the station page and home. TAB_VIEWS: station tab id (see TABS) → component({ data, n }), one for every
+// tab (90-station.js). Register at a fragment's top level:
 // PAGES.pictures = PicturesPage, TAB_VIEWS.listen = ListenTab.
 const PAGES = {}
 const TAB_VIEWS = {}
@@ -253,12 +255,13 @@ const TAB_NAME = Object.fromEntries(TABS)
 const PARTS = ['words', 'grammar', 'read', 'listen', 'write', 'speak', 'test']   // a station's parts in study order
 
 // 0…1 per part: words count learned cards, grammar the points studied; the other parts keep their best result in
-// S.practice["<station>/<part>"].
+// S.practice["<station>/<part>"], and count as done at the exam's pass mark (60%), so a pass moves the plan on.
 function partDone(n, part) {
   const ws = part === 'words' && D?.wordsBy[n], gs = part === 'grammar' && D?.grammarBy[n]
   if (ws?.length) return ws.filter(w => known(w.id)).length / ws.length
   if (gs?.length) return gs.filter(g => S.practice[`g:${g.id}`]).length / gs.length
-  return S.practice[`${n}/${part}`] ?? 0
+  const p = S.practice[`${n}/${part}`] ?? 0
+  return p >= .6 ? 1 : p
 }
 const stationDone = n => PARTS.reduce((a, p) => a + partDone(n, p), 0) / PARTS.length
 const levelDone = lv => lv.stations.reduce((a, st) => a + stationDone(st.n), 0) / lv.stations.length
@@ -569,6 +572,12 @@ export function diffChars(a, b) {
   return out
 }
 
+// The verdict on a typed answer, with what was typed marked against the answer (cards and picture scenes).
+const Typed = ({ check, typed, w }) => html`<p class=${`typed ${check.verdict}`}>
+  <span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
+  ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
+  ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>`
+
 // A word missed four times or more gets a memory hook of the learner's own, shown on both its cards.
 function HookBox({ w }) {
   const s = useStore()
@@ -663,9 +672,7 @@ function Study({ data }) {
         : html`<h2 class="card-term en">${w.en}</h2>
             <p class="card-forms">${POS_NAME[w.p]}</p>
             <div class="card-back">${revealed ? html`<p class="card-de"><${Word} w=${w} /> <${SayButton} text=${said(w)} /></p>
-              ${check ? html`<p class=${`typed ${check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[check.verdict]}</span>
-                ${check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
-                ${check.notes.length ? html`<small>${check.notes.join(' ')}</small>` : ''}</p>` : ''}
+              ${check ? html`<${Typed} check=${check} typed=${typed} w=${w} />` : ''}
               <p class="card-forms" lang="de">${formsNote(w)}</p><${Example} w=${w} />`
               : html`<form class="type-it" onSubmit=${submit} onClick=${e => e.stopPropagation()}>
                   <input lang="de" autocomplete="off" autocapitalize="off" spellcheck="false" value=${typed} onInput=${e => setTyped(e.target.value)}
@@ -684,7 +691,7 @@ function Study({ data }) {
           ${GRADES.map(([g, label]) => html`<button type="button" class=${`g${g}`} onClick=${() => rate(g)}>
             ${label}<small>${fmtInterval(preview[g].card.due - now)}</small><kbd>${g}</kbd></button>`)}
         </div>`
-      : html`<button type="button" class="show" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
+      : html`<button type="button" class="reveal" onClick=${reveal}>Show the answer <kbd>Space</kbd></button>`}
   </main>`
 }
 
@@ -694,18 +701,19 @@ function Arrived({ data, done }) {
   const unseen = data.words.some(w => !s.cards[w.id] && w.n <= s.lesson)
   const st = here(data)
   const next = data.stations[st.n + 1]
+  const step = nextStep(todayPlan(st, []))   // the day's next stop after the cards (80-home.js)
   return html`<main class=${`study arrived l${st.level}`}>
     <article class="card open">
       <h2 class="card-term" lang="de">Angekommen!</h2>
-      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : data.words.length ? 'Nothing to study right now.' : 'The word cards are being written now.'}
-        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}
-        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}</p>
+      <p class="card-en">${done ? `Done for now: ${plural(done, 'card')} studied.` : 'Nothing to study right now.'}
+        ${nextDue ? ` Next review in ${fmtInterval(nextDue - Date.now())}.` : ''}
+        ${done ? html`<br /><span class="quiet">Sleep on it: what you learn today is easier tomorrow.</span>` : ''}</p>
       <div class="band card-band"><span></span><span lang="de">${st.de}</span></div>
     </article>
     <div class="after">
       ${unseen ? html`<button type="button" onClick=${() => commit(x => { x.newToday = { date: today(), n: (x.newToday.date === today() ? x.newToday.n : 0) - 10 } })}>Learn 10 more new words</button>`
         : next ? html`<button type="button" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span></button>` : ''}
-      <a class="btn" href=${`#/station/${st.n}/grammar`}>Go on with the station <${Arrow} /></a>
+      <a class="btn" href=${step?.href ?? '#/'}>${step ? `Next: ${step.label}` : 'Back to today'} <${Arrow} /></a>
     </div>
   </main>`
 }
@@ -811,7 +819,7 @@ function Builder({ ex, onDone }) {
 }
 
 const gqQuiz = qs => shuffle(qs).map(q => ({
-  q: html`<span lang="de">${q.q.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)}</span>`,
+  q: html`<span lang="de">${gapped(q.q)}</span>`,
   opts: q.opts, a: q.a, why: html`${q.why} <span class="quiet">(${q.en})</span>`, say: q.q.replace('___', q.opts[q.a]),
 }))
 
@@ -820,7 +828,7 @@ function GuessFirst({ q }) {
   const [picked, setPicked] = useState(null)
   return html`<section class="guess" aria-label="Guess first">
     <h3>Guess first</h3><p class="quiet">A wrong guess is fine: it makes the explanation stick.</p>
-    <p class="quiz-q" lang="de">${q.q.split('___').map((part, k) => html`${k ? html`<span class="gap"></span>` : ''}${part}`)}</p>
+    <p class="quiz-q" lang="de">${gapped(q.q)}</p>
     <div class="guess-opts">${q.opts.map((o, k) => html`<button type="button" lang="de" disabled=${picked !== null} onClick=${() => setPicked(k)}
       class=${picked === null ? '' : k === q.a ? 'right' : k === picked ? 'wrong' : 'dim'}>${o}</button>`)}</div>
     ${picked !== null ? html`<p class="guess-after">${picked === q.a ? html`<b>Right.</b>` : html`<b>Not this one.</b>`} Read on to see why.</p>` : ''}
@@ -860,8 +868,6 @@ function GrammarPoint({ data, g, i }) {
 
 function GrammarTab({ data, n }) {
   const gs = data.grammarBy[n]
-  if (!gs.length) return html`<ol class="glist">${data.stations[n].grammar.map(([id, title]) => html`<li key=${id}>${title}</li>`)}</ol>
-    <p class="soon">${SOON.grammar} <span class="quiet">Being written now.</span></p>`
   const go = id => document.getElementById(`g-${id}`)?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' })
   return html`<div class="grammar-tab">
     <nav class="g-index" aria-label="Grammar points">${gs.map((g, i) => html`<button type="button" onClick=${() => go(g.id)}>
@@ -1370,44 +1376,62 @@ const TEXT_TYPE = { sms: 'Text messages', email: 'Email', postcard: 'Postcard', 
   comments: 'Reader comments', rules: 'House rules', terms: 'Terms and conditions', instructions: 'Instructions' }
 
 // ---- known words in a text (L11) ----
-// Forms the rules in wordForms miss: articles, contractions, irregular verbs, pronoun cases, comparatives.
+// Forms the rules in wordForms miss: articles, contractions, irregular verbs, pronoun cases, comparatives, Konjunktiv II.
 const tokens = s => s.match(/\p{L}+(?:-\p{L}+)*/gu) ?? []
 const MORE_FORMS = {
-  der: 'die den dem des', jeder: 'jede jeden jedem jedes', in: 'im ins', an: 'am ans', zu: 'zum zur', von: 'vom', bei: 'beim',
-  sein: 'bin bist sind seid wäre wären seine seinen seinem seiner seines', haben: 'habe hast habt hätte hätten',
-  werden: 'werde wirst werdet würde würden', können: 'kannst', müssen: 'musst', dürfen: 'darfst', wollen: 'willst', mögen: 'magst',
-  wissen: 'weißt', er: 'ihm', sie: 'ihnen', gut: 'besser best', viel: 'mehr meist', gern: 'lieber', groß: 'größer größt',
-  alt: 'älter ältest', jung: 'jünger jüngst', lang: 'länger längst', kurz: 'kürzer', warm: 'wärmer', kalt: 'kälter', hoch: 'höher hoh',
-  nah: 'näher nächst',
+  der: 'die den dem des denen dessen deren', jeder: 'jede jeden jedem jedes', welcher: 'welche welchen welchem welches',
+  dieser: 'diese diesen diesem dieses', wer: 'wen wem wessen', in: 'im ins', an: 'am ans', zu: 'zum zur', von: 'vom', bei: 'beim',
+  für: 'fürs', sein: 'bin bist sind seid wäre wären wärst seine seinen seinem seiner seines', haben: 'habe hast habt hätte hätten hättest',
+  werden: 'werde wirst werdet würde würden würdest würdet', können: 'kannst könnte könntest könnten könntet', müssen: 'musst',
+  dürfen: 'darfst', wollen: 'willst', mögen: 'magst', wissen: 'weißt', er: 'ihm', sie: 'ihnen', gut: 'besser best',
+  viel: 'mehr meist', gern: 'lieber liebsten', groß: 'größer größt', alt: 'älter ältest', jung: 'jünger jüngst', lang: 'länger längst',
+  kurz: 'kürzer', warm: 'wärmer', kalt: 'kälter', hoch: 'höher hoh', nah: 'näher nächst', teuer: 'teurer teuerst',
 }
-let formIndex = null   // lower-case form → course word, the earliest station's first
-function courseForms() {
-  if (formIndex) return formIndex
-  formIndex = new Map()
-  for (const w of D.words) {
+// Place names the English spells differently (Köln → Cologne) are names, like the ones spelled the same.
+const PLACES = new Set(['köln', 'münchen', 'wien', 'prag', 'rom', 'zürich', 'genf', 'brüssel', 'warschau', 'moskau', 'lissabon',
+  'mailand', 'venedig', 'neapel', 'florenz', 'athen', 'kopenhagen', 'nürnberg', 'hannover', 'braunschweig'])
+export function buildForms(words) {   // lower-case form → course word, the earliest station's first
+  const ix = new Map()
+  for (const w of words) {
     const more = MORE_FORMS[w.w]?.split(' ') ?? []
     const forms = [...wordForms(w), ...more, ...(w.p === 'adj' ? more.flatMap(f => ['e', 'en', 'er', 'es', 'em'].map(e => f + e)) : []),
       ...(w.p === 'v' ? [w.w.replace(/^sich /, '').replace(/e?n$/, '')] : []),            // the stem: imperatives (Komm! Ruf an!)
       ...(w.p !== 'n' && w.p !== 'v' && /e$/.test(w.w) ? ['m', 'n', 'r', 's'].map(e => w.w + e) : []),   // alle → alles, allem
       ...(w.a === 'der' ? ['in', 'innen'].map(e => w.w.replace(/e$/, '') + e) : [])]     // Freund → Freundin, Kollege → Kollegin
-    for (const f of forms) if (f.length > 1 && !formIndex.has(f.toLowerCase())) formIndex.set(f.toLowerCase(), w)
+    for (const f of forms) if (f.length > 1 && !ix.has(f.toLowerCase())) ix.set(f.toLowerCase(), w)
   }
-  return formIndex
+  return ix
 }
-// The share of a text's words the learner knows; isKnown(word) decides. Names, numbers and addresses (no course word,
-// and the same in the English) don't count.
-function knownShare(t, isKnown) {
-  const ix = courseForms()
+let formIndex = null
+const courseForms = () => formIndex || (formIndex = buildForms(D.words))
+// A word the course doesn't teach counts as known when it splits fully into known course words: hyphen parts
+// (Zahnarzt-Notdienst), or two or three parts of 3+ letters with an optional linking s/n/en/e (Kinder|zimmer,
+// Öffnung|s|zeiten, Freitag|abend). known(part) decides for each part.
+const linkless = h => [h, h.endsWith('s') && h.slice(0, -1), h.endsWith('en') && h.slice(0, -2), h.endsWith('n') && h.slice(0, -1),
+  h + 'e', h.endsWith('e') && h.slice(0, -1)].filter(x => x && x.length >= 3)
+function compoundKnown(t, known, depth = 0) {
+  if (t.includes('-')) return t.split('-').every(p => p && (known(p) || PLACES.has(p) || compoundKnown(p, known, depth + 1)))
+  if (depth > 2) return false
+  for (let i = 3; i <= t.length - 3; i++) {
+    const tail = t.slice(i)
+    if ((known(tail) || (depth < 2 && compoundKnown(tail, known, depth + 1))) && linkless(t.slice(0, i)).some(known)) return true
+  }
+  return false
+}
+// The share of a text's words the learner knows; isKnown(word) decides. Names, numbers and addresses (no course word, and
+// the same in the English, or a place name) don't count. Glossed words count only if the learner knows them.
+export function knownShare(t, isKnown, ix = courseForms()) {
+  const known = f => { const w = ix.get(f); return !!w && isKnown(w) }
   let all = 0, yes = 0
   const unknown = new Map()   // lower-case token → its course word, or null if the course doesn't teach it
   for (const b of t.blocks) for (const [de, en] of b.s) {
     const same = new Set(tokens(en))
     for (const tok of tokens(de)) {
-      const w = ix.get(tok.toLowerCase())
-      if (!w && same.has(tok)) continue
+      const low = tok.toLowerCase(), w = ix.get(low)
+      if (!w && (same.has(tok) || PLACES.has(low))) continue
       all++
-      if (w && isKnown(w)) yes++
-      else unknown.set(tok.toLowerCase(), w ?? null)
+      if (w ? isKnown(w) : compoundKnown(low, known)) yes++
+      else unknown.set(low, w ?? null)
     }
   }
   return { share: all ? yes / all : 1, unknown }
@@ -1560,7 +1584,7 @@ function Reader({ t, exam, onDone, onNext }) {
     <article class="r-text">
       <header class="r-head">
         <span class="lb">Lesen ${t.part}</span><span class="r-type">${TEXT_TYPE[t.type] ?? t.type} · ${words} words</span>
-        ${timing ? html`<span class="r-clock" role="timer">${fmtClock(Date.now() - time.againStart)}</span>
+        ${timing ? html`<span class="r-clock" role="timer">${mmss((Date.now() - time.againStart) / 1000)}</span>
           <button type="button" class="btn" onClick=${() => setTime(x => ({ ...x, again: Date.now() - x.againStart }))}>Done reading</button>` : ''}
         ${exam ? '' : html`<button type="button" class=${`r-aloud${speakingAt !== null ? ' on' : ''}`} onClick=${readAloud}><${Speaker} /> ${speakingAt !== null ? 'Stop' : 'Read it to me'}</button>`}
       </header>
@@ -1593,7 +1617,6 @@ function Reader({ t, exam, onDone, onNext }) {
     </section>` : ''}
   </div></div>`
 }
-const fmtClock = ms => { const s = Math.floor(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` }
 
 // Tiles to pick one of the station's texts or recordings: its exam part, a title and the best score so far.
 function Picks({ items, i, setI, label, part, title, sub, keyOf }) {
@@ -1624,13 +1647,14 @@ TAB_VIEWS.read = ReadTab
 // ---- recording: MediaRecorder, and the browser's German speech recognition where it has one ----
 
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition
+const canRecord = () => !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder)
 // Records the microphone; where SpeechRecognition (de-DE) exists, also writes down what it heard. Audio never leaves
 // the browser.
 function useRecorder() {
   const [st, setSt] = useState({ state: 'idle', url: null, heard: '', error: null })
   const rec = useRef(null)
   const start = async () => {
-    if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+    if (!canRecord()) {
       setSt(x => ({ ...x, state: 'idle', error: 'This browser cannot record. Use Chrome or Edge on this laptop.' }))
       return false
     }
@@ -2030,37 +2054,43 @@ export const pointFound = (text, point, names) => pointEvidence(text, point, nam
 
 // ---- self-scoring in the Goethe criteria ----
 
-// Each criterion: its German name, what it means, which of a task's rubric lines belong to it (the last one takes the
-// rest), and its own line when the task has none for it. Speaking tasks have no rubric lines, so they use these.
+// The Goethe criteria (Modellsätze, Prüferblätter; docs/08-exam-formats.md). Each: its German name, what it means, which
+// of a task's rubric lines belong to it (the one without a pattern takes the rest), and its own line when the task has
+// none for it. Speaking tasks have no rubric lines, so they use these. B1 Sprechen has its own set per part.
+const REGISTER = /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal|frame/i
+const B1_TALK = [{ de: 'Wortschatz', en: 'range of words', line: ['When a word was missing, I said it another way'] },
+  { de: 'Strukturen', en: 'grammar', line: ['Verb second; verb at the end after weil and dass'] }]
+const B1_SOUND = { de: 'Aussprache', en: 'melody, word stress, sounds', line: ['Clear sounds and a natural melody'] }
 const CRITERIA = {
   write: {
-    A1: [{ de: 'Erfüllung der Aufgabenstellung', en: 'the three points', re: /point|answered/i, line: 'All three points are answered' },
-      { de: 'Kommunikative Gestaltung', en: 'right for the reader', re: /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal/i, line: 'A greeting, a closing, and du or Sie as fits the reader' },
-      { de: 'Sprache', en: 'words and forms', line: 'The verb in position 2; nouns with capital letters' }],
-    A2: [{ de: 'Erfüllung der Aufgabenstellung', en: 'the three points', re: /point|answered/i, line: 'All three points are answered' },
-      { de: 'Kommunikative Gestaltung', en: 'right for the reader, ideas linked', re: /greet|clos|forms? for|du and|du with|Sie and|throughout|polite|friendly|formal|frame|connector/i, line: 'A greeting and closing that fit the reader' },
-      { de: 'Formale Richtigkeit', en: 'correct forms', line: 'The verb in position 2, and at the end after weil and dass' }],
+    // A1 Teil 2: 3 points per content point, answered so a reader understands it, and 1 for the text type
+    A1: [{ de: 'Erfüllung der Aufgabenstellung', en: 'each point answered, and understandable', line: 'All three points are answered, and a reader understands them' },
+      { de: 'Kommunikative Gestaltung des Textes', en: 'right for the text type', re: REGISTER, line: 'A greeting, a closing, and du or Sie as fits the reader' }],
+    A2: [{ de: 'Aufgabenerfüllung', en: 'the three points, in the right register', re: new RegExp(`point|answered|suggest|${REGISTER.source}`, 'i'), line: 'All three points, with a greeting and closing that fit the reader' },
+      { de: 'Sprache', en: 'linking, words and grammar', line: 'Ideas linked; the verb in position 2, and at the end after weil and dass' }],
     B1: [{ de: 'Erfüllung', en: 'points, text type, register, length', re: /^(?!.*(link|connector)).*(point|words|react|opinion|greet|clos|Sie\b|Sie-|throughout|polite|friendly|short)/i, line: 'All three points, in the right register' },
       { de: 'Kohärenz', en: 'ideas linked into one text', re: /link|connector/i, line: 'Ideas are linked: weil, deshalb, aber, außerdem' },
       { de: 'Wortschatz', en: 'range and fit of the words', re: /vocabulary|word choice/i, line: 'Words fit the topic, without the same ones again and again' },
       { de: 'Strukturen', en: 'grammar range and accuracy', line: 'Varied sentences; few errors that hinder understanding' }],
   },
   speak: {
-    A1: [{ de: 'Aufgabenerfüllung', en: 'the task', line: ['I used every card', 'My questions and answers fit the cards', 'A listener would understand every word'] }],
-    A2: [{ de: 'Aufgabenerfüllung', en: 'the task', line: ['I covered every card or prompt', 'I reacted to what my partner said'] },
-      { de: 'Wortschatz und Strukturen', en: 'words and grammar', line: ['I found the words I needed, or said it another way', 'The verb in position 2, and at the end after weil'] },
-      { de: 'Aussprache', en: 'pronunciation', line: ['Clear sounds: ü, ö, ch, r'] }],
-    B1: [{ de: 'Erfüllung', en: 'the task', line: ['I covered every point on the cards or slides'] },
-      { de: 'Kohärenz', en: 'linked, easy to follow', line: ['My ideas were linked: zuerst, dann, deshalb, außerdem'] },
-      { de: 'Wortschatz', en: 'range of words', line: ['When a word was missing, I said it another way'] },
-      { de: 'Strukturen', en: 'grammar', line: ['Verb second; verb at the end after weil and dass'] },
-      { de: 'Aussprache', en: 'pronunciation and melody', line: ['Clear sounds and a natural melody'] }],
+    A1: [{ de: 'Erfüllung der Aufgabenstellung und sprachliche Realisierung', en: 'the task, said so a listener understands', line: ['I used every card', 'My questions and answers fit the cards', 'A listener would understand every word'] }],
+    A2: [{ de: 'Aufgabenerfüllung', en: 'the task, the partner, the register', line: ['I covered every card or prompt', 'I reacted to what my partner said'] },
+      { de: 'Sprache', en: 'range and accuracy of words and grammar', line: ['I found the words I needed, or said it another way', 'The verb in position 2, and at the end after weil'] },
+      { de: 'Aussprache', en: 'melody, word stress, sounds', line: ['Clear sounds: ü, ö, ch, r'] }],
+    B1: {
+      'Teil 1': [{ de: 'Erfüllung', en: 'the plan: every point, suggestions', line: ['I covered every point of the plan and made suggestions'] },
+        { de: 'Interaktion', en: 'starting, keeping it going, reacting', line: ['I reacted to my partner and kept the talk going'] }, ...B1_TALK, B1_SOUND],
+      'Teil 2': [{ de: 'Erfüllung', en: 'all five slides', line: ['I covered all five slides'] },
+        { de: 'Kohärenz', en: 'linked, easy to follow', line: ['My ideas were linked: zuerst, dann, deshalb, außerdem'] }, ...B1_TALK, B1_SOUND],
+      'Teil 3': [{ de: 'Erfüllung', en: 'feedback, a question, an answer', line: ['I gave feedback on the presentation and asked a question', 'I answered the questions about mine'] }, B1_SOUND],
+    },
   },
 }
-function rubricGroups(mod, level, lines = []) {
-  const cs = CRITERIA[mod][level]
+function rubricGroups(mod, level, lines = [], part) {
+  const set = CRITERIA[mod][level], cs = set[part] ?? set
   const groups = cs.map(c => ({ de: c.de, en: c.en, lines: [] }))
-  for (const l of lines) { const i = cs.findIndex(c => c.re?.test(l)); groups[i < 0 ? cs.length - 1 : i].lines.push(l) }
+  for (const l of lines) { const i = cs.findIndex(c => c.re?.test(l)); groups[i < 0 ? cs.findIndex(c => !c.re) : i].lines.push(l) }
   groups.forEach((g, i) => { if (!g.lines.length) g.lines.push(...[].concat(cs[i].line)) })
   return groups
 }
@@ -2250,7 +2280,6 @@ const SPEAK_KIND = {
   A2: { 'Teil 1': 'Fragen zur Person', 'Teil 2': 'Über sich sprechen', 'Teil 3': 'Etwas zusammen planen' },
   B1: { 'Teil 1': 'Gemeinsam etwas planen', 'Teil 2': 'Ein Thema präsentieren', 'Teil 3': 'Über eine Präsentation sprechen' },
 }
-const mmss = s => { const c = Math.max(0, Math.ceil(s)); return `${Math.floor(c / 60)}:${String(c % 60).padStart(2, '0')}` }
 // Brave lists webkitSpeechRecognition but has no speech service behind it, so it never hears anything.
 const transcriptNote = () => (navigator.brave ? 'Brave has no speech-to-text, so there is no transcript here; the recording works. For a transcript, open this file in Microsoft Edge.'
   : SpeechRec ? null : 'This browser has no German speech-to-text, so there is no transcript; the recording works.')
@@ -2259,6 +2288,7 @@ const phrasesHeard = (phrases, heard) => {
   const h = new Set(tokens(heard.toLowerCase()))
   return new Set(phrases.map(([de], i) => { const ws = tokens(de.toLowerCase()); return ws.length && ws.filter(w => h.has(w)).length / ws.length >= .6 ? i : -1 }).filter(i => i >= 0))
 }
+const themOf = t => (t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner')   // who speaks with you
 const SayLine = ({ who, de }) => html`<button class="say" type="button" aria-label="Play this line" onClick=${e => { e.stopPropagation(); speakLines([[who, de]]) }}><${Speaker} /></button>`
 
 // A ring that empties as the time runs out; it calls onEnd once at zero.
@@ -2368,10 +2398,10 @@ function SpeakTask({ t, n }) {
   useEffect(() => { if (phase === 'done' && r.state === 'rec') r.stop() }, [phase, r.state])   // a slow permission prompt
   const speakNow = () => { stopSpeech(); setPhase('speak'); if (canRecord()) r.start() }
   const finish = () => { r.stop(); stopSpeech(); setPhase('done') }
-  const them = t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner'
+  const them = themOf(t)
   const note = transcriptNote()
   const used = phase === 'done' && r.heard ? phrasesHeard(t.phrases, r.heard) : null
-  const groups = rubricGroups('speak', t.level)
+  const groups = rubricGroups('speak', t.level, [], t.part)
   const stage = {
     ready: html`<div class="sp-times"><span><b>${mmss(t.prep_s)}</b> to prepare</span><span><b>${mmss(t.speak_s)}</b> to speak</span></div>
       <div class="sp-body">
@@ -2395,7 +2425,7 @@ function SpeakTask({ t, n }) {
       </div>`,
     done: html`<div class="sp-body sp-wide">
         <h3>Your recording</h3>
-        ${r.url ? html`<audio controls src=${r.url}></audio>` : html`<p class="quiet">${r.error || (canRecord() ? 'Nothing was recorded.' : 'This browser cannot record here.')}</p>`}
+        ${r.url ? html`<audio controls src=${r.url}></audio>` : html`<p class="quiet">${r.error || (canRecord() ? 'Nothing was recorded.' : 'This browser cannot record here.')} Score what you said from memory.</p>`}
         ${r.heard ? html`<p class="sp-heard"><b>What the browser heard</b> <span lang="de">${r.heard}</span></p>`
           : r.url ? html`<p class="quiet">${note ?? 'No transcript came back: speech-to-text needs an internet connection.'}</p>` : ''}
         <div class="sp-btns"><button type="button" onClick=${() => { stopSpeech(); setPhase('ready') }}>Try again</button></div>
@@ -2453,22 +2483,22 @@ const TIP_ICONS = {
     <circle cx="24" cy="5" r="3" fill="currentColor" />`,
 }
 // Each tip: what to do, why (one or two sentences), the evidence, and where the app does it.
-// A "here" entry is [label, href] when it's built, or [label, null, 'with Reading'] for what comes in a later phase.
+// A "here" entry is [label, href].
 function tipsFor(s) {
   const st = `#/station/${s.lesson}`
   return [
     { icon: 'test', title: "Test, don't reread", says: 'Pulling a word out of memory makes it stronger; reading it again barely does. So every step here ends in a question, a typed answer or something you say.',
       ev: 'Retrieval practice: Karpicke & Roediger 2008; Dunlosky et al. 2013 (strong evidence).',
       here: [["Today's cards", '#/study'], ['Cover the English in a word list', `${st}/words`], ['Test yourself on a station', `${st}/words`],
-        ['Known words in a text: how much of it you already know', null, 'with Reading']] },
+        ['Known words in a text: how much of it you already know', `${st}/read`]] },
     { icon: 'often', title: 'Little and often', says: 'Spread your study over the days. Each card comes back just before you would forget it, so fifteen minutes a day beats two hours on a Sunday.',
       ev: 'Spacing: Cepeda et al. 2008 (strong). The cards use FSRS, aiming at 90% recall.',
-      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', null, 'with the tests'],
-        ['Station tests that mix in the six stations before', null, 'with the tests'], ['Mock exams spaced at least three days apart', null, 'with the tests']] },
+      here: [["Today's cards, with the minutes they take", '#/study'], ['Revisit stops: a passed station test returns after 1, 7 and 21 days', `${st}/test`],
+        ['Station tests that mix in the six stations before', `${st}/test`], ['Mock exams spaced at least three days apart', '#/mock']] },
     { icon: 'aloud', title: 'Say it aloud', says: 'Words you say out loud stick better than words you read silently. Every card asks you to say it, and the voice says it back.',
       ev: 'The production effect: MacLeod et al. 2010; Fawcett 2013. Shadowing helps most at lower levels (Hamada).',
-      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', null, 'with Listening'],
-        ['Read it again against the clock; hear it again, faster', null, 'with Reading and Listening']] },
+      here: [["Today's cards", '#/study'], ['Shadowing: hear a line, record yourself straight after', `${st}/listen`],
+        ['Read it again against the clock; hear it again, faster', `${st}/read`]] },
     { icon: 'sleep', title: 'Sleep on it', says: 'Sleep between two sessions halves the work of relearning. Do your cards in the evening and again the next morning.',
       ev: 'Mazza et al. 2016.', here: [["Today's cards", '#/study']] },
     { icon: 'twice', title: 'Never miss twice', says: 'A habit takes about two months to form, and one missed day does not break it; two in a row might. Decide when and where you study, in one sentence.',
@@ -2479,13 +2509,13 @@ function tipsFor(s) {
       here: [['New cards among the reviews', '#/study'], ['Verb forms', '#/verbs'], ['der, die, das', '#/gender'], ['Cases and endings', '#/cases']] },
     { icon: 'guess', title: 'Guess first', says: 'A guess before the lesson, even a wrong one, makes the lesson stick. Each grammar point starts with one question.',
       ev: 'Pretesting: Kornell, Hays & Bjork 2009; Richland, Kornell & Kao 2009.',
-      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', null, 'with Reading']] },
+      here: [['The grammar of your station', `${st}/grammar`], ['Predict first: what a text will be about', `${st}/read`]] },
     { icon: 'hook', title: 'Hooks for tricky words only', says: 'Most words stick through repetition. For the few that keep slipping, make a picture: der words frozen in blue ice, die words on fire, das words overgrown with leaves.',
       ev: 'The keyword method: Atkinson & Raugh 1975; mixed evidence on its own, so only for words missed four times.',
       here: [['Tricky words get a memory hook in your cards', '#/study']] },
     { icon: 'test', title: 'The exam day', says: 'Know the format before the day: sit at least two full mock exams under time. Read the questions before the text, answer every question (a wrong answer costs nothing), and tick off every point of a writing task.',
-      ev: 'Goethe-Zertifikat: 60% passes; at B1 each module is passed on its own.',
-      here: [['Practice tests in every module', null, 'with the tests'], ['Timed mock exams', null, 'with the tests']] },
+      ev: 'Goethe-Zertifikat: 60% passes; at A2 that means 60% of the written part and of Sprechen, and at B1 each module is passed on its own.',
+      here: [['Practice tests in every module', '#/tests'], ['Timed mock exams', '#/mock']] },
   ]
 }
 
@@ -2494,7 +2524,7 @@ function Tips({ arg }) {
   const tips = tipsFor(s)
   const i = Math.min(Math.max(Number(arg) || 0, 0), tips.length - 1)
   const t = tips[i]
-  const go = t.here.find(([, href]) => href)
+  const go = t.here[0]
   const open = (e, href) => { if (href === '#/' && /Settings/.test(e.currentTarget.textContent)) { e.preventDefault(); location.hash = '#/'; setTimeout(openSettings, 300) } }
   return html`<main class="page tips">
     <header class="masthead"><h1>How you learn here</h1>
@@ -2509,11 +2539,10 @@ function Tips({ arg }) {
         <h2>${t.title}</h2>
         <p class="tip-says">${t.says}</p>
         <h3>In this app</h3>
-        <ul class="tip-here">${t.here.map(([label, href, when]) => html`<li class=${href ? '' : 'later'}>
-          ${href ? html`<a href=${href} onClick=${e => open(e, href)}>${label}</a>` : html`<span>${label}</span> <small>${when}</small>`}</li>`)}</ul>
+        <ul class="tip-here">${t.here.map(([label, href]) => html`<li><a href=${href} onClick=${e => open(e, href)}>${label}</a></li>`)}</ul>
         <p class="tip-ev">${t.ev}</p>
         <div class="after">
-          ${go ? html`<a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>` : ''}
+          <a class="btn" href=${go[1]} onClick=${e => open(e, go[1])}>Try it now <${Arrow} /></a>
           ${i > 0 ? html`<a class="button" href=${`#/tips/${i - 1}`}>← Previous</a>` : ''}
           ${i < tips.length - 1 ? html`<a class="button" href=${`#/tips/${i + 1}`}>Next: ${tips[i + 1].title} →</a>` : ''}
         </div>
@@ -2804,9 +2833,7 @@ function Scene({ sc, focus }) {
                   <button type="submit" class="btn">Check</button>
                 </form>`}
             <button type="button" class="scene-swap" onClick=${() => setChoose(!choose)}>${choose ? 'Type it instead' : 'Choose from four instead'}</button>`
-          : html`<p class=${`typed ${q.check.verdict}`}><span class="typed-v">${{ right: 'Right', close: 'Right', typo: 'Nearly: one letter off', wrong: 'Not quite' }[q.check.verdict]}</span>
-              ${q.check.verdict !== 'right' ? html`<span lang="de" class="typed-diff">${diffChars(q.typed.trim(), said(w)).map(([ch, k]) => (k === 'same' ? ch : k === 'miss' ? html`<u>${ch}</u>` : html`<s>${ch}</s>`))}</span>` : ''}
-              ${q.check.notes.length ? html`<small>${q.check.notes.join(' ')}</small>` : ''}</p>
+          : html`<${Typed} check=${q.check} typed=${q.typed} w=${w} />
             <p class="scene-big"><${Word} w=${w} /><${SayButton} text=${said(w)} /></p>
             <p class="scene-en">${w.en}</p>
             <button type="button" class="btn" ref=${next} onClick=${() => ask('name')}>Next <${Arrow} /></button>`}
@@ -3105,7 +3132,6 @@ function SoundPairs({ s }) {
 
 // ---- say a word of a pair, then hear the voice and yourself back to back ----
 
-const canRecord = () => !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder)
 const sameWord = (a, b) => a.localeCompare(b, 'de', { sensitivity: 'accent' }) === 0   // schön ≠ schon, Schön = schön
 const canRecognise = () => !!SpeechRec && !navigator.brave   // Brave has the API but it never hears anything
 function SoundSayWord({ word, other }) {
@@ -3218,9 +3244,12 @@ function todayPlan(st, q) {
   const cards = D.words.length ? [{ part: 'cards', label: 'Cards', href: '#/study', p: q.length ? 0 : 1, state: q.length ? 'todo' : 'done', note: q.length ? `${q.length} · about ${Math.max(1, Math.round(q.length * 10 / 60))} min` : 'done' }] : []
   return [...cards, ...revisitStops(), ...PARTS.map(part => {   // revisit stops (L15) and spaced mocks (L17): 85-tests.js
     const p = partDone(st.n, part)
-    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : p > 0 ? 'part' : 'todo' }
+    const begun = p > 0 || (part === 'words' && D.wordsBy[st.n].some(w => S.cards[w.id]))
+    return { part, label: TAB_NAME[part], href: `#/station/${st.n}/${part}`, p, state: p >= 1 ? 'done' : begun ? 'part' : 'todo' }
   }), ...mockStops(st)]
 }
+// The next stop: the first one not done. Words under way don't hold the day up: the cards bring them in, a few a day.
+const nextStep = plan => plan.find(p => p.state !== 'done' && !(p.part === 'words' && p.state === 'part'))
 
 const Mark = () => html`<svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
   <rect width="40" height="40" rx="6" fill="var(--board)" />
@@ -3358,13 +3387,13 @@ function Home({ data }) {
   const lv = data.level[st.level]
   const q = queue()
   const plan = todayPlan(st, q)
-  const step = plan.find(p => p.state !== 'done')
+  const step = nextStep(plan)
   const next = data.stations[st.n + 1]
   const pick = n => {
     setPicked(n === picked ? null : n)
     setTimeout(() => document.querySelector('.scard')?.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }), 50)
   }
-  return html`<main class="home">
+  return html`<main class=${`home l${st.level}`}>
     <p class="welcome"><span lang="de">Liebe Sneka, willkommen!</span><small>Dear Sneka, welcome!</small></p>
     <p class="plan-line">${s.settings.plan ? html`<b>Your plan:</b> ${s.settings.plan}`
       : html`<a href="#/" onClick=${e => { e.preventDefault(); openSettings() }}>Plan when and where you study (one sentence)</a>`}</p>
@@ -3375,7 +3404,7 @@ function Home({ data }) {
         <div class="go-text">
           ${step ? html`<p class="next-text">${STEP[step.part][0](st, q)}</p>
               <a class="btn big" href=${step.href}>${STEP[step.part][1]} <${Arrow} /></a>`
-            : next ? html`<p class="next-text">Every part of <span lang="de">${st.de}</span> is done. Move on to the next station.</p>
+            : next ? html`<p class="next-text">You have been through every part of <span lang="de">${st.de}</span>. Move on: its words keep coming back in your cards.</p>
               <button type="button" class="btn big" onClick=${() => commit(x => { x.lesson = next.n })}>Move on to <span lang="de">${next.de}</span> <${Arrow} /></button>`
             : html`<p class="next-text">Every station is done. Take the B1 mock exam until it passes every time.</p>
               <a class="btn big" href="#/mock/B1/full">Take the B1 mock exam <${Arrow} /></a>`}
@@ -3408,7 +3437,7 @@ function Week() {
   const studied = new Set(s.log.map(([, , t]) => new Date(t).toLocaleDateString('en-CA')))
   const days = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - 6 + k); return d })
   const on = d => studied.has(d.toLocaleDateString('en-CA'))
-  const lapsed = !on(days[6]) && !on(days[5])
+  const lapsed = s.log.length > 0 && !on(days[6]) && !on(days[5])   // not for a first day
   return html`<div class="week" aria-label="This week">
     <ol>${days.map(d => html`<li class=${on(d) ? 'on' : ''}><span class="wk-dot"></span><small lang="de">${DAYS[d.getDay()]}</small></li>`)}</ol>
     ${lapsed ? html`<p class="quiet">Never miss twice: five minutes of cards today keeps the habit.</p>` : ''}
@@ -3555,24 +3584,25 @@ export function seededRandom(seed) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296
   }
 }
-const xmShuffle = (xs, r) => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
 const strHash = s => [...s].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0, 2166136261)   // FNV-1a
 const xmAddDays = (d, k) => { const x = new Date(`${d}T12:00`); x.setDate(x.getDate() + k); return x.toLocaleDateString('en-CA') }
 const xmDate = d => new Date(`${d}T12:00`).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })
-const tClock = ms => { const s = Math.ceil(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` }
 
-// The Goethe papers (docs/08-exam-formats.md, timings from docs/03-content.md). Per module: minutes [full, short], and per
-// part [Teil, items in a full paper, items in a short one, raw points]. Lesen and Hören items are texts or recordings and
-// every question is a point; Schreiben and Sprechen have one task per part, worth the part's raw points. A1 and A2 turn each
-// module into 25 points and pass at 60 of 100 overall; B1 turns each into 100 and needs 60 in every module.
-// ponytail: B1 Sprechen's 16 points for pronunciation are spread over its three parts (28 + 40 + 16, scaled to 100).
+// The Goethe papers, checked against Goethe's Durchführungsbestimmungen (2025) and Modellsätze (docs/08-exam-formats.md).
+// Per module: minutes [full, short], and per part [Teil, items in a full paper, items in a short one, raw points]. Lesen
+// and Hören items are texts or recordings and every question is a point; Schreiben and Sprechen have one task per part,
+// worth the part's raw points. A1 and A2 turn each module into 25 points (A1 × 1.66, A2 × 1.25); A1 passes at 60 of 100
+// overall, A2 (split) needs 45 of 75 in Lesen + Hören + Schreiben and 15 of 25 in Sprechen. B1 turns each module into 100
+// and needs 60 in every module (each).
+// ponytail: Aussprache is scored once for the whole Sprechen (A2: 5 of 25, B1: 16 of 100); the app spreads it over the
+// parts by scaling (A2 4 + 8 + 8 → 25, B1 28 + 40 + 16 → 100), since every part's self-score has a pronunciation line.
 const EXAMS = {
   A1: { name: 'Start Deutsch 1', each: false, mods: [
     ['Hören', [20, 10], [['Teil 1', 6, 3], ['Teil 2', 4, 2], ['Teil 3', 5, 3]]],
     ['Lesen', [25, 15], [['Teil 1', 1, 1], ['Teil 2', 1, 1], ['Teil 3', 1, 0]]],
     ['Schreiben', [20, 10], [['Teil 1', 1, 0, 5], ['Teil 2', 1, 1, 10]]],
     ['Sprechen', [15, 5], [['Teil 1', 1, 1, 3], ['Teil 2', 1, 0, 6], ['Teil 3', 1, 0, 6]]]] },
-  A2: { name: 'Goethe-Zertifikat A2', each: false, mods: [
+  A2: { name: 'Goethe-Zertifikat A2', each: false, split: true, mods: [
     ['Lesen', [30, 15], [['Teil 1', 1, 1], ['Teil 2', 1, 0], ['Teil 3', 1, 0], ['Teil 4', 1, 1]]],
     ['Hören', [30, 15], [['Teil 1', 5, 3], ['Teil 2', 1, 0], ['Teil 3', 5, 2], ['Teil 4', 1, 1]]],
     ['Schreiben', [30, 15], [['Teil 1', 1, 0, 10], ['Teil 2', 1, 1, 10]]],
@@ -3588,8 +3618,9 @@ const PART_EN = {
     Lesen: ['Two short messages. Richtig or falsch?', 'Ads and web pages, two per situation. Where do you find the information?', 'Signs and notices. Richtig or falsch?'],
     Schreiben: ['Fill in a form for someone else, from the text.', 'Write a short message (about 30 words) covering all three points.'],
     Sprechen: ['Introduce yourself, then spell a word and say a number.', 'A topic and word cards: ask a question with your card, answer your partner’s.', 'Picture cards: make a request and react to one.'] },
-  A2: { Lesen: ['A short newspaper article. Choose a, b or c.', 'An information board. Where do you go? Choose a, b or c.', 'An email or letter. Choose a, b or c.', 'Six ads, five people. Which ad fits each person?'],
-    Hören: ['Short radio items, played once. Choose a, b or c.', 'One longer conversation. Match each person or day to a choice.', 'Short everyday conversations. Choose a, b or c.', 'A radio interview. Did the guest say it? Ja or nein.'],
+  A2: { Lesen: ['A short newspaper article. Choose a, b or c.', 'An information board. Where do you go? Choose a, b or c.', 'An email or letter. Choose a, b or c.', 'Six ads, five people. Which ad fits each person? One person has none (x).'],
+    Hören: ['Five short texts: radio, phone messages, announcements. Choose a, b or c.', 'One longer conversation, played once. Match each person or day to a choice.',
+      'Short everyday conversations, each played once. Choose a, b or c.', 'A radio interview. Did the guest say it? Ja or nein.'],
     Schreiben: ['A text message (20–30 words) covering all three points.', 'An email (30–40 words) covering all three points.'],
     Sprechen: ['Question cards: ask your partner about their life, answer their questions.', 'Talk about yourself on the topic card, with its four prompts.', 'Plan something together: find a time in the two diaries.'] },
   B1: { Lesen: ['A blog post. Richtig or falsch?', 'Two newspaper articles. Choose a, b or c.', 'Ads and situations. Which ad fits? One situation has none (x).', 'Readers’ comments. Is the writer for it? Ja or nein.', 'Rules or instructions. Choose a, b or c.'],
@@ -3604,7 +3635,7 @@ const QSIZE = { A1: 12, A2: 15, B1: 15 }   // questions in a Wortschatz or Gramm
 const LEVELS_ = ['A1', 'A2', 'B1']
 // Official practice papers can't be copied into the app; these open Goethe's own pages.
 const GOETHE_LINKS = [
-  ['A1', 'Start Deutsch 1', 'https://goethe.de/en/spr/kup/prf/prf/sd1/ueb.html'],
+  ['A1', 'Start Deutsch 1', 'https://www.goethe.de/ins/de/en/prf/prf/gzsd1/ueb.html'],
   ['A2', 'Goethe-Zertifikat A2', 'https://www.goethe.de/ins/de/en/prf/prf/gzsd2/ub2.html'],
   ['B1', 'Goethe-Zertifikat B1', 'https://www.goethe.de/ins/de/en/prf/prf/gzb1/ueb.html'],
   ['B1', 'B1 online exam training', 'https://www.goethe.de/en/spr/prf/ueb/pb1.html'],
@@ -3626,12 +3657,11 @@ function xmItem(m, x, pts) {
 }
 
 // A vocabulary (vq) or grammar (gq) question as one exam question with four options.
-const xmGap = s => s.split('___').map((p, i) => html`${i ? html`<span class="gap"></span>` : ''}${p}`)
 const VQ_ASK = { context: 'Which word fits the gap?', synonym: 'Which means the same as the underlined part?', usage: 'In which sentence is the word used correctly?' }
 function xmSingle(x) {
   const n = x.n ?? gpoint(x.g)?.n
   const at = x.u ? x.q.indexOf(x.u) : -1
-  const body = x.g || x.type === 'context' ? xmGap(x.q) : at >= 0 ? html`${x.q.slice(0, at)}<u>${x.u}</u>${x.q.slice(at + x.u.length)}` : html`<b>${x.q}</b>`
+  const body = x.g || x.type === 'context' ? gapped(x.q) : at >= 0 ? html`${x.q.slice(0, at)}<u>${x.u}</u>${x.q.slice(at + x.u.length)}` : html`<b>${x.q}</b>`
   return { kind: 'q', x, n, qs: [{ q: html`<small class="xm-ask" lang="en">${x.g ? 'Which form fits the gap?' : VQ_ASK[x.type]}</small>${body}`,
     format: 'abcd', opts: x.opts, a: x.a, why: x.g ? html`${x.why} <i class="xm-en">${x.en}</i>` : x.why }] }
 }
@@ -3659,14 +3689,14 @@ function mockPaper(lv, size) {
 // Practice tests: a fixed order per part (exam items first), paper k takes the k-th window of it.
 function practiceOrder(pool, salt) {
   const r = seededRandom(strHash(salt))
-  return [...xmShuffle(pool.filter(isExamItem), r), ...xmShuffle(pool.filter(x => !isExamItem(x)), r)]
+  return [...shuffle(pool.filter(isExamItem), r), ...shuffle(pool.filter(x => !isExamItem(x)), r)]
 }
 const xmWindow = (order, c, k) => [...new Set(Array.from({ length: Math.min(c, order.length) }, (_, j) => order[((k - 1) * c + j) % order.length]))]
 const xmBanks = {}
 function xmBank(lv, mod) {   // the level's vocabulary or grammar questions, in a fixed order
   const xs = mod === 'wortschatz' ? D.vq.filter(q => q.level === lv)
     : D.grammar.filter(g => D.stations[g.n]?.level === lv).flatMap(g => (D.gq[g.id] ?? []).map(q => ({ ...q, n: g.n })))
-  return (xmBanks[lv + mod] ??= xmShuffle(xs, seededRandom(strHash(lv + mod))))
+  return (xmBanks[lv + mod] ??= shuffle(xs, seededRandom(strHash(lv + mod))))
 }
 const skillSpec = (lv, mod) => EXAMS[lv].mods.find(x => MOD_OF[x[0]] === mod)
 function paperCount(lv, mod) {
@@ -3687,7 +3717,7 @@ function practicePaper(lv, mod, k) {
 // Station test (L16): words, grammar and a recording from this station, and about a third from the six stations before.
 function stationPaper(n, seed) {
   const r = seededRandom(seed)
-  const take = (xs, c) => xmShuffle(xs, r).slice(0, c)
+  const take = (xs, c) => shuffle(xs, r).slice(0, c)
   const vq = k => D.vq.filter(q => q.n === k)
   const gq = k => (D.grammarBy[k] ?? []).flatMap(g => (D.gq[g.id] ?? []).map(q => ({ ...q, n: k })))
   const before = Array.from({ length: Math.min(6, n - 1) }, (_, i) => n - 1 - i)
@@ -3696,12 +3726,19 @@ function stationPaper(n, seed) {
   const hear = take((D.listeningBy[n] ?? []).filter(x => x.questions.length <= 2), 1)
   const st = D.stations[n]
   return xmNumber({ key: `station/${n}`, kind: 'station', level: st.level, title: `Station test · ${st.de}`, mods: [{ m: 'Station test', min: 0, parts: [
-    { teil: 'Wörter und Grammatik', en: 'Choose the right answer. Some questions come from earlier stations.', items: xmShuffle([...own, ...back], r).map(xmSingle) },
+    { teil: 'Wörter und Grammatik', en: 'Choose the right answer. Some questions come from earlier stations.', items: shuffle([...own, ...back], r).map(xmSingle) },
     { teil: 'Hören', en: 'Listen, then answer. You can play it twice.', items: hear.map(x => xmItem('Hören', x)) },
   ].filter(p => p.items.length) }] })
 }
 
 // ---- scoring: points per part, turned into the module score the Goethe way ----
+
+const xmSum = (xs, k) => xs.reduce((a, x) => a + x[k], 0)
+const xmSixty = xs => xmSum(xs, 'pts') >= .6 * xmSum(xs, 'max')
+// The written modules and Sprechen, each as [points, max] (A2 needs 60% of both).
+const xmSplit = mods => [mods.filter(x => x.m !== 'Sprechen'), mods.filter(x => x.m === 'Sprechen')].map(xs => [xmSum(xs, 'pts'), xmSum(xs, 'max')])
+// A whole paper's pass: B1 every module at 60%, A2 the written part and Sprechen each at 60% (45 of 75, 15 of 25), A1 60% overall.
+export const examPass = (lv, mods) => (EXAMS[lv].each ? mods.every(x => xmSixty([x])) : EXAMS[lv].split ? xmSplit(mods).every(([p, m]) => p >= .6 * m) : xmSixty(mods))
 
 function xmGrade(paper, ans, self) {
   const mods = paper.mods.map(md => {
@@ -3714,8 +3751,8 @@ function xmGrade(paper, ans, self) {
     return { m: md.m, raw, of, max, pts: of ? Math.round(raw / of * max) : 0 }
   })
   const pts = mods.reduce((a, x) => a + x.pts, 0), max = mods.reduce((a, x) => a + x.max, 0)
-  const each = paper.kind === 'mock' && EXAMS[paper.level].each
-  return { mods, pts, max, self, p: max ? pts / max : 0, each, pass: each ? mods.every(x => x.pts >= .6 * x.max) : pts >= .6 * max }
+  const mock = paper.kind === 'mock', each = mock && EXAMS[paper.level].each
+  return { mods, pts, max, self, p: max ? pts / max : 0, each, split: mock && !!EXAMS[paper.level].split, pass: mock ? examPass(paper.level, mods) : pts >= .6 * max }
 }
 // The stations behind the wrong answers, most mistakes first (L17).
 function weakStations(paper, ans) {
@@ -3835,11 +3872,12 @@ function XmSitting({ paper, onDone, after }) {
       ${paper.mods.length > 1 ? html`<ol class="xm-steps" aria-label="Modules">${paper.mods.map((x, i) => html`<li class=${i < mod ? 'past' : i === mod ? 'on' : ''}
         aria-current=${i === mod ? 'step' : null}><span class="xm-stepdot"></span><span lang="de">${x.m}</span></li>`)}</ol>` : html`<span class="xm-steps"></span>`}
       ${qs.length ? html`<span class="xm-done">${done} of ${qs.length} answered</span>` : ''}
-      ${left !== null ? html`<span class=${`xm-clock${left < 5 * MIN ? ' low' : ''}`} role="timer" aria-label="Time left in this module">${tClock(left)}</span>` : ''}
+      ${left !== null ? html`<span class=${`xm-clock${left < 5 * MIN ? ' low' : ''}`} role="timer" aria-label="Time left in this module">${mmss(left / 1000)}</span>` : ''}
       <button type="button" class="btn" onClick=${handIn}>${last ? 'Hand in' : html`Hand in <span lang="de">${md.m}</span>`} <${Arrow} /></button>
     </div>
     <header class="xm-modhead"><h2 lang="de">${md.m}</h2>${md.min ? html`<p class="quiet">${`${md.min} minutes${paper.kind === 'mock' ? ', as in the exam' : ''}.${md.m === 'Hören'
-      ? ' Each recording plays as often as the exam allows.' : md.m === 'Sprechen' ? ' Each task has its own clock to prepare and to speak.' : ''}${md.m === 'Schreiben' || md.m === 'Sprechen'
+      ? ' Each recording plays as often as the exam allows.' : md.m === 'Sprechen' ? (paper.kind === 'mock' && paper.level !== 'B1' ? ' Each task has its own clock to speak; the exam gives no time to prepare.'
+      : ' Each task has its own clock to prepare and to speak.') : ''}${md.m === 'Schreiben' || md.m === 'Sprechen'
       ? (paper.kind === 'mock' ? ' You score this part yourself afterwards, in the Goethe criteria.' : ' Finish each task, then rate it in its self-score: that is its score here.') : ''}`}</p>` : ''}</header>
     ${md.parts.map(p => html`<section class=${`xm-part${p.items[0].kind === 'q' ? ' singles' : ''}`} key=${`${mod}${p.teil}`}>
       <header class="xm-parthead"><span class="xm-teil" lang="de">${p.teil}</span><p>${p.en}</p></header>
@@ -3867,12 +3905,11 @@ function XmItem({ it, ans, pick, work, setWork, practice }) {
 // save the text and the self-score in S.drafts[id]. Mocks show the bare exam sheet (no hints, phrases or model, and not
 // the station's saved draft), then a scoring step with the same self-score in the Goethe criteria. ----
 
-const xmGroups = (kind, t) => rubricGroups(kind === 'write' ? 'write' : 'speak', t.level, kind === 'write' ? t.rubric : undefined)
+const xmGroups = (kind, t) => rubricGroups(kind === 'write' ? 'write' : 'speak', t.level, kind === 'write' ? t.rubric : [], t.part)
 const rateShare = (groups, v = {}) => { const ks = rubricKeys(groups); return ks.reduce((a, k) => a + (v[k] ?? 0), 0) / ks.length }   // unrated lines count 0
 const formShare = (t, fields = [], same = {}) => t.form.fields.filter(([, a], i) => normField(fields[i]) === normField(a) || same[i]).length / t.form.fields.length
 const draftShare = it => { const d = S.drafts[it.x.id] ?? {}; return it.x.form ? formShare(it.x, d.fields, d.same) : rateShare(xmGroups(it.kind, it.x), d.rubric) }
 const draftRated = it => { const d = S.drafts[it.x.id] ?? {}; return it.x.form ? !!d.checked : rubricScore(xmGroups(it.kind, it.x), d.rubric) !== null }
-const themOf = t => (t.level === 'A1' && t.part === 'Teil 1' ? 'Examiner' : 'Partner')
 
 function XmWrite({ t, value, onChange }) {
   const kind = WRITE_KIND[t.level][t.part]
@@ -3889,8 +3926,11 @@ function XmWrite({ t, value, onChange }) {
       onInput=${e => onChange(e.target.value)}></textarea><${WordMeter} n=${countWords(v)} lo=${t.words[0]} hi=${t.words[1]} /></section></div>`
 }
 
+// The exam gives 15 minutes to prepare at B1 (for the plan and the presentation), none at A1 and A2.
+const xmPrep = t => t.level === 'B1' && t.part !== 'Teil 3'
+
 function XmSpeak({ t, onRec }) {
-  const r = useRecorder()
+  const r = useRecorder(), prep = xmPrep(t)
   const [phase, setPhase] = useState('ready')   // ready → prep → speak → done, each with the task's own clock
   useEffect(() => { if (r.url) onRec(r.url) }, [r.url])
   useEffect(() => () => stopSpeech(), [])
@@ -3899,9 +3939,10 @@ function XmSpeak({ t, onRec }) {
   return html`<div class="xm-speak"><article class="w-card"><${TaskHead} t=${t} kind="speak" mod="Sprechen" name=${SPEAK_KIND[t.level][t.part]} />
       <${TaskText} t=${t} /><${SpeakCards} t=${t} /></article>
     <section class=${`sp-stage sp-st-${phase}`} aria-label="Prepare and speak">
-      ${phase === 'ready' ? html`<div class="sp-times"><span><b>${mmss(t.prep_s)}</b> to prepare</span><span><b>${mmss(t.speak_s)}</b> to speak</span></div>
-          <div class="sp-body"><div class="sp-btns"><button type="button" class="btn" onClick=${() => setPhase('prep')}>Start preparing <${Arrow} /></button>
-            <button type="button" onClick=${speakNow}>Skip to speaking</button></div><p class="sp-note">Your microphone records you while you speak; you score it afterwards.</p></div>`
+      ${phase === 'ready' ? html`<div class="sp-times">${prep ? html`<span><b>${mmss(t.prep_s)}</b> to prepare</span>` : ''}<span><b>${mmss(t.speak_s)}</b> to speak</span></div>
+          <div class="sp-body"><div class="sp-btns">${prep ? html`<button type="button" class="btn" onClick=${() => setPhase('prep')}>Start preparing <${Arrow} /></button>
+            <button type="button" onClick=${speakNow}>Skip to speaking</button>` : html`<button type="button" class="btn" onClick=${speakNow}>Start speaking <${Arrow} /></button>`}</div>
+            <p class="sp-note">${prep ? '' : 'As in the exam, there is no time to prepare. '}Your microphone records you while you speak; you score it afterwards.</p></div>`
         : phase === 'prep' ? html`<${Countdown} key="prep" secs=${t.prep_s} kind="prep" label="Prepare" onEnd=${speakNow} />
           <div class="sp-body"><button type="button" class="btn" onClick=${speakNow}>Start speaking now <${Arrow} /></button></div>`
         : phase === 'speak' ? html`<${Countdown} key="speak" secs=${t.speak_s} kind="rec" label="Speak" onEnd=${finish} />
@@ -3912,8 +3953,6 @@ function XmSpeak({ t, onRec }) {
       ${phase === 'prep' || phase === 'speak' ? html`<${VoicePartner} lines=${t.partner} label=${themOf(t)} />` : ''}
     </section></div>`
 }
-
-const XM_WHO = { A: 'Woman', B: 'Man', N: 'Announcer' }
 
 function XmScore({ paper, work, onDone }) {
   const tasks = xmTasks(paper)
@@ -3959,6 +3998,8 @@ function XmResult({ paper, r, ans, after }) {
   const rows = r.mods.length > 1 ? r.mods.map(x => [x.m, x.pts, x.max])   // modules, or a practice paper's tasks
     : tasks.map(({ p, it }) => [p.teil, Math.round((r.self[it.x.id] ?? 0) * it.pts), it.pts])
   const verdict = mock && r.each ? (r.pass ? 'Every module is at 60 or more: that passes the B1 exam.' : html`B1 needs 60 in every module, and ${low.map(x => html`<span lang="de">${x.m}</span>`).reduce((a, b) => html`${a} and ${b}`)} ${low.length > 1 ? 'are' : 'is'} below it.`)
+    : r.split ? (([[w, wm], [o, om]]) => (r.pass ? `${w} of ${wm} written and ${o} of ${om} in Sprechen: that passes.`
+      : `A2 needs ${Math.ceil(.6 * wm)} of ${wm} in Lesen, Hören and Schreiben together (you have ${w}), and ${Math.ceil(.6 * om)} of ${om} in Sprechen (you have ${o}).`))(xmSplit(r.mods))
     : mock ? (r.pass ? '60 or more of 100: that passes.' : `${Math.ceil(.6 * r.max) - r.pts} more points would pass (60 of 100).`)
     : r.pass ? 'Passed: 60% is the pass mark.' : `${Math.ceil(.6 * r.max) - r.pts} more ${unit} would pass (60%).`
   const due = paper.kind === 'station' && revisitDue(S.tests[paper.key])   // saved before the result shows
@@ -3995,7 +4036,7 @@ function XmReview({ paper, ans }) {
   const quote = it => {
     const ev = shown[it.x.id ?? it.qs[0].id]
     if (!ev) return ''
-    const lines = it.kind === 'read' ? it.x.blocks.flatMap(b => b.s.map((s, k) => [`${b.id}.${k}`, s[0], s[1]])).filter(([id]) => ev.includes(id))
+    const lines = it.kind === 'read' ? sentences(it.x).map(x => [x.id, x.de, x.en]).filter(([id]) => ev.includes(id))
       : it.x.lines.map((l, i) => [i, l.de, l.en]).filter(([i]) => ev.includes(i))
     return html`<blockquote class="xm-ev">${lines.map(([, de, en]) => html`<p><span lang="de">${de}</span><small>${en}</small></p>`)}</blockquote>`
   }
@@ -4005,14 +4046,14 @@ function XmReview({ paper, ans }) {
       const st = D.stations[it.n]
       const [tab, what] = it.kind === 'read' ? ['read', 'reading'] : it.kind === 'listen' ? ['listen', 'listening'] : it.x.g ? ['grammar', gpoint(it.x.g)?.title] : ['words', html`the word <span lang="de">${it.x.w}</span>`]
       return html`<article class="xm-rev">
-        <header><span class="xm-teil" lang="de">${md.m === 'Station test' ? '' : `${md.m} `}${p.teil}</span>
+        <header><span class="xm-teil" lang="de">${md.m === 'Station test' || md.m === p.teil ? '' : `${md.m} `}${p.teil}</span>
           ${it.kind === 'read' ? html`<b lang="de">${it.x.title}</b>` : it.kind === 'listen' ? html`<span>${it.x.setup}</span>` : ''}
           ${st ? html`<a class="xm-study" href=${`#/station/${it.n}/${tab}`}>Study ${what} at <span lang="de">${st.de}</span> <${Arrow} /></a>` : ''}</header>
         <ol class="eqs">${wrong(it).map(q => html`<${ExamQuestion} key=${q.id} q=${q} k=${q.id} pick=${ans[q.id]} done=${true} onPick=${() => {}}
           where=${it.kind === 'listen' ? 'recording' : 'text'} onShow=${ev => setShown(s => ({ ...s, [it.x.id ?? it.qs[0].id]: ev }))} />`)}</ol>
         ${quote(it)}
         ${it.kind === 'read' ? html`<details class="xm-whole"><summary>The whole text</summary><${Reader} t=${it.bare} exam /></details>` : ''}
-        ${it.kind === 'listen' ? html`<details class="xm-whole"><summary>What was said</summary><ol class="xm-model">${it.x.lines.map(l => html`<li><b>${XM_WHO[l.who]}</b>
+        ${it.kind === 'listen' ? html`<details class="xm-whole"><summary>What was said</summary><ol class="xm-model">${it.x.lines.map(l => html`<li><b>${whoName(l.who, it.x)}</b>
           <span lang="de">${l.de}</span><small>${l.en}</small></li>`)}</ol></details>` : ''}
       </article>`
     })}
@@ -4026,7 +4067,7 @@ function StationTest({ n }) {
   const rec = s.tests[`station/${n}`]
   const due = revisitDue(rec)
   const revisit = !!due && due <= today()
-  const seed = n * 100 + (rec?.revisits.length ?? 0)
+  const seed = n * 100 + (rec?.revisits.length ?? 0) + (rec?.first ? 1 : 0)   // retakes before a pass: the same paper; each revisit: a new one
   const paper = useMemo(() => stationPaper(n, seed), [n, seed])
   const [run, setRun] = useState(null)
   const st = D.stations[n]
@@ -4051,7 +4092,7 @@ function StationTest({ n }) {
       <ul class="xm-facts">
         <li><b>${paper.count}</b><small>questions in exam formats</small></li>
         <li><b>${own}</b><small>from this station</small></li>
-        <li><b>${paper.count - own}</b><small>from the six before</small></li>
+        ${paper.count > own ? html`<li><b>${paper.count - own}</b><small>from the stations before</small></li>` : ''}
         <li><b>60%</b><small>passes</small></li>
       </ul>
       <p class="quiet">Words, grammar and a recording. Mixing in earlier stations makes all of them stick.</p>
@@ -4145,7 +4186,7 @@ function MockPage({ data, arg, sub }) {
           <p class="xm-exam-top"><span class="lb big">${lv}</span>${lv === mine ? html`<span class="xm-yours">Your level now</span>` : ''}</p>
           <h2 lang="de">${E.name}</h2>
           <ol class="xm-exam-mods">${E.mods.map(([m, min, parts]) => html`<li><b lang="de">${m}</b><small>${plural(parts.length, 'part')} · ${min[0]} min</small></li>`)}</ol>
-          <p class="xm-rule">${E.each ? 'Pass: 60 of 100 in every module' : 'Pass: 60 of 100 overall'}</p>
+          <p class="xm-rule">${E.each ? 'Pass: 60 of 100 in every module' : E.split ? 'Pass: 45 of 75 written and 15 of 25 in Sprechen' : 'Pass: 60 of 100 overall'}</p>
         </div>
         <div class="xm-exam-go">
           <a class="btn big" href=${`#/mock/${lv}/full`}>Full paper <small>${mockMinutes(lv, 'full')} min</small></a>
@@ -4172,23 +4213,15 @@ function MockRun({ lv, size }) {
 // ==== src/90-station.js ====
 // ---- station page: one tab per part, each tab its own address ----
 
-const SOON = {
-  words: "This station's words, each noun with its article and plural, audio and a quick quiz.",
-  grammar: 'Each point with a plain-English explanation, examples lined up with English, and a sentence builder.',
-  read: 'An original text in the Goethe Lesen format, with tap-to-translate and exam questions.',
-  listen: 'Dialogues and announcements read by German voices, with Hören-style questions.',
-  write: 'An exam writing task with a checklist, word count, useful phrases and a model answer.',
-  speak: 'An exam speaking task with timers, recording and a model answer.',
-  pictures: 'A drawn scene where every object is a word of this station.',
-  test: 'A short station test in exam formats. 60% passes.',
-}
-
 function Station({ data, n, tab }) {
   const s = useStore()
   const st = data.stations[n]
   if (!st) return html`<main class="empty"><p>There is no station ${n}. <a href="#/">Back to today</a></p></main>`
   const t = TAB_NAME[tab] ? tab : 'words'
   const View = TAB_VIEWS[t]   // registered by the tab's own fragment
+  // the part after this one (Pictures only where the station has a scene); after the test, back to today's plan
+  const order = TABS.filter(([id]) => id !== 'pictures' || scenesFor(n).length)
+  const next = order[order.findIndex(([id]) => id === t) + 1]
   return html`<main class=${`station l${st.level}`}>
     <${Board} data=${data} n=${n} />
     <div class="station-bar">
@@ -4197,15 +4230,11 @@ function Station({ data, n, tab }) {
       ${n === s.lesson ? html`<span class="you">Your current stop</span>`
         : html`<button type="button" onClick=${() => commit(x => { x.lesson = n })}>Make this my current stop</button>`}
     </div>
-    <section class="tab-body" aria-label=${TAB_NAME[t]}>
-      ${View ? html`<${View} data=${data} n=${n} />` : html`<p class="soon">${SOON[t]} <span class="quiet">Being written now.</span></p>`}
-    </section>
+    <section class="tab-body" aria-label=${TAB_NAME[t]}><${View} data=${data} n=${n} /></section>
+    <nav class="tab-next" aria-label="Next part">${next
+      ? html`<a class="button" href=${`#/station/${n}/${next[0]}`}>Next: ${next[1]} <${Arrow} /></a>`
+      : html`<a class="button" href="#/">Back to today's plan <${Arrow} /></a>`}</nav>
   </main>`
-}
-
-function Soon({ title, text }) {
-  return html`<main class="page"><header class="masthead"><h1>${title}</h1><p>${text}</p></header>
-    <p class="soon">Being built now. <a href="#/">Back to today</a></p></main>`
 }
 
 // ==== src/99-app.js ====
@@ -4281,10 +4310,6 @@ function App() {
   const Page = Object.hasOwn(PAGES, page) && PAGES[page]   // PAGES (00-core.js) is filled in by each page's own fragment
   const view = Page ? html`<${Page} data=${data} arg=${arg} sub=${sub} sub2=${sub2} hash=${hash} />`
     : page === 'station' ? html`<${Station} data=${data} n=${Number(arg)} tab=${sub} />`
-    : page === 'tests' ? html`<${Soon} title="Practice tests" text="Numbered tests per level and module: Lesen, Hören, Schreiben, Sprechen, Wortschatz, Grammatik." />`
-    : page === 'mock' ? html`<${Soon} title="Mock exam" text="A timed paper per level in the real Goethe structure, scored the Goethe way." />`
-    : page === 'pictures' ? html`<${Soon} title="Picture scenes" text="Drawn scenes where every object is a word with its article." />`
-    : page === 'sounds' ? html`<${Soon} title="Pronunciation" text="A sound guide for ü, ö, ä, ch and r, and minimal-pair listening." />`
     : html`<${Home} data=${data} />`
   return html`<${Backdrop} data=${data} page=${page} /><${TopBar} data=${data} page=${page} />${view}<${LeaveExport} />`
 }
