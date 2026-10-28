@@ -5,7 +5,7 @@
   "part": "Teil 1",
   "type": "article",
   "title": "Von Bangalore nach Leipzig",
-  "intro": "A city magazine introduces Priya, who moved from India to Leipzig a year ago.",
+  "intro": "A city magazine introduces Priya, who moved from India to Leipzig three months ago.",
   "blocks": [
    {
     "id": "b1",
@@ -40,16 +40,16 @@
     "t": "p",
     "s": [
      [
-      "Vor einem Jahr ist sie mit ihrem Mann nach Leipzig gekommen, denn er hat an der Universität eine Stelle bekommen.",
-      "A year ago she came to Leipzig with her husband, because he got a job at the university."
+      "Vor drei Monaten ist sie allein nach Leipzig gekommen, denn sie möchte gern in Deutschland arbeiten.",
+      "Three months ago she came to Leipzig on her own, because she would like to work in Germany."
      ],
      [
       "Am Anfang war alles fremd: das Wetter, das Essen und auch die Sprache.",
       "At first everything was strange: the weather, the food and the language too."
      ],
      [
-      "„Im ersten Winter war mir oft kalt, und ich habe meine Familie sehr vermisst“, erzählt Priya.",
-      "\"In the first winter I was often cold, and I missed my family a lot,\" Priya says."
+      "„In den ersten Wochen war ich oft allein, und ich habe meine Familie sehr vermisst“, erzählt Priya.",
+      "\"In the first few weeks I was often alone, and I missed my family a lot,\" Priya says."
      ]
     ]
    },
@@ -132,30 +132,30 @@
     "opts": [
      "Informatik studiert und in einer Firma gearbeitet.",
      "an einer Universität gearbeitet.",
-     "schon ein bisschen Deutsch gelernt."
+     "als Lehrerin gearbeitet."
     ],
     "a": 0,
     "ev": [
      "b2.2"
     ],
-    "why": "She studied computer science and then worked for a software company; the university job is her husband's."
+    "why": "She studied computer science and then worked for a software company for four years; the text says nothing about a university job or teaching."
    },
    {
     "q": "Priya ist nach Leipzig gekommen, weil …",
     "format": "abc",
     "opts": [
      "sie dort studieren wollte.",
-     "ihr Mann dort eine Stelle bekommen hat.",
+     "sie in Deutschland eine Stelle finden möchte.",
      "ihre Freundin Lena dort wohnt."
     ],
     "a": 1,
     "ev": [
      "b3.0"
     ],
-    "why": "She came \"denn er hat an der Universität eine Stelle bekommen\": her husband got a job there."
+    "why": "She came \"denn sie möchte gern in Deutschland arbeiten\": she wants to work in Germany. She met Lena later, at her German course."
    },
    {
-    "q": "Im ersten Winter …",
+    "q": "In den ersten Wochen …",
     "format": "abc",
     "opts": [
      "hat Priya das Wetter gut gefallen.",
@@ -229,8 +229,8 @@
       "Imagine who I met on Saturday: Tim, our old friend from school!"
      ],
      [
-      "Ich war mit meiner Schwester in einem Café am Bahnhof, und auf einmal stand er vor unserem Tisch.",
-      "I was with my sister in a café at the station, and suddenly he was standing at our table."
+      "Ich war mit meiner Schwester in einem Café am Bahnhof, und auf einmal war er da.",
+      "I was with my sister in a café at the station, and suddenly there he was."
      ],
      [
       "Wir haben uns zehn Jahre nicht gesehen!",
@@ -465,8 +465,8 @@
       "Service on the ground floor next to the checkout: we bring your new furniture home and also put it together."
      ],
      [
-      "Für Ihren Umzug können Sie bei uns auch einen Transporter leihen.",
-      "For your move you can also hire a van from us."
+      "Für Ihren Umzug können Sie dort auch einen Transporter leihen.",
+      "For your move you can also hire a van there."
      ],
      [
       "Öffnungszeiten: Montag bis Samstag von 10 bis 20 Uhr.",
@@ -800,7 +800,7 @@
     "why": "Ad c offers a room in a shared flat five minutes from the university for 320 euros."
    },
    {
-    "q": "Lena möchte jede Woche ein paar Stunden am Vormittag arbeiten. Sie macht gern sauber.",
+    "q": "Eine Studentin möchte jede Woche ein paar Stunden am Vormittag arbeiten. Sie macht gern sauber.",
     "format": "match",
     "opts": [
      "a",
@@ -959,8 +959,8 @@
       "Would you like to celebrate with me on Saturday?"
      ],
      [
-      "Ich lade dich in das neue indische Restaurant am Marktplatz ein.",
-      "I'll treat you at the new Indian restaurant on the market square."
+      "Ich lade dich ins neue indische Restaurant am Marktplatz ein.",
+      "I'll take you to the new Indian restaurant on the market square – my treat."
      ]
     ]
    },
@@ -1147,11 +1147,11 @@
     "s": [
      [
       "Ausbildung im Hotel Seeblick",
-      "Training at the Hotel Seeblick"
+      "Apprenticeship at the Hotel Seeblick"
      ],
      [
       "Ab 1. September haben wir einen Ausbildungsplatz als Koch oder Köchin frei.",
-      "From 1 September we have a training place as a cook."
+      "From 1 September we have an apprenticeship for a cook."
      ],
      [
       "Sie sind zwischen 16 und 25 Jahre alt und kochen gern?",
@@ -1267,7 +1267,7 @@
   },
   "questions": [
    {
-    "q": "Jonas studiert und hat nur am Wochenende Zeit für einen Job.",
+    "q": "Ein Freund von Jonas studiert und hat nur am Wochenende Zeit für einen Job.",
     "format": "match",
     "opts": [
      "a",
@@ -1284,7 +1284,7 @@
     "why": "Café Morgenrot needs people on Saturday and Sunday."
    },
    {
-    "q": "Priya sucht eine Arbeit am Vormittag. Sie kann sehr gut mit dem Computer arbeiten und spricht Englisch.",
+    "q": "Eine Freundin von Priya sucht eine Arbeit am Vormittag. Sie kann sehr gut mit dem Computer arbeiten und spricht Englisch.",
     "format": "match",
     "opts": [
      "a",
@@ -1317,7 +1317,7 @@
      "b4.1",
      "b4.2"
     ],
-    "why": "The hotel offers training as a cook for people aged 16 to 25."
+    "why": "The hotel offers an apprenticeship as a cook for people aged 16 to 25."
    },
    {
     "q": "Malte möchte eine neue Stelle suchen, aber er weiß nicht, wie man eine gute Bewerbung schreibt.",
@@ -1590,8 +1590,8 @@
       "Guitar for beginners"
      ],
      [
-      "Sie wollten schon immer Gitarre spielen?",
-      "Have you always wanted to play the guitar?"
+      "Sie möchten gern Gitarre spielen lernen?",
+      "Would you like to learn the guitar?"
      ],
      [
       "Kleiner Kurs mit nur fünf Personen, dienstags von 18 bis 19 Uhr in der Musikschule.",
@@ -1786,7 +1786,7 @@
     "why": "In the guitar course you can borrow a guitar."
    },
    {
-    "q": "Priya und ihr Mann tanzen gern und haben am Freitagabend Zeit.",
+    "q": "Priya und eine Kollegin tanzen gern und haben am Freitagabend Zeit.",
     "format": "match",
     "opts": [
      "a",
@@ -1801,7 +1801,7 @@
      "b7.1",
      "b7.2"
     ],
-    "why": "The Tanzhaus has a dance evening for couples every Friday."
+    "why": "The Tanzhaus has a dance evening every Friday from 9 pm."
    },
    {
     "q": "Malte sucht für seine Tochter (8) etwas für den Samstagvormittag.",
@@ -2048,8 +2048,8 @@
       "Nice clothes for women and men at low prices: blouses from 5 euros, coats from 20 euros."
      ],
      [
-      "Wir kaufen auch Ihre alten Sachen, wenn sie sauber und modern sind.",
-      "We also buy your old things if they are clean and modern."
+      "Wir kaufen auch Ihre alte Kleidung, wenn sie sauber und modern ist.",
+      "We also buy your old clothes if they are clean and modern."
      ]
     ],
     "label": "b"
@@ -2306,7 +2306,7 @@
       "\"Often they don't need pills, but more exercise.\""
      ],
      [
-      "Am Anfang kamen nur fünf Patienten mit, heute ist die Gruppe viel größer.",
+      "Am Anfang sind nur fünf Patienten mitgekommen, heute ist die Gruppe viel größer.",
       "At the beginning only five patients came along; today the group is much bigger."
      ]
     ]
@@ -2374,6 +2374,10 @@
    {
     "w": "Lauftreff",
     "en": "running group"
+   },
+   {
+    "w": "gegründet",
+    "en": "founded, started (gründen)"
    },
    {
     "w": "Patienten",
@@ -2722,8 +2726,8 @@
       "But there is some good news too: I will get part of the money for the ticket back."
      ],
      [
-      "Bei mehr als einer Stunde Verspätung zahlt die Bahn 25 Prozent zurück.",
-      "If a train is more than an hour late, the railway pays back 25 per cent."
+      "Bei mehr als zwei Stunden Verspätung zahlt die Bahn 50 Prozent zurück.",
+      "If a train is more than two hours late, the railway pays back 50 per cent."
      ],
      [
       "Das Formular habe ich schon am Bahnhof ausgefüllt.",
@@ -2852,7 +2856,7 @@
      "b4.0",
      "b4.1"
     ],
-    "why": "Because the delay was more than an hour, he gets 25 per cent of the ticket price back."
+    "why": "He arrived almost three hours late, so he gets 50 per cent of the ticket price back."
    },
    {
     "q": "Was möchte Jonas im August machen?",
@@ -3063,7 +3067,7 @@
     "why": "The holiday flat is near the beach on the North Sea, and dogs are allowed."
    },
    {
-    "q": "Priya ist neu in der Stadt und möchte die Altstadt kennenlernen. Ihr Deutsch ist noch nicht so gut.",
+    "q": "Priyas Eltern sind zu Besuch und möchten die Altstadt kennenlernen. Sie sprechen kein Deutsch, aber gut Englisch.",
     "format": "match",
     "opts": [
      "a",
@@ -3804,8 +3808,8 @@
       "Are you going to a fancy-dress party?"
      ],
      [
-      "Bei uns können Sie über 1000 Kostüme für Erwachsene und Kinder leihen, zum Beispiel als Pirat, König oder Filmstar.",
-      "With us you can hire over 1,000 costumes for adults and children, for example as a pirate, a king or a film star."
+      "Bei uns können Sie über 1000 Kostüme für Erwachsene und Kinder leihen: Gehen Sie zum Beispiel als Pirat, König oder Filmstar!",
+      "With us you can hire over 1,000 costumes for adults and children: go as a pirate, a king or a film star, for example!"
      ],
      [
       "Ein Kostüm kostet 15 Euro für das ganze Wochenende.",
@@ -3886,6 +3890,10 @@
     "en": "costumes"
    },
    {
+    "w": "Erwachsene",
+    "en": "adults"
+   },
+   {
     "w": "Zauberer",
     "en": "magician"
    },
@@ -3926,7 +3934,7 @@
     "why": "The party room has space for up to 60 guests."
    },
    {
-    "q": "Herr Webers Sohn wird sechs. Auf seiner Party sollen die Kinder etwas Lustiges sehen.",
+    "q": "Maltes Tochter wird neun. Auf ihrer Party sollen die Kinder etwas Lustiges sehen.",
     "format": "match",
     "opts": [
      "a",
@@ -4631,8 +4639,8 @@
       "You can collect it until 6 pm; on Saturdays we are only open until 1 pm."
      ],
      [
-      "Am Sonntag und am Montag ist die Werkstatt geschlossen.",
-      "The workshop is closed on Sunday and Monday."
+      "Am Sonntag ist die Werkstatt geschlossen.",
+      "The workshop is closed on Sundays."
      ]
     ]
    },
@@ -4782,8 +4790,8 @@
       "The \"Clean River\" campaign has been running for five years."
      ],
      [
-      "Sie findet jedes Jahr im April statt, bevor die Leute im Sommer wieder im Fluss baden.",
-      "It takes place every year in April, before people swim in the river again in summer."
+      "Sie findet jedes Jahr im April statt, denn im Sommer möchten die Leute wieder im Fluss baden.",
+      "It takes place every year in April, because in summer people want to swim in the river again."
      ]
     ]
    },
@@ -4930,7 +4938,7 @@
     "opts": [
      "hat mit ihrer Familie am Fluss gegrillt.",
      "war schon oft bei der Aktion dabei.",
-     "fand die Arbeit schwer, aber lustig."
+     "hat die Arbeit schwer gefunden, aber sie hatte viel Spaß."
     ],
     "a": 2,
     "ev": [

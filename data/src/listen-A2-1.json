@@ -239,8 +239,8 @@
    },
    {
     "who": "A",
-    "de": "Seit drei Monaten. Ich bin im Juli nach Hamburg gekommen.",
-    "en": "For three months. I came to Hamburg in July."
+    "de": "Seit drei Monaten. Ich bin im Juli nach Leipzig gekommen.",
+    "en": "For three months. I came to Leipzig in July."
    },
    {
     "who": "B",
@@ -504,13 +504,13 @@
   "id": "a2-h-02-4",
   "station": 2,
   "part": "Teil 4",
-  "setup": "A radio programme about moving. The host talks to Priya (woman), who moved from India to Hamburg.",
+  "setup": "A radio programme about moving. The host talks to Priya (woman), who moved from India to Leipzig.",
   "once": false,
   "lines": [
    {
     "who": "N",
-    "de": "Herzlich willkommen zu unserer Sendung „Neu in der Stadt“. Heute ist Priya bei uns. Sie kommt aus Indien und wohnt seit einem halben Jahr in Hamburg. Hallo Priya!",
-    "en": "Welcome to our programme \"New in Town\". Today Priya is with us. She comes from India and has lived in Hamburg for half a year. Hello Priya!"
+    "de": "Herzlich willkommen zu unserer Sendung „Neu in der Stadt“. Heute ist Priya bei uns. Sie kommt aus Indien und wohnt seit einem halben Jahr in Leipzig. Hallo Priya!",
+    "en": "Welcome to our programme \"New in Town\". Today Priya is with us. She comes from India and has lived in Leipzig for half a year. Hello Priya!"
    },
    {
     "who": "A",
@@ -519,8 +519,8 @@
    },
    {
     "who": "N",
-    "de": "Priya, wie war für Sie die Wohnungssuche in Hamburg?",
-    "en": "Priya, how was flat-hunting in Hamburg for you?"
+    "de": "Priya, wie war für Sie die Wohnungssuche in Leipzig?",
+    "en": "Priya, how was flat-hunting in Leipzig for you?"
    },
    {
     "who": "A",
@@ -564,8 +564,8 @@
    },
    {
     "who": "A",
-    "de": "Nein, fast nichts. Das Bett war schon im Zimmer, und den Schrank hat mir eine Kollegin geschenkt. Nur den Schreibtisch habe ich gekauft, auf dem Flohmarkt.",
-    "en": "No, almost nothing. The bed was already in the room, and a colleague gave me the wardrobe. I only bought the desk, at the flea market."
+    "de": "Nein, fast nichts. Das Bett war schon im Zimmer, und den Schrank hat mir eine Freundin geschenkt. Nur den Schreibtisch habe ich gekauft, auf dem Flohmarkt.",
+    "en": "No, almost nothing. The bed was already in the room, and a friend gave me the wardrobe. I only bought the desk, at the flea market."
    },
    {
     "who": "N",
@@ -595,7 +595,7 @@
   ],
   "questions": [
    {
-    "q": "Priya hat in Hamburg sofort eine Wohnung gefunden.",
+    "q": "Priya hat in Leipzig sofort eine Wohnung gefunden.",
     "format": "jn",
     "opts": [
      "ja",
@@ -770,8 +770,8 @@
    },
    {
     "who": "B",
-    "de": "Am Donnerstag fahren wir zusammen zu einem Kunden nach Lübeck. Der Termin ist um zehn, also treffen wir uns schon um acht am Bahnhof.",
-    "en": "On Thursday we'll go to a client in Lübeck together. The appointment is at ten, so we'll meet at the station at eight."
+    "de": "Am Donnerstag fahren wir zusammen zu einem Kunden nach Dresden. Der Termin ist um zehn, also treffen wir uns schon um acht am Bahnhof.",
+    "en": "On Thursday we'll go to a client in Dresden together. The appointment is at ten, so we'll meet at the station at eight."
    },
    {
     "who": "A",
@@ -871,7 +871,7 @@
     "ev": [
      10
     ],
-    "why": "On Thursday they visit a client in Lübeck. The workshop is no longer on Thursday."
+    "why": "On Thursday they visit a client in Dresden. The workshop is no longer on Thursday."
    },
    {
     "q": "Freitag",
@@ -1068,13 +1068,13 @@
    },
    {
     "who": "A",
-    "de": "Gern! Am Dienstag habe ich leider Chorprobe, aber am Mittwoch habe ich Zeit.",
-    "en": "I'd love to! On Tuesday I have choir practice, unfortunately, but on Wednesday I'm free."
+    "de": "Gern! Am Mittwoch habe ich leider Chorprobe, aber am Dienstag habe ich Zeit.",
+    "en": "I'd love to! On Wednesday I have choir practice, unfortunately, but on Tuesday I'm free."
    },
    {
     "who": "B",
-    "de": "Mittwochs habe ich immer Training mit meiner Mannschaft. Wie wäre es mit Donnerstag?",
-    "en": "On Wednesdays I always have training with my team. How about Thursday?"
+    "de": "Dienstags habe ich immer Training mit meiner Mannschaft. Wie wäre es mit Donnerstag?",
+    "en": "On Tuesdays I always have training with my team. How about Thursday?"
    },
    {
     "who": "A",
@@ -1107,7 +1107,7 @@
      3,
      4
     ],
-    "why": "Lena has choir practice on Tuesday and Jonas has training on Wednesday, so they meet on Thursday at half past six."
+    "why": "Lena has choir practice on Wednesday and Jonas has training on Tuesday, so they meet on Thursday at half past six."
    }
   ]
  },
@@ -1196,8 +1196,8 @@
    },
    {
     "who": "A",
-    "de": "Seit acht Jahren. Eine Freundin hat mich damals mitgenommen. Am Anfang war ich sehr nervös, weil ich keine Noten lesen konnte.",
-    "en": "For eight years. A friend took me along back then. At first I was very nervous because I couldn't read music."
+    "de": "Seit zwei Jahren. Eine Freundin hat mich damals mitgenommen. Am Anfang war ich sehr nervös, weil ich keine Noten lesen konnte.",
+    "en": "For two years. A friend took me along back then. At first I was very nervous because I couldn't read music."
    },
    {
     "who": "N",
@@ -1216,8 +1216,8 @@
    },
    {
     "who": "A",
-    "de": "Wir sind ungefähr vierzig Personen. Die Jüngste ist sechzehn, und der Älteste ist zweiundachtzig. Leider haben wir nur wenige Männer.",
-    "en": "We're about forty people. The youngest is sixteen and the oldest is eighty-two. Unfortunately we only have a few men."
+    "de": "Wir sind ungefähr fünfundvierzig Personen. Die Jüngste ist achtzehn, und der Älteste ist einundachtzig. Leider haben wir nur wenige Männer.",
+    "en": "We're about forty-five people. The youngest is eighteen and the oldest is eighty-one. Unfortunately we only have a few men."
    },
    {
     "who": "N",
@@ -1226,8 +1226,8 @@
    },
    {
     "who": "A",
-    "de": "Jeden Mittwoch von halb acht bis halb zehn im Gemeindezentrum. Vor einem Konzert treffen wir uns auch am Samstag.",
-    "en": "Every Wednesday from half past seven to half past nine in the community centre. Before a concert we also meet on Saturday."
+    "de": "Jeden Mittwoch von halb acht bis neun in der Musikschule. Vor einem Konzert treffen wir uns auch am Samstag.",
+    "en": "Every Wednesday from half past seven to nine at the music school. Before a concert we also meet on Saturday."
    },
    {
     "who": "N",
@@ -1257,7 +1257,7 @@
    {
     "who": "A",
     "de": "Ja, am zwölften Dezember in der Stadthalle. Die Karten kosten zehn Euro, für Kinder ist der Eintritt frei.",
-    "en": "Yes, on the twelfth of December in the town hall. Tickets cost ten euros; children get in free."
+    "en": "Yes, on the twelfth of December in the civic hall. Tickets cost ten euros; children get in free."
    },
    {
     "who": "N",
@@ -1316,7 +1316,7 @@
     "ev": [
      9
     ],
-    "why": "They rehearse every Wednesday from half past seven to half past nine in the evening."
+    "why": "They rehearse every Wednesday from half past seven to nine in the evening."
    },
    {
     "q": "Für Kinder kostet das Konzert zehn Euro.",
@@ -1417,8 +1417,8 @@
    },
    {
     "who": "A",
-    "de": "Ja, aber dann hat sie eine alte Lampe aus Glas gesehen. Die steht jetzt schon in unserem Wohnzimmer.",
-    "en": "Yes, but then she saw an old glass lamp. It's already standing in our living room."
+    "de": "Ja, aber dann hat sie eine alte Lampe aus Glas gesehen. Die steht jetzt schon bei meinen Eltern im Wohnzimmer.",
+    "en": "Yes, but then she saw an old glass lamp. It's already standing in my parents' living room."
    },
    {
     "who": "B",
@@ -2066,8 +2066,8 @@
    },
    {
     "who": "A",
-    "de": "Wunderbar! Ich war eine Woche in München. Am Sonntag bin ich angekommen, aber da war ich so müde, ich bin nur ins Hotel gegangen.",
-    "en": "Wonderful! I spent a week in Munich. I arrived on Sunday, but I was so tired that I just went to the hotel."
+    "de": "Wunderbar! Ich war eine Woche in München. Am Sonntag bin ich angekommen, aber da war ich sehr müde und bin nur ins Hotel gegangen.",
+    "en": "Wonderful! I spent a week in Munich. I arrived on Sunday, but I was very tired and just went to the hotel."
    },
    {
     "who": "B",
@@ -3018,13 +3018,13 @@
    },
    {
     "who": "N",
-    "de": "Bis jetzt hat die Bibliothek um achtzehn Uhr zugemacht.",
-    "en": "Until now the library closed at six p.m."
+    "de": "Bis jetzt hat die Bibliothek um neunzehn Uhr zugemacht.",
+    "en": "Until now the library closed at seven p.m."
    },
    {
     "who": "N",
-    "de": "Ab Montag können Sie von Montag bis Freitag bis zwanzig Uhr lernen und Bücher ausleihen.",
-    "en": "From Monday you can study and borrow books until eight p.m., Monday to Friday."
+    "de": "Ab nächster Woche können Sie von Dienstag bis Freitag bis zwanzig Uhr lernen und Bücher ausleihen.",
+    "en": "From next week you can study and borrow books until eight p.m., Tuesday to Friday."
    },
    {
     "who": "N",
@@ -3033,16 +3033,16 @@
    },
    {
     "who": "N",
-    "de": "Neu ist auch die Cafeteria im ersten Stock.",
-    "en": "The cafeteria on the first floor is new too."
+    "de": "Neu ist auch das Café im Erdgeschoss.",
+    "en": "The café on the ground floor is new too."
    }
   ],
   "questions": [
    {
-    "q": "Bis wann ist die Bibliothek ab Montag unter der Woche geöffnet?",
+    "q": "Bis wann ist die Bibliothek ab nächster Woche von Dienstag bis Freitag geöffnet?",
     "format": "abc",
     "opts": [
-     "bis achtzehn Uhr",
+     "bis neunzehn Uhr",
      "bis zwanzig Uhr",
      "bis vierzehn Uhr"
     ],
@@ -3050,7 +3050,7 @@
     "ev": [
      2
     ],
-    "why": "From Monday it is open until eight p.m. (zwanzig Uhr) on weekdays. Six p.m. was the old closing time, and two p.m. is Saturday."
+    "why": "From next week it is open until eight p.m. (zwanzig Uhr) from Tuesday to Friday. Seven p.m. was the old closing time, and two p.m. is Saturday."
    }
   ]
  },
@@ -3228,8 +3228,8 @@
    },
    {
     "who": "N",
-    "de": "Und wo sprechen Sie außerhalb vom Kurs Deutsch?",
-    "en": "And where do you speak German outside the course?"
+    "de": "Und wo sprechen Sie Deutsch, wenn Sie nicht im Kurs sind?",
+    "en": "And where do you speak German when you're not in class?"
    },
    {
     "who": "A",

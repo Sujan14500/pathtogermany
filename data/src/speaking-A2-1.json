@@ -240,13 +240,13 @@
   "model": [
    [
     "A",
-    "Wann können wir die Präsentation vorbereiten? Hast du am Donnerstagvormittag Zeit?",
-    "When can we prepare the presentation? Are you free on Thursday morning?"
+    "Wann können wir die Präsentation vorbereiten? Wann hast du am Donnerstag Zeit?",
+    "When can we prepare the presentation? When are you free on Thursday?"
    ],
    [
     "B",
-    "Leider nicht. Von neun bis zwölf habe ich einen Workshop. Geht es um acht?",
-    "Unfortunately not. I have a workshop from nine to twelve. Does eight work?"
+    "Von neun bis zwölf habe ich einen Workshop. Geht es vorher, um acht?",
+    "I have a workshop from nine to twelve. Does eight work, before that?"
    ],
    [
     "A",
@@ -677,8 +677,8 @@
    ],
    [
     "B",
-    "Mit meiner Schwester. Mit ihr hatte ich immer viel Spaß. Hast du einen Führerschein?",
-    "With my sister. I always had lots of fun with her. Do you have a driving licence?"
+    "Mit meiner Schwester. Mit ihr habe ich immer viel Spaß. Hast du einen Führerschein?",
+    "With my sister. I always have lots of fun with her. Do you have a driving licence?"
    ],
    [
     "A",
@@ -705,8 +705,8 @@
     "Usually by bike. When it rains, I take the bus. Do you like travelling by train?"
    ],
    [
-    "Am liebsten mit meiner Schwester. Mit ihr hatte ich immer viel Spaß. Hast du einen Führerschein?",
-    "Best of all with my sister. I always had lots of fun with her. Do you have a driving licence?"
+    "Am liebsten mit meiner Schwester. Mit ihr habe ich immer viel Spaß. Hast du einen Führerschein?",
+    "Best of all with my sister. I always have lots of fun with her. Do you have a driving licence?"
    ],
    [
     "Nach Indien! Priya hat mir so viel davon erzählt.",
@@ -1021,7 +1021,7 @@
   "id": "a2-s-11",
   "station": 11,
   "part": "Teil 3",
-  "task_en": "Priya, a newcomer from India, needs a bank account. You and your partner want to go to the bank with her on Tuesday. The bank is open 9–12 and 2–6. Find a time when you are both free. Your diary is on the cards.",
+  "task_en": "Priya needs a bank account. You and your partner want to go to the bank with her on Tuesday. The bank is open 9–12 and 2–6. Find a time when you are both free. Your diary is on the cards.",
   "task_de": "Priya braucht ein Bankkonto. Sie möchten am Dienstag zusammen mit ihr zur Bank gehen (geöffnet: 9–12 und 14–18 Uhr). Finden Sie einen Termin.",
   "cards": [
    "8:00–12:00 Arbeit",

@@ -32,7 +32,7 @@
     "She's really nice!"
    ],
    [
-    "Kommst du am … mit ins Café?",
+    "Kommst du am … mit uns ins Café?",
     "Are you coming to the café with us on …?"
    ],
    [
@@ -40,8 +40,8 @@
     "See you soon!"
    ]
   ],
-  "model": "Hallo Lena,\nich habe heute Priya kennengelernt. Sie kommt aus Indien und hat dort als Ingenieurin gearbeitet. Sie ist sehr nett! Kommst du am Freitag mit ins Café?\nBis bald!",
-  "model_en": "Hi Lena, today I met Priya. She comes from India and worked there as an engineer. She's really nice! Are you coming to the café with us on Friday? See you soon!",
+  "model": "Hallo Lena,\nich habe heute Priya kennengelernt. Sie kommt aus Indien und hat dort als Programmiererin gearbeitet. Sie ist sehr nett! Kommst du am Freitag mit uns ins Café?\nBis bald!",
+  "model_en": "Hi Lena, today I met Priya. She comes from India and worked there as a programmer. She's really nice! Are you coming to the café with us on Friday? See you soon!",
   "rubric": [
    "All three points are answered",
    "Perfekt with the right helper: hat gearbeitet, ist gekommen",
@@ -90,8 +90,8 @@
     "Best wishes"
    ]
   ],
-  "model": "Liebe Frau Yilmaz,\nich bin Ihre neue Nachbarin aus der Wohnung nebenan. Am Samstag ziehe ich ein, deshalb wird es ein bisschen laut. Entschuldigung! Darf ich mein Fahrrad in den Keller stellen, oder steht es besser im Hof?\nViele Grüße",
-  "model_en": "Dear Mrs Yilmaz, I'm your new neighbour from the flat next door. I'm moving in on Saturday, so it will be a bit noisy. Sorry! May I put my bike in the cellar, or is it better in the courtyard? Best wishes",
+  "model": "Liebe Frau Yilmaz,\nich heiße Nina und bin Ihre neue Nachbarin von nebenan. Am Samstag ziehe ich ein, deshalb wird es ein bisschen laut. Entschuldigung! Darf ich mein Fahrrad in den Keller stellen, oder steht es besser im Hof?\nViele Grüße",
+  "model_en": "Dear Mrs Yilmaz, I'm Nina, your new neighbour from next door. I'm moving in on Saturday, so it will be a bit noisy. Sorry! May I put my bike in the cellar, or is it better in the courtyard? Best wishes",
   "rubric": [
    "All three points are answered",
    "Sie and Ihr all the way through, with Liebe Frau … and Viele Grüße",
@@ -149,8 +149,8 @@
   "id": "a2-w-04",
   "station": 4,
   "part": "Teil 2",
-  "task_en": "Your colleague Malte has invited you to play in his football club's summer match. Write him an email.",
-  "task_de": "Ihr Kollege Malte hat Sie zum Sommerspiel seines Fußballvereins eingeladen. Schreiben Sie Malte eine E-Mail.",
+  "task_en": "Your colleague Malte has invited you to his football club's summer party. Write him an email.",
+  "task_de": "Ihr Kollege Malte hat Sie zum Sommerfest von seinem Fußballverein eingeladen. Schreiben Sie Malte eine E-Mail.",
   "points": [
    "Danken Sie für die Einladung.",
    "Sie kommen, aber später: Warum?",
@@ -475,13 +475,13 @@
     "Yours sincerely"
    ]
   ],
-  "model": "Sehr geehrte Damen und Herren,\nich mache im Juni die A2-Prüfung, deshalb interessiere ich mich für Ihren Kurs. Leider arbeite ich abends, samstags habe ich mehr Zeit. Gibt es den Kurs auch am Samstagvormittag? Was kostet er?\nMit freundlichen Grüßen",
-  "model_en": "Dear Sir or Madam, I'm taking the A2 exam in June, so I'm interested in your course. Unfortunately I work in the evenings; on Saturdays I have more time. Is the course also on Saturday mornings? How much does it cost? Yours sincerely",
+  "model": "Sehr geehrte Damen und Herren,\nich mache im Juni die A2-Prüfung, deshalb interessiere ich mich für Ihren Kurs. Leider arbeite ich abends, aber samstags habe ich mehr Zeit. Gibt es den Kurs auch am Samstagvormittag? Was kostet er?\nMit freundlichen Grüßen",
+  "model_en": "Dear Sir or Madam, I'm taking the A2 exam in June, so I'm interested in your course. Unfortunately I work in the evenings, but on Saturdays I have more time. Is the course also on Saturday mornings? How much does it cost? Yours sincerely",
   "rubric": [
    "All three points are answered",
    "Formal frame: Sehr geehrte Damen und Herren, … Mit freundlichen Grüßen",
    "deshalb with the verb straight after: deshalb interessiere ich mich …",
-   "Comparative: mehr Zeit, besser"
+   "Comparative: samstags habe ich mehr Zeit"
   ]
  },
  {
