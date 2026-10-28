@@ -189,7 +189,7 @@
   "task_en": "Your friend Jonas is looking for a flat. Read the text and fill in the form for the flat agency.",
   "task_de": "Ihr Freund Jonas sucht eine Wohnung. Lesen Sie den Text und füllen Sie das Formular für das Wohnungsbüro aus.",
   "form": {
-   "text_de": "Jonas Keller arbeitet in Köln. Er und sein Bruder Tim suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
+   "text_de": "Jonas Keller arbeitet in Köln. Er und sein Freund Moritz suchen zusammen eine Wohnung. Jeder braucht ein Zimmer, und sie möchten auch ein Wohnzimmer. Eine Küche und ein Bad sind natürlich wichtig. Sie möchten gern einen Balkon. Sie können maximal 900 Euro Miete bezahlen. Sie möchten am 1. April umziehen.",
    "fields": [
     [
      "Familienname",
@@ -406,8 +406,8 @@
   "id": "a1-w-10",
   "station": 10,
   "part": "Teil 2",
-  "task_en": "You have had back pain for three days. Write a short email to Dr Brandt's practice and ask for an appointment.",
-  "task_de": "Sie haben seit drei Tagen Rückenschmerzen. Schreiben Sie eine kurze E-Mail an die Praxis von Dr. Brandt.",
+  "task_en": "You have had back pain for three days. Write a short email to Dr Hahn's practice and ask for an appointment.",
+  "task_de": "Sie haben seit drei Tagen Rückenschmerzen. Schreiben Sie eine kurze E-Mail an die Praxis von Dr. Hahn.",
   "points": [
    "Was Sie haben",
    "Bitte um einen Termin diese Woche",

@@ -3,12 +3,12 @@
   "id": "a2-w-01",
   "station": 1,
   "part": "Teil 1",
-  "task_en": "At your German course you met Priya, a newcomer from India. Write a text message to your friend Lena.",
-  "task_de": "Sie haben im Deutschkurs Priya kennengelernt. Sie ist neu in der Stadt und kommt aus Indien. Schreiben Sie Ihrer Freundin Lena eine SMS.",
+  "task_en": "At your German course you met Nadia, a newcomer from Morocco. Write a text message to your friend Lena.",
+  "task_de": "Sie haben im Deutschkurs Nadia kennengelernt. Sie ist neu in der Stadt und kommt aus Marokko. Schreiben Sie Ihrer Freundin Lena eine SMS.",
   "points": [
    "Wen haben Sie kennengelernt?",
-   "Was hat Priya früher gemacht?",
-   "Laden Sie Lena zu einem Treffen mit Priya ein."
+   "Was hat Nadia früher gemacht?",
+   "Laden Sie Lena zu einem Treffen mit Nadia ein."
   ],
   "words": [
    20,
@@ -40,8 +40,8 @@
     "See you soon!"
    ]
   ],
-  "model": "Hallo Lena,\nich habe heute Priya kennengelernt. Sie kommt aus Indien und hat dort als Programmiererin gearbeitet. Sie ist sehr nett! Kommst du am Freitag mit uns ins Café?\nBis bald!",
-  "model_en": "Hi Lena, today I met Priya. She comes from India and worked there as a programmer. She's really nice! Are you coming to the café with us on Friday? See you soon!",
+  "model": "Hallo Lena,\nich habe heute Nadia kennengelernt. Sie kommt aus Marokko und hat dort als Lehrerin gearbeitet. Sie ist sehr nett! Kommst du am Freitag mit uns ins Café?\nBis bald!",
+  "model_en": "Hi Lena, today I met Nadia. She comes from Morocco and worked there as a teacher. She's really nice! Are you coming to the café with us on Friday? See you soon!",
   "rubric": [
    "All three points are answered",
    "Perfekt with the right helper: hat gearbeitet, ist gekommen",
@@ -200,10 +200,10 @@
   "id": "a2-w-05",
   "station": 5,
   "part": "Teil 1",
-  "task_en": "Priya, a newcomer from India, needs warm winter clothes that don't cost much. Write her a text message.",
-  "task_de": "Priya ist neu in Deutschland und braucht preiswerte Winterkleidung. Schreiben Sie Priya eine SMS.",
+  "task_en": "Nadia, a newcomer from Morocco, needs warm winter clothes that don't cost much. Write her a text message.",
+  "task_de": "Nadia ist neu in Deutschland und braucht preiswerte Winterkleidung. Schreiben Sie Nadia eine SMS.",
   "points": [
-   "Wo und wann kann Priya Kleidung kaufen?",
+   "Wo und wann kann Nadia Kleidung kaufen?",
    "Was gibt es dort?",
    "Machen Sie einen Vorschlag für ein Treffen."
   ],
@@ -233,8 +233,8 @@
     "I'll pick you up at …"
    ]
   ],
-  "model": "Hallo Priya,\nam Sonntag ist ein großer Flohmarkt am Rathaus. Dort gibt es warme Pullover und gute Stiefel, und alles ist preiswert. Wollen wir um zehn zusammen hingehen?\nLiebe Grüße",
-  "model_en": "Hi Priya, on Sunday there's a big flea market at the town hall. They have warm jumpers and good boots there, and everything is cheap. Shall we go together at ten? Best wishes",
+  "model": "Hallo Nadia,\nam Sonntag ist ein großer Flohmarkt am Rathaus. Dort gibt es warme Pullover und gute Stiefel, und alles ist preiswert. Wollen wir um zehn zusammen hingehen?\nLiebe Grüße",
+  "model_en": "Hi Nadia, on Sunday there's a big flea market at the town hall. They have warm jumpers and good boots there, and everything is cheap. Shall we go together at ten? Best wishes",
   "rubric": [
    "All three points are answered",
    "Adjective endings: ein großer Flohmarkt, warme Pullover, gute Stiefel",

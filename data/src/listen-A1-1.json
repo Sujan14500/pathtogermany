@@ -158,13 +158,13 @@
    },
    {
     "who": "B",
-    "de": "Meine Nummer ist null drei null, fünfundvierzig, siebzehn, neunzig.",
-    "en": "My number is zero three zero, forty-five, seventeen, ninety."
+    "de": "Meine Nummer ist null zwei zwei eins, fünfundvierzig, siebzehn, neunzig.",
+    "en": "My number is zero two two one, forty-five, seventeen, ninety."
    },
    {
     "who": "B",
-    "de": "Noch einmal: null drei null, fünfundvierzig, siebzehn, neunzig. Auf Wiederhören!",
-    "en": "Once more: zero three zero, forty-five, seventeen, ninety. Goodbye!"
+    "de": "Noch einmal: null zwei zwei eins, fünfundvierzig, siebzehn, neunzig. Auf Wiederhören!",
+    "en": "Once more: zero two two one, forty-five, seventeen, ninety. Goodbye!"
    }
   ],
   "questions": [
@@ -172,9 +172,9 @@
     "q": "Wie ist die Nummer von Herrn Weber?",
     "format": "abc",
     "opts": [
-     "030 45 17 90",
-     "030 54 17 90",
-     "030 45 70 19"
+     "0221 45 17 90",
+     "0221 54 17 90",
+     "0221 45 70 19"
     ],
     "a": 0,
     "ev": [
@@ -439,7 +439,7 @@
   "id": "a1-h-03-2",
   "station": 3,
   "part": "Teil 1",
-  "setup": "At work: Priya asks her colleague Malte about a family photo.",
+  "setup": "At work: Katja asks her colleague Malte about a family photo.",
   "once": false,
   "lines": [
    {
@@ -469,8 +469,8 @@
    },
    {
     "who": "B",
-    "de": "Ja, Tim ist zehn und Mia ist acht.",
-    "en": "Yes, Tim is ten and Mia is eight."
+    "de": "Ja, Leo ist zehn und Mia ist sieben.",
+    "en": "Yes, Leo is ten and Mia is seven."
    }
   ],
   "questions": [
@@ -533,8 +533,8 @@
   "lines": [
    {
     "who": "A",
-    "de": "Hallo Lena, hier ist Frau Yilmaz von nebenan.",
-    "en": "Hello Lena, it's Frau Yilmaz from next door."
+    "de": "Hallo Lena, hier ist Frau Yilmaz.",
+    "en": "Hello Lena, it's Frau Yilmaz."
    },
    {
     "who": "A",
@@ -915,8 +915,8 @@
   "lines": [
    {
     "who": "A",
-    "de": "Guten Tag, Herr Weber, hier ist Sabine Krüger. Sie möchten die Wohnung in der Parkstraße sehen.",
-    "en": "Hello, Herr Weber, this is Sabine Krüger. You'd like to see the flat in Parkstraße."
+    "de": "Guten Tag, Herr Weber, hier ist Sabine Franke. Sie möchten die Wohnung in der Parkstraße sehen.",
+    "en": "Hello, Herr Weber, this is Sabine Franke. You'd like to see the flat in Parkstraße."
    },
    {
     "who": "A",
@@ -1008,7 +1008,7 @@
   "id": "a1-h-06-2",
   "station": 6,
   "part": "Teil 1",
-  "setup": "At work: Priya asks her colleague Malte to have lunch with her.",
+  "setup": "At work: Katja asks her colleague Malte to have lunch with her.",
   "once": false,
   "lines": [
    {
@@ -1039,7 +1039,7 @@
   ],
   "questions": [
    {
-    "q": "Wann essen Priya und Malte zusammen?",
+    "q": "Wann essen Katja und Malte zusammen?",
     "format": "abc",
     "opts": [
      "um zwölf",
@@ -1098,13 +1098,13 @@
   "id": "a1-h-06-4",
   "station": 6,
   "part": "Teil 3",
-  "setup": "Malte leaves a message for his colleague Priya.",
+  "setup": "Malte leaves a message for his colleague Jonas.",
   "once": false,
   "lines": [
    {
     "who": "B",
-    "de": "Hallo Priya, hier ist Malte.",
-    "en": "Hi Priya, it's Malte."
+    "de": "Hallo Jonas, hier ist Malte.",
+    "en": "Hi Jonas, it's Malte."
    },
    {
     "who": "B",
@@ -1135,7 +1135,7 @@
     "ev": [
      2
     ],
-    "why": "The meeting is 'nicht um zehn Uhr' but 'um Viertel nach zwei' (2:15). At two Malte only picks Priya up."
+    "why": "The meeting is 'nicht um zehn Uhr' but 'um Viertel nach zwei' (2:15). At two Malte only picks Jonas up."
    }
   ]
  },
@@ -1825,8 +1825,8 @@
    },
    {
     "who": "N",
-    "de": "Frau Schulz ist heute krank. Ihr habt heute in der dritten und vierten Stunde keinen Sport.",
-    "en": "Frau Schulz is ill today. You have no PE in the third and fourth lessons today."
+    "de": "Frau Kranz ist heute krank. Ihr habt heute in der dritten und vierten Stunde keinen Sport.",
+    "en": "Frau Kranz is ill today. You have no PE in the third and fourth lessons today."
    },
    {
     "who": "N",

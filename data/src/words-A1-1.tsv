@@ -17,7 +17,7 @@ danke	other				thank you, thanks	Danke, das ist sehr nett!	Thanks, that's very k
 danken	v			dankt, dankte, hat gedankt	to thank (someone: dative)	Priya dankt Frau Yilmaz für die Hilfe.	Priya thanks Mrs Yilmaz for the help.	1
 drei	num				three	Lena spricht drei Sprachen.	Lena speaks three languages.	1
 dreizehn	num				thirteen	Lenas Bruder ist dreizehn Jahre alt.	Lena's brother is thirteen years old.	1
-dreißig	num				thirty	Malte ist dreißig Jahre alt.	Malte is thirty years old.	1
+dreißig	num				thirty	Mein Chef ist dreißig Jahre alt.	My boss is thirty years old.	1
 eins	num				one (when counting)	Eins plus eins ist zwei.	One plus one is two.	1
 einundzwanzig	num				twenty-one	Jonas wird morgen einundzwanzig.	Jonas turns twenty-one tomorrow.	1
 elf	num				eleven	Im Kurs sind elf Leute.	There are eleven people in the course.	1
@@ -27,9 +27,9 @@ er	pron				he; it (for a der-word)	Das ist Jonas, er kommt aus Bonn.	This is Jon
 falsch	adj				wrong, false	Nein, das ist leider falsch.	No, I'm afraid that's wrong.	1
 Frage	n	die	Fragen		question	Ich habe eine Frage, Herr Weber.	I have a question, Mr Weber.	1
 fragen	v			fragt, fragte, hat gefragt	to ask	Priya fragt und Lena antwortet.	Priya asks and Lena answers.	1
-Frau	n	die	Frauen		woman; Mrs, Ms; wife	Frau Yilmaz wohnt neben Lena.	Mrs Yilmaz lives next door to Lena.	1
+Frau	n	die	Frauen		woman; Mrs, Ms; wife	Frau Yilmaz ist eine Nachbarin von Lena.	Mrs Yilmaz is one of Lena's neighbours.	1
 fünf	num				five	Malte arbeitet fünf Tage in der Woche.	Malte works five days a week.	1
-fünfzehn	num				fifteen	Jonas wohnt seit fünfzehn Jahren in Bonn.	Jonas has lived in Bonn for fifteen years.	1
+fünfzehn	num				fifteen	Mein Onkel wohnt seit fünfzehn Jahren in Bonn.	My uncle has lived in Bonn for fifteen years.	1
 fünfzig	num				fifty	Mein Vater wird bald fünfzig.	My father will soon be fifty.	1
 Gruß	n	der	Grüße		greeting; (Viele Grüße) best wishes	Liebe Grüße aus Köln, deine Lena!	Love from Cologne, Lena!	1
 gut	adj				good; well	Der Kurs ist wirklich gut.	The course is really good.	1
@@ -63,7 +63,7 @@ tschüss	other				bye (informal)	Tschüss, Jonas, und schönes Wochenende!	Bye, 
 und	conj				and	Das sind Lena und Jonas.	These are Lena and Jonas.	1
 vier	num				four	Die Familie hat vier Kinder.	The family has four children.	1
 vierzehn	num				fourteen	Der Kurs dauert vierzehn Tage.	The course lasts fourteen days.	1
-vierzig	num				forty	Herr Weber ist vierzig Jahre alt.	Mr Weber is forty years old.	1
+vierzig	num				forty	Mein Onkel ist vierzig Jahre alt.	My uncle is forty years old.	1
 wann	adv				when (in questions)	Wann kommst du, Jonas?	When are you coming, Jonas?	1
 warum	adv				why	Warum lernst du Deutsch?	Why are you learning German?	1
 was	pron				what	Was kostet ein Kaffee hier?	What does a coffee cost here?	1
@@ -78,7 +78,7 @@ woher	adv				where … from	Woher kommst du, Priya?	Where are you from, Priya?	1
 wohin	adv				where … to	Wohin gehst du jetzt, Lena?	Where are you going now, Lena?	1
 Wort	n	das	Wörter		word	Priya kennt das Wort „Hallo“ schon.	Priya already knows the word "Hallo".	1
 zehn	num				ten	Ich nehme zehn Brötchen, bitte.	I'll take ten rolls, please.	1
-zwanzig	num				twenty	Lena ist zwanzig und studiert in Köln.	Lena is twenty and studies in Cologne.	1
+zwanzig	num				twenty	Mein Bruder ist zwanzig und studiert in Köln.	My brother is twenty and studies in Cologne.	1
 zwei	num				two	Ich habe zwei Fragen, Herr Weber.	I have two questions, Mr Weber.	1
 zweihundert	num				two hundred	Das Handy kostet zweihundert Euro.	The mobile phone costs two hundred euros.	1
 zwölf	num				twelve	Ein Jahr hat zwölf Monate.	A year has twelve months.	1
@@ -120,7 +120,7 @@ Information	n	die	Informationen		information (a piece of)	Ich brauche noch eine 
 international	adj				international	Unser Kurs ist sehr international.	Our course is very international.	2
 jung	adj				young	Lenas Bruder ist noch sehr jung.	Lena's brother is still very young.	2
 kennen	v			kennt, kannte, hat gekannt	to know (a person, a place, a word)	Kennst du Frau Yilmaz?	Do you know Mrs Yilmaz?	2
-kennenlernen	v			lernt kennen, lernte kennen, hat kennengelernt	to get to know; to meet (for the first time)	Im Kurs lernt Priya Lena kennen.	Priya meets Lena in the course.	2
+kennenlernen	v			lernt kennen, lernte kennen, hat kennengelernt	to get to know; to meet (for the first time)	Im Sprachcafé lernt Priya Lena kennen.	Priya meets Lena at the language café.	2
 Klasse	n	die	Klassen		class (at school); (Klasse!) great!	In der Klasse sind zwanzig Kinder.	There are twenty children in the class.	2
 kommen	v			kommt, kam, ist gekommen	to come	Herr Weber kommt aus Hamburg.	Mr Weber comes from Hamburg.	2
 Kugelschreiber	n	der	Kugelschreiber		ballpoint pen, biro	Ist das dein Kugelschreiber?	Is that your pen?	2
@@ -146,7 +146,7 @@ Sprache	n	die	Sprachen		language	Welche Sprache spricht man in Mexiko?	Which lan
 sprechen	v			spricht, sprach, hat gesprochen	to speak; to talk	Priya spricht Hindi und Englisch.	Priya speaks Hindi and English.	2
 Stadt	n	die	Städte		town, city	In der Stadt gibt es viele Cafés.	There are lots of cafés in the town.	2
 Straße	n	die	Straßen		street, road	In welcher Straße wohnst du?	Which street do you live on?	2
-Student	n	der	Studenten		student (at university)	Jonas ist Student in Bonn.	Jonas is a student in Bonn.	2
+Student	n	der	Studenten		student (at university)	Mein Bruder ist Student in Bonn.	My brother is a student in Bonn.	2
 studieren	v			studiert, studierte, hat studiert	to study (at university)	Was studierst du, Jonas?	What are you studying, Jonas?	2
 Studium	n	das	Studien		(university) studies, degree course	Das Studium dauert vier Jahre.	The degree course takes four years.	2
 Test	n	der	Tests		test	Morgen schreiben wir einen Test.	We're taking a test tomorrow.	2
@@ -160,7 +160,7 @@ vorstellen	v			stellt vor, stellte vor, hat vorgestellt	to introduce; (sich vors
 Vorwahl	n	die	Vorwahlen		dialling code, area code	Die Vorwahl von Berlin ist null drei null.	The area code for Berlin is zero three zero.	2
 weiblich	adj				female; feminine	Das Wort „Frage“ ist weiblich.	The word "Frage" is feminine.	2
 Welt	n	die	Welten		world	Im Kurs sind Leute aus der ganzen Welt.	There are people from all over the world in the course.	2
-wohnen	v			wohnt, wohnte, hat gewohnt	to live (somewhere)	Lena wohnt in Köln, Jonas in Bonn.	Lena lives in Cologne, Jonas in Bonn.	2
+wohnen	v			wohnt, wohnte, hat gewohnt	to live (somewhere)	Lena wohnt in Köln, Tim in Graz.	Lena lives in Cologne, Tim in Graz.	2
 allein	adj				alone, on one's own	Wohnst du allein oder mit Freunden?	Do you live alone or with friends?	3
 also	adv				so, therefore; well (to start a sentence)	Also, das ist meine Familie.	So, this is my family.	3
 Anzeige	n	die	Anzeigen		advertisement, ad	Malte liest die Anzeigen in der Zeitung.	Malte reads the ads in the newspaper.	3
@@ -192,7 +192,7 @@ Gruppe	n	die	Gruppen		group	Wir lernen in einer kleinen Gruppe.	We learn in a sm
 haben	v			hat, hatte, hat gehabt	to have	Wir haben zwei Kinder und einen Hund.	We have two children and a dog.	3
 Hausfrau	n	die	Hausfrauen		housewife, homemaker	Meine Mutter ist Hausfrau.	My mother is a homemaker.	3
 Hausmann	n	der	Hausmänner		househusband, homemaker	Mein Vater ist Hausmann und kocht jeden Tag.	My father is a homemaker and cooks every day.	3
-heiraten	v			heiratet, heiratete, hat geheiratet	to marry, to get married	Malte und seine Partnerin heiraten im Sommer.	Malte and his partner are getting married in the summer.	3
+heiraten	v			heiratet, heiratete, hat geheiratet	to marry, to get married	Mein Cousin und seine Partnerin heiraten im Sommer.	My cousin and his partner are getting married in the summer.	3
 Hochzeit	n	die	Hochzeiten		wedding	Die Hochzeit ist am Samstag.	The wedding is on Saturday.	3
 Hund	n	der	Hunde		dog	Frau Yilmaz hat einen kleinen Hund.	Mrs Yilmaz has a small dog.	3
 Job	n	der	Jobs		job	Jonas sucht einen Job für den Sommer.	Jonas is looking for a summer job.	3
@@ -214,7 +214,7 @@ Mädchen	n	das	Mädchen		girl	Das Mädchen ist sieben Jahre alt.	The girl is sev
 Oma	n	die	Omas		grandma, granny	Am Sonntag besuchen wir Oma.	On Sunday we're visiting Grandma.	3
 Opa	n	der	Opas		grandpa, grandad	Opa kocht heute für die ganze Familie.	Grandpa is cooking for the whole family today.	3
 Partner	n	der	Partner		partner	Mein Partner arbeitet auch in Köln.	My partner works in Cologne too.	3
-Praktikum	n	das	Praktika		internship, work placement	Jonas macht ein Praktikum in einem Hotel.	Jonas is doing an internship at a hotel.	3
+Praktikum	n	das	Praktika		internship, work placement	Paul macht ein Praktikum in einem Hotel.	Paul is doing an internship at a hotel.	3
 Schwester	n	die	Schwestern		sister	Lena hat eine Schwester und einen Bruder.	Lena has a sister and a brother.	3
 selbstständig	adj				self-employed; independent	Frau Yilmaz ist selbstständig und hat einen Laden.	Mrs Yilmaz is self-employed and has a shop.	3
 Sohn	n	der	Söhne		son	Herr Weber hat einen Sohn.	Mr Weber has a son.	3
@@ -222,7 +222,7 @@ Stelle	n	die	Stellen		job, position; place, spot	Die Firma hat eine freie Stelle
 Tochter	n	die	Töchter		daughter	Frau Yilmaz hat zwei Töchter.	Mrs Yilmaz has two daughters.	3
 unser	art				our	Das ist unser Sohn.	This is our son.	3
 Vater	n	der	Väter		father	Mein Vater arbeitet bei der Bahn.	My father works for the railway.	3
-verdienen	v			verdient, verdiente, hat verdient	to earn	Im Praktikum verdient Jonas nicht viel.	Jonas doesn't earn much in his internship.	3
+verdienen	v			verdient, verdiente, hat verdient	to earn	Im Praktikum verdient Paul nicht viel.	Paul doesn't earn much in his internship.	3
 Verein	n	der	Vereine		club, society	Jonas spielt im Verein Fußball.	Jonas plays football in a club.	3
 Verkäufer	n	der	Verkäufer		salesperson, shop assistant	Mein Bruder ist Verkäufer in einer Bäckerei.	My brother is a sales assistant in a bakery.	3
 Zeit	n	die	Zeiten		time	Hast du heute Zeit?	Do you have time today?	3

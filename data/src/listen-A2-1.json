@@ -229,7 +229,7 @@
   "id": "a2-h-01-3",
   "station": 1,
   "part": "Teil 3",
-  "setup": "At a party, Malte (man) talks to Priya (woman), who has just moved to Germany.",
+  "setup": "At a party, Malte (man) talks to Priya (woman), who moved to Germany a year ago.",
   "once": false,
   "lines": [
    {
@@ -239,8 +239,8 @@
    },
    {
     "who": "A",
-    "de": "Seit drei Monaten. Ich bin im Juli nach Leipzig gekommen.",
-    "en": "For three months. I came to Leipzig in July."
+    "de": "Seit einem Jahr. Ich bin letztes Jahr im Juli nach Köln gekommen.",
+    "en": "For a year. I came to Cologne last July."
    },
    {
     "who": "B",
@@ -249,8 +249,8 @@
    },
    {
     "who": "A",
-    "de": "Ja, in Bangalore. Eigentlich wollte ich Lehrerin werden, aber dann habe ich Informatik studiert.",
-    "en": "Yes, in Bangalore. Actually I wanted to become a teacher, but then I studied computer science."
+    "de": "Ja, in Mumbai. Eigentlich wollte ich Lehrerin werden, aber dann habe ich Informatik studiert.",
+    "en": "Yes, in Mumbai. Actually I wanted to become a teacher, but then I studied computer science."
    },
    {
     "who": "B",
@@ -504,13 +504,13 @@
   "id": "a2-h-02-4",
   "station": 2,
   "part": "Teil 4",
-  "setup": "A radio programme about moving. The host talks to Priya (woman), who moved from India to Leipzig.",
+  "setup": "A radio programme about moving. The host talks to Lucia (woman), who moved from Colombia to Cologne.",
   "once": false,
   "lines": [
    {
     "who": "N",
-    "de": "Herzlich willkommen zu unserer Sendung „Neu in der Stadt“. Heute ist Priya bei uns. Sie kommt aus Indien und wohnt seit einem halben Jahr in Leipzig. Hallo Priya!",
-    "en": "Welcome to our programme \"New in Town\". Today Priya is with us. She comes from India and has lived in Leipzig for half a year. Hello Priya!"
+    "de": "Herzlich willkommen zu unserer Sendung „Neu in der Stadt“. Heute ist Lucia bei uns. Sie kommt aus Kolumbien und wohnt seit einem halben Jahr in Köln. Hallo Lucia!",
+    "en": "Welcome to our programme \"New in Town\". Today Lucia is with us. She comes from Colombia and has lived in Cologne for half a year. Hello Lucia!"
    },
    {
     "who": "A",
@@ -519,8 +519,8 @@
    },
    {
     "who": "N",
-    "de": "Priya, wie war für Sie die Wohnungssuche in Leipzig?",
-    "en": "Priya, how was flat-hunting in Leipzig for you?"
+    "de": "Lucia, wie war für Sie die Wohnungssuche in Köln?",
+    "en": "Lucia, how was flat-hunting in Cologne for you?"
    },
    {
     "who": "A",
@@ -569,8 +569,8 @@
    },
    {
     "who": "N",
-    "de": "Was ist beim Wohnen in Deutschland anders als in Indien?",
-    "en": "What is different about living in Germany compared to India?"
+    "de": "Was ist beim Wohnen in Deutschland anders als in Kolumbien?",
+    "en": "What is different about living in Germany compared to Colombia?"
    },
    {
     "who": "A",
@@ -589,13 +589,13 @@
    },
    {
     "who": "N",
-    "de": "Dann viel Glück bei der Suche, Priya, und vielen Dank!",
-    "en": "Then good luck with the search, Priya, and thank you very much!"
+    "de": "Dann viel Glück bei der Suche, Lucia, und vielen Dank!",
+    "en": "Then good luck with the search, Lucia, and thank you very much!"
    }
   ],
   "questions": [
    {
-    "q": "Priya hat in Leipzig sofort eine Wohnung gefunden.",
+    "q": "Lucia hat in Köln sofort eine Wohnung gefunden.",
     "format": "jn",
     "opts": [
      "ja",
@@ -621,7 +621,7 @@
     "why": "She says thirty other people were often there at a viewing."
    },
    {
-    "q": "Priya hat fast alle Möbel selbst gekauft.",
+    "q": "Lucia hat fast alle Möbel selbst gekauft.",
     "format": "jn",
     "opts": [
      "ja",
@@ -634,7 +634,7 @@
     "why": "She bought almost nothing: the bed was already there and the wardrobe was a present. She only bought the desk."
    },
    {
-    "q": "Am Anfang hatte Priya Probleme mit dem Mülltrennen.",
+    "q": "Am Anfang hatte Lucia Probleme mit dem Mülltrennen.",
     "format": "jn",
     "opts": [
      "ja",
@@ -647,7 +647,7 @@
     "why": "\"Am Anfang habe ich alles falsch gemacht\" – she did everything wrong at first with paper, plastic and glass."
    },
    {
-    "q": "Priya möchte später allein wohnen.",
+    "q": "Lucia möchte später allein wohnen.",
     "format": "jn",
     "opts": [
      "ja",
@@ -770,8 +770,8 @@
    },
    {
     "who": "B",
-    "de": "Am Donnerstag fahren wir zusammen zu einem Kunden nach Dresden. Der Termin ist um zehn, also treffen wir uns schon um acht am Bahnhof.",
-    "en": "On Thursday we'll go to a client in Dresden together. The appointment is at ten, so we'll meet at the station at eight."
+    "de": "Am Donnerstag fahren wir zusammen zu einem Kunden nach Frankfurt. Der Termin ist um zehn, also treffen wir uns schon um acht am Bahnhof.",
+    "en": "On Thursday we'll go to a client in Frankfurt together. The appointment is at ten, so we'll meet at the station at eight."
    },
    {
     "who": "A",
@@ -871,7 +871,7 @@
     "ev": [
      10
     ],
-    "why": "On Thursday they visit a client in Dresden. The workshop is no longer on Thursday."
+    "why": "On Thursday they visit a client in Frankfurt. The workshop is no longer on Thursday."
    },
    {
     "q": "Freitag",
@@ -1342,8 +1342,8 @@
   "lines": [
    {
     "who": "N",
-    "de": "Der Winter kommt – und im Kaufhaus Brandt gibt es jetzt warme Kleidung zu kleinen Preisen!",
-    "en": "Winter is coming – and the Brandt department store now has warm clothes at low prices!"
+    "de": "Der Winter kommt – und im Kaufhaus Hollmann gibt es jetzt warme Kleidung zu kleinen Preisen!",
+    "en": "Winter is coming – and the Hollmann department store now has warm clothes at low prices!"
    },
    {
     "who": "N",
@@ -1362,8 +1362,8 @@
    },
    {
     "who": "N",
-    "de": "Kaufhaus Brandt – direkt am Marktplatz.",
-    "en": "Brandt department store – right on the market square."
+    "de": "Kaufhaus Hollmann – direkt am Marktplatz.",
+    "en": "Hollmann department store – right on the market square."
    }
   ],
   "questions": [
@@ -3178,8 +3178,8 @@
   "lines": [
    {
     "who": "N",
-    "de": "Willkommen bei „Sprachen lernen“. Mein Gast heute ist Priya. Sie kommt aus Indien und lernt seit einem Jahr Deutsch. Hallo Priya!",
-    "en": "Welcome to \"Learning Languages\". My guest today is Priya. She comes from India and has been learning German for a year. Hello Priya!"
+    "de": "Willkommen bei „Sprachen lernen“. Mein Gast heute ist Priya. Sie kommt aus Indien und lernt seit zwei Jahren Deutsch. Hallo Priya!",
+    "en": "Welcome to \"Learning Languages\". My guest today is Priya. She comes from India and has been learning German for two years. Hello Priya!"
    },
    {
     "who": "A",
@@ -3193,8 +3193,8 @@
    },
    {
     "who": "A",
-    "de": "Ja, ein bisschen. In Bangalore habe ich einen Onlinekurs gemacht. Aber richtig sprechen konnte ich damals nicht.",
-    "en": "Yes, a little. In Bangalore I did an online course. But back then I couldn't really speak."
+    "de": "Ja, ein bisschen. In Mumbai habe ich einen Onlinekurs gemacht. Aber richtig sprechen konnte ich damals nicht.",
+    "en": "Yes, a little. In Mumbai I did an online course. But back then I couldn't really speak."
    },
    {
     "who": "N",

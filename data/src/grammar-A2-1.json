@@ -471,11 +471,11 @@
    },
    {
     "de": [
-     "Lena",
+     "Mein Bruder",
      "wohnt",
      "in Köln,",
      "aber",
-     "sie",
+     "er",
      "arbeitet",
      "in Bonn."
     ],
@@ -484,7 +484,7 @@
       [
        0
       ],
-      "Lena"
+      "My brother"
      ],
      [
       [
@@ -508,7 +508,7 @@
       [
        4
       ],
-      "she"
+      "he"
      ],
      [
       [
@@ -1914,7 +1914,7 @@
     "de": [
      "Frau Yilmaz",
      "hat",
-     "einen neuen Hund",
+     "eine neue Katze",
      "und",
      "freut sich",
      "sehr darüber."
@@ -1936,7 +1936,7 @@
       [
        2
       ],
-      "a new dog"
+      "a new cat"
      ],
      [
       [

@@ -40,7 +40,7 @@
  },
  {
   "g": "a2-perfekt-review",
-  "q": "Lena hat in Leipzig Musik ___.",
+  "q": "Lena hat in Köln Architektur ___.",
   "opts": [
    "gestudiert",
    "studieren",
@@ -49,7 +49,7 @@
   ],
   "a": 3,
   "why": "Verbs ending in -ieren make the Partizip II without ge-: studieren → studiert.",
-  "en": "Lena studied music in Leipzig."
+  "en": "Lena studied architecture in Cologne."
  },
  {
   "g": "a2-werden",
@@ -274,7 +274,7 @@
  },
  {
   "g": "a2-dative-articles",
-  "q": "Lena wohnt noch bei ___ Eltern.",
+  "q": "Mia wohnt noch bei ___ Eltern.",
   "opts": [
    "ihre",
    "ihren",
@@ -283,7 +283,7 @@
   ],
   "a": 1,
   "why": "bei takes the dative; in the plural ihre becomes ihren.",
-  "en": "Lena still lives with her parents."
+  "en": "Mia still lives with her parents."
  },
  {
   "g": "a2-dative-articles",
@@ -443,7 +443,7 @@
  },
  {
   "g": "a2-deshalb",
-  "q": "Lena hat eine neue Stelle in München. Deshalb ___ im Mai um.",
+  "q": "Meine Schwester hat eine neue Stelle in München. Deshalb ___ im Mai um.",
   "opts": [
    "sie zieht",
    "zieht sie",
@@ -451,8 +451,8 @@
    "ziehen sie"
   ],
   "a": 1,
-  "why": "Deshalb is in position 1, so the verb comes next and agrees with sie (Lena): Deshalb zieht sie um.",
-  "en": "Lena has a new job in Munich. That's why she's moving in May."
+  "why": "Deshalb is in position 1, so the verb comes next and agrees with sie (meine Schwester): Deshalb zieht sie um.",
+  "en": "My sister has a new job in Munich. That's why she's moving in May."
  },
  {
   "g": "a2-deshalb",
@@ -716,7 +716,7 @@
  },
  {
   "g": "a2-adj-ein",
-  "q": "Malte kommt mit seiner ___ Freundin.",
+  "q": "Mein Bruder kommt mit seiner ___ Freundin.",
   "opts": [
    "neue",
    "neuer",
@@ -725,7 +725,7 @@
   ],
   "a": 2,
   "why": "mit takes the dative (seiner Freundin), and in the dative the adjective ends in -en.",
-  "en": "Malte is coming with his new girlfriend."
+  "en": "My brother is coming with his new girlfriend."
  },
  {
   "g": "a2-adj-none",
@@ -755,7 +755,7 @@
  },
  {
   "g": "a2-adj-none",
-  "q": "Malte sucht eine Wohnung mit ___ Balkon.",
+  "q": "Mein Kollege sucht eine Wohnung mit ___ Balkon.",
   "opts": [
    "großem",
    "großen",
@@ -764,7 +764,7 @@
   ],
   "a": 0,
   "why": "mit takes the dative and there is no article, so the adjective takes the ending of dem: großem.",
-  "en": "Malte is looking for a flat with a big balcony."
+  "en": "My colleague is looking for a flat with a big balcony."
  },
  {
   "g": "a2-adj-none",

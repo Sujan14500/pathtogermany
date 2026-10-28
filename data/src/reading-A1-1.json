@@ -770,8 +770,8 @@
       "I come from a village in the north of Germany."
      ],
      [
-      "Aber jetzt wohne ich hier in Köln und studiere.",
-      "But now I live here in Cologne and study."
+      "Aber jetzt wohne und arbeite ich hier in Köln.",
+      "But now I live and work here in Cologne."
      ],
      [
       "Ich wohne in der Bergstraße, das ist nicht weit von dir.",
@@ -796,10 +796,6 @@
    {
     "w": "Norden",
     "en": "north"
-   },
-   {
-    "w": "studiere",
-    "en": "(studieren) to study at university"
    },
    {
     "w": "nicht weit",
@@ -866,7 +862,7 @@
     "why": "Lena comes from a village in the north; she only lives in Cologne now."
    },
    {
-    "q": "Lena studiert in Köln.",
+    "q": "Lena arbeitet in Köln.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -876,7 +872,7 @@
     "ev": [
      "b4.1"
     ],
-    "why": "She writes: 'jetzt wohne ich hier in Köln und studiere'."
+    "why": "She writes: 'jetzt wohne und arbeite ich hier in Köln'."
    },
    {
     "q": "Lena spricht sehr gut Französisch.",
@@ -910,8 +906,8 @@
       "Babysitter available!"
      ],
      [
-      "Ich heiße Mia, bin 19 und spiele gern mit kleinen Kindern.",
-      "My name is Mia, I'm 19 and I like playing with small children."
+      "Ich heiße Jana, bin 19 und spiele gern mit kleinen Kindern.",
+      "My name is Jana, I'm 19 and I like playing with small children."
      ],
      [
       "Montag bis Freitag ab 14 Uhr.",
@@ -959,8 +955,8 @@
     "t": "ad",
     "s": [
      [
-      "Büro-Job bei der Firma Lindner",
-      "Office job at the Lindner company"
+      "Büro-Job bei der Firma Hartwig",
+      "Office job at the Hartwig company"
      ],
      [
       "Wir suchen eine Kollegin oder einen Kollegen für unser Team.",
@@ -1128,7 +1124,7 @@
      "b1.1",
      "b1.2"
     ],
-    "why": "Ad a: Mia plays with small children in the afternoon; ad b is tutoring for children aged 10 and over."
+    "why": "Ad a: Jana plays with small children in the afternoon; ad b is tutoring for children aged 10 and over."
    },
    {
     "q": "Sie suchen einen Job. Sie haben nur am Wochenende Zeit.",
@@ -1277,8 +1273,8 @@
       "We're buying a present together."
      ],
      [
-      "Bitte geben Sie bis Freitag 5 Euro bei Frau Schulz ab.",
-      "Please give 5 euros to Ms Schulz by Friday."
+      "Bitte geben Sie bis Freitag 5 Euro bei Frau Kühn ab.",
+      "Please give 5 euros to Ms Kühn by Friday."
      ]
     ]
    },
@@ -1393,7 +1389,7 @@
     "ev": [
      "b4.3"
     ],
-    "why": "You give the 5 euros to Ms Schulz ('bei Frau Schulz'), not to Sandra: the present is for Sandra."
+    "why": "You give the 5 euros to Ms Kühn ('bei Frau Kühn'), not to Sandra: the present is for Sandra."
    },
    {
     "q": "Für ein Baby bezahlt man im Zoo nichts.",
@@ -2607,8 +2603,8 @@
     "t": "sign",
     "s": [
      [
-      "Praxis Dr. Becker",
-      "Dr Becker's practice"
+      "Praxis Dr. Behrens",
+      "Dr Behrens's practice"
      ],
      [
       "Sprechzeiten: Montag bis Freitag von 8 bis 12 Uhr.",

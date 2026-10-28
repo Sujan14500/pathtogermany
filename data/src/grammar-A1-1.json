@@ -490,7 +490,7 @@
  {
   "id": "a1-sein",
   "pattern": "ich bin · du bist · er / sie / es ist · wir sind · ihr seid · sie / Sie sind",
-  "explain": "sein (to be) is the most important verb, and it is irregular, so learn its forms by heart. Use it to say who you are, where you are from, how old you are and what someone is like: Ich bin Priya. Ich bin 25 Jahre alt. For jobs, German uses no 'a': Jonas ist Student.",
+  "explain": "sein (to be) is the most important verb, and it is irregular, so learn its forms by heart. Use it to say who you are, where you are from, how old you are and what someone is like: Ich bin Priya. Ich bin 27 Jahre alt. For jobs, German uses no 'a': Anna ist Studentin.",
   "compare_en": "Like 'to be', sein is irregular in English too (I am, you are, he is). But German drops the 'a' with jobs: Ich bin Student = I am a student.",
   "table": [
    [
@@ -555,16 +555,16 @@
    },
    {
     "de": [
-     "Jonas",
+     "Anna",
      "ist",
-     "Student."
+     "Studentin."
     ],
     "en": [
      [
       [
        0
       ],
-      "Jonas"
+      "Anna"
      ],
      [
       [
@@ -733,7 +733,7 @@
     "de": [
      "Lena und Jonas",
      "wohnen",
-     "in Hamburg."
+     "in Köln."
     ],
     "en": [
      [
@@ -752,7 +752,7 @@
       [
        2
       ],
-      "in Hamburg."
+      "in Cologne."
      ]
     ],
     "v": [
@@ -1070,7 +1070,7 @@
    },
    {
     "de": [
-     "In Berlin",
+     "In Köln",
      "lernt",
      "Priya",
      "Deutsch."
@@ -1098,7 +1098,7 @@
       [
        0
       ],
-      "in Berlin."
+      "in Cologne."
      ]
     ],
     "v": [
@@ -1368,7 +1368,7 @@
    },
    {
     "de": [
-     "Frau Yilmaz",
+     "Meine Schwester",
      "hat",
      "eine Tochter und ein Baby."
     ],
@@ -1377,7 +1377,7 @@
       [
        0
       ],
-      "Mrs Yilmaz"
+      "My sister"
      ],
      [
       [
@@ -1558,19 +1558,19 @@
    },
    {
     "de": [
-     "Lena",
+     "Anna",
      "ist",
-     "zwanzig,",
+     "zweiundzwanzig,",
      "ihr Bruder",
      "ist",
-     "dreizehn."
+     "sechzehn."
     ],
     "en": [
      [
       [
        0
       ],
-      "Lena"
+      "Anna"
      ],
      [
       [
@@ -1582,7 +1582,7 @@
       [
        2
       ],
-      "twenty,"
+      "twenty-two,"
      ],
      [
       [
@@ -1600,7 +1600,7 @@
       [
        5
       ],
-      "thirteen."
+      "sixteen."
      ]
     ],
     "v": [
@@ -4432,16 +4432,16 @@
    },
    {
     "de": [
-     "Lena",
+     "Paul",
      "wohnt",
-     "bei ihren Eltern."
+     "bei seinen Eltern."
     ],
     "en": [
      [
       [
        0
       ],
-      "Lena"
+      "Paul"
      ],
      [
       [
@@ -4453,7 +4453,7 @@
       [
        2
       ],
-      "with her parents."
+      "with his parents."
      ]
     ],
     "v": [
@@ -5459,7 +5459,7 @@
     "de": [
      "Priya",
      "ist",
-     "im Mai",
+     "im Juli",
      "nach Deutschland",
      "geflogen."
     ],
@@ -5487,7 +5487,7 @@
       [
        2
       ],
-      "in May."
+      "in July."
      ]
     ],
     "v": [

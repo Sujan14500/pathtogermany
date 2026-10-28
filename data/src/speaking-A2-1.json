@@ -1021,8 +1021,8 @@
   "id": "a2-s-11",
   "station": 11,
   "part": "Teil 3",
-  "task_en": "Priya needs a bank account. You and your partner want to go to the bank with her on Tuesday. The bank is open 9–12 and 2–6. Find a time when you are both free. Your diary is on the cards.",
-  "task_de": "Priya braucht ein Bankkonto. Sie möchten am Dienstag zusammen mit ihr zur Bank gehen (geöffnet: 9–12 und 14–18 Uhr). Finden Sie einen Termin.",
+  "task_en": "Nadia needs a bank account. You and your partner want to go to the bank with her on Tuesday. The bank is open 9–12 and 2–6. Find a time when you are both free. Your diary is on the cards.",
+  "task_de": "Nadia braucht ein Bankkonto. Sie möchten am Dienstag zusammen mit ihr zur Bank gehen (geöffnet: 9–12 und 14–18 Uhr). Finden Sie einen Termin.",
   "cards": [
    "8:00–12:00 Arbeit",
    "12:00–13:30 Deutschkurs",
@@ -1047,8 +1047,8 @@
     "I'm picking up my bike from the repair shop."
    ],
    [
-    "Könntest du Priya Bescheid sagen?",
-    "Could you let Priya know?"
+    "Könntest du Nadia Bescheid sagen?",
+    "Could you let Nadia know?"
    ],
    [
     "Sie soll ihren Pass mitbringen.",
@@ -1058,8 +1058,8 @@
   "model": [
    [
     "A",
-    "Priya braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen?",
-    "Priya needs a bank account. Shall we go to the bank with her on Tuesday?"
+    "Nadia braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen?",
+    "Nadia needs a bank account. Shall we go to the bank with her on Tuesday?"
    ],
    [
     "B",
@@ -1093,8 +1093,8 @@
    ],
    [
     "B",
-    "Super, dann treffen wir uns um halb vier vor der Bank. Ich sage Priya Bescheid.",
-    "Great, then let's meet at half past three in front of the bank. I'll let Priya know."
+    "Super, dann treffen wir uns um halb vier vor der Bank. Ich sage Nadia Bescheid.",
+    "Great, then let's meet at half past three in front of the bank. I'll let Nadia know."
    ],
    [
     "A",
@@ -1109,8 +1109,8 @@
   ],
   "partner": [
    [
-    "Priya braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen? Ich hätte am Vormittag Zeit, so um zehn.",
-    "Priya needs a bank account. Shall we go to the bank with her on Tuesday? I'd be free in the morning, around ten."
+    "Nadia braucht ein Bankkonto. Wollen wir am Dienstag mit ihr zur Bank gehen? Ich hätte am Vormittag Zeit, so um zehn.",
+    "Nadia needs a bank account. Shall we go to the bank with her on Tuesday? I'd be free in the morning, around ten."
    ],
    [
     "Schade. Die Bank ist ab zwei wieder geöffnet. Hast du am Nachmittag Zeit?",
@@ -1121,8 +1121,8 @@
     "I'm afraid I have a hairdresser's appointment at three. Would half past three work?"
    ],
    [
-    "Super. Ich sage Priya Bescheid. Was muss sie zur Bank mitbringen?",
-    "Great. I'll let Priya know. What does she need to bring to the bank?"
+    "Super. Ich sage Nadia Bescheid. Was muss sie zur Bank mitbringen?",
+    "Great. I'll let Nadia know. What does she need to bring to the bank?"
    ],
    [
     "Gut, das schreibe ich ihr. Dann treffen wir uns um halb vier vor der Bank. Bis Dienstag!",

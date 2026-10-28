@@ -5,7 +5,7 @@
   "part": "Teil 1",
   "type": "blog",
   "title": "Neue Nachbarn",
-  "intro": "Priya, who moved from India to Leipzig, writes on her blog about her first months in a block of flats.",
+  "intro": "Priya, who moved from India to Cologne, writes on her blog about her first months in a block of flats.",
   "blocks": [
    {
     "id": "b1",
@@ -22,16 +22,16 @@
     "t": "p",
     "s": [
      [
-      "Seit vier Monaten wohne ich jetzt in Leipzig, in einem alten Haus mit zehn Wohnungen.",
-      "I have been living in Leipzig for four months now, in an old building with ten flats."
+      "Seit zwei Jahren wohne ich jetzt in Köln, in einem alten Haus mit zehn Wohnungen.",
+      "I have been living in Cologne for two years now, in an old building with ten flats."
      ],
      [
       "Am Anfang kannte ich dort niemanden, und ehrlich gesagt hatte ich oft Heimweh.",
       "At first I didn't know anyone there, and to be honest I was often homesick."
      ],
      [
-      "In Pune, wo ich aufgewachsen bin, kennt man alle Leute im Haus.",
-      "In Pune, where I grew up, you know everyone in your building."
+      "In Mumbai, wo ich aufgewachsen bin, kennt man alle Leute im Haus.",
+      "In Mumbai, where I grew up, you know everyone in your building."
      ],
      [
       "Hier grüßt man sich im Treppenhaus, aber dann verschwindet jeder schnell in seiner Wohnung.",
@@ -70,8 +70,8 @@
       "From her I also found out why Herr Brandt, who lives next door to me, was always so unfriendly to me."
      ],
      [
-      "Meine Waschmaschine steht direkt an der Wand zu seinem Schlafzimmer, und ich habe oft spät am Abend gewaschen, weil ich erst um neun von der Arbeit komme.",
-      "My washing machine stands right against the wall of his bedroom, and I often did my washing late in the evening because I only get home from work at nine."
+      "Meine Waschmaschine steht direkt an der Wand zu seinem Schlafzimmer, und ich habe oft spät am Abend gewaschen, weil ich erst um neun vom Abendkurs komme.",
+      "My washing machine stands right against the wall of his bedroom, and I often did my washing late in the evening because I only get back from my evening class at nine."
      ],
      [
       "In der Hausordnung steht aber, dass ab 22 Uhr Ruhe im Haus sein muss.",
@@ -143,7 +143,7 @@
   },
   "questions": [
    {
-    "q": "Priya hat in der ersten Zeit in Leipzig ihre Heimat vermisst.",
+    "q": "Priya hat in der ersten Zeit in Köln ihre Heimat vermisst.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -156,7 +156,7 @@
     "why": "She writes that she 'oft Heimweh' had – she was often homesick."
    },
    {
-    "q": "In Priyas Haus in Leipzig unterhalten sich die Nachbarn viel miteinander.",
+    "q": "In Priyas Haus in Köln unterhalten sich die Nachbarn viel miteinander.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -568,8 +568,8 @@
       "Not everyone is enthusiastic."
      ],
      [
-      "Schweißer Tim Albers findet die längeren Arbeitstage anstrengend: „Abends bin ich total erschöpft.“",
-      "Welder Tim Albers finds the longer working days tiring: 'In the evening I'm completely exhausted.'"
+      "Schweißer Jannik Brinkmann findet die längeren Arbeitstage anstrengend: „Abends bin ich total erschöpft.“",
+      "Welder Jannik Brinkmann finds the longer working days tiring: 'In the evening I'm completely exhausted.'"
      ],
      [
       "Zurück zur Fünf-Tage-Woche möchte er aber nicht, weil er freitags Zeit für seine kleine Tochter hat.",
@@ -653,7 +653,7 @@
     "why": "The boss says they had big problems finding new staff; three jobs were advertised, but not one suitable application came in."
    },
    {
-    "q": "Was sagt Tim Albers über die neue Arbeitszeit?",
+    "q": "Was sagt Jannik Brinkmann über die neue Arbeitszeit?",
     "format": "abc",
     "opts": [
      "Er möchte wieder fünf Tage pro Woche arbeiten.",
@@ -943,7 +943,7 @@
     "why": "The bakery needs help on Saturday and Sunday mornings; the restaurant (i) is mainly evenings."
    },
    {
-    "q": "Der Enkel von Frau Yilmaz ist 19 und hat bald sein erstes Vorstellungsgespräch. Er ist sehr nervös.",
+    "q": "Der Enkel von Frau Yilmaz ist 18 und hat bald sein erstes Vorstellungsgespräch. Er ist sehr nervös.",
     "format": "match",
     "opts": [
      "a",
@@ -986,7 +986,7 @@
     "why": "No ad offers driving lessons; ad f only says a licence is not needed."
    },
    {
-    "q": "Lenas Schwester ist Krankenschwester und hat zwei kleine Kinder. Sie möchte wieder arbeiten, aber nicht Vollzeit.",
+    "q": "Eine Freundin von Lena ist Krankenschwester und hat zwei kleine Kinder. Sie möchte wieder arbeiten, aber nicht Vollzeit.",
     "format": "match",
     "opts": [
      "a",
@@ -1061,7 +1061,7 @@
   "part": "Teil 1",
   "type": "blog",
   "title": "Noch einmal Schülerin",
-  "intro": "Priya writes on her blog about her school days in India and her German course in Leipzig.",
+  "intro": "Priya writes on her blog about her school days in India and her German course in Cologne.",
   "blocks": [
    {
     "id": "b1",
@@ -1078,8 +1078,8 @@
     "t": "p",
     "s": [
      [
-      "Als ich ein Kind war, ging ich in Pune auf eine große Schule mit über 2000 Schülern.",
-      "When I was a child, I went to a big school in Pune with over 2,000 pupils."
+      "Als ich ein Kind war, ging ich in Mumbai auf eine große Schule mit über 2000 Schülern.",
+      "When I was a child, I went to a big school in Mumbai with over 2,000 pupils."
      ],
      [
       "Wir trugen Uniformen und mussten sehr viel auswendig lernen.",
@@ -1100,20 +1100,20 @@
     "t": "p",
     "s": [
      [
-      "Als ich eine Stelle bei einer Softwarefirma in Leipzig bekam, dachte ich, dass ich mit Englisch gut zurechtkommen würde.",
-      "When I got a job at a software company in Leipzig, I thought I would manage well with English."
+      "Als ich nach Köln kam, dachte ich, dass ich mit Englisch gut zurechtkommen würde.",
+      "When I came to Cologne, I thought I would manage well with English."
      ],
      [
-      "Bei der Arbeit stimmte das auch, denn in meinem Team sprechen alle Englisch.",
-      "At work that was true, because everyone in my team speaks English."
+      "Bei der Arbeit stimmte das später auch, denn in meinem Team sprechen alle Englisch.",
+      "Later, at work, that was true, because everyone in my team speaks English."
      ],
      [
       "Aber beim Arzt oder auf dem Amt verstand ich fast nichts.",
       "But at the doctor's or at the authorities I understood almost nothing."
      ],
      [
-      "Deshalb meldete ich mich an der Volkshochschule für einen Abendkurs an.",
-      "So I signed up for an evening course at the adult education centre."
+      "Deshalb meldete ich mich für einen Abendkurs an.",
+      "So I signed up for an evening course."
      ]
     ]
    },
@@ -1176,10 +1176,6 @@
     "en": "to manage, to get by"
    },
    {
-    "w": "Volkshochschule",
-    "en": "adult education centre"
-   },
-   {
     "w": "mitzuschreiben",
     "en": "to take notes (mitschreiben)"
    },
@@ -1229,7 +1225,7 @@
     "why": "She studied computer science and worked as a programmer."
    },
    {
-    "q": "Bei der Arbeit in Leipzig hatte Priya große Probleme mit der Sprache.",
+    "q": "Bei der Arbeit in Köln hatte Priya große Probleme mit der Sprache.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -1317,7 +1313,7 @@
    {
     "id": "b3",
     "t": "comment",
-    "label": "Sabine, 45, Hannover",
+    "label": "Doris, 45, Hannover",
     "s": [
      [
       "Meine Söhne sind 14 und 16, und morgens um sieben bekomme ich sie kaum aus dem Bett.",
@@ -1363,7 +1359,7 @@
    {
     "id": "b5",
     "t": "comment",
-    "label": "Aylin, 17, Köln",
+    "label": "Leyla, 17, Köln",
     "s": [
      [
       "Ich habe dreimal pro Woche in der ersten Stunde Mathe, und um acht Uhr morgens verstehe ich ehrlich gesagt fast nichts.",
@@ -1432,7 +1428,7 @@
    {
     "id": "b8",
     "t": "comment",
-    "label": "Paul, 16, Augsburg",
+    "label": "Jakob, 16, Augsburg",
     "s": [
      [
       "Viele Erwachsene denken, wir wollen nur länger schlafen.",
@@ -1455,7 +1451,7 @@
    {
     "id": "b9",
     "t": "comment",
-    "label": "Thomas, 41, Mainz",
+    "label": "Konrad, 41, Mainz",
     "s": [
      [
       "Ich bin Busfahrer und weiß, wie voll die Busse morgens um sieben sind: Schüler, Pendler, alle gleichzeitig.",
@@ -1509,7 +1505,7 @@
   },
   "questions": [
    {
-    "q": "Ist Sabine für einen späteren Schulbeginn?",
+    "q": "Ist Doris für einen späteren Schulbeginn?",
     "format": "jn",
     "opts": [
      "ja",
@@ -1536,7 +1532,7 @@
     "why": "He 'hält nichts davon': less afternoon time, and pupils would just stay up later."
    },
    {
-    "q": "Ist Aylin für einen späteren Schulbeginn?",
+    "q": "Ist Leyla für einen späteren Schulbeginn?",
     "format": "jn",
     "opts": [
      "ja",
@@ -1575,7 +1571,7 @@
     "why": "Working parents could not look after their children, so everything should stay as it is."
    },
    {
-    "q": "Ist Paul für einen späteren Schulbeginn?",
+    "q": "Ist Jakob für einen späteren Schulbeginn?",
     "format": "jn",
     "opts": [
      "ja",
@@ -1588,7 +1584,7 @@
     "why": "An hour later would change a lot for him."
    },
    {
-    "q": "Ist Thomas für einen späteren Schulbeginn?",
+    "q": "Ist Konrad für einen späteren Schulbeginn?",
     "format": "jn",
     "opts": [
      "ja",
@@ -1778,8 +1774,8 @@
       "Registration only as a pair."
      ],
      [
-      "Tanzschule Lehmann, sonntags um 19 Uhr.",
-      "Lehmann dance school, Sundays at 7 p.m."
+      "Tanzschule Wolff, sonntags um 19 Uhr.",
+      "Wolff dance school, Sundays at 7 p.m."
      ]
     ]
    },
@@ -1908,7 +1904,7 @@
     "why": "The running group meets every Saturday and is free."
    },
    {
-    "q": "Priya hatte als Kind keine Gelegenheit, schwimmen zu lernen. Das möchte sie jetzt nachholen.",
+    "q": "Eine Freundin von Priya hatte als Kind keine Gelegenheit, schwimmen zu lernen. Das möchte sie jetzt nachholen.",
     "format": "match",
     "opts": [
      "a",
@@ -3782,7 +3778,7 @@
    {
     "id": "b5",
     "t": "comment",
-    "label": "Tobias, 41, Leipzig",
+    "label": "Henrik, 41, Leipzig",
     "s": [
      [
       "Für kurze Strecken finde ich Flüge wirklich unnötig.",
@@ -3828,7 +3824,7 @@
    {
     "id": "b7",
     "t": "comment",
-    "label": "Emre, 24, Hamburg",
+    "label": "Deniz, 24, Hamburg",
     "s": [
      [
       "Früher bin ich oft für ein Wochenende nach Barcelona geflogen, weil die Tickets so billig waren.",
@@ -3945,7 +3941,7 @@
     "why": "People like her, whose families live far away, need to fly."
    },
    {
-    "q": "Ist Tobias dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "q": "Ist Henrik dafür, im Urlaub auf das Fliegen zu verzichten?",
     "format": "jn",
     "opts": [
      "ja",
@@ -3973,7 +3969,7 @@
     "why": "Everyone should decide; she treats herself to one flight a year."
    },
    {
-    "q": "Ist Emre dafür, im Urlaub auf das Fliegen zu verzichten?",
+    "q": "Ist Deniz dafür, im Urlaub auf das Fliegen zu verzichten?",
     "format": "jn",
     "opts": [
      "ja",
@@ -4264,8 +4260,8 @@
     "label": "b",
     "s": [
      [
-      "Lesung in der Stadtbibliothek: Die Krimiautorin Anna Brink liest aus ihrem neuen Roman und beantwortet anschließend Fragen.",
-      "Reading at the city library: crime writer Anna Brink reads from her new novel and then answers questions."
+      "Lesung in der Stadtbibliothek: Die Krimiautorin Greta Brink liest aus ihrem neuen Roman und beantwortet anschließend Fragen.",
+      "Reading at the city library: crime writer Greta Brink reads from her new novel and then answers questions."
      ],
      [
       "Samstag um 19 Uhr, Eintritt 6 Euro.",
@@ -4500,7 +4496,7 @@
     "why": "The children’s play (c) is for children from four, the concert (j) from six – nothing fits a three-year-old."
    },
    {
-    "q": "Herr Weber singt gern, möchte sich aber nicht fest an einen Chor binden.",
+    "q": "Ein Kollege von Herrn Weber singt gern, möchte sich aber nicht fest an einen Chor binden.",
     "format": "match",
     "opts": [
      "a",
@@ -5381,8 +5377,8 @@
       "My father has been ill since the spring, and I visit him every weekend."
      ],
      [
-      "Außerdem habe ich erst letztes Jahr nach langer Suche eine Wohnung gefunden, die ich nicht verlieren möchte.",
-      "Also, only last year, after a long search, I found a flat that I don't want to lose."
+      "Außerdem habe ich vor drei Jahren nach langer Suche eine Wohnung gefunden, die ich nicht verlieren möchte.",
+      "Also, three years ago, after a long search, I found a flat that I don't want to lose."
      ],
      [
       "Und natürlich würde ich meine Freunde vermissen, vor allem Jonas, den ich schon seit der Schulzeit kenne.",
@@ -5774,7 +5770,7 @@
     "why": "The voluntary social year is for school leavers who want to work in hospitals or care homes."
    },
    {
-    "q": "Malte hat kein Abitur. Er möchte es nachholen, aber weiter in seiner Firma arbeiten.",
+    "q": "Ein Kollege von Malte hat kein Abitur. Er möchte es nachholen, aber weiter in seiner Firma arbeiten.",
     "format": "match",
     "opts": [
      "a",
@@ -5866,7 +5862,7 @@
     "why": "The start-up advice helps with a business plan."
    },
    {
-    "q": "Die Tochter von Frau Yilmaz ist 35 und möchte ein Jahr im Ausland bei einer Familie leben und auf die Kinder aufpassen.",
+    "q": "Eine Bekannte von Frau Yilmaz ist 35 und möchte ein Jahr im Ausland bei einer Familie leben und auf die Kinder aufpassen.",
     "format": "match",
     "opts": [
      "a",
@@ -6015,7 +6011,7 @@
    {
     "id": "b6",
     "t": "comment",
-    "label": "Julia, 38, Freiburg",
+    "label": "Vera, 38, Freiburg",
     "s": [
      [
       "Als alleinerziehende Mutter wäre ich ohne Homeoffice ehrlich gesagt verloren.",
@@ -6172,7 +6168,7 @@
     "why": "It would create two classes of workers; he would rather give everyone more holiday."
    },
    {
-    "q": "Ist Julia für ein Recht auf Homeoffice?",
+    "q": "Ist Vera für ein Recht auf Homeoffice?",
     "format": "jn",
     "opts": [
      "ja",
@@ -6271,8 +6267,8 @@
       "The seniors' wishes are very varied."
      ],
      [
-      "Der 84-jährige Heinz Krüger wollte lernen, wie man Fotos verschickt, damit er seiner Tochter in Kanada Bilder aus dem Rosengarten des Heims schicken kann.",
-      "84-year-old Heinz Krüger wanted to learn how to send photos so that he can send his daughter in Canada pictures of the home's rose garden."
+      "Der 84-jährige Heinz Brenner wollte lernen, wie man Fotos verschickt, damit er seiner Tochter in Kanada Bilder aus dem Rosengarten des Heims schicken kann.",
+      "84-year-old Heinz Brenner wanted to learn how to send photos so that he can send his daughter in Canada pictures of the home's rose garden."
      ],
      [
       "Inzwischen telefoniert er sogar jeden Sonntag per Video mit ihr.",
@@ -6293,12 +6289,12 @@
       "But it isn't only the seniors who learn something."
      ],
      [
-      "„Am Anfang war ich ungeduldig, wenn ich etwas dreimal erklären musste“, gibt die 15-jährige Mia zu.",
-      "'At first I was impatient when I had to explain something three times,' admits 15-year-old Mia."
+      "„Am Anfang war ich ungeduldig, wenn ich etwas dreimal erklären musste“, gibt die 15-jährige Lotte zu.",
+      "'At first I was impatient when I had to explain something three times,' admits 15-year-old Lotte."
      ],
      [
-      "„Jetzt weiß ich, wie man schwierige Dinge einfach erklärt, und Herr Krüger erzählt mir immer spannende Geschichten von früher.“",
-      "'Now I know how to explain difficult things simply, and Herr Krüger always tells me exciting stories from the old days.'"
+      "„Jetzt weiß ich, wie man schwierige Dinge einfach erklärt, und Herr Brenner erzählt mir immer spannende Geschichten von früher.“",
+      "'Now I know how to explain difficult things simply, and Herr Brenner always tells me exciting stories from the old days.'"
      ],
      [
       "Geld bekommen die Schüler für ihre Arbeit nicht, aber eine Bescheinigung, die sie später ihren Bewerbungen beilegen können.",
@@ -6359,7 +6355,7 @@
     "why": "Ingrid Fuchs noticed the problem and asked the school next door."
    },
    {
-    "q": "Was hat Herr Krüger gelernt?",
+    "q": "Was hat Herr Brenner gelernt?",
     "format": "abc",
     "opts": [
      "mit seiner Tochter per Video zu telefonieren",
@@ -6374,7 +6370,7 @@
     "why": "He learned to send photos and now video-calls his daughter; the other things are what other residents want."
    },
    {
-    "q": "Was sagt Mia über das Projekt?",
+    "q": "Was sagt Lotte über das Projekt?",
     "format": "abc",
     "opts": [
      "Es ist ihr zu langweilig, Dinge mehrmals zu erklären.",

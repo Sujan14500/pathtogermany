@@ -352,7 +352,7 @@
  },
  {
   "g": "a1-v2",
-  "q": "In Hamburg ___ Herr und Frau Weber.",
+  "q": "In Köln ___ Herr und Frau Weber.",
   "opts": [
    "wohnt",
    "wohnst",
@@ -360,8 +360,8 @@
    "wohne"
   ],
   "a": 2,
-  "why": "In Hamburg is position 1, the verb is position 2. The subject comes after it, and it is two people, so: wohnen.",
-  "en": "Mr and Mrs Weber live in Hamburg."
+  "why": "In Köln is position 1, the verb is position 2. The subject comes after it, and it is two people, so: wohnen.",
+  "en": "Mr and Mrs Weber live in Cologne."
  },
  {
   "g": "a1-haben",
@@ -430,7 +430,7 @@
  },
  {
   "g": "a1-articles",
-  "q": "Jonas hat ___ Freundin.",
+  "q": "Mein Bruder hat ___ Freundin.",
   "opts": [
    "ein",
    "einen",
@@ -439,7 +439,7 @@
   ],
   "a": 2,
   "why": "Freundin is feminine (die Freundin), so \"a\" is eine.",
-  "en": "Jonas has a girlfriend."
+  "en": "My brother has a girlfriend."
  },
  {
   "g": "a1-articles",
@@ -989,7 +989,7 @@
  },
  {
   "g": "a1-stem-change",
-  "q": "Priya ___ morgen nach Köln.",
+  "q": "Priya ___ morgen nach Bonn.",
   "opts": [
    "fährt",
    "fahrt",
@@ -998,7 +998,7 @@
   ],
   "a": 0,
   "why": "fahren changes a → ä with er/sie/es: sie fährt.",
-  "en": "Priya is going to Cologne tomorrow."
+  "en": "Priya is going to Bonn tomorrow."
  },
  {
   "g": "a1-stem-change",

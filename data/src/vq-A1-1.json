@@ -203,7 +203,7 @@
   "type": "synonym",
   "w": "ledig",
   "station": 2,
-  "q": "Malte ist 30 und ledig.",
+  "q": "Mein Bruder ist 30 und ledig.",
   "u": "ledig",
   "opts": [
    "nicht verheiratet",
@@ -395,7 +395,7 @@
   "opts": [
    "Jonas arbeitet heute kein.",
    "Das ist kein mein Hund.",
-   "Frau Yilmaz hat keine Geschwister.",
+   "Mein Opa hat keine Geschwister.",
    "Meine Schwester ist kein verheiratet."
   ],
   "a": 2,
@@ -408,12 +408,12 @@
   "q": "heiraten",
   "opts": [
    "Meine Eltern heiraten seit 30 Jahren.",
-   "Malte ist nicht heiratet.",
-   "Lena und Jonas heiraten im Mai.",
-   "Lena heiratet mit Jonas."
+   "Marco ist nicht heiratet.",
+   "Tanja und Marco heiraten im Mai.",
+   "Tanja heiratet mit Marco."
   ],
   "a": 2,
-  "why": "heiraten = to get married, the event. You marry someone without 'mit' (Lena heiratet Jonas); the state is verheiratet."
+  "why": "heiraten = to get married, the event. You marry someone without 'mit' (Tanja heiratet Marco); the state is verheiratet."
  },
  {
   "type": "usage",
@@ -421,7 +421,7 @@
   "station": 3,
   "q": "machen",
   "opts": [
-   "Malte macht heute 30 Jahre.",
+   "Mein Bruder macht heute 30 Jahre.",
    "Meine Mutter macht Hausfrau.",
    "Ich mache eine Frage.",
    "Was machst du am Wochenende?"
@@ -694,10 +694,10 @@
   "station": 5,
   "q": "vermieten",
   "opts": [
-   "Herr Weber vermietet seine Wohnung an Priya.",
+   "Herr Krüger vermietet seine Wohnung an Priya.",
    "Malte sucht eine Wohnung. Er möchte eine Wohnung vermieten.",
-   "Priya vermietet die Wohnung von Herrn Weber und wohnt jetzt dort.",
-   "Jeden Monat vermietet Priya 600 Euro an Herrn Weber."
+   "Priya vermietet die Wohnung von Herrn Krüger und wohnt jetzt dort.",
+   "Jeden Monat vermietet Priya 600 Euro an Herrn Krüger."
   ],
   "a": 0,
   "why": "vermieten = to rent out; the landlord (der Vermieter) does it. The person who lives there mietet the flat and pays die Miete."
@@ -826,7 +826,7 @@
    "Lena ist seit zwei Jahren nach Köln gekommen.",
    "Ich arbeite seit acht bis fünf Uhr.",
    "Ich mache seit morgen Urlaub.",
-   "Priya wohnt seit zwei Jahren in Köln."
+   "Priya wohnt seit zwei Monaten in Köln."
   ],
   "a": 3,
   "why": "seit = since, for: it started in the past and is still going on, so the verb is in the present. The future takes ab, a time span von … bis, and a finished event vor."

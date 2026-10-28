@@ -158,3 +158,4 @@ about. Run the validator yourself on every file before building on it.
 
 Use original characters across the texts: for example Lena and Jonas, Frau Yilmaz (a neighbour), Herr Weber
 (a teacher), Priya (a newcomer from India), Malte (a colleague). Never use a textbook's named characters.
+Every writer must follow the story bible in `docs/characters.md` (ages, homes, jobs, families, timeline, reserved names).

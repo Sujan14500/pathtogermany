@@ -3,7 +3,7 @@ Absender	n	der	Absender		sender; sender's address	Schreib den Absender bitte lin
 Anschluss	n	der	Anschlüsse		connection (train, bus)	Gibt es in Köln einen Anschluss nach Bonn?	Is there a connection to Bonn in Cologne?	9
 aus	prep				from; out of; off (switched off)	Frau Yilmaz kommt gerade aus dem Supermarkt.	Mrs Yilmaz is just coming out of the supermarket.	9
 Auskunft	n	die	Auskünfte		information; information desk	Fragen Sie bitte an der Auskunft im Bahnhof!	Please ask at the information desk in the station!	9
-Auto	n	das	Autos		car	Frau Yilmaz hat kein Auto, sie fährt mit dem Bus.	Mrs Yilmaz doesn't have a car; she takes the bus.	9
+Auto	n	das	Autos		car	Meine Oma hat kein Auto, sie fährt mit dem Bus.	My grandma doesn't have a car; she takes the bus.	9
 Autobahn	n	die	Autobahnen		motorway; highway	Malte fährt auf der Autobahn nach München.	Malte is driving to Munich on the motorway.	9
 Bahn	n	die	Bahnen		train; railway	Fährst du mit der Bahn zur Arbeit?	Do you take the train to work?	9
 Bahnhof	n	der	Bahnhöfe		(railway) station	Wir treffen uns um acht am Bahnhof.	We're meeting at the station at eight.	9
@@ -25,7 +25,7 @@ gehen	v			geht, ging, ist gegangen	to go; to walk	Gehen wir zusammen in die Stad
 geradeaus	adv				straight on; straight ahead	Gehen Sie immer geradeaus bis zur Kreuzung!	Keep going straight on to the crossroads!	9
 halten	v			hält, hielt, hat gehalten	to stop; to hold	Hält dieser Bus am Bahnhof?	Does this bus stop at the station?	9
 Haltestelle	n	die	Haltestellen		(bus or tram) stop	Wir warten an der Haltestelle auf den Bus.	We're waiting at the stop for the bus.	9
-Kindergarten	n	der	Kindergärten		nursery school; kindergarten	Frau Yilmaz bringt ihren Sohn in den Kindergarten.	Mrs Yilmaz takes her son to nursery school.	9
+Kindergarten	n	der	Kindergärten		nursery school; kindergarten	Frau Polat bringt ihren Sohn in den Kindergarten.	Mrs Polat takes her son to nursery school.	9
 langsam	adj				slow; slowly	Fahr bitte langsam, hier spielen Kinder!	Please drive slowly, there are children playing here!	9
 links	adv				(on the) left	Die Bank ist links, die Post ist rechts.	The bank is on the left, the post office is on the right.	9
 Mitte	n	die	-		middle; centre	Der Bahnhof liegt in der Mitte der Stadt.	The station is in the middle of the town.	9
@@ -149,7 +149,7 @@ zusammen	adv				together	Lena und Jonas haben zusammen eine Reise gemacht.	Lena 
 übernachten	v			übernachtet, übernachtete, hat übernachtet	to stay overnight; to spend the night	Wir haben bei Freunden in Köln übernachtet.	We stayed the night with friends in Cologne.	11
 Flug	n	der	Flüge		flight	Der Flug von Frankfurt nach Delhi hat acht Stunden gedauert.	The flight from Frankfurt to Delhi took eight hours.	11
 buchen	v			bucht, buchte, hat gebucht	to book	Hast du den Flug schon gebucht?	Have you booked the flight yet?	11
-April	n	der	-		April	Priya ist im April nach Deutschland gekommen.	Priya came to Germany in April.	12
+April	n	der	-		April	Ana ist im April nach Deutschland gekommen.	Ana came to Germany in April.	12
 August	n	der	-		August	Mein Geburtstag ist am zehnten August.	My birthday is on the tenth of August.	12
 Blume	n	die	Blumen		flower	Jonas bringt Lena Blumen mit.	Jonas brings Lena some flowers.	12
 Datum	n	das	Daten		date	Welches Datum ist heute?	What's the date today?	12
@@ -169,7 +169,7 @@ Herbst	n	der	Herbste		autumn; fall	Im Herbst gibt es oft Regen und Wind.	In autu
 Jahr	n	das	Jahre		year	Ich lerne seit einem Jahr Deutsch.	I've been learning German for a year.	12
 Januar	n	der	-		January	Am ersten Januar beginnt das neue Jahr.	The new year begins on the first of January.	12
 Juli	n	der	-		July	Im Juli fahren wir ans Meer.	In July we're going to the seaside.	12
-Juni	n	der	-		June	Malte heiratet im Juni.	Malte is getting married in June.	12
+Juni	n	der	-		June	Sandra heiratet im Juni.	Sandra is getting married in June.	12
 Kuchen	n	der	Kuchen		cake	Der Kuchen schmeckt wunderbar!	The cake tastes wonderful!	12
 Mai	n	der	-		May	Am ersten Mai haben viele Leute frei.	Many people have the day off on the first of May.	12
 März	n	der	-		March	Im März wird es langsam warm.	In March it slowly gets warm.	12
@@ -182,7 +182,7 @@ September	n	der	-		September	Im September beginnt der Herbst.	Autumn begins in S
 Sommer	n	der	Sommer		summer	Im Sommer grillen wir oft im Garten.	In summer we often have barbecues in the garden.	12
 Sonne	n	die	-		sun	Morgen gibt es viel Sonne.	There will be lots of sun tomorrow.	12
 vierte	num				fourth	Am vierten Juni hat Jonas Geburtstag.	Jonas's birthday is on the fourth of June.	12
-werden	v			wird, wurde, ist geworden	to become; to get	Lena wird im Mai einundzwanzig.	Lena turns twenty-one in May.	12
+werden	v			wird, wurde, ist geworden	to become; to get	Lena wird im Mai neunundzwanzig.	Lena turns twenty-nine in May.	12
 Wetter	n	das	-		weather	Wie ist das Wetter bei euch?	What's the weather like where you are?	12
 Wind	n	der	Winde		wind	Bei diesem Wind fahre ich nicht mit dem Fahrrad.	I'm not cycling in this wind.	12
 Winter	n	der	Winter		winter	Priya mag den Winter in Deutschland nicht.	Priya doesn't like the winter in Germany.	12

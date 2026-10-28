@@ -147,7 +147,7 @@
   "type": "context",
   "w": "zuständig",
   "station": 2,
-  "q": "Für Urlaubsanträge ist Frau Yilmaz aus der Personalabteilung ___.",
+  "q": "Für Urlaubsanträge ist Frau Wendt aus der Personalabteilung ___.",
   "opts": [
    "berufstätig",
    "zuständig",
@@ -219,7 +219,7 @@
   "type": "synonym",
   "w": "halbtags",
   "station": 2,
-  "q": "Seit der Geburt ihres Sohnes arbeitet Priya nur halbtags.",
+  "q": "Seit der Geburt ihres Sohnes arbeitet meine Schwester nur halbtags.",
   "u": "halbtags",
   "opts": [
    "in Teilzeit",
@@ -708,10 +708,10 @@
   "station": 5,
   "q": "sondern",
   "opts": [
-   "Lena kommt nicht aus Berlin, sondern aus Hamburg.",
-   "Lena kommt nicht aus Berlin, sondern kommt sie aus Hamburg.",
-   "Lena kommt aus Berlin, sondern aus Hamburg.",
-   "Lena wohnt in Berlin, sondern sie arbeitet in Hamburg."
+   "Nora kommt nicht aus Berlin, sondern aus Hamburg.",
+   "Nora kommt nicht aus Berlin, sondern kommt sie aus Hamburg.",
+   "Nora kommt aus Berlin, sondern aus Hamburg.",
+   "Nora wohnt in Berlin, sondern sie arbeitet in Hamburg."
   ],
   "a": 0,
   "why": "sondern = but rather, only after a negative (nicht, kein). It does not change the word order. Without a negative you need aber."
@@ -935,7 +935,7 @@
   "type": "synonym",
   "w": "Velo",
   "station": 7,
-  "q": "Jonas fährt jeden Morgen mit dem Velo zur Arbeit.",
+  "q": "Mein Cousin in Zürich fährt jeden Morgen mit dem Velo zur Arbeit.",
   "u": "Velo",
   "opts": [
    "Auto",
@@ -1307,7 +1307,7 @@
   "type": "context",
   "w": "Entscheidung",
   "station": 10,
-  "q": "Nach langem Nachdenken hat Malte eine ___ getroffen: Er zieht nach München.",
+  "q": "Nach langem Nachdenken hat mein Nachbar eine ___ getroffen: Er zieht nach München.",
   "opts": [
    "Entscheidung",
    "Regel",
@@ -1540,10 +1540,10 @@
   "station": 11,
   "q": "entscheiden",
   "opts": [
-   "Nach langem Überlegen hat sich Jonas für ein Studium in Leipzig entschieden.",
-   "Nach langem Überlegen hat sich Jonas auf ein Studium in Leipzig entschieden.",
-   "Nach langem Überlegen hat Jonas für ein Studium in Leipzig entschieden.",
-   "Nach langem Überlegen hat sich Jonas für ein Studium in Leipzig entscheidet."
+   "Nach langem Überlegen hat sich Jonas für ein Studium in Köln entschieden.",
+   "Nach langem Überlegen hat sich Jonas auf ein Studium in Köln entschieden.",
+   "Nach langem Überlegen hat Jonas für ein Studium in Köln entschieden.",
+   "Nach langem Überlegen hat sich Jonas für ein Studium in Köln entscheidet."
   ],
   "a": 0,
   "why": "sich entscheiden für + acc. = to decide on, choose. Partizip: entschieden."

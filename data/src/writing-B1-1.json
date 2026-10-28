@@ -200,7 +200,7 @@
   "station": 5,
   "part": "Teil 2",
   "task_en": "A TV programme asked: 'Do we still need printed newspapers?' React to Lena's opinion in the online guestbook and write your own (about 80 words).",
-  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Brauchen wir noch gedruckte Zeitungen?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich lese meine Nachrichten nur noch auf dem Handy. Das ist schneller, billiger und besser für die Umwelt. Gedruckte Zeitungen sind für mich Vergangenheit.“ – Lena, 26\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Brauchen wir noch gedruckte Zeitungen?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Ich lese meine Nachrichten nur noch auf dem Handy. Das ist schneller, billiger und besser für die Umwelt. Gedruckte Zeitungen sind für mich Vergangenheit.“ – Lena, 30\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
   "points": [
    "Ihre Meinung zum Thema",
    "Wie informieren Sie sich selbst?",
@@ -246,8 +246,8 @@
   "id": "b1-w-06",
   "station": 6,
   "part": "Teil 3",
-  "task_en": "A week ago you bought a coffee machine at the shop 'Elektro Hansen'. Now it no longer works. Write a short email to customer service (about 40 words).",
-  "task_de": "Sie haben vor einer Woche im Geschäft „Elektro Hansen“ eine Kaffeemaschine gekauft. Jetzt funktioniert sie nicht mehr. Schreiben Sie dem Kundenservice eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "task_en": "A week ago you bought a coffee machine at the shop 'Elektro Köhler'. Now it no longer works. Write a short email to customer service (about 40 words).",
+  "task_de": "Sie haben vor einer Woche im Geschäft „Elektro Köhler“ eine Kaffeemaschine gekauft. Jetzt funktioniert sie nicht mehr. Schreiben Sie dem Kundenservice eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
   "points": [
    "Sagen Sie, was Sie wann gekauft haben",
    "Beschreiben Sie das Problem",
@@ -341,7 +341,7 @@
   "station": 8,
   "part": "Teil 2",
   "task_en": "In a TV programme's online guestbook people discuss whether cars should be banned from city centres. React to Jonas's opinion and write your own (about 80 words).",
-  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Autofreie Innenstädte“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Autos sollten in der Innenstadt verboten werden. Die Luft wäre sauberer, es wäre ruhiger, und Kinder könnten sicher draußen spielen. Wer in die Stadt will, kann den Bus oder das Fahrrad nehmen.“ – Jonas, 29\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "task_de": "Sie haben im Fernsehen eine Diskussion zum Thema „Autofreie Innenstädte“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Autos sollten in der Innenstadt verboten werden. Die Luft wäre sauberer, es wäre ruhiger, und Kinder könnten sicher draußen spielen. Wer in die Stadt will, kann den Bus oder das Fahrrad nehmen.“ – Jonas, 30\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
   "points": [
    "Ihre Meinung zum Thema",
    "Ein Grund oder ein Beispiel",
@@ -387,8 +387,8 @@
   "id": "b1-w-09",
   "station": 9,
   "part": "Teil 3",
-  "task_en": "Your boss, Frau Brandt, has invited all employees to a concert on Friday evening. You can't go. Write her a short email (about 40 words).",
-  "task_de": "Ihre Chefin, Frau Brandt, hat alle Mitarbeiterinnen und Mitarbeiter am Freitagabend zu einem Konzert eingeladen. Sie können nicht kommen. Schreiben Sie Frau Brandt eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+  "task_en": "Your boss, Frau Lenz, has invited all employees to a concert on Friday evening. You can't go. Write her a short email (about 40 words).",
+  "task_de": "Ihre Chefin, Frau Lenz, hat alle Mitarbeiterinnen und Mitarbeiter am Freitagabend zu einem Konzert eingeladen. Sie können nicht kommen. Schreiben Sie Frau Lenz eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
   "points": [
    "Bedanken Sie sich für die Einladung",
    "Sagen Sie höflich ab und nennen Sie den Grund",
@@ -400,8 +400,8 @@
   ],
   "phrases": [
    [
-    "Liebe Frau Brandt, / Sehr geehrte Frau Brandt,",
-    "Dear Ms Brandt, (friendly / formal)"
+    "Liebe Frau Lenz, / Sehr geehrte Frau Lenz,",
+    "Dear Ms Lenz, (friendly / formal)"
    ],
    [
     "Vielen Dank für die Einladung zu …!",
@@ -420,10 +420,10 @@
     "I wish you all a lovely evening!"
    ]
   ],
-  "model": "Liebe Frau Brandt,\nvielen Dank für die Einladung zum Konzert! Ich höre sowohl Jazz als auch klassische Musik sehr gern. Leider kann ich am Freitag nicht kommen, weil meine Eltern zu Besuch sind. Ich wünsche Ihnen allen einen schönen Abend!\nViele Grüße",
-  "model_en": "Dear Ms Brandt,\nThank you very much for the invitation to the concert! I enjoy both jazz and classical music. Unfortunately I can't come on Friday, because my parents are visiting. I wish you all a lovely evening!\nBest regards",
+  "model": "Liebe Frau Lenz,\nvielen Dank für die Einladung zum Konzert! Ich höre sowohl Jazz als auch klassische Musik sehr gern. Leider kann ich am Freitag nicht kommen, weil meine Eltern zu Besuch sind. Ich wünsche Ihnen allen einen schönen Abend!\nViele Grüße",
+  "model_en": "Dear Ms Lenz,\nThank you very much for the invitation to the concert! I enjoy both jazz and classical music. Unfortunately I can't come on Friday, because my parents are visiting. I wish you all a lovely evening!\nBest regards",
   "rubric": [
-   "A greeting that suits your boss (Liebe/Sehr geehrte Frau Brandt) and a closing",
+   "A greeting that suits your boss (Liebe/Sehr geehrte Frau Lenz) and a closing",
    "Sie-form throughout",
    "All three points: thanks, a polite refusal with a reason, good wishes",
    "Short, friendly and polite",
@@ -481,8 +481,8 @@
   "id": "b1-w-11",
   "station": 11,
   "part": "Teil 2",
-  "task_en": "In a TV programme's online guestbook people discuss whether young people should take a year off after school. React to Sophie's opinion and write your own (about 80 words).",
-  "task_de": "Sie haben im Fernsehen eine Sendung zum Thema „Nach der Schule erst einmal ein Jahr Pause?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Nach der Schule bin ich ein Jahr durch Australien gereist und habe dort gejobbt. Das war die beste Zeit meines Lebens! Jeder junge Mensch sollte ein Jahr Pause machen, bevor er studiert oder eine Ausbildung beginnt.“ – Sophie, 23\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
+  "task_en": "In a TV programme's online guestbook people discuss whether young people should take a year off after school. React to Hanna's opinion and write your own (about 80 words).",
+  "task_de": "Sie haben im Fernsehen eine Sendung zum Thema „Nach der Schule erst einmal ein Jahr Pause?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:\n„Nach der Schule bin ich ein Jahr durch Australien gereist und habe dort gejobbt. Das war die beste Zeit meines Lebens! Jeder junge Mensch sollte ein Jahr Pause machen, bevor er studiert oder eine Ausbildung beginnt.“ – Hanna, 23\nSchreiben Sie nun Ihre Meinung (circa 80 Wörter).",
   "points": [
    "Ihre Meinung zum Thema",
    "Ein Beispiel aus Ihrem Leben",
@@ -517,7 +517,7 @@
   "model": "Ich finde die Idee gut, aber sie passt nicht für jeden. Als ich mit der Schule fertig war, habe ich sofort mit dem Studium angefangen. Während des Studiums habe ich oft gedacht, dass ich zu wenig von der Welt gesehen habe. Ein Jahr im Ausland ist eine tolle Chance, um eine Sprache zu lernen und selbstständig zu werden. Andererseits kostet so ein Jahr viel Geld, und nicht alle Eltern können das bezahlen. Wenn man aber unterwegs arbeitet, ist es trotzdem möglich.",
   "model_en": "I think the idea is good, but it doesn't suit everyone. When I finished school, I started university straight away. During my studies I often thought that I had seen too little of the world. A year abroad is a great chance to learn a language and become independent. On the other hand, a year like that costs a lot of money, and not all parents can pay for it. But if you work along the way, it's still possible.",
   "rubric": [
-   "You react to Sophie's opinion and give your own clearly",
+   "You react to Hanna's opinion and give your own clearly",
    "All three points: your opinion, an example from your life, an advantage or disadvantage",
    "als (one event in the past) and wenn (if / whenever) used correctly",
    "Varied structure with während, um … zu, andererseits",

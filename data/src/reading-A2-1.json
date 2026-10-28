@@ -4,16 +4,16 @@
   "station": 1,
   "part": "Teil 1",
   "type": "article",
-  "title": "Von Bangalore nach Leipzig",
-  "intro": "A city magazine introduces Priya, who moved from India to Leipzig three months ago.",
+  "title": "Von Mumbai nach Köln",
+  "intro": "A city magazine introduces Priya, who moved from India to Cologne a year ago.",
   "blocks": [
    {
     "id": "b1",
     "t": "h",
     "s": [
      [
-      "Menschen in unserer Stadt: Von Bangalore nach Leipzig",
-      "People in our city: from Bangalore to Leipzig"
+      "Menschen in unserer Stadt: Von Mumbai nach Köln",
+      "People in our city: from Mumbai to Cologne"
      ]
     ]
    },
@@ -22,12 +22,12 @@
     "t": "p",
     "s": [
      [
-      "Priya ist 29 Jahre alt und kommt aus Indien.",
-      "Priya is 29 years old and comes from India."
+      "Priya ist 28 Jahre alt und kommt aus Indien.",
+      "Priya is 28 years old and comes from India."
      ],
      [
-      "Sie ist in Bangalore groß geworden, einer großen Stadt im Süden des Landes.",
-      "She grew up in Bangalore, a big city in the south of the country."
+      "Sie ist in Mumbai groß geworden, einer großen Stadt im Westen des Landes.",
+      "She grew up in Mumbai, a big city in the west of the country."
      ],
      [
       "Dort hat sie Informatik studiert und danach vier Jahre bei einer Softwarefirma gearbeitet.",
@@ -40,8 +40,8 @@
     "t": "p",
     "s": [
      [
-      "Vor drei Monaten ist sie allein nach Leipzig gekommen, denn sie möchte gern in Deutschland arbeiten.",
-      "Three months ago she came to Leipzig on her own, because she would like to work in Germany."
+      "Vor einem Jahr ist sie allein nach Köln gekommen, denn sie möchte gern in Deutschland arbeiten.",
+      "A year ago she came to Cologne on her own, because she would like to work in Germany."
      ],
      [
       "Am Anfang war alles fremd: das Wetter, das Essen und auch die Sprache.",
@@ -58,16 +58,16 @@
     "t": "p",
     "s": [
      [
-      "Heute fühlt sie sich in Leipzig wohl.",
-      "Today she feels at home in Leipzig."
+      "Heute fühlt sie sich in Köln wohl.",
+      "Today she feels at home in Cologne."
      ],
      [
       "Jeden Vormittag besucht sie einen Deutschkurs an der Volkshochschule.",
       "Every morning she goes to a German course at the adult education centre."
      ],
      [
-      "Dort hat sie viele nette Leute kennengelernt, zum Beispiel ihre Freundin Lena.",
-      "There she has met lots of nice people, for example her friend Lena."
+      "Dort hat sie viele nette Leute kennengelernt, zum Beispiel Ana aus Mexiko.",
+      "There she has met lots of nice people, for example Ana from Mexico."
      ],
      [
       "Ihre Nachbarin, Frau Yilmaz, hilft ihr oft bei den Hausaufgaben.",
@@ -84,12 +84,12 @@
       "And what are her plans?"
      ],
      [
-      "Priya möchte im nächsten Jahr die B1-Prüfung machen.",
-      "Priya would like to take the B1 exam next year."
+      "Priya möchte in anderthalb Jahren die B1-Prüfung machen.",
+      "Priya would like to take the B1 exam in a year and a half."
      ],
      [
-      "„Dann möchte ich hier in Leipzig wieder als Informatikerin arbeiten, das ist mein Traum“, sagt sie.",
-      "\"Then I'd like to work as a computer scientist again here in Leipzig, that's my dream,\" she says."
+      "„Dann möchte ich hier in Köln wieder als Informatikerin arbeiten, das ist mein Traum“, sagt sie.",
+      "\"Then I'd like to work as a computer scientist again here in Cologne, that's my dream,\" she says."
      ],
      [
       "„Aber mein Deutsch muss noch viel besser werden.“",
@@ -120,7 +120,7 @@
    "q": "What will this magazine article be about?",
    "opts": [
     "a newcomer's life and plans",
-    "a new restaurant in Leipzig",
+    "a new restaurant in Cologne",
     "a computer company"
    ],
    "a": 0
@@ -141,7 +141,7 @@
     "why": "She studied computer science and then worked for a software company for four years; the text says nothing about a university job or teaching."
    },
    {
-    "q": "Priya ist nach Leipzig gekommen, weil …",
+    "q": "Priya ist nach Köln gekommen, weil …",
     "format": "abc",
     "opts": [
      "sie dort studieren wollte.",
@@ -152,7 +152,7 @@
     "ev": [
      "b3.0"
     ],
-    "why": "She came \"denn sie möchte gern in Deutschland arbeiten\": she wants to work in Germany. She met Lena later, at her German course."
+    "why": "She came \"denn sie möchte gern in Deutschland arbeiten\": she wants to work in Germany. She met Lena only after she arrived."
    },
    {
     "q": "In den ersten Wochen …",
@@ -180,7 +180,7 @@
     "ev": [
      "b4.3"
     ],
-    "why": "Frau Yilmaz is her neighbour and helps with her homework; Lena is the friend from the course."
+    "why": "Frau Yilmaz is her neighbour and helps with her homework; Ana is a friend from the course."
    },
    {
     "q": "Was möchte Priya später machen?",
@@ -188,13 +188,13 @@
     "opts": [
      "Wieder in ihrem Beruf arbeiten.",
      "An der Volkshochschule Deutsch unterrichten.",
-     "Zurück nach Bangalore gehen."
+     "Zurück nach Mumbai gehen."
     ],
     "a": 0,
     "ev": [
      "b5.2"
     ],
-    "why": "Her dream is to work as a computer scientist again, here in Leipzig."
+    "why": "Her dream is to work as a computer scientist again, here in Cologne."
    }
   ]
  },
@@ -726,8 +726,8 @@
     "t": "ad",
     "s": [
      [
-      "Maler Krause",
-      "Krause painters"
+      "Maler Hübner",
+      "Hübner painters"
      ],
      [
       "Ihre neue Wohnung braucht neue Farbe?",
@@ -782,7 +782,7 @@
   },
   "questions": [
    {
-    "q": "Priya sucht ein günstiges Zimmer in der Nähe der Universität.",
+    "q": "Lucia sucht ein günstiges Zimmer in der Nähe der Universität.",
     "format": "match",
     "opts": [
      "a",
@@ -901,8 +901,8 @@
       "You know that I have written lots of applications since January."
      ],
      [
-      "Letzte Woche hatte ich ein Gespräch bei einer kleinen Softwarefirma hier in Leipzig, und gestern hat mich der Chef angerufen.",
-      "Last week I had an interview at a small software company here in Leipzig, and yesterday the boss called me."
+      "Letzte Woche hatte ich ein Gespräch bei einer kleinen Softwarefirma hier in Köln, und gestern hat mich der Chef angerufen.",
+      "Last week I had an interview at a small software company here in Cologne, and yesterday the boss called me."
      ]
     ]
    },
@@ -1302,7 +1302,7 @@
     "why": "Ad b is office work from 8 to 12 for someone who speaks English and likes computers."
    },
    {
-    "q": "Der Sohn von Frau Yilmaz ist 17. Er möchte einen Beruf in der Küche lernen.",
+    "q": "Der Enkel von Frau Yilmaz ist 17. Er möchte einen Beruf in der Küche lernen.",
     "format": "match",
     "opts": [
      "a",
@@ -1320,7 +1320,7 @@
     "why": "The hotel offers an apprenticeship as a cook for people aged 16 to 25."
    },
    {
-    "q": "Malte möchte eine neue Stelle suchen, aber er weiß nicht, wie man eine gute Bewerbung schreibt.",
+    "q": "Ein Kollege von Malte möchte eine neue Stelle suchen, aber er weiß nicht, wie man eine gute Bewerbung schreibt.",
     "format": "match",
     "opts": [
      "a",
@@ -1427,8 +1427,8 @@
       "Lena has also been singing in the choir for a year."
      ],
      [
-      "„Nach meinem Umzug in die Stadt habe ich mich sehr allein gefühlt“, erzählt sie.",
-      "\"After my move to the city I felt very lonely,\" she says."
+      "„Nach meinem Umzug in einen neuen Stadtteil habe ich mich sehr allein gefühlt“, erzählt sie.",
+      "\"After I moved to a new part of town I felt very lonely,\" she says."
      ],
      [
       "„Hier habe ich schnell nette Leute kennengelernt, und nach der Probe gehen wir oft noch zusammen etwas trinken.“",
@@ -1545,7 +1545,7 @@
     "ev": [
      "b4.1"
     ],
-    "why": "She says she felt very lonely after moving to the city."
+    "why": "She says she felt very lonely after moving to a new part of town."
    },
    {
     "q": "Was kostet der Chor?",
@@ -1827,7 +1827,7 @@
   "station": 5,
   "part": "Teil 2",
   "type": "directory",
-  "title": "Kaufhaus Brandt",
+  "title": "Kaufhaus Hollmann",
   "intro": "You are shopping in a department store. Read the store guide next to the lift.",
   "blocks": [
    {
@@ -1835,8 +1835,8 @@
     "t": "h",
     "s": [
      [
-      "Kaufhaus Brandt – Wegweiser",
-      "Brandt department store – store guide"
+      "Kaufhaus Hollmann – Wegweiser",
+      "Hollmann department store – store guide"
      ]
     ]
    },
@@ -2078,8 +2078,8 @@
     "t": "ad",
     "s": [
      [
-      "Schuhhaus Becker: Sommerschlussverkauf",
-      "Becker shoe shop: summer sale"
+      "Schuhhaus Pfeiffer: Sommerschlussverkauf",
+      "Pfeiffer shoe shop: summer sale"
      ],
      [
       "Alle Sandalen und Sommerschuhe sind jetzt 50 Prozent billiger.",
@@ -2214,7 +2214,7 @@
     "ev": [
      "b5.1"
     ],
-    "why": "Becker has summer shoes at half price."
+    "why": "Pfeiffer has summer shoes at half price."
    },
    {
     "q": "Malte kommt spät von der Arbeit und möchte lernen, wie man schnell etwas Gutes kocht.",
@@ -2288,8 +2288,8 @@
       "The running group has existed for two years."
      ],
      [
-      "Die Ärztin Dr. Anna Berger hat ihn gegründet.",
-      "The doctor Dr Anna Berger started it."
+      "Die Ärztin Dr. Eva Ostendorf hat ihn gegründet.",
+      "The doctor Dr Eva Ostendorf started it."
      ]
     ]
    },
@@ -2334,8 +2334,8 @@
     "t": "p",
     "s": [
      [
-      "Der 63-jährige Klaus Neumann kommt seit dem ersten Tag zum Lauftreff.",
-      "63-year-old Klaus Neumann has been coming to the running group since the first day."
+      "Der 63-jährige Klaus Jansen kommt seit dem ersten Tag zum Lauftreff.",
+      "63-year-old Klaus Jansen has been coming to the running group since the first day."
      ],
      [
       "„Früher hatte ich oft Kopfschmerzen und konnte schlecht schlafen“, sagt er.",
@@ -2421,7 +2421,7 @@
     "why": "They meet every Tuesday and Thursday at 7 am: twice a week."
    },
    {
-    "q": "Dr. Berger hat den Lauftreff gegründet, weil …",
+    "q": "Dr. Ostendorf hat den Lauftreff gegründet, weil …",
     "format": "abc",
     "opts": [
      "sie selbst Rückenschmerzen hatte.",
@@ -2450,7 +2450,7 @@
     "why": "After running they do ten minutes of exercises for the back."
    },
    {
-    "q": "Klaus Neumann …",
+    "q": "Klaus Jansen …",
     "format": "abc",
     "opts": [
      "kommt seit zwei Jahren zum Lauftreff.",
@@ -2515,12 +2515,12 @@
       "3rd floor: Dr Petra Lang, children's doctor"
      ],
      [
-      "2. Stock: Dr. Ali Demir, Augenarzt · Dr. Jan Fischer, Hals-Nasen-Ohren-Arzt",
-      "2nd floor: Dr Ali Demir, eye doctor · Dr Jan Fischer, ear, nose and throat doctor"
+      "2. Stock: Dr. Ali Demir, Augenarzt · Dr. Jan Rohde, Hals-Nasen-Ohren-Arzt",
+      "2nd floor: Dr Ali Demir, eye doctor · Dr Jan Rohde, ear, nose and throat doctor"
      ],
      [
-      "1. Stock: Dr. Thomas Klein, Allgemeinmedizin (Hausarzt) · Labor",
-      "1st floor: Dr Thomas Klein, general medicine (family doctor) · laboratory"
+      "1. Stock: Dr. Stefan Lindemann, Allgemeinmedizin (Hausarzt) · Labor",
+      "1st floor: Dr Stefan Lindemann, general medicine (family doctor) · laboratory"
      ],
      [
       "Erdgeschoss: Apotheke am Lindenplatz · Information",
@@ -2678,8 +2678,8 @@
     "t": "p",
     "s": [
      [
-      "seit gestern Abend bin ich wieder zu Hause in Leipzig.",
-      "since last night I have been back home in Leipzig."
+      "seit gestern Abend bin ich wieder zu Hause in Köln.",
+      "since last night I have been back home in Cologne."
      ],
      [
       "Die Woche auf Rügen war wunderschön: Ich war jeden Tag am Meer und hatte fast immer Sonne.",
@@ -2700,8 +2700,8 @@
       "My train was supposed to leave Stralsund at 10.15, but it was 50 minutes late."
      ],
      [
-      "Deshalb habe ich in Berlin meinen Anschluss nach Leipzig verpasst.",
-      "So I missed my connection to Leipzig in Berlin."
+      "Deshalb habe ich in Berlin meinen Anschluss nach Köln verpasst.",
+      "So I missed my connection to Cologne in Berlin."
      ],
      [
       "Der nächste Zug war sehr voll, und ich musste zwei Stunden zwischen den Wagen stehen.",
@@ -2712,8 +2712,8 @@
       "I couldn't even eat anything because the restaurant car was closed."
      ],
      [
-      "Am Ende war ich fast drei Stunden zu spät in Leipzig.",
-      "In the end I got to Leipzig almost three hours late."
+      "Am Ende war ich fast drei Stunden zu spät in Köln.",
+      "In the end I got to Cologne almost three hours late."
      ]
     ]
    },
@@ -2806,13 +2806,13 @@
     "opts": [
      "In Berlin.",
      "Auf Rügen.",
-     "In Leipzig."
+     "In Köln."
     ],
     "a": 1,
     "ev": [
      "b2.1"
     ],
-    "why": "He spent a week on Rügen; Leipzig is his home and Berlin was where he changed trains."
+    "why": "He spent a week on Rügen; Cologne is his home and Berlin was where he changed trains."
    },
    {
     "q": "Jonas hat in Berlin seinen Anschluss verpasst, weil …",
@@ -2925,8 +2925,8 @@
       "Lift to Munich"
      ],
      [
-      "Ich fahre am Freitag, 14. Juni, um 16 Uhr mit dem Auto von Leipzig nach München.",
-      "On Friday, 14 June, at 4 pm I'm driving from Leipzig to Munich."
+      "Ich fahre am Freitag, 14. Juni, um 16 Uhr mit dem Auto von Köln nach München.",
+      "On Friday, 14 June, at 4 pm I'm driving from Cologne to Munich."
      ],
      [
       "Ich habe noch zwei Plätze frei, 35 Euro pro Person.",
@@ -2959,12 +2959,12 @@
     "t": "ad",
     "s": [
      [
-      "Mit dem Schiff auf der Elbe",
-      "By boat on the Elbe"
+      "Mit dem Schiff auf dem Rhein",
+      "By boat on the Rhine"
      ],
      [
-      "Von Dresden nach Meißen und zurück, mit Musik und Mittagessen an Bord.",
-      "From Dresden to Meissen and back, with music and lunch on board."
+      "Von Köln nach Bonn und zurück, mit Musik und Mittagessen an Bord.",
+      "From Cologne to Bonn and back, with music and lunch on board."
      ],
      [
       "Von Mai bis September jeden Sonntag, 10 bis 18 Uhr.",
@@ -3118,7 +3118,7 @@
      "b5.1",
      "b5.2"
     ],
-    "why": "The boat trip on the Elbe runs every Sunday."
+    "why": "The boat trip on the Rhine runs every Sunday."
    },
    {
     "q": "Herr Weber und seine Frau möchten im Herbst ein paar Tage eine Hauptstadt im Ausland besuchen.",
@@ -3163,8 +3163,8 @@
     "t": "p",
     "s": [
      [
-      "„Können Sie mir erklären, wie ich ein Foto an meine Enkelin schicke?“, fragt die 78-jährige Gisela Brandt.",
-      "\"Can you explain to me how I send a photo to my granddaughter?\" asks 78-year-old Gisela Brandt."
+      "„Können Sie mir erklären, wie ich ein Foto an meine Enkelin schicke?“, fragt die 78-jährige Gisela Ebert.",
+      "\"Can you explain to me how I send a photo to my granddaughter?\" asks 78-year-old Gisela Ebert."
      ],
      [
       "Neben ihr sitzt der 15-jährige Ben und lacht: „Klar, das ist ganz einfach.“",
@@ -3185,8 +3185,8 @@
     "t": "p",
     "s": [
      [
-      "Die Idee hatte die Lehrerin Maria Hoffmann vor einem Jahr.",
-      "The teacher Maria Hoffmann had the idea a year ago."
+      "Die Idee hatte die Lehrerin Maria Seifert vor einem Jahr.",
+      "The teacher Maria Seifert had the idea a year ago."
      ],
      [
       "„Meine Großmutter hat mich jeden Tag angerufen und gefragt, wie man eine E-Mail schreibt“, erzählt sie.",
@@ -3281,7 +3281,7 @@
     "opts": [
      "In der Goethe-Schule.",
      "In der Stadtbibliothek.",
-     "Bei Frau Brandt zu Hause."
+     "Bei Frau Ebert zu Hause."
     ],
     "a": 1,
     "ev": [
@@ -3290,7 +3290,7 @@
     "why": "The pupils come from the Goethe School, but they help in the city library."
    },
    {
-    "q": "Frau Hoffmann hatte die Idee, weil …",
+    "q": "Frau Seifert hatte die Idee, weil …",
     "format": "abc",
     "opts": [
      "ihre Großmutter viele Fragen zum Internet hatte.",
@@ -3543,16 +3543,16 @@
     "t": "p",
     "s": [
      [
-      "du weißt sicher, dass Jonas am 18. November 30 Jahre alt wird.",
-      "you surely know that Jonas turns 30 on 18 November."
+      "du weißt sicher, dass Jonas am 4. Juni 30 Jahre alt wird.",
+      "you surely know that Jonas turns 30 on 4 June."
      ],
      [
       "Wir möchten für ihn eine Überraschungsparty machen, aber er darf nichts davon wissen!",
       "We want to throw a surprise party for him, but he mustn't know anything about it!"
      ],
      [
-      "Die Party ist schon am Samstag davor, am 16. November, ab 20 Uhr.",
-      "The party is on the Saturday before, 16 November, from 8 pm."
+      "Die Party ist schon am Samstag davor, am 1. Juni, ab 20 Uhr.",
+      "The party is on the Saturday before, 1 June, from 8 pm."
      ]
     ]
    },
@@ -3671,15 +3671,15 @@
     "q": "Die Party für Jonas ist …",
     "format": "abc",
     "opts": [
-     "am 18. November.",
-     "am 16. November.",
+     "am 4. Juni.",
+     "am 1. Juni.",
      "im Januar."
     ],
     "a": 1,
     "ev": [
      "b2.2"
     ],
-    "why": "His birthday is on 18 November, but the party is on the Saturday before, 16 November."
+    "why": "His birthday is on 4 June, but the party is on the Saturday before, 1 June."
    },
    {
     "q": "Warum feiern die Freunde bei Malte?",
@@ -4046,8 +4046,8 @@
     "t": "p",
     "s": [
      [
-      "Eine der ältesten Teilnehmerinnen ist Helga Schulz.",
-      "One of the oldest participants is Helga Schulz."
+      "Eine der ältesten Teilnehmerinnen ist Helga Ritter.",
+      "One of the oldest participants is Helga Ritter."
      ],
      [
       "Sie ist 74 Jahre alt und lernt seit September Italienisch.",
@@ -4155,7 +4155,7 @@
     "why": "More than 4,000 people signed up, \"so viele wie noch nie\"; the language courses were the most popular."
    },
    {
-    "q": "Helga Schulz lernt Italienisch, weil …",
+    "q": "Helga Ritter lernt Italienisch, weil …",
     "format": "abc",
     "opts": [
      "sie in der Schule gut in Sprachen war.",
@@ -4169,7 +4169,7 @@
     "why": "She goes to Lake Garda every year and wants to talk to the people there."
    },
    {
-    "q": "In der Schule hatte Helga Schulz …",
+    "q": "In der Schule hatte Helga Ritter …",
     "format": "abc",
     "opts": [
      "keine Angst vor Noten.",
@@ -4567,8 +4567,8 @@
     "t": "h",
     "s": [
      [
-      "Sehr geehrter Herr Hansen,",
-      "Dear Mr Hansen,"
+      "Sehr geehrter Herr Berger,",
+      "Dear Mr Berger,"
      ]
     ]
    },
@@ -4688,7 +4688,7 @@
   },
   "questions": [
    {
-    "q": "Herr Hansen hat sein Fahrrad in die Werkstatt gebracht, weil …",
+    "q": "Herr Berger hat sein Fahrrad in die Werkstatt gebracht, weil …",
     "format": "abc",
     "opts": [
      "der Reifen kaputt war.",
@@ -4730,7 +4730,7 @@
     "why": "48 euros for the brakes plus 35 euros for the tyre: 83 euros in total."
    },
    {
-    "q": "Was soll Herr Hansen bis Mittwoch machen?",
+    "q": "Was soll Herr Berger bis Mittwoch machen?",
     "format": "abc",
     "opts": [
      "Das Fahrrad abholen.",
@@ -4744,7 +4744,7 @@
     "why": "The shop asks him to say by Wednesday whether they should change the tyre."
    },
    {
-    "q": "Herr Hansen kann sein Fahrrad … abholen.",
+    "q": "Herr Berger kann sein Fahrrad … abholen.",
     "format": "abc",
     "opts": [
      "am Donnerstag ab 10 Uhr",
@@ -4772,8 +4772,8 @@
     "t": "h",
     "s": [
      [
-      "200 Helfer sammeln Müll an der Saale",
-      "200 helpers collect rubbish on the river Saale"
+      "200 Helfer sammeln Müll am Rhein",
+      "200 helpers collect rubbish on the river Rhine"
      ]
     ]
    },
@@ -4782,8 +4782,8 @@
     "t": "p",
     "s": [
      [
-      "Am letzten Samstag haben mehr als 200 Freiwillige am Ufer der Saale Müll gesammelt.",
-      "Last Saturday more than 200 volunteers collected rubbish on the banks of the Saale."
+      "Am letzten Samstag haben mehr als 200 Freiwillige am Ufer des Rheins Müll gesammelt.",
+      "Last Saturday more than 200 volunteers collected rubbish on the banks of the Rhine."
      ],
      [
       "Die Aktion „Sauberer Fluss“ gibt es schon seit fünf Jahren.",
@@ -4804,8 +4804,8 @@
       "In only four hours the helpers found more than a tonne of rubbish: plastic bottles, cans, old shoes and even a bicycle."
      ],
      [
-      "„Leider finden wir jedes Jahr mehr Plastik“, sagt Sandra Krüger vom Umweltverein „Grüne Saale“.",
-      "\"Sadly we find more plastic every year,\" says Sandra Krüger from the environmental club \"Green Saale\"."
+      "„Leider finden wir jedes Jahr mehr Plastik“, sagt Sandra Baumann vom Umweltverein „Grüner Rhein“.",
+      "\"Sadly we find more plastic every year,\" says Sandra Baumann from the environmental club \"Green Rhine\"."
      ],
      [
       "„Viele Leute grillen am Wochenende am Fluss und lassen ihren Müll einfach liegen.“",
@@ -4826,8 +4826,8 @@
       "Among the helpers were many families with children and a whole school class."
      ],
      [
-      "Die zehnjährige Mia war zum ersten Mal dabei.",
-      "Ten-year-old Mia was there for the first time."
+      "Die zehnjährige Ida war zum ersten Mal dabei.",
+      "Ten-year-old Ida was there for the first time."
      ],
      [
       "„Es war anstrengend, aber es hat viel Spaß gemacht. Nächstes Jahr komme ich wieder!“, sagt sie.",
@@ -4919,7 +4919,7 @@
     "why": "Among the rubbish there was \"sogar ein Fahrrad\"."
    },
    {
-    "q": "Frau Krüger sagt, dass …",
+    "q": "Frau Baumann sagt, dass …",
     "format": "abc",
     "opts": [
      "die Helfer jedes Jahr weniger Plastik finden.",
@@ -4933,7 +4933,7 @@
     "why": "She says people barbecue by the river and leave their rubbish; and they find more plastic, not less."
    },
    {
-    "q": "Mia …",
+    "q": "Ida …",
     "format": "abc",
     "opts": [
      "hat mit ihrer Familie am Fluss gegrillt.",

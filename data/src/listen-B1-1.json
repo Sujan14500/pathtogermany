@@ -8,8 +8,8 @@
   "lines": [
    {
     "who": "B",
-    "de": "Guten Tag, hier spricht Brandt, der Hausmeister. Ich rufe wegen Ihrer Klingel an, die seit letzter Woche nicht mehr funktioniert.",
-    "en": "Good afternoon, this is Brandt, the caretaker. I'm calling about your doorbell, which hasn't worked since last week."
+    "de": "Guten Tag, hier spricht Kessler, der Hausmeister. Ich rufe wegen Ihrer Klingel an, die seit letzter Woche nicht mehr funktioniert.",
+    "en": "Good afternoon, this is Kessler, the caretaker. I'm calling about your doorbell, which hasn't worked since last week."
    },
    {
     "who": "B",
@@ -76,8 +76,8 @@
   "lines": [
    {
     "who": "A",
-    "de": "Hallo Jonas, hier ist Frau Yilmaz von nebenan.",
-    "en": "Hello Jonas, this is Frau Yilmaz from next door."
+    "de": "Hallo Jonas, hier ist Frau Yilmaz aus dem ersten Stock.",
+    "en": "Hello Jonas, this is Frau Yilmaz from the first floor."
    },
    {
     "who": "A",
@@ -212,13 +212,13 @@
   "id": "b1-h-01-4",
   "station": 1,
   "part": "Teil 3",
-  "setup": "Lena and Jonas meet in a café and talk about Jonas's new flat-share.",
+  "setup": "Lena and Malik meet in a café and talk about Malik's new flat-share.",
   "once": true,
   "lines": [
    {
     "who": "A",
-    "de": "Hallo Jonas! Na, wie ist die neue Wohnung? Du bist doch letzte Woche umgezogen, oder?",
-    "en": "Hi Jonas! So, how's the new flat? You moved last week, didn't you?"
+    "de": "Hallo Malik! Na, wie ist die neue Wohnung? Du bist doch letzte Woche umgezogen, oder?",
+    "en": "Hi Malik! So, how's the new flat? You moved last week, didn't you?"
    },
    {
     "who": "B",
@@ -232,8 +232,8 @@
    },
    {
     "who": "B",
-    "de": "Sehr nett. Mit Sara, die Medizin studiert, verstehe ich mich super. Der andere, Paul, ist fast nie da, weil er meistens bei seiner Freundin wohnt.",
-    "en": "Very nice. I get on really well with Sara, who studies medicine. The other one, Paul, is hardly ever there, because he mostly stays at his girlfriend's."
+    "de": "Sehr nett. Mit Sara, die Medizin studiert, verstehe ich mich super. Der andere, Till, ist fast nie da, weil er meistens bei seiner Freundin wohnt.",
+    "en": "Very nice. I get on really well with Sara, who studies medicine. The other one, Till, is hardly ever there, because he mostly stays at his girlfriend's."
    },
    {
     "who": "A",
@@ -318,7 +318,7 @@
   ],
   "questions": [
    {
-    "q": "Jonas wohnt seit ungefähr einer Woche in der Wohngemeinschaft.",
+    "q": "Malik wohnt seit ungefähr einer Woche in der Wohngemeinschaft.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -332,7 +332,7 @@
     "why": "He moved in last Saturday, and Lena says 'Schon nach einer Woche?'."
    },
    {
-    "q": "Paul verbringt viel Zeit in der Wohnung.",
+    "q": "Till verbringt viel Zeit in der Wohnung.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -342,10 +342,10 @@
     "ev": [
      3
     ],
-    "why": "Paul is hardly ever there, because he mostly stays at his girlfriend's."
+    "why": "Till is hardly ever there, because he mostly stays at his girlfriend's."
    },
    {
-    "q": "Jonas bezahlt jetzt weniger Miete als vorher.",
+    "q": "Malik bezahlt jetzt weniger Miete als vorher.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -358,7 +358,7 @@
     "why": "He pays 380 euros now, almost a hundred euros less than before."
    },
    {
-    "q": "Jonas findet beide Beschwerden der Nachbarin berechtigt.",
+    "q": "Malik findet beide Beschwerden der Nachbarin berechtigt.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -372,7 +372,7 @@
     "why": "He understands the complaint about the party, but thinks the one about his morning shower is over the top."
    },
    {
-    "q": "Lena rät Jonas, mit der Nachbarin zu sprechen.",
+    "q": "Lena rät Malik, mit der Nachbarin zu sprechen.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -385,7 +385,7 @@
     "why": "She suggests he should simply talk to her."
    },
    {
-    "q": "Den Putzplan hat eine Mitbewohnerin von Jonas gemacht.",
+    "q": "Den Putzplan hat eine Mitbewohnerin von Malik gemacht.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -395,10 +395,10 @@
     "ev": [
      15
     ],
-    "why": "Sara, his female flatmate, made the cleaning rota; Paul is the other flatmate."
+    "why": "Sara, his female flatmate, made the cleaning rota; Till is the other flatmate."
    },
    {
-    "q": "Lena hilft Jonas am Samstag, ein Möbelstück aufzubauen.",
+    "q": "Lena hilft Malik am Samstag, ein Möbelstück aufzubauen.",
     "format": "rf",
     "opts": [
      "richtig",
@@ -409,7 +409,7 @@
      17,
      18
     ],
-    "why": "Jonas asks her to help put up a shelf on Saturday, and she agrees to bring her toolbox."
+    "why": "Malik asks her to help put up a shelf on Saturday, and she agrees to bring her toolbox."
    }
   ]
  },
@@ -417,13 +417,13 @@
   "id": "b1-h-02-1",
   "station": 2,
   "part": "Teil 1",
-  "setup": "A voicemail from Malte to his colleague Lena.",
+  "setup": "A voicemail from Malte to his colleague Priya.",
   "once": false,
   "lines": [
    {
     "who": "B",
-    "de": "Hallo Lena, hier ist Malte. Ich bin gerade noch beim Kunden in Bremen, deshalb rufe ich nur kurz an.",
-    "en": "Hi Lena, it's Malte. I'm still at the client's in Bremen, so I'm just calling quickly."
+    "de": "Hallo Priya, hier ist Malte. Ich bin gerade noch beim Kunden in Bremen, deshalb rufe ich nur kurz an.",
+    "en": "Hi Priya, it's Malte. I'm still at the client's in Bremen, so I'm just calling quickly."
    },
    {
     "who": "B",
@@ -432,8 +432,8 @@
    },
    {
     "who": "B",
-    "de": "Herr Fischer ist nämlich krank, und ohne ihn hat das keinen Sinn.",
-    "en": "You see, Herr Fischer is ill, and without him there's no point."
+    "de": "Herr Dietrich ist nämlich krank, und ohne ihn hat das keinen Sinn.",
+    "en": "You see, Herr Dietrich is ill, and without him there's no point."
    },
    {
     "who": "B",
@@ -466,18 +466,18 @@
     "why": "The meeting planned for tomorrow at nine is being moved to Thursday."
    },
    {
-    "q": "Was soll Lena tun?",
+    "q": "Was soll Priya tun?",
     "format": "abc",
     "opts": [
      "einen Raum reservieren",
-     "Herrn Fischer anrufen",
+     "Herrn Dietrich anrufen",
      "die Unterlagen per Mail schicken"
     ],
     "a": 0,
     "ev": [
      3
     ],
-    "why": "Malte asks her to book a room for Thursday at ten. Herr Fischer is only mentioned as ill, and Malte himself sends the documents."
+    "why": "Malte asks her to book a room for Thursday at ten. Herr Dietrich is only mentioned as ill, and Malte himself sends the documents."
    }
   ]
  },
@@ -558,8 +558,8 @@
   "lines": [
    {
     "who": "A",
-    "de": "Guten Tag, Herr Novak, hier spricht Sandra Krüger von der Personalabteilung der Firma Hofmann Logistik.",
-    "en": "Good afternoon, Herr Novak, this is Sandra Krüger from the HR department of Hofmann Logistik."
+    "de": "Guten Tag, Herr Novak, hier spricht Birgit Lange von der Personalabteilung der Firma Hofmann Logistik.",
+    "en": "Good afternoon, Herr Novak, this is Birgit Lange from the HR department of Hofmann Logistik."
    },
    {
     "who": "A",
@@ -626,8 +626,8 @@
   "lines": [
    {
     "who": "N",
-    "de": "Guten Morgen und herzlich willkommen bei der Großbäckerei Sonnenkorn, ich bin Peter Lorenz und leite hier die Produktion.",
-    "en": "Good morning and welcome to the Sonnenkorn bakery; I'm Peter Lorenz and I run production here."
+    "de": "Guten Morgen und herzlich willkommen bei der Großbäckerei Sonnenkorn, ich bin Peter Scholz und leite hier die Produktion.",
+    "en": "Good morning and welcome to the Sonnenkorn bakery; I'm Peter Scholz and I run production here."
    },
    {
     "who": "N",
@@ -724,9 +724,9 @@
     "q": "Wer hat die Firma gegründet?",
     "format": "abc",
     "opts": [
-     "Herr Lorenz selbst",
+     "Herr Scholz selbst",
      "drei Bäcker aus der Region",
-     "der Großvater von Herrn Lorenz"
+     "der Großvater von Herrn Scholz"
     ],
     "a": 2,
     "ev": [
@@ -764,7 +764,7 @@
     "why": "Leftovers are not thrown away but given to the Tafel, which hands them out to people with little money."
    },
    {
-    "q": "Was sagt Herr Lorenz über Auszubildende?",
+    "q": "Was sagt Herr Scholz über Auszubildende?",
     "format": "abc",
     "opts": [
      "Ihre Ausbildung dauert drei Monate.",
@@ -1406,8 +1406,8 @@
    },
    {
     "who": "B",
-    "de": "Nein, die Firma bezahlt den Kurs. Man muss sich nur bei Frau Krause in der Personalabteilung anmelden.",
-    "en": "No, the company pays for the class. You just have to sign up with Frau Krause in HR."
+    "de": "Nein, die Firma bezahlt den Kurs. Man muss sich nur bei Frau Wendt in der Personalabteilung anmelden.",
+    "en": "No, the company pays for the class. You just have to sign up with Frau Wendt in HR."
    },
    {
     "who": "A",
@@ -3278,8 +3278,8 @@
    },
    {
     "who": "N",
-    "de": "Wir sehen uns heute die Ausstellung über die Malerin Clara Brandt an, die von achtzehnhundertneunzig bis neunzehnhundertsechzig lebte.",
-    "en": "Today we're looking at the exhibition about the painter Clara Brandt, who lived from 1890 to 1960."
+    "de": "Wir sehen uns heute die Ausstellung über die Malerin Clara Wiegand an, die von achtzehnhundertneunzig bis neunzehnhundertsechzig lebte.",
+    "en": "Today we're looking at the exhibition about the painter Clara Wiegand, who lived from 1890 to 1960."
    },
    {
     "who": "N",
@@ -3344,7 +3344,7 @@
   ],
   "questions": [
    {
-    "q": "Warum nahm Clara Brandt Unterricht in Paris?",
+    "q": "Warum nahm Clara Wiegand Unterricht in Paris?",
     "format": "abc",
     "opts": [
      "Sie wollte dort eine Malschule eröffnen.",

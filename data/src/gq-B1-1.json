@@ -326,7 +326,7 @@
  },
  {
   "g": "b1-praeteritum",
-  "q": "Vor zehn Jahren ___ Priya in Bangalore Informatik.",
+  "q": "Vor zehn Jahren ___ Priya in Mumbai Informatik.",
   "opts": [
    "studiert",
    "studierten",
@@ -335,7 +335,7 @@
   ],
   "a": 2,
   "why": "studieren is regular: stem + -te. With one person (Priya) there's no extra ending: studierte.",
-  "en": "Ten years ago Priya studied computer science in Bangalore."
+  "en": "Ten years ago Priya studied computer science in Mumbai."
  },
  {
   "g": "b1-praeteritum",
@@ -443,7 +443,7 @@
  },
  {
   "g": "b1-seit-bis",
-  "q": "Seit Lena an der Uni studiert, ___ kaum Zeit.",
+  "q": "Seit meine Schwester an der Uni studiert, ___ kaum Zeit.",
   "opts": [
    "sie hat",
    "hatte sie",
@@ -452,7 +452,7 @@
   ],
   "a": 2,
   "why": "After a side clause the main clause starts with its verb. seit + something still going on → present: hat sie.",
-  "en": "Since Lena has been at university, she has hardly any time."
+  "en": "Since my sister has been at university, she has hardly any time."
  },
  {
   "g": "b1-seit-bis",
@@ -534,7 +534,7 @@
  },
  {
   "g": "b1-konj-unreal",
-  "q": "Wenn Priya ein Fahrrad hätte, ___ sie zur Arbeit fahren.",
+  "q": "Wenn meine Kollegin ein Fahrrad hätte, ___ sie zur Arbeit fahren.",
   "opts": [
    "wurde",
    "wird",
@@ -543,7 +543,7 @@
   ],
   "a": 2,
   "why": "The main clause of an unreal condition uses würde + infinitive. wurde without an umlaut is the past.",
-  "en": "If Priya had a bike, she would cycle to work."
+  "en": "If my colleague had a bike, she would cycle to work."
  },
  {
   "g": "b1-konj-unreal",
@@ -1665,7 +1665,7 @@
  },
  {
   "g": "b1-verb-preps-review",
-  "q": "Malte hat sich ___ eine neue Stelle in Hamburg beworben.",
+  "q": "Mein Bruder hat sich ___ eine neue Stelle in Hamburg beworben.",
   "opts": [
    "um",
    "über",
@@ -1674,7 +1674,7 @@
   ],
   "a": 0,
   "why": "sich bewerben um + accusative = apply for. Don't translate English 'for' here: learn bewerben with um (you may hear für in speech, but um is the standard).",
-  "en": "Malte has applied for a new job in Hamburg."
+  "en": "My brother has applied for a new job in Hamburg."
  },
  {
   "g": "b1-verb-preps-review",

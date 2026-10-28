@@ -318,7 +318,7 @@
   "type": "context",
   "w": "kündigen",
   "station": 3,
-  "q": "Die Arbeit macht Malte keinen Spaß mehr. Er will ___ und eine neue Stelle suchen.",
+  "q": "Die Arbeit macht Daniel keinen Spaß mehr. Er will ___ und eine neue Stelle suchen.",
   "opts": [
    "verdienen",
    "organisieren",
